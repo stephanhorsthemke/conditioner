@@ -1,0 +1,595 @@
+{
+  "condition_id": "oxalate",
+  "condition_name": "Oxalate accumulation",
+  "generated_at": "2026-04-16T10:25:50.059577Z",
+  "model": "claude-haiku-4-5-20251001",
+  "sections": {
+    "plain_summary": "Oxalate accumulation is when oxalate\u2014a compound found naturally in many foods\u2014builds up in your body and may contribute to kidney stones, joint pain, neurological symptoms, or other problems. Not everyone who eats high-oxalate foods accumulates oxalate; genetic factors, gut health, and how well your kidneys filter affect your risk.",
+    "detailed_summary": "Oxalate is an organic compound produced by plants and also made by your body. Normally, oxalate is filtered by the kidneys and excreted in urine. However, in some people\u2014particularly those with genetic predispositions, impaired kidney function, gut dysbiosis, or nutrient deficiencies\u2014oxalate can accumulate in tissues including kidneys, joints, blood vessels, and the nervous system. This can lead to kidney stone formation, chronic pain, inflammation, and in severe cases (primary hyperoxaluria), multi-organ damage. The condition exists on a spectrum from asymptomatic to severely symptomatic, and the relationship between dietary oxalate intake and symptomatic oxalate accumulation is complex and not fully understood.",
+    "prevalence": {
+      "summary": "Clinically diagnosed oxalate accumulation is rare, but high urinary oxalate and subclinical accumulation may affect a meaningful minority of people with chronic health conditions.",
+      "estimate": "Primary hyperoxaluria (genetic): 1\u20133 per 100,000 people. Secondary hyperoxaluria and dietary oxalate sensitivity: unknown, likely underdiagnosed.",
+      "notes": "Most research focuses on primary hyperoxaluria (genetic) and kidney stone formers. Broader oxalate sensitivity and accumulation in other tissues is less well-studied and controversial. Some practitioners believe it is more common; mainstream nephrology reserves diagnosis for clear biochemical evidence. Prevalence varies geographically due to dietary patterns and water hardness."
+    },
+    "subgroups": [
+      {
+        "name": "Primary hyperoxaluria (genetic)",
+        "description": "Rare inherited disorder caused by mutations in genes controlling oxalate metabolism. Leads to severe oxalate overproduction regardless of diet.",
+        "distinguishing_features": [
+          "Onset often in childhood or young adulthood",
+          "Very high 24-hour urine oxalate levels (>100 mg/day)",
+          "Recurrent kidney stones despite low-oxalate diet",
+          "Progressive kidney disease and potential systemic complications (bone, eye, heart)",
+          "Family history of early kidney disease or stones"
+        ]
+      },
+      {
+        "name": "Secondary hyperoxaluria (acquired)",
+        "description": "Oxalate accumulation caused by medical conditions, medications, or malabsorption rather than genetic defects.",
+        "distinguishing_features": [
+          "Often associated with inflammatory bowel disease, short bowel syndrome, or cystic fibrosis",
+          "May develop after gastric bypass or other bowel surgery",
+          "Elevated urine oxalate (usually 40\u2013100 mg/day)",
+          "Improves with treatment of the underlying condition"
+        ]
+      },
+      {
+        "name": "Dietary oxalate sensitivity (non-genetic)",
+        "description": "Symptoms or stone formation triggered or worsened by high dietary oxalate intake in people without primary hyperoxaluria. Mechanism unclear but may involve gut dysbiosis, low calcium intake, or genetic susceptibility.",
+        "distinguishing_features": [
+          "Symptoms worsen after eating high-oxalate foods",
+          "Urinary oxalate elevated but usually <100 mg/day",
+          "Joint pain, brain fog, or other systemic symptoms reported by some",
+          "May improve markedly with low-oxalate diet",
+          "No family history of primary hyperoxaluria"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Kidney stones or recurrent stone formation",
+        "category": "urinary/renal",
+        "notes": "Often the first sign; stones can be calcium oxalate. May occur despite adequate hydration and normal dietary calcium in primary hyperoxaluria."
+      },
+      {
+        "symptom": "Flank or lower back pain (colicky or dull)",
+        "category": "pain",
+        "notes": "Can be acute (during stone passage) or chronic (from stone presence or kidney damage). May be one-sided or bilateral."
+      },
+      {
+        "symptom": "Hematuria (blood in urine)",
+        "category": "urinary",
+        "notes": "Visible or microscopic; often accompanies stone passage but may occur without stones in advanced accumulation."
+      },
+      {
+        "symptom": "Chronic joint pain or arthritis",
+        "category": "musculoskeletal",
+        "notes": "Reported by some people with oxalate accumulation; oxalate crystals may deposit in joints. Often involves knees, hips, or shoulders."
+      },
+      {
+        "symptom": "Bone pain or osteoporosis",
+        "category": "musculoskeletal",
+        "notes": "Oxalate accumulation can impair bone metabolism. More prominent in primary hyperoxaluria."
+      },
+      {
+        "symptom": "Brain fog, memory problems, or cognitive difficulty",
+        "category": "neurological",
+        "notes": "Anecdotally reported; mechanism unclear. May relate to crystal deposition in nervous tissue or systemic inflammation. Not well-established in literature."
+      },
+      {
+        "symptom": "Fatigue",
+        "category": "systemic",
+        "notes": "Non-specific; may relate to chronic kidney disease, anemia, or electrolyte imbalance from stone loss or kidney dysfunction."
+      },
+      {
+        "symptom": "Frequent urinary tract infections",
+        "category": "urinary",
+        "notes": "Stones create a site for bacteria; UTIs may be recurrent or harder to treat."
+      },
+      {
+        "symptom": "Eye problems (cataracts or retinal deposits)",
+        "category": "ophthalmologic",
+        "notes": "More common in primary hyperoxaluria; oxalate deposits in the eye tissues can impair vision."
+      },
+      {
+        "symptom": "Cardiovascular symptoms (palpitations, arrhythmia)",
+        "category": "cardiovascular",
+        "notes": "Rare; reported in advanced primary hyperoxaluria due to oxalate deposits in the heart and electrolyte imbalance."
+      },
+      {
+        "symptom": "Numbness, tingling, or neuropathy",
+        "category": "neurological",
+        "notes": "Anecdotally associated with oxalate accumulation; mechanism unknown. May be secondary to kidney disease or vitamin deficiency."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Recurrent kidney stones (more than one in a lifetime, or multiple within 5 years)",
+        "Kidney stones before age 40 or family history of early stone disease",
+        "Persistent joint or bone pain without a clear rheumatologic diagnosis, worsened by high-oxalate foods",
+        "Cognitive or neurological symptoms that correlate with diet or improve on a low-oxalate diet",
+        "Chronic kidney disease of unclear cause, especially if progressive",
+        "Combination of kidney disease + systemic symptoms (bone pain, eye problems, cardiac issues)"
+      ],
+      "at_home": [
+        {
+          "name": "24-hour urine oxalate collection",
+          "description": "You collect all your urine over 24 hours in a provided container and return it to a lab. It measures total oxalate excretion. Normal is typically <45 mg/day; >50 mg suggests hyperoxaluria. You need a doctor's order to do this, but you can do the collection itself at home.",
+          "safety_notes": "No safety concerns with collection itself. Ensure you follow the collection instructions exactly (start and end times, preservative) or results may be invalid. Repeat collections on different days may be needed for accuracy."
+        },
+        {
+          "name": "Structured elimination diet (low-oxalate trial)",
+          "description": "Eat a low-oxalate diet (avoiding spinach, nuts, chocolate, tea, whole grains, beans) for 2\u20134 weeks and track symptoms daily. Note improvements in pain, brain fog, or energy. This is a self-assessment tool, not a diagnostic test.",
+          "safety_notes": "A low-oxalate diet is nutritionally adequate if done carefully (substitute with other vegetables, fruits, lower-oxalate grains). Do not restrict it for more than 4\u20136 weeks without professional guidance, as you may miss key nutrients. If you have a history of disordered eating, consult a provider before starting."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "24-hour urine oxalate and creatinine",
+          "type": "standard",
+          "description": "Gold standard test for suspected hyperoxaluria. Measures total oxalate excretion and creatinine to assess kidney function. Fasting or specific diet prior may be requested. Normal oxalate <45 mg/day; >50 mg/day suggests hyperoxaluria. Results should be interpreted with kidney function and clinical history.",
+          "availability": "Ordered by a primary care doctor, nephrologist, or urologist. Most hospitals and commercial labs can perform it. May require special collection container with preservative."
+        },
+        {
+          "name": "Serum creatinine and eGFR (estimated glomerular filtration rate)",
+          "type": "standard",
+          "description": "Measures kidney function. Chronic oxalate accumulation can impair kidney function over time. Elevated creatinine or low eGFR indicates kidney disease and increases risk of oxalate accumulation.",
+          "availability": "Routine blood test, available at any lab. Often ordered as part of a basic metabolic panel."
+        },
+        {
+          "name": "Serum and urine calcium",
+          "type": "standard",
+          "description": "Low urinary calcium increases oxalate stone risk (less calcium available to bind oxalate in the gut). High serum calcium raises other concerns. Helps guide dietary management.",
+          "availability": "Blood and urine tests, routine labs."
+        },
+        {
+          "name": "Genetic testing (for primary hyperoxaluria)",
+          "type": "standard",
+          "description": "DNA sequencing of AGXT, GRHPR, or HOGA1 genes to detect mutations causing primary hyperoxaluria. Indicated if very high urinary oxalate (>100 mg/day) or early-onset progressive kidney disease.",
+          "availability": "Ordered by a nephrologist or geneticist. Performed by specialized labs. May be covered by insurance if clinically indicated."
+        },
+        {
+          "name": "Kidney ultrasound or CT scan",
+          "type": "standard",
+          "description": "Imaging to visualize stones, nephrocalcinosis (calcium deposits in kidney tissue), or kidney damage. Nephrocalcinosis is suggestive of chronic hyperoxaluria.",
+          "availability": "Ordered by primary care or specialist. Performed at hospitals or imaging centers."
+        },
+        {
+          "name": "Kidney biopsy",
+          "type": "emerging",
+          "description": "Direct tissue sampling to identify oxalate crystal deposition. Rarely done for diagnosis but may be used in research or very complex cases to confirm tissue involvement.",
+          "availability": "Specialized centers only; not routine."
+        },
+        {
+          "name": "Plasma oxalate (serum oxalate)",
+          "type": "emerging",
+          "description": "Measures oxalate concentration in blood. Elevated levels suggest systemic accumulation. Less widely available than urine oxalate; may be ordered by specialized nephrology centers.",
+          "availability": "Specialized labs; not universally available. Mainly used in research or at centers specializing in hyperoxaluria."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "name": "Chronic kidney disease (CKD)",
+        "relationship": "downstream",
+        "explanation": "Oxalate accumulation can progressively damage the kidneys, leading to CKD. Conversely, existing kidney disease reduces oxalate excretion and worsens accumulation\u2014a vicious cycle."
+      },
+      {
+        "name": "Kidney stones (nephrolithiasis)",
+        "relationship": "downstream",
+        "explanation": "Elevated oxalate is a major risk factor for calcium oxalate kidney stones. Stones are often the first clinical manifestation of oxalate accumulation."
+      },
+      {
+        "name": "Inflammatory bowel disease (Crohn's disease, ulcerative colitis)",
+        "relationship": "comorbid",
+        "explanation": "IBD patients have increased intestinal oxalate absorption and higher oxalate excretion, leading to secondary hyperoxaluria and elevated stone risk."
+      },
+      {
+        "name": "Celiac disease",
+        "relationship": "comorbid",
+        "explanation": "Untreated celiac disease impairs nutrient absorption (especially calcium and fat) and increases oxalate absorption, raising oxalate excretion and stone risk."
+      },
+      {
+        "name": "Cystic fibrosis",
+        "relationship": "comorbid",
+        "explanation": "Fat malabsorption leads to increased oxalate absorption. CF patients have elevated oxalate excretion and higher kidney stone risk."
+      },
+      {
+        "name": "Short bowel syndrome or bowel resection",
+        "relationship": "downstream",
+        "explanation": "Reduced intestinal length decreases calcium absorption and increases oxalate absorption, triggering or worsening secondary hyperoxaluria."
+      },
+      {
+        "name": "Bariatric (gastric bypass) surgery",
+        "relationship": "downstream",
+        "explanation": "Changes in gut anatomy and fat absorption can increase oxalate absorption and lead to secondary hyperoxaluria, sometimes years post-surgery."
+      },
+      {
+        "name": "Type 1 and Type 2 diabetes",
+        "relationship": "comorbid",
+        "explanation": "Diabetic nephropathy reduces kidney function and oxalate clearance. Diabetes also increases kidney stone risk via multiple mechanisms."
+      },
+      {
+        "name": "Vitamin B6 (pyridoxine) deficiency",
+        "relationship": "mechanistic_link",
+        "explanation": "B6 is a cofactor for the enzyme that converts oxalate precursors. Deficiency increases oxalate production in primary hyperoxaluria."
+      },
+      {
+        "name": "Vitamin D deficiency",
+        "relationship": "mechanistic_link",
+        "explanation": "Low vitamin D impairs calcium absorption, reducing gut calcium available to bind oxalate and increasing oxalate absorption."
+      },
+      {
+        "name": "Gut dysbiosis",
+        "relationship": "mechanistic_link",
+        "explanation": "Certain bacteria (especially Oxalobacter formigenes) break down oxalate in the gut. Dysbiosis or antibiotic use may reduce these bacteria and increase oxalate absorption."
+      },
+      {
+        "name": "Hyperparathyroidism",
+        "relationship": "comorbid",
+        "explanation": "Elevated parathyroid hormone increases urinary calcium and phosphate; complex effects on oxalate metabolism and stone risk."
+      },
+      {
+        "name": "Sarcoidosis",
+        "relationship": "comorbid",
+        "explanation": "Sarcoidosis increases vitamin D activation, raising serum and urinary calcium and stone risk; can coexist with oxalate issues."
+      },
+      {
+        "name": "Gout and hyperuricemia",
+        "relationship": "comorbid",
+        "explanation": "Both conditions involve crystal deposition in kidneys and joints; can coexist, and risk factors (dehydration, diet) overlap."
+      },
+      {
+        "name": "Osteoporosis and bone disease",
+        "relationship": "comorbid",
+        "explanation": "Oxalate accumulation can impair bone metabolism. Conversely, low bone turnover can increase blood oxalate. They may co-occur."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Increase hydration (water intake)",
+          "category": "lifestyle",
+          "description": "Drinking 2\u20133 liters of water daily (or enough to produce >2 liters of urine per day) dilutes urine oxalate and reduces stone formation risk. Aim for pale urine.",
+          "evidence_level": "strong",
+          "notes": "Most evidence-based intervention. Avoid caffeinated and sugary drinks, which may increase stone risk. If you have heart or kidney disease, consult a doctor about safe fluid intake targets."
+        },
+        {
+          "name": "Dietary calcium intake (adequate, not excessive)",
+          "category": "diet",
+          "description": "Calcium in food binds oxalate in the gut, reducing absorption. Aim for 1000\u20131200 mg/day from food (dairy, fortified plant milks, leafy greens). Avoid both very low and very high calcium, as both increase stone risk.",
+          "evidence_level": "strong",
+          "notes": "Calcium from food is safer than supplements for stone prevention. Avoid oxalate-rich calcium sources (spinach has high oxalate and low bioavailable calcium). Do not restrict calcium to try to reduce oxalate excretion\u2014this backfires."
+        },
+        {
+          "name": "Low-oxalate diet",
+          "category": "diet",
+          "description": "Restrict high-oxalate foods: spinach, beet greens, chard, almonds, peanuts, cashews, chocolate, tea, whole wheat, beans, and seeds. Replace with low-oxalate alternatives: lettuce, kale, broccoli, meat, fish, eggs, rice, white bread, corn. Aim for <100 mg oxalate/day in high-risk patients.",
+          "evidence_level": "moderate",
+          "notes": "Most useful for secondary hyperoxaluria and dietary oxalate sensitivity. In primary hyperoxaluria, very low-oxalate diet alone is usually insufficient. Individual tolerance varies; work with a dietitian to avoid nutritional gaps."
+        },
+        {
+          "name": "Reduce sodium intake",
+          "category": "diet",
+          "description": "High sodium increases urinary calcium and oxalate excretion, raising stone risk. Aim for <2300 mg/day (ideally ~1500 mg/day).",
+          "evidence_level": "strong",
+          "notes": "Reduce processed foods, cured meats, and added salt. This also helps blood pressure and cardiovascular health."
+        },
+        {
+          "name": "Limit animal protein (especially red meat)",
+          "category": "diet",
+          "description": "High animal protein intake increases urinary oxalate and uric acid, worsening stone risk. Consider moderating to 50\u201360 g/day or choosing poultry and fish.",
+          "evidence_level": "moderate",
+          "notes": "Plant protein does not have the same effect. This is not a strict restriction but a moderation strategy."
+        },
+        {
+          "name": "Vitamin B6 supplementation",
+          "category": "supplement",
+          "description": "Pyridoxine (B6) is a cofactor for the enzyme that breaks down oxalate precursors. In primary hyperoxaluria, high-dose B6 (25\u20131000 mg/day, depending on type) may reduce oxalate production by 20\u201350%.",
+          "evidence_level": "moderate",
+          "notes": "Mainly effective in primary hyperoxaluria type 1 (AGXT mutations). Less useful in secondary hyperoxaluria. Requires monitoring by a specialist. High doses carry risk of peripheral neuropathy with prolonged use."
+        },
+        {
+          "name": "Vitamin D and calcium supplementation (if deficient)",
+          "category": "supplement",
+          "description": "If serum vitamin D is low (<30 ng/mL) or calcium intake is inadequate, supplements can reduce oxalate absorption and improve bone health. Typically vitamin D 1000\u20132000 IU/day and calcium citrate 500\u2013600 mg with meals.",
+          "evidence_level": "moderate",
+          "notes": "Ensure adequate vitamin D level (>30 ng/mL) before high-dose calcium supplementation. Monitor kidney function. Work with a provider to personalize dosing."
+        },
+        {
+          "name": "Magnesium supplementation",
+          "category": "supplement",
+          "description": "Magnesium inhibits calcium oxalate crystallization. Some evidence supports 200\u2013400 mg/day for stone prevention, especially if magnesium is low.",
+          "evidence_level": "moderate",
+          "notes": "Can cause loose stools. Monitor kidney function before starting. Citrate form may be better tolerated than oxide."
+        },
+        {
+          "name": "Citrate supplementation (potassium citrate or sodium citrate)",
+          "category": "supplement",
+          "description": "Citrate inhibits stone crystallization. Prescription or over-the-counter potassium citrate (e.g., Urocit-K, 10\u201320 mEq/day) is often prescribed for recurrent stone formers. Raises urine pH and inhibits oxalate crystal formation.",
+          "evidence_level": "strong",
+          "notes": "Requires kidney function monitoring and potassium level checks. Avoid if hyperkalemia is present. Not suitable for those with severe kidney disease."
+        },
+        {
+          "name": "Probiotics or Oxalobacter formigenes supplementation",
+          "category": "supplement",
+          "description": "Oxalobacter formigenes is a bacterium that degrades oxalate in the gut. Studies are ongoing, but supplementation may reduce oxalate absorption in some patients. Commercial products are limited.",
+          "evidence_level": "anecdotal",
+          "notes": "Evidence is preliminary. General probiotics have unclear benefit for oxalate. Oxalobacter formigenes supplementation is not widely available as a clinical product yet."
+        },
+        {
+          "name": "Allopurinol (in select cases)",
+          "category": "medication",
+          "description": "Xanthine oxidase inhibitor that reduces uric acid (and oxalate to some extent). May help in primary hyperoxaluria or combined gout and oxalate issues.",
+          "evidence_level": "moderate",
+          "notes": "Used mainly by specialists in primary hyperoxaluria. Side effects include rash, liver toxicity, and interactions. Requires monitoring."
+        },
+        {
+          "name": "Sodium bicarbonate or potassium citrate (urine alkalinization)",
+          "category": "medication",
+          "description": "Raising urine pH above 6.5 reduces calcium oxalate saturation and crystallization risk. Done via oral citrate or bicarbonate.",
+          "evidence_level": "moderate",
+          "notes": "Requires monitoring urine pH and electrolytes. Avoid in patients prone to calcium phosphate stones or with certain kidney conditions."
+        },
+        {
+          "name": "Treat underlying gut/absorption disorders",
+          "category": "medical",
+          "description": "If you have IBD, celiac disease, or cystic fibrosis, optimizing treatment of the underlying condition reduces oxalate absorption and excretion.",
+          "evidence_level": "strong",
+          "notes": "Work with gastroenterologist or pulmonologist as appropriate. Compliance with primary treatment is crucial."
+        },
+        {
+          "name": "Stress management and sleep optimization",
+          "category": "lifestyle",
+          "description": "Chronic stress and poor sleep worsen inflammation and can impair kidney function. Meditation, yoga, or regular sleep schedule may support overall kidney health.",
+          "evidence_level": "anecdotal",
+          "notes": "Not specific to oxalate, but may reduce systemic inflammation and support healing."
+        }
+      ],
+      "things_to_avoid": [
+        "Very high-dose vitamin C supplements (>1000 mg/day), which increase oxalate production and excretion\u2014risk of stones and tissue accumulation.",
+        "Excessive sodium intake (processed foods, fast food), which increases urinary calcium and worsens stone risk.",
+        "Prolonged or extreme calorie restriction or fasting, which can increase urine oxalate and stone risk by promoting dehydration and metabolic changes.",
+        "Excessive animal protein (>100 g/day) without balancing with adequate hydration and plant foods.",
+        "Severely restricting calcium in an attempt to reduce oxalate excretion\u2014this backfires by increasing oxalate absorption.",
+        "High-dose vitamin D supplementation without monitoring serum levels and kidney function.",
+        "Prolonged use of high-dose vitamin B6 (>500 mg/day for years) without specialist oversight, due to peripheral neuropathy risk.",
+        "Dehydration or very low fluid intake, especially in hot climates or during exercise.",
+        "Antibiotic use more frequent than medically necessary, as it can disrupt oxalate-degrading bacteria in the gut.",
+        "Assuming all joint pain or cognitive symptoms are due to oxalate without ruling out other causes (rheumatoid arthritis, dementia, thyroid disease, etc.)."
+      ]
+    },
+    "uncomfortable_truths": [],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Accurate diagnosis and risk stratification (primary vs. secondary vs. dietary sensitivity)",
+          "why_it_matters": "Treatment differs markedly. Genetic hyperoxaluria requires specialist oversight and may involve B6 or transplantation; secondary hyperoxaluria focuses on treating the underlying condition; dietary sensitivity may respond to dietary changes alone. Misdiagnosis leads to inappropriate or ineffective treatment.",
+          "how_to_start": "Request referral to a nephrologist; have a 24-hour urine oxalate test done. If very elevated (>100 mg/day) and family history of kidney disease, ask about genetic testing.",
+          "timeline": "Diagnosis typically within 1\u20133 months; allows treatment to be targeted within 2\u20134 months.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Sustained hydration and urine output target (>2 L urine/day)",
+          "why_it_matters": "Hydration is the single most evidence-based intervention and is universally applicable. Dilute urine reduces supersaturation and crystal formation risk. The effect is immediate and cumulative.",
+          "how_to_start": "Drink water consistently throughout the day. Use a water bottle or app to track intake. Aim to void pale urine. In hot climates or with exercise, drink more.",
+          "timeline": "Can reduce stone risk within weeks if sustained. Most protective long-term with habit formation over 2\u20133 months.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Dietary optimization (balanced calcium, low-oxalate, low-sodium, moderate protein)",
+          "why_it_matters": "Diet directly affects oxalate absorption, excretion, and stone risk. A balanced low-oxalate diet with adequate calcium addresses multiple risk factors simultaneously and is sustainable long-term.",
+          "how_to_start": "Consult a registered dietitian familiar with kidney stone prevention. Create a meal plan that replaces high-oxalate foods with lower-oxalate alternatives while maintaining adequate calcium and nutrients. Track symptoms.",
+          "timeline": "Dietary changes can reduce oxalate excretion within 2\u20134 weeks. Full benefit seen over 2\u20133 months as habits solidify.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Treatment of identified nutritional deficiencies (vitamin D, B6, magnesium, calcium)",
+          "why_it_matters": "Deficiencies directly increase oxalate absorption and production. Correcting them reduces urinary oxalate and improves overall metabolic health and resilience.",
+          "how_to_start": "Have serum vitamin D, magnesium, B6, and calcium levels checked. If low, start supplementation under professional guidance with periodic re-testing.",
+          "timeline": "Vitamin D repletion takes 2\u20133 months. Other deficiencies may improve within 4\u20136 weeks with supplementation.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Specialist management if primary hyperoxaluria or rapid kidney decline",
+          "why_it_matters": "Primary hyperoxaluria requires careful oversight and may benefit from high-dose B6, allopurinol, or dialysis/transplantation in advanced stages. Early specialist involvement prevents irreversible kidney damage.",
+          "how_to_start": "Seek referral to a nephrologist, preferably one with experience in hyperoxaluria or a specialized center if available. Establish baseline kidney function and oxalate levels.",
+          "timeline": "Specialist evaluation usually within 4\u20138 weeks. Treatment plans are individualized but may show benefit within 3\u20136 months.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Management of underlying gut disorders (IBD, celiac, CF, IBS)",
+          "why_it_matters": "Unchecked IBD or malabsorption perpetuates secondary hyperoxaluria. Treating the primary condition reduces oxalate absorption and excretion, often sustainably.",
+          "how_to_start": "Work with gastroenterologist or specialist managing your primary condition. Ensure compliance with treatment (medications, diet, supplements). Revisit oxalate testing after 3\u20136 months of optimized primary treatment.",
+          "timeline": "Benefit depends on the primary condition but often takes 3\u20136 months of optimized treatment.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Kidney function monitoring and early intervention for CKD",
+          "why_it_matters": "Declining kidney function worsens oxalate accumulation. Early detection and slowing CKD progression (via blood pressure control, diabetes management, etc.) prevents vicious cycles.",
+          "how_to_start": "Get baseline serum creatinine and eGFR. Schedule repeat testing annually (or more often if eGFR <60). Manage blood pressure and diabetes aggressively.",
+          "timeline": "Benefit from early CKD management is long-term (years), preventing progression to ESRD.",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Restricting calcium drastically to 'lower oxalate'\u2014this increases oxalate absorption from the gut, actually raising urinary oxalate and stone risk. The correct approach is adequate calcium intake.",
+        "Over-supplementing vitamin C or relying on high-dose vitamin C for health, not realizing it is metabolized to oxalate and significantly increases excretion.",
+        "Assuming all kidney pain or joint pain is oxalate-related without proper investigation, leading to unnecessary dietary restriction and missed diagnosis of other serious conditions.",
+        "Attempting a very strict low-oxalate diet without professional guidance, leading to nutritional deficiency (especially calcium, fiber, antioxidants) and poor adherence.",
+        "Not increasing hydration enough, assuming a low-oxalate diet alone will prevent stones\u2014hydration is foundational and must accompany dietary changes.",
+        "Using antibiotics frequently or unnecessarily, disrupting oxalate-degrading gut bacteria without realizing the consequence.",
+        "Ignoring secondary causes (IBD, celiac, CF, hyperparathyroidism) and focusing only on diet, missing the opportunity to treat the root cause.",
+        "Delaying specialist referral for recurrent or severe stones, allowing preventable kidney damage to accumulate.",
+        "Inconsistent compliance with hydration or dietary changes, expecting results without sustained lifestyle modification.",
+        "Taking high-dose magnesium or potassium supplements without monitoring kidney function, risking hyperkalemia or mineral imbalances in impaired kidney disease."
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Nephrologist (kidney specialist)",
+          "role": "First-line specialist for suspected or confirmed oxalate accumulation. Evaluates kidney function, orders and interprets oxalate testing, diagnoses primary vs. secondary hyperoxaluria, manages kidney disease progression, and prescribes targeted medications (citrate, allopurinol, etc.).",
+          "notes": "Essential for primary hyperoxaluria or if urine oxalate is elevated (>50 mg/day). Look for nephrologists with experience in stone disease or hyperoxaluria."
+        },
+        {
+          "type": "Urologist",
+          "role": "Specializes in kidney stones and urinary tract issues. May manage acute stone episodes, perform imaging, and provide preventive stone care. Often a first point of contact for recurrent stones.",
+          "notes": "Useful for stone management but may not diagnose or manage systemic oxalate accumulation as thoroughly as a nephrologist."
+        },
+        {
+          "type": "Registered Dietitian (RD) with renal or stone-disease expertise",
+          "role": "Designs personalized low-oxalate, calcium-appropriate diet; educates on hydration; helps identify nutrient gaps. Critical partner for dietary management.",
+          "notes": "Highly recommended for all oxalate patients. Ask specifically for one with experience in hyperoxaluria or stone prevention."
+        },
+        {
+          "type": "Gastroenterologist",
+          "role": "If secondary hyperoxaluria is suspected (IBD, celiac, post-gastric bypass), evaluates and treats the underlying gut condition, which is essential to reduce oxalate accumulation.",
+          "notes": "Important if you have concurrent GI symptoms or known IBD/celiac disease."
+        },
+        {
+          "type": "Functional or integrative medicine doctor",
+          "role": "May emphasize nutritional assessment, microbiome support, and comprehensive lifestyle approaches. Some practitioners are knowledgeable about dietary oxalate sensitivity.",
+          "notes": "Mainstream medicine may be skeptical of non-genetic oxalate sensitivity, but some functional practitioners specialize in it. Verify credentials and ensure they work within safe evidence-based guidelines."
+        },
+        {
+          "type": "Genetic counselor",
+          "role": "If primary hyperoxaluria is diagnosed or suspected, helps explain inheritance patterns, guides genetic testing decisions, and supports family discussions about risk.",
+          "notes": "Recommended if genetic testing is considered or positive results are obtained."
+        },
+        {
+          "type": "Rheumatologist",
+          "role": "If joint pain is prominent and attributed to oxalate deposition, may help confirm crystal arthropathy via synovial fluid analysis and rule out autoimmune conditions.",
+          "notes": "Useful if joint symptoms are a major feature and underlying rheumatologic disease must be excluded."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "Oxalate Awareness Association",
+          "platform": "website",
+          "url": "https://www.oxalateawareness.org/",
+          "notes": "Patient-led organization focused on dietary oxalate and non-genetic oxalate accumulation. Provides resources, recipes, and community support."
+        },
+        {
+          "name": "Oxalate Community (Facebook)",
+          "platform": "Facebook group",
+          "url": "https://www.facebook.com/groups/oxalatecommunity/",
+          "notes": "Large peer support group for people managing oxalate accumulation. Shares recipes, experiences, and support."
+        },
+        {
+          "name": "National Kidney Foundation",
+          "platform": "website",
+          "url": "https://www.kidney.org/",
+          "notes": "Mainstream kidney health nonprofit. Excellent evidence-based resources on kidney stones and kidney disease. Includes stone prevention guidelines."
+        },
+        {
+          "name": "Kidney Stone Disease Community (Reddit)",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/KidneyStones/",
+          "notes": "Active subreddit where people discuss stone experiences, prevention, and management. Mix of lay perspectives and some clinician input."
+        },
+        {
+          "name": "American Kidney Fund",
+          "platform": "website",
+          "url": "https://www.kidneyfund.org/",
+          "notes": "Patient advocacy and education on all kidney diseases including stones and hyperoxaluria."
+        },
+        {
+          "name": "Hyperoxaluria and Oxalate Metabolism Group (ResearchGate/Academia)",
+          "platform": "online community",
+          "url": "https://www.researchgate.net/",
+          "notes": "Academic and research-focused community where some leading hyperoxaluria researchers engage with patients and clinicians. Good source for latest research."
+        },
+        {
+          "name": "PHA (Prevent and Help Achieve) Community",
+          "platform": "website / forum",
+          "url": "https://www.phaconline.org/",
+          "notes": "Organization focused on primary hyperoxaluria. Excellent for genetic hyperoxaluria education, clinical trials, and specialist resources."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Kidney Stones: A Practical Guide to Evaluation and Management",
+        "type": "book",
+        "author_or_source": "American Urological Association (AUA), edited by Glenn Preminger",
+        "url": null,
+        "description": "Clinical guidebook on kidney stone evaluation and management. Evidence-based; suitable for patients wanting to understand current standard of care.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Up to Date article on primary hyperoxaluria",
+        "type": "website",
+        "author_or_source": "UpToDate",
+        "url": "https://www.uptodate.com/",
+        "description": "Comprehensive, frequently updated clinical resource. Subscription required but excellent for understanding medical evidence on primary hyperoxaluria, genetic types, and management.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Kidney Stone Prevention and Dietary Management",
+        "type": "website",
+        "author_or_source": "National Kidney Foundation",
+        "url": "https://www.kidney.org/patients/kidney-disease/kidney-stones",
+        "description": "Plain-language, evidence-based patient education on stone prevention, diet, and when to seek help. Free and accessible.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Oxalate Content of Selected Foods",
+        "type": "resource list",
+        "author_or_source": "Harvard T.H. Chan School of Public Health",
+        "url": "https://www.hsph.harvard.edu/nutritionsource/oxalate/",
+        "description": "Evidence-based list of oxalate content in common foods. Useful for low-oxalate diet planning and food substitutions.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Primary Hyperoxaluria: A Genetic and Metabolic Perspective",
+        "type": "research paper / review",
+        "author_or_source": "Evan, AP et al. (multiple reviews in American Journal of Kidney Diseases)",
+        "url": null,
+        "description": "Scientific reviews of genetic hyperoxaluria types, pathophysiology, and treatment advances. For those wanting deeper scientific understanding.",
+        "audience": "advanced"
+      },
+      {
+        "title": "The Role of Oxalate in Kidney Disease",
+        "type": "podcast / video",
+        "author_or_source": "ASN (American Society of Nephrology) educational resources",
+        "url": "https://www.asn-online.org/",
+        "description": "Educational webinars and videos for patients and clinicians on oxalate metabolism and kidney disease. Free access to many videos.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Dietary Management of Kidney Stone Disease",
+        "type": "website",
+        "author_or_source": "American Urological Association (AUA)",
+        "url": "https://www.auanet.org/",
+        "description": "Evidence-based clinical guidelines on diet and kidney stone prevention. Technically for clinicians but accessible to educated patients.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Oxalate and Kidney Health",
+        "type": "book",
+        "author_or_source": "Sally K. Norton (nutritionist; 'Toxic Superfoods' and 'The Plant Paradox' related to oxalates)",
+        "url": null,
+        "description": "Popular book on dietary oxalate and health. Anecdotal and advocacy-oriented; useful for raising awareness but less rigorous than clinical guidelines. Read critically.",
+        "audience": "beginner"
+      },
+      {
+        "title": "American Society of Nephrology (ASN) - Kidney Stones and Metabolic Disorders",
+        "type": "website",
+        "author_or_source": "ASN",
+        "url": "https://www.asn-online.org/",
+        "description": "Portal to clinical resources, research, and patient education on all kidney diseases. Excellent repository of evidence-based information.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Hyperoxaluria and Systemic Oxalate Deposition: Novel Insights into Pathophysiology and Treatment",
+        "type": "research paper",
+        "author_or_source": "Hoppe et al., Journal of the American Society of Nephrology (JASN)",
+        "url": "https://jasn.asnjournals.org/",
+        "description": "Peer-reviewed research on mechanisms of oxalate accumulation and emerging therapies. For advanced readers seeking cutting-edge science.",
+        "audience": "advanced"
+      }
+    ],
+    "relevance_signal": "Symptoms after **spinach, almonds, dark chocolate, or beets**. Burning sensation. Possible history of kidney stones. Worse on a 'clean eating' diet heavy in superfoods."
+  }
+}

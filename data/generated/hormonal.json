@@ -1,0 +1,624 @@
+{
+  "condition_id": "hormonal",
+  "condition_name": "Hormonal / menstrual cycle effects",
+  "generated_at": "2026-04-16T10:31:58.289792Z",
+  "model": "claude-haiku-4-5-20251001",
+  "sections": {
+    "plain_summary": "Hormonal and menstrual cycle effects refer to physical, cognitive, and emotional changes that occur in relation to fluctuations in sex hormones across the menstrual cycle. These can range from mild premenstrual symptoms to severe conditions like premenstrual syndrome (PMS) or premenstrual dysphoric disorder (PMDD). Symptoms may include mood changes, bloating, fatigue, pain, and cognitive shifts that follow a predictable monthly pattern.",
+    "detailed_summary": "The menstrual cycle involves complex interactions between estrogen, progesterone, and other hormones that affect multiple body systems. In the follicular phase (days 1\u201314), estrogen rises gradually. Ovulation occurs around day 14, followed by the luteal phase (days 15\u201328) when progesterone peaks. For many people, this hormonal rhythm produces noticeable but manageable symptoms. However, some people experience disruptive physical and mental health effects tied to these cycles. Common experiences include water retention, breast tenderness, headaches, fatigue, mood swings, anxiety, and difficulty concentrating in the luteal phase. Severe cyclical mood disturbance affecting work, relationships, or daily functioning may indicate PMDD. Hormonal effects can also worsen or interact with other chronic conditions like migraine, IBS, depression, and fibromyalgia. Tracking patterns and understanding your personal cycle response is essential for self-management and communication with healthcare providers.",
+    "prevalence": {
+      "summary": "Most menstruating people notice some hormonal symptoms; severe, disabling symptoms affect a smaller subset.",
+      "estimate": "Mild to moderate premenstrual symptoms: 50\u201390% of menstruating people. PMS (clinically significant): 5\u20138%. PMDD (severe): 3\u20138%.",
+      "notes": "Prevalence estimates vary widely depending on how symptoms are defined and measured. PMDD is formally recognized in the DSM-5. Underdiagnosis is common because symptoms are often dismissed as 'just PMS.' Symptoms may worsen with age, stress, or other health conditions. Transgender men and non-binary people may also experience cycle-related effects if they retain reproductive organs and have hormone cycles."
+    },
+    "subgroups": [
+      {
+        "name": "PMS (Premenstrual Syndrome)",
+        "description": "Cyclical physical and mood symptoms that occur in the luteal phase and significantly affect daily life, but do not reach the threshold of severe mood disorder.",
+        "distinguishing_features": [
+          "Symptoms appear consistently in the luteal phase and resolve shortly after menstruation begins",
+          "Multiple symptoms across physical and mood categories (bloating, fatigue, irritability, sadness)",
+          "Functional impairment but not severe mental health dysfunction",
+          "Responds to lifestyle changes and some medications"
+        ]
+      },
+      {
+        "name": "PMDD (Premenstrual Dysphoric Disorder)",
+        "description": "A severe form of premenstrual dysphoria that meets formal diagnostic criteria and causes marked functional impairment.",
+        "distinguishing_features": [
+          "Severe mood symptoms: intense anger, despair, or anxiety in the luteal phase",
+          "Significant difficulty with work, school, relationships, or daily activities",
+          "Symptoms are cyclical and occur only or predominantly in the luteal phase",
+          "Diagnosed using DSM-5 criteria; requires documentation over at least two cycles",
+          "Often requires medication (SSRIs, hormonal contraceptives) or specialized treatment"
+        ]
+      },
+      {
+        "name": "Menstrual Migraine",
+        "description": "Migraines triggered or worsened specifically around menstruation, typically in the perimenstrual window (2 days before to 3 days after period onset).",
+        "distinguishing_features": [
+          "Migraine episodes cluster around menstrual bleeding",
+          "Often more frequent or severe during luteal phase",
+          "May respond to timed preventive medication around menstruation",
+          "May be associated with aura (visual disturbances)"
+        ]
+      },
+      {
+        "name": "Hormone-Sensitive Condition Flares (Migraine, IBS, Fibromyalgia, etc.)",
+        "description": "Pre-existing chronic conditions that worsen predictably during certain phases of the menstrual cycle.",
+        "distinguishing_features": [
+          "Primary condition diagnosis already established",
+          "Flare severity or frequency correlates with cycle phase",
+          "Often worst during late luteal phase (high progesterone)",
+          "Addressed by optimizing management of both the underlying condition and hormonal effects"
+        ]
+      },
+      {
+        "name": "Post-Hormonal Contraceptive or Hormone Therapy Changes",
+        "description": "Changes in cycle-related symptoms after starting, stopping, or switching hormonal contraceptives or hormone replacement therapy.",
+        "distinguishing_features": [
+          "Symptom pattern or severity shifts following hormonal medication change",
+          "May involve loss of cycle if using continuous hormonal contraceptive",
+          "Adjustment period typically 2\u20133 months before full effect",
+          "Symptoms may improve or worsen depending on individual response"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Mood swings or emotional sensitivity",
+        "category": "emotional/mood",
+        "notes": "Often most noticeable in the luteal phase (second half of cycle). May include increased irritability, sadness, or emotional reactivity to normally manageable stressors."
+      },
+      {
+        "symptom": "Anxiety or panic symptoms",
+        "category": "emotional/mood",
+        "notes": "May appear as generalized worry, social anxiety, or panic attacks that cluster in the luteal phase. Often improves dramatically once menstruation begins."
+      },
+      {
+        "symptom": "Depression or hopelessness",
+        "category": "emotional/mood",
+        "notes": "In PMDD, may be severe and temporarily incapacitating. In milder PMS, usually manageable but noticeable. Resolves quickly after period starts."
+      },
+      {
+        "symptom": "Anger or irritability",
+        "category": "emotional/mood",
+        "notes": "Commonly reported; can strain relationships. Typically peaks 3\u20137 days before menstruation. More pronounced in PMDD."
+      },
+      {
+        "symptom": "Bloating or abdominal distension",
+        "category": "gastrointestinal/fluid",
+        "notes": "Usually appears in the luteal phase. May involve 1\u20132 pounds of water weight gain. Can worsen existing IBS or digestive symptoms."
+      },
+      {
+        "symptom": "Breast tenderness or swelling",
+        "category": "musculoskeletal",
+        "notes": "Typically peaks a few days before menstruation. Related to progesterone and fluid retention. Usually subsides after period begins."
+      },
+      {
+        "symptom": "Fatigue or low energy",
+        "category": "systemic",
+        "notes": "Often most severe in the luteal phase. May be related to progesterone effects on sleep, energy metabolism, or iron loss. Can be worsened by poor sleep or heavy flow."
+      },
+      {
+        "symptom": "Headache or migraine",
+        "category": "neurological",
+        "notes": "Can occur at any cycle phase but often worsens during menstruation or late luteal phase. Menstrual migraine specifically occurs near period onset due to estrogen withdrawal."
+      },
+      {
+        "symptom": "Sleep disturbance (insomnia or fragmented sleep)",
+        "category": "sleep",
+        "notes": "Common in the luteal phase; may be due to progesterone's sedating effect creating irregular sleep architecture, or anxiety/mood symptoms. Night sweats or vivid dreams may occur."
+      },
+      {
+        "symptom": "Joint or muscle pain",
+        "category": "musculoskeletal",
+        "notes": "May include general achiness, lower back pain, or exacerbation of existing fibromyalgia or arthritis symptoms. Often correlates with luteal phase."
+      },
+      {
+        "symptom": "Appetite changes or cravings",
+        "category": "metabolic",
+        "notes": "Luteal phase often brings increased hunger and cravings for carbohydrates or salt. Related to progesterone's effects on metabolism and blood sugar regulation."
+      },
+      {
+        "symptom": "Difficulty concentrating or brain fog",
+        "category": "cognitive",
+        "notes": "Affects memory, focus, and mental clarity, especially in luteal phase. May be related to progesterone's effects on neurotransmitters or secondary to poor sleep and fatigue."
+      },
+      {
+        "symptom": "Acne or skin flares",
+        "category": "skin",
+        "notes": "Breakouts often cluster around ovulation (when androgens rise) or in the luteal phase. Related to hormonal triggers of sebum production."
+      },
+      {
+        "symptom": "Nausea or digestive upset",
+        "category": "gastrointestinal",
+        "notes": "May accompany other luteal phase symptoms. Can worsen existing IBS or reflux. Typically mild unless related to migraine."
+      },
+      {
+        "symptom": "Pelvic pain or cramping beyond normal menstruation",
+        "category": "reproductive",
+        "notes": "May indicate dysmenorrhea (painful periods) or, if occurs throughout cycle, may suggest endometriosis or other gynecological conditions requiring investigation."
+      },
+      {
+        "symptom": "Fluid retention or weight fluctuation",
+        "category": "fluid/metabolic",
+        "notes": "Water retention peaks in luteal phase and often resolves within 1\u20132 days of menstruation. Weight may fluctuate 3\u20135+ pounds across cycle. Not fat gain."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Symptoms appear consistently in the same phase of your cycle (usually luteal/pre-menstrual) and resolve shortly after menstruation begins\u2014the cyclical pattern is the key diagnostic feature.",
+        "Mood or physical symptoms noticeably worsen in the 1\u20132 weeks before your period and improve within days of bleeding starting.",
+        "Symptoms cluster together (e.g., bloating + fatigue + mood dip, or migraine + anxiety + poor sleep), rather than appearing randomly.",
+        "Symptom severity and type are relatively consistent from cycle to cycle, making them predictable once tracked.",
+        "Symptoms interfere with work, relationships, school, or daily functioning during the affected phase, not just cause minor discomfort."
+      ],
+      "at_home": [
+        {
+          "name": "Menstrual cycle and symptom tracking",
+          "description": "Use a calendar, spreadsheet, or app (Clue, Flo, Kindara) to log the dates of menstruation, cycle length, symptom timing, mood ratings (1\u201310), pain level, sleep quality, energy, and any other relevant notes. Track for a minimum of 2\u20133 cycles (2\u20133 months). Look for patterns: do symptoms cluster in the luteal phase? Do they improve after menstruation begins? Does severity repeat each cycle?",
+          "safety_notes": "This is a safe observation tool. No contraindications. Tracking can itself be therapeutic and helps you recognize your personal pattern. Share your log with a healthcare provider for accurate diagnosis."
+        },
+        {
+          "name": "Cervical mucus or basal body temperature monitoring",
+          "description": "Track cervical mucus changes (thicker and stretchy around ovulation) or take basal body temperature each morning (rises slightly after ovulation) to pinpoint ovulation and correlate symptom timing with cycle phase more precisely. This helps distinguish follicular vs. luteal phase symptoms.",
+          "safety_notes": "These methods are non-invasive. Useful for understanding personal cycle physiology but require consistency and learning a technique. Irregular cycles or shift work can make temperature tracking unreliable."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Prospective symptom diary (Daily Record of Severity of Problems, DRSP)",
+          "type": "standard",
+          "description": "Gold standard for PMS and PMDD diagnosis. You complete a detailed daily symptom rating form over at least two full menstrual cycles. Rates mood, physical symptoms, and functional impairment on a scale. PMDD diagnosis requires 5+ emotional or physical symptoms present for 7+ days before menstruation, severe impairment, and confirmed timing over two cycles.",
+          "availability": "Requested by your gynecologist, primary care physician, or psychiatrist. Can download the DRSP form from the International Association for Premenstrual Disorders (IAPMD) website or ask your provider. Typically not formally billed but supported as part of clinical evaluation."
+        },
+        {
+          "name": "Pelvic ultrasound",
+          "type": "standard",
+          "description": "Visualizes the uterus, ovaries, and pelvic structures to rule out endometriosis, fibroids, cysts, or other gynecological pathology that might cause or worsen cycle-related pain or symptoms.",
+          "availability": "Ordered by a gynecologist or primary care doctor. Performed at radiology clinics, ultrasound centers, or hospital radiology departments. Usually covered by insurance if clinically indicated."
+        },
+        {
+          "name": "Hormone level testing (estrogen, progesterone, FSH, LH)",
+          "type": "standard",
+          "description": "Blood tests measuring sex hormone levels at specific cycle phases. Follicular phase levels (days 3\u20135) and luteal phase levels (day 21) help assess whether hormone production is normal and rule out conditions like PCOS or thyroid dysfunction. Less useful for diagnosing PMS/PMDD specifically (which are based on timing and symptoms, not hormone levels), but helpful for excluding other causes.",
+          "availability": "Ordered by a gynecologist, endocrinologist, or primary care doctor. Requires blood draw at specific cycle days; timing is important. Covered by most insurance if clinically indicated."
+        },
+        {
+          "name": "Thyroid function tests (TSH, free T3, free T4)",
+          "type": "standard",
+          "description": "Blood tests to assess thyroid function. Thyroid dysfunction can cause or exacerbate mood and energy symptoms that may be mistaken for or overlap with hormonal cycle effects. Distinguishing between the two is important for treatment.",
+          "availability": "Ordered by a primary care doctor, gynecologist, or endocrinologist. Simple blood draw, no cycle timing required. Covered by most insurance."
+        },
+        {
+          "name": "Salivary or serum cortisol, DHEA-S (stress hormone assessment)",
+          "type": "emerging",
+          "description": "Measures stress hormones that may be dysregulated and contribute to or worsen cycle-related mood and physical symptoms. Some functional medicine practitioners use this to personalize treatment. Less commonly ordered in mainstream medicine.",
+          "availability": "Available through functional medicine practices, integrative clinics, or specialty labs. May not be covered by conventional insurance; costs $100\u2013$300."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "name": "Depression and anxiety disorders",
+        "relationship": "comorbid",
+        "explanation": "People with major depression, anxiety disorder, or bipolar disorder often experience worsening of mood symptoms in the luteal phase. Conversely, PMDD is a disorder of mood cycling. The two can coexist; proper diagnosis requires distinguishing between baseline mood disorder and cyclical exacerbation."
+      },
+      {
+        "name": "Migraine headaches (especially menstrual migraine)",
+        "relationship": "comorbid",
+        "explanation": "Estrogen fluctuations, particularly the drop in estrogen before menstruation, trigger migraines in about 60% of women with migraine. Menstrual migraine is a recognized subtype and is often worsened by hormonal contraceptives that alter estrogen stability."
+      },
+      {
+        "name": "Irritable bowel syndrome (IBS)",
+        "relationship": "comorbid",
+        "explanation": "IBS symptoms often worsen in the luteal phase due to progesterone's effects on gut motility and visceral sensitivity. Hormonal fluctuations can trigger or amplify bloating, cramping, diarrhea, or constipation in people with IBS."
+      },
+      {
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "People with fibromyalgia frequently report worsening of pain, fatigue, and cognitive symptoms during the luteal phase. Hormonal fluctuations may exacerbate central sensitization and pain processing."
+      },
+      {
+        "name": "Endometriosis",
+        "relationship": "mechanistic_link",
+        "explanation": "Endometriosis causes pelvic pain and can severely worsen in the luteal phase. While both endometriosis and PMS are hormone-related, endometriosis is a structural condition requiring specific evaluation (imaging, diagnostic laparoscopy) and treatment distinct from PMS."
+      },
+      {
+        "name": "Polycystic ovary syndrome (PCOS)",
+        "relationship": "upstream",
+        "explanation": "PCOS involves irregular ovulation and altered hormone levels (elevated androgens, insulin resistance), which can disrupt normal cycle patterns and either prevent typical PMS symptoms or produce atypical hormonal effects. PCOS should be evaluated if cycles are irregular or other PCOS features are present."
+      },
+      {
+        "name": "Thyroid disorders (hypothyroidism, hyperthyroidism)",
+        "relationship": "often_confused",
+        "explanation": "Thyroid dysfunction can cause mood, energy, and cognitive symptoms that overlap with or worsen during the luteal phase, making them difficult to distinguish from hormonal cycle effects. Thyroid testing is important to rule out or manage concurrently."
+      },
+      {
+        "name": "Vitamin D deficiency",
+        "relationship": "mechanistic_link",
+        "explanation": "Low vitamin D is associated with worse PMS and mood symptoms. Vitamin D modulates serotonin and immune function, both relevant to cycle-related mood and inflammatory symptoms."
+      },
+      {
+        "name": "Sleep disorders",
+        "relationship": "comorbid",
+        "explanation": "Insomnia and sleep apnea may independently disrupt mood and energy; hormonal cycle effects on sleep (progesterone's sedating effects, anxiety-related sleep disruption) can exacerbate or mask underlying sleep pathology."
+      },
+      {
+        "name": "Substance use disorder or medication side effects",
+        "relationship": "downstream",
+        "explanation": "Severe PMS/PMDD symptoms may lead to self-medication with alcohol or drugs. Conversely, stimulant or antidepressant medications may interact with hormonal fluctuations or affect symptom expression."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Lifestyle modifications: regular exercise",
+          "category": "lifestyle",
+          "description": "Aim for 150 minutes of moderate aerobic activity (brisk walking, jogging, cycling) or 75 minutes of vigorous activity per week, plus strength training 2+ days per week. Exercise reduces luteal phase symptoms by improving mood (via endorphins and serotonin), decreasing bloating, improving sleep, and stabilizing blood sugar. Some evidence suggests high-intensity interval training may be particularly beneficial for mood.",
+          "evidence_level": "strong",
+          "notes": "Exercise is most effective when consistent. Start with small, sustainable increases (e.g., 20 minutes, 3 days/week) rather than overexertion. May need to adjust intensity across cycle phases (some people prefer lighter activity during luteal phase). No medication interactions or side effects."
+        },
+        {
+          "name": "Sleep optimization",
+          "category": "lifestyle",
+          "description": "Prioritize 7\u20139 hours of consistent sleep, maintain a regular sleep schedule, and create a cool, dark sleep environment. Poor sleep worsens all hormonal symptoms. Progesterone in the luteal phase can disrupt sleep architecture; good sleep hygiene becomes especially important. Evening routines, limiting screen time 1 hour before bed, and avoiding caffeine after 2 PM can help.",
+          "evidence_level": "strong",
+          "notes": "Sleep deprivation amplifies mood and pain symptoms. If insomnia is severe during luteal phase, discuss with provider; short-term sedating medication or melatonin may help. Sleep apnea screening is important if you have fatigue despite adequate sleep opportunity."
+        },
+        {
+          "name": "Dietary modifications: balance blood sugar and reduce salt/sugar",
+          "category": "diet",
+          "description": "Eat regular meals (every 3\u20134 hours) with balanced macronutrients (protein, healthy fat, complex carbs) to stabilize blood glucose. During luteal phase, metabolism increases but blood sugar stability becomes harder; consistent eating prevents energy crashes and mood swings. Reduce added sugars and salt, particularly in the luteal phase, to minimize cravings, water retention, and energy dips. Increase whole grains, lean proteins, and vegetables.",
+          "evidence_level": "strong",
+          "notes": "Luteal phase cravings for carbs are physiological; rather than resisting, choose complex carbs (oats, brown rice, sweet potato). Very restrictive diets often backfire and worsen symptoms. Calcium and magnesium intake is also associated with better PMS outcomes (see supplements below)."
+        },
+        {
+          "name": "Cognitive behavioral therapy (CBT) or psychotherapy",
+          "category": "lifestyle",
+          "description": "CBT helps identify thought patterns that worsen mood symptoms (catastrophizing, rumination) and develop coping strategies specific to cycle phases. Therapy provides validation, reduces shame, and teaches practical stress-management techniques. Can be delivered in-person or online.",
+          "evidence_level": "strong",
+          "notes": "Particularly effective for PMDD-related mood symptoms and for managing relationship strain. May take 8\u201312 weeks to see full benefit. Works best combined with other strategies (exercise, medication if needed). Some therapists specialize in reproductive mental health."
+        },
+        {
+          "name": "Calcium supplementation",
+          "category": "supplement",
+          "description": "Supplementing 1,000\u20131,200 mg of calcium daily (divided dose, with food for absorption) reduces PMS symptoms by 48% in some studies. Mechanism likely involves calcium's role in neurotransmitter and hormone regulation. Food sources include dairy, fortified plant milks, leafy greens, and tofu; supplementation ensures adequacy.",
+          "evidence_level": "strong",
+          "notes": "Requires consistent daily intake, not just luteal phase. Take with vitamin D (see below) to optimize absorption. Generally safe; excess >2,000 mg/day may increase kidney stone risk in susceptible people. Interacts with some medications; discuss with provider."
+        },
+        {
+          "name": "Magnesium supplementation",
+          "category": "supplement",
+          "description": "Magnesium (200\u2013400 mg daily, especially in luteal phase) improves mood, energy, and pain symptoms. Magnesium supports neurotransmitter function, muscle relaxation, and stress response. Can be combined with calcium (which is depleted by magnesium in high doses). Glycinate form is gentler on digestion than oxide.",
+          "evidence_level": "moderate",
+          "notes": "High doses (>400 mg) can cause loose stools or GI upset. Timing in luteal phase specifically may be more effective than daily dosing year-round. Magnesium threonate or glycinate preferred over citrate or oxide for tolerability."
+        },
+        {
+          "name": "Vitamin D supplementation",
+          "category": "supplement",
+          "description": "Low vitamin D levels (<30 ng/mL) are associated with worse PMS and mood symptoms. Supplementing 1,000\u20134,000 IU daily (or higher if deficient, determined by blood test) may reduce symptoms. Vitamin D supports serotonin production and immune regulation.",
+          "evidence_level": "moderate",
+          "notes": "Get baseline serum 25-hydroxyvitamin D level to determine need. Dose adjusted based on level and sun exposure. Safe up to 4,000 IU daily without testing; higher doses require monitoring. Combine with calcium and K2 for optimal absorption."
+        },
+        {
+          "name": "Vitamin B6 (pyridoxine) supplementation",
+          "category": "supplement",
+          "description": "Vitamin B6 50\u2013100 mg daily may reduce PMS mood and physical symptoms, particularly in combination with magnesium. B6 supports serotonin and dopamine synthesis.",
+          "evidence_level": "moderate",
+          "notes": "Evidence is mixed; some studies show benefit, others do not. High doses (>200 mg/day chronically) can cause nerve damage (peripheral neuropathy); stay below this level. B6 from food sources (chickpeas, salmon, potatoes, bananas) is safe; supplementation should be moderate and time-limited."
+        },
+        {
+          "name": "Hormonal contraceptives (continuous or modified regimens)",
+          "category": "medication",
+          "description": "Birth control pills, patches, or rings that reduce hormonal fluctuation\u2014especially continuous or extended-cycle formulations that skip or reduce placebo/hormone-free weeks\u2014can significantly reduce PMS and PMDD symptoms. By suppressing ovulation or smoothing hormone levels, these prevent the luteal phase symptoms. Progestin-only methods (mini-pill, IUD, implant) may also help.",
+          "evidence_level": "strong",
+          "notes": "Effectiveness varies widely by individual and formulation. Some people worsen on hormonal contraceptives. Requires a prescription. May take 2\u20133 months for full effect. Consider side effects (nausea, headache, mood effects, VTE risk) and lifestyle factors. Not suitable for people with certain contraindications (migraine with aura, VTE history, >35 years old and smoking). Discuss risks and benefits with gynecologist."
+        },
+        {
+          "name": "Selective serotonin reuptake inhibitors (SSRIs)",
+          "category": "medication",
+          "description": "Medications like sertraline, fluoxetine, paroxetine, or citalopram are first-line for PMDD and severe PMS. Can be dosed daily or only during luteal phase (14 days/month). SSRIs increase serotonin availability, reducing mood symptoms (irritability, anxiety, depression) by 50\u201370% in PMDD patients. Often the most effective pharmacological option.",
+          "evidence_level": "strong",
+          "notes": "Requires prescription from doctor. Luteal-phase-only dosing is as effective as daily dosing for PMDD and may reduce side effects. Full benefit may take 2\u20133 months. Common side effects include sexual dysfunction (20\u201340%), nausea, insomnia, or apathy; often dose-dependent and may resolve. Not suitable during pregnancy in some cases; discuss with provider if planning conception."
+        },
+        {
+          "name": "Spironolactone (diuretic)",
+          "category": "medication",
+          "description": "A potassium-sparing diuretic that reduces water retention and bloating, particularly effective for physical PMS symptoms. Dosed 50\u2013100 mg daily or during luteal phase only. Works by blocking aldosterone, which regulates fluid balance.",
+          "evidence_level": "moderate",
+          "notes": "Prescription only. Takes 2\u20133 cycles to see full benefit. May cause dizziness, hyperkalemia (high potassium), or electrolyte imbalances, especially combined with NSAIDs or ACE inhibitors. Requires baseline potassium and kidney function tests. Better for bloating than mood symptoms."
+        },
+        {
+          "name": "NSAIDs (nonsteroidal anti-inflammatory drugs)",
+          "category": "medication",
+          "description": "Over-the-counter options like ibuprofen or naproxen reduce pain (cramps, headaches, muscle aches) and may improve mood via anti-inflammatory effects. More effective when started before pain begins (preemptive dosing during luteal phase) or at first symptom onset.",
+          "evidence_level": "moderate",
+          "notes": "Best for physical pain rather than mood symptoms. Can be taken regularly during luteal phase or as needed. Avoid chronic use (>2 weeks/month regularly) due to GI and renal risks. Not suitable for people with GI ulcers, cardiovascular disease, or kidney disease. Lower effective dose is preferable."
+        },
+        {
+          "name": "Stress management and relaxation techniques",
+          "category": "lifestyle",
+          "description": "Practices like mindfulness meditation, progressive muscle relaxation, deep breathing, yoga, or tai chi reduce stress hormones (cortisol) and anxiety, which amplify hormonal symptoms. Even 10\u201315 minutes daily can help. Luteal phase may require extra emphasis on these practices as stress sensitivity is higher.",
+          "evidence_level": "moderate",
+          "notes": "Free or low-cost. Most beneficial when practiced consistently, not just during symptom flares. Apps like Insight Timer, Calm, or local yoga classes make these accessible. Combine with other strategies for best effect."
+        },
+        {
+          "name": "Chasteberry (Vitex) supplement",
+          "category": "supplement",
+          "description": "An herbal supplement derived from Vitex agnus-castus that may help regulate progesterone levels and reduce PMS symptoms. Some studies show modest benefit for mood and physical symptoms with doses of 40 mg/day. Mechanism is not fully understood but may involve dopamine pathway modulation.",
+          "evidence_level": "anecdotal",
+          "notes": "Evidence is mixed and lower quality than for SSRIs or calcium. May take 2\u20133 months to see benefit. Generally well-tolerated but can cause nausea, dizziness, or rash. Not recommended during pregnancy. May interact with dopamine-blocking medications (antipsychotics). Considered complementary rather than first-line."
+        },
+        {
+          "name": "Evening primrose oil (EPO) supplement",
+          "category": "supplement",
+          "description": "Contains omega-6 polyunsaturated fatty acids (GLA) that theoretically reduce inflammation and support hormonal balance. Some older studies showed benefit for PMS symptoms; newer evidence is weaker.",
+          "evidence_level": "anecdotal",
+          "notes": "Dosing typically 1,000\u20133,000 mg daily. Evidence is modest and mixed. Generally safe but may increase bleeding risk or interact with blood thinners. Not as well-established as calcium or magnesium."
+        },
+        {
+          "name": "Iron supplementation (if deficient)",
+          "category": "supplement",
+          "description": "Heavy menstrual bleeding can deplete iron stores, leading to fatigue and worsening mood symptoms. If iron deficiency is confirmed by blood work (low ferritin, low hemoglobin), supplementing 25\u201365 mg elemental iron daily can improve fatigue and overall well-being.",
+          "evidence_level": "moderate",
+          "notes": "Only supplement if deficient; excess iron is harmful. Requires blood tests (CBC, ferritin, iron panel) to confirm. Iron on an empty stomach is better absorbed but causes GI upset; take with food if needed. Black stools are normal. Take separate from calcium, magnesium, or certain medications that interfere with absorption."
+        },
+        {
+          "name": "Cycle syncing: activity and nutrition adjustments across phases",
+          "category": "lifestyle",
+          "description": "Tailor exercise intensity, nutrition, and work demands to match your cycle phase. Follicular phase (higher energy, mental clarity): high-intensity exercise, challenging projects, networking. Luteal phase (lower energy, need for rest): gentler exercise, introspective work, self-care. This honors natural rhythm rather than fighting it.",
+          "evidence_level": "anecdotal",
+          "notes": "Evidence is limited and largely anecdotal, but many people find it helpful for reducing symptom burden and improving overall well-being. Requires good cycle awareness. May not apply if using hormonal contraceptives that suppress cycles. Not a substitute for medical treatment of PMS/PMDD."
+        }
+      ],
+      "things_to_avoid": [
+        "Caffeine excess (especially in luteal phase)\u2014increases anxiety, disrupts sleep, worsens migraines, and heightens emotional reactivity. Limit to <100 mg/day during luteal phase.",
+        "Alcohol\u2014depressant effects worsen mood, impair sleep quality, and dehydrate. Increases bloating and inflammation. Particularly harmful during luteal phase.",
+        "Very restrictive diets or fasting\u2014can destabilize mood and blood sugar, exacerbate cravings, and worsen fatigue. Luteal phase metabolism is higher; eating adequate calories is important.",
+        "Intense exercise only during luteal phase or overtraining\u2014can stress the body further and worsen fatigue. Balance vigor in follicular phase with gentler activity in luteal phase.",
+        "Ignoring severe mood symptoms as 'just PMS'\u2014PMDD is a serious condition requiring treatment. Untreated PMDD increases suicide risk; do not normalize severe despair or rage.",
+        "Blaming hormones for all symptoms\u2014while hormones matter, other factors (sleep, stress, diet, underlying mental health, other medical conditions) also play roles. Comprehensive assessment is important.",
+        "Starting multiple new supplements or medications simultaneously\u2014makes it impossible to identify what helps or causes side effects. Introduce one intervention at a time, wait 2\u20133 cycles, then assess.",
+        "Relying solely on tracking apps for diagnosis\u2014tracking is helpful but not diagnostic. Formal PMDD diagnosis requires clinical evaluation with tools like the DRSP and symptom criteria.",
+        "Uncontrolled high-dose vitamin supplementation\u2014excess B6 (>200 mg/day), vitamin A (>10,000 IU/day), or other fat-soluble vitamins can cause toxicity. Stick to recommended ranges or discuss with provider."
+      ]
+    },
+    "uncomfortable_truths": [],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Accurate diagnosis and tracking over 2\u20133 full cycles",
+          "why_it_matters": "You cannot effectively manage what you do not understand. A clear diagnosis (PMS vs. PMDD vs. secondary to another condition) determines treatment eligibility and effectiveness. Tracking reveals personal patterns and provides objective evidence for healthcare discussions.",
+          "how_to_start": "Download or print a cycle tracking app or calendar. Daily log menstruation dates, top 3 symptoms, mood (1\u201310), sleep (hours), and key events. At 2\u20133 cycles, review for patterns. Share log with gynecologist or primary care doctor to confirm diagnosis.",
+          "timeline": "2\u20133 months to establish clear pattern and diagnosis; diagnostic confidence increases with more data.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Consistent exercise (especially aerobic, weekly, across full cycle)",
+          "why_it_matters": "Exercise is one of the most robustly evidence-supported interventions for all PMS symptoms\u2014mood, fatigue, pain, bloating. It works via serotonin, endorphins, stress hormone reduction, and improved sleep. Effects compound over time.",
+          "how_to_start": "Choose an activity you genuinely enjoy (walking, cycling, dancing, swimming, running). Start with 20\u201330 minutes, 3 days per week. Aim for moderate intensity (able to talk but not sing). Increase gradually to 150 min/week. Adjust intensity across cycle if desired (vigorous follicular, gentler luteal).",
+          "timeline": "Mood and energy benefits often appear within 2\u20133 weeks; pain and bloating improvement may take 4\u20138 weeks. Consistency matters more than intensity.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Sleep: prioritize 7\u20139 hours nightly with consistent schedule",
+          "why_it_matters": "Sleep deprivation amplifies every symptom\u2014mood, pain, fatigue, cognitive fog, cravings. Hormonal changes already disrupt sleep in luteal phase; poor sleep hygiene makes this worse. Good sleep is foundational to all other improvements.",
+          "how_to_start": "Set a target sleep time (e.g., 10 PM\u20136 AM). Aim for consistency 6\u20137 nights/week. Create a wind-down routine starting 1 hour before bed: dim lights, no screens, warm bath, reading, or meditation. Keep bedroom cool (65\u201368\u00b0F), dark, quiet. Avoid caffeine after 2 PM.",
+          "timeline": "Sleep improvements can begin within 1 week; mood and energy benefits follow within 2\u20134 weeks. Substantial improvement in luteal phase symptoms can take 4\u20138 weeks once sleep is solid.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Calcium supplementation (1,000\u20131,200 mg daily)",
+          "why_it_matters": "Calcium is consistently supported by evidence as reducing PMS symptoms by ~40\u201350%. It is inexpensive, safe, and works across physical and mood domains. Compliance is easy once routine is established.",
+          "how_to_start": "Aim to get 1,000\u20131,200 mg daily from food first (3 servings dairy, fortified plant milk, leafy greens, tahini) and supplement only the gap. For example, if diet provides 600 mg, add 600 mg supplement. Divide doses (not >500 mg absorbed at once). Take with food.",
+          "timeline": "Effects on PMS build gradually over 2\u20133 cycles (consistent daily intake required). Month 1: modest improvement; Month 2\u20133: more noticeable reduction in both mood and physical symptoms.",
+          "requires_professional": false
+        },
+        {
+          "lever": "SSRIs (sertraline, fluoxetine, paroxetine, or citalopram) if PMDD or severe PMS",
+          "why_it_matters": "SSRIs are the most effective pharmacological treatment for PMDD and severe mood-related PMS, with ~60\u201370% symptom reduction. Luteal-phase dosing (14 days/month) is as effective as daily dosing for PMDD and may reduce side effects. Life-changing for people with severe symptoms.",
+          "how_to_start": "Consult a gynecologist or psychiatrist. Discuss symptom severity, prior medication trials, and preferences (daily vs. luteal-only dosing). Start at a low dose (e.g., sertraline 50 mg daily or luteal-phase only). Expect 2\u20134 weeks to notice initial effect; full benefit at 6\u20138 weeks.",
+          "timeline": "Initial response 2\u20134 weeks; peak effectiveness 6\u201312 weeks. If no benefit after 8 weeks at adequate dose, discuss switching to a different SSRI. Some people respond better to specific agents.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Hormonal contraceptive optimization (if appropriate and not contraindicated)",
+          "why_it_matters": "Hormonal contraceptives suppress ovulation or reduce hormonal fluctuation, directly addressing the cyclical hormone changes that drive symptoms. Continuous or extended-cycle formulations (skip placebo weeks) are often more effective than cyclic pills. Can be transformative for severe PMS/PMDD.",
+          "how_to_start": "Discuss with gynecologist. If interested, review options: combination oral contraceptives (especially extended-cycle), transdermal patch, vaginal ring, progestin-only methods (mini-pill, IUD, implant). Trial period is typically 2\u20133 cycles to assess tolerance and symptom response. Different formulations may work differently for each person.",
+          "timeline": "Initial response varies; full effect usually apparent at 2\u20133 months. Some people notice worsening of mood initially (2\u20134 weeks), which may resolve. If no improvement after 3 months or persistent negative effects, consider switching formulation or method.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Stress reduction and emotional processing (therapy, mindfulness, community support)",
+          "why_it_matters": "Stress amplifies hormonal symptoms; unprocessed emotion and maladaptive thought patterns worsen mood cycling. CBT, mindfulness, and supportive community provide coping tools and reduce isolation and shame. Psychological resilience improves symptom tolerance and overall quality of life.",
+          "how_to_start": "Consider therapy (CBT, somatic therapy, or supportive psychotherapy) with a provider experienced in reproductive mental health or PMDD. Alternatively, start with free or low-cost mindfulness apps (Insight Timer, Calm), online support communities (r/PMDD, Ava Club), or local support groups. Even 10 min/day of meditation helps.",
+          "timeline": "Mindfulness or meditation: benefits appear within 2\u20134 weeks with consistent practice. Therapy: typical benefit at 6\u201312 weeks; longer-term therapy (6\u201312 months) provides deeper tools and insight.",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Diagnosing yourself with PMS/PMDD based on one or two difficult cycles without systematic tracking\u2014hormone levels and life stress naturally fluctuate, causing one-off bad months. Genuine PMS/PMDD requires consistent cyclical pattern over 2\u20133+ cycles. Misdiagnosis leads to unnecessary treatment or missed other diagnoses (thyroid, depression, etc.).",
+        "Expecting immediate relief from interventions\u2014most strategies take 2\u20133 cycles to show full benefit (calcium, magnesium, sleep changes, exercise). Starting an SSRI and stopping after 2 weeks because it did not work yet is premature. Patience and consistency are essential.",
+        "Trying multiple new supplements or lifestyle changes simultaneously\u2014makes it impossible to identify what helps. If you start calcium, vitamin D, exercise, and therapy all at once, you cannot tell which (if any) caused improvement. Introduce one intervention, wait 2\u20133 cycles, then assess before adding another.",
+        "Using hormonal contraceptives or SSRIs without adequate trial duration\u2014both typically require 2\u20133 months for full effect. Switching after 4\u20136 weeks due to impatience or initial side effects misses the window where benefit emerges. Discuss timeline expectations with your doctor.",
+        "Restricting calories or nutrients during luteal phase\u2014luteal phase metabolism is actually higher; undereating causes energy crashes, mood instability, and worse cravings. Eating adequate balanced nutrition is more important, not less, during luteal phase.",
+        "Attributing all difficult emotions or pain to hormones\u2014while hormones are real, other factors (stress, sleep, diet, relationship issues, work demands, underlying mental health conditions) also matter. A truly comprehensive assessment looks at all factors, not just hormones.",
+        "Avoiding medical evaluation because you believe it 'is just hormones'\u2014severe symptoms deserve investigation. PMDD is a real disorder with effective treatments. Untreated PMDD increases depression, anxiety, and suicide risk. Do not normalize suffering; get proper diagnosis and treatment.",
+        "Refusing all medication because you want a 'natural' approach\u2014hormonal effects are powerful and sometimes lifestyle changes alone are insufficient. SSRIs and hormonal contraceptives are evidence-based, safe, and appropriate for moderate-to-severe PMDD. Combining medication with lifestyle changes is often optimal.",
+        "Isolating and not communicating with partners, family, or friends about cycle-related struggles\u2014shame and silence worsen symptoms and strain relationships. Education and open communication help people around you understand and support you, and help you normalize the experience.",
+        "Not addressing underlying thyroid, metabolic, or sleep disorders that interact with or mimic hormonal symptoms\u2014thyroid dysfunction, untreated sleep apnea, insulin resistance, and poor glycemic control all worsen cycle-related symptoms. Full evaluation is important before attributing everything to hormones."
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Gynecologist or OB-GYN",
+          "role": "Specialist in reproductive health who can diagnose PMS/PMDD using formal criteria, rule out gynecological pathology (endometriosis, fibroids, PCOS), prescribe hormonal contraceptives or cycle-specific medications, and coordinate treatment. Often the first and best provider to contact for menstrual cycle symptom evaluation.",
+          "notes": "Some gynecologists are more knowledgeable about PMDD than others; ask about their experience with PMDD diagnosis and treatment if you suspect this condition. Look for providers who listen to your tracking data and take mood symptoms seriously."
+        },
+        {
+          "type": "Primary care physician (MD or DO)",
+          "role": "Can provide initial evaluation, order screening tests (thyroid, hormone levels), diagnose PMS based on symptom pattern, and prescribe first-line treatments (SSRIs, NSAIDs, lifestyle counseling). Useful for distinguishing hormonal symptoms from other medical conditions.",
+          "notes": "Many primary care doctors are less familiar with PMDD than gynecologists; be prepared to educate or request referral to gynecology if primary care seems dismissive."
+        },
+        {
+          "type": "Psychiatrist",
+          "role": "Mental health specialist who can evaluate and treat mood disorders (depression, anxiety, bipolar disorder) that may coexist with or be exacerbated by hormonal cycles. Can prescribe SSRIs or other psychiatric medications and provide diagnostic clarity regarding PMDD vs. primary mood disorder.",
+          "notes": "Look for psychiatrists with interest in reproductive psychiatry or women's mental health. Reproductive psychiatry is a growing subspecialty with additional expertise in hormone-mood interactions."
+        },
+        {
+          "type": "Therapist/psychologist (specializing in reproductive or women's mental health)",
+          "role": "Provides CBT, psychodynamic therapy, somatic therapy, or supportive counseling to address thought patterns, stress management, emotion regulation, and relationship impacts of hormonal symptoms. Particularly helpful for PMDD-related mood and functional impairment.",
+          "notes": "Look for therapists with explicit training in reproductive mental health, trauma-informed care, or CBT. Not all therapists are familiar with PMDD; ask about their experience. Some insurance plans cover therapy; others do not."
+        },
+        {
+          "type": "Functional medicine doctor or naturopathic doctor (if interested in supplement/lifestyle approach)",
+          "role": "May provide in-depth nutritional assessment, supplement recommendations, stress management coaching, and lifestyle modification. Focuses on root causes and individualized protocols. Approach varies widely in evidence-basis.",
+          "notes": "Evidence base is mixed; some recommendations are sound (calcium, magnesium, exercise), others are less robust (herbal supplements, specialized 'women's formulas'). Functional medicine can be a valuable complement to conventional care but is typically not covered by insurance and is expensive ($150\u2013500+ per visit). Verify credentials: 'MD' or 'DO' + functional medicine training is more credible than 'ND' alone."
+        },
+        {
+          "type": "Registered Dietitian (RD or RDN)",
+          "role": "Provides evidence-based nutrition assessment and personalized meal planning to optimize cycle-related nutrition, blood sugar stability, mineral intake, and overall diet quality. Can help you understand cycle-specific eating strategies.",
+          "notes": "A dietitian is especially valuable if you have history of disordered eating or restrictive dieting. Referral through primary care or gynecologist often results in insurance coverage. Otherwise, private dietitian consultations cost $75\u2013200+ per session."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "International Association for Premenstrual Disorders (IAPMD)",
+          "platform": "website and online community",
+          "url": "https://www.iapmd.org",
+          "notes": "Medical and scientific organization dedicated to PMDD and PMS. Offers education resources, finds providers trained in PMDD, hosts webinars, and maintains research database. Primary resource for PMDD information and diagnostics (DRSP form available). Highly credible and evidence-based."
+        },
+        {
+          "name": "r/PMDD (subreddit)",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/PMDD/",
+          "notes": "Active online community of people with PMDD sharing experiences, coping strategies, medication trials, and emotional support. Moderated to maintain respectful discussion. Thousands of members. Good for feel less alone and learning from others' experiences, but not a substitute for medical care."
+        },
+        {
+          "name": "Ava Club",
+          "platform": "website and online forum",
+          "url": "https://www.avoclubpmd.com",
+          "notes": "Community and support platform specifically for people with PMDD and severe PMS. Offers peer support groups, expert Q&A, and resources. Focuses on lived experience and validation."
+        },
+        {
+          "name": "PMS/PMDD Facebook groups",
+          "platform": "Facebook",
+          "url": "Search 'PMDD support' or 'PMS community' on Facebook",
+          "notes": "Various moderated and unmoderated groups. Quality and tone vary. Many offer daily check-in threads, resource sharing, and emotional support. Easier for some people than Reddit; verify group moderation standards to avoid misinformation."
+        },
+        {
+          "name": "National Institute of Mental Health (NIMH) - PMDD information",
+          "platform": "website",
+          "url": "https://www.nimh.nih.gov",
+          "notes": "Government health information on PMDD diagnosis, research, and treatment. Reliable, evidence-based resource from a trusted source."
+        },
+        {
+          "name": "Period Whisperer / cycle syncing communities",
+          "platform": "Instagram, TikTok, YouTube, various blogs",
+          "url": "Variable (search 'cycle syncing' or 'menstrual cycle wellness')",
+          "notes": "Influencer and coach communities focused on cycle syncing, hormonal health, and lifestyle adaptation to menstrual cycle. Quality highly variable; some evidence-based and helpful, others promote pseudoscience or unproven supplements. Consume with critical eye; verify claims and crosscheck with medical sources. Can be a source of ideas but not medical advice."
+        },
+        {
+          "name": "Local women's health support groups or clinics",
+          "platform": "In-person or hybrid",
+          "url": "Search local gynecology clinics, women's health centers, or mental health agencies",
+          "notes": "Many communities offer in-person support groups for women's health, reproductive mental health, or chronic conditions. Check with local hospital systems, Planned Parenthood, or women's centers. Often free or low-cost."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Practical Premenstrual Symptoms Management",
+        "type": "book",
+        "author_or_source": "IAPMD (International Association for Premenstrual Disorders)",
+        "url": "https://www.iapmd.org",
+        "description": "Clinical guide co-authored by leading PMDD researchers and physicians. Evidence-based, practical, and authoritative. Free or low-cost download available. Excellent for understanding diagnosis, treatment options, and lifestyle strategies from the most credible source.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Period Effect: How Hormones Can Empower Your Best Self",
+        "type": "book",
+        "author_or_source": "Nicola Rinaldi",
+        "url": null,
+        "description": "Accessible book explaining how menstrual cycle hormones affect mood, energy, cognition, and performance. Includes practical advice on cycle syncing, exercise, nutrition, and managing symptoms. Good introduction for understanding your cycle without being overly medical.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Period Repair Manual: Natural Treatment for Better Hormones and Better Periods",
+        "type": "book",
+        "author_or_source": "Lara Briden",
+        "url": null,
+        "description": "Practical guide to natural and conventional approaches to hormonal health. Covers PMS, PMDD, and other menstrual issues. Includes self-assessment tools, supplement guidance, and lifestyle strategies. Written by a naturopathic doctor; good balance of evidence-based and holistic perspectives.",
+        "audience": "beginner"
+      },
+      {
+        "title": "In the FLO: Unlock Your Hormonal Advantage and Revolutionize Your Life",
+        "type": "book",
+        "author_or_source": "Alisa Vitti",
+        "url": null,
+        "description": "Popular book on cycle syncing and hormonal optimization. Includes meal plans, workout suggestions, and productivity tips tailored to each cycle phase. Engaging and practical, though some claims are not rigorously evidence-based. Good for motivation and cycle awareness, but not a medical resource.",
+        "audience": "beginner"
+      },
+      {
+        "title": "DRSP (Daily Record of Severity of Problems)",
+        "type": "tool/form",
+        "author_or_source": "IAPMD",
+        "url": "https://www.iapmd.org/drsp",
+        "description": "Gold-standard diagnostic tool for PMDD. Downloadable PDF form that guides you to track symptoms daily for two menstrual cycles. Essential for confirming diagnosis. Free, evidence-based, and recommended by all major medical organizations.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Clue, Flo, or Kindara (menstrual tracking apps)",
+        "type": "tool/app",
+        "author_or_source": "Various developers",
+        "url": "Available on App Store and Google Play",
+        "description": "Smartphone apps that log menstruation, symptoms, mood, and other data. Help identify patterns across cycles. Many include educational articles and medication reminders. Flo and Clue have scientific advisory boards and evidence-based content. Essential for self-tracking and discussion with providers.",
+        "audience": "beginner"
+      },
+      {
+        "title": "PMDD: A Handbook for Patients and Families",
+        "type": "book",
+        "author_or_source": "IAPMD",
+        "url": "https://www.iapmd.org",
+        "description": "Comprehensive patient guide to PMDD diagnosis, emotional impact, treatment options, and strategies for partners and family. Evidence-based and empathetic. Free or low-cost PDF. Highly recommended for PMDD specifically.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Researching and Understanding PMDD (peer-reviewed journal articles)",
+        "type": "research paper",
+        "author_or_source": "Authors: Yonkers et al., Halbreich et al., Houghton et al., et al.",
+        "url": "PubMed.gov, IAPMD research database",
+        "description": "Scientific literature on PMDD diagnosis, epidemiology, pathophysiology, and treatment. Credible sources for in-depth understanding. Challenging read for layperson but invaluable if you want to understand mechanisms and latest research.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Reproductive Mental Health: An Evidence-Based Approach",
+        "type": "book",
+        "author_or_source": "Edited by Anita Asante Boadu, et al.",
+        "url": null,
+        "description": "Academic but accessible text on reproductive mental health, including PMDD, postpartum mood disorders, and perimenopause. For readers wanting deeper understanding of the intersection of hormones and mental health.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Tracking Your Cycle and Symptoms (IAPMD educational videos)",
+        "type": "video",
+        "author_or_source": "IAPMD",
+        "url": "https://www.iapmd.org/pmdd-webinars",
+        "description": "Free educational webinars by PMDD specialists explaining diagnosis, tracking, treatment options, and real patient stories. Accessible, evidence-based, and directly from leading experts.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Menstruators Podcast",
+        "type": "podcast",
+        "author_or_source": "Various reproductive health experts",
+        "url": "https://www.themenstruators.com",
+        "description": "Podcast addressing menstrual health, PMS, PMDD, endometriosis, and related topics. Evidence-based, interview format. Good for audio learners or commute listening. Covers personal stories and expert advice.",
+        "audience": "beginner"
+      }
+    ],
+    "relevance_signal": "Gut symptoms **clearly fluctuate with the menstrual cycle** \u2014 worse in the luteal phase (week before period), better mid-cycle. Progesterone slows gut transit."
+  }
+}

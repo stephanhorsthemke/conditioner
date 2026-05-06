@@ -1,0 +1,755 @@
+[
+  {
+    "id": "ibs",
+    "name": "IBS",
+    "aliases": [
+      "Irritable bowel syndrome"
+    ],
+    "group_id": "starting_points",
+    "group_label": "Starting points",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "Recurrent abdominal pain, bloating, cramping, diarrhoea, constipation, or alternating bowel habits \u2014 often diagnosed after other causes have been ruled out",
+    "diagnosis_type": "syndromic",
+    "sub_conditions": [
+      {
+        "id": "lactase",
+        "probability": 5
+      },
+      {
+        "id": "fructose",
+        "probability": 5
+      },
+      {
+        "id": "sibo",
+        "probability": 5
+      },
+      {
+        "id": "dysbiosis",
+        "probability": 5
+      },
+      {
+        "id": "central_sensitisation",
+        "probability": 5
+      },
+      {
+        "id": "anxiety",
+        "probability": 5
+      },
+      {
+        "id": "depression",
+        "probability": 5
+      },
+      {
+        "id": "sorbitol",
+        "probability": 4
+      },
+      {
+        "id": "sibo_h2",
+        "probability": 4
+      },
+      {
+        "id": "histamine",
+        "probability": 4
+      },
+      {
+        "id": "ncgs",
+        "probability": 4
+      },
+      {
+        "id": "trauma",
+        "probability": 4
+      },
+      {
+        "id": "sibo_ch4",
+        "probability": 3
+      },
+      {
+        "id": "hpylori",
+        "probability": 3
+      },
+      {
+        "id": "fungal",
+        "probability": 3
+      },
+      {
+        "id": "mcas",
+        "probability": 3
+      },
+      {
+        "id": "igg",
+        "probability": 3
+      },
+      {
+        "id": "salicylate",
+        "probability": 3
+      },
+      {
+        "id": "thyroid",
+        "probability": 3
+      },
+      {
+        "id": "coeliac",
+        "probability": 3
+      },
+      {
+        "id": "sid",
+        "probability": 2
+      },
+      {
+        "id": "bam",
+        "probability": 2
+      },
+      {
+        "id": "epi",
+        "probability": 2
+      },
+      {
+        "id": "sibo_h2s",
+        "probability": 2
+      },
+      {
+        "id": "nickel",
+        "probability": 2
+      },
+      {
+        "id": "oxalate",
+        "probability": 2
+      },
+      {
+        "id": "eosinophilic",
+        "probability": 2
+      },
+      {
+        "id": "eds",
+        "probability": 2
+      },
+      {
+        "id": "pots",
+        "probability": 2
+      },
+      {
+        "id": "endometriosis",
+        "probability": 2
+      },
+      {
+        "id": "hormonal",
+        "probability": 2
+      },
+      {
+        "id": "pelvic_floor",
+        "probability": 2
+      },
+      {
+        "id": "microscopic_colitis",
+        "probability": 2
+      },
+      {
+        "id": "ibd_remission",
+        "probability": 2
+      },
+      {
+        "id": "parasite",
+        "probability": 1
+      },
+      {
+        "id": "atopic_dermatitis",
+        "probability": 1
+      },
+      {
+        "id": "gastroparesis",
+        "probability": 1
+      },
+      {
+        "id": "adhesions",
+        "probability": 1
+      },
+      {
+        "id": "fibromyalgia",
+        "probability": 1
+      },
+      {
+        "id": "functional_dyspepsia",
+        "probability": 1
+      }
+    ]
+  },
+  {
+    "id": "lactase",
+    "name": "Lactase deficiency",
+    "aliases": [],
+    "group_id": "enzyme",
+    "group_label": "Digestive enzyme & absorption",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Bloating, gas, loose stool** within 1\u20132 hours of drinking milk, eating yoghurt or soft cheese \u2014 but you tolerate hard aged cheeses fine.",
+    "diagnosis_type": "aetiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "sid",
+    "name": "Sucrase-isomaltase deficiency",
+    "aliases": [],
+    "group_id": "enzyme",
+    "group_label": "Digestive enzyme & absorption",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "Symptoms after **sweet foods, bread, pasta** even on a low-FODMAP diet. Bloating and diarrhoea from table sugar, fruit juice, or starches that most people tolerate.",
+    "diagnosis_type": "aetiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "fructose",
+    "name": "Fructose malabsorption",
+    "aliases": [],
+    "group_id": "enzyme",
+    "group_label": "Digestive enzyme & absorption",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Bloating and loose stool** after fruit, honey, or fruit juice \u2014 especially apples, mangoes, and anything with high-fructose corn syrup.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "sorbitol",
+    "name": "Sorbitol / polyol intolerance",
+    "aliases": [],
+    "group_id": "enzyme",
+    "group_label": "Digestive enzyme & absorption",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Gas, bloating, urgency** after stone fruits (peaches, plums, cherries), sugar-free gum, or diet products containing xylitol or sorbitol.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "bam",
+    "name": "Bile acid malabsorption",
+    "aliases": [
+      "BAM"
+    ],
+    "group_id": "enzyme",
+    "group_label": "Digestive enzyme & absorption",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Watery, urgent diarrhoea** \u2014 especially in the morning. Symptoms began or worsened after gallbladder removal. Responds partially to a low-fat diet.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "epi",
+    "name": "Exocrine pancreatic insufficiency",
+    "aliases": [
+      "EPI"
+    ],
+    "group_id": "enzyme",
+    "group_label": "Digestive enzyme & absorption",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Fatty, pale, foul-smelling stools** that float. Unintentional weight loss. Bloating and discomfort after fatty meals. Worse with a history of pancreatitis or heavy alcohol use.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "sibo",
+    "name": "SIBO",
+    "aliases": [
+      "Small intestinal bacterial overgrowth"
+    ],
+    "group_id": "microbial",
+    "group_label": "Microbial overgrowth & infection",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Bloating that worsens through the day**, peaks after carbs, and improves on antibiotics or a low-FODMAP diet.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "sibo_h2",
+    "name": "Hydrogen SIBO",
+    "aliases": [],
+    "group_id": "microbial",
+    "group_label": "Microbial overgrowth & infection",
+    "parents": [
+      "sibo"
+    ],
+    "has_data": true,
+    "relevance_signal": "**Bloating that starts within 1\u20132 hours of eating**, especially carbohydrates. Symptoms even after clean low-FODMAP meals. Symptom relief with antibiotics in the past.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "sibo_ch4",
+    "name": "Methane SIBO",
+    "aliases": [],
+    "group_id": "microbial",
+    "group_label": "Microbial overgrowth & infection",
+    "parents": [
+      "sibo"
+    ],
+    "has_data": true,
+    "relevance_signal": "**Constipation dominant** with bloating. Slow transit. Symptoms worse with fibre. Hard, infrequent stools despite adequate hydration.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "sibo_h2s",
+    "name": "Hydrogen sulphide SIBO",
+    "aliases": [],
+    "group_id": "microbial",
+    "group_label": "Microbial overgrowth & infection",
+    "parents": [
+      "sibo"
+    ],
+    "has_data": true,
+    "relevance_signal": "**Rotten egg-smelling gas**. Diarrhoea dominant. Symptoms worse after sulphur-rich foods \u2014 eggs, meat, cruciferous vegetables.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "dysbiosis",
+    "name": "Gut dysbiosis",
+    "aliases": [],
+    "group_id": "microbial",
+    "group_label": "Microbial overgrowth & infection",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Chronic, low-grade gut symptoms** without a clear trigger. Worsened by antibiotics. Improved somewhat by probiotics. No single food trigger but general instability.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "parasite",
+    "name": "Parasitic infection",
+    "aliases": [],
+    "group_id": "microbial",
+    "group_label": "Microbial overgrowth & infection",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "Symptoms **began after travel**, a stomach bug, or contaminated water. Chronic loose stool, fatigue, and bloating that never fully resolved after an acute gut illness.",
+    "diagnosis_type": "aetiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "hpylori",
+    "name": "H. pylori infection",
+    "aliases": [
+      "Helicobacter pylori"
+    ],
+    "group_id": "microbial",
+    "group_label": "Microbial overgrowth & infection",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Upper gut symptoms** \u2014 nausea, burping, upper abdominal discomfort after eating. Worse with NSAIDs. May have no symptoms at all but contributes to low stomach acid.",
+    "diagnosis_type": "aetiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "fungal",
+    "name": "Fungal overgrowth",
+    "aliases": [
+      "SIFO",
+      "Candida overgrowth"
+    ],
+    "group_id": "microbial",
+    "group_label": "Microbial overgrowth & infection",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "Symptoms began or worsened **after antibiotics**. Bloating, brain fog, fatigue. Cravings for sugar and refined carbohydrates. Thrush or skin fungal infections recurring.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "mcas",
+    "name": "Mast cell activation syndrome",
+    "aliases": [
+      "MCAS"
+    ],
+    "group_id": "immune",
+    "group_label": "Immune & chemical sensitivity",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Multi-system episodes** \u2014 gut plus skin flushing plus racing heart plus brain fog simultaneously. Triggers beyond food: heat, stress, smells, pollen. Partial response to antihistamines only.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "histamine",
+    "name": "Histamine intolerance",
+    "aliases": [],
+    "group_id": "immune",
+    "group_label": "Immune & chemical sensitivity",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "Histamine intolerance causes wide-ranging symptoms \u2014 gut upset, headaches, flushing, hives, runny nose, heart palpitations \u2014 that consistently appear after eating aged, fermented, or leftover foods and improve on a low-histamine diet.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "nickel",
+    "name": "Nickel sensitivity",
+    "aliases": [
+      "SNAS",
+      "systemic nickel allergy syndrome"
+    ],
+    "group_id": "immune",
+    "group_label": "Immune & chemical sensitivity",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "Symptoms worse on a **vegan or wholefood diet** heavy in oats, legumes, nuts, seeds, chocolate. Two-phase reaction: gut symptoms at 1\u20133h then fatigue and joint aching 24\u201348h later.",
+    "diagnosis_type": "aetiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "igg",
+    "name": "IgG food sensitivities",
+    "aliases": [],
+    "group_id": "immune",
+    "group_label": "Immune & chemical sensitivity",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Delayed reactions 4\u201372 hours after eating** \u2014 hard to link to a specific food. Symptoms include bloating, fatigue, skin issues, and brain fog with no clear immediate trigger.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "ncgs",
+    "name": "Non-coeliac gluten sensitivity",
+    "aliases": [
+      "NCGS"
+    ],
+    "group_id": "immune",
+    "group_label": "Immune & chemical sensitivity",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Symptoms after wheat** without a positive coeliac test. Bloating, gut pain, brain fog, fatigue \u2014 improves on gluten-free diet but tTG antibodies are negative.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "oxalate",
+    "name": "Oxalate accumulation",
+    "aliases": [],
+    "group_id": "immune",
+    "group_label": "Immune & chemical sensitivity",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "Symptoms after **spinach, almonds, dark chocolate, or beets**. Burning sensation. Possible history of kidney stones. Worse on a 'clean eating' diet heavy in superfoods.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "salicylate",
+    "name": "Salicylate intolerance",
+    "aliases": [],
+    "group_id": "immune",
+    "group_label": "Immune & chemical sensitivity",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "Symptoms after **fresh herbs, berries, tomatoes, and spices** \u2014 but not after fermented foods specifically. Overlaps with histamine symptoms but triggered by fresh rather than aged foods.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "eosinophilic",
+    "name": "Eosinophilic GI disorders",
+    "aliases": [],
+    "group_id": "immune",
+    "group_label": "Immune & chemical sensitivity",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Difficulty swallowing**, food getting stuck, chest pain after eating. Or severe gut pain and vomiting in children. Not responsive to standard IBS treatments.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "atopic_dermatitis",
+    "name": "Atopic dermatitis",
+    "aliases": [
+      "eczema",
+      "atopic eczema"
+    ],
+    "group_id": "immune",
+    "group_label": "Immune & chemical sensitivity",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Persistent itchy, dry, inflamed skin** in elbow creases, knees, or face \u2014 often dating back to childhood.",
+    "diagnosis_type": "constitutional",
+    "sub_conditions": []
+  },
+  {
+    "id": "allergy",
+    "name": "Allergy",
+    "aliases": [
+      "IgE-mediated allergy",
+      "allergic disease"
+    ],
+    "group_id": "immune",
+    "group_label": "Immune & chemical sensitivity",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Hives, swelling, itching, or breathing trouble** within minutes of contact with a specific food, pollen, or sting.",
+    "diagnosis_type": "aetiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "allergic_rhinitis",
+    "name": "Allergic rhinitis",
+    "aliases": [
+      "hay fever",
+      "seasonal allergies"
+    ],
+    "group_id": "immune",
+    "group_label": "Immune & chemical sensitivity",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Sneezing, itchy/runny nose, watery eyes** that flare in spring or autumn \u2014 or around pets, dust, or mould.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "eds",
+    "name": "Hypermobile EDS / HSD",
+    "aliases": [
+      "hEDS",
+      "hypermobility spectrum disorder"
+    ],
+    "group_id": "structural",
+    "group_label": "Structural, hormonal & motility",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Joints that bend further than normal**, frequent sprains, stretchy skin. Gut symptoms alongside joint pain, fatigue, and POTS or MCAS. Multi-system involvement.",
+    "diagnosis_type": "constitutional",
+    "sub_conditions": []
+  },
+  {
+    "id": "pots",
+    "name": "POTS / dysautonomia",
+    "aliases": [
+      "postural tachycardia syndrome"
+    ],
+    "group_id": "structural",
+    "group_label": "Structural, hormonal & motility",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Heart racing on standing**, dizziness, brain fog worse when upright. Gut symptoms worsen 20\u201330 min after meals regardless of food content. Better lying down.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "endometriosis",
+    "name": "Endometriosis",
+    "aliases": [],
+    "group_id": "structural",
+    "group_label": "Structural, hormonal & motility",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Gut symptoms that worsen around menstruation** \u2014 diarrhoea, cramping, bloating, pain on defecation specifically in the days before and during a period.",
+    "diagnosis_type": "aetiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "hormonal",
+    "name": "Hormonal / menstrual cycle effects",
+    "aliases": [],
+    "group_id": "structural",
+    "group_label": "Structural, hormonal & motility",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "Gut symptoms **clearly fluctuate with the menstrual cycle** \u2014 worse in the luteal phase (week before period), better mid-cycle. Progesterone slows gut transit.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "pelvic_floor",
+    "name": "Pelvic floor dysfunction",
+    "aliases": [],
+    "group_id": "structural",
+    "group_label": "Structural, hormonal & motility",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Difficulty completing defecation**, sensation of incomplete emptying, excessive straining. Constipation that does not respond to laxatives or dietary fibre.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "gastroparesis",
+    "name": "Gastroparesis",
+    "aliases": [],
+    "group_id": "structural",
+    "group_label": "Structural, hormonal & motility",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Feeling full very quickly**, nausea after meals, upper abdominal bloating that starts during eating rather than hours later. Worse with fatty meals.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "adhesions",
+    "name": "Surgical adhesions",
+    "aliases": [],
+    "group_id": "structural",
+    "group_label": "Structural, hormonal & motility",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Symptoms began or worsened after abdominal surgery** \u2014 appendectomy, C-section, hysterectomy, bowel surgery. Constipation with cramping and a feeling of obstruction.",
+    "diagnosis_type": "aetiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "tos",
+    "name": "Thoracic outlet syndrome",
+    "aliases": [
+      "TOS"
+    ],
+    "group_id": "structural",
+    "group_label": "Structural, hormonal & motility",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Arm or hand goes numb, tingly, or cold** when raising the arm or carrying weight \u2014 often with neck or shoulder pain.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "central_sensitisation",
+    "name": "Central sensitisation",
+    "aliases": [
+      "visceral hypersensitivity"
+    ],
+    "group_id": "braingut",
+    "group_label": "Brain-gut & psychological",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Pain disproportionate to physical findings**. Normal endoscopy but significant gut pain. Symptoms also in other body areas \u2014 widespread pain sensitivity, fibromyalgia overlap.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "anxiety",
+    "name": "Anxiety disorder",
+    "aliases": [],
+    "group_id": "braingut",
+    "group_label": "Brain-gut & psychological",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Gut symptoms clearly worse during stressful periods** \u2014 before events, at work, during conflict. Gut and anxiety seem to feed each other. Gut settles when stress resolves.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "depression",
+    "name": "Depression",
+    "aliases": [],
+    "group_id": "braingut",
+    "group_label": "Brain-gut & psychological",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Gut symptoms alongside low mood, low energy, or loss of interest**. Constipation dominant. Symptoms are chronic and pervasive without clear dietary triggers.",
+    "diagnosis_type": "pathophysiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "trauma",
+    "name": "Trauma / PTSD",
+    "aliases": [],
+    "group_id": "braingut",
+    "group_label": "Brain-gut & psychological",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**History of significant trauma** \u2014 childhood adversity, abuse, major loss \u2014 and IBS that has never responded to dietary or medication approaches. Gut symptoms are treatment-resistant.",
+    "diagnosis_type": "aetiological",
+    "sub_conditions": []
+  },
+  {
+    "id": "fibromyalgia",
+    "name": "Fibromyalgia",
+    "aliases": [],
+    "group_id": "braingut",
+    "group_label": "Brain-gut & psychological",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Widespread tender muscles and joints**, unrefreshing sleep, and brain fog alongside the gut symptoms.",
+    "diagnosis_type": "syndromic",
+    "sub_conditions": []
+  },
+  {
+    "id": "functional_dyspepsia",
+    "name": "Functional dyspepsia",
+    "aliases": [
+      "FD",
+      "non-ulcer dyspepsia"
+    ],
+    "group_id": "structural",
+    "group_label": "Structural, hormonal & motility",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Pain or fullness in the upper stomach** (not lower), early satiety, or burning \u2014 without an ulcer or H. pylori.",
+    "diagnosis_type": "syndromic",
+    "sub_conditions": []
+  },
+  {
+    "id": "adhd",
+    "name": "ADHD",
+    "aliases": [
+      "attention-deficit/hyperactivity disorder"
+    ],
+    "group_id": "braingut",
+    "group_label": "Brain-gut & psychological",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Lifelong difficulty focusing, time-blindness, executive-function struggles** \u2014 and meals, medications, or sleep are inconsistent.",
+    "diagnosis_type": "constitutional",
+    "sub_conditions": []
+  },
+  {
+    "id": "microscopic_colitis",
+    "name": "Microscopic colitis",
+    "aliases": [],
+    "group_id": "masqueraders",
+    "group_label": "Conditions often mistaken for IBS",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Chronic watery diarrhoea** \u2014 5\u201310 times per day \u2014 that looks like IBS-D but does not respond to diet or IBS treatments. Normal colonoscopy appearance but abnormal biopsy.",
+    "diagnosis_type": "masquerader",
+    "sub_conditions": []
+  },
+  {
+    "id": "thyroid",
+    "name": "Thyroid dysfunction",
+    "aliases": [],
+    "group_id": "masqueraders",
+    "group_label": "Conditions often mistaken for IBS",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Constipation with fatigue and weight gain** (hypothyroid) or **diarrhoea with weight loss and anxiety** (hyperthyroid). Gut symptoms are part of a broader systemic picture.",
+    "diagnosis_type": "masquerader",
+    "sub_conditions": []
+  },
+  {
+    "id": "coeliac",
+    "name": "Coeliac disease",
+    "aliases": [],
+    "group_id": "masqueraders",
+    "group_label": "Conditions often mistaken for IBS",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**Diarrhoea, bloating, fatigue, and anaemia** \u2014 especially if northern European heritage. Symptoms improve on gluten-free diet. May have no gut symptoms at all (silent coeliac). Do not start gluten-free diet before testing.",
+    "diagnosis_type": "masquerader",
+    "sub_conditions": []
+  },
+  {
+    "id": "ibd_remission",
+    "name": "IBD in remission",
+    "aliases": [
+      "Crohn's disease",
+      "ulcerative colitis"
+    ],
+    "group_id": "masqueraders",
+    "group_label": "Conditions often mistaken for IBS",
+    "parents": [],
+    "has_data": true,
+    "relevance_signal": "**History of confirmed IBD** with ongoing IBS-like symptoms despite being in remission. Or: rectal bleeding, significant weight loss, nocturnal symptoms \u2014 these require exclusion of IBD.",
+    "diagnosis_type": "masquerader",
+    "sub_conditions": []
+  }
+]

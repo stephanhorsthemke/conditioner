@@ -1,0 +1,703 @@
+{
+  "condition_id": "coeliac",
+  "condition_name": "Coeliac disease",
+  "generated_at": "2026-04-16T10:49:30.859678Z",
+  "model": "claude-haiku-4-5-20251001",
+  "sections": {
+    "plain_summary": "Coeliac disease is an autoimmune condition where eating gluten (a protein in wheat, barley, and rye) triggers the immune system to damage the small intestine. This prevents proper absorption of nutrients and causes digestive symptoms, fatigue, and other complications. It is manageable through a strict gluten-free diet.",
+    "detailed_summary": "Coeliac disease is a lifelong autoimmune disorder affecting the small intestine. When people with coeliac disease consume gluten, their immune system mistakenly attacks the intestinal lining, damaging the villi (finger-like projections that absorb nutrients). This damage reduces nutrient absorption, leading to digestive symptoms, malnutrition, and systemic effects. The condition affects people of all ages. Symptoms vary widely: some people experience severe gastrointestinal symptoms, while others have minimal digestive complaints but suffer anaemia, bone loss, or neurological symptoms. The only effective treatment is strict, lifelong adherence to a gluten-free diet, which allows the intestine to heal and symptoms to resolve. Early diagnosis and treatment prevent serious long-term complications including osteoporosis, infertility, and certain cancers.",
+    "prevalence": {
+      "summary": "Coeliac disease affects roughly 1\u20133% of people globally, but many cases remain undiagnosed.",
+      "estimate": "1\u20133% of the general population; up to 10% in first-degree relatives of those diagnosed",
+      "notes": "Prevalence varies by region and ethnicity (higher in European and Mediterranean populations). Many people are undiagnosed or misdiagnosed for years because symptoms overlap with IBS, lactose intolerance, and other conditions. Diagnosis rates have increased with improved testing and awareness."
+    },
+    "subgroups": [
+      {
+        "name": "Classical coeliac disease",
+        "description": "Presents with prominent gastrointestinal symptoms and malabsorption.",
+        "distinguishing_features": [
+          "Chronic diarrhoea or loose stools",
+          "Abdominal pain and bloating",
+          "Visible weight loss or failure to thrive in children",
+          "Positive serology and villous atrophy on biopsy"
+        ]
+      },
+      {
+        "name": "Non-classical coeliac disease",
+        "description": "Presents with minimal or atypical digestive symptoms; extra-intestinal symptoms predominate.",
+        "distinguishing_features": [
+          "Iron-deficiency anaemia without obvious GI symptoms",
+          "Bone disease (osteoporosis, osteopenia)",
+          "Short stature or delayed puberty in children",
+          "Neurological symptoms (ataxia, neuropathy)",
+          "Dermatitis herpetiformis (skin rash)"
+        ]
+      },
+      {
+        "name": "Silent coeliac disease",
+        "description": "Serology and biopsy show coeliac disease, but the person reports no symptoms.",
+        "distinguishing_features": [
+          "Discovered incidentally during screening (e.g. family screening, screening for other autoimmune disease)",
+          "May still have intestinal damage and micronutrient deficiencies on investigation",
+          "May develop symptoms over time if untreated"
+        ]
+      },
+      {
+        "name": "Dermatitis herpetiformis (DH)",
+        "description": "A cutaneous manifestation of coeliac disease characterised by an intensely itchy blistering rash.",
+        "distinguishing_features": [
+          "Intensely pruritic papulovesicular rash, usually on extensor surfaces and buttocks",
+          "Responds to dapsone medication and gluten-free diet",
+          "Intestinal villous atrophy present in most cases",
+          "May have fewer gastrointestinal symptoms than classical coeliac disease"
+        ]
+      },
+      {
+        "name": "Refractory coeliac disease (RCD)",
+        "description": "Persistent or worsening villous atrophy despite strict gluten-free diet for >12 months.",
+        "distinguishing_features": [
+          "Ongoing malabsorption and symptoms despite adherence to gluten-free diet",
+          "Subdivided into RCD type I (abnormal intraepithelial lymphocytes) and type II (clonal T-cell population)",
+          "Requires specialist management; may involve immunosuppressive therapy or elemental diet",
+          "Increased risk of complications including intestinal lymphoma"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Diarrhoea or loose, pale, fatty stools",
+        "category": "digestive",
+        "notes": "May be chronic and watery, or alternating with constipation. Often worse after gluten consumption."
+      },
+      {
+        "symptom": "Abdominal pain and cramping",
+        "category": "digestive",
+        "notes": "Can range from mild discomfort to severe pain. Often bloating and distension."
+      },
+      {
+        "symptom": "Bloating and excessive gas",
+        "category": "digestive",
+        "notes": "Occurs due to poor nutrient absorption and altered gut bacterial fermentation."
+      },
+      {
+        "symptom": "Nausea and loss of appetite",
+        "category": "digestive",
+        "notes": "May occur during flares or with large gluten exposures."
+      },
+      {
+        "symptom": "Weight loss or poor growth (in children)",
+        "category": "nutritional",
+        "notes": "Results from malabsorption; failure to thrive may be the first sign in infants and toddlers."
+      },
+      {
+        "symptom": "Fatigue and weakness",
+        "category": "systemic",
+        "notes": "Often severe and disproportionate to activity; due to malnutrition and chronic inflammation."
+      },
+      {
+        "symptom": "Iron-deficiency anaemia",
+        "category": "haematological",
+        "notes": "May present with shortness of breath, dizziness, or pale appearance. Often the sole presenting symptom."
+      },
+      {
+        "symptom": "Headaches or migraines",
+        "category": "neurological",
+        "notes": "Variable; may resolve on gluten-free diet."
+      },
+      {
+        "symptom": "Brain fog or difficulty concentrating",
+        "category": "neurological",
+        "notes": "May be related to malnutrition, anaemia, or direct immune-mediated effects."
+      },
+      {
+        "symptom": "Peripheral neuropathy (tingling, numbness in hands or feet)",
+        "category": "neurological",
+        "notes": "Usually reversible with gluten-free diet and B-vitamin supplementation if caught early."
+      },
+      {
+        "symptom": "Ataxia (loss of balance and coordination)",
+        "category": "neurological",
+        "notes": "Less common; may be permanent if not addressed promptly."
+      },
+      {
+        "symptom": "Dermatitis herpetiformis (intensely itchy blistering rash)",
+        "category": "skin",
+        "notes": "Typically affects elbows, knees, buttocks, and back; highly specific for coeliac disease."
+      },
+      {
+        "symptom": "Alopecia (hair loss)",
+        "category": "skin",
+        "notes": "Due to nutritional deficiencies (iron, zinc); reversible with treatment."
+      },
+      {
+        "symptom": "Mouth ulcers or aphthous stomatitis",
+        "category": "oral",
+        "notes": "Recurrent canker sores; may improve on gluten-free diet."
+      },
+      {
+        "symptom": "Dental enamel defects or delayed tooth eruption",
+        "category": "dental",
+        "notes": "Particularly in children; reflects malnutrition during tooth development."
+      },
+      {
+        "symptom": "Bone pain or osteoporosis",
+        "category": "musculoskeletal",
+        "notes": "Results from poor calcium and vitamin D absorption; increased fracture risk."
+      },
+      {
+        "symptom": "Irregular or absent menstrual periods",
+        "category": "endocrine",
+        "notes": "May occur in women; reversible with treatment and nutritional recovery."
+      },
+      {
+        "symptom": "Infertility or recurrent miscarriage",
+        "category": "reproductive",
+        "notes": "Due to malnutrition and chronic inflammation; improves with adherence to gluten-free diet."
+      },
+      {
+        "symptom": "Anxiety or depression",
+        "category": "mental health",
+        "notes": "May be due to nutritional deficiencies, dysbiosis, or direct immune effects on mood."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Chronic diarrhoea or loose stools lasting weeks or months, especially after meals containing wheat, barley, or rye",
+        "Unexplained iron-deficiency anaemia (fatigue, shortness of breath, pale appearance) with normal or slightly elevated iron studies initially",
+        "Abdominal pain, bloating, and gas that are not fully explained by lactose intolerance or IBS",
+        "Weight loss or failure to gain weight despite adequate intake, particularly in children",
+        "Cluster of symptoms affecting multiple body systems (GI, anaemia, fatigue, neurological) without a single clear cause",
+        "Family history of coeliac disease or other autoimmune conditions (Type 1 diabetes, thyroid disease)",
+        "Unexplained short stature, delayed puberty, or dental enamel defects in children",
+        "Intensely itchy blistering rash on extensor surfaces (elbows, knees, buttocks) that worsens with gluten"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom and food diary",
+          "description": "Record all foods and drinks consumed, timing of meals, and any symptoms (bowel movements, pain, bloating, fatigue) over 2\u20134 weeks. Note whether gluten-containing foods precede symptoms.",
+          "safety_notes": "This is a screening tool only. Do not eliminate gluten before serological testing, as it will invalidate results. The diary helps you and your doctor identify patterns but cannot diagnose coeliac disease."
+        },
+        {
+          "name": "Observational stool assessment",
+          "description": "Note whether stools are pale, greasy, bulky, floating, or persistently loose. Take a photo if needed for reference when discussing with a doctor.",
+          "safety_notes": "Not diagnostic, but helps prompt medical evaluation. Steatorrhoea can indicate malabsorption from coeliac disease or other causes."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Tissue transglutaminase (tTG) serology with total IgA",
+          "type": "standard",
+          "description": "Blood test measuring IgA antibodies against tissue transglutaminase. Requires confirmation by IgA endomysial antibodies (EMA) or IgG anti-deamidated gliadin peptides (DGP) if tTG-IgA is positive. Total IgA is measured to rule out IgA deficiency (which affects ~2\u20133% of coeliacs and can cause false negatives).",
+          "availability": "Ordered by GP or gastroenterologist; standard first-line test in most healthcare systems. Results available in 1\u20132 weeks."
+        },
+        {
+          "name": "Upper endoscopy with small-bowel biopsy",
+          "type": "gold_standard",
+          "description": "Endoscope passed through mouth and oesophagus to visualise the small intestine (duodenum). Multiple mucosal biopsies taken to assess villous atrophy (classified on the Marsh scale). Villous atrophy is the gold standard for diagnosis.",
+          "availability": "Ordered by gastroenterologist when serology is positive. Typically done in hospital as outpatient procedure. Results available within 2 weeks of biopsy."
+        },
+        {
+          "name": "Genetic testing (HLA-DQ2 and DQ8)",
+          "type": "standard",
+          "description": "Blood or saliva test identifying HLA genotypes DQ2 and/or DQ8, which are required for coeliac disease. Negative result has high negative predictive value (rules out coeliac disease in most cases). Useful for excluding coeliac disease or identifying at-risk relatives.",
+          "availability": "Ordered as a reflex test if serology is borderline or negative but clinical suspicion is high. Can also be used for screening family members."
+        },
+        {
+          "name": "Tissue transglutaminase IgG anti-deamidated gliadin peptides (DGP)",
+          "type": "standard",
+          "description": "Alternative antibody testing used if IgA deficiency is detected. Also useful in seronegative cases with high clinical suspicion.",
+          "availability": "Ordered by specialist if IgA tTG is negative or equivocal; used alongside or instead of IgA tests in IgA-deficient individuals."
+        },
+        {
+          "name": "Endomysial antibody (EMA) testing",
+          "type": "standard",
+          "description": "Indirect immunofluorescence assay confirming positive tTG serology. Highly specific for coeliac disease but technically demanding and operator-dependent. Less commonly used now but still considered confirmatory.",
+          "availability": "Ordered by specialist when serology is positive; acts as confirmatory test before endoscopy."
+        },
+        {
+          "name": "Complete blood count and iron, B12, folate, vitamin D, and calcium levels",
+          "type": "standard",
+          "description": "Blood tests assessing for anaemia, iron deficiency, and other micronutrient deficiencies commonly seen in coeliac disease. Baseline assessment of malnutrition.",
+          "availability": "Ordered by GP alongside serological testing. Results available within 1\u20132 weeks."
+        },
+        {
+          "name": "Tissue transglutaminase serology following gluten challenge",
+          "type": "emerging",
+          "description": "Used in seronegative patients with high clinical suspicion and villous atrophy on biopsy (rare scenario). Patient consumes gluten daily for 2\u20136 weeks, then serology is rechecked to induce or confirm seroconversion.",
+          "availability": "Rarely used; specialist referral required. Lengthy and challenging; used only when diagnosis unclear despite endoscopy findings."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "name": "Type 1 diabetes mellitus",
+        "relationship": "comorbid",
+        "explanation": "Both are autoimmune conditions with shared genetic predisposition (HLA-DQ2/DQ8). Coeliac disease is present in ~3\u20135% of people with Type 1 diabetes. Screening for one condition warrants screening for the other."
+      },
+      {
+        "name": "Hashimoto's thyroiditis and other thyroid disorders",
+        "relationship": "comorbid",
+        "explanation": "Autoimmune thyroid disease co-occurs in ~5% of people with coeliac disease. Shared HLA associations and common immune dysregulation."
+      },
+      {
+        "name": "IgA nephropathy",
+        "relationship": "mechanistic_link",
+        "explanation": "Gluten can trigger IgA immune complex deposition in the kidneys, leading to glomerulonephritis. Coeliac disease should be screened for in IgA nephropathy patients."
+      },
+      {
+        "name": "Osteoporosis and osteopenia",
+        "relationship": "downstream",
+        "explanation": "Malabsorption of calcium and vitamin D in coeliac disease leads to reduced bone mineral density. Can develop at any age if disease is undiagnosed or poorly controlled."
+      },
+      {
+        "name": "Infertility and recurrent pregnancy loss",
+        "relationship": "downstream",
+        "explanation": "Malnutrition, anaemia, and chronic inflammation in untreated coeliac disease impair fertility and pregnancy outcomes. Thyroid antibodies may also be elevated."
+      },
+      {
+        "name": "Iron-deficiency anaemia",
+        "relationship": "downstream",
+        "explanation": "Poor iron absorption due to intestinal damage is common; iron deficiency is often the presenting symptom, especially in non-classical coeliac disease."
+      },
+      {
+        "name": "B12 and folate deficiency",
+        "relationship": "downstream",
+        "explanation": "Malabsorption of these vitamins in the terminal ileum and proximal small intestine causes deficiency, worsening fatigue and neurological symptoms."
+      },
+      {
+        "name": "Dermatitis herpetiformis (DH)",
+        "relationship": "downstream",
+        "explanation": "A cutaneous manifestation of coeliac disease; >95% of DH patients have coeliac-type intestinal changes. Gluten triggers both skin and gut pathology."
+      },
+      {
+        "name": "Non-tropical sprue (another name for coeliac disease in some countries)",
+        "relationship": "often_confused",
+        "explanation": "Older or regional terminology for coeliac disease; no distinction from the condition described here."
+      },
+      {
+        "name": "Irritable bowel syndrome (IBS)",
+        "relationship": "often_confused",
+        "explanation": "Symptoms overlap significantly (bloating, diarrhoea, abdominal pain). Many undiagnosed coeliacs are misdiagnosed with IBS. Coeliac disease should be ruled out before IBS is diagnosed."
+      },
+      {
+        "name": "Non-coeliac gluten sensitivity (NCGS)",
+        "relationship": "often_confused",
+        "explanation": "Some people react to gluten without having coeliac disease or wheat allergy. Diagnosis is exclusionary (negative coeliac and allergy tests). Unclear mechanism; may involve non-gluten wheat components."
+      },
+      {
+        "name": "Wheat allergy",
+        "relationship": "often_confused",
+        "explanation": "IgE-mediated allergic reaction to wheat proteins; presents acutely with urticaria, angioedema, anaphylaxis, or acute GI symptoms. Entirely different pathology and management from coeliac disease."
+      },
+      {
+        "name": "Lactose intolerance",
+        "relationship": "comorbid",
+        "explanation": "Damage to the small intestine in coeliac disease reduces lactase production, causing secondary lactose intolerance. Improves as the intestine heals on a gluten-free diet."
+      },
+      {
+        "name": "Refractory coeliac disease (RCD)",
+        "relationship": "downstream",
+        "explanation": "Occurs in ~1\u20133% of coeliac patients; villous atrophy persists despite strict gluten-free diet. May involve clonal expansion of intraepithelial lymphocytes."
+      },
+      {
+        "name": "Intestinal lymphoma and small-bowel malignancy",
+        "relationship": "downstream",
+        "explanation": "Increased risk of T-cell lymphoma (enteropathy-associated T-cell lymphoma, EATL) and non-Hodgkin lymphoma if coeliac disease is undiagnosed or poorly controlled for many years."
+      },
+      {
+        "name": "Selective IgA deficiency",
+        "relationship": "comorbid",
+        "explanation": "Present in ~2\u20133% of coeliac patients (100-fold higher than general population). Complicates serology-based diagnosis; requires HLA and/or biopsy confirmation."
+      },
+      {
+        "name": "Down syndrome and Turner syndrome",
+        "relationship": "upstream",
+        "explanation": "These chromosomal disorders have increased prevalence of coeliac disease; screening is recommended."
+      },
+      {
+        "name": "Addison's disease",
+        "relationship": "comorbid",
+        "explanation": "Autoimmune adrenal insufficiency; increased prevalence in coeliac disease. Shared HLA associations and immune dysregulation."
+      },
+      {
+        "name": "Neurological disorders (ataxia, peripheral neuropathy, epilepsy)",
+        "relationship": "downstream",
+        "explanation": "Coeliac disease is associated with increased risk of ataxia, neuropathy, and seizures, especially if diagnosed late or poorly managed. Mechanisms include nutritional deficiency, autoimmunity, and dysbiosis."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Strict, lifelong gluten-free diet",
+          "category": "diet",
+          "description": "Eliminate all foods, drinks, and medications containing wheat, barley, rye, and their derivatives (including hidden sources like soy sauce, malt vinegar, cross-contaminated oats). Read all labels carefully. This is the only evidence-based treatment for coeliac disease. Healing of the intestine typically begins within days to weeks and is usually complete within 1\u20132 years.",
+          "evidence_level": "strong",
+          "notes": "Success requires vigilance against cross-contamination in food preparation, eating at restaurants, and medications. Hidden gluten in processed foods is common; consultation with a dietitian is strongly recommended. Unintentional gluten exposure (even trace amounts, <20 ppm) can perpetuate intestinal damage."
+        },
+        {
+          "name": "Iron supplementation",
+          "category": "supplement",
+          "description": "Oral iron supplements (ferrous sulfate, ferrous gluconate, or ferrous fumarate) to correct iron-deficiency anaemia. Typical starting dose is 200\u2013300 mg elemental iron daily in divided doses with vitamin C (enhances absorption). Take on an empty stomach if tolerated, or with a small amount of food if side effects occur.",
+          "evidence_level": "strong",
+          "notes": "Iron absorption improves substantially once the intestine begins to heal on a gluten-free diet. May only be needed temporarily. Monitor ferritin and haemoglobin levels. Common side effects include constipation, dark stools, nausea, and abdominal discomfort; adjust dose or formulation if intolerable."
+        },
+        {
+          "name": "Vitamin B12 supplementation",
+          "category": "supplement",
+          "description": "Oral B12 supplements (cyanocobalamin or methylcobalamin) or intramuscular injections if malabsorption is severe. Typical oral dose is 1000\u20132000 \u03bcg daily. B12 is absorbed in the terminal ileum and may be deficient if this area is damaged.",
+          "evidence_level": "strong",
+          "notes": "Intramuscular injections bypass intestinal absorption and are preferred for severe deficiency or if oral intake is not tolerated. Deficiency causes fatigue, neuropathy, and cognitive symptoms; early supplementation prevents irreversible nerve damage."
+        },
+        {
+          "name": "Folate supplementation",
+          "category": "supplement",
+          "description": "Oral folate (folic acid) 400\u20131000 \u03bcg daily. Folate is absorbed in the proximal small intestine and is frequently deficient in undiagnosed coeliac disease.",
+          "evidence_level": "strong",
+          "notes": "Folate deficiency worsens anaemia and can cause fatigue and cognitive symptoms. Check baseline levels before supplementing if possible; recheck after 3\u20136 months on gluten-free diet."
+        },
+        {
+          "name": "Vitamin D and calcium supplementation",
+          "category": "supplement",
+          "description": "Vitamin D3 (cholecalciferol) 1000\u20132000 IU daily (or higher if deficiency is severe) plus calcium carbonate or citrate 500\u20131000 mg daily. Both are poorly absorbed in damaged intestine. Vitamin D should be given with fat for optimal absorption.",
+          "evidence_level": "strong",
+          "notes": "Deficiency of both leads to osteoporosis and increased fracture risk. Check baseline 25-OH vitamin D and calcium levels. Repletion takes several months; recheck after 3\u20136 months. Once on a gluten-free diet and healed, natural food sources often suffice."
+        },
+        {
+          "name": "Broad-spectrum micronutrient repletion",
+          "category": "supplement",
+          "description": "In cases of severe or prolonged malnutrition, consider a comprehensive multivitamin and mineral supplement covering iron, B12, folate, vitamins A, D, E, K, zinc, magnesium, and calcium. Tailor to individual deficiencies identified on baseline testing.",
+          "evidence_level": "moderate",
+          "notes": "Not a substitute for a balanced gluten-free diet. Used as bridge therapy during initial healing phase. Reassess need after 6\u201312 months on gluten-free diet."
+        },
+        {
+          "name": "Registered dietitian consultation",
+          "category": "lifestyle",
+          "description": "Work with a dietitian experienced in coeliac disease to learn to identify hidden gluten, plan balanced gluten-free meals, avoid cross-contamination, and ensure adequate nutrition while healing.",
+          "evidence_level": "strong",
+          "notes": "Professional dietetic support improves dietary adherence, nutritional outcomes, and quality of life. Especially important in the first 1\u20132 years after diagnosis. Consider periodic follow-up visits."
+        },
+        {
+          "name": "Bone health monitoring and management",
+          "category": "lifestyle",
+          "description": "If osteoporosis or osteopenia is present (confirmed by DEXA scan), ensure adequate vitamin D, calcium, and protein intake. Consider weight-bearing exercise (walking, dancing, resistance training) 3\u20135 times weekly. In severe cases, bisphosphonate therapy may be needed.",
+          "evidence_level": "moderate",
+          "notes": "Bone density typically improves over 2\u20135 years on a strict gluten-free diet. Repeat DEXA scanning at 2 years if initial score was low."
+        },
+        {
+          "name": "Education and label reading",
+          "category": "lifestyle",
+          "description": "Become familiar with gluten-containing ingredients, cross-contamination risks, and gluten-free labelling rules. Learn to cook from scratch using naturally gluten-free grains (rice, corn, quinoa, certified gluten-free oats) and staple foods.",
+          "evidence_level": "strong",
+          "notes": "Hidden gluten is pervasive in processed foods, sauces, spice blends, and even medications. Careful label reading is essential. Resources and apps (e.g., Find Me Gluten Free) are available."
+        },
+        {
+          "name": "Regular follow-up testing",
+          "category": "lifestyle",
+          "description": "Repeat serology (tTG-IgA) at 1 year post-diagnosis to confirm dietary adherence (persistent seropositivity suggests ongoing gluten exposure). Repeat biopsy at 2 years in non-responsive cases. Monitor micronutrient status annually or as needed.",
+          "evidence_level": "strong",
+          "notes": "Negative serology at 1 year suggests good adherence. Persistent seropositivity may indicate intentional or unintentional gluten exposure, labelling errors, or rare causes (e.g. refractory coeliac disease)."
+        },
+        {
+          "name": "Probiotics and microbiome support",
+          "category": "supplement",
+          "description": "Some evidence suggests certain probiotics (e.g. Lactobacillus and Bifidobacterium species) may support intestinal healing and immune tolerance in coeliac disease. Start with fermented foods (sauerkraut, kimchi, yoghurt if tolerated) or a quality multi-strain probiotic.",
+          "evidence_level": "anecdotal",
+          "notes": "Evidence is limited and mixed. Dysbiosis (altered gut microbiota) is common in coeliac disease and may contribute to symptoms. More high-quality trials are needed. Probiotics should not substitute for a strict gluten-free diet."
+        },
+        {
+          "name": "Dapsone for dermatitis herpetiformis",
+          "category": "medication",
+          "description": "If DH is present, dapsone (an antimicrobial) can suppress the skin rash and itching within days to weeks. Typical starting dose is 50\u2013100 mg daily, titrated to effect. Requires specialist prescription and blood monitoring.",
+          "evidence_level": "strong",
+          "notes": "Dapsone controls skin symptoms but does not address intestinal damage; gluten-free diet is still essential. Dapsone can be discontinued once stable on gluten-free diet as intestine heals. Close monitoring for side effects (haemolysis, peripheral neuropathy) is necessary."
+        },
+        {
+          "name": "Screening for comorbid autoimmune conditions",
+          "category": "lifestyle",
+          "description": "Get screened for Type 1 diabetes, thyroid disease, and other autoimmune conditions at diagnosis and periodically thereafter. If diagnosed with these conditions, ensure screening for coeliac disease.",
+          "evidence_level": "strong",
+          "notes": "Early detection and treatment of comorbid conditions improves outcomes and prevents complications."
+        }
+      ],
+      "things_to_avoid": [
+        "Wheat, barley, rye, and their derivatives (bread, pasta, cereals, flour, baked goods, beer) \u2014 these trigger intestinal damage",
+        "Cross-contaminated gluten from shared cutting boards, toasters, colanders, and preparation surfaces \u2014 even trace amounts (crumbs) can perpetuate damage",
+        "Soy sauce, Worcestershire sauce, malt vinegar, beer, and many sauces that contain hidden gluten",
+        "Processed foods and supplements that do not carry gluten-free certification \u2014 many contain hidden gluten or are at risk of cross-contamination",
+        "Medication and over-the-counter products containing gluten (check labels and pharmacist)",
+        "Intentional or repeated gluten exposure, even in small amounts \u2014 belief that occasional small amounts are safe is dangerous and perpetuates intestinal damage",
+        "Inadequate nutrient replacement \u2014 missing iron, B12, folate, vitamin D, and calcium supplementation in the early healing phase worsens outcomes",
+        "Extreme elimination diets beyond gluten-free (unless advised by a dietitian) \u2014 unnecessarily restrictive diets can lead to nutritional deficiency and eating disorders",
+        "Non-coeliac gluten-free diets without adequate whole grains and fibre \u2014 processed gluten-free food can lack nutrients and fibre"
+      ]
+    },
+    "uncomfortable_truths": [],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Perfect dietary adherence to gluten-free diet",
+          "why_it_matters": "Even trace gluten exposure (crumbs, cross-contamination) perpetuates intestinal inflammation and prevents healing. Strict adherence is the foundation for all symptom resolution and long-term health.",
+          "how_to_start": "Meet with a dietitian experienced in coeliac disease. Learn to identify gluten sources, read labels carefully, and implement safe food preparation practices at home. Start with naturally gluten-free whole foods (rice, vegetables, beans, meat, eggs) and gradually learn gluten-free cooking.",
+          "timeline": "Symptom improvement begins within days to weeks; intestinal healing typically occurs within 1\u20132 years. Full nutritional repletion may take 1\u20132 years.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Rapid micronutrient repletion (iron, B12, folate, vitamin D, calcium)",
+          "why_it_matters": "Malabsorption causes severe deficiencies that perpetuate fatigue, weakness, anaemia, and neurological symptoms. Early supplementation prevents irreversible complications (e.g. permanent neuropathy) and speeds functional recovery.",
+          "how_to_start": "Have baseline blood tests done (CBC, iron studies, B12, folate, vitamin D, calcium) at diagnosis. Begin supplements immediately based on results. Use well-absorbed formulations and take as directed (timing, with food or empty stomach).",
+          "timeline": "Fatigue and mood improve within 2\u20134 weeks of iron and B12 supplementation. Anaemia resolves within 2\u20133 months. Bone health improvements take 1\u20132 years.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Family member screening and education",
+          "why_it_matters": "Coeliac disease clusters in families (up to 10% of first-degree relatives are affected). Early diagnosis in relatives prevents years of unrecognized illness, complications, and suffering.",
+          "how_to_start": "Inform first-degree relatives (parents, siblings, children) of your diagnosis. Encourage them to have serology testing (tTG-IgA). Share reliable information sources and support group contacts with them.",
+          "timeline": "Screening can be done immediately. If relatives are diagnosed early, their quality of life and long-term outcomes improve dramatically.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Routine comorbidity screening (thyroid, Type 1 diabetes, bone density)",
+          "why_it_matters": "Autoimmune conditions and complications (osteoporosis, infertility) are frequent; early detection and treatment prevent serious morbidity and mortality.",
+          "how_to_start": "At diagnosis, ask your doctor to screen for TSH, anti-thyroid peroxidase antibodies, fasting glucose or HbA1c, and (in women over 40 or men over 50, or those with risk factors) DEXA scan for bone density.",
+          "timeline": "Screening can begin at diagnosis. Repeat screening annually or per guidelines for your age and risk factors.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Serology testing at 1 year to confirm dietary adherence",
+          "why_it_matters": "Repeat tTG-IgA at 1 year confirms that you are truly gluten-free; persistent seropositivity suggests hidden or intentional gluten exposure. This feedback loop ensures accountability and early correction of adherence issues.",
+          "how_to_start": "Schedule serology testing (~1 year post-diagnosis) with your GP or gastroenterologist. Expect results within 1\u20132 weeks.",
+          "timeline": "1 year post-diagnosis is the standard timepoint. Repeat testing every 1\u20132 years or if symptoms recur.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Psychological support and patient community engagement",
+          "why_it_matters": "Coeliac disease requires significant lifestyle change and carries social and emotional burden (eating restrictions, anxiety about hidden gluten). Support and peer connection improve adherence, mental health, and quality of life.",
+          "how_to_start": "Join a coeliac disease support group (in-person or online). Consider counselling or therapy if anxiety, depression, or eating disorder risk emerges. Share concerns with your dietitian and doctor.",
+          "timeline": "Begin within weeks of diagnosis. Support is ongoing and helps sustain long-term dietary adherence.",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Attempting a gluten-free diet before getting tested \u2014 consuming a gluten-free diet before serology or biopsy makes diagnosis impossible and delays treatment",
+        "Assuming gluten-free means healthy \u2014 many gluten-free products are ultra-processed, high in sugar, and low in fibre; focus on whole, naturally gluten-free foods",
+        "Ignoring cross-contamination \u2014 using the same toaster, cutting board, or colander for gluten-containing and gluten-free foods undermines the diet and perpetuates symptoms",
+        "Believing 'a little bit of gluten' is acceptable \u2014 even crumbs or traces trigger immune activation and intestinal damage in coeliac disease; there is no safe threshold",
+        "Delaying nutrient supplementation \u2014 waiting for the intestine to heal before supplementing iron or B12 allows irreversible neurological damage and prolonged suffering",
+        "Not seeking dietitian guidance \u2014 attempting the diet alone leads to nutritional gaps, unintentional gluten exposure, and poor outcomes",
+        "Not screening family members \u2014 missing the diagnosis in relatives allows years of unrecognized disease and preventable complications",
+        "Assuming normalisation of serology means cure \u2014 seroconversion takes time and is not always complete; focus on maintaining strict dietary adherence regardless of test results",
+        "Stopping supplements prematurely \u2014 micronutrient deficiencies take time to correct fully; stopping supplementation too early allows relapse",
+        "Social isolation or shame about dietary restrictions \u2014 coeliac disease is common and manageable; engaging with communities and being open about needs improves adherence and wellbeing"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Gastroenterologist",
+          "role": "Often the primary diagnostician; performs upper endoscopy with biopsy to confirm coeliac disease. Manages severe or refractory disease, screens for complications, and provides long-term oversight.",
+          "notes": "Usually the first to diagnose coeliac disease. Refers to dietitian for management. Essential if biopsy is needed or if symptoms persist despite gluten-free diet."
+        },
+        {
+          "type": "Registered dietitian (RD) or nutritionist specialising in coeliac disease",
+          "role": "Teaches gluten identification, label reading, meal planning, and nutritional repletion. Provides ongoing support for dietary adherence and identifies nutritional gaps. Central to successful long-term management.",
+          "notes": "Highly recommended and should be involved early in management. Insurance may cover sessions if referred by a physician. Look for credentials: RD (Registered Dietitian) or equivalent."
+        },
+        {
+          "type": "Primary care physician (GP/family medicine doctor)",
+          "role": "Initial screening, referral to gastroenterology, baseline blood tests, monitoring for anaemia and micronutrient deficiency, prescribing supplements, screening for comorbidities. Long-term coordination of care.",
+          "notes": "Good GPs understand coeliac disease and may have experience managing it. Some primary care providers are less familiar; seek one with coeliac disease experience if possible."
+        },
+        {
+          "type": "Dermatologist",
+          "role": "Diagnoses and manages dermatitis herpetiformis (DH), prescribes dapsone if needed, and confirms link to coeliac disease. Manages other skin manifestations (alopecia, mouth ulcers).",
+          "notes": "Needed only if DH is present. Dermatologists familiar with DH are specialists in coeliac disease-related dermatology."
+        },
+        {
+          "type": "Haematologist or rheumatologist",
+          "role": "Manages severe or complicated anaemia, refractory coeliac disease, or coeliac disease with unusual immune manifestations. May manage comorbid autoimmune conditions.",
+          "notes": "Specialist referral is warranted if standard management is not effective or if rare complications develop."
+        },
+        {
+          "type": "Bone health specialist (endocrinologist or rheumatologist)",
+          "role": "Manages osteoporosis and osteopenia in coeliac disease; prescribes bisphosphonates or other bone-protective therapies if needed; conducts DEXA scans.",
+          "notes": "Referral is worthwhile if bone density is significantly low or if fractures have occurred."
+        },
+        {
+          "type": "Mental health professional (therapist, counsellor, or psychiatrist)",
+          "role": "Addresses anxiety, depression, eating disorder risk, or adjustment difficulties related to coeliac disease diagnosis and dietary restrictions.",
+          "notes": "Psychological support can improve quality of life, adherence, and overall wellbeing. Consider if emotional burden is significant."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "Coeliac UK",
+          "platform": "Website and social media",
+          "url": "https://www.coeliac.org.uk",
+          "notes": "UK-based charity providing evidence-based information, support groups, annual conference, and resources for people newly diagnosed. Very active community and advocacy."
+        },
+        {
+          "name": "The Celiac Disease Foundation",
+          "platform": "Website and social media",
+          "url": "https://celiac.org",
+          "notes": "US-based non-profit with resources, education, research funding, and community support. Reputable and widely used."
+        },
+        {
+          "name": "Canadian Celiac Association",
+          "platform": "Website and chapters",
+          "url": "https://celiac.ca",
+          "notes": "Canada-based organisation with regional chapters, educational resources, and support groups."
+        },
+        {
+          "name": "r/Celiac (Reddit)",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Celiac/",
+          "notes": "Large, active community (100K+ members) sharing experiences, recipes, tips, and emotional support. Moderated well; good resource for practical advice."
+        },
+        {
+          "name": "Celiac Disease Support (Facebook groups)",
+          "platform": "Facebook",
+          "url": null,
+          "notes": "Multiple large Facebook groups dedicated to coeliac disease support, recipe sharing, and advice. Search for 'Celiac Disease Support' or 'Gluten Free Community.' Variable moderation; filter for credible posts."
+        },
+        {
+          "name": "Beyond Celiac",
+          "platform": "Website",
+          "url": "https://www.beyondceliac.org",
+          "notes": "US non-profit focused on raising awareness and funding research. Provides educational resources, research updates, and community events."
+        },
+        {
+          "name": "Coeliac Australia",
+          "platform": "Website",
+          "url": "https://www.coeliac.org.au",
+          "notes": "Australian organisation with resources tailored to local food labelling and healthcare systems."
+        },
+        {
+          "name": "Find Me Gluten Free app and website",
+          "platform": "Mobile app and website",
+          "url": "https://www.findmeglutenfree.com",
+          "notes": "Community-sourced app allowing people to identify gluten-free restaurants, products, and safe food options worldwide. Highly practical for eating out."
+        },
+        {
+          "name": "Celiac Connections (Discord or forums)",
+          "platform": "Discord or online forums",
+          "url": null,
+          "notes": "Real-time chat communities for people with coeliac disease. Good for immediate support and rapid Q&A with peers."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Celiac Disease: A Hidden Epidemic",
+        "type": "book",
+        "author_or_source": "Peter H.R. Green and Rory Jones",
+        "url": null,
+        "description": "Comprehensive and readable overview of coeliac disease history, diagnosis, management, and living with the condition. Written by a leading gastroenterologist. Excellent for newly diagnosed patients seeking in-depth understanding.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Gluten-Free Life: 200 Delicious, Nutritious, Easy-to-Make Recipes",
+        "type": "book",
+        "author_or_source": "Jax Peters Lowell",
+        "url": null,
+        "description": "Practical cookbook with recipes and meal-planning guidance. Helps people transition to a gluten-free diet without feeling deprived. Includes nutritional information.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The First Year: Celiac Disease \u2014 An Essential Guide for the Newly Diagnosed",
+        "type": "book",
+        "author_or_source": "Jules Dowler Cross",
+        "url": null,
+        "description": "Month-by-month guide to managing the first year after coeliac disease diagnosis. Covers emotional adjustment, practical tips, and common challenges.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Coeliac Disease \u2014 Clinical Diagnosis and Management",
+        "type": "research paper",
+        "author_or_source": "Ludvigsson et al. (2012), *The Lancet*",
+        "url": null,
+        "description": "Peer-reviewed clinical review summarising diagnostic criteria, pathophysiology, and management. Intended for healthcare professionals but accessible to informed patients. Evidence-based.",
+        "audience": "advanced"
+      },
+      {
+        "title": "What Every Parent Should Know About Celiac Disease",
+        "type": "website / resource",
+        "author_or_source": "Coeliac UK / The Celiac Disease Foundation",
+        "url": "https://celiac.org/living-with-celiac-disease/families-and-kids/",
+        "description": "Dedicated resources for parents of children with coeliac disease. Covers child development, school management, and age-appropriate disclosure.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Gut and Psychology Syndrome (GAPS)",
+        "type": "book",
+        "author_or_source": "Dr. Natasha Campbell-McBride",
+        "url": null,
+        "description": "Explores links between gut health and neuropsychiatric symptoms. Offers a whole-foods, grain-free approach. While not exclusively about coeliac disease, offers relevant insights on dysbiosis and mental health. Note: some claims lack strong evidence.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Coeliac Disease \u2014 Practice Essentials",
+        "type": "website",
+        "author_or_source": "Medscape / eMedicine",
+        "url": "https://emedicine.medscape.com/article/180522-overview",
+        "description": "Evidence-based clinical summary written for healthcare professionals. Covers epidemiology, pathophysiology, diagnosis, and management. Accessible and comprehensive.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "NHS Guide to Coeliac Disease",
+        "type": "website",
+        "author_or_source": "National Health Service (UK)",
+        "url": "https://www.nhs.uk/conditions/coeliac-disease/",
+        "description": "Official UK government health information. Clear, practical guidance on symptoms, diagnosis, management, and living with coeliac disease. Trustworthy and evidence-based.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Gluten-Free Miracle Diet",
+        "type": "book",
+        "author_or_source": "Diabetes and Coeliac Australia",
+        "url": null,
+        "description": "Practical guide to living gluten-free, with focus on nutritional balance and avoiding processed gluten-free junk food. Regional-specific tips.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Dermatitis Herpetiformis: Diagnosis and Management",
+        "type": "research paper",
+        "author_or_source": "Antiga and Caproni (2009), *American Journal of Clinical Dermatology*",
+        "url": null,
+        "description": "Peer-reviewed overview of dermatitis herpetiformis (DH) diagnosis and treatment. Relevant if DH is present. Covers dapsone therapy and gluten-free diet.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Refractory Coeliac Disease: Diagnosis and Management",
+        "type": "research paper",
+        "author_or_source": "Daum et al. (2007), *Nature Clinical Practice Gastroenterology & Hepatology*",
+        "url": null,
+        "description": "Clinical review of refractory coeliac disease (RCD)\u2014a rare but serious complication. For those with persistent symptoms despite strict gluten-free diet.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Celiac Disease Podcast Series",
+        "type": "podcast",
+        "author_or_source": "Celiac Disease Foundation",
+        "url": "https://celiac.org/education/podcasts/",
+        "description": "Interview-based podcast featuring experts, newly diagnosed people, and long-term patients. Topics range from diagnosis to nutrition to coping strategies.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Gluten-Free RN",
+        "type": "website / blog",
+        "author_or_source": "Nadine Grzeskowiak (Registered Nurse)",
+        "url": "https://www.theglutenfreeRN.com",
+        "notes": "Blog and resources from a nurse with coeliac disease. Practical tips, recipes, and health information written in accessible language."
+      },
+      {
+        "title": "Is It Gluten-Free? Comprehensive Food and Beverage Guide",
+        "type": "book",
+        "author_or_source": "Shelley Case (Registered Dietitian)",
+        "url": null,
+        "description": "Extensive reference guide listing thousands of foods and beverages and their gluten status. Invaluable for label reading and meal planning.",
+        "audience": "beginner"
+      }
+    ],
+    "relevance_signal": "**Diarrhoea, bloating, fatigue, and anaemia** \u2014 especially if northern European heritage. Symptoms improve on gluten-free diet. May have no gut symptoms at all (silent coeliac). Do not start gluten-free diet before testing."
+  }
+}

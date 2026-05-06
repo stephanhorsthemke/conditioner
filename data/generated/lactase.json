@@ -1,0 +1,406 @@
+{
+  "condition_id": "lactase",
+  "condition_name": "Lactase deficiency",
+  "generated_at": "2026-04-16T09:25:22.743929Z",
+  "model": "claude-haiku-4-5-20251001",
+  "sections": {
+    "plain_summary": "Lactase deficiency is the inability to digest lactose, a natural sugar in milk and dairy products. After childhood, many people produce less lactase (the enzyme that breaks down lactose), leading to bloating, gas, cramps, and diarrhea when they consume dairy. This is normal variation in human biology, not an allergy or disease.",
+    "detailed_summary": "Lactase deficiency, also called lactose intolerance, occurs when the small intestine produces insufficient lactase enzyme to break down lactose into glucose and galactose for absorption. Lactase levels naturally decline after weaning in most humans\u2014a trait called primary lactase deficiency. Secondary lactase deficiency can result from illness (gastroenteritis, celiac disease) that damages the intestinal lining. Congenital lactase deficiency (present from birth) is extremely rare. When undigested lactose reaches the colon, bacteria ferment it, producing gas, bloating, and osmotic diarrhea. Symptoms vary widely depending on the amount of lactose consumed, individual bacterial composition, and lactase persistence (genetic variation that maintains higher lactase levels into adulthood). The condition is not dangerous but can significantly affect quality of life if not managed.",
+    "prevalence": {
+      "summary": "About 65% of the global population experiences some degree of lactose intolerance after childhood, though rates vary dramatically by ancestry.",
+      "estimate": "65% worldwide; 90% in East Asia; 70% in Africa; 5\u201315% in Northern Europe",
+      "notes": "Prevalence correlates strongly with ancestry and dairy farming history. Northern European and some Middle Eastern populations have higher rates of lactase persistence (continued enzyme production). Surveys measuring self-reported symptoms show higher rates than clinical testing. Many people with mild lactase deficiency are asymptomatic or manage it successfully without diagnosis."
+    },
+    "subgroups": [
+      {
+        "name": "Primary lactase deficiency",
+        "description": "The most common form; genetically programmed decline in lactase production after early childhood, typically appearing after age 2\u20134.",
+        "distinguishing_features": [
+          "Gradual onset over months or years",
+          "Permanent and lifelong condition",
+          "Severity increases with total lactose consumed",
+          "Linked to specific genetic variants (MCM6 gene) that determine lactase persistence"
+        ]
+      },
+      {
+        "name": "Secondary lactase deficiency",
+        "description": "Temporary reduction in lactase caused by damage to the intestinal lining from infection, inflammation, or disease.",
+        "distinguishing_features": [
+          "Sudden onset following illness (gastroenteritis, food poisoning, celiac diagnosis)",
+          "Can resolve once the underlying condition heals",
+          "Often accompanied by other GI symptoms from the primary condition",
+          "May resolve within weeks to months after mucosal recovery"
+        ]
+      },
+      {
+        "name": "Congenital lactase deficiency",
+        "description": "Extremely rare; complete absence of lactase enzyme from birth due to homozygous genetic mutation.",
+        "distinguishing_features": [
+          "Symptoms present from first milk feeding in newborns",
+          "Severe osmotic diarrhea and failure to thrive",
+          "Requires lactose-free formula from birth",
+          "Requires specialist pediatric care and genetic counseling"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Bloating and abdominal distension",
+        "category": "digestive",
+        "notes": "Often the first symptom noticed; occurs 30 minutes to 2 hours after consuming lactose; caused by gas produced by bacterial fermentation"
+      },
+      {
+        "symptom": "Gas or flatulence",
+        "category": "digestive",
+        "notes": "Can be embarrassing or socially disruptive; severity depends on amount of lactose and individual microbiota"
+      },
+      {
+        "symptom": "Cramping or abdominal pain",
+        "category": "digestive",
+        "notes": "Usually mild to moderate; can be severe in highly sensitive individuals; located around lower abdomen or entire abdomen"
+      },
+      {
+        "symptom": "Diarrhea",
+        "category": "digestive",
+        "notes": "May be mild (loose stools) or pronounced; occurs 30 minutes to 2 hours after dairy intake; caused by osmotic effect of undigested lactose"
+      },
+      {
+        "symptom": "Nausea",
+        "category": "digestive",
+        "notes": "Less common than other symptoms; usually mild; more likely with large dairy consumption"
+      },
+      {
+        "symptom": "Rumbling stomach sounds (borborygmi)",
+        "category": "digestive",
+        "notes": "Often audible gurgling from intestinal gas; can occur before or accompanying other symptoms"
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Symptoms appear consistently 30 minutes to 2 hours after consuming milk, cheese, ice cream, or other dairy products",
+        "Symptoms worsen with larger amounts of dairy or consumption on an empty stomach",
+        "Symptoms resolve or significantly improve when dairy is removed from the diet",
+        "No symptoms occur with lactose-free dairy or non-dairy alternatives",
+        "Hard cheeses and fermented dairy (yogurt, aged cheddar) often cause fewer symptoms than fluid milk",
+        "Symptoms improve noticeably within 1\u20132 weeks of a low-lactose diet"
+      ],
+      "at_home": [
+        {
+          "name": "Dairy elimination and reintroduction",
+          "description": "Strictly avoid all dairy products for 1\u20132 weeks and monitor symptom resolution. Then reintroduce small amounts of dairy and observe whether symptoms return. This is the most practical self-assessment tool. Begin with small amounts (e.g., a few tablespoons of milk) to avoid severe symptoms.",
+          "safety_notes": "Generally safe. If you suspect lactose intolerance is secondary to a bacterial infection or inflammatory condition, consult a healthcare provider before eliminating dairy, as nutrition may be a concern. Ensure adequate calcium from non-dairy sources during elimination phase."
+        },
+        {
+          "name": "Lactose load challenge",
+          "description": "Consume 240\u2013480 mL (8\u201316 oz) of regular milk on an empty stomach and monitor for bloating, gas, cramping, or diarrhea over 2 hours. A more structured version of the dairy test above. Symptom onset and severity correlate with lactase deficiency severity.",
+          "safety_notes": "May trigger significant symptoms; do this when you are home and near a bathroom. Start with smaller amounts (120 mL) if you suspect severe intolerance. Stop immediately if symptoms become severe."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Hydrogen breath test (HBT)",
+          "type": "gold_standard",
+          "description": "Patient fasts overnight, then consumes a standard lactose dose (25\u201350 g). Hydrogen is not normally absorbed in the small intestine; undigested lactose fermented by colon bacteria produces hydrogen, which is exhaled. Breath hydrogen is measured at intervals (every 15\u201330 minutes for 2\u20133 hours). Elevated hydrogen at any point suggests lactose malabsorption. This is the most reliable non-invasive test.",
+          "availability": "Ordered by primary care physician or gastroenterologist; available at most hospitals and gastroenterology centers. Requires fasting and takes 2\u20133 hours."
+        },
+        {
+          "name": "Lactose tolerance test",
+          "type": "standard",
+          "description": "Patient consumes lactose solution after fasting. Blood glucose is measured at baseline and 15\u201330 minutes afterward. Poor lactase activity results in minimal glucose rise (because lactose is not broken down). Less sensitive than breath testing but simpler. Rarely used in current practice.",
+          "availability": "Some gastroenterology clinics; order through primary care physician. Requires fasting."
+        },
+        {
+          "name": "Small intestinal biopsy with lactase assay",
+          "type": "standard",
+          "description": "Tissue sample taken during endoscopy and tested for lactase enzyme activity. Direct measurement of enzyme; gold standard for diagnosis but invasive and rarely necessary. Reserved for cases where diagnosis is unclear or secondary lactase deficiency is suspected.",
+          "availability": "Tertiary gastroenterology centers; requires endoscopy procedure."
+        },
+        {
+          "name": "Genetic testing for MCM6 variants",
+          "type": "emerging",
+          "description": "DNA test identifies genetic variants associated with lactase persistence or deficiency. Can predict likelihood of lactose intolerance based on ancestry and genotype. Informative but does not directly measure current enzyme activity or individual tolerance.",
+          "availability": "Available through direct-to-consumer genetic testing (23andMe, Ancestry) and some gastroenterology centers. Increasingly accessible but clinical utility is limited because symptoms vary widely even among people with the same genotype."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "name": "Celiac disease",
+        "relationship": "comorbid",
+        "explanation": "Celiac disease damages the intestinal lining and can cause secondary lactase deficiency. Some people with celiac disease also have underlying primary lactase deficiency. Both conditions cause overlapping GI symptoms."
+      },
+      {
+        "name": "Non-celiac gluten sensitivity",
+        "relationship": "comorbid",
+        "explanation": "May coexist with lactose intolerance; both involve food-triggered GI symptoms. Some individuals improve on both gluten-free and dairy-free diets."
+      },
+      {
+        "name": "Irritable bowel syndrome (IBS)",
+        "relationship": "comorbid",
+        "explanation": "People with IBS are more sensitive to fermentable carbohydrates (FODMAP group includes lactose); lactose intolerance symptoms may be amplified in IBS."
+      },
+      {
+        "name": "Cow's milk allergy (CMA)",
+        "relationship": "often_confused",
+        "explanation": "Both cause GI symptoms but are distinct: lactose intolerance is enzyme deficiency (digestive problem); cow's milk allergy is immune reaction to milk proteins. CMA is more common in infants; lactose intolerance in older children and adults. CMA can cause systemic symptoms (rash, anaphylaxis); lactose intolerance does not."
+      },
+      {
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "mechanistic_link",
+        "explanation": "Lactose reaching the colon in lactose intolerance increases available substrate for bacterial fermentation, which can worsen SIBO symptoms. Some individuals with apparent lactose intolerance actually have SIBO."
+      },
+      {
+        "name": "Gastroenteritis or infectious diarrhea",
+        "relationship": "upstream",
+        "explanation": "Severe infections or inflammation can trigger secondary lactase deficiency by damaging the intestinal lining; lactose intolerance symptoms may persist for weeks after infection resolves."
+      },
+      {
+        "name": "Crohn's disease and ulcerative colitis",
+        "relationship": "upstream",
+        "explanation": "Inflammatory bowel diseases damage the intestinal lining and commonly cause secondary lactase deficiency. Inflammatory flares often worsen lactose intolerance symptoms."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Lactose avoidance or dietary restriction",
+          "category": "diet",
+          "description": "Limit or eliminate high-lactose foods (fluid milk, cream, soft cheeses, ice cream). Many people tolerate small amounts (e.g., in cooked dishes) or hard cheeses and yogurt (which have lower lactose). Identify personal tolerance threshold through trial and error. Start with complete avoidance, then gradually reintroduce small amounts to find your limit.",
+          "evidence_level": "strong",
+          "notes": "Most effective strategy for symptom prevention. Tolerance varies widely; some people can consume moderate amounts, others must avoid dairy entirely. Hard cheeses and fermented products are often better tolerated. Lactose content decreases with aging of cheese and fermentation time."
+        },
+        {
+          "name": "Lactose-free or reduced-lactose milk and dairy products",
+          "category": "diet",
+          "description": "Commercial lactose-free milk, yogurt, and cheese are available in most supermarkets. Lactose is already broken down enzymatically before sale, so the product is digestible for lactose-intolerant individuals. Tastes similar to regular dairy. Often slightly more expensive.",
+          "evidence_level": "strong",
+          "notes": "Effective and convenient. Maintains dairy intake for nutrition without triggering symptoms. Lactose-free products vary in taste and nutrition; try different brands. Some lactose-free milk has added sugars; check labels."
+        },
+        {
+          "name": "Lactase enzyme supplements (e.g., Lactaid)",
+          "category": "supplement",
+          "description": "Over-the-counter tablets or drops containing lactase enzyme. Consumed with dairy-containing foods; the enzyme breaks down lactose in the digestive tract. Effectiveness varies based on individual residual lactase, amount of lactose consumed, and product quality. Typically allow small to moderate dairy intake.",
+          "evidence_level": "moderate",
+          "notes": "Works best for people with partial (not complete) lactase deficiency. Take with the first bite of dairy food or a few minutes before. Brands and formulations vary; some people find certain brands more effective. Cost accumulates with regular use. Effectiveness may decrease if you use it repeatedly without true dairy avoidance."
+        },
+        {
+          "name": "Non-dairy milk alternatives",
+          "category": "diet",
+          "description": "Soy, almond, oat, coconut, or rice milk provide lactose-free alternatives to cow's milk. Fortified varieties contain added calcium and vitamin D to match dairy nutrition. Taste, texture, and nutrition vary by type. Soy and oat milk have highest protein content.",
+          "evidence_level": "strong",
+          "notes": "Widely available and improve symptom management completely. Some alternatives have added sugars or are low in nutrients; read labels. May require adjustment to taste initially. Ensure adequate calcium intake if not using fortified products."
+        },
+        {
+          "name": "Gradual lactose exposure (lactose adaptation)",
+          "category": "lifestyle",
+          "description": "Regular small amounts of lactose consumed daily may increase colonic bacteria that ferment lactose, reducing symptoms over weeks. Some individuals develop improved tolerance with consistent low-level exposure, though enzyme production does not increase.",
+          "evidence_level": "anecdotal",
+          "notes": "Works for some people but not reliably. Requires careful monitoring to avoid worsening symptoms during adaptation period. Mechanism is unclear; may relate to changes in gut bacteria composition rather than increased lactase production. Not suitable for people with severe intolerance."
+        },
+        {
+          "name": "Probiotics",
+          "category": "supplement",
+          "description": "Probiotic supplements containing lactobacillus or bifidobacterium strains have been studied for reducing lactose intolerance symptoms, with mixed results. The proposed mechanism is altered gut bacteria composition reducing gas production from lactose fermentation.",
+          "evidence_level": "anecdotal",
+          "notes": "Evidence is weak and inconsistent. Some individuals report symptom improvement; others see no benefit. Strain type, dose, and duration matter. Not a reliable standalone treatment. May be more helpful as adjunct to dietary changes."
+        },
+        {
+          "name": "Calcium supplementation (if dairy is avoided)",
+          "category": "supplement",
+          "description": "Calcium from supplements, fortified non-dairy milk, leafy greens, and other sources (almonds, tahini, sardines) maintains bone health and prevents deficiency when dairy is eliminated. Vitamin D should also be ensured for calcium absorption.",
+          "evidence_level": "strong",
+          "notes": "Necessary if dairy is completely avoided. Recommended intake is 1000\u20131200 mg daily for adults. Non-dairy sources and fortified products can easily meet this target. Consult healthcare provider about supplementation dose."
+        },
+        {
+          "name": "Vitamin D supplementation",
+          "category": "supplement",
+          "description": "Vitamin D is essential for calcium absorption. If dairy (a major source of vitamin D) is avoided, supplementation or increased sun exposure is important. Recommended intake is 600\u2013800 IU daily for adults; higher doses may be needed in northern latitudes or with limited sun exposure.",
+          "evidence_level": "strong",
+          "notes": "Often overlooked when managing lactose intolerance. Blood level testing can guide supplementation need. Fortified non-dairy milks can contribute to vitamin D intake."
+        },
+        {
+          "name": "Consuming dairy with other foods",
+          "category": "diet",
+          "description": "Eating lactose-containing foods with non-dairy foods (fats, proteins, fiber, carbohydrates) slows gastric emptying and lactose absorption, reducing osmotic effect and bacterial fermentation. Drinking milk with a meal rather than alone often causes fewer symptoms.",
+          "evidence_level": "moderate",
+          "notes": "Simple strategy that can increase tolerance without complete avoidance. Especially helpful for small to moderate amounts of dairy. Does not work for people with severe intolerance."
+        }
+      ],
+      "things_to_avoid": [
+        "Consuming large amounts of fluid milk, cream, or soft cheeses without lactase supplement or lactose-free alternative \u2014 this is the primary trigger for symptoms",
+        "Consuming dairy on an empty stomach \u2014 lactose is absorbed and fermented more rapidly, worsening symptoms",
+        "Assuming all dairy products are equally problematic \u2014 hard cheeses, fermented products, and yogurt are usually much better tolerated",
+        "Ignoring calcium and vitamin D nutrition when eliminating dairy \u2014 bone health depends on these nutrients; use fortified alternatives or supplements",
+        "Relying solely on probiotics as a treatment \u2014 current evidence does not support probiotics as a reliable standalone intervention",
+        "Completely avoiding dairy without exploring lactose-free or reduced-lactose options first \u2014 symptoms can be managed without complete dietary restriction in many cases",
+        "Self-diagnosing lactose intolerance without considering other causes (IBS, SIBO, celiac disease, food allergy) \u2014 symptoms may have a different cause requiring different management"
+      ]
+    },
+    "uncomfortable_truths": [],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Identify personal lactose tolerance threshold through systematic trial",
+          "why_it_matters": "Lactose intolerance exists on a spectrum; many people can tolerate small amounts or certain dairy products (e.g., hard cheese, yogurt). Finding this threshold allows optimal diet without unnecessary restriction. Some people with mild intolerance can consume dairy in limited amounts without symptoms.",
+          "how_to_start": "Completely avoid dairy for 1 week to confirm symptom resolution. Then reintroduce specific dairy products in small amounts (1\u20132 tablespoons) and document tolerance. Gradually increase portions until symptoms appear, then back off.",
+          "timeline": "2\u20134 weeks of systematic testing to establish reliable threshold",
+          "requires_professional": false
+        },
+        {
+          "lever": "Switch to lactose-free or non-dairy alternatives that match your preferences",
+          "why_it_matters": "Complete symptom resolution is achievable with accessible products; adherence requires finding alternatives that taste good and fit your diet. Consistency matters more than perfection.",
+          "how_to_start": "Visit a supermarket and sample 3\u20135 lactose-free milk brands and non-dairy alternatives (soy, oat, almond). Choose 1\u20132 favorites. Check that fortified varieties have adequate calcium and vitamin D.",
+          "timeline": "1\u20132 weeks to identify preferred alternatives; benefits immediate once switched",
+          "requires_professional": false
+        },
+        {
+          "lever": "Ensure adequate calcium and vitamin D intake from non-dairy sources or supplements",
+          "why_it_matters": "If dairy is avoided, nutritional deficiency risk increases unless supplemented. Long-term bone health, fracture risk, and overall health depend on adequate calcium and vitamin D.",
+          "how_to_start": "Calculate current calcium intake using an online dietary tracker or ask a dietitian. If below 1000\u20131200 mg daily, add fortified non-dairy milk (300 mg/cup), leafy greens, or a calcium supplement. Confirm vitamin D intake (600\u2013800 IU daily); consider supplement if limited sun exposure.",
+          "timeline": "Weeks 1\u20132 to assess and plan; supplements work immediately; dietary changes take weeks to habits form",
+          "requires_professional": true
+        },
+        {
+          "lever": "Differentiate lactose intolerance from cow's milk allergy, celiac disease, or IBS",
+          "why_it_matters": "If your symptoms are actually due to a different condition, dietary management will be ineffective or incomplete. Misdiagnosis delays appropriate treatment.",
+          "how_to_start": "Consult a primary care physician or gastroenterologist to confirm lactose intolerance (hydrogen breath test or elimination diet trial) and rule out other causes. If family history of celiac disease or IBS exists, ask about testing.",
+          "timeline": "Initial clinical assessment 1\u20132 weeks; testing (if needed) 1\u20134 weeks; results inform long-term strategy",
+          "requires_professional": true
+        },
+        {
+          "lever": "Address secondary lactase deficiency by treating underlying GI condition",
+          "why_it_matters": "If lactose intolerance developed suddenly after illness or is accompanied by other severe GI symptoms (chronic diarrhea, weight loss, blood in stool), the underlying condition (infection, celiac disease, IBD, SIBO) must be treated. Lactose restriction alone is insufficient.",
+          "how_to_start": "Consult a gastroenterologist if intolerance appeared suddenly, if symptoms are severe, or if other GI issues are present. Testing for celiac disease, IBS, SIBO, or IBD may be warranted.",
+          "timeline": "Diagnosis 2\u20138 weeks; treatment and recovery varies by condition; lactose intolerance may resolve once underlying condition is controlled",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Completely eliminating dairy without confirming lactose intolerance \u2014 many people restrict dairy unnecessarily due to minor symptoms, losing valuable nutrition. A trial of elimination followed by reintroduction clarifies actual tolerance.",
+        "Failing to supplement calcium and vitamin D when avoiding dairy \u2014 insidious bone health decline occurs over years; nutrient intake must be explicitly planned.",
+        "Assuming all dairy products are equally problematic \u2014 many people tolerate hard cheese, aged yogurt, and lactose-free products without symptoms; blanket avoidance is often unnecessary.",
+        "Attributing all GI symptoms to lactose intolerance without considering IBS, celiac disease, or SIBO \u2014 misattribution delays diagnosis and treatment of the true cause.",
+        "Using lactase pills inconsistently or incorrectly (too late, wrong dose) \u2014 effectiveness depends on timing and dose; supplements must be taken with the first bite of dairy.",
+        "Ignoring secondary lactase deficiency from underlying illness \u2014 if intolerance appeared after infection or GI disease, lactose restriction is a band-aid. The underlying condition must be treated.",
+        "Relying on expensive probiotics instead of dietary management \u2014 current evidence does not support probiotics as a primary treatment; dietary modification is more reliable and cost-effective."
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Gastroenterologist",
+          "role": "Can diagnose lactose intolerance via hydrogen breath test or clinical evaluation; identifies secondary lactase deficiency or other GI conditions; prescribes dietary and medical management. Often the first specialist to evaluate persistent GI symptoms.",
+          "notes": "Often the most appropriate first specialist referral for suspected lactose intolerance or complex GI symptoms."
+        },
+        {
+          "type": "Registered Dietitian (RD)",
+          "role": "Provides comprehensive dietary assessment, lactose avoidance strategies, meal planning with non-dairy alternatives, and ensures adequate nutrition (calcium, vitamin D, protein). Most practical support for long-term symptom management.",
+          "notes": "Many insurance plans cover dietitian visits with a physician referral. Dietitians are the most useful resource for sustainable dietary management. Some specialize in IBS or food intolerances."
+        },
+        {
+          "type": "Primary care physician",
+          "role": "Takes initial history, performs basic evaluation, and refers to specialists if needed. Can order breath testing or elimination diet trial. Manages overall health including screening for related conditions.",
+          "notes": "Reasonable starting point; many mild cases can be managed in primary care without specialist referral."
+        },
+        {
+          "type": "Allergist/Immunologist",
+          "role": "Necessary if cow's milk allergy (IgE-mediated) is suspected rather than lactose intolerance. Tests for milk protein allergy. Not needed for simple lactose intolerance.",
+          "notes": "Referral only if systemic symptoms (rash, anaphylaxis) or family history of food allergies is present."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/lactoseintolerance on Reddit",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/lactoseintolerance/",
+          "notes": "Active community sharing personal experiences, product recommendations, restaurant navigation tips, and symptom management strategies. Useful for discovering brand preferences and coping tactics."
+        },
+        {
+          "name": "Lactose Intolerance Group on Facebook",
+          "platform": "Facebook",
+          "url": null,
+          "notes": "Large support group with members worldwide sharing recipes, product reviews, and emotional support. Moderated for relevance; good for practical advice."
+        },
+        {
+          "name": "The IBS Network (UK-based but international membership)",
+          "platform": "Website and support groups",
+          "url": "https://www.theibsnetwork.org/",
+          "notes": "For people whose lactose intolerance coexists with IBS; provides evidence-based information on FODMAP diet and symptom management."
+        },
+        {
+          "name": "International Foundation for Gastrointestinal Disorders (IFFGD)",
+          "platform": "Website and resources",
+          "url": "https://www.iffgd.org/",
+          "notes": "Nonprofit organization with evidence-based patient education on lactose intolerance and related GI conditions. Reliable medical information."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Lactose Intolerance: Prevalence, Symptoms, and Diagnosis",
+        "type": "research paper",
+        "author_or_source": "Heyman et al., Journal of the American Academy of Pediatrics",
+        "url": null,
+        "description": "Comprehensive scientific overview of lactose intolerance epidemiology, pathophysiology, and diagnostic methods. Suitable for readers wanting detailed medical evidence.",
+        "audience": "advanced"
+      },
+      {
+        "title": "The FODMAP Diet and Lactose Intolerance",
+        "type": "website",
+        "author_or_source": "Monash University",
+        "url": "https://www.monashfodmap.com/",
+        "description": "Authoritative resource on low-FODMAP diet (which restricts lactose and other fermentable carbohydrates). Includes food database, recipes, and evidence-based guidance. Particularly useful for people with IBS and lactose intolerance.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Lactose Intolerance Myth",
+        "type": "book",
+        "author_or_source": "Not author-specific",
+        "url": null,
+        "description": "Explains the genetic, evolutionary, and nutritional aspects of lactose intolerance. Contextualizes lactose intolerance as normal variation rather than disease.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Nutritional Management of Lactose Intolerance",
+        "type": "website",
+        "author_or_source": "American Academy of Family Physicians (AAFP)",
+        "url": "https://www.aafp.org/",
+        "description": "Clinical resource for healthcare providers and patients on dietary management, calcium supplementation, and lactose-free alternatives. Evidence-based and practical.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Lactose Intolerance Self-Management",
+        "type": "video",
+        "author_or_source": "Mayo Clinic",
+        "url": "https://www.mayoclinic.org/",
+        "description": "Short video explanation of lactose intolerance, triggers, and practical management strategies. Clear and accessible for beginners.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Low-FODMAP Diet Handbook",
+        "type": "book",
+        "author_or_source": "Patsy Catsos, MS, RDN, LDNC",
+        "url": null,
+        "description": "Practical guide to low-FODMAP eating including lactose restriction for people with IBS or digestive sensitivity. Recipes and meal-planning tools.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Lactase Enzyme Supplementation: Efficacy and Timing",
+        "type": "research paper",
+        "author_or_source": "Savaiano and Levitt",
+        "url": null,
+        "description": "Evidence on effectiveness of over-the-counter lactase supplements, optimal dosing, and timing. Useful for people considering enzyme replacement.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Lactose Intolerance vs. Cow's Milk Allergy",
+        "type": "website",
+        "author_or_source": "Food Allergy Research & Education (FARE)",
+        "url": "https://www.foodallergy.org/",
+        "description": "Clear distinction between lactose intolerance (digestive) and cow's milk allergy (immune). Helps differentiate conditions and choose appropriate management.",
+        "audience": "beginner"
+      }
+    ],
+    "relevance_signal": "**Bloating, gas, loose stool** within 1\u20132 hours of drinking milk, eating yoghurt or soft cheese \u2014 but you tolerate hard aged cheeses fine."
+  }
+}

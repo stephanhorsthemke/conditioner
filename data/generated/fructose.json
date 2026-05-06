@@ -1,0 +1,391 @@
+{
+  "condition_id": "fructose",
+  "condition_name": "Fructose malabsorption",
+  "generated_at": "2026-04-16T09:27:47.489205Z",
+  "model": "claude-haiku-4-5-20251001",
+  "sections": {
+    "plain_summary": "Fructose malabsorption is a digestive condition where your small intestine has difficulty absorbing fructose (a simple sugar found in fruits, honey, and added sweeteners). When fructose reaches your colon unabsorbed, it causes gas, bloating, and diarrhoea. Unlike fructose intolerance (a rare genetic disorder), malabsorption is common and manageable through diet.",
+    "detailed_summary": "Fructose malabsorption occurs when the intestinal cells responsible for transporting fructose across the intestinal wall (via the GLUT5 transporter) function poorly. This can be due to low expression of the transporter protein, reduced intestinal surface area, or rapid intestinal transit. When fructose remains in the intestinal lumen, colonic bacteria ferment it, producing gas (hydrogen, methane, and carbon dioxide) and short-chain fatty acids that draw water into the stool. Symptoms typically appear 30 minutes to 2 hours after consuming fructose. The severity of malabsorption varies widely; some people absorb fructose poorly but experience no symptoms, whilst others with similar absorption show marked digestive distress. The condition is distinct from hereditary fructose intolerance (a genetic enzyme deficiency) and is not an immune or allergic response.",
+    "prevalence": {
+      "summary": "One of the most common carbohydrate malabsorption disorders, affecting a significant minority of the general population.",
+      "estimate": "30\u201340% of people in developed countries",
+      "notes": "Estimates vary widely depending on testing method (hydrogen breath test vs. clinical symptoms) and population studied. Prevalence may be higher in people with IBS. Many people are asymptomatic despite poor absorption. Prevalence may differ between ethnicities and geographical regions due to dietary patterns and genetic variation in GLUT5 expression."
+    },
+    "subgroups": [
+      {
+        "name": "Symptomatic fructose malabsorption",
+        "description": "People who have impaired fructose absorption AND experience symptoms when consuming fructose. Symptoms typically begin 30 minutes to 2 hours after intake.",
+        "distinguishing_features": [
+          "Positive breath test for fructose and reported symptoms during testing",
+          "Symptom relief on a low-fructose diet",
+          "May have concurrent lactose or sorbitol malabsorption"
+        ]
+      },
+      {
+        "name": "Asymptomatic fructose malabsorption",
+        "description": "People with reduced fructose absorption detected on breath testing but who experience no or minimal symptoms. These individuals do not require dietary restriction.",
+        "distinguishing_features": [
+          "Positive hydrogen breath test but no reported symptoms during testing",
+          "Can tolerate typical fructose intake without distress",
+          "Does not require treatment"
+        ]
+      },
+      {
+        "name": "Fructose malabsorption with IBS overlap",
+        "description": "People with both reduced fructose absorption and irritable bowel syndrome. Fructose may be one of multiple FODMAP triggers.",
+        "distinguishing_features": [
+          "Symptoms extend beyond fructose to other triggers (lactose, sorbitol, wheat, beans)",
+          "Patterns of alternating diarrhoea and constipation more common",
+          "May respond better to low-FODMAP diet than fructose restriction alone"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Bloating and abdominal distension",
+        "category": "digestive",
+        "notes": "Often noticeable within 30 minutes to 2 hours of consuming fructose; worsens through the day as more fructose is consumed"
+      },
+      {
+        "symptom": "Abdominal pain or cramping",
+        "category": "digestive",
+        "notes": "Severity ranges from mild discomfort to severe cramping; correlates with gas production and intestinal stretching"
+      },
+      {
+        "symptom": "Diarrhoea",
+        "category": "digestive",
+        "notes": "Osmotic mechanism: unabsorbed fructose draws water into the bowel; usually occurs within 1\u20133 hours of fructose intake"
+      },
+      {
+        "symptom": "Excessive gas and flatulence",
+        "category": "digestive",
+        "notes": "Caused by bacterial fermentation of unabsorbed fructose; may be accompanied by belching"
+      },
+      {
+        "symptom": "Nausea",
+        "category": "digestive",
+        "notes": "Less common but can occur alongside other symptoms; may relate to gastric distension"
+      },
+      {
+        "symptom": "Constipation",
+        "category": "digestive",
+        "notes": "Less typical than diarrhoea but can occur in some individuals, especially those with slower transit or concurrent issues"
+      },
+      {
+        "symptom": "Fatigue",
+        "category": "systemic",
+        "notes": "Mild fatigue sometimes reported, possibly related to poor nutrient absorption or osmotic fluid loss; usually resolves with dietary adjustment"
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Symptoms reliably appear after eating specific high-fructose foods (fruits, honey, high-fructose corn syrup, agave)",
+        "Bloating and gas are reproducible within 1\u20132 hours of fructose intake",
+        "Symptoms improve noticeably when fructose-rich foods are avoided for several days",
+        "Symptoms may worsen when eating multiple high-fructose foods or in large quantities",
+        "Symptoms are triggered by fructose but not by other foods, or fructose worsens symptoms already present with other foods"
+      ],
+      "at_home": [
+        {
+          "name": "Food and symptom diary",
+          "description": "Record all food and drink consumed and note timing, type, and severity of symptoms (bloating, gas, diarrhoea, cramping) for 7\u201314 days. Focus on fructose content of foods (high-fructose fruits, honey, agave, processed foods with high-fructose corn syrup). Look for a consistent pattern of symptoms 30 minutes to 2 hours after high-fructose foods.",
+          "safety_notes": "Safe to perform. Do not restrict diet unnecessarily before testing; maintain normal intake to generate clear symptom patterns. If symptoms are severe, consider seeking professional guidance before proceeding."
+        },
+        {
+          "name": "Elimination and reintroduction challenge",
+          "description": "Avoid all high-fructose foods for 5\u20137 days and record baseline symptoms. Then reintroduce one high-fructose food (e.g. a medium apple or 1 tablespoon of honey) in a single meal and observe symptoms over the next 2\u20133 hours. Note timing, severity, and type of symptoms. Repeat with different fructose sources if needed.",
+          "safety_notes": "Generally safe for most people. If you have severe symptoms, start with very small quantities. If symptoms are intense, stop the challenge and seek advice. Do not perform if you have a history of severe food reactions."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Hydrogen breath test (HBT) for fructose",
+          "type": "gold_standard",
+          "description": "You fast overnight and consume a standard dose of fructose (typically 25 g dissolved in water). Breath samples are collected at baseline and at regular intervals (usually every 15\u201330 minutes for 2\u20133 hours). Hydrogen and/or methane in breath is measured; elevated levels indicate bacterial fermentation of unabsorbed fructose. A positive test combined with reported symptoms during the test confirms symptomatic malabsorption.",
+          "availability": "Ordered by a gastroenterologist, primary care doctor, or dietitian; performed at hospital or specialised testing centres. Widely available in developed countries but may require referral."
+        },
+        {
+          "name": "Genetic testing for GLUT5 polymorphisms",
+          "type": "emerging",
+          "description": "DNA testing to identify genetic variants in the GLUT5 gene (which encodes the fructose transporter). Certain polymorphisms are associated with reduced fructose absorption. Not yet routinely used for diagnosis but may become clinically relevant as research progresses.",
+          "availability": "Limited availability; primarily in research settings or specialist centres. Not yet a standard clinical test."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "name": "Irritable bowel syndrome (IBS)",
+        "relationship": "comorbid",
+        "explanation": "Fructose malabsorption and IBS frequently co-occur. Fructose is a FODMAP (fermentable carbohydrate) and may trigger or worsen IBS symptoms. Many people with IBS have multiple carbohydrate malabsorptions (fructose, lactose, sorbitol). Distinguishing between the two requires testing and careful dietary assessment."
+      },
+      {
+        "name": "Lactose malabsorption",
+        "relationship": "comorbid",
+        "explanation": "People with fructose malabsorption often also have reduced lactose or sorbitol absorption. This is sometimes referred to as multiple carbohydrate malabsorption. Symptoms may overlap, making it important to test for all three if dietary restriction becomes necessary."
+      },
+      {
+        "name": "Sorbitol malabsorption",
+        "relationship": "comorbid",
+        "explanation": "Sorbitol (a sugar alcohol) is often malabsorbed alongside fructose, as both use overlapping transporters. Foods high in sorbitol (stone fruits, sugar-free products) may trigger symptoms in people with fructose malabsorption."
+      },
+      {
+        "name": "Hereditary fructose intolerance (HFI)",
+        "relationship": "often_confused",
+        "explanation": "A rare genetic disorder caused by deficiency of the enzyme aldolase B; presents with severe symptoms (vomiting, hypoglycaemia, liver damage) after fructose intake. Fructose malabsorption is much more common and does not cause these systemic symptoms. The two are often confused but are distinct conditions."
+      },
+      {
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "mechanistic_link",
+        "explanation": "SIBO can cause malabsorption-like symptoms, including bloating and diarrhoea after carbohydrate intake. Some people may have both SIBO and fructose malabsorption. Testing and treatment differ between the two, so proper diagnosis is important."
+      },
+      {
+        "name": "Coeliac disease",
+        "relationship": "comorbid",
+        "explanation": "Coeliac disease damages the intestinal lining and can reduce nutrient and carbohydrate absorption, including fructose. Some people have both conditions. Testing for coeliac disease should be considered if symptoms do not fully resolve with fructose restriction."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Low-fructose diet",
+          "category": "diet",
+          "description": "Limit or avoid high-fructose foods including stone fruits (apples, pears, peaches), dried fruits, honey, agave, high-fructose corn syrup, and some vegetables (asparagus, artichokes, onions, wheat). Focus on fruits lower in fructose (bananas, berries, citrus) and glucose-based carbohydrates (rice, potatoes, regular sugar in moderation). Most people see substantial symptom improvement within 3\u20137 days.",
+          "evidence_level": "strong",
+          "notes": "This is the primary management strategy. Individual tolerance varies; some people can tolerate moderate amounts of certain fruits whilst others must avoid them strictly. Work with a dietitian to ensure adequate nutrition and avoid unnecessary restriction."
+        },
+        {
+          "name": "Low-FODMAP diet",
+          "category": "diet",
+          "description": "A structured diet that restricts fermentable carbohydrates, including fructose, lactose, sorbitol, and certain fibres. Typically used when multiple carbohydrate malabsorptions are present or when symptoms suggest IBS. More restrictive than simple fructose avoidance but addresses multiple triggers.",
+          "evidence_level": "strong",
+          "notes": "Effective for 60\u201370% of people with IBS and carbohydrate malabsorption. Should be implemented under dietitian guidance to avoid nutritional deficiency and unnecessary restriction. Usually done in phases: strict restriction (2\u20134 weeks), then gradual reintroduction to identify individual tolerance."
+        },
+        {
+          "name": "Gradual reintroduction and tolerance building",
+          "category": "diet",
+          "description": "After initial symptom control on a low-fructose diet, slowly reintroduce small amounts of fructose-containing foods to establish individual tolerance thresholds. Many people can tolerate moderate amounts with adaptation over time, possibly due to colonic bacterial adaptation.",
+          "evidence_level": "moderate",
+          "notes": "Tolerance may improve over weeks to months as the gut microbiome adapts. Individual thresholds vary widely; personalised titration is key. Some people permanently require strict avoidance, whilst others expand their diet significantly."
+        },
+        {
+          "name": "Enzyme supplements (e.g. xylose isomerase)",
+          "category": "supplement",
+          "description": "Xylose isomerase converts fructose to glucose in the small intestine, potentially improving absorption. Taken with fructose-containing meals. Limited evidence but some people report benefit.",
+          "evidence_level": "anecdotal",
+          "notes": "Not widely available or studied. Efficacy varies considerably. Expensive and not covered by many insurance plans. May be worth trying under professional guidance if dietary restriction is insufficiently practical."
+        },
+        {
+          "name": "Soluble fibre supplementation (psyllium husk, inulin with caution)",
+          "category": "supplement",
+          "description": "Soluble fibre can improve stool consistency and reduce gas sensation by slowing transit and bulking stool. However, high-fibre foods are often high in fructans (a type of fructose polymer); introduce cautiously or choose low-FODMAP fibre sources.",
+          "evidence_level": "moderate",
+          "notes": "Paradoxically, fibre can worsen symptoms in some people with malabsorption due to fermentation. Start with small amounts. Psyllium husk is often better tolerated than inulin or FOS (fructooligosaccharides)."
+        },
+        {
+          "name": "Peppermint oil",
+          "category": "supplement",
+          "description": "Enteric-coated peppermint oil capsules can reduce abdominal pain and bloating by relaxing intestinal smooth muscle. Taken between meals.",
+          "evidence_level": "moderate",
+          "notes": "Helpful for symptom relief but does not address the underlying malabsorption. May interact with medications; check with a doctor or pharmacist. Not a primary treatment."
+        },
+        {
+          "name": "Probiotics",
+          "category": "supplement",
+          "description": "Certain probiotic strains may modulate gas production and gut symptoms, though evidence is mixed. Some strains may help with bloating or diarrhoea.",
+          "evidence_level": "anecdotal",
+          "notes": "Efficacy is highly individual and strain-dependent. Not a substitute for dietary management. Quality and viability of supplements vary; choose reputable brands."
+        },
+        {
+          "name": "Meal timing and portion control",
+          "category": "diet",
+          "description": "Eating smaller, more frequent meals and spacing fructose intake throughout the day may reduce symptom severity compared to consuming large amounts at once. Avoid consuming high-fructose foods on an empty stomach.",
+          "evidence_level": "moderate",
+          "notes": "Does not eliminate malabsorption but can reduce symptom burden. Often combined with low-fructose diet."
+        },
+        {
+          "name": "Adequate hydration and fluid intake",
+          "category": "lifestyle",
+          "description": "Drinking sufficient water helps manage osmotic diarrhoea and supports digestive health. Important when following a restricted diet.",
+          "evidence_level": "moderate",
+          "notes": "Aim for 1.5\u20132 litres of water daily unless otherwise advised by a doctor. Avoid high-sugar drinks and excess caffeine, which can worsen symptoms."
+        }
+      ],
+      "things_to_avoid": [
+        "High-fructose fruits (apples, pears, mango, peaches, watermelon, dried fruits) \u2014 exacerbate bloating and diarrhoea",
+        "Honey and agave \u2014 concentrated fructose sources; trigger symptoms rapidly",
+        "High-fructose corn syrup and foods sweetened with it \u2014 common in processed foods, beverages, and condiments",
+        "Onions and garlic in large quantities \u2014 high in fructans (fructose polymers); can trigger gas",
+        "Wheat and rye in large amounts \u2014 contain fructans; may worsen symptoms if malabsorption is severe",
+        "Sugar alcohols (sorbitol, xylitol) \u2014 often malabsorbed alongside fructose; found in sugar-free products",
+        "Caffeine in excess \u2014 can increase gut motility and worsen diarrhoea",
+        "Alcohol \u2014 can damage intestinal lining and worsen symptoms; some alcoholic drinks are high in fructose",
+        "Overeating or very large meals \u2014 increases osmotic load and fermentation; spreads digestion over longer time, worsening bloating"
+      ]
+    },
+    "uncomfortable_truths": [],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Systematic dietary exclusion and reintroduction with professional guidance",
+          "why_it_matters": "Establishes clear individual tolerance thresholds and prevents unnecessary over-restriction, which can compromise nutrition and quality of life. Allows sustainable long-term management tailored to your specific needs.",
+          "how_to_start": "Consult a registered dietitian experienced in malabsorption or IBS. They will help you design an elimination phase (typically 2\u20134 weeks), monitor symptoms, and systematically reintroduce foods to map your personal tolerance.",
+          "timeline": "Initial phase: 2\u20134 weeks; full reintroduction mapping: 2\u20133 months",
+          "requires_professional": true
+        },
+        {
+          "lever": "Regular monitoring and adaptation as tolerance may change",
+          "why_it_matters": "Gut microbiota composition, intestinal permeability, and enzyme expression can change over time. Periodic reassessment ensures your dietary strategy remains appropriate and prevents unnecessary restriction of foods you may now tolerate.",
+          "how_to_start": "Schedule periodic check-ins with your dietitian (every 3\u20136 months initially). Keep a food and symptom diary to track changes in tolerance. Gently test tolerance of previously problematic foods every few weeks.",
+          "timeline": "Ongoing; major reassessments every 6\u201312 months or if symptoms change",
+          "requires_professional": false
+        },
+        {
+          "lever": "Optimising gut health through stable, tolerated diet and adequate nutrition",
+          "why_it_matters": "A stable, symptom-controlled diet supports intestinal healing and may improve long-term malabsorption tolerance. Adequate protein, fibre (from tolerated sources), and micronutrients support immune and digestive function.",
+          "how_to_start": "Once you have identified tolerated foods, build a varied, balanced diet within those boundaries. Include adequate protein (meat, fish, eggs, legumes if tolerated), resistant starch (potatoes, rice), and soluble fibre from low-fructose sources (oats, carrots). Avoid prolonged over-restriction.",
+          "timeline": "Months to years; ongoing dietary optimisation",
+          "requires_professional": true
+        },
+        {
+          "lever": "Understanding and managing stress, which can alter gut function and symptom perception",
+          "why_it_matters": "The gut-brain axis means stress and anxiety can exacerbate bloating, pain, and motility issues. Stress management often reduces symptom burden independent of fructose intake.",
+          "how_to_start": "Identify stress-reduction techniques that work for you (meditation, yoga, exercise, therapy, breathing techniques). Practice regularly, especially during high-stress periods. Note any correlation between stress and symptom flares.",
+          "timeline": "Benefits may appear within weeks; optimal effects over months",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Overly strict permanent restriction \u2014 many people restrict far more foods than necessary, leading to nutritional deficiency and reduced quality of life. Instead, identify your actual tolerance threshold through systematic reintroduction.",
+        "Assuming fructose malabsorption is the only cause of symptoms \u2014 IBS, SIBO, coeliac disease, and other conditions may coexist. If strict fructose avoidance does not fully resolve symptoms, seek testing for other causes.",
+        "Eliminating whole food groups (all fruits, all sweeteners) without professional guidance \u2014 leads to nutritional gaps and often unnecessary restriction. Work with a dietitian to build a balanced diet within your tolerance limits.",
+        "Not differentiating between glucose, sucrose, and fructose \u2014 focusing only on 'sugar' rather than specifically identifying fructose sources means missing key triggers and restricting foods unnecessarily.",
+        "Ignoring portion sizes and cumulative fructose intake \u2014 many people can tolerate small amounts of fructose without symptoms but develop symptoms if intake is high. Finding the sweet spot (pun intended) for your threshold is crucial.",
+        "Failing to address secondary causes of malabsorption \u2014 if malabsorption developed after an intestinal infection, surgery, or coeliac disease, treating the underlying cause may improve absorption.",
+        "Expecting overnight resolution \u2014 significant improvement usually takes 3\u20137 days on a low-fructose diet, but full optimisation and tolerance mapping takes weeks to months. Patience is important."
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Registered Dietitian (particularly with IBS or malabsorption specialisation)",
+          "role": "Essential for diagnosis, dietary assessment, elimination-reintroduction protocols, and ensuring nutritional adequacy during dietary restriction. Dietitians have the most detailed knowledge of fructose content in foods and can personalise management.",
+          "notes": "Often the first and most important professional to consult. Many insurance plans cover dietitian visits with a referral from your doctor. Seek someone experienced with FODMAPs or IBS."
+        },
+        {
+          "type": "Gastroenterologist",
+          "role": "Can order hydrogen breath testing, rule out other conditions (coeliac disease, SIBO, IBS), and manage complex cases. Essential if symptoms are severe or diagnosis is uncertain.",
+          "notes": "Often the professional who diagnoses fructose malabsorption via breath testing. May be dismissive if they do not specialise in functional disorders; seek one experienced with IBS and carbohydrate malabsorption if possible."
+        },
+        {
+          "type": "Primary care doctor (general practitioner)",
+          "role": "Can provide initial evaluation, rule out alarm symptoms, and refer to specialists. May support dietary management and monitor for complications or nutritional deficiency.",
+          "notes": "Helpful for coordination of care but may have limited expertise in malabsorption; seek guidance from your GP on referral to a dietitian or gastroenterologist."
+        },
+        {
+          "type": "Functional medicine doctor or naturopath",
+          "role": "May take a detailed dietary and symptom history and recommend elimination diets and supplements. Some are knowledgeable about FODMAPs and malabsorption.",
+          "notes": "Not all functional practitioners are similarly trained; check credentials and experience. Quality of evidence varies; do not rely solely on unproven supplements. May be helpful as complementary support but should not replace assessment by a gastroenterologist for diagnosis."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "IBS Network (UK)",
+          "platform": "website and forums",
+          "url": "https://www.theibsnetwork.org",
+          "notes": "Excellent resources on IBS and FODMAPs including fructose malabsorption. Active community and evidence-based information."
+        },
+        {
+          "name": "FODMAP Friendly (Australia-based, international)",
+          "platform": "website and social media",
+          "url": "https://www.fodmapfriendly.com",
+          "notes": "Specialises in low-FODMAP diet education, certified low-FODMAP food lists, and recipes. Active social media community."
+        },
+        {
+          "name": "Reddit: r/FoodIntolerances and r/IBS",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/FoodIntolerances/ and https://www.reddit.com/r/IBS/",
+          "notes": "Active communities where people share experiences, recipes, and tips. Helpful for peer support but verify medical information independently."
+        },
+        {
+          "name": "Monash University Low FODMAP Diet App",
+          "platform": "mobile app (iOS and Android)",
+          "url": "https://www.monashfodmap.com/",
+          "notes": "Evidence-based tool for identifying low-FODMAP foods; regularly updated research from the university that pioneered the diet. Particularly useful for high-fructose fruit identification."
+        },
+        {
+          "name": "American Gastroenterological Association Patient Resources",
+          "platform": "website",
+          "url": "https://www.gastro.org/patient-care/digestive-conditions",
+          "notes": "Reliable medical information on GI conditions and links to specialist directories."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "The Complete Low-FODMAP Diet: A Revolutionary Plan for Managing IBS and Other Digestive Disorders",
+        "type": "book",
+        "author_or_source": "Sue Shepherd and Peter Gibson",
+        "url": null,
+        "description": "Foundational guide to the low-FODMAP diet by the researchers who developed it. Explains the science clearly and includes detailed food lists and recipes. Excellent for understanding fructose malabsorption in the context of multiple carbohydrate intolerances.",
+        "audience": "beginner"
+      },
+      {
+        "title": "IBS: A Doctor's Plan for Chronic Digestive Troubles",
+        "type": "book",
+        "author_or_source": "Gerard E. Mullin",
+        "url": null,
+        "description": "Comprehensive guide covering IBS, malabsorption, and FODMAP management. Written by a gastroenterologist; evidence-based and practical.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Monash University Low FODMAP Diet",
+        "type": "website",
+        "author_or_source": "Monash University",
+        "url": "https://www.monashfodmap.com/",
+        "description": "The official, research-backed resource for low-FODMAP diet information. Includes extensive food lists, recipes, and scientific articles. Free and premium content available.",
+        "audience": "beginner"
+      },
+      {
+        "title": "IBS: Managing the Condition Naturally",
+        "type": "book",
+        "author_or_source": "Patsy Catsos",
+        "url": null,
+        "description": "Practical guide focusing on IBS and carbohydrate malabsorption management. Easy-to-read, actionable advice on diet, stress, and lifestyle.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Fermentation Cure Podcast",
+        "type": "podcast",
+        "author_or_source": "various hosts",
+        "url": null,
+        "description": "Episodes discussing malabsorption, FODMAP, and gut health. Accessible science-based discussions with real patient experiences.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Fructose Malabsorption and FODMAP \u2014 Research Overview",
+        "type": "research paper",
+        "author_or_source": "Gibson, P. R., & Shepherd, S. J.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/",
+        "description": "Peer-reviewed research articles on the mechanisms of fructose malabsorption, prevalence, and effectiveness of low-FODMAP diets. Search PubMed for 'fructose malabsorption' or 'FODMAP IBS'.",
+        "audience": "advanced"
+      },
+      {
+        "title": "American Gastroenterological Association Clinical Guidelines on IBS",
+        "type": "research paper",
+        "author_or_source": "American Gastroenterological Association",
+        "url": "https://www.gastro.org/",
+        "description": "Evidence-based clinical practice guidelines covering diagnosis and management of IBS, including discussion of carbohydrate malabsorption.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "What I Wish I Knew About IBS \u2014 Personal Stories and Practical Advice",
+        "type": "website/forum",
+        "author_or_source": "The IBS Network and similar patient organisations",
+        "url": "https://www.theibsnetwork.org",
+        "description": "Patient testimonials and shared experiences. Helpful for understanding the lived reality of fructose malabsorption and seeing how others manage dietary restriction.",
+        "audience": "beginner"
+      }
+    ],
+    "relevance_signal": "**Bloating and loose stool** after fruit, honey, or fruit juice \u2014 especially apples, mangoes, and anything with high-fructose corn syrup."
+  }
+}

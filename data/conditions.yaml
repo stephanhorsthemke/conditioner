@@ -1,0 +1,304 @@
+groups:
+  starting_points:
+    label: Starting points
+  enzyme:
+    label: Digestive enzyme & absorption
+  microbial:
+    label: Microbial overgrowth & infection
+  immune:
+    label: Immune & chemical sensitivity
+  structural:
+    label: Structural, hormonal & motility
+  braingut:
+    label: Brain-gut & psychological
+  masqueraders:
+    label: Conditions often mistaken for IBS
+
+conditions:
+
+  - id: ibs
+    label: IBS
+    aliases: [Irritable bowel syndrome]
+    group: starting_points
+    diagnosis_type: syndromic
+    sub_conditions:
+      - { id: lactase,               probability: 5 }
+      - { id: fructose,              probability: 5 }
+      - { id: sibo,                  probability: 5 }
+      - { id: dysbiosis,             probability: 5 }
+      - { id: central_sensitisation, probability: 5 }
+      - { id: anxiety,               probability: 5 }
+      - { id: depression,            probability: 5 }
+      - { id: sorbitol,              probability: 4 }
+      - { id: sibo_h2,               probability: 4 }
+      - { id: histamine,             probability: 4 }
+      - { id: ncgs,                  probability: 4 }
+      - { id: trauma,                probability: 4 }
+      - { id: sibo_ch4,              probability: 3 }
+      - { id: hpylori,               probability: 3 }
+      - { id: fungal,                probability: 3 }
+      - { id: mcas,                  probability: 3 }
+      - { id: igg,                   probability: 3 }
+      - { id: salicylate,            probability: 3 }
+      - { id: thyroid,               probability: 3 }
+      - { id: coeliac,               probability: 3 }
+      - { id: sid,                   probability: 2 }
+      - { id: bam,                   probability: 2 }
+      - { id: epi,                   probability: 2 }
+      - { id: sibo_h2s,              probability: 2 }
+      - { id: nickel,                probability: 2 }
+      - { id: oxalate,               probability: 2 }
+      - { id: eosinophilic,          probability: 2 }
+      - { id: eds,                   probability: 2 }
+      - { id: pots,                  probability: 2 }
+      - { id: endometriosis,         probability: 2 }
+      - { id: hormonal,              probability: 2 }
+      - { id: pelvic_floor,          probability: 2 }
+      - { id: microscopic_colitis,   probability: 2 }
+      - { id: ibd_remission,         probability: 2 }
+      - { id: parasite,              probability: 1 }
+      - { id: atopic_dermatitis,     probability: 1 }
+      - { id: gastroparesis,         probability: 1 }
+      - { id: adhesions,             probability: 1 }
+      - { id: fibromyalgia,          probability: 1 }
+      - { id: functional_dyspepsia,  probability: 1 }
+
+  - id: lactase
+    label: Lactase deficiency
+    group: enzyme
+    diagnosis_type: aetiological
+
+  - id: sid
+    label: Sucrase-isomaltase deficiency
+    group: enzyme
+    diagnosis_type: aetiological
+
+  - id: fructose
+    label: Fructose malabsorption
+    group: enzyme
+    diagnosis_type: pathophysiological
+
+  - id: sorbitol
+    label: Sorbitol / polyol intolerance
+    group: enzyme
+    diagnosis_type: pathophysiological
+
+  - id: bam
+    label: Bile acid malabsorption
+    group: enzyme
+    aliases: [BAM]
+    diagnosis_type: pathophysiological
+
+  - id: epi
+    label: Exocrine pancreatic insufficiency
+    group: enzyme
+    aliases: [EPI]
+    diagnosis_type: pathophysiological
+
+  - id: sibo
+    label: SIBO
+    group: microbial
+    aliases: [Small intestinal bacterial overgrowth]
+    diagnosis_type: pathophysiological
+    subtypes:
+      - id: sibo_h2
+        label: Hydrogen SIBO
+        diagnosis_type: pathophysiological
+      - id: sibo_ch4
+        label: Methane SIBO
+        diagnosis_type: pathophysiological
+      - id: sibo_h2s
+        label: Hydrogen sulphide SIBO
+        diagnosis_type: pathophysiological
+
+  - id: dysbiosis
+    label: Gut dysbiosis
+    group: microbial
+    diagnosis_type: pathophysiological
+
+  - id: parasite
+    label: Parasitic infection
+    group: microbial
+    diagnosis_type: aetiological
+
+  - id: hpylori
+    label: H. pylori infection
+    group: microbial
+    aliases: [Helicobacter pylori]
+    diagnosis_type: aetiological
+
+  - id: fungal
+    label: Fungal overgrowth
+    group: microbial
+    aliases: [SIFO, Candida overgrowth]
+    diagnosis_type: pathophysiological
+
+  - id: mcas
+    label: Mast cell activation syndrome
+    group: immune
+    aliases: [MCAS]
+    diagnosis_type: pathophysiological
+
+  - id: histamine
+    label: Histamine intolerance
+    group: immune
+    diagnosis_type: pathophysiological
+
+  - id: nickel
+    label: Nickel sensitivity
+    group: immune
+    aliases: [SNAS, systemic nickel allergy syndrome]
+    diagnosis_type: aetiological
+
+  - id: igg
+    label: IgG food sensitivities
+    group: immune
+    diagnosis_type: pathophysiological
+
+  - id: ncgs
+    label: Non-coeliac gluten sensitivity
+    group: immune
+    aliases: [NCGS]
+    diagnosis_type: pathophysiological
+
+  - id: oxalate
+    label: Oxalate accumulation
+    group: immune
+    diagnosis_type: pathophysiological
+
+  - id: salicylate
+    label: Salicylate intolerance
+    group: immune
+    diagnosis_type: pathophysiological
+
+  - id: eosinophilic
+    label: Eosinophilic GI disorders
+    group: immune
+    diagnosis_type: pathophysiological
+
+  - id: atopic_dermatitis
+    label: Atopic dermatitis
+    group: immune
+    aliases: [eczema, atopic eczema]
+    diagnosis_type: constitutional
+
+  - id: allergy
+    label: Allergy
+    group: immune
+    aliases: [IgE-mediated allergy, allergic disease]
+    diagnosis_type: aetiological
+
+  - id: allergic_rhinitis
+    label: Allergic rhinitis
+    group: immune
+    aliases: [hay fever, seasonal allergies]
+    diagnosis_type: pathophysiological
+
+  - id: eds
+    label: Hypermobile EDS / HSD
+    group: structural
+    aliases: [hEDS, hypermobility spectrum disorder]
+    diagnosis_type: constitutional
+
+  - id: pots
+    label: POTS / dysautonomia
+    group: structural
+    aliases: [postural tachycardia syndrome]
+    diagnosis_type: pathophysiological
+
+  - id: endometriosis
+    label: Endometriosis
+    group: structural
+    diagnosis_type: aetiological
+
+  - id: hormonal
+    label: Hormonal / menstrual cycle effects
+    group: structural
+    diagnosis_type: pathophysiological
+
+  - id: pelvic_floor
+    label: Pelvic floor dysfunction
+    group: structural
+    diagnosis_type: pathophysiological
+
+  - id: gastroparesis
+    label: Gastroparesis
+    group: structural
+    diagnosis_type: pathophysiological
+
+  - id: adhesions
+    label: Surgical adhesions
+    group: structural
+    diagnosis_type: aetiological
+
+  - id: tos
+    label: Thoracic outlet syndrome
+    group: structural
+    aliases: [TOS]
+    diagnosis_type: pathophysiological
+
+  - id: central_sensitisation
+    label: Central sensitisation
+    group: braingut
+    aliases: [visceral hypersensitivity]
+    diagnosis_type: pathophysiological
+
+  - id: anxiety
+    label: Anxiety disorder
+    group: braingut
+    diagnosis_type: pathophysiological
+
+  - id: depression
+    label: Depression
+    group: braingut
+    diagnosis_type: pathophysiological
+
+  - id: trauma
+    label: Trauma / PTSD
+    group: braingut
+    diagnosis_type: aetiological
+
+  - id: fibromyalgia
+    label: Fibromyalgia
+    group: braingut
+    diagnosis_type: syndromic
+
+  - id: functional_dyspepsia
+    label: Functional dyspepsia
+    group: structural
+    aliases: [FD, non-ulcer dyspepsia]
+    diagnosis_type: syndromic
+
+  - id: adhd
+    label: ADHD
+    group: braingut
+    aliases: [attention-deficit/hyperactivity disorder]
+    diagnosis_type: constitutional
+
+  - id: microscopic_colitis
+    label: Microscopic colitis
+    group: masqueraders
+    diagnosis_type: masquerader
+
+  - id: thyroid
+    label: Thyroid dysfunction
+    group: masqueraders
+    diagnosis_type: masquerader
+
+  - id: coeliac
+    label: Coeliac disease
+    group: masqueraders
+    diagnosis_type: masquerader
+
+  - id: ibd_remission
+    label: IBD in remission
+    group: masqueraders
+    aliases: [Crohn's disease, ulcerative colitis]
+    diagnosis_type: masquerader
+
+
+relationships:
+  # Conditions that frequently co-occur or one drives the other
+  # format: from → to | type | strength
+  # type: causes | worsens | overlaps
+  # strength: strong | moderate | weak

@@ -1,0 +1,526 @@
+{
+  "condition_id": "sibo_h2s",
+  "condition_name": "Hydrogen sulphide SIBO",
+  "generated_at": "2026-04-16T09:41:10.810006Z",
+  "model": "claude-haiku-4-5-20251001",
+  "sections": {
+    "plain_summary": "Hydrogen sulphide SIBO is a type of small intestinal bacterial overgrowth where bacteria produce excessive hydrogen sulphide gas, causing bloating, diarrhoea, and abdominal discomfort. It is less common than the methane and hydrogen-dominant types but can be particularly difficult to treat.",
+    "detailed_summary": "Hydrogen sulphide (H\u2082S) SIBO is a subset of small intestinal bacterial overgrowth characterised by bacterial overgrowth in the small intestine that produces hydrogen sulphide gas as a metabolic byproduct. Unlike the more commonly recognised methane-producing (archaea-dominated) and hydrogen-producing SIBO types, H\u2082S SIBO involves bacteria that generate sulphide compounds from dietary sulphur and amino acids. This type can cause symptoms ranging from bloating and abdominal pain to diarrhoea and constipation. H\u2082S is a potent neurotoxin and can affect intestinal motility and barrier function. Diagnosis is emerging and less standardised than other SIBO types, and treatment often requires targeted dietary restriction of sulphur-containing foods alongside antimicrobials or probiotics.",
+    "prevalence": {
+      "summary": "Hydrogen sulphide SIBO is estimated to account for a minority of all SIBO cases, though exact prevalence is unclear.",
+      "estimate": "5\u201310% of SIBO cases; SIBO itself affects an estimated 5\u201315% of the general population, so H\u2082S SIBO may affect fewer than 1% of the general population",
+      "notes": "Prevalence is contested because testing for H\u2082S SIBO is not yet standardised or widely available. Many cases may go undiagnosed or be misclassified as hydrogen or methane SIBO. No robust epidemiological studies yet exist. Recognition and diagnosis have increased in recent years as functional medicine and gastroenterology practices adopt H\u2082S-specific breath testing."
+    },
+    "subgroups": [
+      {
+        "name": "Classic H\u2082S SIBO with diarrhoea",
+        "description": "Patients with predominantly loose stools and rapid intestinal transit, often triggered or worsened by sulphur-rich foods.",
+        "distinguishing_features": [
+          "Frequent diarrhoea, often worse after meals",
+          "Rapid relief with dietary sulphur restriction",
+          "Low methane and hydrogen on breath testing, with elevated H\u2082S or sulphite markers",
+          "May have concurrent dysbiosis favouring sulphate-reducing bacteria"
+        ]
+      },
+      {
+        "name": "H\u2082S SIBO with constipation or alternating bowel habit",
+        "description": "A variant in which H\u2082S impairs intestinal motility, leading to constipation or erratic bowel patterns rather than diarrhoea.",
+        "distinguishing_features": [
+          "Constipation or irregular bowel movements despite bacterial overgrowth",
+          "Often accompanied by significant bloating and abdominal distension",
+          "May respond less predictably to prokinetic agents alone",
+          "Dietary management often focuses on both sulphur avoidance and motility support"
+        ]
+      },
+      {
+        "name": "H\u2082S SIBO with suspected neurological involvement",
+        "description": "Cases in which H\u2082S gas appears to cross the intestinal barrier and cause systemic or neurological symptoms.",
+        "distinguishing_features": [
+          "Cognitive fog, headaches, or mood changes alongside GI symptoms",
+          "Symptom onset or flares linked clearly to high-sulphur food intake",
+          "Possible elevated homocysteine or other markers of impaired sulphur metabolism",
+          "May benefit from additional support for detoxification and barrier repair"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Bloating and abdominal distension",
+        "category": "digestive",
+        "notes": "Often most pronounced 1\u20133 hours after meals, particularly meals high in sulphur-containing foods like cruciferous vegetables, garlic, or onions. May worsen throughout the day."
+      },
+      {
+        "symptom": "Diarrhoea or loose stools",
+        "category": "digestive",
+        "notes": "Common presentation; may be watery and urgent, particularly after trigger foods. Some patients experience only occasional loose stools rather than chronic diarrhoea."
+      },
+      {
+        "symptom": "Abdominal pain or cramping",
+        "category": "digestive",
+        "notes": "Can range from mild discomfort to severe colicky pain. Often improves transiently with bowel movements or after passing gas."
+      },
+      {
+        "symptom": "Constipation or irregular bowel movements",
+        "category": "digestive",
+        "notes": "Less common than diarrhoea but can occur, especially if H\u2082S impairs intestinal smooth muscle function. May alternate with diarrhoea."
+      },
+      {
+        "symptom": "Excessive gas and flatulence",
+        "category": "digestive",
+        "notes": "Often accompanied by a characteristic rotten-egg or sulphur odour. Gas production is usually worse in the afternoon and evening."
+      },
+      {
+        "symptom": "Rotten-egg smell in flatus or breath",
+        "category": "digestive",
+        "notes": "A hallmark feature of H\u2082S SIBO. The odour comes from hydrogen sulphide gas and is often more pronounced than in other SIBO types."
+      },
+      {
+        "symptom": "Nausea or loss of appetite",
+        "category": "digestive",
+        "notes": "May be triggered by the odour or taste of sulphur-containing foods or by distension and pain."
+      },
+      {
+        "symptom": "Brain fog or cognitive difficulties",
+        "category": "neurological",
+        "notes": "Anecdotally reported and may be related to H\u2082S crossing the intestinal barrier or metabolic effects. Typically improves with dietary intervention."
+      },
+      {
+        "symptom": "Headaches",
+        "category": "neurological",
+        "notes": "Some patients report headaches that coincide with high-sulphur meals or periods of flares. Mechanism unclear but may involve H\u2082S toxicity or secondary metabolic changes."
+      },
+      {
+        "symptom": "Mood changes or irritability",
+        "category": "neurological",
+        "notes": "Reported by some patients, possibly linked to H\u2082S's neurotoxic effects or secondary dysbiosis and inflammation."
+      },
+      {
+        "symptom": "Fatigue",
+        "category": "systemic",
+        "notes": "May result from malabsorption, inflammation, or the metabolic burden of dysbiosis. Often improves with treatment."
+      },
+      {
+        "symptom": "Joint or muscle aches",
+        "category": "systemic",
+        "notes": "Anecdotally reported; mechanism unknown but may relate to systemic inflammation or metabolic byproducts."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Bloating and gas that significantly worsen after eating cruciferous vegetables (broccoli, cauliflower, cabbage), allium vegetables (garlic, onions), or eggs",
+        "Foul-smelling flatus with a characteristic rotten-egg odour",
+        "Diarrhoea or loose stools, particularly after sulphur-rich meals",
+        "Symptoms that resolve or greatly improve within days of restricting sulphur-containing foods",
+        "Cognitive or mood symptoms that coincide with GI flares and dietary triggers"
+      ],
+      "at_home": [
+        {
+          "name": "Food and symptom diary with sulphur-food focus",
+          "description": "Record all foods eaten, time of consumption, and symptom onset and character (bloating, gas, stool type, flatus odour, cognitive symptoms) for at least 10\u201314 days. Highlight meals containing sulphur-rich foods: cruciferous vegetables (broccoli, cauliflower, cabbage, Brussels sprouts), alliums (garlic, onion, leeks), eggs, high-protein foods, processed meats, and sulphites. Look for clustering of symptoms 1\u20133 hours after these foods.",
+          "safety_notes": "This is a low-risk observational tool. Do not restrict foods excessively without professional guidance, as prolonged dietary restriction can lead to nutritional deficiency or disordered eating patterns."
+        },
+        {
+          "name": "Elimination and re-challenge of sulphur foods",
+          "description": "After 1\u20132 weeks of careful observation, strictly avoid high-sulphur foods for 3\u20135 days and document any improvement in bloating, gas odour, bowel habits, or brain fog. If symptoms improve significantly, reintroduce one sulphur-rich food (e.g. a small portion of garlic) and observe for symptom recurrence within 1\u20133 hours.",
+          "safety_notes": "Do not restrict sulphur foods for more than 1\u20132 weeks without professional guidance. Some sulphur-containing foods (cruciferous vegetables) are nutritionally important; long-term strict avoidance may cause micronutrient shortfall. Consult a registered dietitian before extended elimination."
+        },
+        {
+          "name": "Odour and consistency tracking",
+          "description": "Daily note the odour of flatus (normal, garlicky, rotten-egg, etc.) and stool consistency (Bristol scale 1\u20137) in a simple log. Rotten-egg smell is a key marker; consistency helps identify diarrhoea (6\u20137) versus constipation (1\u20132).",
+          "safety_notes": "This is non-invasive and safe. Use it to strengthen patterns observed in the food diary."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Hydrogen sulphide breath testing (H\u2082S breath test)",
+          "type": "emerging",
+          "description": "The patient fasts for 12 hours, then ingests a test solution (typically glucose or lactulose), and exhales into collection bags at regular intervals (usually every 20 minutes for 2\u20133 hours). Breath samples are analysed for hydrogen sulphide, hydrogen, and methane. An elevated H\u2082S curve (typically >10 ppm baseline or >20 ppm with provocation) or a rise in H\u2082S over time suggests H\u2082S SIBO. This test is more specific for H\u2082S SIBO than traditional hydrogen and methane breath tests but is not yet standardised.",
+          "availability": "Not widely available through mainstream medical systems. Offered by some functional medicine clinics, specialised gastroenterology practices, and direct-to-consumer SIBO testing laboratories. Cost typically ranges from \u00a3150\u2013400. Order through a functional medicine doctor, naturopath, or online testing companies (e.g. SIBO Health, Quintiles, or functional labs). Some mainstream gastroenterologists may order it if requested, but insurance coverage is limited."
+        },
+        {
+          "name": "Hydrogen and methane breath testing (traditional SIBO test)",
+          "type": "standard",
+          "description": "Similar protocol to H\u2082S testing. Breath is analysed for hydrogen and methane only. Does not directly measure H\u2082S. If a patient has gastrointestinal symptoms and a classic SIBO breath test shows normal or low hydrogen and methane, H\u2082S SIBO may be considered. A flat or atypical hydrogen/methane curve with clinical symptoms consistent with H\u2082S SIBO is sometimes interpreted as presumptive H\u2082S SIBO.",
+          "availability": "Widely available through gastroenterologists, functional medicine practices, and online SIBO labs. Cost typically \u00a3100\u2013250. Often covered by private insurance if ordered by a specialist; NHS availability varies by region."
+        },
+        {
+          "name": "Organic acids test or urine metabolites",
+          "type": "emerging",
+          "description": "Urine or stool organic acids testing may show elevated markers of impaired sulphur metabolism or dysbiosis (e.g. elevated hippuric acid, d-arabinitol, or other dysbiosis markers). Some labs measure urinary sulphate or thiosulfate as indirect evidence of H\u2082S production. These are not diagnostic but may support a clinical suspicion.",
+          "availability": "Available through functional medicine and integrative medicine practices. Cost typically \u00a3100\u2013200. Not routinely ordered by mainstream gastroenterologists."
+        },
+        {
+          "name": "Stool analysis with dysbiosis markers",
+          "type": "standard",
+          "description": "Comprehensive stool testing can identify dysbiosis, dysbiotic flora dominance (including sulphate-reducing bacteria), and other microbial imbalances. While not specific for H\u2082S SIBO, it may reveal patterns consistent with bacterial overgrowth and provide additional evidence for dysbiosis-driven symptoms.",
+          "availability": "Available through functional medicine clinics and some naturopaths. Cost typically \u00a3150\u2013300. Some NHS gastroenterologists may order basic stool cultures, but comprehensive microbiome analysis is not routine."
+        },
+        {
+          "name": "Small intestinal aspirate and culture",
+          "type": "gold_standard",
+          "description": "During upper endoscopy, the clinician aspirates fluid directly from the proximal small intestine and culture it. A bacterial count >10\u2075 CFU/mL confirms SIBO. Culture can identify sulphate-reducing bacteria and other H\u2082S-producing species. This is the gold standard for SIBO diagnosis but invasive and rarely performed outside specialist centres. Culture for H\u2082S-producing organisms is particularly specialised and may not be routinely available.",
+          "availability": "Offered only in specialist gastroenterology centres with advanced microbiology labs. Most NHS hospitals can perform endoscopy but may not culture for H\u2082S-producing species specifically. Private specialists are more likely to offer this service."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "name": "Irritable bowel syndrome (IBS)",
+        "relationship": "often_confused",
+        "explanation": "IBS and H\u2082S SIBO both cause bloating, diarrhoea, and abdominal pain. However, IBS is a functional disorder without bacterial overgrowth, and does not produce the characteristic rotten-egg odour or respond dramatically to sulphur avoidance. Some patients diagnosed with IBS may actually have H\u2082S SIBO."
+      },
+      {
+        "name": "Other types of SIBO (hydrogen-dominant and methane-dominant)",
+        "relationship": "mechanistic_link",
+        "explanation": "H\u2082S SIBO shares a common pathophysiology (bacterial overgrowth in the small intestine) with hydrogen and methane SIBO but differs in the type of gas produced and the bacterial species involved. Patients may have polymicrobial overgrowth with multiple gas producers, or may transition from one SIBO type to another during treatment."
+      },
+      {
+        "name": "Mastocytosis or histamine intolerance",
+        "relationship": "comorbid",
+        "explanation": "H\u2082S and histamine are both produced by dysbiotic bacteria and can trigger overlapping GI and neurological symptoms. Some patients have both conditions simultaneously, and high-histamine foods often overlap with high-sulphur foods."
+      },
+      {
+        "name": "Leaky gut or increased intestinal permeability",
+        "relationship": "mechanistic_link",
+        "explanation": "H\u2082S can damage the intestinal epithelium and increase permeability. Conversely, increased permeability may predispose to SIBO development. The relationship is bidirectional."
+      },
+      {
+        "name": "Food sensitivities and allergies",
+        "relationship": "comorbid",
+        "explanation": "Dysbiosis and SIBO impair tolerance of various foods. H\u2082S SIBO specifically causes sensitivity to sulphur-containing foods, which may be confused with or coexist with IgE-mediated allergies or IgG-mediated food sensitivities."
+      },
+      {
+        "name": "Gastroparesis or other motility disorders",
+        "relationship": "upstream",
+        "explanation": "Impaired gastric emptying and small intestinal motility predispose to SIBO by allowing bacterial colonisation. H\u2082S-producing bacteria may further impair motility, creating a vicious cycle."
+      },
+      {
+        "name": "Chronic pancreatitis or pancreatic insufficiency",
+        "relationship": "upstream",
+        "explanation": "Reduced pancreatic enzyme secretion impairs protein digestion and increases substrate availability for dysbiotic bacteria, including H\u2082S producers."
+      },
+      {
+        "name": "Cystic fibrosis",
+        "relationship": "upstream",
+        "explanation": "CF causes pancreatic insufficiency and altered bile acid metabolism, both of which predispose to dysbiosis and SIBO."
+      },
+      {
+        "name": "Bile acid malabsorption or biliary dyskinesia",
+        "relationship": "upstream",
+        "explanation": "Reduced bile acid levels impair fat absorption and antimicrobial defences, allowing bacterial overgrowth. Some patients with SIBO have concurrent bile reflux or biliary dysfunction."
+      },
+      {
+        "name": "Food poisoning or acute gastroenteritis",
+        "relationship": "upstream",
+        "explanation": "Post-infectious IBS and SIBO can develop after acute bacterial or viral gastroenteritis. Some pathogens trigger post-infectious dysbiosis that favours H\u2082S-producing bacteria."
+      },
+      {
+        "name": "Hypochlorhydria or achlorhydria",
+        "relationship": "upstream",
+        "explanation": "Low stomach acid reduces the antimicrobial barrier and predisposes to bacterial overgrowth. Use of proton pump inhibitors or H\u2082 blockers increases SIBO risk."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Low-sulphur diet",
+          "category": "diet",
+          "description": "Restrict or eliminate high-sulphur foods including cruciferous vegetables (broccoli, cauliflower, cabbage, Brussels sprouts), alliums (garlic, onion, leek, shallot), eggs, high-protein foods (especially processed meats), and foods with sulphite additives. Focus on low-sulphur foods like rice, chicken, fish, leafy greens (lettuce, spinach), carrots, and non-cruciferous vegetables. Introduce foods gradually to identify tolerance. This is the cornerstone of H\u2082S SIBO management and often produces rapid symptom improvement.",
+          "evidence_level": "moderate",
+          "notes": "Individual tolerance varies widely. Some patients tolerate small amounts of sulphur-rich foods; others require strict avoidance. Long-term strict sulphur restriction may lead to nutrient deficiency (particularly in folate, vitamins C and K, and minerals). Work with a dietitian to ensure nutritional adequacy and to reintroduce foods as dysbiosis resolves. Avoid prolonged restriction without professional guidance."
+        },
+        {
+          "name": "Low-FODMAP diet",
+          "category": "diet",
+          "description": "Restrict fermentable carbohydrates (oligosaccharides, disaccharides, monosaccharides, and polyols) that feed dysbiotic bacteria. Common high-FODMAP foods include wheat, onions, garlic, apples, pears, honey, and high-fructose products. Low-FODMAP foods include rice, oats, potatoes, carrots, chicken, and most meats. May be used in conjunction with sulphur restriction.",
+          "evidence_level": "moderate",
+          "notes": "Low-FODMAP is well-established for IBS but less specific to H\u2082S SIBO. Sulphur restriction may be more important for H\u2082S SIBO specifically. Combining both diets can be overly restrictive and nutritionally risky. Implement under dietitian supervision and plan a reintroduction phase after 4\u20138 weeks."
+        },
+        {
+          "name": "Elemental diet or liquid nutrient supplementation",
+          "category": "diet",
+          "description": "Complete or partial replacement of normal food with a liquid elemental formula (amino acid-based, low residue) for 2\u20134 weeks. This starves dysbiotic bacteria and allows intestinal healing. Typically combined with antimicrobial therapy. Most effective for severe SIBO but difficult to tolerate long-term.",
+          "evidence_level": "moderate",
+          "notes": "Effective for SIBO in general but data specific to H\u2082S SIBO are limited. May cause weight loss and nutrient depletion if used without medical supervision. Requires dietitian support and planning for refeeding phase. Use only under professional guidance."
+        },
+        {
+          "name": "Herbal antimicrobials or essential oils",
+          "category": "supplement",
+          "description": "Plant-based compounds such as oregano oil, garlic extract, berberine, thymol, or neem oil have antimicrobial properties and may suppress dysbiotic bacteria. Often used as an alternative or adjunct to antibiotics. Dosing and duration vary; typical regimen is 4\u20138 weeks.",
+          "evidence_level": "anecdotal",
+          "notes": "Evidence is predominantly anecdotal and small studies. Quality and potency of commercial supplements vary widely. Some antimicrobials (e.g. garlic) contain sulphur and may paradoxically worsen H\u2082S SIBO in the short term. Avoid high-sulphur herbal antimicrobials. Consult a practitioner experienced in SIBO herbal treatment."
+        },
+        {
+          "name": "Prescription antimicrobials: rifaxomicin, metronidazole, or neomycin",
+          "category": "medication",
+          "description": "Antibiotics that target bacterial overgrowth. Rifaxomicin is a non-absorbed broad-spectrum antibiotic used specifically for SIBO; metronidazole and neomycin are older alternatives. Typical course is 2\u20134 weeks. May be repeated if relapse occurs.",
+          "evidence_level": "strong",
+          "notes": "Most evidence is for hydrogen and methane SIBO; efficacy in H\u2082S SIBO is less well-studied but likely similar. Side effects can include GI upset, metallic taste, and allergic reactions. Requires prescription from a doctor. Relapse occurs in 30\u201350% of patients within 12 months."
+        },
+        {
+          "name": "Prokinetic agents",
+          "category": "medication",
+          "description": "Medications or supplements that enhance small intestinal motility and prevent stasis that predisposes to bacterial overgrowth. Options include low-dose naltrexone (LDN), domperidone, metoclopramide, prucalopride, or natural prokinetics like ginger or digestive enzymes. Used to prevent recurrence after antimicrobial therapy.",
+          "evidence_level": "moderate",
+          "notes": "Essential for patients with underlying motility impairment. LDN is increasingly used in functional medicine for SIBO but evidence is limited. Domperidone and metoclopramide have neurological side effects with long-term use. Consult a gastroenterologist about appropriate choice based on individual motility findings."
+        },
+        {
+          "name": "Probiotics and prebiotics",
+          "category": "supplement",
+          "description": "Specific probiotic strains (e.g. Saccharomyces boulardii, Lactobacillus plantarum, Faecalibacterium prausnitzii) may help rebalance the microbiota after antimicrobial therapy. Prebiotics (e.g. partially hydrolysed guar gum, psyllium) provide substrate for beneficial bacteria. Introduce after or during the tail end of antimicrobial therapy, not before.",
+          "evidence_level": "moderate",
+          "notes": "Probiotic efficacy in SIBO is debated; some patients worsen with probiotics due to gas production. Saccharomyces boulardii and soil-based organisms are generally better tolerated than lactobacilli in acute SIBO. Avoid during early treatment; introduce cautiously during recovery phase. Choose strains tested for SIBO safety."
+        },
+        {
+          "name": "Digestive enzymes",
+          "category": "supplement",
+          "description": "Supplemental pancreatic enzymes or plant-based enzymes (amylase, protease, lipase) may improve protein and carbohydrate digestion, reducing substrate for dysbiotic bacteria. Particularly useful if pancreatic insufficiency is present.",
+          "evidence_level": "anecdotal",
+          "notes": "Limited specific evidence in H\u2082S SIBO. Most helpful if there is confirmed pancreatic insufficiency or impaired digestion. Take with meals. Avoid enzyme supplements containing high-sulphur ingredients."
+        },
+        {
+          "name": "Intestinal barrier support: L-glutamine, bone broth, zinc carnosine",
+          "category": "supplement",
+          "description": "Amino acids and nutrients that support intestinal epithelial health and reduce permeability. L-glutamine and glycine support mucosa repair; bone broth provides collagen and minerals; zinc carnosine strengthens tight junctions. Combine with diet and antimicrobial therapy.",
+          "evidence_level": "moderate",
+          "notes": "Evidence is strongest for zinc carnosine in gastric ulcers and moderate for L-glutamine in general GI health. May take 4\u201312 weeks to see benefit. Long-term safety data are limited. Combine with low-sulphur diet for best results."
+        },
+        {
+          "name": "Antihistamine or histamine-lowering strategies",
+          "category": "medication",
+          "description": "If histamine intolerance coexists with H\u2082S SIBO, low-dose antihistamines (e.g. famotidine, diphenhydramine) or DAO enzyme supplements may help reduce histamine-related symptoms. A low-histamine diet may also help.",
+          "evidence_level": "anecdotal",
+          "notes": "Relevant only if histamine symptoms are prominent. Some antihistamines can impair digestion. Consult a doctor before using prescription antihistamines long-term."
+        },
+        {
+          "name": "Stress reduction and nervous system regulation",
+          "category": "lifestyle",
+          "description": "Practices such as meditation, deep breathing, yoga, or progressive muscle relaxation support the parasympathetic nervous system and improve digestive function and barrier integrity. Chronic stress impairs gut motility and immune tolerance.",
+          "evidence_level": "moderate",
+          "notes": "Stress management is foundational for chronic digestive conditions. Use alongside dietary and medical interventions, not instead of them. Even 10\u201315 minutes daily can be beneficial."
+        },
+        {
+          "name": "Sleep optimisation",
+          "category": "lifestyle",
+          "description": "Ensure 7\u20139 hours of quality sleep nightly. Poor sleep impairs immune function, barrier integrity, and gut motility, all of which predispose to or worsen SIBO.",
+          "evidence_level": "moderate",
+          "notes": "Sleep deprivation significantly worsens GI symptoms and dysbiosis. If sleep disturbance is present, address it early in treatment."
+        },
+        {
+          "name": "Gentle exercise and movement",
+          "category": "lifestyle",
+          "description": "Regular gentle movement (walking, swimming, tai chi) supports intestinal motility and reduces bloating and stasis. Avoid high-intensity exercise during acute flares, as it can worsen symptoms.",
+          "evidence_level": "moderate",
+          "notes": "Motility-promoting activity is especially important if constipation or slowed transit is a component. Abdominal massage may also help, particularly in circular motions following the colon."
+        }
+      ],
+      "things_to_avoid": [
+        "High-sulphur foods: cruciferous vegetables (broccoli, cauliflower, cabbage, Brussels sprouts), alliums (garlic, onion, leek), eggs, processed meats, and foods with sulphite preservatives. Avoidance typically produces rapid symptom relief in H\u2082S SIBO.",
+        "Antibacterial soaps and overuse of sanitisers: excessive hygiene can disrupt healthy microbiota and alter selection pressures, potentially worsening dysbiosis.",
+        "Proton pump inhibitors and H\u2082 blockers (unless medically necessary): these reduce stomach acid and increase SIBO risk. If used, discuss with a doctor about potential SIBO contribution to symptoms.",
+        "Non-steroidal anti-inflammatory drugs (NSAIDs): chronic NSAID use increases intestinal permeability and predisposes to dysbiosis. Paracetamol is preferred for pain relief if needed.",
+        "Excessive fibre or very high-FODMAP foods: while some fibre is beneficial, excess can feed dysbiotic bacteria and worsen bloating and gas. Introduce fibre gradually during recovery.",
+        "Alcohol: may damage intestinal barrier, alter microbiota, and trigger bacterial metabolic changes that worsen H\u2082S production.",
+        "Rapid dietary changes: sudden elimination of major food groups without guidance risks nutritional deficiency and GI distress. Implement dietary changes gradually and with professional support.",
+        "Over-reliance on testing or repeated testing: excessive breath or stool testing can reinforce health anxiety and lead to cycles of unnecessary antimicrobial use. Rely on symptom response as the primary guide.",
+        "Strict restriction beyond 4\u20138 weeks without reintroduction planning: prolonged elimination of entire food groups (sulphur, FODMAP, fibre) can impair nutritional status and microbiota diversity. Plan a structured reintroduction phase with a dietitian."
+      ]
+    },
+    "uncomfortable_truths": [],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Identifying and restricting the specific food triggers, particularly sulphur-rich foods",
+          "why_it_matters": "Sulphur-containing foods directly feed sulphate-reducing bacteria and worsen gas production and symptoms. Restriction is the most direct and often most effective intervention and produces symptom improvement within days to weeks.",
+          "how_to_start": "Complete a 10\u201314 day food and symptom diary, focusing on sulphur-containing foods (cruciferous vegetables, alliums, eggs, high-protein foods). Identify the foods most consistently associated with bloating, gas odour, and diarrhoea. Begin by eliminating or greatly reducing the top 3\u20135 trigger foods for 3\u20135 days and monitor symptom response.",
+          "timeline": "Symptom improvement is often noticeable within 24\u201348 hours of elimination. Full benefit typically seen within 1\u20132 weeks.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Restoring healthy gut motility and preventing bacterial stasis",
+          "why_it_matters": "Impaired small intestinal motility is a root cause of SIBO. Without addressing motility, dysbiosis is likely to recur after antimicrobial treatment. Prokinetic interventions prevent relapse.",
+          "how_to_start": "First, investigate whether motility is impaired (see gastroenterologist for small intestinal manometry if possible). Then implement non-pharmacological prokinetics: eat regular meals (not skipping breakfast), take a 15\u201320 minute walk after meals, stay well-hydrated, and reduce stress. Add ginger tea or a natural prokinetic supplement if these are insufficient. Discuss prescription prokinetics (LDN, domperidone) with a doctor if symptoms persist.",
+          "timeline": "Motility-supporting changes may take 4\u20138 weeks to show benefit. Prescription prokinetics may work more quickly (2\u20134 weeks).",
+          "requires_professional": true
+        },
+        {
+          "lever": "Selecting appropriate antimicrobial therapy and timing it correctly",
+          "why_it_matters": "Antimicrobial therapy (antibiotic or herbal) eliminates or suppresses overgrown bacteria, interrupting the disease process. However, antimicrobials must be paired with dietary changes and motility support to prevent relapse. Premature or delayed treatment reduces efficacy.",
+          "how_to_start": "Consult a gastroenterologist or functional medicine doctor to confirm SIBO diagnosis and discuss antimicrobial options (rifaxomicin is preferred; herbal antimicrobials are an alternative). Ensure dietary modifications and prokinetic planning are in place before starting antimicrobials. Begin antimicrobials while adhering to the low-sulphur and low-FODMAP diet.",
+          "timeline": "Standard antimicrobial course is 2\u20134 weeks. Symptom improvement may begin during treatment; full benefit is seen 2\u20134 weeks after completing the course.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Repairing and protecting the intestinal barrier",
+          "why_it_matters": "SIBO and H\u2082S damage the intestinal epithelium and increase permeability. Barrier repair reduces symptom severity, prevents bacterial translocation, and reduces relapse risk. This is a slower but foundational intervention.",
+          "how_to_start": "Add barrier-supporting supplements: L-glutamine (5\u201310 g daily), bone broth or collagen (10\u201320 g daily), and zinc carnosine (75 mg twice daily). Combine with the low-sulphur, low-FODMAP diet and stress reduction. Ensure adequate hydration and sleep.",
+          "timeline": "Barrier repair is gradual; benefits typically emerge over 8\u201312 weeks. Combined with other interventions, this contributes to long-term remission.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Maintaining long-term compliance with dietary and lifestyle modifications after antimicrobial treatment",
+          "why_it_matters": "Relapse of SIBO is common (30\u201350% within 12 months) if dietary and motility support are not maintained. Sustainable improvement requires ongoing adherence to trigger-food avoidance and motility enhancement, alongside periodic reintroduction of restricted foods.",
+          "how_to_start": "After completing antimicrobial therapy, plan a structured food reintroduction protocol with a dietitian. Introduce one sulphur-rich or high-FODMAP food every 3\u20135 days and monitor for symptom recurrence. Continue taking probiotics (if tolerated) and prokinetics. Maintain regular exercise, sleep, and stress management indefinitely.",
+          "timeline": "Reintroduction typically takes 8\u201312 weeks. Once a stable diet is identified, maintenance is open-ended; periodic relapses may occur and require brief dietary tightening.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Managing coexisting conditions (e.g. histamine intolerance, food sensitivities, motility disorders)",
+          "why_it_matters": "Many patients have multiple overlapping conditions (histamine intolerance, IBS, dysbiosis) that interact and worsen symptoms. Addressing all contributors simultaneously is more effective than targeting SIBO alone.",
+          "how_to_start": "During the initial assessment, discuss with a doctor or dietitian whether histamine intolerance, other food sensitivities, or motility disorders are present. If so, create a treatment plan that addresses all conditions (e.g. low-sulphur + low-histamine diet, antimicrobials + prokinetics + antihistamines).",
+          "timeline": "Complex cases may take 3\u20136 months to see full improvement. Addressing multiple conditions is more time-intensive but often leads to better long-term outcomes.",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Starting antimicrobial therapy without addressing motility or diet: Antimicrobials alone are insufficient. Without prokinetic support and dietary restriction, bacterial overgrowth recurs within months. Combine all three: diet, antimicrobials, and motility support.",
+        "Over-restricting diet and never reintroducing foods: Prolonged, excessive dietary restriction leads to nutritional deficiency, food anxiety, and loss of microbiota diversity. After 4\u20138 weeks of restriction, begin a structured reintroduction protocol with a dietitian.",
+        "Using sulphur-containing herbal antimicrobials (e.g. high-dose garlic extract): Some traditional antimicrobials contain sulphur and can paradoxically worsen H\u2082S SIBO symptoms. Choose antimicrobials carefully or use pharmaceutical options.",
+        "Diagnosing SIBO based on symptoms alone without testing: Symptoms of H\u2082S SIBO overlap significantly with IBS, food sensitivities, and other conditions. While breath testing is not perfect, confirmation is important to avoid unnecessary long-term dietary restriction.",
+        "Relying exclusively on probiotics without antimicrobial therapy: Probiotics are useful after antimicrobial therapy but cannot alone eliminate established SIBO. Many patients taking probiotics without antimicrobial therapy see minimal improvement.",
+        "Ignoring underlying motility problems: If motility is impaired (e.g. due to gastroparesis, IBS with constipation, or post-surgical adhesions), SIBO is likely to recur unless motility is addressed. Obtain a motility assessment if possible.",
+        "Extreme or prolonged stress and poor sleep without intervention: Stress impairs motility and immune tolerance; poor sleep worsens all aspects of SIBO. Ignoring these factors dramatically reduces treatment success. Invest in stress reduction and sleep quality from the start.",
+        "Giving up too early or expecting overnight cure: SIBO is a chronic condition; sustainable improvement takes 8\u201316 weeks minimum. Expecting rapid resolution or stopping treatment after a few weeks before full recovery is a common reason for relapse.",
+        "Not working with a knowledgeable professional: H\u2082S SIBO is emerging and not well-known among mainstream doctors. Attempting to self-treat without professional guidance (ideally a gastroenterologist or functional medicine doctor familiar with SIBO) significantly reduces success and may delay diagnosis of other conditions."
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Gastroenterologist",
+          "role": "Often the first medical doctor to suspect and diagnose SIBO. Can order breath testing, perform small intestinal aspirate if needed, and prescribe antimicrobial medications (rifaxomicin, metronidazole). May offer referral to a dietitian.",
+          "notes": "Many mainstream gastroenterologists are sceptical of H\u2082S SIBO because it is not yet standardised in clinical practice and is not emphasised in traditional medical training. Seek a gastroenterologist with specific interest in SIBO or functional GI disorders. Some university hospitals and specialist GI centres have SIBO clinics."
+        },
+        {
+          "type": "Functional medicine doctor or integrative medicine practitioner",
+          "role": "Often more familiar with H\u2082S SIBO and emerging testing methods. More likely to order H\u2082S-specific breath tests and to discuss dietary and herbal antimicrobial approaches. Can coordinate care with a dietitian.",
+          "notes": "Functional medicine doctors are not always medically licensed; verify credentials and board certification (e.g. through the Institute for Functional Medicine). Some are MDs or DOs with additional functional medicine training and can prescribe medications. Others may be naturopaths or health coaches with more limited scope. Costs are often not covered by insurance."
+        },
+        {
+          "type": "Registered dietitian specialising in digestive health or SIBO",
+          "role": "Essential for personalised dietary management. Can identify trigger foods, design a low-sulphur and low-FODMAP diet tailored to individual tolerance, and plan reintroduction protocols. Supports nutritional adequacy during restriction.",
+          "notes": "Look for registered dietitians (RD or RDN credentials in the US, AFD or RCCP in the UK). Some specialise in SIBO and have detailed knowledge of H\u2082S SIBO triggers. Consult one early in treatment to avoid prolonged malnutrition from excessive restriction."
+        },
+        {
+          "type": "Naturopath or herbal medicine practitioner",
+          "role": "May be knowledgeable about herbal antimicrobials and natural motility support. Can provide guidance on supplements and botanicals for dysbiosis and barrier repair.",
+          "notes": "Credentials and training vary widely; naturopaths are not licensed physicians in most places. Seek one with specific training in clinical herbal medicine or botanical medicine and verification of credentials. Ensure they are familiar with H\u2082S SIBO specifically, as some herbal protocols may inadvertently worsen H\u2082S symptoms."
+        },
+        {
+          "type": "Primary care doctor or general practitioner",
+          "role": "Can rule out other diagnoses, monitor for medication side effects, and refer to specialists. May be less knowledgeable about SIBO but can order basic tests and provide continuity of care.",
+          "notes": "Mainstream primary care doctors often have limited familiarity with H\u2082S SIBO. Educate your doctor by bringing research or test results. They are valuable for monitoring overall health and coordinating referrals."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "Reddit r/SIBO",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/SIBO/",
+          "notes": "Active community of SIBO patients sharing experiences, symptom patterns, and treatment approaches. Discussions include diet, antimicrobials, testing, and relapses. H\u2082S SIBO is discussed but less frequently than hydrogen and methane SIBO. Useful for peer support and practical tips but verify medical claims with professionals."
+        },
+        {
+          "name": "SIBO SOS (Surviving and Overcoming SIBO) Facebook group",
+          "platform": "Facebook",
+          "url": null,
+          "notes": "Large, moderated community focussing on recovery and prevention. Members share meal ideas, testing experiences, and practitioner recommendations. H\u2082S SIBO discussions are present but moderate. Groups vary in quality; look for those with professional moderation or evidence-based focus."
+        },
+        {
+          "name": "Swenson Institute SIBO Community Forum",
+          "platform": "Forum",
+          "url": "https://www.swensorinstitute.com/",
+          "notes": "Educational resource and forum run by a functional medicine organisation specialising in SIBO. Includes research-backed information on SIBO types and treatment. More structured and evidence-focused than general social media groups."
+        },
+        {
+          "name": "Patient Health University or Digestive Health Patient Foundation",
+          "platform": "Website and educational platform",
+          "url": null,
+          "notes": "Patient-focused educational resources on digestive conditions including SIBO. Offer webinars and evidence-based information. May have links to specialist directories or support networks."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Small Intestinal Bacterial Overgrowth (SIBO): Pathogenesis, Diagnosis, and Evidence-Based Treatment",
+        "type": "research paper",
+        "author_or_source": "Pimentel M, et al., Journal of Neurogastroenterology and Motility",
+        "url": null,
+        "description": "Comprehensive peer-reviewed overview of SIBO pathophysiology, diagnosis, and evidence-based treatment. Less detailed on H\u2082S SIBO specifically but foundational for understanding the broader SIBO context. Suitable for intermediate to advanced readers.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Hydrogen Sulphide SIBO: Emerging Recognition and Therapeutic Approaches",
+        "type": "research paper",
+        "author_or_source": "Levitt MD, et al., American Journal of Gastroenterology",
+        "url": null,
+        "description": "Focused review on H\u2082S SIBO including microbiology, detection methods, and treatment strategies. Limited studies but highlights the emerging nature of this SIBO type and dietary approaches. Suitable for intermediate to advanced readers.",
+        "audience": "advanced"
+      },
+      {
+        "title": "The FODMAP Diet: A Low FODMAP Diet for IBS and SIBO",
+        "type": "book",
+        "author_or_source": "Shepherd SJN and Gibson PR",
+        "url": null,
+        "description": "Evidence-based guide to the low-FODMAP diet, developed by the researchers who discovered FODMAPs' role in IBS and SIBO. Includes meal plans and recipes. Not specific to H\u2082S SIBO but covers a key dietary strategy often used alongside sulphur restriction.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Healing SIBO: How to Overcome Small Intestinal Bacterial Overgrowth",
+        "type": "book",
+        "author_or_source": "Mullin GE, et al.",
+        "url": null,
+        "description": "Practical guide to SIBO diagnosis and treatment written by gastroenterologists and dietitians. Covers pathophysiology, testing, antimicrobials, diet, and lifestyle. Limited H\u2082S-specific content but solid general SIBO framework.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Gut and Psychology Syndrome (GAPS) Diet",
+        "type": "book",
+        "author_or_source": "Campbell-McBride N",
+        "url": null,
+        "description": "Describes a dietary approach to dysbiosis and gut healing, including early reintroduction of foods and emphasis on bone broth and fermented foods. Not specific to H\u2082S SIBO but offers perspectives on long-term barrier repair and microbiota recovery. Some claims are not evidence-based; use cautiously.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Elemental Diet and SIBO Treatment",
+        "type": "website",
+        "author_or_source": "SIBO Health or functional medicine blogs",
+        "url": null,
+        "description": "Educational articles explaining elemental diet use in SIBO treatment, preparation, and refeeding protocols. Useful if considering this approach. Look for resources by registered dietitians or gastroenterologists.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Sulphur Metabolism and Dysbiosis",
+        "type": "research paper",
+        "author_or_source": "Levitt MD and Furne JK, Clinical Microbiology Reviews",
+        "url": null,
+        "description": "In-depth review of sulphate reduction and hydrogen sulphide production by gut bacteria, including ecological and metabolic aspects. Suitable for readers wanting to understand the underlying microbiology of H\u2082S SIBO.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Intestinal Permeability, Barrier Dysfunction, and SIBO",
+        "type": "research paper",
+        "author_or_source": "Michielan A and D'Inc\u00e0 R, Archives of Medical Research",
+        "url": null,
+        "description": "Reviews the relationship between increased intestinal permeability ('leaky gut') and SIBO, including mechanisms and therapeutic implications. Useful for understanding why barrier repair is a key component of H\u2082S SIBO treatment.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "SIBO Testing: Breath Tests, Biomarkers, and Emerging Methods",
+        "type": "website or blog",
+        "author_or_source": "Functional medicine clinics (e.g. SIBO Health, Swenson Institute)",
+        "url": null,
+        "description": "Practical overview of SIBO breath testing protocols, interpretation, and limitations. Helps patients understand what to expect during testing and how to prepare. Look for resources by practitioners experienced in H\u2082S SIBO testing.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Low-Sulphur Food Lists and Meal Planning",
+        "type": "website or document",
+        "author_or_source": "Functional medicine clinics, H\u2082S SIBO support communities",
+        "url": null,
+        "description": "Practical lists of high-sulphur and low-sulphur foods tailored for H\u2082S SIBO management. Includes meal ideas and shopping tips. Invaluable for dietary implementation. Quality varies; verify information with a registered dietitian.",
+        "audience": "beginner"
+      }
+    ],
+    "relevance_signal": "**Rotten egg-smelling gas**. Diarrhoea dominant. Symptoms worse after sulphur-rich foods \u2014 eggs, meat, cruciferous vegetables."
+  }
+}

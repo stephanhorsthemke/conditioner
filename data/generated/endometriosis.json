@@ -1,0 +1,518 @@
+{
+  "condition_id": "endometriosis",
+  "condition_name": "Endometriosis",
+  "generated_at": "2026-04-16T10:30:23.463036Z",
+  "model": "claude-haiku-4-5-20251001",
+  "sections": {
+    "plain_summary": "Endometriosis is a condition where tissue similar to the uterine lining grows outside the uterus, usually in the pelvis. This misplaced tissue bleeds during your menstrual cycle, causing pain, inflammation, and sometimes infertility. It's a chronic condition that requires ongoing management.",
+    "detailed_summary": "Endometriosis occurs when endometrial-like tissue grows on the ovaries, fallopian tubes, bladder, bowel, or peritoneal surface. Unlike normal uterine tissue, this ectopic tissue has no way to exit the body, leading to internal bleeding, scarring, and adhesions. Symptoms range from mild to severe and don't always correlate with the extent of disease. The condition typically appears during reproductive years and can persist until menopause. Diagnosis often takes years, and treatment focuses on pain management and preserving fertility when desired.",
+    "prevalence": {
+      "summary": "Endometriosis affects roughly 1 in 10 people with a uterus during their reproductive years.",
+      "estimate": "6\u201310% of people with a uterus; up to 50% of those seeking fertility treatment",
+      "notes": "True prevalence is uncertain because diagnosis requires surgery; milder cases are likely underdiagnosed. Higher rates in those seeking infertility treatment suggest selection bias. Some studies suggest higher prevalence in some ethnic groups, but data is limited. Diagnosis is often delayed by 7\u201310 years from symptom onset."
+    },
+    "subgroups": [
+      {
+        "name": "Peritoneal endometriosis",
+        "description": "The most common form, with lesions on the peritoneum (the lining covering abdominal organs).",
+        "distinguishing_features": [
+          "Often involves superficial implants rather than deep invasion",
+          "May have less severe symptoms than other forms",
+          "Can be harder to see on imaging"
+        ]
+      },
+      {
+        "name": "Ovarian endometrioma",
+        "description": "Cysts on the ovaries filled with old blood; sometimes called 'chocolate cysts.'",
+        "distinguishing_features": [
+          "Visible on ultrasound, making diagnosis easier",
+          "Associated with reduced ovarian reserve and egg quality",
+          "Linked to higher rates of infertility"
+        ]
+      },
+      {
+        "name": "Deep infiltrating endometriosis (DIE)",
+        "description": "Endometrial tissue penetrates more than 5 mm below the peritoneal surface, often into the bowel, bladder, or uterosacral ligaments.",
+        "distinguishing_features": [
+          "Typically causes more severe pain",
+          "May involve rectal pain, constipation, or urinary symptoms",
+          "Requires specialist imaging (MRI or transvaginal ultrasound) for diagnosis",
+          "Often needs surgical or hormonal management"
+        ]
+      },
+      {
+        "name": "Adenomyosis",
+        "description": "Endometrial tissue grows into the muscular wall of the uterus itself (often considered a variant or related condition).",
+        "distinguishing_features": [
+          "Typically affects people in their 40s, later than peritoneal endometriosis",
+          "Causes diffuse uterine enlargement rather than focal lesions",
+          "Associated with heavy, prolonged menstrual bleeding and dysmenorrhea",
+          "Can coexist with endometriosis in some people"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Pelvic pain during menstruation (dysmenorrhea)",
+        "category": "pelvic",
+        "notes": "Often severe and disproportionate to what the person experiences on other hormonal conditions; may begin before bleeding starts and persist after. Pain severity does not correlate with disease extent."
+      },
+      {
+        "symptom": "Chronic pelvic pain outside of menstruation",
+        "category": "pelvic",
+        "notes": "Can be constant, intermittent, or cycle-related; often worst in the luteal phase (second half of cycle); may worsen with activity or sexual intercourse."
+      },
+      {
+        "symptom": "Pain during or after sexual intercourse (dyspareunia)",
+        "category": "pelvic",
+        "notes": "Particularly deep pain during penetration; may be worse during menstruation or luteal phase."
+      },
+      {
+        "symptom": "Heavy or irregular menstrual bleeding (menorrhagia)",
+        "category": "menstrual",
+        "notes": "May involve clots, flooding, or periods lasting longer than 7 days; more common with adenomyosis but can occur with ovarian endometriomas."
+      },
+      {
+        "symptom": "Bowel pain or cramping, especially during menstruation",
+        "category": "digestive",
+        "notes": "Suggests possible bowel involvement; may be accompanied by constipation, diarrhea, or alternating patterns."
+      },
+      {
+        "symptom": "Constipation or diarrhea, cyclical or ongoing",
+        "category": "digestive",
+        "notes": "May worsen during menstruation if posterior compartment is involved; can be mistaken for irritable bowel syndrome."
+      },
+      {
+        "symptom": "Painful bowel movements (dyschezia)",
+        "category": "digestive",
+        "notes": "Typically occurs during menstruation; suggests deep infiltrating endometriosis involving the rectum or sigmoid colon."
+      },
+      {
+        "symptom": "Urinary urgency, frequency, or pain during urination",
+        "category": "urinary",
+        "notes": "May worsen during menstruation; suggests bladder involvement; can be mistaken for recurrent urinary tract infection."
+      },
+      {
+        "symptom": "Difficulty conceiving (infertility)",
+        "category": "reproductive",
+        "notes": "Present in 30\u201350% of people with endometriosis; may result from ovulation dysfunction, poor egg quality, inflammation, or anatomical distortion."
+      },
+      {
+        "symptom": "Fatigue or low energy",
+        "category": "systemic",
+        "notes": "Often accompanies chronic pain; may relate to inflammation, anemia from heavy bleeding, or sleep disruption from pain."
+      },
+      {
+        "symptom": "Bloating or abdominal distension",
+        "category": "digestive",
+        "notes": "May be worse during menstruation; can relate to bowel involvement or inflammatory response."
+      },
+      {
+        "symptom": "Nausea or vomiting",
+        "category": "gastrointestinal",
+        "notes": "Uncommon but can occur with severe pain or bowel involvement."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Pelvic pain that is clearly tied to your menstrual cycle, especially pain that is disproportionately severe relative to your peers' experiences.",
+        "Pain during menstruation that significantly interferes with work, school, or daily activities and is not adequately relieved by over-the-counter pain relievers.",
+        "A consistent pattern of bowel or urinary symptoms that worsen around your period.",
+        "Deep pain during sexual intercourse that is new or worsening.",
+        "Difficulty conceiving after one year of trying (or after six months if over age 35) combined with any pelvic pain symptoms.",
+        "A combination of heavy menstrual bleeding, severe cramps, and fatigue."
+      ],
+      "at_home": [
+        {
+          "name": "Symptom and cycle tracking",
+          "description": "Use a period tracking app, calendar, or symptom diary to record the date of menstruation, pain location and severity (1\u201310 scale), bowel/urinary symptoms, and what you tried for relief. Track for at least two to three full cycles to identify patterns. Note whether symptoms cluster around menstruation or are spread throughout the month.",
+          "safety_notes": "This is an observational tool and cannot diagnose endometriosis, but the data you collect will be valuable when discussing your symptoms with a clinician. Do not delay seeking care based on tracking alone if symptoms are severe or affecting fertility."
+        },
+        {
+          "name": "NSAID response test",
+          "description": "At the start of your next painful period, take a full therapeutic dose of ibuprofen (400\u2013600 mg) or naproxen (220\u2013550 mg) with food. Wait 60\u201390 minutes and note the degree of pain relief. Repeat if needed per package directions. Document whether relief is none, minimal, partial, or substantial.",
+          "safety_notes": "Do not exceed package dosing; NSAIDs can cause stomach upset and are not safe for people with certain kidney or heart conditions. If you regularly need NSAIDs, consult a clinician before doing this test. This test is supportive but not diagnostic."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Transvaginal ultrasound (TVUS)",
+          "type": "standard",
+          "description": "A probe inserted into the vagina visualizes the uterus, ovaries, and pelvic structures at high resolution. Can identify ovarian endometriomas ('chocolate cysts'), adenomyosis, and sometimes deep infiltrating endometriosis. Operator-dependent and may miss superficial peritoneal lesions.",
+          "availability": "Ordered by gynecologist or primary care doctor; usually available within weeks at most gynecology clinics or imaging centers."
+        },
+        {
+          "name": "Pelvic MRI",
+          "type": "standard",
+          "description": "Non-invasive imaging that provides detailed cross-sectional views of the pelvis. Better than ultrasound for detecting deep infiltrating endometriosis, especially rectal involvement. Less operator-dependent than ultrasound but more expensive and time-consuming.",
+          "availability": "Ordered by gynecologist or other specialist; typically requires referral. May have longer wait times than ultrasound."
+        },
+        {
+          "name": "Diagnostic laparoscopy",
+          "type": "gold_standard",
+          "description": "Minimally invasive surgery in which a thin camera is inserted through a small incision in the umbilicus to visualize the pelvic organs directly. Gold standard for diagnosis; allows biopsy and immediate treatment of lesions. Requires general anesthesia.",
+          "availability": "Performed by gynecologists in a surgical setting; requires scheduling and recovery time. Often reserved for cases where imaging is inconclusive or when treatment is also planned."
+        },
+        {
+          "name": "CA-125 blood test",
+          "type": "emerging",
+          "description": "Measures a cancer-associated antigen that may be elevated in endometriosis. Not specific or sensitive enough to diagnose endometriosis on its own; may be elevated in other conditions. Primarily used in research.",
+          "availability": "Can be ordered by a clinician; not standard for diagnosis."
+        },
+        {
+          "name": "At-home biomarker tests (emerging)",
+          "type": "emerging",
+          "description": "Some companies offer tests measuring endometrial biomarkers (e.g., cytokines, angiogenic factors) in menstrual blood or vaginal secretions. Evidence is limited, and these tests are not yet standard of care.",
+          "availability": "Direct-to-consumer; not typically covered by insurance; evidence quality is variable."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "name": "Adenomyosis",
+        "relationship": "comorbid",
+        "explanation": "Endometrial tissue invades the uterine muscle; often coexists with endometriosis and produces similar pain and heavy bleeding. The two may represent different manifestations of the same underlying process. Requires different imaging assessment (MRI or specialized ultrasound) and may need different treatment."
+      },
+      {
+        "name": "Irritable bowel syndrome (IBS)",
+        "relationship": "often_confused",
+        "explanation": "Cyclical bowel symptoms (bloating, constipation, diarrhea) from endometriosis are frequently mistaken for IBS. Endometriosis-related bowel symptoms worsen predictably around menstruation, whereas IBS is typically not menstrual-cycle-dependent. People with endometriosis may also have IBS as a separate comorbidity."
+      },
+      {
+        "name": "Interstitial cystitis (bladder pain syndrome)",
+        "relationship": "often_confused",
+        "explanation": "Chronic pelvic pain and urinary urgency can overlap with interstitial cystitis. Endometriosis-related urinary symptoms typically worsen during menstruation, whereas interstitial cystitis is usually constant. The two can coexist."
+      },
+      {
+        "name": "Pelvic inflammatory disease (PID) or chronic pelvic inflammatory condition",
+        "relationship": "mechanistic_link",
+        "explanation": "Endometriosis and the inflammatory environment it creates may increase susceptibility to infection or may be confused with post-infectious sequelae. The inflammation in endometriosis mimics aspects of PID, but they have distinct causes and treatments."
+      },
+      {
+        "name": "Infertility",
+        "relationship": "downstream",
+        "explanation": "Endometriosis is a common cause of infertility, affecting up to 50% of people seeking fertility treatment. It impairs ovulation, egg quality, sperm function, and embryo implantation through inflammation and hormonal changes."
+      },
+      {
+        "name": "Chronic fatigue syndrome / myalgic encephalomyelitis (ME/CFS)",
+        "relationship": "comorbid",
+        "explanation": "Some people with endometriosis report ME/CFS-like fatigue; it is unclear whether this is a true comorbidity, related to chronic pain and inflammation, or a separate condition. Shared inflammatory features may explain the overlap."
+      },
+      {
+        "name": "Autoimmune conditions (lupus, celiac disease, Hashimoto's thyroiditis)",
+        "relationship": "comorbid",
+        "explanation": "Endometriosis is associated with a higher prevalence of autoimmune disorders, suggesting a shared immune dysregulation. People with endometriosis should be screened for autoimmune conditions if symptoms suggest it."
+      },
+      {
+        "name": "Ovarian cancer",
+        "relationship": "upstream",
+        "explanation": "Endometriosis, especially ovarian endometriomas, carries a slightly elevated long-term risk of clear-cell and endometrioid ovarian cancer (though absolute risk remains low). This underscores the importance of appropriate monitoring."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "NSAIDs (ibuprofen, naproxen, mefenamic acid)",
+          "category": "medication",
+          "description": "Over-the-counter or prescription nonsteroidal anti-inflammatory drugs reduce prostaglandin-driven pain and inflammation. Take at full therapeutic doses starting before pain begins (ideally the day before your period or at first sign of symptoms) and continue regularly for the first few days of menstruation, not just when pain spikes. Prescription-strength mefenamic acid is sometimes more effective for menstrual pain.",
+          "evidence_level": "strong",
+          "notes": "Effective for many but not all people; do not exceed recommended doses. Long-term use increases risk of GI upset and, rarely, kidney or cardiovascular effects. Not suitable if you have GI ulcers, kidney disease, or heart disease. Taking with food reduces GI side effects. If NSAIDs alone are insufficient, they can be combined with hormonal therapy."
+        },
+        {
+          "name": "Hormonal contraceptives (pills, patches, rings, injections, implants)",
+          "category": "medication",
+          "description": "Reduce menstrual flow and suppress ovulation, thereby decreasing cyclical pain and disease progression. Extended-cycle formulations (taking pills continuously with fewer or no pill-free weeks) are often more effective for pain relief than standard 28-day packs. Progestin-only methods (mini-pill, implant, injection) are also effective.",
+          "evidence_level": "strong",
+          "notes": "Effectiveness varies widely among individuals; may take 2\u20133 cycles to see full benefit. Some people experience breakthrough bleeding or side effects. Not all hormonal contraceptives are equally effective; switching formulations may help if the first is not well tolerated. Does not reverse disease but can slow progression. Discuss with your clinician which formulation suits your situation."
+        },
+        {
+          "name": "Progestin therapy (levonorgestrel IUD, oral progestins, injections)",
+          "category": "medication",
+          "description": "Progestin-dominant therapies suppress endometrial growth and may induce amenorrhea. The levonorgestrel intrauterine device (Mirena) provides direct local delivery to the uterus with minimal systemic absorption. Oral progestins (norethindrone, dienogest) or intramuscular medroxyprogesterone (Depo-Provera) are alternatives. Often used when estrogen-containing contraceptives are contraindicated or ineffective.",
+          "evidence_level": "strong",
+          "notes": "Can cause irregular bleeding, spotting, or amenorrhea. Side effects (mood changes, weight gain) vary. The levonorgestrel IUD is often well-tolerated and does not prevent pregnancy attempts. Some people achieve periods of pain relief after prolonged use."
+        },
+        {
+          "name": "GnRH agonists or antagonists (leuprolide, goserelin, elagolix, relugolix)",
+          "category": "medication",
+          "description": "Suppress estrogen production by halting the hormonal axis, inducing a hypoestrogen state that suppresses endometrial growth. Very effective for pain control but typically used for limited durations (3\u20136 months) or with add-back hormone therapy due to side effects of prolonged hypoestrogen (bone loss, hot flashes, vaginal dryness). Add-back therapy (low-dose estrogen + progestin) reduces side effects while maintaining pain relief.",
+          "evidence_level": "strong",
+          "notes": "Usually reserved for moderate to severe pain not controlled by other methods or before planned surgery. Requires monitoring of bone density with prolonged use. Costs can be high. Symptoms often recur after stopping if disease-modifying treatment is not also used."
+        },
+        {
+          "name": "Heat therapy (heating pads, heat patches)",
+          "category": "lifestyle",
+          "description": "Apply heat to the lower abdomen or lower back for 15\u201330 minutes at a time during painful episodes. Heat relaxes muscle tension and may modulate pain perception. Often effective for dysmenorrhea and pelvic pain.",
+          "evidence_level": "moderate",
+          "notes": "Safe, low-cost, and can be combined with other treatments. Some people find it as effective as ibuprofen. Long-term use or very high temperatures can cause skin irritation or 'toasted skin syndrome.' Reusable heating pads are economical."
+        },
+        {
+          "name": "Pelvic floor physical therapy",
+          "category": "lifestyle",
+          "description": "Work with a pelvic floor physical therapist to assess and treat tension, trigger points, and dysfunction in the pelvic floor muscles. Many people with chronic pelvic pain develop secondary muscle tension and dysfunction. Therapy may include manual release, stretching, relaxation techniques, and education on postural and behavioral modifications.",
+          "evidence_level": "moderate",
+          "notes": "Especially helpful for deep dyspareunia and chronic pelvic pain. Does not reverse endometriosis but can significantly improve pain and sexual function. Requires finding a specialized therapist; may not be covered by insurance. Often used alongside other treatments."
+        },
+        {
+          "name": "Psychological support and pain management (CBT, mindfulness, coping strategies)",
+          "category": "lifestyle",
+          "description": "Chronic pain and the emotional burden of endometriosis can be addressed through cognitive behavioral therapy (CBT), mindfulness-based stress reduction, and counseling. These approaches do not cure endometriosis but help manage the psychological impact, reduce catastrophizing, and improve quality of life. Some people combine these with pain medications.",
+          "evidence_level": "moderate",
+          "notes": "Particularly valuable if pain is significantly affecting mental health, relationships, or work. Many therapists now specialize in chronic pain. Some practices offer telehealth, improving accessibility."
+        },
+        {
+          "name": "Exercise and movement (gentle yoga, walking, swimming)",
+          "category": "lifestyle",
+          "description": "Regular moderate activity may reduce pain and improve mood and fitness. Low-impact activities (yoga, swimming, walking) are often better tolerated than high-intensity exercise during painful periods. Some people find that avoiding intense exercise during peak pain days and resuming afterward helps.",
+          "evidence_level": "moderate",
+          "notes": "Benefits accumulate over weeks to months. Listen to your body; pushing through severe pain may exacerbate symptoms. Pelvic floor dysfunction or deep infiltrating endometriosis involving the bowel may make some activities painful\u2014tailor your approach. Gentle yoga or stretching (especially hip flexor and glute stretches) may be particularly helpful."
+        },
+        {
+          "name": "Anti-inflammatory diet (low FODMAP, low red meat, high omega-3, plant-forward)",
+          "category": "diet",
+          "description": "Reduce intake of red meat and processed foods, which may promote inflammation. Increase omega-3-rich foods (fatty fish, flax, walnuts) and plant-based foods high in polyphenols (berries, leafy greens). A low-FODMAP diet may help if bowel symptoms are prominent. Adequate fiber and hydration support digestive health.",
+          "evidence_level": "moderate",
+          "notes": "No single 'endometriosis diet' is proven, but anti-inflammatory principles are supported by observational data. Individual responses vary widely. Some people benefit from reducing dairy or gluten, though evidence is limited. Work with a nutritionist to avoid unnecessary restriction and ensure adequate nutrition."
+        },
+        {
+          "name": "Caffeine and alcohol reduction",
+          "category": "diet",
+          "description": "Some people report that reducing caffeine and alcohol decreases pain severity and menstrual symptoms. Caffeine may increase muscle tension and anxiety; alcohol can impair sleep and recovery.",
+          "evidence_level": "anecdotal",
+          "notes": "Benefit is individual; some people notice improvement within days of reduction, others see no change. No need to eliminate entirely unless you notice a clear personal link."
+        },
+        {
+          "name": "Surgical excision (if severe or fertility concerns)",
+          "category": "medication",
+          "description": "Laparoscopic or open surgical removal of endometrial lesions, cysts, and scar tissue can provide long-term pain relief (lasting months to years in some people) and improve fertility outcomes compared to ablation alone. Often combined with hormonal therapy postoperatively. Requires careful surgeon selection and may need to be repeated.",
+          "evidence_level": "strong",
+          "notes": "More definitive than medical management but requires recovery time and carries surgical risks. Not curative\u2014disease recurs in 20\u201340% of people within 5 years. Best performed by experienced endometriosis specialists. Consider if you desire fertility, pain relief is incomplete with medication, or quality of life is severely impacted."
+        }
+      ],
+      "things_to_avoid": [
+        "Pushing through severe pain without trying to address the underlying cause; while some activity can help, severe pain is a signal that needs investigation or treatment adjustment.",
+        "Delaying investigation of new or worsening symptoms; changes in pain character, location, or bowel function warrant clinical assessment.",
+        "Assuming that light periods or no visible symptoms mean you don't have endometriosis; disease extent does not correlate with symptom severity, and some people have minimal bleeding.",
+        "Over-relying on NSAIDs without addressing underlying disease; they provide temporary relief but do not slow disease progression. Long-term NSAID use also carries GI and renal risks.",
+        "Ignoring sexual pain or relationship stress related to dyspareunia; these are treatable through pelvic floor therapy, medical management, and communication.",
+        "Adopting overly restrictive diets based on anecdotal reports without working with a nutritionist; some people unnecessarily eliminate foods that are actually well-tolerated.",
+        "Isolating emotionally; chronic pain is isolating, and psychological support (therapy, support groups) is an important part of long-term management."
+      ]
+    },
+    "uncomfortable_truths": [],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Finding an endometriosis-informed or endometriosis-specialist gynecologist early",
+          "why_it_matters": "Diagnosis and treatment are often delayed because many clinicians underestimate the severity of menstrual pain or are unfamiliar with endometriosis presentations. A specialist or informed clinician can design a tailored management plan, perform appropriate imaging, consider surgery if needed, and help preserve fertility.",
+          "how_to_start": "Ask your primary care doctor for a referral to a gynecologist who has experience with endometriosis. If local options are limited, consider telehealth visits with endometriosis specialists in other regions; they can guide your local care even if surgery must be done locally.",
+          "timeline": "Establishing a good relationship with a knowledgeable clinician often leads to meaningful symptom improvement within weeks to months, especially if you've been struggling without proper diagnosis.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Implementing a combination of medical management (NSAIDs, hormonal therapy) with structural support (pelvic floor physical therapy)",
+          "why_it_matters": "Medical management addresses inflammation and hormonal drivers of pain; pelvic floor therapy addresses secondary muscle tension and dysfunction that perpetuates pain. Together they tackle both the disease and the body's compensatory response, leading to more durable relief than either alone.",
+          "how_to_start": "Discuss hormonal options with your clinician and ask for a referral to a pelvic floor physical therapist. Start with one or two PT sessions to learn what dysfunction exists, then commit to a 6\u20138 week course.",
+          "timeline": "Pain reduction can begin within the first 1\u20132 menstrual cycles on hormonal therapy; PT benefits usually accumulate over 8\u201312 weeks. Full improvement may take 3\u20136 months.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Cyclical symptom tracking and proactive management during your luteal phase",
+          "why_it_matters": "Because endometriosis pain typically worsens in the luteal phase (after ovulation), proactive interventions during this window\u2014such as increasing heat therapy, gentle exercise, anti-inflammatory diet, and ensuring adequate sleep\u2014can prevent pain escalation and reduce the need for acute pain management.",
+          "how_to_start": "Use a period app or calendar to identify your typical ovulation date (roughly 14 days before your next period). In the luteal phase starting after ovulation, increase self-care practices: daily heat therapy, gentle yoga, anti-inflammatory meals, and prioritize sleep.",
+          "timeline": "Benefits appear within 1\u20132 cycles of consistent luteal-phase management; many people report 20\u201340% reduction in pain over time.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Addressing bowel health and reducing functional GI symptoms through diet, hydration, and pelvic floor care",
+          "why_it_matters": "Bowel involvement or secondary gut dysfunction is common and often mistaken for IBS. Treating both the mechanical (adhesions, deep infiltrating disease) and functional (muscle tension, sensitivity) aspects reduces pain and improves quality of life.",
+          "how_to_start": "Increase water intake to at least 8 glasses daily; add fiber gradually (oats, vegetables, berries); consider a low-FODMAP trial if bloating is severe; work with a pelvic floor PT on relaxation techniques. If symptoms persist, discuss bowel-specific imaging or specialist evaluation with your clinician.",
+          "timeline": "Simple dietary improvements (hydration, fiber, regular meals) often show benefit within 1\u20132 weeks; more substantial functional improvement takes 4\u20138 weeks.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Optimizing fertility treatment if desired, through specialist endometriosis and reproductive endocrinology care",
+          "why_it_matters": "Endometriosis impairs fertility through multiple mechanisms (inflammation, ovulation dysfunction, sperm dysfunction, implantation failure). Specialized IVF clinicians familiar with endometriosis improve pregnancy outcomes. Surgical excision before IVF, if appropriate, also improves success.",
+          "how_to_start": "If you've tried to conceive for 6\u201312 months without success and have endometriosis, ask for a referral to a reproductive endocrinologist who has experience with endometriosis. Discuss whether surgery before IVF is advisable in your case.",
+          "timeline": "Fertility outcomes improve with appropriate surgical and medical coordination; IVF success rates in endometriosis are lower than in the general population but improve with endometriosis-informed care.",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Waiting years to pursue diagnosis because mild-to-moderate pain feels 'normal' or because doctors minimize complaints. Early diagnosis and treatment can prevent disease progression and preserve fertility.",
+        "Switching hormonal contraceptives too frequently without giving each a fair trial (at least 2\u20133 cycles). Different formulations work for different people, but hasty switching prevents finding the right match.",
+        "Assuming that pain-free periods on hormonal therapy mean the disease has resolved. Suppressive therapy masks symptoms but does not cure the condition; disease recurs if treatment is stopped.",
+        "Neglecting pelvic floor dysfunction because focus is only on endometriosis lesions themselves. Secondary muscle tension requires its own treatment to achieve lasting pain relief.",
+        "Adopting an overly restrictive or unproven diet without professional guidance, leading to nutrient deficiency or unnecessary food anxiety. Anti-inflammatory principles matter, but variety and balance are crucial.",
+        "Isolating emotionally or postponing mental health support because 'endometriosis is physical.' The psychological impact of chronic pain is real and treatable; therapy is not a substitute for medical care but a valuable complement.",
+        "Choosing surgery (laparoscopy) as a first step before trying medical management, or vice versa. The optimal sequence (medicine first, then surgery if needed, or vice versa) depends on your goals and symptoms; discuss with a specialist.",
+        "Accepting poor quality of life or frequent missed work/school when multiple effective options exist. With appropriate specialist care and combination therapy, most people can achieve substantial improvement."
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Gynecologist or OB/GYN (especially endometriosis specialist)",
+          "role": "Often the first clinician to diagnose endometriosis through imaging and history. A specialist in endometriosis is knowledgeable about diagnostic pitfalls, advanced imaging, surgical excision, and when to refer to colleagues. Can prescribe hormonal and other medical therapies and coordinate multidisciplinary care.",
+          "notes": "Endometriosis specialists are increasingly common in larger cities and academic centers. If your gynecologist dismisses your pain or offers only temporary solutions without addressing disease, seeking a second opinion from a specialist is reasonable. Subspecialists in endometriosis often perform higher-quality excisional surgery with better outcomes."
+        },
+        {
+          "type": "Reproductive endocrinologist (RE)",
+          "role": "Specializes in infertility and hormonal disorders. Essential if you have endometriosis and are struggling to conceive. Can coordinate surgical and medical management specifically aimed at improving fertility, perform advanced IVF if needed, and manage complex cases.",
+          "notes": "Often works closely with gynecologic surgeons and endometriosis specialists. If fertility is a priority, seeing an RE early (before extended delays in conception) improves outcomes."
+        },
+        {
+          "type": "Pelvic floor physical therapist (PT)",
+          "role": "Treats dysfunction in the muscles, fascia, and connective tissue of the pelvic floor, which is nearly universal in people with chronic pelvic pain. Addresses muscle tension, trigger points, sexual pain, and contributes to pain relief and functional improvement.",
+          "notes": "This specialty is distinct from general physical therapy. Look for therapists with training in 'pelvic health' or 'pelvic floor physical therapy' and who have experience with endometriosis. Not all general PTs have this expertise."
+        },
+        {
+          "type": "Colorectal surgeon",
+          "role": "Consulted when deep infiltrating endometriosis involves the bowel (rectum, sigmoid colon). Performs segmental bowel resection if needed and manages postoperative bowel function.",
+          "notes": "Usually works alongside a gynecologic surgeon in multidisciplinary teams. If your gynecologist suspects significant bowel involvement, ask for imaging (MRI) and consider multidisciplinary surgical evaluation."
+        },
+        {
+          "type": "Urologist",
+          "role": "Consulted when endometriosis involves the bladder or urinary tract, though this is less common. Manages urinary symptoms and coordinates care with gynecology if surgery is needed.",
+          "notes": "Not as commonly involved as GYN or colorectal surgeons in endometriosis care, but necessary for select cases with urinary tract involvement."
+        },
+        {
+          "type": "Pain management specialist or interventional pain medicine physician",
+          "role": "Offers advanced pain management strategies, including nerve blocks, epidural injections, or other interventions for refractory pelvic pain. Works alongside other clinicians.",
+          "notes": "Helpful for severe pain not adequately controlled by standard medical and surgical approaches. May offer temporary relief while other treatments take effect or as adjunctive therapy."
+        },
+        {
+          "type": "Mental health professional (psychologist, therapist, psychiatrist)",
+          "role": "Addresses the psychological impact of chronic pain, sexual dysfunction, infertility grief, and isolation. Offers cognitive behavioral therapy, mindfulness training, or medication management for comorbid depression or anxiety.",
+          "notes": "Mental health is an integral part of endometriosis care. A therapist familiar with chronic pain or chronic illness is ideal but not always available; telemedicine expands access."
+        },
+        {
+          "type": "Registered dietitian",
+          "role": "Helps identify dietary triggers or deficiencies and develops an anti-inflammatory eating plan that is nutritionally adequate and sustainable. Particularly valuable if you have comorbid IBS or if dietary changes are a priority in your management.",
+          "notes": "Insurance may cover dietitian visits if referred by your physician for a documented condition. A dietitian prevents unnecessary food elimination and ensures nutrient adequacy."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "Endometriosis Association",
+          "platform": "Website and support groups",
+          "url": "https://www.endometriosisassn.org",
+          "notes": "Longest-established patient organization; offers education, support groups, research information, and advocacy resources. Helpful for understanding disease and connecting with others."
+        },
+        {
+          "name": "Nancy's Nook Endometriosis Education",
+          "platform": "Facebook group",
+          "url": "https://www.facebook.com/groups/NancysNookEndoEd",
+          "notes": "Large, active moderated Facebook community focused on evidence-based endometriosis information and specialist referrals. Strong emphasis on excisional surgery and surgical outcomes. Very active and supportive."
+        },
+        {
+          "name": "r/endometriosis",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/endometriosis",
+          "notes": "Active Reddit community with diverse posts on symptoms, treatments, surgery experiences, and emotional support. Good for real-time Q&A and peer perspective, though quality of advice varies."
+        },
+        {
+          "name": "Endometriosis UK",
+          "platform": "Website and support groups",
+          "url": "https://www.endometriosis-uk.org",
+          "notes": "UK-based charity; offers evidence-based information, online community, and support groups. Excellent for international readers and those seeking a different regional perspective on care."
+        },
+        {
+          "name": "Excision Is Precision (community page)",
+          "platform": "Facebook group",
+          "url": "https://www.facebook.com/groups/excisionisprecision",
+          "notes": "Focused on excisional (rather than ablative) surgery for endometriosis. Discusses surgical outcomes and specialist recommendations. Useful if surgery is being considered."
+        },
+        {
+          "name": "Endo What? (educational podcast and blog)",
+          "platform": "Podcast / Blog",
+          "url": "https://www.endowhat.com",
+          "notes": "Patient-led podcast interviewing endometriosis specialists and researchers. Educational and accessible; good for understanding current clinical perspectives."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "The Endometriosis Sourcebook: Practical Guidance & Emotional Support for Understanding & Managing the Disease",
+        "type": "book",
+        "author_or_source": "Mary Lou Ballweg",
+        "url": null,
+        "description": "Comprehensive, patient-friendly book covering symptoms, diagnosis, treatment options, fertility, and emotional aspects. Written by the founder of the Endometriosis Association. One of the most thorough single resources for newly diagnosed people.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Nancy's Nook Endometriosis Education",
+        "type": "website",
+        "author_or_source": "Nancy Petrellis",
+        "url": "https://www.facebook.com/groups/NancysNookEndoEd",
+        "description": "Extensive educational materials on endometriosis, including detailed fact sheets on pathophysiology, surgical approaches, and specialist recommendations. Evidence-based and constantly updated.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Endometriosis: Etiology, Pathogenesis and Reproductive Health",
+        "type": "research paper / clinical review",
+        "author_or_source": "Giudice, L. C., & Kao, L. C.",
+        "url": null,
+        "description": "In-depth scientific review of endometriosis mechanisms, suitable for those wanting to understand the biological basis. Published in leading medical journals; dense but comprehensive.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Endo What? Podcast",
+        "type": "podcast",
+        "author_or_source": "Endo What? hosts",
+        "url": "https://www.endowhat.com",
+        "description": "Patient-friendly interviews with endometriosis specialists and researchers. Good introduction to current expert thinking on diagnosis, surgery, and medical management without requiring reading long articles.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Pelvic Pain and Urgency/Frequency Patient Symposium (PPUF) Resources",
+        "type": "website",
+        "author_or_source": "International Pelvic Pain Society",
+        "url": null,
+        "description": "Addresses overlap between endometriosis, bladder pain, and pelvic pain conditions. Helpful if your symptoms extend beyond classic endometriosis pain.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "World Endometriosis Research Organization (WERO) Guidelines",
+        "type": "clinical guideline",
+        "author_or_source": "WERO",
+        "url": null,
+        "description": "International evidence-based consensus guidelines on endometriosis diagnosis and management. Published in academic journals; useful for understanding what is standard care and sharing with clinicians.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Healthline / Medical News Today articles on Endometriosis",
+        "type": "website",
+        "author_or_source": "Healthline Media",
+        "url": "https://www.healthline.com/health/endometriosis",
+        "description": "Accessible overviews of endometriosis symptoms, causes, and treatments. Useful starting point for understanding the basics; reviewed by medical professionals.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Endometriosis Fertility Companion: A Complete Practical Guide to Managing Endometriosis & Maximizing Fertility",
+        "type": "book",
+        "author_or_source": "Dion Doels",
+        "url": null,
+        "description": "Focused specifically on endometriosis and fertility. Covers both medical management and IVF considerations. Valuable if fertility is a concern.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Pelvic Pain and Dysfunction (NIH/NIDDK resources)",
+        "type": "website",
+        "author_or_source": "National Institutes of Health",
+        "url": "https://www.niddk.nih.gov",
+        "description": "Government-sponsored, evidence-based information on pelvic pain conditions including endometriosis. Reliable and updated regularly.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Cognitive Behavioral Therapy for Chronic Pain Workbook",
+        "type": "book",
+        "author_or_source": "Beverly E. Thorn",
+        "url": null,
+        "description": "Practical workbook for managing chronic pain through CBT principles. Applicable to endometriosis pain and other chronic conditions. Exercises are actionable.",
+        "audience": "intermediate"
+      }
+    ],
+    "relevance_signal": "**Gut symptoms that worsen around menstruation** \u2014 diarrhoea, cramping, bloating, pain on defecation specifically in the days before and during a period."
+  }
+}

@@ -1,0 +1,617 @@
+{
+  "condition_id": "allergy",
+  "condition_name": "Allergy",
+  "generated_at": "2026-04-29T16:41:59.297000Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "An allergy is an immune system overreaction to a normally harmless substance (allergen). The immune system produces IgE antibodies against the allergen; on re-exposure, these trigger the release of histamine and other chemicals that cause symptoms ranging from a runny nose to life-threatening anaphylaxis. Common allergens include pollen, dust mites, pet dander, insect stings, certain foods, latex, and medications.",
+    "detailed_summary": "IgE-mediated allergy (allergic disease) occurs when the adaptive immune system incorrectly classifies an innocuous environmental or food substance as a threat. On first exposure (sensitisation), the immune system produces allergen-specific IgE antibodies that bind to mast cells and basophils throughout the body. On re-exposure, the allergen cross-links these IgE antibodies, triggering degranulation and mass release of mediators \u2014 most notably histamine, prostaglandins, and leukotrienes. This produces the characteristic early-phase reaction (minutes) and, in some cases, a late-phase reaction (hours) involving eosinophil and T-cell activity.\n\nAllergic disease encompasses a spectrum of conditions: allergic rhinitis (hay fever), allergic asthma, allergic conjunctivitis, urticaria (hives), angioedema, atopic dermatitis, food allergy, drug allergy, venom allergy, and anaphylaxis. These conditions frequently co-occur in the same individual \u2014 a phenomenon sometimes called the 'atopic march', where eczema in infancy progresses to food allergy, then asthma and hay fever.\n\nGenetics contribute substantially; having one atopic parent roughly doubles the risk, and having two atopic parents raises it further. Environmental factors including early microbial exposure (the hygiene hypothesis), diet, air pollution, and the timing and route of allergen exposure also shape whether sensitisation leads to clinical disease.\n\nManagement depends on the allergen and severity: avoidance, antihistamines, intranasal or inhaled corticosteroids, adrenaline auto-injectors for anaphylaxis risk, and allergen immunotherapy (desensitisation) to modify the underlying immune response. Self-management skills \u2014 recognising early symptoms, knowing when to use emergency medication, and avoiding triggers \u2014 are central to living well with allergic disease.",
+    "prevalence": {
+      "summary": "Allergic disease is one of the most common chronic conditions worldwide, affecting roughly 1 in 3 people in high-income countries.",
+      "estimate": "~30\u201340% of the global population has at least one allergic condition; food allergy affects ~6\u20138% of children and ~2\u20134% of adults",
+      "notes": "Prevalence has roughly doubled in high-income countries over the past 30\u201340 years. Food allergy prevalence figures vary widely depending on whether self-reported or clinically confirmed. Anaphylaxis lifetime prevalence is estimated at 0.3\u20135.1% globally. Atopic conditions cluster together, so individuals with one allergic disease are at significantly higher risk of others."
+    },
+    "subgroups": [
+      {
+        "name": "Food allergy",
+        "description": "IgE-mediated reaction to specific food proteins, producing symptoms within minutes to 2 hours of ingestion. The 'Big 9' allergens (milk, egg, peanut, tree nuts, wheat, soy, fish, shellfish, sesame) account for the majority of reactions.",
+        "distinguishing_features": [
+          "Symptoms triggered exclusively by ingestion of a specific food",
+          "Reactions can include oral allergy syndrome, urticaria, vomiting, anaphylaxis",
+          "Skin prick test and specific IgE blood tests are used to confirm sensitisation",
+          "Anaphylaxis risk requires carrying an adrenaline auto-injector",
+          "Some food allergies (milk, egg) are frequently outgrown; peanut and tree nut allergies tend to persist"
+        ]
+      },
+      {
+        "name": "Allergic rhinitis (hay fever)",
+        "description": "Inflammation of the nasal mucosa triggered by inhaled allergens such as pollen, dust mites, pet dander, or mould. Seasonal (pollen) or perennial (dust mites, pets).",
+        "distinguishing_features": [
+          "Nasal congestion, sneezing, and clear rhinorrhoea as predominant symptoms",
+          "Seasonal pattern strongly suggests pollen allergy; year-round suggests dust mite or pet dander",
+          "Frequently comorbid with asthma and conjunctivitis",
+          "Excellent response to intranasal corticosteroids and antihistamines",
+          "Allergen immunotherapy can produce long-term remission"
+        ]
+      },
+      {
+        "name": "Allergic asthma",
+        "description": "Asthma whose triggers are primarily IgE-mediated allergens. Accounts for the majority of childhood asthma and a significant proportion of adult-onset asthma.",
+        "distinguishing_features": [
+          "Wheeze, cough, and breathlessness triggered by known allergens",
+          "Positive skin prick tests or specific IgE to relevant aeroallergens",
+          "Often coexists with allergic rhinitis ('united airway disease')",
+          "Anti-IgE therapy (omalizumab) is an option for severe cases",
+          "Exhaled nitric oxide (FeNO) is typically elevated"
+        ]
+      },
+      {
+        "name": "Venom allergy",
+        "description": "Systemic IgE-mediated reaction to insect venom (bee, wasp, hornet, fire ant). Can cause anaphylaxis. Distinct from large local reactions which are non-IgE mediated.",
+        "distinguishing_features": [
+          "Systemic symptoms beyond the sting site (urticaria, throat swelling, hypotension) distinguish true venom allergy from normal local reaction",
+          "Venom-specific IgE testing or skin prick/intradermal testing confirms diagnosis",
+          "Venom immunotherapy is highly effective (95%+ protection) and is recommended for adults with anaphylaxis history",
+          "Adrenaline auto-injector required until immunotherapy is complete"
+        ]
+      },
+      {
+        "name": "Drug allergy",
+        "description": "IgE-mediated (and other immune-mediated) reactions to medications, most commonly penicillin-class antibiotics, NSAIDs, and aspirin.",
+        "distinguishing_features": [
+          "Urticaria, angioedema, or anaphylaxis occurring within 1 hour of drug ingestion suggests IgE-mediated mechanism",
+          "The majority of people labelled 'penicillin allergic' are not truly allergic on formal testing",
+          "De-labelling via graded challenge can safely expand antibiotic options and improve outcomes",
+          "Delayed reactions (maculopapular rash appearing days later) are T-cell mediated, not IgE"
+        ]
+      },
+      {
+        "name": "Latex allergy",
+        "description": "IgE-mediated allergy to natural rubber latex proteins, occupationally relevant to healthcare workers and people with spina bifida.",
+        "distinguishing_features": [
+          "Contact urticaria, rhinitis, asthma, or anaphylaxis on contact with latex gloves or medical devices",
+          "Associated with cross-reactive food allergies (banana, avocado, kiwi \u2014 'latex-fruit syndrome')",
+          "Strict latex avoidance in medical and dental settings is essential",
+          "More common in people with spina bifida due to repeated mucosal exposure early in life"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Sneezing (often in rapid bursts)",
+        "category": "respiratory / nasal",
+        "notes": "Hallmark of allergic rhinitis; typically accompanied by itching and clear discharge"
+      },
+      {
+        "symptom": "Nasal congestion and clear runny nose (rhinorrhoea)",
+        "category": "respiratory / nasal",
+        "notes": "Perennial symptoms suggest dust mite or pet allergy; seasonal symptoms suggest pollen"
+      },
+      {
+        "symptom": "Itchy, watery, red eyes (allergic conjunctivitis)",
+        "category": "eyes",
+        "notes": "Often accompanies allergic rhinitis; rubbing worsens symptoms"
+      },
+      {
+        "symptom": "Hives (urticaria) \u2014 raised, itchy wheals on skin",
+        "category": "skin",
+        "notes": "Can appear within minutes of allergen exposure; individual wheals usually resolve within 24 hours"
+      },
+      {
+        "symptom": "Angioedema \u2014 swelling of lips, face, tongue, throat, or hands",
+        "category": "skin / systemic",
+        "notes": "Throat angioedema is a medical emergency; can occur with or without urticaria"
+      },
+      {
+        "symptom": "Wheeze and breathlessness",
+        "category": "respiratory",
+        "notes": "Indicates lower airway involvement; may indicate allergic asthma or anaphylaxis"
+      },
+      {
+        "symptom": "Itching of mouth, lips, or throat after eating raw fruit or vegetables",
+        "category": "oral / digestive",
+        "notes": "Oral allergy syndrome \u2014 cross-reaction between pollen and plant food proteins; usually mild and confined to mouth"
+      },
+      {
+        "symptom": "Nausea, vomiting, or abdominal cramping after ingestion",
+        "category": "digestive",
+        "notes": "Gastrointestinal manifestation of food allergy; must be distinguished from food intolerance"
+      },
+      {
+        "symptom": "Anaphylaxis \u2014 rapidly progressive multi-system reaction",
+        "category": "systemic / emergency",
+        "notes": "Involves two or more systems (e.g. skin + respiratory, or cardiovascular collapse alone after allergen exposure); requires immediate adrenaline"
+      },
+      {
+        "symptom": "Drop in blood pressure / loss of consciousness (anaphylactic shock)",
+        "category": "cardiovascular / systemic",
+        "notes": "Most dangerous manifestation; can occur without skin symptoms \u2014 making diagnosis harder"
+      },
+      {
+        "symptom": "Persistent cough, especially at night or with exercise",
+        "category": "respiratory",
+        "notes": "May indicate allergic asthma or post-nasal drip from allergic rhinitis"
+      },
+      {
+        "symptom": "Eczema flares (itchy, dry, inflamed skin patches)",
+        "category": "skin",
+        "notes": "Part of the atopic spectrum; food allergens can trigger or worsen eczema in some patients, especially children"
+      },
+      {
+        "symptom": "Tingling or numbness in the lips or tongue",
+        "category": "oral / neurological",
+        "notes": "Early warning sign in oral allergy syndrome or early food-allergic reaction"
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Symptoms are reproducible on each exposure to the same allergen and resolve with avoidance",
+        "Reactions begin within minutes to 2 hours of allergen exposure (IgE-mediated timing)",
+        "Elevated total serum IgE alongside elevated allergen-specific IgE to the suspected substance",
+        "Positive skin prick test (wheal \u22653 mm greater than negative control) to the relevant allergen",
+        "Component-resolved diagnostics showing sensitisation to major (stable) allergens predicts systemic reactions; sensitisation to minor (labile) allergens predicts oral allergy syndrome only",
+        "Oral food challenge: symptoms develop in the active arm but not the placebo arm"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom and exposure diary",
+          "description": "Record every allergic symptom alongside what you ate, touched, inhaled, or were exposed to in the preceding 2 hours. Note location (indoors vs outdoors), season, and severity. After 2\u20134 weeks, review for consistent patterns linking specific exposures to symptoms.",
+          "safety_notes": "This is purely observational. Do not attempt home food challenges with previously severe reactions."
+        },
+        {
+          "name": "Elimination and re-introduction (mild food allergy suspicion only)",
+          "description": "If a food allergy is suspected but has only ever caused mild symptoms (e.g. hives, lip tingling), remove the suspected food completely for 2\u20134 weeks and monitor. Then, only if reactions were mild and your doctor agrees, reintroduce once to observe. Keep antihistamines available.",
+          "safety_notes": "Do NOT attempt re-introduction if you have ever had throat swelling, breathing difficulty, or a suspected anaphylactic reaction. Consult your doctor before proceeding."
+        },
+        {
+          "name": "Pollen calendar cross-reference",
+          "description": "Compare your symptom diary against the pollen calendar for your region (available from national allergy bodies). If sneezing and eye symptoms track with tree pollen season (spring) vs grass season (summer), this narrows the allergen class.",
+          "safety_notes": "This only guides suspicion \u2014 formal testing is needed to confirm."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Skin prick test (SPT)",
+          "type": "gold_standard",
+          "description": "A small drop of standardised allergen extract is placed on the forearm, and a lancet pricks the skin through it. A raised wheal \u22653 mm greater than the negative control after 15\u201320 minutes indicates sensitisation. A wide panel of aeroallergens and/or foods can be tested in a single appointment.",
+          "availability": "Performed by allergists and some immunology departments. Antihistamines must be stopped 3\u20137 days beforehand. Not suitable for patients with severe eczema or those unable to stop antihistamines."
+        },
+        {
+          "name": "Allergen-specific serum IgE (sIgE / ImmunoCAP)",
+          "type": "gold_standard",
+          "description": "A blood test quantifying IgE antibodies against individual allergens (e.g. cat dander, peanut, house dust mite). Results are reported in kUA/L. High levels correlate with sensitisation but do not alone confirm clinical allergy.",
+          "availability": "Ordered by GPs and specialists. Available in most hospital labs and commercial reference labs. Particularly useful when SPT is not feasible."
+        },
+        {
+          "name": "Component-resolved diagnostics (CRD)",
+          "type": "standard",
+          "description": "An advanced form of specific IgE testing that identifies IgE to individual protein components within an allergen (e.g. Ara h 2 in peanut vs Ara h 8). Sensitisation to major allergen components predicts systemic risk; sensitisation to cross-reactive minor components predicts milder oral allergy syndrome.",
+          "availability": "Available through specialist allergy centres and some commercial labs. Most useful for peanut, tree nut, and bee/wasp venom decisions."
+        },
+        {
+          "name": "Oral food challenge (OFC)",
+          "type": "gold_standard",
+          "description": "The suspected food is given in incrementally increasing doses under medical supervision, and the patient is monitored for reactions. A double-blind placebo-controlled food challenge (DBPCFC) is the definitive diagnostic standard but resource-intensive. Open or single-blind challenges are used clinically.",
+          "availability": "Performed in specialist allergy clinics with resuscitation equipment. Waiting times can be long; referral from a GP or allergist is required."
+        },
+        {
+          "name": "Basophil activation test (BAT)",
+          "type": "emerging",
+          "description": "A flow cytometry-based blood test measuring basophil activation (CD63/CD203c expression) in response to allergen stimulation ex vivo. Useful when SPT and sIgE results are inconclusive, particularly for peanut, bee venom, and drug allergy.",
+          "availability": "Available in specialist immunology/allergy research centres. Not yet widely available in routine clinical practice in most countries."
+        },
+        {
+          "name": "Total serum IgE",
+          "type": "standard",
+          "description": "Measures the overall level of IgE in the blood. Elevated total IgE is consistent with atopy but is non-specific \u2014 it is also elevated in parasitic infections and some other conditions.",
+          "availability": "Available via GP or specialist blood test request. Interpreted alongside specific IgE and clinical history."
+        },
+        {
+          "name": "Serum tryptase",
+          "type": "standard",
+          "description": "Mast cell tryptase is released during anaphylaxis. A tryptase drawn within 1\u20134 hours of a suspected anaphylactic reaction and found elevated (>2 + 1.2\u00d7 baseline) supports the diagnosis. Baseline tryptase also screens for mastocytosis.",
+          "availability": "Available in emergency departments and via specialist referral. A baseline tryptase is recommended in anyone who has had anaphylaxis."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "atopic_dermatitis",
+        "name": "Atopic dermatitis (eczema)",
+        "relationship": "comorbid",
+        "explanation": "Atopic dermatitis is part of the atopic triad alongside allergic rhinitis and asthma. It often precedes other allergic diseases (atopic march) and shares the same IgE-mediated and Th2-skewed immune dysregulation. Food allergens \u2014 particularly milk and egg \u2014 can exacerbate eczema in young children."
+      },
+      {
+        "id": "eosinophilic",
+        "name": "Eosinophilic GI disorders (e.g. eosinophilic oesophagitis)",
+        "relationship": "mechanistic_link",
+        "explanation": "Eosinophilic GI disorders share immune pathways with IgE-mediated allergy (Th2 inflammation, IL-5, IL-13) and frequently co-occur in atopic individuals. Food allergens drive eosinophilic oesophagitis in most patients, though the mechanism is primarily non-IgE. Skin prick and patch testing to foods is part of evaluation."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
+        "relationship": "often_confused",
+        "explanation": "MCAS involves inappropriate mast cell degranulation causing allergy-like symptoms without consistent IgE sensitisation. It is often confused with allergy because symptoms (urticaria, flushing, GI upset, anaphylaxis-like episodes) overlap. Distinguishing features include lack of positive SPT/sIgE and elevated baseline tryptase in mastocytosis-related MCAS."
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "often_confused",
+        "explanation": "Histamine intolerance produces allergy-like symptoms (flushing, hives, headache, nasal congestion) after consuming histamine-rich foods. Unlike IgE allergy, it is dose-dependent rather than triggered by a specific protein, there is no IgE sensitisation, and skin prick tests are negative. The two conditions can coexist and amplify each other."
+      },
+      {
+        "id": "coeliac",
+        "name": "Coeliac disease",
+        "relationship": "often_confused",
+        "explanation": "Both wheat allergy and coeliac disease involve immune reactions to wheat, but through different mechanisms. Wheat allergy is IgE-mediated and causes rapid reactions; coeliac disease is T-cell mediated and causes gut inflammation over days to weeks. Both present with GI symptoms after wheat ingestion but require different testing and management."
+      },
+      {
+        "id": "ncgs",
+        "name": "Non-coeliac gluten sensitivity (NCGS)",
+        "relationship": "often_confused",
+        "explanation": "NCGS causes symptoms after gluten ingestion but lacks IgE sensitisation to wheat and the tissue damage of coeliac disease. It may be confused with wheat allergy, particularly when there is no clear distinction between gluten and other wheat components (e.g. FODMAPs, amylase-trypsin inhibitors) as triggers."
+      },
+      {
+        "id": null,
+        "name": "Asthma",
+        "relationship": "comorbid",
+        "explanation": "Allergic asthma is the most common asthma phenotype, particularly in children. The same IgE/Th2 immune response that drives hay fever and eczema drives lower airway inflammation. Up to 80% of children with asthma have an atopic background. Uncontrolled rhinitis worsens asthma control."
+      },
+      {
+        "id": null,
+        "name": "Anaphylaxis",
+        "relationship": "downstream",
+        "explanation": "Anaphylaxis is the most severe, life-threatening manifestation of IgE-mediated allergy. It results from massive systemic mast cell and basophil degranulation following allergen exposure in a sensitised individual. Any person with a known food, venom, or drug allergy is at potential risk of anaphylaxis."
+      },
+      {
+        "id": null,
+        "name": "Mastocytosis",
+        "relationship": "mechanistic_link",
+        "explanation": "Mastocytosis (clonal mast cell disease) amplifies allergic and anaphylactic reactions because an abnormally high mast cell burden means more mediator release per exposure. It should be suspected when allergic reactions are disproportionately severe or occur to very low allergen doses. Baseline serum tryptase >20 ng/mL is a flag."
+      },
+      {
+        "id": null,
+        "name": "Alpha-gal syndrome",
+        "relationship": "often_confused",
+        "explanation": "Alpha-gal syndrome is an IgE-mediated allergy to galactose-alpha-1,3-galactose, a carbohydrate found in red meat, triggered by lone star tick bites. Reactions are delayed (3\u20136 hours after eating), distinguishing it from typical food allergy. Specific IgE to alpha-gal is the confirmatory test."
+      },
+      {
+        "id": null,
+        "name": "Allergic contact dermatitis",
+        "relationship": "often_confused",
+        "explanation": "Allergic contact dermatitis is T-cell mediated (not IgE), caused by skin sensitisation to chemicals such as nickel, fragrances, or preservatives. It is not a true IgE-mediated allergy but is clinically confused with it due to the skin rash. Patch testing (not skin prick testing) is used to diagnose it."
+      },
+      {
+        "id": null,
+        "name": "Idiopathic urticaria and angioedema",
+        "relationship": "often_confused",
+        "explanation": "Most chronic urticaria (lasting >6 weeks) is not IgE-mediated allergy but rather autoimmune (IgG anti-IgE receptor antibodies) or idiopathic. Patients and doctors frequently pursue extensive allergy testing that is unrevealing. Distinguishing this from true allergic urticaria avoids unnecessary avoidance diets."
+      },
+      {
+        "id": null,
+        "name": "Food protein-induced enterocolitis syndrome (FPIES)",
+        "relationship": "often_confused",
+        "explanation": "FPIES is a non-IgE-mediated food allergy causing delayed, profuse vomiting 1\u20134 hours after ingestion, without urticaria or respiratory symptoms. It is often misdiagnosed as a virus or food poisoning. Skin prick tests and specific IgE are typically negative."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "comorbid",
+        "explanation": "Living with a serious allergy, particularly a peanut or venom allergy with anaphylaxis risk, is associated with significantly elevated anxiety. Anxiety can also mimic or amplify allergy-like symptoms (e.g. throat tightening, flushing, palpitations), making reactions harder to assess. Evidence-based psychological support improves quality of life in food-allergic patients."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Allergen avoidance",
+          "category": "environment / diet",
+          "description": "The cornerstone of allergy management. For food allergy, this means strict label reading, communicating needs in restaurants, and understanding cross-contamination risks. For aeroallergens, this includes dust mite mattress covers, keeping pets out of bedrooms, and tracking pollen counts to time outdoor activity.",
+          "evidence_level": "strong",
+          "notes": "Avoidance reduces reactions but does not modify the underlying allergy. Over-avoidance in eczema-related food allergy in young children may actually increase sensitisation risk \u2014 early introduction is now recommended for high-risk infants."
+        },
+        {
+          "name": "Non-sedating antihistamines (second-generation)",
+          "category": "medication",
+          "description": "Cetirizine, loratadine, fexofenadine, and bilastine block H1 histamine receptors, relieving itching, sneezing, rhinorrhoea, and urticaria. They work best taken regularly during allergen season rather than waiting for symptoms to develop.",
+          "evidence_level": "strong",
+          "notes": "Do not prevent or treat anaphylaxis \u2014 adrenaline is always required for systemic reactions. First-generation antihistamines (diphenhydramine, chlorphenamine) cause sedation and impair cognition; second-generation are strongly preferred for daily use."
+        },
+        {
+          "name": "Intranasal corticosteroids",
+          "category": "medication",
+          "description": "Fluticasone, mometasone, budesonide, and beclomethasone nasal sprays are the most effective treatment for allergic rhinitis. They reduce nasal inflammation, congestion, discharge, and sneezing. Benefit builds over 1\u20132 weeks of regular use.",
+          "evidence_level": "strong",
+          "notes": "Correct technique (aim toward the outer wall of the nostril, not the septum) is critical for efficacy and to avoid nosebleeds. These are safer for long-term use than oral steroids."
+        },
+        {
+          "name": "Adrenaline auto-injector (epinephrine \u2014 e.g. EpiPen, Emerade, Jext)",
+          "category": "medication",
+          "description": "Intramuscular adrenaline is the only first-line treatment for anaphylaxis. Everyone at risk of anaphylaxis (food allergy, venom allergy, severe drug allergy) should carry two auto-injectors at all times and know when and how to use them. Administer at the first signs of anaphylaxis; call emergency services immediately after.",
+          "evidence_level": "strong",
+          "notes": "Two devices are recommended because a second dose may be needed before emergency services arrive. Training in use is essential \u2014 ask your allergist or pharmacist for a trainer device. Expiry dates must be checked regularly."
+        },
+        {
+          "name": "Allergen immunotherapy (AIT / desensitisation)",
+          "category": "medication",
+          "description": "Gradually increasing doses of allergen are given (subcutaneously or sublingually) to retrain the immune system from a Th2 to a more tolerant Treg/Th1 response. Highly effective for aeroallergens (hay fever, dust mite asthma), venom allergy (95%+ protection), and increasingly for food allergy (oral immunotherapy). Unlike medications, it can produce long-lasting remission.",
+          "evidence_level": "strong",
+          "notes": "Subcutaneous immunotherapy carries a small risk of systemic reaction; must be administered in a clinical setting. Sublingual immunotherapy is safer and can be home-administered after initiation. Minimum 3-year course recommended for sustained benefit."
+        },
+        {
+          "name": "Inhaled corticosteroids and bronchodilators (for allergic asthma)",
+          "category": "medication",
+          "description": "For allergic asthma, inhaled corticosteroids (ICS) reduce airway inflammation and are the foundation of maintenance therapy. Short-acting beta-agonists (salbutamol) provide rapid relief of acute wheeze. Following an asthma action plan reduces hospitalisations.",
+          "evidence_level": "strong",
+          "notes": "Treating concomitant allergic rhinitis improves asthma control \u2014 the 'united airway' concept."
+        },
+        {
+          "name": "Anti-IgE therapy (omalizumab)",
+          "category": "medication",
+          "description": "Omalizumab is a monoclonal antibody that binds circulating IgE, preventing it from activating mast cells and basophils. Licensed for severe allergic asthma, chronic spontaneous urticaria, and (in some countries) food allergy. Reduces reaction threshold and enables peanut oral immunotherapy in high-risk patients.",
+          "evidence_level": "strong",
+          "notes": "Requires 2\u20134 weekly subcutaneous injections; expensive and requires specialist oversight. Now also licensed (as Xolair) as a protective treatment for IgE-mediated food allergy in some countries."
+        },
+        {
+          "name": "Oral food immunotherapy (OIT) \u2014 peanut / food allergy",
+          "category": "medication",
+          "description": "Involves daily consumption of incrementally increasing doses of the allergenic food under medical supervision, aiming to raise the reaction threshold (desensitisation) or achieve sustained unresponsiveness. Palforzia (peanut OIT) is FDA- and EMA-approved for children 4\u201317.",
+          "evidence_level": "strong",
+          "notes": "OIT does not 'cure' allergy \u2014 it reduces severity of accidental exposure reactions. Side effects during build-up are common (abdominal pain, hives). Must be conducted under specialist supervision. Eosinophilic oesophagitis is a rare complication."
+        },
+        {
+          "name": "Nasal saline irrigation",
+          "category": "lifestyle",
+          "description": "Rinsing the nasal passages with isotonic or hypertonic saline (neti pot or squeeze bottle) removes allergens and inflammatory secretions, reducing rhinitis symptoms. Can be used as an adjunct to medications.",
+          "evidence_level": "moderate",
+          "notes": "Use sterile or boiled-and-cooled water \u2014 tap water has been associated with rare but serious amoeba infections if used in sinus rinses."
+        },
+        {
+          "name": "HEPA air filtration indoors",
+          "category": "environment",
+          "description": "High-efficiency particulate air (HEPA) filters in the bedroom reduce airborne allergen load (dust mite particles, pet dander, mould spores, pollen) and can reduce rhinitis and asthma symptom burden.",
+          "evidence_level": "moderate",
+          "notes": "Most effective as part of a multi-faceted allergen reduction strategy. Standalone filters are not a replacement for medication."
+        },
+        {
+          "name": "Antihistamine eye drops",
+          "category": "medication",
+          "description": "Topical antihistamines (e.g. azelastine, olopatadine) provide rapid, localised relief for allergic conjunctivitis. More effective than oral antihistamines for eye symptoms alone.",
+          "evidence_level": "strong",
+          "notes": "Avoid decongestant eye drops with naphazoline for more than a few days \u2014 rebound redness occurs with extended use."
+        }
+      ],
+      "things_to_avoid": [
+        "Aspirin and NSAIDs during an acute allergic reaction \u2014 these can worsen urticaria and angioedema and may amplify anaphylaxis",
+        "Beta-blockers if you carry an adrenaline auto-injector \u2014 they blunt the effect of adrenaline and worsen anaphylaxis severity",
+        "ACE inhibitors if you have a history of angioedema \u2014 they elevate bradykinin and can cause or worsen angioedema independently of allergy",
+        "Relying on antihistamines alone to treat anaphylaxis \u2014 antihistamines do not reverse cardiovascular collapse or airway swelling; adrenaline is always required first",
+        "Assuming a reaction was 'mild' and skipping medical review \u2014 biphasic anaphylaxis (a second wave 4\u20138 hours after the initial reaction) occurs in up to 20% of cases",
+        "First-generation (sedating) antihistamines for daily allergy management \u2014 impair driving, learning, and cognition without better efficacy",
+        "Unnecessary elimination of foods based on total IgE or IgG food panels \u2014 broad avoidance diets cause nutritional deficiencies without confirmed clinical allergy",
+        "Delaying adrenaline use out of fear of needles or uncertainty \u2014 using adrenaline unnecessarily is far safer than delaying it during true anaphylaxis",
+        "Exposing children with confirmed food allergy to allergens without a medical plan \u2014 even small traces can cause severe reactions in highly sensitised individuals",
+        "Keeping adrenaline auto-injectors in the car in hot climates \u2014 heat degrades adrenaline and reduces efficacy"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "Carrying an adrenaline auto-injector means nothing if you don't use it at the right moment. Most anaphylaxis deaths occur because adrenaline was delayed or not given at all.",
+        "why_resisted": "People fear the needle, doubt whether the reaction is 'bad enough', hope antihistamines will be sufficient, or feel embarrassed to inject in public. Many patients report waiting until they are nearly unconscious.",
+        "path_forward": "Patients who receive structured training in anaphylaxis recognition and auto-injector use \u2014 including practising with a trainer device \u2014 inject earlier and have better outcomes. Knowing the two criteria (symptoms in 2+ body systems, or severe single-system reaction after allergen exposure) removes ambiguity about when to act."
+      },
+      {
+        "truth": "Most people labelled 'penicillin allergic' are not actually allergic and are being undertreated with second-line antibiotics as a result.",
+        "why_resisted": "The label was often applied decades ago for a rash that may have been viral, a non-immune side effect, or a reaction to the illness itself. Once recorded, it rarely gets re-evaluated, and patients are understandably reluctant to challenge it.",
+        "path_forward": "Formal penicillin allergy de-labelling (skin testing \u00b1 graded challenge) has a >95% negative predictive value and is offered increasingly in primary care and pre-operatively. Patients who go through de-labelling gain access to first-line antibiotics and have fewer infections, shorter hospital stays, and lower antibiotic resistance rates."
+      },
+      {
+        "truth": "Allergen avoidance alone does not reduce the severity of your allergy over time \u2014 only immunotherapy does. A lifelong avoidance-only strategy keeps you dependent on medications indefinitely.",
+        "why_resisted": "Immunotherapy requires commitment (injections or daily sublingual drops over 3 years), carries some procedural risk, and is not always well-promoted by non-specialist doctors. Many patients don't know it exists or assume it is only for mild cases.",
+        "path_forward": "Patients with moderate-to-severe allergic rhinitis, venom allergy, or food allergy who complete a 3-year immunotherapy course frequently achieve sustained remission, reduced medication needs, and in venom allergy, near-complete protection from future anaphylaxis."
+      },
+      {
+        "truth": "Food allergy anxiety, while understandable, can become so severe that it restricts life more than the allergy itself \u2014 and this is a treatable problem that most allergy services don't address.",
+        "why_resisted": "Hypervigilance feels like responsible self-protection. Patients and parents fear that reducing anxiety means accepting more risk. There is also a shortage of allergy-specific psychological support in most healthcare systems.",
+        "path_forward": "Patients who access allergy-focused cognitive-behavioural therapy (CBT) or food allergy specific psychological programmes report significantly improved quality of life and participation without increased reaction rates. Asking a specialist for a referral is the starting point."
+      },
+      {
+        "truth": "Testing positive to a food on a skin prick test or IgE blood test does not mean you are clinically allergic to it \u2014 most positive tests in low-probability populations are false positives that lead to unnecessary avoidance.",
+        "why_resisted": "A positive test feels definitive. Patients (and some doctors) assume that any detectable IgE means danger, when in fact sensitisation without symptoms is common and does not require dietary restriction.",
+        "path_forward": "An oral food challenge \u2014 despite seeming riskier \u2014 is the definitive answer and, when conducted safely by a specialist, reliably identifies who can eat the food without restriction. Many patients who challenge foods they have been avoiding for years discover they tolerate them fully."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Allergen immunotherapy (AIT)",
+          "why_it_matters": "It is the only intervention that changes the underlying immune response rather than just managing symptoms. For aeroallergens, it reduces symptom burden, medication use, and risk of asthma development. For venom, it is life-saving. It can induce sustained remission lasting years after treatment ends.",
+          "how_to_start": "Ask your GP for a referral to an allergist or clinical immunologist. Be prepared to discuss which allergens most affect your quality of life, as this guides which immunotherapy is prioritised.",
+          "timeline": "Symptom improvement often begins within the first year; full benefit and durable remission typically require a 3-year course",
+          "requires_professional": true
+        },
+        {
+          "lever": "Structured anaphylaxis action plan and regular auto-injector training",
+          "why_it_matters": "Having a written, rehearsed plan dramatically reduces hesitation in emergencies. Regular training (including practising with a trainer pen at least annually) maintains the muscle memory needed to use auto-injectors under stress.",
+          "how_to_start": "Ask your allergist or specialist nurse for a personalised written anaphylaxis action plan. Download a trainer pen from your auto-injector manufacturer or request one from your pharmacy. Practise at home and with caregivers.",
+          "timeline": "A single 30-minute training session produces measurable improvement in confidence and technique",
+          "requires_professional": false
+        },
+        {
+          "lever": "Addressing allergic rhinitis aggressively (for people with asthma)",
+          "why_it_matters": "Poorly controlled rhinitis is a major driver of uncontrolled asthma. The upper and lower airways share a mucosal immune system ('united airway'). Treating nasal allergy consistently reduces asthma exacerbations and emergency department visits.",
+          "how_to_start": "Start a regular intranasal corticosteroid spray used daily (not just on symptomatic days). Learn correct technique. Review with your GP or allergist if control is inadequate after 4 weeks.",
+          "timeline": "Nasal symptoms improve within 1\u20132 weeks; asthma benefit builds over 4\u20138 weeks of consistent use",
+          "requires_professional": false
+        },
+        {
+          "lever": "Early introduction and oral immunotherapy for infants at high risk of food allergy",
+          "why_it_matters": "The LEAP trial showed that early introduction of peanut in high-risk infants (with severe eczema or egg allergy) reduced peanut allergy by up to 80%. Delaying introduction increases risk. This is now a formal recommendation in most national guidelines.",
+          "how_to_start": "If your infant has severe eczema or egg allergy, ask your GP or paediatrician about an allergy review before peanut introduction. Many can be introduced at home following guidance; high-risk infants may need a supervised challenge first.",
+          "timeline": "Introduction from 4\u20136 months (in high-risk infants, following medical guidance) produces the greatest benefit",
+          "requires_professional": true
+        },
+        {
+          "lever": "Allergy-focused psychological support for food allergy anxiety",
+          "why_it_matters": "Anxiety about anaphylaxis disproportionately restricts quality of life in many food-allergic patients and families, and is independently associated with worse health outcomes. CBT adapted for food allergy improves anxiety and health-related quality of life without increasing reaction risk.",
+          "how_to_start": "Ask your allergist to refer you to a clinical psychologist with allergy or chronic illness experience. Online CBT programmes for food allergy anxiety are also available in some countries.",
+          "timeline": "Structured psychological intervention typically produces measurable quality-of-life improvement within 8\u201312 sessions",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Using antihistamines as the sole response to a suspected anaphylactic reaction instead of adrenaline \u2014 antihistamines work on hives and itch, not on cardiovascular collapse or laryngeal oedema",
+        "Taking antihistamines only when symptoms are severe rather than regularly during allergen season \u2014 pre-emptive regular dosing provides far better rhinitis control than reactive dosing",
+        "Assuming a child has 'outgrown' a food allergy without a supervised oral food challenge \u2014 some allergies persist, and confirming tolerance requires formal assessment",
+        "Avoiding multiple foods based on blood IgE tests alone without an oral food challenge to confirm clinical reactivity \u2014 leads to unnecessarily restrictive diets, nutritional deficiencies, and anxiety",
+        "Stopping allergen immunotherapy before the 3-year course is complete \u2014 partial courses produce partial and non-durable benefit; the full course is required for sustained remission",
+        "Relying on intranasal decongestant sprays (oxymetazoline/xylometazoline) for rhinitis beyond 3\u20135 days \u2014 causes rebound congestion (rhinitis medicamentosa) that is harder to treat than the original allergy",
+        "Assuming that because a reaction was mild last time, the next one will be too \u2014 reaction severity is not reliably predictable; the same allergen and dose can cause anaphylaxis after previously causing only hives",
+        "Not disclosing an allergy to healthcare providers before procedures, contrast dyes, or anaesthesia \u2014 many perioperative anaphylaxis deaths are preventable with adequate pre-procedure allergy documentation and risk assessment"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Allergist / Clinical immunologist",
+          "role": "Provides comprehensive allergy testing (skin prick, specific IgE, component-resolved diagnostics, oral food challenges), prescribes and supervises immunotherapy, manages anaphylaxis risk, and coordinates care for complex multi-allergy patients.",
+          "notes": "The primary specialist for most allergic disease. Waiting lists can be long in public health systems \u2014 a GP referral letter describing severity and history speeds the process."
+        },
+        {
+          "type": "Paediatric allergist",
+          "role": "Specialises in allergy diagnosis and management in children, including early food introduction protocols, managing the atopic march, and paediatric food challenges.",
+          "notes": "Essential for infants with severe eczema and suspected food allergy, where the evidence base for management differs substantially from adults."
+        },
+        {
+          "type": "Respiratory physician / Pulmonologist",
+          "role": "Manages allergic asthma, particularly complex or severe cases, prescribes biologic therapies (omalizumab, dupilumab, mepolizumab) and investigates confounding respiratory conditions.",
+          "notes": "Often works alongside the allergist in united airway disease (rhinitis + asthma)."
+        },
+        {
+          "type": "Dermatologist",
+          "role": "Manages atopic dermatitis, allergic contact dermatitis, and urticaria/angioedema; performs patch testing for contact allergens.",
+          "notes": "Patch testing for contact allergy is distinct from skin prick testing for IgE allergy \u2014 make sure the right test is being ordered."
+        },
+        {
+          "type": "ENT surgeon (otolaryngologist)",
+          "role": "Manages complications of allergic rhinitis including nasal polyps, sinusitis, and eustachian tube dysfunction. May perform surgery when medical management is insufficient.",
+          "notes": "Important when rhinitis is complicated by recurrent sinusitis, significant nasal polyps, or hearing loss from chronic middle ear fluid."
+        },
+        {
+          "type": "Allergy specialist nurse / Immunology nurse practitioner",
+          "role": "Provides allergy education, auto-injector training, anaphylaxis action plans, and support for patients starting immunotherapy. Often the most accessible point of contact for day-to-day questions.",
+          "notes": "Many allergy centres now have nurse-led clinics for follow-up, auto-injector review, and immunotherapy monitoring."
+        },
+        {
+          "type": "Dietitian with allergy expertise",
+          "role": "Helps people with food allergy maintain nutritional adequacy on restricted diets, guides safe food reintroduction, and supports families managing children with multiple food allergies.",
+          "notes": "Critical for anyone avoiding multiple food groups, particularly children \u2014 nutritional deficiencies in calcium, vitamin D, and protein are well-documented in milk-allergic children not under dietetic review."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/Allergies",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Allergies/",
+          "notes": "General allergy discussion community covering all types of allergic disease. Useful for practical experiences with testing, immunotherapy, and managing reactions."
+        },
+        {
+          "name": "r/FoodAllergies",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/FoodAllergies/",
+          "notes": "Focused on food allergy \u2014 managing daily life, restaurant navigation, label reading, and emotional aspects of living with anaphylaxis risk."
+        },
+        {
+          "name": "Anaphylaxis Campaign",
+          "platform": "Website / Facebook / X",
+          "url": "https://www.anaphylaxis.org.uk/",
+          "notes": "UK charity providing evidence-based resources, helpline, and community support for people at risk of anaphylaxis. Excellent practical guides on allergen labelling law and school management plans."
+        },
+        {
+          "name": "FARE (Food Allergy Research & Education)",
+          "platform": "Website / Facebook",
+          "url": "https://www.foodallergy.org/",
+          "notes": "Major US food allergy organisation with patient resources, clinical trial finder, and community forums. Particularly strong on peanut OIT information."
+        },
+        {
+          "name": "AllergyUK",
+          "platform": "Website",
+          "url": "https://www.allergyuk.org/",
+          "notes": "UK charity covering all allergic disease with patient guides, a nurse helpline, and clinician finder. Good starting point for newly diagnosed patients."
+        },
+        {
+          "name": "Kids with Food Allergies (KFA)",
+          "platform": "Website / Facebook",
+          "url": "https://www.kidswithfoodallergies.org/",
+          "notes": "Community and resource hub specifically for parents managing food allergy in children. Safe recipe resources and school guidance are particularly well-developed."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "The Allergy Solution",
+        "type": "book",
+        "author_or_source": "Dr Leo Galland and Jonathan Galland",
+        "url": null,
+        "description": "An accessible overview of allergic disease and its environmental and lifestyle drivers. Useful for patients wanting to understand the big picture of why allergy rates are rising and what modifiable factors contribute.",
+        "audience": "beginner"
+      },
+      {
+        "title": "ACAAI (American College of Allergy, Asthma & Immunology) Patient Education",
+        "type": "website",
+        "author_or_source": "American College of Allergy, Asthma & Immunology",
+        "url": "https://acaai.org/allergies/",
+        "description": "Comprehensive, physician-authored patient information on all allergy types, treatments, and testing. Regularly updated and well-organised by allergen and condition type.",
+        "audience": "beginner"
+      },
+      {
+        "title": "EAACI Guidelines on Allergen Immunotherapy",
+        "type": "research paper",
+        "author_or_source": "European Academy of Allergy and Clinical Immunology (EAACI)",
+        "url": "https://www.eaaci.org/resources/guidelines.html",
+        "description": "The definitive clinical guidelines on allergen immunotherapy for rhinitis, asthma, venom allergy, and food allergy. Important for patients wanting to understand what the evidence supports and how immunotherapy should be conducted.",
+        "audience": "advanced"
+      },
+      {
+        "title": "AllergyUK \u2014 Living with Allergy Resources",
+        "type": "website",
+        "author_or_source": "Allergy UK",
+        "url": "https://www.allergyuk.org/living-with-allergy/",
+        "description": "Practical guides covering topics from allergy at school and university to travel, pregnancy, and food labelling. Written for patients in plain English.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Peanut Allergy Answer Book (3rd edition)",
+        "type": "book",
+        "author_or_source": "Dr Michael Young",
+        "url": null,
+        "description": "Clear, evidence-based Q&A format covering peanut allergy diagnosis, management, cross-contamination, oral immunotherapy, and the emotional experience of peanut allergy. The most practical book available specifically on peanut allergy.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Annals of Allergy, Asthma & Immunology \u2014 Patient Summaries",
+        "type": "website",
+        "author_or_source": "American College of Allergy, Asthma & Immunology",
+        "url": "https://www.annallergy.org/",
+        "description": "The journal periodically publishes patient-oriented summaries of major clinical trials in allergy. Useful for patients wanting to understand the evidence behind treatments like OIT and AIT at a level above basic patient information.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Allergic Living Magazine",
+        "type": "website",
+        "author_or_source": "Allergic Living",
+        "url": "https://www.allergicliving.com/",
+        "description": "High-quality long-form journalism on food allergy, asthma, and allergic disease. Covers new treatments, travel with allergy, school issues, and emotional health. One of the best mainstream patient-facing publications in the field.",
+        "audience": "beginner"
+      },
+      {
+        "title": "LEAP Trial Results \u2014 Peanut Early Introduction",
+        "type": "research paper",
+        "author_or_source": "Du Toit et al., New England Journal of Medicine, 2015",
+        "url": "https://www.nejm.org/doi/full/10.1056/nejmoa1414850",
+        "description": "The landmark trial demonstrating that early peanut introduction in high-risk infants reduces peanut allergy by 80%. Changed global guidelines on infant feeding. Important for parents navigating early feeding decisions.",
+        "audience": "intermediate"
+      }
+    ],
+    "relevance_signal": "**Hives, swelling, itching, or breathing trouble** within minutes of contact with a specific food, pollen, or sting."
+  }
+}

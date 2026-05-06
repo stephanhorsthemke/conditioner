@@ -1,0 +1,722 @@
+{
+  "condition_id": "central_sensitisation",
+  "condition_name": "Central sensitisation",
+  "generated_at": "2026-04-16T10:38:52.912236Z",
+  "model": "claude-haiku-4-5-20251001",
+  "sections": {
+    "plain_summary": "Central sensitisation is a condition where your nervous system becomes overly sensitive, amplifying normal pain signals and other sensations. This means you experience pain or discomfort that feels intense even though the underlying tissue damage or triggering stimulus is mild or absent. It often develops after injury, illness, or chronic stress, and can affect multiple parts of your body.",
+    "detailed_summary": "Central sensitisation occurs when the brain and spinal cord become hyper-responsive to sensory input, lowering the threshold at which signals are interpreted as painful or uncomfortable. Rather than a problem with individual tissues, the issue lies in how your nervous system processes and amplifies these signals. This can result in widespread pain, heightened sensitivity to touch, temperature, sound, or light, and exaggerated responses to normally non-painful stimuli. Central sensitisation is a key feature of conditions like fibromyalgia, chronic fatigue syndrome, and irritable bowel syndrome, though it can occur alongside many other chronic conditions. The condition is neurobiologically real\u2014studies show measurable changes in pain processing pathways, neurotransmitter levels, and brain imaging patterns. It is not psychological in origin, though stress and emotional factors can worsen symptoms.",
+    "prevalence": {
+      "summary": "Central sensitisation affects millions worldwide, though exact prevalence is hard to pin down because it overlaps with and underlies many named conditions.",
+      "estimate": "Estimated to affect 1\u20135% of the general population, with much higher rates (20\u201340%) in people with chronic pain, fibromyalgia, IBS, or chronic fatigue syndrome.",
+      "notes": "Prevalence estimates vary widely because central sensitisation is often undiagnosed or attributed to other conditions. It is more commonly identified in women and in patients with multiple overlapping chronic conditions. Many people have central sensitisation features without meeting strict criteria for a single diagnosis."
+    },
+    "subgroups": [
+      {
+        "name": "Fibromyalgia-predominant",
+        "description": "Widespread musculoskeletal pain with fatigue, sleep disturbance, and cognitive symptoms as defining features.",
+        "distinguishing_features": [
+          "Symmetric, widespread body pain (often described as 'all over')",
+          "Tender points on examination",
+          "Unrefreshing sleep and morning stiffness",
+          "Often diagnosed by exclusion of other conditions"
+        ]
+      },
+      {
+        "name": "Visceral hypersensitivity-predominant",
+        "description": "Heightened sensitivity of internal organs, particularly the gut; core feature of IBS and related functional GI disorders.",
+        "distinguishing_features": [
+          "Exaggerated pain or discomfort from normal gut sensations (bloating, normal motility)",
+          "Altered bowel habits (constipation, diarrhea, or alternating)",
+          "Pain often triggered or worsened by eating",
+          "May be accompanied by anxiety about GI symptoms"
+        ]
+      },
+      {
+        "name": "Post-infection or post-injury",
+        "description": "Central sensitisation triggered by a clear initiating event such as a viral infection, physical injury, or major surgery.",
+        "distinguishing_features": [
+          "Clear temporal relationship to an antecedent event",
+          "Symptoms that persist or worsen long after normal healing time",
+          "May evolve to include widespread pain beyond the original injury site"
+        ]
+      },
+      {
+        "name": "Overlapping multi-system",
+        "description": "Central sensitisation occurring alongside features of multiple syndromes (e.g., IBS, fibromyalgia, migraines, temporomandibular joint disorder).",
+        "distinguishing_features": [
+          "Pain and hypersensitivity across multiple body regions and organ systems",
+          "Often higher symptom burden and functional limitation",
+          "May respond differently to treatments targeting individual conditions"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Widespread or regional pain",
+        "category": "pain/musculoskeletal",
+        "notes": "Often described as aching, burning, or throbbing. May shift location over time. Typically worse with activity but also present at rest."
+      },
+      {
+        "symptom": "Heightened sensitivity to touch or pressure (allodynia)",
+        "category": "sensory/neurological",
+        "notes": "Light touch, clothing, or gentle pressure feels painful. Severity varies; even a bedsheet can be uncomfortable in severe cases."
+      },
+      {
+        "symptom": "Exaggerated pain response to minor injury or stimulus (hyperalgesia)",
+        "category": "pain/neurological",
+        "notes": "A small bump, minor cut, or light pinch causes pain disproportionate to the stimulus."
+      },
+      {
+        "symptom": "Abdominal or gut pain and cramping",
+        "category": "digestive",
+        "notes": "Often triggered by eating, bloating, or normal bowel movement. May alternate with changes in bowel habit."
+      },
+      {
+        "symptom": "Fatigue and post-exertional malaise",
+        "category": "energy/systemic",
+        "notes": "Profound tiredness out of proportion to activity. Symptoms often worsen the day after exertion or mental effort."
+      },
+      {
+        "symptom": "Sleep disturbance",
+        "category": "sleep",
+        "notes": "Difficulty falling asleep, frequent waking, or unrefreshing sleep despite adequate time in bed."
+      },
+      {
+        "symptom": "Cognitive difficulties ('brain fog')",
+        "category": "neurological/cognitive",
+        "notes": "Trouble concentrating, memory lapses, slow mental processing, or difficulty finding words."
+      },
+      {
+        "symptom": "Headaches or migraines",
+        "category": "neurological",
+        "notes": "Often frequent and can be severe. May be triggered by sensory overload, stress, or weather changes."
+      },
+      {
+        "symptom": "Heightened sensitivity to light, sound, or smell",
+        "category": "sensory",
+        "notes": "Normal environmental stimuli feel overwhelming or triggering. Fluorescent lighting or loud environments may provoke pain or fatigue."
+      },
+      {
+        "symptom": "Anxiety or mood changes",
+        "category": "psychological",
+        "notes": "Anxiety about symptoms, health worries, or mood disturbance. May be secondary to chronic pain and disability rather than primary."
+      },
+      {
+        "symptom": "Temperature sensitivity",
+        "category": "sensory",
+        "notes": "Intolerance to heat or cold; may sweat excessively or have poor temperature regulation."
+      },
+      {
+        "symptom": "Joint or muscle stiffness",
+        "category": "musculoskeletal",
+        "notes": "Often worse in the morning or after prolonged immobility. May improve slightly with gentle movement."
+      },
+      {
+        "symptom": "Functional limitation and reduced activity tolerance",
+        "category": "functional/systemic",
+        "notes": "Activities previously done easily become difficult or impossible. May worsen with exertion or stress."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Pain that is widespread, non-inflammatory in nature, or out of proportion to visible tissue damage",
+        "Hypersensitivity to multiple types of stimuli (touch, light, sound, temperature, or gut sensation)",
+        "Symptoms that fluctuate with stress, sleep, activity level, or weather",
+        "Presence of fatigue and cognitive symptoms alongside pain",
+        "Persistence of symptoms despite treatment of the suspected underlying cause",
+        "Symptom onset after infection, injury, surgery, or prolonged stress",
+        "Poor correlation between imaging or lab findings and symptom severity"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom and trigger diary",
+          "description": "Keep a daily log of pain intensity, fatigue, cognitive function, and sensory sensitivity (1\u201310 scale), alongside sleep quality, activity level, meals, stress events, and weather. Over 2\u20134 weeks, patterns emerge linking symptoms to triggers such as overactivity, poor sleep, stress, or certain foods. This is more informative than a single snapshot and guides treatment decisions.",
+          "safety_notes": "No safety concerns, but be consistent and honest to get meaningful patterns. Avoid ruminating on symptoms or becoming overly focused on tracking."
+        },
+        {
+          "name": "Allodynia observation",
+          "description": "Gently touch or brush affected areas with a soft cloth, your fingertip, or a piece of cotton. Note whether light touch causes pain, tingling, or burning sensation that seems out of proportion. Also observe whether certain clothing textures trigger discomfort. Record which areas are most sensitive.",
+          "safety_notes": "Stop if pain becomes severe. Do not press hard or cause injury. This is observational, not diagnostic."
+        },
+        {
+          "name": "Activity tracking and exertion response",
+          "description": "Use a pedometer, fitness tracker, or journal to log daily activity (steps, exercise, or estimated exertion). Note fatigue and pain levels the same day and the next day. Look for patterns of delayed or exaggerated fatigue after activity that seemed tolerable.",
+          "safety_notes": "Do not overexert to test this. Gradual, consistent tracking over weeks is more informative than pushing to a breaking point."
+        },
+        {
+          "name": "Sleep quality log",
+          "description": "Record bedtime, wake time, number of awakenings, and morning pain or stiffness rating. Note sleep quality subjectively (refreshing vs. unrefreshing). Over weeks, patterns of sleep fragmentation or unrefreshing sleep\u2014even with adequate hours\u2014become clear.",
+          "safety_notes": "No safety concerns. Consistent tracking helps identify whether poor sleep correlates with symptom flares."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Clinical diagnostic criteria and assessment (ACR fibromyalgia criteria, IBS Rome IV criteria, or Central Sensitisation Inventory)",
+          "type": "standard",
+          "description": "Doctors use validated questionnaires and diagnostic criteria to assess widespread pain distribution, symptom duration, presence of fatigue and sleep disturbance, and heightened sensory sensitivity. The Central Sensitisation Inventory (CSI) is a 25-item self-report tool designed to screen for central sensitisation features. Fibromyalgia diagnosis typically requires widespread pain index (WPI \u22657) and symptom severity scale (SSS \u22655) plus symptom duration \u22653 months.",
+          "availability": "Primary care or specialist visit. GPs can administer these; no special equipment needed. Increasingly used by pain specialists, rheumatologists, gastroenterologists, and neurologists."
+        },
+        {
+          "name": "Quantitative Sensory Testing (QST)",
+          "type": "emerging",
+          "description": "Objective measurement of pain thresholds and tolerance to heat, cold, pressure, and vibration. Helps confirm whether sensory thresholds are genuinely lowered. Results are compared to normative data. Abnormally low thresholds across multiple modalities support central sensitisation.",
+          "availability": "Specialist pain clinics, neurology departments, and research centres. Not yet widely available in routine primary care. More common in Europe and Canada than in the United States; cost and time may limit access."
+        },
+        {
+          "name": "Functional MRI (fMRI) brain imaging",
+          "type": "emerging",
+          "description": "Shows altered patterns of brain activation and connectivity in pain-processing regions (insula, anterior cingulate cortex, dorsolateral prefrontal cortex). Demonstrates enhanced brain response to painful or non-painful stimuli and abnormal descending pain modulation. Not used diagnostically but supports the neurobiological reality of the condition.",
+          "availability": "Research settings and specialist centres. Not part of routine clinical diagnosis. Expensive and not typically covered by insurance for diagnostic purposes."
+        },
+        {
+          "name": "Cerebrospinal fluid (CSF) biomarkers (substance P, cytokines)",
+          "type": "emerging",
+          "description": "CSF analysis can show elevated levels of pro-inflammatory cytokines (IL-6, IL-8, TNF-\u03b1) and neuropeptides like substance P, suggesting neuroinflammation and altered pain signalling. Requires lumbar puncture, so invasive. Research is ongoing but not yet part of standard diagnosis.",
+          "availability": "Primarily research settings. Lumbar puncture is invasive and carries small risks, limiting clinical use. Not widely available or recommended for routine diagnosis."
+        },
+        {
+          "name": "Serum and inflammatory markers (CRP, ESR, cytokines)",
+          "type": "standard",
+          "description": "Blood tests for inflammation (CRP, erythrocyte sedimentation rate) and cytokine profiles. In central sensitisation, these are typically normal or only mildly elevated, helping to rule out systemic inflammatory conditions (rheumatoid arthritis, lupus, Lyme disease) that can mimic central sensitisation symptoms.",
+          "availability": "Routine blood tests available through any GP or lab. Often done early to exclude other diagnoses."
+        },
+        {
+          "name": "Imaging (X-rays, ultrasound, MRI)",
+          "type": "standard",
+          "description": "Structural imaging (especially of joints, spine, or affected regions) is typically normal or shows minor age-related changes unrelated to symptom severity. Imaging is useful to rule out structural injury, arthritis, or tissue damage but does not diagnose or exclude central sensitisation.",
+          "availability": "Widely available through primary care referral to radiology departments."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "name": "Fibromyalgia",
+        "relationship": "mechanistic_link",
+        "explanation": "Fibromyalgia is a clinical syndrome with central sensitisation as its core mechanism. Not all people with central sensitisation meet fibromyalgia criteria, but the neurobiological pathways are the same."
+      },
+      {
+        "name": "Irritable Bowel Syndrome (IBS)",
+        "relationship": "mechanistic_link",
+        "explanation": "IBS is characterised by visceral hypersensitivity\u2014a form of central sensitisation specific to the gut. The underlying mechanism is heightened pain signalling from normal GI sensations."
+      },
+      {
+        "name": "Chronic Fatigue Syndrome / Myalgic Encephalomyelitis (ME/CFS)",
+        "relationship": "mechanistic_link",
+        "explanation": "Post-exertional malaise and heightened pain sensitivity in ME/CFS reflect central sensitisation. The condition involves abnormal pain processing and autonomic nervous system dysfunction."
+      },
+      {
+        "name": "Temporomandibular Joint (TMJ) Disorder",
+        "relationship": "comorbid",
+        "explanation": "Central sensitisation is common in TMJ disorder, where jaw pain and dysfunction reflect both local dysfunction and heightened pain processing by the nervous system."
+      },
+      {
+        "name": "Migraine and Chronic Headache",
+        "relationship": "comorbid",
+        "explanation": "Central sensitisation is implicated in migraine chronicity and transformation to chronic daily headache. The brain's heightened pain processing affects both headache and other pain symptoms."
+      },
+      {
+        "name": "Neuropathic pain (e.g., small fiber neuropathy, post-herpetic neuralgia)",
+        "relationship": "often_confused",
+        "explanation": "Both involve altered pain signalling, but neuropathic pain originates from nerve damage or dysfunction, whereas central sensitisation stems from CNS hypersensitivity. They can coexist."
+      },
+      {
+        "name": "Anxiety and depression",
+        "relationship": "comorbid",
+        "explanation": "Anxiety and depression often co-occur with central sensitisation, either as secondary responses to chronic pain and disability or as factors that worsen pain processing. Stress and poor emotional regulation amplify symptoms."
+      },
+      {
+        "name": "Autoimmune and inflammatory conditions (rheumatoid arthritis, lupus, Lyme disease)",
+        "relationship": "often_confused",
+        "explanation": "Early or mild autoimmune disease can mimic central sensitisation, and the two can coexist. Central sensitisation must be distinguished from active systemic inflammation via blood tests and clinical assessment."
+      },
+      {
+        "name": "Post-Viral Syndromes (Long COVID, post-acute Lyme)",
+        "relationship": "mechanistic_link",
+        "explanation": "Central sensitisation can develop after viral infections or tick-borne infections, with persistent pain, fatigue, and cognitive symptoms lasting months or years after the acute infection resolves."
+      },
+      {
+        "name": "Mast Cell Activation Syndrome (MCAS)",
+        "relationship": "comorbid",
+        "explanation": "Some people with MCAS have overlapping central sensitisation features (widespread pain, fatigue, sensory sensitivity). The relationship and shared mechanisms are still being elucidated."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Graded Exercise Therapy (GET) tailored to capacity",
+          "category": "lifestyle",
+          "description": "Gradually increase physical activity in a planned, paced manner\u2014not pushing through pain or fatigue ('pace to capacity'). Start with gentle movement (walking, stretching) at a sustainable level, then incrementally increase duration and intensity as tolerance improves. The goal is to recondition the body and desensitise the nervous system without triggering post-exertional malaise. This differs from 'push through' exercise, which worsens symptoms.",
+          "evidence_level": "moderate",
+          "notes": "Effectiveness varies widely. Pacing and listening to your body are critical to avoid boom-bust cycles. Not suitable for all central sensitisation presentations\u2014some people with severe ME/CFS may worsen with GET. Work with a physiotherapist experienced in central sensitisation."
+        },
+        {
+          "name": "Cognitive Behavioural Therapy (CBT) and pain psychology",
+          "category": "lifestyle",
+          "description": "Work with a psychologist trained in pain management or CBT to modify unhelpful thought patterns (catastrophising about pain, fear-avoidance), improve coping strategies, and reduce hypervigilance. CBT does not treat the underlying sensitisation but reduces secondary psychological distress and improves function. Pain neuroscience education is often integrated.",
+          "evidence_level": "strong",
+          "notes": "Effective for many but not a cure. Best combined with other approaches. Some people find CBT invalidating if it implies symptoms are 'in their head'\u2014clarify that it addresses emotional and cognitive factors while respecting the neurobiological reality."
+        },
+        {
+          "name": "Pain neuroscience education",
+          "category": "lifestyle",
+          "description": "Learn how central sensitisation works\u2014how the nervous system amplifies pain signals, why symptoms fluctuate, and how stress and thoughts affect pain perception. Understanding the mechanism reduces fear and catastrophising, improves sense of control, and can itself reduce symptom severity.",
+          "evidence_level": "moderate",
+          "notes": "Often most effective when delivered by a therapist or educator knowledgeable about chronic pain. Books and online resources can also help. Reframing pain as a nervous system sensitivity issue, not tissue damage, is empowering for many."
+        },
+        {
+          "name": "Sleep optimisation and sleep hygiene",
+          "category": "lifestyle",
+          "description": "Prioritise consistent sleep schedule, cool dark bedroom, limit screen time before bed, avoid caffeine/alcohol in evening, and create a wind-down routine. Sleep quality is foundational\u2014poor sleep lowers pain thresholds and worsens fatigue. Address sleep disorders (sleep apnoea, restless leg syndrome) with a sleep specialist if needed.",
+          "evidence_level": "strong",
+          "notes": "Sleep problems in central sensitisation are often primary (not secondary to pain), requiring specific treatment. Sleep medications may be needed short-term; discuss options with your doctor."
+        },
+        {
+          "name": "Stress reduction and relaxation techniques",
+          "category": "lifestyle",
+          "description": "Engage in regular practices such as mindfulness meditation, deep breathing, progressive muscle relaxation, or gentle yoga to lower overall nervous system arousal and reduce symptom flares triggered by stress. Even 10\u201315 minutes daily can help.",
+          "evidence_level": "moderate",
+          "notes": "Different techniques work for different people. Some find meditation helpful; others prefer body-based practices. Consistency matters more than duration."
+        },
+        {
+          "name": "Pacing and activity planning (energy envelope model)",
+          "category": "lifestyle",
+          "description": "Identify your baseline activity tolerance (e.g., 30 minutes of activity before fatigue). Stay within that envelope consistently (not exceeding it on good days) to prevent boom-bust cycles. Gradually expand the envelope as tolerance improves. Track activity and symptoms to refine your personal limits.",
+          "evidence_level": "strong",
+          "notes": "Especially important in ME/CFS and post-viral syndromes. Consistency is more important than pushing. Helps prevent exacerbations and may allow gradual improvement."
+        },
+        {
+          "name": "Amitriptyline or other tricyclic antidepressants",
+          "category": "medication",
+          "description": "Low-dose amitriptyline (10\u201350 mg nightly) improves sleep, reduces pain, and helps regulate neurotransmitters involved in pain processing. Nortriptyline is a similar option with fewer side effects. Benefits develop over weeks.",
+          "evidence_level": "strong",
+          "notes": "Most effective for pain and sleep. Side effects include dry mouth, drowsiness, and weight gain. Not suitable for everyone; contraindicated in certain heart conditions. Taper slowly if discontinuing."
+        },
+        {
+          "name": "Duloxetine (serotonin\u2013noradrenaline reuptake inhibitor, SNRI)",
+          "category": "medication",
+          "description": "Approved for fibromyalgia; improves pain and mood by increasing serotonin and noradrenaline availability. Typical dose 30\u201360 mg daily. Benefits develop over weeks to months.",
+          "evidence_level": "strong",
+          "notes": "Can cause nausea, insomnia, or sexual dysfunction. More activating than tricyclics. Useful if tricyclics cause too much sedation."
+        },
+        {
+          "name": "Pregabalin (gabapentin analogue)",
+          "category": "medication",
+          "description": "Reduces pain signal transmission at the spinal cord level. Approved for fibromyalgia; typical dose 150\u2013600 mg daily in divided doses. Helps with pain and sometimes sleep.",
+          "evidence_level": "strong",
+          "notes": "Side effects include dizziness, drowsiness, and weight gain. Takes 4\u20136 weeks to reach full benefit. Less effective for fatigue and cognitive symptoms than for pain."
+        },
+        {
+          "name": "Gabapentin (off-label)",
+          "category": "medication",
+          "description": "Similar mechanism to pregabalin but less studied in central sensitisation. May help with pain and anxiety. Typical dose 900\u20133600 mg daily in divided doses.",
+          "evidence_level": "moderate",
+          "notes": "More side effects at higher doses. Often used when pregabalin is unavailable or not tolerated."
+        },
+        {
+          "name": "Low-dose naltrexone (LDN)",
+          "category": "medication",
+          "description": "4.5 mg daily, taken at bedtime. May work by reducing glial cell activation and neuroinflammation in the spinal cord. Some evidence suggests it reduces pain and improves mood, though trials are limited.",
+          "evidence_level": "anecdotal",
+          "notes": "Available by prescription (off-label) or compounded. Cost and insurance coverage vary. More research needed. Anecdotal reports of benefit are mixed."
+        },
+        {
+          "name": "NSAIDs (ibuprofen, naproxen) or acetaminophen",
+          "category": "medication",
+          "description": "Pain-relief options when symptoms flare. Acetaminophen is often preferred as first-line due to fewer side effects. NSAIDs can help with inflammatory components if present.",
+          "evidence_level": "moderate",
+          "notes": "Often less effective than expected because central sensitisation pain is not primarily inflammatory. Use short-term and as needed, not regular long-term. High doses increase side effect risk."
+        },
+        {
+          "name": "Dietary modification and anti-inflammatory eating",
+          "category": "diet",
+          "description": "Some evidence supports reducing processed foods, added sugars, and refined carbohydrates; increasing omega-3 fatty acids, antioxidant-rich foods (berries, leafy greens), and whole grains. An anti-inflammatory diet may help reduce baseline inflammation and symptom severity, though individual responses vary.",
+          "evidence_level": "moderate",
+          "notes": "No single diet works for everyone. Keep a food diary to identify personal triggers (common ones: sugar, caffeine, FODMAPs in IBS, gluten sensitivity). Work with a dietitian if unsure."
+        },
+        {
+          "name": "FODMAP restriction (low-FODMAP diet)",
+          "category": "diet",
+          "description": "For IBS with central sensitisation: reduce fermentable carbohydrates (onions, garlic, wheat, certain fruits, legumes, dairy) that trigger bloating and pain. Eliminates most trigger foods over 4\u20136 weeks, then reintroduces gradually to identify personal tolerance.",
+          "evidence_level": "strong",
+          "notes": "Most evidence for IBS. Requires initial guidance from a dietitian trained in the protocol. Risk of nutritional deficiency if done too strictly or long-term. Not necessary for non-GI central sensitisation."
+        },
+        {
+          "name": "Magnesium supplementation",
+          "category": "supplement",
+          "description": "Magnesium is involved in pain processing and muscle function. Deficiency may worsen symptoms. 200\u2013400 mg daily (glycinate or malate forms are often better tolerated than oxide). May help pain and muscle tension.",
+          "evidence_level": "anecdotal",
+          "notes": "Evidence is mixed. Excess magnesium can cause loose stools. Individual needs vary. Check with your doctor before supplementing if you have kidney disease or take certain medications."
+        },
+        {
+          "name": "Vitamin D optimisation",
+          "category": "supplement",
+          "description": "Low vitamin D levels are associated with worse pain and fatigue. Aim for serum levels of 30\u201350 ng/mL. Supplementation (1000\u20134000 IU daily) may help, especially if deficient. Get levels checked first.",
+          "evidence_level": "moderate",
+          "notes": "Adequate levels matter, but megadosing is not necessary. Sunlight exposure and fortified foods are good natural sources. Individual needs vary by geography, skin tone, and baseline levels."
+        },
+        {
+          "name": "Physical therapies (massage, acupuncture, acupressure)",
+          "category": "lifestyle",
+          "description": "Gentle hands-on therapy can reduce muscle tension, improve circulation, and provide temporary pain relief. Acupuncture may work partly through placebo and partly through neuromodulation of pain signals. Benefit is often temporary but may improve quality of life.",
+          "evidence_level": "moderate",
+          "notes": "Massage should be gentle\u2014deep pressure can worsen allodynia. Acupuncture is safe in experienced hands but evidence for central sensitisation specifically is limited. Not a primary treatment but can be helpful adjunct."
+        },
+        {
+          "name": "Heat therapy (warm baths, heating pads)",
+          "category": "lifestyle",
+          "description": "Warmth relaxes muscles, improves circulation, and modulates pain. Many with central sensitisation find warm baths or heating pads soothing. Can be used before activity or at bedtime.",
+          "evidence_level": "anecdotal",
+          "notes": "Safe for most, but avoid if you have poor temperature regulation or heat intolerance. Some find cold more helpful; experiment with personal preference."
+        },
+        {
+          "name": "Cold therapy (ice packs, cold compression)",
+          "category": "lifestyle",
+          "description": "Cold can numb pain and reduce inflammation if present. Some people with central sensitisation benefit; others find it worsens symptoms. Personal tolerance varies.",
+          "evidence_level": "anecdotal",
+          "notes": "Use cautiously if you have poor temperature regulation or Raynaud's phenomenon. Short applications (10\u201315 min) are safer than prolonged exposure."
+        },
+        {
+          "name": "Avoidance of overactivity and pacing",
+          "category": "lifestyle",
+          "description": "One of the most important strategies: consistently avoid pushing through pain or fatigue, as this triggers exacerbations and post-exertional malaise. Rest when needed without guilt, and resume activity gradually as energy returns.",
+          "evidence_level": "strong",
+          "notes": "Hard for many who were previously active or feel pressure to 'push through.' Reframing pacing as a strength (honoring your body's needs) rather than weakness is key."
+        }
+      ],
+      "things_to_avoid": [
+        "Pushing through pain or fatigue to 'recondition' or 'prove' yourself\u2014this typically worsens central sensitisation and triggers post-exertional malaise.",
+        "Overtreatment or excessive medication use\u2014start low and go slow with medications; many people with central sensitisation are sensitive to drugs.",
+        "Sudden, intense exercise programmes or competitive activities\u2014these can trigger symptom exacerbations or injury.",
+        "Chronic stress without management\u2014unaddressed stress amplifies pain processing; make stress reduction a priority.",
+        "Poor sleep and irregular sleep schedules\u2014sleep deprivation lowers pain thresholds and worsens fatigue and cognitive symptoms.",
+        "Isolating or withdrawing from social contact\u2014though pacing is important, some degree of connection and gentle activity helps maintain mood and function.",
+        "Over-catastrophising or assuming your condition will never improve\u2014while it is often chronic, many people stabilise or gradually improve with appropriate management.",
+        "Dismissing emotional or psychological factors\u2014while not the cause, stress, anxiety, and mood significantly affect pain processing; addressing these is not denying the biological reality.",
+        "Excessive medical testing or imaging without clinical indication\u2014normal scans are reassuring but repeated negative results can reinforce health anxiety.",
+        "Unvalidated or unproven 'cure' claims\u2014be cautious with expensive treatments promising remission; stick with evidence-based approaches."
+      ]
+    },
+    "uncomfortable_truths": [],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Sleep quality and consistency",
+          "why_it_matters": "Sleep is foundational to nervous system regulation. Poor sleep lowers pain thresholds, worsens fatigue, impairs immune function, and reduces resilience to stress. Prioritising sleep often has the single biggest impact on symptom baseline.",
+          "how_to_start": "Set a consistent bedtime and wake time (even weekends). Create a cool, dark bedroom. Aim for 8 hours. If sleep is severely disrupted, discuss with a doctor about sleep disorders or short-term medication.",
+          "timeline": "Benefits can be noticeable within 1\u20132 weeks; substantial improvement over 4\u20138 weeks of consistent sleep.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Stress management and nervous system downregulation",
+          "why_it_matters": "Chronic stress keeps the nervous system in fight-or-flight mode, amplifying pain signals and lowering pain thresholds. Downregulating stress through practices like mindfulness, breathing, or gentle yoga directly reduces symptom severity.",
+          "how_to_start": "Choose one practice you find accessible (e.g., 10 minutes of deep breathing, a short walk in nature, or guided meditation). Do it daily, especially when stressed.",
+          "timeline": "Some people feel shifts within days; sustained benefits over weeks to months. Consistency matters more than intensity.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Pacing and activity consistency (staying within energy envelope)",
+          "why_it_matters": "Pacing prevents post-exertional malaise and boom-bust cycles that trap you in a cycle of crashes and incomplete recoveries. Consistent, sustainable activity allows nervous system adaptation and gradual improvement in tolerance.",
+          "how_to_start": "Identify your baseline activity level (e.g., 30 minutes of walking per day). Do this consistently for 1\u20132 weeks, tracking fatigue the next day. Set that as your sustainable level; do not exceed it even on good days.",
+          "timeline": "Stability often improves within weeks; gradual expansion of envelope may occur over months.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Pharmacological pain and sleep support (tricyclics or SNRIs)",
+          "why_it_matters": "Medications like amitriptyline or duloxetine directly address pain processing and sleep by normalising neurotransmitter function. For many, medication provides enough relief to tolerate therapy and activity, unlocking improvement.",
+          "how_to_start": "Discuss with your doctor or pain specialist. Start low (e.g., amitriptyline 10 mg nightly) and titrate slowly. Give it 4\u20136 weeks to assess full benefit.",
+          "timeline": "Initial effects (better sleep) within days; full pain relief over 4\u20138 weeks. May need adjustment or dose changes.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Pain neuroscience education and cognitive reframing",
+          "why_it_matters": "Understanding how central sensitisation works\u2014that pain amplification is a nervous system response, not tissue damage\u2014reduces catastrophising, fear-avoidance, and hypervigilance. This often leads to meaningful reductions in symptom severity and disability.",
+          "how_to_start": "Read a reputable book (e.g., 'Explain Pain' by Moseley and Butler), watch educational videos, or discuss the mechanism with your therapist. Shift your narrative from 'my body is broken' to 'my nervous system is overprotective.'",
+          "timeline": "Cognitive shifts and reduced anxiety can occur within weeks; sustained benefit over months as you internalise the framework.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Optimisation of overall health (diet, hydration, movement, social connection)",
+          "why_it_matters": "Central sensitisation often improves when baseline health is optimised. Anti-inflammatory diet, hydration, gentle regular movement, and social connection all reduce symptom baseline and increase resilience.",
+          "how_to_start": "Start with one lever: improve hydration, add a daily walk, eat one more vegetable per day, or call a friend weekly. Build habits gradually.",
+          "timeline": "Noticeable shifts over 4\u20138 weeks; cumulative benefits over months.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Professional support from specialists trained in chronic pain",
+          "why_it_matters": "A multidisciplinary team (pain specialist, physiotherapist, psychologist trained in pain management) provides expertise, accountability, and tailored treatment plans. Professional guidance reduces trial-and-error and accelerates improvement.",
+          "how_to_start": "Ask your GP for a referral to a pain clinic, fibromyalgia clinic, or chronic pain psychologist. If unavailable, seek a physiotherapist or therapist with experience in central sensitisation.",
+          "timeline": "Benefits begin as interventions are implemented; sustained improvement over 3\u20136 months of regular engagement.",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Pushing through pain to 'prove' improvement or recondition\u2014this triggers crashes and post-exertional malaise, setting you back weeks. Pacing is not failure; it is the path to improvement.",
+        "All-or-nothing thinking about treatment\u2014expecting one medication or therapy to 'cure' central sensitisation. It usually requires a combination of approaches (sleep, stress, pacing, medication, therapy) tailored to you.",
+        "Neglecting sleep while focusing on exercise\u2014exercise is important, but sleep is foundational. Poor sleep undoes the benefits of activity and therapy.",
+        "Stopping medication too quickly if it helps\u2014many people stop SSRIs or tricyclics because they feel better, only to relapse. Sustained use often needed for weeks to months; taper under medical guidance.",
+        "Comparing your recovery to others'\u2014central sensitisation varies widely. Your timeline and response to treatment are unique; avoid despair or false hope from others' experiences.",
+        "Accepting a diagnosis of 'it's all in your head' or dismissing central sensitisation as psychological\u2014while not psychogenic in origin, stress and emotions do amplify symptoms. Address both the neurobiology and the psychology.",
+        "Excessive medical testing or seeking a 'different' diagnosis\u2014once central sensitisation is diagnosed, further imaging and tests often add anxiety without changing management. Avoid seeking confirmation of a different disease.",
+        "Ignoring emotional and social factors\u2014isolation, unresolved trauma, or unmanaged anxiety worsen central sensitisation. Do not neglect psychological support.",
+        "Overcomplicating treatment with too many supplements or medications at once\u2014start with evidence-based approaches (sleep, stress, pacing, medication if needed, therapy). Avoid polypharmacy or supplement overload.",
+        "Giving up after months without dramatic improvement\u2014central sensitisation is often a long game. Small, sustained improvements accumulate. Many people see meaningful progress over 6\u201312 months, not weeks."
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Pain Management Specialist or Chronic Pain Physician",
+          "role": "Specialises in understanding pain mechanisms including central sensitisation, can prescribe and manage medications (tricyclics, SNRIs, pregabalin), and often leads a multidisciplinary team approach. Often the best first specialist to consult.",
+          "notes": "May be hard to access depending on location; refer to pain clinics or teaching hospitals. Understanding of central sensitisation varies; seek someone familiar with the condition."
+        },
+        {
+          "type": "Rheumatologist",
+          "role": "Often diagnoses and manages fibromyalgia (the most common clinical presentation of central sensitisation) and rules out autoimmune disease. Can manage medical aspects and make appropriate referrals.",
+          "notes": "Not all rheumatologists are comfortable with fibromyalgia or central sensitisation; look for those with a special interest. Can be gatekeeper to multidisciplinary care."
+        },
+        {
+          "type": "Gastroenterologist",
+          "role": "If IBS or visceral hypersensitivity is the primary presentation, can diagnose and manage GI symptoms, rule out organic disease, and discuss the central sensitisation component.",
+          "notes": "May underestimate the role of nervous system hypersensitivity; seek one familiar with the gut\u2013brain axis and IBS neurobiology."
+        },
+        {
+          "type": "Neurologist",
+          "role": "Evaluates neurological symptoms (neuropathy, migraine, cognitive dysfunction, autonomic symptoms), can order and interpret tests, and may manage neuropathic pain medications.",
+          "notes": "Helpful especially if post-viral or post-infection syndrome is suspected, or if neurological symptoms predominate."
+        },
+        {
+          "type": "Physiotherapist or Physical Therapist with chronic pain experience",
+          "role": "Designs personalised, paced exercise programmes, teaches pacing strategies, uses manual therapy and movement to reduce pain, and provides ongoing guidance and accountability.",
+          "notes": "Crucial for sustainable improvement. Look for someone trained in pain neuroscience and pacing models, not traditional 'no pain, no gain' approaches."
+        },
+        {
+          "type": "Clinical Psychologist or Pain Psychologist",
+          "role": "Delivers CBT, pain neuroscience education, mindfulness training, and addresses anxiety, depression, and coping. Helps reframe thoughts about pain and improve emotional resilience.",
+          "notes": "Often underutilised. A pain psychologist is different from a general therapist; seek one trained in chronic pain and central sensitisation."
+        },
+        {
+          "type": "Occupational Therapist",
+          "role": "Helps with pacing, energy management, activity planning, and adapting daily activities to fit your capacity. Improves function and quality of life within realistic limits.",
+          "notes": "Valuable for people with severe functional impairment. Work with one trained in chronic fatigue and pacing models."
+        },
+        {
+          "type": "Registered Dietitian with IBS or chronic pain experience",
+          "role": "Guides dietary modification, identifies food triggers, and provides nutritional support if diet is restricted. Can implement low-FODMAP diet or anti-inflammatory approaches as appropriate.",
+          "notes": "Especially valuable if GI symptoms predominate. Avoid non-registered nutritionists or promoters of unvalidated 'elimination' diets."
+        },
+        {
+          "type": "Sleep Specialist",
+          "role": "Evaluates and treats underlying sleep disorders (apnoea, restless leg syndrome, insomnia) that worsen central sensitisation. Can recommend or prescribe sleep supports.",
+          "notes": "If sleep problems are severe and not responding to basic hygiene, a specialist evaluation is worthwhile."
+        },
+        {
+          "type": "Functional Medicine or Integrative Medicine Doctor",
+          "role": "Takes a systems-based approach to optimising health (nutrition, supplements, stress, lifestyle) and may integrate conventional and evidence-based complementary approaches.",
+          "notes": "Quality and evidence-base vary. Seek someone who is also medically trained and evidence-based, not ideological about supplements or dismissive of conventional medicine."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/ChronicPain",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/chronicpain/",
+          "notes": "Large, active community sharing advice, coping strategies, and mutual support. Good for practical tips and normalising experiences. Peer-to-peer; not moderated by professionals."
+        },
+        {
+          "name": "r/Fibromyalgia",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Fibromyalgia/",
+          "notes": "Dedicated community for fibromyalgia discussion, symptom sharing, and treatment experiences. Active and supportive, though variable evidence quality in discussions."
+        },
+        {
+          "name": "r/IBS",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/IBS/",
+          "notes": "For IBS-specific discussions, diet tips, and visceral hypersensitivity experiences. Helpful for identifying triggers and coping strategies."
+        },
+        {
+          "name": "National Fibromyalgia Association (NFA)",
+          "platform": "Website and forum",
+          "url": "https://www.fmaware.org/",
+          "notes": "US-based organisation with educational resources, research updates, and support community. Credible, professionally informed."
+        },
+        {
+          "name": "Action for M.E. (AfME)",
+          "platform": "Website and community",
+          "url": "https://www.actionforme.org.uk/",
+          "notes": "UK-based charity for ME/CFS, which involves central sensitisation. Excellent resources on pacing, post-exertional malaise, and managing ME-related hypersensitivity."
+        },
+        {
+          "name": "Solve ME/CFS Initiative",
+          "platform": "Website and resources",
+          "url": "https://solveme.org/",
+          "notes": "US-based research and advocacy organisation. Strong on evidence, research updates, and understanding post-viral central sensitisation."
+        },
+        {
+          "name": "Fibromyalgia Action UK",
+          "platform": "Website and community",
+          "url": "https://www.fmuk.org/",
+          "notes": "UK charity with educational resources, support groups, and advocacy. Provides evidence-based information and local support networks."
+        },
+        {
+          "name": "IBS Network (formerly IBS UK)",
+          "platform": "Website and support groups",
+          "url": "https://www.theibsnetwork.org/",
+          "notes": "UK-based IBS support with educational resources, recipes for low-FODMAP, and symptom management tools."
+        },
+        {
+          "name": "PAEN (Pain Anxiety and Resilience Network) - online pain support groups",
+          "platform": "Online groups and resources",
+          "url": "https://www.paen.org.uk/",
+          "notes": "Structured peer support and evidence-based resources for chronic pain. Moderated for quality."
+        },
+        {
+          "name": "Chronic Fatigue Syndrome/Myalgic Encephalomyelitis (ME) communities on Facebook",
+          "platform": "Facebook groups",
+          "url": null,
+          "notes": "Many active groups (search 'ME/CFS' or 'Central Sensitisation'). Peer support and shared experiences, though quality and moderation vary. Look for groups focused on pacing and evidence-based approaches."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Explain Pain",
+        "type": "book",
+        "author_or_source": "David Butler and Lorimer Moseley",
+        "url": null,
+        "description": "Foundational book explaining pain neuroscience in accessible language. Helps you understand how your nervous system processes pain and why central sensitisation pain feels so severe despite absence of tissue damage. Often recommended by pain specialists and psychologists. Transformative for many.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Painful Yarns: Metaphors and Stories to Help Understand the Biology of Pain",
+        "type": "book",
+        "author_or_source": "Lorimer Moseley and David Butler",
+        "url": null,
+        "description": "Short, story-based explanations of pain neuroscience. Even more accessible than 'Explain Pain' and engaging. Helps shift thinking from tissue damage model to nervous system sensitisation model.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Fibromyalgia Survivor: Dallas Medical Examiner Defeats Fibromyalgia",
+        "type": "book",
+        "author_or_source": "Dr. Don Goldenberg",
+        "url": null,
+        "description": "Medical perspective on fibromyalgia (a central sensitisation syndrome) with practical advice from a leading fibromyalgia researcher. Evidence-based, accessible to general readers.",
+        "audience": "beginner"
+      },
+      {
+        "title": "It Ain't All in Your Head: Living with Invisible Illness",
+        "type": "book",
+        "author_or_source": "Susan Jeffers",
+        "url": null,
+        "description": "Addresses the emotional and social challenges of chronic pain and invisible illness. Helps validate your experience and offers practical coping strategies.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Mind-Body Workbook for Stress",
+        "type": "book",
+        "author_or_source": "Stanley Block and Cameron Block",
+        "url": null,
+        "description": "Practical exercises for stress reduction and nervous system regulation. Useful for integrating mind-body approaches into daily life.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Body Keeps the Score",
+        "type": "book",
+        "author_or_source": "Bessel van der Kolk",
+        "url": null,
+        "description": "Explores trauma, stress, and their physical manifestations. Relevant if your central sensitisation is trauma-related or stress-driven. May help understand emotional underpinnings.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Curable (online pain programme)",
+        "type": "website and app",
+        "author_or_source": "Curable Health",
+        "url": "https://curable.com/",
+        "description": "Interactive app and programme combining pain neuroscience education, CBT-based exercises, and meditation for chronic pain. Many users find it helpful for understanding and managing central sensitisation.",
+        "audience": "beginner"
+      },
+      {
+        "title": "PainSci (pain science articles and resources)",
+        "type": "website",
+        "author_or_source": "Paul Ingraham",
+        "url": "https://www.painscience.com/",
+        "description": "Comprehensive, evidence-based articles on pain science, fibromyalgia, central sensitisation, and pain management. In-depth but accessible. Excellent resource for deepening understanding.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Fibromyalgia Clinic at Mayo Clinic (educational videos)",
+        "type": "video",
+        "author_or_source": "Mayo Clinic",
+        "url": "https://www.mayoclinic.org/diseases-conditions/fibromyalgia/multimedia",
+        "description": "Professional, evidence-based videos on fibromyalgia, pain mechanisms, and management. Validates the condition and provides practical advice.",
+        "audience": "beginner"
+      },
+      {
+        "title": "TED talk: 'Why Things Hurt' by Lorimer Moseley",
+        "type": "video",
+        "author_or_source": "Lorimer Moseley (TEDx)",
+        "url": "https://www.youtube.com/results?search_query=lorimer+moseley+why+things+hurt",
+        "description": "Short, engaging introduction to pain neuroscience and central sensitisation. Great for understanding the basics quickly.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Pacing Guide for ME/CFS",
+        "type": "website/resource",
+        "author_or_source": "Action for M.E. (AfME)",
+        "url": "https://www.actionforme.org.uk/what-can-i-do/pacing",
+        "description": "Detailed, practical pacing strategies and energy envelope model. Highly relevant for central sensitisation, especially ME/CFS-type presentations.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Low FODMAP Diet Guide",
+        "type": "website and resource",
+        "author_or_source": "Monash University (FODMAP experts)",
+        "url": "https://www.monashfodmap.com/",
+        "description": "Comprehensive, evidence-based resource on low-FODMAP diet for IBS. Includes food lists, recipes, and guidance. Authoritative source.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Mindfulness-Based Stress Reduction (MBSR) online courses",
+        "type": "online course",
+        "author_or_source": "Various providers (e.g., Coursera, UC San Diego)",
+        "url": "https://www.coursera.org/learn/mindfulness-meditation",
+        "description": "Structured, evidence-based programme combining mindfulness meditation with stress management. Many central sensitisation patients find it helpful for reducing nervous system arousal.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Central Sensitisation Inventory (CSI)",
+        "type": "self-assessment tool",
+        "author_or_source": "Normalized by Mayer et al.",
+        "url": "https://www.researchgate.net/publication/230761833_The_Central_Sensitization_Inventory_CSI_A_new_symptom_index_polysymptomatic_profile_in_patients_with_central_sensitization_syndrome",
+        "description": "25-item self-report questionnaire to assess degree of central sensitisation features. Useful for tracking symptoms over time and communicating severity to healthcare providers.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Graded Exercise Therapy for Chronic Conditions: A Practical Guide",
+        "type": "book or guide",
+        "author_or_source": "Various (e.g., NHS resources)",
+        "url": "https://www.nhs.uk/conditions/fibromyalgia/",
+        "description": "Evidence-based guidance on how to incrementally increase activity safely without exacerbating symptoms. Key for sustainable improvement.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Journal of Pain Medicine or Pain Practice (research articles)",
+        "type": "research paper",
+        "author_or_source": "Various researchers",
+        "url": "https://journals.lww.com/painmedicine/pages/default.aspx",
+        "description": "Peer-reviewed research on central sensitisation, fibromyalgia, and chronic pain management. For those wanting to dive into the science. PubMed (pubmed.ncbi.nlm.nih.gov) is also a good search engine for free abstracts.",
+        "audience": "advanced"
+      },
+      {
+        "title": "The Chronic Pain Toolkit (online CBT-based resource)",
+        "type": "website and app",
+        "author_or_source": "University of Bath and Oxford Health NHS",
+        "url": "https://www.digital.nhs.uk/",
+        "description": "Free digital tool for managing chronic pain through CBT techniques, pacing, and goal-setting. Evidence-based and accessible.",
+        "audience": "beginner"
+      }
+    ],
+    "relevance_signal": "**Pain disproportionate to physical findings**. Normal endoscopy but significant gut pain. Symptoms also in other body areas \u2014 widespread pain sensitivity, fibromyalgia overlap."
+  }
+}

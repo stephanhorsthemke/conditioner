@@ -1,0 +1,475 @@
+{
+  "condition_id": "microscopic_colitis",
+  "condition_name": "Microscopic colitis",
+  "generated_at": "2026-04-16T10:46:08.834142Z",
+  "model": "claude-haiku-4-5-20251001",
+  "sections": {
+    "plain_summary": "Microscopic colitis is a condition where your colon becomes inflamed, but the inflammation is only visible under a microscope. It causes chronic watery diarrhoea and abdominal pain, but your colon looks normal during a standard colonoscopy.",
+    "detailed_summary": "Microscopic colitis is a form of inflammatory bowel disease characterised by chronic inflammation of the colon that is only detectable through microscopic examination of tissue samples. Unlike Crohn's disease or ulcerative colitis, the colon appears visually normal during colonoscopy, which is why diagnosis requires multiple biopsies. The condition typically develops gradually and causes persistent or intermittent watery diarrhoea, often accompanied by abdominal cramping and pain. There are two main types: lymphocytic colitis and collagenous colitis, distinguished by the presence of a thickened collagen band beneath the colon's surface. While microscopic colitis is not life-threatening and does not increase cancer risk, it can significantly affect quality of life and lead to dehydration, electrolyte imbalances, and nutritional deficiencies if untreated.",
+    "prevalence": {
+      "summary": "Microscopic colitis affects roughly 1 in 1,000 to 1 in 500 people, with increasing diagnoses over recent decades.",
+      "estimate": "5\u201315 cases per 100,000 population per year (incidence); overall prevalence estimated at 10\u201315 per 100,000",
+      "notes": "Prevalence may be underestimated because diagnosis requires biopsy; many cases go undiagnosed. Incidence has risen significantly since the 1990s, possibly due to better recognition rather than true increase. More common in developed countries. Average age of onset is 50\u201360 years, but can occur at any age."
+    },
+    "subgroups": [
+      {
+        "name": "Lymphocytic colitis",
+        "description": "The more common form, accounting for about 50\u201370% of microscopic colitis cases, characterised by increased lymphocytes and plasma cells in the colon lining without the thickened collagen layer.",
+        "distinguishing_features": [
+          "Normal collagen band (< 10 micrometres)",
+          "Increased intraepithelial lymphocytes",
+          "May be slightly more responsive to treatment in some patients",
+          "Prognosis generally similar to collagenous colitis"
+        ]
+      },
+      {
+        "name": "Collagenous colitis",
+        "description": "A more severe form, accounting for about 30\u201350% of cases, marked by a thickened collagen band beneath the colon's surface in addition to chronic inflammation.",
+        "distinguishing_features": [
+          "Thickened collagen band (> 10 micrometres) visible on biopsy",
+          "Often causes more severe and persistent symptoms",
+          "May be associated with other autoimmune conditions",
+          "Slightly higher risk of hospitalisation for complications"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Chronic watery diarrhoea",
+        "category": "digestive",
+        "notes": "Often the main symptom; may be persistent or intermittent. Average 5\u201310 bowel movements per day, sometimes occurring at night. Can lead to urgency and incontinence."
+      },
+      {
+        "symptom": "Abdominal pain or cramping",
+        "category": "digestive",
+        "notes": "Usually mild to moderate; may worsen before or during diarrhoea. Often located in the lower abdomen."
+      },
+      {
+        "symptom": "Fatigue and weakness",
+        "category": "systemic",
+        "notes": "Results from dehydration, electrolyte loss, and malabsorption of nutrients; severity increases with diarrhoea frequency."
+      },
+      {
+        "symptom": "Weight loss",
+        "category": "systemic",
+        "notes": "Occurs gradually due to chronic diarrhoea and malabsorption; usually mild unless severe or prolonged."
+      },
+      {
+        "symptom": "Dehydration",
+        "category": "systemic",
+        "notes": "Develops from frequent watery diarrhoea; can lead to dizziness, dry mouth, and electrolyte imbalances."
+      },
+      {
+        "symptom": "Joint pain or arthralgia",
+        "category": "musculoskeletal",
+        "notes": "Occurs in 10\u201315% of patients; attributed to immune system involvement; usually mild."
+      },
+      {
+        "symptom": "Rectal bleeding",
+        "category": "digestive",
+        "notes": "Uncommon in microscopic colitis; if present, suggests another condition or complication."
+      },
+      {
+        "symptom": "Nocturnal diarrhoea",
+        "category": "digestive",
+        "notes": "Waking to have bowel movements; common and often distressing."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Persistent watery diarrhoea (at least 4 weeks) with a normal-appearing colon on colonoscopy",
+        "Symptoms that fluctuate in severity or come and go over weeks to months",
+        "Diarrhoea triggered or worsened by NSAIDs, certain foods, or specific medications",
+        "Morning urgency and frequency that improves with fasting or dietary restriction",
+        "Nighttime stools or urgency that disrupts sleep",
+        "Associated fatigue and weakness out of proportion to visible bowel symptoms"
+      ],
+      "at_home": [
+        {
+          "name": "Stool chart and symptom diary",
+          "description": "Use the Bristol Stool Scale (or similar) to classify stool consistency daily; record timing (early morning, post-meal, nocturnal), frequency, and associated abdominal symptoms. Also note any triggers (foods, medications, stress). Keep for 1\u20132 weeks prior to medical consultation.",
+          "safety_notes": "This is an observation tool, not a diagnostic test. Do not delay seeking medical evaluation for persistent diarrhoea. Seek urgent care if severe dehydration, bloody stools, or fever develop."
+        },
+        {
+          "name": "Medication review",
+          "description": "List all current medications, supplements, and over-the-counter drugs, particularly NSAIDs (ibuprofen, naproxen), PPIs (omeprazole, lansoprazole), and antibiotics. Note when each was started and any temporal relationship to symptom onset or worsening.",
+          "safety_notes": "Do not stop prescribed medications without medical advice. Discuss findings with your doctor before making changes."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Colonoscopy with multiple biopsies",
+          "type": "gold_standard",
+          "description": "Visual inspection of the entire colon using a camera-equipped tube. The mucosa (colon lining) appears normal or may show subtle changes. Multiple pinch biopsies (at least 4, often from multiple sites) are taken from both affected and normal-appearing areas. Samples are examined under a microscope to identify inflammation consistent with microscopic colitis.",
+          "availability": "Ordered by a gastroenterologist; performed in an outpatient procedure centre or hospital; requires bowel preparation (laxative) the day before"
+        },
+        {
+          "name": "Histological examination (biopsy analysis)",
+          "type": "gold_standard",
+          "description": "Tissue samples from colonoscopy biopsies are examined under a microscope by a pathologist. Findings include increased chronic inflammatory cells (lymphocytes, plasma cells) and, in collagenous colitis, a thickened collagen band (>10 micrometres) beneath the epithelial layer. Diagnosis requires specific histological criteria.",
+          "availability": "Performed by pathology laboratory; results typically available within 1\u20132 weeks of colonoscopy"
+        },
+        {
+          "name": "Faecal calprotectin",
+          "type": "standard",
+          "description": "A stool test measuring a protein released by inflammatory white blood cells. Elevated levels (typically >50 \u00b5g/g) suggest intestinal inflammation and help differentiate inflammatory conditions from irritable bowel syndrome. Normal levels do not exclude microscopic colitis but support the diagnosis when elevated.",
+          "availability": "Ordered by primary care or gastroenterologist; sample collected at home; results available within 1 week"
+        },
+        {
+          "name": "Complete blood count (CBC) and electrolyte panel",
+          "type": "standard",
+          "description": "Blood tests to assess for anaemia (low red blood cell count) and electrolyte imbalances (low sodium, potassium) caused by chronic diarrhoea. Also helps exclude other causes of diarrhoea.",
+          "availability": "Ordered by any physician; performed at a lab; results available within 24\u201348 hours"
+        },
+        {
+          "name": "Tissue transglutaminase (tTG-IgA) antibody test",
+          "type": "standard",
+          "description": "Blood test to screen for coeliac disease, which can present similarly with diarrhoea and normal-appearing colon. Done to rule out coeliac disease before diagnosing microscopic colitis.",
+          "availability": "Ordered by primary care or gastroenterologist; performed at a lab; results available within 1 week"
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "name": "Irritable bowel syndrome (IBS)",
+        "relationship": "often_confused",
+        "explanation": "Both cause chronic diarrhoea and abdominal pain, but IBS has no structural or microscopic inflammation and is diagnosed by symptoms alone. A normal colonoscopy does not rule out microscopic colitis if biopsies are not taken. Some patients initially misdiagnosed with IBS have microscopic colitis."
+      },
+      {
+        "name": "Coeliac disease",
+        "relationship": "mechanistic_link",
+        "explanation": "Both involve immune-mediated intestinal inflammation; coeliac disease causes villous atrophy visible on duodenal biopsy. Can coexist with microscopic colitis. Should be ruled out through serology before confirming microscopic colitis."
+      },
+      {
+        "name": "Ulcerative colitis",
+        "relationship": "often_confused",
+        "explanation": "Both are inflammatory conditions affecting the colon, but ulcerative colitis causes visible inflammation and ulcers during colonoscopy, whereas microscopic colitis has a normal-appearing colon. Ulcerative colitis typically causes bloody diarrhoea; microscopic colitis causes watery diarrhoea without blood."
+      },
+      {
+        "name": "Crohn's disease",
+        "relationship": "often_confused",
+        "explanation": "Another form of inflammatory bowel disease, but typically shows visible inflammation, ulcers, or cobblestone appearance during colonoscopy and may affect any part of the GI tract. Microscopic colitis is limited to the colon and appears normal endoscopically."
+      },
+      {
+        "name": "Whipple's disease",
+        "relationship": "mechanistic_link",
+        "explanation": "Rare infectious condition causing similar symptoms; identified by special staining of biopsy samples. Should be considered in the differential diagnosis, particularly in immunocompromised patients."
+      },
+      {
+        "name": "Primary biliary cirrhosis and other autoimmune conditions",
+        "relationship": "comorbid",
+        "explanation": "Microscopic colitis is associated with other autoimmune disorders (autoimmune thyroiditis, rheumatoid arthritis, systemic lupus erythematosus) in some patients; shared underlying immune dysregulation."
+      },
+      {
+        "name": "Drug-induced diarrhoea (NSAID- or PPI-related)",
+        "relationship": "mechanistic_link",
+        "explanation": "NSAIDs and proton pump inhibitors are known triggers or contributory factors for microscopic colitis; stopping these medications may improve symptoms or lead to remission."
+      },
+      {
+        "name": "Infectious colitis",
+        "relationship": "often_confused",
+        "explanation": "Infections (bacterial, viral, parasitic) can cause acute diarrhoea and inflammation, but usually have a clear temporal onset and resolve quickly. Microscopic colitis is chronic. Stool culture or PCR testing helps differentiate."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Bismuth subsalicylate (Pepto-Bismol)",
+          "category": "medication",
+          "description": "An over-the-counter antidiarrhoeal and anti-inflammatory agent. Typical dose is 2 tablets (262 mg each) four times daily or 30 mL liquid four times daily. Works by reducing fluid secretion and inflammation in the colon. Often the first-line symptomatic treatment and generally well-tolerated.",
+          "evidence_level": "moderate",
+          "notes": "Effective in mild to moderate cases. Do not exceed 8 doses per day. Avoid if allergic to salicylates. May cause black stools and tongue. Not recommended in severe colitis or if bloody diarrhoea is present."
+        },
+        {
+          "name": "Mesalamine (5-aminosalicylic acid / 5-ASA)",
+          "category": "medication",
+          "description": "A topical anti-inflammatory agent available as oral tablets, granules, or rectal formulations. Typical oral dose is 2.4\u20133.6 g daily in divided doses. Works by reducing inflammatory mediators in the colon. Often used as first-line induction therapy and for maintenance.",
+          "evidence_level": "moderate",
+          "notes": "More evidence for collagenous colitis than lymphocytic colitis. Rectal formulations (enema or suppository) may have faster local effect. Takes 2\u20134 weeks to show benefit. Generally well-tolerated, though headache and rash are possible."
+        },
+        {
+          "name": "Budesonide (topical corticosteroid)",
+          "category": "medication",
+          "description": "A topical corticosteroid with low systemic absorption, available as a slow-release capsule (Entocort). Typical dose is 9 mg daily for induction, then tapered. Reduces inflammation more potently than mesalamine. Often used when other agents fail.",
+          "evidence_level": "strong",
+          "notes": "Effective for both lymphocytic and collagenous colitis, particularly collagenous colitis. Symptoms often improve within 2\u20134 weeks. Risk of systemic side effects is low due to local action and first-pass hepatic metabolism. Taper slowly to avoid relapse. Not ideal for long-term maintenance due to corticosteroid effects."
+        },
+        {
+          "name": "Immunosuppressive agents (azathioprine, thiopurine methyltransferase inhibitors)",
+          "category": "medication",
+          "description": "Used in refractory cases when corticosteroids fail or steroid-sparing effect is desired. Azathioprine (AZA) typical dose is 1\u20132 mg/kg/day; requires monitoring of liver and kidney function. Works by suppressing immune-mediated inflammation.",
+          "evidence_level": "moderate",
+          "notes": "Limited evidence; used off-label. Requires baseline testing and regular monitoring (CBC, liver enzymes) every 6\u20138 weeks. Takes 8\u201312 weeks to show effect. Risk of infection and malignancy with long-term use; not first-line."
+        },
+        {
+          "name": "Dietary restriction (low-fat, low-lactose, low-fibre)",
+          "category": "diet",
+          "description": "Modify diet by reducing or eliminating foods that trigger symptoms. Common problematic foods include high-fat items, dairy products, caffeine, alcohol, spicy foods, and high-fibre foods initially. Reintroduce gradually once symptoms stabilise. Individualised approach works best.",
+          "evidence_level": "anecdotal",
+          "notes": "No single diet works for everyone; trial and error is necessary. Some patients benefit from a low FODMAP diet initially. Ensure adequate nutritional intake; consider consultation with a dietitian if weight loss occurs."
+        },
+        {
+          "name": "Adequate hydration and electrolyte replacement",
+          "category": "lifestyle",
+          "description": "Drink sufficient fluids daily (8\u201310 glasses of water or more if diarrhoea is severe) and replenish electrolytes using oral rehydration solutions (e.g., Dioralyte, Pedialyte) or coconut water. This prevents dehydration and electrolyte imbalance.",
+          "evidence_level": "strong",
+          "notes": "Essential, especially during flares. Monitor urine colour (should be pale yellow). If unable to maintain hydration orally, intravenous fluids may be needed. Avoid excessive caffeine and alcohol, which are diuretics."
+        },
+        {
+          "name": "Antidiarrhoeal agents (loperamide, diphenoxylate)",
+          "category": "medication",
+          "description": "Over-the-counter or prescription drugs (Imodium, Lomotil) that slow gut motility. Loperamide typical dose is 2 mg after each loose stool, max 16 mg/day. Effective for symptom relief and quality of life.",
+          "evidence_level": "moderate",
+          "notes": "Use with caution in severe colitis; risk of toxic megacolon if disease is active. Best used in mild disease or between meals for convenience. Avoid if bloody diarrhoea present. Do not overuse; tolerance can develop."
+        },
+        {
+          "name": "NSAIDs avoidance",
+          "category": "lifestyle",
+          "description": "Stop or replace ibuprofen, naproxen, aspirin, and other NSAIDs. These are known triggers or exacerbators. Use acetaminophen (paracetamol) or other pain management strategies instead.",
+          "evidence_level": "strong",
+          "notes": "NSAID avoidance may lead to symptom improvement or remission in some patients. This is a modifiable risk factor and should be the first intervention. Discuss with doctor before stopping any medication, especially aspirin for heart protection."
+        },
+        {
+          "name": "Proton pump inhibitor (PPI) reduction or discontinuation",
+          "category": "medication",
+          "description": "If taking omeprazole, lansoprazole, or other PPIs, discuss with your doctor about tapering or stopping. PPIs are associated with microscopic colitis development in some patients. Switch to H2 blocker or other acid-reducing agent if reflux is present.",
+          "evidence_level": "moderate",
+          "notes": "Do not stop abruptly; taper over 2\u20134 weeks to avoid rebound hyperacidity. Consider risk/benefit, especially if PPI is for cardiovascular protection. Some patients improve significantly after PPI cessation."
+        },
+        {
+          "name": "Stress management and sleep optimisation",
+          "category": "lifestyle",
+          "description": "Practice relaxation techniques (yoga, meditation, deep breathing), regular exercise, adequate sleep (7\u20139 hours nightly), and counselling or therapy if needed. Stress and poor sleep can exacerbate symptoms.",
+          "evidence_level": "anecdotal",
+          "notes": "Quality of life is significantly affected by microscopic colitis; mental health support is important. Consider cognitive-behavioural therapy (CBT) for coping strategies."
+        },
+        {
+          "name": "Probiotics and prebiotics",
+          "category": "supplement",
+          "description": "Fermented foods (yogurt, kefir, sauerkraut), prebiotic fibres (inulin, FOS), or probiotic supplements (Lactobacillus, Bifidobacterium, Saccharomyces). Aims to restore beneficial gut microbiota.",
+          "evidence_level": "anecdotal",
+          "notes": "Limited evidence in microscopic colitis; individual response varies. May worsen bloating or gas in some patients. Choose single-strain probiotics initially; multi-strain products are less studied."
+        },
+        {
+          "name": "Pancreatic enzyme supplementation (if malabsorption suspected)",
+          "category": "supplement",
+          "description": "Over-the-counter pancreatic enzyme products (e.g., containing lipase, protease, amylase) taken with meals to improve nutrient absorption if chronic diarrhoea causes nutritional deficiency.",
+          "evidence_level": "anecdotal",
+          "notes": "Limited evidence specific to microscopic colitis; more commonly used in pancreatic insufficiency. Consider if weight loss is significant. May help if malabsorption is documented."
+        }
+      ],
+      "things_to_avoid": [
+        "NSAIDs (ibuprofen, naproxen, aspirin) \u2013 known triggers; use paracetamol instead",
+        "High-fat, fried, and greasy foods \u2013 often exacerbate diarrhoea",
+        "Excessive dairy products \u2013 lactose intolerance is common in diarrhoea",
+        "Caffeine and alcohol \u2013 increase gut motility and fluid secretion",
+        "Spicy foods \u2013 can irritate the colon and worsen symptoms",
+        "High-fibre foods initially \u2013 may increase gas and bloating; reintroduce slowly",
+        "Artificial sweeteners (sorbitol, xylitol) \u2013 osmotic effect increases diarrhoea",
+        "Sudden dietary changes \u2013 introduce new foods slowly and monitor",
+        "Abrupt cessation of PPIs \u2013 causes rebound hyperacidity; taper instead",
+        "Excessive exercise during flares \u2013 focus on light activity and hydration",
+        "Dehydration \u2013 critical to maintain fluid and electrolyte balance"
+      ]
+    },
+    "uncomfortable_truths": [],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Stop or reduce NSAIDs and review PPI use",
+          "why_it_matters": "NSAIDs and PPIs are established triggers or risk factors; removing them addresses a modifiable cause and often improves symptoms significantly or leads to remission in some patients.",
+          "how_to_start": "Review all medications with your doctor. Replace NSAIDs with paracetamol for pain relief. Discuss tapering PPIs if not absolutely necessary (do not stop abruptly). Document any improvement over 4\u20136 weeks.",
+          "timeline": "Symptom improvement may occur within 2\u20134 weeks after stopping NSAIDs; PPI effects typically take 4\u20138 weeks to manifest",
+          "requires_professional": true
+        },
+        {
+          "lever": "Identify and eliminate personal dietary triggers",
+          "why_it_matters": "Individual food sensitivities vary widely; removing triggering foods can dramatically reduce diarrhoea frequency and abdominal pain, improving quality of life and reducing medication need.",
+          "how_to_start": "Keep a detailed food and symptom diary for 1\u20132 weeks. Note foods eaten and symptoms within 1\u20134 hours. Common culprits are dairy, fatty foods, caffeine, and high-fibre items. Eliminate one suspect food at a time and assess for 1 week before reintroducing.",
+          "timeline": "Effect of dietary change often visible within 3\u20137 days; full benefits may take 2\u20134 weeks",
+          "requires_professional": false
+        },
+        {
+          "lever": "Initiate pharmacological induction therapy (budesonide or mesalamine)",
+          "why_it_matters": "Anti-inflammatory medications address the underlying immune-mediated inflammation; induction therapy (4\u20138 weeks) with budesonide or mesalamine rapidly reduces symptom frequency and severity, restoring quality of life.",
+          "how_to_start": "Consult a gastroenterologist. Discuss budesonide 9 mg daily (preferred for collagenous colitis) or mesalamine 2.4\u20133.6 g daily. Begin as prescribed; take as directed. Assess response at 4 weeks; expect significant improvement by 8 weeks.",
+          "timeline": "Symptom improvement within 2\u20134 weeks; maximum benefit by 6\u20138 weeks",
+          "requires_professional": true
+        },
+        {
+          "lever": "Maintain adequate hydration and electrolyte balance",
+          "why_it_matters": "Chronic diarrhoea depletes fluid and electrolytes, causing fatigue, weakness, and medical complications. Proactive hydration sustains energy and prevents hospitalisation.",
+          "how_to_start": "Drink 2\u20133 litres of water daily plus oral rehydration solution during flares (e.g., Dioralyte 1\u20132 sachets in 200 mL water, sipped throughout the day). Monitor urine colour; should be pale yellow. Ensure adequate salt and potassium intake (fruit, vegetables, broth).",
+          "timeline": "Fatigue and weakness improve within days of adequate hydration; ongoing benefit throughout management",
+          "requires_professional": false
+        },
+        {
+          "lever": "Establish a stress management and sleep routine",
+          "why_it_matters": "Stress and poor sleep exacerbate inflammation and worsen symptoms; regular practice of relaxation, exercise, and sleep hygiene reduces flare frequency and improves overall disease control and quality of life.",
+          "how_to_start": "Set a consistent sleep schedule (bedtime and wake time). Aim for 7\u20139 hours nightly. Practice 10\u201320 minutes daily of relaxation (meditation, deep breathing, gentle yoga). Exercise lightly (walking, stretching) 3\u20134 times weekly. Consider counselling or CBT if stress is significant.",
+          "timeline": "Sleep quality may improve within 1 week; symptom stabilisation often follows within 2\u20134 weeks",
+          "requires_professional": false
+        },
+        {
+          "lever": "Work with a gastroenterologist on a personalised maintenance plan",
+          "why_it_matters": "Structured follow-up and dose adjustment of medications, monitoring for relapse, and periodic reassessment prevent recurrence and maintain remission long-term.",
+          "how_to_start": "Schedule a follow-up appointment at 4\u20136 weeks post-diagnosis. Discuss induction and maintenance strategies with your gastroenterologist. Establish a plan to taper induction therapy (e.g., budesonide) after 8 weeks and switch to maintenance therapy if needed. Regular contact (every 3\u20136 months) helps.",
+          "timeline": "Maintenance strategy becomes clear by 8\u201312 weeks; long-term benefit ongoing with adherence",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Assuming IBS is the diagnosis without obtaining biopsies \u2013 a normal colonoscopy does not exclude microscopic colitis; biopsies are essential for diagnosis",
+        "Stopping medications abruptly \u2013 sudden cessation (especially PPIs or corticosteroids) can cause rebound symptoms or hyperacidity; taper under medical supervision",
+        "Trying a restrictive diet without guidance \u2013 overly restrictive diets lead to malnutrition; work with a dietitian to eliminate only triggering foods",
+        "Relying on antidiarrhoeal agents alone without addressing underlying inflammation \u2013 symptom suppression without treatment of inflammation leads to poor long-term outcomes",
+        "Continuing NSAIDs despite diagnosis \u2013 NSAIDs exacerbate microscopic colitis; stopping them is critical and often overlooked",
+        "Over-supplementing with probiotics or fibre \u2013 excessive supplementation without individualised guidance may worsen bloating, gas, or diarrhoea",
+        "Ignoring hydration during flares \u2013 dehydration worsens symptoms and increases hospitalisation risk; fluid intake must be prioritised",
+        "Delaying specialist referral \u2013 self-management of symptoms without diagnosis delays proper treatment; early gastroenterology referral is important",
+        "Assuming remission means stopping medication \u2013 abrupt cessation of maintenance therapy increases relapse risk; discuss any changes with your doctor first"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Gastroenterologist",
+          "role": "The primary specialist for diagnosis and management. Performs colonoscopy with biopsies, interprets pathology, prescribes medications, and monitors disease course. Essential for confirming diagnosis and tailoring treatment.",
+          "notes": "Often the first to diagnose; expertise in IBD is crucial. Seek a gastroenterologist with experience in microscopic colitis or IBD."
+        },
+        {
+          "type": "Colorectal surgeon",
+          "role": "Consulted if severe, refractory disease or complications (toxic megacolon, perforation) occur. May discuss surgical options (colectomy) in rare cases of intractable disease.",
+          "notes": "Rarely needed; reserved for severe cases unresponsive to medical therapy or with serious complications."
+        },
+        {
+          "type": "Dietitian (registered, especially IBD-specialist)",
+          "role": "Helps identify dietary triggers, ensure adequate nutrition, manage weight loss, and optimise micronutrient intake. Individualised meal planning and education.",
+          "notes": "Very helpful but often overlooked. Can accelerate symptom improvement and prevent malnutrition. Request referral from your gastroenterologist."
+        },
+        {
+          "type": "Primary care physician",
+          "role": "Manages overall health, monitors for medication side effects, coordinates care with specialists, and provides mental health support. First point of contact for initial symptoms.",
+          "notes": "Important for continuity of care and addressing comorbidities. Should be kept informed of diagnosis and treatment plan."
+        },
+        {
+          "type": "Functional medicine or integrative medicine doctor",
+          "role": "Takes a whole-person approach, explores dietary and lifestyle factors, may recommend probiotics, supplements, and stress management. Complements conventional medical care.",
+          "notes": "Limited evidence for microscopic colitis specifically; use as adjunct to conventional care, not replacement. Ensure coordination with your gastroenterologist."
+        },
+        {
+          "type": "Mental health professional (psychologist, counsellor, therapist)",
+          "role": "Provides coping strategies, addresses anxiety and depression associated with chronic illness, and offers cognitive-behavioural therapy (CBT) for stress and symptom management.",
+          "notes": "Quality of life is significantly affected; mental health support is valuable alongside medical treatment."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "Crohn's and Colitis UK (previously known as NACC)",
+          "platform": "Website and online forum",
+          "url": "https://www.crohnsandcolitis.org.uk",
+          "notes": "Comprehensive resource with patient support, information on microscopic colitis, and online community. Based in the UK but has international relevance."
+        },
+        {
+          "name": "Crohn's & Colitis Foundation (US)",
+          "platform": "Website, forums, and support groups",
+          "url": "https://www.crohnscolitisfoundation.org",
+          "notes": "Extensive educational resources, research updates, and local support groups. Includes microscopic colitis information and networking opportunities."
+        },
+        {
+          "name": "Microscopic Colitis Awareness Facebook Group",
+          "platform": "Facebook (private group)",
+          "url": null,
+          "notes": "Peer-to-peer support group where patients share experiences, tips, and medication advice. Search 'Microscopic Colitis' on Facebook to find active groups."
+        },
+        {
+          "name": "IBD support communities (Reddit)",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/IBD/ and https://www.reddit.com/r/Gastro/",
+          "notes": "Subreddits for inflammatory bowel disease and gastro conditions. Active communities where patients discuss experiences, treatments, and advice."
+        },
+        {
+          "name": "Patient organisations in Europe (EFCCA \u2013 European Federation of Crohn's and Ulcerative Colitis Associations)",
+          "platform": "Website and affiliated groups",
+          "url": "https://www.efcca.org",
+          "notes": "Network of patient organisations across Europe; links to local support and resources."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Microscopic colitis: a comprehensive review",
+        "type": "research paper",
+        "author_or_source": "Langner et al., published in Gastroenterology and Hepatology",
+        "url": null,
+        "description": "In-depth medical review of microscopic colitis aetiology, diagnosis, and treatment. Suitable for those wanting detailed scientific understanding of the condition.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Crohn's and Colitis UK \u2013 Microscopic Colitis Information Sheet",
+        "type": "website",
+        "author_or_source": "Crohn's and Colitis UK",
+        "url": "https://www.crohnsandcolitis.org.uk",
+        "description": "Plain-language overview of microscopic colitis, symptoms, diagnosis, and management. Reliable and patient-friendly.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Clinical Practice Guidelines for Microscopic Colitis",
+        "type": "research paper / guidelines",
+        "author_or_source": "American Gastroenterological Association (AGA) or European Crohn's and Colitis Organisation (ECCO)",
+        "url": null,
+        "description": "Evidence-based clinical guidelines on diagnosis and treatment. Valuable for understanding current best practice and medication options.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "The Low FODMAP Diet for Irritable Bowel Syndrome and Beyond",
+        "type": "book",
+        "author_or_source": "Sue Shepherd and Peter Gibson",
+        "url": null,
+        "description": "Comprehensive guide to the low FODMAP diet, which some microscopic colitis patients find helpful. Includes meal plans and recipes.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Gastroenterology podcast or webinar series on microscopic colitis",
+        "type": "podcast / video",
+        "author_or_source": "Various (e.g., Crohn's & Colitis Foundation, medical societies)",
+        "url": null,
+        "description": "Audio or video presentations by gastroenterologists explaining microscopic colitis, recent research, and patient management strategies. Accessible and engaging.",
+        "audience": "beginner"
+      },
+      {
+        "title": "NSAIDs and gastrointestinal health",
+        "type": "website / educational article",
+        "author_or_source": "National Institutes of Health (NIH) or health authority resources",
+        "url": null,
+        "description": "Educational resource on how NSAIDs affect the GI tract and safer alternatives. Important reading for microscopic colitis patients taking pain relief.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Mind-body medicine and chronic disease management",
+        "type": "book",
+        "author_or_source": "Herbert Benson, Deepak Chopra, or similar authors",
+        "url": null,
+        "description": "Guides to stress reduction, meditation, and lifestyle approaches that complement medical treatment of chronic GI diseases.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Medication management and side effects for IBD",
+        "type": "website",
+        "author_or_source": "Crohn's & Colitis Foundation or NICE (UK)",
+        "url": "https://www.crohnscolitisfoundation.org or https://www.nice.org.uk",
+        "description": "Practical information on medications (mesalamine, budesonide, immunosuppressants), how they work, side effects, and what to expect.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Nutritional support and meal planning for chronic diarrhoea",
+        "type": "website / resource",
+        "author_or_source": "British Dietetic Association or Academy of Nutrition and Dietetics",
+        "url": null,
+        "description": "Evidence-based advice on maintaining nutrition while managing chronic diarrhoea, including foods to emphasise and avoid.",
+        "audience": "intermediate"
+      }
+    ],
+    "relevance_signal": "**Chronic watery diarrhoea** \u2014 5\u201310 times per day \u2014 that looks like IBS-D but does not respond to diet or IBS treatments. Normal colonoscopy appearance but abnormal biopsy."
+  }
+}

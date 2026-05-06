@@ -1,0 +1,324 @@
+id: condition
+description: "Comprehensive condition page data"
+
+# Fields tagged `descriptive_skip: true` are omitted when generating data for a
+# `descriptive` condition (a syndrome label like IBS whose page focuses on
+# routing the user to a sub-condition rather than enumerating symptoms /
+# testing / management of the syndrome itself).
+
+system: |
+  This condition information is for people who have chronic conditions — many of whom have
+  already seen doctors without getting answers and are now researching their symptoms
+  themselves. The goal is to help them understand what is happening in their bodies and
+  navigate toward the right kind of care or investigation. Clarity, plain language, and
+  practical usefulness matter most.
+
+  CRITICAL — Legal and ethical discipline:
+  1. Use INFORMATIONAL FRAMING throughout. Write about "people with this condition",
+     "those diagnosed", "individuals who experience" — NEVER "you have", "you should", or "you might".
+  2. Professional help means a range of practitioners — not only gastroenterologists,
+     but also registered dietitians (especially FODMAP-trained), functional medicine
+     doctors, allergists, and others who investigate root causes. Mention the type of
+     practitioner who is most useful for the specific condition, not just "a doctor".
+     Acknowledge that many mainstream clinicians manage symptoms without investigating
+     drivers, and that finding the right practitioner matters.
+  3. Validate self-directed investigation. Many people with complex, poorly-understood
+     conditions do significant research to understand their own pattern. The information
+     here supports that process — it is not a substitute for clinical judgement, but it
+     is a legitimate starting point.
+  4. Qualify speculative language: use "may", "often", "can help some people" rather
+     than definitive claims about cause or cure.
+  5. Be factual, balanced, and evidence-based. Do not give personal medical advice.
+
+user_prefix: |
+  Create the condition page data for {{condition_name}}.{{#if aliases}} Also known as: {{aliases}}.{{/if}}
+
+  Respond with JSON matching this schema exactly:
+
+fields:
+
+  relevance_signal:
+    prompt: |
+      A single sentence in plain patient language (≤25 words) that points at the
+      specific distinguishing pattern that makes this condition worth investigating
+      — not generic symptoms. Focus on the particular cluster, trigger, or timing
+      that separates this condition from similar-looking ones. Phrase it as
+      something the user might recognise about themselves, e.g. "Your gut symptoms
+      appear within 30 minutes of red wine or aged cheese — not after most other
+      foods." Avoid hedging ("might", "sometimes"); be concrete.
+    schema: string
+
+  plain_summary:
+    prompt: |
+      Write 2–3 short sentences that orient the reader — someone with brain fog and average medical
+      knowledge — by delivering the one or two key insights that most change how they should think
+      about or approach this condition. This is not an introduction to the full page; it is the thing
+      they most need to understand first.
+
+      What belongs here:
+      - The central insight that reframes the condition: why it behaves the way it does, what the
+        diagnosis actually means (or doesn't mean), what the key lever for improvement is.
+      - For syndromic conditions (e.g. IBS, fibromyalgia): the label itself has no direct treatment —
+        the value is in identifying which underlying driver is actually present. Say this plainly.
+      - For well-defined mechanistic conditions (e.g. lactase deficiency): lead with the mechanism
+        and why that matters practically, not a description of symptoms.
+      - For masqueraders: why this condition is so often missed, and what it looks like when it is.
+
+      What does NOT belong here:
+      - Lists of symptoms — those are shown below.
+      - Lists of sub-conditions or related conditions — those are shown elsewhere on the page.
+      - Generic reassurance, hedging, or disclaimers.
+      - Repetition of the condition name or diagnosis criteria.
+
+      Language:
+      - Use informational framing: "People with...", "Those diagnosed...", "This condition..."
+      - AVOID: "you have", "you should", "you can do", "you might".
+      - No jargon. Short sentences.
+    schema: string
+
+  detailed_summary:
+    prompt: |
+      A scientific deep-dive for someone who wants to understand the underlying biology,
+      pathophysiology, and medical context. This is not a beginner summary — it can use
+      correct medical terminology and cover complex mechanisms. It should reward the reader
+      who is willing to work harder to understand their condition.
+
+      Format: 3–5 short paragraphs. Each paragraph starts with a **bold lead** (2–5 words)
+      that names the topic of that paragraph. Use markdown bold. Keep paragraphs tight —
+      4–6 sentences each. No bullet lists.
+
+      Content guidance:
+      - Cover the pathophysiology: what is going wrong at the physiological or biochemical level,
+        and why that produces the pattern of symptoms seen.
+      - For syndromic conditions: explain what the diagnostic label actually captures, why it is
+        heterogeneous by design, and what the current scientific understanding says about the
+        underlying mechanisms that the label groups together. Do NOT enumerate sub-conditions —
+        those are shown separately on the page. Instead, describe the mechanistic categories
+        (e.g. motility dysfunction, visceral hypersensitivity, microbial imbalance, immune
+        activation) that explain why different people with the same label respond so differently
+        to the same treatment.
+      - Cover what is currently understood, contested, or actively researched — do not present
+        incomplete science as settled.
+      - Do NOT repeat information shown elsewhere on the page: do not list symptoms, do not
+        enumerate sub-conditions or related conditions, do not list tests or treatments.
+      - Do NOT include generic disclaimers or calls to see a doctor — those belong elsewhere.
+
+      Language:
+      - Informational framing: "People with...", "Research suggests...", "The condition involves..."
+      - AVOID: "you have", "you should", "you can do".
+    schema: string
+
+  prevalence:
+    prompt: |
+      How common is this condition? Include the best available estimate and any
+      important caveats such as under-diagnosis, disputed figures, or skew by sex
+      or age.
+    schema:
+      summary: "string — plain-language one-liner"
+      estimate: "string — best figure or range, e.g. '1-3% of the population'"
+      notes: "string — caveats, contested numbers, demographic skew"
+
+  subgroups:
+    descriptive_skip: true
+    prompt: |
+      Are there known subtypes, subgroups, or presentations of this condition that
+      differ meaningfully in cause, symptoms, or treatment? If none are
+      well-established, return an empty list.
+    schema:
+      - name: "string — name of the subgroup or subtype"
+        description: "string — how it differs from the general condition"
+        distinguishing_features:
+          - "string — key differences in symptoms, triggers, or lab findings"
+
+  symptoms:
+    descriptive_skip: true
+    prompt: |
+      All notable symptoms associated with this condition — both common and less
+      obvious ones. Group them by body system or category where that helps. For
+      each symptom, prefer specific and concrete over vague (e.g. 'flushing after
+      red wine' over 'skin reactions'). List at least 8 items, up to 20.
+    schema:
+      - symptom: "string — specific, concrete symptom"
+        category: "string — body system or category, e.g. 'digestive', 'neurological', 'skin'"
+        notes: "string | null — any useful context, e.g. timing, triggers, or distinguishing features"
+
+  testing:
+    descriptive_skip: true
+    prompt: "ways to test for or confirm the condition."
+    schema:
+      key_patterns:
+        prompt: |
+          Red-flag combinations or personal history patterns that raise the
+          likelihood of this condition. Be specific enough to be useful. Prioritise to have the best pattern on top.
+        schema:
+          - "string — a specific pattern or cluster to look for"
+      at_home:
+        prompt: |
+          Safe, practical approaches a person can test whether they have the condition. What are easy,
+          safe ways to get initial clarity before seeing a doctor? Include
+          elimination diets, symptom diaries, provocation tests where appropriate.
+          Always add safety notes. Prioritise to have the best test on top. The best should be a fair balance between practicality and the significance.
+        schema:
+          - name: "string — short name of the approach"
+            description: "string — how to do it and what to look for"
+            safety_notes: "string — cautions or when to stop"
+      clinical:
+        prompt: |
+          Tests that require a clinician or lab. Tag each as gold_standard,
+          standard, or emerging. Prioritise to have the best test on top.
+        schema:
+          - name: string
+            type: "gold_standard | standard | emerging"
+            description: "string — what it measures and how it is performed"
+            availability: "string — how or where to get it ordered"
+
+  # symptom_patterns is curated by hand (and may eventually be produced by a
+  # more precise pipeline than a single prompt). The data lives in the same
+  # generated JSON file but is never written by `cn generate` — manual: true
+  # excludes it from the schema sent to Claude entirely.
+  symptom_patterns:
+    manual: true
+    descriptive_only: true
+    schema:
+      patterns:
+        - id: string
+          label: string
+          description: string
+      sub_condition_affinities:
+        - sub_condition_id: string
+          patterns: [string]
+
+  related_conditions:
+    prompt: |
+      Conditions that are commonly comorbid, often confused with, or mechanistically
+      linked to this one. Explain the relationship briefly for each.
+
+      Generate this list based on medical knowledge and clinical comorbidity — do
+      NOT restrict yourself to conditions in the LINKABLE CONDITIONS catalog
+      provided in this prompt. The catalog is a small curated set; real
+      comorbidity is much broader. A complete, useful list will include many
+      conditions that are not in the catalog, and that is correct.
+
+      The catalog exists only so the frontend can render cross-page links. After
+      you have generated each entry, check whether its name or a common alias
+      matches one of the catalog entries. If yes, set `id` to that exact id.
+      If no, set `id` to null. Expect most entries to have id: null — that is
+      the normal case, not a failure.
+
+      Do not invent ids that aren't in the catalog.
+
+      EXCLUDE sub-conditions: any condition listed in the SUB-CONDITIONS list
+      (when present in this prompt) is surfaced separately on the page and must
+      not appear here. `related_conditions` is for mechanistically-related
+      conditions, comorbidities, and often-confused differentials that are NOT
+      already a declared sub-condition. Subtype relationships (e.g. SIBO and its
+      hydrogen/methane subtypes) belong in sub_conditions, never in
+      related_conditions — there is no `subtype` value in the relationship enum.
+
+      Language discipline: frame explanations informatively, not prescriptively. Use
+      "People with both conditions often experience..." or "The overlap suggests..."
+      rather than "You should check for..." or "If you have this, you likely have..."
+    schema:
+      - id: "string | null — exact id from the LINKABLE CONDITIONS catalog if this condition matches one by name or alias; otherwise null. Most entries will be null."
+        name: "string — condition name as commonly known"
+        relationship: "comorbid | often_confused | mechanistic_link | upstream | downstream"
+        explanation: "string — why these two conditions are connected"
+
+  symptom_management:
+    descriptive_skip: true
+    prompt: |
+      Practical ways to reduce or manage symptoms in daily life. Cover diet,
+      lifestyle, medications, supplements, and environmental changes where relevant.
+      Focus on what gives reliable short-term relief and what helps people function
+      better day-to-day.
+    schema:
+      strategies:
+        - name: "string — name of the strategy or intervention"
+          category: "string — e.g. 'diet', 'medication', 'lifestyle', 'supplement', 'environment'"
+          description: "string — what to do and why it helps"
+          evidence_level: "strong | moderate | anecdotal"
+          notes: "string | null — caveats, individual variation, or when to use with caution"
+      things_to_avoid:
+        prompt: |
+          Common triggers or aggravating factors — things that reliably make
+          symptoms worse for most people with this condition.
+        schema:
+          - "string — specific thing to avoid and briefly why"
+
+  uncomfortable_truths:
+    prompt: |
+      Truths about this condition that patients commonly resist or fail to face,
+      and that meaningfully change how someone approaches their healing once
+      accepted. Only include things that experienced clinicians and engaged
+      patient communities broadly agree on. Skip generic platitudes.
+
+      State each truth plainly — do not soften it. The honesty is the point;
+      this section exists because patients are often shielded from these
+      realities and lose years to avoidance.
+
+      But honesty without a horizon is cruel. Every truth MUST be paired with
+      the realistic path forward: what most patients in this situation actually
+      manage to achieve once they stop resisting the truth. Not false hope, not
+      a platitude — the concrete, observable outcome that engaged patients tend
+      to reach. If a truth genuinely has no path forward, do not include it.
+    schema:
+      - truth: "string — the uncomfortable truth, stated plainly without softening"
+        why_resisted: "string — why patients commonly avoid or fail to face this"
+        path_forward: "string — the concrete, observable outcome most engaged patients reach once they accept the truth. Not a platitude."
+
+  sustainable_improvement:
+    prompt: |
+      What are the biggest levers for truly and sustainably improving this condition
+      long-term — not just managing symptoms but addressing root causes or building
+      resilience? Focus on approaches with the highest impact-to-effort ratio. Be
+      honest about what requires professional support.
+    schema:
+      key_levers:
+        - lever: "string — the intervention or change"
+          why_it_matters: "string — mechanism or reason this has outsized impact"
+          how_to_start: "string — concrete first step"
+          timeline: "string | null — realistic timeframe to see meaningful change"
+          requires_professional: boolean
+      common_mistakes:
+        prompt: |
+          Frequent errors people make when trying to improve this condition —
+          things that feel productive but slow progress or cause harm.
+        schema:
+          - "string — the mistake and why it backfires"
+
+  finding_help:
+    prompt: "How to find support — both from medical professionals and from other patients."
+    schema:
+      specialists:
+        prompt: |
+          What types of doctors or practitioners are best positioned to diagnose
+          and treat this condition? Include both first-line and specialist options,
+          and note if generalists often miss it.
+        schema:
+          - type: "string — e.g. 'Gastroenterologist', 'Functional medicine doctor'"
+            role: "string — what this practitioner brings to the table for this condition"
+            notes: "string | null — e.g. 'often the first to diagnose' or 'mainstream doctors may be skeptical'"
+      patient_communities:
+        prompt: |
+          Online communities where patients discuss this condition. Prefer active,
+          well-known communities. Include Reddit, Facebook groups, dedicated forums,
+          or Discord servers. Only include a URL if it is a well-known, stable link.
+        schema:
+          - name: string
+            platform: "string — e.g. Reddit, Facebook, Discord, forum"
+            url: "string | null"
+            notes: "string — what makes this community useful or notable"
+
+  learning_resources:
+    prompt: |
+      The best resources for someone who wants to learn more about this condition.
+      Prioritise high-quality, accessible content. Include a mix of formats where
+      possible — books, websites, podcasts, videos, papers. Only include a URL for
+      well-known, stable resources.
+    schema:
+      - title: "string — title of the resource"
+        type: "string — e.g. 'book', 'website', 'podcast', 'video', 'research paper'"
+        author_or_source: "string | null"
+        url: "string | null"
+        description: "string — why this resource is worth the reader's time"
+        audience: "beginner | intermediate | advanced"

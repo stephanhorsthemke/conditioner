@@ -1,0 +1,524 @@
+{
+  "condition_id": "adhesions",
+  "condition_name": "Surgical adhesions",
+  "generated_at": "2026-04-16T10:37:25.323686Z",
+  "model": "claude-haiku-4-5-20251001",
+  "sections": {
+    "plain_summary": "Surgical adhesions are bands of scar tissue that form inside your body after surgery, causing organs or tissues to stick together. They can develop after any abdominal or pelvic surgery and may cause pain, bowel obstruction, or infertility, though many people have no symptoms at all.",
+    "detailed_summary": "Surgical adhesions form as part of the body's natural healing process after surgery. When tissue is cut or traumatized during an operation, the body responds by laying down fibrin and collagen to repair the injury. Sometimes these repair materials create abnormal connections between organs, tissues, or internal surfaces that should move freely. Adhesions are most common after abdominal and pelvic surgeries, including cesarean sections, hysterectomies, appendectomies, and bowel surgery. The risk increases with the number of prior surgeries and the extent of tissue handling during the procedure. While some adhesions cause no problems, others can restrict movement, compress organs, cause chronic pain, or block the intestines. There is currently no way to prevent adhesions entirely, though some surgical techniques and barrier materials can reduce their formation. Treatment depends on whether adhesions are causing symptoms; asymptomatic adhesions discovered incidentally typically do not require intervention.",
+    "prevalence": {
+      "summary": "Most people develop adhesions after abdominal surgery, but only a minority experience significant symptoms.",
+      "estimate": "50\u201390% of people develop adhesions after abdominal surgery; 5\u201315% develop adhesion-related bowel obstruction within 10 years",
+      "notes": "Prevalence estimates vary widely because many adhesions are asymptomatic and go undetected. Rates depend on the type and extent of surgery, surgeon technique, and use of barrier materials. Long-term follow-up data are limited. Risk increases with repeat surgery and with open surgery compared to minimally invasive procedures."
+    },
+    "subgroups": [
+      {
+        "name": "Asymptomatic adhesions",
+        "description": "Scar tissue bands that form after surgery but cause no pain, obstruction, or functional problems and are often discovered incidentally during imaging or repeat surgery.",
+        "distinguishing_features": [
+          "No abdominal pain or bowel symptoms",
+          "Found on imaging or during surgery performed for other reasons",
+          "Typically do not require treatment"
+        ]
+      },
+      {
+        "name": "Adhesive small-bowel obstruction (ASBO)",
+        "description": "Adhesions that partially or completely block the movement of stool and gas through the small intestine, causing acute or recurrent obstructive symptoms.",
+        "distinguishing_features": [
+          "Colicky abdominal pain, nausea, and vomiting",
+          "Abdominal bloating and constipation",
+          "Confirmed on CT or at surgery",
+          "Often develops months or years after initial surgery"
+        ]
+      },
+      {
+        "name": "Chronic adhesive pain",
+        "description": "Persistent abdominal or pelvic pain attributed to adhesions that do not cause mechanical obstruction.",
+        "distinguishing_features": [
+          "Chronic or recurrent pain without clear obstructive episodes",
+          "Pain may be triggered by eating, prolonged sitting, or activity",
+          "Imaging may be normal or show only mild adhesions",
+          "Diagnosis often clinical rather than definitively confirmed"
+        ]
+      },
+      {
+        "name": "Post-surgical adhesions with infertility",
+        "description": "Adhesions forming around the fallopian tubes, ovaries, or uterus after pelvic surgery that impair fertility.",
+        "distinguishing_features": [
+          "History of pelvic or abdominal surgery (often cesarean or myomectomy)",
+          "Difficulty conceiving despite normal ovulation and partner fertility",
+          "Possible pelvic pain",
+          "Confirmed or suspected on laparoscopy"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Chronic or recurrent abdominal pain",
+        "category": "digestive",
+        "notes": "Pain may be crampy, dull, or sharp; triggered or worsened by eating, physical activity, or prolonged sitting. Severity and frequency vary; may come and go over years."
+      },
+      {
+        "symptom": "Abdominal bloating and distension",
+        "category": "digestive",
+        "notes": "Sense of fullness after small meals; visible swelling of the abdomen, especially later in the day or after eating."
+      },
+      {
+        "symptom": "Nausea and vomiting",
+        "category": "digestive",
+        "notes": "May occur during pain episodes or when eating certain foods; vomiting may temporarily relieve symptoms if partial obstruction is present."
+      },
+      {
+        "symptom": "Constipation or irregular bowel habits",
+        "category": "digestive",
+        "notes": "Infrequent, difficult, or incomplete bowel movements; may alternate with diarrhea. Can worsen symptoms if partial obstruction is present."
+      },
+      {
+        "symptom": "Diarrhea or loose stools",
+        "category": "digestive",
+        "notes": "Less common than constipation but may occur, especially in early phases of partial obstruction or as compensation."
+      },
+      {
+        "symptom": "Early satiety (feeling full quickly)",
+        "category": "digestive",
+        "notes": "Inability to eat normal portions; feeling uncomfortably full after small amounts of food."
+      },
+      {
+        "symptom": "Pelvic pain",
+        "category": "reproductive/pelvic",
+        "notes": "May be localized to lower abdomen, sides, or deep in the pelvis; can worsen with menstruation, sexual activity, or physical exertion."
+      },
+      {
+        "symptom": "Pain with intercourse",
+        "category": "reproductive/pelvic",
+        "notes": "Dyspareunia, particularly deep pain; more common after pelvic surgery."
+      },
+      {
+        "symptom": "Infertility or difficulty conceiving",
+        "category": "reproductive/pelvic",
+        "notes": "After pelvic surgery, adhesions around the tubes or ovaries may mechanically impair fertility. May persist despite normal hormone levels and ovulation."
+      },
+      {
+        "symptom": "Acute bowel obstruction (rare but serious)",
+        "category": "digestive",
+        "notes": "Sudden severe abdominal pain, inability to pass stool or gas, severe vomiting, and abdominal distension. Requires immediate medical attention."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Chronic or recurrent abdominal pain that started or worsened after abdominal or pelvic surgery",
+        "Pain triggered or worsened by eating, physical activity, or prolonged sitting and partially relieved by rest or certain positions",
+        "Bloating, early satiety, or nausea that limits food intake or quality of life",
+        "Recurrent episodes of pain and bowel changes (constipation, diarrhea, or both) without other obvious cause",
+        "Female infertility or pain after pelvic surgery (cesarean, hysterectomy, fibroid removal) without clear alternative diagnosis"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom diary and food tracking",
+          "description": "Record abdominal pain (location, severity 0\u201310, duration), bloating, nausea, bowel habits, and food intake daily for 2\u20134 weeks. Note activity level and menstrual cycle if applicable. Look for patterns (pain after eating, with activity, or at certain times of day).",
+          "safety_notes": "Low-risk. Useful for identifying triggers and communicating symptoms to your doctor, but does not diagnose adhesions."
+        },
+        {
+          "name": "Positional pain assessment",
+          "description": "Notice whether pain or bloating is relieved or worsened by specific positions (lying flat, knees bent, standing, walking). Note which movements or activities trigger symptoms.",
+          "safety_notes": "Low-risk. Helps characterize your symptoms and identify helpful coping strategies, but does not confirm adhesions."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "CT enterography or CT abdomen/pelvis with contrast",
+          "type": "standard",
+          "description": "Cross-sectional imaging with IV and oral contrast that may show findings suggestive of adhesions, such as clustered small bowel loops, transition points, or signs of obstruction. Cannot definitively diagnose adhesions because findings are non-specific and many adhesions do not cause imaging changes.",
+          "availability": "Ordered by primary care, gastroenterologist, or surgeon; performed at hospital or imaging center. Requires bowel prep (clear liquid diet) the day before."
+        },
+        {
+          "name": "Small-bowel follow-through (SBFT)",
+          "type": "standard",
+          "description": "Fluoroscopic study using barium contrast to visualize small bowel transit. May show luminal narrowing, clustering of loops, or delayed transit suggestive of adhesions. Less sensitive than CT but still useful in some settings.",
+          "availability": "Ordered by gastroenterologist or surgeon; performed at imaging center. Requires clear liquid diet the day before."
+        },
+        {
+          "name": "MRI enterography",
+          "type": "standard",
+          "description": "Magnetic resonance imaging with oral contrast that visualizes small bowel detail without ionizing radiation. Can detect signs of obstruction and is becoming more widely used for recurrent symptoms, especially in younger patients.",
+          "availability": "Ordered by gastroenterologist or surgeon; performed at hospital or imaging center. Requires bowel prep and lying still for 30\u201345 minutes. Not suitable if metal implants or claustrophobia present."
+        },
+        {
+          "name": "Diagnostic laparoscopy",
+          "type": "gold_standard",
+          "description": "Minimally invasive surgery in which a thin camera is inserted through a small incision to directly visualize adhesions inside the abdomen. The gold standard for detecting adhesions; allows for therapeutic adhesiolysis (cutting adhesions) during the same procedure if symptoms warrant it.",
+          "availability": "Ordered by surgeon; performed in an operating room under general anesthesia. Reserved for cases with recurrent obstruction or strong clinical suspicion when imaging is non-diagnostic."
+        },
+        {
+          "name": "Gynecologic laparoscopy",
+          "type": "gold_standard",
+          "description": "Similar minimally invasive visualization of the pelvis, used to detect and treat adhesions affecting fertility or causing pelvic pain. Often recommended if infertility persists after normal ovulation and partner fertility testing.",
+          "availability": "Ordered by reproductive endocrinologist or gynecologic surgeon; performed under general anesthesia. Can be combined with hysterosalpingography (HSG) to assess fallopian tube patency."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "name": "Irritable bowel syndrome (IBS)",
+        "relationship": "often_confused",
+        "explanation": "Both IBS and adhesive pain present with chronic abdominal pain, bloating, and altered bowel habits. IBS is more common and does not require prior surgery, whereas adhesions have a clear surgical trigger. Distinguishing them is important because IBS responds to different treatments and adhesiolysis may not help IBS."
+      },
+      {
+        "name": "Inflammatory bowel disease (Crohn's disease, ulcerative colitis)",
+        "relationship": "often_confused",
+        "explanation": "Both can cause chronic abdominal pain, bloating, and diarrhea. IBD is distinguished by bloody stools, systemic inflammation markers, and endoscopic findings. However, IBD patients are also at higher risk of adhesions if they have undergone surgery."
+      },
+      {
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "comorbid",
+        "explanation": "Adhesions that slow intestinal transit may predispose to bacterial overgrowth. Both conditions present with bloating, pain, and altered bowel habits. Some patients have both, and treating SIBO may improve symptoms even if adhesions are present."
+      },
+      {
+        "name": "Pelvic inflammatory disease (PID) and endometriosis",
+        "relationship": "comorbid",
+        "explanation": "PID and endometriosis both cause pelvic pain and adhesions. Endometriosis is not caused by surgery but can coexist with post-surgical adhesions. Both are common reasons for pelvic laparoscopy."
+      },
+      {
+        "name": "Partial bowel obstruction",
+        "relationship": "downstream",
+        "explanation": "Adhesions are the most common cause of non-malignant small bowel obstruction, accounting for 60\u201375% of cases. Obstruction is a mechanical consequence of adhesion formation."
+      },
+      {
+        "name": "Functional dyspepsia and gastroparesis",
+        "relationship": "often_confused",
+        "explanation": "Both cause early satiety, bloating, and nausea. Gastroparesis involves delayed stomach emptying (confirmed on gastric-emptying study), whereas adhesions affect the small bowel. Distinguishing requires appropriate imaging."
+      },
+      {
+        "name": "Constipation and fecal impaction",
+        "relationship": "downstream",
+        "explanation": "Adhesions that slow or obstruct bowel transit can lead to or worsen constipation and, in severe cases, fecal impaction."
+      },
+      {
+        "name": "Chronic abdominal wall pain and myofascial pain",
+        "relationship": "often_confused",
+        "explanation": "Scar tissue from surgical incisions can trigger myofascial pain in the abdominal wall muscles. This pain is localized to the incision or specific trigger points and is reproduced by muscle palpation, distinguishing it from pain due to internal adhesions."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Dietary modifications (low-fiber, small frequent meals)",
+          "category": "diet",
+          "description": "Eat smaller, more frequent meals (5\u20136 per day) to reduce the burden on the bowel. Temporarily reduce insoluble fiber (whole grains, raw vegetables, nuts) if partial obstruction is suspected; transition to soluble fiber (oats, applesauce, well-cooked vegetables) as tolerated. Avoid high-fat foods, spicy foods, and foods known to trigger symptoms.",
+          "evidence_level": "moderate",
+          "notes": "Dietary approach varies by individual and symptom severity. Patients at high risk of obstruction may need stricter restrictions. A dietitian specializing in GI or post-surgical nutrition can tailor recommendations. Avoid prolonged low-fiber diets without professional guidance."
+        },
+        {
+          "name": "Hydration and electrolyte balance",
+          "category": "lifestyle",
+          "description": "Drink adequate fluids (8\u201310 cups water daily) to maintain stool consistency and prevent dehydration, particularly if vomiting or diarrhea is present. Electrolyte-containing beverages (coconut water, low-sugar sports drinks) may help if nausea or vomiting is recurrent.",
+          "evidence_level": "strong",
+          "notes": "Critical if vomiting or diarrhea is occurring. Monitor urine color and thirst as signs of adequate hydration."
+        },
+        {
+          "name": "Gentle abdominal massage",
+          "category": "lifestyle",
+          "description": "Slow, clockwise massage of the abdomen using gentle pressure may help move bowel contents and relieve bloating and pain. Perform for 5\u201310 minutes when pain is mild to moderate; avoid if acute obstruction is suspected.",
+          "evidence_level": "anecdotal",
+          "notes": "May be helpful for some but does not treat adhesions. Stop if pain worsens. Professional abdominal massage or visceral manipulation by trained practitioners is an alternative, though evidence is limited."
+        },
+        {
+          "name": "Movement and light activity",
+          "category": "lifestyle",
+          "description": "Regular gentle movement (walking, stretching, yoga) may improve intestinal motility and reduce bloating. Avoid strenuous exercise, heavy lifting, or positions that trigger pain during acute flares.",
+          "evidence_level": "moderate",
+          "notes": "Activity tolerance varies. Walking after meals may improve transit. Listen to your body; rest during painful episodes."
+        },
+        {
+          "name": "Heating pad or warm compress",
+          "category": "lifestyle",
+          "description": "Apply heat to the abdomen for 15\u201330 minutes to relax abdominal muscles and ease pain and cramping.",
+          "evidence_level": "anecdotal",
+          "notes": "Safe for most; avoid if nausea or vomiting is acute. Can be combined with gentle movement and relaxation techniques."
+        },
+        {
+          "name": "Stress reduction and relaxation techniques",
+          "category": "lifestyle",
+          "description": "Chronic pain and food anxiety are common; practicing deep breathing, progressive muscle relaxation, mindfulness meditation, or guided imagery may reduce pain perception and improve quality of life.",
+          "evidence_level": "moderate",
+          "notes": "Psychological approaches complement medical management. Consider therapy or mind\u2013body programs (MBSR) if anxiety or pain catastrophizing is contributing to symptoms."
+        },
+        {
+          "name": "Acetaminophen or ibuprofen for pain",
+          "category": "medication",
+          "description": "Over-the-counter analgesics can manage mild to moderate pain. Ibuprofen (an NSAID) has anti-inflammatory properties, whereas acetaminophen is gentler on the stomach.",
+          "evidence_level": "moderate",
+          "notes": "NSAIDs may irritate the gut in some patients; use lowest effective dose for the shortest duration. Avoid if you have a history of GI bleeding or renal disease. Do not use if acute obstruction is suspected."
+        },
+        {
+          "name": "Prescription antispasmodics (dicyclomine, hyoscyamine)",
+          "category": "medication",
+          "description": "Anticholinergic medications reduce intestinal cramping and may relieve colicky pain. Taken 15\u201330 minutes before meals or as needed for pain.",
+          "evidence_level": "moderate",
+          "notes": "Side effects include dry mouth, constipation, and urinary retention. Avoid if glaucoma or bowel obstruction is present. Do not use as sole therapy."
+        },
+        {
+          "name": "Prescription opioid analgesics",
+          "category": "medication",
+          "description": "For severe, uncontrolled pain, short-acting opioids (e.g., acetaminophen with codeine, tramadol) may be used sparingly and only when non-opioid measures have failed.",
+          "evidence_level": "moderate",
+          "notes": "Opioids carry high risk of dependence, constipation, and reduced GI motility (which worsens adhesion-related obstruction). Reserved for severe pain; typically not recommended for long-term management. Discuss risks and benefits with your doctor."
+        },
+        {
+          "name": "Stool softeners and fiber supplements (cautiously)",
+          "category": "medication",
+          "description": "Docusate (stool softener) eases bowel movements; psyllium husk or methylcellulose (soluble fiber) may improve regularity without worsening obstruction. Use cautiously and adjust gradually.",
+          "evidence_level": "moderate",
+          "notes": "Avoid insoluble fiber (wheat bran) if partial obstruction is suspected; it may worsen symptoms. Start with small doses and increase slowly. Ensure adequate hydration."
+        },
+        {
+          "name": "Prokinetic agents (metoclopramide, domperidone)",
+          "category": "medication",
+          "description": "Medications that enhance gastric and intestinal motility. Metoclopramide blocks dopamine; domperidone is a peripheral dopamine antagonist. May help with dysmotility-related symptoms.",
+          "evidence_level": "anecdotal",
+          "notes": "Evidence for adhesion-related pain is weak. Metoclopramide carries risk of tardive dyskinesia with long-term use. Consider short-term trial; monitor efficacy."
+        },
+        {
+          "name": "Biofeedback and bowel retraining",
+          "category": "lifestyle",
+          "description": "Working with a trained therapist to establish regular bowel habits, reduce straining, and improve pelvic floor function. Particularly useful if constipation or fecal incontinence is present.",
+          "evidence_level": "moderate",
+          "notes": "Requires professional guidance. Can complement other therapies. May take 8\u201312 weeks to see improvement."
+        }
+      ],
+      "things_to_avoid": [
+        "High insoluble-fiber foods (wheat bran, raw vegetables, nuts, seeds) if you have a history of partial obstruction or acute obstruction symptoms\u2014these may slow transit further and worsen symptoms",
+        "Strenuous exercise, heavy lifting, and intense abdominal workouts, which may increase intra-abdominal pressure and trigger pain or obstruction",
+        "Prolonged immobility and bed rest, which slows intestinal motility; gentle, regular movement is preferable",
+        "Long-term or high-dose opioid analgesics, which cause constipation and reduce GI motility, potentially worsening obstruction and creating dependence",
+        "Dehydration and low fluid intake, which increases risk of constipation and obstruction",
+        "Large meals and foods high in fat, grease, or spice, which slow gastric emptying and can trigger nausea and pain",
+        "Frequent or unnecessary imaging with radiation, particularly CT\u2014limit to clinically necessary studies and discuss alternatives (MRI) with your doctor",
+        "Unproven herbal or supplement products claiming to 'dissolve' adhesions\u2014no evidence supports such claims, and some may interact with medications or worsen symptoms"
+      ]
+    },
+    "uncomfortable_truths": [],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Identify and avoid personal symptom triggers through dietary tracking and structured observation",
+          "why_it_matters": "Many people with adhesions can manage symptoms effectively by learning which foods, activities, and stressors reliably worsen pain and bloating. Avoiding or modifying triggers reduces the frequency and severity of flares and avoids repeated medical evaluations for manageable symptoms.",
+          "how_to_start": "Keep a detailed symptom and food diary for 2\u20134 weeks, noting the time and content of meals, symptoms, activity, stress level, and menstrual cycle (if applicable). Review the diary weekly to identify clusters or patterns (e.g., pain after fatty foods, after prolonged sitting, during stressful days). Discuss findings with your doctor or a GI-trained dietitian.",
+          "timeline": "Patterns often emerge within 2\u20134 weeks; sustained improvement from dietary changes typically takes 4\u20138 weeks",
+          "requires_professional": false
+        },
+        {
+          "lever": "Develop a structured, gentle movement routine and maintain regular bowel habits",
+          "why_it_matters": "Regular light activity (walking, gentle stretching, or yoga) improves intestinal motility, reduces bloating, and can lower pain perception. Establishing consistent bowel habits (e.g., attempting defecation at the same time daily after a meal) leverages the gastrocolic reflex and reduces the likelihood of constipation and obstruction.",
+          "how_to_start": "Aim for 20\u201330 minutes of walking or other gentle activity most days of the week. Schedule toilet time at the same time each day, typically 20\u201330 minutes after breakfast. Ensure adequate hydration and fiber (soluble, not insoluble). If pain during activity is limiting, start with short 5\u201310 minute walks after meals.",
+          "timeline": "Improved bowel regularity may develop within 1\u20132 weeks; pain reduction from improved motility typically takes 4\u20136 weeks",
+          "requires_professional": false
+        },
+        {
+          "lever": "Address psychological factors (anxiety, pain catastrophizing, food fear) through structured support",
+          "why_it_matters": "Chronic pain and food anxiety are common in adhesion patients and perpetuate a cycle of avoidance and symptom focus that worsens outcomes. Addressing these through therapy, mindfulness, or group support normalizes eating and activity and reduces pain perception.",
+          "how_to_start": "Consider referral to a pain psychologist or GI psychologist; enroll in a mindfulness-based stress reduction (MBSR) program; or join an online or in-person support group for adhesion or chronic pain patients. Start with one session or group meeting to assess fit.",
+          "timeline": "Initial shifts in pain perception and anxiety can occur within 4\u20138 weeks; sustained improvement typically requires 3\u20136 months of regular practice",
+          "requires_professional": true
+        },
+        {
+          "lever": "Optimize nutritional intake and consider targeted supplementation with professional guidance",
+          "why_it_matters": "Malnutrition and nutrient deficiencies (especially iron, B12, vitamin D, and protein) are common in patients with chronic GI symptoms and restricted diets. Addressing these improves energy, mood, and healing capacity.",
+          "how_to_start": "Discuss nutritional assessment with your gastroenterologist or a dietitian. Request testing for common deficiencies (iron, B12, folate, vitamin D). Work with a dietitian to identify nutrient-dense foods you tolerate and supplement as needed (multivitamin, B12, vitamin D, iron).",
+          "timeline": "Blood levels improve within 4\u20138 weeks of supplementation; symptomatic improvement from better nutrition takes 8\u201312 weeks",
+          "requires_professional": true
+        },
+        {
+          "lever": "Communicate clearly with your healthcare team and develop a symptom management plan",
+          "why_it_matters": "Many adhesion patients experience delays in diagnosis or inconsistent management across providers. A documented plan (emergency action plan, dietary guidelines, medication list) ensures continuity of care, reduces unnecessary testing, and clarifies when to seek help.",
+          "how_to_start": "At your next appointment, ask your doctor to document: (1) confirmed or suspected diagnosis of adhesions; (2) your typical symptom pattern and triggers; (3) medications and dietary changes that work for you; (4) warning signs of obstruction requiring emergency care; and (5) contact information for urgent advice. Keep a copy for yourself and share with any new providers.",
+          "timeline": "Immediate benefit; reduces time spent on redundant investigations and improves consistency of care",
+          "requires_professional": true
+        },
+        {
+          "lever": "Minimize unnecessary repeat surgery and imaging; reserve invasive interventions for clear indications",
+          "why_it_matters": "Each surgery increases adhesion formation. Imaging has no radiation risk benefit when used excessively. A trial of conservative management prevents cascade of tests and procedures that increase risk without improving outcomes for stable, asymptomatic, or mildly symptomatic adhesions.",
+          "how_to_start": "Before agreeing to adhesiolysis surgery or repeat imaging, ask your doctor: (1) What specific symptom or complication will this test or surgery address? (2) How will the result change my treatment? (3) What are the risks and alternatives? Have a discussion about conservative management and clarify criteria for intervention (e.g., recurrent obstruction requiring hospitalization).",
+          "timeline": "Prevents future complications; beneficial from the outset",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Restricting diet too severely or indefinitely\u2014while low-fiber diets are sometimes necessary during acute episodes, prolonged restriction worsens nutritional status and deconditioning. Work with a dietitian to advance diet gradually.",
+        "Seeking repeated imaging or surgery based on mild or unchanged symptoms\u2014each imaging study exposes you to radiation; each surgery creates more adhesions. Reserve intervention for worsening symptoms or recurrent obstruction.",
+        "Assuming all abdominal pain is due to adhesions\u2014IBS, functional dyspepsia, and other conditions are more common. Unnecessary adhesiolysis does not improve non-mechanical pain and may worsen it.",
+        "Relying solely on opioid pain management\u2014opioids reduce bowel motility, increase constipation, and promote dependence. Combine with non-pharmacologic strategies and address underlying triggers.",
+        "Avoiding all activity and exercise due to fear of pain\u2014inactivity worsens motility and deconditioning. Gentle, progressive activity within your tolerance improves symptoms and overall health.",
+        "Not documenting your symptom pattern and surgical history\u2014when presenting to a new doctor, provide a written summary of your surgery dates, symptoms, treatments tried, and current triggers to avoid delays in management.",
+        "Using unproven supplements or 'adhesion-dissolving' products\u2014no evidence supports herbal remedies for adhesions; they may interact with medications or worsen symptoms. Focus on evidence-based dietary and lifestyle approaches.",
+        "Delaying professional evaluation for recurrent vomiting, inability to eat, or severe abdominal pain\u2014these are warning signs of obstruction requiring prompt imaging and possible hospitalization. Know when conservative management is no longer appropriate."
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Gastroenterologist",
+          "role": "Usually the first specialist to evaluate and manage adhesion-related bowel symptoms. Orders appropriate imaging (CT enterography, small-bowel series), recommends dietary and medical management, and refers to surgery for recurrent obstruction or adhesiolysis.",
+          "notes": "Gastroenterologists are comfortable with non-surgical management of partial obstruction. They can also manage comorbid conditions like IBS or SIBO."
+        },
+        {
+          "type": "Colorectal or general surgeon",
+          "role": "Evaluates recurrent or complete bowel obstruction and determines whether adhesiolysis is warranted. Performs laparoscopic surgery to visualize and treat adhesions. Also manages post-operative complications.",
+          "notes": "Surgeons typically advocate surgical intervention for recurrent obstruction; conservative management is often attempted first by gastroenterologists. Seek a surgeon experienced in minimally invasive techniques and adhesiolysis."
+        },
+        {
+          "type": "Reproductive endocrinologist or gynecologic surgeon",
+          "role": "Manages adhesions affecting fertility and pelvic pain, especially after pelvic or uterine surgery. Performs diagnostic and therapeutic laparoscopy to visualize and treat adhesions and addresses endometriosis if present.",
+          "notes": "Often involved in fertility workup; may be the first to diagnose adhesions in women with unexplained infertility after pelvic surgery."
+        },
+        {
+          "type": "Registered Dietitian (RD), preferably GI specialist",
+          "role": "Provides individualized dietary advice, identifies trigger foods, designs nutrient-adequate low-fiber or modified diets, and monitors nutritional status. Essential for sustainable symptom management.",
+          "notes": "Request referral from your gastroenterologist or primary care doctor. Look for credentials 'RD' or 'Registered Dietitian'; many insurance plans cover dietitian visits with a physician referral."
+        },
+        {
+          "type": "Pain psychologist or therapist",
+          "role": "Addresses pain perception, anxiety, food avoidance, and quality-of-life impact through cognitive-behavioral therapy (CBT), mindfulness, or other evidence-based approaches. Reduces pain catastrophizing and improves coping.",
+          "notes": "Often overlooked but valuable, especially for chronic pain and food anxiety. Ask your gastroenterologist or primary care doctor for a referral to a psychologist experienced in chronic pain or GI disorders."
+        },
+        {
+          "type": "Primary care physician",
+          "role": "Coordinates care across specialists, manages comorbid conditions, and provides continuity. Often the first to evaluate abdominal symptoms; may refer to gastroenterology or surgery.",
+          "notes": "Familiarity with your full medical history is valuable. Ensure your PCP is involved in any major decisions about imaging or surgery."
+        },
+        {
+          "type": "Physiatrist or physical medicine and rehabilitation specialist",
+          "role": "May help manage abdominal wall pain from surgical scar tissue, referred pain patterns, and deconditioning through physical therapy, biofeedback, or trigger-point injection.",
+          "notes": "Useful if abdominal wall pain or myofascial pain is a significant component of your symptoms; less commonly involved in primary adhesion management."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "Adhesions.org",
+          "platform": "website",
+          "url": "https://www.adhesions.org",
+          "notes": "Comprehensive resource dedicated to surgical adhesions, including patient education, research updates, and provider directory. Includes information on prevention and surgery."
+        },
+        {
+          "name": "International Adhesions Society",
+          "platform": "website",
+          "url": "https://www.adhesions.org/society",
+          "notes": "Professional and patient organization focused on adhesion research, prevention, and treatment. Offers evidence-based information and links to specialists."
+        },
+        {
+          "name": "Crohn's and Colitis Foundation (adhesion and obstruction support)",
+          "platform": "website, community forum",
+          "url": "https://www.crohnscolitisfoundation.org",
+          "notes": "While focused on IBD, the foundation's resources and community forums include discussion of adhesions in IBD patients and link to support groups."
+        },
+        {
+          "name": "IBS Network or similar functional GI disorder forums",
+          "platform": "website, online forums",
+          "url": "https://www.theibsnetwork.org (UK example)",
+          "notes": "Many adhesion patients are initially misdiagnosed with IBS; these communities offer peer support for chronic GI symptoms and dietary strategies, some applicable to adhesions."
+        },
+        {
+          "name": "Pelvic Adhesions Support Group",
+          "platform": "Facebook",
+          "url": null,
+          "notes": "Closed or private groups on Facebook often provide peer support and shared experiences for pelvic adhesions, particularly for women with fertility concerns or pelvic pain."
+        },
+        {
+          "name": "Chronic Pain Management Communities",
+          "platform": "Reddit (r/chronicpain), online forums, Discord",
+          "url": null,
+          "notes": "Broader communities focused on chronic pain and quality of life; many members have adhesions alongside other chronic conditions. Useful for coping strategies and psychological support."
+        },
+        {
+          "name": "Fertility and Endometriosis Communities",
+          "platform": "Facebook, Reddit (r/endometriosis, r/infertility), forums",
+          "url": null,
+          "notes": "Valuable for women with adhesion-related infertility or pelvic pain, especially if endometriosis is also present. Offer shared experiences and treatment advice."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Surgical Adhesions: Epidemiology, Prevention, and Clinical Management",
+        "type": "research paper",
+        "author_or_source": "Duron et al., World Journal of Surgery",
+        "url": null,
+        "description": "Comprehensive scientific review of adhesion formation, risk factors, prevention strategies, and clinical management. Dense but authoritative; suitable for detailed understanding of the condition.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Adhesions.org patient education series",
+        "type": "website",
+        "author_or_source": "International Adhesions Society",
+        "url": "https://www.adhesions.org",
+        "description": "Clear, evidence-based patient guides on what adhesions are, how they form, prevention, symptoms, and management options. Includes videos and diagrams. The primary resource for patients.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Small Intestine: An Overlooked Organ in Gastroenterology",
+        "type": "book",
+        "author_or_source": "American Gastroenterological Association",
+        "url": null,
+        "description": "General overview of small bowel disorders, including adhesions and mechanical obstruction. Accessible to patients and covers imaging and diagnostic approaches.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Living Well with Irritable Bowel Syndrome (IBS) and Chronic Abdominal Pain",
+        "type": "book",
+        "author_or_source": "Miranda AL Olney",
+        "url": null,
+        "description": "While focused on IBS, offers valuable strategies for managing chronic abdominal pain, dietary triggers, stress reduction, and working with healthcare providers\u2014many applicable to adhesion patients.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Mindfulness-Based Stress Reduction for Chronic Pain and IBS",
+        "type": "video course, book",
+        "author_or_source": "Jon Kabat-Zinn; Tara Brach; UCLA Mindful",
+        "url": "https://www.uclahealth.org/programs/mindful",
+        "description": "Introduces evidence-based mindfulness and meditation practices for chronic pain, anxiety, and food anxiety. Practical, grounded in neuroscience, and available in multiple formats.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Small Bowel Obstruction: Current Diagnosis and Management",
+        "type": "research paper, clinical review",
+        "author_or_source": "Menzies et al., British Medical Journal",
+        "url": null,
+        "description": "Clinician-focused review of obstruction diagnosis, conservative management, and surgical indications. Helps patients understand how doctors decide between imaging and surgery.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Adhesiolysis for Adhesive Small Bowel Obstruction: A Systematic Review",
+        "type": "research paper",
+        "author_or_source": "Sheng et al., World Journal of Surgery",
+        "url": null,
+        "description": "Systematic review of surgical outcomes from adhesiolysis; shows success rates and recurrence risk. Helps patients understand the evidence for and against repeat surgery.",
+        "audience": "advanced"
+      },
+      {
+        "title": "The Fodmap Elimination Diet for IBS: Practical Tips and Recipes",
+        "type": "book",
+        "author_or_source": "Sue Shepherd",
+        "url": null,
+        "description": "While designed for FODMAP-sensitive IBS, the detailed dietary guidance and food lists are useful for adhesion patients managing bloating, gas, and altered bowel habits.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Living with Pelvic Pain: A Practical Guide",
+        "type": "book",
+        "author_or_source": "Katherine S Rosenblatt, MD",
+        "url": null,
+        "description": "Comprehensive guide to pelvic pain causes (including adhesions) and management strategies. Valuable for women with post-pelvic-surgery adhesions or infertility-related adhesions.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Adhesion-Related Bowel Obstruction: When to Operate and When to Observe",
+        "type": "clinical podcast or webinar",
+        "author_or_source": "Society of American Gastrointestinal and Endoscopic Surgeons (SAGES)",
+        "url": null,
+        "description": "Expert discussion of decision-making in adhesion-related obstruction; helps patients understand the reasoning behind conservative versus surgical approaches.",
+        "audience": "intermediate"
+      }
+    ],
+    "relevance_signal": "**Symptoms began or worsened after abdominal surgery** \u2014 appendectomy, C-section, hysterectomy, bowel surgery. Constipation with cramping and a feeling of obstruction."
+  }
+}
