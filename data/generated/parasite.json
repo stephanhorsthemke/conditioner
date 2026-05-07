@@ -2,149 +2,276 @@
   "condition_id": "parasite",
   "condition_name": "Parasitic infection",
   "generated_at": "2026-04-16T09:44:50.494563Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "Parasitic infection occurs when parasites\u2014organisms that live in or on your body and feed from it\u2014enter your system, usually through contaminated food, water, soil, or insect bites. Symptoms vary widely depending on the parasite type and can range from digestive upset to fatigue, rashes, or anemia. Most parasitic infections are treatable with medication, though some may persist if untreated.",
-    "detailed_summary": "Parasitic infections are caused by single-celled protozoa, flatworms, roundworms, or other parasites that colonize the intestines, blood, tissues, or organs. Transmission routes differ by parasite: some spread through contaminated food or water (giardia, cryptosporidium), others via soil contact (hookworms, roundworms), insect vectors (malaria, sleeping sickness), or sexual contact (trichomoniasis). Once established, parasites can cause chronic inflammation, nutrient malabsorption, immune dysregulation, and systemic symptoms. Prevalence is highest in tropical and subtropical regions with poor sanitation, but parasitic infections also occur in developed countries. Diagnosis typically requires stool samples, blood tests, or serological testing. Treatment is usually effective with antiparasitic medications, though some infections require prolonged therapy or multiple rounds.",
+    "plain_summary": "Parasitic gut infections occur when microscopic organisms \u2014 protozoa, helminths (worms), or other parasites \u2014 colonise the digestive tract and disrupt normal gut function. Many cases resolve with treatment, but some persist for months or years, either because the infection goes undetected, because it has altered the gut environment, or because it has triggered downstream conditions like post-infectious IBS or SIBO. Parasitic infection is frequently missed because standard stool tests are insensitive, and many clinicians do not routinely screen for it in non-tropical settings.",
+    "detailed_summary": "Parasitic infections of the gastrointestinal tract are caused by a wide range of organisms including protozoa (Giardia lamblia, Cryptosporidium, Blastocystis hominis, Dientamoeba fragilis, Entamoeba histolytica) and helminths (roundworms, hookworms, tapeworms, Strongyloides, pinworms). These organisms enter the body primarily through contaminated food, water, or person-to-person contact, and can establish chronic colonisation in the small or large intestine.\n\nAcute infection often presents with diarrhea, cramping, nausea, and fatigue. However, many infections \u2014 particularly Giardia, Blastocystis, and Dientamoeba \u2014 can persist for months to years in a subclinical or low-grade form, producing symptoms that closely mimic IBS, functional dyspepsia, or inflammatory bowel disease. This overlap frequently leads to misdiagnosis or delayed diagnosis, particularly in high-income countries where parasitic infection is considered uncommon despite meaningful prevalence in community settings.\n\nParasites can damage intestinal epithelium and microvilli, impair digestive enzyme activity, disrupt bile acid cycling, and alter the gut microbiome. These effects may persist even after the parasite is cleared, contributing to secondary conditions such as post-infectious IBS, secondary lactase deficiency, SIBO, or increased intestinal permeability. Some organisms \u2014 particularly Blastocystis \u2014 remain controversial, with ongoing debate about whether they are always pathogenic or can exist as commensal organisms in some individuals.\n\nDiagnosis is complicated by the limitations of standard stool O&P (ova and parasite) microscopy, which requires experienced laboratory personnel, multiple samples, and fresh specimen handling. PCR-based stool multiplex panels offer substantially higher sensitivity for many pathogens and are increasingly available. Serological testing is useful for some parasites (e.g., Entamoeba, Strongyloides, Toxocara). Treatment typically involves targeted antiparasitic agents, but identifying the correct organism is essential \u2014 different parasites require different treatments, and empirical treatment is often ineffective.\n\nIndividuals who do significant self-directed research into their gut symptoms may encounter parasitic infection as a plausible explanation, particularly if symptoms began after travel, following a gastrointestinal illness, or where multiple other diagnoses have been excluded. Pursuing thorough parasitological testing \u2014 ideally using modern PCR-based panels and/or specialist infectious disease or tropical medicine input \u2014 is a legitimate and often productive next step.",
     "prevalence": {
-      "summary": "Billions of people worldwide carry parasitic infections; prevalence is highest in low- and middle-income countries with poor water and sanitation.",
-      "estimate": "1.5\u20132 billion people globally infected; 0.1\u20131% of people in developed countries",
-      "notes": "Actual prevalence in developed nations is likely underestimated due to low clinical suspicion and underdiagnosis. Rates vary dramatically by geography, access to clean water, sanitation, and public health infrastructure. Tropical and subtropical regions report much higher infection rates."
+      "summary": "Common globally; often underdiagnosed in high-income countries due to testing limitations and low clinical suspicion",
+      "estimate": "Globally, helminth infections affect over 1 billion people; Giardia infects an estimated 200\u2013300 million people annually. Blastocystis is found in 5\u201310% of people in developed countries and up to 50\u201360% in developing regions. Cryptosporidium affects roughly 7% of people with diarrheal illness in high-income countries.",
+      "notes": "True prevalence in high-income countries is likely underestimated due to insensitive standard testing and low clinical suspicion. Blastocystis prevalence figures are particularly contested because its pathogenic role is disputed. Giardia is the most commonly identified intestinal parasite in Western clinical settings. Strongyloides can persist for decades via autoinfection and is underdiagnosed in individuals with prior tropical exposure."
     },
     "subgroups": [
       {
-        "name": "Intestinal parasites",
-        "description": "Parasites that colonize the small or large intestine, causing malabsorption and digestive symptoms.",
+        "name": "Giardia lamblia (Giardiasis)",
+        "description": "One of the most common parasitic infections worldwide, often acquired from contaminated water. Can cause acute or chronic diarrhea and is a well-recognised trigger for post-infectious IBS.",
         "distinguishing_features": [
-          "Stool often contains visible parasites or eggs",
-          "Primarily causes digestive and nutritional symptoms",
-          "Transmitted via fecal-oral route, contaminated food or water",
-          "Examples: Giardia, Entamoeba, hookworms, roundworms, tapeworms"
+          "Foul-smelling, greasy, floating stools (steatorrhoea) suggesting fat malabsorption",
+          "Bloating and excessive flatulence often prominent",
+          "Symptoms may persist for years after initial exposure if untreated",
+          "Secondary lactase deficiency common during and after infection",
+          "Often acquired from water sources, hiking/camping, travel, or childcare settings"
         ]
       },
       {
-        "name": "Tissue and blood parasites",
-        "description": "Parasites that invade deeper tissues, blood, or organs rather than remaining in the intestine.",
+        "name": "Cryptosporidium",
+        "description": "A protozoan that primarily affects the small intestine, most severe in immunocompromised individuals but capable of causing prolonged illness in immunocompetent people.",
         "distinguishing_features": [
-          "Often requires blood tests or imaging for diagnosis",
-          "Causes systemic and organ-specific symptoms",
-          "May involve vector transmission (mosquitoes, ticks, snails)",
-          "Examples: malaria, schistosomiasis, filariasis, sleeping sickness"
+          "Profuse, watery diarrhea \u2014 often self-limiting in healthy individuals but can persist",
+          "Chlorine-resistant in municipal water supplies \u2014 a known outbreak source",
+          "Not detectable by standard O&P microscopy; requires specific acid-fast staining or PCR",
+          "Can trigger post-infectious gut dysfunction even after clearance"
         ]
       },
       {
-        "name": "Protozoan infections",
-        "description": "Single-celled parasitic infections, often harder to detect and more persistent.",
+        "name": "Blastocystis hominis",
+        "description": "A highly prevalent intestinal protozoan whose pathogenic role is actively debated. Associated with IBS-like symptoms in some individuals but found in asymptomatic people too.",
         "distinguishing_features": [
-          "Can cause chronic, relapsing symptoms",
-          "May be resistant to standard antiparasitic drugs",
-          "Examples: Giardia, Cryptosporidium, Cyclospora, Trypanosoma"
+          "IBS-like symptoms: bloating, alternating bowel habits, abdominal pain",
+          "May be linked to gut dysbiosis and reduced microbiome diversity",
+          "Pathogenicity likely depends on subtype (ST1\u2013ST9) and host immune status",
+          "Some functional medicine and integrative practitioners treat it; conventional gastroenterologists often dismiss it",
+          "Metronidazole has variable efficacy; other agents (e.g. trimethoprim-sulfamethoxazole) may be used"
         ]
       },
       {
-        "name": "Helminth (worm) infections",
-        "description": "Multi-cellular parasitic worms that can grow large and cause mechanical damage.",
+        "name": "Dientamoeba fragilis",
+        "description": "A flagellated protozoan that inhabits the large intestine and may cause chronic bowel symptoms, particularly in children but also adults.",
         "distinguishing_features": [
-          "Parasites often visible in stool samples",
-          "Can cause iron-deficiency anemia and protein malnutrition",
-          "Examples: hookworms, roundworms (Ascaris), whipworms, tapeworms"
+          "Chronic loose stools, abdominal cramping, fatigue",
+          "Possibly transmitted via pinworm eggs \u2014 concurrent pinworm co-infection sometimes considered",
+          "Often missed on standard O&P; more reliably detected by PCR or permanent staining",
+          "Not always treated in mainstream settings despite symptomatic cases"
+        ]
+      },
+      {
+        "name": "Entamoeba histolytica (Amoebiasis)",
+        "description": "A protozoan capable of invading intestinal tissue, causing amoebic dysentery and potentially liver abscess. Distinct from the non-pathogenic Entamoeba dispar.",
+        "distinguishing_features": [
+          "Bloody diarrhea and mucus in stool (amoebic dysentery)",
+          "Risk of serious complications including liver abscess",
+          "More common after travel to endemic regions (South Asia, sub-Saharan Africa, Latin America)",
+          "Requires serological testing to distinguish from E. dispar; stool antigen tests and PCR available"
+        ]
+      },
+      {
+        "name": "Strongyloides stercoralis",
+        "description": "A soil-transmitted helminth capable of autoinfection, meaning it can persist and replicate within the host for decades without re-exposure. Potentially life-threatening if immunosuppression occurs.",
+        "distinguishing_features": [
+          "Chronic intermittent diarrhea, abdominal pain, and urticaria ('larva currens' \u2014 migrating skin rash)",
+          "Often asymptomatic for years after initial exposure",
+          "Can cause hyperinfection syndrome if the host becomes immunosuppressed (e.g. from corticosteroids)",
+          "Eosinophilia on blood count may be a clue; serology is the most sensitive diagnostic tool",
+          "Important to exclude before prescribing immunosuppressants in anyone with tropical exposure history"
+        ]
+      },
+      {
+        "name": "Intestinal helminths (hookworm, roundworm, whipworm)",
+        "description": "Soil-transmitted worms affecting primarily populations in tropical/subtropical regions but occasionally found in travellers and immigrants.",
+        "distinguishing_features": [
+          "Iron-deficiency anaemia (especially hookworm \u2014 blood-feeding)",
+          "Eosinophilia on full blood count is a key clue",
+          "May cause abdominal pain, bloating, weight loss, and nutritional deficiencies",
+          "Often detectable on stool O&P; Kato-Katz technique used in endemic settings",
+          "Single-dose albendazole or mebendazole generally effective"
+        ]
+      },
+      {
+        "name": "Post-infectious IBS following parasitic infection",
+        "description": "A well-documented downstream consequence where gut dysfunction persists long after the parasite has been cleared, due to residual mucosal damage, microbiome disruption, or central sensitisation.",
+        "distinguishing_features": [
+          "Onset of IBS-like symptoms temporally linked to a known or suspected infection episode",
+          "Standard stool tests may now be negative even though the original infection was parasitic",
+          "Secondary intolerances (lactose, fructose) and SIBO may develop as contributing factors",
+          "Requires a different treatment approach focused on gut rehabilitation rather than antiparasitic agents"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Diarrhea or loose stools",
+        "symptom": "Chronic or recurrent diarrhea",
         "category": "digestive",
-        "notes": "Often watery or greasy; common with intestinal parasites like giardia. May be chronic and intermittent."
+        "notes": "May be watery, loose, or alternating with normal stools depending on organism and host response. Can persist for months or years if infection is not cleared."
       },
       {
-        "symptom": "Abdominal cramping or pain",
+        "symptom": "Bloating and abdominal distension",
         "category": "digestive",
-        "notes": "Can range from mild discomfort to severe cramping, worse after eating. May be colicky."
+        "notes": "Particularly prominent with Giardia due to small intestinal involvement and gas production. Often worse after meals."
       },
       {
-        "symptom": "Constipation",
+        "symptom": "Abdominal cramping and pain",
         "category": "digestive",
-        "notes": "Less common but occurs with some worm infections, particularly tapeworms."
+        "notes": "Ranges from mild to severe. May be diffuse or periumbilical. Can mimic IBS or IBD."
       },
       {
-        "symptom": "Bloating and gas",
+        "symptom": "Nausea and reduced appetite",
         "category": "digestive",
-        "notes": "Due to malabsorption and fermentation of undigested food by parasites."
+        "notes": "Common in acute phases; may persist in chronic infection, contributing to weight loss."
       },
       {
-        "symptom": "Nausea and loss of appetite",
+        "symptom": "Greasy, pale, or foul-smelling stools (steatorrhoea)",
         "category": "digestive",
-        "notes": "May lead to unintentional weight loss over time."
+        "notes": "Indicates fat malabsorption, particularly associated with Giardia affecting small intestinal villi and enzyme activity."
       },
       {
-        "symptom": "Fatigue and weakness",
+        "symptom": "Unintentional weight loss",
         "category": "systemic",
-        "notes": "Often due to nutrient malabsorption, anemia, or chronic inflammation. May be severe and debilitating."
+        "notes": "Can result from malabsorption, reduced intake, or high metabolic burden of infection. More pronounced with helminth infections or severe protozoan disease."
       },
       {
-        "symptom": "Anemia (pale skin, shortness of breath)",
-        "category": "hematologic",
-        "notes": "Iron-deficiency anemia common with blood-feeding parasites like hookworms. May cause fatigue and dizziness."
-      },
-      {
-        "symptom": "Itching around the anus",
-        "category": "skin",
-        "notes": "Particularly common with pinworms (Enterobius); often worse at night."
-      },
-      {
-        "symptom": "Rashes or welts on skin",
-        "category": "skin",
-        "notes": "May indicate tissue parasites or allergic reaction; can be itchy and migratory."
-      },
-      {
-        "symptom": "Joint and muscle aches",
-        "category": "musculoskeletal",
-        "notes": "Due to immune response or parasites in muscle tissue; may mimic arthritis."
-      },
-      {
-        "symptom": "Fever",
+        "symptom": "Chronic fatigue and low energy",
         "category": "systemic",
-        "notes": "More common with blood parasites like malaria or dengue; may be intermittent or cyclical."
+        "notes": "May be due to nutritional deficiencies, immune activation, sleep disruption, or direct metabolic effects of the parasite."
       },
       {
-        "symptom": "Swollen lymph nodes",
+        "symptom": "Nutritional deficiencies (iron, B12, folate, fat-soluble vitamins)",
         "category": "systemic",
-        "notes": "Indicates immune activation; can occur with many parasitic infections."
+        "notes": "Result from malabsorption or nutrient competition by the parasite. Hookworm is a leading cause of iron-deficiency anaemia globally. Giardia can impair B12 and fat-soluble vitamin absorption."
       },
       {
-        "symptom": "Cough or respiratory symptoms",
-        "category": "respiratory",
-        "notes": "Some parasites (e.g., roundworms) migrate through the lungs; typically self-limited."
-      },
-      {
-        "symptom": "Brain fog or difficulty concentrating",
-        "category": "neurological",
-        "notes": "Due to malnutrition, chronic inflammation, or in some cases direct parasitic involvement."
-      },
-      {
-        "symptom": "Food allergies or intolerances",
+        "symptom": "Eosinophilia (elevated eosinophils on blood count)",
         "category": "immune",
-        "notes": "Parasites damage intestinal lining, increasing food sensitivities. Often resolve after treatment."
+        "notes": "A key laboratory clue, particularly for helminth infections. Eosinophilia is less commonly seen with protozoan infections. Should prompt parasitological investigation."
       },
       {
-        "symptom": "Visible parasites or segments in stool",
-        "category": "diagnostic",
-        "notes": "More common with larger worms; may appear like rice grains or cucumber seeds."
+        "symptom": "Mucus or blood in stool",
+        "category": "digestive",
+        "notes": "Bloody diarrhea with mucus suggests invasive infection such as Entamoeba histolytica or, less commonly, Trichuris (whipworm). Requires urgent evaluation."
+      },
+      {
+        "symptom": "Skin rash or urticaria",
+        "category": "skin",
+        "notes": "Larva currens (Strongyloides) produces a linear, rapidly-moving urticarial rash. General urticaria can occur with helminth infections due to immune activation."
+      },
+      {
+        "symptom": "Anal or perianal itching (pruritus ani)",
+        "category": "skin",
+        "notes": "Classic symptom of Enterobius vermicularis (pinworm), especially prominent at night when female worms migrate to lay eggs."
+      },
+      {
+        "symptom": "Teeth grinding (bruxism)",
+        "category": "neurological",
+        "notes": "Anecdotally reported in association with parasitic infection, though causal evidence is limited. Often flagged in patient communities."
+      },
+      {
+        "symptom": "Brain fog and cognitive difficulties",
+        "category": "neurological",
+        "notes": "Reported by some individuals with chronic parasitic infections, possibly related to nutritional deficiency, immune activation, or secondary gut-brain axis disruption."
+      },
+      {
+        "symptom": "Joint or muscle aches",
+        "category": "musculoskeletal",
+        "notes": "Can occur during acute infection and in some chronic cases, possibly related to immune complex formation or systemic inflammation."
+      },
+      {
+        "symptom": "Secondary food intolerances (especially lactose)",
+        "category": "digestive",
+        "notes": "Villous damage caused by Giardia and other small-intestinal parasites reduces lactase and other brush-border enzyme activity, producing secondary lactose intolerance even in previously tolerant individuals."
       }
     ],
     "testing": {
       "key_patterns": [
-        "Chronic diarrhea or loose stools combined with weight loss and fatigue despite adequate food intake",
-        "Symptoms that wax and wane, with periods of relative wellness followed by flare-ups",
-        "Digestive symptoms accompanied by iron-deficiency anemia (pallor, shortness of breath, fatigue)",
-        "Itching around the anus or genitals, especially at night, sometimes visible tiny worms in stool or underwear",
-        "Skin rashes, hives, or welts that appear and migrate without clear allergen trigger",
-        "Symptoms that started after travel to tropical regions or consumption of untreated water or raw food",
-        "Unexplained eosinophilia (high eosinophil count) on bloodwork combined with digestive or skin symptoms"
+        "Eosinophilia on full blood count \u2014 particularly suggestive of helminth infection; warrants parasitological workup",
+        "Onset of IBS-like symptoms after travel, contaminated water exposure, or a gastrointestinal illness episode",
+        "Secondary lactose intolerance or fat malabsorption developing in an adult with no prior issues",
+        "Iron-deficiency anaemia without an obvious dietary or bleeding explanation, especially with tropical exposure history",
+        "Negative standard stool tests despite clinically compelling symptom picture \u2014 consider PCR-based panel or referral to infectious disease/tropical medicine",
+        "Symptoms present in multiple household members or a social cluster \u2014 suggests a shared water or food source"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom and exposure diary",
+          "description": "Track the timing, character, and severity of gut symptoms alongside any known exposures: travel history, water sources (well water, camping, swimming), childcare contact, sexual history, and recent illnesses. Note whether symptoms began after a specific event. This information is often the single most useful piece of data when presenting to a clinician.",
+          "safety_notes": "No safety concerns. A well-documented diary significantly improves the likelihood of appropriate testing being ordered."
+        },
+        {
+          "name": "Scotch tape test (pinworm)",
+          "description": "For suspected Enterobius (pinworm), press a strip of clear tape against the perianal skin immediately upon waking before bathing or toileting, then attach the tape to a glass slide and take it to a laboratory for microscopic examination. Female worms lay eggs at night, so morning collection is important.",
+          "safety_notes": "Harmless procedure. Multiple samples on consecutive mornings may be needed as sensitivity of a single sample is around 50%."
+        },
+        {
+          "name": "At-home PCR stool test",
+          "description": "Several direct-to-consumer laboratory services (e.g. Healthpath, Invivo Diagnostics, Doctor's Data GI-MAP, Genova GI Effects) offer PCR-based comprehensive stool analysis that screens for a range of parasitic pathogens alongside bacteria and fungi. These are not equivalent to clinical diagnostic tests but can provide useful signal for clinical follow-up.",
+          "safety_notes": "Results require interpretation by a knowledgeable practitioner. False positives and false negatives occur. A positive finding should be confirmed and managed clinically, not treated empirically based solely on a consumer test."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Stool ova and parasite (O&P) microscopy",
+          "type": "standard",
+          "description": "Traditional examination of stool under a microscope for parasite cysts, trophozoites, eggs, and larvae. Requires multiple samples (typically three, collected on separate days) and an experienced laboratory technician. Sensitivity is poor for many organisms including Giardia and Cryptosporidium compared to PCR methods.",
+          "availability": "Widely available through GPs, gastroenterologists, and infectious disease departments. Sensitivity limitations mean a negative result does not exclude infection."
+        },
+        {
+          "name": "Stool PCR multiplex panel (GI pathogen panel)",
+          "type": "gold_standard",
+          "description": "Molecular testing of stool that simultaneously screens for multiple pathogens including Giardia, Cryptosporidium, Entamoeba histolytica, and in some panels Blastocystis, Dientamoeba, and helminths. Substantially more sensitive than microscopy for most organisms. Available as FilmArray GI Panel, BioFire, or similar platforms.",
+          "availability": "Available through NHS infectious disease and microbiology departments; also available via private laboratories in the UK, US, and Australia. Some functional medicine practitioners routinely order comprehensive PCR panels."
+        },
+        {
+          "name": "Stool antigen testing (Giardia, Cryptosporidium, H. pylori)",
+          "type": "standard",
+          "description": "ELISA or immunochromatographic tests that detect parasite-specific antigens in stool. More sensitive than O&P for Giardia and Cryptosporidium. Useful as a targeted test when clinical suspicion is high for these specific organisms.",
+          "availability": "Widely available in most hospital microbiology laboratories. Can be ordered by GPs or gastroenterologists."
+        },
+        {
+          "name": "Serology (blood antibody tests)",
+          "type": "standard",
+          "description": "Blood tests detecting antibodies against specific parasites. Most useful for Strongyloides stercoralis, Entamoeba histolytica, Toxocara, Echinococcus, and Schistosoma. Strongyloides serology is particularly important before any immunosuppressive therapy in individuals with relevant exposure history.",
+          "availability": "Available through NHS infectious disease, tropical medicine departments, and private laboratories. GPs may need to specifically request less common serological tests."
+        },
+        {
+          "name": "Full blood count with differential",
+          "type": "standard",
+          "description": "A routine blood test. Eosinophilia (elevated eosinophil count, typically >0.5 \u00d7 10\u2079/L) is a key clue to helminth infection. Anaemia may indicate hookworm or other blood-loss or malabsorption-related deficiency.",
+          "availability": "Universally available. Should be reviewed with attention to eosinophil count \u2014 a value that is often noted but not acted upon in the context of chronic GI symptoms."
+        },
+        {
+          "name": "Duodenal aspirate or biopsy (upper endoscopy)",
+          "type": "gold_standard",
+          "description": "For suspected Giardia or Strongyloides when stool tests are negative, duodenal aspiration and biopsy during upper endoscopy can directly identify organisms in the proximal small intestine. Most sensitive test for Giardia when stool tests are negative.",
+          "availability": "Available through gastroenterology; requires endoscopy referral. Usually reserved for cases with strong clinical suspicion and negative non-invasive tests."
+        },
+        {
+          "name": "Comprehensive stool culture / functional stool analysis",
+          "type": "emerging",
+          "description": "Offered by specialist functional medicine laboratories (e.g. Genova GI Effects, Doctor's Data, Invivo). Combines PCR pathogen detection with microbiome analysis, digestive markers (elastase, fat, calprotectin), and inflammation markers. Not validated as a clinical diagnostic tool but may detect parasites missed by standard testing.",
+          "availability": "Available privately in the UK, US, and Australia. Typically costs \u00a3200\u2013\u00a3400. Results should be interpreted by a practitioner familiar with the methodology."
+        }
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "Standard stool testing ordered by most GPs is inadequate to rule out parasitic infection, and a negative result is frequently meaningless without PCR-based testing or specialist evaluation.",
+        "why_resisted": "People often assume that if a doctor tested for parasites and it came back negative, parasites have been excluded. Being told 'everything is normal' provides false reassurance, and pursuing further testing can feel like distrust of the medical system.",
+        "path_forward": "Those who request specific PCR-based multiplex stool panels \u2014 or see an infectious disease physician or tropical medicine specialist who orders them \u2014 frequently get a first positive result after years of negative standard tests. A diagnosis then enables targeted treatment and, in many cases, substantial symptom resolution."
+      },
+      {
+        "truth": "Many people with parasitic infections are told they have IBS, given dietary advice and antispasmodics, and discharged \u2014 without ever having the infection identified or treated.",
+        "why_resisted": "IBS is a diagnosis of exclusion that is often made too quickly. Both patients and clinicians may prefer a familiar functional label over the inconvenience of continuing to investigate. The similarity between parasitic infection symptoms and IBS symptoms makes misdiagnosis easy.",
+        "path_forward": "Individuals who insist on comprehensive parasitological testing before accepting an IBS diagnosis \u2014 particularly when symptoms began after travel or an acute illness \u2014 avoid years of ineffective symptomatic management and reach a treatable cause."
+      },
+      {
+        "truth": "Treating the parasite may not fully resolve symptoms. Post-infectious gut damage, secondary SIBO, dysbiosis, and functional changes can persist for months to years after the organism is cleared.",
+        "why_resisted": "There is a natural expectation that killing the parasite will fix everything. When symptoms persist after successful treatment, people often feel confused, dismissed, or begin to doubt their original diagnosis.",
+        "path_forward": "Those who approach post-treatment recovery as a distinct rehabilitation phase \u2014 addressing secondary conditions, nutritional deficiencies, and gut microbiome disruption with appropriate professional support \u2014 typically achieve more complete and durable recovery than those who expect a single antiparasitic course to be sufficient."
+      },
+      {
+        "truth": "The clinical role of Blastocystis is genuinely unresolved, and there is no universally agreed treatment approach. Some practitioners will treat it aggressively; others will dismiss it entirely. Both positions are defensible based on current evidence.",
+        "why_resisted": "People who have Blastocystis detected understandably want a clear answer about whether it is causing their symptoms and what to do. The uncertainty is frustrating and can lead to either overtreating or undertreating.",
+        "path_forward": "Working with a practitioner who is familiar with the current evidence base \u2014 and who makes treatment decisions based on symptom severity, clinical context, and subtype (where identifiable) rather than blanket policy \u2014 produces better outcomes than insisting on treatment regardless of context or dismissing it as irrelevant."
+      }
+    ],
     "quick_checks": [
       {
         "check": "Inspect stool for visible parasites or segments (rice-like or cucumber-seed-like pieces)",
@@ -167,6 +294,355 @@
         "what_it_suggests": "Chronic pattern suggests intestinal parasitism; warrants stool testing."
       }
     ],
-    "relevance_signal": "Symptoms **began after travel**, a stomach bug, or contaminated water. Chronic loose stool, fatigue, and bloating that never fully resolved after an acute gut illness."
+    "relevance_signal": "Chronic or recurrent gut symptoms \u2014 including diarrhea, bloating, nausea, fatigue, and weight loss \u2014 that began after travel, contaminated water exposure, or a known gastrointestinal illness, and have not fully resolved despite standard treatments",
+    "related_conditions": [
+      {
+        "id": "ibs",
+        "name": "Post-infectious IBS",
+        "relationship": "downstream",
+        "explanation": "Parasitic gut infections \u2014 particularly Giardia \u2014 are one of the best-documented triggers for post-infectious IBS. Mucosal damage, altered gut flora, and immune sensitisation following infection can produce long-term IBS-like symptoms even after the parasite is cleared."
+      },
+      {
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "downstream",
+        "explanation": "Intestinal parasites can disrupt small intestinal motility and mucosal integrity, creating conditions that favour bacterial overgrowth. SIBO may develop secondarily to parasitic infection and persist even after the parasite is treated."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "mechanistic_link",
+        "explanation": "Parasitic infection \u2014 particularly Blastocystis and Giardia \u2014 is associated with reduced gut microbiome diversity and altered microbial composition. Dysbiosis may worsen parasite-related symptoms and persist after clearance."
+      },
+      {
+        "id": "lactase",
+        "name": "Secondary lactase deficiency",
+        "relationship": "downstream",
+        "explanation": "Villous damage caused by Giardia and other small-intestinal parasites reduces brush-border enzyme activity including lactase, causing secondary lactose intolerance that may last months after infection resolves."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
+        "relationship": "mechanistic_link",
+        "explanation": "Parasitic infections drive immune activation including mast cell degranulation and IgE-mediated responses. Chronic parasite-related immune stimulation may prime or exacerbate mast cell hyperreactivity in susceptible individuals."
+      },
+      {
+        "id": "hpylori",
+        "name": "H. pylori infection",
+        "relationship": "comorbid",
+        "explanation": "H. pylori and intestinal parasites share similar transmission routes (contaminated food, water, poor sanitation). Co-infection is common in endemic settings and can compound upper and lower GI symptoms."
+      },
+      {
+        "id": "epi",
+        "name": "Exocrine pancreatic insufficiency",
+        "relationship": "often_confused",
+        "explanation": "Both parasitic infection (especially Giardia) and EPI can cause steatorrhoea, weight loss, and bloating due to fat malabsorption. These conditions can be distinguished by faecal elastase testing and targeted parasite testing."
+      },
+      {
+        "id": "coeliac",
+        "name": "Coeliac disease",
+        "relationship": "often_confused",
+        "explanation": "Giardia and coeliac disease produce nearly identical symptoms \u2014 bloating, steatorrhoea, weight loss, fatigue \u2014 and both cause villous damage. Giardia can also transiently elevate anti-gliadin antibodies, causing false positive coeliac serology. It is important to exclude active Giardia infection before interpreting coeliac antibody results."
+      },
+      {
+        "id": "ibd_remission",
+        "name": "Inflammatory bowel disease (IBD)",
+        "relationship": "often_confused",
+        "explanation": "Amoebiasis and other invasive parasitic infections can closely mimic IBD with bloody diarrhea and colonic inflammation on endoscopy. Parasitic infection should be excluded before initiating immunosuppressive therapy for suspected IBD."
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "mechanistic_link",
+        "explanation": "Intestinal parasites can increase gut permeability and mast cell activation, potentially disrupting histamine metabolism. Symptoms of histamine intolerance may develop or worsen during parasitic infection."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation / visceral hypersensitivity",
+        "relationship": "downstream",
+        "explanation": "Chronic or repeated parasitic infection can sensitise the enteric and central nervous systems, contributing to visceral hypersensitivity that persists even after successful parasite clearance."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety",
+        "relationship": "comorbid",
+        "explanation": "The gut-brain axis connects intestinal inflammation and dysbiosis with mood and anxiety. Chronic parasitic infection may amplify gut-brain signalling, and anxiety commonly co-occurs with chronic gut illness."
+      },
+      {
+        "id": "functional_dyspepsia",
+        "name": "Functional dyspepsia",
+        "relationship": "often_confused",
+        "explanation": "Upper GI parasitic infections (particularly Giardia affecting the duodenum) can cause nausea, epigastric pain, and early satiety that are clinically indistinguishable from functional dyspepsia."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Targeted antiparasitic treatment",
+          "category": "medication",
+          "description": "The primary approach to parasitic infection is identifying the specific organism and treating with an appropriate antiparasitic agent. Giardia is typically treated with metronidazole, tinidazole, or nitazoxanide. Cryptosporidium is treated with nitazoxanide in immunocompetent individuals. Strongyloides requires ivermectin. Helminths are typically treated with albendazole or mebendazole. Matching the drug to the organism is essential \u2014 empirical broad-spectrum treatment is often ineffective and can mask the diagnosis.",
+          "evidence_level": "strong",
+          "notes": "Treatment failure or recurrence is possible. Some organisms (Blastocystis) have variable treatment response. Follow-up testing after treatment to confirm eradication is advisable."
+        },
+        {
+          "name": "Temporary low-lactose diet",
+          "category": "diet",
+          "description": "Secondary lactase deficiency is common during and after intestinal parasitic infection. Temporarily reducing or eliminating dairy products may significantly reduce bloating, diarrhea, and cramping. Lactase enzyme supplements at mealtimes may also help some individuals manage residual symptoms.",
+          "evidence_level": "moderate",
+          "notes": "This is a secondary adaptation measure, not a primary treatment. Lactase activity often recovers within weeks to months after the parasite is cleared and mucosal healing occurs."
+        },
+        {
+          "name": "Probiotic supplementation",
+          "category": "supplement",
+          "description": "Certain probiotic strains \u2014 particularly Saccharomyces boulardii \u2014 have shown efficacy in reducing duration and severity of Giardia infection and supporting gut recovery post-infection. Lactobacillus-based probiotics may also help restore dysbiotic microbiome patterns following parasitic infection.",
+          "evidence_level": "moderate",
+          "notes": "Probiotics do not replace antiparasitic treatment. They may be most useful in the post-treatment recovery phase. Strain selection matters; evidence is stronger for S. boulardii than for generic probiotic blends."
+        },
+        {
+          "name": "Nutritional repletion",
+          "category": "supplement",
+          "description": "Addressing nutritional deficiencies caused by malabsorption is important for recovery. Iron, B12, folate, zinc, and fat-soluble vitamins (A, D, E, K) may all be depleted. A comprehensive micronutrient assessment and targeted supplementation can support energy, immunity, and gut healing.",
+          "evidence_level": "strong",
+          "notes": "Supplementation should be guided by laboratory testing where possible. Blind supplementation without identifying specific deficiencies is less effective and can occasionally be harmful (e.g. excessive fat-soluble vitamin supplementation)."
+        },
+        {
+          "name": "Gut-healing dietary support",
+          "category": "diet",
+          "description": "An easily digestible, anti-inflammatory diet during and after parasitic infection may support mucosal repair. Approaches include reducing processed foods, alcohol, and dietary irritants; increasing soluble fibre (where tolerated); and prioritising nutrient-dense whole foods. Bone broth and glutamine supplementation are used by some practitioners to support intestinal barrier repair, though clinical evidence is limited.",
+          "evidence_level": "anecdotal",
+          "notes": "No single diet is proven to accelerate recovery from parasitic infection. Individual tolerance varies widely. Working with a dietitian experienced in post-infectious gut conditions can help navigate dietary adjustments."
+        },
+        {
+          "name": "Treating secondary SIBO or dysbiosis",
+          "category": "medication",
+          "description": "Where SIBO or significant gut dysbiosis has developed secondary to parasitic infection, addressing these downstream conditions \u2014 through targeted antibiotic or herbal antimicrobial protocols, and microbiome restoration strategies \u2014 may be necessary for full symptom resolution even after the parasite is cleared.",
+          "evidence_level": "moderate",
+          "notes": "This approach requires a practitioner familiar with both parasitology and functional gut medicine. Treating SIBO without first clearing the parasite is unlikely to produce lasting results."
+        },
+        {
+          "name": "Stress and nervous system regulation",
+          "category": "lifestyle",
+          "description": "Chronic infection and immune activation place significant stress on the nervous system. Mind-body approaches \u2014 including paced breathing, vagal nerve activation techniques, and gentle exercise \u2014 may help modulate the gut-brain axis and reduce visceral hypersensitivity, particularly in post-infectious cases.",
+          "evidence_level": "moderate",
+          "notes": "These approaches address downstream functional consequences rather than the infection itself. They are most relevant in post-infectious IBS scenarios."
+        }
+      ],
+      "things_to_avoid": [
+        "Starting empirical antiparasitic treatment without identifying the organism \u2014 different parasites require different medications and empirical treatment often fails or masks the diagnosis",
+        "Assuming negative stool O&P microscopy rules out infection \u2014 standard microscopy misses many parasites including Giardia and Cryptosporidium at meaningful rates",
+        "Continuing high-dairy diets during active Giardia infection \u2014 secondary lactase deficiency makes dairy a major driver of symptoms",
+        "Starting immunosuppressive therapy (corticosteroids, biologics) without first screening for Strongyloides in anyone with tropical or subtropical exposure history \u2014 hyperinfection syndrome can be life-threatening",
+        "Delaying treatment of Entamoeba histolytica \u2014 invasive amoebiasis can lead to liver abscess if untreated",
+        "Treating Blastocystis or Dientamoeba without clinical context \u2014 pathogenicity is debated and indiscriminate antimicrobial use may worsen dysbiosis",
+        "Focusing exclusively on symptom management (antispasmodics, antidiarrhoeals) without investigating for an underlying infectious cause \u2014 this delays diagnosis and allows ongoing damage"
+      ]
+    },
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Obtain accurate diagnosis through appropriate testing",
+          "why_it_matters": "Without identifying the specific organism, treatment cannot be properly targeted. Broad-spectrum empirical approaches frequently fail, and symptom management without a diagnosis perpetuates the cycle of unresolved illness.",
+          "how_to_start": "Request a PCR-based comprehensive GI pathogen panel (or ask for referral to infectious disease or tropical medicine). Provide a thorough exposure history including all travel, water sources, and prior GI illnesses. If stool tests are negative but suspicion remains high, request duodenal biopsy during upper endoscopy or serology for tissue-invasive parasites.",
+          "timeline": "Diagnosis can often be established within 1\u20134 weeks of appropriate testing.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Complete antiparasitic treatment fully and confirm eradication",
+          "why_it_matters": "Incomplete treatment courses or failure to confirm eradication lead to recurrence and continued symptoms. Some organisms require repeat courses or combination therapy.",
+          "how_to_start": "After treatment, schedule a follow-up test-of-cure stool sample (ideally PCR) at 4\u20136 weeks post-treatment to confirm the organism has been cleared before attributing residual symptoms to other causes.",
+          "timeline": "Initial symptom improvement typically within 1\u20132 weeks of effective treatment; confirmation of eradication at 4\u20136 weeks.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Address secondary conditions and nutritional deficiencies post-treatment",
+          "why_it_matters": "Ongoing symptoms after parasite clearance are frequently driven by secondary lactase deficiency, SIBO, dysbiosis, or nutritional gaps rather than persistent infection. Targeting these appropriately is the difference between partial and complete recovery.",
+          "how_to_start": "After confirming parasite clearance, assess for secondary lactose intolerance, consider breath testing for SIBO if bloating and diarrhea persist, and get comprehensive micronutrient blood panel. Work with a dietitian and/or functional medicine practitioner for a structured recovery plan.",
+          "timeline": "Secondary conditions may resolve over 3\u201312 months with appropriate management.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Document exposure history and transmission route",
+          "why_it_matters": "Without identifying the source, reinfection is likely \u2014 particularly for waterborne organisms like Giardia and Cryptosporidium. Understanding transmission enables practical prevention.",
+          "how_to_start": "Review all possible exposure routes: water sources (including municipal tap water in some regions), food preparation, contact with infected individuals, travel, and recreational water exposure. Implement filtration or boiling of water sources if relevant; address hygiene practices in household contacts.",
+          "timeline": "Immediate once the source is suspected.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Rebuild gut microbiome after antiparasitic treatment",
+          "why_it_matters": "Antiparasitic drugs \u2014 particularly metronidazole and other broad-spectrum agents \u2014 significantly disrupt the gut microbiome. Deliberate microbiome restoration reduces the risk of post-treatment dysbiosis, candida overgrowth, and ongoing functional symptoms.",
+          "how_to_start": "Introduce Saccharomyces boulardii during and after treatment; follow with a diverse fibre-rich diet and consider targeted probiotic supplementation. A FODMAP-trained dietitian or functional medicine nutritionist can guide a structured microbiome restoration protocol.",
+          "timeline": "Active microbiome support for 3\u20136 months post-treatment.",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Stopping antiparasitic treatment early because symptoms improve \u2014 organisms may not be fully cleared and relapse is likely",
+        "Treating a single household member without screening household contacts \u2014 reinfection from an untreated contact perpetuates the cycle, particularly for pinworm",
+        "Accepting an IBS diagnosis without insisting on comprehensive parasitological testing when symptoms followed an acute GI illness or travel",
+        "Interpreting negative standard stool O&P as definitive exclusion of parasitic infection",
+        "Using antidiarrhoeals (loperamide) during invasive parasitic infection \u2014 slowing transit allows organisms more time to cause mucosal damage and may delay clearance",
+        "Starting immunosuppressive treatment for suspected IBD without first excluding parasitic infection, particularly amoebiasis and Strongyloides",
+        "Assuming recovery is complete after treatment and ignoring persistent symptoms \u2014 post-infectious sequelae require their own management approach"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Infectious disease physician",
+          "role": "Best placed to order and interpret comprehensive parasitological testing, identify unusual or tissue-invasive parasites, and prescribe appropriate antiparasitic regimens including second-line agents. Most likely to take a systematic diagnostic approach.",
+          "notes": "May not always be accessible through primary care referral for GI-predominant presentations; framing the referral around suspected travel-acquired or waterborne illness improves triage success."
+        },
+        {
+          "type": "Tropical medicine specialist",
+          "role": "Specialises in parasitic and infectious diseases common in tropical and subtropical regions. Particularly valuable for anyone with travel history to endemic areas, or with suspected Strongyloides, helminths, or invasive protozoa.",
+          "notes": "In the UK, travel and tropical medicine clinics exist in major cities (e.g. Hospital for Tropical Diseases, London). In the US, Infectious Disease departments at academic medical centres typically have tropical medicine expertise."
+        },
+        {
+          "type": "Gastroenterologist",
+          "role": "Can perform upper endoscopy with duodenal biopsy for small-intestinal parasites (particularly Giardia), colonoscopy for large-bowel organisms, and management of post-infectious gut complications. However, may default to IBS diagnosis without adequate parasitological workup.",
+          "notes": "Requesting specifically that parasitic infection be excluded before accepting a functional diagnosis is often necessary. Not all gastroenterologists are well-versed in parasitology."
+        },
+        {
+          "type": "Functional medicine doctor",
+          "role": "More likely than mainstream GPs to order comprehensive PCR-based stool panels and to investigate root causes including parasites, dysbiosis, and SIBO. May provide a more integrative approach to post-treatment gut recovery.",
+          "notes": "Quality varies widely. Look for practitioners with formal functional medicine training (e.g. IFM-certified). Some use less validated tests or treatments \u2014 clinical scepticism is appropriate."
+        },
+        {
+          "type": "Registered dietitian with gut health specialisation",
+          "role": "Valuable for managing secondary dietary intolerances (lactose, FODMAP), nutritional deficiencies, and post-infectious gut rehabilitation. Cannot diagnose or treat the infection itself but plays an important role in recovery.",
+          "notes": "Particularly useful in the post-treatment phase. Look for a dietitian with experience in post-infectious IBS or gut microbiome rehabilitation."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/Parasites",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Parasites/",
+          "notes": "Community where members share experiences, testing approaches, and treatment outcomes. Can be a useful source of peer knowledge and to learn which tests and practitioners others have found helpful. Quality varies \u2014 apply clinical scepticism to anecdotal treatment claims."
+        },
+        {
+          "name": "r/Giardia",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Giardia/",
+          "notes": "More focused community for people dealing specifically with giardiasis and its aftermath. Useful for understanding post-Giardia recovery trajectories and shared experiences with treatment and testing."
+        },
+        {
+          "name": "r/ibs",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/ibs/",
+          "notes": "Many people investigating post-infectious gut symptoms \u2014 including those triggered by parasitic infections \u2014 gather here. Post-infectious IBS discussions frequently arise. Useful for understanding how others have navigated the diagnostic process."
+        },
+        {
+          "name": "Blastocystis Support Group",
+          "platform": "Facebook",
+          "url": null,
+          "notes": "Facebook group for individuals dealing with Blastocystis hominis, sharing experiences with diagnosis, treatment protocols, and microbiome approaches. Given the contested nature of Blastocystis pathogenicity, discussions vary widely in quality."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "CDC Parasites \u2014 Information for the Public",
+        "type": "website",
+        "author_or_source": "Centers for Disease Control and Prevention (CDC)",
+        "url": "https://www.cdc.gov/parasites/index.html",
+        "description": "Comprehensive, evidence-based resource covering all major parasitic infections \u2014 symptoms, transmission, diagnosis, and treatment. Particularly useful for identifying organisms and understanding geographic risk. Written for a general audience with clinical accuracy.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Giardia duodenalis: post-infectious sequelae and irritable bowel syndrome",
+        "type": "research paper",
+        "author_or_source": "Halliez & Bhatt (2012), World Journal of Gastroenterology",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3491600/",
+        "description": "Review paper covering the mechanisms by which Giardia infection leads to post-infectious IBS, including mucosal damage, immune activation, and microbiome disruption. Useful for understanding why symptoms persist after clearance.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Blastocystis: to treat or not to treat?",
+        "type": "research paper",
+        "author_or_source": "Sekar & Bharathiraja (2013), various review authors; multiple papers available on PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/?term=blastocystis+treatment+review",
+        "description": "Multiple review papers on PubMed exploring the contested pathogenicity of Blastocystis, treatment options, and the subtype debate. Essential background for anyone with a Blastocystis diagnosis navigating conflicting clinical opinions.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Gut: The Inside Story of Our Body's Most Underrated Organ",
+        "type": "book",
+        "author_or_source": "Giulia Enders",
+        "url": null,
+        "description": "An accessible, engaging introduction to gut function, the microbiome, and gut illness. Covers how infections and microbiome disruption affect gut health. A useful foundation for understanding the broader context of parasitic infection and its downstream effects.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Strongyloides stercoralis: global distribution and risk factors",
+        "type": "research paper",
+        "author_or_source": "Bisoffi et al., PLOS Neglected Tropical Diseases",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Strongyloides+stercoralis+global+review",
+        "description": "Reviews the epidemiology, clinical features, and diagnostic approach for Strongyloides \u2014 a commonly missed and potentially dangerous parasite. Particularly important reading for anyone with tropical exposure history or on immunosuppressive therapy.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Functional Medicine University: Parasitic Infections and Gut Health",
+        "type": "website",
+        "author_or_source": "Functional Medicine University",
+        "url": "https://www.functionalmedicineuniversity.com",
+        "description": "Educational content on parasitic infections from a functional medicine perspective, covering testing approaches including comprehensive stool analysis and integrative treatment strategies. Useful for understanding how functional practitioners approach diagnosis and recovery, though clinical claims should be evaluated critically.",
+        "audience": "intermediate"
+      }
+    ]
+  },
+  "section_meta": {
+    "relevance_signal": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "3028670440bb3a54"
+    },
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

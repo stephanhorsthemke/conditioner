@@ -2,507 +2,625 @@
   "condition_id": "salicylate",
   "condition_name": "Salicylate intolerance",
   "generated_at": "2026-04-16T10:27:18.832477Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "Salicylate intolerance is a sensitivity to salicylates, naturally occurring compounds found in many plant-based foods. People with this intolerance experience symptoms like headaches, digestive issues, skin reactions, or mood changes after eating high-salicylate foods. It is not a true allergy but rather a reaction related to how the body processes these compounds.",
-    "detailed_summary": "Salicylate intolerance occurs when the body has difficulty metabolising salicylates\u2014plant-derived compounds with anti-inflammatory properties present in fruits, vegetables, spices, and processed foods. The condition is thought to involve impaired activity of the enzyme phenolsulfotransferase (PST) or other detoxification pathways, though the exact mechanism is not fully understood. Symptoms can be delayed and dose-dependent, developing hours or days after consuming high-salicylate foods. The condition is distinct from salicylate allergy (which triggers immune responses) and is often grouped with other food sensitivities affecting histamine or amine metabolism. Management typically involves identifying and avoiding trigger foods, though the threshold varies widely between individuals.",
+    "plain_summary": "Salicylate intolerance is a non-allergic sensitivity to salicylates \u2014 natural plant compounds found in many fruits, vegetables, spices, herbs, and some medications \u2014 that can trigger a wide range of symptoms including digestive problems, skin reactions, nasal congestion, headaches, and behavioural changes. Unlike a true IgE-mediated allergy, it does not involve the immune system attacking a protein; instead, it appears to involve disrupted arachidonic acid metabolism that shifts the balance of inflammatory mediators. Because salicylates are found in large quantities in foods generally considered healthy, the condition is frequently overlooked and misdiagnosed.",
+    "detailed_summary": "Salicylate intolerance \u2014 sometimes called salicylate sensitivity \u2014 is a dose-dependent, non-immunological adverse reaction to salicylic acid and its derivatives. Salicylates occur naturally in many plant foods (particularly berries, stone fruits, tomatoes, peppers, olives, spices, and most herbs), as well as in aspirin, many non-steroidal anti-inflammatory drugs (NSAIDs), some food additives, flavourings, and topical products including cosmetics and perfumes.\n\nThe leading mechanistic hypothesis is that salicylates inhibit cyclo-oxygenase (COX) enzymes, shifting arachidonic acid metabolism away from prostaglandins and toward leukotrienes. In people who are sensitive, this leukotriene excess is thought to drive inflammation in the respiratory tract, skin, and gut. A related enzyme \u2014 phenol sulphotransferase (PST) \u2014 may also be deficient in some affected individuals, impairing detoxification of phenolic compounds including salicylates.\n\nSymptoms are dose-dependent and cumulative: individuals have a personal threshold below which they tolerate salicylates without symptoms, but exceeding that threshold \u2014 through dietary load, medication, or topical exposure \u2014 triggers reactions. This makes the condition difficult to identify, because the same food may be tolerated one day and cause symptoms another, depending on total salicylate load from all sources.\n\nSalicylate intolerance frequently co-occurs with other intolerances and inflammatory conditions. It overlaps significantly with aspirin-exacerbated respiratory disease (AERD, also called Samter's Triad), histamine intolerance, and mast cell activation syndrome. Many individuals with salicylate intolerance also react to amines (found in fermented, aged, and leftover foods) and glutamates, suggesting broader chemical sensitivity rather than an isolated single-compound reaction.\n\nDiagnosis relies primarily on dietary elimination and structured reintroduction, since there is no validated blood test or biomarker. Finding a practitioner with genuine expertise in food chemical intolerances \u2014 rather than one focused only on IgE allergy or FODMAPs \u2014 can significantly accelerate the process.",
     "prevalence": {
-      "summary": "The exact prevalence is uncertain, but salicylate intolerance is thought to affect a small minority of the population, with higher rates among people with existing digestive or neurological conditions.",
-      "estimate": "estimated 0.5\u20133% of the general population, possibly higher in people with irritable bowel syndrome, autism, or ADHD",
-      "notes": "Prevalence data is limited because there is no gold-standard diagnostic test and symptom overlap with other conditions makes epidemiology difficult. The condition is better-recognised in Australia and New Zealand. Many cases may go undiagnosed or be misattributed to other food intolerances. Gender and age distributions are not well-characterised."
+      "summary": "Exact figures are unknown; best estimates suggest a small but meaningful minority of the general population are affected, with higher rates among people with chronic respiratory, skin, and GI conditions.",
+      "estimate": "Estimated 0.5\u20132% of the general population; possibly 10\u201320% or higher among people with chronic urticaria, asthma, or nasal polyps",
+      "notes": "No large-scale epidemiological studies have established a precise prevalence. Aspirin-exacerbated respiratory disease (a related condition) affects roughly 10% of adults with asthma and up to 30\u201340% of those with asthma plus nasal polyps. Broader salicylate intolerance without respiratory involvement is less studied. The condition is likely underdiagnosed because the dietary connection is not widely taught in medical training, and symptoms overlap with many other conditions."
     },
     "subgroups": [
       {
-        "name": "Digestive-predominant salicylate intolerance",
-        "description": "Symptoms primarily affect the gastrointestinal tract, with minimal neurological or behavioural effects.",
+        "name": "Aspirin-exacerbated respiratory disease (AERD / Samter's Triad)",
+        "description": "A well-defined subgroup characterised by the combination of asthma, chronic rhinosinusitis with nasal polyps, and severe reactions to aspirin or NSAIDs. This is the most medically recognised form of salicylate intolerance.",
         "distinguishing_features": [
-          "Bloating, gas, diarrhoea, or constipation triggered by specific foods",
-          "May overlap significantly with irritable bowel syndrome",
-          "Response to low-salicylate diet is often clear and reproducible"
+          "Asthma that worsens after aspirin or NSAID ingestion",
+          "Chronic nasal polyps and severe nasal congestion",
+          "Reactions to aspirin may include bronchospasm, rhinorrhoea, and facial flushing",
+          "Elevated urinary leukotriene E4 levels may be detectable",
+          "Aspirin desensitisation protocols are an established treatment option in this subgroup"
         ]
       },
       {
-        "name": "Neurological/behavioural salicylate intolerance",
-        "description": "Symptoms centre on headaches, mood changes, sleep disturbance, or behavioural dysregulation, often with minimal GI involvement.",
+        "name": "Dietary salicylate intolerance with gut-predominant symptoms",
+        "description": "Individuals who react primarily to dietary salicylates with GI symptoms, in the absence of significant respiratory involvement. Often confused with IBS, FODMAP intolerance, or histamine intolerance.",
         "distinguishing_features": [
-          "Headaches, migraines, or brain fog",
-          "Irritability, anxiety, hyperactivity, or emotional volatility",
-          "Sleep disturbances or restlessness",
-          "More commonly reported in children with ADHD or autism"
+          "Bloating, diarrhoea, or abdominal pain triggered by high-salicylate foods",
+          "Reactions to foods that are low-FODMAP, suggesting a different mechanism",
+          "May not have respiratory symptoms at all",
+          "Symptoms may be delayed by several hours, making food linkage difficult"
         ]
       },
       {
-        "name": "Mixed or multi-system salicylate intolerance",
-        "description": "Symptoms span digestive, neurological, and skin systems, often with variable intensity.",
+        "name": "Multiple food chemical intolerance (salicylates + amines + glutamates)",
+        "description": "A broader subgroup who react not only to salicylates but also to dietary amines (e.g. from fermented or aged foods) and free glutamates. Associated with work from the Royal Prince Alfred Hospital (RPAH) elimination diet research group in Australia.",
         "distinguishing_features": [
-          "Combination of GI upset, headaches, and skin reactions",
-          "Symptoms may cluster or vary depending on food quantity and type",
-          "May coexist with other food sensitivities (histamine, amines)"
+          "Reactions to a wider variety of foods than salicylate load alone can explain",
+          "Often includes reactions to red wine, aged cheese, vegemite, stock cubes, and MSG",
+          "Headache, fatigue, and mood changes are often prominent alongside physical symptoms",
+          "May require full RPAH elimination diet rather than salicylate-only restriction"
+        ]
+      },
+      {
+        "name": "Behavioural/neurological phenotype (common in children)",
+        "description": "Salicylate sensitivity has been associated in some children with hyperactivity, attention difficulties, and irritability. This is particularly linked to the Feingold diet tradition and later RPAH research.",
+        "distinguishing_features": [
+          "Hyperactivity, impulsivity, or inattention that fluctuates with dietary changes",
+          "Sleep disturbance and night waking",
+          "Behavioural changes are often more prominent than physical GI symptoms",
+          "Evidence base is weaker than for the respiratory and GI subgroups; results are variable across individuals"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Headaches or migraines",
-        "category": "neurological",
-        "notes": "Delayed onset (2\u201348 hours after eating), severity varies with food quantity, often worse in afternoon or evening"
-      },
-      {
-        "symptom": "Brain fog, poor concentration, or memory difficulty",
-        "category": "neurological",
-        "notes": "Often described as haziness or mental fatigue; may appear within hours of trigger foods"
-      },
-      {
-        "symptom": "Irritability, mood swings, or emotional dysregulation",
-        "category": "neurological/behavioural",
-        "notes": "Particularly noted in children; can mimic ADHD or anxiety symptoms"
-      },
-      {
-        "symptom": "Hyperactivity or restlessness",
-        "category": "behavioural",
-        "notes": "More common in children; may worsen after eating certain fruits or coloured foods"
-      },
-      {
-        "symptom": "Sleep disturbance or insomnia",
-        "category": "sleep",
-        "notes": "May manifest as difficulty falling asleep or fragmented sleep; often follows high-salicylate meals"
-      },
-      {
-        "symptom": "Bloating or gas",
+        "symptom": "Abdominal pain and cramping",
         "category": "digestive",
-        "notes": "Occurs within hours of eating; may be accompanied by abdominal discomfort"
+        "notes": "May occur hours after consuming high-salicylate foods; can be mistaken for IBS"
+      },
+      {
+        "symptom": "Bloating and gas",
+        "category": "digestive",
+        "notes": "Often indistinguishable from FODMAP-related bloating without elimination testing"
       },
       {
         "symptom": "Diarrhoea or loose stools",
         "category": "digestive",
-        "notes": "Often watery; can be delayed by 6\u201324 hours after trigger consumption"
+        "notes": "May be the dominant symptom in gut-predominant presentations"
       },
       {
-        "symptom": "Constipation",
+        "symptom": "Nausea",
         "category": "digestive",
-        "notes": "Less common than diarrhoea but may occur in some individuals"
+        "notes": "Particularly after high-salicylate meals; can occur without vomiting"
       },
       {
-        "symptom": "Abdominal cramping or pain",
-        "category": "digestive",
-        "notes": "Usually mild to moderate; may be diffuse or colicky"
-      },
-      {
-        "symptom": "Itching, hives, or eczema flare-up",
-        "category": "skin",
-        "notes": "Often triggered by high-salicylate fruits; may be delayed by hours or days"
-      },
-      {
-        "symptom": "Mouth ulcers or oral irritation",
-        "category": "oral",
-        "notes": "Less common; may occur with direct contact with high-salicylate foods"
-      },
-      {
-        "symptom": "Nasal congestion or sinus symptoms",
+        "symptom": "Chronic nasal congestion and rhinorrhoea",
         "category": "respiratory",
-        "notes": "Rare but reported; may accompany digestive or skin symptoms"
+        "notes": "Often described as a 'permanent cold'; a hallmark of AERD but also seen in dietary-only presentations"
       },
       {
-        "symptom": "Flushing or facial redness",
+        "symptom": "Nasal polyps",
+        "category": "respiratory",
+        "notes": "Recurrent polyps despite treatment are a strong signal to investigate salicylate intolerance"
+      },
+      {
+        "symptom": "Asthma or wheeze triggered by aspirin or NSAIDs",
+        "category": "respiratory",
+        "notes": "Pathognomonic for AERD when combined with nasal polyps and sinusitis"
+      },
+      {
+        "symptom": "Chronic sinusitis",
+        "category": "respiratory",
+        "notes": "Recurrent or persistent sinusitis that does not respond to antibiotics may have a salicylate component"
+      },
+      {
+        "symptom": "Urticaria (hives)",
         "category": "skin",
-        "notes": "May occur shortly after eating; similar to histamine-mediated flushing"
+        "notes": "Can be chronic or recurrent; may worsen with aspirin, NSAIDs, and high-salicylate foods"
+      },
+      {
+        "symptom": "Angioedema (swelling of lips, face, or throat)",
+        "category": "skin",
+        "notes": "More severe and warrants urgent assessment; can be triggered by aspirin or dietary salicylates in sensitive individuals"
+      },
+      {
+        "symptom": "Eczema or atopic dermatitis flares",
+        "category": "skin",
+        "notes": "Salicylates may contribute to flares in some individuals alongside other dietary triggers"
+      },
+      {
+        "symptom": "Flushing and redness of the face",
+        "category": "skin",
+        "notes": "May occur with aspirin ingestion or high-salicylate dietary load"
+      },
+      {
+        "symptom": "Headaches and migraines",
+        "category": "neurological",
+        "notes": "Often linked to dietary salicylate load; may also involve amines, making the picture complex"
+      },
+      {
+        "symptom": "Brain fog and difficulty concentrating",
+        "category": "neurological",
+        "notes": "Frequently reported but poorly studied; may relate to neuroinflammatory or systemic inflammatory effects"
+      },
+      {
+        "symptom": "Fatigue and lethargy",
+        "category": "neurological",
+        "notes": "Can be profound; often improves with dietary reduction"
+      },
+      {
+        "symptom": "Irritability and mood changes",
+        "category": "neurological",
+        "notes": "Particularly noted in children; some adults also report low mood or anxiety linked to high salicylate intake"
+      },
+      {
+        "symptom": "Hyperactivity and inattention (especially in children)",
+        "category": "neurological",
+        "notes": "Associated with the Feingold and RPAH dietary approaches; evidence is variable but reported by many families"
+      },
+      {
+        "symptom": "Joint and muscle aches",
+        "category": "musculoskeletal",
+        "notes": "Less commonly reported; may relate to altered prostaglandin/leukotriene balance"
+      },
+      {
+        "symptom": "Mouth ulcers",
+        "category": "oral",
+        "notes": "Recurrent aphthous ulcers have been reported in some food chemical intolerance cases"
+      },
+      {
+        "symptom": "Tinnitus",
+        "category": "ear/nose/throat",
+        "notes": "Associated with high-dose aspirin use; less commonly reported with dietary salicylates alone"
+      },
+      {
+        "symptom": "Eye irritation, itching, or redness",
+        "category": "eye",
+        "notes": "May occur as part of a broader inflammatory picture; less specific"
       }
     ],
     "testing": {
       "key_patterns": [
-        "Symptoms appear consistently 2\u201348 hours after eating specific foods (fruits, spices, processed foods)",
-        "Multiple symptom types across different body systems (digestive + neurological + skin)",
-        "Symptoms worsen with seasonal fruits (stone fruits, berries) or strongly flavoured foods",
-        "Improvement occurs within days to weeks when suspected high-salicylate foods are avoided",
-        "Symptoms are dose-dependent: small amounts may not trigger reactions, but larger portions do",
-        "Other family members have similar sensitivities or food intolerances"
+        "Symptoms that improve markedly on a low-salicylate diet and return predictably with reintroduction of high-salicylate foods",
+        "Reactions to aspirin or NSAIDs (particularly bronchoconstriction, hives, or angioedema) alongside dietary reactions",
+        "Chronic nasal polyps combined with asthma and sensitivity to aspirin or NSAIDs \u2014 classic AERD triad",
+        "Reactions to diverse 'healthy' foods such as berries, tomatoes, peppers, herbs, and spices that do not fit FODMAP or allergy patterns",
+        "Negative IgE skin prick tests and RAST tests ruling out true IgE-mediated allergy to the suspected foods",
+        "Symptoms that improve on a broad elimination diet (such as the RPAH diet) but return not only with salicylates but also amines and glutamates",
+        "Reactions to topical products including perfumes, menthol-containing products, and aspirin-based creams"
       ],
       "at_home": [
         {
-          "name": "Elimination diet (low-salicylate trial)",
-          "description": "Restrict intake to low-salicylate foods (peeled potato, white rice, chicken, beef, pear, lettuce, cabbage, green beans) for 3\u20135 days and monitor symptoms. If symptoms improve significantly, salicylate intolerance is likely. Avoid dietary supplements and processed foods during this period.",
-          "safety_notes": "This diet is nutritionally incomplete and should not be continued long-term. If you have diabetes, eating disorders, or are pregnant, consult a doctor or dietitian before starting. Stop immediately if symptoms worsen or new symptoms appear."
+          "name": "Salicylate elimination diet (supervised self-trial)",
+          "description": "Following a low-salicylate food list (such as the RPAH or Failsafe lists) strictly for 2\u20136 weeks while tracking symptoms in a diary. All sources of salicylate \u2014 dietary, topical (cosmetics, toothpaste), and medicinal (aspirin, some NSAIDs) \u2014 should be minimised simultaneously. If symptoms improve significantly, systematic reintroduction of high-salicylate foods in escalating amounts over days to weeks helps confirm the connection and establish individual thresholds.",
+          "safety_notes": "A strict elimination diet can become nutritionally inadequate if sustained too long without professional input. Individuals with a known history of severe reactions to aspirin or NSAIDs (especially bronchospasm or angioedema) should not attempt aspirin-based challenges at home. The elimination diet itself is low-risk for most people when short-term."
         },
         {
-          "name": "Structured food and symptom diary",
-          "description": "Record all foods and drinks consumed, times of consumption, and any symptoms (type, onset time, duration, severity) for at least 2 weeks. Use a scale (e.g. 1\u201310) for symptom severity. Look for temporal patterns linking specific foods to symptom clusters.",
-          "safety_notes": "This is observational only and subject to recall bias and psychological expectation. Patterns identified should be confirmed by reintroduction testing before concluding salicylate intolerance."
+          "name": "Symptom and food diary",
+          "description": "Keeping a detailed daily log of all foods, medications, and topical products alongside symptom timing and severity. Salicylate reactions are often delayed and cumulative, so a multi-day diary is more informative than tracking single meals. Patterns across days \u2014 rather than hour-to-hour \u2014 often reveal the connection.",
+          "safety_notes": "No safety concerns. Accuracy requires recording all exposures including cosmetics, toothpaste, and over-the-counter medications."
         },
         {
-          "name": "Single-food reintroduction",
-          "description": "After a symptom-free period on a low-salicylate diet, reintroduce one suspected high-salicylate food (e.g. a strawberry, a teaspoon of tomato paste, or a small spice amount) and observe for 24\u201348 hours. Record any symptom recurrence. Wait at least 3 days between reintroductions.",
-          "safety_notes": "Reintroduction may trigger symptoms; have any needed symptom relief on hand. If severe reactions occur (anaphylaxis, severe swelling), seek emergency care immediately. Psychological expectation can influence results; consider blind testing if possible."
+          "name": "Aspirin challenge observation (self-monitoring only \u2014 NOT self-administration)",
+          "description": "Individuals who have already experienced reactions to aspirin or ibuprofen can note whether their symptoms occurred after NSAID use and whether reducing NSAIDs correlated with improvement. This is observational only \u2014 it is not safe to deliberately take aspirin at home to test for a reaction if a respiratory or allergic reaction is suspected.",
+          "safety_notes": "Do NOT self-administer aspirin to provoke a reaction. Aspirin challenges in suspected AERD must be conducted in a clinical setting with emergency equipment available."
         }
       ],
       "clinical": [
         {
-          "name": "Symptom history and dietary assessment",
-          "type": "standard",
-          "description": "A healthcare provider takes a detailed history of symptom onset, types, timing, and relationship to specific foods. A dietitian may conduct a structured food history and assess nutritional intake. This is the primary diagnostic method and relies on clinical pattern recognition rather than objective markers.",
-          "availability": "Available through primary care physicians, registered dietitians, or gastroenterologists. Increasingly offered by functional and integrative medicine practitioners."
+          "name": "Supervised aspirin/NSAID oral challenge",
+          "type": "gold_standard",
+          "description": "The definitive test for AERD. Aspirin is administered in escalating doses in a clinical setting while respiratory function (spirometry) and symptoms are monitored. A significant drop in FEV1 or development of symptoms confirms the diagnosis. Also used therapeutically as the first step in aspirin desensitisation.",
+          "availability": "Performed at specialist allergy or respiratory centres, typically by allergists or pulmonologists with experience in AERD. Not available in general practice. Requires prior written consent and emergency preparedness."
         },
         {
-          "name": "Supervised elimination and reintroduction diet",
-          "type": "standard",
-          "description": "A registered dietitian or doctor supervises a structured low-salicylate elimination diet, monitors symptoms, and systematically reintroduces foods to confirm triggers. More rigorous than home testing and ensures adequate nutrition during the trial.",
-          "availability": "Provided by registered dietitians (often through referral from a GP or specialist) or in specialist allergy or gastroenterology clinics."
+          "name": "Structured RPAH elimination diet with dietitian supervision",
+          "type": "gold_standard",
+          "description": "The Royal Prince Alfred Hospital (RPAH) elimination diet \u2014 sometimes called the Failsafe diet \u2014 is the most systematically validated dietary protocol for identifying food chemical intolerances including salicylates, amines, and glutamates. A registered dietitian guides the patient through strict elimination followed by structured challenges of individual food chemicals. This is considered the clinical gold standard for dietary salicylate intolerance.",
+          "availability": "Requires a RPAH-trained or food-chemical-intolerance-experienced registered dietitian. More common in Australia (where the protocol was developed) but available internationally through trained dietitians. Not routinely offered by gastroenterologists in standard care."
         },
         {
-          "name": "Blood tests for PST enzyme activity",
+          "name": "Skin prick testing and specific IgE (RAST) to foods",
+          "type": "standard",
+          "description": "Used primarily to rule out IgE-mediated food allergy rather than to confirm salicylate intolerance. Salicylate intolerance is a non-immunological reaction and will produce negative IgE tests, which helps distinguish it from true allergy.",
+          "availability": "Available through allergists and some immunologists. Commonly ordered in the workup of urticaria, angioedema, or suspected food reactions."
+        },
+        {
+          "name": "Urinary leukotriene E4 (LTE4) measurement",
           "type": "emerging",
-          "description": "Measurement of phenolsulfotransferase (PST) activity in blood. Low PST activity is theoretically linked to salicylate intolerance, but the test is not standardised and its clinical utility is unproven. Not widely available.",
-          "availability": "Not routinely available in mainstream clinical labs. May be offered by some functional medicine or research laboratories. Interpretation is unclear and not yet evidence-based for diagnosis."
+          "description": "Elevated urinary LTE4 is associated with AERD and may indicate COX-driven leukotriene overproduction. Used in research settings and some specialist centres to support the diagnosis of AERD. Not a routine clinical test.",
+          "availability": "Research laboratories and some specialist respiratory or allergy centres. Not widely available commercially."
         },
         {
-          "name": "Skin prick testing or IgE serology",
+          "name": "Nasal endoscopy and imaging (CT sinuses)",
           "type": "standard",
-          "description": "Tests for immunological allergy (IgE-mediated) to salicylates or salicylate-rich foods. Negative results help rule out true allergy and support intolerance diagnosis. Does not measure intolerance itself.",
-          "availability": "Available through allergists or immunologists. Useful for ruling out classic food allergy but does not confirm salicylate intolerance."
-        },
-        {
-          "name": "Exclusion of other conditions (coeliac, IBS, FODMAP intolerance, histamine intolerance)",
-          "type": "standard",
-          "description": "Blood tests for tissue transglutaminase (tTG) antibodies and total IgA (coeliac serology), hydrogen breath test (FODMAP intolerance), or symptom trials ruling out histamine intolerance. Helps differentiate from other common food sensitivities with overlapping symptoms.",
-          "availability": "Available through primary care and gastroenterology. Often performed before concluding salicylate intolerance to rule out more common conditions."
+          "description": "Used to assess the presence and extent of nasal polyps and sinusitis. Recurrent or extensive polyps in the context of asthma are a strong clinical marker for AERD and salicylate sensitivity. Does not confirm salicylate intolerance mechanistically but informs diagnosis and treatment planning.",
+          "availability": "Ordered by ENT surgeons and allergists; widely available."
         }
       ]
     },
     "related_conditions": [
       {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
+        "relationship": "comorbid",
+        "explanation": "Salicylate intolerance and MCAS frequently co-occur. Both conditions can cause urticaria, flushing, GI symptoms, and multi-system reactions to a wide range of triggers. Salicylates may directly activate mast cells in sensitive individuals, and the two conditions can be difficult to disentangle without systematic elimination testing."
+      },
+      {
+        "id": "histamine",
         "name": "Histamine intolerance",
-        "relationship": "often_confused",
-        "explanation": "Both involve sensitivity to food compounds and can cause similar symptoms (headaches, GI upset, skin reactions). Histamine intolerance results from impaired breakdown of histamine (due to low DAO enzyme activity), while salicylate intolerance reflects difficulty metabolising salicylates. Many people have both; testing and dietary management differ between the two."
-      },
-      {
-        "name": "Amine intolerance (tyramine, phenylethylamine)",
-        "relationship": "often_confused",
-        "explanation": "Overlaps with salicylate intolerance in symptom presentation and food sources. Amines (e.g. in aged foods, fermented items) can trigger migraines and neurological symptoms. Some individuals are sensitive to multiple amine and salicylate compounds. Dietary restrictions may overlap."
-      },
-      {
-        "name": "Irritable bowel syndrome (IBS)",
         "relationship": "comorbid",
-        "explanation": "Salicylate intolerance frequently coexists with IBS. Both cause digestive symptoms (bloating, diarrhoea, cramping); salicylate intolerance may be an unrecognised trigger in some IBS patients. Management of both conditions may involve dietary modification."
+        "explanation": "Histamine intolerance frequently overlaps with salicylate intolerance. Many high-salicylate foods also happen to be high in histamine (e.g. tomatoes, avocado, wine), making it difficult to distinguish which compound is driving symptoms. Some individuals react to both, requiring concurrent management."
       },
       {
-        "name": "FODMAP intolerance",
+        "id": "ibs",
+        "name": "IBS (Irritable bowel syndrome)",
         "relationship": "often_confused",
-        "explanation": "Both are non-immune food sensitivities causing GI symptoms. FODMAPs are fermentable carbohydrates; salicylates are plant compounds. Confusion arises because some high-salicylate foods are also high in FODMAPs (e.g. stone fruits, onions). Testing and dietary approaches differ; some people have both."
+        "explanation": "Many people with salicylate intolerance are initially diagnosed with IBS. The gut symptoms \u2014 bloating, pain, diarrhoea \u2014 can be identical. The distinction lies in the trigger pattern: salicylate reactions are often provoked by 'healthy' high-polyphenol foods, not just FODMAPs, and improvement on a low-salicylate diet without FODMAP restriction can help differentiate the two."
       },
       {
-        "name": "Attention-deficit/hyperactivity disorder (ADHD)",
+        "id": "allergy",
+        "name": "IgE-mediated allergy (food allergy)",
+        "relationship": "often_confused",
+        "explanation": "Salicylate intolerance can cause urticaria and angioedema that closely resemble allergic reactions. However, IgE tests are negative in true salicylate intolerance. Distinguishing the two matters because management is different \u2014 elimination diet for salicylate intolerance versus avoidance of specific allergen proteins for IgE allergy."
+      },
+      {
+        "id": "allergic_rhinitis",
+        "name": "Allergic rhinitis",
+        "relationship": "often_confused",
+        "explanation": "Chronic nasal congestion and rhinorrhoea in salicylate intolerance (particularly AERD) is often misattributed to allergic rhinitis. Standard antihistamines and nasal steroids may provide partial relief but fail to address the salicylate-driven leukotriene excess."
+      },
+      {
+        "id": "atopic_dermatitis",
+        "name": "Atopic dermatitis (eczema)",
         "relationship": "comorbid",
-        "explanation": "Salicylate intolerance is anecdotally reported more frequently in children with ADHD. High-salicylate foods may exacerbate hyperactivity or inattention in susceptible individuals. Rigorous evidence is limited, but some families report improvement in ADHD symptoms with a low-salicylate diet."
+        "explanation": "Dietary salicylates may contribute to eczema flares in a subset of individuals. Salicylate intolerance has been reported as a trigger in some atopic dermatitis patients, particularly those whose eczema does not respond well to standard treatments."
       },
       {
-        "name": "Autism spectrum disorder",
+        "id": "ncgs",
+        "name": "Non-coeliac gluten sensitivity (NCGS)",
+        "relationship": "often_confused",
+        "explanation": "People who react to wheat may be reacting to salicylates or other food chemicals rather than (or in addition to) gluten. Some grains contain salicylates and many 'gluten-free' substitute foods are high in dried fruits and other high-salicylate ingredients."
+      },
+      {
+        "id": "ibd_remission",
+        "name": "IBD in remission (Crohn's disease / ulcerative colitis)",
         "relationship": "comorbid",
-        "explanation": "Some people with autism report salicylate sensitivity. Symptoms may manifest as sensory dysregulation, mood changes, or GI upset. Anecdotal evidence suggests dietary modification helps some autistic individuals, though systematic evidence is sparse."
+        "explanation": "People with IBD in remission who continue to experience GI symptoms may have overlapping food chemical intolerances including salicylate sensitivity. Distinguishing residual inflammation from dietary sensitivity requires careful assessment."
       },
       {
-        "name": "Migraines",
+        "id": "adhd",
+        "name": "ADHD",
+        "relationship": "often_confused",
+        "explanation": "In children, salicylate and food chemical intolerance has been proposed as a contributor to hyperactivity and inattention symptoms. The Feingold and RPAH dietary approaches target these chemicals. The relationship is not causal in most ADHD cases but may be a modifying factor in a subset."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "Widespread pain, fatigue, and cognitive symptoms in fibromyalgia may overlap with salicylate intolerance presentations. Some individuals with fibromyalgia report symptom improvement on a low-salicylate or broader food chemical elimination diet, though evidence is anecdotal."
+      },
+      {
+        "id": "eosinophilic",
+        "name": "Eosinophilic GI disorders",
         "relationship": "mechanistic_link",
-        "explanation": "Salicylates and related compounds can trigger migraines through vascular and neurochemical mechanisms. People with a history of migraines may be more prone to salicylate intolerance or may find that managing salicylate intake improves headache frequency or severity."
+        "explanation": "Eosinophilic oesophagitis and other eosinophilic GI disorders involve altered arachidonic acid metabolism and leukotriene pathways \u2014 similar to the mechanism proposed in salicylate intolerance and AERD. They may co-occur or share mechanistic drivers in some individuals."
       },
       {
-        "name": "Coeliac disease",
-        "relationship": "upstream",
-        "explanation": "Untreated coeliac disease damages the small intestine and impairs nutrient absorption and enzyme function, potentially worsening intolerance to various food compounds including salicylates. Salicylate sensitivity may improve after coeliac disease is diagnosed and managed with a gluten-free diet."
-      },
-      {
-        "name": "Leaky gut syndrome (increased intestinal permeability)",
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
         "relationship": "mechanistic_link",
-        "explanation": "Increased intestinal permeability may allow larger salicylate molecules or metabolites to cross the intestinal barrier, triggering systemic symptoms. Some theories suggest that reducing salicylate load helps restore gut barrier function; the mechanism is not proven."
+        "explanation": "Gut microbiome composition influences the metabolism of phenolic compounds including salicylates. Dysbiosis may reduce the capacity to metabolise or tolerate dietary salicylates, potentially lowering the threshold for intolerance reactions."
+      },
+      {
+        "id": "oxalate",
+        "name": "Oxalate accumulation",
+        "relationship": "comorbid",
+        "explanation": "Salicylate intolerance and oxalate sensitivity can co-occur, partly because many high-oxalate foods are also high in salicylates. Individuals with broad food chemical sensitivity may react to both, complicating dietary management."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
-          "name": "Low-salicylate diet (elimination and reintroduction)",
+          "name": "Low-salicylate elimination diet",
           "category": "diet",
-          "description": "Start with a strictly low-salicylate diet for 3\u20135 days, then systematically reintroduce foods to identify individual tolerance thresholds. Focus on peeled potatoes, white rice, meat, fish, and low-salicylate fruits (pears, bananas). Avoid berries, stone fruits, tomatoes, spices, and processed foods initially. Work with a dietitian to ensure nutritional adequacy and to establish a sustainable long-term diet that includes tolerated foods.",
+          "description": "Reducing dietary salicylate load to below the individual's threshold is the primary management strategy. Foods are categorised by salicylate content (negligible, low, moderate, high, very high) and a baseline diet is constructed from negligible and low categories. After symptom stabilisation (typically 2\u20136 weeks), foods are reintroduced methodically to identify personal tolerance levels. This allows individuals to maintain the widest possible diet while staying below their reaction threshold.",
           "evidence_level": "moderate",
-          "notes": "Effectiveness varies widely between individuals. Some people tolerate moderate salicylate amounts, while others require strict avoidance. The diet is restrictive and nutrient-poor if applied long-term without professional guidance. Individual tolerance thresholds must be established through careful reintroduction."
+          "notes": "The RPAH (Failsafe) food lists are the most systematically developed. Salicylate content of foods varies by ripeness, variety, and preparation method, which can make consistent avoidance challenging. Working with a RPAH-trained dietitian is strongly recommended to avoid unnecessary restriction."
         },
         {
-          "name": "Rotational diet (varying foods)",
+          "name": "RPAH/Failsafe elimination diet (full food chemical protocol)",
           "category": "diet",
-          "description": "Eat different foods on different days (e.g. chicken one day, fish another) to avoid cumulative salicylate load and reduce the likelihood of developing new sensitivities. Rotate low-salicylate vegetables and grains daily. This approach may help maintain dietary variety while managing symptoms.",
-          "evidence_level": "anecdotal",
-          "notes": "Evidence is limited and mostly anecdotal. The mechanism (whether cumulative load or gut habituation) is not clear. May be useful for some individuals but is complex to manage without professional support."
-        },
-        {
-          "name": "Peeling and cooking methods",
-          "category": "diet",
-          "description": "Remove skins from potatoes, apples, and pears (salicylates concentrate in skins). Boil rather than bake or fry when possible, as some cooking methods may affect salicylate content. Avoid using salts or spices high in salicylates. Prepare fresh foods rather than relying on processed or pre-spiced items.",
+          "description": "For individuals who react to multiple food chemicals (salicylates, amines, and glutamates), the full RPAH elimination diet offers a systematic framework for identifying which chemicals trigger which symptoms. This is broader than salicylate-only restriction and requires careful dietitian guidance.",
           "evidence_level": "moderate",
-          "notes": "Peeling reduces but does not eliminate salicylates. Heat may slightly reduce salicylate levels, though evidence is mixed. These simple adjustments can help without requiring strict elimination diets."
+          "notes": "This diet is very restrictive when followed strictly and should not be sustained indefinitely. The goal is diagnosis through elimination and reintroduction, followed by a personalised long-term diet at or below the individual threshold."
         },
         {
-          "name": "Antihistamine medications (short-term symptom relief)",
+          "name": "Avoidance of aspirin and NSAIDs",
           "category": "medication",
-          "description": "Over-the-counter antihistamines (e.g. cetirizine, loratadine) or prescribed H1/H2 antagonists may reduce some symptoms, particularly headaches or flushing, if salicylate intolerance has an histamine component. Use as needed for acute symptoms or preventatively before known trigger meals.",
-          "evidence_level": "anecdotal",
-          "notes": "Efficacy is inconsistent and varies between individuals. Antihistamines address symptoms rather than the underlying issue. Do not use as a substitute for dietary avoidance. Long-term use of antihistamines is not recommended without medical supervision."
-        },
-        {
-          "name": "DAO enzyme supplements",
-          "category": "supplement",
-          "description": "Over-the-counter DAO (diamine oxidase) supplements are marketed to support histamine breakdown. Taken before meals, these may help if salicylate intolerance overlaps with histamine intolerance. Efficacy is unproven for salicylate-specific symptoms.",
-          "evidence_level": "anecdotal",
-          "notes": "Evidence for DAO supplementation is weak and mostly from histamine intolerance research. Supplements vary widely in quality and potency. Not regulated by most health authorities. May have modest benefit for some individuals but should not replace dietary management."
-        },
-        {
-          "name": "Gut barrier support supplements (glutamine, zinc, collagen)",
-          "category": "supplement",
-          "description": "Supplements supporting intestinal health and permeability are sometimes recommended alongside dietary changes. Examples include L-glutamine, zinc, bone broth, or collagen peptides. Theoretically, a healthier gut barrier may reduce symptom severity, though direct evidence is lacking.",
-          "evidence_level": "anecdotal",
-          "notes": "Evidence is theoretical and anecdotal. These supplements are generally safe but should be checked for salicylate content (some may be high). Do not use as a substitute for dietary management. Benefits, if any, are likely modest."
-        },
-        {
-          "name": "Stress management and sleep optimisation",
-          "category": "lifestyle",
-          "description": "Stress and poor sleep can lower the threshold for food sensitivities and worsen neurological symptoms. Practise relaxation (meditation, deep breathing), maintain consistent sleep schedules, and exercise regularly. These changes may improve overall symptom tolerance.",
-          "evidence_level": "moderate",
-          "notes": "Stress and sleep are non-specific but important factors in managing any sensitivity. Improvements may take weeks to become apparent. Combine with dietary management for best results."
-        },
-        {
-          "name": "Food labelling and ingredient checking",
-          "category": "diet",
-          "description": "Learn to read food labels and identify high-salicylate ingredients (spices, tomato paste, citric acid, preservatives). Avoid processed foods, sauces, and pre-packaged meals, which often contain high-salicylate flavourings. Stick to fresh, unprocessed foods when possible.",
+          "description": "For individuals with known salicylate intolerance \u2014 especially those with AERD \u2014 avoiding aspirin, ibuprofen, naproxen, and other COX-inhibiting NSAIDs is essential. Paracetamol (acetaminophen) is generally better tolerated, though high doses may still cause mild reactions in very sensitive individuals.",
           "evidence_level": "strong",
-          "notes": "Essential for managing a low-salicylate diet. Salicylate content is often not listed; familiarisation with common high-salicylate foods and brands is necessary. Online databases and dietitian guidance are valuable resources."
+          "notes": "Individuals who require aspirin for cardiovascular reasons should discuss alternatives with their cardiologist. Abrupt NSAID reactions can be serious in AERD \u2014 emergency preparedness is important."
         },
         {
-          "name": "Keeping a detailed symptom and food diary",
-          "category": "lifestyle",
-          "description": "Log all foods, drinks, supplements, and symptoms (type, timing, severity) daily. Record context (stress, sleep, exercise) as well. Review regularly to identify patterns and refine triggers. Share with healthcare providers to inform diagnosis and management.",
-          "evidence_level": "moderate",
-          "notes": "Diaries reveal patterns over time and help distinguish salicylate intolerance from other causes. Accuracy and consistency are critical. Digital tools or apps can simplify logging."
-        },
-        {
-          "name": "Working with a registered dietitian",
-          "category": "lifestyle",
-          "description": "A dietitian experienced in food intolerances can design a personalised, nutritionally adequate low-salicylate diet, supervise reintroduction, and help you navigate long-term management. This professional support improves outcomes and ensures nutritional adequacy.",
+          "name": "Aspirin desensitisation (for AERD)",
+          "category": "medication",
+          "description": "In individuals with AERD who require aspirin (for cardiovascular disease) or who want to be able to tolerate NSAIDs, aspirin desensitisation involves supervised escalating doses until tolerance is achieved, followed by daily aspirin maintenance. This can reduce nasal polyp growth, decrease the frequency of sinusitis, and improve asthma control in AERD.",
           "evidence_level": "strong",
-          "notes": "Professional guidance significantly improves success rates and prevents nutritional deficiencies. Seek a dietitian with specific experience in salicylate intolerance or food sensitivities. May be covered by insurance if referred by a doctor."
+          "notes": "Must be performed in a clinical setting by an allergist or specialist with emergency equipment available. Not appropriate for dietary salicylate intolerance without the AERD respiratory phenotype. Requires ongoing daily aspirin to maintain tolerance."
+        },
+        {
+          "name": "Leukotriene receptor antagonists (e.g. montelukast)",
+          "category": "medication",
+          "description": "Medications that block leukotriene receptors (such as montelukast) may help manage respiratory and some systemic symptoms in salicylate intolerance by addressing the downstream leukotriene excess. Used primarily as adjunct therapy in AERD.",
+          "evidence_level": "moderate",
+          "notes": "Neuropsychiatric side effects (depression, suicidal ideation, behaviour changes) have been reported with montelukast; the FDA added a boxed warning in 2020. This risk should be discussed with a prescribing clinician."
+        },
+        {
+          "name": "Topical product review and elimination",
+          "category": "environment",
+          "description": "Salicylates are present in many cosmetics, perfumes, menthol products, sunscreens, and topical pain relief gels. Reviewing and switching to salicylate-free personal care products can reduce total salicylate load and help determine whether topical sources are contributing to symptoms.",
+          "evidence_level": "anecdotal",
+          "notes": "The contribution of topical salicylate absorption to overall load is debated, but for highly sensitive individuals it may be clinically relevant. Specific ingredients to avoid include methyl salicylate, salicylic acid, and related compounds."
+        },
+        {
+          "name": "Calcium carbonate or sodium bicarbonate (alkalising agents)",
+          "category": "supplement",
+          "description": "Some practitioners and patient communities report that alkalising agents may help buffer acute salicylate reactions, on the theory that salicylate excretion is enhanced in alkaline urine. Evidence is largely anecdotal and based on pharmacological principles rather than clinical trials in food intolerance.",
+          "evidence_level": "anecdotal",
+          "notes": "Should not be used regularly without medical supervision, particularly in individuals with kidney disease or those on certain medications. Effect on dietary salicylate reactions is not well established."
+        },
+        {
+          "name": "Vitamin B6 (pyridoxine) and magnesium supplementation",
+          "category": "supplement",
+          "description": "Some research and clinical practice (particularly associated with the RPAH group and Sue Dengate's work) suggests that certain B vitamins and magnesium may support phenol sulphotransferase (PST) enzyme function, potentially improving tolerance to phenolic compounds including salicylates.",
+          "evidence_level": "anecdotal",
+          "notes": "Vitamin B6 in high doses can cause peripheral neuropathy; supplementation should be kept within safe limits and ideally guided by a practitioner."
+        },
+        {
+          "name": "Antihistamines",
+          "category": "medication",
+          "description": "First- or second-generation antihistamines may reduce urticaria and some inflammatory symptoms associated with salicylate intolerance, particularly where mast cell activation or histamine co-involvement is suspected. They are symptomatic treatments and do not address the underlying mechanism.",
+          "evidence_level": "moderate",
+          "notes": "Useful for acute management of hives or itch. Less effective for respiratory symptoms in AERD, where leukotriene pathways are dominant."
+        },
+        {
+          "name": "Nasal corticosteroids and saline irrigation",
+          "category": "medication",
+          "description": "For nasal symptoms \u2014 congestion, rhinorrhoea, and polyp management \u2014 intranasal corticosteroid sprays and regular saline irrigation can provide significant symptomatic relief and slow polyp regrowth, used alongside dietary management.",
+          "evidence_level": "strong",
+          "notes": "Does not address the underlying salicylate sensitivity but is effective for managing nasal symptoms. Polyps often recur if the underlying trigger is not addressed."
         }
       ],
       "things_to_avoid": [
-        "Strict long-term elimination without professional guidance \u2014 can lead to nutritional deficiencies and is often more restrictive than necessary.",
-        "Assuming all high-salicylate foods must be avoided indefinitely \u2014 individual tolerance varies; systematic reintroduction identifies actual thresholds.",
-        "Self-diagnosing salicylate intolerance without ruling out coeliac disease, IBS, histamine intolerance, or other common sensitivities \u2014 misdiagnosis can delay proper treatment.",
-        "Using antihistamines or supplements as substitutes for dietary management \u2014 these address symptoms only and do not address the underlying problem.",
-        "Over-relying on food salicylate databases \u2014 content varies by source and food freshness; individual tolerance thresholds are more important than absolute salicylate numbers.",
-        "Ignoring stress, sleep, and overall health \u2014 these factors significantly affect symptom threshold and can worsen sensitivity if neglected.",
-        "Introducing too many new foods or supplements at once \u2014 makes it impossible to identify which triggers symptoms.",
-        "Assuming family members have identical salicylate sensitivities \u2014 individual thresholds and symptom types vary widely, even within families."
+        "Aspirin and NSAID medications (ibuprofen, naproxen, diclofenac, etc.) \u2014 these are pharmacological salicylates or COX inhibitors that can trigger or worsen reactions",
+        "Very high-salicylate foods during a symptomatic period \u2014 including berries (particularly raspberries, strawberries, blueberries), dried fruits, citrus peel, almonds, peppermint, herbs and spices in large quantities, and tomato-based sauces",
+        "Topical products containing methyl salicylate, salicylic acid, or 'oil of wintergreen' \u2014 these can be absorbed through the skin and contribute to total load",
+        "Assuming that 'natural' or 'plant-based' means safe \u2014 salicylates are plant defence chemicals and many health foods (berries, herbal teas, fruit juices) are very high in them",
+        "Starting with a salicylate-only approach if reactions span a wide variety of foods \u2014 amines and glutamates may also be involved and need to be assessed",
+        "Eliminating too many foods without structure and professional guidance \u2014 this risks nutritional deficiency and makes reintroduction testing meaningless",
+        "Using peppermint, menthol, eucalyptus, or tea tree oil products (including toothpaste, inhalers, and rubs) \u2014 these contain high levels of salicylate-related compounds",
+        "Perfumes and fragranced products \u2014 often contain salicylate esters and can contribute to total chemical load in sensitive individuals",
+        "Relying on a standard allergy test to rule out salicylate intolerance \u2014 IgE tests will be negative, and a negative allergy test does not mean a reaction is not occurring"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "Many of the foods most celebrated as 'healthy' are among the highest in salicylates \u2014 berries, tomatoes, herbs, spices, green tea, and olive oil. Eating a 'whole food plant-based' diet can make salicylate intolerance dramatically worse.",
+        "why_resisted": "People are heavily invested in the idea that plant-rich diets are universally beneficial. Accepting that their health-conscious diet may be driving their symptoms is psychologically difficult, especially when clinicians and media reinforce that message.",
+        "path_forward": "Once the dietary connection is identified through a structured elimination and reintroduction protocol, most people can develop a personalised threshold that allows them to eat a nutritious, varied diet \u2014 just not the same one that works for someone without this condition."
+      },
+      {
+        "truth": "There is no reliable blood test or biomarker that can diagnose salicylate intolerance. Diagnosis requires weeks of dietary elimination and methodical food reintroduction \u2014 there is no shortcut.",
+        "why_resisted": "People want a clear answer from a single test. The process of elimination and reintroduction is effortful, socially disruptive, and requires keeping detailed records over many weeks. Many give up before completing a proper trial.",
+        "path_forward": "Those who complete a full, structured elimination and reintroduction protocol \u2014 ideally with a trained dietitian \u2014 come away with a clear map of their personal triggers and thresholds, which is more actionable than any test result."
+      },
+      {
+        "truth": "Many mainstream doctors \u2014 including gastroenterologists and allergists \u2014 have limited training in food chemical intolerances and may dismiss or minimise salicylate intolerance, particularly in its non-AERD forms.",
+        "why_resisted": "Patients trust doctors as the authority on their health, and being dismissed by a specialist can undermine confidence in their own observations. It also means patients may spend years pursuing the wrong investigations.",
+        "path_forward": "Finding a practitioner with specific expertise \u2014 typically a RPAH-trained dietitian, a functional medicine doctor, or an allergist experienced in AERD \u2014 is more productive than repeatedly returning to practitioners who lack familiarity with the condition."
+      },
+      {
+        "truth": "Salicylate intolerance is dose-dependent and cumulative, not binary. There is no 'safe' food list that works for everyone \u2014 individual thresholds vary widely, and the same food may be tolerated on one day and trigger symptoms on another depending on total load.",
+        "why_resisted": "People want clear 'yes/no' lists of safe and unsafe foods. The reality of a moving threshold that depends on total load from multiple sources is harder to manage and requires ongoing attention rather than a fixed rule set.",
+        "path_forward": "Understanding personal threshold \u2014 rather than treating food categories as universally safe or unsafe \u2014 allows affected individuals to make informed decisions about when and how much of a higher-salicylate food they can include based on their current context."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Accurate identification of individual salicylate thresholds through systematic dietary testing",
-          "why_it_matters": "Generic 'low-salicylate' lists are imprecise; identifying your personal tolerance level prevents unnecessary dietary restriction while protecting you from trigger foods. This personalisation is essential for long-term adherence and quality of life.",
-          "how_to_start": "Begin a 3\u20135 day elimination diet, then reintroduce foods one at a time over 2\u20133 weeks, carefully documenting which trigger symptoms. Work with a dietitian to ensure accuracy and avoid unnecessarily strict restrictions.",
-          "timeline": "Identification typically takes 4\u20136 weeks; refinement may continue over 2\u20133 months.",
+          "lever": "Completing a structured elimination and reintroduction protocol with a trained dietitian",
+          "why_it_matters": "This is the only reliable way to confirm the diagnosis, identify co-existing food chemical sensitivities (amines, glutamates), and establish personal thresholds. Without this, dietary management is guesswork and often unnecessarily restrictive or ineffective.",
+          "how_to_start": "Find a registered dietitian with RPAH elimination diet training or specific experience in food chemical intolerances. In Australia, the RPAH Allergy Unit at Royal Prince Alfred Hospital publishes a list of trained practitioners. Internationally, look for dietitians who explicitly reference the Failsafe diet or RPAH protocol.",
+          "timeline": "2\u20136 weeks for elimination phase; a further 8\u201316 weeks for systematic reintroduction challenges",
           "requires_professional": true
         },
         {
-          "lever": "Nutritional counselling to ensure a balanced, sustainable diet within salicylate constraints",
-          "why_it_matters": "A restrictive diet can lead to deficiencies in fibre, vitamins, and minerals, worsening overall health and potentially increasing symptom severity. Ensuring nutritional adequacy sustains long-term adherence and health.",
-          "how_to_start": "Consult a registered dietitian to review your current diet, identify nutritional gaps, and add tolerated nutrient-dense foods (e.g. fortified grains, low-salicylate vegetables, lean proteins). Discuss supplementation if needed.",
-          "timeline": "Initial consultation yields a plan; full dietary balance may take 4\u20138 weeks to achieve.",
-          "requires_professional": true
-        },
-        {
-          "lever": "Stress reduction and sleep optimisation",
-          "why_it_matters": "Chronic stress and sleep deprivation lower the threshold for food sensitivities and trigger or worsen neurological symptoms (headaches, mood changes). Managing these foundational health factors has outsized impact on symptom control.",
-          "how_to_start": "Establish a consistent sleep schedule (7\u20139 hours nightly), practise 10\u201315 minutes of daily relaxation (meditation, breathing exercises, yoga), and assess sources of stress. Reduce or delegate high-stress activities where possible.",
-          "timeline": "Sleep improvements appear within 1\u20132 weeks; stress-related symptom reduction takes 2\u20134 weeks of consistent practice.",
+          "lever": "Reducing total salicylate load from all sources simultaneously",
+          "why_it_matters": "Salicylates accumulate from food, medications, and topical products. Addressing only one source (e.g. diet) while continuing aspirin or using salicylate-containing cosmetics means total load may remain above the reaction threshold. Whole-system reduction is more effective than piecemeal changes.",
+          "how_to_start": "Audit current medications (especially OTC painkillers), topical products, and dietary habits simultaneously. Switch to paracetamol for pain if not contraindicated, review personal care products for methyl salicylate and salicylic acid, and begin reducing high-salicylate foods.",
+          "timeline": "Symptom improvement may begin within 1\u20132 weeks of consistent load reduction; full stabilisation may take longer",
           "requires_professional": false
         },
         {
-          "lever": "Regular physical activity tailored to your tolerance",
-          "why_it_matters": "Exercise reduces stress, improves sleep quality, supports gut health, and may increase digestive enzyme function. These effects enhance overall symptom tolerance and mood.",
-          "how_to_start": "Begin with 20\u201330 minutes of moderate activity (walking, cycling, swimming) 3\u20134 times weekly. Avoid intense exercise immediately after eating high-salicylate foods, which may exacerbate digestive symptoms.",
-          "timeline": "Mood and sleep improvements appear within 2\u20133 weeks; longer-term digestive benefits take 6\u20138 weeks.",
+          "lever": "Identifying and managing co-existing food chemical intolerances",
+          "why_it_matters": "A significant proportion of people with salicylate intolerance also react to dietary amines and glutamates. Addressing salicylates alone \u2014 while continuing to consume aged cheese, wine, fermented foods, and MSG \u2014 will leave a substantial symptom burden unaddressed.",
+          "how_to_start": "Track whether symptoms also occur after eating high-amine foods (wine, aged cheese, leftovers, fermented foods) and high-glutamate foods (yeast extract, soy sauce, stock cubes, MSG) separately from high-salicylate meals. Raise this pattern with a dietitian for a comprehensive assessment.",
+          "timeline": "Becomes clearer during a structured reintroduction phase that tests each chemical class separately",
+          "requires_professional": true
+        },
+        {
+          "lever": "Addressing aspirin-exacerbated respiratory disease (AERD) specifically if the respiratory phenotype is present",
+          "why_it_matters": "AERD is a distinct and well-characterised subgroup where aspirin desensitisation can significantly improve outcomes \u2014 reducing polyp burden, sinusitis frequency, and asthma severity. Dietary management alone is less effective for this subgroup.",
+          "how_to_start": "Seek referral to an allergist or respiratory physician with AERD experience. Aspirin desensitisation is a specialist procedure and requires centre-based management.",
+          "timeline": "Desensitisation protocol itself takes 1\u20132 days; long-term benefits accumulate over months of daily aspirin maintenance",
+          "requires_professional": true
+        },
+        {
+          "lever": "Learning to manage threshold rather than seeking complete avoidance",
+          "why_it_matters": "Complete avoidance of all salicylates is neither achievable nor necessary for most people. Understanding personal threshold \u2014 and how factors such as illness, stress, or hormonal changes can temporarily lower it \u2014 allows affected individuals to live more flexibly and avoid the anxiety of hyper-vigilant restriction.",
+          "how_to_start": "After completing a structured reintroduction, keep a simplified ongoing diary to track threshold changes and contextual factors. Note patterns around illness, menstrual cycle, stress, or concurrent high-load days.",
+          "timeline": "Ongoing; most people reach a workable understanding of their threshold within 3\u20136 months of systematic self-observation",
           "requires_professional": false
-        },
-        {
-          "lever": "Rule out and manage coexisting conditions (coeliac disease, histamine intolerance, FODMAP sensitivity)",
-          "why_it_matters": "Undiagnosed or unmanaged coeliac disease or other food sensitivities can mask or worsen salicylate intolerance symptoms. Addressing all contributors dramatically improves outcomes.",
-          "how_to_start": "Discuss testing for coeliac disease (tissue transglutaminase serology), IgE allergy, and histamine intolerance with your GP or gastroenterologist. If indicated, pursue these investigations before or alongside salicylate management.",
-          "timeline": "Testing and diagnosis typically occur within 2\u20134 weeks; symptom improvement from managing coexisting conditions appears within 2\u20138 weeks.",
-          "requires_professional": true
-        },
-        {
-          "lever": "Gradual reintroduction and dietary expansion once tolerance is established",
-          "why_it_matters": "Over time, careful reintroduction of previously problematic foods (in controlled quantities) may expand your dietary repertoire, improve nutrition, and reduce the psychological burden of restriction. Some people's tolerance improves with sustained dietary management.",
-          "how_to_start": "After 4\u20136 weeks on a low-salicylate diet with symptom control, begin introducing previously avoided foods in very small amounts (e.g. one strawberry, a quarter tomato). Wait 48\u201372 hours between introductions and document tolerance.",
-          "timeline": "Meaningful expansion typically occurs over 3\u20136 months; some foods may never be tolerated, while others become manageable.",
-          "requires_professional": true
         }
       ],
       "common_mistakes": [
-        "Starting an overly restrictive diet without professional guidance and then being unable to maintain it due to nutritional or psychological burden \u2014 unsustainable diets fail and lead to frustration.",
-        "Assuming all high-salicylate foods are permanently forbidden \u2014 many people tolerate small amounts; premature elimination can reduce quality of life without improving health.",
-        "Neglecting stress, sleep, and general health while focusing only on diet \u2014 these factors significantly affect symptom threshold; ignoring them limits the effectiveness of dietary management alone.",
-        "Interpreting symptom improvement as 'cured' and then suddenly reintroducing many high-salicylate foods \u2014 symptoms often recur, leading to confusion about actual triggers and discouragement.",
-        "Self-diagnosing salicylate intolerance and missing other treatable conditions (coeliac disease, histamine intolerance, IBS) \u2014 misdiagnosis wastes time and resources.",
-        "Using supplements or medications as a primary strategy instead of addressing diet \u2014 these provide only temporary symptom relief and do not resolve the underlying issue.",
-        "Sharing identical dietary restrictions with family members based on one person's sensitivities \u2014 individual tolerance thresholds vary; unnecessarily restricting others' diets can breed resentment.",
-        "Waiting months for symptom improvement before adjusting the diet \u2014 if symptoms do not improve within 2\u20133 weeks of strict elimination, the diagnosis is likely incorrect; seek alternative explanations."
+        "Trying a 'low-salicylate diet' without also addressing topical and medication sources, leaving total load unchanged",
+        "Eliminating only the most obvious high-salicylate foods (berries, tomatoes) without reviewing herbs, spices, and flavourings that are often even higher",
+        "Abandoning the elimination diet after one to two weeks because it has not worked, rather than completing the minimum trial period required for the body to stabilise",
+        "Using salicylate food lists from the internet without understanding that these lists vary in quality and that individual responses differ \u2014 treating the list as a fixed rule set rather than a starting framework",
+        "Attempting reintroduction too quickly, testing multiple foods simultaneously, and being unable to identify which specific food or chemical caused a reaction",
+        "Concluding that salicylate intolerance is not the issue based on a negative allergy test \u2014 IgE tests are irrelevant to this condition",
+        "Continuing to use peppermint toothpaste, flavoured gums, aspirin-based topicals, or perfumes while trying to maintain a low-salicylate diet",
+        "Restricting diet to an extreme degree long-term without professional supervision, leading to nutritional deficiencies",
+        "Not accounting for cumulative load \u2014 assuming a food that was tolerated alone will be tolerated when combined with other moderate-salicylate foods on the same day"
       ]
     },
     "finding_help": {
       "specialists": [
         {
-          "type": "Registered Dietitian (RD or RDN)",
-          "role": "Essential first point of contact. Provides expert nutritional assessment, designs personalised low-salicylate diets, supervises elimination and reintroduction, and ensures long-term nutritional adequacy. Most effective practitioners for this condition.",
-          "notes": "Many insurance plans cover dietitian referrals if made by a physician. Look for dietitians with specific experience in food intolerances, gastrointestinal conditions, or integrative nutrition. In Australia and New Zealand, dietitians are more likely to have formal training in salicylate intolerance."
+          "type": "RPAH-trained or Failsafe-experienced Registered Dietitian",
+          "role": "The single most useful practitioner for most people with suspected dietary salicylate intolerance. Provides structured elimination and reintroduction protocols, interprets results, identifies co-existing chemical sensitivities, and supports long-term dietary management without unnecessary restriction.",
+          "notes": "Not all dietitians are familiar with the RPAH protocol or food chemical intolerance \u2014 it is worth asking specifically about their experience with salicylate and food chemical elimination diets before booking. In Australia, the RPAH Allergy Unit website lists trained practitioners."
         },
         {
-          "type": "Gastroenterologist",
-          "role": "Evaluates GI symptoms, rules out coeliac disease, IBD, IBS, and other digestive disorders that may mimic or coexist with salicylate intolerance. Coordinates investigation and referral to dietitian.",
-          "notes": "May be sceptical of salicylate intolerance if it is not yet widely recognised in your region. Best approached with documentation of symptom patterns and dietary trials. A gastroenterologist experienced in food sensitivities is preferable."
+          "type": "Allergist / Clinical Immunologist",
+          "role": "Essential for the AERD subgroup. Performs or supervises aspirin challenges and desensitisation protocols. Also useful for ruling out IgE-mediated allergy and assessing for mast cell activation syndrome as a co-existing condition.",
+          "notes": "Many allergists are expert in AERD but less familiar with dietary salicylate intolerance without respiratory involvement. It is worth asking about their experience with food chemical intolerance specifically."
         },
         {
-          "type": "Allergist or Immunologist",
-          "role": "Performs testing for IgE-mediated food allergy and helps distinguish true allergy from intolerance. Negative allergy testing supports salicylate intolerance diagnosis.",
-          "notes": "Most allergists focus on classic IgE allergy and may have limited experience with non-immune food sensitivities. Useful for ruling out allergy rather than confirming intolerance."
+          "type": "Functional Medicine or Integrative Medicine Doctor",
+          "role": "May be more willing to investigate food chemical intolerances holistically, including investigating gut health, microbiome factors, and detoxification pathways that may influence salicylate tolerance. Can also help coordinate care across multiple overlapping sensitivities.",
+          "notes": "Quality varies significantly; look for practitioners who combine evidence-based investigation with functional assessment rather than those who rely heavily on unvalidated tests."
         },
         {
-          "type": "Functional or Integrative Medicine Practitioner",
-          "role": "Often more familiar with salicylate intolerance and other food sensitivities. Provides holistic evaluation, coordinates dietary intervention, and may suggest gut-supportive supplements. May order non-standard tests (e.g. PST enzyme activity).",
-          "notes": "Quality and training vary widely; not all practitioners are formally regulated. Seek practitioners with credentials (MD, DO, ND) and specific experience in salicylate intolerance. Be cautious of excessive supplement recommendations or unproven testing."
+          "type": "ENT Surgeon (Otolaryngologist)",
+          "role": "Relevant for individuals with recurrent nasal polyps, chronic sinusitis, or suspected AERD. Performs nasal endoscopy, manages polyps surgically if needed, and may co-manage with an allergist for AERD-specific treatment.",
+          "notes": "Surgical management of polyps without addressing the underlying salicylate-leukotriene driver often leads to rapid polyp recurrence. An ENT who understands AERD will refer for aspirin desensitisation rather than relying solely on surgery."
         },
         {
-          "type": "Primary Care Physician (GP or General Practitioner)",
-          "role": "Initial evaluation of symptoms, ruling out serious underlying conditions, and referral to appropriate specialists. Coordinates investigation and provides medical oversight.",
-          "notes": "Many primary care physicians have limited awareness of salicylate intolerance. Bringing documented symptom and food patterns significantly helps. Request a referral to a dietitian or gastroenterologist if your GP is unfamiliar with the condition."
-        },
-        {
-          "type": "Paediatrician or Developmental Paediatrician",
-          "role": "For children with suspected salicylate intolerance, especially those with ADHD, autism, or developmental concerns. Evaluates behavioural and neurological symptoms and coordinates dietary trial.",
-          "notes": "Salicylate intolerance is more commonly recognised in paediatric settings in Australia and New Zealand. Some developmental paediatricians routinely screen for this condition."
+          "type": "Paediatric Dietitian with food chemical intolerance experience",
+          "role": "For children presenting with behavioural symptoms (hyperactivity, inattention, mood disturbance), a paediatric dietitian experienced with the RPAH or Failsafe protocol can guide the elimination trial and ensure nutritional adequacy during the process.",
+          "notes": "The evidence base for behavioural salicylate sensitivity is weaker than for physical symptoms; a cautious and structured approach is important to avoid unnecessary restriction in growing children."
         }
       ],
       "patient_communities": [
         {
-          "name": "Salicylate Intolerance Support Australia (SISA)",
-          "platform": "Website and Facebook group",
-          "url": "https://www.ssisa.asn.au/ (or search 'SISA Facebook')",
-          "notes": "The most active and established English-language community focused specifically on salicylate intolerance. Provides food lists, recipes, and peer support. Based in Australia but inclusive of international members."
+          "name": "Food Intolerance Network (Failsafe Community)",
+          "platform": "Website and Facebook",
+          "url": "https://www.fedup.com.au",
+          "notes": "Founded by Sue Dengate, author of Fed Up. Extensive resources on the RPAH/Failsafe approach to food chemical intolerances including salicylates, amines, and glutamates. Includes recipe databases, food lists, and a practitioner directory. One of the most comprehensive English-language resources available."
         },
         {
-          "name": "Failsafe Diet Facebook Group",
+          "name": "Salicylate Sensitivity Support Group",
           "platform": "Facebook",
-          "url": "https://www.facebook.com/groups/failsafediet/",
-          "notes": "Large, active community centred on the Failsafe (Free From Additives, Salicylates, Amines, Monosodium Glutamate, and Flavour Enhancers) diet. Includes salicylate intolerance as a subset. Provides recipes, peer support, and shared experiences."
+          "url": null,
+          "notes": "Active community of people managing salicylate intolerance, sharing food lists, product recommendations, and personal experiences. Useful for practical day-to-day management questions. Quality of medical information varies \u2014 use for peer support rather than medical guidance."
         },
         {
-          "name": "Food Intolerance Network (Australia)",
-          "platform": "Website and email newsletters",
-          "url": "https://www.foodintolerance.org.au/",
-          "notes": "Comprehensive Australian resource covering salicylate intolerance, other food sensitivities, and dietary management. Includes food lists, recipes, and evidence-based information."
+          "name": "AERD / Samter's Triad community",
+          "platform": "Reddit (r/AERD)",
+          "url": "https://www.reddit.com/r/AERD/",
+          "notes": "Focused specifically on aspirin-exacerbated respiratory disease. Useful for people navigating aspirin desensitisation, nasal polyp management, and the intersection of AERD with diet. Members often share detailed accounts of specialist care experiences."
         },
         {
-          "name": "IBS and Food Sensitivities subreddit",
-          "platform": "Reddit (r/IBS, r/FODMAP, related communities)",
-          "url": "https://www.reddit.com/r/IBS/",
-          "notes": "Broader communities that include salicylate intolerance discussions. Good for peer support and shared experiences, though moderation and evidence quality vary."
-        },
-        {
-          "name": "Low Histamine/Salicylate Facebook Groups",
+          "name": "Mastocytosis and MCAS Support (MCAS/Salicylate overlap)",
           "platform": "Facebook",
-          "url": "Search 'Low Histamine' or 'Low Salicylate' on Facebook",
-          "notes": "Multiple active groups combining histamine and salicylate intolerance support. Useful if you suspect overlapping sensitivities. Vary in size and moderator expertise."
+          "url": null,
+          "notes": "Several MCAS Facebook groups include members who manage overlapping salicylate and histamine intolerances. Useful for people dealing with the intersection of these conditions."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "Salicylates and Other Failing Foods in the Diagnosis and Management of Pervasive Developmental Disorder",
-        "type": "research paper",
-        "author_or_source": "Dalton, Dengate & Campbell-Hunt",
-        "url": null,
-        "description": "A foundational research paper examining salicylate intolerance in autism and ADHD. Provides evidence for dietary intervention and detailed information on salicylate mechanisms. Somewhat technical but highly credible.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "The Failsafe Handbook",
+        "title": "Fed Up: Understanding How Food Affects Your Child and What You Can Do About It",
         "type": "book",
-        "author_or_source": "Dengate, S.",
-        "url": null,
-        "description": "A comprehensive guide to the Failsafe diet (salicylates, amines, additives, glutamates) written by a leading researcher in food intolerance. Includes extensive food lists, recipes, and case studies. Practical and evidence-informed.",
+        "author_or_source": "Sue Dengate",
+        "url": "https://www.fedup.com.au",
+        "description": "The foundational lay text on food chemical intolerances including salicylates, amines, and glutamates. Based on the RPAH research and written accessibly for families and individuals. Covers the science, the elimination diet process, and practical implementation. Essential reading for anyone beginning to investigate salicylate intolerance.",
         "audience": "beginner"
       },
       {
-        "title": "Salicylate Intolerance and the Lowering of the Histamine Threshold",
-        "type": "article/blog post",
-        "author_or_source": "Various integrative and functional medicine websites",
+        "title": "The Elimination Diet Handbook (RPAH)",
+        "type": "book",
+        "author_or_source": "Anne Swain, Velencia Soutter, Robert Loblay (Royal Prince Alfred Hospital)",
         "url": null,
-        "description": "Explanations of the possible link between salicylate intolerance and histamine sensitivity. Helps readers understand overlap between these conditions and why dual dietary management may be necessary.",
+        "description": "The clinical handbook accompanying the RPAH elimination diet. More technical than Sue Dengate's books but provides the most systematically validated food lists and challenge protocols. Used by RPAH-trained dietitians. Available through the RPAH Allergy Unit.",
         "audience": "intermediate"
       },
       {
-        "title": "Food Intolerance Network website (Australia)",
+        "title": "Aspirin-Exacerbated Respiratory Disease (AERD) \u2014 AAAAI Patient Information",
         "type": "website",
-        "author_or_source": "Sue Dengate and team",
-        "url": "https://www.foodintolerance.org.au/",
-        "description": "Extensive, evidence-based information on salicylate intolerance, other food sensitivities, and dietary management. Includes food lists, recipes, support group links, and peer-reviewed research summaries. Excellent starting point.",
+        "author_or_source": "American Academy of Allergy, Asthma and Immunology (AAAAI)",
+        "url": "https://www.aaaai.org/tools-for-the-public/conditions-library/allergies/aspirin-exacerbated-respiratory-disease",
+        "description": "Clear, evidence-based overview of AERD for patients. Covers diagnosis, aspirin desensitisation, and management. A reliable starting point for anyone with the AERD phenotype who wants to understand their condition and treatment options.",
         "audience": "beginner"
       },
       {
-        "title": "Salicylate Content of Common Foods",
-        "type": "resource/database",
-        "author_or_source": "Various sources (Fedewa, Curtin University, Food Intolerance Network)",
-        "url": null,
-        "description": "Searchable databases and lists ranking foods by salicylate content (low, medium, high). Essential practical tool for dietary planning. Content varies between sources due to food variability.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Diagnosis and Management of Food Sensitivity in Autism",
-        "type": "research paper",
-        "author_or_source": "Various autism and neurodevelopmental researchers",
-        "url": null,
-        "description": "Reviews evidence for food sensitivities (including salicylates) in autism spectrum disorder and outlines diagnostic and management approaches. Credible but mixed-evidence field.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "The Sensitive Gut: Understanding and Healing IBS and Other Functional Digestive Conditions",
-        "type": "book",
-        "author_or_source": "Thompson, W.G.",
-        "url": null,
-        "description": "A comprehensive guide to functional gastrointestinal disorders including food sensitivities. Includes chapters on salicylate and other intolerances, with practical management strategies. Evidence-based and accessible.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Integrative Nutrition: Feed Your Hunger for Health and Happiness (Chapters on Food Sensitivities)",
-        "type": "book",
-        "author_or_source": "Katz, D.L. or similar nutrition texts",
-        "url": null,
-        "description": "General nutrition books addressing food sensitivities and individual dietary variation. Broader context for understanding salicylate intolerance within whole-diet and lifestyle approach.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Registered Dietitian Nutritionist Referral Directory",
+        "title": "Fedup.com.au \u2014 The Food Intolerance Network",
         "type": "website",
-        "author_or_source": "Academy of Nutrition and Dietetics (USA) or Dietitians Australia",
-        "url": "https://www.eatright.org/ or https://www.dietitiansaustralia.org.au/",
-        "description": "Searchable directories to find registered dietitians with specialisation in food sensitivities and gastrointestinal conditions. Essential for locating qualified professional support.",
+        "author_or_source": "Sue Dengate",
+        "url": "https://www.fedup.com.au",
+        "description": "Comprehensive free resource covering the Failsafe approach to food chemical intolerance. Includes food lists, shopping guides, recipes, a research summary, and a practitioner directory. One of the most practical and regularly updated resources available for salicylate and multi-chemical intolerance management.",
         "audience": "beginner"
       },
       {
-        "title": "Gut Health and Salicylate Intolerance: Mechanisms and Integrative Approaches",
-        "type": "article/blog",
-        "author_or_source": "Integrative medicine websites and practitioners",
+        "title": "Salicylate Sensitivity: A Review of the Literature",
+        "type": "research paper",
+        "author_or_source": "Loblay RH, Swain AR",
         "url": null,
-        "description": "Discusses possible mechanisms linking gut health, intestinal permeability, and salicylate intolerance. Helps explain why stress, sleep, and overall wellness affect symptom tolerance. Information ranges from evidence-based to speculative.",
+        "description": "A foundational academic review of the clinical evidence for salicylate intolerance, including proposed mechanisms, prevalence in different patient groups, and the rationale for elimination diet approaches. Useful for those who want to understand the scientific basis for the condition.",
+        "audience": "advanced"
+      },
+      {
+        "title": "AERD \u2014 Brigham and Women's Hospital AERD Centre",
+        "type": "website",
+        "author_or_source": "Brigham and Women's Hospital",
+        "url": "https://www.aerd.org",
+        "description": "Patient-facing resource from one of the leading clinical centres for AERD research and treatment in the United States. Covers the AERD low-salicylate diet, aspirin desensitisation, and ongoing research. Particularly useful for people navigating the AERD diagnosis.",
         "audience": "intermediate"
+      },
+      {
+        "title": "Leukotriene Pathway and Aspirin Sensitivity \u2014 mechanisms and treatment",
+        "type": "research paper",
+        "author_or_source": "Kowalski ML et al.",
+        "url": null,
+        "description": "A detailed review of the immunological and biochemical mechanisms underpinning aspirin-exacerbated respiratory disease, including leukotriene overproduction and COX pathway dysregulation. For those wanting a deeper mechanistic understanding of why the condition occurs.",
+        "audience": "advanced"
       }
     ],
     "relevance_signal": "Symptoms after **fresh herbs, berries, tomatoes, and spices** \u2014 but not after fermented foods specifically. Overlaps with histamine symptoms but triggered by fresh rather than aged foods."
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

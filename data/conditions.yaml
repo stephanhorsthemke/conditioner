@@ -19,6 +19,7 @@ conditions:
   - id: ibs
     label: IBS
     aliases: [Irritable bowel syndrome]
+    full_label: Irritable bowel syndrome (IBS)
     group: starting_points
     diagnosis_type: syndromic
     sub_conditions:
@@ -96,19 +97,22 @@ conditions:
     diagnosis_type: pathophysiological
 
   - id: sibo
-    label: SIBO
+    label: Small intestinal bacterial overgrowth (SIBO)
     group: microbial
-    aliases: [Small intestinal bacterial overgrowth]
+    aliases: [SIBO]
     diagnosis_type: pathophysiological
     subtypes:
       - id: sibo_h2
-        label: Hydrogen SIBO
+        label: Hydrogen SIBO (H2-SIBO)
+        aliases: [H2-SIBO]
         diagnosis_type: pathophysiological
       - id: sibo_ch4
-        label: Methane SIBO
+        label: Intestinal methanogen overgrowth (IMO)
+        aliases: [IMO, Methane SIBO]
         diagnosis_type: pathophysiological
       - id: sibo_h2s
-        label: Hydrogen sulphide SIBO
+        label: Hydrogen sulphide SIBO (H2S-SIBO)
+        aliases: [H2S-SIBO]
         diagnosis_type: pathophysiological
 
   - id: dysbiosis
@@ -125,6 +129,7 @@ conditions:
     label: H. pylori infection
     group: microbial
     aliases: [Helicobacter pylori]
+    full_label: Helicobacter pylori infection (H. pylori)
     diagnosis_type: aetiological
 
   - id: fungal
@@ -195,15 +200,17 @@ conditions:
     diagnosis_type: pathophysiological
 
   - id: eds
-    label: Hypermobile EDS / HSD
+    label: hEDS / HSD
     group: structural
-    aliases: [hEDS, hypermobility spectrum disorder]
+    aliases: [hEDS, EDS, HSD, hypermobility spectrum disorder]
+    full_label: Hypermobile Ehlers-Danlos syndrome / hypermobility spectrum disorder (hEDS / HSD)
     diagnosis_type: constitutional
 
   - id: pots
     label: POTS / dysautonomia
     group: structural
-    aliases: [postural tachycardia syndrome]
+    aliases: [POTS, postural orthostatic tachycardia syndrome]
+    full_label: Postural orthostatic tachycardia syndrome / dysautonomia (POTS)
     diagnosis_type: pathophysiological
 
   - id: endometriosis
@@ -256,6 +263,8 @@ conditions:
   - id: trauma
     label: Trauma / PTSD
     group: braingut
+    aliases: [PTSD, post-traumatic stress disorder]
+    full_label: Trauma / post-traumatic stress disorder (PTSD)
     diagnosis_type: aetiological
 
   - id: fibromyalgia
@@ -272,7 +281,8 @@ conditions:
   - id: adhd
     label: ADHD
     group: braingut
-    aliases: [attention-deficit/hyperactivity disorder]
+    aliases: [attention deficit hyperactivity disorder]
+    full_label: Attention deficit hyperactivity disorder (ADHD)
     diagnosis_type: constitutional
 
   - id: microscopic_colitis
@@ -293,7 +303,8 @@ conditions:
   - id: ibd_remission
     label: IBD in remission
     group: masqueraders
-    aliases: [Crohn's disease, ulcerative colitis]
+    aliases: [IBD, Crohn's disease, ulcerative colitis]
+    full_label: Inflammatory bowel disease in remission (IBD)
     diagnosis_type: masquerader
 
 

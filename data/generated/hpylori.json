@@ -2,500 +2,570 @@
   "condition_id": "hpylori",
   "condition_name": "H. pylori infection",
   "generated_at": "2026-04-16T09:46:01.755738Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "H. pylori is a bacterium that lives in the stomach and can cause inflammation, ulcers, and digestive discomfort. Most people with the infection have no symptoms, but some develop pain, bloating, nausea, or heartburn. It spreads through contaminated food and water, and treatment with antibiotics can cure it.",
-    "detailed_summary": "Helicobacter pylori (H. pylori) is a spiral-shaped bacterium that colonizes the stomach lining. It is one of the most common chronic infections worldwide, affecting roughly one-quarter of the global population. Most infected people remain asymptomatic for years or decades, but the bacteria can trigger chronic inflammation leading to peptic ulcers, gastritis, and rarely, stomach cancer or lymphoma. Transmission occurs primarily through contaminated water, food, or person-to-person contact (saliva, fecal-oral route). The infection is diagnosed through breath, stool, blood, or endoscopy-based testing and is typically cured with a course of antibiotics combined with acid-suppressing medication, though antibiotic resistance is increasingly common in some regions.",
+    "plain_summary": "H. pylori (Helicobacter pylori) is a bacterial infection of the stomach lining that affects roughly half the world's population. Many people carry it without obvious symptoms, but in others it causes persistent stomach pain, nausea, bloating, and ulcers. It is a leading cause of peptic ulcers and a recognised risk factor for certain stomach cancers. It is treatable with a specific combination of antibiotics and acid-suppressing medication, though treatment failure is increasingly common due to antibiotic resistance.",
+    "detailed_summary": "Helicobacter pylori is a gram-negative, spiral-shaped bacterium that colonises the gastric mucosa \u2014 the protective lining of the stomach. It survives the hostile acidic environment by producing urease, an enzyme that neutralises stomach acid in its immediate vicinity. Once established, it triggers chronic inflammation of the stomach lining (chronic gastritis), which over years can progress to peptic ulcers, gastric atrophy, intestinal metaplasia, and in a minority of cases, gastric adenocarcinoma or MALT lymphoma.\n\nTransmission occurs via the oral-oral and fecal-oral routes, most often in childhood and in settings with poor sanitation or household crowding. Infection rates vary dramatically by geography and socioeconomic background \u2014 very high in parts of Africa, Asia, and Latin America, and lower but still significant in Western countries.\n\nThe majority of infected individuals \u2014 estimated at 70\u201380% \u2014 remain asymptomatic throughout their lives. In those who do develop symptoms, the clinical picture is dominated by upper GI complaints: burning or gnawing epigastric pain, postprandial bloating, nausea, and early satiety. Ulcers, when they form, can cause more severe pain and in serious cases may bleed, causing iron-deficiency anaemia or, in emergencies, haematemesis.\n\nDiagnosis can be made non-invasively via urea breath test, stool antigen test, or serology, or invasively via endoscopic biopsy with rapid urease test or histology. The urea breath test and stool antigen test are the most accurate for active infection and for confirming eradication after treatment.\n\nFirst-line treatment typically involves a 10\u201314 day course of triple or quadruple therapy \u2014 combining one or two antibiotics (commonly clarithromycin, amoxicillin, metronidazole, or tetracycline) with a proton pump inhibitor (PPI) and sometimes bismuth. Eradication rates have declined in many regions due to rising clarithromycin and metronidazole resistance, making antibiotic susceptibility testing increasingly relevant before treatment in some settings.\n\nEven after successful eradication, some individuals continue to experience GI symptoms \u2014 a pattern sometimes called post-eradication functional dyspepsia \u2014 which may reflect lingering mucosal damage, altered gut microbiome, or pre-existing hypersensitivity.",
     "prevalence": {
-      "summary": "About one in four people worldwide carries H. pylori, but prevalence varies widely by region and socioeconomic status.",
-      "estimate": "25\u201330% of the global population; 10\u201315% in developed countries, up to 50%+ in developing regions",
-      "notes": "Prevalence is higher in older adults, people from lower-income countries, and those with poor sanitation access. Many infected individuals never develop symptoms. Rates have declined in wealthy nations due to improved water quality and food safety."
+      "summary": "One of the most common bacterial infections in humans \u2014 roughly half the global population is infected, though rates vary widely by region.",
+      "estimate": "~44% globally; up to 80\u201390% in some low-income countries; 30\u201340% in Western Europe and North America",
+      "notes": "Prevalence declines with improved sanitation across generations. Most people are infected in childhood. Rates in developed countries have been falling, but significant socioeconomic and ethnic disparities persist. Serology-based estimates may overestimate current active infection because antibodies persist after eradication."
     },
     "subgroups": [
       {
         "name": "Asymptomatic carriers",
-        "description": "People infected with H. pylori who experience no digestive symptoms and often remain unaware of their infection.",
+        "description": "The majority of infected individuals \u2014 estimated 70\u201380% \u2014 carry H. pylori without noticeable symptoms. Infection is often discovered incidentally.",
         "distinguishing_features": [
-          "No stomach pain, bloating, nausea, or heartburn",
-          "Bacteria and inflammation detectable only by testing",
-          "May still carry long-term risk of ulcers or gastric cancer if untreated"
+          "No upper GI pain or dyspepsia",
+          "May have low-grade chronic gastritis detectable only on biopsy",
+          "Still carry long-term risk of ulcer or cancer if infection persists"
         ]
       },
       {
-        "name": "H. pylori gastritis",
-        "description": "Active inflammation of the stomach lining caused by H. pylori, with mild to moderate symptoms but no ulcer formation.",
+        "name": "Peptic ulcer disease",
+        "description": "H. pylori is the underlying cause in approximately 70\u201390% of duodenal ulcers and 60\u201370% of gastric ulcers. Eradication substantially reduces ulcer recurrence.",
         "distinguishing_features": [
-          "Chronic mild to moderate upper abdominal pain or discomfort",
-          "Bloating and early satiety",
-          "Nausea and loss of appetite",
-          "Endoscopy shows inflamed stomach lining but no ulcer"
+          "Epigastric burning or gnawing pain, often related to meals",
+          "Pain relief with food (duodenal) or worsening with food (gastric)",
+          "Possible melena or haematemesis if ulcer bleeds",
+          "Confirmed by endoscopy and biopsy"
         ]
       },
       {
-        "name": "H. pylori peptic ulcer disease",
-        "description": "Open sores in the stomach or duodenum caused by H. pylori\u2013driven inflammation and acid damage.",
+        "name": "H. pylori-associated dyspepsia",
+        "description": "A subset of people have upper GI symptoms attributable to H. pylori without macroscopic ulceration \u2014 often called H. pylori-positive functional dyspepsia.",
         "distinguishing_features": [
-          "Sharp, burning upper abdominal pain (often relieved or worsened by food)",
-          "Risk of bleeding, perforation, or obstruction",
-          "Endoscopy shows visible ulcer crater",
-          "May present with vomiting, black stools, or acute pain"
+          "Epigastric discomfort, nausea, bloating, early fullness",
+          "No ulcer on endoscopy",
+          "Symptoms may partially or fully resolve after eradication in some individuals"
         ]
       },
       {
-        "name": "H. pylori and MALT lymphoma",
-        "description": "Rare complication where H. pylori infection triggers abnormal lymphoid tissue in the stomach (mucosa-associated lymphoid tissue lymphoma).",
+        "name": "Antibiotic-resistant strains",
+        "description": "A growing subgroup in whom standard triple therapy fails due to bacterial resistance \u2014 most commonly to clarithromycin or metronidazole.",
         "distinguishing_features": [
-          "Early-stage disease may have no symptoms",
-          "Detected on endoscopy with biopsy",
-          "Often regresses with H. pylori treatment alone",
-          "May require chemotherapy if advanced"
+          "Failed first-line eradication course confirmed by post-treatment test",
+          "Higher rates in regions with high antibiotic use",
+          "Requires culture-guided or alternative regimens (e.g. bismuth quadruple therapy, rifabutin-based regimens)"
+        ]
+      },
+      {
+        "name": "Post-eradication persistent symptoms",
+        "description": "Some individuals continue to have upper GI symptoms after confirmed eradication \u2014 sometimes described as post-H. pylori functional dyspepsia.",
+        "distinguishing_features": [
+          "Eradication confirmed by urea breath test or stool antigen (\u22654 weeks post-treatment)",
+          "Ongoing bloating, nausea, or epigastric discomfort",
+          "May overlap with functional dyspepsia, SIBO, or altered gastric motility",
+          "Requires investigation of alternative drivers rather than repeat antibiotic treatment"
+        ]
+      },
+      {
+        "name": "H. pylori and gastric cancer risk",
+        "description": "A minority of infected individuals \u2014 particularly those with certain strains (CagA-positive), atrophic gastritis, or a family history of gastric cancer \u2014 carry meaningfully elevated long-term cancer risk.",
+        "distinguishing_features": [
+          "CagA-positive strains associated with higher virulence",
+          "Atrophic gastritis or intestinal metaplasia found on biopsy",
+          "Higher risk in East Asian populations and those with first-degree relatives with gastric cancer",
+          "Surveillance endoscopy may be recommended in high-risk individuals"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Upper abdominal pain or discomfort",
+        "symptom": "Epigastric pain or burning",
         "category": "digestive",
-        "notes": "Often described as burning or gnawing; may be relieved temporarily by food or antacids, or worsened by eating. Typically occurs in the epigastric region (upper center of abdomen)."
-      },
-      {
-        "symptom": "Bloating and distension",
-        "category": "digestive",
-        "notes": "Sensation of fullness or abdominal swelling, often worse after meals. May be accompanied by visible abdominal enlargement."
+        "notes": "Felt in the upper-central abdomen, often described as gnawing or burning. May be worse before meals or at night in duodenal ulcer; may worsen with eating in gastric ulcer."
       },
       {
         "symptom": "Nausea",
         "category": "digestive",
-        "notes": "May occur with or without vomiting. Often worse in the morning or on an empty stomach."
+        "notes": "Particularly common in active infection and around meals."
       },
       {
-        "symptom": "Heartburn or acid reflux",
+        "symptom": "Bloating and early satiety",
         "category": "digestive",
-        "notes": "Burning sensation in the chest or throat, typically after meals or when lying down."
+        "notes": "Feeling full quickly or gassy after small amounts of food \u2014 may reflect gastritis-related impaired accommodation of the stomach."
+      },
+      {
+        "symptom": "Frequent belching",
+        "category": "digestive",
+        "notes": "Can occur as a result of functional gastric changes from chronic inflammation."
       },
       {
         "symptom": "Loss of appetite",
         "category": "digestive",
-        "notes": "Reduced desire to eat, sometimes accompanied by early satiety (feeling full quickly)."
+        "notes": "Often accompanies active infection or ulceration."
       },
       {
-        "symptom": "Vomiting",
-        "category": "digestive",
-        "notes": "Less common; may indicate more severe inflammation or ulcer disease."
+        "symptom": "Unintentional weight loss",
+        "category": "general",
+        "notes": "More concerning symptom that warrants prompt investigation, particularly to rule out malignancy."
       },
       {
-        "symptom": "Black or tarry stools (melena)",
+        "symptom": "Dark or tarry stools (melena)",
         "category": "digestive",
-        "notes": "Sign of upper gastrointestinal bleeding from ulcer; requires urgent medical attention."
+        "notes": "Suggests upper GI bleeding from an ulcer \u2014 requires urgent medical attention."
       },
       {
         "symptom": "Vomiting blood or coffee-ground material",
         "category": "digestive",
-        "notes": "Indicates active bleeding; medical emergency."
+        "notes": "Indicates significant upper GI bleeding \u2014 a medical emergency."
       },
       {
-        "symptom": "Iron deficiency anemia",
-        "category": "systemic",
-        "notes": "Chronic low-grade bleeding from gastritis or ulcers can deplete iron stores; may cause fatigue, shortness of breath, or pale skin."
+        "symptom": "Iron-deficiency anaemia",
+        "category": "haematological",
+        "notes": "May result from chronic occult bleeding from gastric or duodenal ulcers, or from impaired iron absorption due to hypochlorhydria. H. pylori is an underrecognised cause of unexplained iron-deficiency anaemia."
+      },
+      {
+        "symptom": "Halitosis (bad breath)",
+        "category": "oral",
+        "notes": "Some evidence links H. pylori colonisation to halitosis, possibly via urease activity and gastric reflux."
+      },
+      {
+        "symptom": "Heartburn or acid reflux",
+        "category": "digestive",
+        "notes": "The relationship with reflux is complex \u2014 H. pylori can both suppress and contribute to acid-related symptoms depending on which part of the stomach is affected."
+      },
+      {
+        "symptom": "Fatigue",
+        "category": "general",
+        "notes": "May be secondary to anaemia, poor nutrient absorption, or the systemic inflammatory burden of chronic infection."
+      },
+      {
+        "symptom": "Vitamin B12 deficiency symptoms",
+        "category": "nutritional",
+        "notes": "Chronic atrophic gastritis from H. pylori can impair intrinsic factor production and B12 absorption, leading to fatigue, numbness, and cognitive symptoms."
       }
     ],
     "testing": {
       "key_patterns": [
-        "Recurrent or chronic upper abdominal pain, especially if it wakes you at night or occurs 2\u20133 hours after eating",
-        "Combination of bloating, nausea, and early satiety after meals",
-        "Heartburn or reflux-like symptoms not fully explained by GERD alone",
-        "Unexplained iron deficiency anemia or dark/tarry stools",
-        "Family history of H. pylori, ulcers, or gastric cancer",
-        "Recent travel to or residence in high-prevalence regions"
+        "Persistent or recurrent epigastric pain, especially with any alarm features (weight loss, anaemia, dysphagia, vomiting blood)",
+        "Unexplained iron-deficiency anaemia, particularly when other causes have been excluded",
+        "Peptic ulcer confirmed on endoscopy \u2014 H. pylori testing should be routine in this context",
+        "Family history of gastric cancer or personal history of gastric atrophy",
+        "Failure of standard acid-suppression therapy for dyspepsia without prior H. pylori testing",
+        "Post-treatment symptom persistence \u2014 confirmation of eradication (not assumed) is essential before pursuing other diagnoses"
       ],
       "at_home": [
         {
           "name": "Symptom tracking",
-          "description": "Keep a diary of pain timing, severity, food triggers, and associated symptoms (bloating, nausea) for 1\u20132 weeks. Note whether pain occurs on an empty stomach, after eating, or at night.",
-          "safety_notes": "Tracking is informational only and cannot diagnose H. pylori. If symptoms include severe pain, vomiting blood, or black stools, seek immediate medical care."
+          "description": "Tracking the timing, nature, and triggers of upper abdominal symptoms (relation to meals, time of day, food types, stress) can provide useful clinical context before testing. A simple food-symptom diary kept for 1\u20132 weeks may help identify patterns.",
+          "safety_notes": "Symptom tracking alone cannot diagnose H. pylori. Alarm symptoms (bleeding, severe pain, significant weight loss) should prompt urgent medical evaluation rather than self-monitoring."
         }
       ],
       "clinical": [
         {
-          "name": "Urea breath test (UBT)",
+          "name": "Urea Breath Test (UBT)",
           "type": "gold_standard",
-          "description": "Patient drinks a solution containing urea labeled with radioactive or stable carbon isotope. H. pylori enzymes break down urea, releasing labeled CO\u2082 that is absorbed and exhaled. Breath samples are collected and analyzed for the isotope. Sensitivity and specificity >95%.",
-          "availability": "Ordered by primary care doctors or gastroenterologists; performed at hospitals or specialized labs. Usually requires stopping acid-suppressing drugs and antibiotics for 2 weeks prior."
+          "description": "The patient swallows a small amount of labelled urea. If H. pylori is present, its urease enzyme breaks down the urea and the labelled carbon is detected in exhaled breath. Highly accurate for active infection and for confirming eradication. Must be performed at least 4 weeks after completing antibiotics and at least 2 weeks off proton pump inhibitors.",
+          "availability": "Widely available in hospital gastroenterology departments and many primary care settings. Some private clinics also offer it. Requires advance preparation (stopping PPIs and antibiotics as above)."
         },
         {
-          "name": "Stool antigen test (SAT)",
-          "type": "standard",
-          "description": "Detects H. pylori antigens in fecal samples using immunoassay. Sensitivity 90\u201395%, specificity 95%+. Results available within days.",
-          "availability": "Easily ordered by any physician; samples collected at home. Requires stopping acid suppressors and antibiotics for 2 weeks prior to testing."
-        },
-        {
-          "name": "Serum antibody test (blood test)",
-          "type": "standard",
-          "description": "Measures IgG antibodies against H. pylori in blood. Indicates current or past infection but cannot distinguish active from resolved infection. Sensitivity 85\u201390%, specificity 80\u201390%.",
-          "availability": "Widely available through primary care, urgent care, or labs. No dietary or medication restrictions. Less useful for confirming cure after treatment."
-        },
-        {
-          "name": "Endoscopy with biopsy (EGD)",
+          "name": "Stool Antigen Test (SAT)",
           "type": "gold_standard",
-          "description": "Direct visualization of the stomach and duodenum with biopsy samples taken. Biopsies can be tested for H. pylori via culture, urease test, histology, or PCR. Allows assessment for ulcers, cancer, or lymphoma. Sensitivity and specificity >95% if biopsies are adequate.",
-          "availability": "Ordered by gastroenterologists; performed in endoscopy centers or hospitals. Requires sedation and fasting. Indicated if symptoms are severe, alarm features present, or prior testing inconclusive."
+          "description": "Detects H. pylori antigens in a stool sample. Accurate for both initial diagnosis and post-treatment confirmation. Less affected by PPI use than urea breath tests but still benefits from stopping PPIs 2 weeks before testing.",
+          "availability": "Available through most GPs and gastroenterology clinics. Some private labs offer direct-to-consumer stool antigen testing."
         },
         {
-          "name": "Rapid urease test (RUT) from endoscopic biopsy",
+          "name": "Serology (IgG antibody blood test)",
           "type": "standard",
-          "description": "Biopsy sample is added to urea substrate; color change within minutes indicates urease-producing H. pylori. Results available same-day during endoscopy.",
-          "availability": "Only during endoscopy; not a standalone test."
+          "description": "Detects antibodies to H. pylori in blood. Cannot distinguish active from past infection \u2014 antibodies persist for months to years after eradication. Useful in populations where prior testing has not occurred, but not reliable for confirming eradication.",
+          "availability": "Routinely available via GP blood tests. Often the first test ordered, though its limitations should be understood."
         },
         {
-          "name": "Histological examination of biopsy",
-          "type": "standard",
-          "description": "Stomach tissue biopsy stained and examined under microscope for H. pylori bacteria and degree of inflammation. Also assesses for cancer or lymphoma.",
-          "availability": "During endoscopy; results available after several days of pathology processing."
+          "name": "Endoscopy with biopsy (Rapid Urease Test and/or histology)",
+          "type": "gold_standard",
+          "description": "Upper GI endoscopy allows direct visualisation of the stomach and duodenum. Biopsy samples are tested via rapid urease test (detects urease activity in tissue) and/or sent for histological examination. Provides the most complete picture \u2014 can confirm infection, assess mucosal damage, identify atrophy or metaplasia, and rule out malignancy.",
+          "availability": "Requires referral to gastroenterology. Typically reserved for those with alarm features, persistent symptoms, or failed non-invasive testing. In some countries, recommended as first-line in individuals over 55 with new dyspepsia."
         },
         {
-          "name": "H. pylori culture and susceptibility testing",
+          "name": "Culture and antibiotic susceptibility testing",
           "type": "emerging",
-          "description": "Biopsy sample cultured to grow H. pylori and test antibiotic resistance. Slower and more difficult than other methods but guides tailored treatment.",
-          "availability": "Specialized labs; takes 1\u20132 weeks. Useful in areas with high antibiotic resistance or treatment failures."
+          "description": "Biopsy samples can be cultured to grow H. pylori and test which antibiotics will be effective. Increasingly recommended before second-line or rescue treatment given rising resistance rates. PCR-based resistance testing from biopsy or stool is also being developed.",
+          "availability": "Available in specialist centres; not routine in all hospitals. Increasingly recommended by European and UK gastroenterology guidelines for patients who have failed one eradication attempt."
         }
       ]
     },
     "related_conditions": [
       {
+        "id": "functional_dyspepsia",
+        "name": "Functional dyspepsia",
+        "relationship": "mechanistic_link",
+        "explanation": "H. pylori is found in a significant proportion of people with functional dyspepsia, and eradication resolves symptoms in a subset. After eradication, some people continue to have dyspeptic symptoms that then meet criteria for functional dyspepsia \u2014 a well-recognised post-infection pattern."
+      },
+      {
+        "id": "ibs",
+        "name": "Irritable bowel syndrome",
+        "relationship": "downstream",
+        "explanation": "Post-infectious IBS can follow acute or chronic H. pylori infection, likely due to mucosal damage, altered gut motility, and disruption of the gut microbiome. H. pylori eradication involving antibiotics may also transiently alter the lower GI microbiome."
+      },
+      {
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "downstream",
+        "explanation": "H. pylori infection and the hypochlorhydria it can cause may reduce the stomach's ability to act as a barrier against bacterial colonisation of the small intestine, potentially facilitating SIBO development. Antibiotic treatment for H. pylori may also disrupt the small bowel microbiome."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "downstream",
+        "explanation": "Chronic H. pylori infection alters the gastric and intestinal microbiome. Eradication treatment \u2014 typically involving two antibiotics \u2014 can cause significant short-term disruption to the gut microbiome, sometimes requiring probiotic support during or after therapy."
+      },
+      {
+        "id": null,
         "name": "Peptic ulcer disease",
         "relationship": "downstream",
-        "explanation": "H. pylori infection is the leading cause of peptic ulcers (stomach and duodenal ulcers). The bacteria trigger chronic inflammation and reduce protective factors, allowing stomach acid to create open sores."
+        "explanation": "H. pylori is the single most common cause of peptic ulcers (both gastric and duodenal). Chronic gastric inflammation disrupts the mucosal barrier, allowing acid to erode the underlying tissue."
       },
       {
-        "name": "Gastritis (chronic)",
+        "id": null,
+        "name": "Gastric cancer",
         "relationship": "downstream",
-        "explanation": "H. pylori causes chronic inflammation of the stomach lining (gastritis), which can lead to atrophy, intestinal metaplasia, and increased cancer risk if untreated."
+        "explanation": "H. pylori is classified as a Group 1 carcinogen by the WHO. Chronic infection can progress through a sequence of atrophic gastritis, intestinal metaplasia, dysplasia, and eventually gastric adenocarcinoma in a minority of individuals \u2014 particularly with virulent CagA-positive strains."
       },
       {
-        "name": "Gastric cancer (adenocarcinoma)",
+        "id": null,
+        "name": "MALT lymphoma",
         "relationship": "downstream",
-        "explanation": "Persistent H. pylori infection is a major risk factor for intestinal-type gastric cancer, particularly in genetically susceptible individuals or those with atrophic gastritis."
+        "explanation": "Low-grade gastric MALT (mucosa-associated lymphoid tissue) lymphoma is strongly associated with H. pylori infection. H. pylori eradication alone causes remission in a significant proportion of early-stage cases."
       },
       {
-        "name": "MALT lymphoma (gastric)",
+        "id": null,
+        "name": "Iron-deficiency anaemia",
         "relationship": "downstream",
-        "explanation": "H. pylori can trigger abnormal lymphoid tissue growth in the stomach (mucosa-associated lymphoid tissue lymphoma), which often regresses with H. pylori eradication."
+        "explanation": "H. pylori can cause iron deficiency through occult gastric bleeding, impaired iron absorption due to hypochlorhydria, and possibly direct competition for dietary iron. Unexplained iron-deficiency anaemia that doesn't respond to supplementation should prompt H. pylori testing."
       },
       {
-        "name": "Gastroesophageal reflux disease (GERD)",
-        "relationship": "often_confused",
-        "explanation": "H. pylori gastritis can present with heartburn and reflux symptoms similar to GERD; both conditions can coexist. H. pylori testing may be necessary to distinguish or diagnose dual pathology."
-      },
-      {
-        "name": "Functional dyspepsia",
-        "relationship": "often_confused",
-        "explanation": "Some patients with H. pylori have symptoms indistinguishable from functional dyspepsia (chronic indigestion without ulcer); however, eradication may improve or resolve symptoms."
-      },
-      {
-        "name": "Iron deficiency anemia",
-        "relationship": "downstream",
-        "explanation": "Chronic low-grade bleeding from H. pylori\u2013induced gastritis or ulcers can deplete iron stores and cause anemia; anemia may improve after H. pylori treatment."
-      },
-      {
+        "id": null,
         "name": "Vitamin B12 deficiency",
         "relationship": "downstream",
-        "explanation": "H. pylori can damage intrinsic factor\u2013producing cells and reduce acid production, impairing B12 absorption and leading to deficiency."
+        "explanation": "Chronic atrophic gastritis caused by H. pylori can impair intrinsic factor secretion and reduce gastric acid-dependent B12 release, leading to B12 deficiency and its neurological and haematological consequences."
       },
       {
-        "name": "Immune thrombocytopenia (ITP)",
+        "id": null,
+        "name": "Chronic atrophic gastritis",
+        "relationship": "downstream",
+        "explanation": "Long-standing H. pylori infection can lead to progressive loss of gastric glandular cells (atrophy), reducing acid and intrinsic factor secretion. Atrophic gastritis is a precancerous lesion and an independent risk factor for gastric cancer."
+      },
+      {
+        "id": null,
+        "name": "Gastro-oesophageal reflux disease (GORD/GERD)",
         "relationship": "mechanistic_link",
-        "explanation": "H. pylori infection is associated with low platelet counts in some patients; eradication can improve platelet counts, suggesting an immune-mediated mechanism."
+        "explanation": "The relationship between H. pylori and reflux is complex. H. pylori involving the antrum tends to increase acid secretion, potentially worsening reflux. Conversely, H. pylori involving the corpus may reduce acid output. Some studies suggest eradication modestly worsens GERD in some patients, particularly those with corpus-dominant infection."
+      },
+      {
+        "id": null,
+        "name": "Idiopathic thrombocytopaenic purpura (ITP)",
+        "relationship": "mechanistic_link",
+        "explanation": "H. pylori eradication has been shown to improve platelet counts in a subset of patients with ITP, suggesting an immune cross-reactivity mechanism. H. pylori testing is now recommended in ITP guidelines in many countries."
+      },
+      {
+        "id": null,
+        "name": "Rosacea",
+        "relationship": "mechanistic_link",
+        "explanation": "Several studies have identified higher H. pylori prevalence in rosacea patients, and some report improvement in skin symptoms after eradication \u2014 though evidence is not consistent and the relationship remains under investigation."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome",
+        "relationship": "mechanistic_link",
+        "explanation": "H. pylori infection activates mucosal mast cells and promotes local histamine release. In susceptible individuals, this may contribute to or exacerbate mast cell-related symptoms. Some patients with MCAS report improvement in their broader symptom picture following H. pylori eradication."
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "mechanistic_link",
+        "explanation": "H. pylori infection may impair diamine oxidase (DAO) activity in the gastric and intestinal mucosa, reducing histamine breakdown capacity. This could contribute to histamine intolerance symptoms in infected individuals."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
-          "name": "Definitive antibiotic treatment",
+          "name": "H. pylori eradication therapy",
           "category": "medication",
-          "description": "Eradication therapy is the standard cure and typically consists of triple or quadruple therapy: proton pump inhibitor (PPI) plus 2\u20133 antibiotics (commonly clarithromycin, amoxicillin, metronidazole, or bismuth compounds) for 10\u201314 days. Success rates are 80\u201390% depending on local antibiotic resistance patterns.",
+          "description": "The primary treatment for active H. pylori infection is a course of combination therapy \u2014 typically 10\u201314 days of a proton pump inhibitor combined with two antibiotics (commonly clarithromycin + amoxicillin, or metronidazole + amoxicillin). In regions with high clarithromycin resistance, bismuth quadruple therapy (bismuth + PPI + tetracycline + metronidazole) may be used as first-line. Eradication must be confirmed by urea breath test or stool antigen test at least 4 weeks after completing antibiotics.",
           "evidence_level": "strong",
-          "notes": "This is the only definitive treatment. Discuss resistance patterns and allergy history with your doctor. Side effects may include nausea, metallic taste, and diarrhea. Probiotics during and after treatment may help restore gut flora."
+          "notes": "Antibiotic resistance is rising globally. If first-line treatment fails, culture-guided second-line therapy is increasingly recommended rather than empirical retreatment. Full adherence to the course is essential \u2014 partial completion markedly increases resistance risk."
         },
         {
-          "name": "Proton pump inhibitors (PPIs)",
+          "name": "Proton pump inhibitors (PPIs) for symptom relief",
           "category": "medication",
-          "description": "Medications (e.g., omeprazole, lansoprazole) that reduce stomach acid production. They relieve pain and promote ulcer healing while taking antibiotic courses, and are a key component of eradication therapy.",
+          "description": "PPIs (e.g. omeprazole, lansoprazole) reduce gastric acid secretion and can provide significant symptom relief for epigastric pain and heartburn while eradication treatment is under way or when ulcer healing is needed. They are a component of eradication regimens.",
           "evidence_level": "strong",
-          "notes": "Long-term PPI use (>1 year) may reduce B12 and magnesium absorption and increase fracture risk. Use the lowest dose for the shortest duration. Rebound hyperacidity can occur after stopping."
+          "notes": "PPIs are often continued for 4\u20138 weeks after antibiotic completion to support ulcer healing. Long-term PPI use carries potential risks (B12 and magnesium depletion, altered gut microbiome, bone density effects) and should not be continued indefinitely without indication."
         },
         {
-          "name": "Bismuth-based compounds",
+          "name": "Bismuth subsalicylate",
           "category": "medication",
-          "description": "Bismuth subsalicylate or bismuth citrate coats the stomach lining and has antimicrobial properties. Often used in quadruple therapy regimens, especially in areas with high clarithromycin resistance.",
+          "description": "Bismuth has direct antibacterial activity against H. pylori and forms a protective coating on ulcerated mucosa. It is a key component of bismuth quadruple therapy and may also provide symptomatic relief for nausea and gastric discomfort.",
           "evidence_level": "strong",
-          "notes": "Can cause dark stool or black tongue (harmless). Avoid if aspirin allergy or salicylate sensitivity. Do not use long-term."
+          "notes": "Should be used as part of a prescribed protocol, not as a standalone treatment for H. pylori."
         },
         {
-          "name": "Small, frequent meals",
-          "category": "diet",
-          "description": "Eating 4\u20136 smaller meals rather than 2\u20133 large meals reduces stomach acid stimulation and minimizes distension. This may reduce pain and bloating while waiting for treatment or managing residual symptoms.",
-          "evidence_level": "moderate",
-          "notes": "Individual tolerance varies. Some find eating with pain-relieving medication helps; others find timing meals around treatment better."
-        },
-        {
-          "name": "Avoid irritating foods and drinks",
-          "category": "diet",
-          "description": "Temporarily limit spicy foods, citrus, tomato-based products, caffeine, alcohol, and very hot beverages, which can stimulate acid and irritate an inflamed stomach.",
-          "evidence_level": "moderate",
-          "notes": "Tolerance is individual. Some patients have no issue with these; others find significant relief. Track your personal triggers."
-        },
-        {
-          "name": "Eat bland, easy-to-digest foods",
-          "category": "diet",
-          "description": "Focus on cooked vegetables, lean proteins, whole grains, and mild foods. Avoid fried, greasy, or high-fat meals, which delay stomach emptying and increase discomfort.",
-          "evidence_level": "moderate",
-          "notes": "Nutritional adequacy is important; avoid unnecessary restriction. Reintroduce foods gradually as symptoms improve."
-        },
-        {
-          "name": "Stress reduction and relaxation",
-          "category": "lifestyle",
-          "description": "Chronic stress exacerbates acid production and gastric motility. Techniques such as meditation, deep breathing, yoga, or counseling may reduce symptom severity and improve healing.",
-          "evidence_level": "moderate",
-          "notes": "Stress reduction alone does not cure H. pylori but may improve symptom tolerance and treatment outcomes."
-        },
-        {
-          "name": "Adequate sleep and rest",
-          "category": "lifestyle",
-          "description": "Poor sleep impairs immune function and increases inflammation. Aim for 7\u20139 hours nightly and elevate the head of your bed 30 degrees to reduce nighttime reflux.",
-          "evidence_level": "moderate",
-          "notes": "Sleep quality matters as much as quantity. Avoid heavy meals or alcohol close to bedtime."
-        },
-        {
-          "name": "Ginger",
+          "name": "Probiotics as adjunct to eradication",
           "category": "supplement",
-          "description": "Ginger has anti-inflammatory and prokinetic properties. Fresh ginger tea or ginger supplements (400\u20131200 mg daily) may ease nausea and stomach discomfort.",
+          "description": "Several probiotic strains \u2014 particularly Lactobacillus reuteri, Saccharomyces boulardii, and multi-strain formulations \u2014 have been studied as adjuncts to eradication therapy. They may modestly improve eradication rates, reduce antibiotic-associated side effects (especially diarrhoea and nausea), and support gut microbiome recovery.",
+          "evidence_level": "moderate",
+          "notes": "Timing matters \u2014 probiotics are generally taken during and immediately after the antibiotic course, not before. Should be taken at a different time of day from antibiotics where possible. Cannot replace antibiotics for eradication."
+        },
+        {
+          "name": "Mastic gum",
+          "category": "supplement",
+          "description": "A resin from the Pistacia lentiscus tree, mastic gum has demonstrated antibacterial activity against H. pylori in laboratory studies and some small clinical trials. Some individuals use it alongside conventional treatment or in cases where antibiotics are not immediately accessible.",
           "evidence_level": "anecdotal",
-          "notes": "Some evidence in non-H. pylori nausea and dyspepsia; limited data specific to H. pylori. Safe for most; avoid if on anticoagulants."
+          "notes": "Clinical trial evidence in humans is limited and mixed. It is not a replacement for antibiotic-based eradication, but may be of interest to those researching adjunct or complementary approaches."
         },
         {
-          "name": "Honey",
+          "name": "Broccoli sprout / sulforaphane",
           "category": "supplement",
-          "description": "Raw or Manuka honey has antimicrobial and anti-inflammatory properties and may soothe the stomach lining. 1\u20132 teaspoons daily or in warm drinks.",
-          "evidence_level": "anecdotal",
-          "notes": "Observational reports suggest benefit; limited rigorous studies in H. pylori. Do not give to infants. Some consider it supportive during eradication therapy."
-        },
-        {
-          "name": "Probiotics",
-          "category": "supplement",
-          "description": "Beneficial bacteria (e.g., Lactobacillus, Bifidobacterium) may reduce antibiotic side effects and support gut flora recovery after H. pylori treatment. Take during and for weeks after antibiotic courses.",
+          "description": "Sulforaphane, found in high concentrations in broccoli sprouts, has demonstrated anti-H. pylori activity in several small human trials, including reduction of urease activity and antigen positivity. Some integrative practitioners use it as an adjunct or in post-eradication support.",
           "evidence_level": "moderate",
-          "notes": "Mixed evidence; may reduce diarrhea and bloating during treatment. Quality and strain matter. Consult doctor if immunocompromised."
+          "notes": "Evidence is promising but preliminary. Trials have generally been small. Not a substitute for antibiotic eradication in active symptomatic infection or ulcer disease."
         },
         {
-          "name": "Avoid antibiotics unless prescribed for H. pylori",
-          "category": "medication",
-          "description": "Unnecessary antibiotic use creates resistance, making H. pylori harder to treat. Use antibiotics only when indicated.",
+          "name": "Dietary modification for symptom comfort",
+          "category": "diet",
+          "description": "While no specific diet cures H. pylori infection, certain adjustments can reduce symptom burden during and after treatment: eating smaller, more frequent meals; avoiding spicy, fatty, or acidic foods; reducing caffeine and alcohol; not eating close to bedtime. These changes reduce acid burden on an inflamed or ulcerated mucosa.",
+          "evidence_level": "moderate",
+          "notes": "Dietary change addresses symptoms, not the infection itself. Food restrictions should be relaxed once eradication is confirmed and mucosal healing has occurred, unless another underlying condition persists."
+        },
+        {
+          "name": "Iron and B12 supplementation",
+          "category": "supplement",
+          "description": "For those with confirmed iron-deficiency anaemia or B12 deficiency secondary to H. pylori, supplementation is appropriate alongside eradication therapy. In some cases, restoring normal gastric acid and intrinsic factor production after eradication is sufficient to allow natural recovery of absorption.",
           "evidence_level": "strong",
-          "notes": "Resistance rates vary by region and are rising. Inform your doctor of any prior antibiotic treatments, especially clarithromycin or fluoroquinolones."
+          "notes": "Levels should be rechecked after eradication and recovery to assess whether ongoing supplementation is needed."
         }
       ],
       "things_to_avoid": [
-        "Smoking: Impairs ulcer healing, increases acid secretion, and reduces PPI effectiveness. Quit before or during treatment.",
-        "Alcohol: Irritates the stomach lining, stimulates acid, and reduces antibiotic efficacy. Avoid entirely during treatment; moderate intake otherwise.",
-        "NSAIDs (ibuprofen, naproxen, aspirin): These further damage the gastric mucosa and increase ulcer risk. Use acetaminophen for pain if needed.",
-        "Excessive caffeine: Stimulates acid production. Reduce coffee, strong tea, and cola.",
-        "High-fat and fried foods: Delay stomach emptying and increase discomfort.",
-        "Spicy foods and hot beverages: Can irritate inflamed tissue; avoid until symptoms resolve.",
-        "Skipping doses of prescribed antibiotics: Even one missed dose increases resistance risk and reduces treatment success. Set reminders or use a pill organizer.",
-        "Taking antacids or H2 blockers without medical guidance during eradication: Some formulations interfere with antibiotic absorption. Coordinate with your doctor.",
-        "Stress overload: Exacerbates symptoms and impairs healing. Prioritize rest and relaxation."
+        "NSAIDs (ibuprofen, aspirin, naproxen) \u2014 greatly increase the risk of ulcer formation and ulcer bleeding in H. pylori-infected individuals; avoid entirely during active infection and ulcer healing",
+        "Alcohol during active infection and eradication treatment \u2014 irritates the gastric mucosa, may interact with metronidazole causing severe nausea",
+        "Smoking \u2014 impairs mucosal healing, increases ulcer recurrence risk, and may reduce eradication rates",
+        "Stopping the antibiotic course early \u2014 incomplete courses dramatically increase the risk of treatment failure and antibiotic resistance",
+        "Assuming eradication without testing \u2014 symptoms improving does not confirm H. pylori has been eliminated; confirmation requires a breath or stool test at least 4 weeks post-treatment",
+        "Long-term PPI use without review \u2014 often continued beyond what is clinically necessary; carries its own risks including micronutrient depletion and microbiome disruption",
+        "Caffeine and acidic drinks during active gastritis or ulcer \u2014 can worsen mucosal irritation and pain"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "Testing 'positive' on a blood antibody test does not mean someone currently has H. pylori \u2014 antibodies persist for months to years after the infection has cleared. A significant number of people are treated unnecessarily or re-treated when the original infection was already gone.",
+        "why_resisted": "Doctors often order serology because it is easy and cheap. Patients receive a positive result and assume it means active infection. Questioning the result feels like questioning the doctor.",
+        "path_forward": "Insisting on a urea breath test or stool antigen test \u2014 both of which detect active infection \u2014 before starting antibiotic treatment avoids unnecessary treatment and its side effects. If only serology was done, it is reasonable to ask for confirmation with an active infection test."
+      },
+      {
+        "truth": "H. pylori eradication does not always resolve all GI symptoms. A meaningful proportion of people continue to experience bloating, nausea, or epigastric discomfort after confirmed eradication \u2014 because H. pylori was not the only driver, or because the microbiome and mucosa need time to recover.",
+        "why_resisted": "After enduring a difficult antibiotic course and waiting weeks for confirmation, patients expect to feel completely better. Ongoing symptoms feel like treatment failure or a sign the bacteria is still present, leading to demands for re-testing and re-treatment.",
+        "path_forward": "Once eradication is confirmed, persistent symptoms should be investigated for other causes \u2014 post-infectious functional dyspepsia, SIBO, altered gastric motility, or microbiome dysbiosis. Repeat antibiotic courses targeting H. pylori when eradication has already been confirmed is not appropriate and harms the microbiome."
+      },
+      {
+        "truth": "First-line eradication therapy fails in 20\u201340% of cases in many Western countries due to antibiotic resistance, and most clinicians do not test for resistance before prescribing. Without susceptibility testing, second courses may use antibiotics that will not work.",
+        "why_resisted": "Resistance testing requires endoscopy and culture, which feels disproportionate for what seems like a simple infection. Patients and many clinicians assume the standard course will work.",
+        "path_forward": "If a first eradication attempt fails, requesting antibiotic susceptibility testing (via endoscopic biopsy and culture, or PCR-based methods) before undertaking a second regimen leads to meaningfully better outcomes than empirical retreatment."
+      },
+      {
+        "truth": "H. pylori infection acquired in childhood, left untreated for decades, can cause irreversible changes to the stomach lining (atrophy, metaplasia) that persist even after eradication and continue to carry cancer risk.",
+        "why_resisted": "Eradication feels like a complete cure. People reasonably assume that clearing the infection removes the cancer risk entirely and that no further monitoring is needed.",
+        "path_forward": "People diagnosed with atrophic gastritis or intestinal metaplasia on biopsy should discuss endoscopic surveillance intervals with a gastroenterologist even after successful eradication \u2014 guidelines recommend periodic monitoring in this group."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Complete eradication therapy as prescribed",
-          "why_it_matters": "This is the only intervention that permanently cures H. pylori infection and eliminates long-term risks of ulcers, gastric cancer, and other complications. Incomplete or missed doses increase antibiotic resistance and treatment failure.",
-          "how_to_start": "Obtain testing via urea breath test, stool antigen test, or endoscopy. Once confirmed, start the prescribed regimen on the exact schedule. Use a pill organizer or phone reminders to ensure adherence.",
-          "timeline": "10\u201314 days of treatment; symptoms often improve within days, but full healing takes 4\u20136 weeks. Confirmation testing is typically done 4 weeks after finishing antibiotics.",
+          "lever": "Confirm active infection before treating, and confirm eradication after treating",
+          "why_it_matters": "Treating without confirmation leads to unnecessary antibiotic exposure and microbiome damage. Assuming eradication without testing means ongoing infection may go undetected while symptoms are attributed elsewhere.",
+          "how_to_start": "If not already done, request a urea breath test or stool antigen test rather than relying on serology. After completing treatment, book a follow-up breath or stool test 4\u20136 weeks later.",
+          "timeline": "Testing takes days; results guide all subsequent decisions.",
           "requires_professional": true
         },
         {
-          "lever": "Eliminate irritating foods and beverages",
-          "why_it_matters": "Acid-stimulating and mucosa-irritating foods prolong inflammation and pain. Reducing them speeds healing and improves comfort during and after treatment.",
-          "how_to_start": "For the next 4\u20136 weeks, eliminate or strictly reduce spicy foods, citrus, tomatoes, caffeine, alcohol, and high-fat items. Keep a food diary to identify personal triggers.",
-          "timeline": "Most people notice improvement in pain and bloating within 1\u20132 weeks. Gradual reintroduction over weeks 6\u201312 helps identify tolerated foods.",
+          "lever": "Complete the full prescribed eradication course without gaps",
+          "why_it_matters": "H. pylori eradication regimens are specifically designed as timed courses. Incomplete adherence \u2014 even missing a few doses \u2014 allows surviving bacteria to develop antibiotic resistance, making future treatment harder.",
+          "how_to_start": "Use a pill organiser and set phone reminders for each dose. If side effects are severe, contact the prescribing clinician to discuss antiemetics or dose timing adjustments rather than stopping the course.",
+          "timeline": "10\u201314 days for most regimens.",
           "requires_professional": false
         },
         {
-          "lever": "Take all prescribed acid-suppressing medication",
-          "why_it_matters": "PPIs and H2 blockers reduce stomach acid, which directly relieves pain, promotes ulcer healing, and optimizes antibiotic absorption during eradication therapy.",
-          "how_to_start": "Take your prescribed PPI or H2 blocker at the exact time recommended (usually before breakfast). Do not skip doses or stop early even if symptoms resolve.",
-          "timeline": "Pain relief often occurs within 2\u20133 days; ulcer healing takes 4\u20136 weeks with medication. Taper PPIs gradually after eradication to avoid rebound hyperacidity.",
+          "lever": "Request culture-guided therapy after first-line failure",
+          "why_it_matters": "Empirically prescribing a second antibiotic regimen without knowing the resistance profile is likely to fail again, increasing cumulative antibiotic exposure and microbiome damage.",
+          "how_to_start": "If a urea breath test confirms ongoing infection after a full treatment course, ask the treating clinician specifically about endoscopic biopsy for culture and sensitivity testing before starting another regimen.",
+          "timeline": "Biopsy results typically available within 2\u20134 weeks; treatment can follow.",
           "requires_professional": true
         },
         {
-          "lever": "Manage stress through relaxation and sleep",
-          "why_it_matters": "Chronic stress increases acid production and impairs immune function, slowing healing. Adequate sleep and stress reduction accelerate symptom resolution and support eradication.",
-          "how_to_start": "Establish a consistent sleep schedule (7\u20139 hours), practice 10\u201315 minutes of deep breathing or meditation daily, and limit stressful activities during treatment. Consider counseling or therapy if stress is severe.",
-          "timeline": "Sleep benefits are felt within days; stress-related symptom reduction occurs over weeks.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Avoid NSAIDs and smoking",
-          "why_it_matters": "NSAIDs and smoking directly damage the gastric mucosa and impair healing, undoing the benefits of antibiotic and acid-suppressing therapy. Avoiding these is essential for successful treatment.",
-          "how_to_start": "If you take NSAIDs regularly, discuss alternatives with your doctor (acetaminophen, physical therapy). If you smoke, set a quit date before or during treatment. Use cessation aids (patches, medication, counseling).",
-          "timeline": "Stopping smoking and NSAIDs allows mucosal healing to begin immediately, with visible improvement in 2\u20134 weeks.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Confirm eradication with repeat testing",
-          "why_it_matters": "Testing 4+ weeks after completing treatment confirms the infection is cured and guides further care. Treatment failure occurs in 10\u201320% of cases (depending on resistance); confirmed success prevents long-term complications.",
-          "how_to_start": "Schedule a urea breath test or stool antigen test 4 weeks after finishing all antibiotics. Avoid PPIs for 2 weeks before testing if possible (coordinate with your doctor).",
-          "timeline": "Results available within 1\u20132 weeks.",
+          "lever": "Investigate and treat nutritional deficiencies",
+          "why_it_matters": "Iron, B12, and sometimes vitamin D deficiencies can develop insidiously over years of infection-related gastric damage. These deficiencies can cause fatigue, cognitive symptoms, and neurological effects that persist even after H. pylori is cleared unless specifically addressed.",
+          "how_to_start": "Request a blood panel including ferritin, serum iron, full blood count, B12, and folate. Discuss results with a GP or functional medicine practitioner, and recheck 3\u20136 months after eradication.",
+          "timeline": "Iron stores take several months to replenish; B12 may take longer to show neurological improvement.",
           "requires_professional": true
+        },
+        {
+          "lever": "Support microbiome recovery after antibiotic treatment",
+          "why_it_matters": "The two-antibiotic eradication regimens cause significant disruption to gut microbiome diversity, which can contribute to ongoing GI symptoms. Active support during and after treatment may reduce collateral damage.",
+          "how_to_start": "Take a clinically studied probiotic (e.g. Saccharomyces boulardii, Lactobacillus reuteri) during and for 4\u20138 weeks after the antibiotic course. Prioritise dietary fibre and fermented foods in the recovery period.",
+          "timeline": "Microbiome diversity typically begins recovering within weeks; full recovery may take months.",
+          "requires_professional": false
         }
       ],
       "common_mistakes": [
-        "Stopping antibiotics early because symptoms improve: Incomplete courses lead to treatment failure and antibiotic resistance. Always complete the full prescribed duration (10\u201314 days) regardless of symptom status.",
-        "Taking PPIs inconsistently or stopping too soon: Irregular PPI use reduces acid suppression and slows healing. Take your medication on schedule; do not skip doses.",
-        "Returning to a normal diet too quickly: Reintroducing irritating foods before the ulcer heals (4\u20136 weeks) restarts inflammation and prolongs symptoms. Gradually reintroduce trigger foods after healing is confirmed.",
-        "Using NSAIDs or taking aspirin during treatment: These counteract the benefits of antibiotics and acid reduction. Avoid entirely; use acetaminophen for pain if needed.",
-        "Continuing to smoke or drink alcohol: Both impair mucosal healing and reduce treatment efficacy. Smoking and drinking during eradication therapy significantly lower success rates.",
-        "Skipping repeat testing to confirm cure: Without confirmation, you may not realize the infection persists, missing the window for retreatment and risking long-term complications.",
-        "Not addressing family transmission: H. pylori spreads person-to-person; close contacts (especially children) may also be infected. Encourage testing and treatment of household members.",
-        "Assuming symptom relief equals cure: Symptoms often improve within days, but healing and eradication take weeks. Do not assume success without confirmatory testing.",
-        "Ignoring antibiotic allergies or prior resistance: Failing to disclose penicillin allergy, prior clarithromycin use, or fluoroquinolone exposure can lead to ineffective or unsafe regimens. Always inform your doctor of allergies and treatment history."
+        "Relying on serology alone for diagnosis or to confirm eradication \u2014 antibody tests cannot detect active vs. past infection",
+        "Stopping antibiotics early due to side effects without consulting a clinician, causing treatment failure and promoting resistance",
+        "Assuming symptoms have resolved because the antibiotic course is finished \u2014 confirmation test is always required",
+        "Repeating identical eradication regimens after first-line failure without resistance testing \u2014 likely to fail again for the same reason",
+        "Continuing long-term PPIs indefinitely after eradication without reassessing whether they are still needed",
+        "Ignoring persistent post-eradication symptoms or attributing them automatically to H. pylori relapse \u2014 other conditions frequently co-exist or are unmasked after treatment",
+        "Not testing and treating close household members or sexual partners when reinfection is suspected \u2014 H. pylori can be transmitted within households"
       ]
     },
     "finding_help": {
       "specialists": [
         {
-          "type": "Primary care physician (MD, DO, or NP)",
-          "role": "Often the first point of contact; can order initial testing (serology, stool antigen), refer to gastroenterology, and manage uncomplicated cases with antibiotics and PPIs.",
-          "notes": "Excellent starting point for diagnosis and treatment. May have less expertise in complex resistance patterns or refractory cases."
-        },
-        {
           "type": "Gastroenterologist",
-          "role": "Specialist in digestive diseases; performs endoscopy with biopsy, manages complicated ulcer disease or cancer risk, and handles treatment failures or resistance.",
-          "notes": "Essential if symptoms are severe, alarm features present (bleeding, weight loss), or first-line treatment fails. Often directs the most comprehensive workup and tailored treatment."
+          "role": "The primary specialist for H. pylori \u2014 manages endoscopic investigation, biopsy, ulcer diagnosis, cancer surveillance, and second-line or rescue eradication therapy after failed first-line treatment.",
+          "notes": "Most essential for: alarm symptoms, failed eradication, confirmed atrophic gastritis or metaplasia, or any concern about gastric malignancy. Referral thresholds vary \u2014 some GPs manage straightforward cases without specialist referral."
         },
         {
-          "type": "Infectious disease specialist",
-          "role": "Expert in antibiotic resistance and complex infection scenarios; helpful for recurrent H. pylori or unusual presentations.",
-          "notes": "Rarely necessary but valuable in high-resistance regions or treatment failures. Usually consulted by gastroenterologists."
+          "type": "General Practitioner (GP) / Primary Care Physician",
+          "role": "First point of contact for most H. pylori presentations. Can order non-invasive tests (urea breath test, stool antigen, serology), prescribe first-line eradication therapy, and manage straightforward post-treatment follow-up.",
+          "notes": "GPs vary in familiarity with current treatment guidelines, resistance rates, and the importance of confirming eradication. Some may rely on outdated protocols or not routinely test for eradication after treatment."
         },
         {
-          "type": "Functional or integrative medicine doctor",
-          "role": "May emphasize lifestyle, dietary, and supplement-based support alongside antibiotic therapy. Can help with stress management, food triggers, and post-treatment gut healing.",
-          "notes": "Should not replace evidence-based antibiotic treatment but can complement it. Ensure they support conventional eradication therapy, not alternative-only approaches."
+          "type": "Functional medicine doctor or integrative gastroenterologist",
+          "role": "May be helpful for those with persistent symptoms after confirmed eradication, seeking to investigate microbiome disruption, nutritional deficiencies, or co-existing conditions (SIBO, dysbiosis, functional dyspepsia) that are not routinely investigated in conventional care.",
+          "notes": "Variable evidence base for some integrative approaches. Look for practitioners who combine conventional diagnostics with adjunct investigation rather than those who avoid standard testing."
+        },
+        {
+          "type": "Registered Dietitian",
+          "role": "Useful in the post-eradication recovery phase, particularly for rebuilding a disrupted gut microbiome, managing ongoing GI symptoms, or addressing nutritional deficiencies (iron, B12) through diet.",
+          "notes": "Most relevant if symptoms persist after eradication and there is a need to investigate dietary drivers \u2014 a FODMAP-trained dietitian may be helpful if post-eradication symptoms resemble IBS or dyspepsia."
+        },
+        {
+          "type": "Haematologist",
+          "role": "May be involved if H. pylori is identified as a driver of unexplained iron-deficiency anaemia that has failed to respond to supplementation, or in the context of H. pylori-associated ITP (immune thrombocytopenic purpura).",
+          "notes": "Collaboration between gastroenterology and haematology is sometimes needed in these cases."
         }
       ],
       "patient_communities": [
         {
-          "name": "r/Helicobacter (Reddit)",
+          "name": "r/HPylori",
           "platform": "Reddit",
-          "url": "https://www.reddit.com/r/Helicobacter/",
-          "notes": "Active community where patients share treatment experiences, side effects, dietary tips, and emotional support. Good for real-world insights into what to expect during eradication."
+          "url": "https://www.reddit.com/r/HPylori/",
+          "notes": "Large, active community of people going through H. pylori diagnosis, treatment, and recovery. Useful for understanding treatment experiences, side effect management, and navigating the system. Peer support rather than medical advice \u2014 quality varies but many threads contain well-researched information."
         },
         {
-          "name": "H. pylori Support Group (Facebook)",
-          "platform": "Facebook Groups",
+          "name": "H. Pylori Warriors & Fighters Support Group",
+          "platform": "Facebook",
           "url": null,
-          "notes": "Multiple private and public groups dedicated to H. pylori. Useful for peer support, sharing local doctors, and discussing regional resistance patterns."
+          "notes": "Facebook group with a large membership sharing experiences of diagnosis, treatment protocols, side effects, and post-eradication recovery. Particularly useful for those who have failed first-line treatment."
         },
         {
-          "name": "American Gastroenterological Association (AGA) Patient Forum",
-          "platform": "Website forum",
-          "url": "https://www.gastro.org/",
-          "notes": "Official professional society; provides evidence-based information and may host discussion areas. Credible resource for treatment guidelines."
-        },
-        {
-          "name": "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)",
-          "platform": "Website",
-          "url": "https://www.niddk.nih.gov/",
-          "notes": "U.S. government resource with clear, accurate information on H. pylori, peptic ulcers, and digestive health. Educational rather than community-based."
+          "name": "Gastro Patient Forum \u2013 Helicobacter pylori",
+          "platform": "Patient.info forum",
+          "url": "https://patient.info/forums/discuss/browse/helicobacter-pylori-1391",
+          "notes": "UK-based patient forum with threads covering diagnosis, treatment experiences, and symptom persistence. Useful for people in the UK navigating NHS pathways."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "H. pylori infection: Diagnosis and treatment",
+        "title": "Helicobacter pylori \u2013 Patient Information",
         "type": "website",
-        "author_or_source": "American College of Gastroenterology (ACG)",
-        "url": "https://gi.org/",
-        "description": "Evidence-based clinical guidelines and patient resources from a leading professional organization. Covers testing, treatment options, and follow-up.",
+        "author_or_source": "British Society of Gastroenterology / Patient.info",
+        "url": "https://patient.info/digestive-health/helicobacter-pylori",
+        "description": "Clear, evidence-based patient-facing overview of H. pylori \u2014 how it is acquired, what it causes, how it is diagnosed and treated, and what to expect after treatment. A good starting point for people newly diagnosed.",
         "audience": "beginner"
       },
       {
-        "title": "Peptic Ulcer Disease and H. pylori",
-        "type": "website",
-        "author_or_source": "Mayo Clinic",
-        "url": "https://www.mayoclinic.org/diseases-conditions/peptic-ulcer/",
-        "description": "Comprehensive, accessible overview of H. pylori, peptic ulcers, symptoms, diagnosis, and treatment options. Includes patient education videos.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Helicobacter pylori: An overview",
+        "title": "Management of Helicobacter pylori infection \u2014 The Maastricht VI/Florence Consensus Report",
         "type": "research paper",
-        "author_or_source": "Malfertheiner, P., Megraud, F., et al. (Gut, 2012)",
-        "url": null,
-        "description": "Landmark clinical guidelines on H. pylori epidemiology, pathophysiology, testing, and treatment strategies. Dense but authoritative.",
+        "author_or_source": "European Helicobacter and Microbiota Study Group",
+        "url": "https://gut.bmj.com/content/71/9/1724",
+        "description": "The most authoritative international guideline on H. pylori management, covering diagnosis, treatment regimens including resistance-guided therapy, special populations, and surveillance. Detailed and technical but publicly accessible \u2014 useful for people who want to understand what best-practice care looks like.",
         "audience": "advanced"
       },
       {
-        "title": "The Mind-Gut Connection and H. pylori",
-        "type": "book",
-        "author_or_source": "Emeran Mayer",
-        "url": null,
-        "description": "Explores the bidirectional relationship between stress, gut health, and H. pylori infection. Practical for understanding emotional and lifestyle factors in recovery.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "Antibiotic Resistance in H. pylori: What You Need to Know",
-        "type": "website",
-        "author_or_source": "CDC (Centers for Disease Control and Prevention)",
-        "url": "https://www.cdc.gov/",
-        "description": "Current data on antibiotic resistance patterns globally and locally; explains why resistance matters for treatment selection.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "The Ulcer Story: Gut Bacteria and Modern Medicine",
-        "type": "book",
-        "author_or_source": "Robin Warren and Barry Marshall (Nobel Prize winners)",
-        "url": null,
-        "description": "Accessible account of the discovery of H. pylori and its role in ulcer disease, including the journey to medical acceptance.",
+        "title": "H. Pylori: Everything You Need to Know",
+        "type": "video",
+        "author_or_source": "Dr. Ruscio (rusciodc.com / YouTube)",
+        "url": "https://www.youtube.com/watch?v=JFJXzwT-jiM",
+        "description": "Accessible video overview covering H. pylori biology, symptoms, testing approaches, and treatment \u2014 including discussion of natural adjuncts and post-treatment gut recovery. Useful for people who prefer visual learning and want a more integrative perspective alongside conventional medicine.",
         "audience": "beginner"
       },
       {
-        "title": "Living with H. pylori: A Patient Guide to Eradication and Recovery",
+        "title": "The Gut Health Doctor \u2014 H. pylori article series",
         "type": "website",
-        "author_or_source": "Patient advocacy organizations (e.g., International Foundation for Functional Gastrointestinal Disorders)",
-        "url": "https://www.iffgd.org/",
-        "description": "Patient-centered guides on managing H. pylori treatment, side effects, dietary strategies, and what to expect during and after eradication.",
+        "author_or_source": "Dr. Megan Rossi / The Gut Health Doctor",
+        "url": "https://theguthealthdoctor.com",
+        "description": "Evidence-based gut health content including articles on H. pylori, microbiome recovery after antibiotics, and dietary support. Well-suited to people looking for practical dietary and lifestyle guidance grounded in science.",
         "audience": "beginner"
       },
       {
-        "title": "H. pylori and Gastric Cancer Risk: A Clinician's Review",
+        "title": "Helicobacter pylori and iron deficiency anaemia: guilty as charged?",
         "type": "research paper",
-        "author_or_source": "Peek, R. M., & Blaser, M. J. (New England Journal of Medicine, 2023)",
-        "url": null,
-        "description": "Current evidence on long-term complications of untreated H. pylori, including cancer risk and the rationale for screening and eradication.",
-        "audience": "advanced"
+        "author_or_source": "World Journal of Gastroenterology",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4356929/",
+        "description": "Reviews the evidence linking H. pylori to iron-deficiency anaemia \u2014 a connection many clinicians overlook. Useful for people whose anaemia has not responded to supplementation and who want to understand potential gastric causes.",
+        "audience": "intermediate"
       },
       {
-        "title": "Dietary Management of Peptic Ulcer and Gastritis",
-        "type": "website",
-        "author_or_source": "Academy of Nutrition and Dietetics",
-        "url": "https://www.eatright.org/",
-        "description": "Evidence-based dietary guidelines for managing symptoms and supporting healing during H. pylori treatment.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Post-Eradication Care and Gut Health Restoration",
-        "type": "website",
-        "author_or_source": "Functional medicine and gastroenterology centers",
-        "url": null,
-        "description": "Resources on probiotics, prebiotic foods, and microbiome recovery after antibiotic treatment. Practical for optimizing long-term digestive health.",
+        "title": "Probiotics in the treatment of Helicobacter pylori infection: A comprehensive review",
+        "type": "research paper",
+        "author_or_source": "World Journal of Gastroenterology / PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27616907/",
+        "description": "Systematic review of evidence for probiotics as adjuncts to H. pylori eradication \u2014 covering which strains have been studied, their effects on eradication rates and side effects, and practical implications.",
         "audience": "intermediate"
       }
     ],
     "relevance_signal": "**Upper gut symptoms** \u2014 nausea, burping, upper abdominal discomfort after eating. Worse with NSAIDs. May have no symptoms at all but contributes to low stomach acid."
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

@@ -2,214 +2,299 @@
   "condition_id": "fungal",
   "condition_name": "Fungal overgrowth",
   "generated_at": "2026-04-16T09:47:10.903247Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "Fungal overgrowth, commonly called SIFO (small intestinal fungal overgrowth) or Candida overgrowth, occurs when fungi\u2014especially Candida species\u2014grow excessively in the digestive tract. This can cause bloating, digestive discomfort, fatigue, and brain fog. While fungi normally live in your gut, antibiotics, a high-sugar diet, or immune changes can tip the balance and allow overgrowth.",
-    "detailed_summary": "Fungal overgrowth refers to an imbalance in the gut microbiome where fungi (most commonly Candida albicans and related species) proliferate beyond healthy levels. The healthy gut contains fungi, but when conditions favor fungal growth\u2014such as repeated antibiotic use, high refined-carbohydrate intake, high alcohol consumption, immune suppression, or dysbiosis (bacterial imbalance)\u2014overgrowth can develop. Symptoms typically involve the digestive system (gas, bloating, constipation or diarrhea, abdominal pain) but may also include fatigue, brain fog, mood changes, skin issues, and oral or vaginal thrush. Diagnosis is challenging because no single test is definitive; diagnosis usually relies on clinical suspicion combined with stool analysis or specialized testing. Treatment centers on reducing fungal load through antifungal agents (both pharmaceutical and herbal), restoring healthy bacterial flora, and eliminating dietary and lifestyle factors that favor fungal growth.",
+    "plain_summary": "Fungal overgrowth \u2014 most commonly Candida species \u2014 refers to an abnormal proliferation of fungi in the gastrointestinal tract, mouth, vagina, or other body sites. When it occurs specifically in the small intestine, it is called Small Intestinal Fungal Overgrowth (SIFO). Symptoms can overlap significantly with IBS and bacterial overgrowth, including bloating, gas, altered bowel habits, fatigue, and brain fog. It is a real but underdiagnosed and sometimes over-attributed condition, sitting in contested territory between conventional medicine (which recognises it mainly in immunocompromised patients) and functional medicine (which considers it a driver of symptoms in a much broader population).",
+    "detailed_summary": "Fungi, particularly Candida albicans and related species, are normal residents of the human gut at low levels. Problems may arise when the microbial balance shifts \u2014 through antibiotic use, high-sugar diets, immunosuppression, or disrupted gut motility \u2014 allowing fungal populations to expand beyond their usual ecological niche. When this occurs in the small intestine it is termed SIFO; when it manifests systemically or across multiple body sites it is sometimes described as systemic Candida overgrowth, though this broader concept remains debated in mainstream medicine.\n\nResearch from gastroenterologist Dr. Satish Rao and colleagues has provided some of the strongest evidence that SIFO is a distinct clinical entity. In published studies, roughly half of patients with unexplained GI symptoms were found to have fungal overgrowth on small bowel aspiration cultures. Despite this, SIFO is rarely investigated in routine clinical practice, and many people with GI symptoms are diagnosed with IBS without any microbiological evaluation.\n\nCandida overgrowth may produce symptoms through multiple mechanisms: direct mucosal irritation, fermentation of carbohydrates producing gas and organic acids, disruption of the intestinal barrier ('leaky gut'), modulation of immune and mast cell activity, and possible production of metabolites affecting the nervous system. The degree to which these mechanisms contribute to symptoms in any individual is difficult to quantify with current tools.\n\nConventional medicine accepts Candida as a serious pathogen in immunocompromised individuals (those with HIV/AIDS, on chemotherapy, or with organ transplants) but is more cautious about attributing diffuse functional symptoms to fungal overgrowth in immunocompetent people. Functional and integrative medicine practitioners tend to have a broader diagnostic lens. Both perspectives have merit and limitations: dismissing fungal overgrowth in symptomatic patients delays appropriate treatment; over-attributing every symptom to Candida can obscure other treatable drivers.\n\nDiagnosis ideally involves small bowel aspiration and culture (the gold standard) or stool culture with quantification, though neither is routinely available. Antifungal treatment \u2014 most commonly fluconazole or nystatin \u2014 can produce significant symptom improvement in confirmed cases, supporting the diagnosis retrospectively. Dietary strategies reducing fermentable sugars and simple carbohydrates are widely used as adjuncts, though evidence for diet alone as a curative approach is limited.",
     "prevalence": {
-      "summary": "Fungal overgrowth is widely reported in functional medicine practice but lacks robust epidemiological data in mainstream medical literature.",
-      "estimate": "Unknown\u2014estimates in functional medicine communities range from 5\u201310% of people with chronic digestive symptoms, but formal population prevalence studies are lacking",
-      "notes": "Mainstream gastroenterology has historically downplayed the clinical significance of Candida overgrowth outside of immunocompromised patients or oral/vaginal candidiasis. Increased interest in the microbiome has revived research interest. Many cases go undiagnosed or are misattributed to IBS, SIBO, or food sensitivities. Immunocompromised individuals (HIV/AIDS, chemotherapy, organ transplant) are at higher risk for invasive candidiasis."
+      "summary": "Likely underdiagnosed; meaningful proportion of people with unexplained GI symptoms may be affected",
+      "estimate": "Approximately 26% of people with unexplained GI symptoms in one small bowel aspiration study; broader population prevalence unknown",
+      "notes": "Prevalence of SIFO specifically comes from a limited number of small studies using small bowel aspiration (Dr. Rao's group). Vaginal candidiasis affects roughly 75% of women at least once in their lifetime, which is well-established. 'Systemic Candida overgrowth' as a broader syndrome lacks agreed diagnostic criteria and reliable prevalence data. Rates are higher in people who have taken repeated antibiotics, use proton pump inhibitors long-term, have diabetes, or are immunocompromised."
     },
     "subgroups": [
       {
-        "name": "Post-antibiotic overgrowth",
-        "description": "Fungal overgrowth triggered by disruption of the bacterial microbiome following antibiotic courses, especially broad-spectrum or prolonged antibiotics.",
+        "name": "SIFO (Small Intestinal Fungal Overgrowth)",
+        "description": "Fungal overgrowth specifically within the small intestine, where fungi are not normally abundant. Associated with symptoms that mimic IBS or SIBO.",
         "distinguishing_features": [
-          "Clear temporal relationship to antibiotic use (often within weeks)",
-          "May resolve partially on its own as bacteria recover, but can persist if not addressed",
-          "Typically accompanied by dysbiosis (bacterial imbalance)"
+          "Confirmed by small bowel aspiration and culture showing >10\u00b3 CFU/mL of fungi",
+          "May coexist with SIBO (bacterial overgrowth)",
+          "Often responds to oral antifungals such as fluconazole",
+          "Associated with proton pump inhibitor use and prior antibiotic courses"
         ]
       },
       {
-        "name": "Dietary-driven overgrowth",
-        "description": "Fungal proliferation sustained by high intake of refined carbohydrates, sugar, alcohol, or processed foods that feed fungal growth.",
+        "name": "Oral / oropharyngeal candidiasis (thrush)",
+        "description": "Candida overgrowth in the mouth and throat, presenting as white patches, soreness, or altered taste.",
         "distinguishing_features": [
-          "Symptoms worsen after high-sugar meals or alcohol",
-          "May fluctuate with dietary adherence",
-          "Often improves with dietary restriction without antifungal medications"
+          "Visible white plaques on tongue and mucous membranes",
+          "Commonly associated with inhaled corticosteroid use, dentures, dry mouth, or immunosuppression",
+          "Responds to topical antifungals (nystatin rinse) or systemic fluconazole"
         ]
       },
       {
-        "name": "Immunosuppression-related overgrowth",
-        "description": "Fungal overgrowth in people with weakened immune systems (HIV/AIDS, chemotherapy, immunosuppressive medications, severe malnutrition).",
+        "name": "Recurrent vulvovaginal candidiasis (RVVC)",
+        "description": "Four or more symptomatic vaginal yeast infections per year, despite treatment.",
         "distinguishing_features": [
-          "Often more severe and harder to resolve without immune reconstitution",
-          "May present with invasive candidiasis or systemic symptoms",
-          "Requires simultaneous immune support and antifungal treatment"
+          "Often driven by hormonal factors, antibiotic use, or underlying immune dysregulation",
+          "Non-albicans species (e.g. Candida glabrata) may be more resistant to standard treatment",
+          "May be associated with gut Candida carriage as a reservoir",
+          "Managed with suppressive antifungal protocols and probiotic support"
         ]
       },
       {
-        "name": "Chronic or recurrent overgrowth",
-        "description": "Persistent or repeatedly recurring fungal overgrowth despite treatment, suggesting underlying dysbiosis, leaky gut, or incomplete restoration of healthy microbiota.",
+        "name": "Post-antibiotic fungal overgrowth",
+        "description": "Fungal proliferation triggered by a course of broad-spectrum antibiotics that disrupted the bacterial microbiome.",
         "distinguishing_features": [
-          "Symptoms return after antifungal treatment stops",
-          "Often requires longer-term management and gut healing",
-          "May involve concurrent SIBO, leaky gut, or food sensitivities"
+          "Clear temporal link to antibiotic exposure",
+          "Onset of GI symptoms, thrush, or vaginal symptoms shortly after antibiotic course",
+          "Often self-limiting but can become chronic in susceptible individuals",
+          "Good candidate for probiotic support and dietary sugar reduction"
+        ]
+      },
+      {
+        "name": "Candida overgrowth in immunocompromised individuals",
+        "description": "Invasive or disseminated candidiasis in people with significantly impaired immune function \u2014 a medically serious, well-recognised condition distinct from functional overgrowth.",
+        "distinguishing_features": [
+          "Occurs in patients with HIV/AIDS, on chemotherapy, prolonged corticosteroids, or after organ transplant",
+          "Can be life-threatening (candidaemia, invasive candidiasis)",
+          "Mainstream medicine fully recognises and aggressively treats this subgroup",
+          "Very different from the low-level, functional overgrowth discussed in most self-directed research"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Bloating and gas",
+        "symptom": "Bloating and abdominal distension",
         "category": "digestive",
-        "notes": "Often worse after meals, particularly high-carbohydrate or sugary foods; may worsen throughout the day"
+        "notes": "Often worse after meals containing sugar, refined carbohydrates, or alcohol. Can be difficult to distinguish from SIBO or IBS."
       },
       {
-        "symptom": "Abdominal pain or cramping",
+        "symptom": "Excess gas (flatulence or belching)",
         "category": "digestive",
-        "notes": "Can range from mild discomfort to severe cramping; location and timing vary"
+        "notes": "Results from fermentation of carbohydrates by fungi producing carbon dioxide and other gases."
       },
       {
-        "symptom": "Constipation or diarrhea",
+        "symptom": "Diarrhoea, constipation, or alternating bowel habits",
         "category": "digestive",
-        "notes": "May alternate between both; fungal overgrowth can cause either, or inconsistent bowel patterns"
+        "notes": "Pattern varies between individuals; loose stools are somewhat more common in fungal overgrowth than constipation alone."
       },
       {
-        "symptom": "Chronic fatigue",
-        "category": "systemic",
-        "notes": "Often persistent and not relieved by rest; may worsen after eating or during high-stress periods"
+        "symptom": "Nausea or early satiety",
+        "category": "digestive",
+        "notes": "May reflect small intestinal irritation or associated motility changes."
       },
       {
-        "symptom": "Brain fog or difficulty concentrating",
+        "symptom": "Cravings for sugar, refined carbohydrates, or alcohol",
+        "category": "digestive",
+        "notes": "Widely reported by patients; the precise mechanism is debated but may involve fungal metabolites influencing appetite signalling."
+      },
+      {
+        "symptom": "Brain fog and difficulty concentrating",
         "category": "neurological",
-        "notes": "Attributed to inflammatory metabolites produced by fungal overgrowth or nutrient malabsorption"
+        "notes": "One of the most commonly reported systemic symptoms. Possible mechanisms include fungal metabolites (e.g. acetaldehyde) and gut-brain axis disruption."
       },
       {
-        "symptom": "Mood changes, anxiety, or depression",
-        "category": "neurological/mood",
-        "notes": "Proposed mechanism involves gut-brain axis and inflammatory signaling; not universally recognized in mainstream psychiatry"
+        "symptom": "Fatigue and low energy",
+        "category": "systemic",
+        "notes": "Often described as disproportionate to activity level; may worsen after carbohydrate-rich meals."
       },
       {
-        "symptom": "Oral thrush (white patches in mouth)",
-        "category": "oral",
-        "notes": "Visible overgrowth of Candida on tongue or inside cheek; indicates systemic fungal burden"
+        "symptom": "White coating on the tongue (oral thrush)",
+        "category": "oral/skin",
+        "notes": "A visible indicator of Candida overgrowth in the mouth; not always present even when gut overgrowth exists."
       },
       {
-        "symptom": "Vaginal yeast infections (in women)",
-        "category": "gynecological",
-        "notes": "Recurrent infections (>4 per year) may indicate gut overgrowth as source"
+        "symptom": "Recurrent vaginal yeast infections",
+        "category": "reproductive/gynaecological",
+        "notes": "Particularly relevant when infections recur despite treatment, or cluster around antibiotic use."
       },
       {
-        "symptom": "Itching or rashes (skin)",
-        "category": "dermatological",
-        "notes": "Can include eczema-like rashes, urticaria, or fungal rash in skin folds; often improves with antifungal treatment"
+        "symptom": "Itchy skin, rashes, or fungal skin infections",
+        "category": "skin",
+        "notes": "Including tinea (ringworm), jock itch, athlete's foot, or non-specific itching \u2014 may signal systemic fungal burden."
       },
       {
-        "symptom": "Rectal itching",
-        "category": "digestive",
-        "notes": "Particularly in the evening; classic sign of Candida overgrowth"
+        "symptom": "Nail changes (thickening, discolouration)",
+        "category": "skin",
+        "notes": "Onychomycosis (fungal nail infection) can be a marker of broader fungal susceptibility."
       },
       {
-        "symptom": "Food sensitivities or increased allergies",
+        "symptom": "Joint pain or diffuse muscle aches",
+        "category": "musculoskeletal",
+        "notes": "Reported by some patients and attributed to inflammatory or immune responses to fungal antigens; less well-evidenced than GI symptoms."
+      },
+      {
+        "symptom": "Mood changes, irritability, or low mood",
+        "category": "psychological",
+        "notes": "May relate to gut-brain axis disruption, microbiome effects on neurotransmitter production, or nutritional consequences of gut dysfunction."
+      },
+      {
+        "symptom": "Heightened reactivity to foods or chemicals",
         "category": "immune",
-        "notes": "Fungal overgrowth may increase intestinal permeability, worsening reactions to foods or triggering new sensitivities"
-      },
-      {
-        "symptom": "Sugar cravings",
-        "category": "metabolic/behavioral",
-        "notes": "Fungi produce substances that signal the brain to seek more sugar; creates a self-perpetuating cycle"
+        "notes": "Some individuals with fungal overgrowth also develop signs consistent with mast cell activation or histamine intolerance, possibly due to immune dysregulation."
       }
     ],
     "testing": {
       "key_patterns": [
-        "Digestive symptoms (bloating, cramping, irregular bowel habits) occurring consistently, especially after high-sugar or refined-carbohydrate meals",
-        "Fatigue and brain fog that do not improve with sleep or rest",
-        "Presence of oral thrush, recurrent vaginal yeast infections, or persistent skin rashes",
-        "Recent or prolonged antibiotic use followed by worsening digestive and systemic symptoms",
-        "Symptoms that improve when sugar and refined carbohydrates are significantly reduced",
-        "Combination of multiple symptoms across digestive, neurological, and systemic domains"
+        "Onset or worsening of GI symptoms following antibiotic use, steroid use, or a period of high sugar/alcohol intake",
+        "GI symptoms that partially overlap with IBS or SIBO but have not responded fully to standard IBS or bacterial SIBO treatment",
+        "Concurrent fungal manifestations at multiple sites: oral thrush, vaginal yeast infections, skin fungal infections, fungal nail changes",
+        "Significant sugar or refined carbohydrate cravings alongside GI symptoms and fatigue",
+        "Stool culture showing heavy growth of Candida species, particularly when combined with consistent symptoms",
+        "Symptom improvement on an antifungal trial, which can serve as indirect diagnostic evidence"
       ],
       "at_home": [
         {
-          "name": "Spit test or saliva test",
-          "description": "Upon waking (before eating or drinking), spit into a glass of distilled water. Allow it to sit for 15 minutes and observe: if saliva sinks, forms strings, or becomes cloudy, this is sometimes interpreted as a sign of fungal overgrowth. If it floats, overgrowth is presumed unlikely.",
-          "safety_notes": "This test has no scientific validation and is not reliable; it is mentioned here because many alternative practitioners recommend it. Do not rely on this alone for diagnosis. It may increase anxiety or lead to unnecessary treatment. Use only as a supplementary prompt to seek formal testing."
+          "name": "Symptom and food diary",
+          "description": "Tracking symptoms in relation to meals \u2014 particularly sugar, refined carbohydrates, yeast-containing foods, and alcohol \u2014 can reveal patterns consistent with fungal fermentation. Note timing of symptom onset after meals (fungal fermentation often peaks 1\u20133 hours post-meal).",
+          "safety_notes": "This is an observational tool only. Patterns can support suspicion but are not diagnostic on their own."
         },
         {
-          "name": "Dietary elimination and symptom tracking",
-          "description": "Eliminate high-sugar foods, refined carbohydrates, and alcohol for 2 weeks while tracking symptom severity daily. Document bloating, fatigue, mood, and bowel habits. Reintroduce sugary or refined foods and note if symptoms worsen within hours.",
-          "safety_notes": "Safe for most people. Avoid if you have a history of eating disorders. Does not diagnose fungal overgrowth but can clarify whether your symptoms are diet-responsive, which is useful information for your clinician."
+          "name": "Saliva test (popular but unvalidated)",
+          "description": "A widely circulated home test involves spitting into a glass of water in the morning and observing whether saliva sinks, forms strands, or turns cloudy. This is promoted in patient communities as a Candida indicator.",
+          "safety_notes": "This test has no scientific validation and should not be used as a basis for treatment decisions. Mentioned here because many people encounter it during self-research; it is not recommended as a reliable guide."
+        },
+        {
+          "name": "Dietary elimination trial (low-sugar, low-yeast)",
+          "description": "Reducing simple sugars, refined carbohydrates, yeast-containing foods, and alcohol for 2\u20134 weeks and observing whether symptoms improve. If symptoms worsen initially then improve, this may be consistent with fungal die-off (Herxheimer-like reaction), though this interpretation requires caution.",
+          "safety_notes": "Restrictive diets carry nutritional risks if prolonged. Should be used as a short-term observational tool, not a long-term solution without professional support. 'Die-off' symptoms can also be caused by other mechanisms."
         }
       ],
       "clinical": [
         {
-          "name": "Stool analysis (comprehensive stool test)",
+          "name": "Small bowel aspiration and culture",
+          "type": "gold_standard",
+          "description": "During upper endoscopy (gastroscopy), fluid is aspirated from the small intestine and cultured for both bacteria and fungi. Growth of >10\u00b3 CFU/mL of fungi is considered diagnostic for SIFO. This is the most rigorous test available.",
+          "availability": "Requires referral to a gastroenterologist willing to perform and culture the aspirate specifically for fungi \u2014 many do not routinely do this. Centres led by GI researchers studying SIFO (e.g. Dr. Rao's group at Augusta University) are most likely to offer this. May require advocacy from the patient."
+        },
+        {
+          "name": "Stool culture with fungal quantification",
           "type": "standard",
-          "description": "A laboratory analyzes a stool sample for the presence and quantity of Candida species and other fungi, bacterial balance (dysbiosis markers), parasites, and inflammation markers. Results typically report fungal colony counts and sometimes identify specific species. Many functional medicine labs offer expanded panels.",
-          "availability": "Ordered by functional medicine doctors, naturopaths, or integrative practitioners. Some mainstream gastroenterologists may order basic stool tests, but comprehensive fungal analysis is more common in functional medicine. Samples are collected at home and mailed to a lab (e.g., Genova Diagnostics, Doctor's Data, Ombre)."
+          "description": "A comprehensive stool test that cultures for and quantifies Candida and other fungi in the gut. Reflects colonic fungal load rather than small intestinal specifically. Some functional medicine labs (e.g. Genova GI Effects, Doctor's Data) include fungal culture and sensitivity testing.",
+          "availability": "Widely available through functional medicine doctors and some integrative GPs. Standard NHS or conventional stool tests often do not include fungal quantification unless specifically requested. Private labs can be ordered directly in some countries."
         },
         {
-          "name": "Candida-specific antibodies (IgG, IgA, IgM)",
+          "name": "Candida antibody blood panel (IgG, IgA, IgM)",
           "type": "emerging",
-          "description": "Blood test measuring antibodies against Candida antigens. Elevated levels may indicate systemic Candida exposure or overgrowth; however, many people have these antibodies without symptoms. Specificity and clinical utility are debated.",
-          "availability": "Available through functional medicine and alternative labs (e.g., Dunwoody Labs, Great Plains Laboratory). Not standard in mainstream gastroenterology or infectious disease."
+          "description": "Measures immune response to Candida antigens. Elevated IgG may indicate past or ongoing exposure; elevated IgA may indicate mucosal involvement. Results must be interpreted carefully as some immune response to Candida is normal.",
+          "availability": "Available through functional medicine doctors and some private labs. Rarely ordered in conventional settings for GI complaints. Interpretation requires clinical context and is not sufficient for diagnosis alone."
         },
         {
-          "name": "Organic acid test (OAT)",
+          "name": "Organic acids test (OAT)",
           "type": "emerging",
-          "description": "Urine test measuring organic acid metabolites produced by Candida and other organisms. Elevated D-arabinitol and other fungal metabolites may indicate overgrowth. Requires interpretation by experienced practitioner.",
-          "availability": "Ordered through functional medicine practitioners and sent to specialized labs (e.g., Great Plains Laboratory, Genova Diagnostics)."
+          "description": "A urine test that measures metabolic byproducts of fungal activity, including arabinose and tartaric acid \u2014 metabolites associated with Candida fermentation. Elevated markers may support suspicion of fungal overgrowth.",
+          "availability": "Available through functional medicine practitioners and private labs such as Great Plains Laboratory (now Mosaic Diagnostics) and Genova. Not available through standard NHS or conventional pathology without specific request. Results require interpretation by a knowledgeable practitioner."
         },
         {
-          "name": "Culture of oral or vaginal swab",
+          "name": "Beta-glucan blood test",
+          "type": "emerging",
+          "description": "Measures (1,3)-beta-D-glucan, a component of fungal cell walls. Used in hospital settings to detect invasive fungal infections in immunocompromised patients. Less validated for low-level overgrowth in immunocompetent individuals.",
+          "availability": "Available in hospital laboratories, primarily used in oncology or critical care settings. Less useful for the functional overgrowth patient group."
+        },
+        {
+          "name": "Antifungal treatment trial",
           "type": "standard",
-          "description": "Direct culture of Candida from oral thrush or vaginal thrush. Confirms fungal presence and sometimes identifies species. More definitive for localized candidiasis but does not diagnose gut overgrowth.",
-          "availability": "Ordered by any primary care physician or gynecologist if thrush is suspected; performed at any clinical lab."
-        },
-        {
-          "name": "Breath testing for fungal metabolites",
-          "type": "emerging",
-          "description": "Experimental test measuring volatile organic compounds (VOCs) in exhaled breath that are produced by Candida metabolism. Early research suggests promise but is not yet standardized or widely available.",
-          "availability": "Not widely available; primarily a research tool at present."
+          "description": "In practice, many clinicians (particularly functional medicine doctors) use a supervised trial of antifungal medication (commonly fluconazole 100\u2013150mg daily for 2\u20134 weeks, or nystatin) as a diagnostic-therapeutic strategy. Symptom improvement supports the diagnosis retrospectively.",
+          "availability": "Requires a prescribing clinician willing to take this approach. More common in functional and integrative medicine; some conventional gastroenterologists will also consider it in appropriate clinical context."
         }
       ]
     },
     "related_conditions": [
       {
+        "id": "sibo",
         "name": "Small intestinal bacterial overgrowth (SIBO)",
-        "relationship": "often_confused",
-        "explanation": "Both SIBO and fungal overgrowth produce similar symptoms (bloating, gas, brain fog, fatigue) and often coexist. Dysbiosis and impaired gut motility predispose to both. They may require different treatments, so distinguishing them (via breath test for SIBO, stool analysis for fungi) is helpful."
-      },
-      {
-        "name": "Leaky gut syndrome (intestinal permeability)",
-        "relationship": "mechanistic_link",
-        "explanation": "Fungal overgrowth produces metabolites and enzymes that damage the intestinal barrier, increasing permeability. Conversely, a leaky gut allows fungal antigens and metabolites to enter the bloodstream, triggering inflammation and symptoms. Treatment of one often helps the other."
-      },
-      {
-        "name": "Dysbiosis (bacterial imbalance)",
         "relationship": "comorbid",
-        "explanation": "Fungal overgrowth and dysbiosis frequently occur together. Antibiotics kill bacteria and allow fungi to proliferate; fungal overgrowth can also suppress beneficial bacteria. Both need addressing for full recovery."
+        "explanation": "SIFO and SIBO frequently co-occur \u2014 studies suggest roughly 50% overlap in patients investigated with small bowel aspiration. Both conditions share similar risk factors (antibiotic use, motility disorders, PPI use) and produce overlapping GI symptoms. Treatment for one does not always resolve the other."
       },
       {
+        "id": "ibs",
         "name": "Irritable bowel syndrome (IBS)",
         "relationship": "often_confused",
-        "explanation": "IBS and fungal overgrowth share overlapping symptoms. Some cases labeled as IBS may actually be undiagnosed fungal or bacterial overgrowth. Testing for fungal overgrowth may help clarify the underlying cause."
+        "explanation": "Fungal overgrowth can produce a symptom profile nearly identical to IBS \u2014 bloating, altered bowel habits, abdominal discomfort. Many people diagnosed with IBS may have unidentified SIFO. IBS is a symptom-based diagnosis and does not exclude microbiological causes."
       },
       {
-        "name": "Food sensitivities and increased intestinal permeability",
-        "relationship": "downstream",
-        "explanation": "Fungal overgrowth increases leaky gut, which allows larger food particles and bacterial antigens to trigger immune responses, creating or worsening food sensitivities. Addressing fungal overgrowth can reduce food reactivity."
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "mechanistic_link",
+        "explanation": "Fungal overgrowth is both a cause and consequence of broader gut dysbiosis. Bacterial imbalance reduces colonisation resistance against fungi; fungal overgrowth further disrupts the microbiome through competitive and immune mechanisms."
       },
       {
-        "name": "Chronic fatigue syndrome (CFS) / Myalgic encephalomyelitis (ME)",
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
         "relationship": "comorbid",
-        "explanation": "Some patients with CFS/ME have concurrent fungal overgrowth; whether overgrowth is a cause, consequence, or coincidental finding remains unclear. Addressing overgrowth may help some patients with energy levels."
+        "explanation": "Candida antigens and fungal metabolites can activate mast cells, potentially triggering or worsening MCAS. Individuals with MCAS may also have a more permissive mucosal environment for fungal overgrowth. The two conditions frequently co-occur in complex multi-system patients."
       },
       {
-        "name": "Brain fog and cognitive impairment",
-        "relationship": "mechanistic_link",
-        "explanation": "Fungal metabolites (e.g., ethanol, uric acid, aldehydes) cross the blood-brain barrier and may impair cognition. Addressing fungal overgrowth can improve mental clarity in some people."
-      },
-      {
-        "name": "Recurrent vaginal yeast infections",
+        "id": "histamine",
+        "name": "Histamine intolerance",
         "relationship": "downstream",
-        "explanation": "Gut Candida overgrowth is thought to be a reservoir that seeds the vagina, leading to recurrent infections. Treating gut overgrowth can reduce vaginal recurrence."
+        "explanation": "Candida species can produce histamine directly and may impair DAO enzyme activity involved in histamine breakdown. People with fungal overgrowth may develop or worsen histamine intolerance as a downstream consequence."
       },
       {
-        "name": "Autoimmune conditions",
+        "id": "ncgs",
+        "name": "Non-coeliac gluten sensitivity (NCGS)",
+        "relationship": "often_confused",
+        "explanation": "Some individuals attributed gluten as their symptom trigger may in fact have gut dysbiosis or fungal overgrowth driving their symptoms. The two conditions can also coexist, with gluten-induced intestinal permeability potentially permitting greater fungal translocation."
+      },
+      {
+        "id": "coeliac",
+        "name": "Coeliac disease",
+        "relationship": "upstream",
+        "explanation": "Active or inadequately treated coeliac disease damages the intestinal mucosa and alters the microbiome, creating conditions that may facilitate fungal overgrowth. Persistent GI symptoms in coeliac patients on a gluten-free diet may sometimes be partly attributable to SIFO."
+      },
+      {
+        "id": "ibd_remission",
+        "name": "IBD in remission (Crohn's disease / ulcerative colitis)",
+        "relationship": "comorbid",
+        "explanation": "People with IBD have altered gut immunity and microbiome composition and often use immunosuppressive medications, all of which increase susceptibility to fungal overgrowth. Candida may also exacerbate mucosal inflammation in IBD."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "comorbid",
+        "explanation": "Gut-brain axis disruption from fungal overgrowth may influence anxiety; conversely, anxiety increases gut permeability and alters motility, creating conditions for microbial imbalance. The relationship is likely bidirectional."
+      },
+      {
+        "id": "hormonal",
+        "name": "Hormonal / menstrual cycle effects",
         "relationship": "mechanistic_link",
-        "explanation": "Fungal antigens and increased intestinal permeability may trigger or exacerbate autoimmune responses. Some practitioners report that addressing fungal overgrowth helps autoimmune symptoms, though robust evidence is limited."
+        "explanation": "Oestrogen promotes Candida adhesion and biofilm formation. Cyclical hormonal changes \u2014 particularly in the luteal phase \u2014 may promote vaginal and gut fungal activity, explaining why many women notice GI and yeast symptoms worsen in the week before menstruation."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "comorbid",
+        "explanation": "Hypothyroidism slows gut motility, creating stasis that may promote fungal (and bacterial) overgrowth. Conversely, gut dysbiosis and fungal overgrowth may impair thyroid hormone metabolism and immune regulation relevant to autoimmune thyroiditis."
+      },
+      {
+        "id": "oxalate",
+        "name": "Oxalate accumulation",
+        "relationship": "mechanistic_link",
+        "explanation": "Candida species produce oxalate as a metabolic byproduct. Fungal overgrowth may therefore contribute to elevated urinary oxalate levels and associated symptoms (vulvodynia, kidney stone risk, joint pain). The organic acids test may reveal elevated oxalate markers alongside fungal metabolites."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "Fibromyalgia and widespread pain syndromes are reported at higher rates in people with chronic gut dysbiosis including fungal overgrowth. The mechanism may involve immune activation, altered neurotransmitter production, or central sensitisation driven by persistent gut inflammation."
+      },
+      {
+        "name": "Diabetes mellitus / insulin resistance",
+        "id": null,
+        "relationship": "upstream",
+        "explanation": "High blood glucose creates a nutrient-rich environment that strongly promotes Candida growth. People with diabetes or significant insulin resistance have substantially higher rates of recurrent Candida infections at multiple body sites."
+      },
+      {
+        "name": "Antibiotic-associated diarrhoea",
+        "id": null,
+        "relationship": "upstream",
+        "explanation": "Broad-spectrum antibiotic use is one of the most common precipitants of fungal overgrowth by eliminating competing bacteria. Post-antibiotic GI symptoms are a classic context in which SIFO should be considered."
+      },
+      {
+        "name": "Biofilm-related chronic infections",
+        "id": null,
+        "relationship": "mechanistic_link",
+        "explanation": "Candida species form resilient biofilms in the gut and on mucous membranes that protect fungi from antifungal agents and the immune system. Biofilm formation is a key reason why fungal overgrowth can be difficult to eradicate and why treatment may need to include biofilm-disrupting approaches."
       }
     ],
     "symptom_management": {
@@ -217,279 +302,305 @@
         {
           "name": "Antifungal medication (prescription)",
           "category": "medication",
-          "description": "Prescription antifungals such as fluconazole (Diflucan) or itraconazole are often used for systemic or persistent fungal overgrowth. Dosing and duration vary (typically 2\u20138 weeks). Prescription antifungals target Candida more aggressively than herbal options.",
-          "evidence_level": "strong",
-          "notes": "Most effective when combined with dietary changes and gut healing. Potential side effects (GI upset, headache, liver effects with prolonged use) require monitoring. Some practitioners cycle antifungals to avoid resistance. Not all mainstream doctors accept fungal overgrowth as a diagnosis outside immunocompromised populations."
+          "description": "Oral fluconazole (azole antifungal) is the most commonly prescribed treatment for SIFO and systemic Candida overgrowth. Nystatin is an alternative that is not absorbed systemically and acts locally in the gut. Treatment courses typically range from 2\u20136 weeks. Sensitivity testing on stool culture can guide drug choice, as non-albicans species may be fluconazole-resistant.",
+          "evidence_level": "moderate",
+          "notes": "Requires prescription. A gastroenterologist or functional medicine doctor familiar with SIFO is the appropriate prescriber. Fluconazole has drug interactions and is not appropriate in pregnancy or certain liver conditions. Relapse after stopping antifungals is common without addressing underlying drivers."
         },
         {
-          "name": "Herbal antifungals",
+          "name": "Low-sugar, low-refined-carbohydrate diet",
+          "category": "diet",
+          "description": "Reducing dietary simple sugars, refined grains, sweet fruits, alcohol, and yeast-containing fermented foods removes the primary fuel source for Candida fermentation. Many practitioners use variations of an 'anti-Candida diet' as an adjunct to antifungal treatment.",
+          "evidence_level": "anecdotal",
+          "notes": "Clinical trial evidence for diet alone curing SIFO is limited. Most evidence is from patient experience and biological plausibility. Overly restrictive versions of anti-Candida diets can lead to nutritional deficiencies and food anxiety. A moderate, sustainable reduction in sugar and refined carbs is more practical than extreme elimination."
+        },
+        {
+          "name": "Probiotics (Lactobacillus and Saccharomyces boulardii)",
           "category": "supplement",
-          "description": "Herbal antimicrobials with antifungal properties include oregano oil (carvacrol), garlic (allicin), caprylic acid (from coconut oil), grapefruit seed extract, and pau d'arco. These are gentler than prescription antifungals but typically require higher doses and longer courses (4\u201312 weeks). Often combined in herbal formulas.",
+          "description": "Certain probiotic strains, particularly Lactobacillus rhamnosus, Lactobacillus acidophilus, and Saccharomyces boulardii (a beneficial yeast), may help restore microbial balance and inhibit Candida colonisation through competitive exclusion and immune modulation. S. boulardii has the most evidence specifically for Candida inhibition.",
           "evidence_level": "moderate",
-          "notes": "Variable potency depending on extraction and concentration. Some people tolerate herbal antifungals better than pharmaceuticals, while others find them less effective. Oregano and garlic have the most research support. Compliance and cost may be issues with long-term use."
+          "notes": "Saccharomyces boulardii is itself a yeast and should be used with caution in severely immunocompromised individuals. Timing matters \u2014 some practitioners recommend starting probiotics after completing antifungal treatment rather than concurrently, to allow re-colonisation without competition."
         },
         {
-          "name": "Low-carbohydrate, low-sugar diet (anti-Candida diet)",
-          "category": "diet",
-          "description": "Eliminate or drastically reduce refined carbohydrates, sugar, alcohol, and high-carbohydrate fruits. Focus on non-starchy vegetables, protein, healthy fats, and moderate amounts of low-glycemic fruits (berries). This starves fungi of their preferred fuel.",
-          "evidence_level": "strong",
-          "notes": "Often the single most effective intervention; symptoms can improve noticeably within 2\u20134 weeks. Very restrictive versions (no all fruits, no grains) are sometimes recommended but are hard to sustain long-term. A balanced approach (whole grains okay, but no refined carbs or added sugar) is often more sustainable. May worsen symptoms in the first 1\u20132 weeks (die-off reaction)."
+          "name": "Herbal/natural antifungals",
+          "category": "supplement",
+          "description": "Caprylic acid (from coconut oil), oregano oil, berberine, undecylenic acid, pau d'arco, and garlic extract have antifungal properties and are widely used in functional medicine protocols as alternatives or adjuncts to pharmaceutical antifungals. These may be better tolerated for long-term use.",
+          "evidence_level": "anecdotal",
+          "notes": "In vitro evidence is stronger than clinical trial evidence for most of these agents. They may still cause die-off symptoms. Oregano oil and berberine can also affect beneficial bacteria and should not be used indefinitely without monitoring."
         },
         {
-          "name": "Probiotics and prebiotic foods",
-          "category": "supplement / diet",
-          "description": "Restore healthy bacterial flora with probiotics (especially spore-forming strains like Bacillus subtilis, or strains like Lactobacillus plantarum and Saccharomyces boulardii shown to inhibit Candida). Pair with prebiotic fibers (inulin, FOS) that feed good bacteria. Fermented foods (sauerkraut, kimchi, unsweetened yogurt) may also help.",
-          "evidence_level": "moderate",
-          "notes": "Not all probiotics are equally effective against Candida. S. boulardii and spore-forming strains have better evidence. High doses (20\u2013100 billion CFU) are often needed. Some people with severe dysbiosis or SIBO feel worse on prebiotics initially; start low and go slow."
+          "name": "Biofilm-disrupting agents",
+          "category": "supplement",
+          "description": "Candida forms protective biofilms that reduce the effectiveness of antifungals. Agents such as N-acetyl cysteine (NAC), serrapeptase, EDTA (in some clinical contexts), and interphase formulas are used to break down biofilm before or alongside antifungal treatment.",
+          "evidence_level": "anecdotal",
+          "notes": "Most evidence is in vitro. Clinical use is based on functional medicine protocols rather than randomised trials. NAC is generally well tolerated; enzyme-based biofilm disruptors are widely available. Discuss with a knowledgeable practitioner before using."
         },
         {
-          "name": "Gut-healing nutrients (L-glutamine, bone broth, slippery elm)",
-          "category": "supplement / diet",
-          "description": "Repair the damaged intestinal lining using glutamine (amino acid), bone broth (collagen and minerals), slippery elm bark (mucilage), or licorice root (DGL). These support mucosal barrier integrity and reduce permeability that allows fungal antigens to trigger symptoms.",
-          "evidence_level": "moderate",
-          "notes": "Healing takes weeks to months. Often combined with antifungal and dietary interventions. L-glutamine may be contraindicated in certain neurological conditions; consult a practitioner. Bone broth is easy to incorporate; supplements require consistent use."
-        },
-        {
-          "name": "Reduce stress and improve sleep",
+          "name": "Addressing underlying risk factors (PPIs, antibiotics, blood sugar)",
           "category": "lifestyle",
-          "description": "Chronic stress impairs immune function and allows fungal overgrowth to persist. Prioritize 7\u20139 hours of sleep, stress-reduction practices (meditation, yoga, breathing exercises), and regular gentle exercise. These support immune recovery and microbiome rebalancing.",
-          "evidence_level": "strong",
-          "notes": "Often underestimated in fungal overgrowth management. Sleep deprivation significantly worsens dysbiosis and fungal overgrowth. Even modest stress reduction can improve symptoms noticeably over weeks."
+          "description": "Proton pump inhibitor use raises gastric pH and may facilitate fungal colonisation of the upper GI tract. Minimising unnecessary antibiotic and steroid use, optimising blood sugar control in those with insulin resistance, and reducing alcohol intake removes key drivers of overgrowth.",
+          "evidence_level": "moderate",
+          "notes": "Not always possible \u2014 some people genuinely need PPIs or antibiotics. The goal is to use these only when necessary and to support the microbiome aggressively during and after such courses."
         },
         {
-          "name": "Avoid or minimize antibiotics",
-          "category": "medication/lifestyle",
-          "description": "Once fungal overgrowth is addressed, avoid unnecessary antibiotics unless truly indicated. Unnecessary antibiotic use is a major risk factor for recurrence. When antibiotics are needed, ask your doctor about co-treating with antifungals or probiotics.",
-          "evidence_level": "strong",
-          "notes": "Does not mean refusing antibiotics when genuinely needed for infection. Rather, being selective and asking about necessity. When antibiotics are prescribed, some practitioners recommend concurrent use of S. boulardii to prevent Candida proliferation."
+          "name": "Gut motility support",
+          "category": "lifestyle",
+          "description": "Poor gut motility (slow transit) allows fungi and bacteria to accumulate in the small intestine. Strategies to improve motility include regular physical movement, spacing meals to allow migrating motor complex activity (leaving 4\u20135 hours between meals without snacking), and addressing constipation.",
+          "evidence_level": "moderate",
+          "notes": "This is particularly relevant if fungal overgrowth co-occurs with SIBO or gastroparesis. Motility agents (such as low-dose naltrexone, prucalopride, or ginger) may be considered with professional guidance."
         },
         {
-          "name": "Elimination diet and food sensitivity testing",
+          "name": "Dietary fibre and prebiotic support (strategic use)",
           "category": "diet",
-          "description": "If food sensitivities are worsening symptoms, an elimination diet (removing common triggers like dairy, gluten, eggs) can help clarify triggers. Some practitioners use IgG food sensitivity testing, though evidence for this test's clinical utility is mixed.",
-          "evidence_level": "anecdotal",
-          "notes": "Food sensitivities often resolve once fungal overgrowth is treated and gut barrier is healed. Don't over-restrict unnecessarily; focus first on removing obvious triggers and high-sugar/refined-carb foods."
-        },
-        {
-          "name": "Reduce alcohol consumption",
-          "category": "diet/lifestyle",
-          "description": "Alcohol feeds Candida and impairs immune function. Eliminate or drastically reduce alcohol (especially beer, wine, and sugary drinks) during active treatment. Dry spirits are slightly better than sugary beverages but all alcohol should be minimized.",
-          "evidence_level": "strong",
-          "notes": "Even small amounts of alcohol can trigger symptoms in people with active overgrowth. Once overgrowth is resolved, moderate alcohol may be tolerated."
-        },
-        {
-          "name": "Die-off (Herxheimer) reaction management",
-          "category": "lifestyle/symptom management",
-          "description": "When antifungal treatment begins, fungi die and release endotoxins, causing temporary worsening of symptoms (bloating, headache, fatigue, brain fog, skin rashes) for 3\u201310 days. This is called die-off or Herxheimer reaction. Manage by reducing antifungal dose, increasing water intake, supporting liver detoxification (milk thistle, NAC), and taking activated charcoal or bentonite clay to bind toxins.",
-          "evidence_level": "anecdotal",
-          "notes": "Die-off is controversial in mainstream medicine but widely reported in functional medicine communities. If you experience severe die-off, reduce antifungal dose and increase gradually. Slower, gentler treatment reduces die-off but takes longer."
+          "description": "Supporting a diverse bacterial microbiome through adequate fibre intake strengthens colonisation resistance against fungi. However, during active overgrowth, high-FODMAP prebiotic fibres may worsen fermentation symptoms. Timing and type of fibre matter.",
+          "evidence_level": "moderate",
+          "notes": "Start with lower-fermentability fibre sources (e.g. cooked vegetables, psyllium) during active treatment. Increase diversity gradually as symptoms settle. This is a long-term microbiome support strategy rather than an acute treatment."
         }
       ],
       "things_to_avoid": [
-        "Refined sugars and high-fructose corn syrup \u2014 these directly feed Candida and perpetuate overgrowth",
-        "Alcohol (especially beer and wine) \u2014 feeds fungi and impairs immune function",
-        "Mold-containing foods (peanuts, corn, dried fruits, leftover grains) \u2014 mold itself can worsen dysbiosis and fungal burden",
-        "Unnecessary antibiotics \u2014 disrupt healthy bacteria and allow fungal regrowth",
-        "Processed and ultra-processed foods \u2014 often contain hidden sugars and additives that feed dysbiosis",
-        "High-carbohydrate grains in large quantities \u2014 while whole grains are okay in moderation, high carb intake fuels fungal growth",
-        "NSAIDs (ibuprofen, naproxen) used long-term \u2014 can damage intestinal barrier and promote dysbiosis",
-        "Artificial sweeteners in large amounts \u2014 some data suggest they may alter the microbiome; moderation is safer"
+        "High-sugar foods, refined carbohydrates, and sugary drinks \u2014 these directly fuel Candida growth and fermentation",
+        "Alcohol, particularly beer and wine \u2014 yeast-containing and high in fermentable sugars; may directly promote overgrowth",
+        "Unnecessary or repeated broad-spectrum antibiotic courses \u2014 each course risks resetting the microbiome and facilitating fungal proliferation",
+        "Long-term or high-dose proton pump inhibitor use without reassessment \u2014 raises gastric pH and may facilitate fungal colonisation of the small intestine",
+        "Prolonged, extreme anti-Candida elimination diets without professional support \u2014 risks nutritional deficiency, orthorexia, and loss of microbial diversity that actually protects against fungi",
+        "Assuming all symptoms are caused by Candida \u2014 this can delay identification of other serious or treatable conditions (SIBO, coeliac disease, IBD, cancer) that share symptoms",
+        "Self-treating with oral azole antifungals without appropriate diagnosis \u2014 unnecessary antifungal use contributes to resistance and may cause adverse effects",
+        "Snacking constantly throughout the day \u2014 prevents migrating motor complex function and may promote microbial stasis in the small intestine"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "Most conventional doctors will not investigate fungal overgrowth in people who are not immunocompromised, and will not accept the concept of 'systemic Candida' as a driver of fatigue, brain fog, or GI symptoms in otherwise healthy people.",
+        "why_resisted": "People often expect their GP or gastroenterologist to take this seriously and order appropriate tests. When this does not happen, many feel dismissed and may either give up or go too far in the other direction, self-diagnosing Candida as the cause of every symptom.",
+        "path_forward": "Working with a functional medicine doctor or integrative gastroenterologist who is familiar with SIFO and uses validated testing (stool culture with quantification or small bowel aspiration) allows for a proper evidence-based investigation without either dismissing the possibility or over-attributing symptoms."
+      },
+      {
+        "truth": "Antifungal treatment without addressing the underlying drivers \u2014 diet, antibiotic history, gut motility, blood sugar, PPI use \u2014 almost always results in relapse.",
+        "why_resisted": "Antifungal medication feels like a clear, active solution. Dietary and lifestyle change is slow, effortful, and unglamorous. Many people want a drug course that resolves the problem permanently.",
+        "path_forward": "People who successfully resolve fungal overgrowth long-term typically combine a supervised antifungal course with genuine dietary reform, microbiome rebuilding, and elimination of predisposing factors. This requires 3\u201312 months of sustained effort, not a 2-week prescription."
+      },
+      {
+        "truth": "The anti-Candida internet ecosystem is full of misinformation, exaggerated claims, and products sold to people who are understandably desperate for answers. Not every symptom is caused by Candida, and not every test or supplement sold for 'Candida' is valid or effective.",
+        "why_resisted": "When mainstream medicine has failed to provide answers, patients are often drawn to communities and practitioners who offer confident explanations and protocols. The Candida framework can feel like a revelation after years of dismissal.",
+        "path_forward": "Using peer-reviewed research on SIFO (Dr. Rao's group, published in journals like Clinical Gastroenterology and Hepatology) as an anchor helps people distinguish credible from speculative claims, and avoid spending significant money on unvalidated tests and supplements while real conditions go uninvestigated."
+      },
+      {
+        "truth": "Die-off symptoms ('Herxheimer reaction') from antifungal treatment are real for some people, but they are also frequently used to rationalise continuing treatments that are simply causing harm or are not working.",
+        "why_resisted": "The idea that feeling worse is evidence of treatment working is psychologically appealing and provides a narrative for tolerating significant discomfort. This can prevent people from stopping treatments that are genuinely making them worse.",
+        "path_forward": "Mild, temporary worsening in the first 3\u20137 days of antifungal treatment is plausible as fungal die-off. Severe or prolonged worsening beyond 1\u20132 weeks, or worsening that continues throughout a full treatment course, warrants reassessment with a clinician rather than persistence."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Sustained dietary change (low-sugar, whole foods)",
-          "why_it_matters": "Diet is the primary fuel for Candida. Once sugar intake is reduced and stays reduced, fungal regrowth is prevented. This is the most important lever for long-term control.",
-          "how_to_start": "Start by cutting out obvious sources: added sugars, refined grains, sweetened beverages, and alcohol. Replace with non-starchy vegetables, protein, and healthy fats. You do not need to be perfect; even a 70\u201380% reduction in simple carbs will slow fungal growth.",
-          "timeline": "Initial symptom improvement in 2\u20134 weeks. Full rebalancing of microbiota over 3\u20136 months.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Restoration of healthy bacterial microbiota (dysbiosis treatment)",
-          "why_it_matters": "Healthy bacteria compete with and suppress Candida. Without bacterial restoration, fungal overgrowth recurs. This is the foundation of long-term healing.",
-          "how_to_start": "Combine probiotics (25\u201350 billion CFU daily, with emphasis on spore-formers or S. boulardii), fermented foods, and prebiotic fiber (starting low and increasing gradually). Work with a practitioner experienced in dysbiosis if possible.",
-          "timeline": "6\u201312 months for robust microbiota restoration; some improvements within 4\u20138 weeks.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Repair of the intestinal barrier (leaky gut healing)",
-          "why_it_matters": "A damaged gut barrier allows fungal metabolites and antigens to trigger systemic inflammation and symptoms. Sealing the barrier reduces symptom burden and improves immune tolerance.",
-          "how_to_start": "Add L-glutamine (5\u201315 g daily), bone broth or collagen, and slippery elm (1\u20132 teaspoons 2\u20133 times daily). Reduce inflammatory foods and NSAIDs. These changes support barrier repair over weeks to months.",
-          "timeline": "Noticeable improvement in bloating and fatigue over 4\u20138 weeks; full barrier healing over 3\u20136 months.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Stress reduction and sleep optimization",
-          "why_it_matters": "Chronic stress and poor sleep suppress immune function, allowing Candida to proliferate despite other interventions. Sleep and stress management are force multipliers for recovery.",
-          "how_to_start": "Aim for 7\u20139 hours of sleep; establish a consistent bedtime routine. Add one stress-reduction practice: meditation (10 minutes daily), yoga, or walks in nature. Even small changes compound over time.",
-          "timeline": "Sleep improvements can happen within 1\u20132 weeks; immune and microbiota effects accumulate over months.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Targeted antifungal treatment (prescription or herbal)",
-          "why_it_matters": "While diet and probiotics are foundational, active antifungal treatment can accelerate clearance of fungal burden, especially in cases of severe overgrowth. This shortens the recovery window.",
-          "how_to_start": "Work with a practitioner (functional medicine, naturopath, or gastroenterologist) to choose appropriate antifungal (herbal or pharmaceutical). Start low, increase gradually to manage die-off. Typical courses are 4\u201312 weeks.",
-          "timeline": "Noticeable symptom improvement within 2\u20134 weeks of starting antifungals; full resolution over 8\u201316 weeks when combined with dietary and lifestyle changes.",
+          "lever": "Confirmed diagnosis before committing to treatment",
+          "why_it_matters": "Without a reasonable basis for diagnosis (stool culture, small bowel aspiration, or a well-reasoned supervised trial), people may spend months or years on antifungal protocols while other conditions (SIBO, coeliac, IBD) go undetected. Diagnosis shapes treatment and prevents wasted effort.",
+          "how_to_start": "Request a comprehensive stool culture including fungal quantification from a functional medicine doctor, or pursue referral to a gastroenterologist willing to investigate SIFO specifically.",
+          "timeline": "Testing and results typically available within 2\u20134 weeks",
           "requires_professional": true
         },
         {
-          "lever": "Avoid recurrent triggers (antibiotics, high-stress, poor sleep)",
-          "why_it_matters": "Fungal overgrowth often recurs if the original triggers (unnecessary antibiotics, chronic stress, poor sleep, high sugar intake) resume. Identifying and preventing recurrence is essential for sustainability.",
-          "how_to_start": "Track which factors worsen your symptoms (certain foods, stress, poor sleep, antibiotic use). Develop a personal plan to minimize exposure. Be selective about antibiotic use and discuss with your doctor.",
-          "timeline": "Ongoing; recurrence prevention requires sustained behavioral change, but the benefit compounds over years.",
+          "lever": "Sustained reduction in dietary simple sugars and refined carbohydrates",
+          "why_it_matters": "Fungi depend on readily available fermentable carbohydrates. Reducing sugar intake starves the overgrowth and reduces fermentation symptoms, particularly in conjunction with antifungal treatment.",
+          "how_to_start": "Replace refined carbohydrates with whole food sources. Reduce obvious sugar sources: sweetened drinks, baked goods, confectionery, fruit juice. This does not require extreme elimination \u2014 a consistent moderate reduction is more sustainable and sufficient for most people.",
+          "timeline": "Symptom improvement often noticed within 2\u20134 weeks of dietary change",
           "requires_professional": false
+        },
+        {
+          "lever": "Treating with an appropriate antifungal under professional supervision",
+          "why_it_matters": "For confirmed or strongly suspected SIFO, pharmaceutical antifungals (particularly fluconazole or nystatin) are substantially more effective than dietary measures or supplements alone. Early, appropriate treatment reduces the duration of symptom burden and mucosal disruption.",
+          "how_to_start": "Work with a functional medicine doctor or integrative gastroenterologist to obtain a prescription based on clinical assessment and culture results where possible.",
+          "timeline": "Symptom improvement often begins within 1\u20133 weeks of starting treatment; full course typically 4\u20138 weeks",
+          "requires_professional": true
+        },
+        {
+          "lever": "Rebuilding the bacterial microbiome after antifungal treatment",
+          "why_it_matters": "A robust and diverse bacterial microbiome is the body's main defence against fungal overgrowth ('colonisation resistance'). Without active microbiome rebuilding, the conditions that allowed overgrowth to establish will persist and relapse is likely.",
+          "how_to_start": "Introduce high-quality probiotics (including S. boulardii and Lactobacillus strains) during and after antifungal treatment. Increase dietary diversity \u2014 particularly cooked vegetables, legumes, and whole grains \u2014 as tolerated. Consider fermented foods once symptoms have settled.",
+          "timeline": "Meaningful microbiome shifts can take 3\u20136 months of consistent dietary and probiotic support",
+          "requires_professional": false
+        },
+        {
+          "lever": "Identifying and removing predisposing factors",
+          "why_it_matters": "Fungal overgrowth rarely establishes without a precipitating or maintaining cause. Identifying whether PPIs, antibiotic overuse, high sugar intake, blood sugar dysregulation, or gut motility problems are maintaining the condition is essential for preventing relapse.",
+          "how_to_start": "Review medication list with a doctor (particularly PPIs and steroids). Have fasting glucose and HbA1c checked if blood sugar dysregulation is suspected. Assess gut transit and motility \u2014 constipation and slow transit are key maintaining factors.",
+          "timeline": "Addressing modifiable risk factors is a 3\u20136 month process that runs in parallel with treatment",
+          "requires_professional": true
         }
       ],
       "common_mistakes": [
-        "Relying only on antifungal medication without dietary change \u2014 antifungals reduce fungal load, but without diet change, fungi regrow once treatment stops",
-        "Switching antifungals or probiotics too frequently \u2014 microbiota rebalancing takes weeks to months; changing treatments every 2\u20133 weeks prevents recovery",
-        "Over-restricting food to the point of nutritional deficiency \u2014 very strict elimination diets can undermine immune recovery; include adequate protein, healthy fats, and a variety of whole foods",
-        "Ignoring sleep and stress \u2014 these sabotage immune recovery and dysbiosis treatment; no amount of supplements can overcome chronic stress and sleep deprivation",
-        "Expecting quick fixes \u2014 fungal overgrowth develops over weeks to months; recovery similarly takes months, not weeks. Impatience leads to abandoning treatment prematurely",
-        "Not addressing the original trigger (e.g., continuing unnecessary antibiotic use) \u2014 if the root cause isn't addressed, recurrence is almost inevitable",
-        "Ignoring die-off reactions and stopping treatment prematurely \u2014 die-off (worsening of symptoms for 3\u201310 days) is normal and temporary; stopping treatment during die-off prevents success",
-        "Using very high doses of probiotics or antifungals immediately \u2014 starting too aggressively triggers severe die-off and GI upset; start low and increase gradually over 1\u20132 weeks"
+        "Treating Candida with antifungals without addressing underlying drivers, leading to almost inevitable relapse within weeks to months of stopping treatment",
+        "Following extreme anti-Candida elimination diets for months or years without professional guidance, resulting in nutritional deficiencies and no sustainable microbiome improvement",
+        "Self-diagnosing Candida based on symptom overlap and internet information, missing other serious and treatable conditions in the process",
+        "Stopping antifungal treatment too early because symptoms improve, before the fungal load has been adequately reduced \u2014 relapse rate is high with short courses",
+        "Relying on unvalidated tests (particularly the saliva test, or IgG-only blood panels without clinical context) to diagnose or monitor treatment response",
+        "Using antifungal supplements indefinitely as a maintenance strategy without monitoring \u2014 long-term use of potent antifungals (herbal or pharmaceutical) can harm beneficial bacteria and create resistance",
+        "Assuming that because fluconazole did not fully work, Candida is not the issue \u2014 non-albicans species (C. glabrata, C. krusei) are commonly fluconazole-resistant and require alternative antifungals",
+        "Ignoring the role of gut motility \u2014 without addressing slow transit, any treatment for overgrowth (bacterial or fungal) is working against the current"
       ]
     },
     "finding_help": {
       "specialists": [
         {
-          "type": "Functional medicine doctor or functional medicine practitioner",
-          "role": "Often the most experienced in diagnosing and treating fungal overgrowth. Typically orders comprehensive stool tests, manages antifungal regimens, and designs dietary and supplement protocols. More likely to accept fungal overgrowth as a diagnosis.",
-          "notes": "This is often your first stop if you suspect fungal overgrowth. Look for practitioners with specific training in microbiome health and dysbiosis."
+          "type": "Functional medicine doctor (MD or DO with functional medicine training)",
+          "role": "Most likely to investigate fungal overgrowth in immunocompetent individuals, order comprehensive stool testing including fungal quantification, and supervise antifungal treatment alongside dietary and microbiome support.",
+          "notes": "Quality varies significantly. Look for practitioners who use validated testing (stool culture or small bowel aspiration) rather than symptom checklists alone. Institute for Functional Medicine (IFM) certified practitioners are a starting point."
         },
         {
-          "type": "Naturopathic doctor (ND, licensed in regulated states)",
-          "role": "Often experienced in herbal antifungals and natural microbiome restoration. Can design comprehensive botanical and dietary protocols.",
-          "notes": "Licensure and training vary by state/country. In regulated states (e.g., Oregon, Washington), NDs have board certification. In unregulated states, quality varies widely. Look for board-certified and experienced practitioners."
+          "type": "Gastroenterologist (with interest in gut microbiome or SIFO)",
+          "role": "Can perform upper endoscopy with small bowel aspiration for definitive SIFO diagnosis. Some academic gastroenterologists (particularly those following Dr. Rao's research) are beginning to take SIFO seriously as a distinct clinical entity.",
+          "notes": "Most mainstream gastroenterologists will not investigate SIFO in immunocompetent patients and may be dismissive. Finding one who is familiar with the research on SIFO specifically may require persistence and potentially seeking a second opinion or academic centre."
         },
         {
-          "type": "Gastroenterologist",
-          "role": "Can rule out other causes of symptoms (IBD, celiac disease, SIBO) and order culture-based testing for invasive candidiasis. Some gastroenterologists are open to fungal overgrowth diagnosis, but many are skeptical of SIFO as a mainstream diagnosis.",
-          "notes": "Mainstream gastroenterology often dismisses fungal overgrowth in non-immunocompromised patients. You may need to specifically ask about fungal testing and be prepared to discuss or provide literature."
-        },
-        {
-          "type": "Registered Dietitian (RD or RDN, especially with microbiome focus)",
-          "role": "Can design sustainable, balanced diets that eliminate sugar and refined carbs while maintaining nutritional adequacy. Essential for long-term dietary compliance.",
-          "notes": "Look for a registered dietitian (not just a 'nutritionist'), ideally with training in microbiome health or functional nutrition."
+          "type": "Registered dietitian (gut health specialisation)",
+          "role": "Can provide evidence-based dietary support for managing fungal overgrowth without falling into the trap of overly restrictive protocols. Helps design sustainable dietary modifications that support microbiome recovery.",
+          "notes": "Look for dietitians with experience in gut microbiome or functional GI conditions. A dietitian can be particularly helpful if extreme anti-Candida dieting has become a source of stress or nutritional concern."
         },
         {
           "type": "Integrative medicine doctor",
-          "role": "Bridges conventional and alternative approaches. Can order testing and coordinate with other practitioners. Often knowledgeable about fungal overgrowth but also grounded in mainstream evidence.",
-          "notes": "Often more accessible than pure functional medicine and covered by insurance in some cases."
+          "role": "May combine conventional diagnostic tools with functional medicine approaches, offering a middle ground between mainstream dismissal and overclaiming functional medicine protocols.",
+          "notes": "Often a good option for people who want both evidence-based investigation and openness to less conventional diagnoses."
+        },
+        {
+          "type": "Gynaecologist (for recurrent vaginal candidiasis)",
+          "role": "Specialises in recurrent vulvovaginal candidiasis (RVVC), including culture and sensitivity testing to identify non-albicans species and prescribing suppressive antifungal protocols.",
+          "notes": "For recurrent vaginal Candida specifically, a gynaecologist with RVVC experience is the most appropriate specialist. Referral to a vulval disease clinic may be appropriate in refractory cases."
         }
       ],
       "patient_communities": [
         {
-          "name": "Candida and Fungal Overgrowth Support",
-          "platform": "Facebook",
-          "url": null,
-          "notes": "Active groups with thousands of members sharing experiences, dietary tips, and product recommendations. Useful for practical advice and emotional support, but quality of information varies; always verify claims with a practitioner."
-        },
-        {
           "name": "r/Candida",
           "platform": "Reddit",
-          "url": "https://www.reddit.com/r/candida/",
-          "notes": "Active subreddit with discussions on symptoms, treatment strategies, and dietary approaches. Good for peer experience but moderation varies; be cautious of unverified medical claims."
+          "url": "https://www.reddit.com/r/Candida/",
+          "notes": "Large, active community of people managing Candida overgrowth. Contains practical experience, protocol sharing, and peer support. Quality of information varies widely \u2014 use for lived experience rather than medical guidance."
         },
         {
-          "name": "Functional Medicine Institute or local functional medicine practitioner networks",
-          "platform": "In-person / local communities",
-          "url": null,
-          "notes": "Some practitioners host patient groups or workshops on microbiome health. Valuable for finding local providers and learning directly from experienced clinicians."
+          "name": "r/SIBO",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/SIBO/",
+          "notes": "Relevant because SIFO and SIBO frequently co-occur. Contains discussion of overlapping conditions, testing, and treatment approaches. Many members have investigated both conditions."
         },
         {
-          "name": "SIFO Research and Discussion Forums",
-          "platform": "Specialized forums (e.g., functional medicine forums, SIFO-specific sites)",
+          "name": "The Candida Diet Community",
+          "platform": "Website/forum",
+          "url": "https://www.thecandidadiet.com/",
+          "notes": "Resource associated with 'The Candida Diet' protocol. Provides dietary guidance and community discussion. Has a commercial element (supplements); information should be evaluated critically but the forum contains useful patient experience."
+        },
+        {
+          "name": "Gut Health Collective Facebook Groups",
+          "platform": "Facebook",
           "url": null,
-          "notes": "Smaller, more focused communities of people and practitioners discussing SIFO specifically. Often have higher-quality discussions but less activity than large social media groups."
+          "notes": "Various gut health groups on Facebook discuss SIFO and Candida overgrowth alongside SIBO and IBS. Search for 'SIFO' or 'Candida overgrowth' groups. Useful for finding practitioners others have found helpful."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "The Candida Yeast-Free Cookbook",
-        "type": "book",
-        "author_or_source": "Pat Connolly and Associates",
-        "url": null,
-        "description": "Practical cookbook with anti-Candida recipes and dietary guidance. Useful for meal planning during treatment. Older resource but foundational for understanding the anti-Candida diet.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Breaking the Yeast Connection",
-        "type": "book",
-        "author_or_source": "William Crook, MD (with Cory Servaas)",
-        "url": null,
-        "description": "Accessible overview of Candida overgrowth, its causes, and treatment strategies. Dated but still relevant for understanding the condition from a patient perspective.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Gut and Psychology Syndrome (GAPS): Natural Treatment for Autism, Dyspraxia, A.D.D., Dyslexia, Depression, Schizophrenia",
-        "type": "book",
-        "author_or_source": "Dr. Natasha Campbell-McBride",
-        "url": null,
-        "description": "While focused on GAPS protocol, this book includes extensive discussion of dysbiosis, fungal overgrowth, and leaky gut. Provides both theory and practical dietary protocols.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "Missing Microbes: How the Overuse of Antibiotics Is Fueling Our Modern Plagues",
-        "type": "book",
-        "author_or_source": "Martin J. Blaser, MD",
-        "url": null,
-        "description": "Mainstream, well-researched exploration of how antibiotic overuse disrupts the microbiome and predisposes to dysbiosis and fungal overgrowth. Excellent for understanding the mechanism.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "The Microbiome Solution: A Radical New Way to Heal Your Body from the Inside Out",
-        "type": "book",
-        "author_or_source": "Robynne Chutkan, MD",
-        "url": null,
-        "description": "Written by a gastroenterologist with functional medicine leanings. Discusses dysbiosis, fungal overgrowth, and practical interventions in accessible language.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Functional Medicine Institute or International Functional Medicine Council resources",
-        "type": "website",
-        "author_or_source": "Functional Medicine organizations",
-        "url": "https://www.ifm.org/",
-        "description": "Professional organizations offering practitioner directories, continuing education, and patient resources. Useful for finding a qualified practitioner and learning about current functional medicine approaches.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Pubmed search: 'Candida overgrowth' or 'SIFO'",
+        "title": "Small Intestinal Fungal Overgrowth (SIFO): A Cause of Gastrointestinal Symptoms",
         "type": "research paper",
-        "author_or_source": "PubMed (National Library of Medicine)",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/",
-        "description": "Primary literature on fungal overgrowth, SIBO-fungal coinfection, antifungal therapies, and microbiome research. Valuable for those wanting evidence-based deep dives. Search terms: 'Candida overgrowth small intestine', 'SIFO', 'fungal dysbiosis'.",
+        "author_or_source": "Satish S.C. Rao et al., Clinical Gastroenterology and Hepatology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26164072/",
+        "description": "The landmark paper establishing SIFO as a distinct clinical entity. Reports that approximately 26% of patients with unexplained GI symptoms had SIFO on small bowel aspiration. Essential reading for anyone wanting to understand the scientific basis of SIFO.",
         "audience": "advanced"
       },
       {
-        "title": "The Gut Health Protocol podcast or Functional Medicine podcasts",
+        "title": "The Candida Diet",
+        "type": "website",
+        "author_or_source": "Lisa Richards",
+        "url": "https://www.thecandidadiet.com/",
+        "description": "Comprehensive lay resource covering the biology of Candida overgrowth, dietary approaches, and supplement protocols. More accessible than academic papers. Has a commercial element; core dietary and biological information is generally sound.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Gut: The Inside Story of Our Body's Most Underrated Organ",
+        "type": "book",
+        "author_or_source": "Giulia Enders",
+        "url": null,
+        "description": "Accessible, science-based overview of gut function, the microbiome, and how disruptions manifest as symptoms. Provides essential context for understanding how fungal and bacterial imbalances develop and affect health.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Healthy Gut, Healthy You",
+        "type": "book",
+        "author_or_source": "Dr. Michael Ruscio",
+        "url": null,
+        "description": "Written by a functional medicine doctor, this book covers SIBO, fungal overgrowth, gut dysbiosis, and practical treatment protocols. Takes a measured, evidence-informed approach that avoids some of the more extreme claims in the Candida community. Useful for people wanting a clinical framework.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Dr. Michael Ruscio podcast \u2014 The Ruscio Radio / Health & Wellness Show",
         "type": "podcast",
-        "author_or_source": "Various functional medicine experts",
-        "url": null,
-        "description": "Accessible audio format exploring microbiome health, dysbiosis, and practical treatment strategies. Good for learning while commuting or exercising.",
-        "audience": "beginner"
+        "author_or_source": "Dr. Michael Ruscio",
+        "url": "https://drruscio.com/podcast/",
+        "description": "Regular episodes on gut health, SIBO, SIFO, and microbiome science. Features interviews with researchers including gastroenterologists who publish on these topics. Evidence-focused and willing to discuss where evidence is limited.",
+        "audience": "intermediate"
       },
       {
-        "title": "Dr. William Davis or Dr. David Perlmutter resources on grain brain and microbiome",
-        "type": "book / website",
-        "author_or_source": "William Davis, MD; David Perlmutter, MD",
+        "title": "Candida and the Microbiome \u2014 episode featuring Dr. Mahmoud Ghannoum",
+        "type": "podcast",
+        "author_or_source": "Various gut health podcasts",
         "url": null,
-        "description": "Accessible books and articles exploring connections between diet, the microbiome, brain health, and fungal overgrowth. More mainstream-friendly than some alternative sources.",
-        "audience": "beginner"
+        "description": "Dr. Mahmoud Ghannoum is a leading mycobiome researcher who coined the term 'mycobiome' and has published extensively on fungal-bacterial interactions in the gut. Searching his name on podcast platforms will surface multiple accessible interviews explaining the science of gut fungi.",
+        "audience": "intermediate"
       },
       {
-        "title": "Organic acid testing interpretation guides (Great Plains Laboratory, Genova Diagnostics)",
-        "type": "website / educational material",
-        "author_or_source": "Laboratory educational resources",
+        "title": "Total Gut Balance",
+        "type": "book",
+        "author_or_source": "Dr. Mahmoud Ghannoum",
         "url": null,
-        "description": "Lab-provided guides on interpreting OAT and stool test results. Helpful for understanding your own test results; usually available free from the lab.",
+        "description": "Written by the leading researcher on the gut mycobiome. Explains how fungi interact with bacteria in the gut, how imbalances develop, and how diet and lifestyle can restore balance. More scientifically grounded than most consumer books on Candida.",
         "audience": "intermediate"
       }
     ],
     "relevance_signal": "Symptoms began or worsened **after antibiotics**. Bloating, brain fog, fatigue. Cravings for sugar and refined carbohydrates. Thrush or skin fungal infections recurring."
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

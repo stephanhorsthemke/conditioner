@@ -2,497 +2,613 @@
   "condition_id": "ncgs",
   "condition_name": "Non-coeliac gluten sensitivity",
   "generated_at": "2026-04-16T10:24:21.572026Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "Non-coeliac gluten sensitivity (NCGS) is a condition where eating gluten triggers digestive and other symptoms, but blood tests for coeliac disease are negative and there is no intestinal damage. The exact cause is not fully understood, but symptoms usually improve when gluten is removed from the diet.",
-    "detailed_summary": "Non-coeliac gluten sensitivity (NCGS) is a poorly defined condition characterised by gastrointestinal and extra-intestinal symptoms triggered by gluten ingestion in people who do not have coeliac disease (negative tissue transglutaminase antibodies, normal intestinal biopsy) or wheat allergy (negative IgE testing). The underlying mechanism remains unclear\u2014proposed mechanisms include activation of innate immunity, sensitivity to other wheat components (like fermentable carbohydrates or amylase-trypsin inhibitors), or psychological factors. NCGS is diagnosed largely by symptom response to gluten exclusion, as no specific biomarker exists. Prevalence estimates vary widely because diagnostic criteria are loose. Most people with NCGS report improvement within days to weeks of eliminating gluten, though strict adherence is needed to assess true response.",
+    "plain_summary": "Non-coeliac gluten sensitivity (NCGS) is a condition in which people experience real, reproducible symptoms when eating gluten-containing foods, but do not have coeliac disease or a wheat allergy. Symptoms typically improve on a gluten-free diet and return when gluten is reintroduced. The mechanisms are not fully understood, and there is ongoing scientific debate about whether gluten itself \u2014 or other components of wheat such as FODMAPs or amylase-trypsin inhibitors (ATIs) \u2014 is the primary driver.",
+    "detailed_summary": "Non-coeliac gluten sensitivity (NCGS) describes a clinical syndrome in which individuals experience gastrointestinal and/or extra-intestinal symptoms in response to gluten-containing foods, with symptoms resolving on a gluten-free diet, and with coeliac disease and wheat allergy having been ruled out. The condition was formally recognised in research literature in the early 2010s following double-blind, placebo-controlled challenge studies, though debate about its exact mechanisms continues.\n\nUnlike coeliac disease, NCGS does not cause the characteristic intestinal villous atrophy or the highly specific serological markers (anti-tissue transglutaminase IgA, endomysial antibodies). Unlike IgE-mediated wheat allergy, it does not involve immediate allergic responses measurable by standard allergy testing. This leaves NCGS as a clinical diagnosis made by exclusion and symptom response to dietary change.\n\nThe biology of NCGS is complex and not fully resolved. Several competing or complementary mechanisms have been proposed. Innate immune activation \u2014 rather than the adaptive immune response seen in coeliac disease \u2014 appears to play a role, with some evidence of increased intestinal permeability. Wheat contains multiple components beyond gluten proteins: FODMAPs (fructans in particular) may account for a subset of GI symptoms; amylase-trypsin inhibitors (ATIs) may activate toll-like receptor 4 pathways and contribute to systemic and gut inflammation; and wheat germ agglutinin has also been implicated by some researchers.\n\nThe symptom profile in NCGS is heterogeneous. GI symptoms overlap heavily with IBS, and extra-intestinal symptoms \u2014 including brain fog, fatigue, headache, joint pain, and skin manifestations \u2014 are frequently reported, sometimes dominating the clinical picture. This breadth of symptoms, combined with the lack of a diagnostic biomarker, makes NCGS difficult to identify and easy to dismiss in conventional clinical settings.\n\nDiagnosis in practice relies on: ruling out coeliac disease (with serology and, ideally, duodenal biopsy while still on a gluten-containing diet), ruling out wheat allergy, followed by a structured gluten elimination and reintroduction trial. Some researchers advocate for a formal double-blind gluten challenge to confirm the diagnosis and separate it from nocebo effects or FODMAP sensitivity, but this is rarely done outside research settings.\n\nMany people with NCGS do significant self-directed investigation \u2014 often arriving at a gluten-free diet through their own experience \u2014 before receiving any clinical validation. This is legitimate and the condition's self-reported nature makes patient observation particularly important.",
     "prevalence": {
-      "summary": "Estimated to affect somewhere between 1 and 6% of the population, though exact figures are contentious because there is no agreed diagnostic test.",
-      "estimate": "1\u20136% of the general population; some studies suggest up to 10% in certain populations",
-      "notes": "Wide variation reflects the lack of a gold-standard biomarker and reliance on self-reported symptoms. Many people self-diagnose without clinical input. Rates may be higher in people already seeking care for gastrointestinal complaints. Overlap with irritable bowel syndrome (IBS) and other functional disorders makes true prevalence difficult to pin down."
+      "summary": "Estimated to affect somewhere between 1% and 6% of the general population, though the true figure is uncertain.",
+      "estimate": "1\u20136% of the population",
+      "notes": "Prevalence estimates vary widely because there is no validated biomarker and no agreed diagnostic protocol. Many individuals self-report gluten sensitivity, but controlled challenge studies suggest a significant proportion of self-reporters do not react to blinded gluten \u2014 meaning both overdiagnosis (due to nocebo or FODMAP confusion) and underdiagnosis (in those dismissed by clinicians) likely occur simultaneously. NCGS appears more common in women and in adults, though it is reported across all ages. Some population studies suggest figures as high as 13% of self-reported gluten sensitivity, but clinically confirmed NCGS is likely in the 1\u20133% range."
     },
     "subgroups": [
       {
-        "name": "Predominantly gastrointestinal NCGS",
-        "description": "Characterised primarily by digestive symptoms such as bloating, diarrhoea, constipation, and abdominal pain, with few or no systemic symptoms.",
+        "name": "GI-predominant NCGS",
+        "description": "Individuals whose symptoms are primarily gastrointestinal, closely resembling IBS in presentation.",
         "distinguishing_features": [
-          "Symptoms resolve quickly (within days) after gluten elimination",
-          "Symptoms flare predictably after gluten consumption",
-          "No evidence of wheat allergy or coeliac disease",
-          "May overlap significantly with IBS or functional dyspepsia"
+          "Bloating, abdominal pain, altered bowel habits dominate the clinical picture",
+          "May overlap with fructan sensitivity (a FODMAP component of wheat)",
+          "Symptoms may partially respond to low-FODMAP diet even without full gluten elimination"
         ]
       },
       {
-        "name": "Predominantly extra-intestinal NCGS",
-        "description": "Characterised by neurological, joint, skin, or systemic symptoms triggered or worsened by gluten, with minimal or no digestive complaints.",
+        "name": "Neurological / extra-intestinal predominant NCGS",
+        "description": "Individuals in whom neurological or systemic symptoms are the primary or most disabling feature, sometimes called 'gluten sensitivity with neurological manifestations'.",
         "distinguishing_features": [
-          "Headache, 'brain fog', fatigue, or joint pain as primary symptoms",
-          "Dermatitis or other skin manifestations",
-          "Less obvious link between gluten intake and symptom onset",
-          "More difficult to confirm because symptoms are subjective and slow-onset"
+          "Brain fog, cognitive impairment, headache, and fatigue are the main complaints",
+          "May have minimal or no GI symptoms, making the dietary connection harder to identify",
+          "Gluten ataxia (cerebellar damage linked to gluten exposure) is a related but distinct diagnosis",
+          "Anti-gliadin antibodies (AGA IgG/IgA) are sometimes elevated, though not specific"
         ]
       },
       {
-        "name": "Atypical or mixed-phenotype NCGS",
-        "description": "A spectrum presentation with variable gastrointestinal and extra-intestinal features, sometimes overlapping with other functional or autoimmune conditions.",
+        "name": "NCGS with elevated anti-gliadin antibodies",
+        "description": "A subgroup in whom older-generation anti-gliadin antibodies (AGA) are positive, despite normal coeliac serology.",
         "distinguishing_features": [
-          "Inconsistent symptom patterns",
-          "Delayed symptom onset (hours to days after gluten intake)",
-          "Frequent comorbidity with IBS, fibromyalgia, or chronic fatigue syndrome",
-          "Response to gluten elimination may be partial or variable"
+          "AGA IgG or IgA positivity without endomysial or anti-tTG antibodies",
+          "Some researchers consider elevated AGA a supportive finding in NCGS, particularly with neurological symptoms",
+          "Not diagnostic on its own; significance is debated"
+        ]
+      },
+      {
+        "name": "NCGS with concurrent FODMAP sensitivity",
+        "description": "Individuals who react to wheat partly or wholly due to its fructan content rather than (or in addition to) gluten proteins.",
+        "distinguishing_features": [
+          "Symptoms may improve on low-FODMAP diet independently of gluten restriction",
+          "Double-blind gluten challenges in this group are more likely to show no response to isolated gluten",
+          "Fructan challenge may reproduce GI symptoms",
+          "Distinguishing this from 'true' gluten sensitivity requires careful dietary methodology"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Bloating and distension",
+        "symptom": "Abdominal bloating and distension",
         "category": "digestive",
-        "notes": "Often occurs within 1\u20132 hours of gluten intake; may worsen throughout the day. One of the most commonly reported symptoms."
+        "notes": "One of the most commonly reported symptoms; can be severe and occur within hours of gluten ingestion"
       },
       {
-        "symptom": "Abdominal pain or discomfort",
+        "symptom": "Abdominal pain and cramping",
         "category": "digestive",
-        "notes": "Can range from mild cramping to severe pain; timing and character vary between individuals."
+        "notes": "Often diffuse; may be difficult to distinguish from IBS"
       },
       {
         "symptom": "Diarrhoea",
         "category": "digestive",
-        "notes": "Typically occurs within hours of gluten ingestion; may be watery or frequent."
+        "notes": "Can be the predominant bowel symptom in some individuals"
       },
       {
         "symptom": "Constipation",
         "category": "digestive",
-        "notes": "Less common than diarrhoea but reported by some; may alternate with looser stools."
+        "notes": "Reported alongside or instead of diarrhoea; mixed bowel pattern is common"
       },
       {
         "symptom": "Nausea",
         "category": "digestive",
-        "notes": "May occur shortly after eating gluten-containing foods."
+        "notes": "May accompany other GI symptoms; occasionally severe"
       },
       {
-        "symptom": "Fatigue or lethargy",
+        "symptom": "Brain fog and cognitive impairment",
+        "category": "neurological",
+        "notes": "Described as difficulty concentrating, mental cloudiness, or slow thinking; often reported as one of the most disabling symptoms"
+      },
+      {
+        "symptom": "Fatigue and low energy",
         "category": "systemic",
-        "notes": "Often reported after gluten ingestion; severity varies; can persist for days."
+        "notes": "Often disproportionate to the degree of GI symptoms; may persist for days after gluten exposure"
       },
       {
-        "symptom": "Headache or migraine",
+        "symptom": "Headache",
         "category": "neurological",
-        "notes": "May occur within hours of gluten intake; some report triggered or worsened migraines."
+        "notes": "Including migraine-type headaches; may follow gluten exposure with a delay of hours to a day"
       },
       {
-        "symptom": "Brain fog, difficulty concentrating, or memory problems",
-        "category": "neurological",
-        "notes": "Subjective and difficult to measure; more commonly reported in extra-intestinal phenotype."
-      },
-      {
-        "symptom": "Joint pain or myalgia (muscle aches)",
+        "symptom": "Joint and muscle pain",
         "category": "musculoskeletal",
-        "notes": "Non-specific symptoms; may involve knees, hips, or small joints; relationship to gluten less clear than with digestive symptoms."
+        "notes": "Widespread aching reported by a significant minority; not limited to the gut"
       },
       {
-        "symptom": "Skin rash, eczema, or dermatitis",
+        "symptom": "Skin rashes or eczema-like eruptions",
         "category": "skin",
-        "notes": "Less common; onset may be delayed; difficult to distinguish from dermatitis herpetiformis or food allergy."
+        "notes": "Distinct from dermatitis herpetiformis (which is a coeliac manifestation); non-specific inflammatory skin changes reported"
       },
       {
-        "symptom": "Mood disturbances (anxiety, depression, irritability)",
-        "category": "psychiatric",
-        "notes": "Anecdotally reported; causality unclear and hard to establish without controlled study."
+        "symptom": "Numbness or tingling in limbs",
+        "category": "neurological",
+        "notes": "Peripheral neuropathy-like symptoms are reported; gluten neuropathy is a related but distinct diagnosis"
       },
       {
-        "symptom": "Mouth ulcers or aphthous stomatitis",
+        "symptom": "Depression and mood changes",
+        "category": "psychological",
+        "notes": "Mood disturbance associated with gluten exposure is reported by many individuals; gut-brain axis mechanisms proposed"
+      },
+      {
+        "symptom": "Anxiety",
+        "category": "psychological",
+        "notes": "May worsen acutely after gluten ingestion in some individuals"
+      },
+      {
+        "symptom": "Iron-deficiency anaemia (mild)",
+        "category": "systemic",
+        "notes": "Less prominent than in coeliac disease, but reported in some cases; warrants coeliac exclusion if present"
+      },
+      {
+        "symptom": "Mouth ulcers (aphthous stomatitis)",
         "category": "oral",
-        "notes": "Uncommon; may improve after gluten elimination, though not specific to NCGS."
+        "notes": "Recurrent oral ulcers are noted in some individuals; also seen in coeliac disease"
+      },
+      {
+        "symptom": "Reflux and upper GI discomfort",
+        "category": "digestive",
+        "notes": "Heartburn and indigestion reported alongside lower GI symptoms in some cases"
       }
     ],
     "testing": {
       "key_patterns": [
-        "Symptoms appear or worsen within minutes to a few hours of eating gluten-containing foods and improve within days to a week of avoidance",
-        "Symptoms are reproducible\u2014they occur consistently when gluten is reintroduced and resolve when it is eliminated",
-        "A mix of gastrointestinal symptoms (bloating, pain, diarrhoea) and/or systemic symptoms (fatigue, headache, joint pain) in the absence of anaemia, weight loss, or alarm features",
-        "No previous diagnosis of coeliac disease, wheat allergy, or other clear medical explanation for symptoms",
-        "Symptoms triggered by wheat, barley, or rye specifically (not just general food sensitivities)"
+        "Symptoms consistently improve when gluten-containing foods are removed from the diet for 4\u20136 weeks",
+        "Symptoms reproducibly return when gluten is reintroduced, ideally confirmed across multiple exposures",
+        "Coeliac disease serology (anti-tTG IgA, total IgA) is negative while the person is eating gluten",
+        "IgE-mediated wheat allergy testing (skin prick or specific IgE) is negative",
+        "No villous atrophy on duodenal biopsy (if performed), though some mild inflammation such as increased intraepithelial lymphocytes may be present",
+        "Older anti-gliadin antibodies (AGA IgG or IgA) may be elevated in a subset, though this is not specific to NCGS"
       ],
       "at_home": [
         {
-          "name": "Gluten elimination trial (elimination-rechallenge)",
-          "description": "Stop all gluten-containing foods (wheat, barley, rye) for 2\u20134 weeks and carefully document symptom changes. If symptoms improve significantly, reintroduce gluten in a deliberate meal and watch for symptom recurrence over the next 1\u20132 days. Symptom return on rechallenge suggests NCGS.",
-          "safety_notes": "This trial is safe but vulnerable to placebo effect and expectation bias. Ensure you truly eliminate gluten (hidden sources in sauces, processed foods, and medications can undermine the trial). If symptoms do not improve after strict elimination, NCGS is less likely. Do not use this trial to diagnose conditions requiring urgent investigation (e.g. persistent weight loss, bloody stools, anaemia)."
+          "name": "Structured gluten elimination trial",
+          "description": "Remove all gluten-containing foods (wheat, rye, barley, and most oats) from the diet for a minimum of 4\u20136 weeks while keeping a detailed symptom diary. Note which symptoms improve, how quickly, and by how much. After the elimination period, reintroduce a meaningful amount of gluten (e.g. 2\u20134 slices of bread daily for 1\u20132 weeks) and record whether symptoms return. Multiple reintroduction cycles increase confidence in the pattern.",
+          "safety_notes": "This trial should only be done after coeliac disease has been ruled out by blood tests \u2014 and the blood tests require active gluten consumption at the time of testing. Going gluten-free before coeliac testing produces false-negative results. If coeliac disease has not been excluded, consult a gastroenterologist before eliminating gluten."
         },
         {
-          "name": "Food and symptom diary",
-          "description": "Record all foods and drinks consumed and any symptoms (time, severity, type) for at least 2\u20134 weeks. Look for patterns linking gluten-containing meals to symptom onset. Note timing, severity, and whether symptoms were triggered by other factors (stress, sleep, menstrual cycle).",
-          "safety_notes": "Diaries are subjective and prone to recall bias and confirmation bias. Multiple food triggers and non-dietary factors (stress, infection, hormones) often confound the picture. Use the diary as a starting point, not as definitive proof."
+          "name": "Symptom and food diary",
+          "description": "Keep a detailed log of all foods eaten and symptoms experienced \u2014 including timing, severity, and nature of each symptom \u2014 for at least 2\u20134 weeks before and during any dietary change. This helps identify patterns, distinguish gluten reactions from FODMAP reactions, and provides useful data for a clinician.",
+          "safety_notes": "No safety concerns with diary-keeping itself. Avoid over-restricting the diet based on diary findings alone without professional guidance."
+        },
+        {
+          "name": "FODMAP vs gluten differentiation (self-guided)",
+          "description": "Wheat contains both gluten proteins and fructans (a FODMAP). To begin separating these, individuals can trial a low-FODMAP diet (which inherently restricts wheat and rye) and observe whether GI symptoms resolve. They can then cautiously reintroduce specific FODMAP-low gluten sources (such as sourdough spelt bread, which is lower in fructans) to probe whether gluten or fructans drive their symptoms. This is a rough guide only \u2014 formal separation requires professional support.",
+          "safety_notes": "Low-FODMAP diets are nutritionally restrictive and are not intended as a long-term diet. Self-guided FODMAP testing without support from a trained dietitian can lead to unnecessarily prolonged restriction. Use this as a hypothesis-generating tool, not a definitive protocol."
         }
       ],
       "clinical": [
         {
-          "name": "Coeliac disease serology (tissue transglutaminase IgA antibodies, tTG-IgA)",
-          "type": "standard",
-          "description": "Blood test measuring autoantibodies against transglutaminase. A negative result (in the setting of ongoing gluten intake) rules out coeliac disease. Must be done while eating gluten; a false-negative can occur if gluten has already been eliminated.",
-          "availability": "Ordered by primary care doctors or gastroenterologists; results available within 1\u20132 weeks. May be covered by insurance as part of evaluation for suspected coeliac disease."
-        },
-        {
-          "name": "Endomysial antibodies (EMA)",
-          "type": "standard",
-          "description": "Confirmatory blood test for coeliac disease using indirect immunofluorescence. Used to confirm a positive tTG-IgA. A negative result further supports non-coeliac diagnosis.",
-          "availability": "Usually ordered by gastroenterologists if tTG-IgA is positive; may be done on the same initial blood draw."
-        },
-        {
-          "name": "Upper gastrointestinal endoscopy and duodenal biopsy",
+          "name": "Coeliac disease serology (anti-tTG IgA + total IgA)",
           "type": "gold_standard",
-          "description": "Direct visualisation of the small intestine via endoscope with tissue sampling. The gold standard for coeliac disease diagnosis. A normal biopsy (no villous atrophy or increased intraepithelial lymphocytes) rules out coeliac disease and supports NCGS if gluten-triggered symptoms are present.",
-          "availability": "Ordered by gastroenterologists; procedure performed in an outpatient endoscopy suite under sedation. Requires referral and a wait; associated with small procedural risks."
+          "description": "Measures anti-tissue transglutaminase IgA antibodies and total IgA (to exclude IgA deficiency which would produce false-negative results). This is the primary test to rule out coeliac disease \u2014 a prerequisite for an NCGS diagnosis. Must be performed while consuming a normal gluten-containing diet.",
+          "availability": "Available via any GP or primary care physician as a standard blood test. Some private labs offer it directly."
         },
         {
-          "name": "Wheat allergy testing (skin prick test and/or specific IgE)",
+          "name": "Endomysial antibody (EMA IgA)",
           "type": "standard",
-          "description": "Allergy-focused tests to rule out IgE-mediated wheat allergy, which presents with acute symptoms (hives, throat swelling, anaphylaxis) rather than delayed gastrointestinal upset. Negative results help distinguish NCGS from allergy.",
-          "availability": "Ordered by allergists or primary care doctors. Skin prick testing done in-office; specific IgE blood testing results available within days to 1\u20132 weeks."
+          "description": "A highly specific coeliac antibody test used alongside anti-tTG to increase confidence in ruling out coeliac disease.",
+          "availability": "Ordered by GP or gastroenterologist; available in most hospital labs."
         },
         {
-          "name": "HLA-DQ2 or HLA-DQ5 genetic testing",
-          "type": "emerging",
-          "description": "Genetic markers associated with coeliac disease susceptibility. Useful as a negative predictor: if both HLA-DQ2 and HLA-DQ5 are absent, coeliac disease is very unlikely. Some researchers suggest HLA testing may refine NCGS phenotyping, but clinical utility remains experimental.",
-          "availability": "Specialist centres or research settings; not routine in primary care. If ordered, results available in 1\u20132 weeks."
+          "name": "HLA-DQ2 / HLA-DQ8 genetic testing",
+          "type": "standard",
+          "description": "Tests for the genetic variants that are present in the vast majority of people with coeliac disease. A negative result makes coeliac disease very unlikely, which can support an NCGS diagnosis. A positive result does not confirm coeliac disease \u2014 around 30\u201340% of the general population carry these variants.",
+          "availability": "Ordered by gastroenterologist or via some private genetic testing services. Not routinely available on the NHS as a first-line test."
         },
         {
-          "name": "FODMAP breath testing",
+          "name": "Duodenal biopsy (upper endoscopy / gastroscopy)",
+          "type": "gold_standard",
+          "description": "The definitive test to rule out coeliac disease by assessing for villous atrophy and intraepithelial lymphocytosis. Must be performed while on a gluten-containing diet. In NCGS, the biopsy is typically normal or shows only mild, non-specific mucosal inflammation. Some individuals with NCGS show Marsh 1 changes (elevated intraepithelial lymphocytes without villous atrophy).",
+          "availability": "Ordered by a gastroenterologist. Available via NHS referral or privately."
+        },
+        {
+          "name": "Wheat-specific IgE and skin prick test",
+          "type": "standard",
+          "description": "Allergy testing to rule out IgE-mediated wheat allergy, which causes immediate reactions distinct from NCGS. Negative results support an NCGS diagnosis.",
+          "availability": "Available via GP referral to an allergy clinic, or privately through an allergist."
+        },
+        {
+          "name": "Anti-gliadin antibodies (AGA IgG and IgA)",
           "type": "emerging",
-          "description": "Hydrogen and methane breath test to assess malabsorption of fermentable carbohydrates (FODMAP). Elevated breath levels suggest poor absorption, which can contribute to bloating and gas. Some researchers hypothesise that FODMAP content in wheat (not gluten itself) drives symptoms in some cases.",
-          "availability": "Specialist gastroenterology centres; not routine. Requires scheduling and dietary preparation (low-FODMAP diet for 24 hours prior)."
+          "description": "Older generation antibody tests sometimes elevated in NCGS, particularly in those with neurological symptoms. Not specific or diagnostic, but elevated AGA IgG in the absence of coeliac markers may provide supporting evidence in a clinical context.",
+          "availability": "Available through gastroenterology or neurology referral; some private labs offer these. Not routinely ordered in primary care."
+        },
+        {
+          "name": "Double-blind, placebo-controlled gluten challenge (DBPCGC)",
+          "type": "emerging",
+          "description": "The research gold standard for NCGS: participants consume gluten and placebo in a randomised, blinded order and symptoms are tracked. This separates true gluten reactivity from nocebo effects or FODMAP reactions. Rarely performed outside of research or highly specialised clinical settings.",
+          "availability": "Not widely available in routine clinical practice. Occasionally offered at specialist coeliac/gluten sensitivity research centres."
         }
       ]
     },
     "related_conditions": [
       {
+        "id": "coeliac",
         "name": "Coeliac disease",
         "relationship": "often_confused",
-        "explanation": "Both are triggered by gluten, but coeliac disease involves autoimmunity and small-intestinal damage (villous atrophy), whereas NCGS shows no such changes. Serology and biopsy distinguish them. Coeliac disease is associated with more systemic complications (anaemia, osteoporosis, malabsorption) and requires stricter gluten avoidance."
+        "explanation": "NCGS and coeliac disease share symptom profiles and both respond to a gluten-free diet, but coeliac disease involves an autoimmune response with intestinal damage. Coeliac disease must be actively excluded before an NCGS diagnosis is made, and this exclusion must happen while the person is still consuming gluten."
       },
       {
-        "name": "Wheat allergy (IgE-mediated)",
+        "id": "ibs",
+        "name": "IBS (Irritable bowel syndrome)",
         "relationship": "often_confused",
-        "explanation": "Wheat allergy is an immediate hypersensitivity reaction (minutes to 2 hours) with hives, angioedema, or anaphylaxis. NCGS causes delayed gastrointestinal symptoms. Allergy testing (IgE, skin prick) distinguishes them."
+        "explanation": "The GI symptoms of NCGS are virtually indistinguishable from IBS. Many people diagnosed with IBS may have an unidentified dietary trigger including gluten or wheat FODMAPs. Conversely, some people who believe they have NCGS actually have IBS triggered by fructans rather than gluten itself."
       },
       {
-        "name": "Irritable bowel syndrome (IBS)",
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
         "relationship": "comorbid",
-        "explanation": "NCGS and IBS share overlapping symptoms (bloating, abdominal pain, altered bowel habit) and have high comorbidity. Some studies suggest that 30\u201350% of people with IBS may also experience gluten sensitivity. However, not all IBS is gluten-related; other triggers (stress, FODMAP, infection) are common."
+        "explanation": "SIBO can co-exist with or mimic NCGS. Some NCGS symptoms may actually reflect SIBO-driven fermentation of wheat-derived carbohydrates. Treating SIBO may reduce apparent gluten sensitivity in some individuals."
       },
       {
-        "name": "FODMAP sensitivity",
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
         "relationship": "mechanistic_link",
-        "explanation": "Wheat contains fermentable carbohydrates (fructans) that are poorly absorbed and trigger bloating and gas in susceptible individuals. Some researchers propose that NCGS symptoms may be driven by FODMAP content rather than gluten per se. A low-FODMAP diet may help distinguish true gluten sensitivity from FODMAP intolerance."
+        "explanation": "Alterations in the gut microbiome may contribute to increased intestinal permeability and immune activation in NCGS. Dysbiosis may be both a consequence and a driver of gluten-related symptoms."
       },
       {
-        "name": "Functional dyspepsia",
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
         "relationship": "comorbid",
-        "explanation": "Symptoms overlap with NCGS (nausea, postprandial fullness, upper abdominal discomfort). Co-occurrence is common, and gluten elimination may improve symptoms in both conditions."
+        "explanation": "Mast cell activation can be triggered by gluten or wheat components in susceptible individuals, producing a broad range of GI and systemic symptoms. NCGS and MCAS can co-exist and may share an innate immune activation pathway."
       },
       {
-        "name": "Chronic fatigue syndrome / Myalgic encephalomyelitis (ME/CFS)",
+        "id": "histamine",
+        "name": "Histamine intolerance",
         "relationship": "comorbid",
-        "explanation": "Some individuals with ME/CFS report symptom improvement on a gluten-free diet, though a causal link is not established. The relationship may reflect shared immunological mechanisms or dietary factors."
+        "explanation": "Increased intestinal permeability associated with gluten exposure may worsen histamine absorption. Some individuals with apparent NCGS may have overlapping histamine intolerance, particularly if they react to fermented or aged gluten-containing foods."
       },
       {
+        "id": "fructose",
+        "name": "Fructose malabsorption",
+        "relationship": "often_confused",
+        "explanation": "Wheat contains fructans, a FODMAP closely related to fructose. Individuals with fructose malabsorption may react to wheat-based foods in a way that resembles NCGS, but the driver is fructan/fructose, not gluten."
+      },
+      {
+        "id": "fibromyalgia",
         "name": "Fibromyalgia",
         "relationship": "comorbid",
-        "explanation": "Joint and muscle pain reported in some NCGS cases overlaps with fibromyalgia. Anecdotal reports of symptom improvement with gluten avoidance exist, but causality is unproven."
+        "explanation": "NCGS and fibromyalgia share features such as fatigue, widespread pain, and cognitive symptoms. There is some evidence that a subset of fibromyalgia patients experience improvement on a gluten-free diet, though causality is unclear."
       },
       {
-        "name": "Dermatitis herpetiformis",
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "comorbid",
+        "explanation": "Anxiety is frequently reported in individuals with NCGS and may be both a consequence of chronic symptoms and a potential mediator of gut-brain axis dysregulation. Some individuals report worsened anxiety specifically after gluten exposure."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "comorbid",
+        "explanation": "Mood disturbance and depressive symptoms are reported in NCGS, possibly via gut-brain axis mechanisms or systemic low-grade inflammation. Improvement in mood following a gluten-free diet is described by many individuals."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation",
+        "relationship": "comorbid",
+        "explanation": "Central sensitisation and visceral hypersensitivity may amplify gut symptoms in NCGS, making it harder to distinguish physiological gluten reactivity from sensitisation-driven symptom amplification."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "comorbid",
+        "explanation": "Autoimmune thyroid disease (particularly Hashimoto's thyroiditis) is reported at higher rates in people with gluten sensitivity. Some practitioners investigate gluten as a potential trigger for thyroid autoimmunity, though evidence remains limited."
+      },
+      {
+        "id": "ibd_remission",
+        "name": "IBD in remission",
+        "relationship": "comorbid",
+        "explanation": "Individuals with IBD in remission often report ongoing GI symptoms that may include wheat and gluten sensitivity. NCGS-like symptoms may coexist with IBD independently of disease activity."
+      },
+      {
+        "id": "eosinophilic",
+        "name": "Eosinophilic GI disorders",
+        "relationship": "often_confused",
+        "explanation": "Eosinophilic oesophagitis and eosinophilic gastroenteritis can be triggered by wheat and may present with symptoms similar to NCGS. These conditions require biopsy for diagnosis and are distinct from NCGS."
+      },
+      {
+        "id": null,
+        "name": "Wheat allergy (IgE-mediated)",
+        "relationship": "often_confused",
+        "explanation": "IgE-mediated wheat allergy causes immediate allergic reactions to wheat proteins and must be excluded before diagnosing NCGS. Allergy testing (skin prick test or specific IgE) can differentiate the two."
+      },
+      {
+        "id": null,
+        "name": "Gluten ataxia",
         "relationship": "mechanistic_link",
-        "explanation": "A blistering skin condition associated with coeliac disease and IgA deposition in the skin. Gluten-triggered skin symptoms in NCGS (rashes, eczema) may share some immune mechanisms but are less well-characterised."
+        "explanation": "Gluten ataxia is a serious neurological condition caused by immune-mediated cerebellar damage triggered by gluten. It sits on a spectrum with NCGS neurological manifestations and should be considered in any patient presenting with unexplained cerebellar ataxia alongside gluten sensitivity."
+      },
+      {
+        "id": null,
+        "name": "Dermatitis herpetiformis",
+        "relationship": "often_confused",
+        "explanation": "Dermatitis herpetiformis is the skin manifestation of coeliac disease \u2014 a blistering, intensely itchy rash caused by gluten-triggered IgA deposition in the skin. It is distinct from NCGS skin symptoms and requires specific skin biopsy for diagnosis."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
-          "name": "Strict gluten elimination diet",
+          "name": "Strict gluten-free diet",
           "category": "diet",
-          "description": "Remove all wheat, barley, rye, and foods containing gluten. Read labels carefully; gluten is hidden in many processed foods, sauces, gravies, and medications. Use certified gluten-free products where needed. Most people see symptom improvement within 3\u20137 days if NCGS is present.",
+          "description": "Eliminating all gluten-containing grains (wheat, rye, barley, and contaminated oats) from the diet is the primary management strategy for NCGS. Unlike coeliac disease, the required strictness may vary between individuals \u2014 some people with NCGS tolerate small amounts of gluten while others react to trace exposures. Finding the personal threshold is part of long-term management.",
           "evidence_level": "strong",
-          "notes": "This is the only proven treatment for NCGS. Effectiveness depends on strict adherence; even trace amounts of gluten can trigger symptoms in sensitive individuals. Placebo effect is strong, so reintroduction testing is helpful to confirm true response. Hidden gluten sources include soy sauce, vinegars, and some spice blends."
+          "notes": "A gluten-free diet requires careful label reading and awareness of cross-contamination. Nutritional adequacy should be considered, as gluten-free diets can be low in fibre and certain B vitamins. Working with a registered dietitian is strongly recommended, especially initially."
         },
         {
-          "name": "Low-FODMAP diet (if concurrent FODMAP sensitivity)",
+          "name": "Low-FODMAP dietary approach",
           "category": "diet",
-          "description": "Reduce fermentable carbohydrates (fructans, polyols, lactose) to identify whether FODMAP sensitivity contributes to symptoms. Restrict onions, garlic, wheat, certain fruits, and legumes for 2\u20134 weeks, then systematically reintroduce to identify triggers.",
+          "description": "For individuals whose GI symptoms are driven partly or wholly by wheat FODMAPs (particularly fructans) rather than gluten itself, a structured low-FODMAP approach under dietitian guidance may reduce GI symptoms while allowing a more nuanced understanding of true gluten sensitivity.",
           "evidence_level": "moderate",
-          "notes": "Useful if gluten elimination alone is insufficient or if symptoms persist. May be more effective than gluten elimination alone in some cases. Should be supervised by a dietitian to avoid unnecessary restriction and nutritional deficiency. Works best when symptoms improve on a low-FODMAP diet but worsen on high-FODMAP foods."
+          "notes": "The low-FODMAP diet is a short-term diagnostic and therapeutic tool, not a lifelong diet. It should be guided by a FODMAP-trained dietitian to avoid unnecessary long-term restriction."
         },
         {
-          "name": "Probiotics and dietary fibre",
+          "name": "Identifying and avoiding hidden gluten sources",
+          "category": "diet",
+          "description": "Gluten is found not only in obvious bread and pasta products but also in sauces, marinades, processed meats, medications, and communion wafers. Cross-contamination during preparation (shared cooking surfaces, fryers, utensils) can expose sensitive individuals. Thorough label literacy and cross-contamination awareness may significantly reduce symptom burden.",
+          "evidence_level": "strong",
+          "notes": "This is particularly important for those who follow a gluten-free diet but continue to experience breakthrough symptoms."
+        },
+        {
+          "name": "Gut microbiome support",
           "category": "supplement",
-          "description": "Probiotic supplements or fermented foods (yogurt, sauerkraut, kimchi) may support gut barrier function and reduce bloating. Adequate soluble fibre (oats, flaxseed, psyllium) can help stabilise bowel movements, though fibre should be introduced gradually.",
+          "description": "Probiotic supplementation and prebiotic-rich foods may help modulate intestinal permeability and immune function. Some individuals with NCGS report symptom improvement with specific probiotic strains, though evidence is preliminary.",
           "evidence_level": "anecdotal",
-          "notes": "Evidence for probiotics in NCGS is weak and strain-dependent. Individual response varies widely. Fibre can initially worsen bloating if introduced too quickly. Choose low-FODMAP fibre sources where possible (psyllium, oat bran)."
+          "notes": "Prebiotic foods may be poorly tolerated if fructan sensitivity coexists. Start any prebiotic supplementation slowly and monitor for symptom exacerbation."
         },
         {
-          "name": "Antispasmodic medications (if abdominal cramping)",
-          "category": "medication",
-          "description": "Dicyclomine, hyoscyamine, or peppermint oil can reduce intestinal spasm and cramping. Used short-term to manage pain while dietary changes take effect.",
-          "evidence_level": "moderate",
-          "notes": "Effective for pain relief but does not address the underlying trigger. Not a substitute for gluten elimination. Peppermint oil (enteric-coated) is often tried first due to fewer side effects."
-        },
-        {
-          "name": "Anti-diarrhoeal agents (if diarrhoea)",
-          "category": "medication",
-          "description": "Loperamide or bismuth subsalicylate can reduce diarrhoea and urgency. Use sparingly and only after diet-triggered cases are ruled out.",
-          "evidence_level": "moderate",
-          "notes": "Avoid prolonged use; masking symptoms may delay diagnosis of other conditions. Not necessary once gluten is eliminated in true NCGS."
-        },
-        {
-          "name": "Stress management and sleep optimisation",
+          "name": "Stress management and nervous system regulation",
           "category": "lifestyle",
-          "description": "Stress and poor sleep worsen gut sensitivity and symptom perception. Practice relaxation techniques (yoga, meditation, breathing exercises), maintain consistent sleep schedules, and address anxiety. Gut-brain axis dysfunction is common in functional disorders.",
+          "description": "Chronic stress worsens gut permeability and visceral sensitivity, potentially amplifying gluten-related symptoms. Practices such as regular exercise, mindfulness, diaphragmatic breathing, and adequate sleep may reduce background symptom severity.",
           "evidence_level": "moderate",
-          "notes": "Psychological stress amplifies symptom perception in IBS and NCGS. Cognitive behavioural therapy (CBT) and gut-directed hypnotherapy show benefit in IBS and may help NCGS. Sleep deprivation lowers pain threshold and worsens gut symptoms."
+          "notes": "Psychological and nervous system approaches complement dietary management but do not replace it. Their value is greatest in individuals with a significant gut-brain axis component."
         },
         {
-          "name": "Gradual, balanced reintroduction diet",
-          "category": "diet",
-          "description": "After symptom resolution on a gluten-free diet, systematically reintroduce other eliminated foods (if any) and gluten to map true triggers. Reintroduce one food at a time over 3\u20135 days and observe for symptom recurrence.",
+          "name": "Addressing nutritional deficiencies",
+          "category": "supplement",
+          "description": "People with NCGS may have pre-existing nutritional deficiencies (such as iron, vitamin D, B12, magnesium, or zinc) from years of inflammation or poor absorption prior to going gluten-free. Correcting identified deficiencies through diet or supplementation can improve fatigue and systemic symptoms.",
           "evidence_level": "moderate",
-          "notes": "Helps distinguish gluten sensitivity from other food triggers or nocebo effect. A true reintroduction trial with blinded gluten/placebo would be more rigorous but is rarely practical outside research settings."
+          "notes": "Deficiencies should be identified through blood testing before supplementation. Avoid blanket supplementation without confirmed deficiency."
         },
         {
-          "name": "Digestive enzyme supplements (pancreatic enzymes, \u03b1-galactosidase)",
+          "name": "Digestive enzyme support",
           "category": "supplement",
-          "description": "Digestive enzymes may reduce bloating and gas, especially if pancreatic insufficiency or oligosaccharide malabsorption (e.g. from beans) is contributing. Beano or similar products contain \u03b1-galactosidase to reduce gas from legumes.",
+          "description": "Some individuals report benefit from digestive enzyme preparations that may support protein digestion. Products containing DPP-IV (dipeptidyl peptidase IV) enzyme are marketed for gluten digestion. Evidence is limited and these enzymes are not a substitute for a gluten-free diet, but may help manage accidental exposures.",
           "evidence_level": "anecdotal",
-          "notes": "Weak evidence in NCGS. More useful for specific triggering foods (beans, cruciferous vegetables) than for gluten itself. Pancreatic enzyme supplements are indicated only if pancreatic insufficiency is confirmed."
-        },
-        {
-          "name": "Zinc carnosine and L-glutamine (intestinal barrier support)",
-          "category": "supplement",
-          "description": "Amino acids and amino acid derivatives that may support intestinal barrier integrity and reduce permeability. Proposed for functional gut disorders, though evidence is limited.",
-          "evidence_level": "anecdotal",
-          "notes": "Weak evidence in NCGS; individual response varies. May take weeks to show effect. Not a substitute for dietary intervention."
+          "notes": "These products are not appropriate as a licence to consume gluten intentionally. Their role in NCGS specifically is poorly studied."
         }
       ],
       "things_to_avoid": [
-        "Wheat, barley, and rye (and foods containing them) in people with confirmed NCGS\u2014these trigger symptoms and must be strictly avoided once diagnosis is established.",
-        "Hidden gluten sources: soy sauce, gravies, salad dressings, spice mixes, cured meats, and some medications. Read labels meticulously.",
-        "Cross-contamination: use dedicated cutting boards, toasters, and utensils to avoid trace gluten from shared kitchen tools.",
-        "Excessive fibre intake before the gut has healed\u2014introduce fibre gradually and choose soluble sources (oat, flax) over insoluble when first eliminating gluten.",
-        "Prolonged use of anti-diarrhoeal or antispasmodic medications without addressing the underlying cause; masking symptoms may delay diagnosis of other conditions.",
-        "Self-diagnosing and eliminating multiple food groups simultaneously without clinical guidance; this can lead to nutritional deficiency and makes it harder to identify true triggers.",
-        "Assuming all digestive symptoms are NCGS-related; other conditions (IBS, FODMAP sensitivity, small-intestinal overgrowth, food allergy, coeliac disease) must be ruled out first."
+        "Testing for coeliac disease after going gluten-free \u2014 this produces false-negative results and makes it impossible to confirm or exclude coeliac disease without a prolonged gluten reintroduction challenge",
+        "Assuming a gluten-free label means symptom-free \u2014 many gluten-free products are highly processed and may contain other triggers such as high FODMAPs, additives, or cross-reactive grains",
+        "Eating oats without checking they are certified gluten-free \u2014 standard oats are frequently contaminated with wheat during processing; some individuals with NCGS also react to avenin, the oat protein",
+        "Using digestive enzymes as a substitute for dietary management \u2014 no current enzyme preparation reliably neutralises the full immunogenic burden of gluten",
+        "Ignoring the fructan question \u2014 assuming all wheat reactions are gluten reactions can lead to over-restriction and unnecessary dietary complexity; FODMAP testing can clarify this",
+        "Starting a gluten-free diet based on IgG food intolerance testing alone \u2014 IgG antibodies to gluten reflect exposure, not disease, and these tests are not validated for diagnosing NCGS",
+        "Remaining on a strictly limited gluten-free diet long-term without dietitian review \u2014 nutritional gaps, especially fibre and B vitamins, are common and accumulate over time"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "There is currently no objective biomarker for NCGS. Anyone who claims to have definitively diagnosed it \u2014 or definitively ruled it out \u2014 using a blood test, stool test, or IgG panel is overstating the evidence.",
+        "why_resisted": "People in chronic pain want certainty. Practitioners want to give it. This creates a market for non-validated tests and confident diagnoses that feel authoritative but are not.",
+        "path_forward": "The people who manage NCGS most effectively treat the elimination-reintroduction protocol as their diagnostic instrument. They do it rigorously, more than once, and they use symptom data \u2014 not test results \u2014 as their primary guide."
+      },
+      {
+        "truth": "A significant proportion of people who believe they have NCGS are actually reacting to fructans (a carbohydrate in wheat) rather than gluten proteins. The two are inseparable in most wheat-containing foods, which makes self-directed elimination misleading.",
+        "why_resisted": "The 'gluten-free' framework is culturally and commercially established. Reframing a problem as FODMAP sensitivity rather than gluten sensitivity requires starting the investigation over, and the dietary management involves a different set of restrictions that are less intuitive.",
+        "path_forward": "Individuals who undertake a structured, dietitian-guided FODMAP protocol often gain a clearer map of their actual triggers. Many find they can tolerate pure gluten sources (such as wheat starch low in FODMAPs) while still reacting to high-fructan foods \u2014 which leads to a significantly less restrictive long-term diet."
+      },
+      {
+        "truth": "Going gluten-free without professional guidance often results in a nutritionally inferior diet that is high in refined starches, low in fibre, and low in B vitamins \u2014 potentially creating new health problems while managing the original complaint.",
+        "why_resisted": "The immediate symptom relief from gluten elimination is so convincing that dietary quality feels like a secondary concern. Gluten-free products are widely marketed as healthy alternatives, which masks their often poor nutritional profile.",
+        "path_forward": "People who work with a registered dietitian to build a whole-food gluten-free diet \u2014 centred on naturally gluten-free grains, legumes, vegetables, and proteins \u2014 manage nutritional adequacy far better than those who simply swap gluten-containing products for gluten-free equivalents."
+      },
+      {
+        "truth": "Many mainstream gastroenterologists still consider NCGS unproven or controversial, and some will dismiss it explicitly. Patients who present with this diagnosis may not receive useful clinical support from a standard gastroenterology referral.",
+        "why_resisted": "People reasonably expect that a gastroenterologist \u2014 a gut specialist \u2014 will be the most helpful person for a gut problem. Discovering that mainstream specialist medicine may offer little beyond coeliac exclusion is demoralising.",
+        "path_forward": "Seeking out practitioners who specifically work in dietary-driven gut conditions \u2014 particularly FODMAP-trained dietitians, functional medicine gastroenterologists, or integrative practitioners with GI experience \u2014 typically produces more actionable guidance than standard gastroenterology for NCGS."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Strict, prolonged gluten elimination (at least 4\u20136 weeks) with careful verification of true adherence",
-          "why_it_matters": "The only definitive treatment; symptom response (or lack thereof) confirms diagnosis and guides long-term management. Many people declare gluten-free trials a failure due to hidden gluten or cross-contamination; rigorous elimination is essential.",
-          "how_to_start": "Consult a dietitian experienced in coeliac/gluten-free diets to review all food labels, hidden sources, and meal planning. Remove all obvious wheat, barley, rye products and review medications, supplements, and processed foods for gluten.",
-          "timeline": "Symptom improvement typically begins within 3\u20137 days if NCGS is present; full resolution may take 2\u20134 weeks. Some people require 6\u201312 weeks for complete healing.",
-          "requires_professional": true
-        },
-        {
-          "lever": "Controlled reintroduction testing (after symptom resolution) to confirm gluten is the true trigger and rule out placebo response",
-          "why_it_matters": "Distinguishes true NCGS from IBS, FODMAP sensitivity, or nocebo effect. Confirms the diagnosis and helps people understand whether lifelong gluten avoidance is necessary or whether occasional intake is tolerable.",
-          "how_to_start": "After 4\u20136 weeks symptom-free on a gluten-free diet, deliberately add gluten back in a single meal (e.g. 2 slices of bread) and observe for symptom recurrence over the next 1\u20132 days. Document timing and severity.",
-          "timeline": "Symptom recurrence (if true NCGS) typically occurs within 12\u201348 hours of reintroduction. If no symptoms occur, NCGS is less likely.",
+          "lever": "Rigorous gluten elimination followed by structured reintroduction \u2014 done in the correct sequence (coeliac excluded first)",
+          "why_it_matters": "This is the only way to establish with reasonable confidence whether gluten is the actual driver. Without a proper elimination-reintroduction cycle, management is based on assumption rather than evidence \u2014 leading to either unnecessary restriction or ongoing exposure.",
+          "how_to_start": "Get coeliac disease blood tests done while still consuming gluten. Once coeliac is excluded, begin a strict 6-week gluten elimination while keeping a daily symptom diary. Then reintroduce gluten deliberately and track the response.",
+          "timeline": "Initial assessment within 6\u201310 weeks. Meaningful symptom patterns often emerge within 2\u20134 weeks of elimination.",
           "requires_professional": false
         },
         {
-          "lever": "Ruling out coeliac disease, wheat allergy, and other mimics via clinical testing before committing to lifelong dietary restriction",
-          "why_it_matters": "Coeliac disease and wheat allergy require medical monitoring and have different long-term implications (risk of complications, family screening). Confirmed NCGS diagnosis avoids unnecessary alarm and focuses management on symptom relief alone.",
-          "how_to_start": "Request blood tests for coeliac serology (tTG-IgA, EMA) and allergy testing (wheat-specific IgE, skin prick test) while still eating gluten. If results are negative and symptoms are gluten-triggered, NCGS becomes the working diagnosis.",
-          "timeline": "Testing can be completed in 1\u20134 weeks. Results guide next steps and rule out conditions requiring specialist management.",
+          "lever": "Working with a FODMAP-trained registered dietitian to distinguish fructan from gluten sensitivity",
+          "why_it_matters": "Misidentifying fructans as the driver (and continuing to restrict unnecessarily strictly) is extremely common and leads to a more restrictive diet than needed. Correctly identifying the trigger allows for the least restrictive effective diet.",
+          "how_to_start": "Ask a GP for a referral to a registered dietitian with FODMAP training, or find one privately. Bring a symptom diary and dietary history to the first appointment.",
+          "timeline": "A supervised FODMAP protocol typically takes 8\u201312 weeks to complete.",
           "requires_professional": true
         },
         {
-          "lever": "Addressing concurrent gut dysfunction (IBS, FODMAP sensitivity, dysbiosis) to avoid incomplete symptom relief",
-          "why_it_matters": "Gluten elimination alone may not resolve symptoms if other triggers (FODMAP, stress, altered microbiome) are present. Comprehensive gut management improves outcomes and prevents frustration.",
-          "how_to_start": "If gluten elimination brings partial improvement only, consider a low-FODMAP trial or discuss small-intestinal overgrowth (SIBO) testing with a gastroenterologist. Assess stress, sleep, and exercise as co-factors.",
-          "timeline": "Low-FODMAP diets show improvement in 2\u20134 weeks if effective. SIBO testing and treatment take weeks to months.",
+          "lever": "Building a nutritionally complete gluten-free diet",
+          "why_it_matters": "Long-term symptom management and energy levels depend significantly on nutritional adequacy. Many people experience persistent fatigue and systemic symptoms on a gluten-free diet not because of ongoing gluten exposure, but because of nutritional deficiencies created by a poor-quality elimination diet.",
+          "how_to_start": "Have a baseline blood panel including iron studies, ferritin, vitamin D, B12, folate, magnesium, and zinc. Address identified deficiencies. Centre the diet on whole foods rather than processed gluten-free products.",
+          "timeline": "Nutritional deficiencies typically take 3\u20136 months to correct with appropriate intervention.",
           "requires_professional": true
         },
         {
-          "lever": "Psychological and stress-management support (CBT, mindfulness, gut-directed hypnotherapy) to address the gut-brain connection",
-          "why_it_matters": "Stress, anxiety, and negative health beliefs amplify symptom perception and delay healing. Functional gut disorders involve bidirectional gut-brain signalling; addressing psychological factors improves outcomes.",
-          "how_to_start": "Discuss with your primary doctor or gastroenterologist; ask for referral to a therapist trained in gut-directed CBT or hypnotherapy. Begin simple stress-reduction practices (daily walks, meditation, yoga) immediately.",
-          "timeline": "CBT typically requires 8\u201312 sessions over 2\u20133 months; benefits often seen within weeks. Daily practice of stress reduction shows benefit within days.",
-          "requires_professional": true
-        },
-        {
-          "lever": "Nutritional assessment and supplementation to prevent deficiency on a gluten-free diet",
-          "why_it_matters": "Some people on a gluten-free diet consume less fibre, B vitamins, and iron if they rely on highly processed gluten-free products. A balanced, whole-foods gluten-free diet prevents anaemia, constipation, and micronutrient deficiency.",
-          "how_to_start": "Consult a dietitian to review your gluten-free diet for nutritional gaps. Focus on whole grains (rice, quinoa, millet), legumes, vegetables, fruits, and lean proteins. Consider a multivitamin if deficiency is suspected.",
-          "timeline": "Nutritional assessment can be done in a single consultation; changes show benefit in 4\u201312 weeks (e.g. energy, bowel regularity).",
-          "requires_professional": true
+          "lever": "Managing the gut-brain axis through stress reduction and sleep",
+          "why_it_matters": "Visceral hypersensitivity and stress-driven gut permeability can amplify the threshold at which symptoms occur. Individuals with well-managed stress and sleep consistently report a higher gluten threshold and fewer breakthrough symptoms.",
+          "how_to_start": "Prioritise a consistent sleep schedule. Identify the most impactful daily stressor and introduce one evidence-based intervention \u2014 such as brief daily diaphragmatic breathing or regular aerobic exercise \u2014 to begin modulating the stress response.",
+          "timeline": "Benefits to gut symptom severity typically emerge over 4\u201312 weeks of consistent practice.",
+          "requires_professional": false
         }
       ],
       "common_mistakes": [
-        "Eliminating gluten but continuing to consume high-FODMAP foods or heavily processed gluten-free products; symptoms may persist because FODMAP sensitivity or other triggers are unaddressed.",
-        "Reintroducing gluten too soon or in small amounts and concluding NCGS is not real; reintroduction testing should be deliberate and include an adequate dose of gluten (e.g. multiple slices of bread, not just one crumb).",
-        "Assuming symptom improvement after eliminating gluten proves NCGS; placebo effect is strong in functional disorders. Controlled reintroduction is needed to confirm causality.",
-        "Ignoring psychological stress, poor sleep, or anxiety as contributors; these amplify gut sensitivity and can cause symptom persistence despite strict gluten avoidance.",
-        "Switching to a diet of highly processed gluten-free products high in sugar, fat, and low in fibre; this worsens metabolic health and may not resolve bloating or digestive dysfunction.",
-        "Not checking for cross-contamination or hidden gluten sources; many people believe they are strict but are inadvertently consuming gluten from medications, supplements, soy sauce, or shared kitchen equipment.",
-        "Prolonging a restrictive diet without confirming NCGS; if gluten elimination does not improve symptoms significantly after 6\u20138 weeks, NCGS is less likely and other diagnoses should be explored.",
-        "Trying to manage NCGS without professional support; a dietitian and physician together can optimise diagnosis, testing, and long-term management."
+        "Testing for coeliac disease after already starting a gluten-free diet \u2014 this invalidates the test and may leave coeliac disease permanently undiagnosed",
+        "Relying on IgG food intolerance panels to confirm NCGS \u2014 these tests are not clinically validated for this purpose and frequently produce misleading results that lead to unnecessary multi-food elimination",
+        "Treating gluten-free processed foods as equivalent to a whole-food gluten-free diet \u2014 this perpetuates nutritional gaps and often maintains other dietary triggers",
+        "Eliminating gluten without tracking symptoms systematically \u2014 without a diary, it is impossible to objectively assess whether the diet is working or whether other factors are driving symptoms",
+        "Assuming all ongoing symptoms after going gluten-free are due to accidental gluten exposure \u2014 this leads to obsessive avoidance when the real drivers may be FODMAP triggers, SIBO, dysbiosis, or other coexisting conditions",
+        "Stopping the investigation once a gluten-free diet provides partial relief \u2014 partial improvement often means additional concurrent conditions remain unaddressed"
       ]
     },
     "finding_help": {
       "specialists": [
         {
-          "type": "Gastroenterologist",
-          "role": "Coordinates diagnosis of NCGS by performing upper endoscopy and biopsy to rule out coeliac disease and other organic intestinal pathology. Advises on management and investigates persistent symptoms.",
-          "notes": "Often the first specialist involved; expertise in coeliac disease is essential to exclude it. Some gastroenterologists are sceptical of NCGS as a diagnosis because it lacks a definitive biomarker; seek someone open to functional diagnosis."
+          "type": "Registered Dietitian (FODMAP-trained)",
+          "role": "The most practically useful practitioner for most people with NCGS. A FODMAP-trained dietitian can design and supervise a structured elimination-reintroduction protocol, distinguish gluten from fructan sensitivity, address nutritional adequacy, and support long-term dietary management.",
+          "notes": "Look specifically for a dietitian with FODMAP training (Monash University certified practitioners are listed on the Monash FODMAP website). This specialisation is not universal and makes a substantial difference in the quality of guidance."
         },
         {
-          "type": "Registered dietitian (RD) or nutritionist specialising in gastrointestinal or gluten-related disorders",
-          "role": "Provides personalised dietary counselling, educates on hidden gluten sources, ensures nutritional adequacy, and helps with elimination-reintroduction protocols. Critical for success.",
-          "notes": "Essential partner in NCGS management. A dietitian can prevent malnutrition, identify FODMAP sensitivity, and support sustainable dietary change. Seek one with credentials (RD or equivalent) and experience in coeliac/NCGS."
+          "type": "Gastroenterologist (with interest in dietary conditions)",
+          "role": "Essential for ruling out coeliac disease and other structural or inflammatory GI conditions. A gastroenterologist can order serology, arrange endoscopy and biopsy, and exclude IBD, microscopic colitis, and other conditions that must be investigated before NCGS is accepted as a diagnosis.",
+          "notes": "Many mainstream gastroenterologists consider NCGS unproven and may offer limited support beyond exclusion of coeliac disease. Seeking a gastroenterologist with a stated interest in functional GI conditions or dietary management will generally yield better results for NCGS specifically."
         },
         {
-          "type": "Allergist/Immunologist",
-          "role": "Performs wheat allergy testing (IgE, skin prick testing) and helps distinguish wheat allergy from NCGS. Advises on emergency management if anaphylaxis risk is present.",
-          "notes": "Useful if allergic symptoms are suspected (hives, throat swelling, rapid onset). Less essential if symptoms are clearly gastrointestinal and delayed."
+          "type": "Functional medicine doctor or integrative GP",
+          "role": "May take a broader investigative approach, looking at gut permeability, microbiome health, nutritional status, and systemic inflammation as contributing factors. Often more open to NCGS as a clinical entity and to investigating upstream drivers.",
+          "notes": "Quality varies widely. Look for practitioners with formal training in functional or integrative medicine and demonstrated experience in GI conditions. Some functional medicine testing (such as comprehensive stool analysis) is not yet validated to the same standard as conventional tests."
         },
         {
-          "type": "Functional medicine doctor or integrative medicine practitioner",
-          "role": "Takes a systems-based approach to NCGS, often investigating gut health, microbiome, SIBO, and other functional factors. May recommend probiotics, enzymes, and supplements.",
-          "notes": "Can provide holistic management but may lack formal diagnostic rigour. Ensure they also recommend confirmatory testing (coeliac serology, allergy testing) before diagnosing NCGS."
+          "type": "Allergist / clinical immunologist",
+          "role": "Useful for formally ruling out IgE-mediated wheat allergy and, in some cases, for investigating mast cell involvement or atopic conditions that may coexist with NCGS.",
+          "notes": "An allergist will not diagnose NCGS itself, but their role in the exclusion process is important \u2014 particularly for individuals who have rapid or multi-system reactions to wheat."
         },
         {
-          "type": "Therapist or psychologist specialising in gut-directed CBT or hypnotherapy",
-          "role": "Addresses the gut-brain connection, helps manage stress and health anxiety, and teaches techniques to reduce symptom amplification. Useful adjunct for persistent functional symptoms.",
-          "notes": "Not a replacement for dietary intervention but a valuable complement. Gut-directed hypnotherapy and CBT show evidence in IBS and functional gut disorders."
-        },
-        {
-          "type": "Primary care physician (GP or internal medicine)",
-          "role": "Initial evaluation, referral to specialists, coordination of care, and management of comorbid conditions (depression, anxiety, other chronic disease).",
-          "notes": "Essential entry point; a receptive GP who takes functional symptoms seriously is invaluable. Some GPs may be dismissive of NCGS; seek one willing to collaborate with specialists."
+          "type": "Neurologist (gluten neurology specialist)",
+          "role": "For individuals whose primary symptoms are neurological \u2014 particularly unexplained ataxia, peripheral neuropathy, or cognitive impairment \u2014 a neurologist familiar with gluten-related neurological disorders can assess for gluten ataxia or gluten neuropathy as distinct diagnoses.",
+          "notes": "Gluten neurology is a subspecialty within neurology. The Gluten Sensitivity and Neurological Manifestations research group at the University of Sheffield (UK) is a leading centre in this area."
         }
       ],
       "patient_communities": [
         {
-          "name": "Coeliac UK and Coeliac Society (various countries)",
-          "platform": "Website and support groups",
-          "url": "https://www.coeliac.org.uk",
-          "notes": "Primarily focused on coeliac disease but often supports NCGS patients and provides reliable information on gluten-free living, recipes, and product checking."
-        },
-        {
-          "name": "Beyond Celiac (formerly National Foundation for Celiac Awareness)",
-          "platform": "Website and online forums",
-          "url": "https://www.beyondceliac.org",
-          "notes": "US-based; provides resources on gluten-related disorders including NCGS, research updates, and community support."
-        },
-        {
-          "name": "Reddit communities (r/glutenfree, r/IBS, r/NCGS)",
+          "name": "r/glutenfree",
           "platform": "Reddit",
           "url": "https://www.reddit.com/r/glutenfree/",
-          "notes": "Peer support and practical advice on gluten-free living, hidden sources, restaurants, and symptom management. Unmoderated; information quality varies; use with caution."
+          "notes": "Large, active community focused on gluten-free living. Useful for practical advice on food, label reading, cross-contamination, and product recommendations. Skews toward coeliac disease but welcoming to those with NCGS."
         },
         {
-          "name": "FODMAP apps and support groups (Monash University Low FODMAP Diet)",
-          "platform": "Website, apps, and support groups",
-          "url": "https://www.monashfodmap.com/",
-          "notes": "If concurrent FODMAP sensitivity is suspected, Monash's certified app and resources are evidence-based and helpful. Strong community support."
+          "name": "r/NCGS",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/NCGS/",
+          "notes": "Smaller community specifically for non-coeliac gluten sensitivity. Useful for discussing the diagnostic grey area, symptom patterns, and experiences with practitioners."
         },
         {
-          "name": "IBS Diaries (IBS patient communities)",
-          "platform": "Website and forums",
-          "url": "https://www.ibsdiaries.com/",
-          "notes": "Useful for IBS-spectrum NCGS patients; provides symptom tracking, peer support, and dietary tips."
+          "name": "r/fodmaps",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/FODMAPS/",
+          "notes": "Highly useful for those investigating whether fructans rather than gluten are the primary driver of their wheat sensitivity. Evidence-based community with frequent dietitian input."
         },
         {
-          "name": "The Gluten-Free Dietitian (social media and blog)",
-          "platform": "Instagram, Facebook, blog",
-          "url": "https://theglutenfreedititian.com/",
-          "notes": "Evidence-based nutrition education on gluten-free diets and NCGS by a registered dietitian. High-quality, accessible information."
+          "name": "Gluten Free Society Community",
+          "platform": "Facebook / website",
+          "url": "https://www.glutenfreesociety.org/",
+          "notes": "Community and educational content centred on Dr Peter Osborne's work on gluten sensitivity. Useful for a broader perspective on gluten-related conditions, though some content extends beyond mainstream evidence base \u2014 evaluate critically."
+        },
+        {
+          "name": "Beyond Celiac Community Forums",
+          "platform": "Website forum",
+          "url": "https://www.beyondceliac.org/",
+          "notes": "Primarily coeliac-focused but contains discussion of NCGS. Good resource for navigating the coeliac-vs-NCGS distinction and finding research-based information."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "The Complete Guide to Gluten and Gluten Sensitivity",
-        "type": "book",
-        "author_or_source": "Shelley Case, MS, RD",
-        "url": null,
-        "description": "Comprehensive, evidence-based guide distinguishing coeliac disease, wheat allergy, and NCGS. Covers testing, diagnosis, nutritional concerns, and practical management.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Non-Celiac Gluten Sensitivity: A Review",
-        "type": "research paper",
-        "author_or_source": "Volta et al., Nutrients (2020)",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/",
-        "description": "Peer-reviewed summary of current understanding of NCGS, mechanisms, diagnostic challenges, and treatment approaches. Technical but thorough.",
-        "audience": "advanced"
-      },
-      {
-        "title": "The IBS Solution: Straightforward Advice for Anyone with Irritable Bowel Syndrome",
-        "type": "book",
-        "author_or_source": "Erica Spiegelman",
-        "url": null,
-        "description": "Practical guide addressing IBS and overlapping conditions, including gluten sensitivity. Covers dietary and lifestyle strategies.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Monash University Low FODMAP Diet: Official App and Resources",
-        "type": "website and app",
-        "author_or_source": "Monash University",
+        "title": "Monash University FODMAP Diet App and Website",
+        "type": "website / app",
+        "author_or_source": "Monash University Department of Gastroenterology",
         "url": "https://www.monashfodmap.com/",
-        "description": "Evidence-based, world-leading resource for FODMAP elimination and reintroduction. Essential if FODMAP sensitivity is suspected alongside NCGS.",
+        "description": "The authoritative resource on the FODMAP diet, essential for anyone investigating whether their wheat sensitivity is driven by fructans rather than gluten. Includes a food database, certified practitioner directory, and research summaries.",
         "audience": "beginner"
       },
       {
-        "title": "Mind-Body Medicine and the Mind-Gut Connection (Podcast and Videos)",
-        "type": "podcast/video",
-        "author_or_source": "Dr. Emeran Mayer (UCLA Digestive Diseases Research Center)",
-        "url": "https://www.drauerbach.com/",
-        "description": "Explores the gut-brain connection, stress, and psychosomatic factors in functional gut disorders. Helpful for understanding how stress and anxiety amplify NCGS symptoms.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Gut-Directed Hypnotherapy and CBT for IBS",
-        "type": "website and research summary",
-        "author_or_source": "International Foundation for GI Disorders (IFFGD)",
-        "url": "https://www.iffgd.org/",
-        "description": "Resources on psychological interventions for functional gut disorders, including evidence-based practices applicable to NCGS.",
-        "audience": "beginner"
-      },
-      {
-        "title": "The Plant Paradox: The Hidden Dangers in 'Healthy' Foods",
-        "type": "book",
-        "author_or_source": "Dr. Steven Gundry",
-        "url": null,
-        "description": "Discusses lectins and amylase-trypsin inhibitors in wheat as potential triggers of NCGS. Controversial but offers mechanistic theories; use with caution and consult a dietitian.",
+        "title": "Non-Coeliac Gluten Sensitivity: The New Frontier of Gluten Related Disorders",
+        "type": "research paper",
+        "author_or_source": "Umberto Volta, Roberto De Giorgio et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3820047/",
+        "description": "A foundational academic review of NCGS as a clinical entity, covering proposed mechanisms, diagnostic approach, and distinguishing features from coeliac disease and wheat allergy. Readable by a motivated patient.",
         "audience": "intermediate"
       },
       {
-        "title": "Coeliac UK and Beyond Celiac: Patient-Centred Information Websites",
-        "type": "website",
-        "author_or_source": "Coeliac UK, Beyond Celiac",
-        "url": "https://www.coeliac.org.uk, https://www.beyondceliac.org",
-        "description": "Authoritative, regularly updated information on gluten-related disorders, hidden sources of gluten, recipes, and product databases.",
+        "title": "Gluten Freedom",
+        "type": "book",
+        "author_or_source": "Alessio Fasano, MD with Susie Flaherty",
+        "url": null,
+        "description": "Written by one of the world's leading coeliac and gluten research scientists, this book covers the spectrum of gluten-related disorders including NCGS. Provides solid scientific grounding without being inaccessible to a general reader.",
         "audience": "beginner"
       },
       {
-        "title": "Gastroenterology Journals and Reviews (Nutrition Reviews, Gastroenterology)",
+        "title": "Wheat Belly",
+        "type": "book",
+        "author_or_source": "William Davis, MD",
+        "url": null,
+        "description": "A widely-read popular account of adverse reactions to modern wheat, with emphasis on gluten and gliadin proteins. Note: some claims go beyond mainstream evidence and the book promotes broader grain elimination. Useful as a motivating framework but should be read critically alongside more rigorous sources.",
+        "audience": "beginner"
+      },
+      {
+        "title": "No wheat, no gluten \u2014 but what is really responsible for the effects of a gluten-free diet? (Biesiekierski et al.)",
         "type": "research paper",
-        "author_or_source": "Various peer-reviewed journals",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/",
-        "description": "Academic literature on NCGS pathophysiology, epidemiology, and management. Useful for those seeking cutting-edge evidence; requires access to journal databases.",
+        "author_or_source": "Jessica Biesiekierski, Jane Muir, Peter Gibson",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23648697/",
+        "description": "The influential study that challenged earlier NCGS findings by showing that isolated gluten did not trigger symptoms in most self-reported NCGS patients under blinded conditions, implicating FODMAPs instead. Essential reading for understanding the fructan vs gluten debate.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Gluten Sensitivity: Real or Not? \u2014 Podcast episode, The Exam Room by Physicians Committee",
+        "type": "podcast",
+        "author_or_source": "Physicians Committee for Responsible Medicine",
+        "url": "https://www.pcrm.org/podcast",
+        "description": "Accessible podcast episode covering the scientific debate around NCGS, including the fructan hypothesis and what current evidence supports. Good entry point for people newly exploring whether they have NCGS.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Spectrum of gluten-related disorders: consensus on new nomenclature and classification",
+        "type": "research paper",
+        "author_or_source": "Anna Sapone, Julio Bai, Carlo Catassi, Alessio Fasano et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3292448/",
+        "description": "The landmark 2012 consensus paper that established the formal classification of gluten-related disorders including NCGS, wheat allergy, and coeliac disease as distinct entities. Foundational reading for understanding where NCGS sits within the broader clinical landscape.",
         "audience": "advanced"
       },
       {
-        "title": "The Low FODMAP Cookbook: Simple and Tasty Recipes for IBS and Other Digestive Disorders",
-        "type": "book",
-        "author_or_source": "Heather Eats Treats or similar authors",
-        "url": null,
-        "description": "Recipe book combining gluten-free and low-FODMAP principles. Practical for people managing both sensitivities.",
+        "title": "Diagnosing Non-Coeliac Gluten Sensitivity \u2014 Beyond Celiac",
+        "type": "website",
+        "author_or_source": "Beyond Celiac",
+        "url": "https://www.beyondceliac.org/gluten-sensitivity/",
+        "description": "Clear, patient-oriented overview of NCGS \u2014 its definition, how it differs from coeliac disease, and how to approach diagnosis. A good first stop for people newly investigating the condition.",
         "audience": "beginner"
       }
     ],
     "relevance_signal": "**Symptoms after wheat** without a positive coeliac test. Bloating, gut pain, brain fog, fatigue \u2014 improves on gluten-free diet but tTG antibodies are negative."
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

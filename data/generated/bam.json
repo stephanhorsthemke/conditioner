@@ -2,447 +2,569 @@
   "condition_id": "bam",
   "condition_name": "Bile acid malabsorption",
   "generated_at": "2026-04-16T09:30:05.846755Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "Bile acid malabsorption (BAM) is a condition where your intestines don't properly reabsorb bile acids\u2014substances your liver produces to help digest fats. Instead of being recycled, these acids pass into the colon, where they draw water into the bowel and cause chronic diarrhea. It can develop after gallbladder removal, with certain bowel diseases, or for reasons that aren't fully understood.",
-    "detailed_summary": "Bile acids are produced by the liver and stored in the gallbladder. They are released into the small intestine to emulsify dietary fats and aid absorption. Normally, about 95% of bile acids are reabsorbed in the terminal ileum and recycled back to the liver. In BAM, this recycling process fails. Unabsorbed bile acids reach the colon, where they increase water secretion and stimulate fluid movement through the bowel, resulting in chronic diarrhea and often urgency, cramping, and bloating. BAM is divided into three types: Type 1 occurs after surgical removal of the terminal ileum or with Crohn's disease affecting that region; Type 2 is idiopathic (no clear cause); Type 3 occurs with other intestinal or liver diseases. The condition is underdiagnosed because symptoms overlap with irritable bowel syndrome (IBS), and many patients are labeled as having IBS-D without proper testing.",
+    "plain_summary": "Bile acid malabsorption (BAM) is a condition in which bile acids \u2014 digestive fluids made by the liver and released into the small intestine \u2014 are not properly reabsorbed at the end of the small bowel. Instead, they spill into the colon, where they trigger a rush of fluid and cause urgent, watery, often painful diarrhoea. It is one of the most commonly missed causes of chronic diarrhoea, frequently misdiagnosed as IBS-D for years.",
+    "detailed_summary": "Bile acids are produced by the liver, stored in the gallbladder, and released into the small intestine after eating to help digest fats. Under normal circumstances, about 95% of bile acids are reabsorbed in the terminal ileum (the last segment of the small intestine) and recycled back to the liver. When this reabsorption fails \u2014 for any reason \u2014 excess bile acids reach the colon. There, they stimulate water secretion and accelerate colonic transit, producing the watery, urgent, often explosive diarrhoea that characterises BAM.\n\nBAM is classified into three types. Type 1 occurs when the terminal ileum is damaged or surgically removed \u2014 most commonly in Crohn's disease or after right hemicolectomy. Type 2 is idiopathic (primary BAM), in which no structural cause is found but there appears to be impaired production of FGF19, a hormone that normally signals the liver to reduce bile acid synthesis. Type 3 is secondary to a range of other conditions including cholecystectomy (gallbladder removal), microscopic colitis, coeliac disease, chronic pancreatitis, and post-infectious gut changes.\n\nBAM is substantially underdiagnosed. Studies suggest it may account for up to one-third of people labelled with IBS-D or functional diarrhoea. The gold-standard diagnostic test \u2014 the SeHCAT scan \u2014 is unavailable in many countries including the United States. This has led to widespread under-detection. A pragmatic therapeutic trial with a bile acid sequestrant (cholestyramine, colestipol, or colesevelam) is often used as a diagnostic tool in the absence of formal testing.\n\nMost people with BAM respond well to treatment once correctly identified. A low-fat diet reduces the stimulus for bile acid release and can meaningfully reduce symptom severity. Bile acid sequestrant medications bind excess bile acids in the gut before they reach the colon. For many people, the combination of dietary modification and medication produces significant or complete symptom relief \u2014 which makes the years-long delay to diagnosis particularly frustrating.",
     "prevalence": {
-      "summary": "BAM affects a meaningful proportion of people with chronic diarrhea, but exact population prevalence is unclear.",
-      "estimate": "1\u20135% of the general population; up to 20\u201350% of patients investigated for chronic diarrhea",
-      "notes": "Prevalence estimates vary widely because BAM is often undiagnosed or misdiagnosed as IBS-D. Type 1 BAM is well-established after terminal ileum removal or in Crohn's disease. Type 2 (idiopathic) prevalence is debated. Geographic variation in diagnostic awareness also affects reported numbers."
+      "summary": "More common than most clinicians realise \u2014 likely affects a significant minority of people diagnosed with IBS-D or functional diarrhoea.",
+      "estimate": "Estimated to affect 1\u20132% of the general population; up to 25\u201335% of those diagnosed with IBS-D or functional diarrhoea",
+      "notes": "Prevalence estimates vary widely because most countries lack access to the SeHCAT diagnostic test, leading to systematic under-detection. A 2015 UK study found BAM in approximately 32% of people referred for investigation of chronic diarrhoea. The idiopathic (Type 2) form may be more common in women. Post-cholecystectomy BAM is increasingly recognised as the gallbladder removal rate rises."
     },
     "subgroups": [
       {
-        "name": "Type 1 BAM (Structural/Post-surgical)",
-        "description": "Occurs when part of the small intestine responsible for reabsorbing bile acids is removed surgically or damaged by disease. This is the most clearly understood form.",
+        "name": "Type 1 \u2014 Ileal disease or resection",
+        "description": "Occurs when the terminal ileum is structurally damaged or surgically removed, destroying the anatomical site of bile acid reabsorption.",
         "distinguishing_features": [
-          "Develops after gallbladder removal, terminal ileum resection, or with Crohn's disease affecting the terminal ileum",
-          "Predictable link between structural loss and BAM symptoms",
-          "Often more severe diarrhea due to larger amount of unabsorbed bile acids"
+          "History of Crohn's disease involving the ileum, right hemicolectomy, or bowel resection",
+          "Diarrhoea often begins or worsens after surgery",
+          "May coexist with fat malabsorption and vitamin B12 deficiency due to wider ileal dysfunction",
+          "Steatorrhoea (fatty stools) may be more prominent than in other types"
         ]
       },
       {
-        "name": "Type 2 BAM (Idiopathic)",
-        "description": "Occurs without obvious structural damage or disease. The intestinal lining appears normal, but bile acid reabsorption still fails. This is the most common form but least understood.",
+        "name": "Type 2 \u2014 Idiopathic (Primary BAM)",
+        "description": "No structural or secondary cause is found. The underlying mechanism is thought to involve insufficient production of FGF19, a gut hormone that signals the liver to downregulate bile acid synthesis, resulting in chronic overproduction.",
         "distinguishing_features": [
-          "No prior surgery or diagnosed bowel disease",
-          "Often diagnosed in middle-aged and older adults",
-          "May involve subtle defects in bile acid transporters or intestinal function"
+          "No prior bowel surgery, inflammatory bowel disease, or obvious secondary cause",
+          "Often misdiagnosed as IBS-D for years",
+          "Low serum FGF19 levels may be detectable on specialist testing",
+          "Tends to present in middle-aged adults; possible female predominance",
+          "Usually responds well to bile acid sequestrants"
         ]
       },
       {
-        "name": "Type 3 BAM (Secondary)",
-        "description": "Develops as a complication of other intestinal, liver, or systemic diseases such as celiac disease, bacterial overgrowth, or primary sclerosing cholangitis.",
+        "name": "Type 3 \u2014 Secondary to other conditions",
+        "description": "BAM arises as a downstream consequence of another condition or procedure that disrupts bile acid metabolism or enterohepatic circulation.",
         "distinguishing_features": [
-          "Symptoms of the underlying condition often present first",
-          "BAM improves if the primary condition is treated",
-          "May develop later in the disease course"
+          "Associated triggers include cholecystectomy, coeliac disease, microscopic colitis, chronic pancreatitis, radiation enteritis, and post-infectious gut damage",
+          "Diarrhoea may begin shortly after gallbladder removal or onset of the primary condition",
+          "Treating the underlying condition may partially or fully resolve BAM",
+          "Post-cholecystectomy BAM may involve continuous bile drip into the duodenum rather than regulated release"
+        ]
+      },
+      {
+        "name": "Post-infectious BAM",
+        "description": "A subset within Type 3 in which bile acid malabsorption develops following a significant gastrointestinal infection, likely due to temporary or lasting damage to ileal transporters.",
+        "distinguishing_features": [
+          "Chronic diarrhoea beginning within weeks of a gut infection (bacterial, viral, or parasitic)",
+          "Can be difficult to distinguish from post-infectious IBS without testing",
+          "May partially resolve over months as the gut heals, or may persist long-term"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Chronic diarrhea",
+        "symptom": "Chronic watery diarrhoea",
         "category": "digestive",
-        "notes": "Often watery, sometimes urgently occurring within hours of eating. May be worse after fatty meals or in the morning."
+        "notes": "Often the dominant symptom. Stools are typically loose to liquid, may be pale or yellow, and can be voluminous. Frequently worse in the morning and after eating."
       },
       {
-        "symptom": "Urgency and frequent bowel movements",
+        "symptom": "Urgency and faecal incontinence",
         "category": "digestive",
-        "notes": "Can be socially disruptive. Urgency may occur suddenly with little warning."
+        "notes": "Bile acids accelerate colonic transit. Many people experience sudden, difficult-to-defer urgency. Incontinence can occur and significantly affects quality of life."
       },
       {
         "symptom": "Abdominal cramping and pain",
         "category": "digestive",
-        "notes": "Usually mild to moderate; often relieved or worsened by bowel movements."
+        "notes": "Often felt before or during a bowel movement, usually in the lower abdomen. May be severe and crampy rather than constant."
       },
       {
-        "symptom": "Bloating and gas",
+        "symptom": "Excessive flatulence and bloating",
         "category": "digestive",
-        "notes": "May indicate secondary bacterial fermentation or altered gut microbiota."
+        "notes": "Bile acids in the colon alter fermentation patterns and gas production. Bloating is common but typically less prominent than diarrhoea."
       },
       {
-        "symptom": "Urgency at night",
+        "symptom": "Pale, greasy, or foul-smelling stools (steatorrhoea)",
         "category": "digestive",
-        "notes": "Nocturnal diarrhea or urgency is common and disrupts sleep."
+        "notes": "More common in Type 1 BAM where fat malabsorption coexists. Stools may float. Indicates fat is reaching the colon undigested."
+      },
+      {
+        "symptom": "Diarrhoea worsened by fatty or large meals",
+        "category": "digestive",
+        "notes": "Fat in the duodenum is the primary trigger for gallbladder contraction and bile release. Meals high in fat tend to provoke the worst episodes."
       },
       {
         "symptom": "Nausea",
         "category": "digestive",
-        "notes": "Usually mild; may occur with or without diarrhea episodes."
-      },
-      {
-        "symptom": "Nutrient deficiencies",
-        "category": "systemic",
-        "notes": "Fat-soluble vitamin deficiency (A, D, E, K) may develop over time due to impaired fat absorption and rapid transit."
+        "notes": "May accompany acute episodes, particularly after eating."
       },
       {
         "symptom": "Fatigue",
         "category": "systemic",
-        "notes": "May result from nutrient malabsorption, sleep disruption, or chronic inflammation."
+        "notes": "Can result from disrupted sleep due to nocturnal diarrhoea, nutritional deficiencies, or the ongoing physiological stress of chronic malabsorption."
       },
       {
         "symptom": "Weight loss or difficulty maintaining weight",
         "category": "systemic",
-        "notes": "Can occur if diarrhea is severe or if dietary restriction is needed to manage symptoms."
+        "notes": "More prominent in Type 1 BAM. Impaired fat absorption reduces caloric intake. Fear of eating may also reduce food intake."
+      },
+      {
+        "symptom": "Vitamin deficiencies",
+        "category": "systemic",
+        "notes": "Fat-soluble vitamins (A, D, E, K) may be depleted if fat malabsorption is significant. Vitamin B12 deficiency is common in ileal disease. Deficiencies may cause fatigue, bone pain, or neurological symptoms over time."
+      },
+      {
+        "symptom": "Nocturnal diarrhoea",
+        "category": "digestive",
+        "notes": "Waking from sleep with urgent diarrhoea is a feature that clinicians often use to distinguish organic causes (like BAM) from purely functional conditions."
+      },
+      {
+        "symptom": "Perianal soreness and irritation",
+        "category": "skin",
+        "notes": "Bile acids in stool are chemically irritating to perianal skin. Frequent, loose stools can cause significant discomfort, redness, or skin breakdown."
       }
     ],
     "testing": {
       "key_patterns": [
-        "Chronic watery diarrhea (weeks to months) not explained by infections, inflammatory bowel disease, or obvious dietary triggers",
-        "Diarrhea that does not fully resolve with dietary changes alone and is not responsive to standard IBS treatments",
-        "History of gallbladder removal or bowel surgery (especially involving terminal ileum) followed by persistent diarrhea",
-        "Urgency and frequency that significantly impact daily activities and social engagement",
-        "Symptoms that worsen after eating fatty or large meals, or in the morning"
+        "Chronic watery diarrhoea persisting for more than 4 weeks that has not responded to a low-FODMAP diet or IBS treatments",
+        "Diarrhoea that began after cholecystectomy, bowel resection, or a significant gut infection",
+        "Yellow or pale stools with urgency and cramping, worse after fatty meals",
+        "IBS-D diagnosis made without investigation of bile acid status",
+        "Nocturnal diarrhoea or faecal urgency suggesting organic rather than functional cause",
+        "Coexisting Crohn's disease, coeliac disease, or microscopic colitis alongside chronic diarrhoea"
       ],
       "at_home": [
         {
-          "name": "Symptom and food diary",
-          "description": "Record bowel movements, stool consistency (using Bristol Stool Scale), meals eaten, timing, and symptoms over 2\u20134 weeks. Note fat content of foods and any pattern between fat intake and diarrhea onset.",
-          "safety_notes": "This is observational only and does not diagnose BAM, but it provides valuable information to share with your doctor and may help identify triggers."
+          "name": "Low-fat diet trial",
+          "description": "Reducing dietary fat to approximately 40g per day for 1\u20132 weeks to observe whether diarrhoea frequency and urgency decrease. Fat stimulates bile release, so reducing it lowers the bile acid load reaching the colon. Keep a symptom diary to track changes in stool consistency (using the Bristol Stool Scale), urgency, and frequency.",
+          "safety_notes": "A short-term low-fat trial is generally safe for most people. If fat intake is already very low or weight loss is a concern, consult a dietitian before restricting further. A trial period of only 2 weeks is sufficient to identify a signal."
         },
         {
-          "name": "Trial elimination of high-fat foods",
-          "description": "Reduce fat intake to 30\u201340 grams per day for 1\u20132 weeks and observe whether diarrhea improves. If improvement occurs and symptoms return with higher fat intake, this suggests fat malabsorption.",
-          "safety_notes": "Avoid prolonged severe fat restriction without professional guidance, as fat-soluble vitamins (A, D, E, K) may become deficient. Use this as a diagnostic clue, not long-term treatment."
+          "name": "Symptom and food diary",
+          "description": "Recording meals, fat content, stool type (Bristol scale 1\u20137), urgency level, and timing of episodes over 2\u20134 weeks. This helps identify patterns linking fat intake and symptom severity, and provides useful data for any clinician or dietitian consultation.",
+          "safety_notes": "No safety concerns. The diary itself has no risk; it is an observation tool."
+        },
+        {
+          "name": "Bile acid sequestrant trial (with medical oversight)",
+          "description": "In countries where SeHCAT scanning is unavailable, a short empirical trial of a bile acid sequestrant (such as cholestyramine) is widely used as both a diagnostic and therapeutic test. A positive response \u2014 marked reduction in diarrhoea within 1\u20132 weeks \u2014 is considered strong diagnostic evidence. This requires a clinician to prescribe the medication, but the trial itself can be planned and requested by an informed patient.",
+          "safety_notes": "Bile acid sequestrants require a prescription in most countries. They can interfere with absorption of other medications and should be taken 1\u20132 hours apart from other drugs. Do not self-medicate. This entry documents the test strategy, not an instruction to obtain medication without medical involvement."
         }
       ],
       "clinical": [
         {
-          "name": "Fecal bile acid test (SeHCAT scan)",
+          "name": "SeHCAT scan (75Se-homocholic acid taurine retention test)",
           "type": "gold_standard",
-          "description": "A radioactive tracer (selenium-75 homocholic acid taurine) is ingested orally. Normal bile acids are reabsorbed in the terminal ileum. In BAM, the tracer is excreted in stool. Retention is measured via gamma camera imaging or stool collection at 7 days. High fecal excretion (>15% retention loss) confirms BAM.",
-          "availability": "Gold standard test; available in most major medical centers and specialized gastroenterology clinics. Requires nuclear medicine facilities. Not widely available in all countries; availability varies by region."
+          "description": "A nuclear medicine test in which the patient swallows a synthetic radiolabelled bile acid capsule. A whole-body scan is performed after 7 days to measure how much of the labelled bile acid has been retained. Retention below 15% indicates BAM; below 10% suggests moderate-to-severe BAM; below 5% indicates severe BAM. The test is highly sensitive and specific.",
+          "availability": "Available in the UK, Scandinavia, and parts of Europe via gastroenterology or nuclear medicine departments. Not available in the United States or many other countries. In the UK, can be accessed via NHS referral from a gastroenterologist. Private referral is also possible. In countries without access, empirical sequestrant trials or serum C4 testing are used instead."
         },
         {
-          "name": "Fecal bile alcohol analysis",
+          "name": "Serum 7\u03b1-hydroxy-4-cholesten-3-one (C4 or 7\u03b1C4)",
           "type": "standard",
-          "description": "Measures bile alcohol (7-dehydroxylated bile acids) in stool, which increases when bile acids are malabsorbed and deconjugated by colonic bacteria. Elevated levels (>2000 nmol/24h) support BAM diagnosis.",
-          "availability": "Available at specialized labs; less commonly ordered than SeHCAT but increasingly used, especially in Europe. Requires 24-hour stool collection."
+          "description": "A blood test measuring C4, an intermediate in bile acid synthesis. Elevated C4 levels indicate excessive bile acid production, which is the upstream driver of BAM in most cases. Less invasive than SeHCAT and does not require nuclear medicine facilities.",
+          "availability": "Available in specialist centres and some academic hospitals. Not universally offered in routine gastroenterology. In the UK, increasingly used as an alternative where SeHCAT is not available. May need to be requested specifically from a gastroenterologist or lipid specialist."
         },
         {
-          "name": "C4 breath test or blood marker (7\u03b1-C4)",
+          "name": "Serum FGF19",
           "type": "emerging",
-          "description": "Measures C4 (7\u03b1-hydroxy-4-cholesten-3-one), an intermediate in bile acid synthesis. Elevated C4 indicates increased bile acid synthesis to compensate for loss, suggesting BAM. Can be measured in blood or breath (though breath testing is experimental).",
-          "availability": "Emerging and research-focused. Blood-based C4 is becoming more available at specialized centers. Not yet standard in routine clinical practice."
+          "description": "FGF19 is the intestinal hormone that normally suppresses hepatic bile acid synthesis. Low FGF19 is associated with Type 2 (idiopathic) BAM and may be detectable with a fasting blood test. Not yet in routine clinical use but may be available at specialist or research centres.",
+          "availability": "Research and tertiary centre use primarily. Not widely available in routine NHS or private gastroenterology practice. May be available as part of specialist BAM clinics or research studies."
         },
         {
-          "name": "Colonoscopy with terminal ileum biopsy",
-          "type": "standard",
-          "description": "Visual inspection of the colon and terminal ileum to rule out inflammation, strictures, or other structural disease. Biopsies can assess microscopic inflammation and confirm absence of inflammatory bowel disease. Does not diagnose BAM directly but excludes alternative diagnoses.",
-          "availability": "Widely available at gastroenterology clinics. Usually performed if symptoms and initial testing warrant exclusion of inflammatory conditions."
+          "name": "Faecal bile acid measurement",
+          "type": "emerging",
+          "description": "Direct measurement of bile acids in a stool sample. Elevated faecal bile acids confirm excess colonic bile acid load. Requires specialised laboratory analysis and is not routinely available, but is used in some research and tertiary settings.",
+          "availability": "Limited to specialist or research laboratories. Not widely available in routine clinical practice."
         },
         {
-          "name": "Imaging (CT or MR enterography)",
+          "name": "Empirical therapeutic trial with bile acid sequestrant",
           "type": "standard",
-          "description": "Visualizes the small bowel to assess for structural abnormalities, strictures, or signs of Crohn's disease. Useful if Type 1 BAM (post-surgical or with IBD) is suspected.",
-          "availability": "Available at most hospitals and imaging centers. Usually ordered if terminal ileum pathology is suspected."
+          "description": "When SeHCAT or C4 testing is unavailable, a 2\u20134 week trial of cholestyramine, colestipol, or colesevelam is used both diagnostically and therapeutically. A clear reduction in diarrhoea is considered strong supportive evidence for BAM. Colesevelam is better tolerated and has fewer drug interactions than older sequestrants.",
+          "availability": "Bile acid sequestrants are widely available by prescription from a general practitioner or gastroenterologist. The trial approach is accepted in UK NICE guidance and international gastroenterology practice as an alternative when formal testing is inaccessible."
         },
         {
-          "name": "Liver function tests and vitamin levels",
+          "name": "Colonoscopy with biopsies",
           "type": "standard",
-          "description": "Measures liver enzymes, bilirubin, and levels of fat-soluble vitamins (A, D, E, K) to assess for malabsorption consequences and rule out liver disease.",
-          "availability": "Routine blood tests available at any laboratory. Should be part of initial workup."
+          "description": "Used to exclude other causes of chronic diarrhoea including inflammatory bowel disease, microscopic colitis, and colorectal cancer. Not diagnostic for BAM itself but an important part of the investigative workup.",
+          "availability": "Standard gastroenterology referral pathway. Available via NHS or private gastroenterology."
+        },
+        {
+          "name": "Coeliac serology and small bowel biopsy",
+          "type": "standard",
+          "description": "Coeliac disease can cause secondary BAM via ileal damage. Testing for coeliac disease is an important step in the workup, especially if there are additional symptoms such as anaemia or weight loss.",
+          "availability": "Coeliac serology (tTG-IgA) available via GP. Small bowel biopsy via gastroenterology referral."
         }
       ]
     },
     "related_conditions": [
       {
-        "name": "Irritable bowel syndrome with diarrhea (IBS-D)",
+        "id": "ibs",
+        "name": "IBS-D (diarrhoea-predominant IBS)",
         "relationship": "often_confused",
-        "explanation": "BAM and IBS-D share similar symptoms (diarrhea, urgency, cramping) and are frequently conflated. Many patients labeled as IBS-D actually have BAM. Proper testing is needed to distinguish them, as treatment differs significantly."
+        "explanation": "BAM is one of the most common organic conditions misdiagnosed as IBS-D. Studies suggest that up to one-third of people labelled with IBS-D may actually have BAM. The two conditions share overlapping symptoms but have different mechanisms and different treatments. IBS is a diagnosis of exclusion; BAM should be ruled out before that label is applied."
       },
       {
+        "id": "ibd_remission",
         "name": "Crohn's disease",
-        "relationship": "mechanistic_link",
-        "explanation": "Crohn's disease affecting the terminal ileum directly damages the area responsible for bile acid reabsorption, causing Type 1 BAM. BAM can develop before, during, or after Crohn's diagnosis."
-      },
-      {
-        "name": "Celiac disease",
-        "relationship": "mechanistic_link",
-        "explanation": "Celiac disease damages the intestinal lining, impairing nutrient and bile acid absorption. Untreated celiac disease may cause secondary BAM; BAM may improve with a gluten-free diet if celiac is present."
-      },
-      {
-        "name": "Gallbladder removal (cholecystectomy)",
         "relationship": "upstream",
-        "explanation": "Gallbladder removal is a leading cause of post-surgical diarrhea. Without gallbladder storage, bile flows continuously into the intestine, increasing the load on reabsorption mechanisms and predisposing to BAM."
+        "explanation": "Crohn's disease affecting the terminal ileum is the most common cause of Type 1 BAM. Inflammation or surgical removal of the ileum destroys the site where bile acids are normally reabsorbed, causing them to spill into the colon."
       },
       {
-        "name": "Bacterial overgrowth (SIBO)",
+        "id": "microscopic_colitis",
+        "name": "Microscopic colitis",
         "relationship": "comorbid",
-        "explanation": "BAM and SIBO may coexist, both causing diarrhea, bloating, and urgency. SIBO can be secondary to abnormal bowel motility in BAM. Testing for both may be warranted."
+        "explanation": "Microscopic colitis and BAM frequently coexist, and both can cause chronic watery diarrhoea. BAM has been found in a significant proportion of people with microscopic colitis. The relationship may be mechanistic \u2014 bile acids themselves may contribute to colonic inflammation."
       },
       {
-        "name": "Fat malabsorption syndrome",
+        "id": "coeliac",
+        "name": "Coeliac disease",
+        "relationship": "upstream",
+        "explanation": "Coeliac disease can damage the small intestinal mucosa, impairing ileal bile acid transporters and causing secondary BAM. People with coeliac disease who have persistent diarrhoea despite a gluten-free diet may warrant investigation for BAM."
+      },
+      {
+        "id": "epi",
+        "name": "Exocrine pancreatic insufficiency",
+        "relationship": "often_confused",
+        "explanation": "Both EPI and BAM cause chronic diarrhoea, fatty stools, and weight loss. They can coexist and are often confused. Distinguishing them matters because treatments differ \u2014 EPI requires pancreatic enzyme replacement, while BAM requires bile acid sequestrants. A faecal elastase test can screen for EPI."
+      },
+      {
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "comorbid",
+        "explanation": "SIBO can occur as a comorbidity in people with structural changes (such as post-surgical anatomy) that also predispose to BAM. Excess bacteria in the small intestine can deconjugate bile acids, worsening malabsorption and diarrhoea. Both conditions may need to be addressed for symptoms to improve."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
         "relationship": "mechanistic_link",
-        "explanation": "BAM is one cause of fat malabsorption. Other causes (pancreatic insufficiency, intestinal lymphangiectasia) share similar symptoms and consequences (weight loss, deficiency of fat-soluble vitamins)."
+        "explanation": "Excess bile acids in the colon alter the gut microbiome, favouring bile-resistant bacteria and reducing microbial diversity. This dysbiosis may perpetuate symptoms and contribute to colonic inflammation even in treated BAM."
       },
       {
-        "name": "Vitamin D deficiency",
+        "id": "functional_dyspepsia",
+        "name": "Functional dyspepsia",
+        "relationship": "comorbid",
+        "explanation": "Upper GI symptoms including nausea, early satiety, and bloating are sometimes present alongside BAM, particularly where gallbladder dysfunction or altered bile flow is involved."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "often_confused",
+        "explanation": "Hyperthyroidism can accelerate gut transit and cause chronic diarrhoea, mimicking BAM. Thyroid function is often checked as part of the workup for unexplained chronic diarrhoea."
+      },
+      {
+        "id": null,
+        "name": "Cholecystectomy (gallbladder removal)",
+        "relationship": "upstream",
+        "explanation": "Removal of the gallbladder eliminates the reservoir function that normally concentrates and releases bile in response to meals. Instead, bile drips continuously into the duodenum. This continuous delivery disrupts the normal enterohepatic cycle and commonly leads to Type 3 BAM. Post-cholecystectomy diarrhoea affects a meaningful proportion of people who undergo the procedure."
+      },
+      {
+        "id": null,
+        "name": "Short bowel syndrome",
+        "relationship": "upstream",
+        "explanation": "Extensive small bowel resection, particularly involving the ileum, results in severe BAM as the primary reabsorption site is removed. BAM in this context is often a major driver of nutritional compromise."
+      },
+      {
+        "id": null,
+        "name": "Radiation enteritis",
+        "relationship": "upstream",
+        "explanation": "Pelvic or abdominal radiotherapy can damage ileal mucosa and transporters, impairing bile acid reabsorption and causing secondary BAM, sometimes years after treatment."
+      },
+      {
+        "id": null,
+        "name": "Oxalate nephropathy / hyperoxaluria",
         "relationship": "downstream",
-        "explanation": "Chronic BAM impairs absorption of fat-soluble vitamins, including vitamin D. Deficiency is common and may worsen bone health and immune function."
+        "explanation": "In BAM with significant fat malabsorption, unabsorbed fat binds calcium in the gut, leaving oxalate free to be absorbed in high quantities. This enteric hyperoxaluria increases the risk of calcium oxalate kidney stones \u2014 an underappreciated complication of severe or longstanding BAM."
       },
       {
-        "name": "Primary sclerosing cholangitis (PSC)",
-        "relationship": "mechanistic_link",
-        "explanation": "PSC (a liver disease) can cause secondary BAM by altering bile composition and increasing cholestasis. BAM may be part of the clinical picture in PSC patients."
+        "id": null,
+        "name": "Osteoporosis / osteopenia",
+        "relationship": "downstream",
+        "explanation": "Impaired fat-soluble vitamin absorption \u2014 particularly vitamin D \u2014 can reduce calcium absorption over time, contributing to reduced bone density in people with longstanding, untreated BAM."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
-          "name": "Bile acid sequestrants (cholestyramine, colesevelam, colestipol)",
+          "name": "Bile acid sequestrant medication",
           "category": "medication",
-          "description": "These medications bind unabsorbed bile acids in the colon, preventing them from triggering diarrhea and water secretion. They are taken orally and should be effective within days to weeks. This is often the first-line treatment for confirmed BAM.",
+          "description": "Cholestyramine, colestipol, and colesevelam are the primary treatments for BAM. These medications bind bile acids in the gut lumen, preventing them from reaching the colon. Colesevelam (Cholestagel/Welchol) is generally better tolerated than older powdered sequestrants and has fewer drug interactions. Cholestyramine powder is effective but has a gritty texture and can cause nausea. Response is often seen within 1\u20132 weeks of starting the correct dose.",
           "evidence_level": "strong",
-          "notes": "Most effective in Type 1 BAM and in some Type 2 BAM patients. Requires matching dose to symptom severity. Must be taken at least 1 hour apart from other medications to avoid malabsorption. May initially worsen bloating or constipation in other parts of the bowel."
+          "notes": "All bile acid sequestrants can impair absorption of other medications. They should be taken 1\u20134 hours away from other drugs, particularly levothyroxine, warfarin, and fat-soluble vitamin supplements. Dose titration is often needed to balance symptom control against constipation as a side effect. Prescribed by a GP or gastroenterologist."
         },
         {
           "name": "Low-fat diet",
           "category": "diet",
-          "description": "Reduce dietary fat to 30\u201350 grams per day to decrease fat malabsorption and secondary diarrhea. This is especially helpful before starting medications or if medications are ineffective alone.",
+          "description": "Reducing dietary fat reduces the stimulus for bile acid release, lowering the total bile acid load that reaches the terminal ileum and colon. Many clinicians recommend keeping fat intake to 40g or less per day as a starting point. This can substantially reduce frequency and urgency for many people, particularly those with more severe BAM.",
           "evidence_level": "moderate",
-          "notes": "Effective for symptom control but must be balanced against nutrient needs. Prolonged, severe fat restriction can lead to deficiencies in fat-soluble vitamins. Work with a dietitian to ensure adequacy."
+          "notes": "A low-fat diet alone is rarely sufficient to fully control BAM, but it can meaningfully reduce the medication dose required and improve quality of life. Working with a registered dietitian experienced in malabsorption conditions is strongly recommended to ensure nutritional adequacy, particularly for fat-soluble vitamins and essential fatty acids."
         },
         {
-          "name": "Soluble fiber supplementation",
-          "category": "supplement",
-          "description": "Soluble fibers (psyllium, inulin) increase stool bulk and may moderate diarrhea by slowing intestinal transit. Take with adequate water to avoid blockage.",
-          "evidence_level": "moderate",
-          "notes": "May cause initial bloating. Introduce gradually and increase intake over several weeks. Less effective than bile acid sequestrants but can be used as an adjunct or in patients with partial BAM."
-        },
-        {
-          "name": "Fat-soluble vitamin supplementation (A, D, E, K)",
-          "category": "supplement",
-          "description": "Because bile acids aid fat absorption, BAM patients often develop deficiencies in vitamins A, D, E, and K. Supplementation (particularly vitamin D and K) may be needed long-term. Use water-soluble or enhanced-absorption formulations.",
-          "evidence_level": "strong",
-          "notes": "Baseline levels should be checked via blood tests. Fat-soluble vitamin supplements are better absorbed when taken with meals containing some fat. Excess supplementation can be harmful; work with a healthcare provider to determine appropriate doses."
-        },
-        {
-          "name": "Antidiarrheal medications (loperamide, diphenoxylate)",
-          "category": "medication",
-          "description": "Slow intestinal motility and reduce diarrhea frequency. Often used as adjunctive therapy alongside bile acid sequestrants or dietary changes.",
-          "evidence_level": "moderate",
-          "notes": "Antimotility drugs should generally not be used as monotherapy in BAM because they may cause bacterial overgrowth if bile acid sequestrants are not also in use. Use cautiously and only under medical guidance."
-        },
-        {
-          "name": "Small, frequent meals",
-          "category": "diet",
-          "description": "Eating smaller portions more frequently rather than three large meals can reduce the osmotic load on the intestine and may decrease diarrhea severity.",
-          "evidence_level": "anecdotal",
-          "notes": "Individual response varies. Useful as an adjunctive strategy alongside medication and dietary changes."
-        },
-        {
-          "name": "Adequate hydration and electrolyte management",
+          "name": "Registered dietitian support",
           "category": "lifestyle",
-          "description": "Chronic diarrhea increases fluid and electrolyte loss. Maintain adequate intake of water and electrolytes (sodium, potassium, magnesium). Oral rehydration solutions can be helpful.",
-          "evidence_level": "strong",
-          "notes": "Monitor for signs of dehydration (dark urine, dizziness, dry mouth). If diarrhea is severe, electrolyte levels should be monitored periodically."
-        },
-        {
-          "name": "Zinc supplementation",
-          "category": "supplement",
-          "description": "Chronic diarrhea can deplete zinc, which is needed for immune function and skin health. Supplementation may help if deficiency is confirmed or suspected.",
+          "description": "A dietitian with experience in malabsorption or gastroenterology can help design a low-fat eating plan that remains nutritionally complete, assess for vitamin deficiencies, advise on practical meal planning, and help identify any additional food sensitivities that may be compounding symptoms.",
           "evidence_level": "moderate",
-          "notes": "Check baseline zinc level before supplementing. Excess zinc can interfere with copper absorption. Typical replacement is 15\u201330 mg/day."
+          "notes": "Not all dietitians are experienced in BAM specifically. It is worth seeking one with a background in malabsorption, IBD, or functional gut disorders. The British Dietetic Association and similar bodies maintain searchable directories."
         },
         {
-          "name": "Treatment of underlying conditions",
-          "category": "medication",
-          "description": "If BAM is secondary (Type 3), treating the primary condition (e.g., gluten-free diet for celiac disease, appropriate therapy for Crohn's disease) may resolve BAM.",
-          "evidence_level": "strong",
-          "notes": "This is the primary approach for Type 3 BAM and should be prioritized."
-        },
-        {
-          "name": "Probiotic supplementation",
+          "name": "Fat-soluble vitamin supplementation",
           "category": "supplement",
-          "description": "Some evidence suggests that modulating gut microbiota with specific probiotic strains may help. Research is ongoing; benefit varies by individual and strain.",
+          "description": "People with significant BAM, especially Type 1, may develop deficiencies in vitamins A, D, E, and K due to impaired fat absorption. Vitamin D deficiency is particularly common and may contribute to fatigue, bone pain, and mood changes. Supplementation guided by blood testing is important in moderate-to-severe BAM.",
+          "evidence_level": "moderate",
+          "notes": "Supplementation should be guided by blood levels rather than assumed. Vitamin D, B12 (especially in ileal disease), magnesium, and zinc are the most commonly depleted. Bile acid sequestrants themselves can worsen fat-soluble vitamin absorption, making monitoring even more important in people taking these medications."
+        },
+        {
+          "name": "Vitamin B12 supplementation or injections",
+          "category": "supplement",
+          "description": "In Type 1 BAM with ileal disease or resection, vitamin B12 absorption may be significantly impaired because intrinsic factor-B12 complexes are absorbed specifically in the terminal ileum. Oral supplementation may be insufficient in these cases; intramuscular injections bypass the ileum entirely.",
+          "evidence_level": "strong",
+          "notes": "Relevant primarily in Type 1 BAM. B12 deficiency can cause fatigue, peripheral neuropathy, and cognitive difficulties. Blood levels should be monitored regularly."
+        },
+        {
+          "name": "Meal size and frequency adjustment",
+          "category": "lifestyle",
+          "description": "Eating smaller, more frequent meals rather than large ones reduces the bile acid surge triggered by any single meal. Avoiding very large or high-fat meals, especially late in the day, can reduce overnight urgency and morning diarrhoea.",
           "evidence_level": "anecdotal",
-          "notes": "Limited high-quality evidence; not a primary treatment. May be worth trying after other therapies are in place, with realistic expectations."
+          "notes": "Practical lifestyle adjustment rather than a standalone treatment. Works best alongside dietary fat reduction and medication."
+        },
+        {
+          "name": "Treating the underlying condition",
+          "category": "medication",
+          "description": "In Type 1 and Type 3 BAM, addressing the underlying driver \u2014 e.g. achieving remission in Crohn's disease, treating coeliac disease with a strict gluten-free diet, or managing microscopic colitis \u2014 may improve or partially resolve BAM. Secondary BAM may be reversible if the primary cause is adequately controlled.",
+          "evidence_level": "moderate",
+          "notes": "Does not apply to idiopathic (Type 2) BAM where no underlying cause is identifiable. Even when an underlying condition is treated, residual BAM may persist and require sequestrant therapy."
+        },
+        {
+          "name": "Loperamide as adjunct",
+          "category": "medication",
+          "description": "Loperamide (Imodium) can be used on an as-needed basis to reduce stool urgency and frequency, particularly for situations where predictability is important (travel, work, social events). It slows gut transit but does not address the underlying bile acid excess.",
+          "evidence_level": "moderate",
+          "notes": "Useful as an adjunct rather than a primary treatment. Should not be used to mask symptoms without understanding the underlying diagnosis. Regular daily use without a confirmed BAM diagnosis or management plan is not ideal."
         }
       ],
       "things_to_avoid": [
-        "High-fat meals and processed foods high in fat, which can trigger or worsen diarrhea",
-        "Excessive dietary fiber in the absence of bile acid sequestrant therapy, as it may increase osmotic load and worsen diarrhea",
-        "Antimotility drugs as monotherapy (without bile acid sequestrants), which may increase risk of bacterial overgrowth and toxic megacolon",
-        "Prolonged low-fat diets without medical supervision, which can lead to deficiencies in fat-soluble vitamins",
-        "Skipping doses of bile acid sequestrants or medications; consistency is key to symptom control",
-        "Caffeine and alcohol in excess, as they can stimulate intestinal secretion and worsen diarrhea",
-        "Sorbitol, xylitol, and other sugar alcohols, which are not absorbed and can trigger osmotic diarrhea",
-        "Taking other medications too close in time to bile acid sequestrants, as sequestrants can bind and reduce absorption of other drugs"
+        "High-fat meals \u2014 fat is the primary trigger for gallbladder contraction and bile release, directly worsening symptoms",
+        "Fatty or greasy takeaway foods, deep-fried foods, full-fat dairy in large quantities, and fatty meats \u2014 these provoke the strongest bile acid surges",
+        "Taking other medications at the same time as bile acid sequestrants \u2014 sequestrants can bind and impair absorption of many drugs; always take them separately",
+        "Assuming a low-FODMAP diet will resolve BAM \u2014 FODMAP restriction does not address bile acid excess and may provide minimal benefit, delaying correct treatment",
+        "Ignoring fat-soluble vitamin status \u2014 longstanding BAM without monitoring can lead to clinically significant deficiencies that cause independent health problems",
+        "Accepting an IBS-D diagnosis without asking whether BAM has been excluded \u2014 particularly if there is a history of cholecystectomy, ileal surgery, or bowel disease",
+        "Rapidly increasing bile acid sequestrant dose without titration \u2014 too high a dose can cause rebound constipation and nutrient impairment"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "BAM is frequently misdiagnosed as IBS-D for years, and most mainstream clinicians will not test for it unless directly prompted. People often have to advocate specifically for SeHCAT scanning or a sequestrant trial.",
+        "why_resisted": "Patients trust that if there were a treatable cause, it would have been found. The IBS label feels authoritative and final. Challenging a diagnosis requires confidence and knowledge that most people do not initially have.",
+        "path_forward": "People who research their own symptom pattern, identify BAM as a plausible explanation, and request a therapeutic trial or SeHCAT referral often achieve rapid, significant symptom relief after years of inadequate management. The diagnosis is not hard to pursue \u2014 it requires asking the right questions of the right clinician."
+      },
+      {
+        "truth": "The gold-standard diagnostic test (SeHCAT) is unavailable in the United States and many other countries, meaning BAM can be structurally invisible to the medical system regardless of how clearly it presents.",
+        "why_resisted": "People assume that if a definitive test existed, it would be available to them. The absence of a test in their country feels like absence of the condition.",
+        "path_forward": "In countries without SeHCAT, a pragmatic trial with a bile acid sequestrant is an accepted diagnostic approach. A clear, rapid response to cholestyramine or colesevelam is itself strong evidence of BAM. Requesting an empirical trial from a gastroenterologist or informed GP is a legitimate and productive path forward."
+      },
+      {
+        "truth": "For many people, BAM requires ongoing management rather than cure. A low-fat diet and daily medication may need to be maintained indefinitely, particularly in idiopathic or structural BAM.",
+        "why_resisted": "The hope that a single intervention will restore normality is natural. Accepting a long-term management framework can feel like admitting defeat.",
+        "path_forward": "People who accept the maintenance nature of BAM treatment and establish a consistent dietary and medication routine typically report dramatically improved quality of life \u2014 often returning to near-normal social, occupational, and physical function within weeks to months of starting treatment."
+      },
+      {
+        "truth": "Post-cholecystectomy BAM is a recognised and relatively common complication of gallbladder removal that is almost never discussed with patients beforehand \u2014 and is frequently not investigated afterwards, even when diarrhoea begins directly after surgery.",
+        "why_resisted": "Surgeons focus on the operation, not long-term GI consequences. Patients are relieved to have a 'simple' procedure and may not connect subsequent diarrhoea to the surgery. GPs may not think to investigate this link.",
+        "path_forward": "People who connect the onset of their diarrhoea to their cholecystectomy and present this timeline to a gastroenterologist with a specific request for BAM investigation tend to be taken seriously and often reach a useful treatment within a manageable timeframe."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Obtaining a definitive diagnosis (SeHCAT test or fecal bile alcohol test)",
-          "why_it_matters": "Many BAM patients are misdiagnosed as IBS-D for years, leading to ineffective treatments and unnecessary dietary restriction. Confirmed diagnosis enables targeted, evidence-based treatment that often provides dramatic symptom relief.",
-          "how_to_start": "Discuss BAM testing with your gastroenterologist, particularly if you have chronic diarrhea unresponsive to standard IBS therapy or a history of gallbladder removal or terminal ileum resection.",
-          "timeline": "Diagnosis can lead to improvements in symptoms within 2\u20134 weeks of starting appropriate therapy.",
+          "lever": "Correct diagnosis confirmed by SeHCAT, C4, or sequestrant trial",
+          "why_it_matters": "BAM is highly treatable but only once identified. Years spent managing the wrong diagnosis (IBS-D) with ineffective interventions can be avoided once BAM is confirmed. The diagnosis unlocks appropriate, targeted treatment.",
+          "how_to_start": "Request a gastroenterology referral with specific mention of BAM as a suspected cause. Ask whether SeHCAT scanning or a C4 blood test is available, or request an empirical cholestyramine/colesevelam trial if scanning is not accessible.",
+          "timeline": "Referral timelines vary. An empirical medication trial can begin within days of prescription and typically produces observable results within 1\u20132 weeks.",
           "requires_professional": true
         },
         {
-          "lever": "Starting bile acid sequestrant therapy (if appropriate)",
-          "why_it_matters": "Bile acid sequestrants are the most effective primary treatment for BAM and can reduce diarrhea frequency by 50\u201390% in responsive patients. Once the right dose is found, improvement is often dramatic and sustained.",
-          "how_to_start": "Request evaluation for bile acid sequestrant therapy from your gastroenterologist. Start with the lowest effective dose and titrate based on symptom response.",
-          "timeline": "Initial improvement may occur within days; full benefit is usually evident within 2\u20134 weeks.",
+          "lever": "Bile acid sequestrant at an optimal individualised dose",
+          "why_it_matters": "The right sequestrant at the right dose is the most powerful single intervention for BAM. Underdosing produces partial relief; overdosing causes constipation. Titration to find the minimum effective dose takes time but results in the best long-term outcomes.",
+          "how_to_start": "Start at the lowest recommended dose (e.g. 4g cholestyramine once daily or 625mg colesevelam tablets) and increase gradually over 2\u20134 weeks guided by symptoms. Keep a symptom diary to track stool frequency, urgency, and consistency.",
+          "timeline": "Initial response often within 1\u20132 weeks. Optimal titration may take 4\u20138 weeks.",
           "requires_professional": true
         },
         {
-          "lever": "Systematic dietary fat adjustment and monitoring",
-          "why_it_matters": "Finding your personal fat tolerance\u2014the amount of fat your gut can handle before diarrhea occurs\u2014allows you to maximize enjoyment of food while managing symptoms. This is highly individual and requires attention.",
-          "how_to_start": "With the support of a dietitian familiar with BAM or malabsorption, gradually adjust fat intake to identify your threshold. Maintain a food and symptom diary to track patterns.",
-          "timeline": "Fine-tuning diet typically takes 4\u20138 weeks of consistent observation and adjustment.",
+          "lever": "Sustained low-fat dietary pattern",
+          "why_it_matters": "Reducing fat intake lowers the bile acid stimulus from every meal. This allows the same dose of sequestrant to work more effectively, and some people can reduce medication once dietary fat is consistently controlled.",
+          "how_to_start": "Work with a registered dietitian or use reliable resources to audit current dietary fat intake. Aim to keep total fat below 40g/day as a starting point, with particular attention to high-fat single meals.",
+          "timeline": "Dietary changes typically show symptom impact within 1\u20132 weeks of consistent adherence.",
           "requires_professional": false
         },
         {
-          "lever": "Regular monitoring of fat-soluble vitamin status",
-          "why_it_matters": "Long-term BAM can cause silent deficiencies in vitamins A, D, E, and K, leading to bone loss, weak immune function, and poor wound healing. Proactive monitoring and supplementation prevent serious complications.",
-          "how_to_start": "Get baseline blood tests of vitamins A, D, E, and K (and iron/ferritin), then retest annually or as recommended by your physician. Supplement if deficient.",
-          "timeline": "Deficiencies can develop over months to years; annual monitoring is appropriate for stable patients.",
+          "lever": "Monitoring and correcting nutritional deficiencies",
+          "why_it_matters": "Unaddressed vitamin and mineral deficiencies \u2014 particularly vitamins D, B12, and fat-soluble vitamins \u2014 can cause independent symptoms (fatigue, bone pain, neurological symptoms) that persist even after diarrhoea is controlled. These are often overlooked once GI symptoms improve.",
+          "how_to_start": "Request a comprehensive blood panel including vitamin D, B12, folate, magnesium, zinc, and full blood count. Ask specifically whether fat-soluble vitamins should be tested given the diagnosis.",
+          "timeline": "Deficiency correction typically takes 3\u20136 months of consistent supplementation to normalise blood levels.",
           "requires_professional": true
         },
         {
-          "lever": "Addressing secondary bacterial overgrowth (SIBO) if present",
-          "why_it_matters": "BAM increases the risk of SIBO due to altered motility and osmotic load. If SIBO is present, treating it can significantly improve bloating, gas, and diarrhea beyond what BAM treatment alone achieves.",
-          "how_to_start": "If you have persistent bloating or gas despite bile acid sequestrants and dietary changes, discuss SIBO testing (breath test) with your doctor. If positive, pursue appropriate treatment (antibiotics, diet, or herbal antimicrobials).",
-          "timeline": "SIBO treatment typically takes 2\u20134 weeks; improvement in bloating/gas may occur within days to weeks.",
+          "lever": "Treating an underlying condition driving Type 1 or Type 3 BAM",
+          "why_it_matters": "When BAM is secondary, controlling the primary condition can reduce the severity of BAM and sometimes allow a reduction in sequestrant dose. Ignoring the underlying condition while only treating BAM symptoms leads to ongoing structural damage.",
+          "how_to_start": "Ensure that conditions such as Crohn's disease, coeliac disease, or microscopic colitis are under active, appropriate management in parallel with BAM treatment.",
+          "timeline": "Depends on the underlying condition. Some improvements in secondary BAM may take months.",
           "requires_professional": true
-        },
-        {
-          "lever": "Establishing a sustainable meal pattern and eating schedule",
-          "why_it_matters": "Eating small, regular meals stabilizes gut load and may reduce sudden urgency and diarrhea episodes. Consistency also improves medication adherence and nutrient absorption.",
-          "how_to_start": "Plan 4\u20135 small meals throughout the day at regular times. Match meal size and fat content to your tolerance. Include protein and non-soluble carbohydrates to stabilize transit.",
-          "timeline": "Benefits may be apparent within 1\u20132 weeks of establishing the pattern.",
-          "requires_professional": false
         }
       ],
       "common_mistakes": [
-        "Waiting too long to seek testing or continuing to accept an IBS-D label without pursuing specific BAM diagnostics. Years of mismanagement delay effective treatment.",
-        "Starting medication or dietary changes without a confirmed diagnosis, leading to uncertainty about what actually helps and frustration when results are inconsistent.",
-        "Eliminating all fat from the diet without medical guidance, causing nutrient deficiencies and unnecessary restriction. Most BAM patients tolerate moderate fat (30\u201360g/day) reasonably well with medication.",
-        "Using bile acid sequestrants without dietary adjustment; the combination is more effective than either alone, but many patients try only medication or only diet changes.",
-        "Forgetting to take medications consistently. BAM treatment requires regular adherence; skipping doses allows symptoms to return.",
-        "Ignoring vitamin supplementation because symptoms feel controlled. Silent deficiencies develop over time and cause irreversible harm if not addressed.",
-        "Assuming SIBO or other comorbidities are not present and not pursuing testing. Secondary conditions are common and must be addressed for full improvement.",
-        "Over-relying on antimotility drugs without bile acid sequestrants, which increases risk of bacterial overgrowth and other complications.",
-        "Not revisiting diagnosis periodically. If symptoms change significantly or new symptoms develop, reconsideration of the diagnosis may be needed."
+        "Trying a low-FODMAP diet as the primary intervention without investigating bile acid status \u2014 FODMAP restriction does not address bile acid excess and often provides little benefit in BAM",
+        "Stopping bile acid sequestrants early because of initial side effects (bloating, constipation) without adjusting dose or formulation \u2014 titration matters and switching between sequestrants may resolve tolerability issues",
+        "Taking bile acid sequestrants at the same time as other medications, reducing their absorption and reducing the benefit of both",
+        "Not following up on nutritional status once diarrhoea is controlled \u2014 vitamin deficiencies accumulate silently and may cause serious longer-term health consequences",
+        "Accepting an IBS-D diagnosis without pushing for BAM investigation, particularly after cholecystectomy, bowel surgery, or known ileal disease",
+        "Assuming BAM has been ruled out when no SeHCAT test has been performed \u2014 absence of testing is not the same as a negative result",
+        "Eating large, high-fat meals even while on medication \u2014 sequestrants have a limited capacity and a single large fatty meal can overwhelm their binding capacity"
       ]
     },
     "finding_help": {
       "specialists": [
         {
           "type": "Gastroenterologist",
-          "role": "Often the first to diagnose BAM. Can order diagnostic tests (SeHCAT, imaging, colonoscopy), manage medication, and coordinate long-term care. Essential for confirmed diagnosis and treatment initiation.",
-          "notes": "Many general gastroenterologists are familiar with BAM, but a gastroenterologist with interest in functional or malabsorption disorders is ideal. Some may not be familiar with SeHCAT testing; you may need to request it specifically or seek a referral to a center with expertise."
+          "role": "The primary specialist for BAM investigation and diagnosis. Can order SeHCAT scanning, C4 blood tests, colonoscopy, and other investigations. Can also prescribe bile acid sequestrants and manage underlying conditions such as Crohn's or microscopic colitis.",
+          "notes": "Not all gastroenterologists routinely investigate for BAM; many default to IBS-D management. Patients who present with a specific request for BAM investigation \u2014 especially with a relevant history such as cholecystectomy, ileal disease, or failure of IBS treatments \u2014 are more likely to have testing pursued. In the UK, NHS referral via GP is the standard route. Private gastroenterology can reduce waiting times."
         },
         {
-          "type": "Dietitian (Registered Dietitian Nutritionist, RDN)",
-          "role": "Provides personalized dietary management, helps identify fat tolerance, ensures adequate nutrition despite restrictions, and manages potential vitamin deficiencies. Often the most practical source of day-to-day guidance.",
-          "notes": "Choose a dietitian with experience in gastrointestinal conditions, malabsorption, or functional bowel disorders. Many insurance plans cover dietitian visits if referred by a physician."
+          "type": "Registered dietitian (GI or malabsorption specialist)",
+          "role": "Essential for designing a low-fat diet that remains nutritionally complete, assessing for and addressing vitamin deficiencies, and providing practical meal planning support. Also helpful in distinguishing dietary triggers from structural causes.",
+          "notes": "Seek a dietitian with experience in malabsorption, gastroenterology, or inflammatory bowel conditions. General practice dietitians may have limited experience with BAM specifically. In the UK, the British Dietetic Association's 'Find a Dietitian' tool is a useful starting point. Private dietitian access is typically faster than NHS referral."
         },
         {
-          "type": "Functional medicine doctor or integrative medicine specialist",
-          "role": "May offer a whole-system approach to underlying factors contributing to BAM and supplement conventional treatment with microbiota optimization, additional testing, or nuanced diet counseling.",
-          "notes": "Approach varies widely; ensure the practitioner is evidence-based and willing to coordinate with your gastroenterologist rather than replace standard care."
+          "type": "General practitioner (GP) / Primary care physician",
+          "role": "First point of contact for referral to gastroenterology, prescription of bile acid sequestrants, and ordering basic blood tests (full blood count, vitamin D, B12, thyroid function, coeliac serology). A well-informed GP can initiate an empirical sequestrant trial without waiting for a specialist appointment.",
+          "notes": "Awareness of BAM varies widely among GPs. A patient who presents with specific knowledge of their symptom pattern and a clear request (e.g. 'I would like to try a cholestyramine trial given my post-cholecystectomy diarrhoea') is more likely to receive a useful response than one who presents with general diarrhoea complaints."
         },
         {
-          "type": "Primary care physician",
-          "role": "Coordinates overall care, monitors general health, manages comorbidities, and ensures appropriate supplementation and monitoring of vitamin levels.",
-          "notes": "A supportive primary care physician who understands BAM can be invaluable for longitudinal care and preventing complications."
-        },
-        {
-          "type": "Hepatologist or liver specialist",
-          "role": "If BAM is secondary to liver disease (e.g., primary sclerosing cholangitis), a hepatologist addresses the underlying liver condition, which may resolve BAM.",
-          "notes": "Relevant only if liver or biliary disease is present."
+          "type": "Functional medicine doctor or integrative gastroenterologist",
+          "role": "May be more willing to investigate BAM comprehensively when conventional pathways have failed to provide a diagnosis. Can sometimes order FGF19 testing, comprehensive microbiome assessments, and nutritional panels that mainstream clinicians may not prioritise.",
+          "notes": "Quality varies considerably. Seek practitioners with verifiable training and a transparent evidence base. May be a useful option when NHS or standard private gastroenterology has not yielded a diagnosis after investigation."
         }
       ],
       "patient_communities": [
         {
-          "name": "BAM & IBS Support Community",
+          "name": "r/BileAcidMalabsorption",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/BileAcidMalabsorption/",
+          "notes": "A dedicated community for people with BAM. Useful for peer experience on diagnosis pathways, medication tolerability, dietary strategies, and navigating healthcare systems in different countries. Particularly valuable for those in countries without SeHCAT access who want to understand empirical trial approaches."
+        },
+        {
+          "name": "r/ibs",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/ibs/",
+          "notes": "A large IBS community where BAM is a frequently discussed topic, given how often the two are confused. Useful for finding others who have pursued a BAM diagnosis after years of IBS-D labelling."
+        },
+        {
+          "name": "Bile Acid Malabsorption support group",
           "platform": "Facebook",
           "url": null,
-          "notes": "Large, active peer support group where patients share experiences, dietary tips, and medication advice. Useful for practical day-to-day tips and emotional support, but always verify information with your healthcare provider."
+          "notes": "Several Facebook groups exist for BAM support. Search 'Bile Acid Malabsorption' on Facebook. These groups tend to have active members sharing practical experience with cholestyramine, colesevelam, dietary management, and getting diagnosed in countries without SeHCAT access."
         },
         {
-          "name": "Reddit r/IBS and r/chronic_diarrhea",
-          "platform": "Reddit",
-          "url": "https://www.reddit.com/r/IBS/",
-          "notes": "Forums where BAM is discussed alongside IBS. Mix of helpful patient experiences and misinformation; read critically and consult your doctor on any new ideas."
-        },
-        {
-          "name": "IFFGD (International Foundation for Functional Gastrointestinal Disorders)",
-          "platform": "Website and forums",
-          "url": "https://www.iffgd.org/",
-          "notes": "Patient education and community resources focused on functional GI disorders, including BAM. Evidence-based information and support group listings."
-        },
-        {
-          "name": "Bile Acid Malabsorption Patient Support Groups",
-          "platform": "Specialty gastroenterology centers",
-          "url": null,
-          "notes": "Some medical centers run BAM-specific support groups, often facilitated by dietitians or patient navigators. Check with your gastroenterology clinic for local offerings."
+          "name": "Crohn's and Colitis UK",
+          "platform": "Website and forum",
+          "url": "https://www.crohnsandcolitis.org.uk",
+          "notes": "Useful for people whose BAM is secondary to Crohn's disease. Includes forums, helpline access, and information about managing bile acid complications of ileal disease."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "Bile Acid Malabsorption: Mechanisms, Clinical Features, and Treatment",
-        "type": "research paper",
-        "author_or_source": "Walters, J. R. et al., Gastroenterology journals",
-        "url": null,
-        "description": "Comprehensive peer-reviewed articles on BAM pathophysiology, diagnosis, and treatment. Dense but authoritative for understanding the condition at a deep level.",
-        "audience": "advanced"
-      },
-      {
-        "title": "Understanding Bile Acid Diarrhea",
-        "type": "website",
-        "author_or_source": "IFFGD (International Foundation for Functional Gastrointestinal Disorders)",
-        "url": "https://www.iffgd.org/",
-        "description": "Patient-friendly educational material explaining what BAM is, how it is diagnosed, and how it is treated. Accurate and balanced.",
-        "audience": "beginner"
-      },
-      {
-        "title": "The Low-FODMAP Diet for IBS and Functional Disorders",
-        "type": "book",
-        "author_or_source": "Shepherd et al.",
-        "url": null,
-        "description": "While focused on IBS, this book covers dietary management of chronic diarrhea and functional disorders, including principles relevant to BAM dietary management.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Malabsorption and Nutrition: Diagnosis and Management",
-        "type": "resource",
-        "author_or_source": "Various gastroenterology societies (AGA, BSG)",
-        "url": null,
-        "description": "Clinical guidelines and educational materials on malabsorption syndromes, including BAM, from major gastroenterology organizations. Evidence-based and professionally vetted.",
+        "title": "Bile acid malabsorption \u2014 NICE guidance (CG61 and related guidance)",
+        "type": "clinical guideline",
+        "author_or_source": "National Institute for Health and Care Excellence (NICE)",
+        "url": "https://www.nice.org.uk",
+        "description": "UK national guidance on the investigation and management of diarrhoea-predominant bowel conditions includes recommendation of SeHCAT testing and empirical sequestrant trials for BAM. Provides a useful framework for what investigations should be available and requested.",
         "audience": "intermediate"
       },
       {
-        "title": "SeHCAT Testing and Bile Acid Sequestrant Therapy for BAM",
-        "type": "video",
-        "author_or_source": "Patient education channels and medical institutions",
-        "url": null,
-        "description": "Animated or instructional videos explaining how SeHCAT testing works, what results mean, and how bile acid sequestrants are used. Helpful for visual learners.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Chronic Diarrhea: A Practical Approach to Diagnosis and Management",
-        "type": "research paper / guideline",
-        "author_or_source": "American College of Gastroenterology",
-        "url": null,
-        "description": "Clinical practice guidelines on the diagnosis and management of chronic diarrhea, including BAM. Essential for healthcare providers but also valuable reference for informed patients.",
+        "title": "Bile Acid Malabsorption: A Review",
+        "type": "research paper",
+        "author_or_source": "Camilleri M \u2014 published in Clinical Gastroenterology and Hepatology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25724700/",
+        "description": "A comprehensive clinical review by a leading gastroenterologist summarising the epidemiology, pathophysiology, diagnosis, and treatment of BAM. Accessible to motivated lay readers with some science background. Useful for understanding the evidence base and the current clinical debate.",
         "audience": "advanced"
       },
       {
-        "title": "Living with Bile Acid Malabsorption: Patient Narratives and Practical Tips",
-        "type": "website / blog",
-        "author_or_source": "Patient advocacy websites and online communities",
-        "url": null,
-        "description": "Real-world patient stories, dietary tips, medication experiences, and coping strategies. Helpful for normalizing the condition and discovering practical solutions.",
+        "title": "SeHCAT testing for bile acid malabsorption \u2014 NICE diagnostics guidance DG7",
+        "type": "clinical guideline",
+        "author_or_source": "NICE",
+        "url": "https://www.nice.org.uk/guidance/dg7",
+        "description": "The specific NICE guidance recommending SeHCAT as the investigation of choice for people with chronic diarrhoea where BAM is suspected. Useful as a reference document when requesting testing from a clinician who is unfamiliar with the test.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Bile Acid Malabsorption \u2014 Patient Information (Guts UK)",
+        "type": "website",
+        "author_or_source": "Guts UK charity",
+        "url": "https://gutscharity.org.uk/advice-and-information/conditions/bile-acid-malabsorption/",
+        "description": "Clear, patient-friendly overview of BAM covering symptoms, types, testing, and treatment. Written by a UK gastroenterology charity and a good starting point for newly diagnosed people or those seeking a plain-language introduction.",
         "audience": "beginner"
+      },
+      {
+        "title": "The Gut Health Podcast \u2014 episodes on bile acids and diarrhoea",
+        "type": "podcast",
+        "author_or_source": "Gut Health Podcast (Kirsten Jackson / various gastroenterology guests)",
+        "url": "https://www.theguthealthpodcast.com",
+        "description": "Accessible discussions of digestive conditions including BAM. Useful for those who prefer audio content and want to understand the gut biology behind bile acid dysfunction without reading clinical papers.",
+        "audience": "beginner"
+      },
+      {
+        "title": "FGF19 and bile acid malabsorption \u2014 emerging diagnostics",
+        "type": "research paper",
+        "author_or_source": "Walters JRF et al \u2014 Alimentary Pharmacology & Therapeutics",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19046347/",
+        "description": "Key paper establishing the role of FGF19 deficiency in idiopathic BAM and introducing the concept of measuring serum FGF19 as a diagnostic tool. Important background reading for understanding the mechanism of Type 2 BAM.",
+        "audience": "advanced"
       }
     ],
-    "relevance_signal": "**Watery, urgent diarrhoea** \u2014 especially in the morning. Symptoms began or worsened after gallbladder removal. Responds partially to a low-fat diet."
+    "relevance_signal": "Chronic watery diarrhoea \u2014 often yellow or pale, greasy, and urgent \u2014 that is worse after eating fatty meals, has been present for months or years, and has not responded to IBS treatments or low-FODMAP diet. May follow gallbladder removal, bowel surgery, or a gut infection, or may appear with no obvious cause."
+  },
+  "section_meta": {
+    "relevance_signal": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "3028670440bb3a54"
+    },
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

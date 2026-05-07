@@ -2,585 +2,682 @@
   "condition_id": "eosinophilic",
   "condition_name": "Eosinophilic GI disorders",
   "generated_at": "2026-04-16T10:28:45.137302Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "Eosinophilic gastrointestinal (GI) disorders are rare conditions where too many infection-fighting white blood cells called eosinophils accumulate in the stomach, intestines, or esophagus. This buildup causes inflammation and symptoms like difficulty swallowing, food getting stuck, vomiting, and abdominal pain. The exact cause is often unclear, but allergies and immune system dysfunction play a role.",
-    "detailed_summary": "Eosinophilic GI disorders are a group of rare inflammatory conditions characterized by abnormal accumulation of eosinophils (a type of white blood cell) in the tissues of the esophagus, stomach, small intestine, or colon. The eosinophil count exceeds normal levels, triggering chronic inflammation. These disorders are thought to result from a combination of genetic predisposition, immune dysregulation, and environmental triggers such as food allergens or aeroallergens. Symptoms vary depending on which part of the GI tract is affected and the severity of inflammation. While once considered extremely rare, recognition and diagnosis have improved, though the conditions remain uncommon. There is no cure, but symptoms can often be managed through dietary modification, medications, and addressing underlying allergic conditions.",
+    "plain_summary": "Eosinophilic gastrointestinal disorders (EGIDs) are a group of conditions in which eosinophils \u2014 a type of white blood cell normally involved in fighting parasites and allergic responses \u2014 accumulate in abnormally high numbers in the lining of the digestive tract. This causes chronic inflammation that can affect swallowing, digestion, nutrient absorption, and bowel function depending on where in the GI tract the buildup occurs. The most common form is eosinophilic esophagitis (EoE), which affects the esophagus. Less common forms affect the stomach, small intestine, or colon. EGIDs are closely linked to allergic and atopic conditions and are significantly underdiagnosed.",
+    "detailed_summary": "Eosinophilic gastrointestinal disorders encompass a spectrum of chronic immune-mediated conditions defined by pathological eosinophil infiltration of the GI mucosa in the absence of secondary causes such as parasitic infection, medication reactions, or inflammatory bowel disease. The most well-characterized is eosinophilic esophagitis (EoE), but the family also includes eosinophilic gastritis (EoG), eosinophilic gastroenteritis (EoGE), and eosinophilic colitis (EoC).\n\nEosinophils are not normally found in significant numbers in the esophagus, but do exist in low numbers throughout the rest of the GI tract. In EGIDs, allergen exposure \u2014 most often food antigens \u2014 triggers a dysregulated immune response involving IgE and non-IgE pathways, Th2 cytokines (particularly IL-5, IL-13, and eotaxin-3), and mast cell co-activation. This leads to chronic mucosal inflammation, tissue remodeling, and in the case of EoE, esophageal fibrosis and stricture formation over time.\n\nFood antigens are the primary driver in most cases, with the 'Big Six' foods (milk, wheat, eggs, soy, nuts, seafood) implicated in the majority of EoE cases. Environmental aeroallergens may also contribute, with some patients showing seasonal symptom variation. The majority of those with EGIDs have comorbid atopic disease \u2014 asthma, eczema, allergic rhinitis, or food allergy \u2014 and there is strong evidence of shared genetic susceptibility involving genes on chromosome 5q22 and the gene encoding eotaxin-3 (CCL26).\n\nDiagnosis requires endoscopic biopsy and histological confirmation of eosinophil counts exceeding defined thresholds (\u226515 eosinophils per high-power field for EoE; context-dependent thresholds for other sites). Symptom presentation varies widely by site and age, making clinical diagnosis alone unreliable. Many individuals with EGIDs spend years receiving diagnoses of GERD, IBS, or functional dyspepsia before the correct diagnosis is established.\n\nManagement is centered on three approaches that can be used alone or in combination: dietary elimination (empiric or allergy-guided), pharmacological therapy (proton pump inhibitors for EoE, topical corticosteroids, biologic agents), and endoscopic dilation for strictures. The biologic dupilumab (anti-IL-4R\u03b1) received FDA approval for EoE in 2022, representing the first targeted therapy for any EGID. Research into biologics for non-esophageal EGIDs is ongoing.",
     "prevalence": {
-      "summary": "Eosinophilic GI disorders are rare, affecting fewer than 1 in 10,000 people in most populations.",
-      "estimate": "0.01\u20130.1 per 10,000 people, depending on the subtype",
-      "notes": "Prevalence is likely underestimated due to diagnostic challenges and lack of systematic screening. Eosinophilic esophagitis is the most commonly diagnosed subtype. Adult prevalence appears to be increasing, possibly due to better recognition. Geographic variation exists, with some studies suggesting higher rates in developed countries. Pediatric cases are well-documented but data remain sparse."
+      "summary": "EGIDs are rare but increasingly diagnosed, with EoE being by far the most common form.",
+      "estimate": "EoE affects approximately 1 in 2,000 people (0.05%) in Western countries; non-esophageal EGIDs are far rarer, estimated at 1\u201310 per 100,000 for eosinophilic gastritis and gastroenteritis, and even less for eosinophilic colitis",
+      "notes": "Prevalence of EoE has risen markedly since the 1990s and is likely still underestimated due to underdiagnosis. EoE shows a clear male predominance (roughly 3:1 male-to-female ratio) and disproportionately affects White individuals, though this may reflect diagnostic access rather than true biological risk. Non-esophageal EGIDs are extremely rare and even more frequently missed; true prevalence figures are uncertain given how recently diagnostic criteria have been formalized. Pediatric diagnosis is increasingly common as awareness grows."
     },
     "subgroups": [
       {
         "name": "Eosinophilic Esophagitis (EoE)",
-        "description": "The most common eosinophilic GI disorder, affecting primarily the esophagus. Often triggered or worsened by food allergens and aeroallergens.",
+        "description": "The most common EGID, involving eosinophilic infiltration of the esophageal mucosa. Associated with progressive fibrosis and stricture formation if untreated. Strongly food-antigen driven.",
         "distinguishing_features": [
-          "Difficulty swallowing (dysphagia) and food impaction are prominent",
-          "Heartburn-like chest pain unresponsive to acid-suppressing medications",
-          "Often comorbid with other allergic conditions (asthma, eczema, allergic rhinitis)",
-          "More common in males and white populations",
-          "Biopsy shows \u226515 eosinophils per high-power field in the esophagus"
+          "Dysphagia (difficulty swallowing) and food impaction are hallmark symptoms",
+          "Adults more commonly present with dysphagia; children more commonly with vomiting, feeding refusal, and failure to thrive",
+          "Endoscopic findings include rings (trachealization), furrows, white plaques, and strictures",
+          "\u226515 eosinophils per high-power field on esophageal biopsy is the diagnostic threshold",
+          "Responds to PPI therapy in a subset of patients (previously called 'PPI-responsive esophageal eosinophilia')",
+          "Highest comorbidity with atopic disease of all EGIDs"
         ]
       },
       {
-        "name": "Eosinophilic Gastritis",
-        "description": "Eosinophil accumulation primarily in the stomach, causing inflammation of the gastric mucosa.",
+        "name": "Eosinophilic Gastritis (EoG)",
+        "description": "Eosinophilic infiltration localized to the stomach. Far rarer than EoE and frequently diagnosed late.",
         "distinguishing_features": [
-          "Nausea, vomiting, and early satiety (feeling full quickly)",
-          "Epigastric (upper abdomen) pain",
-          "May present with abdominal distension",
-          "Can affect gastric emptying and lead to weight loss",
-          "Biopsy shows elevated eosinophils in stomach tissue"
+          "Prominent nausea, epigastric pain, and early satiety",
+          "May mimic functional dyspepsia or H. pylori gastritis clinically",
+          "Endoscopic appearance may look normal; diagnosis requires biopsy with \u226530 eosinophils per high-power field in the gastric antrum or corpus",
+          "Peripheral blood eosinophilia more common than in EoE",
+          "Can co-occur with EoE (overlap syndrome)"
         ]
       },
       {
-        "name": "Eosinophilic Gastroenteritis",
-        "description": "Eosinophil accumulation in both the stomach and small intestine, with broader GI involvement.",
+        "name": "Eosinophilic Gastroenteritis (EoGE)",
+        "description": "Eosinophilic inflammation involving the stomach and small intestine, sometimes extending throughout the GI tract. Presents with a range of patterns depending on depth of mucosal involvement.",
         "distinguishing_features": [
-          "Combination of gastric and small bowel symptoms",
-          "May present with diarrhea and malabsorption",
-          "Abdominal bloating, cramping, and pain",
-          "Can lead to protein-losing enteropathy and nutritional deficiencies",
-          "Biopsy shows eosinophils in multiple GI sites"
+          "Three clinical patterns: mucosal (most common \u2014 malabsorption, protein-losing enteropathy), muscular (obstructive symptoms, pseudo-obstruction), serosal (eosinophilic ascites)",
+          "Protein-losing enteropathy can cause hypoalbuminemia and peripheral edema",
+          "Ascitic fluid in the serosal form is eosinophil-rich",
+          "Often has marked peripheral blood eosinophilia",
+          "May be misdiagnosed as IBD or functional gut disorder for years"
         ]
       },
       {
-        "name": "Eosinophilic Colitis",
-        "description": "Eosinophil accumulation in the colon, less common than esophageal or gastric disease.",
+        "name": "Eosinophilic Colitis (EoC)",
+        "description": "The rarest EGID, involving eosinophilic infiltration of the colon. Most common in infants (often milk-protein driven) and in adults with atopic disease.",
         "distinguishing_features": [
-          "Chronic diarrhea, often bloody or mucoid",
-          "Lower abdominal cramping and pain",
-          "Rectal bleeding or blood in stool",
-          "May mimic inflammatory bowel disease (IBD) clinically",
-          "Biopsy shows elevated eosinophils in colon tissue"
+          "Diarrhea (sometimes bloody), abdominal cramping, and rectal bleeding are common presentations",
+          "In infants, often triggered by cow's milk or soy protein; typically resolves with dietary change",
+          "Adult form may be associated with medications (e.g., gold, clozapine) or parasitic infection \u2014 these must be excluded",
+          "Biopsy required; threshold of \u2265100 eosinophils per high-power field in the right colon is often cited, though diagnostic criteria are less standardized than for EoE",
+          "Can resemble ulcerative colitis or Crohn's colitis on endoscopy"
         ]
       },
       {
-        "name": "Eosinophilic Ascites (rare)",
-        "description": "Eosinophil accumulation in the peritoneal cavity, sometimes associated with muscularis involvement.",
+        "name": "Pediatric-onset EGID",
+        "description": "EGIDs in children present differently from adult forms and require age-appropriate diagnostic and management approaches.",
         "distinguishing_features": [
-          "Abdominal distension and ascites (fluid accumulation)",
-          "Abdominal pain and potentially acute abdomen symptoms",
-          "Can involve eosinophilic involvement of deeper muscle layers",
-          "May present acutely or insidiously",
-          "Paracentesis (fluid sampling) reveals elevated eosinophils"
+          "Infants and toddlers may present with feeding refusal, vomiting, failure to thrive, and irritability rather than classic dysphagia",
+          "Food protein-induced presentations are more common in very young children",
+          "Dietary management (elemental formula, elimination diets) is often the primary treatment approach",
+          "Risk of growth impairment and nutritional deficiency if diagnosis is delayed",
+          "EoE in adolescents can look more adult-like with dysphagia and food impaction"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Difficulty swallowing (dysphagia)",
+        "symptom": "Dysphagia (difficulty swallowing solid foods)",
         "category": "digestive",
-        "notes": "Most common in eosinophilic esophagitis; may be intermittent or progressive; often worse with dry or dense foods"
+        "notes": "The hallmark symptom of EoE in adults and older adolescents. Often progresses gradually. People may unconsciously adapt by eating slowly, chewing excessively, or avoiding certain textures."
       },
       {
-        "symptom": "Food impaction or food getting stuck in the throat",
+        "symptom": "Food bolus impaction (food getting stuck in the throat or chest)",
         "category": "digestive",
-        "notes": "May require emergency intervention if complete obstruction occurs; characteristic of esophageal disease"
+        "notes": "Can be a medical emergency requiring endoscopic removal. Often the presenting event that leads to an EoE diagnosis."
       },
       {
-        "symptom": "Chest pain or pressure, unrelated to the heart",
+        "symptom": "Heartburn and chest pain",
         "category": "digestive",
-        "notes": "Often mistaken for GERD or cardiac issues; may not respond to acid-reducing medications"
+        "notes": "Common in EoE and frequently misattributed to GERD. In EoE, heartburn often does not respond fully to acid suppression."
       },
       {
         "symptom": "Nausea and vomiting",
         "category": "digestive",
-        "notes": "More common with gastric involvement; may be triggered by eating or occur independently"
+        "notes": "More prominent in eosinophilic gastritis, gastroenteritis, and in pediatric EoE. Chronic and recurrent rather than episodic."
       },
       {
-        "symptom": "Abdominal pain or cramping",
+        "symptom": "Epigastric or abdominal pain",
         "category": "digestive",
-        "notes": "Can range from mild to severe; location depends on which part of the GI tract is involved"
+        "notes": "Can range from mild discomfort to severe cramping. More prominent in gastric and small bowel involvement."
       },
       {
-        "symptom": "Early satiety (feeling full quickly)",
+        "symptom": "Early satiety",
         "category": "digestive",
-        "notes": "Suggests gastric involvement; may lead to reduced food intake and weight loss"
+        "notes": "Particularly associated with eosinophilic gastritis due to impaired gastric accommodation and inflammation."
+      },
+      {
+        "symptom": "Diarrhea",
+        "category": "digestive",
+        "notes": "More common in EoGE and EoC. Can be watery or, in colitis, bloody."
       },
       {
         "symptom": "Bloating and abdominal distension",
         "category": "digestive",
-        "notes": "Often worse after meals; may indicate small bowel involvement"
+        "notes": "Can result from mucosal inflammation, altered motility, or secondary bacterial overgrowth."
       },
       {
-        "symptom": "Diarrhea or loose stools",
+        "symptom": "Regurgitation",
         "category": "digestive",
-        "notes": "More common with colonic or small bowel involvement; may be chronic"
+        "notes": "Particularly in EoE and eosinophilic gastritis. Often misdiagnosed as GERD."
       },
       {
-        "symptom": "Blood in stool or bloody diarrhea",
+        "symptom": "Feeding difficulties and food refusal",
         "category": "digestive",
-        "notes": "More common with colonic disease; severity varies"
+        "notes": "Key pediatric symptom, particularly in infants and toddlers with EoE or EoGE. Children may avoid eating due to pain, not recognizing the connection."
       },
       {
-        "symptom": "Weight loss or poor growth",
+        "symptom": "Failure to thrive / poor weight gain",
         "category": "systemic",
-        "notes": "Results from reduced intake or malabsorption; more common in children and severe cases"
+        "notes": "Affects children with significant mucosal involvement and malabsorption. Adults may also experience unintentional weight loss."
       },
       {
-        "symptom": "Iron deficiency anemia",
+        "symptom": "Malabsorption and nutritional deficiencies",
         "category": "systemic",
-        "notes": "Due to blood loss or malabsorption; may develop insidiously"
+        "notes": "More common in EoGE involving the small intestine. Iron deficiency anemia, hypoalbuminemia, and vitamin D deficiency are reported."
       },
       {
-        "symptom": "Protein malnutrition (in severe cases)",
+        "symptom": "Peripheral edema",
         "category": "systemic",
-        "notes": "From protein-losing enteropathy or reduced intake; requires monitoring"
+        "notes": "Can occur in EoGE with protein-losing enteropathy due to hypoalbuminemia."
       },
       {
-        "symptom": "Fatigue or low energy",
+        "symptom": "Ascites",
         "category": "systemic",
-        "notes": "May result from anemia, malnutrition, or chronic inflammation"
+        "notes": "Rare but characteristic of the serosal form of EoGE. Ascitic fluid is eosinophil-rich."
       },
       {
-        "symptom": "Abdominal distension with ascites (fluid buildup)",
+        "symptom": "Rectal bleeding",
         "category": "digestive",
-        "notes": "Rare but serious; suggests muscular layer involvement or extensive peritoneal eosinophilia"
+        "notes": "More common in eosinophilic colitis, particularly in infants with dietary protein-triggered disease."
+      },
+      {
+        "symptom": "Fatigue",
+        "category": "systemic",
+        "notes": "Non-specific but common across all EGIDs, likely related to chronic inflammation, nutritional deficits, and sleep disruption."
+      },
+      {
+        "symptom": "Food anxiety and avoidance behaviors",
+        "category": "psychological",
+        "notes": "A frequent secondary consequence, particularly in EoE. The anticipation of pain or impaction leads to significant food restriction, which can evolve into ARFID (avoidant/restrictive food intake disorder)."
       }
     ],
     "testing": {
       "key_patterns": [
-        "Chronic difficulty swallowing solid foods, especially meat, bread, or raw vegetables, unrelieved by antacids",
-        "Recurrent episodes of food impaction or throat choking that resolve slowly or require intervention",
-        "Combination of heartburn-like symptoms and difficulty swallowing that doesn't fit typical GERD",
-        "Nausea, vomiting, or feeling of early fullness after eating small amounts, without obvious mechanical blockage",
-        "Chronic abdominal pain, bloating, or cramping linked to meals, especially if triggered by specific foods",
-        "Chronic diarrhea or bloody stools without a clear cause (viral infection, obvious dietary change)",
-        "Weight loss, fatigue, or anemia without an obvious source (combined with any GI symptoms above)",
-        "Symptoms that started or worsened gradually over months to years, with variable severity",
-        "History of other allergic conditions (asthma, eczema, food allergies, hay fever) alongside GI symptoms"
+        "Persistent dysphagia or food impaction in an adult or adolescent, especially with history of atopic disease, is EoE until proven otherwise",
+        "Chronic nausea, epigastric pain, and early satiety that does not respond to PPI therapy or H. pylori treatment \u2014 consider eosinophilic gastritis",
+        "Peripheral blood eosinophilia (>500 eosinophils/\u03bcL) in the context of GI symptoms raises suspicion for non-esophageal EGID, though it is absent in many EoE cases",
+        "Elevated total IgE and positive specific IgE or skin prick tests to multiple foods in a patient with refractory GI symptoms may point toward an EGID",
+        "Endoscopic findings in EoE: esophageal rings, longitudinal furrows, white exudates, edema, and strictures \u2014 though a normal-appearing esophagus does not exclude EoE",
+        "Diagnosis requires histological confirmation in all cases \u2014 biopsy is mandatory; serology and imaging cannot establish the diagnosis",
+        "Consider EGID if repeated diagnoses of GERD, IBS, or functional dyspepsia have not led to adequate symptom control"
       ],
       "at_home": [
         {
-          "name": "Symptom and trigger tracking",
-          "description": "Daily log of meals, timing, severity, and type of symptoms (pain level 0\u201310, duration, triggers noted). Include presence of water or difficulty swallowing. Identify clusters or associations over 2\u20134 weeks.",
-          "safety_notes": "This is informational only and cannot diagnose the condition. Do not delay seeking medical evaluation, especially if you experience persistent food impaction or severe pain."
+          "name": "Symptom and food diary",
+          "description": "Tracking meals alongside symptoms (timing, severity, type) can help identify potential food triggers and symptom patterns before clinical evaluation. Note texture-related symptoms, as dysphagia that worsens with specific foods or textures is a meaningful clue. Also track environmental exposures such as pollen seasons, as some people notice seasonal symptom variation.",
+          "safety_notes": "A symptom diary is low risk. Avoid self-imposing extreme elimination diets without clinical guidance, as this can complicate allergy testing and introduce nutritional risk."
         },
         {
-          "name": "Elimination diet trial (with caution)",
-          "description": "Under professional guidance, temporarily remove suspected trigger foods (common triggers: wheat, dairy, soy, eggs, nuts, fish, shellfish) and observe symptom changes over 2\u20134 weeks. Reintroduce one food at a time to identify specific triggers.",
-          "safety_notes": "Do not pursue strict elimination without medical or dietitian support; you risk nutritional deficiency. This approach works for some patients but is not diagnostic. Symptoms may persist despite diet if other allergens (aeroallergens) are involved."
+          "name": "Tracking atopic comorbidities",
+          "description": "Documenting personal or family history of asthma, eczema, allergic rhinitis, and food allergies can strengthen the case for EGID evaluation when presenting to a clinician. A strong atopic background alongside GI symptoms is a significant clinical clue.",
+          "safety_notes": "No safety concerns. This is observational."
         }
       ],
       "clinical": [
         {
-          "name": "Upper endoscopy with esophageal biopsy",
+          "name": "Upper GI endoscopy with biopsy (EGD)",
           "type": "gold_standard",
-          "description": "A thin, flexible tube is passed down the throat while you are sedated. A small tissue sample is taken from the esophagus and examined under a microscope. Diagnostic if \u226515 eosinophils per high-power field (hpf) are found; endoscopy also visualizes rings, furrows, white plaques, or strictures.",
-          "availability": "Ordered by gastroenterologist in hospital or outpatient endoscopy center. Usually performed as an outpatient procedure."
+          "description": "Esophagogastroduodenoscopy allows direct visualization of the esophagus, stomach, and proximal small intestine, combined with mucosal biopsies for histological analysis. For EoE, multiple biopsies from proximal and distal esophagus are required (\u22656 samples). For gastric or small bowel involvement, biopsies from multiple sites are needed. Endoscopic appearance alone is insufficient \u2014 histology is mandatory. EoE threshold: \u226515 eosinophils/HPF in the esophagus. EoG threshold: \u226530 eosinophils/HPF in the gastric antrum or body.",
+          "availability": "Ordered by a gastroenterologist. Requires specialist referral. Should be performed off dietary exclusion protocols if the goal is diagnosis (not monitoring), to avoid false negatives."
         },
         {
-          "name": "Gastric and small bowel biopsy",
-          "type": "standard",
-          "description": "Tissue samples obtained via endoscopy (upper scope) or colonoscopy (lower scope) from stomach, duodenum, or colon. Examined for elevated eosinophil counts (normal <7 eosinophils/hpf in stomach and colon; <5 in duodenum).",
-          "availability": "Performed during standard endoscopy or colonoscopy; samples sent to pathology for eosinophil count and morphology."
-        },
-        {
-          "name": "Histopathology interpretation",
+          "name": "Colonoscopy with biopsy",
           "type": "gold_standard",
-          "description": "Microscopic examination of biopsied tissue by a pathologist. Count of eosinophils per high-power field is the gold standard for diagnosis. Also evaluates for location (mucosal vs. muscularis vs. subserosal) and other inflammatory markers.",
-          "availability": "Automatically performed when biopsies are taken; results typically available within 1\u20132 weeks."
+          "description": "Required to diagnose eosinophilic colitis. Biopsies from multiple colonic segments are needed, as eosinophil counts vary by location throughout the colon. Right colon typically has higher baseline eosinophil counts than left colon, so thresholds must be applied regionally.",
+          "availability": "Ordered by a gastroenterologist. Secondary causes (parasites, medications) must be excluded before attributing findings to primary eosinophilic colitis."
         },
         {
-          "name": "Complete blood count (CBC)",
+          "name": "Complete blood count (CBC) with differential",
           "type": "standard",
-          "description": "Blood test measuring white blood cell counts, hemoglobin, and platelets. May reveal elevated total eosinophil count in blood (>1500 cells/\u03bcL is abnormal, though eosinophilic GI disease can occur without elevated peripheral eosinophilia); assesses for anemia.",
-          "availability": "Standard lab test; ordered by any physician."
+          "description": "Peripheral blood eosinophilia (>500 cells/\u03bcL) is present in some EGID patients, more commonly in non-esophageal disease. Its absence does not rule out EoE or EoGE. Useful as a screening adjunct and for monitoring response to treatment in cases where it is elevated.",
+          "availability": "Routine blood test available through any primary care provider."
         },
         {
-          "name": "Iron panel and nutritional markers",
+          "name": "Total serum IgE and specific IgE panel / skin prick testing",
           "type": "standard",
-          "description": "Blood tests measuring ferritin, iron, total iron-binding capacity, and vitamin B12, folate, and albumin levels. Identifies nutritional deficiencies from chronic inflammation or malabsorption.",
-          "availability": "Standard lab test; ordered by any physician."
+          "description": "Elevated total IgE supports an atopic background. Specific IgE testing (ImmunoCAP) or skin prick testing to foods and aeroallergens can identify sensitizations to guide allergy-directed dietary management. Note that IgE-based tests do not identify non-IgE-mediated food triggers, which are common in EoE.",
+          "availability": "Ordered through allergists or immunologists. Specific IgE panels available through most clinical labs."
         },
         {
-          "name": "Allergy testing (skin prick or serum-specific IgE)",
+          "name": "Atopy patch testing",
           "type": "emerging",
-          "description": "Tests for allergic sensitization to common food and environmental allergens. Does not confirm eosinophilic GI disease but may identify relevant triggers. Serum-specific IgE (blood test) is preferred in some cases to avoid skin reactions.",
-          "availability": "Ordered by allergist or gastroenterologist; can be done at allergy clinic or hospital."
+          "description": "Skin patch testing using food antigens applied to the skin aims to identify delayed (non-IgE) hypersensitivity reactions relevant to EGIDs. Used in some centers to guide targeted food elimination. Less standardized than immediate allergy testing; results require interpretation by experienced allergists.",
+          "availability": "Available at specialist allergy centers with EGID expertise. Not universally available; more common in pediatric EGID centers."
         },
         {
-          "name": "Esophageal pH monitoring",
+          "name": "Serum albumin, pre-albumin, and protein electrophoresis",
           "type": "standard",
-          "description": "A small probe placed in the esophagus measures acid exposure over 24\u201348 hours. Used to rule out acid reflux as the primary cause and to assess if PPI therapy is effective.",
-          "availability": "Ordered by gastroenterologist; typically done as outpatient procedure."
+          "description": "Used to assess for protein-losing enteropathy in EoGE. Hypoalbuminemia in a patient with GI symptoms and eosinophilia warrants evaluation for serosal or deep mucosal small bowel involvement.",
+          "availability": "Routine blood tests available through primary care or gastroenterology."
         },
         {
-          "name": "Endoscopic ultrasound (EUS)",
+          "name": "Fecal eosinophil-derived protein (EDN) / eosinophil protein X",
           "type": "emerging",
-          "description": "Uses ultrasound to visualize the esophageal wall layers and identify thickening, strictures, or muscularis involvement. May help assess severity and guide treatment in some cases.",
-          "availability": "Performed by specialized gastroenterologists with EUS training; available at larger centers."
+          "description": "A non-invasive stool biomarker reflecting GI eosinophil activity. May be useful for monitoring disease activity and treatment response, particularly in pediatric populations where repeated endoscopy is burdensome. Not yet widely used in clinical practice.",
+          "availability": "Available in research settings and some specialist centers. Not yet standard of care."
+        },
+        {
+          "name": "Esophageal string test (Esophageal String Test / EST)",
+          "type": "emerging",
+          "description": "A capsule containing a string is swallowed, left in the esophagus for a defined period, then retrieved. Proteins on the string (including eosinophil-derived molecules and cytokines) are analyzed. Being studied as a minimally invasive monitoring tool for EoE activity between endoscopies.",
+          "availability": "Primarily in research and academic medical centers specializing in EoE. Not yet in routine clinical use."
+        },
+        {
+          "name": "Capsule endoscopy / small bowel imaging",
+          "type": "standard",
+          "description": "Used in EoGE to assess the extent of small bowel involvement, particularly when standard EGD does not reach affected regions. Capsule endoscopy can visualize the mid and distal small intestine. CT or MR enterography can detect mural thickening, strictures, and ascites.",
+          "availability": "Ordered by gastroenterologists in cases where small bowel disease extent needs evaluation."
         }
       ]
     },
     "related_conditions": [
       {
-        "name": "Gastroesophageal reflux disease (GERD)",
-        "relationship": "often_confused",
-        "explanation": "GERD and eosinophilic esophagitis can coexist and present with similar symptoms (heartburn, chest pain, dysphagia). However, EoE does not respond to acid-suppressing therapy alone and requires biopsy to diagnose. Always perform endoscopy with biopsy if dysphagia persists despite PPI therapy."
-      },
-      {
-        "name": "Inflammatory bowel disease (Crohn's disease and ulcerative colitis)",
-        "relationship": "often_confused",
-        "explanation": "Eosinophilic colitis can mimic IBD clinically with diarrhea, blood in stool, and abdominal pain. Differentiation requires endoscopy and biopsy; eosinophilic colitis has eosinophil-predominant infiltration without crypt distortion or ulceration typical of IBD."
-      },
-      {
-        "name": "Celiac disease",
+        "id": "allergy",
+        "name": "IgE-mediated food allergy",
         "relationship": "comorbid",
-        "explanation": "Can coexist with eosinophilic esophagitis or gastritis. Both cause chronic GI inflammation and malabsorption. Serological testing for celiac disease (tissue transglutaminase antibodies) should be considered in patients with eosinophilic GI disease, especially if intestinal involvement is present."
+        "explanation": "EGIDs are closely associated with IgE-mediated allergic disease. Many individuals with EoE have concurrent IgE-mediated food allergies, and the same immune dysregulation (Th2 skewing, elevated IgE) underpins both. However, EGIDs frequently involve non-IgE pathways, meaning standard allergy tests may underestimate relevant food triggers."
       },
       {
-        "name": "Food allergy",
+        "id": "atopic_dermatitis",
+        "name": "Atopic dermatitis (eczema)",
+        "relationship": "comorbid",
+        "explanation": "Atopic dermatitis is one of the most common comorbidities in EoE and other EGIDs, occurring in 30\u201350% of affected individuals. Shared Th2 immune dysregulation and skin barrier dysfunction (filaggrin mutations) are likely common mechanisms."
+      },
+      {
+        "id": "allergic_rhinitis",
+        "name": "Allergic rhinitis",
+        "relationship": "comorbid",
+        "explanation": "Allergic rhinitis affects a large proportion of those with EoE and EoGE. Aeroallergen sensitization may contribute to GI eosinophilia, and some patients note seasonal worsening of EGID symptoms corresponding to pollen seasons."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
+        "relationship": "comorbid",
+        "explanation": "Mast cell co-activation is part of the immune milieu in EGIDs, and MCAS can co-occur. Both conditions share food-triggered multisystem symptoms, and the distinction can be clinically challenging. Some individuals carry both diagnoses."
+      },
+      {
+        "id": "ibs",
+        "name": "Irritable bowel syndrome (IBS)",
+        "relationship": "often_confused",
+        "explanation": "EGIDs are frequently misdiagnosed as IBS, particularly in adults with abdominal pain, bloating, and diarrhea where endoscopy was not performed or biopsies were not taken. EoGE and EoC can closely mimic IBS in symptom presentation."
+      },
+      {
+        "id": "functional_dyspepsia",
+        "name": "Functional dyspepsia",
+        "relationship": "often_confused",
+        "explanation": "Eosinophilic gastritis is commonly misdiagnosed as functional dyspepsia given overlapping symptoms of nausea, early satiety, and epigastric pain. The distinction requires gastric biopsies \u2014 a step often omitted in routine endoscopy."
+      },
+      {
+        "id": "ibd_remission",
+        "name": "Inflammatory bowel disease (Crohn's disease / ulcerative colitis)",
+        "relationship": "often_confused",
+        "explanation": "EoGE and EoC can be mistaken for Crohn's disease or ulcerative colitis due to overlapping symptoms and endoscopic findings. Careful histological analysis distinguishing eosinophilic from neutrophilic or granulomatous inflammation is essential for correct diagnosis."
+      },
+      {
+        "id": "ncgs",
+        "name": "Non-coeliac gluten sensitivity (NCGS)",
+        "relationship": "often_confused",
+        "explanation": "Wheat is one of the most common food triggers in EoE and EoGE. Symptom improvement on a gluten-free or wheat-free diet can occur in both NCGS and wheat-triggered EGIDs, creating diagnostic ambiguity."
+      },
+      {
+        "id": "coeliac",
+        "name": "Coeliac disease",
         "relationship": "mechanistic_link",
-        "explanation": "Food allergens are thought to trigger or perpetuate eosinophilic GI inflammation in many patients. IgE-mediated food allergy (immediate reactions) and non-IgE-mediated cellular immunity both may contribute. Identifying and avoiding trigger foods is a key management strategy."
+        "explanation": "Coeliac disease must be excluded before diagnosing an EGID, as it can cause GI eosinophilia secondary to mucosal inflammation. There are also reports of coeliac disease co-occurring with EoE, possibly reflecting shared immune mechanisms and wheat antigen sensitivity."
       },
       {
-        "name": "Atopic dermatitis (eczema) and allergic rhinitis",
-        "relationship": "upstream",
-        "explanation": "Part of the atopic triad; patients with eosinophilic GI disease frequently have a history of these conditions. Suggests shared genetic and immunologic predisposition to allergic and eosinophilic inflammation."
+        "id": "gastroparesis",
+        "name": "Gastroparesis",
+        "relationship": "often_confused",
+        "explanation": "The nausea, vomiting, and early satiety of eosinophilic gastritis can closely mimic gastroparesis. Some individuals with EGIDs may develop secondary delayed gastric emptying due to ongoing inflammation and mural involvement."
       },
       {
-        "name": "Asthma",
-        "relationship": "comorbid",
-        "explanation": "Commonly coexists with eosinophilic esophagitis and other eosinophilic GI disorders, especially in atopic individuals. May share eosinophilic inflammation in airways and GI tract."
-      },
-      {
-        "name": "Eosinophilic gastroenteritis with ascites or muscularis involvement",
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
         "relationship": "downstream",
-        "explanation": "Severe eosinophilic inflammation affecting deeper muscle layers can cause strictures, obstruction, perforation, or ascites (fluid in abdomen). Represents more advanced or severe disease requiring aggressive management."
+        "explanation": "Eosinophilic inflammation of the small bowel can disrupt mucosal integrity and motility, potentially creating conditions favorable for bacterial overgrowth. SIBO may develop as a secondary complication of EoGE."
       },
       {
-        "name": "Hypereosinophilic syndrome (HES)",
-        "relationship": "mechanistic_link",
-        "explanation": "Rare systemic disorder with markedly elevated peripheral eosinophil count (typically >1500/\u03bcL). Can involve the GI tract as part of multi-organ eosinophilic disease. Secondary eosinophilic GI disease can occur in HES and requires careful distinction."
-      },
-      {
-        "name": "Achalasia",
+        "id": "microscopic_colitis",
+        "name": "Microscopic colitis",
         "relationship": "often_confused",
-        "explanation": "Neurological disorder affecting esophageal motility, causing dysphagia and food impaction similar to eosinophilic esophagitis. Differentiated by endoscopy (EoE shows inflammation; achalasia shows dilated esophagus) and biopsy."
+        "explanation": "Both eosinophilic colitis and microscopic colitis (collagenous or lymphocytic) present with chronic watery diarrhea and a grossly normal-appearing colon on endoscopy. Differentiation requires histological analysis of colonic biopsies."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / Hypermobility spectrum disorder",
+        "relationship": "comorbid",
+        "explanation": "There is emerging clinical observation of elevated EGID rates in hypermobile Ehlers-Danlos syndrome populations, potentially reflecting shared connective tissue and mast cell abnormalities. This overlap is increasingly recognized in complex multisystem presentations."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "POTS co-occurs with EGIDs at higher than expected rates, particularly in the context of the hEDS/MCAS/POTS triad. Autonomic dysfunction may contribute to GI motility abnormalities that complicate the clinical picture."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "comorbid",
+        "explanation": "Chronic painful GI symptoms, food fear, and social limitations imposed by EGIDs are associated with elevated rates of anxiety. The fear of food impaction or pain can evolve into significant anxiety and food avoidance."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
-          "name": "Proton pump inhibitor (PPI) therapy",
-          "category": "medication",
-          "description": "Medications like omeprazole, lansoprazole, or esomeprazole reduce stomach acid production. Used to rule out acid reflux and, in some patients, may reduce eosinophilic inflammation independent of acid suppression (mechanism unclear). Typical dose: once or twice daily, 30 minutes before meals.",
-          "evidence_level": "moderate",
-          "notes": "Effective for some patients; others require additional therapy. Long-term use may affect vitamin B12 and mineral absorption. Not a cure but may reduce symptoms and inflammation in a subset of cases. Response takes 4\u20138 weeks to assess."
+          "name": "Empiric six-food elimination diet (SFED)",
+          "category": "diet",
+          "description": "Removing the six most common food triggers (cow's milk, wheat, eggs, soy, tree nuts/peanuts, and seafood) for 6\u20138 weeks, followed by endoscopic re-evaluation, can identify which foods are driving eosinophilic inflammation in EoE. Each food is then systematically reintroduced with biopsy-confirmed monitoring. A two-food elimination diet (dairy and wheat) is being studied as a simpler first-line approach with comparable efficacy in some patients.",
+          "evidence_level": "strong",
+          "notes": "Requires close involvement of a dietitian experienced in elimination protocols to ensure nutritional adequacy. Multiple endoscopies are needed during food reintroduction, which is burdensome. Working with an allergist for parallel IgE testing may help prioritize which foods to reintroduce first."
         },
         {
-          "name": "Topical corticosteroids (swallowed)",
-          "category": "medication",
-          "description": "Inhaled corticosteroid sprays (fluticasone propionate 220 mcg, 2\u20134 puffs twice daily, swallowed without spacer) or nebulized budesonide suspension (0.5\u20131 mg once or twice daily, swallowed). Reduce local esophageal and gastric inflammation by directly coating the mucosa.",
+          "name": "Elemental formula diet",
+          "category": "diet",
+          "description": "A diet of amino acid-based formula (all protein replaced by free amino acids) eliminates virtually all intact food antigens and achieves histological remission in the vast majority of EoE cases. Used as a diagnostic tool to confirm food antigen involvement and as a bridge therapy, particularly in children.",
           "evidence_level": "strong",
-          "notes": "First-line medical therapy for eosinophilic esophagitis. Effective for many patients; systemic absorption is minimal with proper technique. May improve dysphagia, reduce food impaction risk, and heal strictures over 3\u20138 weeks. Side effects rare but include oral candidiasis (treat with antifungal); rinse mouth after use."
+          "notes": "Highly effective but extremely difficult to sustain in older children and adults due to palatability and social impact. Primarily used in pediatric settings or as a short-term intervention. Not typically a long-term management strategy in adults."
+        },
+        {
+          "name": "Proton pump inhibitor (PPI) therapy",
+          "category": "medication",
+          "description": "High-dose PPI therapy (e.g., omeprazole 20\u201340 mg twice daily) achieves histological remission in approximately 40\u201350% of EoE patients, likely through effects on mucosal barrier integrity and eotaxin-3 expression beyond simple acid suppression. PPI response does not exclude EoE \u2014 it is now considered part of the EoE disease spectrum rather than a separate entity.",
+          "evidence_level": "strong",
+          "notes": "Long-term PPI use carries potential risks including hypomagnesemia, increased susceptibility to enteric infections, and potential effects on gut microbiome. Periodic reassessment is appropriate."
+        },
+        {
+          "name": "Topical swallowed corticosteroids",
+          "category": "medication",
+          "description": "Swallowed fluticasone propionate (inhaler swallowed rather than inhaled) or budesonide oral suspension/viscous slurry reduces esophageal eosinophilia and improves symptoms in EoE. Orodispersible budesonide tablets (Jorveza) have received regulatory approval in Europe specifically for EoE.",
+          "evidence_level": "strong",
+          "notes": "Designed to act topically on the esophageal mucosa with minimal systemic absorption. Long-term safety data are generally favorable but esophageal candidiasis is a recognized side effect. Requires proper administration technique to ensure mucosal contact."
+        },
+        {
+          "name": "Dupilumab (biologic therapy)",
+          "category": "medication",
+          "description": "Dupilumab, a monoclonal antibody targeting the IL-4R\u03b1 receptor and thereby blocking both IL-4 and IL-13 signaling, received FDA approval for EoE in adults and children \u226512 years (\u226540 kg) in 2022. It achieves histological and symptomatic remission in a significant proportion of patients and may also address esophageal remodeling. Subcutaneous injection every two weeks.",
+          "evidence_level": "strong",
+          "notes": "Represents a major therapeutic advance, especially for patients who do not respond to dietary or first-line pharmacological approaches. Cost and insurance coverage are significant practical barriers. Also approved for atopic dermatitis and asthma, which may assist coverage approval in patients with comorbid atopic disease."
+        },
+        {
+          "name": "Endoscopic esophageal dilation",
+          "category": "procedure",
+          "description": "For patients with established esophageal strictures or severe luminal narrowing causing significant dysphagia or impaction, endoscopic dilation provides symptomatic relief. It does not address the underlying eosinophilic inflammation and should be combined with anti-inflammatory treatment.",
+          "evidence_level": "strong",
+          "notes": "Post-dilation chest pain is common and typically transient. Perforation risk exists but is low in experienced hands. Not a treatment for active eosinophilic inflammation \u2014 anti-inflammatory therapy is still required."
         },
         {
           "name": "Systemic corticosteroids",
           "category": "medication",
-          "description": "Oral prednisone or methylprednisolone (typically 0.5\u20131 mg/kg/day for 1\u20132 weeks, then gradual taper) used for severe acute exacerbations, significant dysphagia, or food impaction. Reduce systemic and local inflammation rapidly.",
+          "description": "Oral prednisone or prednisolone can induce remission in EoGE, EoC, and refractory EoE. Effective but associated with significant side effects with prolonged use. Typically reserved for acute flares or severe disease presentations (e.g., eosinophilic ascites).",
           "evidence_level": "moderate",
-          "notes": "Effective but not for long-term use due to side effects (osteoporosis, infections, mood changes). Reserved for acute crises or cases refractory to topical therapy. Symptom improvement occurs within days. Taper must be gradual to avoid adrenal insufficiency."
+          "notes": "Long-term systemic steroids are not an appropriate maintenance strategy. Should prompt urgent pursuit of steroid-sparing alternatives."
         },
         {
-          "name": "Biologic therapy (dupilumab, others)",
+          "name": "Sodium cromoglycate / cromolyn sodium",
           "category": "medication",
-          "description": "Monoclonal antibodies targeting immune pathways driving eosinophilic inflammation (e.g., dupilumab blocks IL-4 receptor alpha). Given as subcutaneous injections, usually every 2 weeks after a loading dose. Show promise in clinical trials for reducing eosinophil counts and symptoms.",
-          "evidence_level": "emerging",
-          "notes": "Not yet standard of care but increasingly used off-label or in clinical trials. Dupilumab is FDA-approved for other allergic conditions and shows benefit in eosinophilic esophagitis. Cost and insurance coverage remain barriers. Results may take 8\u201312 weeks."
+          "description": "A mast cell stabilizer that may reduce eosinophilic inflammation in some EoGE patients by inhibiting mast cell and eosinophil activation in the GI mucosa. Used off-label in some centers.",
+          "evidence_level": "anecdotal",
+          "notes": "Evidence is limited to case series and small studies. May be worth consideration in refractory non-esophageal EGIDs under specialist guidance."
         },
         {
-          "name": "Elimination diet (Six-Food Elimination Diet, SFED, or personalized)",
+          "name": "Antihistamines (H1 and H2 blockers)",
+          "category": "medication",
+          "description": "Some clinicians use antihistamines as adjunctive therapy in EGIDs given the mast cell co-activation present in many cases. May reduce itch-related esophageal sensations and provide symptomatic relief.",
+          "evidence_level": "anecdotal",
+          "notes": "Not a primary treatment for eosinophilic inflammation. May be helpful as adjunctive therapy especially in patients with concurrent MCAS."
+        },
+        {
+          "name": "Allergy-directed dietary management",
           "category": "diet",
-          "description": "Remove common allergens (wheat/gluten, dairy, soy, eggs, peanuts/tree nuts, fish/shellfish) for 4\u20136 weeks, then reintroduce one at a time while monitoring symptoms. Or pursue targeted elimination based on allergy testing or symptom triggers.",
+          "description": "Using allergy test results (skin prick test, specific IgE) to guide targeted food elimination rather than empiric broad elimination. Less burdensome than the six-food elimination diet but may have lower remission rates due to the limitations of IgE testing in identifying non-IgE-mediated food triggers.",
+          "evidence_level": "moderate",
+          "notes": "Works best in patients with clear IgE-mediated sensitizations. Not effective as a sole strategy if non-IgE mechanisms dominate. Best used in collaboration with an allergist."
+        },
+        {
+          "name": "Dietitian-supervised nutritional support",
+          "category": "diet",
+          "description": "For patients with EoGE and significant malabsorption, hypoalbuminemia, or nutritional deficiencies, registered dietitian involvement is essential to correct deficiencies, support growth in children, and design adequate elimination protocols without creating secondary nutritional harm.",
           "evidence_level": "strong",
-          "notes": "Effective in 60\u201370% of patients with eosinophilic esophagitis; effectiveness varies for gastric/intestinal disease. Requires planning to maintain nutrition; dietitian support recommended. Symptoms improve or resolve in 4\u20138 weeks if a culprit is identified. Long-term dietary restriction may be necessary."
+          "notes": "Particularly important during elemental formula periods and extensive elimination diets. Often overlooked in management plans focused solely on pharmacological therapy."
         },
         {
-          "name": "Targeted food avoidance",
-          "category": "diet",
-          "description": "Based on allergy testing, symptom tracking, or prior reaction history, avoid specific foods identified as triggers (e.g., dairy, wheat, tree nuts, seafood). Avoid aeroallergens during high-pollen seasons if triggered by them.",
-          "evidence_level": "moderate",
-          "notes": "More practical than strict elimination for some patients. Effectiveness depends on accurate identification of triggers; symptom diary and allergy testing are helpful. May require ongoing adjustment if triggers change."
-        },
-        {
-          "name": "Elemental diet (amino acid\u2013based nutrition)",
-          "category": "diet",
-          "description": "Complete nutritional formula using free amino acids rather than whole proteins or peptides. Theoretically removes all potential allergens. Used for 4\u20136 weeks to induce remission, especially in children or severe cases.",
-          "evidence_level": "moderate",
-          "notes": "Effective at inducing histologic remission in \u226580% of cases. Highly restrictive and unpalatable; often requires nasogastric tube feeding in children. Expensive and not covered by all insurance. Reintroduction of normal foods can be challenging. Most useful for acute remission induction, not long-term maintenance."
-        },
-        {
-          "name": "Dietary modification for symptom comfort",
-          "category": "diet",
-          "description": "Eat smaller, more frequent meals; chew thoroughly; eat soft or cooked foods rather than raw; avoid very hot foods (may trigger inflammation); drink plenty of water with meals. Modify texture and temperature to ease swallowing.",
-          "evidence_level": "moderate",
-          "notes": "Does not address underlying inflammation but reduces mechanical stress and discomfort. Helps during acute phases or while awaiting treatment response. Individual tolerance varies."
-        },
-        {
-          "name": "Esophageal dilation (endoscopic procedure)",
-          "category": "medication",
-          "description": "Endoscopic stretching of strictured or narrowed esophagus using balloon dilators or bougies. Performed during upper endoscopy. Provides mechanical relief of dysphagia and food impaction risk.",
-          "evidence_level": "moderate",
-          "notes": "Useful for strictures or rings causing dysphagia. Provides rapid symptom relief but does not address underlying inflammation; often combined with anti-inflammatory therapy (steroids, diet). Temporary effect; may need repeat procedures. Risk of perforation is low but real."
-        },
-        {
-          "name": "Histamine H1 antagonists (antihistamines)",
-          "category": "medication",
-          "description": "Medications like cetirizine or fexofenadine (oral) may reduce allergic responses and itching. Sometimes combined with other therapies but not typically a primary treatment for eosinophilic GI disease.",
-          "evidence_level": "anecdotal",
-          "notes": "Limited evidence for efficacy in eosinophilic GI disorders. May help if allergic rhinitis or itching accompanies GI disease. Trial for 2\u20134 weeks to assess effect. Drowsiness or dry mouth are potential side effects; second-generation antihistamines are preferred."
-        },
-        {
-          "name": "Cromolyn sodium (mast cell stabilizer)",
-          "category": "medication",
-          "description": "Inhaled or oral medication that stabilizes mast cells and reduces allergic release of inflammatory mediators. Taken 4 times daily before meals.",
-          "evidence_level": "anecdotal",
-          "notes": "Rarely used as monotherapy; limited evidence compared to corticosteroids. May be useful as adjunct in mild disease or in patients unable to tolerate other treatments. Trial for 4\u20138 weeks to assess benefit."
-        },
-        {
-          "name": "Stress reduction and sleep optimization",
+          "name": "Psychological support for food anxiety and ARFID",
           "category": "lifestyle",
-          "description": "Chronic stress and poor sleep can worsen GI inflammation and reduce immune tolerance. Practice relaxation techniques (deep breathing, meditation, yoga), ensure 7\u20139 hours of quality sleep, and address sleep disorders (sleep apnea, insomnia).",
+          "description": "Food fear, avoidance behaviors, and ARFID (avoidant/restrictive food intake disorder) are common sequelae of EoE, particularly in adolescents and adults with a history of painful food impaction. Cognitive-behavioral therapy (CBT) and exposure-based therapy adapted for ARFID can be meaningful components of comprehensive care.",
           "evidence_level": "moderate",
-          "notes": "Indirect but meaningful effect on inflammation and symptom severity. No direct cure but supports overall GI health and medication efficacy. Practical and safe for all patients."
-        },
-        {
-          "name": "Acid reflux precautions",
-          "category": "lifestyle",
-          "description": "Avoid triggers that worsen acid reflux (spicy foods, caffeine, alcohol, late meals, lying down within 3 hours of eating). Sleep with head elevated 30\u00b0. Eat slowly and in small portions.",
-          "evidence_level": "moderate",
-          "notes": "Does not address eosinophilic inflammation but reduces additional mucosal irritation that compounds symptoms. Especially relevant if EoE coexists with GERD."
+          "notes": "Psychological support is frequently absent from standard EGID care pathways. Seeking practitioners experienced in medical illness-related food anxiety is important."
         }
       ],
       "things_to_avoid": [
-        "NSAIDs (ibuprofen, naproxen) \u2014 can worsen GI inflammation and increase bleeding risk, especially if eosinophilic colitis is present; use acetaminophen for pain if needed",
-        "Trigger foods identified through allergy testing or symptom clustering (common triggers: dairy, wheat, peanuts, tree nuts, fish, shellfish, soy, eggs) \u2014 reintroduce cautiously and under medical supervision",
-        "Alcohol and caffeinated beverages \u2014 can irritate the esophagus and worsen symptoms in some patients",
-        "Very hot foods and beverages \u2014 may trigger esophageal pain or inflammation in sensitive individuals",
-        "Rough or very dense foods (raw carrots, tough meats, crusty bread, nuts) without thorough chewing \u2014 increase choking and food impaction risk, especially if strictures are present",
-        "Delayed diagnosis or treatment \u2014 chronic untreated inflammation can lead to permanent strictures, malnutrition, and complications",
-        "Abrupt discontinuation of corticosteroids \u2014 can cause rebound inflammation and adrenal insufficiency; taper gradually under medical supervision",
-        "Strict elimination diets without professional guidance \u2014 risk of nutritional deficiency (protein, iron, B12, calcium); dietitian input essential",
-        "Ignoring food impaction or severe dysphagia \u2014 can lead to complete obstruction or aspiration; seek emergency care if unable to swallow saliva, severe chest pain, or food completely stuck"
+        "Indefinite food restriction without endoscopic reconfirmation \u2014 continuing dietary restrictions that have not been validated by biopsy can lead to unnecessary nutritional deprivation without confirmed benefit",
+        "Relying on symptom improvement alone to assess treatment response \u2014 EGIDs can have histological activity without proportional symptoms; biopsy monitoring is necessary",
+        "Using GERD treatments as a long-term substitute for proper EGID diagnosis and management \u2014 PPI monotherapy without biopsy follow-up can mask but not resolve ongoing eosinophilic inflammation and fibrosis",
+        "Dilation without concurrent anti-inflammatory therapy \u2014 dilation alone does not address the underlying disease and strictures will recur",
+        "Swallowing corticosteroid inhalers without proper technique \u2014 incorrect administration leads to drug being inhaled rather than swallowed, reducing esophageal mucosal delivery",
+        "Underestimating the nutritional risks of extended elemental or elimination diets in children \u2014 micronutrient deficiencies, poor growth, and feeding aversion can result without dietitian supervision",
+        "Delaying diagnosis by repeatedly attributing symptoms to GERD or IBS without endoscopic evaluation in patients with dysphagia or food impaction",
+        "Dismissing food-triggered symptoms as 'just anxiety' in patients who have adapted eating behaviors to cope with undiagnosed EoE"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "EGIDs typically require ongoing, invasive endoscopic monitoring \u2014 there is no reliable non-invasive way to confirm remission in most cases. Feeling better does not mean the inflammation is gone, and silent fibrosis can progress without symptoms.",
+        "why_resisted": "Patients understandably want to move away from repeated endoscopies once symptoms improve. The idea that monitoring must continue even when feeling well feels burdensome and disproportionate.",
+        "path_forward": "Patients who establish a consistent monitoring schedule with a gastroenterologist experienced in EGIDs \u2014 even in apparent remission \u2014 catch histological relapse before it causes irreversible stricture formation or significant damage. Some centers are validating less invasive monitoring tools that may reduce the endoscopy burden over time."
+      },
+      {
+        "truth": "Food elimination diets for EGIDs require repeated endoscopies during food reintroduction to be meaningful \u2014 guessing which food is the culprit based on symptoms alone is unreliable and typically incorrect.",
+        "why_resisted": "Multiple endoscopies are expensive, invasive, time-consuming, and uncomfortable. Patients often want to identify their triggers through symptom observation alone, which feels simpler and avoids procedures.",
+        "path_forward": "Patients who commit to the full elimination and biopsy-guided reintroduction protocol are often able to identify one or two specific foods driving their disease and return to a much broader diet than the initial elimination phase required. Skipping the biopsy step leads to either over-restriction or missed triggers."
+      },
+      {
+        "truth": "Mainstream gastroenterologists frequently miss EGIDs \u2014 especially eosinophilic gastritis and EoGE \u2014 because they do not routinely biopsy a normal-looking stomach or small bowel, or they do not send biopsies from multiple sites.",
+        "why_resisted": "Patients trust that a 'normal endoscopy' means no significant disease. The idea that a specialist missed a diagnosis because biopsies were not taken challenges confidence in the medical system and feels overwhelming to confront.",
+        "path_forward": "Patients who specifically request biopsies from the stomach and duodenum during endoscopy \u2014 or seek a gastroenterologist with documented EGID experience \u2014 are far more likely to receive an accurate diagnosis. Bringing written requests or referrals that specify the clinical suspicion of EGID to endoscopy appointments produces meaningfully better diagnostic yield."
+      },
+      {
+        "truth": "EGIDs are chronic conditions requiring long-term management, not a problem that can be permanently solved with one round of treatment. Most patients who achieve remission will relapse if treatment is discontinued without a clear maintenance plan.",
+        "why_resisted": "The desire for a definitive cure is understandable, particularly after months or years of diagnostic odyssey. Accepting a chronic disease requiring indefinite management is psychologically difficult.",
+        "path_forward": "Patients who frame EGIDs as a manageable chronic condition \u2014 similar to asthma or IBD \u2014 and develop a sustainable maintenance strategy (dietary, pharmacological, or combined) with regular specialist follow-up maintain significantly better quality of life and prevent the structural complications (fibrosis, stricture) that accumulate with untreated relapse."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Identify and consistently avoid trigger foods (via elimination diet, allergy testing, or symptom tracking)",
-          "why_it_matters": "Food allergens directly drive eosinophilic inflammation in many patients. Eliminating triggers can induce remission and reduce or eliminate need for medications; this addresses the root cause rather than just symptoms.",
-          "how_to_start": "Begin a detailed symptom and food diary for 2 weeks, noting timing and severity of symptoms; discuss patterns with your gastroenterologist. Ask about allergy testing (skin prick or serum IgE) to identify sensitized foods. If no clear pattern, consider a structured six-food elimination diet with dietitian support.",
-          "timeline": "Symptom improvement or resolution typically within 4\u20138 weeks of eliminating offending foods; histologic remission may take 8\u201312 weeks",
+          "lever": "Identify and eliminate personal food triggers through biopsy-guided elimination and reintroduction",
+          "why_it_matters": "Food antigens are the primary driver of eosinophilic inflammation in most EoE and many EoGE cases. Eliminating the specific trigger(s) can achieve and maintain histological remission without ongoing pharmacotherapy in a significant proportion of patients.",
+          "how_to_start": "Request referral to a gastroenterologist with EGID experience and an allergist for concurrent allergy assessment. Begin a systematic food diary. Discuss the two-food or six-food elimination protocol with your care team before starting, to ensure endoscopic re-evaluation is built into the plan from the start.",
+          "timeline": "6\u201312 months to complete a full empiric elimination and structured reintroduction cycle with biopsy confirmation at each stage",
           "requires_professional": true
         },
         {
-          "lever": "Initiate topical corticosteroid therapy early (inhaled fluticasone or budesonide swallowed)",
-          "why_it_matters": "Topical steroids reduce local mucosal inflammation and eosinophil infiltration, preventing progression to strictures and complications. High efficacy with minimal systemic absorption. Forms the backbone of pharmacologic management.",
-          "how_to_start": "Ask your gastroenterologist about inhaled fluticasone propionate 220 mcg, 2\u20134 puffs twice daily, swallowed without spacer (or nebulized budesonide). Ensure proper technique to coat esophagus. Use consistently for 4\u20138 weeks before assessing response. Rinse mouth afterward to prevent candidiasis.",
-          "timeline": "Symptom improvement often within 2\u20134 weeks; histologic improvement within 8 weeks; stricture healing may take 8\u201312 weeks",
+          "lever": "Establish care with a multidisciplinary EGID team",
+          "why_it_matters": "EGIDs sit at the intersection of gastroenterology, allergology, and dietetics. Single-specialty management consistently produces worse outcomes than integrated care. An allergist can guide food and aeroallergen assessment; a dietitian ensures nutritional safety during elimination phases; a gastroenterologist manages endoscopic monitoring and pharmacotherapy.",
+          "how_to_start": "Seek a gastroenterologist who specifically lists EoE or EGID as an area of expertise. Ask whether the practice has relationships with dietitians and allergists experienced in EGIDs. Academic medical centers and pediatric hospitals are more likely to have structured EGID programs.",
+          "timeline": "The process of assembling the right team may take weeks to months depending on geography and access",
           "requires_professional": true
         },
         {
-          "lever": "Assess and address nutritional deficiencies (iron, B12, vitamin D, protein, micronutrients)",
-          "why_it_matters": "Chronic inflammation and reduced intake cause malnutrition, anemia, and fatigue. Correcting deficiencies improves energy, immune function, and overall symptom burden. Preventive monitoring avoids complications like severe anemia or osteoporosis.",
-          "how_to_start": "Request baseline blood work (CBC, iron panel, ferritin, vitamin B12, folate, albumin, vitamin D). Repeat every 6\u201312 months depending on severity. Work with a dietitian to ensure adequate protein, iron, and micronutrient intake. Consider supplementation if deficiencies are identified.",
-          "timeline": "Iron and B12 supplementation takes 2\u20134 months to raise levels; fatigue may improve within weeks of correction",
+          "lever": "Prevent esophageal fibrosis through consistent anti-inflammatory treatment in EoE",
+          "why_it_matters": "Untreated or undertreated EoE leads to progressive subepithelial fibrosis, esophageal remodeling, and stricture formation over years. This structural damage is partially irreversible and substantially worsens dysphagia and risk of food impaction. Early and sustained anti-inflammatory management prevents this trajectory.",
+          "how_to_start": "Discuss remission monitoring (biopsy-based) with a gastroenterologist and establish a clear maintenance plan \u2014 whether dietary, pharmacological (PPI, topical steroids, dupilumab), or combined. Do not discontinue treatment based on symptom improvement alone without histological confirmation of remission.",
+          "timeline": "Fibrosis prevention is a long-term goal measured over years; anti-inflammatory response can be assessed by biopsy at 8\u201312 weeks after initiating therapy",
           "requires_professional": true
         },
         {
-          "lever": "Maintain consistent communication with a gastroenterologist and consider dietitian involvement",
-          "why_it_matters": "Regular monitoring detects disease progression, medication side effects, and nutritional issues early. Specialist expertise guides personalized therapy (diet vs. medication vs. combined). Dietitian expertise is critical for safe, effective dietary management.",
-          "how_to_start": "Schedule initial gastroenterology consultation for endoscopy and biopsy if not done. Establish a follow-up plan (typically 6\u201312 weeks after starting treatment, then annually). Ask for a dietitian referral, especially if pursuing elimination diet or managing malnutrition.",
-          "timeline": "Ongoing; benefits accrue from early intervention and proactive monitoring",
+          "lever": "Address nutritional deficits and optimize diet adequacy during elimination phases",
+          "why_it_matters": "Extended dietary elimination \u2014 particularly in pediatric patients and those on elemental diets \u2014 carries significant risk of micronutrient deficiency, poor growth, and feeding aversion. Nutritional optimization supports immune regulation, tissue healing, and quality of life.",
+          "how_to_start": "Engage a registered dietitian experienced in food allergy and elimination diets before beginning any major dietary restriction protocol. Request baseline micronutrient panel (ferritin, vitamin D, B12, folate, zinc, albumin) to identify pre-existing deficiencies.",
+          "timeline": "Nutritional optimization is ongoing throughout management; correcting established deficiencies typically takes 3\u20136 months",
           "requires_professional": true
         },
         {
-          "lever": "Develop a personalized long-term management plan (maintenance therapy, monitoring schedule, emergency plan)",
-          "why_it_matters": "Eosinophilic GI disorders are chronic; relapse is common if therapy is stopped. A written, individualized plan ensures consistent care, reduces emergency visits, and improves quality of life. Clear emergency warning signs prevent serious complications.",
-          "how_to_start": "After initial remission, work with your gastroenterologist to define maintenance therapy (e.g., topical steroid 2\u20133 times weekly, dietary restrictions, trigger avoidance). Schedule regular follow-up endoscopies (typically annual, but varies). Create a list of warning signs (food impaction, severe dysphagia, vomiting, abdominal pain) and know when to seek care.",
-          "timeline": "Plan should be established within the first 3\u20136 months of diagnosis; adjust as needed based on response",
-          "requires_professional": true
-        },
-        {
-          "lever": "Address comorbid allergic conditions (asthma, eczema, allergic rhinitis) proactively",
-          "why_it_matters": "Shared allergic/atopic pathways mean optimizing treatment of coexisting conditions (allergy control, asthma control) may reduce GI eosinophilic inflammation. Conversely, uncontrolled allergies may perpetuate GI disease.",
-          "how_to_start": "If you have asthma, ensure it is well-controlled (peak flow normal, few symptoms). Work with an allergist if rhinitis or food allergies are significant. Consider allergen avoidance and allergy immunotherapy if relevant. Manage eczema with appropriate skin care and topical treatments.",
-          "timeline": "Ongoing; improvements in allergic control may take weeks to months to reflect in GI symptoms",
+          "lever": "Manage comorbid atopic disease in parallel",
+          "why_it_matters": "Active atopic dermatitis, allergic rhinitis, or asthma can maintain the Th2 immune environment that drives EGID activity. Optimizing management of these conditions \u2014 including aeroallergen reduction \u2014 may reduce the overall allergic inflammatory burden and improve EGID control.",
+          "how_to_start": "Ensure an allergist is involved in care who can evaluate and manage the full atopic comorbidity profile alongside the GI disease. Allergen immunotherapy for aeroallergens is being studied in EoE but is not yet standard practice.",
+          "timeline": "Varies depending on comorbidity burden and treatment chosen",
           "requires_professional": true
         }
       ],
       "common_mistakes": [
-        "Stopping dietary restrictions or medications too early \u2014 symptoms often recur within weeks if the culprit food is reintroduced or therapy is withdrawn; long-term management is usually required.",
-        "Pursuing very restrictive elimination diets without professional supervision \u2014 risks nutritional deficiency (protein, iron, B12, calcium) and emotional stress; leads to nonadherence. Dietitian guidance is essential.",
-        "Attributing all symptoms to acid reflux and relying solely on PPIs or antacids \u2014 delays appropriate diagnosis and treatment; eosinophilic disease requires biopsies and anti-inflammatory therapy, not just acid reduction.",
-        "Not following up with repeat endoscopy to assess treatment response \u2014 difficult to know if inflammation is actually resolving; repeat biopsy at 8 weeks of therapy is helpful to confirm remission and guide next steps.",
-        "Ignoring weight loss, anemia, or other nutritional warning signs \u2014 malnutrition compounds symptoms and weakens immune function; early correction prevents complications.",
-        "Stopping systemic corticosteroids abruptly \u2014 can cause rebound inflammation and adrenal insufficiency; taper must be gradual (typically over 2\u20134 weeks) under medical supervision.",
-        "Failing to identify and avoid aeroallergen triggers (pollen, pet dander, mold) \u2014 seasonal worsening or persistent symptoms despite food elimination often indicates aeroallergen involvement; environmental controls or seasonal topical steroid use may help.",
-        "Expecting complete symptom resolution with medication alone \u2014 inflammatory response to allergens often requires concurrent dietary modification for optimal control; combination therapy is usually more effective than either alone.",
-        "Not engaging family, caregivers, or social support \u2014 chronic disease management is complex; isolation or lack of support reduces adherence and increases symptom burden.",
-        "Delaying endoscopy after persistent dysphagia or food impaction \u2014 untreated strictures progress and perforation risk increases; timely evaluation and dilation prevent emergencies."
+        "Stopping dietary elimination or pharmacological treatment when symptoms improve, without biopsy confirmation of histological remission \u2014 symptoms lag behind and may not accurately reflect mucosal disease activity",
+        "Failing to take biopsies at follow-up endoscopy \u2014 endoscopic appearance can look improved even when significant eosinophilic inflammation persists histologically",
+        "Pursuing dietary restriction without a structured reintroduction plan \u2014 this leads to permanently restricted diets without knowing which foods are truly causative",
+        "Managing EoE with dilation alone without addressing the underlying inflammatory disease \u2014 strictures will recur and the disease will progress",
+        "Accepting repeated diagnoses of GERD or functional dyspepsia without pressing for biopsies, particularly when dysphagia is present",
+        "Not involving a registered dietitian in elimination protocols \u2014 self-directed food restriction without nutritional oversight frequently leads to inadequate caloric intake and micronutrient deficiencies",
+        "Overlooking the psychological component, particularly food anxiety and ARFID \u2014 these are common, clinically significant, and treatable, but often go unaddressed",
+        "Assuming that because EoE responds to PPIs, it is 'just acid reflux' \u2014 PPI response in EoE reflects non-acid mechanisms and does not indicate that the diagnosis is GERD"
       ]
     },
     "finding_help": {
       "specialists": [
         {
-          "type": "Gastroenterologist",
-          "role": "Primary specialist for diagnosis, endoscopy/biopsy, and medical management. Evaluates all areas of the GI tract, prescribes medications (steroids, biologics, PPIs), and monitors disease progression. Often the first to diagnose eosinophilic GI disorders.",
-          "notes": "Seek a gastroenterologist with experience in eosinophilic disorders if possible; some subspecialize in allergy and immunology. Presence of expertise accelerates accurate diagnosis and appropriate therapy."
+          "type": "Gastroenterologist (EGID-specialized)",
+          "role": "Performs diagnostic endoscopy with appropriate biopsy protocols, interprets histology, manages pharmacological treatment (PPIs, topical steroids, dupilumab), performs dilation, and oversees long-term monitoring. The central specialist in EGID care.",
+          "notes": "Not all gastroenterologists are experienced with EGIDs, particularly non-esophageal forms. Seeking a gastroenterologist who lists EoE or eosinophilic GI disorders as a specific interest significantly improves diagnostic yield and management quality. Academic medical centers and children's hospitals are more likely to have dedicated programs."
         },
         {
-          "type": "Allergist/Immunologist",
-          "role": "Evaluates allergic sensitization via skin prick testing or serum IgE; identifies food and environmental allergen triggers. Provides guidance on allergen avoidance and may offer allergy immunotherapy. Helps coordinate care with GI team.",
-          "notes": "Particularly useful if allergic rhinitis, asthma, eczema, or confirmed food allergies are present. Allergy testing and immunotherapy support GI disease management by reducing allergen load."
+          "type": "Allergist / Immunologist",
+          "role": "Evaluates the full atopic disease burden (food allergy, asthma, eczema, rhinitis), performs IgE testing and patch testing, and guides food trigger identification. Essential for allergy-directed dietary management and managing comorbid atopic conditions that may sustain GI eosinophilia.",
+          "notes": "Ideally should have specific experience with food allergy and EGIDs, not only environmental allergies. Pediatric allergists often have more EGID experience than adult allergists given the higher pediatric disease burden historically."
         },
         {
-          "type": "Registered Dietitian (RD or RDN)",
-          "role": "Crucial for designing and implementing safe, effective elimination diets; ensuring nutritional adequacy; and identifying food triggers without causing malnutrition. Provides meal planning, label reading, and emotional support.",
-          "notes": "Highly recommended for all patients pursuing dietary management. Insurance often covers dietitian visits if referred by a physician. Expertise in both eosinophilic disease and nutrition is ideal."
+          "type": "Registered Dietitian (food allergy / EGID-specialized)",
+          "role": "Designs and supervises elimination and reintroduction protocols, ensures nutritional adequacy during restriction phases, manages elemental formula integration, addresses ARFID, and monitors growth in children.",
+          "notes": "Critical and frequently absent from mainstream GI management. Finding a dietitian experienced specifically in food allergy elimination diets (not just FODMAP dietitians) is important. Many EGID patients have never been referred to a dietitian despite being on long-term restrictive diets."
         },
         {
-          "type": "Pathologist (specialized in GI histology)",
-          "role": "Examines biopsied tissue under a microscope to confirm eosinophil count and distribution. Provides diagnostic confirmation and details on inflammation severity and location. Essential for accurate diagnosis.",
-          "notes": "Pathologists may not be directly involved in patient care but are critical to diagnosis. Some academic centers have pathologists with eosinophilic disease expertise."
+          "type": "Pediatric gastroenterologist",
+          "role": "For children and adolescents with EGIDs, pediatric gastroenterologists typically have greater familiarity with these conditions, are more likely to recommend appropriate biopsy protocols, and work within multidisciplinary teams that include dietitians and allergists.",
+          "notes": "Children's hospitals with dedicated aerodigestive or EGID programs represent best-in-class care for pediatric EGIDs."
         },
         {
-          "type": "Primary Care Physician",
-          "role": "Entry point for referrals to specialists; coordinates overall health care; monitors for medication side effects and comorbidities; provides continuity of care.",
-          "notes": "Should be kept informed of eosinophilic disease diagnosis and management plan; helpful for coordinating specialist referrals and managing related conditions (asthma, eczema)."
+          "type": "Functional medicine doctor or integrative GI specialist",
+          "role": "May provide a broader view of immune and allergic drivers, evaluate for overlapping conditions (MCAS, dysbiosis), and offer integrative approaches alongside conventional management.",
+          "notes": "Quality varies significantly. Functional medicine practitioners may explore root cause drivers that mainstream gastroenterology overlooks, but evidence for many functional interventions in EGIDs specifically is limited. Best used as a complement to, not replacement for, specialist GI and allergy care."
         },
         {
-          "type": "Functional or Integrative Medicine practitioner",
-          "role": "May assist with lifestyle optimization, stress reduction, sleep improvement, and supplementation to support overall GI health. Some have expertise in elimination diets and food sensitivity management.",
-          "notes": "Mainstream doctors may be skeptical of this approach; ensure any practitioner is evidence-informed and collaborates with your gastroenterologist rather than replacing standard care."
+          "type": "Psychologist / therapist (ARFID/medical illness-focused)",
+          "role": "Addresses food anxiety, ARFID, and the psychological burden of chronic GI disease through evidence-based approaches such as CBT and exposure therapy adapted for food avoidance in a medical context.",
+          "notes": "Referral to psychological support is rare in standard EGID care pathways despite its frequent necessity. Seeking therapists who specifically work with medical illness, chronic pain, or eating disorders of medical origin is important."
         }
       ],
       "patient_communities": [
         {
           "name": "American Partnership for Eosinophilic Disorders (APFED)",
-          "platform": "Website and online community",
-          "url": "https://www.apfed.org",
-          "notes": "Nonprofit organization dedicated to eosinophilic diseases. Offers education, support groups, conference opportunities, and research updates. Highly reputable; physician-led with patient advisory boards."
+          "platform": "Website / patient organization",
+          "url": "https://apfed.org",
+          "notes": "The leading US patient advocacy organization for EGIDs. Provides educational resources, a patient registry, research funding, clinical trial information, and a provider finder. An essential starting point for newly diagnosed patients."
         },
         {
-          "name": "Facebook: Eosinophilic Esophagitis and Other Eosinophilic GI Disorders Support Groups",
+          "name": "Campaign Urging Research for Eosinophilic Disease (CURED)",
+          "platform": "Website / patient organization",
+          "url": "https://www.curedfoundation.org",
+          "notes": "Patient advocacy organization focused on research funding and awareness for EGIDs, particularly non-esophageal forms. Good resource for understanding the research landscape."
+        },
+        {
+          "name": "Eosinophilic Family Coalition (EFC)",
+          "platform": "Website / patient organization",
+          "url": "https://www.eosinophilicfamily.org",
+          "notes": "Focuses on family and caregiver support for pediatric EGIDs. Useful for parents of children newly diagnosed with EoE or EoGE."
+        },
+        {
+          "name": "r/EosinophilicEsophagitis",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/EosinophilicEsophagitis/",
+          "notes": "Active community for people with EoE sharing personal experiences, treatment outcomes, dietary strategies, and navigating the healthcare system. Valuable peer knowledge, particularly around food reintroduction experiences and living with the condition."
+        },
+        {
+          "name": "EoE / Eosinophilic Esophagitis Support Group",
           "platform": "Facebook",
           "url": null,
-          "notes": "Multiple private and public Facebook groups exist for patients and families. Peer support, recipe sharing, symptom discussion, and emotional validation. Moderation quality varies; be discerning about medical advice."
-        },
-        {
-          "name": "Reddit: r/EosinophilicGI, r/EosinophilicEsophagitis",
-          "platform": "Reddit",
-          "url": null,
-          "notes": "Active subreddits with patient discussions, symptom reports, treatment experiences, and resource sharing. Anonymous format allows candid discussion; use caution interpreting unverified medical claims."
-        },
-        {
-          "name": "National Organization for Rare Disorders (NORD)",
-          "platform": "Website and patient registry",
-          "url": "https://rarediseases.org",
-          "notes": "NORD maintains a patient registry for eosinophilic disorders and provides educational materials, physician referral databases, and information on clinical trials. Credible, nonprofit source."
-        },
-        {
-          "name": "Local hospital or medical center patient support groups",
-          "platform": "In-person or virtual meetings",
-          "url": null,
-          "notes": "Some academic medical centers with eosinophilic disorder programs host patient education sessions or support groups. Ask your gastroenterologist if available in your area."
-        },
-        {
-          "name": "ClinicalTrials.gov",
-          "platform": "Website",
-          "url": "https://clinicaltrials.gov",
-          "notes": "Search for active clinical trials for eosinophilic GI disorders. Useful if you want to explore emerging therapies (biologics, novel drugs) or contribute to research."
+          "notes": "Multiple large Facebook groups exist for EoE patients and parents. Vary in quality but provide peer support and practical shared experience. Search 'EoE support' or 'Eosinophilic Esophagitis' within Facebook groups."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "American Gastroenterological Association (AGA) Guideline on Eosinophilic Esophagitis",
-        "type": "research paper / guideline",
-        "author_or_source": "American Gastroenterological Association",
-        "url": "https://gastrojournal.org",
-        "description": "Evidence-based clinical guideline for diagnosis and management of eosinophilic esophagitis. Covers diagnostic criteria, treatment algorithms, and follow-up strategies. Authoritative for clinicians; patients may find it technical but comprehensive.",
-        "audience": "advanced"
-      },
-      {
-        "title": "APFED Patient Education Guide: Living with Eosinophilic Disorders",
-        "type": "website / guide",
-        "author_or_source": "American Partnership for Eosinophilic Disorders",
-        "url": "https://www.apfed.org/learn",
-        "description": "Accessible overview of eosinophilic disorders, symptoms, diagnosis, and living with the condition. Includes sections on diet, medications, and emotional impact. Written for patients and families.",
+        "title": "APFED Patient Education Center",
+        "type": "website",
+        "author_or_source": "American Partnership for Eosinophilic Disorders (APFED)",
+        "url": "https://apfed.org/about-egids/",
+        "description": "Comprehensive, patient-friendly explanations of all EGID subtypes, diagnostic processes, treatment options, and dietary management. Regularly updated to reflect current evidence. The best single starting point for people newly researching EGIDs.",
         "audience": "beginner"
       },
       {
-        "title": "Eosinophilic Esophagitis: A Comprehensive Review",
+        "title": "Eosinophilic Esophagitis: Diagnosis and Management",
         "type": "research paper",
-        "author_or_source": "Dellon & Gonsalves (published in Gastroenterology)",
-        "url": null,
-        "description": "Peer-reviewed comprehensive review covering pathophysiology, diagnosis, and treatment of eosinophilic esophagitis. Technical but thorough; useful for understanding disease mechanisms and emerging therapies.",
+        "author_or_source": "Dellon ES, Hirano I \u2014 American Journal of Gastroenterology / Gastroenterology",
+        "url": "https://doi.org/10.1053/j.gastro.2017.10.033",
+        "description": "A widely cited clinical review covering EoE pathogenesis, diagnostic criteria, and the evidence base for dietary and pharmacological treatments. Useful for understanding the clinical framework that specialists use.",
         "audience": "advanced"
       },
       {
-        "title": "The Elimination Diet Handbook: A Guide to Food Triggers in Eosinophilic Esophagitis",
-        "type": "book / guide",
-        "author_or_source": "Various authors (patient-focused resources)",
-        "url": null,
-        "description": "Practical handbook on pursuing elimination diets safely and sustainably. Includes meal plans, recipes, and grocery shopping tips tailored to common food allergens in eosinophilic disease.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Podcast: The Eosinophilic Disorders Podcast (APFED)",
-        "type": "podcast",
-        "author_or_source": "American Partnership for Eosinophilic Disorders",
-        "url": "https://www.apfed.org/podcasts",
-        "description": "Audio interviews with patients, physicians, and researchers discussing diagnosis, treatment, nutrition, and coping strategies. Accessible, conversational format.",
-        "audience": "beginner"
-      },
-      {
-        "title": "YouTube: Eosinophilic Disorders Educational Videos",
-        "type": "video",
-        "author_or_source": "APFED, Mayo Clinic, Cleveland Clinic",
-        "url": "https://www.youtube.com",
-        "description": "Short videos (10\u201320 minutes) explaining eosinophilic esophagitis, diagnostic procedures, dietary management, and patient testimonials. Visual and easy to follow.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Pathophysiology and Management of Eosinophilic Gastroenteritis",
+        "title": "Updated International Consensus Diagnostic Criteria for Eosinophilic Esophagitis: Proceedings of the AGREE Conference",
         "type": "research paper",
-        "author_or_source": "Jensen et al. (published in Gastroenterology)",
-        "url": null,
-        "description": "Detailed review of eosinophilic gastritis and gastroenteritis, covering diagnosis, histologic findings, and management strategies for non-esophageal disease.",
+        "author_or_source": "Dellon ES et al. \u2014 Gastroenterology 2018",
+        "url": "https://doi.org/10.1053/j.gastro.2018.07.009",
+        "description": "The key consensus document establishing current EoE diagnostic criteria. Essential reading for those who want to understand exactly how EoE is defined and where the diagnostic thresholds come from.",
         "audience": "advanced"
       },
       {
-        "title": "APFED Online Community Forum",
-        "type": "website / forum",
-        "author_or_source": "American Partnership for Eosinophilic Disorders",
-        "url": "https://www.apfed.org/community",
-        "description": "Moderated discussion forum where patients ask questions, share experiences, and provide peer support. Monitored by volunteers; not a substitute for medical advice.",
+        "title": "Real Food for Eosinophilic Disorders (EoE Recipe Resources)",
+        "type": "website",
+        "author_or_source": "APFED / various EGID community contributors",
+        "url": "https://apfed.org/living-with-egids/recipe-resources/",
+        "description": "Practical recipe and dietary resources for managing restricted diets during elimination protocols. Addresses the real challenge of eating well while excluding multiple food groups.",
         "audience": "beginner"
       },
       {
-        "title": "Dupilumab and Other Biologic Therapies in Eosinophilic Esophagitis: Current Evidence",
-        "type": "research paper / review",
-        "author_or_source": "Recent clinical trial publications (2021\u20132024)",
-        "url": "https://pubmed.ncbi.nlm.nih.gov",
-        "description": "Reviews emerging biologic therapies for eosinophilic esophagitis, particularly IL-4 receptor antagonists. Covers clinical trial results and real-world efficacy. For those interested in newer treatment options.",
-        "audience": "advanced"
-      },
-      {
-        "title": "Six-Food Elimination Diet for Eosinophilic Esophagitis: Implementation and Outcomes",
-        "type": "research paper",
-        "author_or_source": "Gonsalves et al. (published in Allergy & Asthma Proceedings)",
-        "url": null,
-        "description": "Original research on the six-food elimination diet approach, including success rates and practical tips. Evidence-based guide for effective dietary management.",
+        "title": "The Eosinophilic Esophagitis Network (EoENetwork.org)",
+        "type": "website",
+        "author_or_source": "EoE Network",
+        "url": "https://www.eoenetwork.org",
+        "description": "A clinical and patient resource hub aggregating treatment center information, clinical trial listings, and educational materials about EoE. Useful for locating centers of expertise.",
         "audience": "intermediate"
+      },
+      {
+        "title": "Dupilumab in Adults and Adolescents with Eosinophilic Esophagitis (PART A & B Trials)",
+        "type": "research paper",
+        "author_or_source": "Dellon ES et al. \u2014 New England Journal of Medicine 2022",
+        "url": "https://doi.org/10.1056/NEJMoa2205982",
+        "description": "The pivotal phase 3 clinical trial establishing dupilumab's efficacy in EoE. Explains what the biologic does, what outcomes were achieved, and at what rates. Important context for patients considering or researching biologic therapy.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Eosinophilic GI Disorders: A Clinical Case-Based Guide",
+        "type": "book",
+        "author_or_source": "Edited by Ikuo Hirano and Evan Dellon",
+        "url": null,
+        "description": "A clinical textbook covering the full spectrum of EGIDs with case-based illustrations. More technical, but useful for patients who want a comprehensive understanding of how their condition is assessed and managed clinically.",
+        "audience": "advanced"
+      },
+      {
+        "title": "EoE and Food Allergy \u2014 Podcast episodes",
+        "type": "podcast",
+        "author_or_source": "APFED / various allergy-focused medical podcasts",
+        "url": "https://apfed.org/resources/videos-podcasts/",
+        "description": "APFED's video and podcast archive includes interviews with leading EGID clinicians, patient stories, and practical guidance on dietary management. Good for learning while commuting or exercising.",
+        "audience": "beginner"
       }
     ],
     "relevance_signal": "**Difficulty swallowing**, food getting stuck, chest pain after eating. Or severe gut pain and vomiting in children. Not responsive to standard IBS treatments."
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

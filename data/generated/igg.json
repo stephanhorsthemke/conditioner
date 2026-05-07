@@ -2,543 +2,631 @@
   "condition_id": "igg",
   "condition_name": "IgG food sensitivities",
   "generated_at": "2026-04-16T09:51:45.421489Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "IgG food sensitivities are delayed immune reactions to specific foods, where your body produces IgG antibodies against food proteins. Unlike food allergies (which cause immediate reactions), these sensitivities typically trigger symptoms hours or even days after eating, making the culprit food harder to identify. Common symptoms include bloating, fatigue, headaches, and joint pain. Management focuses on identifying trigger foods through testing or elimination diets and then avoiding or rotating them.",
-    "detailed_summary": "IgG food sensitivities represent a distinct type of adverse food reaction involving IgG antibodies\u2014a common antibody class in the immune system. When you eat a food you are sensitive to, your immune system produces IgG antibodies against it, potentially triggering inflammation and symptoms in your digestive tract, joints, skin, brain, and other organs. The reaction is dose-dependent and delayed, usually appearing 4\u201372 hours after exposure, which makes it difficult to connect symptoms to specific foods by observation alone. It differs from true food allergies (IgE-mediated, immediate) and from food intolerances (lacking immune involvement). The prevalence and clinical significance of IgG food sensitivities remain debated in mainstream medicine, but many people report improvement after identifying and avoiding their trigger foods. Current approaches include clinical testing (IgG panels), empirical elimination diets, and rotation diets to reduce immune load and allow healing.",
+    "plain_summary": "IgG food sensitivity refers to elevated IgG antibodies in the blood against specific foods. These reactions are delayed \u2014 symptoms can appear hours or even days after eating a trigger food \u2014 which makes them extremely difficult to identify without testing. Unlike IgE-mediated allergies, which cause immediate and often dramatic reactions, IgG responses are subtle, chronic, and cumulative. Common complaints include bloating, brain fog, fatigue, skin problems, and joint pain. The science around IgG testing is genuinely contested: mainstream allergists largely dismiss it, while many functional medicine practitioners and patients report meaningful improvement after acting on results. Understanding the controversy \u2014 and what the evidence does and does not support \u2014 is essential for anyone investigating this as a possible driver of their symptoms.",
+    "detailed_summary": "IgG antibodies are a normal part of the immune system's response to food proteins that cross the gut lining. Some researchers and clinicians argue that elevated IgG4 antibodies in particular may reflect a tolerance mechanism rather than a pathological reaction, meaning the body has simply been exposed to that food frequently. Others \u2014 particularly in the functional and integrative medicine world \u2014 argue that elevated IgG antibodies, especially IgG1\u20133, can reflect immune activation in the gut wall, and that when combined with increased intestinal permeability ('leaky gut'), these reactions may contribute to chronic systemic inflammation and a wide range of symptoms.\n\nThe mainstream allergology position, supported by the American Academy of Allergy, Asthma and Immunology, is that IgG food sensitivity testing has no validated diagnostic role and should not be used to guide elimination diets. Critics point out that: (1) healthy people with no symptoms also have elevated food-specific IgG antibodies; (2) the tests lack standardisation across laboratories; and (3) elimination based on IgG results can lead to unnecessarily restrictive diets.\n\nHowever, a significant number of people \u2014 particularly those with IBS, eczema, migraines, and chronic fatigue who have not responded to conventional treatment \u2014 report substantial symptom reduction after eliminating their IgG-flagged foods for 4\u20138 weeks. Several randomised controlled trials in IBS populations have found that IgG-guided elimination diets outperformed sham diets on symptom scores, lending some empirical support to the approach even without full mechanistic understanding.\n\nThe likely reality sits between these positions: IgG elevation may be a marker of gut barrier dysfunction and immune activation rather than the direct cause of symptoms. In that framing, IgG test results are one imperfect signal pointing toward foods that the immune system is reacting to \u2014 possibly because the gut lining is compromised, possibly because of high intake frequency, or both. Acting on those results through a structured elimination and reintroduction protocol, while simultaneously addressing gut health, may help some people identify personal triggers and reduce their symptom burden.\n\nThis is a condition where self-directed investigation, guided by an informed practitioner, can be genuinely productive. People researching IgG food sensitivities are typically doing so because conventional medicine has not provided answers \u2014 and that research, when paired with careful dietary experimentation and good clinical oversight, often leads to meaningful insight.",
     "prevalence": {
-      "summary": "Affects a significant portion of the population, though exact numbers are uncertain due to debate over clinical significance.",
-      "estimate": "10\u201330% of adults report food sensitivity symptoms; however, the clinical relevance of positive IgG tests is contested",
-      "notes": "IgG antibodies to foods are common in healthy people and do not always cause symptoms. Estimates vary widely depending on testing method and symptom criteria. Some mainstream physicians question whether IgG sensitivities are a distinct clinical entity, while functional and integrative practitioners report high prevalence. Symptoms may be more common in people with irritable bowel syndrome, autoimmune conditions, or leaky gut."
+      "summary": "IgG food antibodies are detectable in virtually everyone; what percentage experience clinically meaningful symptoms from them is unknown and contested.",
+      "estimate": "Up to 45% of the general population may report some form of food intolerance or sensitivity; IgG-guided elimination studies suggest 10\u201330% of people with IBS-type symptoms see significant benefit from acting on IgG results.",
+      "notes": "There are no rigorous epidemiological estimates for 'IgG food sensitivity' as a clinical entity because it lacks a standardised diagnostic definition. Commercial IgG testing varies substantially between labs, making cross-study comparison difficult. Women are more frequently tested than men, partly reflecting higher rates of help-seeking for chronic gut and systemic symptoms. The contested diagnostic status means the condition is almost certainly underreported in clinical databases."
     },
     "subgroups": [
       {
-        "name": "Digestive-predominant sensitivities",
-        "description": "Primary symptoms are confined to the gastrointestinal tract, with bloating, gas, diarrhea, or constipation as main complaints.",
+        "name": "Gut-dominant responders",
+        "description": "Individuals whose primary IgG-driven symptoms are gastrointestinal \u2014 bloating, cramping, altered bowel habits, nausea. Often overlap significantly with IBS.",
         "distinguishing_features": [
-          "Symptoms appear within 4\u201324 hours of consuming trigger food",
-          "Often overlap with irritable bowel syndrome (IBS) symptoms",
-          "May be driven by dysbiosis or intestinal permeability"
+          "Symptoms closely track food intake with a 2\u201324 hour delay",
+          "IgG reactivity often skews toward high-frequency dietary staples (wheat, dairy, eggs)",
+          "Frequently have co-existing gut dysbiosis or SIBO"
         ]
       },
       {
-        "name": "Systemic sensitivities",
-        "description": "Reactions affect multiple organ systems simultaneously\u2014skin, joints, brain, and immune system\u2014beyond just digestion.",
+        "name": "Neuro-cognitive responders",
+        "description": "Individuals whose main complaints are brain fog, fatigue, headaches, or mood changes rather than gut symptoms.",
         "distinguishing_features": [
-          "Delayed symptom onset (24\u201372 hours) is more pronounced",
-          "May include fatigue, brain fog, joint pain, or eczema flares",
-          "Often associated with chronic inflammation or autoimmune conditions"
+          "Gut symptoms may be absent or minimal despite food reactions",
+          "Symptom onset often 4\u201324 hours post-ingestion, making dietary tracking very difficult",
+          "May have elevated zonulin or signs of intestinal permeability",
+          "Sometimes overlaps with MCAS or chronic fatigue presentations"
         ]
       },
       {
-        "name": "Cumulative-load sensitivities",
-        "description": "Reactions depend on total intake of the trigger food over time rather than a single exposure, making symptoms unpredictable.",
+        "name": "Skin-dominant responders",
+        "description": "Individuals presenting primarily with eczema, urticaria, acne, or psoriasis flares linked to dietary patterns.",
         "distinguishing_features": [
-          "Consuming small amounts may cause no reaction, but repeated or large amounts trigger symptoms",
-          "Symptoms may build over days of exposure",
-          "May respond well to rotation diets rather than complete avoidance"
+          "Skin reactions typically appear 12\u201348 hours after trigger food",
+          "Dairy, eggs, gluten, and soy are commonly flagged",
+          "Often have concurrent atopic history or personal/family history of atopic dermatitis"
+        ]
+      },
+      {
+        "name": "High-load / cumulative responders",
+        "description": "Individuals who tolerate individual reactive foods in small quantities but experience symptoms when multiple trigger foods are consumed in the same day or meal.",
+        "distinguishing_features": [
+          "Inconsistent symptom pattern that confuses standard elimination approaches",
+          "Often described as having a 'threshold' or 'bucket' effect",
+          "Testing may reveal a broad panel of moderate-level reactions rather than a few high-level ones"
+        ]
+      },
+      {
+        "name": "Leaky-gut primary",
+        "description": "Individuals where intestinal permeability appears to be the upstream driver, causing widespread low-grade IgG reactions across many foods rather than a few specific ones.",
+        "distinguishing_features": [
+          "IgG panel shows reactions to a large number of foods (sometimes 20+)",
+          "Broad multi-system symptoms including fatigue, joint pain, and mood disturbance",
+          "May have identifiable upstream causes: prior antibiotic use, SIBO, NSAID overuse, chronic stress",
+          "Restricting all flagged foods rarely works long-term; gut repair is needed first"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Bloating and abdominal distension",
+        "symptom": "Abdominal bloating and distension",
         "category": "digestive",
-        "notes": "Often appears 2\u201324 hours after eating a trigger food; may persist for hours or days"
+        "notes": "Typically delayed 2\u201324 hours after eating the trigger food; often described as 'food baby' bloating unrelated to volume consumed"
       },
       {
-        "symptom": "Diarrhea or loose stools",
+        "symptom": "Loose stools or diarrhoea",
         "category": "digestive",
-        "notes": "Delayed onset (4\u201348 hours) is typical; distinguishes from lactose intolerance or other rapid-onset reactions"
+        "notes": "May alternate with constipation; overlaps significantly with IBS presentation"
       },
       {
         "symptom": "Constipation",
         "category": "digestive",
-        "notes": "Some people experience constipation rather than diarrhea; inflammation may affect gut motility"
+        "notes": "Less frequently recognised as a food sensitivity symptom; may occur in isolation or alternating with diarrhoea"
       },
       {
-        "symptom": "Excess gas and belching",
+        "symptom": "Nausea after eating",
         "category": "digestive",
-        "notes": "Often accompanied by visible bloating and abdominal discomfort"
+        "notes": "Often mistaken for gastroparesis or functional dyspepsia; may be worse with specific trigger foods"
       },
       {
-        "symptom": "Fatigue or low energy",
+        "symptom": "Abdominal cramping and pain",
+        "category": "digestive",
+        "notes": "Can be diffuse or localised; typically not severe enough to be mistaken for surgical emergency"
+      },
+      {
+        "symptom": "Brain fog and poor concentration",
+        "category": "neurological",
+        "notes": "Often described as 'thinking through mud'; can be more prominent than gut symptoms in some individuals"
+      },
+      {
+        "symptom": "Fatigue and low energy",
         "category": "systemic",
-        "notes": "May appear 12\u201348 hours after exposure; sometimes profound enough to restrict activities"
+        "notes": "May be profound and disproportionate to sleep quality; often worse in the hours after a reactive meal"
       },
       {
-        "symptom": "Brain fog or difficulty concentrating",
+        "symptom": "Headaches and migraines",
         "category": "neurological",
-        "notes": "Often reported alongside fatigue; may improve within days of removing trigger food"
+        "notes": "Delayed onset (up to 48 hours post-ingestion) makes dietary connection hard to identify without a diary"
       },
       {
-        "symptom": "Headaches or migraines",
-        "category": "neurological",
-        "notes": "Delayed-onset headaches (12\u201348 hours after eating) are characteristic; may be severe"
-      },
-      {
-        "symptom": "Joint or muscle pain",
+        "symptom": "Joint pain and stiffness",
         "category": "musculoskeletal",
-        "notes": "Typically appears 24\u201372 hours after exposure; may affect multiple joints; sometimes mistaken for arthritis"
+        "notes": "Particularly reported with gluten and dairy reactivity; may worsen morning stiffness"
       },
       {
-        "symptom": "Skin flares (eczema, hives, or rashes)",
+        "symptom": "Eczema and skin rashes",
         "category": "skin",
-        "notes": "Often delayed 24\u201348 hours; itching may be severe; may worsen existing eczema or dermatitis"
+        "notes": "IgG-related skin flares typically appear 12\u201348 hours after trigger food; distinct from immediate IgE urticaria"
       },
       {
-        "symptom": "Nasal congestion or sinus symptoms",
+        "symptom": "Acne flares",
+        "category": "skin",
+        "notes": "Dairy and high-glycaemic foods are most commonly implicated in research; IgG testing sometimes reveals additional triggers"
+      },
+      {
+        "symptom": "Nasal congestion and post-nasal drip",
         "category": "respiratory",
-        "notes": "Persistent or worsening congestion appearing within 24\u201348 hours"
+        "notes": "Chronic congestion (not seasonal) that clears on elimination of trigger foods, most commonly dairy"
       },
       {
-        "symptom": "Mouth sores or canker sores",
-        "category": "oral",
-        "notes": "May develop 1\u20133 days after eating trigger food; slow to heal"
+        "symptom": "Mood changes, irritability, anxiety",
+        "category": "psychological",
+        "notes": "Gut-brain axis involvement may mediate mood effects; often dismissed by patients as unrelated to diet"
       },
       {
-        "symptom": "Mood changes (irritability, anxiety, or depression)",
-        "category": "neurological",
-        "notes": "Often overlooked; may improve when trigger foods are removed"
-      },
-      {
-        "symptom": "Water retention or weight gain",
+        "symptom": "Sleep disturbance",
         "category": "systemic",
-        "notes": "Can occur 12\u201348 hours after exposure; inflammation drives fluid retention"
+        "notes": "Poor sleep quality without obvious cause; may improve with elimination of reactive foods"
+      },
+      {
+        "symptom": "Fluid retention and puffiness",
+        "category": "systemic",
+        "notes": "Facial puffiness on waking or general water retention; some patients notice this resolves quickly on elimination"
+      },
+      {
+        "symptom": "Muscle aches",
+        "category": "musculoskeletal",
+        "notes": "Diffuse, chronic aching without obvious cause; may be part of a broader inflammatory picture"
       }
     ],
     "testing": {
       "key_patterns": [
-        "A symptom (bloating, headache, fatigue, joint pain) that appears consistently 4\u201372 hours after eating certain foods, then improves when that food is avoided for several days",
-        "Multiple symptoms that worsen together in response to the same foods\u2014e.g., bloating + fatigue + brain fog after wheat",
-        "Symptoms that improve significantly during a strict elimination phase (1\u20132 weeks), then return when foods are reintroduced one at a time",
-        "A strong family history of autoimmune disease, allergies, or digestive problems; IgG sensitivities often cluster in families",
-        "Symptoms that overlap with IBS, eczema, or mild arthritis but do not fully respond to standard treatments"
+        "Symptoms are delayed (2\u201348 hours after eating), making real-time cause-and-effect difficult to identify",
+        "Symptoms affect multiple body systems simultaneously (gut + brain fog + skin + fatigue), suggesting a systemic immune or inflammatory process",
+        "Chronic symptoms that correlate poorly with identified IgE allergies or obvious intolerances (e.g., lactase deficiency)",
+        "Symptoms improve significantly during periods of dietary restriction (travel, illness, fasting) without the person realising food was the variable",
+        "A 'rotating' pattern where symptoms seem random but actually track high-frequency foods consumed in the previous day or two",
+        "IgG test showing high reactivity to frequently eaten foods (wheat, dairy, eggs, corn) \u2014 particularly plausible as markers of gut permeability"
       ],
       "at_home": [
         {
-          "name": "Food and symptom diary",
-          "description": "Record everything you eat and drink (with approximate portion sizes and ingredients if possible) and note any symptoms that appear within 72 hours. Use a simple table or app (e.g., Notes, Notion, MyFitnessPal) with columns for date, time, food/drink, and symptoms. After 2\u20134 weeks, review for patterns: do the same foods appear before the same symptoms? Do symptoms improve on days you avoid certain foods? This is low-cost and practical, and it reveals patterns specific to your body.",
-          "safety_notes": "Diaries are non-invasive and safe, but they rely on your memory and perception of timing. Very delayed reactions (beyond 72 hours) are easy to miss. If symptoms are severe or you suspect a true food allergy (immediate, severe reactions), stop food trials and see a doctor instead."
+          "name": "Structured elimination and reintroduction diary",
+          "description": "Remove the most commonly reactive foods (wheat/gluten, dairy, eggs, soy, corn) simultaneously for 4\u20136 weeks, keeping a detailed symptom diary with dates, times, foods eaten, and symptom scores. After the elimination phase, reintroduce one food at a time every 3\u20135 days, eating a meaningful serving twice daily and recording any symptom changes over the following 48\u201372 hours. The reintroduction phase is where the most specific information is generated.",
+          "safety_notes": "Elimination should not be extended beyond 8 weeks without professional guidance, as nutritional gaps can develop. Not appropriate for those with a history of eating disorders without dietitian oversight. People who are underweight or already eating a highly restricted diet should not begin elimination without professional support."
         },
         {
-          "name": "Structured elimination diet (2-phase)",
-          "description": "Phase 1 (elimination): Remove your top 5\u20137 suspect foods for 1\u20132 weeks strictly. Choose suspects based on your diary or common triggers (wheat, dairy, eggs, soy, corn, nuts, sugar). Eat only whole foods you are confident about. Keep a daily symptom score (0\u201310 scale for overall severity). Phase 2 (reintroduction): On day 15, add back one suspect food, eat it 2\u20133 times over 3 days, and watch for symptom return. If symptoms return 12\u201372 hours after eating the food, it is likely a trigger. Wait until symptoms resolve, then test the next food. This is inexpensive and reveals which specific foods are problematic.",
-          "safety_notes": "Safe for most people, but if you have severe malnutrition, an eating disorder, or a history of food allergy anaphylaxis, work with a clinician. Do not eliminate essential food groups without professional guidance. If symptoms worsen during elimination, stop and consult a doctor. Reintroduction should be done one food at a time with 3\u20137 days between tests to avoid confusion."
+          "name": "Symptom and food diary (pre-testing baseline)",
+          "description": "Before attempting elimination, keep a detailed 2-week diary recording every food and drink consumed, timing, quantity, and symptom type and severity. Rate symptoms on a consistent scale (0\u201310). Look for 24\u201348 hour lag patterns rather than immediate reactions. This baseline is invaluable for any subsequent practitioner consultation and for identifying the most suspicious foods before formal testing.",
+          "safety_notes": "Safe for anyone. Most people underestimate how much information a well-kept diary generates \u2014 the structure is what makes it useful."
         },
         {
-          "name": "Symptom tracking with food photographs",
-          "description": "Photograph everything you eat and drink before consuming it, then note the time and any symptoms that appear in the following 72 hours. Include portion context (e.g., size of plate, number of bites). After 2\u20133 weeks, review the photos and symptom timeline to identify patterns. This adds visual clarity and makes it easier to spot ingredient overlaps (e.g., all trigger meals contained corn).",
-          "safety_notes": "Safe and can improve accuracy of food recall. Not a diagnostic test, but a useful complement to a diary."
+          "name": "Pulse test (informal provocation)",
+          "description": "An informal (not clinically validated) method sometimes used by naturopaths: measure resting pulse, eat a single suspected food, and measure pulse again at 15 and 30 minutes. A rise of more than 10 beats per minute is sometimes interpreted as a sign of reaction. This is not reliable or evidence-based but may help some people identify obvious reactions as part of a broader investigative process.",
+          "safety_notes": "Not validated; should not replace structured elimination. Do not use for suspected IgE-mediated (immediate) allergies."
         }
       ],
       "clinical": [
         {
-          "name": "IgG food-specific antibody panel",
+          "name": "IgG food antibody panel (serum)",
           "type": "standard",
-          "description": "Blood test that measures IgG antibodies against 50\u2013200+ specific foods. You provide a small blood sample (via finger prick or venipuncture), and the lab uses ELISA or similar immunoassay to quantify IgG levels to each food. Results are typically reported as negative, borderline, or positive, sometimes with concentration levels. Interpretation varies: some labs and practitioners treat any positive result as clinically significant, while others note that IgG antibodies are normal and present even in asymptomatic people.",
-          "availability": "Widely available through functional medicine clinics, naturopaths, online health platforms, and some integrative MDs. Does not require a hospital referral in most regions. Cost is typically $200\u2013$500 USD out-of-pocket; not usually covered by insurance. Common testing companies include ALCAT, Immun4, Everlywell, and others. Results usually available in 1\u20132 weeks."
+          "description": "A blood test measuring IgG antibody levels (typically IgG1\u20134) against a panel of 90\u2013200+ foods. Results are usually provided as low/moderate/high reactivity. Some labs test all four IgG subclasses; others test only total IgG4. Methodology varies widely between commercial labs (ELISA-based), which affects reproducibility and comparability of results. Not currently endorsed by mainstream allergy bodies but widely offered by functional medicine practitioners and some integrative GPs.",
+          "availability": "Available through functional medicine doctors, integrative GPs, naturopaths, and some direct-to-consumer labs. Labs commonly used include Cyrex Array 10, US BioTek, Dunwoody Labs, and YorkTest (UK). Some NHS/private allergists may order it on request but may not consider results actionable. Cost typically ranges from \u00a3150\u2013\u00a3500 / $200\u2013$600 depending on the panel breadth."
         },
         {
-          "name": "Elimination diet supervised by a registered dietitian",
-          "type": "standard",
-          "description": "A structured, professionally guided elimination diet lasting 4\u20138 weeks. A dietitian designs a personalized elimination phase (typically removing 4\u20138 common triggers based on your symptoms and history), monitors your nutrition and symptom response, and then guides a controlled reintroduction phase one food at a time. The dietitian ensures you are not missing key nutrients and helps you interpret symptom patterns. This is more rigorous and personalized than self-directed elimination.",
-          "availability": "Available through gastroenterologists, integrative medicine clinics, functional medicine doctors, or private dietitian practices. Some insurance plans cover dietitian visits if referred by a physician; others require out-of-pocket payment ($100\u2013$300 per session). Usually takes 4\u20138 weeks of regular check-ins. Particularly useful if symptoms are complex or nutrition is a concern."
-        },
-        {
-          "name": "Intestinal permeability test (leaky gut marker)",
+          "name": "IgG4-specific food panel",
           "type": "emerging",
-          "description": "Blood or urine test that measures zonulin (a protein regulating intestinal tight junctions) or the ratio of lactulose to mannitol absorption. The theory is that IgG sensitivities may result from or be worsened by increased intestinal permeability, and testing for it can guide targeted treatment. You consume a solution of sugar molecules, then urine is collected to measure absorption ratios. Elevated zonulin or abnormal lactulose/mannitol ratios suggest 'leaky gut.'",
-          "availability": "Available through functional medicine and integrative practitioners; not mainstream. Cost: $200\u2013$400 USD. Clinical significance is still debated\u2014leaky gut is not recognized as a disease diagnosis by conventional gastroenterology, though intestinal permeability does vary and may play a role in immune activation. Useful as part of a broader picture, not as a standalone diagnostic."
+          "description": "A variant of the standard IgG panel that focuses specifically on IgG4 subclass antibodies. IgG4 is associated with repeated antigen exposure and is sometimes argued to represent tolerance rather than active sensitivity \u2014 making the interpretation of high IgG4 levels particularly contested. Some researchers argue IgG4 elevation specifically flags clinically meaningful reactions; others argue the opposite. Context from symptoms and elimination response matters more than the number alone.",
+          "availability": "Available through specialist functional and integrative medicine labs; less commonly ordered than total IgG panels."
         },
         {
-          "name": "Microbiome stool test",
+          "name": "Intestinal permeability testing (zonulin, lactulose/mannitol ratio)",
           "type": "emerging",
-          "description": "Stool test measuring bacterial composition, diversity, and dysbiosis markers. The rationale is that dysbiosis (imbalanced gut bacteria) can drive intestinal permeability and IgG responses. Test results show dominant species, beneficial bacteria levels, and imbalance markers. Interpretation and treatment recommendations vary widely between labs.",
-          "availability": "Available through functional medicine clinics and online platforms (Ombre, Everlywell, Thorne, etc.). Cost: $200\u2013$400 USD. Not covered by insurance. Results and recommendations vary by lab; professional interpretation is advised."
+          "description": "Tests for 'leaky gut' \u2014 the proposed mechanism by which food proteins gain access to the immune system and stimulate IgG production. Serum zonulin (a tight-junction protein) can be measured via ELISA; the lactulose/mannitol urine test measures how much of each sugar crosses the gut lining after ingestion, with an elevated ratio suggesting increased permeability. Neither test is yet fully standardised, but both can help contextualise a broad IgG panel and inform treatment decisions.",
+          "availability": "Zonulin via Cyrex, Genova Diagnostics, and similar labs; lactulose/mannitol through some functional medicine and gastroenterology practices. Rarely available through routine NHS or standard insurance pathways."
         },
         {
-          "name": "Allergy skin prick test (SPT) or serum-specific IgE test",
+          "name": "IgE allergy panel (to rule out IgE-mediated allergy)",
           "type": "gold_standard",
-          "description": "These tests diagnose true IgE-mediated food allergies, not IgG sensitivities. Skin prick test applies allergen extracts to the skin and observes for a wheal reaction; serum-specific IgE measures IgE antibodies in blood. These are relevant if you suspect true food allergies (immediate reactions: hives, throat tightness, anaphylaxis) rather than delayed sensitivities. Important to rule out true allergy before assuming IgG sensitivity.",
-          "availability": "Ordered by allergists or primary care doctors. Widely covered by insurance. Available at most hospitals and specialty clinics. Results available within 1\u20132 weeks."
+          "description": "A standard serum test (specific IgE, also called RAST or ImmunoCAP) or skin-prick test to identify true IgE-mediated food allergies, which cause immediate reactions. This is essential to conduct before or alongside IgG testing to distinguish delayed IgG-type sensitivity from immediate allergy \u2014 the two require very different clinical management.",
+          "availability": "Widely available through allergists, immunologists, and many GPs. Typically covered by insurance/NHS when food allergy is suspected."
+        },
+        {
+          "name": "Comprehensive stool microbiome analysis",
+          "type": "emerging",
+          "description": "While not a test for IgG sensitivity itself, stool testing (e.g., Genova GI Effects, Viome, Diagnostic Solutions GI-MAP) can identify underlying gut dysbiosis, pathogens, low secretory IgA, or elevated inflammation markers (calprotectin, lactoferrin) that may be driving increased gut permeability and thus secondary IgG food reactions. Useful for understanding the upstream picture.",
+          "availability": "Available through functional medicine practitioners and some gastroenterologists; direct-to-consumer options exist but results require professional interpretation."
+        },
+        {
+          "name": "Elimination diet guided by a FODMAP-trained or specialised dietitian",
+          "type": "gold_standard",
+          "description": "Structured dietary elimination under the guidance of a registered dietitian is considered the most clinically reliable method to identify food triggers \u2014 regardless of what any blood test shows. A skilled dietitian can design an elimination protocol, ensure nutritional adequacy, guide systematic reintroduction, and help distinguish IgG-related triggers from FODMAP, histamine, or other food chemical intolerances that may co-exist.",
+          "availability": "Available via GP/physician referral or directly. Look specifically for dietitians trained in food sensitivity or elimination protocols \u2014 not all dietitians have this specialty."
         }
       ]
     },
     "related_conditions": [
       {
+        "id": "ibs",
         "name": "Irritable bowel syndrome (IBS)",
-        "relationship": "comorbid",
-        "explanation": "IgG food sensitivities and IBS often co-occur. Many people diagnosed with IBS report that identifying and avoiding IgG-trigger foods reduces symptoms significantly. IBS may predispose to increased intestinal permeability and IgG responses, or IgG sensitivities may be a root cause of IBS-like symptoms in some cases."
+        "relationship": "often_confused",
+        "explanation": "IgG food sensitivity and IBS share nearly identical gut symptom profiles. Several RCTs have tested IgG-guided elimination specifically in IBS populations and found meaningful symptom improvement, suggesting that in a subgroup of IBS patients, IgG food reactions may be a contributing driver rather than a coincidental finding."
       },
       {
-        "name": "Leaky gut syndrome (increased intestinal permeability)",
-        "relationship": "mechanistic_link",
-        "explanation": "Increased intestinal permeability may allow larger food molecules and bacterial antigens to cross the intestinal barrier, triggering IgG antibody production. Some practitioners believe IgG sensitivities are a consequence of leaky gut, making gut healing a key part of recovery."
-      },
-      {
-        "name": "Eczema and atopic dermatitis",
-        "relationship": "comorbid",
-        "explanation": "People with eczema often have elevated IgG antibodies to foods and report skin flares after eating trigger foods. IgG food sensitivities may drive or worsen atopic inflammation in the skin."
-      },
-      {
-        "name": "Migraine headaches",
-        "relationship": "comorbid",
-        "explanation": "IgG sensitivities are a recognized dietary trigger for migraines in some individuals. Delayed-onset migraines (12\u201348 hours after eating a trigger food) are particularly suggestive of IgG sensitivity."
-      },
-      {
-        "name": "Rheumatoid arthritis and other autoimmune joint diseases",
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
         "relationship": "upstream",
-        "explanation": "Food sensitivities, including IgG responses, can trigger or exacerbate joint inflammation. Some people with autoimmune arthritis report that removing trigger foods reduces pain and swelling. IgG sensitivities may be a modifiable driver of autoimmune flares."
+        "explanation": "An imbalanced gut microbiome can compromise the integrity of the intestinal lining, increasing permeability and allowing food-derived antigens to stimulate IgG antibody production. Dysbiosis is often upstream of the IgG reactivity rather than a separate condition."
       },
       {
-        "name": "Attention-deficit/hyperactivity disorder (ADHD) and behavioral problems in children",
-        "relationship": "comorbid",
-        "explanation": "Some parents and practitioners report that IgG food sensitivities (particularly to common allergens like dairy, wheat, or additives) worsen ADHD symptoms or behavioral issues in children. Evidence is mixed, but elimination diets have shown benefit in some cases."
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "upstream",
+        "explanation": "SIBO can directly damage intestinal tight junctions and increase gut permeability, potentially driving secondary IgG food reactions. People with undiagnosed SIBO may find their IgG panel shows broad reactivity that does not resolve with food elimination alone until the SIBO is treated."
       },
       {
-        "name": "Chronic fatigue syndrome (ME/CFS)",
-        "relationship": "comorbid",
-        "explanation": "People with ME/CFS often report worsening fatigue after certain foods, consistent with IgG sensitivity. Food sensitivities may contribute to post-exertional malaise or inflammatory flares."
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
+        "relationship": "often_confused",
+        "explanation": "MCAS causes delayed and unpredictable multi-system reactions to foods and other triggers, which can closely mimic IgG food sensitivity. The two conditions can co-exist, but MCAS has a distinct mast cell degranulation mechanism; IgG panels are not relevant to MCAS diagnosis, and some MCAS triggers (fermented foods, histamine-rich foods) are not captured on standard IgG tests."
       },
       {
+        "id": "histamine",
         "name": "Histamine intolerance",
         "relationship": "often_confused",
-        "explanation": "Both histamine intolerance and IgG sensitivities cause delayed, multi-system symptoms (bloating, fatigue, headaches). However, histamine intolerance is dose-dependent on histamine content of specific foods (aged cheeses, fermented foods, leftovers), whereas IgG sensitivities are protein-specific. Testing and management differ."
+        "explanation": "Histamine intolerance produces delayed multi-system symptoms (headache, flushing, gut upset, brain fog) that overlap substantially with IgG food sensitivity. Some foods that appear on IgG panels (wine, aged cheese, fermented foods) are also high-histamine foods, creating ambiguity about the actual mechanism."
       },
       {
-        "name": "Food intolerances (e.g., lactose intolerance, fructose malabsorption)",
-        "relationship": "often_confused",
-        "explanation": "Both IgG sensitivities and food intolerances cause digestive symptoms, but intolerances lack immune involvement. Intolerances are usually dose-dependent and improve with enzyme replacement or reduced intake. IgG sensitivities trigger immune responses and may cause systemic symptoms. Diagnosis and management differ."
+        "id": "ncgs",
+        "name": "Non-coeliac gluten sensitivity (NCGS)",
+        "relationship": "mechanistic_link",
+        "explanation": "NCGS involves immune and neurological reactions to gluten in the absence of coeliac disease autoantibodies or IgE allergy. IgG anti-gliadin antibodies (AGA-IgG) are elevated in a proportion of NCGS patients and may be one component of the immune response; however, NCGS diagnosis does not require IgG testing and the overlap between the two is imperfect."
       },
       {
-        "name": "Celiac disease and non-celiac gluten sensitivity (NCGS)",
+        "id": "coeliac",
+        "name": "Coeliac disease",
         "relationship": "often_confused",
-        "explanation": "Celiac disease is an autoimmune response to gluten (mediated by tissue transglutaminase antibodies); NCGS involves non-immune mechanisms. IgG food sensitivities to wheat are distinct from both. However, people with celiac disease or NCGS may also have IgG sensitivities to other foods. Testing and management should address both possibilities."
+        "explanation": "Coeliac disease must be ruled out before pursuing IgG-based investigation of gluten reactions. Coeliac involves IgA (and IgG) anti-tissue transglutaminase antibodies and causes villous atrophy \u2014 a fundamentally different mechanism requiring strict lifelong exclusion. It is tested via tTG-IgA and EMA-IgA serology, not general IgG food panels."
+      },
+      {
+        "id": "atopic_dermatitis",
+        "name": "Atopic dermatitis (eczema)",
+        "relationship": "comorbid",
+        "explanation": "People with eczema frequently investigate IgG food sensitivities as a possible dietary trigger for flares. Research supports dietary triggers in a subset of eczema patients, and some individuals report meaningful skin improvement after IgG-guided elimination, particularly when avoiding dairy and eggs."
+      },
+      {
+        "id": "allergy",
+        "name": "IgE-mediated allergy",
+        "relationship": "often_confused",
+        "explanation": "True food allergy is IgE-mediated and causes immediate (within minutes) symptoms including urticaria, angioedema, or anaphylaxis. IgG food sensitivity is distinct in mechanism, timing, and severity. The two can co-exist but require different investigation and management strategies."
+      },
+      {
+        "id": "eosinophilic",
+        "name": "Eosinophilic GI disorders",
+        "relationship": "often_confused",
+        "explanation": "Eosinophilic oesophagitis and eosinophilic gastroenteritis involve immune-mediated food reactions that are neither classic IgE nor IgG in mechanism, but produce delayed GI symptoms. They require endoscopic biopsy for diagnosis and are sometimes discovered in people who initially investigate IgG sensitivities."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "Fibromyalgia and IgG food sensitivity share overlapping features \u2014 chronic widespread pain, fatigue, and brain fog. Some fibromyalgia patients report symptom improvement with dietary elimination, though the mechanism is unclear and the two conditions may co-exist independently."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation / visceral hypersensitivity",
+        "relationship": "mechanistic_link",
+        "explanation": "Chronic immune activation from food reactions may contribute to central sensitisation over time, lowering pain thresholds and amplifying symptom perception. Conversely, central sensitisation can make it difficult to distinguish true dietary triggers from noise \u2014 the nervous system is more reactive to all stimuli."
+      },
+      {
+        "id": "functional_dyspepsia",
+        "name": "Functional dyspepsia",
+        "relationship": "often_confused",
+        "explanation": "Upper GI symptoms such as nausea, early satiety, and epigastric discomfort attributed to functional dyspepsia may in some cases have dietary triggers identifiable via IgG testing or elimination, though the research base is less developed than in IBS."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "comorbid",
+        "explanation": "Chronic, unexplained multi-system symptoms often co-occur with anxiety, and the relationship is bidirectional: gut immune activation can worsen anxiety via the gut-brain axis, and anxiety amplifies symptom perception and gut permeability. Managing anxiety is often part of a complete treatment picture."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "comorbid",
+        "explanation": "Hashimoto's thyroiditis in particular is associated with intestinal permeability and immune dysregulation. Gluten IgG reactivity is more prevalent in autoimmune thyroid disease, and some patients with Hashimoto's report improved thyroid antibody levels or symptom burden with gluten elimination."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / HSD (hypermobile EDS)",
+        "relationship": "comorbid",
+        "explanation": "People with hypermobile EDS frequently report food sensitivities and GI dysmotility. Connective tissue abnormalities in the gut wall may contribute to increased permeability and immune reactivity to food antigens."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "POTS and IgG food sensitivity co-occur in individuals with connective tissue disorders and mast cell activation. Post-meal symptom exacerbation in POTS is common, and some POTS patients find that reducing reactive foods decreases their overall symptom burden."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
-          "name": "Avoidance of identified trigger foods",
+          "name": "IgG-guided elimination diet",
           "category": "diet",
-          "description": "Once you identify a trigger food (via testing or elimination diet), avoid it completely for 4\u201312 weeks while your gut heals and inflammation subsides. This is the most direct way to stop symptoms. After a healing period, some people can reintroduce the food in small amounts or rotate it (eating it only once every 4+ days) without triggering symptoms.",
-          "evidence_level": "strong",
-          "notes": "Most effective when combined with gut-healing interventions. Individual response varies: some people can tolerate reintroduction after 3 months; others need permanent avoidance. Cross-reactivity is possible (e.g., sensitivity to one grain may mean sensitivity to others). Work with a dietitian to ensure you are not creating nutritional gaps."
-        },
-        {
-          "name": "Elimination and rotation diet",
-          "category": "diet",
-          "description": "After identifying trigger foods, remove them for 4\u20138 weeks, then reintroduce them on a rotation schedule (e.g., eating wheat only once every 4\u20135 days). This approach reduces cumulative antigen load and may allow tolerance to develop. Some people find they can tolerate trigger foods in small amounts or at low frequency without symptoms returning.",
+          "description": "Remove foods flagged as high or moderate reactors on an IgG panel for 4\u20138 weeks, then reintroduce systematically one at a time every 3\u20135 days, monitoring symptoms carefully. The elimination phase aims to reduce immune load and allow gut healing; the reintroduction phase identifies which foods are genuinely symptomatic versus incidentally flagged.",
           "evidence_level": "moderate",
-          "notes": "Rotation diets work better for cumulative-load sensitivities than strict sensitivities. Requires careful planning and tracking. May not work for all foods; some remain problematic even on rotation."
+          "notes": "Works best when directed by a registered dietitian to ensure nutritional adequacy. IgG results should be treated as a hypothesis-generating tool, not a definitive prescription \u2014 reintroduction findings override panel results."
         },
         {
-          "name": "Gut healing and sealing ('leaky gut' repair)",
+          "name": "Rotation diet for reactive foods",
           "category": "diet",
-          "description": "Consume foods and supplements that support intestinal barrier function: bone broth (collagen, gelatin), L-glutamine (an amino acid that rebuilds intestinal lining), zinc, vitamin A, omega-3 fatty acids, and soluble fiber (psyllium, slippery elm). The theory is that healing intestinal permeability reduces future IgG responses. Avoid foods and habits that damage the barrier (ultra-processed foods, excess alcohol, NSAIDs, chronic stress).",
-          "evidence_level": "moderate",
-          "notes": "Evidence for specific supplements is limited, but bone broth and L-glutamine have anecdotal support. No large clinical trials prove that gut sealing reverses IgG sensitivities, but reducing permeability is biologically plausible. This is most effective when combined with avoidance of triggers and anti-inflammatory diet."
-        },
-        {
-          "name": "Anti-inflammatory diet (e.g., Mediterranean, whole-foods-based)",
-          "category": "diet",
-          "description": "Eat whole foods with minimal processing: fresh vegetables, fruits, fish, legumes, nuts, seeds, and healthy oils. Minimize refined sugars, ultra-processed foods, seed oils, and excess salt. This baseline diet reduces overall immune activation and inflammation, creating a more favorable environment for healing. It also makes it easier to isolate specific food triggers.",
-          "evidence_level": "strong",
-          "notes": "No single diet works for everyone; Mediterranean and whole-foods-based diets have strong evidence for reducing inflammation. Avoid any diet that eliminates entire food groups without professional guidance."
-        },
-        {
-          "name": "Digestive enzyme supplementation",
-          "category": "supplement",
-          "description": "Take broad-spectrum digestive enzymes (protease, amylase, lipase) with meals to improve food breakdown and reduce large, incompletely digested protein particles that may trigger IgG responses. Some people also use enzymes like peptidase or bromelain specifically to degrade proteins. The theory is that better digestion reduces antigen load and IgG activation.",
+          "description": "Rather than permanently eliminating all reactive foods, rotate them so that no single food is eaten more than once every 4 days. This may reduce cumulative immune load and allow some tolerance to build over time, particularly for moderate-reactivity foods.",
           "evidence_level": "anecdotal",
-          "notes": "Evidence for effectiveness is limited. May help if digestion is weak, but is not a substitute for avoidance. Safe for most people, but those with pancreatic disease or specific allergies should check with a doctor first."
+          "notes": "Widely recommended in functional medicine circles; limited RCT evidence but mechanistically plausible for reducing antigen exposure frequency."
         },
         {
-          "name": "Bone broth or collagen supplementation",
+          "name": "Gut lining repair protocol",
           "category": "supplement",
-          "description": "Consume bone broth (homemade or commercial) or collagen powder daily (10\u201320 g) to provide amino acids (collagen, gelatin, proline, glycine) that support intestinal lining repair and immune tolerance. Bone broth also provides minerals (magnesium, calcium) and may have mild anti-inflammatory effects via amino acids like glutamine.",
-          "evidence_level": "anecdotal",
-          "notes": "Popular in functional medicine, but limited clinical trial evidence. Safe and nutrient-dense. May work best when combined with strict trigger food avoidance and gut healing overall."
+          "description": "Addressing intestinal permeability directly may reduce the volume of reactive foods over time. Common approaches include L-glutamine (an amino acid that supports enterocyte integrity), zinc carnosine, collagen/bone broth, and deglycyrrhizinated licorice (DGL). These are often combined with removal of gut-damaging factors (NSAIDs, alcohol, stress).",
+          "evidence_level": "moderate",
+          "notes": "L-glutamine has reasonable mechanistic support and some clinical evidence for intestinal repair. Full protocols should be supervised by a functional medicine doctor or integrative practitioner. This addresses the upstream driver rather than just avoiding trigger foods."
         },
         {
-          "name": "L-glutamine supplementation",
+          "name": "Probiotic and prebiotic support",
           "category": "supplement",
-          "description": "Take L-glutamine (5\u201320 g daily, divided doses) to support intestinal epithelial cell repair and reduce permeability. Glutamine is the primary fuel for intestinal cells. Dosing and duration vary; typical protocols last 4\u201312 weeks.",
+          "description": "A diverse gut microbiome supports tight junction integrity and immune regulation. Specific probiotic strains (Lactobacillus rhamnosus GG, Lactobacillus reuteri, Bifidobacterium species) have evidence for reducing intestinal permeability. Prebiotic fibre feeds beneficial bacteria and may help over time.",
           "evidence_level": "moderate",
-          "notes": "Some clinical evidence supports L-glutamine for irritable bowel syndrome and post-surgical gut healing. Less evidence for IgG sensitivities specifically, but mechanistically plausible. Generally well-tolerated; mild bloating is possible at high doses. Avoid if you have a glutamine synthetase deficiency (rare)."
+          "notes": "Probiotic response is highly individual. People with SIBO should not start high-dose probiotics without ruling out or treating SIBO first, as symptoms can worsen."
         },
         {
-          "name": "Zinc and vitamin A supplementation",
-          "category": "supplement",
-          "description": "Zinc and vitamin A support intestinal barrier function, immune regulation, and mucosal healing. Typical doses: zinc 15\u201330 mg daily (as glycinate for absorption), vitamin A 5,000\u201310,000 IU daily. Both are essential for immune tolerance and barrier integrity.",
-          "evidence_level": "moderate",
-          "notes": "Evidence is stronger for zinc in wound healing and immune function. Vitamin A is critical for mucosal immunity. Do not exceed recommended doses, especially vitamin A (which is fat-soluble and can accumulate). Work with a practitioner to determine appropriate dosing for your needs."
-        },
-        {
-          "name": "Probiotics and fermented foods",
-          "category": "diet",
-          "description": "Consume fermented foods (sauerkraut, kimchi, miso, tempeh, kefir) or take a multi-strain probiotic supplement (20\u201350 billion CFU daily) to promote a healthy, diverse microbiota. A balanced microbiota may reduce intestinal permeability and lower IgG activation. Fermented foods also provide short-chain fatty acids (butyrate, propionate) that strengthen the intestinal barrier.",
-          "evidence_level": "moderate",
-          "notes": "Probiotic effectiveness is strain-specific and varies by individual. Some people tolerate fermented foods poorly initially due to FODMAP content or histamines. Start with small amounts and increase gradually. Choose multi-strain, well-researched products (e.g., Lactobacillus and Bifidobacterium species)."
-        },
-        {
-          "name": "Stress management and sleep optimization",
+          "name": "NSAID and alcohol reduction",
           "category": "lifestyle",
-          "description": "Chronic stress and poor sleep impair intestinal barrier function and increase immune activation, worsening IgG sensitivity symptoms. Prioritize 7\u20139 hours of sleep nightly, manage stress with meditation, yoga, breathing exercises, or therapy, and maintain a regular sleep schedule. Stress management alone won't cure sensitivities, but it removes a major barrier to healing.",
+          "description": "NSAIDs (ibuprofen, naproxen, aspirin) and alcohol are well-established causes of intestinal permeability. Chronic or regular use significantly increases gut leakiness and may be a primary driver of a broad IgG food reaction pattern. Reducing or eliminating these compounds may be more impactful than any supplement.",
           "evidence_level": "strong",
-          "notes": "Sleep deprivation and chronic stress directly increase intestinal permeability and inflammatory markers. These are foundational to any healing protocol. Even modest improvements (1\u20132 extra hours of sleep, 10 minutes daily meditation) can reduce symptom severity."
+          "notes": "People using NSAIDs regularly for joint pain or headaches may find their food sensitivity improves substantially when they switch to alternative pain management. This requires addressing the underlying pain driver."
         },
         {
-          "name": "Regular movement and exercise (low to moderate intensity)",
+          "name": "Stress management and nervous system regulation",
           "category": "lifestyle",
-          "description": "Regular, gentle exercise (walking, swimming, yoga, cycling) improves digestion, reduces inflammation, and supports immune regulation. Avoid intense exercise or overtraining during acute symptom flares, as they can worsen inflammation. Aim for 30 minutes of moderate activity most days.",
-          "evidence_level": "strong",
-          "notes": "Overtraining or exercising during symptom flares can exacerbate inflammation and immune activation. Rest days and recovery are important. Gentle movement is more helpful during active symptom phases than intense training."
-        },
-        {
-          "name": "Hydration and electrolyte balance",
-          "category": "lifestyle",
-          "description": "Drink plenty of filtered water (half your body weight in ounces is a rough guideline) and ensure adequate electrolytes (sodium, potassium, magnesium). Dehydration and electrolyte imbalances worsen inflammation and impair gut barrier function. Some people benefit from adding mineral-rich sea salt to water or drinking electrolyte-balanced beverages.",
+          "description": "Chronic psychological stress increases gut permeability via corticotropin-releasing factor (CRF) and directly activates mast cells in the gut lining. Stress regulation practices \u2014 including diaphragmatic breathing, HRV biofeedback, mindfulness-based stress reduction (MBSR), and trauma-informed approaches \u2014 may reduce immune reactivity to foods by lowering baseline physiological threat response.",
           "evidence_level": "moderate",
-          "notes": "Hydration supports detoxification and nutrient absorption. Electrolyte balance is especially important if you have diarrhea or high sweat loss. Avoid excess plain water without minerals, which can deplete electrolytes."
+          "notes": "Often underestimated as a lever. This does not mean symptoms are 'just stress' \u2014 it means the immune system is genuinely affected by the nervous system state."
         },
         {
-          "name": "Antihistamine foods and low-histamine diet (if concurrent histamine intolerance)",
-          "category": "diet",
-          "description": "If you suspect concurrent histamine intolerance, choose fresh, recently cooked foods and avoid aged, fermented, and processed foods high in histamine. Include histamine-degrading herbs and foods (ginger, turmeric, fresh herbs). Some people benefit from a low-histamine trial to see if it reduces symptoms alongside trigger food avoidance.",
+          "name": "Digestive enzyme support",
+          "category": "supplement",
+          "description": "Thorough digestion of food proteins before they reach the gut wall may reduce the volume of intact antigens available to stimulate IgG reactions. Broad-spectrum digestive enzymes (including protease, amylase, lipase) taken with meals may help some people, particularly those with low stomach acid or sluggish pancreatic output.",
           "evidence_level": "anecdotal",
-          "notes": "Histamine intolerance and IgG sensitivities can co-occur. A low-histamine diet trial may help you identify if histamine sensitivity is compounding your symptoms. However, many fermented foods (sauerkraut, kefir) are both beneficial probiotics and high-histamine, so careful sequencing is needed."
+          "notes": "Most useful in people with signs of poor digestion (undigested food in stool, post-meal heaviness, early satiety). Less likely to be the primary driver for most people."
         },
         {
-          "name": "Reduce FODMAP intake during acute healing",
+          "name": "Quercetin",
+          "category": "supplement",
+          "description": "A polyphenol found in onions, apples, and berries, quercetin has demonstrated mast cell stabilising effects and some evidence for supporting tight junction protein expression. May help reduce gut immune reactivity in addition to dietary changes.",
+          "evidence_level": "anecdotal",
+          "notes": "Most evidence is from in vitro or animal studies; human RCT evidence is limited but growing. Generally well tolerated."
+        },
+        {
+          "name": "Low-inflammatory whole-food dietary base",
           "category": "diet",
-          "description": "FODMAPs (fermentable carbohydrates) can worsen bloating and gas in people with dysbiosis or leaky gut. A low-FODMAP diet for 4\u20138 weeks may reduce digestive symptoms while your gut heals. After healing, gradually reintroduce FODMAPs to restore bacterial diversity.",
-          "evidence_level": "moderate",
-          "notes": "Low-FODMAP is not a long-term diet; it is a temporary elimination to reduce symptom load and allow healing. Prolonged restriction can reduce bacterial diversity. Work with a dietitian experienced in both low-FODMAP and IgG sensitivities to avoid nutritional gaps."
+          "description": "Regardless of specific trigger foods, an overall dietary pattern rich in diverse vegetables, polyphenols, omega-3 fatty acids, and low in ultra-processed foods reduces gut inflammation and supports microbiome diversity. This creates a more favourable immune environment that may reduce reactivity over time.",
+          "evidence_level": "strong",
+          "notes": "Often the most sustainable and broadly beneficial intervention \u2014 works through multiple mechanisms simultaneously and does not require ongoing restriction of specific foods."
         }
       ],
       "things_to_avoid": [
-        "Continuing to eat identified trigger foods\u2014even small amounts can perpetuate inflammation and prevent healing. Avoidance is the foundation of management.",
-        "Ultra-processed foods and artificial additives (colors, flavors, preservatives)\u2014these can trigger or worsen immune responses independently and make it harder to identify true IgG triggers.",
-        "Excess sugar and refined carbohydrates\u2014these feed dysbiotic bacteria and increase intestinal permeability, worsening IgG responses and inflammation.",
-        "High-dose NSAIDs (ibuprofen, naproxen) taken regularly\u2014these damage the intestinal barrier and increase permeability, directly undermining healing efforts.",
-        "Excessive alcohol\u2014damages intestinal barrier function and increases inflammation and permeability.",
-        "Chronic high stress without management\u2014stress hormones increase intestinal permeability and impair immune regulation. Stress management is foundational to healing.",
-        "Sleep deprivation\u2014profound barrier disruption and immune dysfunction result from chronic poor sleep. Prioritize 7\u20139 hours nightly.",
-        "Overtraining or intense exercise during acute symptom phases\u2014can exacerbate inflammation and delay healing. Gentle movement is better during flares.",
-        "Assuming IgG sensitivities explain all symptoms without ruling out true food allergies, celiac disease, or other conditions\u2014testing and professional evaluation ensure accurate diagnosis.",
-        "Eliminating entire food groups permanently without professional guidance\u2014nutritional gaps can develop, and some people can eventually tolerate reintroduction with proper healing."
+        "Eliminating foods permanently based on IgG results alone without a reintroduction phase \u2014 this leads to unnecessary lifelong restriction and nutritional gaps",
+        "Treating all IgG-flagged foods as equally problematic \u2014 high reactors warrant elimination first; moderate reactors can often be rotated rather than eliminated",
+        "Continuing regular NSAID use while trying to heal gut permeability \u2014 these drugs directly and reproducibly increase intestinal leakiness",
+        "Eliminating 20+ foods simultaneously without dietitian guidance \u2014 this is nutritionally unsustainable and makes reintroduction extremely difficult",
+        "Relying on IgG testing alone without ruling out coeliac disease (which requires active gluten consumption at the time of testing)",
+        "Pursuing IgG elimination without addressing upstream causes (SIBO, dysbiosis, stress) \u2014 symptoms often return because the driver is still present",
+        "Interpreting a negative IgG panel as proof that food is not involved \u2014 testing has real false-negative rates and elimination remains the most reliable diagnostic tool",
+        "Using elimination as a long-term anxiety-management strategy without working toward reintroduction \u2014 this can develop into a restrictive relationship with food that causes its own harm"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "IgG food testing is not validated as a diagnostic test, and most mainstream doctors and allergists will tell you the results are meaningless. The science genuinely does not yet support using IgG panels as definitive evidence of food sensitivity.",
+        "why_resisted": "People who have spent money on IgG testing and found it useful want to believe the results are reliable. Dismissing the test feels like dismissing their experience \u2014 especially when they have already improved after following the results.",
+        "path_forward": "The test result itself is less important than the structured elimination and reintroduction process it prompts. Patients who treat IgG results as a starting hypothesis, confirm findings through reintroduction, and work with a dietitian to identify their true minimal trigger set consistently get more useful, lasting answers than those who either believe the results uncritically or dismiss them entirely."
+      },
+      {
+        "truth": "A broad IgG panel showing reactivity to 30+ foods is rarely a list of 30 foods to avoid. It is more likely a sign of intestinal permeability \u2014 meaning the gut lining is letting too much in \u2014 and restricting all those foods will not fix the underlying problem.",
+        "why_resisted": "Elimination feels like action and control. Accepting that the real problem is gut barrier dysfunction requires a longer, less clear treatment path and often implicates lifestyle factors (stress, alcohol, medication use) that are harder to change than diet.",
+        "path_forward": "People who focus on repairing gut permeability \u2014 treating SIBO if present, reducing gut-damaging medications, supporting the microbiome, managing stress \u2014 often find that their reactive food list shrinks significantly over 6\u201312 months and they can tolerate foods they previously could not."
+      },
+      {
+        "truth": "Elimination diets can themselves become a problem. Prolonged, overly restrictive diets can cause nutritional deficiencies, worsen the relationship with food, increase food-related anxiety, and paradoxically reduce microbiome diversity in ways that worsen gut health.",
+        "why_resisted": "When restriction brings symptom relief, it feels like proof that the eliminated foods were harmful. The idea that the restriction itself might eventually become harmful \u2014 or that tolerance can be rebuilt \u2014 can feel threatening to a hard-won sense of safety around food.",
+        "path_forward": "People who work systematically through reintroduction, identify their actual minimal trigger set (usually 2\u20135 foods rather than 20+), and then maintain a broad, diverse diet outside those specific triggers typically have better long-term outcomes \u2014 nutritionally, symptomatically, and psychologically \u2014 than those who remain in permanent broad restriction."
+      },
+      {
+        "truth": "Stress, sleep deprivation, and psychological trauma directly increase gut permeability and immune reactivity to food. For some people, these are the primary drivers \u2014 and no amount of dietary restriction will produce lasting improvement until these are addressed.",
+        "why_resisted": "Being told that stress is involved in a physical, immune-mediated condition still feels to many people like being told it is 'all in their head.' It can also feel overwhelming because stress and trauma are harder to change than diet.",
+        "path_forward": "Patients who address nervous system regulation alongside dietary changes \u2014 particularly through evidence-based approaches like MBSR, HRV biofeedback, or trauma therapy \u2014 often find that their dietary tolerance improves and their reactive food list shrinks in ways that dietary intervention alone did not produce."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Identify and eliminate trigger foods (via testing or elimination diet)",
-          "why_it_matters": "This removes the primary driver of inflammation and IgG activation. Without this step, other interventions have limited effect. Symptoms often improve dramatically once triggers are identified and consistently avoided.",
-          "how_to_start": "Begin a 2-week food and symptom diary, or if you are ready to commit, start a structured 2-week elimination diet removing your top 5 suspects (wheat, dairy, soy, eggs, corn). Track symptom changes daily.",
-          "timeline": "Symptom improvements often appear within 3\u20137 days of eliminating triggers, though full improvement may take 2\u20134 weeks as inflammation subsides.",
+          "lever": "Structured elimination and reintroduction to identify the true minimal trigger set",
+          "why_it_matters": "Most people self-restricting based on IgG results are avoiding more foods than necessary, which is unsustainable and reduces gut microbiome diversity. Identifying the actual symptomatic foods \u2014 typically a small subset of what the panel flags \u2014 allows targeted restriction rather than broad dietary impoverishment.",
+          "how_to_start": "Work with a registered dietitian experienced in food sensitivity or elimination protocols. Begin with the highest-reactivity flagged foods and the most plausible common triggers (gluten, dairy, eggs). Run a clean 4\u20136 week elimination, then reintroduce methodically.",
+          "timeline": "4\u20138 weeks for elimination phase; 8\u201316 additional weeks for full reintroduction of priority foods",
+          "requires_professional": true
+        },
+        {
+          "lever": "Identify and treat upstream gut drivers (SIBO, dysbiosis, H. pylori, parasites)",
+          "why_it_matters": "If a gut pathogen or overgrowth is driving intestinal permeability, food elimination is a symptomatic patch that will not produce lasting improvement. Treating the upstream cause often resolves the secondary food reactivity without ongoing dietary restriction.",
+          "how_to_start": "Request or arrange a breath test for SIBO, a comprehensive stool test including pathogens and microbiome markers, and H. pylori testing if upper GI symptoms are present. A functional medicine doctor or well-informed gastroenterologist can help direct this.",
+          "timeline": "Investigation and treatment: 3\u20136 months; improvement in food tolerance may follow over 3\u201312 months as the gut heals",
+          "requires_professional": true
+        },
+        {
+          "lever": "Intestinal permeability repair",
+          "why_it_matters": "If the gut lining is the entry point for food antigens triggering IgG reactions, repairing it reduces the antigenic load regardless of which specific foods are eaten. This is the closest thing to addressing the root mechanism available without specialised intervention.",
+          "how_to_start": "Remove gut-damaging inputs first (regular NSAIDs, excess alcohol, ultra-processed foods). Then introduce gut-supportive nutrients: L-glutamine (3\u201310g daily in water), zinc carnosine, diverse prebiotic fibre, and a clinician-selected probiotic. Collagen-rich foods or supplements may also help.",
+          "timeline": "Measurable improvement in gut integrity: 8\u201316 weeks with consistent implementation",
           "requires_professional": false
         },
         {
-          "lever": "Heal intestinal permeability and support the gut barrier",
-          "why_it_matters": "Increased intestinal permeability is thought to underlie or perpetuate IgG sensitivities. Supporting barrier function with targeted nutrition, supplements, and anti-inflammatory diet reduces future IgG activation and can allow eventual tolerance of previously problematic foods.",
-          "how_to_start": "Add bone broth (homemade or high-quality store-bought), L-glutamine (5 g twice daily), or collagen powder to daily routine. Simultaneously commit to a whole-foods anti-inflammatory diet. Start with one supplement and add others gradually to assess tolerance.",
-          "timeline": "Intestinal healing typically takes 4\u201312 weeks. You may notice reduced symptom severity within 2\u20134 weeks and be able to tolerate some previously problematic foods after 8\u201312 weeks of healing.",
+          "lever": "Nervous system and stress regulation",
+          "why_it_matters": "Chronic stress is a direct physiological cause of gut permeability via the HPA-gut axis. No dietary protocol will achieve its full potential if the nervous system remains in a chronic threat state. This lever often produces the most durable improvements in overall food tolerance.",
+          "how_to_start": "Choose one evidence-based practice: a structured 8-week MBSR course, daily HRV biofeedback (5\u201310 minutes using a validated device/app), or begin working with a trauma-informed therapist if adverse life events are relevant history.",
+          "timeline": "Perceptible nervous system change: 6\u201312 weeks of consistent practice; meaningful reduction in gut reactivity: 3\u20136 months",
           "requires_professional": false
         },
         {
-          "lever": "Restore healthy gut microbiota (dysbiosis reversal)",
-          "why_it_matters": "Dysbiosis (imbalanced gut bacteria) can drive intestinal permeability and increase IgG responses. A diverse, balanced microbiota strengthens the barrier, produces short-chain fatty acids that support intestinal health, and reduces inflammation.",
-          "how_to_start": "Consume 1\u20132 servings of fermented foods daily (sauerkraut, miso, tempeh\u2014choose based on your tolerance), or take a multi-strain probiotic (20\u201350 billion CFU). Increase soluble fiber intake slowly (psyllium, flax, oats if tolerated) to feed beneficial bacteria.",
-          "timeline": "Microbiota shifts can be detected within 2\u20134 weeks; clinical improvements may appear within 4\u20138 weeks. Sustained improvement usually requires ongoing probiotic and fermented food consumption.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Optimize sleep and stress management",
-          "why_it_matters": "Sleep deprivation and chronic stress directly increase intestinal permeability and immune activation, undoing other healing efforts. Sleep is foundational to barrier repair and immune regulation. Even modest improvements dramatically reduce symptom flares.",
-          "how_to_start": "Commit to a consistent sleep schedule (same bedtime and wake time daily), aim for 7\u20139 hours nightly, and establish a 30-minute wind-down routine (no screens, dim lights, meditation or reading). Add 5\u201310 minutes of daily stress management (meditation, deep breathing, or gentle yoga).",
-          "timeline": "Sleep improvements can reduce symptom severity within 1\u20132 weeks. Deeper improvements in immune tolerance develop over 4\u20138 weeks of consistent quality sleep and stress reduction.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Work with a functional or integrative medicine practitioner for personalized testing and protocol",
-          "why_it_matters": "Professional guidance accelerates diagnosis, prevents nutritional gaps, adjusts supplements based on your specific profile, and addresses comorbid conditions (e.g., dysbiosis, low stomach acid, parasites) that may be perpetuating sensitivities.",
-          "how_to_start": "Seek a functional medicine doctor, registered dietitian, or integrative medicine practitioner experienced in food sensitivities. Request IgG testing or a supervised elimination diet, and ask for a comprehensive gut healing protocol tailored to your needs.",
-          "timeline": "Professional protocols typically last 8\u201316 weeks. Symptom improvement often appears within 4 weeks; sustained improvement and food reintroduction take 12+ weeks.",
+          "lever": "Eliminate or reduce gut-damaging medications",
+          "why_it_matters": "Regular NSAID use (ibuprofen, naproxen, aspirin at anti-inflammatory doses) is one of the most potent causes of intestinal permeability. Proton pump inhibitors (PPIs) alter gut microbiome composition. These medications may be silently perpetuating the condition regardless of dietary changes.",
+          "how_to_start": "Audit all regular medications with a GP or prescribing doctor. Explore alternative pain management for conditions driving regular NSAID use (physiotherapy, topical diclofenac, paracetamol/acetaminophen). Never stop prescribed medications without medical guidance.",
+          "timeline": "Gut lining begins recovering within weeks of NSAID reduction; meaningful change in food tolerance typically takes 2\u20134 months",
           "requires_professional": true
         }
       ],
       "common_mistakes": [
-        "Eliminating too many foods at once\u2014makes it impossible to identify true triggers and increases risk of nutritional deficiency and disordered eating patterns. Eliminate 3\u20135 suspects at a time, not 20.",
-        "Reintroducing trigger foods too quickly\u2014symptoms may reappear 12\u201372 hours after reintroduction, but if you introduce a new food every day, you won't be able to identify which one caused the reaction. Reintroduce one food every 3\u20135 days.",
-        "Relying on IgG testing alone without symptom correlation\u2014positive IgG tests are common in healthy people. Use testing as a guide, but confirm with elimination diet and symptom response. The best diagnosis combines testing and clinical correlation.",
-        "Avoiding trigger foods for too long without also healing the gut\u2014avoidance buys time, but without addressing intestinal permeability, dysbiosis, or other drivers, you may develop sensitivities to new foods over time. Combine avoidance with active healing.",
-        "Skipping the healing phase and jumping straight to reintroduction\u2014if you reintroduce trigger foods before your gut has healed (usually 8\u201312 weeks), inflammation flares and you may develop new sensitivities. Patience during the healing phase pays off.",
-        "Not addressing underlying dysbiosis or low stomach acid\u2014if dysbiosis or hypochlorhydria is present, healing efforts will be slow or incomplete. Consider testing and targeted support (probiotics, L-glutamine, digestive enzymes, or supplemental HCl) for these drivers.",
-        "Creating nutritional deficiencies through overly restrictive elimination\u2014avoid eliminating entire food groups (all grains, all legumes) unless testing clearly indicates widespread sensitivity. Work with a dietitian to ensure adequate nutrition.",
-        "Neglecting sleep and stress\u2014these undermine all other efforts. Without sleep and stress management, intestinal permeability remains high and immune activation continues. Prioritize these foundational elements.",
-        "Overtraining during the healing phase\u2014intense exercise during acute symptom flares and early healing increases inflammation and delays recovery. Gentle movement is better; save intense training for after symptoms have resolved.",
-        "Assuming IgG sensitivities are the only problem\u2014comorbid conditions (celiac disease, SIBO, food-borne infections, parasites, nutrient deficiencies) may coexist and need separate treatment. Professional evaluation ensures comprehensive diagnosis."
+        "Acting on an IgG panel without completing a structured reintroduction phase \u2014 this leaves people with an unnecessarily restricted diet and no validated trigger list",
+        "Pursuing dietary elimination without investigating upstream causes \u2014 the food reactions are often downstream of SIBO, dysbiosis, or gut permeability issues that elimination alone cannot resolve",
+        "Treating IgG results as permanent \u2014 most food reactions identified by IgG testing can be resolved or reduced once gut permeability and upstream drivers are addressed",
+        "Self-managing with a very broad elimination diet without dietitian oversight \u2014 nutritional inadequacy (particularly calcium, vitamin D, B vitamins, fibre) accumulates over months and creates new health problems",
+        "Testing before ruling out coeliac disease while eating gluten \u2014 coeliac serology requires active gluten consumption; if someone has eliminated gluten before testing, results will be falsely negative",
+        "Choosing a laboratory for IgG testing based on cost alone \u2014 methodological variation between labs is substantial; results from different labs for the same patient can differ significantly",
+        "Focusing only on food and ignoring environmental toxins, medications, and stress \u2014 in complex or broad-reactivity cases, these non-dietary drivers are often as important as the food triggers"
       ]
     },
     "finding_help": {
       "specialists": [
         {
-          "type": "Functional Medicine Doctor (MD or DO)",
-          "role": "Evaluates IgG sensitivities within the context of overall health and gut function. Orders comprehensive testing (IgG panels, microbiome, intestinal permeability), designs personalized elimination and healing protocols, and monitors progress. Combines conventional medical knowledge with functional medicine approaches.",
-          "notes": "More likely than conventional doctors to take IgG sensitivities seriously. Requires out-of-pocket cost for visits and specialized testing in many regions. Look for practitioners with additional training in clinical nutrition or functional medicine (AAFM, IFM certified)."
+          "type": "Registered dietitian (food sensitivity / elimination specialty)",
+          "role": "The most directly useful practitioner for implementing an IgG-guided or elimination-based dietary investigation. A dietitian with this specialty can design a nutritionally adequate elimination protocol, guide systematic reintroduction, help distinguish IgG triggers from FODMAP or histamine issues, and prevent the over-restriction that commonly develops when people self-manage.",
+          "notes": "Look specifically for dietitians who list food sensitivity, elimination diets, or IBS as a specialty area. FODMAP-trained dietitians often have the closest relevant skill set. Many mainstream dietitians are sceptical of IgG testing \u2014 what matters is finding one who is willing to support structured dietary investigation regardless of their view on the test itself."
         },
         {
-          "type": "Registered Dietitian (RD or RDN), especially those trained in functional or medical nutrition therapy",
-          "role": "Designs safe, nutritionally complete elimination and healing diets tailored to your symptoms and test results. Monitors nutrient status, guides reintroduction phases, and adjusts protocols based on response. Ensures you don't develop deficiencies. Often the most practical first step.",
-          "notes": "Insurance may cover dietitian visits if referred by a physician. Look for credentials: RD or RDN (registered), ideally with additional training in gastroenterology or functional nutrition. Many private practitioners offer consultations without a physician referral."
+          "type": "Functional medicine doctor",
+          "role": "Trained to investigate root causes of chronic symptoms including gut permeability, dysbiosis, SIBO, nutrient deficiencies, and hormonal drivers. Typically the most willing to order and interpret IgG panels alongside other gut-health markers, and to supervise a comprehensive repair protocol.",
+          "notes": "Quality and approach varies significantly. Look for practitioners certified through the Institute for Functional Medicine (IFM) or equivalent. Be aware that some functional medicine practitioners run expensive panel batteries not all of which are necessary \u2014 a good one will prioritise systematically."
         },
         {
-          "type": "Gastroenterologist with interest in functional or integrative medicine",
-          "role": "Can rule out structural GI disease (IBD, celiac, parasites) and support diagnosis of IgG sensitivities. May order specialized testing and offer professional credibility in discussions with other providers. Some gastroenterologists dismiss IgG sensitivities; seek those with integrative leanings.",
-          "notes": "Conventional gastroenterologists may be skeptical of IgG sensitivities, but some have incorporated functional approaches. Ask directly whether they recognize and treat IgG food sensitivities."
+          "type": "Integrative or naturopathic doctor",
+          "role": "Often experienced in dietary elimination approaches, gut-healing protocols, and supplement-based interventions. May be more willing than mainstream practitioners to engage with IgG test results and design a comprehensive treatment plan.",
+          "notes": "Regulation and training standards vary significantly by country and jurisdiction. In the US, licensed naturopathic doctors (NDs) in regulated states have a comparable training duration to medical doctors with an integrative focus; in unregulated regions, credentials vary more widely."
         },
         {
-          "type": "Naturopathic Doctor (ND)",
-          "role": "Specializes in dietary and botanical approaches to food sensitivities and gut healing. Often experienced with elimination diets, supplements, and herbal protocols. In some U.S. states, NDs are licensed; in others, they operate without regulation.",
-          "notes": "Variable credibility and regulation by region. Choose licensed NDs (in regulated states) or those with additional credentials from recognized programs (AANP, Bastyr, etc.). Be cautious of practitioners recommending very restrictive diets or aggressive supplement regimens without a clear rationale."
+          "type": "Gastroenterologist",
+          "role": "Important for ruling out structural and organic conditions (coeliac disease, IBD, microscopic colitis, eosinophilic disorders) before pursuing IgG-based investigation. Most mainstream gastroenterologists will not order or act on IgG panels but are essential for structural investigation.",
+          "notes": "Mainstream gastroenterologists typically manage IBS symptomatically and may dismiss IgG testing. An integrative or functional gastroenterologist, if available, combines the ability to rule out structural causes with willingness to investigate immune and microbiome drivers."
         },
         {
-          "type": "Integrative or Functional Medicine Nurse Practitioner (NP) or Physician Assistant (PA)",
-          "role": "Provide functional medicine approaches, order testing, and design protocols under physician supervision. Often more accessible and affordable than MDs. Can manage ongoing care and adjust protocols.",
-          "notes": "Credentials vary; look for NPs and PAs with additional training in functional medicine (AAFM certified) or clinical nutrition. May be part of a functional medicine clinic or private practice."
-        },
-        {
-          "type": "Acupuncturist with training in dietary therapy",
-          "role": "Some acupuncturists have training in Traditional Chinese Medicine dietary principles and food energetics. May complement elimination diet work and help manage stress and immune function.",
-          "notes": "Useful as an adjunct to other interventions, not a primary diagnostic tool for IgG sensitivities. Ensure the practitioner has recognized certification (LAc, Dipl. Ac.) and is willing to coordinate with your other healthcare providers."
+          "type": "Allergist / immunologist",
+          "role": "Essential for ruling out IgE-mediated food allergy (which requires fundamentally different management) and for identifying co-existing conditions like MCAS or eosinophilic GI disorders. Most allergists will actively discourage IgG testing, but their role in ruling out IgE mechanisms is important.",
+          "notes": "The allergist's scepticism about IgG testing should not discourage investigation of delayed food reactions \u2014 it should be used to ensure the right conditions are being ruled out first."
         }
       ],
       "patient_communities": [
         {
-          "name": "IgG Food Sensitivities Support Group (Facebook)",
-          "platform": "Facebook Groups",
-          "url": null,
-          "notes": "Multiple active groups where people share test results, symptom experiences, and healing strategies. Useful for finding real-world examples and emotional support, but medical advice should be verified by a professional. Moderated groups are more reliable."
-        },
-        {
-          "name": "r/IBS, r/FODMAP, r/CuteLesions (skin-focused) subreddits",
+          "name": "r/FoodSensitivities",
           "platform": "Reddit",
+          "url": "https://www.reddit.com/r/FoodSensitivities/",
+          "notes": "Active community of people investigating and managing food sensitivities including IgG reactions. Useful for hearing real patient experiences with different testing labs, elimination protocols, and practitioners."
+        },
+        {
+          "name": "r/Elimination_Diet",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Elimination_Diet/",
+          "notes": "Focused specifically on elimination diet experiences, meal ideas, and protocol support. Helpful for practical implementation questions."
+        },
+        {
+          "name": "r/Leaky Gut",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Leaky_Gut/",
+          "notes": "Community discussing intestinal permeability as a driver of food sensitivities and multi-system symptoms. Useful for understanding the upstream gut health picture."
+        },
+        {
+          "name": "r/functionalmedicine",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/functionalmedicine/",
+          "notes": "Broader community discussing root-cause approaches to chronic conditions including food sensitivities. Useful for practitioner recommendations and protocol discussions."
+        },
+        {
+          "name": "Food Sensitivity Community (various groups)",
+          "platform": "Facebook",
           "url": null,
-          "notes": "Subreddits where people discuss food sensitivities, elimination diets, and symptom management. Unmoderated; advice varies in quality. Useful for finding elimination diet tips and shared experiences, but always verify medical advice with a professional."
-        },
-        {
-          "name": "FODMAP and Digestive Health Support Communities",
-          "platform": "Discord, forums",
-          "url": null,
-          "notes": "Smaller communities focused on digestive health and low-FODMAP diets, which often overlap with IgG sensitivity management. May offer more curated information and active moderation than larger platforms."
-        },
-        {
-          "name": "Functional Medicine Coaching Programs (e.g., Institute for Functional Medicine, Cleveland Clinic Center for Functional Medicine)",
-          "platform": "Website/Directories",
-          "url": "https://www.ifm.org/find-a-practitioner/ or local university integrative medicine centers",
-          "notes": "Professional directories where you can find certified functional medicine practitioners, coaches, and dietitians. More reliable than unmoderated peer communities; practitioners are vetted."
-        },
-        {
-          "name": "Academy of Nutrition and Dietetics Dietitian Locator",
-          "platform": "Website",
-          "url": "https://www.eatright.org/find-a-nutrition-expert",
-          "notes": "Official directory of registered dietitians. Filter by specialization (gastroenterology, functional nutrition) to find professionals focused on food sensitivities and gut healing."
+          "notes": "Multiple Facebook groups exist around IgG testing and food sensitivity \u2014 search 'IgG food sensitivity' or 'food intolerance support'. Quality varies; look for groups with active moderation and evidence-informed moderators."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "The Elimination Diet: Discover Which Foods Are Making You Sick",
-        "type": "book",
-        "author_or_source": "Tom Malterre and Alissa Hamilton",
-        "url": null,
-        "description": "A practical guide to conducting a structured elimination diet with detailed instructions for each phase (elimination, reintroduction, maintenance). Includes meal plans, recipes, and symptom tracking tools. Focused on food sensitivities including IgG reactions.",
-        "audience": "beginner"
-      },
-      {
-        "title": "The Gut Psychology Syndrome (GAPS) Diet",
-        "type": "book",
-        "author_or_source": "Dr. Natasha Campbell-McBride",
-        "url": null,
-        "description": "Details a healing protocol emphasizing bone broth, fermented foods, and nutrient-dense whole foods to repair gut permeability and reduce food sensitivities. Covers the theory of 'leaky gut' and its role in food sensitivities and systemic symptoms.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "IBS: Free Forever (or equivalent elimination diet resources)",
-        "type": "book/online course",
-        "author_or_source": "Various functional practitioners",
-        "url": null,
-        "description": "Online courses and guides specifically addressing IBS and food sensitivities using elimination diet approaches. Often include video instruction, meal plans, and shopping lists.",
-        "audience": "beginner"
-      },
-      {
-        "title": "The Functional Medicine Approach to Gastrointestinal Health",
-        "type": "online course/certification",
-        "author_or_source": "Institute for Functional Medicine",
-        "url": "https://www.ifm.org/",
-        "description": "Comprehensive educational resources on functional approaches to GI health, including food sensitivities, dysbiosis, and intestinal permeability. Professional-level content but some resources are publicly available.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "Why Zebras Don't Get Ulcers (Stress and Health)",
-        "type": "book",
-        "author_or_source": "Robert Sapolsky",
-        "url": null,
-        "description": "Explains the mechanism by which chronic stress impairs intestinal barrier function and immune regulation. Helps contextualize why stress management is foundational to food sensitivity recovery.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "The Autoimmune Paleo Cookbook & The Paleo Answer",
-        "type": "book",
-        "author_or_source": "Mickey Trescott & Loren Cordain",
-        "url": null,
-        "description": "Resources focused on paleo and autoimmune protocols, which often align with elimination diet principles used for IgG sensitivities. Includes recipes eliminating common inflammatory foods.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Mind-Gut Connection (stress, sleep, and digestive health)",
-        "type": "book",
-        "author_or_source": "Dr. Emeran Mayer",
-        "url": null,
-        "description": "Explores the brain-gut axis and how stress, sleep, and psychological factors influence digestive health and food sensitivity severity. Explains why stress management and sleep are foundational.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "Low-FODMAP Dietitian Resources",
-        "type": "website",
-        "author_or_source": "Monash University, King's College London",
-        "url": "https://www.monashfodmap.com/ or https://www.kcl.ac.uk/research/low-fodmap-diet-resources",
-        "description": "Evidence-based information on low-FODMAP diets, which overlap with food sensitivity management. Useful for understanding how fermentable carbohydrates can worsen symptoms during healing phases.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "Cleveland Clinic Center for Functional Medicine Resources",
-        "type": "website/articles",
-        "author_or_source": "Cleveland Clinic",
-        "url": "https://health.clevelandclinic.org/",
-        "description": "Articles and patient education from a reputable academic medical center incorporating functional medicine approaches to food sensitivities and gut health.",
-        "audience": "beginner"
-      },
-      {
-        "title": "PubMed and Google Scholar searches on 'IgG food sensitivities' and 'intestinal permeability'",
+        "title": "The Gut-Brain Connection: How Leaky Gut Drives Food Sensitivity",
         "type": "research paper",
-        "author_or_source": "Various researchers",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/ or https://scholar.google.com/",
-        "description": "For those interested in peer-reviewed evidence, these databases contain research on IgG responses to foods, dysbiosis, and intestinal barrier function. Searchable and often have free abstracts.",
+        "author_or_source": "Fasano A. (various papers on intestinal permeability and tight junction regulation)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/?term=fasano+intestinal+permeability",
+        "description": "Alessio Fasano's research on zonulin and intestinal permeability provides the best current scientific framework for understanding how a compromised gut lining leads to immune reactions to food proteins. His papers are accessible via PubMed and form the mechanistic basis for the leaky-gut-drives-IgG-reactivity hypothesis.",
         "audience": "advanced"
       },
       {
-        "title": "The Second Brain / Gut Feelings (podcast series on gut-brain health)",
-        "type": "podcast",
-        "author_or_source": "Various science communicators",
+        "title": "IgG-guided exclusion diet significantly reduces symptoms in irritable bowel syndrome: a 12-week intervention study (Atkinson et al., 2004, Gut)",
+        "type": "research paper",
+        "author_or_source": "Atkinson W et al., Gut 2004",
+        "url": "https://gut.bmj.com/content/53/10/1459",
+        "description": "The landmark RCT that found IgG-guided elimination significantly outperformed a sham diet in IBS patients, providing the strongest clinical evidence for the approach. Essential reading for anyone trying to understand the evidence base \u2014 and its limitations.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Practical Guide to Elimination Diets",
+        "type": "website",
+        "author_or_source": "Monash University / various FODMAP-trained dietitian resources",
+        "url": "https://www.monashfodmap.com",
+        "description": "While primarily focused on the low-FODMAP protocol, Monash University's resources on elimination and reintroduction methodology are the gold standard for understanding how to conduct a dietary investigation properly. The principles apply directly to IgG-guided elimination.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Elimination Diet: Discover the Foods That Are Making You Sick and Tired \u2014 and Feel Better Fast",
+        "type": "book",
+        "author_or_source": "Tom Malterre and Alissa Segersten",
         "url": null,
-        "description": "Podcasts exploring the gut-brain axis, stress, and immune function. Help contextualize why psychological and sleep interventions are so important for food sensitivity recovery.",
+        "description": "A practical, well-structured guide to implementing an elimination diet with recipes and a clear protocol. Accessible for beginners and grounded in functional nutrition principles. Useful as a companion to working with a practitioner.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Ultra-processed food, dietary patterns, and gut permeability: a review",
+        "type": "research paper",
+        "author_or_source": "Various \u2014 search PubMed for 'ultra-processed food intestinal permeability'",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/?term=ultra-processed+food+intestinal+permeability",
+        "description": "Emerging research connecting ultra-processed food consumption with gut barrier dysfunction \u2014 useful context for understanding why dietary quality affects the overall food sensitivity picture, not just specific trigger foods.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Food Sensitivity Testing: What the Research Really Shows",
+        "type": "website",
+        "author_or_source": "Examine.com",
+        "url": "https://examine.com",
+        "description": "Examine.com provides evidence-graded summaries of research on food, supplements, and health claims without commercial bias. Searching for IgG food testing, gut permeability, L-glutamine, and related topics gives a useful, balanced picture of what is and is not well-supported.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Accessing Your Gut Health: Understanding and Using IgG Food Sensitivity Testing",
+        "type": "podcast",
+        "author_or_source": "The Dhru Purohit Podcast / Found My Fitness (Rhonda Patrick) \u2014 various episodes on gut health and food immunity",
+        "url": null,
+        "description": "Several long-form podcasts have featured researchers and clinicians discussing IgG food reactions, leaky gut, and dietary intervention in the context of chronic disease. Searching these platforms for 'food sensitivity', 'leaky gut', or 'intestinal permeability' yields accessible, nuanced expert discussions.",
         "audience": "beginner"
       }
     ],
     "relevance_signal": "**Delayed reactions 4\u201372 hours after eating** \u2014 hard to link to a specific food. Symptoms include bloating, fatigue, skin issues, and brain fog with no clear immediate trigger."
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

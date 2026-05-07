@@ -2,775 +2,804 @@
   "condition_id": "depression",
   "condition_name": "Depression",
   "generated_at": "2026-04-16T10:42:27.036802Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "Depression is a mental health condition where persistent sadness, loss of interest in activities, and negative thoughts interfere with daily life. It's treatable through therapy, medication, lifestyle changes, or a combination of these approaches.",
-    "detailed_summary": "Depression (also called major depressive disorder or clinical depression) is characterized by a sustained period of low mood, reduced ability to experience pleasure, changes in sleep and appetite, fatigue, difficulty concentrating, and sometimes thoughts of worthlessness or self-harm. Unlike temporary sadness, clinical depression lasts at least two weeks and significantly impairs functioning at work, school, or in relationships. It involves changes in brain chemistry, particularly affecting neurotransmitters like serotonin, norepinephrine, and dopamine. Depression is highly treatable and varies widely in severity and presentation between individuals.",
+    "plain_summary": "Depression is a common but often poorly understood mental health condition involving persistent low mood, loss of interest, fatigue, and a range of physical symptoms that many people don't associate with it. It has biological, psychological, and social roots \u2014 and for a significant number of people, underlying physical factors such as inflammation, hormonal imbalance, gut dysfunction, or nutritional deficiencies play a central role that mainstream treatment often misses.",
+    "detailed_summary": "Depression \u2014 clinically termed Major Depressive Disorder (MDD) when severe, or Persistent Depressive Disorder (PDD, formerly dysthymia) when long-lasting \u2014 is characterised by a sustained change in mood, motivation, cognition, and physical functioning. It is one of the most common disabling conditions worldwide, yet it remains widely undertreated, misdiagnosed, or treated in ways that address symptoms without investigating root causes.\n\nThe conventional model frames depression primarily as a serotonin deficiency correctable with SSRIs. This is an oversimplification. Current evidence points to multiple overlapping mechanisms: chronic low-grade inflammation, dysregulation of the hypothalamic-pituitary-adrenal (HPA) axis, disrupted circadian rhythms, gut-brain axis dysfunction, mitochondrial dysfunction, nutritional deficiencies (particularly B vitamins, magnesium, zinc, omega-3s, and vitamin D), thyroid abnormalities, and unresolved trauma or chronic stress.\n\nMany people with depression have seen standard prescribers and received antidepressants that provide partial relief at best \u2014 or none. This often reflects the fact that the biological driver has not been identified. A subset of people with apparent 'treatment-resistant depression' improve substantially once an underlying physical contributor is identified and addressed. Self-directed research into potential root causes is a legitimate and often necessary part of this process.",
     "prevalence": {
-      "summary": "About 1 in 5 adults experience depression in their lifetime.",
-      "estimate": "5\u201310% of adults experience depression in any given year; lifetime prevalence around 15\u201320%",
-      "notes": "Rates are higher in women than men; may be underdiagnosed in men due to different symptom presentation. Varies by country, socioeconomic status, and access to healthcare. Rates increased during the COVID-19 pandemic."
+      "summary": "Depression affects roughly 1 in 6 people at some point in their lifetime and is one of the leading causes of disability globally.",
+      "estimate": "5\u20137% of adults at any given time; lifetime prevalence approximately 15\u201320%",
+      "notes": "Prevalence is likely underestimated due to underdiagnosis, stigma, and variation in diagnostic criteria. Women are diagnosed roughly twice as often as men, though men may underreport. Rates are higher in people with chronic physical illness, trauma history, ADHD, and certain autoimmune conditions. The COVID-19 pandemic led to a documented spike in rates."
     },
     "subgroups": [
       {
         "name": "Major Depressive Disorder (MDD)",
-        "description": "The most common form, with severe depressive episodes lasting at least two weeks that impair functioning.",
+        "description": "Discrete episodes of severe depression lasting at least two weeks, often with full recovery between episodes but significant impairment during them.",
         "distinguishing_features": [
-          "Requires five or more symptoms present nearly every day for at least two weeks",
-          "Symptoms cause significant distress or functional impairment",
-          "Not attributable to another medical or psychiatric condition"
+          "Episodes typically last weeks to months",
+          "Full or near-full recovery between episodes is common",
+          "May be single-episode or recurrent",
+          "Suicidal ideation more likely during acute episodes"
         ]
       },
       {
-        "name": "Persistent Depressive Disorder (Dysthymia)",
-        "description": "Chronic, less severe depression lasting at least two years in adults (one year in children), with symptoms that come and go but never fully resolve.",
+        "name": "Persistent Depressive Disorder (PDD / Dysthymia)",
+        "description": "A lower-grade but chronic form of depression lasting at least two years, often experienced as 'always having been this way'.",
         "distinguishing_features": [
-          "Lower intensity than MDD but longer duration",
-          "Periods of slightly better mood may occur but do not last long",
-          "Often called 'depression with a smile' because people may continue functioning while feeling persistently low"
+          "Symptoms are less severe but highly persistent",
+          "Often missed because people normalise chronic low mood",
+          "Higher risk of developing MDD episodes on top of baseline (double depression)",
+          "Often has earlier onset than MDD"
+        ]
+      },
+      {
+        "name": "Atypical Depression",
+        "description": "A subtype characterised by mood reactivity (mood brightens in response to positive events) alongside specific symptoms.",
+        "distinguishing_features": [
+          "Mood can temporarily lift in response to good news or pleasant events",
+          "Hypersomnia (sleeping too much) rather than insomnia",
+          "Increased appetite and carbohydrate cravings",
+          "Leaden paralysis \u2014 heavy, weighted feeling in limbs",
+          "Longstanding pattern of rejection sensitivity"
+        ]
+      },
+      {
+        "name": "Melancholic Depression",
+        "description": "A biologically severe subtype with prominent physical features and less response to psychological interventions alone.",
+        "distinguishing_features": [
+          "Profound anhedonia \u2014 inability to feel pleasure even briefly",
+          "Depression is worst in the morning",
+          "Early morning awakening",
+          "Psychomotor retardation or agitation",
+          "Strong biological component; more likely to require medication"
+        ]
+      },
+      {
+        "name": "Inflammatory / Immune-Mediated Depression",
+        "description": "A subtype increasingly recognised in research where chronic inflammation drives depressive symptoms, often seen in people with autoimmune disease, obesity, or chronic infection.",
+        "distinguishing_features": [
+          "Elevated inflammatory markers (CRP, IL-6, TNF-alpha) on testing",
+          "Strong fatigue, cognitive slowing, and social withdrawal ('sickness behaviour')",
+          "Often less responsive to standard antidepressants",
+          "May improve with anti-inflammatory interventions",
+          "Frequently co-occurs with inflammatory physical conditions"
+        ]
+      },
+      {
+        "name": "Postpartum Depression (PPD)",
+        "description": "Depression occurring in the weeks to months after childbirth, driven by a combination of hormonal shifts, sleep deprivation, and psychosocial stress.",
+        "distinguishing_features": [
+          "Onset within 4 weeks to 12 months postpartum",
+          "Distinct from 'baby blues' which resolve within two weeks",
+          "May include intrusive thoughts about the baby",
+          "Hormonal factors (estrogen and progesterone crash) are central",
+          "Often underreported due to stigma around new parenthood"
         ]
       },
       {
         "name": "Seasonal Affective Disorder (SAD)",
-        "description": "Depression linked to seasonal changes, typically occurring in fall and winter when daylight decreases.",
+        "description": "A seasonal pattern of depression, most commonly occurring in autumn and winter, linked to reduced light exposure and disrupted circadian signalling.",
         "distinguishing_features": [
-          "Predictable pattern tied to season",
-          "Symptoms improve with increased light exposure or spring arrival",
-          "More common in higher latitudes and in people with light sensitivity"
-        ]
-      },
-      {
-        "name": "Postpartum Depression",
-        "description": "Depression occurring after childbirth, distinct from 'baby blues' which resolve within two weeks.",
-        "distinguishing_features": [
-          "Onset within weeks to months after delivery",
-          "May include thoughts of harming self or infant",
-          "Relates to hormonal shifts, sleep deprivation, and life stress"
-        ]
-      },
-      {
-        "name": "Depression with Atypical Features",
-        "description": "Depression characterized by mood reactivity (mood brightens in response to positive events) alongside other symptoms.",
-        "distinguishing_features": [
-          "Increased appetite or weight gain (opposite of typical depression)",
-          "Hypersomnia (sleeping excessively)",
-          "Leaden paralysis (heavy feeling in limbs)",
-          "Long-standing interpersonal rejection sensitivity"
+          "Predictable seasonal onset and remission",
+          "Hypersomnia and increased appetite typical (similar to atypical subtype)",
+          "Strong response to bright light therapy in many people",
+          "More common at higher latitudes",
+          "May persist as milder 'subsyndromal SAD' in others"
         ]
       },
       {
         "name": "Treatment-Resistant Depression (TRD)",
-        "description": "Depression that does not respond adequately to two or more antidepressant medications at therapeutic doses.",
+        "description": "Depression that has not responded adequately to at least two different antidepressant trials. Often reflects an unidentified biological driver rather than true drug resistance.",
         "distinguishing_features": [
-          "Persistent symptoms despite standard medication trials",
-          "May respond to alternative treatments like ketamine, TMS, or ECT",
-          "Often more severe and disabling"
+          "Failure to respond to standard antidepressants",
+          "Warrants thorough investigation for underlying physical causes",
+          "Inflammatory, metabolic, hormonal, and nutritional factors frequently implicated",
+          "May respond to non-standard approaches: ketamine, TMS, ECT, or root-cause treatment",
+          "Often has significant comorbidity burden"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Persistent sadness, emptiness, or hopelessness",
+        "symptom": "Persistent low, sad, or empty mood",
         "category": "mood",
-        "notes": "Present nearly every day for most of the day; may be described as feeling numb rather than actively sad"
+        "notes": "Present most of the day, most days. May be experienced as numbness or emptiness rather than sadness in some individuals."
       },
       {
-        "symptom": "Loss of interest or pleasure in hobbies and activities (anhedonia)",
+        "symptom": "Loss of interest or pleasure in previously enjoyed activities (anhedonia)",
         "category": "mood",
-        "notes": "Previously enjoyed activities feel pointless; includes reduced interest in social engagement"
+        "notes": "One of the two core diagnostic symptoms. Can affect hobbies, relationships, food, and sex."
       },
       {
-        "symptom": "Significant weight change or appetite change",
-        "category": "metabolic",
-        "notes": "May increase or decrease; not due to dieting or intentional weight loss"
-      },
-      {
-        "symptom": "Insomnia or hypersomnia (sleeping too little or too much)",
-        "category": "sleep",
-        "notes": "Early morning awakening is common; sleep does not feel restorative"
-      },
-      {
-        "symptom": "Fatigue or persistent low energy",
+        "symptom": "Fatigue and low energy",
         "category": "physical",
-        "notes": "Present even after adequate rest; simple tasks feel exhausting"
+        "notes": "Often disproportionate to activity. Present even after adequate sleep. A very common presenting complaint."
       },
       {
-        "symptom": "Difficulty concentrating, remembering, or making decisions",
+        "symptom": "Sleep disturbance \u2014 insomnia or hypersomnia",
+        "category": "physical",
+        "notes": "Early morning awakening is classic for melancholic depression; sleeping too much is more typical of atypical or SAD subtypes."
+      },
+      {
+        "symptom": "Cognitive impairment \u2014 poor concentration, memory problems, mental fog",
         "category": "cognitive",
-        "notes": "May notice reduced work or academic performance; mind feels foggy or slow"
+        "notes": "Often described as 'brain fog'. Can significantly impair work performance. May persist even when mood improves."
       },
       {
-        "symptom": "Psychomotor changes (noticeable slowing or agitation)",
+        "symptom": "Psychomotor changes \u2014 slowing down or agitation",
         "category": "physical",
-        "notes": "Others may notice slowed speech, movement, or restlessness; observable to others, not just subjective"
+        "notes": "Objective slowing of movement, speech, and thought; or conversely, restlessness and inability to sit still."
+      },
+      {
+        "symptom": "Appetite and weight changes",
+        "category": "physical",
+        "notes": "Can go either way: significant weight loss from lack of appetite, or weight gain from emotional eating or carbohydrate cravings."
       },
       {
         "symptom": "Feelings of worthlessness or excessive guilt",
-        "category": "cognitive",
-        "notes": "Guilt often about past events or perceived failures; self-criticism is harsh and persistent"
+        "category": "psychological",
+        "notes": "Often disproportionate to actual circumstances. Can take on a ruminative quality."
       },
       {
-        "symptom": "Recurrent thoughts of death, dying, or self-harm",
-        "category": "cognitive",
-        "notes": "Ranges from passive death wishes to active suicidal ideation with or without a plan; requires urgent evaluation"
+        "symptom": "Hopelessness about the future",
+        "category": "psychological",
+        "notes": "A key risk factor for suicidal ideation. Distinct from low mood \u2014 involves a specific belief that things cannot improve."
       },
       {
-        "symptom": "Irritability or anger",
+        "symptom": "Recurrent thoughts of death or suicide",
+        "category": "psychological",
+        "notes": "Ranges from passive ('I wouldn't mind not waking up') to active planning. Any suicidal ideation warrants professional assessment."
+      },
+      {
+        "symptom": "Irritability and low frustration tolerance",
         "category": "mood",
-        "notes": "May be more prominent than sadness, especially in men and adolescents; oversensitivity to criticism"
+        "notes": "More commonly the presenting face of depression in men and adolescents than classic sadness."
       },
       {
-        "symptom": "Social withdrawal or isolation",
-        "category": "behavioral",
-        "notes": "Avoid friends, family, or social events; feel burden to others"
+        "symptom": "Physical pain \u2014 headaches, joint pain, back pain",
+        "category": "physical",
+        "notes": "Depression and pain share neural pathways. Many people present to primary care with physical pain and are never screened for depression."
       },
       {
-        "symptom": "Reduced motivation or initiative",
-        "category": "behavioral",
-        "notes": "Difficulty starting tasks; procrastination; neglect of self-care or hygiene"
+        "symptom": "Digestive symptoms \u2014 nausea, constipation, diarrhoea",
+        "category": "digestive",
+        "notes": "The gut-brain axis is bidirectional; gut symptoms are common in depression and often overlooked as part of the same condition."
+      },
+      {
+        "symptom": "Social withdrawal and isolation",
+        "category": "behavioural",
+        "notes": "Avoiding friends, family, and social situations. Often a consequence that also perpetuates the depression."
+      },
+      {
+        "symptom": "Reduced libido",
+        "category": "physical",
+        "notes": "Can be caused by depression itself or by antidepressant medication (particularly SSRIs/SNRIs)."
+      },
+      {
+        "symptom": "Emotional blunting or numbness",
+        "category": "mood",
+        "notes": "Some people feel neither sadness nor joy \u2014 a flat, disconnected state. Can also be a side effect of antidepressant medication."
+      },
+      {
+        "symptom": "Morning worsening of symptoms",
+        "category": "mood",
+        "notes": "Diurnal variation \u2014 symptoms worst in the morning and improving slightly through the day \u2014 is a hallmark of melancholic depression and HPA axis dysregulation."
       }
     ],
     "testing": {
       "key_patterns": [
-        "A sustained period (two weeks or longer) of low mood or loss of interest that is different from your baseline",
-        "Symptoms are present most days and interfere with work, school, relationships, or self-care",
-        "The symptoms are not better explained by another condition (thyroid disorder, grief, substance use, etc.)",
-        "You have noticed changes in sleep, appetite, energy, or ability to concentrate alongside low mood",
-        "Negative thoughts about yourself, the future, or the world feel persistent and difficult to challenge"
+        "Low thyroid function (hypothyroidism) presenting as depression, fatigue, and cognitive slowing \u2014 full thyroid panel including TSH, Free T3, Free T4, and thyroid antibodies",
+        "Elevated inflammatory markers (hs-CRP, IL-6, ferritin) alongside depression and fatigue, suggesting inflammatory subtype",
+        "Low vitamin D levels (below 50 nmol/L) \u2014 common in depressed populations, especially in low-sunlight environments",
+        "Iron deficiency or anaemia without overt anaemia (ferritin below 30\u201350 \u00b5g/L) causing fatigue and low mood",
+        "B12 and folate deficiency \u2014 neurological symptoms, mood disturbance, and cognitive impairment",
+        "Low testosterone (in men and women) or oestrogen dysregulation correlating with mood and motivation symptoms",
+        "Elevated cortisol or dysregulated cortisol rhythm (via salivary cortisol testing) suggesting HPA axis dysfunction",
+        "Blood sugar dysregulation \u2014 reactive hypoglycaemia or insulin resistance causing mood fluctuations tied to meals",
+        "Coeliac disease or significant gluten sensitivity presenting with neuropsychiatric symptoms",
+        "Omega-3 index below 8% \u2014 associated with increased depression risk and inflammatory status"
       ],
       "at_home": [
         {
-          "name": "PHQ-9 (Patient Health Questionnaire-9)",
-          "description": "A nine-question self-report screening tool where you rate how often you've experienced depressive symptoms over the past two weeks (0=not at all, 3=nearly every day). Scores range 0\u201327; scores \u226510 suggest possible depression. Available free online. Useful to track changes over time.",
-          "safety_notes": "This is a screening tool, not a diagnosis. High scores warrant professional evaluation. If you answer '3' (nearly every day) for item 9 about self-harm, seek professional help immediately."
+          "name": "PHQ-9 mood self-assessment",
+          "description": "A validated nine-question screening tool for depression severity. Freely available online. Tracks core symptoms over the past two weeks and scores them on severity. Useful for establishing a baseline and monitoring change over time.",
+          "safety_notes": "A screening tool, not a diagnosis. High scores warrant professional assessment. The PHQ-9 does not identify cause \u2014 only presence and severity of symptoms."
         },
         {
-          "name": "Mood tracking journal",
-          "description": "Daily record of mood (0\u201310 scale), energy, sleep, and what happened that day. Over 2\u20134 weeks, patterns emerge: seasonal triggers, days better/worse, link between events and mood. Use a simple app or paper diary.",
-          "safety_notes": "Journaling can feel overwhelming during severe depression. Start small (one sentence per day) if needed. Should not replace professional care."
+          "name": "Symptom and mood journal",
+          "description": "Tracking mood, sleep, energy, appetite, exercise, and key stressors daily in a simple journal or app. Over two to four weeks, patterns often emerge \u2014 such as mood tied to sleep quality, menstrual cycle phase, particular foods, or sunlight exposure. This data is valuable for any clinician visit.",
+          "safety_notes": "Excessive self-monitoring can increase rumination in some people. If journalling worsens mood, brief structured entries are preferable to detailed reflection."
+        },
+        {
+          "name": "Sleep quality assessment",
+          "description": "Tracking sleep onset, duration, and waking using a journal or wearable device. Poor sleep both causes and perpetuates depression. Identifying specific patterns (early morning waking, difficulty getting to sleep, hypersomnia) helps narrow subtype and guide intervention.",
+          "safety_notes": "Sleep tracking apps can increase anxiety about sleep quality in some people. Use as information, not as a performance metric."
+        },
+        {
+          "name": "Light exposure log (for possible SAD)",
+          "description": "Noting daily outdoor light exposure and correlating with mood across seasons. If mood consistently worsens in autumn and winter and improves in spring or summer, SAD should be considered. Some people trial a 10,000-lux light therapy lamp (used for 20\u201330 minutes in the morning) as a low-risk self-experiment.",
+          "safety_notes": "Light therapy can trigger hypomania in people with undiagnosed bipolar disorder. If there is any history of unusually elevated mood, grandiosity, or reduced need for sleep, consult a clinician before trialling light therapy."
+        },
+        {
+          "name": "Dietary pattern review",
+          "description": "A detailed review of diet quality, meal timing, and blood sugar patterns. Ultra-processed food, high sugar intake, and irregular eating patterns are associated with worse depression outcomes. Noting whether mood fluctuates in relation to food intake may reveal reactive hypoglycaemia as a contributor.",
+          "safety_notes": "Dietary restriction should not be undertaken impulsively in the context of depression \u2014 disordered eating can co-occur. Consult a dietitian if eating habits are already a source of distress."
         }
       ],
       "clinical": [
         {
-          "name": "Structured clinical interview (SCID or similar)",
+          "name": "Full thyroid panel",
+          "type": "standard",
+          "description": "TSH, Free T3, Free T4, and thyroid antibodies (TPO and TgAb). Hypothyroidism and subclinical hypothyroidism can be clinically indistinguishable from depression. Standard GP tests often only include TSH, which may miss early dysfunction.",
+          "availability": "Available via GP; full panel more reliably obtained through functional medicine practitioners or private blood testing services."
+        },
+        {
+          "name": "Full blood count and iron panel",
+          "type": "standard",
+          "description": "Detects anaemia and iron deficiency, which cause fatigue, poor concentration, and low mood. Ferritin is the most sensitive marker \u2014 levels below 30\u201350 \u00b5g/L may be symptomatic even without frank anaemia.",
+          "availability": "Available via GP. Ferritin is routinely testable but may not be included unless specifically requested."
+        },
+        {
+          "name": "Vitamin D (25-OH-D)",
+          "type": "standard",
+          "description": "Low vitamin D is consistently associated with depression in large population studies. Causality is debated, but deficiency is common and correctable. Levels below 50 nmol/L are considered deficient in most guidelines.",
+          "availability": "Available via GP (may require justification) or private testing. Home finger-prick tests are widely available and reliable."
+        },
+        {
+          "name": "Vitamin B12 and folate",
+          "type": "standard",
+          "description": "Both B12 and folate are essential for neurotransmitter synthesis and methylation. Deficiency can present with depression, fatigue, cognitive impairment, and neurological symptoms. Active B12 (holotranscobalamin) is a more sensitive marker than serum B12.",
+          "availability": "Available via GP. Active B12 may require private testing."
+        },
+        {
+          "name": "High-sensitivity CRP and inflammatory markers",
+          "type": "standard",
+          "description": "hs-CRP, and where available IL-6 and TNF-alpha, help identify the inflammatory subtype of depression. CRP above 1 mg/L in a depressed individual suggests immune activation as a potential driver.",
+          "availability": "hs-CRP available via GP or private testing. IL-6 and TNF-alpha more typically through research or specialist settings."
+        },
+        {
+          "name": "Sex hormone panel",
+          "type": "standard",
+          "description": "Testosterone (total and free), oestradiol, progesterone, LH, FSH, and SHBG. Low testosterone in men and perimenopausal hormonal shifts in women are common and correctable drivers of depressive symptoms. Standard depression care rarely investigates hormones.",
+          "availability": "Available via GP (with justification) or private testing. Hormone specialist (endocrinologist or gynaecologist) for interpretation and treatment."
+        },
+        {
+          "name": "Fasting glucose, HbA1c, and fasting insulin",
+          "type": "standard",
+          "description": "Insulin resistance and blood sugar dysregulation are associated with depression risk and may worsen outcomes. HbA1c reflects average blood glucose over 12 weeks; fasting insulin is a sensitive marker of early insulin resistance that is not routinely ordered.",
+          "availability": "HbA1c and fasting glucose via GP. Fasting insulin may require private testing."
+        },
+        {
+          "name": "Salivary cortisol (4-point or DUTCH panel)",
+          "type": "emerging",
+          "description": "Measures the diurnal cortisol rhythm \u2014 typically high in the morning and declining through the day. A flat or inverted rhythm indicates HPA axis dysregulation, which is common in chronic stress-related and melancholic depression. The DUTCH test also includes sex hormones and their metabolites.",
+          "availability": "Not available through most GPs. Ordered by functional medicine doctors, integrative practitioners, or private labs."
+        },
+        {
+          "name": "Coeliac serology (tTG-IgA and total IgA)",
+          "type": "standard",
+          "description": "Coeliac disease has well-documented neuropsychiatric manifestations including depression. All individuals with depression and any gastrointestinal symptoms or family history of coeliac disease should be screened. Must be tested while actively eating gluten.",
+          "availability": "Available via GP. Requires gluten consumption in the weeks before testing for accurate results."
+        },
+        {
+          "name": "Structured psychiatric assessment (PHQ-9, MADRS, or HAM-D)",
           "type": "gold_standard",
-          "description": "Clinician-administered diagnostic interview that systematically assesses depression diagnostic criteria, duration, severity, and rule-out other conditions. Gold standard for diagnosis.",
-          "availability": "Performed by psychiatrist, psychologist, or trained mental health clinician during initial assessment."
+          "description": "Clinician-administered tools that measure depression severity, track change over time, and distinguish depression from bipolar disorder, anxiety, or other conditions. These provide a baseline for treatment decisions.",
+          "availability": "Administered by psychiatrists, psychologists, or trained GPs."
         },
         {
-          "name": "Hamilton Depression Rating Scale (HAM-D) or Montgomery-\u00c5sberg Depression Rating Scale (MADRS)",
-          "type": "standard",
-          "description": "Clinician-administered severity rating scales with 17\u201321 items assessing mood, sleep, guilt, suicidality, etc. Used to track treatment response over time. More detailed than PHQ-9.",
-          "availability": "Administered by mental health professionals; typically used in clinical trials or specialized clinics."
-        },
-        {
-          "name": "Thyroid function tests (TSH, free T4)",
-          "type": "standard",
-          "description": "Blood tests to rule out hypothyroidism, which can mimic or contribute to depression. Essential first step because thyroid disorder is treatable and overlaps symptomatically with depression.",
-          "availability": "Ordered by primary care doctor or psychiatrist; routine lab test at any clinical facility."
-        },
-        {
-          "name": "Complete metabolic panel and CBC (complete blood count)",
-          "type": "standard",
-          "description": "Blood tests to check for anemia, electrolyte imbalances, liver or kidney dysfunction, and vitamin deficiencies (B12, folate) that can contribute to depression.",
-          "availability": "Ordered by primary care doctor; routine lab test."
-        },
-        {
-          "name": "Vitamin D and B12 levels",
-          "type": "standard",
-          "description": "Deficiency in vitamin D (especially relevant in SAD) or B12 can worsen depression or contribute to depressive symptoms. Blood draw required.",
-          "availability": "Can be ordered as part of metabolic panel or separately by any clinician."
-        },
-        {
-          "name": "Psychosocial assessment",
-          "type": "standard",
-          "description": "Qualitative interview by clinician exploring personal history, life stressors, trauma, substance use, social support, and functional impairment. Informs treatment planning.",
-          "availability": "Conducted by psychiatrist, psychologist, or therapist during intake."
-        },
-        {
-          "name": "Brain-derived neurotrophic factor (BDNF) or inflammatory markers (CRP, IL-6)",
+          "name": "Genetic pharmacogenomic testing (e.g. GeneSight, Genomind)",
           "type": "emerging",
-          "description": "Research-stage biomarkers that may correlate with depression severity or response to treatment. Not yet standard clinical practice. May help identify subtypes or predict treatment response.",
-          "availability": "Available in research settings and some specialized clinics; not routine clinical care."
-        },
-        {
-          "name": "Neuroimaging (fMRI, PET scan)",
-          "type": "emerging",
-          "description": "Brain imaging to visualize activity, metabolism, or structure. Useful for research and some treatment-resistant cases but not routinely diagnostic.",
-          "availability": "Specialized research centers or academic medical centers; expensive and not typically covered by insurance for routine depression."
+          "description": "Analyses genetic variants in drug-metabolising enzymes (CYP450 system) and neurotransmitter receptors to predict which antidepressants are likely to be effective or cause side effects. Can reduce trial-and-error prescribing significantly.",
+          "availability": "Available privately. Some psychiatrists and integrative practitioners order this routinely; mainstream prescribers less commonly."
         }
       ]
     },
     "related_conditions": [
       {
-        "name": "Anxiety disorders (generalized anxiety, social anxiety, panic disorder)",
+        "id": "anxiety",
+        "name": "Anxiety disorder",
         "relationship": "comorbid",
-        "explanation": "Depression and anxiety frequently co-occur; they share overlapping neurobiological pathways and risk factors. Many individuals experience both simultaneously."
+        "explanation": "Anxiety and depression co-occur in approximately 50% of cases. They share overlapping neurobiology (HPA axis dysregulation, amygdala hyperactivity) and frequently require integrated treatment. One often masks or precedes the other."
+      },
+      {
+        "id": "trauma",
+        "name": "Trauma / PTSD",
+        "relationship": "upstream",
+        "explanation": "Adverse childhood experiences and adult trauma are among the strongest known predictors of depression. Trauma dysregulates the stress response, alters brain structure, and drives chronic inflammation \u2014 all mechanisms implicated in depression. PTSD and depression frequently co-occur."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "Depression and fibromyalgia share high comorbidity, overlapping inflammatory and central sensitisation mechanisms, and a bidirectional relationship where each can worsen the other."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "upstream",
+        "explanation": "Hypothyroidism \u2014 including subclinical hypothyroidism \u2014 is a common and reversible cause of depressive symptoms. Thyroid function should be assessed in any person presenting with depression, particularly if fatigue and cognitive symptoms are prominent."
+      },
+      {
+        "id": "ibs",
+        "name": "Irritable bowel syndrome (IBS)",
+        "relationship": "comorbid",
+        "explanation": "IBS and depression co-occur far more often than chance would predict. The gut-brain axis is bidirectional: gut dysbiosis and inflammation can drive mood changes, while depression alters gut motility and permeability. Both conditions share central sensitisation mechanisms."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "mechanistic_link",
+        "explanation": "The gut microbiome produces neurotransmitters, influences vagal signalling, and modulates immune activation \u2014 all relevant to depression. Dysbiosis (disrupted microbiome composition) is increasingly recognised as a potential contributor to depressive symptoms via the gut-brain axis."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation",
+        "relationship": "comorbid",
+        "explanation": "Depression is associated with altered central nervous system pain processing. Central sensitisation \u2014 heightened neural reactivity \u2014 overlaps mechanistically with depression and is common in people with both depression and chronic pain."
+      },
+      {
+        "id": "adhd",
+        "name": "ADHD",
+        "relationship": "comorbid",
+        "explanation": "ADHD and depression co-occur frequently. ADHD often goes undiagnosed into adulthood and the chronic experience of underperformance, rejection sensitivity, and executive dysfunction can drive secondary depression. Conversely, depression can impair attention and be mistaken for ADHD."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "Autonomic dysfunction in POTS can produce low mood, brain fog, and fatigue that resembles or coexists with depression. Dysautonomia and depression share some autonomic nervous system overlap, and POTS is frequently missed as an underlying contributor to mood symptoms."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
+        "relationship": "comorbid",
+        "explanation": "Mast cell activation drives systemic inflammation and histamine release, both of which can affect mood and neurological function. MCAS is increasingly identified in people with treatment-resistant depression and multiple system symptoms."
+      },
+      {
+        "id": "hormonal",
+        "name": "Hormonal / menstrual cycle effects",
+        "relationship": "upstream",
+        "explanation": "Fluctuations in oestrogen and progesterone across the menstrual cycle, perimenopause, and postpartum period are major drivers of mood dysregulation. Premenstrual dysphoric disorder (PMDD) is a hormonally-driven depressive condition often misdiagnosed as general depression."
+      },
+      {
+        "id": "coeliac",
+        "name": "Coeliac disease",
+        "relationship": "upstream",
+        "explanation": "Coeliac disease has well-documented neuropsychiatric manifestations including depression. Undiagnosed coeliac disease causes chronic intestinal inflammation and nutrient malabsorption (B12, folate, iron, zinc) \u2014 all contributing to depressive pathology."
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "mechanistic_link",
+        "explanation": "Elevated histamine can affect the central nervous system, contributing to anxiety, irritability, and low mood. Histamine intolerance is rarely investigated in people with depression and may be a contributing factor in a subset of individuals."
+      },
+      {
+        "id": "endometriosis",
+        "name": "Endometriosis",
+        "relationship": "comorbid",
+        "explanation": "Endometriosis is associated with significantly elevated rates of depression. Chronic pain, diagnostic delay, hormonal dysregulation, and systemic inflammation all contribute. Depression in endometriosis is often undertreated and attributed to pain alone."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / HSD",
+        "relationship": "comorbid",
+        "explanation": "Hypermobile Ehlers-Danlos syndrome and hypermobility spectrum disorder carry high rates of anxiety and depression, likely through a combination of chronic pain, mast cell activation, autonomic dysfunction, and the psychological burden of a poorly-recognised chronic illness."
       },
       {
         "name": "Bipolar disorder",
+        "id": null,
         "relationship": "often_confused",
-        "explanation": "Bipolar disorder includes depressive episodes but is distinguished by episodes of mania or hypomania. Misdiagnosis of bipolar as unipolar depression can lead to inappropriate antidepressant use without mood stabilizer."
+        "explanation": "Bipolar disorder is frequently misdiagnosed as recurrent unipolar depression, particularly when hypomanic or manic episodes are mild or have not yet occurred. Antidepressants given without a mood stabiliser can trigger mixed states or rapid cycling in bipolar patients \u2014 making accurate diagnosis critical."
       },
       {
-        "name": "Persistent grief or bereavement",
+        "name": "Premenstrual dysphoric disorder (PMDD)",
+        "id": null,
         "relationship": "often_confused",
-        "explanation": "Normal grief from loss can resemble depression, but typically mood gradually improves and preserved ability to experience joy in others' company. Complicated grief that is severe and persistent may warrant depression diagnosis."
+        "explanation": "PMDD produces severe depressive and emotional symptoms that are strictly tied to the luteal phase of the menstrual cycle and resolve after menstruation. It is often misdiagnosed as general depression and requires hormonal rather than purely antidepressant treatment."
       },
       {
-        "name": "Hypothyroidism",
+        "name": "Chronic fatigue syndrome / ME-CFS",
+        "id": null,
+        "relationship": "often_confused",
+        "explanation": "ME-CFS is frequently misattributed to depression due to overlapping fatigue and functional impairment. Key distinctions include post-exertional malaise, orthostatic intolerance, and the fact that psychiatric treatment alone does not help ME-CFS. The two can co-occur."
+      },
+      {
+        "name": "Insulin resistance / metabolic syndrome",
+        "id": null,
         "relationship": "mechanistic_link",
-        "explanation": "Thyroid hormone is essential for neurotransmitter function and mood regulation. Hypothyroidism can cause or worsen depressive symptoms and must be ruled out before antidepressant trials."
-      },
-      {
-        "name": "Vitamin D or B12 deficiency",
-        "relationship": "mechanistic_link",
-        "explanation": "Both vitamins are essential for neurological function and mood regulation. Deficiency is associated with depressive symptoms and can be corrected with supplementation."
-      },
-      {
-        "name": "Sleep disorders (insomnia, sleep apnea)",
-        "relationship": "comorbid",
-        "explanation": "Sleep disruption is both a symptom of depression and a risk factor that worsens mood and cognition. Treating underlying sleep disorder often improves depression outcomes."
-      },
-      {
-        "name": "Chronic pain conditions",
-        "relationship": "comorbid",
-        "explanation": "Depression and chronic pain share overlapping neural pathways and genetic factors; each can exacerbate the other. Treatment often requires addressing both."
-      },
-      {
-        "name": "Substance use disorder",
-        "relationship": "comorbid",
-        "explanation": "Substances like alcohol or cannabis may temporarily ease depressive symptoms but worsen underlying depression over time. Untreated depression is a risk factor for substance misuse."
-      },
-      {
-        "name": "ADHD",
-        "relationship": "comorbid",
-        "explanation": "ADHD and depression often co-occur. ADHD-related executive dysfunction and failure can trigger depression, while depression can worsen ADHD symptoms."
-      },
-      {
-        "name": "Complex PTSD or trauma-related disorders",
-        "relationship": "mechanistic_link",
-        "explanation": "Trauma and chronic stress alter the brain regions and neurotransmitter systems involved in mood regulation, increasing depression risk. Trauma-informed treatment is often necessary."
+        "explanation": "Insulin resistance is associated with increased depression risk. Shared mechanisms include systemic inflammation, mitochondrial dysfunction, and HPA axis dysregulation. Some researchers propose 'metabolic depression' as a distinct subtype."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
-          "name": "Psychotherapy (Cognitive Behavioral Therapy, CBT)",
-          "category": "therapy",
-          "description": "A structured, evidence-based approach that teaches you to identify and challenge negative thought patterns and develop coping strategies. Typically 12\u201320 sessions. Helps break the cycle of negative thinking and avoidance.",
+          "name": "Structured physical exercise",
+          "category": "lifestyle",
+          "description": "Aerobic exercise \u2014 particularly 30\u201345 minutes three to five times per week \u2014 has robust evidence for reducing depressive symptoms. It increases BDNF (brain-derived neurotrophic factor), modulates inflammation, improves sleep, and regulates the HPA axis. Resistance training also shows benefit. Exercise is comparable to antidepressants in mild-to-moderate depression in meta-analyses.",
           "evidence_level": "strong",
-          "notes": "Effective for mild to moderate depression and as maintenance after recovery. Works better if you're willing to practice skills between sessions. May take 4\u20138 weeks to notice benefit."
+          "notes": "Starting very small (even 10-minute walks) and building gradually is more effective than ambitious plans that collapse. Accountability (a class, a walking partner) significantly increases adherence."
         },
         {
-          "name": "Psychotherapy (Interpersonal Therapy, IPT)",
-          "category": "therapy",
-          "description": "Focuses on relationships, life roles, and communication patterns. Helps identify how interpersonal conflicts or role changes contribute to depression and develop better coping strategies.",
+          "name": "Cognitive Behavioural Therapy (CBT)",
+          "category": "psychological",
+          "description": "CBT is one of the most evidence-based psychological treatments for depression. It targets distorted thinking patterns and behavioural avoidance that perpetuate low mood. It is as effective as antidepressants in mild-to-moderate depression and has lower relapse rates when discontinued.",
           "evidence_level": "strong",
-          "notes": "Particularly useful if depression is linked to relationship problems, grief, or major life transitions. Similar timeline and effectiveness to CBT."
+          "notes": "Quality varies significantly between therapists. Internet-delivered CBT (iCBT) programmes show meaningful benefit for those without access to in-person therapy."
         },
         {
-          "name": "Psychotherapy (Psychodynamic or exploratory therapy)",
-          "category": "therapy",
-          "description": "Explores how past experiences, unconscious patterns, and emotions shape current mood and behavior. Longer-term approach (6 months to years) than CBT or IPT.",
+          "name": "Behavioural Activation",
+          "category": "psychological",
+          "description": "A structured approach from CBT that counters depression's tendency to withdraw by scheduling valued and rewarding activities. Particularly effective when motivation is very low because it acts before waiting for mood to improve \u2014 behaviour comes first, mood follows.",
+          "evidence_level": "strong",
+          "notes": "Can be self-directed using workbooks. Starting with very small, easy activities and building gradually is essential."
+        },
+        {
+          "name": "Sleep hygiene and circadian regulation",
+          "category": "lifestyle",
+          "description": "Consistent sleep and wake times, morning light exposure, reduced evening light and screen exposure, and avoiding alcohol all stabilise the circadian system. Disrupted circadian rhythms are a central mechanism in depression. Regularising sleep timing can produce rapid improvements in mood.",
+          "evidence_level": "strong",
+          "notes": "Some people with depression sleep excessively \u2014 limiting sleep to a consistent window can be temporarily uncomfortable but improves mood regulation faster than permitting extended sleep."
+        },
+        {
+          "name": "Anti-inflammatory diet",
+          "category": "diet",
+          "description": "A diet rich in vegetables, oily fish, legumes, nuts, whole grains, and olive oil (Mediterranean pattern) and low in ultra-processed foods, refined sugar, and industrial seed oils reduces systemic inflammation and supports gut microbiome diversity. Multiple randomised controlled trials (including the SMILES trial) show dietary improvement reduces depression scores significantly.",
           "evidence_level": "moderate",
-          "notes": "Helpful for understanding root causes and patterns; less directive than CBT. May work well in combination with medication."
+          "notes": "Diet change is most impactful in those currently eating a poor-quality diet. It is not a replacement for psychological or pharmacological treatment in severe depression but is a meaningful adjunct."
         },
         {
-          "name": "Selective Serotonin Reuptake Inhibitors (SSRIs)",
+          "name": "Omega-3 fatty acids (EPA-dominant)",
+          "category": "supplement",
+          "description": "EPA (eicosapentaenoic acid) at doses of 1\u20132g per day has the strongest evidence among supplements for depression. It modulates inflammation, serotonin signalling, and membrane fluidity in neurons. Meta-analyses support benefit, particularly in people with elevated inflammation.",
+          "evidence_level": "moderate",
+          "notes": "EPA-dominant formulations (more EPA than DHA) are preferred based on trial evidence. Quality matters \u2014 choose fish oil with third-party purity testing. Takes 6\u201312 weeks to see full effect."
+        },
+        {
+          "name": "Antidepressant medication",
           "category": "medication",
-          "description": "First-line antidepressants (e.g., sertraline, citalopram, escitalopram) that increase available serotonin by blocking reuptake. Typical dose takes 4\u20138 weeks to show full effect. Effectiveness varies by individual.",
+          "description": "SSRIs, SNRIs, TCAs, and other antidepressant classes are effective for moderate-to-severe depression in many people. They work best as part of a broader treatment plan. Response rates are approximately 40\u201360% for a first antidepressant, improving with sequential trials or combination approaches.",
           "evidence_level": "strong",
-          "notes": "Takes trial-and-error to find the right medication and dose. Common side effects include nausea, sexual dysfunction, or sleep changes (usually temporary). Do not stop abruptly; taper under medical supervision."
+          "notes": "Not identifying the biological driver (e.g. thyroid dysfunction, nutrient deficiency) means antidepressants may provide partial relief at best. Side effects \u2014 including emotional blunting and sexual dysfunction \u2014 are common and often not adequately discussed. Discontinuation should be done slowly under supervision."
         },
         {
-          "name": "Serotonin-Norepinephrine Reuptake Inhibitors (SNRIs)",
-          "category": "medication",
-          "description": "Second-line option (e.g., venlafaxine, duloxetine) that affects both serotonin and norepinephrine. Similar timeline and effectiveness to SSRIs; may work better if SSRIs fail.",
+          "name": "Mindfulness-Based Cognitive Therapy (MBCT)",
+          "category": "psychological",
+          "description": "Combines mindfulness practices with cognitive therapy elements. Particularly effective at reducing relapse in people with three or more prior depressive episodes. Teaches the ability to observe thoughts without being captured by them.",
           "evidence_level": "strong",
-          "notes": "Same caveats about timing and side effects as SSRIs. May have slightly higher withdrawal potential."
+          "notes": "Less effective as an acute treatment for severe depression but highly effective as a maintenance strategy. Available as group programmes or through apps (e.g. Headspace, Woebot)."
         },
         {
-          "name": "Tricyclic antidepressants (TCAs) or other older classes",
-          "category": "medication",
-          "description": "Older antidepressants (e.g., amitriptyline) less commonly used as first-line due to side effects, but may be effective for treatment-resistant cases or co-occurring pain.",
-          "evidence_level": "moderate",
-          "notes": "More side effects (sedation, weight gain, dry mouth) than SSRIs. Require heart monitoring. Useful if SSRIs/SNRIs fail."
-        },
-        {
-          "name": "Atypical antipsychotics (adjunctive)",
-          "category": "medication",
-          "description": "Medications like aripiprazole or quetiapine added to an antidepressant when SSRI/SNRI alone is insufficient. Particularly useful in treatment-resistant depression.",
-          "evidence_level": "moderate",
-          "notes": "Side effects include weight gain, metabolic effects, sedation. Requires monitoring. Reserved for moderate to severe depression not responding to standard agents."
-        },
-        {
-          "name": "Ketamine or esketamine (Spravato)",
-          "category": "medication",
-          "description": "Rapid-acting antidepressants (work in hours to days rather than weeks) for severe or treatment-resistant depression, especially with suicidal ideation. Nasal spray or IV infusion.",
-          "evidence_level": "strong",
-          "notes": "Emerging treatment with growing evidence. Requires clinical setting for monitoring. Disassociation or euphoria possible. Often used alongside standard antidepressants."
-        },
-        {
-          "name": "Transcranial Magnetic Stimulation (TMS) or Deep TMS",
-          "category": "procedure",
-          "description": "Non-invasive brain stimulation using magnetic pulses to activate regions involved in mood. Typically 5 sessions per week for 4\u20136 weeks. Effective for treatment-resistant depression.",
-          "evidence_level": "moderate",
-          "notes": "Well-tolerated; mild headache or scalp discomfort possible. Requires outpatient visits. FDA-approved for treatment-resistant depression. Cost varies."
-        },
-        {
-          "name": "Electroconvulsive Therapy (ECT)",
-          "category": "procedure",
-          "description": "Under general anesthesia, controlled electrical current induces a brief seizure to reset brain activity. For severe, psychotic, or treatment-resistant depression with suicidality. 6\u201312 sessions over 2\u20134 weeks.",
-          "evidence_level": "strong",
-          "notes": "Most effective treatment for severe depression but carries risk of memory loss or cognitive effects. Requires hospital setting. Reserved for severe cases when other options fail."
-        },
-        {
-          "name": "Aerobic exercise",
+          "name": "Light therapy (for SAD and circadian disruption)",
           "category": "lifestyle",
-          "description": "Regular physical activity (150 min/week moderate intensity or 75 min/week vigorous) reduces depression severity, boosts mood via endorphins and neurotrophic factors. Walking, jogging, cycling, swimming all effective.",
+          "description": "A 10,000-lux bright light box used for 20\u201330 minutes upon waking is a first-line treatment for SAD. Evidence also supports its use as an adjunct in non-seasonal depression. Morning timing is critical \u2014 it advances the circadian phase and suppresses melatonin appropriately.",
           "evidence_level": "strong",
-          "notes": "Effect size comparable to medication in some studies. Benefit takes 2\u20134 weeks to emerge. Requires consistency. Structured exercise (class, trainer) increases adherence for some."
+          "notes": "Should be used with caution in anyone with potential bipolar disorder. Most benefit is seen within one to two weeks."
         },
         {
-          "name": "Light therapy (phototherapy)",
+          "name": "Social connection and structured social engagement",
           "category": "lifestyle",
-          "description": "Exposure to a bright light box (10,000 lux) for 20\u201330 minutes each morning, especially for seasonal affective disorder. Mechanism involves circadian rhythm regulation and serotonin production.",
+          "description": "Social isolation both causes and perpetuates depression. Deliberately scheduling regular social contact \u2014 even when motivation is absent \u2014 is a behavioural intervention with strong evidence. Volunteering, group activities, and support groups all show benefit.",
           "evidence_level": "strong",
-          "notes": "Most effective for SAD but may help non-seasonal depression too. Onset 3\u20137 days. Use within 1\u20132 hours of waking. Avoid if taking photosensitizing medications."
-        },
-        {
-          "name": "Sleep hygiene optimization",
-          "category": "lifestyle",
-          "description": "Consistent sleep schedule, dark/cool bedroom, limit screens before bed, avoid caffeine/alcohol, establish wind-down routine. Improved sleep quality can ease depressive symptoms.",
-          "evidence_level": "moderate",
-          "notes": "Often depression makes sleep improvement difficult; may need treatment for insomnia alongside depression therapy. Relaxation techniques (progressive muscle relaxation, breathing) help."
-        },
-        {
-          "name": "Cognitive restructuring or thought records",
-          "category": "lifestyle",
-          "description": "Practicing CBT skills outside therapy: record negative automatic thoughts, examine evidence, develop balanced alternative thoughts. Strengthens ability to challenge depressive thinking.",
-          "evidence_level": "moderate",
-          "notes": "Requires practice and patience. Apps like MindShift or Thought Diary can help structure this. Works best when combined with professional therapy."
-        },
-        {
-          "name": "Behavioral activation",
-          "category": "lifestyle",
-          "description": "Gradually increasing engagement in meaningful activities and time outside, even if you don't feel like it. Avoidance and isolation perpetuate depression; activity breaks the cycle.",
-          "evidence_level": "strong",
-          "notes": "Start small (10-minute walk, call a friend) and build. Mood often follows action rather than preceding it. Scheduling helps. One of the most effective self-help tools."
-        },
-        {
-          "name": "Social connection and support",
-          "category": "lifestyle",
-          "description": "Regular contact with trusted friends, family, or groups; reduce isolation. Social engagement activates reward circuits and provides practical and emotional support.",
-          "evidence_level": "strong",
-          "notes": "Depression makes reaching out feel impossible; start with low-pressure contact (text, call). Online communities or support groups count. Loneliness worsens depression."
-        },
-        {
-          "name": "Mindfulness meditation or acceptance-based therapy",
-          "category": "lifestyle",
-          "description": "Practicing non-judgmental awareness of thoughts and emotions without trying to change them. Reduces rumination and increases psychological flexibility. Apps like Headspace or Insight Timer offer guided practices.",
-          "evidence_level": "moderate",
-          "notes": "Takes practice; not immediately intuitive for everyone. Can feel unhelpful during severe depression. Best as adjunct to other treatments. 10\u201320 minutes daily most effective."
+          "notes": "Depression actively generates thoughts that social contact is pointless or unwanted. Acting against these thoughts (rather than waiting to feel motivated) is the key mechanism."
         },
         {
           "name": "Vitamin D supplementation",
           "category": "supplement",
-          "description": "If deficient, supplementation (1000\u20134000 IU daily depending on level and sun exposure) can improve mood, especially in winter or if you are indoors frequently. Check levels first.",
+          "description": "In people with confirmed deficiency, vitamin D supplementation (typically 1,000\u20134,000 IU daily) may improve mood. Evidence is stronger for deficient populations than for those with normal levels.",
           "evidence_level": "moderate",
-          "notes": "Only beneficial if you're deficient. Not effective for non-deficient individuals. Takes 4\u20138 weeks to see benefit. Combine with light exposure for SAD."
+          "notes": "Test before supplementing to establish baseline. Co-supplementing with vitamin K2 and magnesium improves vitamin D utilisation."
         },
         {
-          "name": "Omega-3 fatty acids (fish oil)",
+          "name": "Magnesium supplementation",
           "category": "supplement",
-          "description": "Eicosapentaenoic acid (EPA)-rich fish oil supplements may have modest antidepressant effects, possibly via reduction of inflammation and support of neuronal function.",
+          "description": "Magnesium plays a role in NMDA receptor function, HPA axis regulation, and neurotransmitter synthesis. Deficiency is common in Western diets and in people under chronic stress. Observational data consistently links low magnesium to higher depression rates.",
           "evidence_level": "moderate",
-          "notes": "Evidence is mixed. Dose typically 1\u20132g EPA/day. Takes 4\u20138 weeks. Fish oil can interact with blood thinners. Use only as adjunct to primary treatments."
+          "notes": "Glycinate and malate forms are generally better tolerated than oxide. Takes several weeks to see effect. 200\u2013400 mg daily is a typical dose range."
         },
         {
-          "name": "Folate (B9) and B12 supplementation",
-          "category": "supplement",
-          "description": "If deficient, supplementation improves mood and cognitive function. Particularly relevant if you have anemia, pernicious anemia, or poor diet.",
-          "evidence_level": "moderate",
-          "notes": "Only effective if deficient; check levels first. Supplementation can take weeks to months. Some people require B12 injections for absorption."
-        },
-        {
-          "name": "Reducing alcohol and avoiding recreational drugs",
-          "category": "lifestyle",
-          "description": "Alcohol is a CNS depressant and worsens mood over time, especially with regular use. Cannabis, stimulants, and other drugs can worsen depression or delay recovery.",
+          "name": "Ketamine and esketamine (for treatment-resistant depression)",
+          "category": "medication",
+          "description": "Ketamine and its derivative esketamine (Spravato) produce rapid antidepressant effects \u2014 often within hours \u2014 through NMDA receptor antagonism and BDNF release. Used in treatment-resistant depression and acute suicidal crises.",
           "evidence_level": "strong",
-          "notes": "Temporary relief from substances leads to worse depression rebound. If substance use is part of your presentation, addiction treatment may be necessary first."
+          "notes": "Effects are often temporary without maintenance dosing. Administered in controlled clinical settings. Not appropriate as a first-line treatment but represents a meaningful option when standard treatments have failed."
         },
         {
-          "name": "Structured routine and goal-setting",
-          "category": "lifestyle",
-          "description": "Establish a predictable daily routine (wake time, meals, bedtime) and set small, achievable goals. Structure counteracts the paralysis and purposelessness of depression.",
-          "evidence_level": "moderate",
-          "notes": "Start with tiny habits (brush teeth, one 10-minute task). Progress gradually. Avoiding perfectionism helps\u2014'good enough' counts."
-        },
-        {
-          "name": "Valued living or meaning-making",
-          "category": "lifestyle",
-          "description": "Identify what matters to you (relationships, creativity, helping others, learning) and take small steps toward those values, even if depressed. Reconnecting with meaning aids recovery.",
-          "evidence_level": "moderate",
-          "notes": "Requires reflection. Therapy can help clarify values. Pursuing values despite low mood is powerful; mood often follows."
+          "name": "Transcranial Magnetic Stimulation (TMS)",
+          "category": "medication",
+          "description": "A non-invasive brain stimulation technique that applies magnetic pulses to the prefrontal cortex. FDA-approved for treatment-resistant depression. Shows response rates of 50\u201360% in people who have not responded to antidepressants.",
+          "evidence_level": "strong",
+          "notes": "No systemic side effects. Requires daily sessions over 4\u20136 weeks. Increasingly available; costs remain a barrier without insurance coverage."
         }
       ],
       "things_to_avoid": [
-        "Alcohol and recreational drugs \u2014 they worsen depression and delay recovery.",
-        "Isolation and withdrawal from others \u2014 loneliness amplifies depressive thinking and removes support.",
-        "Rumination and dwelling on negative thoughts \u2014 feeds the depression cycle; redirect to present-moment or action.",
-        "Sleep deprivation \u2014 poor sleep worsens mood and cognitive symptoms dramatically.",
-        "Caffeine excess \u2014 can increase anxiety and worsen sleep, which exacerbates depression.",
-        "Skipping meals or poor nutrition \u2014 unstable blood sugar and nutrient deficiency worsen mood and energy.",
-        "Comparing yourself to others on social media \u2014 triggers worthlessness and reduces motivation.",
-        "Putting off seeking help or waiting for depression to 'go away on its own' \u2014 early treatment is more effective.",
-        "Abruptly stopping antidepressants without medical guidance \u2014 causes withdrawal symptoms and rebound depression.",
-        "Over-responsibility for others' emotions or self-blame \u2014 increases guilt and hopelessness.",
-        "Excess time in dark or confined spaces \u2014 impacts mood and circadian rhythm negatively."
+        "Alcohol \u2014 a central nervous system depressant that worsens mood over time and disrupts sleep architecture; used as self-medication by many people with depression, it reliably makes the condition worse",
+        "Prolonged social isolation \u2014 the behavioural withdrawal driven by depression is self-reinforcing; avoiding people worsens long-term outcomes even when contact feels temporarily easier to avoid",
+        "Excessive sleep \u2014 while rest is important, sleeping beyond 8\u20139 hours or napping extensively through the day disrupts circadian rhythm and perpetuates low mood and fatigue",
+        "Starting antidepressants without investigating potential reversible physical causes \u2014 thyroid dysfunction, anaemia, vitamin D deficiency, and hormonal imbalances can all be corrected, and missing them means treating a symptom while the driver continues",
+        "Abruptly stopping antidepressants \u2014 discontinuation syndrome can be severe and mistaken for relapse; a slow taper under supervision is essential",
+        "Ultra-processed, high-sugar diets \u2014 consistently associated with worse depression outcomes across large prospective studies; a dietary overhaul is not required but reducing processed food meaningfully matters",
+        "Caffeine in excess \u2014 can worsen anxiety that co-occurs with depression, disrupt sleep, and increase cortisol; affects individuals differently",
+        "Dismissing physical symptoms as 'just depression' \u2014 depression produces real physical symptoms and can also co-occur with physical illness; physical complaints in depressed individuals should still be investigated rather than automatically attributed to mood"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "Antidepressants are the beginning of treatment, not the solution. For many people, they reduce symptoms enough to function but do not resolve the underlying drivers. Stopping investigation once a prescription is written is one of the most common reasons people remain chronically unwell.",
+        "why_resisted": "Getting a prescription feels like a problem solved. It requires less time, effort, and confrontation than investigating lifestyle, trauma history, or biological root causes. Both patients and prescribers often accept partial improvement as adequate.",
+        "path_forward": "People who use the medication as a floor \u2014 giving them enough stability to do the harder investigative and lifestyle work \u2014 tend to achieve substantially better long-term outcomes than those who use it as a ceiling."
+      },
+      {
+        "truth": "Waiting to feel motivated before making changes is how depression keeps people stuck. Depression specifically attacks motivation and prediction of positive outcomes \u2014 waiting for it to lift before acting is physiologically backwards.",
+        "why_resisted": "The subjective experience of depression makes action feel pointless. The idea that feeling should come before action is deeply intuitive but precisely wrong in this condition.",
+        "path_forward": "Those who act first \u2014 in the smallest manageable increments \u2014 and wait for mood to follow (rather than the reverse) consistently describe this as the turning point. The brain updates its predictions based on actual experience, not on intention."
+      },
+      {
+        "truth": "Unresolved trauma is a major driver of depression that talking about symptoms without addressing does not fix. Processing the trauma \u2014 not just managing its symptoms \u2014 is often the difference between chronic management and genuine recovery.",
+        "why_resisted": "Trauma processing is painful, effortful, and requires a skilled therapist. Many people prefer symptom management to reprocessing painful memories. Trauma is also frequently not identified as the driver in standard care.",
+        "path_forward": "Trauma-focused therapies (EMDR, somatic therapy, trauma-informed CBT, or IFS) used with a skilled practitioner produce durable outcomes for many people with trauma-driven depression who have found conventional depression treatment inadequate."
+      },
+      {
+        "truth": "A diagnosis of 'depression' is a description, not an explanation. Two people with identical PHQ-9 scores may have completely different biological and psychological drivers. Treatment that doesn't investigate the driver is systematically limited.",
+        "why_resisted": "The diagnostic label feels like an answer. Investigating further \u2014 hormones, inflammation, gut health, sleep, trauma, metabolic factors \u2014 requires effort, often personal expense, and may not be supported by the prescribing clinician.",
+        "path_forward": "People who approach their depression as a pattern requiring explanation \u2014 rather than a condition requiring management \u2014 and who persist in investigating root causes, have the highest rates of substantive and lasting improvement."
+      },
+      {
+        "truth": "Social isolation makes depression worse, but depression makes social contact feel impossible. There is no comfortable way through this \u2014 re-engagement with people typically has to happen before it feels wanted.",
+        "why_resisted": "Depression generates convincing thoughts that others don't want contact, that reaching out is a burden, or that interactions will be draining. These feel like accurate perceptions but are symptoms of the condition.",
+        "path_forward": "People who establish small, low-stakes regular social contact \u2014 structured so that cancelling is harder than attending \u2014 consistently report this as one of the highest-impact changes they made, even though initiating it felt terrible."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Regular aerobic exercise (150 min/week at moderate intensity)",
-          "why_it_matters": "Exercise increases brain-derived neurotrophic factor (BDNF), boosts serotonin and endorphins, improves sleep, and reduces inflammation. Effect size equals medication in some studies.",
-          "how_to_start": "Choose an activity you tolerate (walking counts). Commit to three 20-minute sessions per week. Use a calendar or app to track. Partner with a friend for accountability.",
-          "timeline": "2\u20134 weeks to notice mood shift; 8\u201312 weeks for full benefit.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Evidence-based psychotherapy (CBT, IPT, or similar)",
-          "why_it_matters": "Therapy directly addresses the cognitive and behavioral patterns maintaining depression. Skills learned persist after therapy ends. Combination with medication is more effective than either alone.",
-          "how_to_start": "Find a therapist (psychiatrist, psychologist, licensed counselor) who specializes in depression and offers CBT or IPT. Most offer 30\u201350-minute weekly sessions. Start with intake to assess fit.",
-          "timeline": "6\u20138 weeks to initial benefit; 12\u201316 weeks for meaningful change. Maintenance benefits continue long-term.",
+          "lever": "Identify and address reversible physical drivers",
+          "why_it_matters": "Thyroid dysfunction, nutritional deficiencies (B12, vitamin D, iron, folate), hormonal dysregulation, and inflammatory conditions can produce or significantly worsen depression. Treating the driver, not the symptom, produces durable change that medication alone cannot replicate.",
+          "how_to_start": "Request a comprehensive blood panel including full thyroid function, vitamin D, B12, folate, ferritin, hs-CRP, and fasting glucose. If hormonal symptoms are present, add a sex hormone panel. Work with a practitioner willing to interpret results in the context of symptoms, not only against standard reference ranges.",
+          "timeline": "4\u201312 weeks to see meaningful change once identified deficiencies are corrected",
           "requires_professional": true
         },
         {
-          "lever": "Medication optimization (SSRI, SNRI, or other antidepressant as appropriate)",
-          "why_it_matters": "Restores neurochemical balance (serotonin, norepinephrine) that underlies depression. Allows energy and motivation to reengage with therapy and lifestyle changes. Prevents relapse.",
-          "how_to_start": "Consult a psychiatrist or your primary care doctor. Expect trial-and-error; first medication works 60% of the time. Typical trial is 4\u20136 weeks per medication at therapeutic dose.",
-          "timeline": "4\u20138 weeks to initial response; 8\u201312 weeks for full effect. May need dose adjustment or medication change.",
+          "lever": "Regular aerobic exercise",
+          "why_it_matters": "Exercise is the single most robustly evidenced lifestyle intervention for depression, with effect sizes comparable to antidepressants for mild-to-moderate severity. Its effects are multi-mechanistic: BDNF upregulation, HPA axis normalisation, anti-inflammatory action, sleep improvement, and social benefit if done in groups.",
+          "how_to_start": "Begin with 10-minute walks every day for two weeks. Add five minutes per week. Aim for 150 minutes of moderate activity weekly. Scheduling it at the same time each day substantially improves adherence.",
+          "timeline": "Mood benefits often detectable within 2\u20134 weeks; full effect over 8\u201312 weeks",
+          "requires_professional": false
+        },
+        {
+          "lever": "Process underlying trauma with a qualified therapist",
+          "why_it_matters": "Unprocessed trauma keeps the nervous system in a dysregulated state that perpetuates depression regardless of medication or lifestyle interventions. EMDR and somatic approaches process trauma at a neurobiological level that cognitive discussion alone does not reach.",
+          "how_to_start": "Seek a therapist specifically trained in EMDR, somatic experiencing, or trauma-focused CBT. General-purpose counselling is not equivalent. Trauma treatment requires a practitioner with specific training.",
+          "timeline": "Meaningful shift often occurs within 8\u201320 sessions, though complex trauma requires longer engagement",
           "requires_professional": true
         },
         {
-          "lever": "Consistent sleep schedule and sleep hygiene",
-          "why_it_matters": "Sleep disruption is both a symptom and a driver of depression. Poor sleep worsens concentration, mood regulation, and immune function. Stabilizing sleep amplifies other treatments.",
-          "how_to_start": "Set a fixed bedtime and wake time (even weekends). Keep bedroom dark, cool, quiet. No screens 30 min before bed. Avoid caffeine after 2 PM. Use relaxation techniques (breathing, progressive muscle relaxation).",
-          "timeline": "1\u20132 weeks to habit formation; 4\u20138 weeks to sleep quality improvement and mood lift.",
+          "lever": "Stabilise sleep and circadian rhythm",
+          "why_it_matters": "Sleep disruption is both a symptom and a cause of depression in a self-reinforcing cycle. Fixing sleep timing \u2014 even before sleep quality improves \u2014 stabilises mood regulation, reduces cortisol dysregulation, and increases response to other interventions.",
+          "how_to_start": "Set a consistent wake time and hold it regardless of sleep quality. Get outside or near a bright window within 30 minutes of waking. Reduce artificial light after dark. Avoid caffeine after noon.",
+          "timeline": "Circadian stabilisation begins within 1\u20132 weeks; mood benefit builds over 4\u20138 weeks",
           "requires_professional": false
         },
         {
-          "lever": "Social connection and support activation",
-          "why_it_matters": "Social isolation perpetuates depression; connection activates reward pathways, provides practical support, and buffers against relapse. Loneliness is a major depression trigger.",
-          "how_to_start": "Identify one person to text, call, or meet weekly. Join a group (class, support group, hobby club) to reduce pressure on single relationships. Start small (10-minute coffee).",
-          "timeline": "Immediate emotional benefit (1\u20132 weeks); sustained mood improvement over months as relationships deepen.",
+          "lever": "Substantially improve diet quality",
+          "why_it_matters": "Diet quality is consistently associated with depression outcomes in large prospective studies and multiple randomised trials. The gut microbiome, inflammation, and nutrient availability all mediate this relationship. Improving diet is a meaningful lever even when everything else is in place.",
+          "how_to_start": "Reduce ultra-processed foods and added sugar as a first step. Add oily fish twice weekly, increase colourful vegetables to two or more servings per meal, and consider a Mediterranean eating pattern as a framework.",
+          "timeline": "Gut microbiome changes begin within 2\u20134 weeks; mood benefit measurable at 12 weeks in trial data",
           "requires_professional": false
         },
         {
-          "lever": "Behavioral activation: scheduling meaningful activity",
-          "why_it_matters": "Depression paralyzes motivation; starting activities despite low mood breaks the cycle. As activity increases, mood follows. Avoidance perpetuates depression.",
-          "how_to_start": "List three small, concrete activities (not 'be happy,' but 'walk 10 min' or 'text a friend'). Schedule one per day. Do it even if you don't feel like it. Track completion.",
-          "timeline": "1\u20132 weeks for increased energy; 3\u20134 weeks for noticeable mood shift.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Addressing co-occurring medical conditions (thyroid, vitamin deficiency, sleep apnea, pain)",
-          "why_it_matters": "These conditions mimic or worsen depression and prevent recovery. Correcting them removes obstacles to treatment and can relieve depression on their own.",
-          "how_to_start": "Order basic labs: TSH, B12, vitamin D, CBC, metabolic panel. If sleep apnea suspected, request sleep study. Address deficiencies via supplementation or medication.",
-          "timeline": "Depends on condition; typically 4\u20138 weeks after correction to see mood improvement.",
+          "lever": "Engage in evidence-based psychological therapy (CBT or MBCT)",
+          "why_it_matters": "Psychological therapy addresses the cognitive and behavioural patterns that maintain depression. Unlike medication, well-delivered therapy produces durable change \u2014 reducing relapse rates long after treatment ends. It is most effective combined with other levers.",
+          "how_to_start": "Seek a CBT-trained therapist via a GP referral, IAPT (UK), or private directory. For relapse prevention, MBCT is particularly effective and is available in group format. iCBT programmes are a meaningful option when in-person access is limited.",
+          "timeline": "Initial benefit often within 4\u20138 sessions; full course typically 12\u201320 sessions",
           "requires_professional": true
-        },
-        {
-          "lever": "Light exposure (especially for seasonal depression)",
-          "why_it_matters": "Light regulates circadian rhythm and stimulates serotonin production. 10,000 lux for 20\u201330 min in morning is effective for seasonal and some non-seasonal depression.",
-          "how_to_start": "Use a light therapy box (SAD lamp) within 30 min of waking for 20\u201330 min, daily (or at least fall/winter). Position at eye level, 16\u201324 inches away.",
-          "timeline": "3\u20137 days for initial effect in SAD; 2\u20134 weeks for full benefit. Results plateau if stopped.",
-          "requires_professional": false
         }
       ],
       "common_mistakes": [
-        "Waiting for motivation before taking action \u2014 depression won't lift until you act; action precedes motivation.",
-        "Trying one treatment once, then abandoning it \u2014 antidepressants take 4\u20138 weeks; therapy takes 6\u201312 weeks. Impatience leads to unnecessary switches.",
-        "Combining multiple new treatments simultaneously \u2014 can't tell what works; also overwhelming. Start 1\u20132, evaluate in 6\u20138 weeks, then adjust.",
-        "Isolating and avoiding others \u2014 feeling like a burden or unworthy causes people to withdraw; isolation deepens depression.",
-        "Relying solely on medication without therapy \u2014 medication removes symptoms faster but doesn't teach coping skills; highest relapse rates.",
-        "Relying solely on therapy without medication for severe depression \u2014 therapy alone takes longer; medication can provide enough relief to engage in therapy.",
-        "Assuming depression is permanent or that recovery is impossible \u2014 depression is highly treatable; 80%+ respond to treatment.",
-        "Setting unrealistic expectations for timeline \u2014 expecting instant relief leads to premature medication/therapy changes.",
-        "Neglecting sleep thinking 'I'll rest when I'm better' \u2014 poor sleep perpetuates depression; prioritize sleep.",
-        "Stopping medication or therapy as soon as you feel better \u2014 tapering too quickly causes relapse; continue for 6\u201312 months after recovery.",
-        "Trying to 'think away' depression without behavioral support \u2014 cognitive insight alone is insufficient; behavior must change (exercise, contact, activity).",
-        "Using alcohol, cannabis, or other drugs to self-treat \u2014 provides temporary relief but deepens depression and delays recovery."
+        "Accepting partial improvement on antidepressants as the goal, without investigating why full remission was not achieved \u2014 partial response is common but should prompt further investigation, not indefinite maintenance on an inadequate dose or drug",
+        "Treating depression in isolation without addressing co-occurring anxiety, ADHD, or trauma \u2014 untreated comorbidities reliably prevent full recovery",
+        "Switching antidepressants repeatedly without investigating root causes \u2014 pharmacogenomic testing and root-cause investigation are more rational than continued sequential prescribing in non-responders",
+        "Using alcohol or cannabis to manage symptoms \u2014 both worsen depression over time, disrupt sleep, and create dependency risk; they are among the most common and most damaging self-medication strategies",
+        "Expecting consistent linear progress \u2014 depression recovery is non-linear, with good days triggering overactivity and setbacks triggering catastrophising; expecting fluctuation prevents these misinterpretations from derailing treatment",
+        "Stopping antidepressants abruptly or shortly after feeling better \u2014 relapse risk is highest in the first six months after symptom remission; standard guidance is to continue for at least 6\u201312 months after recovery in a first episode",
+        "Attributing all physical symptoms to depression without investigation \u2014 depression can be secondary to physical illness, and physical symptoms in depressed people still deserve clinical assessment"
       ]
     },
     "finding_help": {
       "specialists": [
         {
           "type": "Psychiatrist",
-          "role": "Medical doctor who diagnoses depression, prescribes and monitors antidepressant medications, evaluates for medical causes (thyroid, etc.), and manages complex or treatment-resistant cases. Can admit to psychiatric hospital if needed.",
-          "notes": "Essential if medication is part of your plan. Long wait times common; primary care doctors can initiate treatment while waiting for psychiatric appointment."
+          "role": "Provides expert diagnostic assessment \u2014 particularly important for ruling out bipolar disorder, ADHD, or psychotic features \u2014 and manages complex medication decisions including treatment-resistant cases, augmentation strategies, and pharmacogenomic-guided prescribing.",
+          "notes": "Most useful for moderate-to-severe, treatment-resistant, or diagnostically complex cases. Access via GP referral in most public health systems. Private access is faster but expensive."
         },
         {
-          "type": "Psychologist (clinical or counseling PhD/PsyD)",
-          "role": "Delivers evidence-based psychotherapy (CBT, IPT, psychodynamic), conducts psychological testing, and co-manages treatment with psychiatrist. Cannot prescribe medication in most states (exceptions: Louisiana, New Mexico, military).",
-          "notes": "Often first contact for therapy. Verify licensure and training in depression-specific modalities."
+          "type": "Clinical psychologist or CBT therapist",
+          "role": "Delivers evidence-based psychological therapies (CBT, MBCT, ACT, schema therapy) that produce durable change. Essential for anyone whose depression has psychological, trauma, or behavioural maintenance factors \u2014 which is most people.",
+          "notes": "Look for specific training in the therapy type needed. Trauma history warrants a trauma-trained therapist specifically. General counselling is not equivalent to structured CBT or trauma-focused approaches."
         },
         {
-          "type": "Licensed Professional Counselor (LPC) or Licensed Mental Health Counselor (LMHC)",
-          "role": "Trained therapist who provides psychotherapy, case management, and support. Masters-level training with supervised clinical hours. Regulated by state.",
-          "notes": "Accessible option; more affordable than psychologist in many areas. Verify credentials and depression experience."
+          "type": "EMDR or somatic therapist",
+          "role": "Processes underlying trauma that drives or maintains depression at a neurobiological level. Particularly important in people with adverse childhood experiences, PTSD, or complex trauma where standard depression treatment has been inadequate.",
+          "notes": "EMDR has a strong evidence base for trauma-related depression. Somatic approaches (SE, sensorimotor psychotherapy) are particularly useful where trauma is stored in the body. Look for accreditation with EMDR Association or equivalent."
         },
         {
-          "type": "Licensed Clinical Social Worker (LCSW)",
-          "role": "Masters-level clinician trained in therapy, case management, and systems-level support (benefits, housing, etc.). Often skilled in trauma-informed care.",
-          "notes": "Useful if depression is linked to social circumstances or trauma. May help navigate support systems."
+          "type": "Functional medicine or integrative medicine doctor",
+          "role": "Investigates biological drivers of depression including thyroid dysfunction, nutritional deficiencies, hormonal imbalances, inflammatory markers, gut health, and metabolic factors. Tends to order more comprehensive panels than mainstream GPs and interpret results in the context of symptoms.",
+          "notes": "Quality varies considerably. Look for practitioners with formal functional medicine training (e.g. IFMCP credential). Many mainstream doctors are sceptical of this approach, but for treatment-resistant cases it can identify reversible causes that standard care missed."
         },
         {
-          "type": "Primary Care Physician (MD, DO, NP, PA)",
-          "role": "Can screen for depression, rule out medical causes, prescribe and manage antidepressants, make specialist referrals. Often first contact.",
-          "notes": "Variable comfort with depression treatment. Some excellent, others undertrained. Good starting point; escalate to psychiatry if medication trials fail."
+          "type": "Endocrinologist",
+          "role": "Investigates and treats hormonal contributors to depression \u2014 particularly thyroid disorders, cortisol dysregulation (Cushing's or adrenal insufficiency), and reproductive hormone imbalances.",
+          "notes": "More appropriate than a GP for complex thyroid cases or suspected cortisol abnormalities. May not investigate sex hormones in the context of depression without prompting."
         },
         {
-          "type": "Nurse practitioner (NP, CNP) specializing in psychiatry",
-          "role": "Masters or doctoral-level nurse who can diagnose, prescribe medications, and manage depression. Often more accessible than psychiatrist; lower cost.",
-          "notes": "Growing availability; often shorter wait times than psychiatrists. Verify credentials and specialization."
+          "type": "Gynaecologist or menopause specialist",
+          "role": "For women where depression is tied to the menstrual cycle (PMDD), perimenopause, postpartum changes, or endometriosis \u2014 hormonal investigation and management is central and beyond the scope of most GPs.",
+          "notes": "Menopause specialists (BMS-accredited in the UK, NAMS in the US) are often better equipped for perimenopausal depression than general gynaecologists."
         },
         {
-          "type": "Physician Assistant (PA) specializing in psychiatry",
-          "role": "Similar role to NP: diagnosis, medication management, some clinics employ PAs for efficiency.",
-          "notes": "Works under MD supervision; should have psychiatrist available for consultation."
-        },
-        {
-          "type": "Occupational therapist (OT) or rehabilitation counselor",
-          "role": "Focuses on functional recovery, daily living skills, return-to-work planning, and meaningful activity engagement. Complements medical and psychotherapy treatment.",
-          "notes": "Particularly useful in severe depression or after hospitalization; helps rebuild structure and purpose."
-        },
-        {
-          "type": "Peer support specialist or peer counselor",
-          "role": "Individual with lived experience of mental illness who provides emotional support, navigation of services, and hope. Often in group settings or community mental health centers.",
-          "notes": "Valuable for ongoing support and reducing stigma; not a replacement for professional treatment but excellent adjunct."
+          "type": "GP / primary care physician",
+          "role": "First point of contact for initial assessment, blood test orders, and referrals. Can manage mild-to-moderate depression with medication and basic psychosocial advice.",
+          "notes": "Many GPs are time-limited and trained primarily in symptom management rather than root-cause investigation. Bringing a list of specific test requests (full thyroid panel, ferritin, vitamin D, hs-CRP, etc.) significantly improves the quality of the assessment."
         }
       ],
       "patient_communities": [
         {
-          "name": "National Alliance on Mental Illness (NAMI)",
-          "platform": "website, in-person support groups, helpline",
-          "url": "https://www.nami.org",
-          "notes": "Peer-led support groups, educational classes (NAMI Basics, peer-to-peer), family support, and comprehensive resources. Local chapters nationwide. Helpful for families and newly diagnosed."
+          "name": "r/depression",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/depression/",
+          "notes": "A large peer support community with a focus on emotional support and shared experience. Useful for reducing isolation. Moderated to maintain a safe space; not focused on medical investigation."
+        },
+        {
+          "name": "r/TreatmentResistantDepression",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/TreatmentResistantDepression/",
+          "notes": "Specifically for people who have not responded to standard treatments. Contains detailed discussions of ketamine, TMS, ECT, augmentation strategies, pharmacogenomics, and root-cause approaches. More medically detailed than general depression communities."
+        },
+        {
+          "name": "r/depressionregimens",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/depressionregimens/",
+          "notes": "Focuses on treatment protocols, supplement stacks, and evidence review. Attracts a more research-oriented audience. Useful for people investigating biological contributors and non-standard interventions."
         },
         {
           "name": "Depression and Bipolar Support Alliance (DBSA)",
-          "platform": "website, online and in-person support groups",
-          "url": "https://www.dbsalliance.org",
-          "notes": "Peer-led support groups specifically for depression (DBSA) and bipolar disorder; online and local options. Emphasis on self-management and peer support."
+          "platform": "Forum and in-person groups",
+          "url": "https://www.dbsalliance.org/",
+          "notes": "US-based peer support organisation with online and in-person support groups. Clinically informed. Particularly valuable for people navigating complex mood disorders."
         },
         {
-          "name": "7 Cups",
-          "platform": "Online peer support chat",
-          "url": "https://www.7cups.com",
-          "notes": "Free emotional support via chat with trained active listeners. Non-clinical; emphasis on listening and validation. 24/7 availability."
-        },
-        {
-          "name": "The Mighty",
-          "platform": "Online community platform",
-          "url": "https://www.themighty.com",
-          "notes": "User-generated content (stories, articles) on mental health. Normalizes depression, offers peer perspectives on treatment and coping. Engagement ranges from reading to writing."
-        },
-        {
-          "name": "Reddit communities: r/depression, r/mentalhealth, r/Antidepressants",
-          "platform": "Reddit",
-          "url": "https://www.reddit.com/r/depression, https://www.reddit.com/r/Antidepressants",
-          "notes": "Large, active communities with diverse membership. Good for peer experience-sharing and treatment questions. Moderated but variable quality; always consult doctors."
-        },
-        {
-          "name": "Crisis Text Line",
-          "platform": "Text support, website, resources",
-          "url": "https://www.crisistextline.org",
-          "notes": "Free, confidential text-based crisis support (text HOME to 741741). For suicidal ideation or acute crisis. 24/7."
-        },
-        {
-          "name": "National Suicide Prevention Lifeline (988)",
-          "platform": "Phone, text, chat",
-          "url": "https://988lifeline.org",
-          "notes": "Trained counselors 24/7. Call or text 988 (US). For any suicidal thoughts or mental health crisis. Immediate, confidential support."
-        },
-        {
-          "name": "Depression and Anxiety Anonymous",
-          "platform": "In-person support groups, online meetings",
-          "url": "https://www.daa.org",
-          "notes": "Peer-led, recovery-focused support groups. 12-step influenced but non-religious. Free."
-        },
-        {
-          "name": "International Association for Suicide Prevention (IASP)",
-          "platform": "Directory of hotlines worldwide",
-          "url": "https://www.iasp.info/resources/Crisis_Centres/",
-          "notes": "Worldwide resource for crisis lines and support by country. Useful if you're outside the US."
-        },
-        {
-          "name": "BumbleBee Forums (Antidepressants online community)",
-          "platform": "Online forum",
-          "url": "https://www.bumblebeeforums.co.uk",
-          "notes": "Moderated forum for discussion of antidepressants, side effects, tapering, and peer support. UK-based but international members."
+          "name": "Mind Community Forums",
+          "platform": "Forum",
+          "url": "https://www.mind.org.uk/information-support/your-stories/",
+          "notes": "UK-based mental health charity with community forums and detailed information resources. Useful for navigating NHS treatment options and peer support."
         }
       ]
     },
     "learning_resources": [
       {
+        "title": "Lost Connections: Why You're Depressed and How to Find Hope",
+        "type": "book",
+        "author_or_source": "Johann Hari",
+        "url": null,
+        "description": "A well-researched and accessible examination of the social, psychological, and environmental causes of depression that standard treatment often ignores. Challenges the serotonin deficiency narrative and explores what research actually shows about causes and solutions. Widely read and a useful starting point for people who feel their depression has not been adequately explained.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Depression Cure",
+        "type": "book",
+        "author_or_source": "Stephen Ilardi",
+        "url": null,
+        "description": "Based on Ilardi's Therapeutic Lifestyle Change (TLC) programme, this book outlines six lifestyle-based interventions with strong research support: exercise, omega-3s, light exposure, social engagement, meaningful activity, and sleep. Practical, evidence-based, and written for a general audience.",
+        "audience": "beginner"
+      },
+      {
         "title": "Feeling Good: The New Mood Therapy",
         "type": "book",
         "author_or_source": "David D. Burns",
         "url": null,
-        "description": "Classic, accessible introduction to cognitive therapy and CBT concepts applied to depression. Includes worksheets and practical techniques for identifying and challenging distorted thoughts. Groundbreaking and practical.",
+        "description": "The foundational self-help CBT book, with decades of evidence for reducing depressive symptoms. Used in clinical settings as a bibliotherapy tool. Covers cognitive distortions, behavioural activation, and relapse prevention in a structured, practical format.",
         "audience": "beginner"
       },
       {
-        "title": "The Anxiety and Phobia Workbook (and Depression companion)",
-        "type": "book",
-        "author_or_source": "Edmund J. Bourne",
-        "url": null,
-        "description": "Comprehensive workbook with step-by-step exercises for understanding and managing depression and anxiety. Interactive, practical, evidence-based.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Mind Over Mood: Change How You Feel by Changing the Way You Think",
-        "type": "book",
-        "author_or_source": "Dennis Greenberger & Christine A. Padesky",
-        "url": null,
-        "description": "Practical, illustrated guide to cognitive therapy. Clear explanations of thought records and behavioral experiments. Widely recommended by therapists as self-help complement.",
-        "audience": "beginner"
-      },
-      {
-        "title": "The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma",
+        "title": "The Body Keeps the Score",
         "type": "book",
         "author_or_source": "Bessel van der Kolk",
         "url": null,
-        "description": "In-depth exploration of how trauma affects the brain, body, and mood. Includes discussion of depression as trauma response. Dense but illuminating for understanding roots of depression.",
+        "description": "The definitive work on trauma's effects on the body and brain, and how unprocessed trauma drives chronic mental health conditions including depression. Essential reading for anyone whose depression has roots in adverse experiences. Also covers effective trauma treatments.",
         "audience": "intermediate"
       },
       {
-        "title": "Atomic Habits: An Easy and Proven Way to Build Good Habits and Break Bad Ones",
+        "title": "Inflamed: Deep Medicine and the Anatomy of Injustice",
         "type": "book",
-        "author_or_source": "James Clear",
+        "author_or_source": "Rupa Marya and Raj Patel",
         "url": null,
-        "description": "Practical guide to habit formation through small, incremental changes. Particularly useful for behavioral activation and building routines to support depression recovery.",
-        "audience": "beginner"
-      },
-      {
-        "title": "The Noonday Demon: An Atlas of Depression",
-        "type": "book",
-        "author_or_source": "Andrew Solomon",
-        "url": null,
-        "description": "In-depth, personal, and well-researched exploration of depression from biological, psychological, social, and philosophical angles. Long but comprehensive; combines memoir and science.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "Emotional First Aid: Healing Rejection, Guilt, Failure, and Other Everyday Hurts",
-        "type": "book",
-        "author_or_source": "Guy Winch",
-        "url": null,
-        "description": "Practical guide to managing emotional pain and building psychological resilience. Addresses rumination, shame, and loss\u2014common depression triggers.",
-        "audience": "beginner"
-      },
-      {
-        "title": "NAMI Guide to Peer Support",
-        "type": "website / resource",
-        "author_or_source": "National Alliance on Mental Illness",
-        "url": "https://www.nami.org",
-        "description": "Free, evidence-based guides on living with depression, medication, peer support, and family resources. Highly reputable, accessible, and comprehensive.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Depression and Bipolar Support Alliance (DBSA) Wellness Workbook",
-        "type": "book / workbook",
-        "author_or_source": "Depression and Bipolar Support Alliance",
-        "url": "https://www.dbsalliance.org",
-        "description": "Peer-created workbook on self-management, medication, therapy, and coping strategies. Practical, supportive, and evidence-informed.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Indistractable: How to Control Your Attention and Choose Your Life",
-        "type": "book",
-        "author_or_source": "Nir Eyal",
-        "url": null,
-        "description": "Practical guide to managing attention, procrastination, and distraction. Helpful for addressing executive dysfunction and inertia that accompany depression.",
-        "audience": "beginner"
-      },
-      {
-        "title": "The Art of Happiness: A Handbook for Living",
-        "type": "book",
-        "author_or_source": "Dalai Lama & Howard C. Cutler",
-        "url": null,
-        "description": "Philosophical and practical exploration of happiness, compassion, and resilience. Less clinical than CBT books but valuable for perspective and meaning-making during depression.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "Why Zebras Don't Get Ulcers: Stress, Health, and Human Nature",
-        "type": "book",
-        "author_or_source": "Robert Sapolsky",
-        "url": null,
-        "description": "Accessible explanation of stress physiology and its link to depression, immune function, and disease. Helps understand biological mechanisms underlying depression.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "DSM-5-TR (Diagnostic and Statistical Manual) depression criteria",
-        "type": "research paper / clinical reference",
-        "author_or_source": "American Psychiatric Association",
-        "url": "https://dsm.psychiatryonline.org",
-        "description": "Official diagnostic criteria for depression. Useful for understanding how clinicians diagnose, but dense and clinical. Reference rather than self-help.",
+        "description": "Explores the intersection of systemic inflammation, chronic illness, and social determinants of health. Useful for understanding the inflammatory model of depression in a broader social context.",
         "audience": "advanced"
       },
       {
-        "title": "PubMed Central (NIH depression research database)",
-        "type": "website / research database",
-        "author_or_source": "National Institutes of Health",
-        "url": "https://www.ncbi.nlm.nih.gov/pmc/",
-        "description": "Free access to thousands of peer-reviewed depression research articles. Search for topics of interest. Technical but authoritative.",
+        "title": "SMILES Trial (Supporting the Modification of Lifestyle in Lowered Emotional States)",
+        "type": "research paper",
+        "author_or_source": "Jacka et al., BMC Medicine, 2017",
+        "url": "https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-017-0791-y",
+        "description": "The landmark randomised controlled trial demonstrating that dietary improvement produces clinically meaningful reductions in depression scores. Foundational reading for understanding the diet-depression relationship and often cited in nutrition-psychiatry discussions.",
         "audience": "advanced"
       },
       {
-        "title": "The Science of Well-Being (online course)",
-        "type": "online course",
-        "author_or_source": "Yale University / Laurie Santos",
-        "url": "https://www.coursera.org/learn/the-science-of-well-being",
-        "description": "Free online course covering science-based strategies for happiness and mental health. Includes exercises and evidence-based techniques.",
+        "title": "Huberman Lab \u2014 Understanding Depression",
+        "type": "podcast",
+        "author_or_source": "Andrew Huberman (Stanford)",
+        "url": "https://www.hubermanlab.com/episode/understanding-and-treating-depression",
+        "description": "A detailed, neuroscience-informed episode covering the mechanisms of depression, evidence-based interventions including light therapy, exercise, and supplements, and an honest assessment of the antidepressant literature. Well-suited to people who want to understand the biology.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "National Institute of Mental Health \u2014 Depression",
+        "type": "website",
+        "author_or_source": "NIMH",
+        "url": "https://www.nimh.nih.gov/health/topics/depression",
+        "description": "Clear, authoritative information on diagnostic criteria, treatment options, and research updates. A reliable reference point for understanding the standard clinical landscape of depression.",
         "audience": "beginner"
       },
       {
-        "title": "Headspace app (mindfulness and meditation)",
-        "type": "mobile app",
-        "author_or_source": "Headspace",
-        "url": "https://www.headspace.com",
-        "description": "Guided meditation and mindfulness exercises tailored to depression, sleep, and stress. Free and paid tiers. Accessible entry into meditation.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Talkspace or BetterHelp (online therapy platforms)",
-        "type": "service / digital platform",
-        "author_or_source": "Talkspace / BetterHelp",
-        "url": "https://www.talkspace.com, https://www.betterhelp.com",
-        "description": "Licensed therapist-delivered therapy via text, phone, or video. Accessible, flexible, and often covered by insurance. Vetted providers.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Psycheducation on Depression (IOCDF resource)",
-        "type": "website / educational resource",
-        "author_or_source": "International OCD Foundation",
-        "url": "https://iocdf.org",
-        "description": "Clear, evidence-based explanations of depression, treatment options, and when to seek help. Accessible language.",
-        "audience": "beginner"
-      },
-      {
-        "title": "The Diagnostic Manual for Depression (ICD-11)",
-        "type": "research paper / clinical reference",
-        "author_or_source": "World Health Organization",
-        "url": "https://www.who.int/standards/classifications/classification-of-diseases",
-        "description": "International diagnostic criteria for depression. Technical; primarily for clinicians. Reference for understanding global diagnostic standards.",
-        "audience": "advanced"
+        "title": "The Mindful Way Through Depression",
+        "type": "book",
+        "author_or_source": "Williams, Teasdale, Segal, and Kabat-Zinn",
+        "url": null,
+        "description": "Written by the developers of MBCT, this book introduces the approach for preventing depressive relapse through mindfulness. Includes guided meditations and exercises. Particularly valuable for people with recurrent depression.",
+        "audience": "intermediate"
       }
     ],
     "relevance_signal": "**Gut symptoms alongside low mood, low energy, or loss of interest**. Constipation dominant. Symptoms are chronic and pervasive without clear dietary triggers."
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

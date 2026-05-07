@@ -1,0 +1,49 @@
+id: signals
+description: "Horizontal relevance signals for all sub-conditions of a parent condition"
+
+system: |
+  This condition information is for people who have chronic conditions — many of whom have
+  already seen doctors without getting answers and are now researching their symptoms
+  themselves. The goal is to help them understand what is happening in their bodies and
+  navigate toward the right kind of care or investigation. Clarity, plain language, and
+  practical usefulness matter most.
+
+  CRITICAL — Legal and ethical discipline:
+  1. Use INFORMATIONAL FRAMING throughout. Write about "people with this condition",
+     "those diagnosed", "individuals who experience" — NEVER "you have", "you should", or "you might".
+  2. Be factual, balanced, and evidence-based. Do not give personal medical advice.
+  3. Qualify speculative language: use "may", "often", "can help some people" rather
+     than definitive claims about cause or cure.
+
+user_template: |
+  Generate a distinguishing relevance signal for each sub-condition of {{parent_name}}.
+
+  Each signal is a single sentence (≤25 words) that helps a person recognise whether this condition matches their own pattern — before they have any diagnosis or test results.
+
+  Rules:
+  - Write from the patient's perspective: what do they notice about their own body, food reactions, or timing?
+  - Focus on triggers (specific foods, situations, timing) and felt symptoms — not test results, treatments, or clinical findings
+  - NEVER mention clinical tests, breath tests, antibiotics, probiotics, or bacteria — the reader hasn't done these
+  - Bold only the single most distinctive phrase (the key food, trigger, or symptom cluster) — do not bold anything else
+  - No hedging ("might", "sometimes", "can")
+  - Calibrate against peers: each signal must clearly contrast with the others in this list
+
+  CRITICAL — choose the strongest recognition hook, not the textbook one:
+  - For each condition, ask: "what would someone with this condition have ALREADY noticed about themselves, without keeping a food diary?"
+  - If reactions are delayed (≥several hours) or diffuse across many common foods, the patient CANNOT spot the food link reliably. A food-list signal will fail them. Lead instead with:
+      • a co-occurring pattern they already know (skin reactions to jewellery, period-linked flares, joint hypermobility, post-travel onset, post-antibiotic onset, recurring thrush, etc.)
+      • or the felt experience of "many 'healthy' foods seem to trigger me and I can't pin down which"
+  - Only lead with a food list when the reaction is fast and reliable enough that a sufferer would have already spotted the link (e.g. lactose, gluten, sorbitol, histamine — same-day, repeatable).
+  - The signal must work for someone who is currently confused about their pattern — not someone who has already figured it out.
+
+  Good pattern (fast reaction): "Symptoms flare specifically after **aged cheese, wine, or cured meat** — not after fresh food."
+  Good pattern (delayed/diffuse): "Skin reacts to **nickel jewellery, watches, or jeans buttons** — and gut flares feel diffuse, delayed, and triggered by many seemingly unrelated foods."
+  Bad pattern: "Symptoms improve with antibiotics or breath test shows elevated hydrogen." (mentions clinical context)
+  Bad pattern: "Specific bacterial strains are disrupted." (jargon the patient won't connect to their experience)
+  Bad pattern: "Symptoms after canned food, chocolate, legumes, nuts." (food list for a condition with delayed/diffuse reactions — patient cannot spot this on their own)
+
+  Sub-conditions (id, name, aliases):
+  {{conditions_json}}
+
+  Return a JSON object mapping each id to its signal string — nothing else:
+  {"lactase": "...", "fructose": "...", ...}

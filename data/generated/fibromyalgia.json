@@ -2,185 +2,221 @@
   "condition_id": "fibromyalgia",
   "condition_name": "Fibromyalgia",
   "generated_at": "2026-04-29T10:12:04.581867Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "Fibromyalgia is a chronic condition characterized by widespread musculoskeletal pain, fatigue, and sleep disturbance. It is not caused by joint damage or inflammation, but rather involves how the nervous system processes pain signals. Most people with fibromyalgia can improve symptoms through a combination of physical activity, sleep support, stress management, and sometimes medication.",
-    "detailed_summary": "Fibromyalgia is a central sensitisation disorder in which the nervous system amplifies pain signals throughout the body. People experience widespread musculoskeletal pain, profound fatigue, non-restorative sleep, and often cognitive difficulties (sometimes called 'fibro fog'). Fibromyalgia is not autoimmune or inflammatory in nature, though it frequently coexists with other conditions. Diagnosis is clinical\u2014based on symptom pattern and exclusion of other causes\u2014though tender point examination and recent diagnostic criteria have standardized recognition. The condition is heterogeneous; severity and symptom mix vary widely between individuals. While there is no cure, evidence-based management combining graded exercise, cognitive behavioural approaches, optimized sleep, and sometimes medication (pregabalin, duloxetine, milnacipran) can achieve meaningful and sustained improvement for many.",
+    "plain_summary": "Fibromyalgia is a chronic condition characterised by widespread musculoskeletal pain, profound fatigue, and a heightened sensitivity to pressure and touch throughout the body. It is now understood as a disorder of pain processing in the central nervous system, where pain signals are amplified beyond what would normally be expected from any tissue injury. There is no structural damage to muscles or joints \u2014 the nervous system itself becomes dysregulated, producing real pain without a peripheral source. It frequently occurs alongside other conditions such as IBS, sleep disorders, anxiety, and chronic fatigue.",
+    "detailed_summary": "Fibromyalgia is one of the most common chronic pain conditions, affecting an estimated 2\u20134% of the global population. Despite decades of controversy, it is now well-supported by neuroimaging and neurochemical research: people with fibromyalgia show objectively different patterns of brain activation in response to painful stimuli, elevated levels of pain-sensitising neurotransmitters such as substance P and glutamate, and reduced levels of inhibitory signals such as serotonin and norepinephrine. This is often described as central sensitisation \u2014 a state in which the central nervous system becomes persistently over-responsive, amplifying all sensory input.\n\nThe condition typically develops after a triggering event \u2014 a physical illness, injury, surgery, significant psychological stress, or trauma \u2014 although in some individuals onset is gradual without a clear precipitant. Women are diagnosed significantly more often than men, though male cases are thought to be systematically underdiagnosed. There is no diagnostic blood test or imaging finding; diagnosis is made clinically based on symptom pattern and the exclusion of other conditions.\n\nCore symptoms extend well beyond pain: cognitive dysfunction ('fibro fog'), non-restorative sleep, fatigue, headaches, and mood disturbance are integral features rather than secondary complaints. Gastrointestinal symptoms are extremely common and many individuals carry a concurrent IBS diagnosis. Sensory hypersensitivity \u2014 to light, sound, smell, and temperature \u2014 is frequently reported and fits within the central sensitisation framework.\n\nManagement is most effective when it is multimodal, combining graded movement, sleep improvement, pain neuroscience education, psychological approaches such as CBT or ACT, and in some cases medication. No single treatment resolves fibromyalgia, and many individuals cycle through disappointing medication trials before finding a broader approach that provides meaningful improvement. Self-directed investigation and research are common and legitimate \u2014 many people arrive at useful frameworks for their condition before any clinician does.",
     "prevalence": {
-      "summary": "Fibromyalgia affects roughly 2\u20133% of the general population, with significant female predominance.",
-      "estimate": "2\u20133% of the population; higher in older adults and women",
-      "notes": "Prevalence varies by geography and diagnostic criteria used. Women are 3\u20137 times more likely to receive a diagnosis, though this may reflect both biological differences and reporting bias. Underdiagnosis and overdiagnosis both occur; some patients are labelled fibromyalgia when another treatable cause exists, and others go undiagnosed because their symptoms are dismissed. Prevalence in some chronic disease populations (e.g., rheumatoid arthritis, lupus) is 10\u201330%."
+      "summary": "Affects roughly 2\u20134% of the global population, making it one of the most common chronic pain conditions.",
+      "estimate": "2\u20134% of the general population; some estimates range up to 7% depending on diagnostic criteria used",
+      "notes": "Women are diagnosed 2\u20133 times more often than men, though this likely reflects both biological predisposition and diagnostic bias \u2014 fibromyalgia in men is frequently missed or attributed to other causes. Prevalence rises with age, peaking in the 40\u201360 age group. The condition is likely underdiagnosed globally, with average diagnostic delay of several years in many countries."
     },
     "subgroups": [
       {
-        "name": "Primary fibromyalgia",
-        "description": "Fibromyalgia arising in the absence of a preceding condition or clear triggering event. Symptoms develop gradually over months to years.",
-        "distinguishing_features": [
-          "Insidious onset without identifiable trigger",
-          "Widespread pain not explained by structural damage",
-          "Often associated with genetic predisposition"
-        ]
-      },
-      {
-        "name": "Secondary fibromyalgia",
-        "description": "Fibromyalgia developing following or coexisting with another chronic condition (e.g., rheumatoid arthritis, systemic lupus erythematosus, post-viral illness).",
-        "distinguishing_features": [
-          "Clear temporal relationship to preceding illness or injury",
-          "May be triggered by infection, trauma, or immune activation",
-          "Presence of underlying inflammatory or post-infectious process"
-        ]
-      },
-      {
         "name": "Post-infectious fibromyalgia",
-        "description": "Fibromyalgia developing after acute infection (e.g., COVID-19, Epstein\u2013Barr virus, Lyme disease). Relates closely to long COVID and post-viral fatigue syndromes.",
+        "description": "Onset following a documented infectious illness \u2014 viral, bacterial, or parasitic. Conceptually overlaps with post-COVID syndrome and post-Lyme presentations. Central sensitisation may be triggered or accelerated by the immune and neurological effects of infection.",
         "distinguishing_features": [
-          "Onset within weeks to months of confirmed infection",
-          "Associated fatigue and cognitive symptoms often prominent",
-          "May be linked to persistent viral antigen or immune dysregulation"
+          "Clear temporal link between infection and symptom onset",
+          "May have additional features of post-viral illness such as post-exertional malaise",
+          "Often presents alongside fatigue severe enough to overlap with ME/CFS criteria",
+          "May respond differently to exercise-based approaches \u2014 pushing through fatigue can worsen symptoms"
+        ]
+      },
+      {
+        "name": "Trauma-associated fibromyalgia",
+        "description": "Develops following physical or psychological trauma, including accidents, surgery, adverse childhood experiences, or PTSD. The nervous system dysregulation in trauma and in fibromyalgia share overlapping mechanisms.",
+        "distinguishing_features": [
+          "Strong comorbidity with PTSD, complex trauma, or childhood adversity",
+          "Autonomic nervous system dysregulation may be prominent (hypervigilance, sleep disruption, startle responses)",
+          "Psychological trauma history is relevant to treatment planning",
+          "Trauma-informed approaches to pain management are particularly important in this group"
+        ]
+      },
+      {
+        "name": "Fibromyalgia with prominent cognitive symptoms",
+        "description": "A subgroup in which cognitive dysfunction \u2014 brain fog, memory problems, word-finding difficulty \u2014 is as disabling as the pain itself. Sometimes called 'fibro fog'.",
+        "distinguishing_features": [
+          "Memory problems, difficulty concentrating, and slowed thinking are foregrounded",
+          "Cognitive symptoms often fluctuate with pain flares",
+          "Can overlap with ADHD presentations, making differential diagnosis complex",
+          "More likely to interfere significantly with work and daily functioning"
+        ]
+      },
+      {
+        "name": "Fibromyalgia overlapping with hypermobility (hEDS/HSD)",
+        "description": "A significant proportion of people with hypermobile Ehlers-Danlos syndrome or hypermobility spectrum disorder also meet fibromyalgia criteria. The joint instability and repeated microtrauma in hypermobility may contribute to or amplify central sensitisation.",
+        "distinguishing_features": [
+          "Joint hypermobility on examination (Beighton score)",
+          "History of frequent sprains, dislocations, or joint pain since childhood",
+          "May have additional features of connective tissue fragility: soft skin, easy bruising, fatigue",
+          "Standard fibromyalgia exercise recommendations may need modification to protect unstable joints"
+        ]
+      },
+      {
+        "name": "Fibromyalgia with autonomic dysfunction (POTS overlap)",
+        "description": "Postural orthostatic tachycardia syndrome (POTS) and fibromyalgia co-occur at higher-than-expected rates, possibly because both involve dysregulation of the autonomic nervous system.",
+        "distinguishing_features": [
+          "Lightheadedness, palpitations, or near-fainting on standing",
+          "Fatigue is disproportionately severe",
+          "Heart rate increases significantly on moving from lying to standing",
+          "Temperature dysregulation and excessive sweating may be present"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Widespread musculoskeletal pain",
-        "category": "pain and sensation",
-        "notes": "Pain is present on both sides of the body, above and below the waist, along the spine. Pain quality is often described as aching, burning, or throbbing. Intensity fluctuates with activity, stress, weather, and sleep quality."
+        "symptom": "Widespread musculoskeletal pain affecting multiple body regions simultaneously",
+        "category": "pain",
+        "notes": "By definition must be present in multiple areas of the body. Often described as aching, burning, or stabbing. Can shift location day to day."
       },
       {
-        "symptom": "Fatigue or exhaustion",
-        "category": "energy and endurance",
-        "notes": "Profound fatigue disproportionate to activity level and not relieved by rest. Described as a deep, whole-body tiredness. Often worse in morning or after exertion (post-exertional malaise may occur)."
+        "symptom": "Allodynia \u2014 pain from normally non-painful stimuli such as light touch or clothing",
+        "category": "pain",
+        "notes": "A hallmark of central sensitisation. Even gentle pressure or texture on skin can be acutely painful, especially during flares."
       },
       {
-        "symptom": "Non-restorative sleep",
+        "symptom": "Tender points \u2014 localised areas of exaggerated pain on pressure",
+        "category": "pain",
+        "notes": "Previously central to diagnosis (18 tender point criteria), now less emphasised but still clinically recognised. Found at characteristic sites including neck, shoulders, hips, knees."
+      },
+      {
+        "symptom": "Profound, persistent fatigue not relieved by sleep",
+        "category": "energy",
+        "notes": "Distinct from ordinary tiredness. Many people describe feeling exhausted regardless of sleep duration. Fatigue often rivals pain as the most disabling feature."
+      },
+      {
+        "symptom": "Non-restorative sleep \u2014 waking unrefreshed despite adequate hours in bed",
         "category": "sleep",
-        "notes": "Sleep is light, fragmented, or unrefreshing despite adequate hours in bed. May involve frequent awakenings, vivid dreams, or sleep disturbances such as restless leg syndrome or sleep apnea."
+        "notes": "Studies show disruption of slow-wave (deep) sleep in fibromyalgia. Alpha wave intrusion during NREM sleep is a documented finding. Poor sleep worsens pain the next day, creating a reinforcing cycle."
       },
       {
-        "symptom": "Cognitive dysfunction ('fibro fog')",
+        "symptom": "Cognitive dysfunction ('fibro fog') \u2014 difficulty with memory, concentration, and word-finding",
         "category": "neurological",
-        "notes": "Difficulties with concentration, memory, processing speed, and mental clarity. Often most noticeable during flares or after poor sleep. Not dementia-related; cognition typically normalizes with symptom improvement."
+        "notes": "Reported by the majority of people with fibromyalgia. Neuroimaging shows objectively different patterns of cognitive processing. Often fluctuates with pain intensity and sleep quality."
       },
       {
-        "symptom": "Morning stiffness",
-        "category": "musculoskeletal",
-        "notes": "Joint and muscle stiffness, particularly in the morning or after prolonged immobility. Usually resolves within an hour of activity, distinguishing it from inflammatory arthritis."
-      },
-      {
-        "symptom": "Headaches or migraines",
+        "symptom": "Headaches, including tension-type and migraine",
         "category": "neurological",
-        "notes": "Tension-type headaches or migraines are common. May be exacerbated by stress, poor sleep, or prolonged muscle tension."
+        "notes": "Occur in a significant proportion of people with fibromyalgia. Likely share a common mechanism of central sensitisation and altered pain modulation."
       },
       {
-        "symptom": "Irritable bowel syndrome (IBS) symptoms",
+        "symptom": "Hypersensitivity to sensory stimuli \u2014 light, sound, smell, and temperature",
+        "category": "neurological",
+        "notes": "Often described as 'sensory overload'. Consistent with a generally dysregulated nervous system amplifying all incoming signals, not just pain."
+      },
+      {
+        "symptom": "Irritable bowel symptoms \u2014 abdominal pain, bloating, altered bowel habits",
         "category": "digestive",
-        "notes": "Abdominal pain, bloating, diarrhea, or constipation. Present in 40\u201390% of people with fibromyalgia. Often parallels pain and fatigue fluctuation."
+        "notes": "IBS is diagnosed in an estimated 30\u201370% of people with fibromyalgia. Both conditions involve central sensitisation of the gut-brain axis. The gut pain in IBS may share the same amplification mechanism as somatic pain."
       },
       {
-        "symptom": "Temperature sensitivity or dysregulation",
-        "category": "neurological",
-        "notes": "Difficulty tolerating heat or cold; feeling too hot or cold when others do not. May relate to autonomic nervous system dysregulation."
-      },
-      {
-        "symptom": "Sensitivity to sensory stimuli",
-        "category": "neurological",
-        "notes": "Heightened sensitivity to light, sound, touch, or smell. Light touch may feel painful (allodynia). Often worsens during flares."
-      },
-      {
-        "symptom": "Mood disturbances",
-        "category": "mental health",
-        "notes": "Anxiety and depression are common; present in 40\u201360% of people. May reflect chronic pain burden, sleep deprivation, neurochemical changes, or all three."
-      },
-      {
-        "symptom": "Dizziness or vertigo",
-        "category": "neurological",
-        "notes": "Lightheadedness, imbalance, or true vertigo. Often associated with autonomic dysfunction or medication side effects."
-      },
-      {
-        "symptom": "Muscle twitching or fasciculations",
+        "symptom": "Morning stiffness lasting more than 15\u201330 minutes",
         "category": "musculoskeletal",
-        "notes": "Visible or felt muscle twitches, particularly at rest or during fatigue. Benign and not indicative of neurological disease."
+        "notes": "Unlike rheumatoid arthritis, stiffness in fibromyalgia is not associated with joint inflammation or elevated inflammatory markers. Duration is usually shorter than in RA."
+      },
+      {
+        "symptom": "Mood disturbance \u2014 anxiety, low mood, or emotional dysregulation",
+        "category": "psychological",
+        "notes": "Bidirectional relationship: mood disorders share neurochemical pathways with fibromyalgia (serotonin, norepinephrine). It is often unclear which came first, and both require attention."
+      },
+      {
+        "symptom": "Restless legs syndrome \u2014 uncomfortable urge to move legs, especially at night",
+        "category": "neurological",
+        "notes": "Significantly more prevalent in people with fibromyalgia than in the general population. Contributes to sleep disruption and fatigue."
+      },
+      {
+        "symptom": "Bladder urgency or pain (interstitial cystitis-like symptoms)",
+        "category": "urological",
+        "notes": "Bladder hypersensitivity without infection or structural cause is common. Considered another manifestation of widespread central sensitisation."
+      },
+      {
+        "symptom": "Jaw pain and temporomandibular joint (TMJ) symptoms",
+        "category": "musculoskeletal",
+        "notes": "TMJ disorder is disproportionately common in fibromyalgia. Facial pain, jaw clicking, and difficulty chewing may occur."
+      },
+      {
+        "symptom": "Post-exertional symptom flares following physical or cognitive activity",
+        "category": "energy",
+        "notes": "Many people experience a worsening of pain and fatigue 12\u201348 hours after exertion. This is sometimes called post-exertional malaise, though this term is more formally associated with ME/CFS."
+      },
+      {
+        "symptom": "Raynaud's phenomenon \u2014 colour changes in fingers or toes in response to cold or stress",
+        "category": "vascular",
+        "notes": "Occurs more frequently in fibromyalgia than in the general population. May reflect autonomic nervous system dysregulation."
+      },
+      {
+        "symptom": "Dry eyes and dry mouth (sicca symptoms)",
+        "category": "systemic",
+        "notes": "Reported by a subset of people with fibromyalgia. Overlaps with Sj\u00f6gren's syndrome, which must be ruled out by a rheumatologist."
       }
     ],
     "testing": {
       "key_patterns": [
-        "Widespread pain index (WPI) score \u22657 and symptom severity scale (SSS) score \u22655, or WPI 4\u20136 and SSS \u22659, in the absence of structural or inflammatory explanation",
-        "Pain present for at least 3 months continuously",
-        "Exclusion of other conditions that mimic fibromyalgia (thyroid disease, celiac disease, inflammatory arthritis, myositis, vitamin deficiency)",
-        "No objective findings on physical examination (joints, muscles, nerves appear normal)",
-        "Sleep disturbance and/or fatigue as cardinal accompanying features"
+        "Widespread pain (present in multiple body quadrants for at least 3 months) with no other cause identified after workup",
+        "Normal or near-normal standard laboratory results \u2014 absence of inflammation markers, normal ANA, normal thyroid, normal full blood count \u2014 in the context of significant symptoms",
+        "Widespread Pain Index (WPI) \u2265 7 combined with Symptom Severity Scale (SSS) \u2265 5, or WPI 4\u20136 with SSS \u2265 9 (2016 ACR diagnostic criteria)",
+        "Pattern of non-restorative sleep, fatigue, and cognitive symptoms accompanying widespread pain",
+        "History of a triggering event (illness, trauma, surgery, stress) followed by onset or marked worsening of pain",
+        "Disproportionate pain responses to examination \u2014 pain on pressure at multiple sites with normal joint and tissue findings"
       ],
       "at_home": [
         {
-          "name": "Sleep diary",
-          "description": "Record sleep timing, quality, and disruptions daily for 2 weeks. Note any patterns (e.g., worse after high activity days, correlation with fatigue or pain). Share with your doctor to identify sleep issues amenable to targeted intervention.",
-          "safety_notes": "Tracking sleep can itself cause anxiety in some people; if it increases worry, keep records brief and focus on patterns rather than perfection."
+          "name": "Symptom diary with pain mapping",
+          "description": "Keeping a daily log of pain locations, intensity (0\u201310 scale), sleep quality, fatigue, and potential triggers helps establish the fluctuating, widespread pattern characteristic of fibromyalgia. A body diagram to mark pain locations each day can reveal the multi-site, shifting nature of the pain and distinguish it from localised structural problems.",
+          "safety_notes": "This is a safe observational practice. Obsessive tracking can increase pain focus in some people \u2014 aim for a brief daily record rather than continuous monitoring."
         },
         {
-          "name": "Activity and symptom log",
-          "description": "Record daily activities (type, duration, intensity), pain level, fatigue, and any triggers (stress, weather, food, menstrual cycle phase). Track for 2\u20134 weeks to identify personal triggers and dose\u2013response relationships between activity and symptoms.",
-          "safety_notes": "Do not use this to progressively reduce activity out of fear; the goal is to identify sustainable activity patterns, not to justify complete rest."
+          "name": "Sleep quality self-assessment",
+          "description": "Tracking how rested one feels on waking (regardless of hours slept) is a key data point. Non-restorative sleep is a central feature of fibromyalgia and useful to document for clinical appointments. Note whether poor sleep reliably worsens pain the following day.",
+          "safety_notes": "No safety concerns. Some sleep tracking devices (wearables) can increase anxiety about sleep quality \u2014 use them as a data tool rather than a performance measure."
         },
         {
-          "name": "Tender point self-assessment",
-          "description": "The traditional 18-point tender point examination is no longer required for diagnosis, but you can assess body regions (neck, shoulders, chest, lower back, hips, knees) for tenderness. Press firmly on muscle tissue and note pain response. This is not diagnostic on its own.",
-          "safety_notes": "Self-examination is rough and may be unreliable; clinical assessment by a trained physician is more accurate."
+          "name": "Activity-symptom pacing log",
+          "description": "Recording what activities precede flares helps identify post-exertional patterns. Note the timing: fibromyalgia flares often occur 12\u201348 hours after an activity, rather than immediately. This information shapes safe activity management and is useful evidence for clinicians.",
+          "safety_notes": "Avoid using this log to justify complete inactivity \u2014 gradual movement remains important. The goal is pattern recognition, not avoidance."
+        },
+        {
+          "name": "2016 ACR Self-Report Criteria (online tools)",
+          "description": "The 2016 American College of Rheumatology criteria include a patient-reported Widespread Pain Index and Symptom Severity Scale that can be completed independently. Several validated online versions exist. These do not replace clinical diagnosis but can help individuals recognise whether their symptom pattern fits and approach a clinician with structured information.",
+          "safety_notes": "Self-scoring tools are a starting point only. Many other conditions can produce similar symptom patterns and should be ruled out clinically."
         }
       ],
       "clinical": [
         {
-          "name": "Widespread pain index (WPI) and symptom severity scale (SSS)",
-          "type": "standard",
-          "description": "Diagnostic criteria standardized by the American College of Rheumatology (2010, revised 2016). WPI counts the number of body regions with pain (0\u201319); SSS rates fatigue, non-restorative sleep, and cognitive symptoms on a 0\u20133 scale. Combined score helps confirm fibromyalgia diagnosis.",
-          "availability": "Any primary care doctor, rheumatologist, or pain specialist can administer these during a routine visit. No special equipment needed."
+          "name": "Exclusion blood panel",
+          "type": "gold_standard",
+          "description": "There is no diagnostic blood test for fibromyalgia. Clinical evaluation requires ruling out conditions that mimic it: full blood count, ESR, CRP, ANA, rheumatoid factor, anti-CCP, thyroid function (TSH/T4), vitamin D, B12, ferritin, calcium, and fasting glucose. In fibromyalgia these are typically normal or only mildly abnormal, which is itself diagnostically informative.",
+          "availability": "Orderable by any GP or general practitioner. A rheumatologist will often order a more comprehensive panel."
         },
         {
-          "name": "Thyroid function (TSH, free T4)",
-          "type": "standard",
-          "description": "Thyroid dysfunction (hypothyroidism or Hashimoto's) commonly coexists with fibromyalgia and presents with overlapping symptoms (fatigue, pain, mood changes). Testing rules out or identifies thyroid disease requiring separate treatment.",
-          "availability": "Ordered by any primary care doctor via blood test; routine lab."
+          "name": "Clinical examination using 2016 ACR Diagnostic Criteria",
+          "type": "gold_standard",
+          "description": "The current gold standard is a clinical assessment applying the 2016 American College of Rheumatology criteria: Widespread Pain Index (WPI) scoring 19 anatomical regions, and Symptom Severity Scale (SSS) covering fatigue, non-restorative sleep, and cognitive symptoms. No tender point count is required under current criteria, though palpation of characteristic tender sites remains informative.",
+          "availability": "Should be performed by a rheumatologist, pain specialist, or experienced GP. Many clinicians remain unfamiliar with current criteria and still apply outdated criteria \u2014 bringing a printed copy of the 2016 criteria to appointments can be helpful."
         },
         {
-          "name": "Vitamin B12, folate, vitamin D levels",
+          "name": "Polysomnography (sleep study)",
           "type": "standard",
-          "description": "Deficiencies in these vitamins can mimic or exacerbate fibromyalgia-like symptoms. Testing identifies correctable causes of fatigue and pain.",
-          "availability": "Routine blood test ordered by primary care; available everywhere."
+          "description": "Formal overnight sleep study measuring brain activity, breathing, oxygen levels, and movement. Can identify alpha-wave intrusion during deep sleep (associated with fibromyalgia), sleep apnoea, or periodic limb movement disorder \u2014 all of which worsen fibromyalgia symptoms if present and untreated.",
+          "availability": "Referral through a GP or sleep medicine specialist. Not routinely ordered for fibromyalgia but indicated when sleep apnoea or significant sleep disorder is suspected."
         },
         {
-          "name": "Celiac serology (tissue transglutaminase IgA, total IgA)",
-          "type": "standard",
-          "description": "Celiac disease and non-celiac gluten sensitivity can present with widespread pain, fatigue, and GI symptoms mimicking fibromyalgia. Serological testing screens for celiac; a subset of people respond to gluten avoidance.",
-          "availability": "Blood test ordered by primary care or gastroenterologist."
-        },
-        {
-          "name": "Inflammatory markers (ESR, CRP)",
-          "type": "standard",
-          "description": "Erythrocyte sedimentation rate and C-reactive protein are normal in fibromyalgia, helping exclude inflammatory arthritis, lupus, or infection. Elevated levels prompt investigation for alternative diagnoses.",
-          "availability": "Standard blood tests; available everywhere."
-        },
-        {
-          "name": "Antinuclear antibody (ANA) screening",
-          "type": "standard",
-          "description": "Negative ANA helps exclude systemic lupus erythematosus, Sj\u00f6gren's syndrome, and other autoimmune conditions that may coexist with or masquerade as fibromyalgia.",
-          "availability": "Blood test ordered by primary care or rheumatologist."
-        },
-        {
-          "name": "Sleep study (polysomnography)",
+          "name": "Quantitative Sensory Testing (QST)",
           "type": "emerging",
-          "description": "Formal sleep study can identify non-restorative sleep patterns, sleep apnea, restless leg syndrome, or periodic leg movements\u2014treatable contributors to fibromyalgia symptoms. Not routine but useful if sleep intervention is ineffective.",
-          "availability": "Ordered by primary care or sleep medicine specialist; requires overnight lab or home monitoring."
+          "description": "Standardised protocol measuring pain thresholds and sensory processing using calibrated pressure, temperature, and vibrational stimuli. Can objectively document central sensitisation and abnormal pain modulation. Used in research settings and increasingly in specialised pain clinics.",
+          "availability": "Available at academic pain centres and some specialist clinics. Not routinely available in general practice. Useful in complex or contested cases."
         },
         {
-          "name": "Quantitative sensory testing (QST) or functional MRI",
+          "name": "Functional MRI (fMRI) \u2014 research context",
           "type": "emerging",
-          "description": "Research tools measuring pain sensitivity and central nervous system activation. Can help confirm central sensitization but are not diagnostic and rarely change management. Mainly used in research settings.",
-          "availability": "Available primarily in research centers or specialized pain clinics; not routine clinical practice."
+          "description": "Research studies have consistently demonstrated abnormal patterns of brain activation in people with fibromyalgia, including altered default mode network connectivity and amplified responses to pain stimuli. Not a clinical diagnostic tool but provides strong mechanistic validation that fibromyalgia involves measurable neurological changes.",
+          "availability": "Research settings only. Not available as a clinical diagnostic test."
         },
         {
-          "name": "Rheumatologic examination and consultation",
+          "name": "Rheumatological assessment",
           "type": "standard",
-          "description": "Thorough clinical assessment by a rheumatologist rules out inflammatory arthritis, lupus, myositis, and other mimics. Important if diagnosis is uncertain or if patient has objective findings (joint swelling, rashes, muscle weakness).",
-          "availability": "Referral from primary care to rheumatology; availability varies by location."
+          "description": "Full joint and musculoskeletal examination to rule out inflammatory arthritis, lupus, Sj\u00f6gren's syndrome, myositis, and other systemic rheumatological conditions that can mimic or co-exist with fibromyalgia.",
+          "availability": "Via referral to a rheumatologist. Often the specialist who makes or confirms the fibromyalgia diagnosis after excluding other conditions."
         }
       ]
     },
@@ -189,67 +225,103 @@
         "id": "central_sensitisation",
         "name": "Central sensitisation",
         "relationship": "mechanistic_link",
-        "explanation": "Fibromyalgia is a prototypical central sensitization disorder\u2014the nervous system amplifies pain signals and lowers pain threshold. Understanding central sensitization is key to both diagnosis and treatment approach."
+        "explanation": "Central sensitisation is the core neurological mechanism underlying fibromyalgia \u2014 the persistent up-regulation of pain processing in the central nervous system that produces amplified, widespread pain without peripheral tissue damage. Fibromyalgia is often considered the most common clinical expression of central sensitisation syndrome."
+      },
+      {
+        "id": "ibs",
+        "name": "Irritable bowel syndrome (IBS)",
+        "relationship": "comorbid",
+        "explanation": "IBS is present in an estimated 30\u201370% of people with fibromyalgia, far exceeding chance. Both conditions involve central sensitisation of visceral and somatic pain pathways and share features of gut-brain axis dysregulation. They frequently co-occur as part of a broader central sensitivity syndrome."
       },
       {
         "id": "pots",
         "name": "POTS / dysautonomia",
         "relationship": "comorbid",
-        "explanation": "Autonomic nervous system dysregulation co-occurs in many people with fibromyalgia. Symptoms overlap (dizziness, temperature dysregulation, palpitations) and both benefit from similar management approaches (graded exercise, hydration, salt intake)."
+        "explanation": "Postural orthostatic tachycardia syndrome and fibromyalgia co-occur at significantly elevated rates. Both involve autonomic nervous system dysregulation, and the overlap suggests shared pathophysiological pathways. POTS can contribute to fatigue and cognitive symptoms in fibromyalgia."
       },
       {
         "id": "eds",
-        "name": "Hypermobile EDS / HSD",
+        "name": "hEDS / Hypermobility spectrum disorder",
         "relationship": "comorbid",
-        "explanation": "Hypermobility spectrum disorder and Ehlers-Danlos syndrome often co-occur with fibromyalgia. Both involve nervous system sensitization and benefit from similar conservative management, though EDS requires distinct precautions around manipulation and aggressive stretching."
+        "explanation": "Hypermobile Ehlers-Danlos syndrome and hypermobility spectrum disorder are significantly over-represented in fibromyalgia populations. Joint instability, repeated microtrauma, and the chronic pain burden of hypermobility may sensitise the central nervous system and precipitate or amplify fibromyalgia."
       },
       {
         "id": "anxiety",
         "name": "Anxiety disorder",
         "relationship": "comorbid",
-        "explanation": "Anxiety is present in 40\u201360% of people with fibromyalgia. Anxiety and fibromyalgia amplify each other; treating anxiety directly often improves pain and fatigue."
+        "explanation": "Anxiety disorders are significantly more prevalent in fibromyalgia than in the general population. The relationship is bidirectional: chronic pain amplifies anxiety, and anxiety amplifies pain perception. Both share serotonergic and noradrenergic dysregulation."
       },
       {
         "id": "depression",
         "name": "Depression",
         "relationship": "comorbid",
-        "explanation": "Depression is common, driven by chronic pain, fatigue, and sleep disruption as much as by neurochemical factors. Addressing sleep, activity, and pain management often improves mood without additional medication."
-      },
-      {
-        "id": "functional_dyspepsia",
-        "name": "Functional dyspepsia",
-        "relationship": "downstream",
-        "explanation": "Fibromyalgia and functional dyspepsia share central sensitization mechanisms. Many people with fibromyalgia experience IBS-like symptoms or dyspepsia, reflecting pain amplification in the GI tract."
-      },
-      {
-        "id": "thyroid",
-        "name": "Thyroid dysfunction",
-        "relationship": "comorbid",
-        "explanation": "Hypothyroidism and Hashimoto's thyroiditis co-occur frequently with fibromyalgia and present with overlapping symptoms. Thyroid testing and correction (if needed) is essential before attributing all symptoms to fibromyalgia."
-      },
-      {
-        "id": "endometriosis",
-        "name": "Endometriosis",
-        "relationship": "comorbid",
-        "explanation": "Endometriosis and fibromyalgia both involve centralized pain and are more common in women. They frequently coexist and may share underlying mechanisms of pain sensitization."
-      },
-      {
-        "id": "hormonal",
-        "name": "Hormonal / menstrual cycle effects",
-        "relationship": "mechanistic_link",
-        "explanation": "Fibromyalgia symptoms often fluctuate with the menstrual cycle, reflecting hormonal influences on pain processing and central sensitization. Tracking and understanding these patterns is important for management."
+        "explanation": "Major depression co-occurs with fibromyalgia at rates of 20\u201340%. The neurochemical pathways involved in mood regulation (serotonin, norepinephrine) are the same ones implicated in descending pain inhibition, explaining both the overlap and why SNRIs address both conditions simultaneously."
       },
       {
         "id": "trauma",
         "name": "Trauma / PTSD",
         "relationship": "upstream",
-        "explanation": "History of physical or emotional trauma is common in people with fibromyalgia and may contribute to central sensitization and autonomic dysregulation. Trauma-informed care is important; some patients benefit from trauma-specific therapies."
+        "explanation": "Adverse childhood experiences, physical trauma, and PTSD are strongly associated with fibromyalgia onset. Trauma dysregulates the HPA axis and autonomic nervous system in ways that can lower pain thresholds and promote central sensitisation. Addressing unresolved trauma is often necessary for meaningful symptom improvement."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "often_confused",
+        "explanation": "Hypothyroidism produces fatigue, muscle pain, cognitive impairment, and cold intolerance that closely mimics fibromyalgia. Thyroid function testing is essential before a fibromyalgia diagnosis is confirmed. Some people carry a fibromyalgia label when undertreated hypothyroidism is the primary driver."
       },
       {
         "id": "mcas",
-        "name": "Mast cell activation syndrome",
+        "name": "Mast cell activation syndrome (MCAS)",
         "relationship": "comorbid",
-        "explanation": "Some people with fibromyalgia have concurrent mast cell activation, presenting with flushing, temperature dysregulation, and GI symptoms. The overlap is not fully understood but both conditions benefit from stress reduction and trigger avoidance."
+        "explanation": "MCAS and fibromyalgia co-occur more often than expected, particularly in the hypermobility-POTS-fibromyalgia cluster. Mast cell mediators can sensitise peripheral pain receptors and contribute to neuroinflammation, potentially driving or maintaining central sensitisation."
+      },
+      {
+        "id": "endometriosis",
+        "name": "Endometriosis",
+        "relationship": "comorbid",
+        "explanation": "Women with endometriosis have elevated rates of fibromyalgia. Chronic pelvic pain from endometriosis may over time sensitise central pain pathways, leading to widespread pain that persists even when endometriosis lesions are treated. Both conditions share central sensitisation as a key mechanism."
+      },
+      {
+        "id": "functional_dyspepsia",
+        "name": "Functional dyspepsia",
+        "relationship": "comorbid",
+        "explanation": "Functional dyspepsia, like IBS, is considered part of the spectrum of disorders of gut-brain interaction and shares central sensitisation mechanisms with fibromyalgia. The co-occurrence of multiple functional somatic syndromes in one individual is well-documented."
+      },
+      {
+        "id": "adhd",
+        "name": "ADHD",
+        "relationship": "comorbid",
+        "explanation": "ADHD and fibromyalgia share noradrenergic dysregulation and overlap in cognitive symptoms. There is emerging evidence of elevated ADHD rates in fibromyalgia populations. The cognitive symptoms of fibromyalgia \u2014 inattention, working memory problems \u2014 can be mistaken for ADHD, and vice versa."
+      },
+      {
+        "id": null,
+        "name": "Chronic fatigue syndrome / ME/CFS",
+        "relationship": "often_confused",
+        "explanation": "ME/CFS and fibromyalgia share fatigue, cognitive dysfunction, and post-exertional symptom worsening, and many people meet criteria for both. The key distinguishing feature of ME/CFS is mandatory post-exertional malaise; fibromyalgia is more pain-dominated. Treatment approaches differ significantly, particularly around exercise."
+      },
+      {
+        "id": null,
+        "name": "Lupus (SLE)",
+        "relationship": "often_confused",
+        "explanation": "Systemic lupus erythematosus can cause widespread pain, fatigue, and cognitive symptoms that closely mimic fibromyalgia. ANA testing is necessary to rule out SLE. Fibromyalgia can also occur alongside lupus, sometimes being misattributed to lupus flares."
+      },
+      {
+        "id": null,
+        "name": "Rheumatoid arthritis",
+        "relationship": "often_confused",
+        "explanation": "Early or seronegative rheumatoid arthritis can present with widespread joint pain and morning stiffness similar to fibromyalgia. Inflammatory markers and joint imaging help distinguish them. Fibromyalgia can also occur concurrently in people with established RA."
+      },
+      {
+        "id": null,
+        "name": "Small fibre neuropathy",
+        "relationship": "often_confused",
+        "explanation": "Small fibre neuropathy (SFN) produces burning pain, sensory hypersensitivity, and autonomic symptoms that can be indistinguishable from fibromyalgia clinically. Skin punch biopsy showing reduced intra-epidermal nerve fibre density can confirm SFN. A subset of people diagnosed with fibromyalgia may have unrecognised SFN."
+      },
+      {
+        "id": null,
+        "name": "Polymyalgia rheumatica",
+        "relationship": "often_confused",
+        "explanation": "Polymyalgia rheumatica causes bilateral shoulder and hip girdle pain with morning stiffness, typically in older adults, and can be confused with fibromyalgia. Unlike fibromyalgia, it is associated with significantly elevated ESR/CRP and responds dramatically to corticosteroids."
       }
     ],
     "symptom_management": {
@@ -257,383 +329,384 @@
         {
           "name": "Graded aerobic exercise",
           "category": "lifestyle",
-          "description": "Gradually increasing aerobic activity (walking, cycling, swimming, water aerobics) to build cardiovascular fitness and reduce pain sensitivity. Start at a very low level (e.g., 5\u201310 minutes per session) and increase by 10% per week as tolerated. Consistency matters more than intensity. Aerobic exercise is one of the most evidence-supported interventions and reduces both pain and fatigue.",
+          "description": "Low-impact aerobic activity \u2014 walking, swimming, cycling, water aerobics \u2014 gradually increased in duration and intensity over weeks to months. Exercise is the single most evidence-supported intervention for fibromyalgia. It modulates central pain processing, improves sleep, reduces fatigue, and improves mood. The key is starting well below perceived capacity and increasing slowly to avoid triggering flares.",
           "evidence_level": "strong",
-          "notes": "Post-exertional malaise (worsening after exertion) can occur; if it happens, reduce intensity and increase frequency of rest days. Start conservatively. Some people benefit from water-based exercise due to lower joint stress. Avoid high-impact or eccentric exercises initially."
+          "notes": "Post-exertional flares are common when starting \u2014 beginning with as little as 5\u201310 minutes per day is appropriate for severely deconditioned individuals. High-intensity exercise is not recommended and can worsen symptoms. People with concurrent hypermobility or POTS need modified protocols."
         },
         {
-          "name": "Strength training and resistance exercise",
-          "category": "lifestyle",
-          "description": "Low-to-moderate resistance training 2\u20133 times per week targeting major muscle groups. Start with light weights or resistance bands and focus on controlled, pain-free movement. Resistance exercise improves muscle strength, fatigue, and pain-related disability.",
+          "name": "Cognitive Behavioural Therapy (CBT) for pain",
+          "category": "psychological",
+          "description": "Pain-focused CBT addresses unhelpful thought patterns (catastrophising, hypervigilance to symptoms), activity avoidance behaviours, and sleep disruption. Multiple randomised controlled trials support modest but meaningful improvements in pain, function, and mood. Delivered by a psychologist trained in chronic pain or via validated online programmes.",
           "evidence_level": "strong",
-          "notes": "Avoid heavy lifting or high-intensity training initially. Pain should not exceed 3\u20134 out of 10 during or immediately after exercise. Schedule rest days between sessions. Works synergistically with aerobic activity."
+          "notes": "CBT does not imply pain is 'psychological' in a dismissive sense \u2014 it works by modifying neural pathways involved in pain amplification. Some people resist this framing. Pain neuroscience education delivered alongside CBT may improve engagement."
         },
         {
-          "name": "Cognitive behavioural therapy (CBT)",
+          "name": "Pain neuroscience education (PNE)",
           "category": "lifestyle",
-          "description": "Structured psychological therapy targeting pain-related thoughts, behaviours, and coping strategies. CBT teaches techniques to identify and challenge catastrophizing, improve sleep hygiene, pace activity, and manage emotional responses to chronic pain. Typically 8\u201316 sessions.",
-          "evidence_level": "strong",
-          "notes": "Most effective when combined with exercise. Works best if delivered by a therapist trained in pain management or chronic illness. Can be delivered in person, by video, or in group format. Some insurance plans cover it."
-        },
-        {
-          "name": "Sleep optimisation",
-          "category": "lifestyle",
-          "description": "Establishing consistent sleep schedule, cool dark bedroom, limiting screen time 30 minutes before bed, and avoiding caffeine after 2 PM. Adequate sleep directly improves pain, fatigue, and cognition. Address any identified sleep disorders (sleep apnea, restless legs) separately.",
-          "evidence_level": "strong",
-          "notes": "Does not require medication; behavioral changes alone often significantly improve sleep quality. Melatonin (0.5\u20133 mg) or magnesium glycinate (300\u2013400 mg) at bedtime may help if behavioral measures alone are insufficient."
-        },
-        {
-          "name": "Stress reduction and relaxation techniques",
-          "category": "lifestyle",
-          "description": "Regular practice of mindfulness, deep breathing, progressive muscle relaxation, or meditation. Even 10\u201320 minutes daily reduces pain and fatigue by lowering central nervous system arousal and stress hormone levels.",
-          "evidence_level": "strong",
-          "notes": "Apps like Calm, Headspace, or Insight Timer offer guided sessions. Does not require special equipment. Most effective when practiced regularly rather than intermittently."
-        },
-        {
-          "name": "Pacing and activity management",
-          "category": "lifestyle",
-          "description": "Breaking activities into manageable chunks, scheduling rest breaks, and avoiding the 'boom\u2013bust' cycle (doing too much on good days, then crashing). Consistent, moderate activity is better than sporadic intense bursts. Use subjective pain or fatigue scales to stay within a sustainable zone.",
+          "description": "Learning the mechanisms of central sensitisation \u2014 how the nervous system becomes dysregulated and amplifies pain \u2014 can itself reduce pain catastrophising and improve outcomes. Understanding that pain does not equal tissue damage changes the threatening nature of pain signals and can reduce their amplitude. Books, clinician-led sessions, and online programmes are available.",
           "evidence_level": "moderate",
-          "notes": "Requires self-awareness and adjustment over time. Some people benefit from keeping an activity log to identify sustainable patterns. Avoid strict rest or deconditioning."
+          "notes": "PNE works best as part of a broader programme. It is most effective when delivered with empathy and validation rather than used to dismiss symptoms as 'all in the mind'."
         },
         {
-          "name": "Pregabalin",
+          "name": "Duloxetine (Cymbalta) \u2014 SNRI",
           "category": "medication",
-          "description": "FDA-approved anticonvulsant that reduces pain by dampening neuronal activity. Typical dose 150\u2013600 mg daily in divided doses. Takes 2\u20134 weeks to show effect; maximum benefit often at 8\u201312 weeks.",
+          "description": "An SNRI antidepressant that enhances norepinephrine and serotonin activity in descending pain inhibitory pathways. FDA-approved specifically for fibromyalgia. Reduces pain intensity by approximately 30% in responders and improves fatigue and mood. Takes 4\u20136 weeks to assess effectiveness.",
           "evidence_level": "strong",
-          "notes": "Common side effects: dizziness, drowsiness, weight gain, swelling of hands/feet. Requires dose escalation and monitoring for tolerance. Not suitable if driving impairment is a concern. Effective in ~40\u201350% of people."
+          "notes": "Not effective for everyone. Common side effects include nausea (often transient), insomnia, and sweating. Should be tapered rather than stopped abruptly. Prescribing requires a physician."
         },
         {
-          "name": "Duloxetine",
+          "name": "Pregabalin (Lyrica) or gabapentin",
           "category": "medication",
-          "description": "SNRI (serotonin\u2013norepinephrine reuptake inhibitor) FDA-approved for fibromyalgia. Typical dose 30\u201360 mg daily; some benefit from 120 mg. Works on both pain and mood; often improves fatigue as well.",
+          "description": "Anticonvulsants that reduce central nervous system hyperexcitability by modulating calcium channel activity. Pregabalin is FDA-approved for fibromyalgia. Can reduce pain and improve sleep quality in some individuals. May cause significant sedation, weight gain, and cognitive blunting.",
           "evidence_level": "strong",
-          "notes": "Takes 2\u20134 weeks for initial effect, 8\u201312 weeks for maximum benefit. Side effects: nausea, dry mouth, sexual dysfunction, weight change. May improve concurrent depression or anxiety. Requires gradual tapering if discontinued."
+          "notes": "Side effect burden leads many people to discontinue. Weight gain is a common reason for stopping. Dependency and withdrawal effects are possible with prolonged use. Not suitable as a first-line choice for everyone."
         },
         {
-          "name": "Milnacipran",
+          "name": "Low-dose amitriptyline",
           "category": "medication",
-          "description": "SNRI similar to duloxetine; FDA-approved for fibromyalgia. Typical dose 50\u2013200 mg daily in divided doses. Often preferred if duloxetine is not tolerated.",
-          "evidence_level": "strong",
-          "notes": "Similar efficacy and side effect profile to duloxetine. Takes 4\u20138 weeks to show benefit. May slightly elevate heart rate or blood pressure in some people."
-        },
-        {
-          "name": "Low-dose tricyclic antidepressants (amitriptyline, nortriptyline)",
-          "category": "medication",
-          "description": "Older class of antidepressants used at lower doses (10\u201350 mg at bedtime) to improve sleep and pain. Works via multiple mechanisms including analgesic and sedating effects.",
+          "description": "A tricyclic antidepressant used at low doses (10\u201350mg nightly) specifically for its effects on sleep architecture and pain modulation rather than its antidepressant effect. One of the most commonly used medications for fibromyalgia in clinical practice. Can improve sleep quality and reduce morning stiffness.",
           "evidence_level": "moderate",
-          "notes": "Most benefit seen when taken at night due to sedation. Takes 2\u20134 weeks for effect. Side effects: dry mouth, constipation, weight gain, morning grogginess. Less commonly used now due to newer options but still effective for some."
+          "notes": "Not FDA-approved specifically for fibromyalgia but widely used off-label. Side effects include morning grogginess, dry mouth, and weight gain. Long-term evidence is less robust than for duloxetine or pregabalin."
         },
         {
-          "name": "Topical agents",
-          "category": "medication",
-          "description": "Topical lidocaine patches or creams, or compounded topical NSAIDs (diclofenac) applied to areas of localized pain. Can provide localized relief without systemic effects.",
+          "name": "Sleep hygiene and sleep disorder treatment",
+          "category": "lifestyle",
+          "description": "Addressing sleep quality is often one of the highest-leverage interventions in fibromyalgia. Poor sleep worsens pain, and pain worsens sleep \u2014 breaking this cycle through consistent sleep schedules, sleep restriction therapy, treating sleep apnoea if present, and reducing sleep disruptors (alcohol, irregular timing, screens) can produce meaningful improvements in pain and energy.",
+          "evidence_level": "strong",
+          "notes": "If sleep apnoea is present, CPAP treatment can dramatically improve fibromyalgia symptoms. Restless legs syndrome, also common in fibromyalgia, responds to specific treatments and should be identified separately."
+        },
+        {
+          "name": "Mindfulness-based stress reduction (MBSR)",
+          "category": "psychological",
+          "description": "An 8-week structured programme combining mindfulness meditation, body scan practices, and gentle movement. Evidence supports moderate reductions in pain, fatigue, and psychological distress in fibromyalgia. Works by improving attentional control over pain signals and reducing stress-related nervous system activation.",
           "evidence_level": "moderate",
-          "notes": "Limited evidence specifically in fibromyalgia but can help for painful trigger points or localized flares. Safe to combine with systemic therapy."
+          "notes": "Requires consistent practice to maintain benefits. Body scan exercises may initially increase symptom awareness \u2014 this is normal. In-person programmes and validated apps (Insight Timer, Headspace clinical programmes) are available."
         },
         {
-          "name": "Magnesium supplementation",
-          "category": "supplement",
-          "description": "Magnesium plays a role in neuromuscular function and pain signaling. Supplementation (200\u2013400 mg daily, best in glycinate or threonate form) may help pain and sleep, particularly if deficient.",
+          "name": "Low-impact strength and flexibility training",
+          "category": "lifestyle",
+          "description": "Gentle resistance training and stretching \u2014 yoga, tai chi, aquatic exercise \u2014 can improve muscle function, reduce stiffness, and support aerobic exercise capacity. Tai chi and yoga have specific evidence in fibromyalgia. Both are low-risk and can be adapted to any ability level.",
+          "evidence_level": "moderate",
+          "notes": "Yoga and tai chi may be better tolerated than conventional gym exercise initially. People with hypermobility should seek instruction from a teacher familiar with joint protection."
+        },
+        {
+          "name": "Low-dose naltrexone (LDN)",
+          "category": "medication",
+          "description": "At doses of 1\u20135mg per day (far below addiction treatment doses), naltrexone may modulate microglial activity in the central nervous system, reducing neuroinflammation and pain amplification. Small trials and extensive patient-reported evidence suggest meaningful pain reduction for some individuals. Not currently approved for fibromyalgia.",
           "evidence_level": "anecdotal",
-          "notes": "Evidence is mixed; some studies show benefit, others do not. Well tolerated at recommended doses. Choose better-absorbed forms (glycinate, threonate) over oxide to minimize GI upset. Take with food if nausea occurs."
+          "notes": "Used off-label \u2014 requires a physician willing to prescribe. Some compounding pharmacies can produce the low-dose formulation. Well-tolerated with minimal side effects at these doses. Larger trials are ongoing."
         },
         {
-          "name": "Vitamin D supplementation",
-          "category": "supplement",
-          "description": "Low vitamin D is common in fibromyalgia and associated with worse pain. Supplementation (1000\u20134000 IU daily or higher if deficient) supports immune function and may help pain.",
-          "evidence_level": "moderate",
-          "notes": "Get baseline 25-hydroxy vitamin D level tested first. Aim for levels >30 ng/mL. High doses are safe long-term but periodic monitoring is advisable."
-        },
-        {
-          "name": "Acupuncture",
-          "category": "lifestyle",
-          "description": "Traditional Chinese medicine technique involving insertion of fine needles at specific points. Proposed to modulate pain signaling and reduce inflammation. Some trials show modest pain reduction.",
-          "evidence_level": "anecdotal",
-          "notes": "Evidence is mixed; benefit may be partly placebo. Some people report significant relief; others see no change. If pursuing, ensure practitioner is licensed and uses sterile, single-use needles."
-        },
-        {
-          "name": "Massage and soft tissue therapy",
-          "category": "lifestyle",
-          "description": "Professional massage, myofascial release, or trigger point therapy can reduce muscle tension, increase circulation, and provide temporary pain relief. Benefits are generally short-term but can aid relaxation.",
-          "evidence_level": "moderate",
-          "notes": "Gentle to moderate pressure is usually best; deep or aggressive massage may exacerbate pain. Frequency (weekly or bi-weekly) may be needed to sustain benefit. Ensure therapist is experienced with fibromyalgia."
-        },
-        {
-          "name": "Dietary modifications",
+          "name": "Anti-inflammatory dietary patterns",
           "category": "diet",
-          "description": "While no specific diet cures fibromyalgia, some people report improvement with anti-inflammatory diets (Mediterranean, whole-food based), avoidance of triggers (processed foods, high sugar, excessive caffeine), and adequate hydration. Elimination diets may help identify food sensitivities contributing to fatigue or GI symptoms.",
+          "description": "Observational data and patient reports suggest that diets high in processed foods, refined sugars, and seed oils may worsen fibromyalgia symptoms, while Mediterranean-style or whole-food patterns may reduce them. No single diet is established as standard of care, but reducing dietary inflammatory load is a reasonable low-risk strategy.",
           "evidence_level": "anecdotal",
-          "notes": "Individual responses vary widely. Avoid restrictive diets that increase stress or nutritional deficiency. Trial elimination of common triggers (gluten, dairy, nightshades) for 3\u20134 weeks, then reintroduce to assess impact."
+          "notes": "A strict elimination diet approach is not supported by strong evidence. Moderation and sustainability matter more than strict rules. Food sensitivity responses are variable between individuals."
         },
         {
-          "name": "Heat and cold therapy",
+          "name": "Vitamin D supplementation (if deficient)",
+          "category": "supplement",
+          "description": "Vitamin D deficiency is associated with musculoskeletal pain and fatigue, and is common in fibromyalgia populations. Correcting deficiency (25-OH vitamin D < 50 nmol/L) with supplementation has shown benefit in some trials for fibromyalgia symptoms. Testing before supplementing allows dosing to be targeted.",
+          "evidence_level": "moderate",
+          "notes": "Benefit is most likely in those who are genuinely deficient. Supplementation at high doses without monitoring can cause toxicity. Standard guidance is 1000\u20134000 IU daily for maintenance; therapeutic doses for deficiency should be guided by a clinician."
+        },
+        {
+          "name": "Pacing and energy management",
           "category": "lifestyle",
-          "description": "Application of heating pads, warm baths, or heat blankets to painful areas can relax muscles and ease pain temporarily. Cold packs can reduce acute inflammation. Alternating hot and cold may enhance relief.",
-          "evidence_level": "anecdotal",
-          "notes": "Heat is generally more effective for chronic pain; cold for acute flares. Duration 15\u201320 minutes per application. Avoid direct skin contact to prevent burns or cold injury."
+          "description": "Deliberately distributing activity throughout the day and building in rest before reaching exhaustion \u2014 rather than the boom-bust cycle of overdoing it on good days and crashing on bad days. Pacing reduces peak symptoms, helps identify sustainable activity levels, and builds tolerance gradually over time.",
+          "evidence_level": "moderate",
+          "notes": "Differs from the graded exercise therapy used in ME/CFS \u2014 the goal in fibromyalgia is to find a sustainable baseline and expand it slowly, not complete rest. A physiotherapist or pain psychologist can help establish an individualised pacing plan."
         }
       ],
       "things_to_avoid": [
-        "Overexertion followed by complete rest (boom\u2013bust cycle)\u2014it worsens pain and fatigue; maintain consistent, moderate activity instead",
-        "High-impact exercise or intense training without gradual progression\u2014can trigger flares and post-exertional malaise",
-        "Complete avoidance of activity due to fear of pain\u2014deconditioning worsens symptoms; gentle movement is therapeutic",
-        "Excessive caffeine, especially afternoon/evening\u2014disrupts sleep quality and intensifies pain and anxiety",
-        "Opioid medications\u2014little evidence of benefit in fibromyalgia and risk of dependence; reserved for severe cases unresponsive to other options",
-        "Unproven supplements or heavily marketed 'fibromyalgia cures'\u2014can be expensive and delay evidence-based treatment",
-        "Sleep deprivation or erratic sleep schedules\u2014directly worsen pain, fatigue, and cognitive symptoms",
-        "Extreme dietary restriction or elimination diets without professional guidance\u2014can cause nutritional deficiency and increase anxiety",
-        "Dismissing emotional and psychological factors\u2014stress, anxiety, and trauma amplify central sensitization; addressing these is essential"
+        "High-intensity exercise when first starting \u2014 it commonly triggers severe flares and can entrench the pain cycle rather than interrupt it",
+        "Complete rest and deconditioning \u2014 prolonged inactivity worsens central sensitisation and increases pain sensitivity over time",
+        "Opioid analgesics for fibromyalgia management \u2014 evidence does not support their effectiveness in central sensitisation pain and they carry risks of opioid-induced hyperalgesia, worsening the underlying mechanism",
+        "The boom-bust activity pattern \u2014 pushing through on good days until exhausted, then being unable to function for several days, is one of the most common patterns that prevents improvement",
+        "Excessive focus on catastrophising or worst-case interpretations of symptoms \u2014 not a character failing, but a neurologically-mediated tendency that genuinely amplifies pain and can be modified",
+        "Dismissing or ignoring co-occurring conditions \u2014 sleep apnoea, thyroid dysfunction, vitamin D deficiency, and POTS can each independently worsen fibromyalgia symptoms and are worth identifying and treating",
+        "Stopping medications abruptly \u2014 particularly duloxetine, pregabalin, and amitriptyline require gradual tapering to avoid withdrawal effects",
+        "Pursuing repeated surgical or invasive procedures for pain that has no structural correlate \u2014 central sensitisation pain does not respond to structural interventions and surgery can itself worsen sensitisation"
       ]
     },
     "uncomfortable_truths": [
       {
-        "truth": "Fibromyalgia will not disappear with rest alone. Avoiding activity out of fear prolongs disability and worsens symptoms in the long run.",
-        "why_resisted": "When movement causes pain, the instinct is to avoid it. The nervous system's pain signal feels like a warning of danger, even though the underlying tissue is not damaged. The promise of 'cure through rest' appeals to exhausted patients.",
-        "path_forward": "Engaged patients gradually accept that controlled, progressive activity is the only pathway to meaningful recovery. They learn to distinguish pain (signal) from tissue damage (absence of it) and push gently against the pain while respecting fatigue limits. Within 3\u20136 months of consistent graded exercise, they report sustained improvement in both pain and function."
+        "truth": "There is no cure, and the goal is not to find the one treatment that makes fibromyalgia go away \u2014 it is to build a life that works despite it.",
+        "why_resisted": "A diagnosis without a clear cause feels like an incomplete explanation. Many people continue searching for a missed diagnosis, a food trigger, or a supplement that will resolve everything. This search can last years and delays engagement with the approaches that actually help.",
+        "path_forward": "People who make the most sustained progress are those who stop waiting for a cure and begin building a consistent, multi-pronged programme \u2014 sleep management, paced movement, psychological skills, and social support. This is not resignation; it is the most effective strategy."
       },
       {
-        "truth": "There is no medication that reliably eliminates fibromyalgia pain. Drugs reduce symptoms by 20\u201340% on average; the majority of the work comes from behaviour change and nervous system re-education.",
-        "why_resisted": "Chronic pain sufferers hope for a pill that restores normal life. Accepting that medication is an adjunct, not a solution, requires relinquishing the fantasy of 'just taking something' and getting back to pre-illness functioning.",
-        "path_forward": "Most engaged patients find that combining one or two medications with consistent exercise, sleep optimization, stress management, and pacing produces 50\u201370% improvement in pain and fatigue. They no longer seek the 'perfect medication' but instead use medication as one tool within a comprehensive approach."
+        "truth": "Exercise is one of the most effective treatments for fibromyalgia, and avoiding it because it causes pain is one of the main reasons people stay severely affected.",
+        "why_resisted": "Post-exertional pain flares are real and discouraging. The rational response to something that causes pain is to stop doing it. The paradox of fibromyalgia is that controlled movement gradually downregulates the sensitised pain system, while rest entrains it further.",
+        "path_forward": "Starting with 5 minutes of gentle walking and increasing by 1\u20132 minutes per week, without exceeding the point of significant flare, is a concrete entry point. Many people who could barely walk for 10 minutes eventually build to 30\u201345 minutes daily over 6\u201312 months."
       },
       {
-        "truth": "Your emotions, stress level, and beliefs about your condition directly amplify or reduce pain signals. Psychological therapy is not for 'faking it' but is core medical treatment.",
-        "why_resisted": "Many patients feel insulted at the suggestion that psychology is relevant, interpreting it as 'it's all in your head.' The pain is real and neurobiological; psychological factors matter not because the pain is imaginary but because the nervous system links emotion, stress, and pain processing. Pride or stigma prevents many from engaging with therapy.",
-        "path_forward": "Over 8\u201316 weeks of cognitive behavioural therapy, patients learn that catastrophizing thoughts ('this will never improve,' 'movement equals damage') intensify pain signals, while adaptive thinking patterns and coping skills reduce them. Improvements in pain and function follow psychological shifts."
+        "truth": "Trauma and psychological history are not just comorbidities to be treated separately \u2014 they are often part of the mechanism that maintains the pain, and addressing them is part of treating fibromyalgia itself.",
+        "why_resisted": "Being told psychological factors are involved can feel like being told the pain isn't real, or that it's a personal failing. This conflation leads many people to reject any psychological framing, even evidence-based approaches that directly address central nervous system dysregulation.",
+        "path_forward": "Trauma-informed therapy approaches (EMDR, somatic therapy, ACT) work on the same nervous system dysregulation pathways that maintain fibromyalgia pain. People who engage with these approaches often report improvements in pain that medication did not produce."
       },
       {
-        "truth": "Fibromyalgia is heterogeneous; no single treatment works for everyone. You will likely need to trial multiple approaches and tolerate periods of no improvement before finding your effective combination.",
-        "why_resisted": "Patients want a straightforward diagnosis and a clear roadmap to recovery. The reality of ongoing trial-and-error, combined with normal desire for certainty and quick solutions, frustrates many into abandoning management.",
-        "path_forward": "Engaged patients adopt a scientist mindset: systematic, patient testing of interventions (exercise intensity, sleep approach, medication, stress techniques) while tracking outcomes. Over 6\u201312 months, they identify their personal combination that sustains improvement. This methodical approach often yields better outcomes than jumping between unsystematic treatments."
+        "truth": "Many mainstream clinicians do not understand fibromyalgia well, and receiving poor care \u2014 dismissal, over-medicalisation, or a prescription alone without other support \u2014 is common.",
+        "why_resisted": "Patients trust that doctors have answers and that following medical advice should lead to improvement. Accepting that the standard of care is often inadequate requires taking greater personal responsibility for one's own care navigation, which is exhausting.",
+        "path_forward": "People who fare best typically build a small team \u2014 a rheumatologist or pain specialist who takes the condition seriously, a physiotherapist experienced in fibromyalgia, and a psychologist familiar with chronic pain \u2014 rather than relying on a single GP. This requires advocacy but is achievable."
+      },
+      {
+        "truth": "Fibromyalgia amplifies all physical sensations, which means that normal age-related changes, benign symptoms, and bodily noise get interpreted as alarming \u2014 leading to excessive investigations and a spiral of medical anxiety.",
+        "why_resisted": "When the nervous system is sensitised, symptoms feel threatening and urgent. It is genuinely difficult to distinguish amplified normal sensation from a new pathological signal when everything feels more intense than it should.",
+        "path_forward": "Working with a pain psychologist to develop a reliable framework for evaluating symptoms \u2014 distinguishing fibromyalgia flare patterns from genuinely new concerns \u2014 reduces unnecessary investigations and reduces the anxiety that worsens pain."
       }
     ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Consistent graded aerobic exercise",
-          "why_it_matters": "Aerobic exercise is the single most evidence-supported intervention. It reduces central pain sensitization, improves sleep, boosts mood, and rebuilds fitness. It addresses the root mechanism (nervous system dysregulation) rather than just masking symptoms.",
-          "how_to_start": "Choose an activity you can tolerate: walking, cycling, swimming, or water aerobics. Start at a level that causes no worsening of symptoms (e.g., 5\u201310 minutes, 2\u20133 times per week). Increase by ~10% per week, aiming for 150 minutes of moderate activity per week over 8\u201312 weeks. Track activity and symptoms to find your sustainable level.",
-          "timeline": "Meaningful pain reduction often apparent by 6\u20138 weeks; significant improvement (30\u201350% reduction) by 12\u201316 weeks. Plateau may occur; rotation of activities or intensity adjustment helps maintain progress.",
+          "lever": "Consistent, graded aerobic exercise",
+          "why_it_matters": "Exercise is the most robustly evidenced intervention for fibromyalgia. It directly downregulates central sensitisation, improves sleep architecture, releases endogenous opioids and endocannabinoids, and reduces psychological distress. Without movement, almost all other interventions are less effective.",
+          "how_to_start": "Begin with 5\u201310 minutes of walking, cycling, or swimming at a comfortable pace. Maintain this for two weeks without increasing. If no significant flare results, add 2\u20133 minutes. Continue this pattern over 3\u20136 months.",
+          "timeline": "3\u20136 months to establish a meaningful habit; 6\u201312 months to see significant improvement in pain and function",
           "requires_professional": false
         },
         {
-          "lever": "Sleep optimization",
-          "why_it_matters": "Sleep is when the nervous system resets pain sensitivity thresholds and processes emotional memory. Non-restorative sleep perpetuates central sensitization. Fixing sleep often unlocks improvement in pain, fatigue, and mood.",
-          "how_to_start": "Establish a consistent bedtime and wake time (7 days/week). Create a dark, cool bedroom (~65\u00b0F / 18\u00b0C). Stop screens 30\u201360 minutes before bed. Limit caffeine after 2 PM. If still not sleeping, trial magnesium glycinate (300\u2013400 mg) or melatonin (0.5\u20133 mg) 30 minutes before bed.",
-          "timeline": "Sleep architecture may shift within 1\u20132 weeks of consistent behavioural changes. Full benefit (improved daytime fatigue and pain) typically appears by 4\u20136 weeks.",
+          "lever": "Sleep quality restoration",
+          "why_it_matters": "Non-restorative sleep is not a secondary symptom \u2014 it actively maintains central sensitisation. Improving sleep quality breaks one of the core positive feedback loops driving fibromyalgia. Sleep disorders (apnoea, restless legs) also need to be identified and treated.",
+          "how_to_start": "Establish a consistent sleep-wake time 7 days a week. Reduce alcohol, which disrupts sleep architecture. Assess for sleep apnoea if there is snoring, witnessed apnoeas, or severe daytime fatigue. Discuss low-dose amitriptyline with a doctor if sleep is severely disrupted.",
+          "timeline": "2\u20136 weeks for sleep hygiene changes to show effect; longer for medication titration",
           "requires_professional": false
         },
         {
-          "lever": "Stress reduction and emotion regulation",
-          "why_it_matters": "Chronic stress and unprocessed emotions drive ongoing central sensitization. Mindfulness, relaxation, and cognitive reframing directly downregulate the nervous system's threat response, lowering baseline pain.",
-          "how_to_start": "Begin with 10 minutes daily of guided meditation, breathing exercise, or progressive muscle relaxation (apps: Calm, Insight Timer, Waking Up, or Yoga Nidra videos on YouTube). Or attend an 8-week mindfulness-based stress reduction (MBSR) course if available.",
-          "timeline": "Some people feel calm effects within days; lasting impact on pain and fatigue usually appears by 4\u20138 weeks of consistent practice.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Targeted medication (if appropriate)",
-          "why_it_matters": "Pregabalin, duloxetine, or milnacipran reduce pain by 20\u201340% on average and improve sleep, allowing better engagement with non-drug treatments. Medication is a facilitator, not a solution.",
-          "how_to_start": "Discuss options with your doctor. Start at a low dose and escalate gradually. Allow 8\u201312 weeks at therapeutic dose before deciding efficacy. Combine medication with exercise and sleep optimization for additive benefit.",
-          "timeline": "Initial effect by 2\u20134 weeks; maximum benefit by 8\u201312 weeks. Some people continue to improve beyond this.",
+          "lever": "Pain neuroscience education combined with psychological skills",
+          "why_it_matters": "Understanding that pain is a nervous system output \u2014 not necessarily a signal of ongoing tissue damage \u2014 reduces pain catastrophising, which is one of the strongest predictors of disability in fibromyalgia. CBT, ACT, and MBSR all produce measurable neural changes in pain processing when practised consistently.",
+          "how_to_start": "Read 'Explain Pain' by Butler and Moseley. Access a psychologist trained in chronic pain or ACT. Consider an 8-week MBSR course (online options available).",
+          "timeline": "4\u20138 weeks to see shifts in pain catastrophising scores; 3\u20136 months for significant functional changes",
           "requires_professional": true
         },
         {
-          "lever": "Cognitive behavioural therapy (CBT) or pain psychology",
-          "why_it_matters": "CBT addresses the thoughts and behaviours maintaining pain and disability (catastrophizing, avoidance, boom\u2013bust cycles). It reshapes how the nervous system interprets and responds to pain signals.",
-          "how_to_start": "Seek a therapist trained in chronic pain management or CBT for fibromyalgia. Most formats are 8\u201316 sessions, weekly or bi-weekly. Some therapists offer group CBT, which is more affordable and allows peer learning.",
-          "timeline": "Shifts in thinking and coping often apparent by 4\u20136 weeks; measurable improvement in pain and function by 12\u201316 weeks.",
+          "lever": "Identifying and treating co-occurring conditions",
+          "why_it_matters": "Undiagnosed sleep apnoea, hypothyroidism, vitamin D deficiency, small fibre neuropathy, POTS, and MCAS can each independently amplify fibromyalgia symptoms. Treating any of these can produce disproportionate improvements in the overall symptom burden.",
+          "how_to_start": "Request a comprehensive blood panel including thyroid function, vitamin D, ferritin, and B12. Discuss sleep study referral if sleep apnoea is plausible. Ask a rheumatologist to assess for small fibre neuropathy if burning pain is prominent.",
+          "timeline": "Weeks to months depending on what is found and treated",
           "requires_professional": true
         },
         {
-          "lever": "Activity pacing and lifestyle structure",
-          "why_it_matters": "Pacing prevents the boom\u2013bust cycle and teaches the nervous system that activity is safe and sustainable. Consistent, moderate activity at or below the 'energy envelope' allows gradual improvement without triggering post-exertional crashes.",
-          "how_to_start": "Track energy expenditure (physical, cognitive, emotional) and symptoms daily for 1\u20132 weeks to identify your sustainable level. Then maintain activities consistently at or slightly below that level, resisting the urge to 'do more on good days.' Gradually increase as tolerance improves.",
-          "timeline": "Stability usually apparent within 2\u20134 weeks; capacity to increase activity by 10\u201320% over 8\u201312 weeks.",
+          "lever": "Pacing \u2014 eliminating the boom-bust cycle",
+          "why_it_matters": "The boom-bust pattern (overdoing on good days, crashing on bad days) is one of the most common and damaging patterns in fibromyalgia. It prevents the establishment of a baseline from which gradual improvement can be built, and produces repeated nervous system flares that deepen sensitisation.",
+          "how_to_start": "Identify the activity level that can be sustained without triggering a flare. Make this the daily baseline, including on good days. Resist the urge to do more on good days. Use a brief symptom log to track patterns.",
+          "timeline": "Several weeks to establish a sustainable baseline; improvement from that baseline over months",
           "requires_professional": false
+        },
+        {
+          "lever": "Building a knowledgeable support team",
+          "why_it_matters": "Fibromyalgia is poorly served by single-clinician management. A rheumatologist or pain specialist, a physiotherapist experienced in chronic pain, and a psychologist trained in pain management form the minimum effective team. Each covers different parts of the condition that no single practitioner adequately manages alone.",
+          "how_to_start": "Ask the current GP for referral to a specialist pain clinic or rheumatologist. Search specifically for physiotherapists with chronic pain experience. Look for psychologists listing 'ACT for chronic pain' or 'CBT for chronic pain' as a specialty.",
+          "timeline": "Months to assemble and establish effective working relationships with a team",
+          "requires_professional": true
         }
       ],
       "common_mistakes": [
-        "Starting exercise too intensely or increasing too quickly\u2014leads to post-exertional malaise and discouragement; start at 50% of what feels reasonable and increase by <10% weekly",
-        "Expecting medication alone to 'fix' fibromyalgia\u2014medication is a tool, not a cure; without concurrent lifestyle changes, benefit plateaus at 20\u201330%",
-        "Oscillating between rest and overactivity (boom\u2013bust cycle)\u2014perpetuates symptoms; consistency beats perfection",
-        "Believing pain is a signal of tissue damage, leading to catastrophizing and avoidance\u2014pain in fibromyalgia is a false alarm; learning to move through it is essential",
-        "Ignoring sleep or assuming it will normalize on its own\u2014poor sleep is a driver, not just a symptom; addressing it early amplifies other interventions",
-        "Dismissing emotional or psychological factors as 'not relevant'\u2014stress, anxiety, and past trauma amplify central sensitization; ignoring them limits recovery",
-        "Chasing unproven 'cures' or extreme diets\u2014delays evidence-based treatment and often worsens stress or nutritional status",
-        "Setting unrealistic recovery expectations\u2014expecting to return to 100% pre-illness function in 3 months; realistic goal is 50\u201370% improvement over 6\u201312 months",
-        "Isolating or withdrawing from others\u2014reduces motivation, increases depression, and worsens pain; connection and social activity are protective"
+        "Starting exercise at too high an intensity and experiencing severe flares, then concluding that exercise is harmful \u2014 this entrenches avoidance and prevents improvement",
+        "Relying on medication alone without incorporating movement, sleep management, and psychological approaches \u2014 medications provide partial benefit and do not address the underlying sensitisation mechanism",
+        "Seeking a definitive cause or missed diagnosis for years rather than beginning evidence-based management \u2014 delays measurable improvement",
+        "Pushing through fatigue and pain without pacing, then crashing \u2014 the boom-bust cycle prevents establishing a sustainable baseline",
+        "Discontinuing medications or programmes after a few weeks without giving adequate time to assess effectiveness \u2014 most effective interventions for fibromyalgia take 6\u201312 weeks to show meaningful results",
+        "Interpreting every new or changed symptom as a sign of a dangerous new disease, leading to repeated investigations and increasing medical anxiety",
+        "Avoiding all psychological support because it implies the pain is imagined \u2014 this forfeits access to some of the most effective treatments available",
+        "Relying heavily on opioid analgesics, which are ineffective for central sensitisation pain and can worsen it through opioid-induced hyperalgesia over time"
       ]
     },
     "finding_help": {
       "specialists": [
         {
           "type": "Rheumatologist",
-          "role": "Gold standard for diagnosis, ruling out inflammatory arthritis or lupus, and establishing a treatment plan. Can prescribe FDA-approved medications (pregabalin, duloxetine, milnacipran) and coordinate care.",
-          "notes": "Often the first specialist to formally diagnose fibromyalgia. Some rheumatologists are more skeptical of fibromyalgia as a 'real' diagnosis; seek one experienced and empathetic toward chronic pain."
+          "role": "Typically the specialist who makes or confirms the fibromyalgia diagnosis after ruling out inflammatory, autoimmune, and connective tissue conditions. Can also assess for co-occurring conditions such as hypermobility, Sj\u00f6gren's syndrome, or lupus.",
+          "notes": "Quality of care varies significantly. Some rheumatologists diagnose fibromyalgia and discharge without further support; others actively manage it. Look for one who views fibromyalgia as a legitimate neurological condition rather than a diagnosis of exclusion with no further management."
         },
         {
-          "type": "Primary care physician (GP, internist, family medicine)",
-          "role": "Can diagnose and manage fibromyalgia, prescribe medications, order testing to rule out other causes, and refer to specialists or therapists. Continuity of care is valuable.",
-          "notes": "Often the first point of contact and coordinates overall care. Quality varies widely; a supportive, informed primary care doctor is invaluable."
+          "type": "Pain specialist / multidisciplinary pain clinic",
+          "role": "Specialist pain clinics offer the most comprehensive management: medication optimisation, physiotherapy, pain psychology, and education programmes. Multidisciplinary pain programmes have the strongest evidence base for improving function and quality of life in fibromyalgia.",
+          "notes": "Waiting lists for specialist pain clinics can be long in public health systems. Some private pain clinics offer faster access. Pain programmes that include psychological and physiotherapy components outperform medication-only approaches."
         },
         {
-          "type": "Pain management specialist",
-          "role": "Specialized expertise in chronic pain syndromes. Can offer multidisciplinary approaches including medication optimization, nerve blocks, interventional therapies, and psychology referrals.",
-          "notes": "Not always essential but valuable if standard approaches plateau. Often works within a pain clinic with on-site psychology and physiology."
+          "type": "Physiotherapist specialising in chronic pain",
+          "role": "Designs individualised, graded movement programmes that begin at a manageable level and build gradually. Teaches pain neuroscience, pacing strategies, and body mechanics. Particularly important for safely initiating exercise in people who have been severely limited.",
+          "notes": "Not all physiotherapists are experienced with fibromyalgia \u2014 look for those who mention chronic pain, central sensitisation, or graded activity in their profiles. Physiotherapists trained in Explain Pain or ACT approaches are particularly useful."
         },
         {
-          "type": "Psychologist or psychiatrist (especially pain-focused)",
-          "role": "Delivers cognitive behavioural therapy, mindfulness training, or trauma-informed therapy. Crucial for addressing mood, stress, and the thought patterns that amplify pain.",
-          "notes": "Many fibromyalgia specialists underestimate the value of psychology. A psychologist trained in chronic pain is worth seeking out; standard mental health providers may not understand the pain\u2013emotion link."
+          "type": "Psychologist trained in chronic pain (CBT or ACT)",
+          "role": "Addresses pain catastrophising, activity avoidance, sleep disruption, and the psychological impact of chronic illness. Pain-focused CBT and ACT are among the most evidence-supported interventions for fibromyalgia.",
+          "notes": "General counsellors or therapists without chronic pain training are less effective. Look specifically for those listing chronic pain, health psychology, or ACT for pain as specialties. Some pain clinics have embedded psychologists."
         },
         {
           "type": "Sleep medicine specialist",
-          "role": "Diagnoses and treats sleep disorders (sleep apnea, restless leg syndrome, delayed sleep phase) that coexist with fibromyalgia. Sleep optimization often unlocks improvement.",
-          "notes": "Not needed for all; refer if sleep hygiene and over-the-counter aids are insufficient, or if snoring, gasping, or jerking legs are present."
+          "role": "Diagnoses and treats sleep disorders that co-occur with and worsen fibromyalgia \u2014 particularly sleep apnoea, restless legs syndrome, and periodic limb movement disorder. Treating these can produce significant improvements in pain and fatigue.",
+          "notes": "Particularly indicated when fatigue is disproportionately severe, when snoring or witnessed apnoeas are reported, or when standard fibromyalgia treatments have had limited effect."
         },
         {
-          "type": "Physiotherapist or physical therapist",
-          "role": "Designs and supervises graded exercise programs, teaches proper body mechanics, and provides hands-on techniques. Critical for translating 'exercise is beneficial' into safe, sustainable practice.",
-          "notes": "Ideally one trained in chronic pain and central sensitization, not classical pain-based 'protection' models. Important to find one who progresses exercise appropriately."
+          "type": "Functional medicine doctor or integrative physician",
+          "role": "Investigates potential contributing factors that mainstream rheumatology may not address: vitamin and mineral deficiencies, hormonal factors, gut health, mould exposure, and small fibre neuropathy. Some people find this approach valuable when standard care has not produced improvement.",
+          "notes": "Quality varies significantly. Look for practitioners with formal medical training who apply evidence-based investigation rather than extensive supplement protocols. Useful for identifying undertreated co-occurring conditions."
         },
         {
-          "type": "Occupational therapist",
-          "role": "Helps with activity pacing, energy conservation, workplace accommodations, and strategies for managing cognitive difficulties. Practical support for functional improvement.",
-          "notes": "Often underutilized; valuable for those seeking to maintain or return to work, or optimize daily functioning."
+          "type": "Neurologist",
+          "role": "Relevant when small fibre neuropathy is suspected (burning pain, prominent sensory symptoms) \u2014 skin punch biopsy is a neurological investigation. Also relevant for headache management and for ruling out other neurological conditions.",
+          "notes": "Not routinely required but should be considered when burning or electric-shock pain is prominent, or when standard fibromyalgia diagnosis is uncertain."
         }
       ],
       "patient_communities": [
         {
-          "name": "r/Fibromyalgia (Subreddit)",
+          "name": "r/Fibromyalgia",
           "platform": "Reddit",
           "url": "https://www.reddit.com/r/Fibromyalgia/",
-          "notes": "Active, moderated community with thousands of members. Good for symptom validation, sharing experiences, and learning what others have tried. Quality of advice varies; always cross-check with professionals."
+          "notes": "Large active community for shared experience, practical tips, medication experiences, and emotional support. A useful space for people who have recently been diagnosed and want to hear from others living with the condition long-term."
+        },
+        {
+          "name": "Fibromyalgia Action UK (FMA UK)",
+          "platform": "Website and support groups",
+          "url": "https://www.fmauk.org/",
+          "notes": "UK-based charity offering helplines, local support groups, and patient information. Useful for UK patients navigating NHS referrals and accessing support."
         },
         {
           "name": "National Fibromyalgia Association (NFA)",
-          "platform": "Website and support groups",
+          "platform": "Website",
           "url": "https://www.fmaware.org/",
-          "notes": "US-based organization offering education, research updates, webinars, and local support groups. Publishes 'Fibromyalgia Magazine' with evidence-based and patient-friendly articles."
+          "notes": "US-based patient advocacy and education organisation. Provides clinician finder tools, patient education materials, and research updates."
         },
         {
-          "name": "Fibromyalgia Action UK",
-          "platform": "Website and support network",
-          "url": "https://www.fmauk.org/",
-          "notes": "UK-based charity providing information, support, and advocacy. Good for European readers; offers online and in-person community events."
-        },
-        {
-          "name": "ProHealth Fibromyalgia Community",
-          "platform": "Forum and website",
-          "url": "https://www.prohealth.com/fibromyalgia/",
-          "notes": "Active online forum with archived discussions on treatments, coping, and research. Mix of anecdotal and evidence-based perspectives."
-        },
-        {
-          "name": "Facebook groups (various)",
+          "name": "Fibromyalgia & Chronic Pain Support Group",
           "platform": "Facebook",
           "url": null,
-          "notes": "Search 'Fibromyalgia Support' or similar; multiple private groups exist with varying moderation quality. Can be supportive but are unmoderated spaces where misinformation spreads. Use cautiously."
+          "notes": "Multiple large Facebook groups exist for fibromyalgia. Quality varies \u2014 look for groups with active moderation and a focus on evidence-based approaches alongside peer support."
+        },
+        {
+          "name": "TalkFibro",
+          "platform": "Forum",
+          "url": "https://www.talkfibro.com/",
+          "notes": "Dedicated fibromyalgia forum with threads covering symptoms, medications, research, and daily life management. Tends to attract people who have been living with fibromyalgia for longer and have developed detailed practical knowledge."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "The Fibromyalgia Guide: How to Take Control of Your Life",
+        "title": "Explain Pain",
         "type": "book",
-        "author_or_source": "Devin Starlanyl, Mary Ellen Copeland",
+        "author_or_source": "David Butler and Lorimer Moseley",
         "url": null,
-        "description": "Comprehensive, practical patient-centered guide to fibromyalgia covering pathophysiology, symptom management, coping strategies, and medication. Balanced, evidence-informed, and accessible for newly diagnosed patients.",
+        "description": "The foundational text on pain neuroscience education, written for patients. Explains in accessible language how the nervous system produces pain, why central sensitisation occurs, and how understanding these mechanisms can itself reduce pain. One of the most widely recommended books in chronic pain management.",
         "audience": "beginner"
       },
       {
-        "title": "The Fibromyalgia Story: Medical Authority and Women's Worlds",
+        "title": "The Fibromyalgia Solution",
         "type": "book",
-        "author_or_source": "Kristin K. Barker",
+        "author_or_source": "David Dryland and Lawrence Crabtree",
         "url": null,
-        "description": "Sociological and historical analysis of how fibromyalgia became diagnosed and recognized. Helps patients understand why fibromyalgia is controversial and how the condition sits within medical and social systems.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "Explain Pain Supercharged",
-        "type": "book",
-        "author_or_source": "David Butler, Lorimer Moseley",
-        "url": null,
-        "description": "Highly recommended book (with companion website and apps) explaining pain neuroscience in an accessible, illustrated way. Helps patients understand central sensitization and pain amplification. Crucial for shifting mindset about pain.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness",
-        "type": "book",
-        "author_or_source": "Jon Kabat-Zinn",
-        "url": null,
-        "description": "Foundational text on mindfulness-based stress reduction (MBSR). While not fibromyalgia-specific, it provides the philosophical and practical framework for mindfulness that benefits chronic pain. Often used as basis for MBSR programs.",
+        "description": "A clinician-authored practical guide to fibromyalgia management covering medication, exercise, sleep, and psychological approaches. Useful for people newly diagnosed who want a comprehensive overview of what is known and what helps.",
         "audience": "beginner"
       },
       {
-        "title": "Cognitive Behavioural Therapy for Chronic Illness and Palliative Care: A Workbook and Toolkit",
-        "type": "book",
-        "author_or_source": "Lesley Baillie, others",
-        "url": null,
-        "description": "Practical workbook for understanding CBT principles applied to chronic conditions. Can be used for self-directed learning or with a therapist.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "American College of Rheumatology Fibromyalgia Diagnostic Criteria and Severity Scales",
+        "title": "Fibromyalgia \u2014 Clinical Practice Guidelines",
         "type": "research paper",
-        "author_or_source": "Wolfe F, Clauw DJ, et al.",
-        "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/acr.23405",
-        "description": "Updated diagnostic criteria (2016) for fibromyalgia. Technical but important for understanding how diagnosis is made clinically. Useful if you want to understand your own diagnosis or discuss it with providers.",
+        "author_or_source": "Canadian Pain Society / European League Against Rheumatism (EULAR)",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5065728/",
+        "description": "The EULAR 2017 evidence-based recommendations for fibromyalgia management provide a rigorous summary of what the evidence supports. Useful for people who want to understand what interventions have formal clinical backing and compare what their clinicians are offering.",
         "audience": "advanced"
       },
       {
-        "title": "Fibromyalgia: A Practical Clinical Guide",
+        "title": "Fibromyalgia Network",
+        "type": "website",
+        "author_or_source": "Fibromyalgia Network",
+        "url": "https://www.fmnetnews.com/",
+        "description": "US-based patient education organisation with summaries of fibromyalgia research, treatment updates, and articles on living with the condition. Accessible language with a focus on keeping patients current on research developments.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Why Does It Still Hurt?",
         "type": "book",
-        "author_or_source": "Don L. Goldenberg",
+        "author_or_source": "Paul Boissonade",
         "url": null,
-        "description": "Clinician-written guide that is readable for patients. Covers current understanding of pathophysiology, diagnostic approach, and evidence-based treatment. Evidence-based and balanced.",
-        "audience": "intermediate"
+        "description": "An accessible and compassionate exploration of chronic pain science for patients, covering central sensitisation, the nervous system's role in maintaining pain, and practical approaches to recovery. Bridges the gap between research and everyday understanding effectively.",
+        "audience": "beginner"
       },
       {
-        "title": "Fibromyalgia and Other Central Pain Syndromes podcast",
-        "type": "podcast",
-        "author_or_source": "Dr. Don Goldenberg",
-        "url": "https://www.fmaware.org/podcast/",
-        "description": "Periodic episodes discussing fibromyalgia research, treatment updates, and patient stories. Accessible and informative; good for staying current.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "Clinical Psychology Review: Cognitive Behavioural Therapy for Fibromyalgia (systematic review)",
+        "title": "The Pain Reprocessing Therapy approach \u2014 research overview",
         "type": "research paper",
-        "author_or_source": "H\u00e4user W, Bernardy K, et al.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/21802619/",
-        "description": "Systematic review of CBT evidence in fibromyalgia. Shows strong support for CBT as effective treatment. Technical but important for understanding why therapy is recommended.",
+        "author_or_source": "Yoni Ashar et al., JAMA Psychiatry, 2022",
+        "url": "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2784694",
+        "description": "Landmark randomised controlled trial of Pain Reprocessing Therapy (PRT) showing that a psychological intervention targeting the belief that pain signals tissue damage produced dramatic pain reductions. Relevant because fibromyalgia shares mechanisms with the central sensitisation pain studied here. Provides compelling evidence that the nervous system is the treatment target.",
         "audience": "advanced"
       },
       {
-        "title": "My Fibromyalgia Doctor (YouTube channel)",
+        "title": "Fibromyalgia \u2014 Mayo Clinic Patient Overview",
+        "type": "website",
+        "author_or_source": "Mayo Clinic",
+        "url": "https://www.mayoclinic.org/diseases-conditions/fibromyalgia/symptoms-causes/syc-20354780",
+        "description": "A well-written, accurate patient-facing summary from a major academic medical centre. Useful as a starting point or to share with family members who want a credible mainstream source on what fibromyalgia is.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Lorimer Moseley lectures on pain science",
         "type": "video",
-        "author_or_source": "Dr. Jacob Teitelbaum",
-        "url": "https://www.youtube.com/user/DrTeitelbaum",
-        "description": "Videos covering fibromyalgia basics, exercise, sleep, and medication. Informal, approachable style; good for visual learners.",
+        "author_or_source": "Lorimer Moseley \u2014 TEDx and YouTube",
+        "url": "https://www.youtube.com/watch?v=gwd-wLdIHjs",
+        "description": "Professor Lorimer Moseley is one of the world's leading pain scientists. His lectures (particularly 'Why Things Hurt' on YouTube) explain central sensitisation, pain neuroscience, and the evidence base for pain education in an engaging, often humorous way. One of the best free introductions to modern pain science available.",
         "audience": "beginner"
       },
       {
-        "title": "Painfully Physical podcast",
-        "type": "podcast",
-        "author_or_source": "Various pain medicine specialists",
+        "title": "Unlearn Your Pain",
+        "type": "book",
+        "author_or_source": "Howard Schubiner",
         "url": null,
-        "description": "Episodes addressing chronic pain, fibromyalgia, and related conditions. Evidence-informed with guest experts.",
+        "description": "A structured programme based on the concept that central sensitisation and mind-body pain can be addressed through a combination of education, journalling, and psychological techniques. Some people with fibromyalgia find this approach transformative; others find it less applicable to their case. Worth engaging with critically.",
         "audience": "intermediate"
-      },
-      {
-        "title": "Nature Medicine: Fibromyalgia Mechanisms (recent research overview)",
-        "type": "research paper",
-        "author_or_source": "H\u00e4user W, Sluka KA",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/29388572/",
-        "description": "Review of current neurobiological understanding of fibromyalgia\u2014immune, neurochemical, genetic, and psychosocial factors. Technical but up-to-date summary of the science.",
-        "audience": "advanced"
       }
     ],
     "relevance_signal": "**Widespread tender muscles and joints**, unrefreshing sleep, and brain fog alongside the gut symptoms."
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

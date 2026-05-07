@@ -38,6 +38,7 @@ def load_graph(path: Path) -> ConditionGraph:
             conditions.append(Condition(
                 id=c["id"],
                 name=c["label"],
+                full_name=c.get("full_label", ""),
                 group_id=group_id,
                 group_label=group_label,
                 aliases=c.get("aliases", []),
@@ -48,8 +49,10 @@ def load_graph(path: Path) -> ConditionGraph:
                 conditions.append(Condition(
                     id=sub["id"],
                     name=sub["label"],
+                    full_name=sub.get("full_label", ""),
                     group_id=group_id,
                     group_label=group_label,
+                    aliases=sub.get("aliases", []),
                     parents=[c["id"]],
                     diagnosis_type=sub.get("diagnosis_type", c.get("diagnosis_type", "pathophysiological")),
                 ))
@@ -62,6 +65,7 @@ def load_graph(path: Path) -> ConditionGraph:
                 conditions.append(Condition(
                     id=c["id"],
                     name=c["label"],
+                    full_name=c.get("full_label", ""),
                     group_id=group_id,
                     group_label=group_label,
                     aliases=c.get("aliases", []),
@@ -72,8 +76,10 @@ def load_graph(path: Path) -> ConditionGraph:
                     conditions.append(Condition(
                         id=sub["id"],
                         name=sub["label"],
+                        full_name=sub.get("full_label", ""),
                         group_id=group_id,
                         group_label=group_label,
+                        aliases=sub.get("aliases", []),
                         parents=[c["id"]],
                         diagnosis_type=sub.get("diagnosis_type", c.get("diagnosis_type", "pathophysiological")),
                     ))

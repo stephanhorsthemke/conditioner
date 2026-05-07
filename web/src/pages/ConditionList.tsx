@@ -4,6 +4,7 @@ import { ConditionIndex, Space } from "../types";
 import SpaceSwitcher from "../components/SpaceSwitcher";
 import SubConditionTable from "../components/SubConditionTable";
 import { loadSpaces, resolveMembership } from "../spaces";
+import Layout from "../components/Layout";
 
 interface Props {
   spaceId?: string;
@@ -81,7 +82,8 @@ export default function ConditionList({ spaceId: spaceIdProp }: Props) {
     );
 
   return (
-    <div style={{ maxWidth: 880, margin: "2rem auto", padding: "0 1rem", fontFamily: "system-ui, sans-serif" }}>
+    <Layout>
+    <div style={{ maxWidth: 880, margin: "1rem auto", padding: "0 1rem", fontFamily: "system-ui, sans-serif" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "1rem", marginBottom: "0.25rem" }}>
         <h1 style={{ fontSize: "1.5rem", fontWeight: 700, margin: 0 }}>
           {titlePrefix} Navigator
@@ -179,5 +181,6 @@ export default function ConditionList({ spaceId: spaceIdProp }: Props) {
 
       {filtered.length > 0 && <SubConditionTable rows={filtered} />}
     </div>
+    </Layout>
   );
 }

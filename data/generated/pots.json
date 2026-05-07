@@ -2,614 +2,780 @@
   "condition_id": "pots",
   "condition_name": "POTS / dysautonomia",
   "generated_at": "2026-04-16T08:54:02.941531Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "POTS (postural orthostatic tachycardia syndrome) is a condition where your heart rate rises too much when you stand up, often causing dizziness, lightheadedness, fatigue, and brain fog. It's a form of dysautonomia\u2014a disorder of the autonomic nervous system that controls involuntary functions like heart rate and blood pressure. Most people can manage POTS well with lifestyle changes and targeted strategies.",
-    "detailed_summary": "Postural orthostatic tachycardia syndrome (POTS) is characterized by an excessive increase in heart rate (typically 30 bpm or more, or a rate above 120 bpm) within 10 minutes of standing, often without a significant drop in blood pressure. It falls under the umbrella of dysautonomia\u2014disorders affecting the autonomic nervous system. POTS affects the body's ability to regulate blood flow and fluid distribution when changing position. Symptoms range from mild to severe and vary widely between individuals. The underlying causes remain incompletely understood but may involve abnormal norepinephrine signalling, reduced plasma volume, or deconditioning. Most people with POTS are women, particularly those of reproductive age, though it occurs across all demographics. Many individuals experience significant improvement with structured management including salt and fluid intake, compression, exercise, and sometimes medication.",
+    "plain_summary": "POTS (postural orthostatic tachycardia syndrome) is a form of dysautonomia \u2014 a dysfunction of the autonomic nervous system \u2014 in which the heart rate increases excessively upon standing up, causing a wide range of symptoms including dizziness, fainting, rapid heartbeat, extreme fatigue, brain fog, and digestive problems. It is not a heart disease but a problem with how the body regulates blood flow and nervous system responses automatically. POTS is significantly underdiagnosed, disproportionately affects women and younger people, and is frequently dismissed or misattributed to anxiety.",
+    "detailed_summary": "The autonomic nervous system controls body functions that happen automatically \u2014 heart rate, blood pressure, digestion, breathing rate, temperature regulation, and more. In POTS and other forms of dysautonomia, this system misfires or becomes dysregulated, producing symptoms that can appear in virtually every organ system and change from hour to hour.\n\nIn POTS specifically, the hallmark is an exaggerated heart rate increase of 30 beats per minute or more (40+ bpm in those under 19) within ten minutes of standing, without a corresponding drop in blood pressure. This happens because the autonomic nervous system fails to adequately constrict blood vessels in the legs on standing, causing blood to pool below the heart. The heart compensates by beating faster, and the resulting cascade of symptoms \u2014 dizziness, palpitations, shortness of breath, cognitive impairment, nausea \u2014 can be debilitating.\n\nBeyond the classic orthostatic tachycardia, POTS is a syndrome with many subtypes and overlapping mechanisms. Some cases involve low blood volume (hypovolemia), some involve small-fibre neuropathy damaging the autonomic nerves in the limbs, some are triggered by immune dysregulation following viral illness (a pattern dramatically highlighted after COVID-19), and some are linked to hyperadrenergic states, connective tissue disorders such as hEDS, or mast cell activation syndrome.\n\nThe condition is often dismissed for years because standard tests \u2014 resting ECG, standard blood work, lying-down blood pressure \u2014 appear normal. Symptoms that affect concentration, mood, digestion, and sleep are frequently attributed to anxiety or depression rather than to underlying autonomic instability. Many people with POTS receive a psychiatric diagnosis before the correct one. Self-directed research and patient communities play a significant role in the diagnostic journeys of many people with this condition.\n\nManagement is multidimensional. No single treatment works for everyone, and the evidence base \u2014 while growing \u2014 remains thinner than for more common conditions. However, meaningful improvement is achievable for many people through a combination of increased salt and fluid intake, carefully graded exercise rehabilitation, compression garments, targeted medications, and identifying and addressing underlying or co-occurring conditions.",
     "prevalence": {
-      "summary": "POTS affects roughly 1\u20133 million Americans, making it more common than once thought but still underdiagnosed.",
-      "estimate": "1\u20133% of the population, with some estimates as high as 3\u20135 million people in the United States",
-      "notes": "Prevalence estimates vary widely because POTS is often undiagnosed or misdiagnosed. Women make up approximately 75\u201380% of diagnosed cases, particularly those aged 15\u201350. Rates may be higher after viral infections (including COVID-19) and in adolescents. Diagnostic criteria variation across clinicians also affects reported numbers."
+      "summary": "POTS is more common than widely recognised, affecting millions globally and predominantly younger women.",
+      "estimate": "Estimates range from 1 in 100 to 3 in 1,000 people, with some researchers suggesting up to 3 million people affected in the United States alone.",
+      "notes": "Prevalence estimates vary widely due to inconsistent diagnostic criteria, widespread underdiagnosis, and the condition's overlap with other diagnoses. Women aged 15\u201350 make up approximately 75\u201380% of diagnosed cases, though this likely reflects both a genuine biological skew and diagnostic bias that leads to men and older adults being less often tested. Post-COVID dysautonomia has substantially increased awareness and the number of newly presenting cases since 2020. Many people meeting diagnostic criteria have never been formally evaluated."
     },
     "subgroups": [
       {
         "name": "Neuropathic POTS",
-        "description": "Characterized by reduced norepinephrine transporter activity and abnormal distribution of sweating. Associated with small-fibre neuropathy.",
+        "description": "Caused by partial denervation of the peripheral autonomic nerves, particularly in the lower limbs, leading to impaired vasoconstriction and blood pooling on standing.",
         "distinguishing_features": [
-          "Reduced sweating, particularly in legs",
-          "Blotchy or abnormal skin colour changes",
-          "May follow viral illness or autoimmune triggers",
-          "Often shows more severe symptoms"
-        ]
-      },
-      {
-        "name": "Hypovolemic POTS",
-        "description": "Results from reduced blood plasma volume, meaning the heart must work harder to pump less blood around the body.",
-        "distinguishing_features": [
-          "Symptoms improve noticeably with increased salt and fluid intake",
-          "Often accompanies dehydration-prone conditions",
-          "May worsen during menstrual cycle when fluid retention decreases"
+          "Small-fibre neuropathy detectable on skin punch biopsy",
+          "Distal anhidrosis (reduced sweating in lower limbs)",
+          "Often idiopathic but may follow viral illness or immune trigger",
+          "May respond to treatments targeting neuropathic pathways"
         ]
       },
       {
         "name": "Hyperadrenergic POTS",
-        "description": "Involves excessive norepinephrine release at rest and during position changes, leading to high baseline heart rate and blood pressure.",
+        "description": "Characterised by excessive sympathetic nervous system activity, with high norepinephrine levels on standing. Often a more severe subtype.",
         "distinguishing_features": [
-          "Elevated resting heart rate (often >80 bpm)",
-          "High blood pressure symptoms (tremor, anxiety-like feelings)",
-          "Palpitations and sweating at rest",
-          "May worsen with stimulants"
+          "Standing plasma norepinephrine >600 pg/mL",
+          "Blood pressure may rise (rather than fall) on standing",
+          "Prominent palpitations, tremor, anxiety-like symptoms, sweating",
+          "Migraines are common",
+          "Some cases are familial; norepinephrine transporter (NET) mutations implicated in a subset"
         ]
       },
       {
-        "name": "Secondary POTS",
-        "description": "POTS that develops as a consequence of another medical condition or treatment, rather than as a primary autonomous disorder.",
+        "name": "Hypovolemic POTS",
+        "description": "Driven primarily by chronically low circulating blood volume, causing the heart to compensate with higher rates even at rest when standing.",
         "distinguishing_features": [
-          "Follows autoimmune disease, mast cell activation, or infection",
-          "May resolve if underlying condition is treated",
-          "Associated with EBV, COVID-19, Lyme disease, or connective tissue disorders"
+          "Low red blood cell volume or plasma volume on formal testing",
+          "Often responds well to aggressive sodium and fluid loading",
+          "May be secondary to deconditioning, hormonal changes, or dietary insufficiency",
+          "Erythropoietin or IV saline can produce dramatic short-term improvement"
+        ]
+      },
+      {
+        "name": "POTS associated with hEDS / connective tissue hypermobility",
+        "description": "A common and well-recognised overlap between POTS and hypermobile Ehlers-Danlos syndrome (hEDS) or hypermobility spectrum disorder (HSD), where lax connective tissue around blood vessels impairs their ability to constrict appropriately.",
+        "distinguishing_features": [
+          "Joint hypermobility, skin extensibility, or chronic musculoskeletal pain",
+          "Beighton score often elevated",
+          "Higher rates of comorbid MCAS in this subgroup",
+          "Management needs to address the connective tissue component alongside dysautonomia"
+        ]
+      },
+      {
+        "name": "Post-infectious / Post-COVID POTS",
+        "description": "POTS triggered by a viral or bacterial illness, most prominently COVID-19 but also associated with Epstein-Barr virus, Lyme disease, and other infections. Thought to involve immune-mediated autonomic nerve injury or autoantibody production.",
+        "distinguishing_features": [
+          "Clear temporal onset following an infection",
+          "Autoantibodies against adrenergic or muscarinic receptors found in some patients",
+          "Often more acute in onset than idiopathic POTS",
+          "May partially resolve over months to years in some cases",
+          "Overlaps strongly with long COVID symptom profiles"
+        ]
+      },
+      {
+        "name": "Adolescent POTS",
+        "description": "POTS is common in adolescents and may partly reflect a physiological mismatch between rapid growth and autonomic system maturation. However, significant impairment warrants proper evaluation.",
+        "distinguishing_features": [
+          "Diagnostic threshold for heart rate increase is 40 bpm (vs 30 bpm in adults)",
+          "Often improves with maturation but can persist into adulthood",
+          "School attendance, cognition, and mental health are frequently affected",
+          "Deconditioning from avoidance of activity can perpetuate symptoms"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Rapid heartbeat when standing",
+        "symptom": "Heart rate increase of 30+ bpm within 10 minutes of standing",
         "category": "cardiovascular",
-        "notes": "Heart rate increases by 30 bpm or more within 10 minutes of standing, or exceeds 120 bpm. Often asymptomatic in some people but bothersome in others."
+        "notes": "The defining diagnostic feature. Often felt as pounding, racing, or fluttering heart. May be accompanied by visible neck vein pulsation."
       },
       {
-        "symptom": "Dizziness or lightheadedness upon standing",
-        "category": "neurological",
-        "notes": "Worse after prolonged sitting or lying down, in the morning, and in warm environments. May worsen with sudden position changes."
+        "symptom": "Dizziness or lightheadedness when standing",
+        "category": "cardiovascular / neurological",
+        "notes": "Can range from mild head-rush to near-fainting. Worse in the morning, after meals, in heat, and after prolonged standing."
       },
       {
-        "symptom": "Blurred vision",
-        "category": "neurological",
-        "notes": "Can occur when standing or during exertion; related to reduced blood flow to the brain."
+        "symptom": "Pre-syncope or syncope (fainting or near-fainting)",
+        "category": "cardiovascular / neurological",
+        "notes": "Full fainting occurs in a minority of POTS patients; near-fainting (greyouts, tunnel vision) is more common."
       },
       {
-        "symptom": "Fainting or near-fainting (syncope or presyncope)",
-        "category": "neurological",
-        "notes": "Less common in POTS than in other forms of dysautonomia, but can occur with triggers like heat, dehydration, or prolonged standing."
+        "symptom": "Extreme fatigue unrelieved by rest",
+        "category": "systemic",
+        "notes": "Often the most disabling symptom. Distinct from ordinary tiredness \u2014 frequently described as a bone-deep exhaustion or 'battery drain' that persists regardless of sleep."
       },
       {
-        "symptom": "Brain fog or concentration problems",
-        "category": "neurological",
-        "notes": "Cognitive dysfunction that correlates with symptom severity; improves with treatment."
+        "symptom": "Brain fog \u2014 impaired concentration, memory, word retrieval",
+        "category": "neurological / cognitive",
+        "notes": "Often described as thinking through fog or cotton wool. Worsens with upright posture, after meals, and with heat. Can make reading, conversation, or work very difficult."
       },
       {
-        "symptom": "Fatigue or exhaustion",
-        "category": "general",
-        "notes": "Often disproportionate to exertion; can be debilitating. Improves with better management."
+        "symptom": "Shortness of breath or air hunger on minimal exertion or standing",
+        "category": "cardiovascular / respiratory",
+        "notes": "Often not true respiratory disease \u2014 driven by the cardiovascular compensation and blunted cardiac output when upright."
       },
       {
-        "symptom": "Chest pain or discomfort",
+        "symptom": "Palpitations",
         "category": "cardiovascular",
-        "notes": "Usually mild and unrelated to heart disease (which should be ruled out clinically), but can cause anxiety."
+        "notes": "Awareness of an unusually fast, strong, or irregular heartbeat. May trigger significant anxiety. Often worsened after eating."
       },
       {
-        "symptom": "Tremor or shakiness",
-        "category": "neurological",
-        "notes": "More common in hyperadrenergic POTS; may be mistaken for anxiety."
-      },
-      {
-        "symptom": "Excessive sweating or abnormal sweating patterns",
-        "category": "dermatological",
-        "notes": "Can be patchy or reduced (especially in legs). May worsen in warm environments or with exertion."
-      },
-      {
-        "symptom": "Headaches or migraines",
-        "category": "neurological",
-        "notes": "Often triggered by standing, dehydration, or symptom flares."
-      },
-      {
-        "symptom": "Nausea or feeling sick",
+        "symptom": "Nausea",
         "category": "digestive",
-        "notes": "Often worse when standing or after meals; can lead to reduced appetite."
+        "notes": "Especially prominent in the morning or after meals. Can be severe enough to limit food intake. Related to impaired gastric motility and autonomic control of digestion."
       },
       {
-        "symptom": "Gastrointestinal symptoms",
+        "symptom": "Bloating and early satiety",
         "category": "digestive",
-        "notes": "Includes constipation, diarrhoea, bloating, and abdominal discomfort. Common in POTS."
+        "notes": "Gastroparesis or delayed gastric emptying occurs in a significant subset and is mechanistically linked to autonomic neuropathy."
+      },
+      {
+        "symptom": "Constipation or diarrhea (or alternating)",
+        "category": "digestive",
+        "notes": "Autonomic dysfunction disrupts gut motility throughout the GI tract. Often mistaken for IBS."
+      },
+      {
+        "symptom": "Abdominal pain",
+        "category": "digestive",
+        "notes": "May relate to blood pooling in the gut, impaired motility, or comorbid conditions such as MCAS."
       },
       {
         "symptom": "Heat intolerance",
-        "category": "general",
-        "notes": "Symptoms worsen markedly in warm environments; cooling strategies help."
+        "category": "autonomic / thermoregulation",
+        "notes": "Hot environments, hot showers, or hot weather can dramatically worsen all symptoms, as heat causes further vasodilation and blood pooling."
       },
       {
-        "symptom": "Exercise intolerance",
-        "category": "general",
-        "notes": "Symptoms may worsen disproportionately with activity; differs from typical deconditioning."
+        "symptom": "Cold or mottled extremities (acrocyanosis)",
+        "category": "cardiovascular / skin",
+        "notes": "Hands and feet may appear bluish-purple, especially when dependent. Indicates poor peripheral circulation on standing."
       },
       {
-        "symptom": "Anxiety-like feelings or panic sensations",
-        "category": "psychological",
-        "notes": "Often secondary to physical symptoms; may improve as POTS is better managed. Not the same as primary anxiety disorder."
+        "symptom": "Excessive sweating or anhidrosis (reduced sweating)",
+        "category": "autonomic / skin",
+        "notes": "Sweating dysregulation reflects autonomic nerve dysfunction. Pattern depends on subtype."
       },
       {
-        "symptom": "Sleep disturbances",
-        "category": "general",
-        "notes": "Difficulty falling asleep, frequent waking, unrefreshing sleep. May improve with symptom management."
+        "symptom": "Headaches, especially positional",
+        "category": "neurological",
+        "notes": "Migraines are common, particularly in hyperadrenergic POTS. Some patients experience low-pressure headaches that worsen when upright."
+      },
+      {
+        "symptom": "Sleep disturbance \u2014 difficulty falling or staying asleep",
+        "category": "neurological / autonomic",
+        "notes": "Autonomic instability and high nocturnal sympathetic tone can prevent restorative sleep, worsening all other symptoms."
+      },
+      {
+        "symptom": "Anxiety-like symptoms: tremor, shakiness, inner tension",
+        "category": "neurological / autonomic",
+        "notes": "Particularly prominent in hyperadrenergic POTS. These are physiologically-driven, not primarily psychological, though anxiety and POTS frequently coexist."
+      },
+      {
+        "symptom": "Chest pain or pressure",
+        "category": "cardiovascular",
+        "notes": "Common and alarming to patients. Cardiac causes should be excluded, but chest discomfort is common in POTS without structural heart disease."
+      },
+      {
+        "symptom": "Post-exertional malaise \u2014 symptom worsening after physical or cognitive exertion",
+        "category": "systemic",
+        "notes": "Common in POTS, particularly post-infectious subtypes. Overlaps strongly with ME/CFS. Aggressive exercise early in rehabilitation can trigger prolonged crashes in susceptible individuals."
+      },
+      {
+        "symptom": "Urinary frequency or urgency",
+        "category": "urological / autonomic",
+        "notes": "Autonomic control of bladder function may be impaired. Interstitial cystitis is a comorbidity in some patients."
+      },
+      {
+        "symptom": "Visual disturbances \u2014 blurring, tunnel vision, light sensitivity",
+        "category": "neurological / sensory",
+        "notes": "Often worsened on standing or in bright light. Can include photophobia and difficulty adjusting to light changes."
       }
     ],
     "testing": {
       "key_patterns": [
-        "Symptoms triggered or worsened by standing, especially after prolonged lying or sitting",
-        "Relief of symptoms when lying down or returning to a horizontal position",
-        "Worsening of symptoms in heat, after meals, with dehydration, or during menstrual cycle",
-        "Fatigue and brain fog that don't match typical tiredness or poor sleep alone",
-        "Heart rate and symptoms that seem disproportionate to the level of activity",
-        "A cluster of cardiovascular, neurological, and gastrointestinal symptoms occurring together"
+        "Heart rate increase of \u226530 bpm (\u226540 bpm in under-19s) within 10 minutes of standing, without a sustained blood pressure drop \u2014 the defining diagnostic pattern",
+        "Symptoms that are clearly worse upright and improve with lying down",
+        "Normal or near-normal lying-down vitals that normalise when recumbent \u2014 a pattern that causes POTS to be missed on standard assessments",
+        "Low urinary sodium suggesting chronic volume depletion",
+        "Standing plasma norepinephrine >600 pg/mL suggests hyperadrenergic subtype",
+        "Skin punch biopsy showing reduced intraepidermal nerve fibre density \u2014 marker of small-fibre neuropathy in neuropathic POTS",
+        "Autoantibodies against adrenergic, muscarinic, or angiotensin receptors (research/specialist setting) \u2014 emerging marker particularly in post-infectious cases"
       ],
       "at_home": [
         {
-          "name": "Seated and standing heart rate measurement",
-          "description": "Sit or lie down for 5 minutes and record heart rate (by pulse or pulse oximeter). Stand up and record heart rate at 1, 3, and 5 minutes. Look for an increase of 30 bpm or a standing rate above 120 bpm.",
-          "safety_notes": "If you feel faint or severely dizzy, sit down immediately. Do this test when well-hydrated and in a safe place where you can sit down quickly if needed. Avoid testing if you're ill, dehydrated, or in extreme heat."
+          "name": "NASA Lean Test (poor man's tilt table test)",
+          "description": "Lie down flat for 10 minutes, then stand upright and record heart rate at 1, 3, 5, 7, and 10 minutes. A rise of \u226530 bpm from lying to standing (without fainting or blood pressure drop) is consistent with POTS. A pulse oximeter with heart rate display or a wrist-based heart rate monitor can be used. Record symptoms experienced during the standing period. This is a screening tool, not a diagnosis.",
+          "safety_notes": "Stop and sit or lie down immediately if near-fainting occurs. Do not perform alone if syncope episodes are frequent. Readings may be affected by hydration status, recent caffeine, or time of day."
         },
         {
-          "name": "Symptom and trigger diary",
-          "description": "Record the time of day, activity, symptoms, heart rate if available, fluid intake, salt intake, weather/temperature, and menstrual cycle phase (if applicable) for 1\u20134 weeks. Look for patterns linking symptoms to specific triggers.",
-          "safety_notes": "No safety concerns. Keeping a diary helps you and your healthcare provider identify triggers and assess improvement."
+          "name": "Symptom and position diary",
+          "description": "Track symptoms with posture (lying, sitting, standing), time of day, meals, temperature, menstrual cycle phase, and exertion. A clear orthostatic pattern \u2014 symptoms worsening with upright posture and relieving on lying down \u2014 is a strong signal. Many people with POTS find patterns in their data that help guide both diagnosis and management.",
+          "safety_notes": "No safety concerns. Data gathered from a 2\u20134 week diary is genuinely useful to bring to clinical appointments."
         },
         {
-          "name": "Orthostatic vital signs at home",
-          "description": "Measure blood pressure and heart rate lying down, immediately upon standing, and at 1, 3, and 5 minutes. Record all values. Look for heart rate changes (as above) and any blood pressure changes.",
-          "safety_notes": "Have a safe place to sit or lie down immediately if you feel faint. Do not perform this test if you've recently fainted or felt severely unwell."
+          "name": "Response to salt and fluid loading",
+          "description": "Some people notice meaningful symptom reduction when they dramatically increase water and sodium intake (e.g. 2\u20133 litres of fluid and 3\u20135g of extra sodium daily). Noticing improvement from this intervention \u2014 though not diagnostic \u2014 may point toward hypovolemic mechanisms. Electrolyte drinks or salt tablets are commonly used.",
+          "safety_notes": "Individuals with kidney disease, heart failure, or hypertension should not increase sodium intake without medical oversight. High-dose sodium supplementation is not appropriate for everyone."
         }
       ],
       "clinical": [
         {
-          "name": "Tilt Table Test",
+          "name": "Tilt Table Test (TTT)",
           "type": "gold_standard",
-          "description": "Patient lies on a motorized table while heart rate and blood pressure are continuously monitored. The table is tilted to 60\u201380 degrees for up to 20 minutes. A rise in heart rate of 30 bpm or to above 120 bpm (in adults), along with reproduction of symptoms, confirms POTS. Blood pressure typically remains normal or only slightly drops.",
-          "availability": "Ordered by cardiologists, neurologists, or dysautonomia specialists. Requires a hospital or outpatient clinic with tilt-table equipment. Wait times may be long in some regions."
+          "description": "The patient is secured to a motorised table, brought from horizontal to 70-degree upright position, and heart rate and blood pressure are recorded continuously for up to 45 minutes. A rise of \u226530 bpm (\u226540 bpm in adolescents) without sustained blood pressure drop confirms POTS. Can also detect orthostatic hypotension and vasovagal syncope. Some protocols include isoproterenol provocation.",
+          "availability": "Available at autonomic specialist centres, some cardiology and neurology departments. Availability varies significantly by region. A referral from a cardiologist or neurologist is typically needed."
         },
         {
-          "name": "Holter Monitor or Portable Heart Rate Monitor",
+          "name": "Active Stand Test (10-minute stand test)",
           "type": "standard",
-          "description": "A portable device records heart rate and rhythm over 24\u201348 hours as you go about normal activities. Helps identify patterns of tachycardia, arrhythmias, or symptom-rhythm correlation.",
-          "availability": "Ordered by a cardiologist or primary care provider. Devices are worn at home; recording is non-invasive."
+          "description": "A simpler clinical version of the tilt table test. Heart rate and blood pressure are recorded lying, then at intervals for 10 minutes of standing. Less sensitive than TTT but more widely available and sufficient for diagnosis in many cases.",
+          "availability": "Can be performed in most cardiology clinics, GP offices, or autonomic neurology units. Requires only a blood pressure cuff and watch."
+        },
+        {
+          "name": "24-hour ambulatory heart rate and blood pressure monitoring",
+          "type": "standard",
+          "description": "A wearable monitor records heart rate and blood pressure throughout the day, capturing postural changes in a real-world context. Useful when clinic-based orthostatic testing is inconclusive or when documenting the day-to-day pattern of abnormality.",
+          "availability": "Widely available through cardiology departments. May need to specifically request heart rate analysis in different postures."
+        },
+        {
+          "name": "Plasma catecholamine levels (standing vs lying)",
+          "type": "standard",
+          "description": "Blood is drawn after 20\u201330 minutes lying down, then again after 10 minutes standing. Norepinephrine >600 pg/mL standing, or a large rise from supine to standing, indicates hyperadrenergic POTS. Helps guide medication selection.",
+          "availability": "Available through specialist autonomic centres or via endocrinology referral. Requires precise timing and handling of blood samples."
+        },
+        {
+          "name": "Skin punch biopsy (intraepidermal nerve fibre density)",
+          "type": "standard",
+          "description": "A small skin biopsy is taken from the lower leg (and sometimes thigh) and stained to quantify small-calibre nerve fibres. Reduced density confirms small-fibre neuropathy, supporting the neuropathic POTS subtype. Can help identify the underlying mechanism and direct treatment.",
+          "availability": "Available at specialist neurology or autonomic neurology centres. Requires a neurologist referral and a laboratory with appropriate staining capabilities."
+        },
+        {
+          "name": "Quantitative Sudomotor Axon Reflex Test (QSART)",
+          "type": "standard",
+          "description": "Measures sweat output at multiple body sites in response to electrical stimulation of sweat glands. Identifies a pattern of peripheral sudomotor denervation (distal anhidrosis with preserved proximal sweating) characteristic of neuropathic POTS.",
+          "availability": "Available primarily at specialist autonomic neurology centres. Not widely available in general neurology or cardiology departments."
+        },
+        {
+          "name": "Blood and plasma volume testing",
+          "type": "standard",
+          "description": "Nuclear medicine technique using radiolabelled albumin or red blood cells to measure actual circulating blood volume. Identifies hypovolemia as a driver of POTS. Informs decisions about volume-expanding treatments.",
+          "availability": "Available at specialist centres with nuclear medicine facilities. Not routinely ordered \u2014 typically needs a motivated autonomic specialist to request it."
+        },
+        {
+          "name": "Autoantibody panel for autonomic neuropathy",
+          "type": "emerging",
+          "description": "Testing for antibodies against ganglionic acetylcholine receptors (AChR), adrenergic receptors, muscarinic receptors, and other autonomic targets. Particularly relevant in post-infectious and post-COVID cases, and in autoimmune autonomic ganglionopathy. Can identify an immune-mediated mechanism that may respond to immunotherapy.",
+          "availability": "Available through specialist autonomic neurology units or via commercial laboratories such as Mayo Clinic Neuroimmunology. Not yet part of routine diagnostic workups in most settings."
         },
         {
           "name": "Echocardiogram",
           "type": "standard",
-          "description": "Ultrasound of the heart to assess structure and function. Used to rule out structural heart disease that might cause POTS-like symptoms.",
-          "availability": "Ordered by a cardiologist or primary care provider. Performed in a hospital, clinic, or imaging centre."
+          "description": "Ultrasound imaging of the heart. Used to exclude structural cardiac causes of tachycardia and to assess for small left ventricular cavity size \u2014 a finding sometimes seen in hypovolemic POTS. Reassurance for patients with significant chest symptoms.",
+          "availability": "Widely available through cardiology departments."
         },
         {
-          "name": "Blood work (thyroid, electrolytes, haemoglobin)",
+          "name": "Thermoregulatory Sweat Test (TST)",
           "type": "standard",
-          "description": "Blood tests rule out anaemia, thyroid disease, electrolyte imbalances, and other conditions that can mimic POTS or contribute to dysautonomia.",
-          "availability": "Ordered by any healthcare provider; performed at a pathology lab."
-        },
-        {
-          "name": "Plasma Norepinephrine Test (supine and upright)",
-          "type": "emerging",
-          "description": "Measures norepinephrine levels while lying and standing to identify hyperadrenergic POTS (high at rest) versus other subtypes. Research use mainly; not routinely available.",
-          "availability": "Specialist dysautonomia or autonomic testing centres; limited availability."
-        },
-        {
-          "name": "Autonomic Function Testing",
-          "type": "standard",
-          "description": "A battery of tests (e.g. heart rate variability, sudomotor testing, deep breathing responses) that assess overall autonomic nervous system function. Helps characterize the type of dysautonomia.",
-          "availability": "Ordered by neurologists or dysautonomia specialists. Performed in specialist autonomic testing labs."
-        },
-        {
-          "name": "Imaging (MRI or CT) of the brain and spinal cord",
-          "type": "standard",
-          "description": "Used when neurological symptoms are prominent or to rule out structural causes (e.g. Chiari malformation, tethered spinal cord) that can present with dysautonomia.",
-          "availability": "Ordered by a neurologist if clinically indicated. Performed at a hospital or imaging centre."
+          "description": "The patient is placed in a heated chamber and sweating is mapped across the body using an indicator powder that changes colour with moisture. Produces a detailed map of sweat distribution, identifying areas of anhidrosis caused by autonomic nerve damage.",
+          "availability": "Primarily available at major autonomic specialist centres (e.g. Mayo Clinic, Cleveland Clinic). Limited availability in most countries."
         }
       ]
     },
     "related_conditions": [
       {
-        "name": "Ehlers\u2013Danlos Syndrome (EDS)",
+        "id": "eds",
+        "name": "Hypermobile EDS / Hypermobility Spectrum Disorder (hEDS/HSD)",
         "relationship": "comorbid",
-        "explanation": "EDS, particularly hypermobile EDS, is strongly associated with POTS. Both involve connective tissue and autonomic dysfunction. Up to 40\u201380% of people with hEDS also have POTS."
+        "explanation": "POTS and hEDS/HSD co-occur at high rates \u2014 estimated 30\u201350% of hEDS patients meet POTS criteria. Lax connective tissue around blood vessel walls impairs vasoconstriction and promotes blood pooling on standing. Many patients receive both diagnoses when properly evaluated."
       },
       {
-        "name": "Mast Cell Activation Syndrome (MCAS)",
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
         "relationship": "comorbid",
-        "explanation": "MCAS can trigger or worsen POTS through inflammatory mediators. The conditions often co-occur and share some triggers like heat and certain foods."
+        "explanation": "POTS, hEDS, and MCAS form a frequently described triad. Mast cells can destabilise autonomic function via histamine and other mediators, worsen blood pressure instability, and trigger many POTS-like symptoms. The causal direction is not always clear but the overlap is clinically significant."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "Fibromyalgia and POTS share overlapping mechanisms including central sensitisation and small-fibre neuropathy. Widespread pain, fatigue, and cognitive symptoms are common to both. They may co-occur or may represent overlapping dysautonomia-related processes."
+      },
+      {
+        "id": "gastroparesis",
+        "name": "Gastroparesis",
+        "relationship": "downstream",
+        "explanation": "Autonomic neuropathy affecting the vagus nerve impairs gastric motility, producing delayed stomach emptying. Gastroparesis is a recognised complication or comorbidity of POTS, contributing to nausea, bloating, early satiety, and blood glucose instability after meals."
+      },
+      {
+        "id": "ibs",
+        "name": "Irritable bowel syndrome (IBS)",
+        "relationship": "often_confused",
+        "explanation": "The GI symptoms of POTS \u2014 nausea, bloating, altered motility, abdominal pain \u2014 are frequently diagnosed as IBS without the autonomic cause being identified. A subset of people labelled with IBS may have underlying dysautonomia driving their bowel dysfunction."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "often_confused",
+        "explanation": "POTS symptoms \u2014 palpitations, shortness of breath, tremor, dizziness, feeling of unreality \u2014 are nearly identical to anxiety attack symptoms. Many POTS patients receive anxiety diagnoses before dysautonomia is identified. Anxiety can also be a genuine consequence of living with unpredictable, poorly-understood symptoms."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation",
+        "relationship": "comorbid",
+        "explanation": "Chronic autonomic instability and poor-quality sleep can sensitise the central nervous system over time, amplifying pain and sensory signals. Central sensitisation may explain why POTS patients often have widespread pain, hypersensitivity to light and sound, and overlapping chronic pain syndromes."
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "comorbid",
+        "explanation": "Histamine causes vasodilation and can worsen orthostatic symptoms. Some POTS patients find a low-histamine diet reduces flushing, palpitations, and GI symptoms \u2014 consistent with either MCAS overlap or true histamine intolerance."
+      },
+      {
+        "id": "functional_dyspepsia",
+        "name": "Functional dyspepsia",
+        "relationship": "often_confused",
+        "explanation": "Nausea, early satiety, and upper GI discomfort in POTS may be labelled as functional dyspepsia when the autonomic basis is not considered. Autonomic management may improve symptoms that do not respond to standard dyspepsia treatments."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "often_confused",
+        "explanation": "Both hyperthyroidism and hypothyroidism can produce POTS-like symptoms \u2014 tachycardia, fatigue, brain fog, temperature dysregulation. Thyroid function should be evaluated in all POTS workups, and thyroid disease may co-occur in autoimmune presentations."
+      },
+      {
+        "id": "adhd",
+        "name": "ADHD",
+        "relationship": "comorbid",
+        "explanation": "ADHD and POTS co-occur at higher rates than chance, and both involve dopamine and norepinephrine dysregulation. Brain fog from cerebral hypoperfusion in POTS can masquerade as attentional difficulties, and the two conditions may share underlying neurobiological overlap."
+      },
+      {
+        "id": "endometriosis",
+        "name": "Endometriosis",
+        "relationship": "comorbid",
+        "explanation": "Endometriosis and POTS are both conditions affecting predominantly young women, and co-occurrence rates appear elevated. Hormonal fluctuations across the menstrual cycle worsen POTS symptoms, and shared immune dysregulation may link the two."
+      },
+      {
+        "id": "hormonal",
+        "name": "Hormonal / menstrual cycle effects",
+        "relationship": "mechanistic_link",
+        "explanation": "Oestrogen promotes vasodilation and progesterone affects blood volume regulation. POTS symptoms typically worsen in the luteal phase and around menstruation. Hormonal shifts during puberty, pregnancy, and perimenopause are recognised triggers for POTS onset or exacerbation."
+      },
+      {
+        "name": "ME/CFS (Myalgic Encephalomyelitis / Chronic Fatigue Syndrome)",
+        "id": null,
+        "relationship": "comorbid",
+        "explanation": "POTS and ME/CFS overlap substantially, particularly in post-infectious presentations. Orthostatic intolerance is a common feature of ME/CFS, and a significant proportion of ME/CFS patients meet POTS diagnostic criteria. Both share post-exertional malaise as a central feature. Many post-COVID patients carry elements of both."
+      },
+      {
+        "name": "Autoimmune autonomic ganglionopathy (AAG)",
+        "id": null,
+        "relationship": "often_confused",
+        "explanation": "AAG is a rare autoimmune condition attacking the ganglionic acetylcholine receptor, causing widespread autonomic failure that can include POTS-like features. Anti-gAChR antibodies help distinguish it. Relevant in severe or rapidly progressive cases, particularly after an infectious trigger."
+      },
+      {
+        "name": "Chiari malformation",
+        "id": null,
+        "relationship": "often_confused",
+        "explanation": "Chiari I malformation (cerebellar tonsillar herniation) can directly compress autonomic centres in the brainstem and produce dysautonomia. It is seen at elevated rates in people with hEDS and POTS. Brain MRI with attention to the posterior fossa is warranted in some cases."
       },
       {
         "name": "Long COVID",
-        "relationship": "downstream",
-        "explanation": "POTS-like symptoms and dysautonomia have emerged as common complications of COVID-19, suggesting viral infection as an upstream trigger for autonomic dysfunction."
-      },
-      {
-        "name": "Myalgic Encephalomyelitis / Chronic Fatigue Syndrome (ME/CFS)",
-        "relationship": "often_confused",
-        "explanation": "ME/CFS and POTS share fatigue, exertional intolerance, and brain fog. Many ME/CFS patients also have concurrent POTS. The conditions are distinct but overlap significantly."
-      },
-      {
-        "name": "Orthostatic Intolerance (OI) / Orthostatic Hypotension",
-        "relationship": "mechanistic_link",
-        "explanation": "POTS is one form of orthostatic intolerance. Orthostatic hypotension (excessive blood pressure drop upon standing) is a separate condition but shares similar triggers and management strategies."
-      },
-      {
-        "name": "Small Fibre Neuropathy (SFN)",
-        "relationship": "mechanistic_link",
-        "explanation": "SFN is particularly associated with neuropathic POTS. Damage to small nerve fibres impairs autonomic signalling and sweating regulation."
-      },
-      {
-        "name": "Fibromyalgia",
-        "relationship": "comorbid",
-        "explanation": "Fibromyalgia and POTS frequently co-occur. Both involve autonomic dysfunction and may share overlapping mechanisms or triggers."
-      },
-      {
-        "name": "Migraine and Headache Disorders",
-        "relationship": "comorbid",
-        "explanation": "Migraines and tension headaches are very common in POTS. Autonomic dysfunction and dehydration are shared triggers."
-      },
-      {
-        "name": "Anxiety Disorder",
-        "relationship": "often_confused",
-        "explanation": "POTS symptoms (palpitations, tremor, breathlessness) can mimic or trigger anxiety. However, anxiety is not the cause of POTS; treating the autonomic dysfunction often resolves the anxiety-like symptoms."
-      },
-      {
-        "name": "Anaemia",
+        "id": null,
         "relationship": "upstream",
-        "explanation": "Anaemia reduces oxygen-carrying capacity and can trigger or exacerbate POTS-like symptoms. Should be ruled out in diagnostic workup."
-      },
-      {
-        "name": "Thyroid Disease (Hyperthyroidism, Graves' Disease)",
-        "relationship": "upstream",
-        "explanation": "Thyroid dysfunction can cause tachycardia and orthostatic symptoms mimicking POTS. Must be excluded in initial evaluation."
+        "explanation": "SARS-CoV-2 infection is now among the most common triggers for new-onset POTS globally. Post-COVID dysautonomia appears to involve immune-mediated autonomic nerve injury, autoantibody production, endothelial dysfunction, and possibly microclotting. Long COVID and POTS overlap substantially."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
-          "name": "Increase salt intake",
+          "name": "High-sodium, high-fluid intake",
+          "category": "diet / lifestyle",
+          "description": "Increasing daily sodium intake to 3\u20135g (or more, as tolerated and advised) and fluid intake to 2\u20133 litres per day helps expand circulating blood volume and reduces the orthostatic heart rate surge. Electrolyte drinks (containing sodium, potassium, and magnesium) are often more effective than plain water. Salt tablets are used by many patients. This is often the first and most impactful non-pharmacological intervention.",
+          "evidence_level": "strong",
+          "notes": "Not appropriate for individuals with kidney disease, hypertension, or heart failure. Sodium needs may vary significantly between individuals and should be guided by urine sodium testing where possible."
+        },
+        {
+          "name": "Compression garments",
+          "category": "lifestyle / physical",
+          "description": "Compression stockings (ideally 20\u201330 mmHg or higher) and abdominal binders reduce blood pooling in the lower limbs and abdomen on standing, reducing the heart rate compensation response. Thigh-high or waist-high compression is more effective than knee-high alone. Putting them on while still lying down is important.",
+          "evidence_level": "moderate",
+          "notes": "Heat tolerance may make compression garments difficult to wear in warm weather. Compliance is often challenging due to discomfort. Abdominal binders are sometimes better tolerated and particularly useful when abdominal blood pooling is prominent."
+        },
+        {
+          "name": "Graded exercise rehabilitation (recumbent-first protocol)",
+          "category": "lifestyle / rehabilitation",
+          "description": "A carefully structured exercise programme beginning with recumbent or semi-recumbent exercises (rowing, swimming, recumbent cycling) avoids triggering orthostatic symptoms while building cardiovascular fitness and plasma volume. Over months, exercise tolerance is progressively extended to more upright activities. Developed by Dr. Benjamin Levine at UT Southwestern, this protocol has the strongest evidence base of any POTS treatment.",
+          "evidence_level": "strong",
+          "notes": "Starting with upright exercise (e.g. treadmill, walking) before cardiovascular conditioning has improved typically worsens symptoms and discourages patients. Individuals with significant post-exertional malaise \u2014 particularly post-COVID POTS or ME/CFS overlap \u2014 need a much more cautious approach and should avoid pushing through crashes. Working with a physiotherapist familiar with dysautonomia is strongly recommended."
+        },
+        {
+          "name": "Elevating the head of the bed",
+          "category": "lifestyle / environment",
+          "description": "Raising the head of the bed 10\u201320 cm (using risers or a wedge, not just pillows) creates a mild overnight gravitational stimulus that promotes fluid retention and reduces the morning orthostatic challenge. Helps reduce morning symptom severity, which is often at its worst.",
+          "evidence_level": "moderate",
+          "notes": "Simple, low-risk, and often underused. Most effective when combined with salt and fluid loading."
+        },
+        {
+          "name": "Counter-pressure manoeuvres",
+          "category": "lifestyle / physical",
+          "description": "Physical techniques performed when symptoms begin \u2014 crossing legs, tensing thigh and buttock muscles, squatting, or lying down \u2014 increase venous return to the heart immediately and can abort or reduce an orthostatic episode. Can be used in situations where lying down is not possible.",
+          "evidence_level": "moderate",
+          "notes": "Useful as an acute symptom management tool. Should be taught to patients as part of initial management education."
+        },
+        {
+          "name": "Beta-blockers (low dose)",
+          "category": "medication",
+          "description": "Low-dose propranolol or metoprolol reduces the heart rate surge on standing, improving palpitations and exercise intolerance in some patients. More useful for rate control than for overall symptom burden. Typically used at lower doses than in cardiac conditions.",
+          "evidence_level": "moderate",
+          "notes": "Can cause fatigue, low blood pressure, and exercise intolerance at higher doses. May worsen symptoms in hypovolemic POTS by reducing cardiac output further. Not appropriate for all subtypes. A trial is reasonable under medical supervision."
+        },
+        {
+          "name": "Fludrocortisone",
+          "category": "medication",
+          "description": "A mineralocorticoid that causes the kidneys to retain sodium and water, expanding blood volume. Used particularly in hypovolemic POTS. Can improve volume status and reduce orthostatic symptoms.",
+          "evidence_level": "moderate",
+          "notes": "Requires potassium monitoring (can cause hypokalaemia). May cause fluid retention, headaches, and elevated blood pressure. Evidence base is largely from observational studies. Must be prescribed and monitored by a physician."
+        },
+        {
+          "name": "Midodrine",
+          "category": "medication",
+          "description": "An alpha-1 agonist that constricts peripheral blood vessels, reducing pooling in the limbs and raising blood pressure. Can reduce orthostatic symptoms in some patients. Taken in divided doses during waking hours only \u2014 never before bed.",
+          "evidence_level": "moderate",
+          "notes": "Can cause supine hypertension, goosebumps, scalp tingling, and urinary retention. Should not be taken within 4 hours of lying down. Not suitable for hyperadrenergic POTS where blood pressure is already elevated."
+        },
+        {
+          "name": "Ivabradine",
+          "category": "medication",
+          "description": "A selective heart rate-lowering agent (If channel blocker) that reduces resting and orthostatic heart rate without the blood pressure-lowering effects of beta-blockers. Increasingly used in POTS, particularly in patients who do not tolerate beta-blockers.",
+          "evidence_level": "moderate",
+          "notes": "Not licensed for POTS in most countries \u2014 used off-label. Emerging evidence supports its use. Requires cardiac monitoring. Available via cardiologist or autonomic specialist."
+        },
+        {
+          "name": "Pyridostigmine",
+          "category": "medication",
+          "description": "An acetylcholinesterase inhibitor that enhances parasympathetic tone and peripheral ganglionic transmission. Can reduce orthostatic tachycardia without significantly affecting blood pressure. May be particularly useful in neuropathic POTS.",
+          "evidence_level": "moderate",
+          "notes": "Side effects include GI cramping, increased salivation, and diarrhoea. Requires a knowledgeable prescriber \u2014 often an autonomic neurologist."
+        },
+        {
+          "name": "Dietary meal modifications \u2014 smaller, more frequent meals",
           "category": "diet",
-          "description": "Increase dietary sodium to 9\u201312 grams per day (or as tolerated) through salt-containing foods or electrolyte drinks. Salt expands blood plasma volume, reducing the heart's workload when standing. This is especially effective for hypovolemic POTS.",
-          "evidence_level": "strong",
-          "notes": "Not everyone tolerates high salt equally. Monitor blood pressure if you have hypertension. Gradually increase intake over days to avoid nausea. Works best when combined with adequate fluid intake."
-        },
-        {
-          "name": "Increase fluid intake",
-          "category": "diet",
-          "description": "Drink 2\u20133 litres of fluid per day (or more in heat or with exercise), spread throughout the day. Fluids increase blood plasma volume, improving cardiac output when standing.",
-          "evidence_level": "strong",
-          "notes": "Balance with sodium intake to retain fluid effectively. Monitor urine colour (should be pale) as a hydration marker. Excessive water without electrolytes can dilute blood sodium."
-        },
-        {
-          "name": "Wear compression stockings or leggings",
-          "category": "environment",
-          "description": "Graduated compression garments (20\u201330 mmHg, ideally knee-high or thigh-high) compress leg and abdominal blood vessels, reducing pooling of blood in the legs when standing. Wear during the day and during activities that trigger symptoms.",
-          "evidence_level": "strong",
-          "notes": "Compression works best when worn consistently. Put them on before getting out of bed. Full-leg (thigh-high) stockings are more effective than knee-high. Ensure proper fit to avoid discomfort."
-        },
-        {
-          "name": "Structured aerobic and strength exercise (recumbent or seated)",
-          "category": "lifestyle",
-          "description": "Recumbent cycling, rowing, or swimming improves cardiovascular fitness and blood plasma volume without the orthostatic stress of upright exercise. Start with 20\u201330 minutes, 3\u20135 days per week, at low intensity. Gradually increase duration and intensity as tolerated.",
-          "evidence_level": "strong",
-          "notes": "Upright exercise (running, standing yoga) can worsen POTS initially; avoid until symptoms are well-controlled. Exercise should not reproduce severe symptoms. Cool down gradually. Many people with POTS benefit from 'exercise reconditioning' programmes tailored to dysautonomia."
-        },
-        {
-          "name": "Recumbent and supine positioning strategies",
-          "category": "lifestyle",
-          "description": "Elevate the head of your bed slightly (10\u201320 degrees) using a wedge or raising the bed frame. Sleep in a recumbent position. Stay recumbent or seated as much as possible during symptom flares. Lie down immediately if symptoms worsen.",
+          "description": "Large meals cause significant blood pooling in the gut (postprandial hypotension), triggering a POTS flare after eating. Eating smaller, more frequent meals reduces this effect. Reducing simple carbohydrates and refined sugars, which amplify the postprandial response, can also help.",
           "evidence_level": "moderate",
-          "notes": "Sleeping flat or with the head very high may worsen symptoms in some people. Experiment to find the best angle. Resting in a recumbent position reduces cardiovascular stress."
+          "notes": "Meal-related symptom worsening is very common and often underrecognised. Patients who notice significant post-meal symptoms should experiment with meal size, composition, and timing."
         },
         {
-          "name": "Gradual standing and position-change techniques",
-          "category": "lifestyle",
-          "description": "Rise slowly from lying to sitting, wait 1\u20132 minutes, then slowly rise to standing. Tense leg and abdominal muscles for 10\u201330 seconds before standing (muscle tensing increases venous return). These techniques reduce the acute pooling of blood in the legs.",
-          "evidence_level": "moderate",
-          "notes": "Practise these techniques consistently; they are most effective when habitual. Some people find standing in a lunge position (one leg forward, one back) helpful."
-        },
-        {
-          "name": "Midodrine (prescription medication)",
-          "category": "medication",
-          "description": "An alpha-1 adrenergic agonist that constricts blood vessels, increasing blood pressure and reducing tachycardia. Typical doses are 5\u201310 mg three times daily. Particularly effective for neuropathic POTS.",
-          "evidence_level": "strong",
-          "notes": "Requires a doctor's prescription. Avoid taking in the evening (risk of supine hypertension). Monitor blood pressure regularly. Most effective when combined with lifestyle measures."
-        },
-        {
-          "name": "Beta-blockers (prescription medication)",
-          "category": "medication",
-          "description": "Reduce heart rate and heart's work, easing tachycardia and some symptoms. Commonly used beta-blockers include propranolol, metoprolol, and labetalol. Doses vary by individual.",
-          "evidence_level": "moderate",
-          "notes": "Less effective in hypovolemic POTS (as blood volume is the primary issue). Can worsen fatigue in some people. Requires gradual withdrawal if stopping."
-        },
-        {
-          "name": "Fludrocortisone (prescription medication)",
-          "category": "medication",
-          "description": "A mineralocorticoid that expands blood plasma volume by increasing sodium and fluid retention. Typical dose is 0.1 mg daily. Particularly useful for hypovolemic POTS.",
-          "evidence_level": "moderate",
-          "notes": "Requires monitoring of blood pressure and electrolytes (especially potassium). May take 1\u20132 weeks to show benefit. Monitor for ankle swelling and headaches."
-        },
-        {
-          "name": "Ivabradine (prescription medication)",
-          "category": "medication",
-          "description": "A selective heart-rate lowering agent that slows the sinus node without affecting blood pressure. May help when tachycardia is the primary symptom. Less commonly used in dysautonomia but emerging evidence.",
-          "evidence_level": "moderate",
-          "notes": "Requires a cardiologist's prescription. Newer option; long-term experience in POTS is limited but growing."
-        },
-        {
-          "name": "Avoid or limit decongestants and stimulants",
-          "category": "medication",
-          "description": "Avoid pseudoephedrine, phenylephrine, caffeine, and other sympathomimetics, which can worsen tachycardia and anxiety-like symptoms. Limit caffeine to <100 mg per day if tolerated.",
-          "evidence_level": "moderate",
-          "notes": "Individual tolerance varies. Some people manage small amounts of caffeine; others find even decaffeinated drinks problematic."
-        },
-        {
-          "name": "Manage heat exposure",
-          "category": "environment",
-          "description": "Stay in cool environments, use air conditioning, wear cooling vests or light clothing, avoid hot baths/showers, and limit sun exposure. Heat causes blood vessel dilation, worsening pooling and symptoms.",
-          "evidence_level": "strong",
-          "notes": "Heat intolerance is a hallmark of POTS. Small reductions in ambient temperature often yield significant symptom relief."
-        },
-        {
-          "name": "Frequent small meals and avoiding large meals",
-          "category": "diet",
-          "description": "Eat 5\u20136 small meals per day rather than 3 large ones. Avoid large, high-carbohydrate meals, which can trigger post-meal blood pooling and symptoms. Include protein and fat to slow gastric emptying.",
-          "evidence_level": "moderate",
-          "notes": "Postprandial (after-meal) tachycardia is common in POTS. Meal timing, composition, and size all matter."
-        },
-        {
-          "name": "Limit alcohol and avoid dehydrating drinks",
-          "category": "diet",
-          "description": "Alcohol and caffeine can dehydrate and worsen symptoms. Avoid or minimise these if they trigger symptoms.",
+          "name": "Caffeine (strategic use)",
+          "category": "diet / lifestyle",
+          "description": "Caffeine causes vasoconstriction and mild heart rate increase and may acutely improve morning symptoms and cognitive function in some POTS patients. Some patients report benefit from a small amount of caffeine after waking before attempting to get upright.",
           "evidence_level": "anecdotal",
-          "notes": "Individual tolerance varies widely. Some people tolerate small amounts; others must avoid completely."
+          "notes": "Highly individual \u2014 caffeine worsens palpitations, anxiety, and sleep in many patients. Excessive caffeine causes dehydration and may worsen overall function. Use with caution and observe individual response carefully."
         },
         {
-          "name": "Sleep hygiene and adequate rest",
-          "category": "lifestyle",
-          "description": "Maintain a consistent sleep schedule, sleep 7\u20139 hours per night, and rest during symptom flares. Poor sleep worsens autonomic dysfunction.",
+          "name": "Cooling strategies",
+          "category": "environment / lifestyle",
+          "description": "Avoiding heat exposure, using cooling vests, cold packs, fans, cold drinks, and cool showers can dramatically reduce heat-triggered symptom worsening. Heat causes vasodilation and exacerbates blood pooling.",
           "evidence_level": "moderate",
-          "notes": "Sleep disturbances are common in POTS. Good sleep hygiene often improves overall symptom severity."
+          "notes": "Many patients find warm or hot showers replace sitting down in cold showers or baths. Cooling is one of the most effective immediate symptom-management tools available."
         },
         {
-          "name": "Magnesium supplementation",
-          "category": "supplement",
-          "description": "Magnesium may help with muscle function, migraines, and some autonomic symptoms. Typical doses are 200\u2013400 mg daily (as glycinate or other well-absorbed forms).",
+          "name": "Sleep optimisation",
+          "category": "lifestyle",
+          "description": "Consistent sleep schedules, addressing sleep architecture disruption (often aided by low-dose melatonin or in some cases low-dose tricyclic antidepressants), and sleeping in a cool room improve overnight autonomic recovery and reduce next-day symptom burden.",
+          "evidence_level": "moderate",
+          "notes": "Sleep quality has an outsized effect on POTS symptom severity. Addressing it early is important and often overlooked in management plans."
+        },
+        {
+          "name": "SNRIs / SSRIs (selective subtypes)",
+          "category": "medication",
+          "description": "Low-dose SSRIs (e.g. sertraline) or SNRIs (e.g. venlafaxine) are sometimes used in POTS, particularly when central sensitisation, anxiety, or autonomic modulation through serotonin pathways is thought to be relevant. Venlafaxine has norepinephrine effects that may help regulate autonomic tone.",
           "evidence_level": "anecdotal",
-          "notes": "Evidence in POTS is limited. May help in some individuals, especially those with deficiency. Avoid high doses, which can cause diarrhoea."
-        },
-        {
-          "name": "Stress management and breathing exercises",
-          "category": "lifestyle",
-          "description": "Chronic stress worsens autonomic function. Practice slow, deep breathing (4\u20136 breaths per minute), meditation, progressive muscle relaxation, or gentle yoga (recumbent or seated).",
-          "evidence_level": "moderate",
-          "notes": "Anxiety about symptoms can create a feedback loop. Reducing stress often improves both physical symptoms and anxiety-like feelings."
-        },
-        {
-          "name": "Identify and manage personal triggers",
-          "category": "lifestyle",
-          "description": "Common triggers include heat, prolonged standing, dehydration, illness, menstrual cycle changes, and stress. Track triggers using a symptom diary and plan strategies to avoid or minimise them.",
-          "evidence_level": "strong",
-          "notes": "Trigger profiles differ by person. Systematic tracking reveals individual patterns that inform the most effective management plan."
+          "notes": "Evidence base is limited. Some patients experience significant initial worsening of heart rate or anxiety symptoms when starting these medications. Should be initiated at very low doses and titrated slowly. Not a first-line treatment for POTS itself."
         }
       ],
       "things_to_avoid": [
-        "Prolonged standing or sitting without breaks\u2014alternate frequently between lying, sitting, and standing",
-        "Upright exercise (running, standing yoga) until symptoms are well-controlled\u2014use recumbent exercise instead",
-        "Heat exposure and hot environments\u2014plan activities for cooler times of day and use cooling strategies",
-        "Dehydration\u2014drink regularly throughout the day, especially before and during activity",
-        "Large meals and high-carbohydrate meals\u2014eat frequent small meals with protein and fat",
-        "Stimulants (caffeine, pseudoephedrine, energy drinks)\u2014these worsen tachycardia and may mimic anxiety",
-        "Rapid position changes\u2014always rise slowly from lying or sitting",
-        "Straining during bowel movements\u2014constipation is common in POTS; use stool softeners and adequate fibre/fluids",
-        "Excessive alcohol\u2014dehydrates and worsens autonomic dysfunction",
-        "Prolonged bed rest or complete inactivity\u2014deconditioning worsens POTS; gentle activity is necessary"
+        "Prolonged standing without movement \u2014 triggers blood pooling; moving legs, shifting weight, or walking frequently helps redistribute blood",
+        "Hot showers and baths \u2014 cause widespread vasodilation and are a common trigger for syncope or near-syncope",
+        "Alcohol \u2014 causes vasodilation and promotes dehydration; can trigger severe POTS flares",
+        "Dehydration \u2014 even mild dehydration significantly worsens orthostatic symptoms; consistent fluid intake throughout the day is essential",
+        "Large meals high in refined carbohydrates \u2014 amplify postprandial blood pooling in the gut",
+        "Aggressive upright exercise when deconditioned \u2014 a common cause of early rehabilitation failure; recumbent exercise should precede upright exercise",
+        "Jumping straight into standing from lying \u2014 a slow, staged transition (sitting first, then standing) gives the autonomic system time to adjust",
+        "Ignoring post-exertional malaise \u2014 particularly in post-COVID or ME/CFS overlap presentations, pushing through fatigue crashes can cause prolonged setbacks",
+        "Dismissing symptoms as solely psychological \u2014 delaying proper autonomic investigation while treating presumed anxiety prolongs suffering and may worsen deconditioning"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "Exercise rehabilitation is among the most effective treatments for POTS, but it feels counterintuitive \u2014 and starting it is genuinely hard when the body responds badly to exertion.",
+        "why_resisted": "Every attempt to be active makes symptoms worse at first. Many patients have been made worse by well-meaning advice to 'just exercise more' without the right protocol, and have learned to fear activity. The idea that exercise can help feels like gaslighting when standing up causes tachycardia and collapse.",
+        "path_forward": "People who commit to a carefully structured recumbent-first programme \u2014 rowing machine, recumbent bike, or pool swimming \u2014 for 3\u20136 months report meaningful gains in upright tolerance, stamina, and quality of life. It requires starting at very low intensity and progressing extremely slowly, but the physiological basis is sound: plasma volume increases, cardiac conditioning improves, and the orthostatic heart rate surge reduces."
+      },
+      {
+        "truth": "Most people with POTS wait years for a correct diagnosis \u2014 and a significant proportion receive a psychiatric diagnosis first.",
+        "why_resisted": "Patients are aware their symptoms are real and resist acknowledging how systematically the medical system has failed them, partly because acknowledging it means rebuilding trust in a system they need. Many have been told so often that their symptoms are anxiety that they begin to doubt themselves.",
+        "path_forward": "Patients who arrive at specialist autonomic clinics or find clinicians with dysautonomia experience armed with their own orthostatic heart rate data, symptom diaries, and knowledge of the diagnostic criteria consistently reach diagnosis faster. Self-advocacy backed by data is not arrogance \u2014 it is the fastest route through a system that does not actively look for this condition."
+      },
+      {
+        "truth": "POTS rarely has a single cause, and most people will need to address multiple overlapping factors rather than find one cure.",
+        "why_resisted": "The search for a single explanation and a single fix is understandable \u2014 the condition is exhausting and people want a clear solution. Accepting the complexity feels overwhelming and demoralising.",
+        "path_forward": "Patients who make the most meaningful progress systematically work through each possible driver: volume status, deconditioning, connective tissue dysfunction, mast cell activation, hormonal triggers, sleep quality. Addressing each in turn \u2014 rather than waiting for a single answer \u2014 produces cumulative improvement that is often substantial."
+      },
+      {
+        "truth": "Deconditioning, even when it began as a rational protective response to symptoms, becomes its own driver of POTS severity over time.",
+        "why_resisted": "Rest feels necessary and justified \u2014 and it often is acutely. Accepting that avoiding activity has become part of the problem can feel like accepting blame for being ill.",
+        "path_forward": "Framing reconditioning as a treatment \u2014 not a moral obligation \u2014 and working with a physiotherapist who understands dysautonomia allows patients to distinguish protective rest from deconditioning avoidance, and to begin building back function in a way that doesn't trigger crashes."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Consistent fluid and salt intake (2\u20133 L water + 9\u201312 g sodium daily)",
-          "why_it_matters": "Blood plasma volume is the foundation of cardiovascular stability in POTS. Adequate hydration and sodium directly address the physiological deficit in hypovolemic POTS and provide a symptomatic boost in other subtypes.",
-          "how_to_start": "Begin by drinking 500 mL of fluid in the morning, then a 250 mL glass of fluid every hour or so. Add salt to foods or use electrolyte drinks. Track intake for 1 week to establish baseline, then adjust.",
-          "timeline": "Improvement in symptoms can occur within days to 1\u20132 weeks. Full benefits take 2\u20134 weeks.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Graduated aerobic and strength conditioning (tailored to dysautonomia)",
-          "why_it_matters": "Exercise improves plasma volume, cardiac output, and peripheral vascular control. It is one of the few interventions shown to address underlying autonomic dysfunction rather than just masking symptoms.",
-          "how_to_start": "Begin with 10\u201315 minutes of recumbent cycling or swimming, 3 days per week. Gradually increase by 5 minutes weekly as tolerated. Include gentle leg strengthening (seated or lying).",
-          "timeline": "Initial improvements in exercise tolerance appear in 2\u20134 weeks. Meaningful improvements in daily symptoms take 6\u201312 weeks.",
+          "lever": "Recumbent-first exercise programme",
+          "why_it_matters": "Cardiovascular deconditioning directly worsens POTS \u2014 the heart becomes smaller and less efficient at pumping blood upright. Regular recumbent aerobic exercise increases plasma volume, cardiac stroke volume, and upright tolerance. The Levine protocol is the most evidence-backed intervention in POTS management.",
+          "how_to_start": "Begin with 20\u201330 minutes of recumbent cycling, rowing, or swimming at low intensity, 3\u20135 days per week. Heart rate should stay within a comfortable range \u2014 not pushing to exertion limits. Increase duration by 5 minutes per week as tolerated. Only progress to upright exercise (e.g. walking) once recumbent tolerance is well established over several weeks to months.",
+          "timeline": "Meaningful improvement in orthostatic tolerance typically begins at 2\u20133 months; substantial gains are seen at 6\u201312 months of consistent training",
           "requires_professional": true
         },
         {
-          "lever": "Compression garments (20\u201330 mmHg, worn consistently)",
-          "why_it_matters": "Compression prevents blood pooling in the legs and abdomen, directly reducing the workload on the heart when standing. Effects are immediate.",
-          "how_to_start": "Start with knee-high compression stockings and wear them during the day. Ensure proper fit by being measured at a medical supply store.",
-          "timeline": "Symptom relief is immediate when worn; benefits are lost when removed.",
+          "lever": "Optimised salt and fluid intake",
+          "why_it_matters": "Chronic low blood volume is a central driver of orthostatic symptoms in most POTS subtypes. Aggressive sodium and fluid intake is the single most impactful dietary intervention and may reduce the need for medication.",
+          "how_to_start": "Aim for 2\u20133 litres of fluid daily. Add 3\u20135g of sodium through food, salt tablets, or electrolyte drinks. Front-load fluid intake in the morning when symptoms are worst. Monitoring urine colour (pale yellow = adequate hydration) helps track intake.",
+          "timeline": "Symptom improvement within days to weeks of consistent implementation",
           "requires_professional": false
         },
         {
-          "lever": "Identifying and avoiding personal triggers (heat, prolonged standing, large meals, stress)",
-          "why_it_matters": "Triggers vary widely between individuals. Systematic tracking and avoidance reduce symptom severity and emergency situations, improving quality of life and confidence.",
-          "how_to_start": "Keep a symptom and trigger diary for 2\u20134 weeks. Note time of day, activity, food, weather, symptoms, and heart rate (if available). Review weekly for patterns.",
-          "timeline": "Patterns emerge within 2\u20134 weeks. Symptom improvement from trigger avoidance appears within days to weeks.",
+          "lever": "Identifying and treating comorbid conditions",
+          "why_it_matters": "POTS rarely exists in isolation. Unrecognised MCAS, hEDS, sleep-disordered breathing, autoimmune activity, or hormonal dysregulation can drive ongoing autonomic instability regardless of how well other POTS management is implemented. Addressing underlying or co-occurring conditions can dramatically change the trajectory.",
+          "how_to_start": "Work systematically through common comorbidities with a knowledgeable practitioner: assess for hypermobility (Beighton score), screen for mast cell symptoms, evaluate thyroid and hormonal status, assess sleep quality. Patient-led research and symptom tracking often identifies patterns before clinicians do.",
+          "timeline": "Varies by comorbidity \u2014 some (e.g. MCAS dietary changes) produce improvement within weeks; others (e.g. connective tissue management) require longer-term intervention",
+          "requires_professional": true
+        },
+        {
+          "lever": "Consistent daily routine and pacing",
+          "why_it_matters": "Autonomic nervous systems function better with predictability. Consistent wake time, meal timing, and activity patterns reduce the daily variability in symptoms. Boom-and-bust cycles \u2014 overdoing activity on good days and crashing for days after \u2014 are a major barrier to progression.",
+          "how_to_start": "Identify a sustainable baseline level of daily activity that does not trigger crashes. Maintain it consistently regardless of whether it feels too easy on good days. Use a structured pacing system (many patients use heart rate monitoring to avoid exceeding anaerobic threshold during daily activity).",
+          "timeline": "Stability in the cycle of crashes typically improves within 4\u20138 weeks of consistent pacing",
           "requires_professional": false
         },
         {
-          "lever": "Optimising sleep and stress (7\u20139 hours, consistent schedule, stress reduction)",
-          "why_it_matters": "Sleep and stress directly modulate autonomic tone. Poor sleep worsens dysautonomia; stress perpetuates a maladaptive autonomic state. Both must be addressed for sustained improvement.",
-          "how_to_start": "Establish a consistent bedtime and wake time. Practise 5 minutes of deep breathing or meditation daily. Use a sleep tracker to monitor progress.",
-          "timeline": "Sleep improvements appear within 1 week; autonomic benefits accumulate over 2\u20134 weeks.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Working with a dysautonomia-informed healthcare team (cardiologist, autonomic specialist, physical therapist)",
-          "why_it_matters": "POTS management requires coordinated, specialist input. A knowledgeable team can diagnose the POTS subtype, tailor medication and exercise, and prevent misguided treatments that worsen symptoms.",
-          "how_to_start": "Ask your primary care doctor for a referral to a cardiologist or neurologist with dysautonomia experience. Join a POTS patient community to find recommended specialists in your area.",
-          "timeline": "Initial assessments take 1\u20133 months; a comprehensive plan is developed within 2\u20133 visits.",
+          "lever": "Working with an autonomic-knowledgeable practitioner to find the right medication combination",
+          "why_it_matters": "No single medication works for all POTS subtypes. The right combination \u2014 which may include volume expanders, rate-lowering agents, vasoconstrictors, or immunomodulators \u2014 is highly individual. Trial and error under medical supervision is part of the process.",
+          "how_to_start": "Seek a referral to a cardiologist or neurologist with documented interest in dysautonomia or autonomic disorders. Come prepared with orthostatic heart rate data, a symptom diary, and a list of what has and hasn't helped previously.",
+          "timeline": "Finding an effective medication regimen may take 6\u201318 months of adjustment",
           "requires_professional": true
         }
       ],
       "common_mistakes": [
-        "Resting too much or avoiding all activity\u2014complete bed rest worsens deconditioning and autonomic dysfunction. Gentle, recumbent activity is essential.",
-        "Doing upright exercise (running, gym classes) before symptoms are controlled\u2014can trigger severe symptom flares and worsen the condition. Recumbent exercise is the starting point.",
-        "Restricting salt and fluid to 'normal' levels\u2014POTS requires higher intake than typical recommendations. Underdosing these reverses the main physiological benefit.",
-        "Using stimulants (caffeine, energy drinks, decongestants) to boost energy\u2014these worsen tachycardia and anxiety-like symptoms, creating a vicious cycle.",
-        "Assuming anxiety is the primary problem\u2014while anxiety-like symptoms are common, treating the underlying autonomic dysfunction is the solution. Assuming it's 'all in your head' delays effective treatment.",
-        "Stopping exercise or fluids too soon if symptoms worsen initially\u2014the first 1\u20132 weeks of correcting dehydration or starting exercise can temporarily worsen symptoms before improvement occurs. Patience is needed.",
-        "Not tracking triggers systematically\u2014guessing about triggers leads to ineffective avoidance. A diary reveals true patterns.",
-        "Relying on medication alone without lifestyle changes\u2014medication is most effective when combined with salt, fluid, compression, exercise, and trigger avoidance.",
-        "Expecting linear improvement\u2014POTS symptoms fluctuate day-to-day based on triggers, stress, sleep, and menstrual cycle. Progress is measured over weeks and months, not days."
+        "Starting upright exercise (walking, running) before recumbent cardiovascular conditioning is established \u2014 this reliably worsens symptoms and reinforces the belief that exercise is impossible",
+        "Treating POTS as a single, uniform condition and not investigating subtypes \u2014 hyperadrenergic POTS requires different management than hypovolemic POTS, and the wrong approach can backfire",
+        "Relying solely on medication without addressing the lifestyle fundamentals (salt, fluid, compression, exercise) \u2014 medications work better on a foundation of volume and conditioning",
+        "Resting completely for months without any reconditioning \u2014 protective in the short term, counterproductive beyond a few weeks as deconditioning accelerates",
+        "Expecting linear improvement \u2014 POTS management involves fluctuations, and treating a bad week as a treatment failure causes people to abandon approaches that were working",
+        "Seeing only a GP or general cardiologist who does not specialise in autonomic disorders \u2014 standard cardiology assessment often misses POTS entirely or manages it suboptimally",
+        "Ignoring hormonal and menstrual cycle effects \u2014 failing to account for cycle-related fluctuations leads to misinterpreting symptom variability as treatment failure",
+        "Drinking large volumes of plain water without sodium \u2014 plain water dilutes serum sodium and is less effective than sodium-containing fluids at expanding blood volume; paradoxically, it can worsen symptoms"
       ]
     },
     "finding_help": {
       "specialists": [
         {
-          "type": "Cardiologist",
-          "role": "Often the first specialist involved. Orders diagnostic testing (tilt table, echocardiogram, Holter monitor) and manages medication. Essential for ruling out structural heart disease.",
-          "notes": "A cardiologist with dysautonomia experience is ideal. General cardiologists may dismiss POTS as benign or psychosomatic; seeking one familiar with autonomic disorders is important."
+          "type": "Autonomic neurologist",
+          "role": "The most comprehensive specialist for POTS diagnosis and management \u2014 performs formal autonomic testing (tilt table, QSART, skin biopsy), identifies subtype, and oversees medication management. Best positioned to rule out serious underlying causes.",
+          "notes": "Rare and often in limited supply. Major centres include Mayo Clinic, Cleveland Clinic, Vanderbilt Autonomic Dysfunction Center, and equivalent specialist autonomic units in the UK and elsewhere. Waiting times can be long \u2014 consider telehealth options at major centres."
         },
         {
-          "type": "Neurologist (autonomic specialist)",
-          "role": "Specialises in autonomic nervous system disorders. Performs or interprets autonomic testing, diagnoses POTS subtypes, and manages complex cases. Often the most knowledgeable about dysautonomia.",
-          "notes": "Autonomic neurologists are relatively rare. Seek them out through dysautonomia organisations or patient communities. Many general neurologists are unfamiliar with POTS."
+          "type": "Cardiologist with dysautonomia interest",
+          "role": "Can perform tilt table testing, prescribe and monitor cardiac medications (beta-blockers, ivabradine, midodrine), and provide a cardiac safety assessment. More widely available than autonomic neurologists.",
+          "notes": "Not all cardiologists are familiar with POTS \u2014 ask specifically about their experience with orthostatic intolerance or dysautonomia. General cardiologists may stop at ruling out structural heart disease without exploring autonomic causes."
         },
         {
-          "type": "Functional or Integrative Medicine Doctor",
-          "role": "Often more attentive to lifestyle management, nutrition, and the long-term view. May order additional testing and be more patient-centred in approach.",
-          "notes": "Quality varies widely. Ensure the practitioner is evidence-informed and willing to work with conventional specialists."
+          "type": "Physiotherapist specialising in dysautonomia rehabilitation",
+          "role": "Designs and supervises the recumbent exercise rehabilitation programme that has the strongest evidence base for long-term POTS improvement. Can also advise on pacing, compression, and counter-pressure manoeuvres.",
+          "notes": "Difficult to find in many regions. Online and telehealth physiotherapy services have expanded access. Dysautonomia International maintains a provider directory."
         },
         {
-          "type": "Physical Therapist (dysautonomia-specialised)",
-          "role": "Designs exercise programmes tailored to dysautonomia, teaching graded recumbent exercise and position-change techniques. Critical for sustainable improvement.",
-          "notes": "General physical therapists may not understand exercise modification for POTS. Seek one with dysautonomia experience or willingness to learn."
+          "type": "Functional medicine or integrative medicine physician",
+          "role": "Often more willing to investigate root causes, co-occurring conditions (MCAS, hormonal dysfunction, nutritional deficiencies), and individualise treatment beyond standard symptom management. Can be important for complex, multisystem presentations.",
+          "notes": "Quality varies widely. Look for practitioners who work with evidence-based testing rather than speculative protocols. Most useful as part of a broader team rather than in isolation."
         },
         {
-          "type": "Primary Care Physician",
-          "role": "Coordinates care, initiates investigations, and manages general health. Can refer to specialists and provide ongoing support.",
-          "notes": "Many GPs are unfamiliar with POTS and may attribute symptoms to anxiety. Educating your GP or switching to a more knowledgeable one is important."
+          "type": "Haematologist or specialist for autoimmune evaluation",
+          "role": "Relevant for post-infectious POTS cases where immune-mediated mechanisms are suspected. Can evaluate for autoantibodies, mast cell disorders (with overlap to haematology), and rare immune-mediated autonomic conditions.",
+          "notes": "Not a first-line referral for most patients but important when post-COVID POTS, autoimmune features, or MCAS are suspected."
+        },
+        {
+          "type": "Allergist / immunologist (for MCAS overlap)",
+          "role": "Relevant when mast cell symptoms (flushing, urticaria, GI instability, anaphylactoid reactions) are prominent alongside POTS. Can evaluate and treat MCAS as a contributing driver.",
+          "notes": "Not all allergists are familiar with MCAS \u2014 ask specifically about mast cell disorders. The field is evolving rapidly."
+        },
+        {
+          "type": "Registered dietitian with chronic illness or dysautonomia experience",
+          "role": "Can guide sodium loading, meal timing strategies, low-histamine dietary trials, and nutritional support \u2014 especially important when GI symptoms, food sensitivities, or significant weight loss complicate POTS management.",
+          "notes": "Specifically helpful for post-COVID POTS with complex dietary sensitivities, or for patients whose GI symptoms are severe."
         }
       ],
       "patient_communities": [
         {
           "name": "Dysautonomia International",
-          "platform": "Website and social media",
-          "url": "https://www.dysautonomia.org",
-          "notes": "Comprehensive resource hub with education, specialist finder, and research updates. Non-profit advocating for patients."
-        },
-        {
-          "name": "POTS UK",
-          "platform": "Website and social media",
-          "url": "https://www.potsuk.org",
-          "notes": "UK-based patient organisation with evidence-based information, specialist directory, and support groups."
+          "platform": "Website / Facebook / Patient Events",
+          "url": "https://www.dysautonomiainternational.org",
+          "notes": "The most authoritative patient and advocacy organisation for POTS and dysautonomia globally. Provides a physician directory, research updates, patient guides, and information on clinical trials. An essential first stop for newly diagnosed patients."
         },
         {
           "name": "r/POTS",
           "platform": "Reddit",
-          "url": "https://www.reddit.com/r/POTS",
-          "notes": "Large, active community where people share experiences, management strategies, and emotional support. Good for peer advice and normalising the condition."
+          "url": "https://www.reddit.com/r/POTS/",
+          "notes": "Large, active community of POTS patients sharing management strategies, diagnostic journeys, medication experiences, and daily life advice. Particularly useful for learning from the range of individual experiences and finding what others have found helpful or harmful."
         },
         {
-          "name": "POTS Awareness and Support",
-          "platform": "Facebook groups",
+          "name": "r/dysautonomia",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/dysautonomia/",
+          "notes": "Broader dysautonomia community covering POTS and related forms of autonomic dysfunction. Useful for those whose presentation extends beyond classic POTS."
+        },
+        {
+          "name": "POTS UK",
+          "platform": "Website / Facebook",
+          "url": "https://www.potsuk.org",
+          "notes": "UK-focused patient organisation providing information, a GP leaflet to support diagnosis, peer support, and signposting to specialist services in the UK. Particularly helpful for UK patients navigating NHS referral pathways."
+        },
+        {
+          "name": "Standing Up to POTS",
+          "platform": "Facebook / Website",
+          "url": "https://www.standinguptopots.org",
+          "notes": "Patient-advocacy and education organisation with resources specifically aimed at newly diagnosed patients and families. Provides downloadable guides and a physician directory."
+        },
+        {
+          "name": "EDS + POTS + MCAS Support Group",
+          "platform": "Facebook",
           "url": null,
-          "notes": "Multiple private Facebook groups exist; search for 'POTS support' or 'dysautonomia support'. Communities are often region-specific, which can help with local specialist recommendations."
-        },
-        {
-          "name": "The Dysautonomia Project",
-          "platform": "Website and podcasts",
-          "url": "https://www.thedysautonomiaproject.org",
-          "notes": "Patient-created resource with educational videos and interviews. Emphasises real-world management and lived experience."
-        },
-        {
-          "name": "POTS and Me Discord",
-          "platform": "Discord",
-          "url": null,
-          "notes": "Real-time chat community for POTS support, with channels for different topics (exercise, medication, emotional support). Good for immediate peer support."
+          "notes": "Community focused on the commonly co-occurring triad of hEDS, POTS, and MCAS. Particularly useful for people who have all three conditions and need to understand how they interact."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "A Patient's Guide to Dysautonomia",
-        "type": "book",
-        "author_or_source": "Dysautonomia International",
-        "url": "https://www.dysautonomia.org",
-        "description": "Comprehensive, evidence-based guide written for patients. Covers POTS, other dysautonomias, diagnostic workup, and management strategies. Highly recommended as a starting point.",
-        "audience": "beginner"
-      },
-      {
-        "title": "The POTS Toolkit: Everything You Need to Know About Postural Orthostatic Tachycardia Syndrome",
-        "type": "book",
-        "author_or_source": "Stacy Irons",
-        "url": null,
-        "description": "Practical, patient-written guide covering causes, symptoms, diagnosis, lifestyle management, and coping strategies. Very approachable and focused on real-world solutions.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Living with Dysautonomia: Everything You Need to Know about Managing POTS and Related Conditions",
+        "title": "Dysautonomia International \u2014 Patient Resources",
         "type": "website",
         "author_or_source": "Dysautonomia International",
-        "url": "https://www.dysautonomia.org",
-        "description": "Free online resource hub with articles on subtypes, medications, exercise, nutrition, and emotional well-being. Regularly updated.",
+        "url": "https://www.dysautonomiainternational.org/page.php?ID=30",
+        "description": "Comprehensive, medically reviewed patient information covering POTS, subtypes, testing, treatment, research, and physician finding. The most authoritative lay resource available \u2014 routinely recommended by specialist clinicians.",
         "audience": "beginner"
       },
       {
-        "title": "POTS Exercise Reconditioning: A Practical Guide",
-        "type": "article / guide",
-        "author_or_source": "POTS UK and Dysautonomia International",
-        "url": null,
-        "description": "Evidence-based guidance on tailoring exercise for POTS, with specific protocols for recumbent cycling and strength training. Essential for anyone starting an exercise programme.",
-        "audience": "intermediate"
+        "title": "Postural Tachycardia Syndrome (POTS) \u2014 Mayo Clinic Overview",
+        "type": "website",
+        "author_or_source": "Mayo Clinic",
+        "url": "https://www.mayoclinic.org/diseases-conditions/postural-tachycardia-syndrome/cdc-20355007",
+        "description": "A concise, clinically accurate overview of POTS from one of the leading autonomic centres in the world. Good starting point for understanding the basics and building vocabulary before specialist appointments.",
+        "audience": "beginner"
       },
       {
-        "title": "Postural Tachycardia Syndrome (POTS): A Review",
+        "title": "A Cardiologist's Guide to POTS",
         "type": "research paper",
-        "author_or_source": "Sheldon RS, et al. (2015) in Circulation",
-        "url": "https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.115.017294",
-        "description": "Landmark review of POTS pathophysiology, diagnosis, and treatment. Dense but authoritative. Good for those wanting deeper understanding.",
+        "author_or_source": "Sheldon RS et al., Heart Rhythm, 2015",
+        "url": "https://www.heartrhythmjournal.com/article/S1547-5271(15)00218-4/fulltext",
+        "description": "A foundational consensus statement on POTS diagnosis and management from leading dysautonomia researchers. Covers diagnostic criteria, pathophysiology, subtypes, and treatment approach. Useful for patients wanting to understand the clinical evidence base.",
         "audience": "advanced"
       },
       {
-        "title": "The Dysautonomia Project Podcast",
-        "type": "podcast",
-        "author_or_source": "The Dysautonomia Project",
-        "url": "https://www.thedysautonomiaproject.org",
-        "description": "Episodes featuring patients, doctors, and researchers discussing POTS management, research, and life with dysautonomia. Interviews are practical and empathetic.",
-        "audience": "beginner"
-      },
-      {
-        "title": "POTS and Dysautonomia Management: A Practical Approach",
-        "type": "video series",
-        "author_or_source": "Dysautonomia International (YouTube)",
-        "url": "https://www.youtube.com/c/DysautonomiaInternational",
-        "description": "Short, practical videos on medication, exercise, salt and fluid intake, and symptom management. Accessible and visual learning format.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Prevalence and Pathophysiology of POTS: A Narrative Review",
-        "type": "research paper",
-        "author_or_source": "Thieben MJ, et al. (2007) in Neurology",
-        "url": null,
-        "description": "Comprehensive scientific review of POTS mechanisms and prevalence. Technical but thorough.",
-        "audience": "advanced"
-      },
-      {
-        "title": "Managing POTS: Practical Strategies from Patients and Clinicians",
-        "type": "article",
-        "author_or_source": "POTS UK",
-        "url": "https://www.potsuk.org",
-        "description": "Real-world tips from patients and specialists on managing daily life with POTS, including school, work, and social strategies.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "Dysautonomia and Connective Tissue Disorders",
-        "type": "article",
+        "title": "Dysautonomia International Research Pages",
+        "type": "website",
         "author_or_source": "Dysautonomia International",
-        "url": "https://www.dysautonomia.org",
-        "description": "Explores the link between EDS and POTS, essential reading if you have or suspect connective tissue disorder comorbidity.",
+        "url": "https://www.dysautonomiainternational.org/page.php?ID=21",
+        "description": "Curated summaries of recent POTS research with links to full papers. Allows patients to stay current with the evolving evidence base, including post-COVID dysautonomia research.",
         "audience": "intermediate"
+      },
+      {
+        "title": "Levine Exercise Protocol for POTS",
+        "type": "website",
+        "author_or_source": "Dysautonomia International / Dr. Benjamin Levine",
+        "url": "https://www.dysautonomiainternational.org/pdf/CHOP_Modified_Dallas_POTS_Exercise_Program.pdf",
+        "description": "The structured recumbent-first exercise rehabilitation programme with the strongest evidence base for long-term POTS improvement. Downloadable guide with week-by-week progressions. Essential reading for anyone beginning exercise rehabilitation.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "The Dysautonomia Project (book)",
+        "type": "book",
+        "author_or_source": "Kelly Freeman, MD Michael Blanc, Todd Elkins",
+        "url": null,
+        "description": "A practical, patient-accessible book covering dysautonomia, POTS, and autonomic dysfunction with input from both medical professionals and patients. Frequently recommended in patient communities as one of the most readable and comprehensive introductions.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Postural Tachycardia Syndrome: Beyond Orthostatic Intolerance",
+        "type": "research paper",
+        "author_or_source": "Raj SR, Current Neurology and Neuroscience Reports, 2013",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23512356/",
+        "description": "An important review paper summarising POTS pathophysiology, subtypes, and management. Good for patients who want to understand the mechanisms behind their symptoms and the rationale for different treatments.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Standing Up to POTS \u2014 New Patient Guide",
+        "type": "website",
+        "author_or_source": "Standing Up to POTS",
+        "url": "https://www.standinguptopots.org/diagnosis",
+        "description": "A well-organised, plain-language guide to understanding POTS, pursuing diagnosis, and beginning management. Designed specifically for people who are newly diagnosed or still seeking diagnosis.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Dysautonomia SOS Podcast",
+        "type": "podcast",
+        "author_or_source": "Dysautonomia SOS",
+        "url": "https://www.dysautonomiaSOS.com",
+        "description": "A podcast and community platform created by POTS patients, featuring interviews with autonomic specialists, researchers, and patients. Covers management strategies, research updates, and the lived experience of dysautonomia.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Post-COVID POTS and Dysautonomia \u2014 Emerging Research",
+        "type": "research paper",
+        "author_or_source": "Raj SR et al., Nature Reviews Cardiology, 2021",
+        "url": "https://www.nature.com/articles/s41569-021-00518-5",
+        "description": "A key review paper on cardiovascular complications of long COVID, including POTS. Covers the proposed mechanisms of post-COVID autonomic dysfunction, how it may differ from idiopathic POTS, and research priorities. Essential for anyone with post-COVID dysautonomia.",
+        "audience": "advanced"
       }
     ],
     "relevance_signal": "**Heart racing on standing**, dizziness, brain fog worse when upright. Gut symptoms worsen 20\u201330 min after meals regardless of food content. Better lying down."
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

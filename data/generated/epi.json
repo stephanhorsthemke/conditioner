@@ -2,114 +2,231 @@
   "condition_id": "epi",
   "condition_name": "Exocrine pancreatic insufficiency",
   "generated_at": "2026-04-16T09:35:21.638346Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "Exocrine pancreatic insufficiency (EPI) means your pancreas doesn't make enough digestive enzymes to break down food properly. This leads to poor nutrient absorption, weight loss, and fatty, loose stools. It's treatable with pancreatic enzyme replacement and dietary changes.",
-    "detailed_summary": "The pancreas produces enzymes that digest fats, proteins, and carbohydrates in the small intestine. In EPI, enzyme production falls below 10% of normal capacity, preventing adequate food breakdown. This causes malabsorption\u2014nutrients pass through the digestive tract unabsorbed. Common causes include chronic pancreatitis (most frequent), cystic fibrosis, pancreatic cancer, diabetes, and post-surgery changes. Symptoms typically appear when enzyme output drops by 90% or more. EPI is manageable but requires lifelong enzyme supplementation and dietary adaptation. Early diagnosis and treatment prevent malnutrition and improve quality of life.",
+    "plain_summary": "Exocrine pancreatic insufficiency (EPI) is a condition in which the pancreas does not produce enough digestive enzymes to properly break down food \u2014 particularly fats, proteins, and carbohydrates. Without these enzymes, nutrients pass through the gut largely unabsorbed, leading to greasy, foul-smelling stools, significant weight loss, bloating, and nutritional deficiencies. EPI is commonly misdiagnosed as IBS or general malabsorption because the symptoms overlap, but the underlying cause is structural \u2014 the pancreas itself is not functioning adequately. When properly identified and treated with pancreatic enzyme replacement therapy (PERT), many people with EPI experience meaningful improvement in digestion and quality of life.",
+    "detailed_summary": "The exocrine pancreas produces a suite of digestive enzymes \u2014 including lipase (for fats), protease (for proteins), and amylase (for carbohydrates) \u2014 that are released into the small intestine after eating. When the pancreas is damaged, inflamed, or structurally compromised, this output falls below the threshold needed for adequate digestion. The result is malabsorption: food components, particularly fats, move through the gut undigested, causing a characteristic pattern of steatorrhea (greasy, pale, foul-smelling stools), bloating, cramping, and progressive nutritional depletion.\n\nEPI exists on a spectrum. Mild-to-moderate insufficiency may cause primarily nutritional deficiencies with few overt GI symptoms. Severe insufficiency produces frank steatorrhea and rapid weight loss. The most common causes include chronic pancreatitis (the leading cause in adults), cystic fibrosis (the leading cause in children), pancreatic cancer, autoimmune pancreatitis, and pancreatic surgery. EPI can also arise secondary to other conditions that affect the gut-pancreas axis, including celiac disease, Crohn's disease, diabetes (particularly type 3c), and gastric surgery.\n\nDiagnosis is frequently delayed because symptoms are attributed to IBS, general dietary intolerance, or functional bowel disorders. The fecal elastase-1 test is the most practical first-line investigation \u2014 a simple stool test that reflects pancreatic enzyme output. The 72-hour fecal fat test remains the gold standard but is rarely performed in practice due to its burdensome collection requirements. Serum nutritional markers (fat-soluble vitamins A, D, E, K, and B12) are often abnormal and provide supporting evidence.\n\nTreatment with PERT \u2014 enteric-coated pancreatic enzyme capsules taken with every meal \u2014 can dramatically reduce symptoms and restore nutritional absorption in many people. Dosing must be tailored to meal fat content and often requires adjustment over time. Diet also matters: many individuals with EPI benefit from eating smaller, more frequent meals, moderating fat intake during early treatment, and addressing concurrent nutritional deficiencies, sometimes with supplementation of fat-soluble vitamins. Alcohol must be eliminated where it is a contributing cause. Smoking has been shown to worsen EPI independently and cessation is important.",
     "prevalence": {
-      "summary": "EPI affects roughly 1\u20133% of the general population, but is much more common in specific groups.",
-      "estimate": "1\u20133% overall; 30\u201340% in chronic pancreatitis; 85\u201390% in cystic fibrosis",
-      "notes": "Prevalence varies widely by underlying cause. Chronic pancreatitis is the most common cause in developed countries. Cystic fibrosis patients have the highest rates. Many cases go undiagnosed because symptoms overlap with other digestive conditions. Incidence increases with age and alcohol use."
+      "summary": "More common than often recognized, but frequently misdiagnosed as IBS or functional gut disorder",
+      "estimate": "Estimated to affect 5\u201310% of people with chronic gastrointestinal symptoms in gastroenterology settings; prevalence in the general population is uncertain but may be around 0.5\u20131%",
+      "notes": "Prevalence is difficult to establish because EPI exists on a spectrum and mild cases are often undetected. In specific high-risk groups, rates are much higher: approximately 80\u201390% of people with cystic fibrosis have EPI, and up to 80% of people with chronic pancreatitis eventually develop it. EPI after pancreatic surgery is common. EPI secondary to other conditions (celiac disease, Crohn's) is likely underdiagnosed. Age, heavy alcohol use, and smoking significantly increase risk."
     },
     "subgroups": [
       {
-        "name": "Chronic pancreatitis\u2013related EPI",
-        "description": "Results from long-standing inflammation and scarring of pancreatic tissue, most often due to alcohol abuse, idiopathic causes, or autoimmune pancreatitis. Progressive loss of enzyme-producing cells.",
+        "name": "EPI secondary to chronic pancreatitis",
+        "description": "The most common form in adults. Progressive inflammatory damage to the pancreas \u2014 often from alcohol use, smoking, or recurrent acute pancreatitis \u2014 destroys exocrine tissue over years.",
         "distinguishing_features": [
-          "History of recurrent or chronic abdominal pain",
-          "Often accompanied by diabetes (endocrine insufficiency)",
-          "May have elevated blood glucose and fecal chymotrypsin deficiency",
-          "Imaging may show pancreatic atrophy or calcification"
+          "History of recurrent pancreatitis episodes or chronic upper abdominal pain",
+          "Alcohol or smoking history strongly associated",
+          "Often develops alongside endocrine failure (type 3c diabetes)",
+          "Symptoms may emerge gradually over years as reserve capacity is lost"
         ]
       },
       {
-        "name": "Cystic fibrosis\u2013related EPI",
-        "description": "Genetic disorder causing thick, sticky secretions that block pancreatic ducts. EPI is present in 85\u201390% of CF patients and usually appears in infancy or early childhood.",
+        "name": "EPI in cystic fibrosis",
+        "description": "The most common form in children. Thick secretions block pancreatic ducts from early life, leading to enzyme deficiency that is present from birth or early infancy.",
         "distinguishing_features": [
-          "Elevated immunoreactive trypsinogen (IRT) on newborn screening",
-          "Presence of CFTR gene mutations",
-          "Concurrent lung disease and salty sweat",
-          "Early onset and severe malabsorption"
+          "Present from infancy or early childhood",
+          "Associated with failure to thrive, bulky greasy stools, and recurrent respiratory infections",
+          "Managed lifelong with PERT titrated to growth and nutritional targets",
+          "Usually already diagnosed through newborn screening in countries with CF programs"
         ]
       },
       {
         "name": "Post-surgical EPI",
-        "description": "Develops after pancreatic resection, gastric bypass, or other abdominal surgery that disrupts normal anatomy or enzyme delivery.",
+        "description": "Occurs after pancreatic surgery (Whipple procedure, total or partial pancreatectomy) or gastric surgery that disrupts enzyme delivery or the entero-pancreatic reflex.",
         "distinguishing_features": [
-          "Clear temporal link to surgery",
-          "May develop months or years post-op",
-          "Often milder than other forms",
-          "Symptoms improve with enzyme dosing and dietary modification"
+          "Clear temporal link to surgical history",
+          "May develop immediately post-operatively or over subsequent months",
+          "Severity depends on how much functional pancreatic tissue was removed or bypassed",
+          "Often underrecognized and undertreated in surgical follow-up care"
         ]
       },
       {
-        "name": "Idiopathic EPI",
-        "description": "No identifiable cause (no pancreatitis history, normal imaging, no cystic fibrosis). May represent early or mild pancreatic dysfunction.",
+        "name": "Secondary EPI (non-pancreatic causes)",
+        "description": "EPI that arises not from primary pancreatic damage but from other GI conditions that impair enzyme output or delivery \u2014 including celiac disease, Crohn's disease, and autoimmune conditions.",
         "distinguishing_features": [
-          "Normal pancreatic imaging",
-          "Reduced fecal elastase without obvious etiology",
-          "Less severe enzyme deficiency than chronic pancreatitis",
-          "Slower progression"
+          "Fecal elastase may be mildly to moderately reduced rather than severely low",
+          "Treating the underlying condition (e.g., strict gluten-free diet in celiac) may partially or fully restore pancreatic function",
+          "Often overlooked when the primary condition is already known",
+          "Nutritional deficiencies may be more prominent than classic steatorrhea"
+        ]
+      },
+      {
+        "name": "EPI with type 3c diabetes",
+        "description": "When the pancreas is damaged enough to cause EPI, the insulin-producing beta cells may also be affected, leading to a specific form of diabetes distinct from type 1 or type 2.",
+        "distinguishing_features": [
+          "Diabetes developing in the context of known pancreatic disease or surgery",
+          "Blood sugar management can be complex \u2014 both insulin deficiency and glucagon deficiency present",
+          "EPI and diabetes may both be undertreated when type 3c is mistaken for type 2",
+          "Nutritional status must be carefully managed as both conditions interact"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Fatty, loose, or pale stools (steatorrhea)",
+        "symptom": "Steatorrhea \u2014 pale, greasy, oily, or floating stools",
         "category": "digestive",
-        "notes": "Oily appearance, floats, difficult to flush. Hallmark sign of fat malabsorption. May be worse after fatty meals."
+        "notes": "One of the most characteristic features. Stools may be difficult to flush, have a particularly foul smell, and leave an oily residue. This reflects unabsorbed fat passing through the gut. Not always present in mild EPI."
       },
       {
-        "symptom": "Chronic diarrhea or loose bowel movements",
+        "symptom": "Chronic or recurrent diarrhea",
         "category": "digestive",
-        "notes": "Often watery or mucoid, 3\u20134+ times daily. Can be intermittent or constant."
+        "notes": "Often loose, voluminous, and associated with urgency. May alternate with normal stool frequency in milder cases."
       },
       {
-        "symptom": "Abdominal bloating, gas, and distension",
-        "category": "digestive",
-        "notes": "Results from undigested food fermenting in the colon. Worse after meals."
-      },
-      {
-        "symptom": "Abdominal pain or cramping",
-        "category": "digestive",
-        "notes": "Variable intensity and location; may or may not be present depending on underlying cause. More prominent in chronic pancreatitis."
-      },
-      {
-        "symptom": "Unintentional weight loss",
+        "symptom": "Significant unintentional weight loss",
         "category": "metabolic",
-        "notes": "Due to calorie and nutrient malabsorption despite adequate or increased food intake. Can be gradual."
+        "notes": "A hallmark of moderate-to-severe EPI. Despite adequate or increased food intake, calories and nutrients are not being absorbed. Weight loss can be rapid and concerning."
       },
       {
-        "symptom": "Muscle wasting or weakness",
-        "category": "metabolic",
-        "notes": "From protein malabsorption and calorie deficit. May worsen over time without treatment."
-      },
-      {
-        "symptom": "Vitamin deficiencies (A, D, E, K)",
-        "category": "metabolic",
-        "notes": "Fat-soluble vitamins poorly absorbed. Can cause bone loss (D, K), night blindness (A), and bleeding tendency (K)."
-      },
-      {
-        "symptom": "Fatigue and low energy",
-        "category": "metabolic",
-        "notes": "From calorie and nutrient malabsorption, anemia, or deficiency states."
-      },
-      {
-        "symptom": "Food intolerance or increased symptoms after eating",
+        "symptom": "Abdominal bloating and distension",
         "category": "digestive",
-        "notes": "Especially after fatty or greasy foods. High-fat meals worsen steatorrhea."
+        "notes": "Undigested food, particularly fats and starches, ferments in the large intestine, producing gas and bloating \u2014 often worse after large or fatty meals."
+      },
+      {
+        "symptom": "Abdominal cramping and pain",
+        "category": "digestive",
+        "notes": "May be diffuse or located in the upper abdomen. Often post-prandial (after eating). Distinct from the upper abdominal pain of pancreatitis itself."
+      },
+      {
+        "symptom": "Excessive or foul-smelling flatulence",
+        "category": "digestive",
+        "notes": "Results from colonic fermentation of malabsorbed carbohydrates and proteins. Often described as particularly offensive in smell."
+      },
+      {
+        "symptom": "Fatigue and general weakness",
+        "category": "systemic",
+        "notes": "Driven by caloric malabsorption and micronutrient deficiencies. Can be profound in severe or long-standing EPI."
+      },
+      {
+        "symptom": "Muscle wasting and loss of muscle mass",
+        "category": "metabolic",
+        "notes": "Protein malabsorption combined with caloric deficit leads to loss of lean body mass over time, particularly in severe or untreated EPI."
+      },
+      {
+        "symptom": "Vitamin D deficiency \u2014 bone pain, muscle weakness, fractures",
+        "category": "nutritional",
+        "notes": "Fat-soluble vitamins (A, D, E, K) are not absorbed without adequate lipase. Vitamin D deficiency is common in EPI and may cause osteoporosis over time."
+      },
+      {
+        "symptom": "Vitamin K deficiency \u2014 easy bruising, prolonged bleeding",
+        "category": "nutritional",
+        "notes": "Vitamin K is required for clotting factor synthesis. Deficiency may not be clinically apparent until a bleeding challenge occurs."
+      },
+      {
+        "symptom": "Vitamin A deficiency \u2014 night blindness, dry eyes",
+        "category": "nutritional",
+        "notes": "Less commonly recognized in EPI but measurable in those with long-standing malabsorption."
+      },
+      {
+        "symptom": "Vitamin E deficiency \u2014 neurological symptoms, peripheral neuropathy",
+        "category": "neurological",
+        "notes": "Rare but reported in severe or prolonged EPI; may cause difficulty with balance and coordination."
+      },
+      {
+        "symptom": "Nausea and early satiety",
+        "category": "digestive",
+        "notes": "Some individuals with EPI \u2014 particularly post-surgical \u2014 develop gastroparesis or altered gastric motility concurrently, contributing to nausea."
+      },
+      {
+        "symptom": "Osteoporosis or reduced bone density",
+        "category": "musculoskeletal",
+        "notes": "A downstream consequence of chronic fat-soluble vitamin malabsorption, particularly calcium and vitamin D deficiency. Often detected incidentally on DEXA scan."
+      },
+      {
+        "symptom": "Blood sugar dysregulation (if co-occurring type 3c diabetes)",
+        "category": "metabolic",
+        "notes": "Not universal, but individuals with pancreatic damage sufficient to cause EPI may also have impaired insulin secretion."
       }
     ],
     "testing": {
       "key_patterns": [
-        "Chronic loose or fatty stools plus unintentional weight loss despite eating normally",
-        "Abdominal bloating, gas, and cramping that worsen after meals",
-        "Symptoms that improve with low-fat diet or pancreatic enzyme supplements",
-        "History of chronic pancreatitis, cystic fibrosis, or pancreatic surgery",
-        "Cluster of digestive symptoms lasting more than 4 weeks"
+        "Fecal elastase-1 below 200 \u00b5g/g stool (moderate-severe EPI); below 100 \u00b5g/g stool (severe EPI) \u2014 combined with characteristic greasy stools and weight loss",
+        "Fat-soluble vitamin deficiencies (low vitamin D, A, E, or K) with no other clear explanation",
+        "Unintentional weight loss + steatorrhea + history of pancreatic disease or heavy alcohol use",
+        "Normal standard blood work and colonoscopy in someone with persistent diarrhea and weight loss \u2014 EPI is a missed diagnosis to consider",
+        "Response to a trial of pancreatic enzyme replacement therapy (PERT) \u2014 symptom improvement strongly supports the diagnosis"
+      ],
+      "at_home": [
+        {
+          "name": "Stool appearance monitoring",
+          "description": "People with EPI often notice stools that are pale, yellowish or clay-colored, oily or greasy in texture, float in the toilet bowl, and have a particularly foul smell. Keeping a log of stool appearance alongside food intake and symptoms can help identify a pattern that is worth investigating clinically.",
+          "safety_notes": "Pale or clay-colored stools can occasionally indicate bile duct obstruction \u2014 a separate and urgent condition. If stools are consistently pale and accompanied by yellowing of the skin or eyes (jaundice), medical evaluation should not be delayed."
+        },
+        {
+          "name": "Food and symptom diary",
+          "description": "Tracking meals (especially fat content) alongside GI symptoms helps establish whether symptoms consistently worsen after fatty or large meals. EPI symptoms \u2014 bloating, diarrhea, oily stools \u2014 tend to correlate with dietary fat intake, which distinguishes it somewhat from pure IBS patterns.",
+          "safety_notes": "A diary alone cannot diagnose EPI, but the patterns it reveals are useful for informing clinical conversations and prioritizing which tests to request."
+        },
+        {
+          "name": "Weight tracking",
+          "description": "Regular weigh-ins (weekly, same time of day) help document whether weight loss is occurring and at what rate. Significant unintentional loss \u2014 more than 5% of body weight over 6\u201312 months \u2014 warrants clinical investigation.",
+          "safety_notes": "Rapid or severe weight loss (more than 10% of body weight, or loss that is accelerating) warrants prompt medical attention regardless of suspected cause."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Fecal elastase-1 (FE-1) test",
+          "type": "standard",
+          "description": "A single stool sample is analyzed for elastase, a pancreatic enzyme that survives passage through the gut largely intact. A result below 200 \u00b5g/g suggests EPI; below 100 \u00b5g/g indicates severe insufficiency. The test is non-invasive, relatively inexpensive, and widely available. False-positives (low results in people without EPI) can occur with watery diarrhea from any cause, which dilutes the sample. PERT does not interfere with results since human elastase is measured specifically.",
+          "availability": "Orderable by GPs and gastroenterologists in most countries. Some private laboratory services offer this test directly. Sample must be properly collected and stored (typically refrigerated and dispatched promptly)."
+        },
+        {
+          "name": "72-hour fecal fat collection",
+          "type": "gold_standard",
+          "description": "All stools are collected over 72 hours while the person consumes a defined high-fat diet (100 g fat/day). Fat content is measured gravimetrically. More than 7 g of fat per day confirms steatorrhea and significant malabsorption. Highly accurate but rarely performed due to the burden of collection and the availability of simpler alternatives.",
+          "availability": "Available in tertiary gastroenterology centers. Rarely ordered in routine practice. May be requested when fecal elastase results are ambiguous or when quantifying the degree of fat malabsorption matters for management decisions."
+        },
+        {
+          "name": "Serum fat-soluble vitamins panel",
+          "type": "standard",
+          "description": "Blood levels of vitamins A, D, E, and K (the latter often measured via prothrombin time or direct assay) reflect fat absorption capacity indirectly. Deficiencies support EPI diagnosis and guide supplementation. Commonly low in people with moderate-to-severe EPI.",
+          "availability": "Orderable by any clinician. Vitamin D is routinely checked; A, E, and K may need to be specifically requested."
+        },
+        {
+          "name": "Cross-sectional pancreatic imaging (CT or MRI/MRCP)",
+          "type": "standard",
+          "description": "CT or MRI of the abdomen \u2014 particularly MRCP (magnetic resonance cholangiopancreatography) \u2014 can identify structural causes of EPI including pancreatic atrophy, calcifications (chronic pancreatitis), ductal dilation, pancreatic tumors, or post-surgical anatomy. Imaging does not measure enzyme output but identifies underlying cause.",
+          "availability": "Orderable by gastroenterologists and general practitioners with appropriate clinical suspicion. MRCP requires a specialist referral in most settings."
+        },
+        {
+          "name": "Secretin-stimulated endoscopic pancreatic function test",
+          "type": "gold_standard",
+          "description": "Intravenous secretin is administered to stimulate pancreatic secretion; duodenal fluid is then collected via endoscope and analyzed for bicarbonate and enzyme output. Considered the most sensitive direct test of pancreatic exocrine function. Detects early or mild EPI that fecal elastase may miss.",
+          "availability": "Available only at specialized pancreatic centers. Not routinely performed. Reserved for cases where diagnosis is uncertain despite other testing."
+        },
+        {
+          "name": "13C-mixed triglyceride breath test",
+          "type": "emerging",
+          "description": "A non-invasive breath test that measures how well the body absorbs and metabolizes a labeled fat substrate. Can detect fat malabsorption due to EPI without stool collection. Used in some European centers as an alternative or adjunct to fecal elastase.",
+          "availability": "Not widely available in routine clinical settings. More common in research and specialist pancreatic centers."
+        },
+        {
+          "name": "PERT therapeutic trial",
+          "type": "standard",
+          "description": "In people with a high clinical suspicion for EPI, a practical approach is to begin a trial of pancreatic enzyme replacement therapy and monitor symptom response. Meaningful improvement in stool consistency, reduction in steatorrhea, and weight stabilization support the diagnosis. Used when formal testing is inconclusive or access is limited.",
+          "availability": "Requires a prescribing clinician. Enzymes are prescription-only in most countries."
+        }
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "EPI is almost always caused by irreversible pancreatic damage \u2014 enzyme replacement manages symptoms but does not restore the pancreas to normal function. For most people, PERT is a lifelong commitment.",
+        "why_resisted": "People hope that improving diet, stopping alcohol, or treating inflammation will restore pancreatic function. While stopping the causative factor is essential, the lost exocrine tissue does not regenerate. Many people cycle through periods of non-adherence hoping the condition has improved.",
+        "path_forward": "Those who accept lifelong PERT and commit to consistent, correctly timed dosing typically achieve near-normal digestion and halt nutritional decline. Regular monitoring of nutritional markers and enzyme dose optimization \u2014 rather than periodic reassessment of whether PERT is still needed \u2014 is the productive frame."
+      },
+      {
+        "truth": "Many gastroenterologists manage EPI with a single starting PERT dose and do not systematically titrate or monitor \u2014 leaving people significantly under-treated for years.",
+        "why_resisted": "People assume that having a diagnosis and a prescription means they are receiving optimal treatment. Questioning whether the dose is right can feel like challenging clinical authority.",
+        "path_forward": "People who research their own optimal PERT dosing, track symptom response to dose changes, and work with a dietitian experienced in EPI consistently achieve better outcomes than those who passively accept the initial prescription. Bringing data (stool logs, weight records, vitamin levels) to appointments is a practical lever."
+      },
+      {
+        "truth": "EPI can develop silently in people with chronic pancreatitis, cystic fibrosis, or diabetes \u2014 nutritional depletion and bone loss may be occurring well before obvious steatorrhea appears.",
+        "why_resisted": "In the absence of dramatic symptoms like obvious greasy stools, people and clinicians may not prioritize investigation. Fatigue and weight loss are attributed to the primary condition rather than investigated as separate, addressable malabsorption.",
+        "path_forward": "Proactive monitoring \u2014 including annual fat-soluble vitamin levels and DEXA scanning where appropriate \u2014 in known high-risk groups allows early intervention before significant nutritional damage accumulates."
+      }
+    ],
     "quick_checks": [
       {
         "check": "Describe your recent stools: are they pale, oily, difficult to flush, or unusually loose?",
@@ -132,6 +249,345 @@
         "what_it_suggests": "Postprandial (after-meal) bloating and cramping suggest undigested food fermenting in the colon, consistent with EPI."
       }
     ],
-    "relevance_signal": "**Fatty, pale, foul-smelling stools** that float. Unintentional weight loss. Bloating and discomfort after fatty meals. Worse with a history of pancreatitis or heavy alcohol use."
+    "relevance_signal": "Chronic diarrhea, pale or greasy floating stools, significant unintentional weight loss, and bloating that persists despite dietary changes \u2014 especially in people with a history of pancreatitis, heavy alcohol use, cystic fibrosis, or abdominal surgery",
+    "related_conditions": [
+      {
+        "id": "ibs",
+        "name": "Irritable bowel syndrome (IBS)",
+        "relationship": "often_confused",
+        "explanation": "EPI and IBS share overlapping symptoms \u2014 bloating, diarrhea, abdominal cramping \u2014 and EPI is frequently misdiagnosed as IBS-D for years. The distinguishing features (greasy stools, weight loss, nutritional deficiencies, fatty meal correlation) are often not probed in standard IBS workups. Some people labeled with IBS may have undiagnosed EPI."
+      },
+      {
+        "id": "coeliac",
+        "name": "Coeliac disease",
+        "relationship": "mechanistic_link",
+        "explanation": "Celiac disease can cause secondary EPI by reducing the hormonal signals (cholecystokinin and secretin) that normally stimulate pancreatic enzyme release, or through direct intestinal damage. EPI in celiac disease may partially resolve with strict gluten-free diet. The two conditions can coexist and compound malabsorption."
+      },
+      {
+        "id": "ibd_remission",
+        "name": "Crohn's disease",
+        "relationship": "mechanistic_link",
+        "explanation": "Crohn's disease affecting the small intestine can impair cholecystokinin release and reduce pancreatic stimulation, leading to secondary EPI. Crohn's can also involve the pancreas directly (pancreatitis) or through medications such as azathioprine. EPI should be considered in Crohn's patients with persistent malabsorption despite disease control."
+      },
+      {
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "comorbid",
+        "explanation": "EPI and SIBO frequently coexist. Undigested food from EPI provides a substrate for bacterial overgrowth in the small intestine, and reduced pancreatic bicarbonate output creates a less hostile environment for bacteria. SIBO can persist after EPI is treated if not separately addressed, and vice versa."
+      },
+      {
+        "id": "gastroparesis",
+        "name": "Gastroparesis",
+        "relationship": "comorbid",
+        "explanation": "Altered gastric emptying and EPI can coexist, particularly in people with diabetes (type 3c) or post-surgical anatomy. Both conditions impair the coordination of food delivery with enzyme release, making management of each more complex. Gastroparesis can reduce the efficacy of PERT if enzymes are taken at the wrong point in the digestive cycle."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "downstream",
+        "explanation": "Chronic malabsorption from EPI alters the gut microbiome, feeding certain bacterial species while depriving others. This secondary dysbiosis can perpetuate symptoms \u2014 particularly bloating and gas \u2014 even after PERT is initiated. Addressing gut dysbiosis may be a necessary adjunct to enzyme therapy in some individuals."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "often_confused",
+        "explanation": "Hypothyroidism can cause some overlapping features (fatigue, weight change, digestive slowing) and should be excluded in the workup of unexplained malabsorption. Hyperthyroidism causing weight loss and loose stools can superficially resemble EPI. Thyroid function is a standard part of differentiating EPI from other causes of weight loss and GI symptoms."
+      },
+      {
+        "id": "functional_dyspepsia",
+        "name": "Functional dyspepsia",
+        "relationship": "often_confused",
+        "explanation": "Upper abdominal discomfort, bloating after meals, and nausea \u2014 core features of functional dyspepsia \u2014 overlap with EPI symptoms. People with EPI are sometimes managed for functional dyspepsia before the malabsorptive nature of their symptoms is recognized."
+      },
+      {
+        "id": "lactase",
+        "name": "Lactase deficiency",
+        "relationship": "comorbid",
+        "explanation": "Secondary lactase deficiency can develop alongside EPI due to small intestinal mucosal changes or SIBO. This can compound diarrhea and bloating. Some individuals find that avoiding dairy in addition to taking PERT helps manage residual symptoms."
+      },
+      {
+        "id": "microscopic_colitis",
+        "name": "Microscopic colitis",
+        "relationship": "often_confused",
+        "explanation": "Microscopic colitis causes chronic watery diarrhea, often in older adults, and shares little with EPI mechanistically \u2014 but both can be missed for years and confused with IBS. They can occasionally coexist, and microscopic colitis should be considered when diarrhea persists despite adequate PERT dosing."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Pancreatic enzyme replacement therapy (PERT)",
+          "category": "medication",
+          "description": "The cornerstone of EPI management. Enteric-coated capsules containing lipase, protease, and amylase are taken with every meal and snack containing fat or protein. The enzymes replace or supplement what the pancreas cannot produce. Starting dose is typically 25,000\u201340,000 lipase units per main meal and half that with snacks, but titration is usually required. PERT must be taken during the meal \u2014 not before or after \u2014 to mix with food as it enters the duodenum.",
+          "evidence_level": "strong",
+          "notes": "Dose requirements vary considerably between individuals and by meal composition. Higher-fat meals require more enzymes. Many people underdose PERT because they start low and never titrate upward. A gastroenterologist or dietitian with EPI experience can guide dose optimization. Brand switching can sometimes affect response due to differences in enteric coating."
+        },
+        {
+          "name": "Dietary fat moderation (early management phase)",
+          "category": "diet",
+          "description": "In the early stages of PERT initiation or when EPI is severe, moderating dietary fat intake (avoiding very high-fat meals rather than eliminating fat) can reduce the burden on inadequate enzyme supply and reduce symptom severity. This is not a long-term fat restriction \u2014 adequate fat intake is essential for nutrition, and PERT is intended to allow normal fat consumption.",
+          "evidence_level": "moderate",
+          "notes": "Fat restriction should not be severe or long-term, as it risks worsening fat-soluble vitamin deficiencies and caloric inadequacy. A dietitian should guide fat intake targets relative to PERT dose."
+        },
+        {
+          "name": "Small, frequent meals",
+          "category": "diet",
+          "description": "Eating smaller amounts more frequently (e.g., 5\u20136 smaller meals rather than 3 large ones) reduces the enzymatic demand at any single sitting and can improve tolerance and absorption. Each eating occasion requires enzyme dosing.",
+          "evidence_level": "moderate",
+          "notes": "This strategy works best when paired with consistent PERT use. Large, high-fat meals are particularly likely to overwhelm available enzyme replacement."
+        },
+        {
+          "name": "Fat-soluble vitamin supplementation",
+          "category": "supplement",
+          "description": "Vitamins A, D, E, and K are commonly deficient in EPI due to fat malabsorption. Supplementation \u2014 ideally in water-soluble or emulsified forms that are better absorbed even with impaired fat digestion \u2014 is often necessary alongside PERT. Levels should be tested and monitored. Vitamin D and calcium supplementation is particularly important for bone health.",
+          "evidence_level": "strong",
+          "notes": "Standard oil-based fat-soluble vitamin formulations may not be well absorbed even with PERT. Water-miscible or micellar formulations are preferred by some clinicians for people with significant malabsorption. Monitoring blood levels every 6\u201312 months allows dose adjustment."
+        },
+        {
+          "name": "Complete alcohol cessation",
+          "category": "lifestyle",
+          "description": "For people whose EPI is caused or exacerbated by alcohol-related chronic pancreatitis, continuing to drink significantly worsens pancreatic damage and undermines treatment. Complete cessation is the most important modifiable factor in preventing further deterioration.",
+          "evidence_level": "strong",
+          "notes": "Alcohol cessation may slow or halt disease progression but cannot reverse established exocrine damage. Support for alcohol use disorder may be needed alongside GI care."
+        },
+        {
+          "name": "Smoking cessation",
+          "category": "lifestyle",
+          "description": "Smoking is an independent risk factor for chronic pancreatitis and has been shown to worsen EPI outcomes. Cessation is recommended for all people with EPI who smoke, regardless of other causes.",
+          "evidence_level": "strong",
+          "notes": "The mechanisms include direct pancreatic toxicity and impaired pancreatic microcirculation. Smoking cessation support (pharmacotherapy, counseling) should be offered as part of comprehensive EPI care."
+        },
+        {
+          "name": "Proton pump inhibitors (PPIs) as an adjunct",
+          "category": "medication",
+          "description": "Pancreatic enzymes require a pH above 4\u20135 to function; stomach acid can inactivate them. In people who do not respond fully to PERT, adding a PPI to reduce gastric acid can improve enzyme survival and effectiveness in the duodenum. This is an adjunct strategy, not a primary treatment.",
+          "evidence_level": "moderate",
+          "notes": "Not universally recommended but can help in non-responders to PERT alone. Long-term PPI use carries its own considerations (magnesium depletion, B12 absorption effects) and should be clinician-supervised."
+        },
+        {
+          "name": "Medium-chain triglyceride (MCT) supplementation",
+          "category": "diet",
+          "description": "MCT oils are absorbed without requiring lipase, making them a useful caloric supplement for people with EPI who struggle to maintain weight despite PERT. They can be added to foods or taken as an oil supplement.",
+          "evidence_level": "moderate",
+          "notes": "MCT oil can cause diarrhea and cramping if introduced too quickly or in large amounts. Starting low and increasing slowly is advisable. MCT supplementation does not replace the need for PERT \u2014 it supplements caloric intake when absorption is still compromised."
+        }
+      ],
+      "things_to_avoid": [
+        "Skipping enzyme doses for meals or snacks \u2014 PERT must be taken consistently with every eating occasion containing fat or protein, not only at some meals",
+        "Taking PERT before or long after starting a meal rather than during \u2014 timing is critical for enzymes to mix with food in the duodenum",
+        "Very large, high-fat single meals that exceed enzyme replacement capacity \u2014 exceeding the enzymatic ceiling causes symptom breakthroughs even on PERT",
+        "Continued alcohol consumption where it is a causative or contributing factor \u2014 alcohol directly damages remaining functional pancreatic tissue",
+        "Smoking \u2014 independently worsens EPI and hastens pancreatic deterioration",
+        "Prolonged severe dietary fat restriction without dietitian guidance \u2014 risks worsening nutritional deficiencies and caloric deficit",
+        "Ignoring fat-soluble vitamin deficiencies on the assumption that PERT alone will resolve them \u2014 supplementation is often separately needed, at least initially",
+        "Assuming no response to PERT means the diagnosis is wrong \u2014 inadequate dosing, poor enzyme timing, incorrect brand, or co-existing SIBO are common reasons for partial response"
+      ]
+    },
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "PERT dose optimization",
+          "why_it_matters": "The single most impactful intervention for EPI. Under-dosing \u2014 which is extremely common \u2014 leaves significant malabsorption in place even when treatment has technically started. The correct dose is the one that controls symptoms, not the initial starting dose.",
+          "how_to_start": "Keep a symptom log for 2 weeks \u2014 stool character, bloating, meal size \u2014 and bring it to a gastroenterologist or dietitian. Request a structured titration plan with clear dose adjustment criteria. Most guidelines suggest at least 40,000\u201350,000 lipase units per main meal as a working dose, increasing until symptoms resolve.",
+          "timeline": "Symptom improvement often begins within days of reaching an adequate dose; nutritional recovery may take weeks to months",
+          "requires_professional": true
+        },
+        {
+          "lever": "Nutritional rehabilitation",
+          "why_it_matters": "Malabsorption from EPI creates multi-system deficiencies that do not automatically reverse when PERT is started. Fat-soluble vitamin repletion, caloric rehabilitation, and sometimes protein supplementation are needed to rebuild nutritional status \u2014 which in turn drives energy, muscle mass, bone health, and immune function.",
+          "how_to_start": "Request a full nutritional blood panel (vitamins A, D, E, K, B12, zinc, magnesium, prealbumin) and work with a registered dietitian to create a targeted repletion plan. Water-soluble fat-soluble vitamin formulations are preferred during the active repletion phase.",
+          "timeline": "Vitamin D levels typically improve within 3 months of adequate supplementation; full nutritional recovery may take 6\u201312 months",
+          "requires_professional": true
+        },
+        {
+          "lever": "Eliminating alcohol and tobacco",
+          "why_it_matters": "In EPI caused by chronic pancreatitis, continued alcohol use accelerates destruction of remaining pancreatic tissue, reducing the effectiveness of PERT over time. Smoking has an independent dose-response relationship with EPI severity. These are the two most powerful modifiable disease-progression factors.",
+          "how_to_start": "Engage with a GP or addiction medicine specialist for support. Framing cessation as disease management \u2014 not lifestyle choice \u2014 can increase motivation. Varenicline and bupropion have evidence for smoking cessation; naltrexone and acamprosate for alcohol dependence.",
+          "timeline": "Halting progression is the realistic outcome; cessation does not recover lost tissue but prevents further loss",
+          "requires_professional": false
+        },
+        {
+          "lever": "Identifying and treating co-existing SIBO",
+          "why_it_matters": "SIBO is common in EPI and can cause persistent bloating, diarrhea, and malabsorption even when PERT is adequately dosed. Treating EPI without addressing SIBO leaves a significant residual symptom burden that is often misattributed to inadequate enzyme dosing.",
+          "how_to_start": "Discuss SIBO testing (hydrogen-methane breath test) with a gastroenterologist if symptoms persist despite what appears to be adequate PERT dosing. A positive result warrants a separate treatment protocol.",
+          "timeline": "SIBO treatment response typically occurs over 2\u20134 weeks; maintaining resolution may require dietary and probiotic strategies",
+          "requires_professional": true
+        },
+        {
+          "lever": "Structured monitoring of nutritional markers and bone health",
+          "why_it_matters": "EPI creates ongoing nutritional risk even on treatment. Without systematic monitoring, deficiencies accumulate silently \u2014 particularly vitamin D, leading to osteoporosis. People who monitor regularly and adjust supplementation accordingly maintain significantly better long-term health outcomes.",
+          "how_to_start": "Establish an annual (or initially 6-monthly) review of fat-soluble vitamins, B12, zinc, and magnesium. Arrange baseline DEXA scan for bone density, especially in those with long-standing EPI or known vitamin D deficiency history.",
+          "timeline": "Ongoing \u2014 this is a lifelong management framework, not a one-time correction",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Starting PERT at a low dose and never titrating upward \u2014 the starting dose is rarely the optimal dose, and many people remain on an inadequate dose for years",
+        "Taking PERT before sitting down to eat rather than during the meal \u2014 enzyme timing relative to food is critical for effectiveness",
+        "Stopping PERT during periods of feeling better \u2014 EPI does not resolve, and symptom improvement is the result of PERT working, not the pancreas recovering",
+        "Assuming stool normalization means nutritional deficiencies have resolved \u2014 fat-soluble vitamin repletion requires active monitoring and supplementation, not just enzyme replacement",
+        "Focusing only on GI symptoms while ignoring bone health \u2014 osteoporosis is a serious long-term complication of EPI that is often not addressed until a fracture occurs",
+        "Not addressing SIBO as a co-existing condition \u2014 persistent symptoms on adequate PERT often reflect untreated SIBO rather than the need for more enzymes",
+        "Reducing dietary fat to near-zero rather than moderating it \u2014 extreme fat restriction worsens nutritional deficiency and is unnecessary once PERT is properly dosed"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Gastroenterologist with pancreatic interest",
+          "role": "Primary diagnostic and treatment specialist for EPI. Can order and interpret fecal elastase tests, arrange pancreatic imaging, initiate and titrate PERT, and manage underlying causes such as chronic pancreatitis.",
+          "notes": "Not all gastroenterologists have deep familiarity with EPI \u2014 particularly secondary EPI or PERT dose optimization. A specialist with a specific interest in pancreatic disease or a pancreatic disease center provides more comprehensive care. It is reasonable to seek a second opinion if symptoms persist on treatment."
+        },
+        {
+          "type": "Registered dietitian (specializing in malabsorption or pancreatic conditions)",
+          "role": "Essential for PERT dose guidance relative to meal composition, managing dietary fat moderation, identifying and correcting nutritional deficiencies, and supporting weight rehabilitation. Dietitians with GI or oncology backgrounds often have relevant expertise.",
+          "notes": "This is arguably the most practically impactful practitioner for day-to-day EPI management. Many people with EPI are never referred to a dietitian despite the condition being fundamentally a nutritional disease. Proactively requesting a referral is worthwhile."
+        },
+        {
+          "type": "Pancreatologist or specialist pancreatic center",
+          "role": "For complex cases \u2014 including pancreatic cancer workup, autoimmune pancreatitis, post-Whipple management, or EPI that does not respond to standard PERT \u2014 specialist pancreatic centers offer access to secretin pancreatic function testing, advanced imaging, and multidisciplinary teams.",
+          "notes": "Access varies significantly by country and region. Academic medical centers with hepatopancreatobiliary (HPB) surgery programs typically have pancreatology expertise."
+        },
+        {
+          "type": "Endocrinologist",
+          "role": "Relevant when EPI coexists with type 3c diabetes. Endocrinologists manage the glucose dysregulation that accompanies pancreatic damage, which behaves differently from type 1 or type 2 diabetes and requires a different management approach.",
+          "notes": "Type 3c diabetes is significantly under-recognized and often managed as if it were type 2 \u2014 which can lead to suboptimal glucose control. Endocrinologists familiar with pancreatic diabetes are preferable."
+        },
+        {
+          "type": "Addiction medicine specialist or GP with substance use expertise",
+          "role": "For people whose EPI is driven by alcohol-related pancreatitis, addressing alcohol use disorder is a primary disease-modifying intervention \u2014 not an adjunct. Specialist support significantly improves cessation rates.",
+          "notes": "Engaging with this specialist early, in parallel with GI care rather than sequentially, provides the most benefit."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/pancreatitis",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/pancreatitis/",
+          "notes": "Active community of people with chronic pancreatitis and EPI. Practical discussions about PERT dosing, diet, managing flares, and navigating diagnosis. Many members have extensive self-directed knowledge and share real-world experience with enzyme brands and titration."
+        },
+        {
+          "name": "National Pancreas Foundation Community",
+          "platform": "Forum / website",
+          "url": "https://pancreasfoundation.org/",
+          "notes": "US-based nonprofit offering patient information, support resources, and connections to specialist care for pancreatic conditions including EPI. Hosts patient conferences and has a provider directory."
+        },
+        {
+          "name": "Cystic Fibrosis Foundation Community (for CF-related EPI)",
+          "platform": "Website / community",
+          "url": "https://www.cff.org/",
+          "notes": "For people with CF-related EPI, the CFF provides comprehensive condition-specific resources, clinical trial information, and community connections. The CF community has some of the most developed patient knowledge about PERT management."
+        },
+        {
+          "name": "Pancreatic Cancer UK Forum (for EPI post-cancer diagnosis)",
+          "platform": "Forum",
+          "url": "https://www.pancreaticcancer.org.uk/support/",
+          "notes": "Relevant for people who develop EPI following pancreatic cancer diagnosis or surgery. Focused on a different underlying condition but directly addresses EPI management post-surgery and post-treatment."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "National Pancreas Foundation \u2014 EPI Patient Resources",
+        "type": "website",
+        "author_or_source": "National Pancreas Foundation",
+        "url": "https://pancreasfoundation.org/patient-information/exocrine-pancreatic-insufficiency/",
+        "description": "Clear, patient-oriented explanations of EPI, its causes, diagnosis, and treatment. A well-organized starting point for people newly researching EPI, with links to specialist directories.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Pancreapedia \u2014 EPI and Pancreatic Exocrine Function",
+        "type": "website",
+        "author_or_source": "American Pancreatic Association",
+        "url": "https://pancreapedia.org/",
+        "description": "A clinically detailed reference database covering exocrine pancreatic function, EPI, chronic pancreatitis, and related topics. More technical than general patient sites, but accessible to motivated self-researchers wanting to understand the physiology and evidence base.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Diagnosis and Management of Exocrine Pancreatic Insufficiency (clinical review)",
+        "type": "research paper",
+        "author_or_source": "Lindkvist B, Drugs (2013) / multiple subsequent systematic reviews available via PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23463742/",
+        "description": "A frequently cited clinical review of EPI diagnosis and PERT management. Useful for understanding the evidence base for testing thresholds, PERT dosing strategies, and nutritional monitoring. Suitable for people who want to engage with the clinical literature directly.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Gut: British Society of Gastroenterology Guidelines on Chronic Pancreatitis",
+        "type": "research paper",
+        "author_or_source": "P\u00e1rniczky A et al. / British Society of Gastroenterology",
+        "url": "https://www.bsg.org.uk/clinical-resource/bsg-guidelines-on-chronic-pancreatitis/",
+        "description": "Authoritative clinical guideline covering EPI management within the context of chronic pancreatitis, including PERT dosing recommendations, nutritional assessment, and monitoring frameworks. Valuable for understanding what standard-of-care recommendations look like.",
+        "audience": "advanced"
+      },
+      {
+        "title": "The Pancreatitis Memoirs (patient blog/community perspective)",
+        "type": "website",
+        "author_or_source": "Various patient authors",
+        "url": "https://www.reddit.com/r/pancreatitis/wiki/index/",
+        "description": "The r/pancreatitis subreddit wiki compiles community-sourced practical guidance on living with chronic pancreatitis and EPI, including real-world PERT titration experiences, enzyme brand comparisons, and dietary strategies. Reflects what actually helps people day-to-day.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Type 3c Diabetes \u2014 Understanding Pancreatogenic Diabetes",
+        "type": "website",
+        "author_or_source": "Diabetes UK / JDRF",
+        "url": "https://www.diabetes.org.uk/diabetes-the-basics/other-types-of-diabetes/type-3c",
+        "description": "Accessible resource for people with EPI who also have or are at risk of diabetes, explaining how pancreatic damage causes a distinct form of diabetes that is different from both type 1 and type 2.",
+        "audience": "beginner"
+      }
+    ]
+  },
+  "section_meta": {
+    "relevance_signal": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "3028670440bb3a54"
+    },
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

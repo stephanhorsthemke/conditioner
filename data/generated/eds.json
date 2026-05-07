@@ -2,666 +2,803 @@
   "condition_id": "eds",
   "condition_name": "Hypermobile EDS / HSD",
   "generated_at": "2026-04-16T09:15:03.431145Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "Hypermobile Ehlers-Danlos Syndrome (hEDS) and Hypermobility Spectrum Disorder (HSD) are conditions where joints move beyond their normal range of motion, often paired with tissue fragility, pain, and dysfunction across multiple body systems. hEDS is a genetic connective tissue disorder; HSD is similar but without the genetic confirmation. Both require long-term management to prevent injury and manage symptoms.",
-    "detailed_summary": "hEDS and HSD share core features: excessive joint flexibility (hypermobility), chronic pain, and multi-system involvement including skin, digestive, cardiovascular, and neurological symptoms. The distinction hinges on genetics\u2014hEDS is caused by an as-yet-unidentified genetic defect affecting collagen production or structure, while HSD describes the same clinical picture without genetic confirmation. Both are lifelong conditions managed through movement strategy, symptom control, and avoiding further tissue damage. Diagnosis is clinical; there is no definitive genetic test for hEDS despite ongoing research. Symptoms often begin in childhood but may not be recognized until adolescence or adulthood.",
+    "plain_summary": "Hypermobile Ehlers-Danlos syndrome (hEDS) and hypermobility spectrum disorder (HSD) are connective tissue conditions in which the body's collagen \u2014 the structural protein holding joints, skin, blood vessels, and organs in place \u2014 does not work as it should. This causes joints that move too far, pain that can be widespread, fatigue, and a wide range of symptoms across multiple body systems. Because collagen is everywhere in the body, these conditions can affect almost any organ. They are frequently missed or misdiagnosed for years, and many people with hEDS or HSD are told their symptoms are anxiety, attention-seeking, or simply unexplained.",
+    "detailed_summary": "Hypermobile EDS (hEDS) and hypermobility spectrum disorder (HSD) sit on the same clinical spectrum of heritable connective tissue hypermobility. hEDS is diagnosed against a strict 2017 international criteria set \u2014 requiring joint hypermobility with a high Beighton score, plus features such as skin changes, musculoskeletal complications, and a relevant family history. HSD is the category applied when hypermobility causes genuine symptoms and functional impairment but the full hEDS criteria are not met. The two conditions are managed very similarly and share most comorbidities.\n\nThe underlying problem is thought to involve faulty or insufficient collagen and related extracellular matrix proteins, though the specific gene or genes responsible for hEDS have not yet been identified. This distinguishes it from other EDS subtypes (such as classical or vascular EDS), which have known genetic causes and are tested by gene panel. Because connective tissue is structural to every organ system, the consequences of this defect extend well beyond joints: the gut wall, autonomic nerves, mast cells, pelvic floor, dura, and blood vessel walls are all affected in varying degrees.\n\nPeople with hEDS/HSD frequently experience years or even decades of symptoms across multiple specialties \u2014 orthopaedics, gastroenterology, cardiology, gynaecology, urology, and neurology \u2014 without a unifying diagnosis. The average diagnostic delay is reported at over a decade. The condition is heavily female-predominant in clinical populations, though this may partly reflect diagnostic bias. There is a significant and growing evidence base linking hEDS/HSD to dysautonomia (especially POTS), mast cell activation syndrome (MCAS), functional gastrointestinal disorders, chronic pain with central sensitisation, and neurodivergence. This cluster \u2014 sometimes called the 'hypermobility triad' or informally the 'trifecta' \u2014 appears with striking frequency and may share common mechanisms.",
     "prevalence": {
-      "summary": "hEDS is rare; HSD is more common but exact numbers are contested due to evolving diagnostic criteria.",
-      "estimate": "hEDS: approximately 1 in 10,000 to 1 in 30,000 people. HSD: estimated 1\u20133% of the population, though this figure is debated.",
-      "notes": "hEDS numbers are difficult to pin down because the gene is unknown and diagnosis is clinical. HSD is newer (defined in 2017) and likely includes many previously undiagnosed individuals. Women are diagnosed more often, though whether this reflects true prevalence or diagnostic bias is unclear. Many people with HSD never seek diagnosis."
+      "summary": "More common than previously thought, affecting an estimated 1 in 500 to 1 in 5,000 people, with significant underdiagnosis.",
+      "estimate": "0.02\u20130.2% for hEDS; HSD broader and likely higher; joint hypermobility alone affects 10\u201320% of the population",
+      "notes": "Prevalence estimates vary widely because diagnostic criteria have changed over time, and the boundary between asymptomatic hypermobility and HSD is clinically contested. Female individuals are diagnosed 3\u20135 times more often than male individuals in most clinical series, though whether this reflects true sex difference or diagnostic bias is debated. Diagnosis is heavily dependent on access to informed clinicians, creating significant geographic and socioeconomic disparity in identification."
     },
     "subgroups": [
       {
-        "name": "Hypermobile Ehlers-Danlos Syndrome (hEDS)",
-        "description": "The genetic form of the hypermobility disorder. Diagnosis requires hypermobility plus at least two systemic features (skin involvement, unexplained GI symptoms, etc.). Presumed autosomal dominant inheritance, though the causative gene is unknown.",
+        "name": "hEDS (Hypermobile Ehlers-Danlos Syndrome)",
+        "description": "Meets the full 2017 international diagnostic criteria: generalised joint hypermobility with Beighton score \u22655 (adult), plus at least two of three feature clusters (musculoskeletal complications, connective tissue features such as soft skin or striae, and positive family history). No causative gene identified.",
         "distinguishing_features": [
-          "Genetic basis presumed but not proven (no test available)",
-          "Requires documented family history or multiple systemic features for diagnosis",
-          "Often more severe than HSD",
-          "Higher lifetime risk of complications"
+          "Beighton score typically \u22655/9 in adults",
+          "Often has a relevant family history",
+          "Skin features such as soft/velvety texture, easy bruising, or stretch marks disproportionate to age or BMI",
+          "Musculoskeletal complications: recurrent dislocations, subluxations, chronic joint pain",
+          "Diagnosed clinically \u2014 no genetic test available"
         ]
       },
       {
-        "name": "Hypermobility Spectrum Disorder (HSD)",
-        "description": "A clinical diagnosis for people with hypermobility and symptoms consistent with hEDS, but who do not meet full criteria or lack family history. Not presumed to have a connective tissue gene defect, though the boundary with hEDS is blurry.",
+        "name": "HSD (Hypermobility Spectrum Disorder)",
+        "description": "Hypermobility causes symptomatic impairment but full hEDS criteria are not met. Includes generalised HSD (G-HSD), peripheral HSD (P-HSD), localised HSD (L-HSD), and historical HSD (for those who were hypermobile but have stiffened with age or injury).",
         "distinguishing_features": [
-          "Diagnosed without genetic confirmation",
-          "May have fewer or milder systemic features than hEDS",
-          "Often considered 'generalized hypermobility' plus associated pain or dysfunction",
-          "Increasingly recognized as a spectrum rather than a distinct disease"
+          "Joint hypermobility is present but may not meet full Beighton threshold",
+          "Symptoms are real and functionally limiting \u2014 not a milder or less legitimate condition",
+          "Managed almost identically to hEDS",
+          "Comorbidities (POTS, MCAS, dysautonomia) occur similarly to hEDS"
         ]
       },
       {
-        "name": "Secondary Hypermobility",
-        "description": "Joint hypermobility occurring in the context of other conditions (e.g., Marfan syndrome, rheumatologic disease, hyperthyroidism) rather than as a primary connective tissue disorder.",
+        "name": "Predominantly pain-dominant presentation",
+        "description": "Some individuals have severe, widespread chronic pain as their primary burden, often overlapping with fibromyalgia or central sensitisation, with joint instability as a secondary feature.",
         "distinguishing_features": [
-          "Hypermobility is a feature of another diagnosed condition",
-          "May resolve if the underlying condition is treated",
-          "Requires different management approach"
+          "Widespread allodynia and hyperalgesia",
+          "Central sensitisation features: pain disproportionate to injury, widespread tender points",
+          "Often also meets fibromyalgia criteria",
+          "May have relatively modest joint laxity scores despite severe pain"
+        ]
+      },
+      {
+        "name": "Predominantly dysautonomia-dominant presentation",
+        "description": "Autonomic nervous system dysfunction is the primary driver of symptoms, with POTS, orthostatic intolerance, and fatigue dominating the picture.",
+        "distinguishing_features": [
+          "Postural tachycardia, presyncope, or syncope",
+          "Severe fatigue and post-exertional malaise",
+          "Brain fog, cognitive difficulties",
+          "Orthostatic intolerance as a daily limiting factor"
+        ]
+      },
+      {
+        "name": "Predominantly gastrointestinal presentation",
+        "description": "GI symptoms \u2014 nausea, bloating, early satiety, constipation, diarrhoea, or gastroparesis \u2014 dominate the clinical picture, often leading to GI-first evaluation.",
+        "distinguishing_features": [
+          "Slow gastric emptying or gastroparesis",
+          "Functional GI symptoms including IBS-like pattern",
+          "Pelvic floor dysfunction contributing to evacuation difficulty",
+          "Mast cell activation may drive food reactivity and gut inflammation"
+        ]
+      },
+      {
+        "name": "Paediatric and adolescent onset",
+        "description": "hEDS/HSD frequently presents in childhood or adolescence, often with growing pains, recurrent sprains, fatigue, and school attendance difficulties, but is often not identified until adulthood.",
+        "distinguishing_features": [
+          "Higher Beighton scores are normal in children, requiring adjusted thresholds",
+          "May present as persistent joint pain, clumsiness, or 'growing pains'",
+          "School avoidance and fatigue are common presenting features",
+          "Onset or worsening at puberty is frequently reported, particularly in girls"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Joint hypermobility \u2014 joints move beyond normal range of motion",
+        "symptom": "Joint hypermobility \u2014 joints that move beyond normal range",
         "category": "musculoskeletal",
-        "notes": "Often painless when young; worsens with age and activity. Fingers, wrists, knees, shoulders, and hips most commonly affected. Can be measured with the Beighton score."
+        "notes": "Classic features include ability to hyperextend elbows, knees, and fingers; touching thumbs to forearms; palms flat on floor with straight knees. Beighton scale is used clinically. Hypermobility may reduce with age and injury."
       },
       {
-        "symptom": "Chronic joint pain and stiffness",
+        "symptom": "Recurrent joint subluxations and dislocations",
         "category": "musculoskeletal",
-        "notes": "Often worse in morning or after activity. Worsens over time. Can occur even without obvious injury."
+        "notes": "Joints partially or fully dislocate with minimal provocation \u2014 sometimes during sleep or routine movement. Shoulders, hips, kneecaps, and fingers are most commonly affected."
       },
       {
-        "symptom": "Frequent joint dislocations or subluxations (partial dislocations)",
+        "symptom": "Widespread chronic pain",
         "category": "musculoskeletal",
-        "notes": "May occur spontaneously or with minimal trauma. Some people experience dozens per day; others rarely experience them."
+        "notes": "Pain is often multi-site, fluctuating, and disproportionate to visible tissue damage. Frequently misdiagnosed as fibromyalgia, psychosomatic, or medically unexplained pain."
       },
       {
-        "symptom": "Muscle weakness or fatigue",
-        "category": "musculoskeletal",
-        "notes": "May be generalized or localized. Often paradoxically coincides with hypermobility. Worsens with exertion."
+        "symptom": "Chronic fatigue",
+        "category": "systemic",
+        "notes": "Fatigue in hEDS/HSD is often profound and not relieved by rest. May be driven by the physical effort of stabilising hypermobile joints, autonomic dysfunction, poor sleep, or comorbid MCAS."
       },
       {
-        "symptom": "Skin hyperextensibility or velvety skin",
-        "category": "skin",
-        "notes": "Not always present. Some people have stretchier skin; others have velvety or soft skin. Bruising may be easy or unexplained."
+        "symptom": "Post-exertional malaise (PEM)",
+        "category": "systemic",
+        "notes": "A worsening of symptoms \u2014 pain, fatigue, brain fog \u2014 in the 12\u201348 hours following physical or cognitive exertion. Common in those with comorbid dysautonomia or MCAS."
       },
       {
-        "symptom": "Chronic pain not fully explained by structural injury",
-        "category": "pain",
-        "notes": "Often widespread, burning, or neuropathic in character. May be amplified by central sensitization."
+        "symptom": "Brain fog and cognitive difficulties",
+        "category": "neurological",
+        "notes": "Difficulty with memory, word retrieval, concentration, and processing speed. Often worsened by orthostatic intolerance (reduced cerebral blood flow when upright) and poor sleep."
       },
       {
-        "symptom": "Gastrointestinal dysfunction \u2014 bloating, constipation, diarrhea, reflux, nausea",
+        "symptom": "Orthostatic intolerance \u2014 symptoms when standing",
+        "category": "autonomic",
+        "notes": "Lightheadedness, presyncope, palpitations, or worsening brain fog when standing upright. Reflects autonomic dysfunction (dysautonomia) and is common in hEDS/HSD."
+      },
+      {
+        "symptom": "Heart palpitations and racing heart",
+        "category": "autonomic",
+        "notes": "Often a feature of POTS \u2014 heart rate rises excessively on standing. Can be alarming and frequently leads to cardiac investigations that return normal."
+      },
+      {
+        "symptom": "Nausea and vomiting",
         "category": "digestive",
-        "notes": "Can be the most disabling symptom. Often diagnosed as IBS. May include dysmotility and visceral hypersensitivity."
+        "notes": "Can be related to gastroparesis (delayed gastric emptying), POTS, MCAS, or vagal nerve dysfunction. Often worsened in the morning or when upright."
       },
       {
-        "symptom": "Pelvic floor dysfunction or pelvic pain",
-        "category": "genitourinary",
-        "notes": "Common, often under-recognized. May manifest as dyspareunia, urinary urgency, or chronic pelvic pain."
+        "symptom": "Abdominal bloating and distension",
+        "category": "digestive",
+        "notes": "Hypermobile gut wall may allow excessive gas accumulation. SIBO, MCAS, and slow motility can all contribute to bloating in this population."
       },
       {
-        "symptom": "Postural orthostatic tachycardia syndrome (POTS)-like symptoms",
-        "category": "cardiovascular",
-        "notes": "Heart rate jumps on standing, dizziness, chest pain. Often co-occurs with hEDS/HSD but separate diagnosis."
+        "symptom": "Constipation and/or diarrhoea (IBS-like pattern)",
+        "category": "digestive",
+        "notes": "Altered gut motility \u2014 either too slow or dysregulated \u2014 is common. An IBS diagnosis is frequently made before hEDS is identified. Both constipation and diarrhoea can alternate."
       },
       {
-        "symptom": "Dysautonomia symptoms \u2014 temperature regulation problems, abnormal sweating, blood pressure swings",
+        "symptom": "Dysphagia and oesophageal dysmotility",
+        "category": "digestive",
+        "notes": "Difficulty swallowing or sensation of food sticking, due to lax oesophageal tissue and abnormal motility. May be investigated by gastroenterologists without identifying hEDS as the root cause."
+      },
+      {
+        "symptom": "Soft, velvety, or stretchy skin",
+        "category": "skin",
+        "notes": "Skin may be unusually soft and smooth to the touch. It may stretch further than normal but usually recoils. Not always present and not required for HSD diagnosis."
+      },
+      {
+        "symptom": "Easy bruising and slow wound healing",
+        "category": "skin",
+        "notes": "Fragile blood vessels and connective tissue make bruising more likely with minor trauma. Wounds may take longer to heal and scars may be atrophic (paper-thin) or stretched."
+      },
+      {
+        "symptom": "Stretch marks disproportionate to age, weight, or growth",
+        "category": "skin",
+        "notes": "Striae appearing in areas or at ages where they would not be expected \u2014 for example, on the back or thighs in young, slim individuals \u2014 can be a connective tissue feature."
+      },
+      {
+        "symptom": "Headache and migraine",
         "category": "neurological",
-        "notes": "Reflects autonomic nervous system dysfunction."
+        "notes": "Both tension-type and migrainous headaches are increased in hEDS/HSD. Craniocervical instability (CCI) and intracranial pressure dysregulation may contribute in some individuals."
       },
       {
-        "symptom": "Headaches, migraines, or cervicogenic headaches",
-        "category": "neurological",
-        "notes": "Often related to neck instability or cervical spine issues."
+        "symptom": "Anxiety, panic attacks, and autonomic hyperarousal",
+        "category": "mental health / autonomic",
+        "notes": "The physical symptoms of dysautonomia (racing heart, breathlessness, presyncope) mimic anxiety and can trigger panic responses. True anxiety disorders are also more prevalent. It is important not to reduce all anxiety in this population to psychological cause."
       },
       {
-        "symptom": "Brain fog, concentration problems, or cognitive fatigue",
-        "category": "neurological",
-        "notes": "May be related to autonomic dysfunction, pain, or sleep disturbance."
+        "symptom": "Bladder urgency, frequency, or pelvic pain",
+        "category": "urological / pelvic",
+        "notes": "Pelvic floor laxity and connective tissue fragility can cause bladder prolapse, urgency incontinence, interstitial cystitis-like symptoms, and incomplete emptying."
       },
       {
-        "symptom": "Sleep disturbance \u2014 difficulty falling asleep, poor sleep quality, sleep apnea",
-        "category": "sleep",
-        "notes": "Often multifactorial: pain, anxiety, sleep apnea, or restless legs."
+        "symptom": "Heavy or painful periods and endometriosis",
+        "category": "gynaecological",
+        "notes": "Menorrhagia (heavy periods) is more common. There is an association between hEDS/HSD and endometriosis, though the mechanism is not fully established."
       },
       {
-        "symptom": "Anxiety or depression",
-        "category": "psychological",
-        "notes": "High rates reported; likely related to chronic pain, limited activity, and autonomic dysfunction. Can be primary or secondary."
+        "symptom": "Temperature dysregulation",
+        "category": "autonomic",
+        "notes": "Difficulty regulating body temperature \u2014 feeling too hot or too cold without clear cause. May reflect autonomic nervous system dysfunction."
       },
       {
-        "symptom": "Sensory sensitivities \u2014 light, sound, touch, taste",
-        "category": "neurological",
-        "notes": "Overlaps with autism and ADHD; may indicate central sensitization."
+        "symptom": "Multiple food reactions or intolerances",
+        "category": "immune / digestive",
+        "notes": "Many individuals react to a wide range of foods. This may reflect MCAS, histamine intolerance, underlying gut motility issues causing SIBO, or central sensitisation amplifying gut discomfort."
       },
       {
-        "symptom": "Temperature intolerance \u2014 heat and cold sensitivity",
-        "category": "neurological",
-        "notes": "Part of broader dysautonomia pattern."
+        "symptom": "Widespread skin reactivity, flushing, and hives",
+        "category": "skin / immune",
+        "notes": "Mast cell activation (MCAS) \u2014 a common comorbidity \u2014 causes episodes of flushing, urticaria, itching, and anaphylaxis-like reactions. Skin is frequently the first organ affected."
       },
       {
-        "symptom": "Swelling in joints (especially hands, feet, knees) without inflammation markers",
-        "category": "musculoskeletal",
-        "notes": "May be vasomotor in origin rather than inflammatory."
+        "symptom": "Sleep disturbance and non-restorative sleep",
+        "category": "systemic",
+        "notes": "Pain, autonomic hyperarousal, and the physical discomfort of hypermobile joints make sleep difficult. Many people report waking unrefreshed regardless of hours slept."
       },
       {
-        "symptom": "Vocal hoarseness or vocal fatigue",
-        "category": "otolaryngologic",
-        "notes": "Related to laryngeal hypermobility or muscle weakness."
+        "symptom": "Proprioception difficulties and clumsiness",
+        "category": "neurological / musculoskeletal",
+        "notes": "The sensory feedback from hypermobile joints is often impaired, leading to difficulty knowing where limbs are in space, frequent stumbling, and difficulty with fine motor tasks."
+      },
+      {
+        "symptom": "Dental and jaw problems (TMJ dysfunction)",
+        "category": "dental / musculoskeletal",
+        "notes": "Temporomandibular joint dysfunction is common in hEDS/HSD. Teeth may also be more fragile, with higher rates of cavities and enamel defects in some individuals."
       }
     ],
     "testing": {
       "key_patterns": [
-        "Lifelong history of unusual flexibility (often noticed in childhood) plus new onset or progressive pain with aging",
-        "Joint pain or dysfunction that doesn't match the severity of findings on imaging or exam",
-        "Multiple body system symptoms (joint + GI + autonomic + headache/migraine)",
-        "Symptoms worsened by activity but not fully explained by deconditioning",
-        "Family history of hypermobility, connective tissue issues, or similar symptoms",
-        "Frequent injuries or dislocations from minor trauma or spontaneous incidents",
-        "Chronic pain amplified by stress, poor sleep, or flare-up cycles",
-        "Symptoms or skin texture changes noticed in adolescence or early adulthood"
+        "High Beighton score (\u22655/9 in adults, \u22656/9 in children under 16) with symptomatic joint complaints across multiple sites",
+        "Multi-system symptom history involving joints, gut, autonomic, and skin \u2014 across multiple specialties without a unifying diagnosis",
+        "Symptom onset or worsening in adolescence, often around puberty",
+        "Strong family history of hypermobility, chronic pain, or unexplained multi-system illness",
+        "Comorbid POTS confirmed by active stand test or tilt table: heart rate rise \u226530 bpm on standing",
+        "Recurrent subluxations or dislocations documented across multiple joints",
+        "Food and chemical reactivity pattern consistent with MCAS alongside musculoskeletal and autonomic features",
+        "Previous diagnoses of IBS, fibromyalgia, chronic fatigue syndrome, or functional neurological disorder in someone with joint laxity"
       ],
       "at_home": [
         {
-          "name": "Beighton Hypermobility Score",
-          "description": "Five-part assessment of joint flexibility: (1) Forward bending with knees straight \u2014 can you place palms flat on floor? (2) Passive thumb-to-wrist flexion \u2014 can thumb touch forearm? (3) Passive finger extension \u2014 can fingers bend back more than 90\u00b0? (4) Elbow extension past 10\u00b0 \u2014 do elbows hyperextend? (5) Knee extension past 10\u00b0 \u2014 do knees hyperextend? Score 1 point per movement per side (thumb and fingers count as separate). Maximum score is 9. Score of 5+ suggests hypermobility; 4+ plus systemic features is also consistent.",
-          "safety_notes": "Do not force movements. Stop if you feel sharp pain or instability. The score decreases with age and is less reliable after age 50. A negative score does not rule out hEDS/HSD, especially in older adults or those with localized hypermobility."
+          "name": "Beighton Score Self-Assessment",
+          "description": "The Beighton scale includes nine simple manoeuvres: little finger hyperextension past 90\u00b0 (1 point each hand), thumb touching forearm (1 point each hand), elbow hyperextension past 10\u00b0 (1 point each arm), knee hyperextension past 10\u00b0 (1 point each leg), and palms flat on floor with straight knees (1 point). Score of 5 or more suggests generalised joint hypermobility in adults. Many online video guides demonstrate the positions correctly.",
+          "safety_notes": "Beighton score is a screening tool only \u2014 a low score does not rule out hypermobility or hEDS, particularly in older individuals whose joints have stiffened over time. Do not force joints; gentle assessment only."
         },
         {
-          "name": "Symptom clustering and family history review",
-          "description": "Create a timeline of when joint hypermobility, pain, GI symptoms, and autonomic symptoms began. Note any family members with similar issues, diagnosed connective tissue disorders, chronic pain, or unexplained medical complexity. Early onset (childhood or adolescence) is typical.",
-          "safety_notes": "This is informational only and should prompt discussion with a doctor, not be used as diagnosis."
+          "name": "Active Stand Test (poor man's tilt table)",
+          "description": "Lie flat for 10 minutes, then stand and measure heart rate immediately on standing and at 2, 5, and 10 minutes. A rise of 30 bpm or more (or to above 120 bpm) within 10 minutes of standing, in the absence of significant blood pressure drop, is consistent with POTS. A smartwatch or pulse oximeter can be used.",
+          "safety_notes": "Stop if feeling faint, very dizzy, or unwell. Have someone present. This is a screening indicator only \u2014 clinical diagnosis of POTS requires formal testing."
+        },
+        {
+          "name": "Symptom and body system diary",
+          "description": "Tracking symptoms across body systems \u2014 joints, gut, energy, cognition, autonomic, skin \u2014 over 4\u20138 weeks often reveals patterns (e.g. worsening around menstrual cycle, after exertion, or in certain positions) that are useful for clinical appointments and for recognising the multi-system nature of the condition.",
+          "safety_notes": "No physical risk. Emotionally difficult for some \u2014 recognising the extent of symptoms can be confronting. Useful to share with practitioners who may otherwise see only one symptom cluster."
+        },
+        {
+          "name": "Positional symptom tracking",
+          "description": "Noting whether symptoms (dizziness, brain fog, nausea, palpitations) are worse when standing or sitting upright versus lying down is a practical way to identify orthostatic intolerance at home.",
+          "safety_notes": "None, but if symptoms are severe, medical evaluation for POTS or other autonomic conditions is warranted."
         }
       ],
       "clinical": [
         {
-          "name": "Clinical diagnosis by rheumatologist or EDS specialist",
+          "name": "Clinical diagnosis against 2017 hEDS criteria",
           "type": "gold_standard",
-          "description": "Diagnosis of hEDS is clinical, based on the 2017 International Classification of EDS. Requires hypermobility (Beighton score \u22655 or \u22654 with family history) plus two or more systemic features (skin involvement, GI dysfunction, chronic pain, dysautonomia, easy bruising, joint dislocations, etc.). HSD is diagnosed similarly but without the presumption of a genetic defect. A detailed personal and family history, physical exam, and assessment of multi-system involvement are standard.",
-          "availability": "Request referral from primary care doctor to rheumatology or EDS specialist clinic. Many major medical centers have EDS programs. Telemedicine consultations are increasingly available."
+          "description": "hEDS is diagnosed by a clinician applying the 2017 international diagnostic criteria: Beighton score, feature cluster checklist, and exclusion of other heritable connective tissue disorders. No blood or genetic test confirms hEDS. The assessment requires physical examination and detailed history.",
+          "availability": "Specialist rheumatologists, geneticists, and some physiotherapists or sports medicine doctors with EDS expertise. Access is limited in many regions \u2014 waiting lists are long and knowledgeable clinicians are scarce."
         },
         {
-          "name": "Genetic testing (research only)",
+          "name": "EDS genetic panel (for other EDS subtypes)",
+          "type": "gold_standard",
+          "description": "A panel of genes associated with classical, vascular, kyphoscoliotic, and other EDS subtypes. Used to rule out genetically defined EDS types. hEDS has no known gene and is NOT identified by genetic testing.",
+          "availability": "Ordered by geneticists or specialists. Relevant when vascular EDS or other subtypes are suspected. A negative panel result does not rule out hEDS or HSD."
+        },
+        {
+          "name": "Tilt table test",
+          "type": "gold_standard",
+          "description": "Formal assessment for POTS and other orthostatic conditions. The patient is tilted from lying to upright on a motorised table while heart rate and blood pressure are continuously monitored. Diagnoses POTS (HR rise \u226530 bpm without significant hypotension) and neurally mediated syncope.",
+          "availability": "Cardiology or autonomic neurology departments. Waiting times can be long; active stand test is often used as a clinic alternative."
+        },
+        {
+          "name": "Gastric emptying study (scintigraphy)",
+          "type": "standard",
+          "description": "A nuclear medicine test using a radiolabelled meal to measure how quickly food moves through the stomach. Diagnoses gastroparesis \u2014 significantly delayed gastric emptying \u2014 which is more common in hEDS/HSD than in the general population.",
+          "availability": "Ordered by gastroenterologists. Standard in most hospital-based nuclear medicine departments."
+        },
+        {
+          "name": "MCAS workup (serum tryptase, urine prostaglandins, urine histamine metabolites)",
           "type": "emerging",
-          "description": "No single genetic test confirms hEDS; the causative gene(s) remain unknown. Research labs offer panel testing for other EDS types (classic, vascular, kyphoscoliotic) if atypical features are present. Whole-genome or exome sequencing is under investigation but not yet standard of care for hEDS.",
-          "availability": "Not routinely available for hEDS diagnosis. May be ordered by a genetic specialist if atypical features suggest another EDS type. Some research programs accept participants."
+          "description": "Serum baseline tryptase and a panel of mediators measured during or shortly after a reaction episode. MCAS diagnosis also requires symptom criteria and response to mast cell-targeting treatments. Normal results do not rule out MCAS \u2014 testing sensitivity is limited.",
+          "availability": "Ordered by allergists, immunologists, or haematologists. Many practitioners are not familiar with MCAS criteria; specialist centres are preferred."
         },
         {
-          "name": "Skin biopsy for collagen architecture",
-          "type": "emerging",
-          "description": "Electron microscopy can reveal fibril disorganization in hEDS skin, but findings are not diagnostic and not routinely used clinically.",
-          "availability": "Research setting only; not recommended for routine diagnosis."
-        },
-        {
-          "name": "Autonomic function testing (tilt-table test, heart rate variability, sudomotor testing)",
+          "name": "Echocardiogram",
           "type": "standard",
-          "description": "Assesses for dysautonomia (including POTS) which commonly co-occurs. Tilt-table test measures heart rate and blood pressure changes on standing. Not specific to hEDS but often needed to evaluate associated symptoms.",
-          "availability": "Ordered by cardiologist or autonomic specialist if dysautonomia is suspected. Common in academic medical centers."
+          "description": "Cardiac ultrasound to assess for aortic root dilatation, mitral valve prolapse, and other structural cardiac findings. Mitral valve prolapse is more common in EDS. Aortic root measurement is important to exclude vascular EDS and related conditions.",
+          "availability": "Ordered by cardiologists or GPs. Standard imaging."
         },
         {
-          "name": "Upper endoscopy or other GI imaging",
+          "name": "Pelvic floor physiotherapy assessment",
           "type": "standard",
-          "description": "May be ordered to investigate chronic GI symptoms, though imaging is often normal in hEDS despite significant symptoms. Useful to rule out other GI pathology.",
-          "availability": "Gastroenterologist referral; ordered as part of workup for unexplained GI symptoms."
+          "description": "Internal and external assessment by a specialised pelvic floor physiotherapist. Identifies prolapse, hypertonic or hypotonic pelvic floor, and dysfunction patterns relevant to bladder, bowel, and pelvic pain symptoms.",
+          "availability": "Pelvic health physiotherapists in most regions. Referral from GP or specialist, or direct access in some countries."
         },
         {
-          "name": "Imaging (X-ray, MRI, CT) of symptomatic joints or spine",
+          "name": "Neuropsychological assessment for ADHD and autism",
           "type": "standard",
-          "description": "Often normal or show only minor degenerative changes despite significant pain. Useful to rule out structural injury, instability, or other pathology. Not diagnostic of hEDS.",
-          "availability": "Ordered by orthopedic specialist or primary care doctor."
+          "description": "Formal cognitive and behavioural assessment for attention difficulties and autistic traits. Both ADHD and autism are significantly overrepresented in hEDS/HSD populations.",
+          "availability": "Psychiatrists, psychologists, or specialist neurodevelopmental services. Waiting times are often very long."
         }
       ]
     },
     "related_conditions": [
       {
-        "name": "Postural Orthostatic Tachycardia Syndrome (POTS)",
+        "id": "pots",
+        "name": "POTS / dysautonomia",
         "relationship": "comorbid",
-        "explanation": "Present in 20\u201380% of hEDS patients. Heart rate increases excessively on standing, often with dizziness and chest pain. May stem from the same underlying connective tissue defect or dysautonomia."
+        "explanation": "POTS (postural orthostatic tachycardia syndrome) occurs in an estimated 30\u201380% of people with hEDS/HSD depending on the sample. Lax blood vessel walls and autonomic neuropathy \u2014 both connected to collagen dysfunction \u2014 impair venous return and autonomic regulation when standing. The hEDS-POTS-MCAS triad is well described in the literature."
       },
       {
-        "name": "Mast Cell Activation Syndrome (MCAS)",
+        "id": "mcas",
+        "name": "Mast cell activation syndrome",
         "relationship": "comorbid",
-        "explanation": "Over-representation in hEDS populations. Mast cells degranulate excessively, causing flushing, GI symptoms, and anaphylaxis. Shared connective tissue basis is proposed."
+        "explanation": "MCAS co-occurs with hEDS/HSD at rates far above the general population \u2014 estimates range from 25\u201370% in specialist samples. Mast cells are structurally embedded in connective tissue, and disrupted extracellular matrix may lead to mast cell dysregulation. MCAS drives food reactivity, flushing, gut symptoms, and anaphylactoid episodes in this population."
       },
       {
-        "name": "Irritable Bowel Syndrome (IBS)",
+        "id": "ibs",
+        "name": "IBS",
         "relationship": "often_confused",
-        "explanation": "Many hEDS patients are initially diagnosed with IBS. Overlap in bloating, diarrhea, constipation, and abdominal pain. hEDS involves dysmotility and visceral hypersensitivity; IBS lacks the multi-system hypermobility features."
+        "explanation": "IBS is frequently diagnosed in people with hEDS/HSD before the underlying connective tissue disorder is identified. Gut hypermotility, pelvic floor laxity, slow gastric emptying, and MCAS all produce IBS-like symptoms. Treating IBS symptomatically without identifying hEDS as a driver often produces incomplete or temporary relief."
       },
       {
+        "id": "gastroparesis",
+        "name": "Gastroparesis",
+        "relationship": "comorbid",
+        "explanation": "Delayed gastric emptying is significantly more common in hEDS/HSD than in the general population, thought to result from lax gastric smooth muscle connective tissue and autonomic neuropathy affecting gastric motility. Presents as nausea, early satiety, bloating, and vomiting."
+      },
+      {
+        "id": "fibromyalgia",
         "name": "Fibromyalgia",
         "relationship": "often_confused",
-        "explanation": "Central sensitization and amplified pain occur in both. Fibromyalgia does not include hypermobility or connective tissue features; hEDS does. Some individuals have both diagnoses."
+        "explanation": "The widespread pain, fatigue, and cognitive symptoms of hEDS/HSD overlap significantly with fibromyalgia criteria, and many individuals receive a fibromyalgia diagnosis before hEDS is identified. Fibromyalgia may also be a genuine comorbidity reflecting central sensitisation that develops secondary to years of undertreated joint pain."
       },
       {
-        "name": "Chronic Fatigue Syndrome / Myalgic Encephalomyelitis (ME/CFS)",
+        "id": "central_sensitisation",
+        "name": "Central sensitisation",
+        "relationship": "downstream",
+        "explanation": "Chronic, undertreated pain in hEDS/HSD can lead to central sensitisation \u2014 a state in which the central nervous system amplifies pain signals, causing pain that is disproportionate to tissue damage. This is a real neurological consequence of long-term pain, not a psychological explanation."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
         "relationship": "comorbid",
-        "explanation": "Post-exertional malaise, autonomic dysfunction, and central sensitization overlap. Some hEDS patients meet ME/CFS criteria. Shared biological mechanisms are being investigated."
+        "explanation": "Anxiety disorders are more prevalent in hEDS/HSD. This may partly reflect shared neurobiology, partly the physical symptoms of dysautonomia being interpreted as anxiety, and partly the psychological impact of chronic illness and medical gaslighting. Distinguishing somatic anxiety symptoms from dysautonomia is clinically important."
       },
       {
-        "name": "Autism Spectrum Disorder (ASD) and ADHD",
+        "id": "adhd",
+        "name": "ADHD",
         "relationship": "comorbid",
-        "explanation": "Emerging evidence suggests higher prevalence of autism and ADHD in hEDS cohorts. Sensory sensitivities and autonomic dysfunction overlap. Genetic and neurobiological connections are under study."
+        "explanation": "ADHD is significantly overrepresented in hEDS/HSD \u2014 studies report rates 3\u20135 times higher than expected. The mechanism is not fully established; shared neurodevelopmental pathways and noradrenaline dysregulation have been proposed. Many people receive an ADHD diagnosis around the same time as EDS."
       },
       {
-        "name": "Cervical spine instability",
+        "id": "endometriosis",
+        "name": "Endometriosis",
+        "relationship": "comorbid",
+        "explanation": "Endometriosis co-occurs with hEDS/HSD more frequently than would be expected by chance. Connective tissue fragility, immune dysregulation, and mast cell involvement may contribute. The combination creates a high pelvic pain burden and diagnostic complexity."
+      },
+      {
+        "id": "pelvic_floor",
+        "name": "Pelvic floor dysfunction",
         "relationship": "mechanistic_link",
-        "explanation": "hEDS affects cervical ligaments and discs, leading to instability. Can cause headaches, neck pain, and neurological symptoms. May require imaging and specialist evaluation."
+        "explanation": "Lax connective tissue in the pelvic floor leads to prolapse, poor muscular support, and dysfunction in bladder, bowel, and sexual function. Pelvic floor issues are very common in hEDS/HSD and are often managed by gynaecologists or urologists without the underlying connective tissue diagnosis."
       },
       {
-        "name": "Temporomandibular Joint (TMJ) Disorder",
-        "relationship": "mechanistic_link",
-        "explanation": "Hypermobility of the jaw joint is common in hEDS, causing pain, clicking, limited opening, or chronic tension."
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "comorbid",
+        "explanation": "Slow or dysregulated gut motility in hEDS/HSD creates conditions that favour SIBO. Some studies report elevated SIBO prevalence in hypermobility populations. SIBO produces bloating, altered bowel habits, and abdominal pain that compounds the gut symptoms of hEDS/HSD."
       },
       {
-        "name": "Pelvic Floor Dysfunction",
-        "relationship": "mechanistic_link",
-        "explanation": "Connective tissue defects and muscle weakness in hEDS extend to pelvic floor, causing dyspareunia, urinary symptoms, or pelvic pain."
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "comorbid",
+        "explanation": "Histamine intolerance can occur independently of MCAS or alongside it. Impaired DAO enzyme activity \u2014 sometimes found in hEDS/HSD \u2014 reduces the ability to break down dietary histamine, causing flushing, headache, gut symptoms, and skin reactions after high-histamine foods."
       },
       {
-        "name": "Marfan Syndrome or other genetic EDS subtypes",
+        "id": "functional_dyspepsia",
+        "name": "Functional dyspepsia",
         "relationship": "often_confused",
-        "explanation": "Other EDS types (classic, vascular, kyphoscoliotic) have different genetic causes and clinical features. Vascular EDS is life-threatening and requires different management. Genetic testing may be needed to differentiate."
+        "explanation": "Upper GI symptoms \u2014 nausea, early satiety, bloating, upper abdominal discomfort \u2014 in hEDS/HSD are often labelled functional dyspepsia. Gastroparesis, oesophageal dysmotility, and MCAS are frequently the actual drivers in this population."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "comorbid",
+        "explanation": "Depression is more prevalent in hEDS/HSD, in part as a consequence of chronic pain, fatigue, medical invalidation, and loss of function. Neurobiological mechanisms may also be shared. Depression compounds pain sensitivity and reduces engagement with physical management strategies."
+      },
+      {
+        "id": "trauma",
+        "name": "Trauma / PTSD",
+        "relationship": "comorbid",
+        "explanation": "Medical trauma \u2014 from years of dismissed symptoms, invasive investigations, and being told symptoms are psychological \u2014 is common in hEDS/HSD. There is also emerging evidence of elevated rates of developmental trauma in the EDS population, though causality is not established."
+      },
+      {
+        "id": "coeliac",
+        "name": "Coeliac disease",
+        "relationship": "often_confused",
+        "explanation": "Coeliac disease can mimic the gastrointestinal and fatigue symptoms of hEDS/HSD, and the two can co-occur. Coeliac should be excluded in those with significant GI symptoms before attributing everything to hEDS."
+      },
+      {
+        "name": "Craniocervical instability (CCI)",
+        "id": null,
+        "relationship": "comorbid",
+        "explanation": "Ligamentous laxity at the craniocervical junction can lead to instability in the upper cervical spine in hEDS/HSD. This may contribute to headache, neck pain, dizziness, dysautonomia, and neurological symptoms. CCI is increasingly recognised in the EDS community but remains controversial in mainstream neurology."
+      },
+      {
+        "name": "Autism spectrum disorder (ASD)",
+        "id": null,
+        "relationship": "comorbid",
+        "explanation": "Multiple studies and clinical observations have found elevated rates of autism in hEDS/HSD populations and vice versa. Proposed mechanisms include shared sensory processing differences, connective tissue effects on the nervous system, and common genetic influences. The overlap is striking enough to warrant systematic screening in both directions."
+      },
+      {
+        "name": "Chronic fatigue syndrome / ME",
+        "id": null,
+        "relationship": "often_confused",
+        "explanation": "ME/CFS and hEDS/HSD share significant symptom overlap \u2014 fatigue, post-exertional malaise, cognitive difficulties, autonomic dysfunction \u2014 and commonly co-occur. Some researchers believe a subset of ME/CFS cases represent undiagnosed hEDS with secondary dysautonomia. Misdiagnosis in both directions is common."
+      },
+      {
+        "name": "Intracranial hypertension / hypotension",
+        "id": null,
+        "relationship": "comorbid",
+        "explanation": "Both intracranial hypertension (raised pressure, causing headache, visual changes, pulsatile tinnitus) and spontaneous intracranial hypotension (from CSF leaks due to dural fragility) are reported more frequently in hEDS/HSD. Dural fragility from collagen defects is thought to be the mechanism for CSF leaks."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
-          "name": "Activity pacing and energy envelope management",
-          "category": "lifestyle",
-          "description": "Stay within a sustainable activity level to avoid post-activity crashes. Track energy expenditure (physical, cognitive, emotional) and build rest into schedules. Aim for consistency rather than 'good' and 'bad' days. This prevents the flare-crash cycle that worsens symptoms over time.",
+          "name": "Physiotherapy with EDS-informed approach",
+          "category": "rehabilitation",
+          "description": "Targeted exercise to build muscular support around hypermobile joints \u2014 reducing subluxations, pain, and fatigue. Focuses on proprioception training, strength, and joint stability rather than flexibility. This is the single most evidence-supported management tool for hEDS/HSD. Standard physiotherapy that stretches already-hypermobile joints can cause harm.",
           "evidence_level": "strong",
-          "notes": "Critical to avoid post-exertional malaise. Requires honest self-monitoring and willingness to do less on good days. Differs from conventional 'exercise as much as tolerated' advice."
+          "notes": "Must be with a physiotherapist who understands EDS. Stretching-based yoga, standard flexibility training, or approaches that push range of motion may worsen instability and pain. Progress is often slow and pacing is essential."
         },
         {
-          "name": "Low-impact or isometric exercise and physical therapy",
+          "name": "Pacing and energy management",
           "category": "lifestyle",
-          "description": "Strengthen muscles around hypermobile joints without destabilizing them. Isometric holds, swimming, water aerobics, Pilates, or gentle yoga with modifications. Avoid ballistic stretching and hyperextension. Work with a PT experienced in EDS to avoid harmful exercises.",
-          "evidence_level": "strong",
-          "notes": "Strength reduces pain and injury risk. Avoid 'pushing through' pain or fatigue. Consistency matters more than intensity. Many generic exercise programs worsen hEDS."
-        },
-        {
-          "name": "Joint stabilization and proprioceptive training",
-          "category": "lifestyle",
-          "description": "Use of compression garments (sleeves, wraps, or braces) to provide external feedback and stability. Proprioceptive training (balance work, positional awareness) helps the nervous system compensate for joint laxity.",
+          "description": "Structuring daily activity to avoid post-exertional crashes. This involves identifying an 'energy envelope', building in planned rest, and avoiding boom-bust cycles where high-activity periods are followed by crashes. Heart rate monitoring can help identify when dysautonomia is being triggered.",
           "evidence_level": "moderate",
-          "notes": "Compression gloves, knee sleeves, or ankle braces can reduce pain and joint stress. Kinesiology tape is often used but evidence is mixed. Custom bracing may be needed for severe instability."
+          "notes": "Pacing is counterintuitive \u2014 it often means doing less than one feels capable of on good days. The goal is stability and gradual expansion of capacity, not rest as an end goal."
         },
         {
-          "name": "Heat and cold therapy",
+          "name": "Orthostatic intolerance management (fluid and salt loading)",
           "category": "lifestyle",
-          "description": "Heat (warm baths, heating pads) loosens tight muscles and improves blood flow. Cold reduces acute inflammation after activity or injury. Use cautiously in autonomic dysfunction (heat may worsen POTS).",
+          "description": "Increasing fluid intake to 2\u20133 litres per day and sodium intake to 3\u20135g per day helps expand blood volume and reduce POTS-related symptoms. Compression garments (waist-high, 20\u201330 mmHg) reduce blood pooling in the lower body. Elevating the head of the bed 10\u201315\u00b0 can reduce overnight fluid shifts.",
           "evidence_level": "moderate",
-          "notes": "Heat is often more helpful for chronic pain; cold for acute injury. Individual response varies. Test cautiously if dysautonomia is present."
+          "notes": "Salt and fluid loading is not appropriate for individuals with heart failure, hypertension, or renal disease. Should be discussed with a cardiologist or autonomic specialist if POTS is significant."
         },
         {
-          "name": "Sleep optimization",
-          "category": "lifestyle",
-          "description": "Consistent sleep schedule, dark and cool bedroom, supportive pillows, and avoiding stimulants 6+ hours before bed. Sleep quality directly impacts pain, cognition, and immune function.",
-          "evidence_level": "strong",
-          "notes": "Sleep disturbance is common; addressing it is foundational. May require sleep study to rule out sleep apnea."
-        },
-        {
-          "name": "Stress reduction and nervous system regulation",
-          "category": "lifestyle",
-          "description": "Meditation, deep breathing, progressive muscle relaxation, or gentle yoga help downregulate the autonomic nervous system. Chronic stress amplifies pain and dysautonomia.",
+          "name": "MCAS management (low-histamine diet, antihistamines, mast cell stabilisers)",
+          "category": "diet / medication",
+          "description": "For those with comorbid MCAS, a low-histamine diet and avoidance of known mast cell triggers (heat, exercise, fragrances, certain medications) can reduce the frequency and severity of reactions. H1 and H2 antihistamines taken regularly (not just as needed) are often used. Cromolyn sodium (sodium cromoglicate) and quercetin may help stabilise mast cells.",
           "evidence_level": "moderate",
-          "notes": "Parasympathetic activation (via vagus nerve) can reduce pain flares and improve GI function."
+          "notes": "MCAS management is highly individual \u2014 triggers vary widely between people. A food and reaction diary is useful. Work with an allergist or specialist with MCAS knowledge where possible. Elimination diets should not be overly restrictive without dietetic support."
         },
         {
-          "name": "Dietary management for GI symptoms",
+          "name": "Low-FODMAP or gut-directed dietary approach",
           "category": "diet",
-          "description": "Low-FODMAP diet, elimination diet, or small frequent meals may help if IBS-like symptoms are present. Avoid trigger foods (often spicy, fatty, high-sugar). Stay hydrated and consider soluble fiber.",
+          "description": "For those with IBS-like gut symptoms, a low-FODMAP elimination and reintroduction protocol can identify specific fermentable carbohydrate triggers and reduce bloating, pain, and altered bowel habit. This does not address the underlying motility cause but can significantly reduce symptomatic burden.",
           "evidence_level": "moderate",
-          "notes": "GI symptoms are highly individual. Low-FODMAP has evidence for IBS and may help hEDS patients. Trial and track what works. Some patients benefit from digestive enzymes or prokinetic agents."
+          "notes": "Should be guided by a FODMAP-trained dietitian. Not a long-term diet \u2014 reintroduction is essential. May interact with MCAS (some high-FODMAP foods are also high-histamine)."
         },
         {
-          "name": "Hydration and electrolyte balance",
-          "category": "diet",
-          "description": "Drink adequate water (especially if dysautonomia is present) and consider electrolyte supplementation if POTS or other autonomic symptoms exist. Dehydration worsens dysautonomia and pain.",
+          "name": "Joint protection and splinting",
+          "category": "lifestyle",
+          "description": "Soft splints or braces for the most unstable joints (commonly wrists, fingers, knees, and ankles) can reduce subluxation frequency and pain during activities. Occupational therapists can assess and prescribe appropriate supports.",
           "evidence_level": "moderate",
-          "notes": "Higher-than-typical fluid intake often needed, especially with POTS. Electrolyte drinks (e.g., coconut water, sports drinks) may be helpful."
+          "notes": "Splints should not be worn continuously as this can reduce muscle strength and increase dependence. Use for specific tasks. Rigid braces may not be appropriate \u2014 EDS-specific assessment matters."
         },
         {
-          "name": "Anti-inflammatory diet or nutritional support",
-          "category": "diet",
-          "description": "Omega-3 fatty acids, antioxidant-rich foods, and whole foods may help reduce systemic inflammation and support connective tissue. Some practitioners recommend vitamin C, copper, or other micronutrient support, though evidence is limited.",
+          "name": "Medications for pain management",
+          "category": "medication",
+          "description": "Low-dose naltrexone (LDN) has anecdotal and emerging evidence in hEDS/HSD for pain modulation. NSAIDs may help musculoskeletal pain but cause GI problems in a population already prone to them. Gabapentinoids are used for central sensitisation pain but have limited evidence and significant side effects. Tramadol and opioids are generally discouraged. Topical agents (diclofenac gel, lidocaine patches) can be useful for localised pain.",
           "evidence_level": "anecdotal",
-          "notes": "No single diet is proven for hEDS. Whole-food, nutrient-dense eating is generally advised. Supplement with caution and under professional guidance."
+          "notes": "Pain management in hEDS/HSD requires an individualised approach. Many standard analgesics are poorly tolerated. MCAS may cause reactions to medications (including fillers and dyes). Opioids can worsen GI motility and autonomic function. Discuss with a pain specialist who understands connective tissue conditions."
         },
         {
-          "name": "Pain management \u2014 non-opioid pharmacotherapy",
-          "category": "medication",
-          "description": "NSAIDs (if tolerated), acetaminophen, or low-dose tricyclic antidepressants (amitriptyline) for neuropathic pain. Gabapentin or pregabalin may help neuropathic or centralized pain. Muscle relaxants sometimes used short-term.",
+          "name": "Psychological support and pain psychology",
+          "category": "mental health",
+          "description": "Acceptance and commitment therapy (ACT) and pain psychology approaches can help individuals adapt to life with chronic pain, reduce suffering, and improve function \u2014 without dismissing the physical reality of the condition. Addressing medical trauma and grief is often important.",
           "evidence_level": "moderate",
-          "notes": "No medications specifically target hEDS. Pain management is often multi-modal. NSAIDs carry GI and cardiovascular risks in hEDS. Opioids are generally avoided due to habit-forming risk and GI side effects."
+          "notes": "Psychological support is not a substitute for physical management. The history of symptoms being dismissed as psychological makes many people understandably reluctant to engage with mental health support. Framing this as brain-body pain science rather than 'it's in your head' is important."
         },
         {
-          "name": "Autonomic symptom management (POTS, dysautonomia)",
-          "category": "medication",
-          "description": "Beta-blockers, midodrine, or fludrocortisone may be prescribed by a cardiologist or autonomic specialist. Compression garments, increased salt and fluid intake, and head-of-bed elevation also help.",
-          "evidence_level": "strong",
-          "notes": "Pharmacotherapy is individualized. POTS in hEDS is high-prevalence and often requires specific treatment."
-        },
-        {
-          "name": "GI prokinetics and medications",
-          "category": "medication",
-          "description": "Metoclopramide or domperidone may help if gastroparesis is present. Antacids, H2-blockers, or proton-pump inhibitors for reflux. Stool softeners or osmotic laxatives for constipation.",
-          "evidence_level": "moderate",
-          "notes": "GI dysfunction is multifactorial (dysmotility, hypersensitivity, dysbiosis). Medications are adjunctive to dietary and lifestyle changes."
-        },
-        {
-          "name": "Cognitive behavioral therapy (CBT) and psychological support",
+          "name": "Sleep hygiene and management",
           "category": "lifestyle",
-          "description": "CBT can address pain catastrophizing, anxiety, and depression. Regular therapy or counseling normalizes the condition and helps develop coping strategies.",
-          "evidence_level": "strong",
-          "notes": "Mental health is integral to hEDS management. Therapists experienced with chronic illness are most helpful."
-        },
-        {
-          "name": "Occupational therapy and ergonomic modification",
-          "category": "lifestyle",
-          "description": "Optimize workspace, use adaptive equipment, and develop daily routines that minimize joint stress. Modifying activities of daily living reduces pain and injury.",
+          "description": "Addressing sleep quality through positioning aids (body pillow, supportive mattress), pain management before bed, treating restless leg syndrome if present, and maintaining regular sleep-wake cycles. Melatonin may help circadian dysregulation. Low-dose tricyclic antidepressants are sometimes used for sleep and pain.",
           "evidence_level": "moderate",
-          "notes": "Occupational therapists trained in EDS can provide tailored recommendations."
+          "notes": "Sleep deprivation significantly worsens pain, autonomic function, and cognitive symptoms. Treatment of comorbid POTS and MCAS often improves sleep quality as a secondary benefit."
         },
         {
-          "name": "Pelvic floor physical therapy",
-          "category": "lifestyle",
-          "description": "Specialist PT for pelvic floor dysfunction, dyspareunia, or urinary symptoms. May include relaxation techniques, biofeedback, or gentle strengthening.",
-          "evidence_level": "moderate",
-          "notes": "Many people with hEDS benefit from pelvic floor PT. Requires a PT trained in hypermobility disorders."
-        },
-        {
-          "name": "Supplements \u2014 vitamin C and copper",
+          "name": "Vitamin D, magnesium, and nutritional optimisation",
           "category": "supplement",
-          "description": "Vitamin C is important for collagen synthesis; copper is a cofactor for lysyl oxidase (collagen cross-linking). Some practitioners recommend supplementation, but evidence for hEDS-specific benefit is anecdotal.",
-          "evidence_level": "anecdotal",
-          "notes": "Supplementation is not standard of care and should be discussed with a practitioner. High-dose vitamin C can cause kidney stones; monitor copper-zinc balance."
-        },
-        {
-          "name": "Supplements \u2014 omega-3 fatty acids",
-          "category": "supplement",
-          "description": "May reduce systemic inflammation and support cellular health. Often recommended as part of nutritional support for chronic pain.",
-          "evidence_level": "anecdotal",
-          "notes": "Some evidence from general chronic pain literature but not EDS-specific."
+          "description": "Vitamin D deficiency is common in hEDS/HSD, possibly due to indoor activity limitations and absorption issues. Magnesium plays a role in muscle function and is frequently low. Both may exacerbate pain, fatigue, and muscle cramps when deficient. Routine nutritional assessment is worthwhile.",
+          "evidence_level": "moderate",
+          "notes": "Supplementation should follow testing where possible. Magnesium glycinate or malate is often better tolerated in a gut-sensitive population. High-dose supplementation without monitoring is not advisable."
         }
       ],
       "things_to_avoid": [
-        "High-intensity exercise, ballistic stretching, or 'pushing through pain' \u2014 worsens joint damage and flare cycles",
-        "Rapid position changes or activities that jar the spine (jumping, running) \u2014 increases injury and dislocation risk",
-        "Extended immobility or deconditioning \u2014 increases pain and disability over time",
-        "Overuse of NSAIDs \u2014 GI complications, renal risk, and worsening dysautonomia",
-        "Opioid pain medications \u2014 habit-forming, GI side effects, tolerance develops",
-        "High-dose vitamin C supplementation \u2014 kidney stone risk, can worsen some symptoms if excessive",
-        "Extreme heat exposure \u2014 can worsen dysautonomia and POTS symptoms",
-        "Starvation diets or restriction \u2014 impairs muscle and connective tissue health",
-        "Isolation or avoiding all activity \u2014 worsens depression, deconditioning, and long-term outcomes",
-        "Practitioners unfamiliar with EDS \u2014 may recommend exercises or treatments that cause harm"
+        "Stretching-based exercise (yoga, gymnastics, dance involving extreme range of motion) \u2014 increases joint laxity and instability rather than building protective strength",
+        "Pushing through severe pain or crashes with 'no pain no gain' mentality \u2014 leads to boom-bust cycles and may worsen central sensitisation",
+        "Standard physiotherapy that does not account for hypermobility \u2014 can cause subluxations and worsen instability",
+        "Long periods of complete rest or immobilisation (except acutely) \u2014 leads to deconditioning, muscle loss, and worsening joint instability",
+        "NSAIDs used long-term \u2014 worsen GI symptoms already common in this population and can cause renal and cardiovascular complications",
+        "Opioid analgesia as a primary pain management strategy \u2014 worsens gut motility, dysautonomia, and has poor long-term efficacy for central sensitisation pain",
+        "Highly restrictive elimination diets without dietetic supervision \u2014 nutritional deficiency and disordered eating patterns are genuine risks",
+        "Accepting diagnoses of 'functional' or 'psychosomatic' symptoms without full evaluation \u2014 delays correct diagnosis and appropriate treatment",
+        "Ignoring autonomic symptoms or attributing all fatigue to deconditioning \u2014 POTS is a real physiological diagnosis requiring specific management"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "There is no cure, and the connective tissue defect does not go away. The goal is management, adaptation, and building a sustainable life around the condition \u2014 not recovery to a pre-illness baseline.",
+        "why_resisted": "Many people spend years seeking a diagnosis hoping that once the 'real cause' is found, there will be a treatment that fixes it. The relief of finally having an answer can be followed by grief when it becomes clear that hEDS is lifelong.",
+        "path_forward": "People who do best with hEDS/HSD typically shift from cure-seeking to function-optimising. They identify their key levers \u2014 physiotherapy, POTS management, MCAS control, sleep, pacing \u2014 and build a sustainable routine. Quality of life improves significantly even without a cure."
+      },
+      {
+        "truth": "Many mainstream doctors, including rheumatologists and GPs, have limited knowledge of hEDS/HSD and may actively dismiss it. Getting useful care often requires finding the right practitioner, which takes significant effort.",
+        "why_resisted": "It is distressing and exhausting to accept that the medical system does not reliably provide good care for this condition. Many people keep hoping the next referral will be to someone who understands.",
+        "path_forward": "Those who invest in finding EDS-literate practitioners \u2014 including physiotherapists, autonomic specialists, and MCAS-aware allergists \u2014 typically receive meaningfully better care. Patient communities and EDS Society practitioner directories are practical starting points."
+      },
+      {
+        "truth": "Exercise is non-negotiable for managing hEDS/HSD, even when it is painful and exhausting. Avoidance leads to deconditioning that makes every symptom worse.",
+        "why_resisted": "When movement causes pain, subluxations, and crashes, avoidance feels rational and self-protective. POTS also makes upright exercise feel dangerous. Rest feels safer.",
+        "path_forward": "People who engage in appropriate, paced, strength-focused physiotherapy \u2014 even starting with bed-based or pool-based exercise when severely deconditioned \u2014 consistently report reduced subluxation frequency, improved pain, and better autonomic function over 6\u201318 months."
+      },
+      {
+        "truth": "Psychological symptoms \u2014 anxiety, depression, trauma \u2014 are real comorbidities in hEDS/HSD that benefit from treatment in their own right, not just as a consequence that will resolve once physical symptoms improve.",
+        "why_resisted": "After years of being told that physical symptoms are psychological, people with hEDS/HSD understandably resist any mental health framing. Engaging with psychological care can feel like validating the people who dismissed them.",
+        "path_forward": "Addressing trauma, anxiety, and depression through appropriate therapy \u2014 particularly from practitioners who understand chronic physical illness \u2014 improves pain tolerance, engagement with physical management, and overall quality of life, independently of physical symptom change."
+      },
+      {
+        "truth": "The 'hypermobility triad' of hEDS + POTS + MCAS means that most people with hEDS have two or three interacting conditions, each of which needs its own management. Treating only one will not produce full improvement.",
+        "why_resisted": "Managing three complex conditions simultaneously is overwhelming. It is tempting to focus on one at a time or to hope that treating the 'main' condition will resolve the others.",
+        "path_forward": "Practitioners who understand the triad manage all three conditions in parallel. People who get POTS managed alongside hEDS typically find their fatigue, brain fog, and exercise tolerance improve substantially. Adding MCAS management often reduces food reactivity and inflammatory flares."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Accurate diagnosis and education about the condition",
-          "why_it_matters": "Many hEDS patients are misdiagnosed for years (as anxiety, malingering, fibromyalgia, IBS, etc.), delaying effective management and increasing disability. Understanding what you have enables informed self-care and prevents harmful advice.",
-          "how_to_start": "Request a referral to a rheumatologist or EDS specialist. Bring a symptom timeline and family history. Read foundational resources (Ehlers-Danlos Society, peer-reviewed reviews).",
-          "timeline": "Diagnosis can take months; relief from validation is often immediate. Practical improvement follows once you understand your triggers and limits.",
+          "lever": "EDS-specific physiotherapy programme",
+          "why_it_matters": "Muscles are the only controllable stabilisers of hypermobile joints. Building targeted strength \u2014 particularly in the hips, core, scapular stabilisers, and feet \u2014 reduces subluxations, pain, and the energy cost of movement. This is the highest-impact modifiable intervention available.",
+          "how_to_start": "Find a physiotherapist with documented EDS or hypermobility experience (The Ehlers-Danlos Society has a practitioner directory). Start with an assessment-focused first session, not a treatment session. Expect to begin very slowly \u2014 even two exercises two times per week. Pool physiotherapy is an excellent entry point for those who are severely deconditioned.",
+          "timeline": "3\u20136 months to notice meaningful change in joint stability; 12\u201318 months for substantial improvement in function",
           "requires_professional": true
         },
         {
-          "lever": "Activity pacing and energy envelope management",
-          "why_it_matters": "The flare-crash cycle is the primary driver of long-term disability. Staying within a sustainable energy envelope prevents crashes and gradually increases tolerance.",
-          "how_to_start": "For one week, track activities (physical, cognitive, emotional), energy level (0\u201310), and symptoms next day. Identify your 'threshold.' Plan days to stay slightly below that threshold.",
-          "timeline": "Weeks to months for significant reduction in flare frequency. Long-term improvement is substantial.",
+          "lever": "POTS/dysautonomia management",
+          "why_it_matters": "Unmanaged POTS is responsible for a large proportion of fatigue, cognitive impairment, and exercise intolerance in hEDS/HSD. Addressing it \u2014 even with non-pharmacological measures \u2014 meaningfully improves daily function and enables participation in physiotherapy.",
+          "how_to_start": "Begin with fluid (2\u20133L/day) and salt (3\u20135g/day) loading and compression garments. Track heart rate on standing for a week. Seek referral to cardiology or autonomic neurology if POTS is confirmed or strongly suspected.",
+          "timeline": "Days to weeks for initial symptom reduction from fluid/salt/compression; medication titration may take months",
+          "requires_professional": true
+        },
+        {
+          "lever": "Identifying and managing MCAS if present",
+          "why_it_matters": "MCAS drives inflammatory flares, food reactivity, fatigue, and gut symptoms that are otherwise mysterious and hard to manage. Identifying MCAS and implementing basic management (antihistamines, low-histamine diet, trigger avoidance) can produce rapid and significant symptom reduction.",
+          "how_to_start": "Keep a detailed symptom and food diary for 4\u20136 weeks, looking for reaction patterns. Trial H1 antihistamine (e.g. cetirizine) daily for two weeks and note any improvement. Seek referral to an MCAS-aware allergist or immunologist.",
+          "timeline": "Weeks to months for initial improvement with antihistamines; full trigger identification takes longer",
           "requires_professional": false
         },
         {
-          "lever": "Targeted physical therapy with an EDS-aware practitioner",
-          "why_it_matters": "Appropriate strengthening and proprioceptive training improve function and reduce pain. Generic PT can cause harm; specialist knowledge is critical.",
-          "how_to_start": "Ask your rheumatologist for a PT referral (preferably someone trained in hypermobility). Start with 1\u20132 sessions per week of gentle, isometric work.",
-          "timeline": "Noticeable improvement in 4\u20138 weeks with consistency. Long-term gains accumulate over months and years.",
-          "requires_professional": true
-        },
-        {
-          "lever": "Sleep optimization",
-          "why_it_matters": "Poor sleep amplifies pain, worsens dysautonomia, and impairs recovery. Improving sleep is foundational and often yields rapid benefit.",
-          "how_to_start": "Set a consistent bedtime and wake time. Remove screens 1 hour before bed. Use blackout curtains and a cool room (60\u201367\u00b0F). Track sleep quality for 2 weeks.",
-          "timeline": "Some improvement in 1\u20132 weeks; significant benefit in 4+ weeks with consistency.",
+          "lever": "Structured sleep improvement",
+          "why_it_matters": "Poor sleep in hEDS/HSD is not just a symptom \u2014 it actively worsens pain sensitisation, autonomic dysregulation, and cognitive function. Improving sleep quality creates a positive feedback loop across all other management areas.",
+          "how_to_start": "Assess what is disrupting sleep: pain, restless legs, dysautonomia, anxiety, or positioning. Address each with targeted interventions \u2014 body pillow for joint positioning, POTS head-of-bed elevation, pain relief before bed, or sleep hygiene review.",
+          "timeline": "Weeks to months",
           "requires_professional": false
         },
         {
-          "lever": "Management of comorbid autonomic dysfunction (POTS, dysautonomia)",
-          "why_it_matters": "Autonomic dysfunction amplifies pain, fatigue, and GI symptoms. Treating it reduces overall symptom burden significantly.",
-          "how_to_start": "If dizziness or tachycardia on standing is present, ask for cardiology referral and consider a tilt-table test. Increase salt and fluid intake as a first-line intervention.",
-          "timeline": "Weeks to months depending on severity and medication response.",
-          "requires_professional": true
+          "lever": "Pacing and activity management",
+          "why_it_matters": "Boom-bust cycles \u2014 where individuals overdo activity on good days and crash for multiple days after \u2014 are one of the most consistent patterns driving functional decline in hEDS/HSD. Learning to pace within an energy envelope stabilises symptoms and allows gradual capacity expansion.",
+          "how_to_start": "Track activity and symptoms for two weeks to identify current patterns. Identify the activity level that consistently precedes crashes. Set a daily ceiling below that level. Use a heart rate monitor to stay below the anaerobic threshold (approximately 60% of max heart rate for POTS).",
+          "timeline": "Stability within weeks; function expansion over months",
+          "requires_professional": false
         },
         {
-          "lever": "Addressing GI dysfunction",
-          "why_it_matters": "Chronic GI symptoms often cause as much disability as joint pain. Improving GI function improves nutrition, energy, and quality of life.",
-          "how_to_start": "Gastroenterology referral for evaluation. Trial of low-FODMAP diet or elimination diet. Small frequent meals, hydration, and consideration of prokinetics.",
-          "timeline": "4\u20138 weeks for dietary changes; 2\u20134 weeks for medication response.",
-          "requires_professional": true
-        },
-        {
-          "lever": "Mental health support and stress reduction",
-          "why_it_matters": "Depression and anxiety are common and amplify pain and dysautonomia. Addressing them improves overall outcomes and quality of life.",
-          "how_to_start": "Discuss mood and anxiety with primary care doctor or therapist. Consider CBT or mindfulness-based approaches. Join a patient community.",
-          "timeline": "Benefits accumulate over weeks and months with consistent engagement.",
+          "lever": "Building an integrated care team",
+          "why_it_matters": "hEDS/HSD requires management across multiple body systems. A coordinating clinician \u2014 even a well-informed GP \u2014 who understands the whole picture significantly reduces the burden of navigating fragmented specialist care.",
+          "how_to_start": "Identify the practitioner in the current care network most willing to coordinate. Prepare a one-page medical summary to share across specialties. Connect with patient communities to find local recommendations for EDS-literate specialists.",
+          "timeline": "Months to build; the investment significantly reduces long-term healthcare frustration",
           "requires_professional": true
         }
       ],
       "common_mistakes": [
-        "Pushing through pain or ignoring early warning signs \u2014 escalates flares and long-term disability. hEDS requires early intervention to prevent activity flares.",
-        "Following generic exercise advice (stretch daily, no pain no gain) \u2014 can cause dislocations or tissue damage in hEDS. Specialist guidance is essential.",
-        "Accepting isolation or bed rest \u2014 worsens deconditioning and depression. Appropriate, paced activity is necessary.",
-        "Ignoring or minimizing GI symptoms \u2014 they often drive the greatest disability and require separate specialist attention.",
-        "Not addressing comorbid autonomic dysfunction \u2014 dysautonomia amplifies pain and fatigue; treating it has outsized benefit.",
-        "Stopping all medication or supplements abruptly \u2014 can lead to symptom rebound or flares. Changes should be gradual and monitored.",
-        "Relying on a single provider or approach \u2014 hEDS requires multi-disciplinary care (rheumatology, PT, cardiology, GI, mental health, etc.).",
-        "Catastrophizing or defining yourself entirely by the diagnosis \u2014 hEDS is real and limiting, but many people maintain meaningful quality of life with proper management."
+        "Seeking a single diagnosis or treatment that explains and fixes everything \u2014 hEDS/HSD typically involves multiple interacting conditions, each needing its own management",
+        "Resting completely to manage fatigue \u2014 leads to deconditioning that makes all symptoms worse and makes physiotherapy harder to begin",
+        "Using hypermobility as a feature in yoga, gymnastics, or dance \u2014 increases joint laxity and instability, working against stability-focused rehabilitation",
+        "Eliminating large food groups without dietetic support \u2014 malnutrition, nutrient deficiency, and disordered eating are real risks in a population already prone to gut problems",
+        "Trying to manage all symptoms simultaneously without priority \u2014 leads to overwhelm and abandonment. POTS management first typically has the greatest downstream benefit",
+        "Accepting care from physiotherapists and other practitioners without EDS experience \u2014 standard rehabilitation protocols can cause subluxations and worsen instability",
+        "Waiting for a formal hEDS diagnosis before beginning management \u2014 HSD is managed identically, and the Beighton assessment with an informed physiotherapist is often sufficient to begin rehabilitation",
+        "Interpreting improving symptoms as a sign the condition has resolved and stopping management \u2014 hEDS/HSD is lifelong, and symptom improvement reflects effective management, not resolution"
       ]
     },
     "finding_help": {
       "specialists": [
         {
-          "type": "Rheumatologist",
-          "role": "Often the primary diagnoser of hEDS; evaluates hypermobility, systemic features, and multi-system involvement. Can coordinate overall care and rule out autoimmune or inflammatory conditions.",
-          "notes": "Not all rheumatologists are familiar with hEDS/HSD; seek someone with specific interest or training. Some centers have dedicated EDS clinics."
+          "type": "Rheumatologist with EDS/hypermobility expertise",
+          "role": "Primary diagnosing specialist for hEDS/HSD in most healthcare systems. Applies the 2017 diagnostic criteria and rules out other connective tissue disorders. May coordinate with other specialties.",
+          "notes": "Many rheumatologists have limited hEDS knowledge. Finding one who lists EDS or hypermobility as an area of interest is important. In some regions, clinical geneticists or sports medicine specialists diagnose more hEDS than rheumatologists."
         },
         {
-          "type": "Geneticist",
-          "role": "Evaluates for genetic connective tissue disorders, reviews family history, and may order genetic testing for other EDS types or related conditions.",
-          "notes": "Helpful if diagnosis is unclear or if atypical features suggest a different EDS type."
+          "type": "Clinical geneticist",
+          "role": "Rules out other heritable connective tissue disorders (Marfan syndrome, vascular EDS, Loeys-Dietz syndrome) using genetic testing and clinical assessment. Also applies hEDS diagnostic criteria. Often the most knowledgeable about the full EDS spectrum.",
+          "notes": "Particularly important if there is a family history, significant skin or vascular features, or concern about vascular EDS. Referral is usually through a specialist."
         },
         {
-          "type": "Physical therapist (hypermobility-trained)",
-          "role": "Designs tailored strengthening, proprioceptive training, and movement strategies. Critical for preventing injury and improving function.",
-          "notes": "Many PTs lack hEDS training; seek specific certification or experience. Bad PT can cause serious harm."
+          "type": "EDS-specialised physiotherapist",
+          "role": "The single most important therapeutic relationship for most people with hEDS/HSD. Designs and progresses a stability-focused, proprioception-targeted exercise programme appropriate for hypermobile joints. Avoids approaches that worsen laxity.",
+          "notes": "Standard physiotherapists without EDS training can cause harm. Ask explicitly whether a physio has experience with hypermobility or EDS before booking. The Ehlers-Danlos Society maintains a directory."
+        },
+        {
+          "type": "Autonomic neurologist or cardiologist (POTS specialist)",
+          "role": "Diagnoses and manages POTS and other dysautonomia features. Can order tilt table testing, prescribe POTS medications (fludrocortisone, midodrine, beta-blockers, ivabradine), and supervise cardiovascular rehabilitation.",
+          "notes": "Access is limited in many regions. POTS-specialist cardiologists are more common in tertiary centres. Neurologists with autonomic subspecialty training are the most knowledgeable."
+        },
+        {
+          "type": "Allergist or immunologist with MCAS experience",
+          "role": "Evaluates for mast cell activation syndrome, orders mediator testing, and designs a management protocol including antihistamines, mast cell stabilisers, and trigger management.",
+          "notes": "MCAS knowledge among allergists is very uneven. Many mainstream allergists are not familiar with the diagnostic criteria or may be sceptical. Finding one who specifically lists MCAS or mast cell disorders in their practice is important."
+        },
+        {
+          "type": "Gastroenterologist with motility expertise",
+          "role": "Evaluates and manages gut dysmotility, gastroparesis, and related GI complications. Can order gastric emptying studies, oesophageal manometry, and other motility investigations.",
+          "notes": "Mainstream gastroenterologists may diagnose IBS without investigating hEDS as a driver. A motility-focused gastroenterologist \u2014 ideally one familiar with EDS \u2014 is most useful."
+        },
+        {
+          "type": "Pelvic floor physiotherapist",
+          "role": "Assesses and treats pelvic floor dysfunction, prolapse, bladder and bowel symptoms, and pelvic pain. Essential for many people with hEDS/HSD \u2014 particularly women and those with pelvic pain or incontinence.",
+          "notes": "Should be experienced with hypermobility-related pelvic floor issues, which differ from standard pelvic floor dysfunction. Both hypertonic (too tight) and hypotonic (too weak) patterns occur in hEDS/HSD."
+        },
+        {
+          "type": "Pain management specialist",
+          "role": "Manages complex chronic pain including central sensitisation. May use medications (low-dose naltrexone, neuropathic agents), procedural interventions, and interdisciplinary pain programmes.",
+          "notes": "Ideally works within a multidisciplinary pain service that includes psychology. Should understand the neurological basis of pain sensitisation in connective tissue disorders."
         },
         {
           "type": "Occupational therapist",
-          "role": "Addresses activities of daily living, ergonomic modifications, energy management, and adaptive strategies to reduce pain and injury.",
-          "notes": "Often overlooked but highly valuable for practical quality-of-life improvements."
-        },
-        {
-          "type": "Cardiologist or autonomic specialist",
-          "role": "Diagnoses and manages POTS, dysautonomia, and other cardiovascular complications. Orders tilt-table testing and prescribes autonomic medications.",
-          "notes": "Essential if dysautonomia symptoms are present. May be based at major academic medical center."
-        },
-        {
-          "type": "Gastroenterologist",
-          "role": "Evaluates and manages GI dysmotility, reflux, and visceral hypersensitivity. Orders imaging or motility studies if needed.",
-          "notes": "GI dysfunction is common and often the most disabling symptom; specialist attention is important."
-        },
-        {
-          "type": "Pelvic floor physical therapist",
-          "role": "Specializes in pelvic floor dysfunction, dyspareunia, urinary symptoms, and pelvic pain related to hypermobility.",
-          "notes": "Significantly under-recognized; many hEDS patients benefit from pelvic floor PT."
+          "role": "Provides joint protection education, splinting, adaptive equipment, activity modification, and energy management strategies. Often underutilised but highly practical for daily function.",
+          "notes": "OTs with chronic illness experience are most useful. Can assess home and work environments for modifications that reduce injury risk and energy expenditure."
         },
         {
           "type": "Psychologist or therapist with chronic illness experience",
-          "role": "Provides CBT, coping strategies, anxiety and depression management, and emotional support for living with chronic conditions.",
-          "notes": "Integral to comprehensive care. Avoid therapists who minimize the physical reality of the condition."
-        },
-        {
-          "type": "Functional or integrative medicine doctor",
-          "role": "May take a systems-based approach to symptom management, nutritional support, and lifestyle optimization. Not always familiar with EDS.",
-          "notes": "Can be helpful for supplement and dietary guidance, but should complement (not replace) conventional diagnosis and management."
-        },
-        {
-          "type": "Sleep medicine specialist",
-          "role": "Evaluates and treats sleep apnea, insomnia, and other sleep disorders common in hEDS.",
-          "notes": "Consider if sleep disturbance is severe or unresponsive to basic sleep hygiene."
-        },
-        {
-          "type": "Orthopedic surgeon or spine specialist (EDS-aware)",
-          "role": "Evaluates structural instability or severe joint damage; may recommend bracing or rarely surgical intervention.",
-          "notes": "Surgery is generally a last resort in hEDS due to tissue fragility and poor healing. Seek someone with EDS experience."
+          "role": "Supports adjustment to chronic illness, addresses medical trauma, provides pain psychology (ACT, CBT-pain), and treats comorbid anxiety and depression.",
+          "notes": "Should have experience with chronic physical illness and ideally with EDS or connective tissue conditions. The history of psychological dismissal makes therapeutic alliance particularly important."
         }
       ],
       "patient_communities": [
         {
-          "name": "Ehlers-Danlos Society",
-          "platform": "Website with resources, support groups, provider directory",
-          "url": "https://www.ehlers-danlos.com",
-          "notes": "Official nonprofit organization. Provides educational resources, patient symposiums, research updates, and a specialist provider directory."
-        },
-        {
-          "name": "The Ehlers-Danlos Society \u2014 Support Groups",
-          "platform": "In-person and virtual support groups",
-          "url": "https://www.ehlers-danlos.com/support-groups/",
-          "notes": "Peer support by condition and region. Helpful for shared experience and practical tips."
-        },
-        {
           "name": "r/ehlersdanlos",
           "platform": "Reddit",
           "url": "https://www.reddit.com/r/ehlersdanlos/",
-          "notes": "Large, active community with daily discussions, resource sharing, and peer support. Good for quick questions and validation."
+          "notes": "Large, active community with a wide range of experience levels. Useful for finding practitioner recommendations, sharing management strategies, and connecting with others navigating diagnosis. Moderated to maintain quality."
         },
         {
-          "name": "Hypermobility Syndromes UK",
-          "platform": "Website with resources and community forum",
-          "url": "https://www.hypermobility.org",
-          "notes": "UK-based but international reach. Comprehensive resources on HSD and hEDS."
+          "name": "The Ehlers-Danlos Society Community",
+          "platform": "Facebook and online forum",
+          "url": "https://www.ehlers-danlos.com/",
+          "notes": "The main international EDS organisation. Provides practitioner directories, educational resources, webinars, and a support community. The website is the best single starting point for newly diagnosed individuals."
         },
         {
-          "name": "EDS Facebook Support Groups",
-          "platform": "Facebook",
+          "name": "Hypermobility Connect",
+          "platform": "Facebook Group",
           "url": null,
-          "notes": "Many condition-specific and region-specific Facebook groups exist. Often more intimate than Reddit; moderated peer support."
+          "notes": "Large peer support group for hEDS and HSD. Good for practical day-to-day advice, management tips, and community support from others living with the condition."
         },
         {
-          "name": "POTS Dysautonomia Support Network",
-          "platform": "Website and community groups",
-          "url": "https://www.dysautonomiainternational.org",
-          "notes": "If autonomic dysfunction is a major symptom, this community provides specialist support and resources."
+          "name": "POTS UK",
+          "platform": "Website and community",
+          "url": "https://www.potsuk.org/",
+          "notes": "UK-based resource for POTS and dysautonomia, including management guides, practitioner information, and community support. Valuable for the significant proportion of hEDS/HSD individuals with POTS."
         },
         {
-          "name": "IBS and Digestive Health Communities",
-          "platform": "Reddit, support groups, apps",
-          "url": null,
-          "notes": "If GI symptoms are predominant, cross-over communities on IBS often include hEDS members and dietary/lifestyle strategies."
+          "name": "Dysautonomia International",
+          "platform": "Website and Facebook",
+          "url": "https://www.dysautonomiainternational.org/",
+          "notes": "Leading organisation for POTS and dysautonomia advocacy, research, and education. Excellent clinical resources and a physician directory for POTS specialists."
         },
         {
-          "name": "Patient-led EDS Discord servers",
-          "platform": "Discord",
-          "url": null,
-          "notes": "Private Discord communities organized by condition and interest (e.g., hEDS, HSD, parents of children with EDS). Real-time chat and smaller groups."
+          "name": "The Ehlers-Danlos Society \u2014 UK",
+          "platform": "Website and social media",
+          "url": "https://www.ehlers-danlos.org/",
+          "notes": "UK-focused EDS charity. Good for UK-specific NHS navigation advice, practitioner finding, and local support groups."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "The Ehlers-Danlos Syndromes: Clinical Manifestations and Management (book)",
-        "type": "book",
-        "author_or_source": "Peter H. Byers, MD (editor)",
-        "url": null,
-        "description": "The definitive clinical reference for EDS. Detailed, evidence-based, and written for healthcare providers but readable for motivated patients. Covers genetics, diagnosis, complications, and management.",
-        "audience": "advanced"
-      },
-      {
-        "title": "Living Life to the Fullest with EDS",
-        "type": "book",
-        "author_or_source": "Ehlers-Danlos Society",
+        "title": "The Ehlers-Danlos Society \u2014 Patient Resources",
+        "type": "website",
+        "author_or_source": "The Ehlers-Danlos Society",
         "url": "https://www.ehlers-danlos.com/resources/",
-        "description": "Patient-focused guide covering daily life, activity management, and practical strategies. Accessible and action-oriented.",
+        "description": "The authoritative starting point for understanding hEDS and HSD. Includes the full 2017 diagnostic criteria, condition guides, practitioner directories, and research updates. Written for both patients and clinicians.",
         "audience": "beginner"
       },
       {
-        "title": "International Classification of the Ehlers-Danlos Syndromes (2017)",
+        "title": "The 2017 International Classification of the Ehlers-Danlos Syndromes",
         "type": "research paper",
         "author_or_source": "Malfait et al., American Journal of Medical Genetics",
-        "url": "https://doi.org/10.1002/ajmg.c.31431",
-        "description": "The diagnostic criteria for hEDS and HSD. Dense but the gold standard for clinicians and informed patients. Explains the reclassification and current understanding.",
-        "audience": "advanced"
-      },
-      {
-        "title": "The EDS Information Center (website)",
-        "type": "website",
-        "author_or_source": "Ehlers-Danlos Society",
-        "url": "https://www.ehlers-danlos.com/",
-        "description": "Comprehensive, regularly updated information on all EDS types, including fact sheets, provider directories, webinars, and research updates.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Managing hEDS and HSD \u2014 A Patient's Guide to Symptom Control and Movement (online course)",
-        "type": "video",
-        "author_or_source": "Hypermobility Syndromes UK or The Ehlers-Danlos Society",
-        "url": "https://www.hypermobility.org/hypermobility-syndromes/",
-        "description": "Educational videos covering symptom management, activity pacing, exercise principles, and daily living strategies.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Hypermobility, Fibromyalgia and the Chronic Pain Syndromes (book)",
-        "type": "book",
-        "author_or_source": "Alan St John, Sarah Key",
-        "url": null,
-        "description": "Bridges hypermobility and pain science. Explains the overlaps and differences. Practical movement and pain management strategies.",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/ajmg.c.31552",
+        "description": "The definitive diagnostic criteria paper for all EDS subtypes. Useful for understanding exactly how hEDS is diagnosed and why HSD is a separate category. Important reading for those preparing for specialist appointments.",
         "audience": "intermediate"
       },
       {
-        "title": "The Body Keeps the Score (book)",
+        "title": "Disjointed: Navigating the Diagnosis and Management of Hypermobile Ehlers-Danlos Syndrome and Hypermobility Spectrum Disorders",
         "type": "book",
-        "author_or_source": "Bessel van der Kolk, MD",
+        "author_or_source": "Diana Jovin",
         "url": null,
-        "description": "While not EDS-specific, this book on trauma and the nervous system is highly relevant for understanding how chronic pain and dysautonomia affect the body and brain. Helps explain multi-system symptoms.",
+        "description": "A comprehensive patient-focused guide covering diagnosis, management, comorbidities, and navigating the healthcare system with hEDS/HSD. Written accessibly for those newly diagnosed and those who have struggled to find good care.",
         "audience": "beginner"
       },
       {
-        "title": "Pacing Guide and Energy Envelope Approach",
+        "title": "Hypermobility Syndromes Association (HMSA) \u2014 Understanding Hypermobility",
         "type": "website",
-        "author_or_source": "Action for M.E. / chronic illness communities",
-        "url": "https://www.actionforme.org.uk/get-information-and-support/information-and-resources/information-leaflets",
-        "description": "Detailed explanation of the energy envelope and pacing principles critical to hEDS management. Originally developed for ME/CFS but applicable across conditions.",
+        "author_or_source": "Hypermobility Syndromes Association",
+        "url": "https://www.hypermobility.org/",
+        "description": "UK-based organisation with accessible guides on hypermobility, hEDS, and HSD. Particularly useful for understanding the spectrum of hypermobility conditions and finding UK-specific support.",
         "audience": "beginner"
       },
       {
-        "title": "POTS and Dysautonomia Resources",
+        "title": "Zebra Strong \u2014 EDS Physio and Exercise Guide",
+        "type": "website",
+        "author_or_source": "Various EDS physiotherapists",
+        "url": null,
+        "description": "Resources specifically addressing exercise and physiotherapy for hEDS/HSD. Useful for understanding what safe, appropriate exercise looks like for hypermobile joints before finding a specialist physiotherapist.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Dysautonomia International \u2014 POTS Information",
         "type": "website",
         "author_or_source": "Dysautonomia International",
-        "url": "https://www.dysautonomiainternational.org",
-        "description": "Specialist resources on POTS and other autonomic disorders. Includes diagnostic criteria, treatment guidelines, and patient education.",
+        "url": "https://www.dysautonomiainternational.org/page.php?ID=30",
+        "description": "Comprehensive guide to POTS \u2014 symptoms, diagnosis, and management \u2014 essential reading for anyone with hEDS/HSD who suspects autonomic involvement. Includes the non-pharmacological management protocol.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Never Bet Against Occam: Mast Cell Activation Disease and the Modern Epidemics of Chronic Illness and Medical Complexity",
+        "type": "book",
+        "author_or_source": "Lawrence B. Afrin MD",
+        "url": null,
+        "description": "The leading clinician-authored text on MCAS, written accessibly for patients. Covers the history, science, diagnosis, and management of mast cell activation syndrome. Particularly relevant for those with the hEDS-POTS-MCAS triad.",
         "audience": "intermediate"
       },
       {
-        "title": "Low-FODMAP Diet for IBS (book or app)",
-        "type": "book",
-        "author_or_source": "Sue Shepherd, Peter Gibson (or Monash University app)",
-        "url": null,
-        "description": "Evidence-based dietary approach for GI symptoms. Relevant for many hEDS patients with IBS-like symptoms. Requires care and often dietitian guidance.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Research Literature on hEDS and HSD",
-        "type": "research paper",
-        "author_or_source": "PubMed, Google Scholar",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/",
-        "description": "Search terms: 'hypermobile Ehlers-Danlos', 'hypermobility spectrum disorder', 'connective tissue disorder', 'dysautonomia EDS'. Peer-reviewed research on epidemiology, diagnosis, and management.",
-        "audience": "advanced"
-      },
-      {
-        "title": "YouTube Channels on EDS and Hypermobility",
+        "title": "EDS and Hypermobility \u2014 Pain Neuroscience Education",
         "type": "video",
-        "author_or_source": "EDS Healthcare Professionals, EDS patient educators",
+        "author_or_source": "Lorimer Moseley / various EDS-focused pain scientists",
         "url": null,
-        "description": "Educational videos on movement, exercises, symptom management, and living with hEDS. Quality varies; seek channels endorsed by the Ehlers-Danlos Society.",
-        "audience": "beginner"
+        "description": "Pain neuroscience education resources explaining central sensitisation, how chronic pain changes the nervous system, and why pain in hEDS/HSD is not simply a structural problem. Understanding this supports engagement with psychological and pain management approaches.",
+        "audience": "intermediate"
       },
       {
-        "title": "Podcasts on Chronic Illness and EDS",
-        "type": "podcast",
-        "author_or_source": "Various patient advocates and healthcare providers",
+        "title": "Chronic Illness and Trauma: Understanding the Connection",
+        "type": "book",
+        "author_or_source": "Bessel van der Kolk \u2014 The Body Keeps the Score",
         "url": null,
-        "description": "Podcasts such as 'The Connective Tissue Podcast' or chronic illness-focused shows explore EDS, symptom management, and patient experiences. Accessible, conversational format.",
-        "audience": "beginner"
+        "description": "While not EDS-specific, this book is widely recommended in the hEDS community for understanding the relationship between trauma, nervous system dysregulation, and chronic physical symptoms. Particularly relevant given the high rates of medical trauma and PTSD in this population.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "The Muldowney Protocol",
+        "type": "book",
+        "author_or_source": "Kevin Muldowney PT",
+        "url": null,
+        "description": "A structured physiotherapy protocol specifically designed for EDS patients, created by a physiotherapist with extensive hEDS clinical experience. Provides a systematic approach to joint stabilisation exercises. Useful for guiding physiotherapy with practitioners who may be less familiar with hEDS.",
+        "audience": "intermediate"
       }
     ],
     "relevance_signal": "**Joints that bend further than normal**, frequent sprains, stretchy skin. Gut symptoms alongside joint pain, fatigue, and POTS or MCAS. Multi-system involvement."
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

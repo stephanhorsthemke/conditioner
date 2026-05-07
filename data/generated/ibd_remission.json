@@ -2,549 +2,676 @@
   "condition_id": "ibd_remission",
   "condition_name": "IBD in remission",
   "generated_at": "2026-04-16T10:51:12.478645Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "IBD in remission means your inflammatory bowel disease (Crohn's disease or ulcerative colitis) is currently well-controlled with little to no active inflammation. You may have few or no symptoms, but the condition remains present and can flare up again. The goal is to maintain remission through medication adherence, lifestyle choices, and regular monitoring.",
-    "detailed_summary": "Inflammatory bowel disease (IBD) encompasses two main conditions: Crohn's disease, which can affect any part of the digestive tract, and ulcerative colitis, which affects the colon and rectum. Remission means the inflammation is suppressed\u2014either through medication, dietary changes, or both\u2014and symptoms are absent or minimal. Remission is not a cure; the underlying condition persists, and flares can occur if maintenance therapy is stopped or triggers are encountered. People in remission often experience normal bowel function, reduced pain, and improved quality of life, but must remain vigilant about adherence to treatment and early warning signs of relapse.",
+    "plain_summary": "IBD in remission refers to the state experienced by people with Crohn's disease or ulcerative colitis whose active inflammation has been controlled \u2014 either by medication, surgery, or lifestyle changes \u2014 but who continue to live with the lasting effects of gut damage, altered structure, and an immune system that remains primed to flare. Remission does not mean cured. Many people in remission continue to have significant digestive symptoms, nutritional deficiencies, fatigue, and psychological burden, and they face an ongoing risk of relapse. Understanding what is driving symptoms during remission \u2014 whether residual inflammation, structural damage, secondary conditions like SIBO or bile acid malabsorption, or psychological factors \u2014 is often the key to improving quality of life.",
+    "detailed_summary": "Inflammatory bowel disease (IBD) comprises two main conditions: Crohn's disease, which can affect any part of the digestive tract with transmural (full-thickness) inflammation, and ulcerative colitis (UC), which causes mucosal inflammation confined to the colon and rectum. Both are immune-mediated chronic conditions with no known cure, characterised by cycles of flare and remission.\n\nRemission can be defined in several ways \u2014 clinical remission (absence of symptoms), biochemical remission (normalised inflammatory markers), endoscopic remission (healed mucosa visible on scope), and histological remission (normal tissue under the microscope). These do not always coincide. Someone may have no symptoms but ongoing mucosal damage, or persistent symptoms despite healed tissue \u2014 a phenomenon increasingly recognised as important.\n\nDuring remission, symptoms that persist are often attributed to other mechanisms: post-inflammatory gut hypersensitivity (resembling IBS), structural consequences of disease or surgery (strictures, shortened bowel, loss of the ileocecal valve), secondary conditions such as small intestinal bacterial overgrowth (SIBO), bile acid malabsorption (BAM), exocrine pancreatic insufficiency (EPI), or nutritional deficiencies from years of malabsorption. Fatigue, joint pain, skin involvement, and psychological distress frequently continue even when bowel inflammation is controlled.\n\nThe management of IBD in remission is an active area of care. Maintaining remission typically involves ongoing medication (biologics, immunomodulators, aminosalicylates), regular monitoring, and lifestyle strategies. But many people find that managing residual symptoms requires a more investigative approach \u2014 identifying and treating coexisting conditions that their IBD team may not routinely look for.\n\nSelf-directed investigation is common and legitimate in this population. Many people with IBD spend years working out what triggers their symptoms beyond the core disease, and that process of systematic observation is a genuine contribution to their care.",
     "prevalence": {
-      "summary": "About 1 in 100 to 1 in 200 people in developed countries have IBD, with rates rising globally.",
-      "estimate": "0.5\u20131.5% of the population in North America and Europe; higher in Scandinavian countries",
-      "notes": "Prevalence has been increasing over the past 20 years, particularly in younger people and in newly industrialized countries. Rates vary significantly by geography and ethnicity. Crohn's disease and ulcerative colitis occur in roughly equal proportions."
+      "summary": "IBD affects approximately 1 in 200 to 1 in 300 people in Western countries, with incidence rising globally.",
+      "estimate": "Roughly 3\u20135 million people in Europe and North America combined; approximately 0.3\u20130.5% of the population in high-incidence regions. Crohn's and UC occur at roughly similar rates.",
+      "notes": "Prevalence is highest in North America, Northern Europe, and Australia, but is rising rapidly in newly industrialised countries. IBD can develop at any age but most commonly presents between ages 15\u201335. There is a smaller secondary peak in older adults. Both sexes are affected roughly equally overall, though Crohn's is slightly more common in women and UC slightly more common in men."
     },
     "subgroups": [
       {
         "name": "Crohn's disease in remission",
-        "description": "Inflammation of any part of the digestive tract (mouth to anus) is controlled. Remission may involve patchy areas of inflammation with normal tissue in between.",
+        "description": "Crohn's can affect any segment of the GI tract from mouth to anus. Remission may follow medical therapy or surgical resection. Residual symptoms are common due to affected segments, strictures, fistulae, and prior resections altering gut anatomy.",
         "distinguishing_features": [
-          "Can affect any layer of the bowel wall, not just the lining",
-          "May present with complications like fistulas, strictures, or abscesses even in remission",
-          "Nutritional deficiencies are more common due to reduced absorption",
-          "May require more aggressive maintenance therapy to prevent complications"
+          "Risk of SIBO is particularly high after ileocecal resection or with strictures",
+          "Bile acid malabsorption is common if the terminal ileum has been resected or is inflamed",
+          "Nutritional deficiencies (B12, iron, zinc, fat-soluble vitamins) are frequent and may persist in remission",
+          "Strictures can cause obstructive symptoms even without active inflammation",
+          "Perianal disease (fistulae, abscesses) may persist independently of luminal remission"
         ]
       },
       {
         "name": "Ulcerative colitis in remission",
-        "description": "Inflammation of the colon and rectum is suppressed. Remission involves healing of the mucosal lining.",
+        "description": "UC is confined to the colon and rectum. Remission after medical therapy or after colectomy (with or without ileo-anal pouch creation) presents distinct ongoing challenges.",
         "distinguishing_features": [
-          "Inflammation is limited to the innermost lining (mucosa) of the colon",
-          "Continuous inflammation pattern (not patchy) when active",
-          "Lower risk of fistulas and strictures compared to Crohn's",
-          "May be cured by colectomy (surgical removal of colon), whereas Crohn's can recur after surgery"
+          "Post-colectomy with ileo-anal pouch (J-pouch): risk of pouchitis, SIBO, and functional symptoms is significant",
+          "Microscopic colitis can coexist or be mistaken for low-grade UC activity",
+          "Urgency and frequency may persist in remission due to post-inflammatory rectal hypersensitivity",
+          "Risk of colorectal cancer surveillance requirements increase with extent and duration of disease"
         ]
       },
       {
-        "name": "Early remission (0\u20133 months)",
-        "description": "Recently achieved remission, still establishing stable maintenance therapy and risk of early relapse.",
+        "name": "IBD-IBS overlap (post-inflammatory IBS)",
+        "description": "A substantial proportion of people with IBD in remission develop functional bowel symptoms meeting IBS criteria, believed to result from post-inflammatory changes to gut motility, microbiome, and visceral sensitivity.",
         "distinguishing_features": [
-          "Higher risk of flare within first few months if medication is adjusted",
-          "May still experience mild residual symptoms or healing-related changes",
-          "Requires closer monitoring and frequent clinic visits"
+          "Symptoms persist despite confirmed mucosal healing on endoscopy",
+          "No elevation of inflammatory markers (CRP, faecal calprotectin)",
+          "Symptoms respond to IBS-directed interventions (low-FODMAP diet, gut-directed hypnotherapy)",
+          "Distinct from a flare \u2014 no blood in stool, no fever, no significant calprotectin rise"
         ]
       },
       {
-        "name": "Sustained remission (>1 year)",
-        "description": "Long-term remission with stable disease control on maintenance therapy.",
+        "name": "IBD with significant extraintestinal manifestations",
+        "description": "IBD is a systemic immune condition. Some people experience prominent extraintestinal manifestations (EIMs) \u2014 joint, skin, eye, liver \u2014 that may persist in or occur independently of bowel remission.",
         "distinguishing_features": [
-          "Lower flare risk if medication is continued",
-          "Quality of life typically approaches that of non-IBD individuals",
-          "May allow reduction in monitoring frequency if clinically stable"
+          "Peripheral arthropathy: joint symptoms may track with bowel activity",
+          "Axial arthropathy (sacroiliitis, ankylosing spondylitis): may be independent of bowel disease activity",
+          "Primary sclerosing cholangitis (PSC): liver condition more common in UC, can progress independently",
+          "Erythema nodosum, pyoderma gangrenosum: skin manifestations that may flare with bowel disease",
+          "Uveitis and episcleritis: eye involvement requiring ophthalmology input"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Absence of diarrhea or return to normal bowel pattern",
+        "symptom": "Persistent loose stools or diarrhoea despite remission",
         "category": "digestive",
-        "notes": "In remission, bowel habits should normalize. Occasional loose stools are normal but frequent diarrhea may signal early flare."
+        "notes": "May reflect post-inflammatory IBS, SIBO, bile acid malabsorption, or dietary triggers rather than active IBD. Worth investigating rather than assuming it is residual inflammation."
       },
       {
-        "symptom": "Absence of abdominal pain or cramping",
+        "symptom": "Abdominal pain and cramping",
         "category": "digestive",
-        "notes": "Complete or near-complete resolution of pain is expected in remission. Mild discomfort with certain foods is common but severe pain suggests relapse."
+        "notes": "Can persist in true remission due to visceral hypersensitivity, adhesions, strictures, or coexisting functional bowel disorder. Distinguishing this from a flare is important."
       },
       {
-        "symptom": "No blood or mucus in stool",
+        "symptom": "Bloating and abdominal distension",
         "category": "digestive",
-        "notes": "A key marker of remission. Any recurrence of blood in stool warrants medical evaluation."
+        "notes": "Particularly common in Crohn's with SIBO or after resection. May also reflect FODMAP intolerance or altered motility."
       },
       {
-        "symptom": "Normal energy levels and reduced fatigue",
+        "symptom": "Rectal urgency and frequency",
+        "category": "digestive",
+        "notes": "Especially common in UC in remission. Post-inflammatory rectal hypersensitivity and reduced rectal reservoir capacity can cause urgency even with healed mucosa."
+      },
+      {
+        "symptom": "Fatigue",
         "category": "systemic",
-        "notes": "Fatigue often persists due to residual anemia or medication side effects even in remission; should improve gradually."
+        "notes": "One of the most disabling symptoms in IBD remission. Driven by multiple factors including anaemia, nutritional deficiency, sleep disruption, psychological burden, and possibly ongoing low-grade immune activation."
       },
       {
-        "symptom": "Improved appetite",
-        "category": "digestive",
-        "notes": "Appetite typically returns in remission as inflammation decreases and symptoms resolve."
-      },
-      {
-        "symptom": "Reduced need for frequent bathroom visits",
-        "category": "digestive",
-        "notes": "Urinary frequency may decrease to pre-flare levels, though some people retain slightly increased urgency."
-      },
-      {
-        "symptom": "Absence of extraintestinal manifestations",
+        "symptom": "Iron deficiency anaemia",
         "category": "systemic",
-        "notes": "Joint pain, eye inflammation, or skin lesions (erythema nodosum, pyoderma gangrenosum) may persist or flare independently of bowel disease."
+        "notes": "Can result from prior GI blood loss, ongoing poor absorption, or insufficient dietary intake. May persist well into remission if not actively corrected."
       },
       {
-        "symptom": "Minimal or no rectal urgency at night",
-        "category": "digestive",
-        "notes": "Night-time bowel symptoms typically resolve in remission; persistence may indicate inadequate control."
+        "symptom": "Vitamin B12 deficiency symptoms (fatigue, neurological changes, mouth ulcers)",
+        "category": "systemic",
+        "notes": "Particularly relevant after terminal ileal resection or in longstanding Crohn's affecting the ileum, where intrinsic factor-mediated B12 absorption occurs."
+      },
+      {
+        "symptom": "Joint pain and stiffness",
+        "category": "musculoskeletal",
+        "notes": "Peripheral arthropathy may correlate with bowel activity; axial arthropathy may be independent. Occurs in an estimated 20\u201340% of IBD patients."
+      },
+      {
+        "symptom": "Skin rashes (erythema nodosum, pyoderma gangrenosum)",
+        "category": "skin",
+        "notes": "Extraintestinal manifestations that may coincide with flares or occur independently. Pyoderma gangrenosum in particular can be severe and requires specialist management."
+      },
+      {
+        "symptom": "Eye inflammation (uveitis, episcleritis)",
+        "category": "eye",
+        "notes": "Uveitis in particular requires prompt ophthalmology assessment as it can cause permanent vision damage if untreated."
+      },
+      {
+        "symptom": "Anxiety and depression",
+        "category": "psychological",
+        "notes": "Substantially elevated in IBD populations even during remission. The unpredictability of the disease, social impact of symptoms, and medication burden all contribute."
+      },
+      {
+        "symptom": "Reduced appetite or food fear",
+        "category": "digestive / psychological",
+        "notes": "Many people with IBD develop restrictive eating patterns to avoid triggering symptoms. This can lead to nutritional deficiency and social isolation."
+      },
+      {
+        "symptom": "Weight instability or underweight",
+        "category": "systemic",
+        "notes": "May reflect ongoing malabsorption, dietary restriction, or post-surgical changes to absorptive surface."
+      },
+      {
+        "symptom": "Night sweats",
+        "category": "systemic",
+        "notes": "When present, should prompt evaluation to rule out subclinical disease activity or infection, especially in those on immunosuppressants."
+      },
+      {
+        "symptom": "Mouth ulcers (aphthous stomatitis)",
+        "category": "oral",
+        "notes": "A recognised extraintestinal manifestation of IBD, but also associated with nutritional deficiencies (B12, folate, iron). Both should be considered."
       }
     ],
     "testing": {
       "key_patterns": [
-        "Absence of blood, mucus, or diarrhea for weeks at a time\u2014consistent normal or near-normal bowel pattern",
-        "Pain-free or near pain-free days without acute discomfort after meals",
-        "Stable weight or gradual weight gain, indicating improved nutrition absorption",
-        "Energy levels sufficient for work and daily activities without afternoon crashes",
-        "Sleep uninterrupted by nighttime bowel symptoms",
-        "Ability to eat a wider variety of foods without immediate symptom flare",
-        "Mental clarity and mood stability (reduced stress and anxiety related to disease activity)"
+        "Elevated faecal calprotectin with normal CRP suggests mucosal inflammation that may not yet show systemically \u2014 warrants endoscopic review",
+        "Normal calprotectin plus persistent symptoms points toward functional overlay (post-inflammatory IBS, SIBO, BAM) rather than active IBD",
+        "Low serum B12, ferritin, zinc, or fat-soluble vitamins in someone with Crohn's \u2014 especially post-ileal resection \u2014 suggests ongoing malabsorption even in remission",
+        "Watery, non-bloody diarrhoea worsening after fat-rich meals in someone with ileal disease or resection \u2014 consider bile acid malabsorption as a primary driver",
+        "Significant bloating, gas, and altered bowel habit with normal inflammatory markers \u2014 consider hydrogen breath testing for SIBO",
+        "Floating, greasy stools or unexplained weight loss despite dietary intake \u2014 consider exocrine pancreatic insufficiency (faecal elastase testing)"
       ],
       "at_home": [
         {
-          "name": "Symptom and bowel diary",
-          "description": "Record date, time, bowel movement frequency, consistency (Bristol scale), presence of blood/mucus, abdominal pain (0\u201310 scale), and foods eaten. Maintain for 2\u20134 weeks to establish baseline and identify patterns. Share with your doctor at appointments.",
-          "safety_notes": "Diary is passive observation only. Do not delay medical care if you experience severe pain, high fever, or heavy bleeding."
+          "name": "Symptom and food diary",
+          "description": "Keeping a detailed log of symptoms, meals, stress levels, sleep, and bowel habits over 2\u20134 weeks can reveal patterns \u2014 specific foods, hormonal timing, or situations that consistently precede symptoms. This is especially useful for distinguishing food-triggered symptoms from inflammatory flares.",
+          "safety_notes": "This is observational only. Any sudden increase in rectal bleeding, severe pain, fever, or significant weight loss should prompt urgent medical review regardless of diary findings."
         },
         {
-          "name": "Fecal calprotectin home test kit",
-          "description": "Some home kits allow collection of a small stool sample to mail to a lab for calprotectin measurement (marker of intestinal inflammation). Provides objective data to discuss with your doctor. Follow kit instructions for collection and shipping.",
-          "safety_notes": "Home kits are supplementary; they do not replace clinical assessment. Discuss results with your gastroenterologist. Elevated levels warrant medical review even if you feel well."
+          "name": "Monitoring for flare warning signs",
+          "description": "People with IBD are often taught to recognise early signs of a flare: increased stool frequency, return of blood in stool (in UC), pain waking from sleep, fever, or rapid weight loss. Tracking these against baseline can help prompt timely medical contact.",
+          "safety_notes": "A flare should always be reviewed by a clinician. Self-managing a suspected flare without medical guidance risks delayed treatment of serious inflammation."
         },
         {
-          "name": "Weight and waist circumference tracking",
-          "description": "Weigh yourself weekly at the same time of day and measure waist circumference monthly. Stable or gradual increase suggests good nutritional status and disease control.",
-          "safety_notes": "Rapid weight loss (>2 lbs per week) or gain may signal disease flare or other problem; contact your doctor."
+          "name": "Low-FODMAP dietary trial",
+          "description": "For those with suspected post-inflammatory IBS overlap, a short-term (2\u20136 week) low-FODMAP elimination phase followed by systematic reintroduction can identify specific fermentable carbohydrate triggers. This is best done with dietitian guidance but can be self-initiated using validated resources.",
+          "safety_notes": "Not appropriate during an active flare. Should not be used as a long-term diet without professional guidance, as it restricts prebiotic fibres that support gut microbiome health \u2014 already often compromised in IBD."
         }
       ],
       "clinical": [
         {
-          "name": "Fecal calprotectin or lactoferrin",
+          "name": "Faecal calprotectin",
+          "type": "gold_standard",
+          "description": "A stool test measuring a protein released by neutrophils in the gut lining. Elevated levels indicate intestinal inflammation. It is the most practical non-invasive marker to distinguish IBD activity from functional symptoms. Generally available via GP or gastroenterologist.",
+          "availability": "Widely available through NHS GP referral, private GP, or direct-to-patient laboratory testing services."
+        },
+        {
+          "name": "Colonoscopy / ileoscopy with biopsy",
+          "type": "gold_standard",
+          "description": "Direct visualisation of the bowel mucosa and sampling via biopsy. Required to confirm endoscopic and histological remission, detect dysplasia, and assess structural complications such as strictures. The definitive test for disease activity.",
+          "availability": "Specialist gastroenterology referral required. Surveillance colonoscopy intervals are risk-stratified by disease extent and duration."
+        },
+        {
+          "name": "MRI enterography (MRE)",
+          "type": "gold_standard",
+          "description": "Cross-sectional imaging used primarily in Crohn's disease to assess transmural inflammation, fistulae, abscesses, and strictures. Preferred over CT due to absence of radiation \u2014 important given the repeated imaging many IBD patients require over a lifetime.",
+          "availability": "Available through gastroenterology or radiology referral. Widely used in IBD centres."
+        },
+        {
+          "name": "SeHCAT scan (selenium-75 homocholic acid taurine)",
           "type": "standard",
-          "description": "Stool test measuring proteins released by inflamed intestinal lining. Levels <50\u2013100 \u03bcg/g generally indicate remission; higher levels suggest active inflammation even if symptoms are mild. Non-invasive and sensitive marker of mucosal healing.",
-          "availability": "Ordered by gastroenterologist or primary care doctor; results available in 1\u20132 weeks. Widely available in developed countries."
+          "description": "The clinical gold standard test for bile acid malabsorption. Measures retention of a radiolabelled bile acid analogue over 7 days. A 7-day retention below 15% is diagnostic of BAM. Particularly relevant in Crohn's with ileal involvement or resection.",
+          "availability": "Available in specialist centres in the UK and some European countries. Not routinely available in the US, where empirical cholestyramine trial or fasting serum C4 (7\u03b1-hydroxy-4-cholesten-3-one) may be used instead."
+        },
+        {
+          "name": "Hydrogen and methane breath testing (SIBO)",
+          "type": "standard",
+          "description": "Measures hydrogen and methane gas exhaled after ingestion of a fermentable substrate (lactulose or glucose). Elevated early gas peaks suggest bacterial fermentation in the small intestine. SIBO is significantly more prevalent in IBD, particularly post-resection or with structuring disease.",
+          "availability": "Available through gastroenterology departments and some private clinics. Interpretation requires clinical context as false positives and negatives occur."
+        },
+        {
+          "name": "Faecal elastase-1",
+          "type": "standard",
+          "description": "A stool test measuring pancreatic enzyme secretion. Levels below 200 \u00b5g/g suggest exocrine pancreatic insufficiency (EPI), which is more common in IBD than in the general population and may contribute to malabsorption and nutritional deficiency.",
+          "availability": "Available via gastroenterology referral or private laboratory testing."
+        },
+        {
+          "name": "Nutritional blood panel",
+          "type": "standard",
+          "description": "Assessment of iron, ferritin, B12, folate, zinc, vitamin D, magnesium, and albumin. Essential in IBD remission, as deficiencies are common and contribute significantly to fatigue, neurological symptoms, and immune function. Should be monitored regularly, not just during flares.",
+          "availability": "Available through GP, gastroenterologist, or private testing. Some markers (zinc, magnesium) may not be included in standard NHS panels and may need to be specifically requested."
         },
         {
           "name": "C-reactive protein (CRP) and erythrocyte sedimentation rate (ESR)",
           "type": "standard",
-          "description": "Blood tests measuring systemic inflammation. CRP <5 mg/L and ESR <20 mm/hr generally support remission. Less specific than fecal calprotectin but useful in combination. May remain elevated in some people in remission.",
-          "availability": "Routine blood work ordered by any physician; results available in 1\u20132 days."
+          "description": "Blood-based markers of systemic inflammation. Useful but less sensitive than faecal calprotectin for detecting localised intestinal inflammation, particularly in UC where CRP may remain normal even with active disease.",
+          "availability": "Standard blood test available through GP."
         },
         {
-          "name": "Complete blood count (CBC) and comprehensive metabolic panel (CMP)",
+          "name": "Capsule endoscopy",
           "type": "standard",
-          "description": "Routine blood work assessing hemoglobin (for anemia), white blood cell count, albumin, and kidney and liver function. Normalization of hemoglobin and albumin support remission and good nutritional status.",
-          "availability": "Routine labs ordered by any physician; results available in 1\u20132 days."
+          "description": "A swallowable camera capsule that photographs the small intestine \u2014 an area difficult to assess by conventional endoscopy. Useful in Crohn's for detecting small bowel mucosal disease. Contraindicated in the presence of known strictures due to capsule retention risk.",
+          "availability": "Available at specialist IBD centres via gastroenterology referral."
         },
         {
-          "name": "Colonoscopy with ileoscopy (Crohn's) or sigmoidoscopy (ulcerative colitis)",
-          "type": "gold_standard",
-          "description": "Direct visual inspection of the intestinal lining with biopsy sampling. Gold standard for assessing mucosal healing and confirming remission. Can detect microscopic inflammation not visible to the naked eye. Usually performed annually or at specific intervals per treatment protocol.",
-          "availability": "Ordered by gastroenterologist; procedure performed at hospital or endoscopy center under sedation. Requires bowel preparation."
-        },
-        {
-          "name": "Fecal immunochemical test (FIT) for occult blood",
+          "name": "DEXA scan (bone density)",
           "type": "standard",
-          "description": "Stool test detecting microscopic blood not visible to the eye. Negative FIT in the setting of normal symptoms supports remission.",
-          "availability": "Ordered by any physician; stool sample collected at home and mailed to lab. Results available in 1\u20132 weeks."
-        },
-        {
-          "name": "Magnetic resonance enterography (MRE) or CT enterography",
-          "type": "standard",
-          "description": "Imaging studies visualizing the entire small bowel and wall thickness. Useful for assessing Crohn's disease burden, detecting fistulas or strictures, and confirming mucosal healing. Less frequently used in remission maintenance but valuable for complication assessment.",
-          "availability": "Ordered by gastroenterologist; performed at imaging center. Requires bowel preparation and contrast. May use radiation (CT) or not (MRI)."
-        },
-        {
-          "name": "Ultrasound of the bowel",
-          "type": "emerging",
-          "description": "Point-of-care ultrasound assessing bowel wall thickness and blood flow (Doppler). Emerging as a non-invasive, radiation-free tool to assess disease activity. Less widely available and operator-dependent.",
-          "availability": "Specialized gastroenterology centers with expertise; not routine at all facilities."
+          "description": "Measures bone mineral density. IBD patients face elevated osteoporosis risk due to chronic inflammation, steroid use, vitamin D and calcium deficiency, and malabsorption. Guidelines generally recommend DEXA scanning in IBD patients with cumulative steroid use or other risk factors.",
+          "availability": "Available via GP or specialist referral. May require clinical justification depending on healthcare system."
         }
       ]
     },
     "related_conditions": [
       {
+        "id": "ibs",
         "name": "Irritable bowel syndrome (IBS)",
-        "relationship": "often_confused",
-        "explanation": "IBS and IBD are distinct but can coexist. IBS-like symptoms (bloating, altered bowel habits) may persist in IBD remission due to altered gut motility or visceral hypersensitivity, making differentiation difficult. True IBD involves inflammation; IBS does not."
+        "relationship": "comorbid",
+        "explanation": "Post-inflammatory IBS occurs in an estimated 30\u201340% of IBD patients in remission. Structural and neurological changes from prior inflammation alter gut motility, microbiome composition, and visceral sensitivity in ways that mimic IBS. This is one of the most important and commonly missed sources of ongoing symptoms in remission."
       },
       {
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "downstream",
+        "explanation": "SIBO is significantly more prevalent in IBD \u2014 particularly Crohn's disease \u2014 due to strictures, fistulae, prior resections (especially ileocecal), altered motility, and immune changes. It can cause bloating, diarrhoea, and nutritional deficiency that persists during apparent remission."
+      },
+      {
+        "id": "bam",
+        "name": "Bile acid malabsorption (BAM)",
+        "relationship": "downstream",
+        "explanation": "When the terminal ileum is inflamed or has been surgically resected, bile acids are not reabsorbed efficiently and spill into the colon, causing secretory diarrhoea. BAM is a major but underdiagnosed cause of ongoing watery diarrhoea in Crohn's patients with ileal involvement."
+      },
+      {
+        "id": "epi",
+        "name": "Exocrine pancreatic insufficiency (EPI)",
+        "relationship": "comorbid",
+        "explanation": "IBD is associated with elevated rates of EPI \u2014 possibly due to chronic inflammation, medication effects, or shared immune dysregulation. EPI causes maldigestion of fat and protein, contributing to steatorrhoea, weight loss, and fat-soluble vitamin deficiency that may persist in bowel remission."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "mechanistic_link",
+        "explanation": "Significant disruption of the gut microbiome is a core feature of IBD \u2014 both cause and consequence of the inflammatory process. Dysbiosis may persist in remission and contribute to ongoing symptoms, immune activation, and susceptibility to secondary conditions like SIBO."
+      },
+      {
+        "id": "microscopic_colitis",
         "name": "Microscopic colitis",
         "relationship": "often_confused",
-        "explanation": "Causes chronic diarrhea but is not IBD and does not respond to IBD therapies in the same way. Can coexist with IBD. Diagnosis requires colonoscopy with biopsy."
+        "explanation": "Microscopic colitis (collagenous or lymphocytic colitis) causes chronic, watery, non-bloody diarrhoea with a normal-appearing colon on endoscopy \u2014 only detectable on biopsy. It can coexist with or be mistaken for IBD in remission, and shares some risk factors and immune mechanisms."
       },
       {
-        "name": "Celiac disease",
+        "id": "central_sensitisation",
+        "name": "Central sensitisation / visceral hypersensitivity",
+        "relationship": "downstream",
+        "explanation": "Repeated bouts of intestinal inflammation can sensitise enteric and central pain pathways, resulting in amplified pain responses to normal gut stimuli. This visceral hypersensitivity explains why some people experience significant abdominal pain even with mucosal healing."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
         "relationship": "comorbid",
-        "explanation": "More common in people with IBD. Gluten sensitivity can worsen IBD symptoms or cause overlapping symptoms. Screening (tissue transglutaminase antibody) recommended at IBD diagnosis."
+        "explanation": "Anxiety is significantly elevated in IBD populations, even during remission. The unpredictability of symptoms, risk of public accidents, medication burden, and fear of flare and cancer all contribute. Anxiety in turn can worsen gut symptoms through the gut-brain axis."
       },
       {
-        "name": "Primary sclerosing cholangitis (PSC)",
+        "id": "depression",
+        "name": "Depression",
         "relationship": "comorbid",
-        "explanation": "Autoimmune liver condition affecting 1\u20134% of people with ulcerative colitis. Occurs independently of bowel disease activity. Requires monitoring with liver enzymes and imaging."
+        "explanation": "Depression affects an estimated 20\u201330% of people with IBD and is associated with worse disease outcomes, higher healthcare utilisation, and reduced quality of life. Chronic fatigue, pain, social restriction, and systemic inflammation are all likely contributors."
       },
       {
-        "name": "Peripheral arthropathy and axial spondylitis",
-        "relationship": "downstream",
-        "explanation": "Joint inflammation associated with IBD, especially in those with HLA-B27 gene. Can flare independent of bowel disease activity. Managed with NSAIDs (with caution in IBD) or biologics."
-      },
-      {
-        "name": "Anemia",
-        "relationship": "downstream",
-        "explanation": "Iron-deficiency anemia common in Crohn's disease due to chronic blood loss and malabsorption. B12 and folate deficiency possible with terminal ileum involvement. Resolves with disease control and iron/B12 supplementation."
-      },
-      {
-        "name": "Dermatologic manifestations (erythema nodosum, pyoderma gangrenosum)",
-        "relationship": "downstream",
-        "explanation": "Skin conditions associated with IBD, typically flaring with bowel activity but sometimes independent. Erythema nodosum is more common; pyoderma gangrenosum is rarer and more severe."
-      },
-      {
-        "name": "Nutritional deficiencies (vitamin D, B12, iron, protein)",
-        "relationship": "downstream",
-        "explanation": "Malabsorption, reduced intake during flares, and medication effects (methotrexate reduces folate) can cause deficiencies. These may persist in remission if not actively replaced."
-      },
-      {
-        "name": "Anxiety and depression",
+        "id": "coeliac",
+        "name": "Coeliac disease",
         "relationship": "comorbid",
-        "explanation": "Bidirectional relationship: chronic disease increases risk of mental health conditions, and psychological stress can trigger flares. Common in IBD even during remission."
+        "explanation": "Coeliac disease occurs at higher rates in IBD populations than in the general population, particularly in Crohn's disease. If gluten causes ongoing symptoms in someone with IBD in remission, coeliac disease should be excluded before attributing symptoms to IBD or functional causes."
       },
       {
-        "name": "Increased cardiovascular and thrombotic risk",
-        "relationship": "mechanistic_link",
-        "explanation": "Chronic inflammation in IBD increases risk of blood clots (venous thromboembolism) and cardiovascular events. Risk decreases but does not normalize in remission."
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
+        "relationship": "comorbid",
+        "explanation": "Mast cell activity is elevated in IBD, and some patients with IBD may have coexisting MCAS \u2014 contributing to food reactions, flushing, abdominal pain, and other systemic symptoms that persist in bowel remission and do not respond to standard IBD management."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "Autonomic dysfunction has been observed at higher rates in IBD patients and may contribute to fatigue, orthostatic symptoms, and GI motility problems. This overlap is underrecognised and may contribute to quality-of-life impairment in remission."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / hypermobility spectrum disorder",
+        "relationship": "comorbid",
+        "explanation": "Connective tissue disorders such as hEDS are associated with a range of GI dysmotility problems and may coexist with IBD. The overlap can complicate management, particularly around gastroparesis, SIBO risk, and pelvic floor dysfunction."
+      },
+      {
+        "id": "endometriosis",
+        "name": "Endometriosis",
+        "relationship": "often_confused",
+        "explanation": "Endometriosis can mimic IBD with cyclical abdominal pain, bowel symptoms, and rectal bleeding. In women with IBD who have ongoing cyclical symptoms despite remission, coexisting endometriosis is worth investigating."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "comorbid",
+        "explanation": "Autoimmune thyroid disease (Hashimoto's, Graves') occurs more frequently in IBD patients, likely reflecting shared immune dysregulation. Thyroid dysfunction can cause or worsen fatigue, bowel changes, and weight instability \u2014 symptoms that can be mistakenly attributed to IBD in remission."
+      },
+      {
+        "id": "adhesions",
+        "name": "Surgical adhesions",
+        "relationship": "downstream",
+        "explanation": "Crohn's patients who have undergone abdominal or pelvic surgery are at risk of post-surgical adhesions that can cause obstruction, altered motility, and persistent abdominal pain independently of IBD activity."
+      },
+      {
+        "id": "osteoporosis",
+        "name": "Osteoporosis",
+        "relationship": "downstream",
+        "explanation": "Chronic inflammation, steroid use, vitamin D and calcium malabsorption, and reduced physical activity combine to create significant bone density loss in IBD patients over time. Many people with IBD are not aware of this risk until a fracture occurs."
+      },
+      {
+        "id": "colorectal_cancer",
+        "name": "Colorectal cancer (increased surveillance risk)",
+        "relationship": "downstream",
+        "explanation": "Long-standing extensive colitis (particularly UC with pancolitis or Crohn's colitis) is associated with elevated colorectal cancer risk. Regular endoscopic surveillance is a standard of care and should be maintained even in stable remission."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
-          "name": "Medication adherence (maintenance therapy)",
+          "name": "Maintenance medication adherence",
           "category": "medication",
-          "description": "Continue prescribed medications (aminosalicylates, corticosteroids, immunosuppressants, or biologics) exactly as directed even if feeling well. Remission is maintained by these drugs; stopping or skipping doses significantly increases relapse risk. Set phone reminders or use pill organizers to ensure consistency.",
+          "description": "Staying on prescribed maintenance therapy \u2014 whether aminosalicylates, immunomodulators, or biologics \u2014 is the foundation of sustained remission. Stopping medication during asymptomatic periods is a leading cause of relapse. Many people feel well and reduce or stop treatment, which often leads to a flare within months to years.",
           "evidence_level": "strong",
-          "notes": "Temptation to stop medication during remission is common but risky. Discuss any desire to reduce or stop medications with your gastroenterologist; some people may be candidates for dose reduction after sustained remission, but this requires careful monitoring."
+          "notes": "Decisions about medication tapering or stopping should always be made jointly with a gastroenterologist based on endoscopic and biochemical remission, disease history, and individual risk assessment."
         },
         {
-          "name": "Identify and avoid personal trigger foods",
-          "category": "diet",
-          "description": "Keep a food diary for 2\u20134 weeks to identify foods that consistently cause symptoms (bloating, pain, loose stool). Common triggers include high-fat foods, high-fiber (in some), dairy, alcohol, and caffeine, but triggers are highly individual. Avoid identified triggers; reintroduce cautiously every few months to see if tolerance improves.",
-          "evidence_level": "moderate",
-          "notes": "Trigger avoidance is person-specific and varies. Some foods are troublesome during flares but well-tolerated in remission. Work with a dietitian familiar with IBD for personalized guidance."
-        },
-        {
-          "name": "Anti-inflammatory diet pattern",
-          "category": "diet",
-          "description": "Adopt a pattern emphasizing lean proteins, low-FODMAP vegetables, refined grains, and omega-3 sources (fish, flax, walnuts) while minimizing processed foods, high-fat items, and alcohol. Mediterranean-style or IBD-specific anti-inflammatory diet patterns show benefit in maintaining remission.",
-          "evidence_level": "moderate",
-          "notes": "No single diet works for all IBD patients. Low-FODMAP diet helps some but may restrict beneficial fiber in others. Work with a registered dietitian on IBD to personalize."
-        },
-        {
-          "name": "Optimize micronutrient supplementation",
-          "category": "supplement",
-          "description": "Blood work often reveals deficiencies in iron, B12, folate, vitamin D, and zinc due to malabsorption or previous losses. Supplement based on lab results: iron (if anemia present), B12 (especially post-terminal ileum involvement), vitamin D (target 30\u201350 ng/mL), and zinc as needed. Recheck levels every 6\u201312 months.",
+          "name": "Regular inflammatory monitoring",
+          "category": "lifestyle",
+          "description": "Routine checking of faecal calprotectin and relevant blood markers (CRP, FBC, nutritional panel) helps detect subclinical inflammation or deficiency before it becomes symptomatic. Many patients in remission go long periods without monitoring, missing early signals.",
           "evidence_level": "strong",
-          "notes": "Do not self-supplement without testing; some supplements (e.g., iron) can cause GI upset in IBD. Discuss dosing and form (pill vs. liquid, frequency) with your doctor or dietitian."
+          "notes": "Monitoring frequency depends on disease type, medication, and risk factors. Gastroenterology guidelines typically recommend at least annual review; more frequent monitoring during medication changes or after a flare."
         },
         {
-          "name": "Stress reduction and psychological support",
+          "name": "Investigation and treatment of secondary conditions",
           "category": "lifestyle",
-          "description": "Chronic stress can trigger flares. Practice mindfulness, deep breathing, yoga, or cognitive behavioral therapy. Consider therapy or support groups to address anxiety or depression related to chronic illness. Even 10\u201315 minutes daily of relaxation can help.",
-          "evidence_level": "moderate",
-          "notes": "Stress-triggered flares are real but not all flares are stress-related. Combining stress management with medical therapy is most effective."
-        },
-        {
-          "name": "Regular physical activity",
-          "category": "lifestyle",
-          "description": "Exercise 150 minutes per week of moderate activity (walking, swimming, cycling) improves mood, strengthens bones (important as corticosteroids increase osteoporosis risk), and may reduce flare risk. Avoid intense exercise immediately before or after eating if it triggers symptoms.",
-          "evidence_level": "moderate",
-          "notes": "Listen to your body; scale back during mild symptoms or flares. Swimming and walking are gentler on the gut than running or high-impact sports for some."
-        },
-        {
-          "name": "Sleep hygiene",
-          "category": "lifestyle",
-          "description": "Aim for 7\u20139 hours of consistent sleep. Poor sleep worsens inflammation and flare risk. Maintain regular bedtime, avoid screens 1 hour before bed, and minimize nighttime bathroom trips by taking medications and eating dinner early.",
-          "evidence_level": "moderate",
-          "notes": "Nighttime symptoms in remission should be rare; if persisting, discuss with your doctor as it may signal early relapse or other sleep disorder."
-        },
-        {
-          "name": "Hydration and electrolyte balance",
-          "category": "diet",
-          "description": "Drink adequate water daily (especially in warm climates or during exercise). Monitor urine color (pale = well-hydrated). In remission, normal hydration is sufficient; during flares or with loose stool, electrolyte replacement (sports drinks, broths) may be needed.",
-          "evidence_level": "moderate",
-          "notes": "Caffeine and alcohol are dehydrating and may trigger symptoms in some; limit or observe effects."
-        },
-        {
-          "name": "Smoking cessation",
-          "category": "lifestyle",
-          "description": "If you smoke, quitting is one of the most important steps to maintain remission, especially in Crohn's disease. Smoking increases flare risk and complications. Seek professional support (quitlines, medication, behavioral counseling).",
+          "description": "Investigating for SIBO, bile acid malabsorption, EPI, and nutritional deficiencies \u2014 rather than attributing all symptoms to IBD \u2014 can dramatically improve quality of life in remission. These are treatable conditions often missed in standard IBD follow-up.",
           "evidence_level": "strong",
-          "notes": "Smoking worsens Crohn's disease more than ulcerative colitis. Even secondhand smoke exposure is suboptimal."
+          "notes": "Requires a proactive gastroenterologist or a functional medicine practitioner familiar with IBD-associated comorbidities. Many people with IBD find these conditions only after self-directed research and advocacy."
         },
         {
-          "name": "Probiotic use (selective)",
-          "category": "supplement",
-          "description": "Evidence for probiotics in IBD is mixed. Some people report benefit with specific strains (e.g., VSL#3); others see no effect. If interested, choose a strain studied in IBD and monitor for 4\u20138 weeks. Discontinue if symptoms worsen.",
-          "evidence_level": "anecdotal",
-          "notes": "Probiotics are not a replacement for maintenance medication. Use only as adjunctive therapy. Quality and strain matter; not all products are equal."
+          "name": "Low-FODMAP diet (for IBS-overlap symptoms)",
+          "category": "diet",
+          "description": "For people with confirmed remission but ongoing bloating, gas, or diarrhoea, a low-FODMAP dietary approach may reduce symptoms by limiting fermentable carbohydrates. Evidence supports this specifically for the post-inflammatory IBS subset.",
+          "evidence_level": "moderate",
+          "notes": "Not recommended during active flare. Long-term restriction of FODMAPs may adversely affect the microbiome \u2014 best used as a diagnostic tool with guided reintroduction. Should be supervised by a FODMAP-trained registered dietitian."
         },
         {
-          "name": "Regular monitoring appointments and testing",
+          "name": "Nutritional rehabilitation",
+          "category": "diet",
+          "description": "Actively correcting nutritional deficiencies \u2014 iron (often requiring IV infusion in IBD), B12 (oral or IM injection depending on absorption), vitamin D, zinc \u2014 can significantly reduce fatigue and improve wellbeing. Dietitian input is valuable in designing an approach that meets needs without triggering symptoms.",
+          "evidence_level": "strong",
+          "notes": "Oral iron is often poorly tolerated and less effective in IBD; IV iron infusion is frequently the preferred route. Supplementation should be guided by blood test results, not taken indiscriminately."
+        },
+        {
+          "name": "Gut-directed psychological therapy",
+          "category": "lifestyle",
+          "description": "Gut-directed hypnotherapy and cognitive behavioural therapy (CBT) have the strongest evidence for improving GI symptoms in functional gut disorders, including post-inflammatory IBS. Psychological therapies also address disease-related anxiety, health anxiety, and depression.",
+          "evidence_level": "strong",
+          "notes": "These approaches work on the gut-brain axis and do not imply symptoms are 'just psychological.' They can reduce symptom burden in people with genuine organic disease."
+        },
+        {
+          "name": "Physical activity",
+          "category": "lifestyle",
+          "description": "Regular moderate physical activity has been associated with reduced relapse risk, improved fatigue, reduced anxiety and depression, and better bone density in IBD patients. Even gentle walking is beneficial, particularly during periods of post-flare recovery.",
+          "evidence_level": "moderate",
+          "notes": "Intensity should be adjusted to individual capacity. During remission, most people with IBD can exercise normally. Extremely vigorous exercise in some studies may transiently raise gut permeability, but the evidence for this being clinically relevant in IBD is limited."
+        },
+        {
+          "name": "Smoking cessation (Crohn's disease)",
+          "category": "lifestyle",
+          "description": "Smoking is one of the strongest modifiable risk factors for Crohn's disease relapse. Smokers with Crohn's have more flares, higher rates of surgery, and worse outcomes. Stopping smoking is arguably the single most impactful lifestyle change for this group.",
+          "evidence_level": "strong",
+          "notes": "The relationship is paradoxical for UC \u2014 smoking appears to have a mild protective effect on disease activity, which sometimes leads to misguided reluctance. The overall health harms of smoking far outweigh any UC-related consideration."
+        },
+        {
+          "name": "Stress management and sleep hygiene",
+          "category": "lifestyle",
+          "description": "Psychological stress and sleep disruption are consistently associated with IBD flares in observational studies. Techniques including mindfulness, structured relaxation, and sleep routine improvement may help stabilise the gut-brain-immune axis.",
+          "evidence_level": "moderate",
+          "notes": "The mechanism is thought to involve HPA axis activation, altered mucosal immune function, and gut motility changes. Effect sizes are modest and individual, but these interventions carry no downside."
+        },
+        {
+          "name": "Bile acid sequestrant therapy (for BAM)",
           "category": "medication",
-          "description": "Schedule routine follow-up visits (every 3\u20136 months initially, then annually if stable) to assess disease control, review labs (fecal calprotectin, CBC, CMP), and adjust therapy if needed. Colonoscopy typically every 1\u20132 years per your gastroenterologist's protocol.",
+          "description": "For people with confirmed or suspected bile acid malabsorption, cholestyramine or colesevelam can dramatically reduce watery diarrhoea by binding bile acids in the colon. This is a specific, effective treatment that is underutilised.",
           "evidence_level": "strong",
-          "notes": "Consistent monitoring catches early relapse and allows timely treatment adjustment. Skipping appointments increases risk of undetected disease progression."
+          "notes": "Requires clinical guidance. Cholestyramine may interfere with absorption of medications if taken at the same time \u2014 should be separated by at least 4 hours."
         }
       ],
       "things_to_avoid": [
-        "Stopping or significantly reducing maintenance medication without medical guidance\u2014high relapse risk.",
-        "NSAIDs (ibuprofen, naproxen) unless approved by your doctor\u2014can worsen IBD and trigger flares.",
-        "Antibiotics without necessity\u2014may disrupt gut microbiota and trigger flares; use only when medically indicated.",
-        "High-fat, high-residue, or high-fiber foods if they are personal triggers\u2014keep a diary to identify them.",
-        "Alcohol and caffeine if they consistently trigger symptoms; limit or avoid.",
-        "Smoking and secondhand smoke exposure\u2014significantly increases flare risk, especially in Crohn's disease.",
-        "Chronic stress without coping mechanisms\u2014psychological stress is a known flare trigger.",
-        "Dehydration\u2014maintain adequate fluid intake to prevent electrolyte imbalance and constipation (or worsened diarrhea).",
-        "Excess salt and processed foods\u2014may promote inflammation; choose whole foods when possible.",
-        "Traveling without a plan\u2014pack medications, know your destination hospital, and avoid high-risk foods when traveling internationally."
+        "NSAIDs (ibuprofen, naproxen, diclofenac): associated with increased risk of IBD flares and GI damage; paracetamol is generally the preferred over-the-counter analgesia",
+        "Stopping maintenance medication without medical consultation \u2014 a leading cause of relapse, even in people who feel completely well",
+        "Highly processed foods and ultra-processed diets: associated with IBD onset and potentially with relapse risk; high emulsifier content may disrupt intestinal mucus barrier",
+        "Excessive alcohol: irritates the gut mucosa and may lower the threshold for a flare; also interacts with some IBD medications",
+        "Long-term unnecessary antibiotic use: disrupts the microbiome in an already-vulnerable system and may increase susceptibility to C. difficile, a serious infection risk in IBD",
+        "Assuming all symptoms are active IBD: this leads to unnecessary escalation of immunosuppression when the actual driver may be SIBO, BAM, or functional overlay",
+        "Assuming all symptoms are functional: this leads to under-treating genuine inflammatory activity. Both errors are common and both have consequences",
+        "Prolonged systemic corticosteroid use without taper plan: steroids are effective for acute flares but cause significant bone, metabolic, and immune harms with prolonged use; they are not a maintenance therapy"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "Remission is not the same as recovery. IBD in remission is still a serious, active disease that requires ongoing monitoring, medication, and management \u2014 not just in the background, but as a sustained commitment.",
+        "why_resisted": "When symptoms improve, it is natural and human to want to move on. Many people reduce or stop medication, skip monitoring appointments, or interpret 'feeling well' as meaning the disease is resolved. The medical system often reinforces this by reducing contact when patients are stable.",
+        "path_forward": "People who treat remission as an active phase \u2014 maintaining medication, monitoring calprotectin regularly, and attending surveillance scopes \u2014 have lower relapse rates, fewer hospitalisations, and catch complications earlier. Active engagement during remission is what sustains it."
+      },
+      {
+        "truth": "Many gastroenterology services manage IBD symptoms without systematically investigating secondary conditions that are treatable and common \u2014 SIBO, BAM, EPI, nutritional deficiency. Patients who do not advocate for this investigation will often not receive it.",
+        "why_resisted": "It is easier and less confronting to trust that a specialist team is covering everything. Questioning whether something has been missed can feel uncomfortable or presumptuous. Many people assume their persistent symptoms are simply part of having IBD.",
+        "path_forward": "People who specifically ask for calprotectin monitoring, breath testing, SeHCAT scanning, and a full nutritional panel \u2014 and who are willing to seek a second opinion or a different practitioner if these are not offered \u2014 often identify treatable secondary conditions that substantially improve their quality of life."
+      },
+      {
+        "truth": "Dietary restriction is not a substitute for medication, and aggressive self-imposed restriction can be genuinely harmful \u2014 causing malnutrition, worsening microbiome diversity, and increasing psychological distress around food.",
+        "why_resisted": "The desire to control a chronic condition through food is entirely understandable. Diet feels like an area of personal agency. Elimination-based approaches are widely promoted in patient communities and can produce real short-term symptom relief, which reinforces the belief that food is the primary driver.",
+        "path_forward": "People who work with a FODMAP-trained dietitian \u2014 using structured elimination and systematic reintroduction rather than indefinite blanket restriction \u2014 identify their specific individual triggers, maintain better nutrition, and have more dietary freedom than those who restrict broadly without guidance."
+      },
+      {
+        "truth": "Psychological symptoms in IBD are not just a consequence of having a hard time \u2014 they actively worsen disease outcomes. Treating anxiety, depression, and trauma is part of managing IBD, not separate from it.",
+        "why_resisted": "The framing of psychological symptoms as somehow less 'real' than physical ones leads many people with IBD to deprioritise or dismiss mental health support. There is also stigma around the implication that psychological factors are influencing a 'physical' disease.",
+        "path_forward": "People with IBD who access gut-directed psychological therapies and mental health support alongside gastroenterological care consistently report better symptom control, lower relapse rates, and substantially improved quality of life compared to those who manage only the physical aspects of the disease."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Strict medication adherence",
-          "why_it_matters": "Maintenance therapy directly suppresses the underlying inflammation; even small lapses dramatically increase relapse risk. Adherence is the strongest predictor of sustained remission.",
-          "how_to_start": "Set daily phone reminders, use a pill organizer, or link medication-taking to a daily habit (e.g., breakfast). Ask your pharmacist to simplify your regimen if you're on multiple drugs.",
-          "timeline": "Effects are ongoing; missing doses within days can allow inflammation to rebound.",
+          "lever": "Achieving and verifying deep remission (endoscopic and histological, not just symptomatic)",
+          "why_it_matters": "Symptomatic remission without mucosal healing is associated with higher relapse rates, progressive bowel damage, and increased cancer risk. Deep remission \u2014 confirmed by scope and biopsy \u2014 is the treatment target that most strongly predicts long-term stability.",
+          "how_to_start": "Ask the gastroenterologist whether remission has been confirmed endoscopically or only clinically. Request a calprotectin result and ask what the endoscopic remission plan is.",
+          "timeline": "Mucosal healing may lag behind symptomatic improvement by weeks to months. Scoping intervals depend on disease extent and medication.",
           "requires_professional": true
         },
         {
-          "lever": "Identify and avoid personal trigger foods",
-          "why_it_matters": "Food triggers are highly individual. Avoiding them reduces preventable symptom flares and GI stress, allowing remission to be sustained without medication escalation.",
-          "how_to_start": "Keep a detailed food and symptom diary for 3\u20134 weeks. Note meal composition, time, and any symptoms 2\u20134 hours later. Share with a gastroenterologist or IBD dietitian.",
-          "timeline": "Patterns often emerge within 2\u20134 weeks of careful tracking.",
+          "lever": "Identifying and treating secondary conditions driving residual symptoms",
+          "why_it_matters": "A significant proportion of ongoing symptoms in IBD remission are not from the IBD itself but from treatable secondary conditions \u2014 SIBO, BAM, EPI, nutritional deficiency, post-inflammatory IBS. Each of these has specific targeted treatments.",
+          "how_to_start": "Request a full nutritional blood panel and faecal calprotectin. Ask for a gastroenterology review focused specifically on secondary causes of residual symptoms, not just IBD activity. Consider a breath test for SIBO if bloating and altered bowel habit persist with normal calprotectin.",
+          "timeline": "Some conditions (BAM, nutritional deficiency) respond to treatment within weeks. SIBO treatment courses run 2\u20134 weeks. Post-inflammatory IBS may take several months of dietary and psychological intervention to improve.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Working with a FODMAP-trained registered dietitian",
+          "why_it_matters": "Dietary management in IBD remission is nuanced. A dietitian can assess nutritional status, guide structured FODMAP testing to identify genuine triggers, correct deficiencies, and ensure dietary adequacy \u2014 all in a way that self-managed restriction cannot replicate.",
+          "how_to_start": "Ask for a gastroenterology dietitian referral, or find a private dietitian with IBD and FODMAP experience. The British Dietetic Association and Crohn's & Colitis UK have directories.",
+          "timeline": "Initial structured FODMAP elimination takes 6\u20138 weeks. Ongoing dietary work may span several months.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Addressing psychological wellbeing through gut-directed therapy",
+          "why_it_matters": "Gut-directed hypnotherapy and CBT have evidence for reducing GI symptom burden in IBD, independent of their effects on mental health. They work on the gut-brain axis \u2014 a genuine physiological pathway \u2014 not just beliefs or coping.",
+          "how_to_start": "Ask for a referral to a liaison psychiatry or psychology service with GI experience, or seek a private gut-directed hypnotherapist. Online programmes (e.g. Nerva) also exist for self-directed gut hypnotherapy.",
+          "timeline": "Gut-directed hypnotherapy programmes typically run 6\u20138 weeks. Benefits may continue to accrue after completion.",
           "requires_professional": false
         },
         {
-          "lever": "Optimize vitamin D and micronutrient levels",
-          "why_it_matters": "Deficiencies impair immune function and gut healing, increasing flare risk. Vitamin D in particular has immunomodulatory effects. Correcting deficiencies improves energy, bone health, and may reduce flare frequency.",
-          "how_to_start": "Request lab testing (vitamin D, iron, B12, folate, zinc) at your next visit. Supplement based on results; recheck every 6\u201312 months.",
-          "timeline": "Nutrient repletion takes 2\u20133 months; energy and general well-being may improve within weeks.",
-          "requires_professional": true
-        },
-        {
-          "lever": "Establish a stress management and sleep routine",
-          "why_it_matters": "Chronic stress and poor sleep promote systemic inflammation and are independent flare triggers. Even modest improvements in sleep and stress reduce flare risk and improve quality of life.",
-          "how_to_start": "Choose one technique: a 10-minute daily meditation app (Headspace, Calm), 3x weekly gentle yoga, or cognitive behavioral therapy. Set a consistent bedtime 30 minutes earlier than usual.",
-          "timeline": "Subjective improvements in mood and energy within 2\u20134 weeks; flare reduction may take 2\u20133 months to become apparent.",
+          "lever": "Smoking cessation (Crohn's disease only)",
+          "why_it_matters": "Smoking doubles the risk of relapse in Crohn's disease and increases the likelihood of surgery. It is the most impactful single modifiable lifestyle variable in Crohn's \u2014 more impactful than most dietary changes.",
+          "how_to_start": "Access NHS Stop Smoking services or GP support. Combination pharmacotherapy (varenicline, NRT) with behavioural support has the highest cessation success rates.",
+          "timeline": "Relapse risk begins to fall within months of quitting. Full benefit accrues over years.",
           "requires_professional": false
-        },
-        {
-          "lever": "Smoking cessation (if applicable)",
-          "why_it_matters": "Smoking is the single strongest modifiable risk factor for flare and disease progression in Crohn's disease, and increases complications. Quitting dramatically improves long-term remission and outcomes.",
-          "how_to_start": "Consult your doctor about medication options (varenicline, bupropion, nicotine replacement). Enroll in a quitline (1-800-QUIT-NOW in US) for free support.",
-          "timeline": "Flare risk decreases within months of quitting; major benefit within 1\u20132 years.",
-          "requires_professional": true
-        },
-        {
-          "lever": "Maintain regular medical follow-up and monitoring",
-          "why_it_matters": "Early detection of subclinical disease activity (via fecal calprotectin or endoscopy) allows preemptive therapy adjustment before clinical flare occurs. Consistent contact with your gastroenterologist ensures therapy is optimized.",
-          "how_to_start": "Schedule appointments every 3\u20136 months; order fecal calprotectin or CRP annually or per your doctor's protocol. Set calendar reminders.",
-          "timeline": "Ongoing; benefits manifest over months and years as disease progression is prevented.",
-          "requires_professional": true
         }
       ],
       "common_mistakes": [
-        "Stopping or reducing medication during remission because you 'feel better'\u2014remission exists because of the medication, not despite it. Stopping causes relapse in 60\u201380% of people within a year.",
-        "Trying to 'cure' IBD through diet alone without continuing medical therapy\u2014no diet replaces maintenance medication. Diet supports, not replaces, medical management.",
-        "Ignoring early warning signs (increase in stool frequency, blood in stool, increased fatigue) and delaying doctor contact\u2014early intervention can prevent full flare and hospitalization.",
-        "Not tracking your disease or symptoms, making it hard to identify triggers or recognize early relapse\u2014keep a symptom diary and share it with your doctor.",
-        "Isolating due to anxiety about the condition\u2014social support and therapy improve outcomes. Connect with patient communities and mental health support.",
-        "Assuming all advice online applies to you\u2014IBD is highly individual. What helps one person may harm another. Vet advice with your gastroenterologist.",
-        "Neglecting bone health and fall prevention, especially if you've used corticosteroids\u2014osteoporosis is a silent complication. Ensure adequate vitamin D, calcium, and weight-bearing exercise.",
-        "Changing diet or supplements dramatically without guidance\u2014well-intentioned changes can trigger flares or interact with medications.",
-        "Traveling unprepared (no medication backup, no knowledge of destination care)\u2014preparation prevents crisis and allows continued disease management.",
-        "Overtraining or intense exercise during early remission\u2014ease back into activity gradually. Intense exercise can trigger flares if done too soon."
+        "Stopping maintenance medication when feeling well \u2014 this is the most common cause of IBD relapse and frequently leads to a harder-to-treat flare than the original",
+        "Skipping colonoscopic surveillance \u2014 people with long-standing colitis have elevated colorectal cancer risk that is real but preventable with regular scoping",
+        "Using corticosteroids repeatedly as rescue therapy rather than escalating to maintenance treatment \u2014 this accumulates significant long-term steroid harm without addressing the underlying disease",
+        "Attributing all symptoms to active IBD without investigating for secondary conditions \u2014 leads to unnecessary medication escalation and missed treatable diagnoses",
+        "Adopting extreme dietary restriction without professional guidance \u2014 risks malnutrition, worsens microbiome diversity, and creates significant psychological burden around food",
+        "Ignoring mental health symptoms \u2014 undertreated anxiety and depression worsen IBD outcomes directly, not only quality of life",
+        "Delaying medical contact when symptoms change \u2014 early intervention at the first sign of a flare is significantly more effective than waiting until symptoms are severe"
       ]
     },
     "finding_help": {
       "specialists": [
         {
-          "type": "Gastroenterologist",
-          "role": "Primary specialist for IBD diagnosis, monitoring, and treatment. Performs endoscopy, interprets imaging, prescribes and adjusts medications. Essential for ongoing care.",
-          "notes": "Ideally a gastroenterologist with IBD subspecialty expertise (listed as 'IBD specialist'). First point of contact for new symptoms or flare concerns."
+          "type": "Gastroenterologist (IBD specialist)",
+          "role": "Primary specialist for IBD diagnosis, monitoring, endoscopy, medication management, and surveillance. An IBD-specialist gastroenterologist (rather than a general gastroenterologist) will have deeper familiarity with biologics, monitoring targets, and current remission goals.",
+          "notes": "In the UK, many IBD patients are managed by an IBD nurse specialist as the day-to-day contact, with gastroenterologist input for reviews and scopes. IBD centres with dedicated multidisciplinary teams generally deliver better outcomes than general gastroenterology outpatient management."
         },
         {
-          "type": "Registered Dietitian (RD) with IBD expertise",
-          "role": "Helps identify trigger foods, optimize nutrition, educate on low-FODMAP or anti-inflammatory diet, and coordinate supplementation. Valuable complement to medical care.",
-          "notes": "Many GI offices employ IBD dietitians; request referral. Not all dietitians understand IBD\u2014specifically ask for IBD experience."
+          "type": "IBD nurse specialist",
+          "role": "Often the most accessible and practically useful point of contact for day-to-day questions, flare advice, and medication queries. A good IBD nurse is an invaluable part of the care team and can often triage symptoms faster than a consultant appointment.",
+          "notes": "Not all IBD services have dedicated IBD nurses. Access depends on the treating centre."
         },
         {
-          "type": "Primary care physician",
-          "role": "Manages comorbidities (hypertension, depression), routine preventive care, and coordinates specialist care. Important for holistic health.",
-          "notes": "Can help identify early flare signs and make urgent referrals to gastroenterology."
+          "type": "Registered dietitian (IBD and FODMAP-trained)",
+          "role": "Assesses nutritional status, manages deficiencies, guides structured dietary investigation (including low-FODMAP protocol for IBS-overlap symptoms), advises on enteral nutrition if relevant, and helps patients eat as broadly as possible without triggering symptoms.",
+          "notes": "A dietitian with specific IBD experience is preferable to a general dietitian. FODMAP training should be confirmed. Access via NHS referral through gastroenterology, or privately."
         },
         {
-          "type": "Therapist or psychiatrist",
-          "role": "Addresses anxiety, depression, and stress related to chronic illness. Offers cognitive behavioral therapy, mindfulness, or medication for mental health.",
-          "notes": "Mental health comorbidity in IBD is common and treatable. Ask your GI doctor for referral or check if your insurance covers therapy."
+          "type": "Functional medicine doctor or integrative gastroenterologist",
+          "role": "May be more likely than a standard gastroenterologist to systematically investigate secondary conditions (SIBO, BAM, EPI, detailed microbiome assessment) and nutritional deficiencies. Can offer a more investigative approach to residual symptoms in remission.",
+          "notes": "Evidence quality varies across functional medicine practitioners. Look for practitioners with conventional medical training plus specific GI interest. Be sceptical of those offering unvalidated expensive tests or supplements as primary management."
         },
         {
-          "type": "IBD nurse educator or specialist nurse",
-          "role": "Educates on disease management, medication injection (for biologics), and answers questions between doctor visits. May coordinate care and provide 24/7 phone support.",
-          "notes": "Often employed by hospitals or infusion centers. Ask your gastroenterologist if one is available to you."
+          "type": "Clinical psychologist or gut-directed hypnotherapist",
+          "role": "Delivers gut-directed CBT or hypnotherapy for post-inflammatory IBS symptoms and IBD-related anxiety or depression. Addresses the gut-brain axis component of ongoing symptoms in remission.",
+          "notes": "Gut-directed hypnotherapy has randomised controlled trial evidence in IBD as well as IBS. Not all psychological therapists have GI specialisation \u2014 this matters for effectiveness."
+        },
+        {
+          "type": "Colorectal surgeon",
+          "role": "Relevant for people with Crohn's requiring surgical management (strictureplasty, resection, drainage of abscesses), for UC patients considering or post-colectomy, and for management of complications such as fistulae.",
+          "notes": "Surgery in IBD is not a cure but can achieve significant periods of remission, particularly in Crohn's limited to specific bowel segments."
         },
         {
           "type": "Rheumatologist",
-          "role": "If extraintestinal manifestations (joint pain, axial spondylitis) are prominent, a rheumatologist can co-manage these conditions alongside your gastroenterologist.",
-          "notes": "Referral is specific to autoimmune complications; most people with IBD do not need rheumatology."
+          "role": "Relevant when extraintestinal manifestations include significant joint disease \u2014 particularly axial arthropathy (sacroiliitis, ankylosing spondylitis) which may need separate management from the bowel disease.",
+          "notes": "Some biologics used in IBD (anti-TNF agents) also treat axial arthropathy, making coordination between gastroenterology and rheumatology useful."
         }
       ],
       "patient_communities": [
         {
-          "name": "Crohn's & Colitis Foundation",
-          "platform": "website and in-person support groups",
-          "url": "https://www.crohnsandcolitisfoundation.org",
-          "notes": "Official US nonprofit with resources, local chapters, online support groups, and annual conference. Excellent for education and connecting with others."
-        },
-        {
-          "name": "r/IBD and r/CrohnsDisease and r/UlcerativeColitis",
+          "name": "r/CrohnsDisease",
           "platform": "Reddit",
-          "url": "https://www.reddit.com/r/IBD/",
-          "notes": "Active online communities where people share experiences, ask questions, and discuss medications and diet. Moderated but unmedical advice; use for peer support and ideas to discuss with your doctor."
+          "url": "https://www.reddit.com/r/CrohnsDisease/",
+          "notes": "Large, active community of people with Crohn's disease sharing experiences with medication, flares, diet, and navigating healthcare. Particularly useful for medication experience and practical day-to-day management questions."
         },
         {
-          "name": "IBD Passport / GESA (Gastroenterological Society of Australia and New Zealand)",
-          "platform": "website and support network",
-          "url": "https://www.gesa.org.au/",
-          "notes": "Australasian resource with patient guides, support groups, and medical information."
+          "name": "r/UlcerativeColitis",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/UlcerativeColitis/",
+          "notes": "Equivalent community for ulcerative colitis. Highly active with regular discussion of treatment decisions, surveillance, and quality of life in remission."
         },
         {
-          "name": "CCUK (Crohn's and Colitis UK)",
-          "platform": "website and support groups",
-          "url": "https://www.crohnsandcolitis.org.uk/",
-          "notes": "UK-based charity offering education, online and in-person support, and advocacy. Equivalent to CCFA in North America."
+          "name": "Crohn's & Colitis UK Community",
+          "platform": "Forum / Online community",
+          "url": "https://community.crohnsandcolitis.org.uk/",
+          "notes": "Official patient community associated with the UK's leading IBD charity. Moderated forum with reliable information and signposting. Particularly useful for UK-specific healthcare navigation."
         },
         {
-          "name": "Smart Patients or PatientsLikeMe",
-          "platform": "Online patient communities",
-          "url": "https://www.smartpatients.com/ or https://www.patientslikeme.com/",
-          "notes": "Platforms where IBD patients track symptoms, share treatments, and connect anonymously. Useful for identifying patterns and discovering what others find helpful."
+          "name": "Crohn's & Colitis Foundation Community (CCFA)",
+          "platform": "Forum / Online community",
+          "url": "https://www.crohnscolitisfoundation.org/",
+          "notes": "US-based IBD charity with community resources, patient support programmes, and research updates. Useful for US patients navigating insurance, access to biologics, and clinical trials."
         },
         {
-          "name": "Facebook IBD support groups",
+          "name": "IBD Patients Facebook Groups",
           "platform": "Facebook",
-          "url": "Search 'IBD support' or 'Crohn's disease' on Facebook",
-          "notes": "Many local and disease-specific groups exist. Quality varies; look for moderated groups with active engagement and supportive tone."
-        },
-        {
-          "name": "IBD Academy (webinars and online education)",
-          "platform": "Website",
-          "url": "https://www.crohnsandcolitisfoundation.org/ibd-academy",
-          "notes": "Free webinars on disease management, mental health, nutrition, and medication. Hosted by Crohn's & Colitis Foundation."
+          "url": null,
+          "notes": "Multiple large, active Facebook groups for Crohn's and UC exist. Quality varies. 'Crohn's Disease Support Group' and 'Ulcerative Colitis Support Group' are among the larger ones. Peer support is strong but medical advice from fellow patients should always be verified with a clinician."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "The Crohn's Disease and Ulcerative Colitis Fact Book",
-        "type": "book",
-        "author_or_source": "Gene Pinkus and Sheila Creed",
-        "url": null,
-        "description": "Comprehensive, patient-friendly overview of IBD causes, diagnosis, treatment, and lifestyle management. Useful for someone newly diagnosed or wanting a thorough foundational understanding.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Breaking the Vicious Cycle: Intestinal Health Through Diet",
-        "type": "book",
-        "author_or_source": "Elaine Gottschall",
-        "url": null,
-        "description": "Describes the specific carbohydrate diet (SCD), a restrictive diet some IBD patients report helps manage symptoms. Includes meal plans. Anecdotal evidence; discuss with your dietitian before adopting.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "The IBD Healing Plan & Recipe Book",
-        "type": "book",
-        "author_or_source": "Tracie Dalessandro",
-        "url": null,
-        "description": "Practical guide to identifying trigger foods and managing diet during flares and remission. Includes anti-inflammatory recipes. Bridges medical and practical dietary advice.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Crohn's & Colitis Foundation\u2014Patient Education Hub",
+        "title": "Crohn's & Colitis UK",
         "type": "website",
-        "author_or_source": "Crohn's & Colitis Foundation",
-        "url": "https://www.crohnsandcolitisfoundation.org/",
-        "description": "Free, evidence-based information on disease types, medications, surgery, nutrition, emotional health, and pregnancy. Regularly updated; highly credible.",
+        "author_or_source": "Crohn's & Colitis UK",
+        "url": "https://www.crohnsandcolitis.org.uk/",
+        "description": "The UK's leading IBD patient charity. Provides detailed, evidence-based information on both Crohn's and UC including treatment options, diet, surgery, monitoring, and living well. Particularly useful for UK patients navigating the NHS.",
         "audience": "beginner"
       },
       {
-        "title": "IFFGD (International Foundation for Gastrointestinal Disorders) Educational Materials",
+        "title": "Crohn's & Colitis Foundation",
         "type": "website",
-        "author_or_source": "IFFGD",
-        "url": "https://www.iffgd.org/",
-        "description": "Patient-friendly fact sheets on IBD, IBS, and GI health. High-quality, medical-reviewed content suitable for all education levels.",
+        "author_or_source": "Crohn's & Colitis Foundation (CCFA)",
+        "url": "https://www.crohnscolitisfoundation.org/",
+        "description": "US-equivalent charity with comprehensive condition information, clinical trial listings, and patient support. Strong resource for understanding treatment options and current research.",
         "audience": "beginner"
       },
       {
-        "title": "UpToDate (patient version)",
-        "type": "website",
-        "author_or_source": "Wolters Kluwer",
-        "url": "https://www.uptodate.com/patients",
-        "description": "Physician-reviewed summaries of IBD diagnosis and management written for patients. More detailed and technical than foundation resources but still accessible. Often available free through hospital patient portals.",
-        "audience": "intermediate"
+        "title": "The Gut Health Doctor \u2014 IBD content",
+        "type": "website / social media",
+        "author_or_source": "Dr Megan Rossi (registered dietitian, gut health researcher)",
+        "url": "https://theguthealthdoctor.com/",
+        "description": "Evidence-based dietary and lifestyle guidance for gut conditions including IBD, from a research dietitian. Practical, accessible, and grounded in current evidence rather than fad approaches.",
+        "audience": "beginner"
       },
       {
-        "title": "The Crohn's Disease Cookbook: 150 Recipes by Registered Dietitian Nutritionists",
+        "title": "IBD School",
+        "type": "website",
+        "author_or_source": "Oshi Health / IBD School",
+        "url": "https://www.ibdschool.com/",
+        "description": "Free online educational platform providing structured learning modules for people with IBD covering disease biology, medication, diet, mental health, and self-management. Developed with clinical input.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Gut: An Owner's Guide",
         "type": "book",
-        "author_or_source": "Alice Bast",
+        "author_or_source": "Giulia Enders",
         "url": null,
-        "description": "Practical recipes designed to be gentle on the IBD digestive system while nutritionally balanced. Useful for remission meal planning.",
+        "description": "A readable, engaging introduction to how the gut works \u2014 useful for understanding the biological basis of IBD and digestive symptoms. Not IBD-specific but builds foundational knowledge that helps patients understand what is happening in their bodies.",
         "audience": "beginner"
       },
       {
-        "title": "The Psychology of Chronic Illness: Stress and Coping in Inflammatory Bowel Disease",
-        "type": "research paper / book chapter",
-        "author_or_source": "Various IBD psychology researchers",
-        "url": null,
-        "description": "Academic but accessible overview of how stress and psychology affect IBD. Reinforces the importance of mental health management alongside medical care.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "Podcast: 'On Air with Ryan' by the Crohn's & Colitis Foundation",
-        "type": "podcast",
-        "author_or_source": "Crohn's & Colitis Foundation",
-        "url": "https://www.crohnsandcolitisfoundation.org/",
-        "description": "Interviews with IBD patients, doctors, and experts discussing real-world living with IBD, medications, mental health, and career/family challenges. Conversational and relatable.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Video: 'Understanding Your IBD Medications' by Crohn's & Colitis Foundation",
-        "type": "video",
-        "author_or_source": "Crohn's & Colitis Foundation",
-        "url": "https://www.crohnsandcolitisfoundation.org/",
-        "description": "Visual explainers of how different IBD medications (5-ASAs, biologics, immunosuppressants) work. Helpful for understanding your treatment.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Systematic Review: Maintenance Therapy in Ulcerative Colitis",
-        "type": "research paper",
-        "author_or_source": "Cochrane Collaboration or major GI journals",
-        "url": "https://www.cochranelibrary.com/",
-        "description": "Evidence-based summary of which medications best maintain remission in ulcerative colitis. Useful if you want to understand the science behind your doctor's recommendations.",
+        "title": "ECCO Guidelines on Crohn's Disease and Ulcerative Colitis",
+        "type": "research paper / clinical guidelines",
+        "author_or_source": "European Crohn's and Colitis Organisation (ECCO)",
+        "url": "https://www.ecco-ibd.eu/publications/ecco-guidelines-ecco-topical-reviews.html",
+        "description": "The definitive clinical guidelines for IBD management across Europe. Detailed, evidence-graded recommendations on diagnosis, monitoring, treatment, and remission targets. Requires medical background to fully interpret but many sections are accessible to informed patients.",
         "audience": "advanced"
       },
       {
-        "title": "Patient Guide to Low-FODMAP Diet in IBD",
-        "type": "website/resource",
-        "author_or_source": "Monash University or IBD-specific dietitian sites",
-        "url": "https://www.monashfodmap.com/",
-        "description": "Educational resource on the low-FODMAP diet, a technique for identifying trigger foods in IBS and some IBD cases. Includes food lists and practical tips.",
+        "title": "The Role of the Gut Microbiome in IBD \u2014 review",
+        "type": "research paper",
+        "author_or_source": "Various \u2014 accessible via PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/",
+        "description": "Searching PubMed for 'gut microbiome IBD remission' or 'post-inflammatory IBS Crohn's' surfaces high-quality recent reviews. Useful for those wanting to understand the mechanistic basis of why residual symptoms persist in remission.",
+        "audience": "advanced"
+      },
+      {
+        "title": "The IBD Podcast",
+        "type": "podcast",
+        "author_or_source": "Andrew Taylor (IBD patient advocate)",
+        "url": "https://theibdpodcast.com/",
+        "description": "Patient-hosted podcast featuring interviews with IBD clinicians, researchers, and patients. Covers topics including biologics, diet, mental health, surgery, and life in remission. Accessible and practically relevant.",
         "audience": "intermediate"
       }
     ],
     "relevance_signal": "**History of confirmed IBD** with ongoing IBS-like symptoms despite being in remission. Or: rectal bleeding, significant weight loss, nocturnal symptoms \u2014 these require exclusion of IBD."
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

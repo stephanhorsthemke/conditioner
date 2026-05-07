@@ -108,4 +108,7 @@ External API costs are documented in [`docs/costs.md`](docs/costs.md).
 - *Language discipline* — Train yourself and your team to use informational framing religiously. "People with these symptoms often have IBS" is very different from "you have IBS." This is a product design decision as much as a legal one, and it should be baked into every piece of copy, every AI prompt, every UI element.
 - A strong *seek professional help* signal — Every time your product touches something that could be serious, it should clearly and naturally direct users toward a doctor. Not as a defensive disclaimer buried in fine print, but as a genuine part of the product experience. This is also just good product design — you're not trying to replace the doctor, you're helping people get to the right help faster.
 - Don't collect any user data!
-- be genuinely helpful, be honest about uncertainty, don't pretend to be a doctor, protect user data, and always point people toward real medical care when it matters. 
+
+
+## Regular checks
+- is the [privacy policy](https://flourishinglab.app/privacy) up to date

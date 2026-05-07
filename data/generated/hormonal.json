@@ -2,623 +2,603 @@
   "condition_id": "hormonal",
   "condition_name": "Hormonal / menstrual cycle effects",
   "generated_at": "2026-04-16T10:31:58.289792Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "Hormonal and menstrual cycle effects refer to physical, cognitive, and emotional changes that occur in relation to fluctuations in sex hormones across the menstrual cycle. These can range from mild premenstrual symptoms to severe conditions like premenstrual syndrome (PMS) or premenstrual dysphoric disorder (PMDD). Symptoms may include mood changes, bloating, fatigue, pain, and cognitive shifts that follow a predictable monthly pattern.",
-    "detailed_summary": "The menstrual cycle involves complex interactions between estrogen, progesterone, and other hormones that affect multiple body systems. In the follicular phase (days 1\u201314), estrogen rises gradually. Ovulation occurs around day 14, followed by the luteal phase (days 15\u201328) when progesterone peaks. For many people, this hormonal rhythm produces noticeable but manageable symptoms. However, some people experience disruptive physical and mental health effects tied to these cycles. Common experiences include water retention, breast tenderness, headaches, fatigue, mood swings, anxiety, and difficulty concentrating in the luteal phase. Severe cyclical mood disturbance affecting work, relationships, or daily functioning may indicate PMDD. Hormonal effects can also worsen or interact with other chronic conditions like migraine, IBS, depression, and fibromyalgia. Tracking patterns and understanding your personal cycle response is essential for self-management and communication with healthcare providers.",
+    "plain_summary": "Hormonal fluctuations across the menstrual cycle can cause or dramatically worsen gut symptoms, including bloating, diarrhoea, constipation, cramping, nausea, and food sensitivities. These changes are driven by shifting levels of oestrogen, progesterone, and prostaglandins, which directly influence gut motility, gut barrier integrity, pain sensitivity, and the gut microbiome. Many people are never told that their digestive symptoms have a hormonal pattern, leaving them searching for a single gut diagnosis when the driver is cyclical.",
+    "detailed_summary": "The menstrual cycle produces predictable hormonal shifts that have documented effects on the gastrointestinal tract. In the follicular phase (days 1\u201314), rising oestrogen tends to speed gut transit and may reduce bloating in some individuals. Around ovulation, prostaglandin release can cause cramping that extends beyond the uterus into the bowel. In the luteal phase (days 14\u201328), rising progesterone slows smooth muscle activity throughout the gut, leading to constipation, bloating, and delayed gastric emptying. As progesterone drops before menstruation, prostaglandins surge, often triggering diarrhoea, urgency, lower abdominal pain, and nausea during the first two days of bleeding.\n\nOestrogen also modulates mast cell activity, histamine metabolism, gut barrier permeability, and microbiome composition \u2014 meaning that hormonal shifts can simultaneously affect immune reactivity, food tolerance, and visceral pain thresholds. This complexity explains why some individuals find their food sensitivities worsen in the luteal phase and improve after menstruation, or why conditions like IBS, MCAS, and histamine intolerance often follow a cyclical pattern.\n\nDespite this being well-documented in research, hormonal contributions to gut symptoms are frequently overlooked in clinical settings. Many individuals spend years pursuing gut-focused investigations without anyone mapping their symptoms to their cycle. Keeping a cycle-symptom diary is often the most revealing first step, and can transform how care is sought and provided.",
     "prevalence": {
-      "summary": "Most menstruating people notice some hormonal symptoms; severe, disabling symptoms affect a smaller subset.",
-      "estimate": "Mild to moderate premenstrual symptoms: 50\u201390% of menstruating people. PMS (clinically significant): 5\u20138%. PMDD (severe): 3\u20138%.",
-      "notes": "Prevalence estimates vary widely depending on how symptoms are defined and measured. PMDD is formally recognized in the DSM-5. Underdiagnosis is common because symptoms are often dismissed as 'just PMS.' Symptoms may worsen with age, stress, or other health conditions. Transgender men and non-binary people may also experience cycle-related effects if they retain reproductive organs and have hormone cycles."
+      "summary": "Cyclic gut symptoms are extremely common in menstruating individuals but are rarely identified as hormone-driven in clinical practice.",
+      "estimate": "Studies suggest 50\u201385% of women with IBS report worsening gut symptoms in the perimenstrual period; up to 30\u201340% of otherwise healthy menstruating people report significant GI changes tied to their cycle.",
+      "notes": "Prevalence estimates vary widely depending on the population studied and how symptoms are measured. IBS is diagnosed roughly twice as often in women than men, and hormonal influence is considered a significant contributor to this disparity. People who are transgender or non-binary and have menstrual cycles may also experience these patterns but are underrepresented in research."
     },
     "subgroups": [
       {
-        "name": "PMS (Premenstrual Syndrome)",
-        "description": "Cyclical physical and mood symptoms that occur in the luteal phase and significantly affect daily life, but do not reach the threshold of severe mood disorder.",
+        "name": "Perimenstrual IBS flare",
+        "description": "Individuals with an existing IBS diagnosis whose symptoms reliably worsen in the days before and during menstruation, often with a different symptom profile (e.g. diarrhoea-dominant) than at other cycle phases.",
         "distinguishing_features": [
-          "Symptoms appear consistently in the luteal phase and resolve shortly after menstruation begins",
-          "Multiple symptoms across physical and mood categories (bloating, fatigue, irritability, sadness)",
-          "Functional impairment but not severe mental health dysfunction",
-          "Responds to lifestyle changes and some medications"
+          "IBS symptoms clearly worse in the 2\u20133 days before and during bleeding",
+          "May have constipation in the luteal phase followed by urgency and diarrhoea at menstruation",
+          "Baseline IBS symptoms may be relatively mild outside the perimenstrual window",
+          "Often respond well to prostaglandin-targeting approaches (e.g. ibuprofen) for the diarrhoea component"
         ]
       },
       {
-        "name": "PMDD (Premenstrual Dysphoric Disorder)",
-        "description": "A severe form of premenstrual dysphoria that meets formal diagnostic criteria and causes marked functional impairment.",
+        "name": "Luteal phase bloating and constipation",
+        "description": "People who experience reliable constipation, heaviness, and visible abdominal distension in the second half of their cycle, driven primarily by progesterone's relaxant effect on gut smooth muscle.",
         "distinguishing_features": [
-          "Severe mood symptoms: intense anger, despair, or anxiety in the luteal phase",
-          "Significant difficulty with work, school, relationships, or daily activities",
-          "Symptoms are cyclical and occur only or predominantly in the luteal phase",
-          "Diagnosed using DSM-5 criteria; requires documentation over at least two cycles",
-          "Often requires medication (SSRIs, hormonal contraceptives) or specialized treatment"
+          "Bloating and constipation begin around days 15\u201318 and resolve with the onset of menstruation",
+          "May be mistaken for SIBO or food intolerance",
+          "Diet does not change but symptoms are clearly worse in luteal phase",
+          "Relief often comes naturally at menstruation without any intervention"
         ]
       },
       {
-        "name": "Menstrual Migraine",
-        "description": "Migraines triggered or worsened specifically around menstruation, typically in the perimenstrual window (2 days before to 3 days after period onset).",
+        "name": "Histamine and mast cell reactivity cycling",
+        "description": "Individuals whose histamine intolerance or MCAS symptoms \u2014 including flushing, hives, gut pain, and nausea \u2014 follow the oestrogen curve, worsening around ovulation and again pre-menstrually.",
         "distinguishing_features": [
-          "Migraine episodes cluster around menstrual bleeding",
-          "Often more frequent or severe during luteal phase",
-          "May respond to timed preventive medication around menstruation",
-          "May be associated with aura (visual disturbances)"
+          "Gut symptoms co-occur with systemic symptoms (flushing, headaches, skin reactions)",
+          "High-histamine foods are better tolerated in follicular phase than luteal or periovulatory",
+          "May have MCAS or histamine intolerance diagnosis but not recognise the cycle link",
+          "Oestrogen promotes histamine release and inhibits DAO enzyme; both worsen at oestrogen peaks"
         ]
       },
       {
-        "name": "Hormone-Sensitive Condition Flares (Migraine, IBS, Fibromyalgia, etc.)",
-        "description": "Pre-existing chronic conditions that worsen predictably during certain phases of the menstrual cycle.",
+        "name": "Endometriosis-related bowel symptoms",
+        "description": "People with endometriosis who have lesions on or near the bowel, causing severe cyclic rectal pain, diarrhoea, constipation, and bleeding that track precisely with menstruation.",
         "distinguishing_features": [
-          "Primary condition diagnosis already established",
-          "Flare severity or frequency correlates with cycle phase",
-          "Often worst during late luteal phase (high progesterone)",
-          "Addressed by optimizing management of both the underlying condition and hormonal effects"
+          "Pain is often more severe than typical menstrual cramping and may include rectal pressure or pain on defecation",
+          "Symptoms may be severely disabling for 1\u20133 days each cycle",
+          "Often misdiagnosed as IBS for years before endometriosis is identified",
+          "May not respond to standard IBS management; requires gynaecological investigation"
         ]
       },
       {
-        "name": "Post-Hormonal Contraceptive or Hormone Therapy Changes",
-        "description": "Changes in cycle-related symptoms after starting, stopping, or switching hormonal contraceptives or hormone replacement therapy.",
+        "name": "Perimenopause-related gut dysregulation",
+        "description": "Individuals in perimenopause whose oestrogen fluctuates erratically, causing unpredictable gut symptoms, new food sensitivities, and changes in bowel habit that were not present before.",
         "distinguishing_features": [
-          "Symptom pattern or severity shifts following hormonal medication change",
-          "May involve loss of cycle if using continuous hormonal contraceptive",
-          "Adjustment period typically 2\u20133 months before full effect",
-          "Symptoms may improve or worsen depending on individual response"
+          "Onset of new or worsening gut symptoms in the mid-to-late 40s without clear dietary trigger",
+          "Symptoms may no longer follow a predictable monthly pattern due to irregular cycles",
+          "Often co-occurs with vasomotor symptoms (hot flushes, night sweats) and sleep disruption",
+          "Gut microbiome diversity declines with oestrogen loss, contributing to dysbiosis"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Mood swings or emotional sensitivity",
-        "category": "emotional/mood",
-        "notes": "Often most noticeable in the luteal phase (second half of cycle). May include increased irritability, sadness, or emotional reactivity to normally manageable stressors."
+        "symptom": "Diarrhoea and urgency in the first 1\u20133 days of menstruation",
+        "category": "digestive",
+        "notes": "Driven by prostaglandin release, which stimulates bowel smooth muscle. Often the most predictable and disruptive symptom."
       },
       {
-        "symptom": "Anxiety or panic symptoms",
-        "category": "emotional/mood",
-        "notes": "May appear as generalized worry, social anxiety, or panic attacks that cluster in the luteal phase. Often improves dramatically once menstruation begins."
+        "symptom": "Constipation and difficulty passing stool in the luteal phase",
+        "category": "digestive",
+        "notes": "Progesterone slows gut motility; resolves naturally at menstruation in most cases."
       },
       {
-        "symptom": "Depression or hopelessness",
-        "category": "emotional/mood",
-        "notes": "In PMDD, may be severe and temporarily incapacitating. In milder PMS, usually manageable but noticeable. Resolves quickly after period starts."
+        "symptom": "Abdominal bloating and visible distension",
+        "category": "digestive",
+        "notes": "Often worse in the luteal phase and around ovulation. Can be caused by both slowed transit and fluid retention."
       },
       {
-        "symptom": "Anger or irritability",
-        "category": "emotional/mood",
-        "notes": "Commonly reported; can strain relationships. Typically peaks 3\u20137 days before menstruation. More pronounced in PMDD."
+        "symptom": "Lower abdominal cramping beyond uterine pain",
+        "category": "digestive",
+        "notes": "Prostaglandins cause smooth muscle contraction throughout the gut, not just the uterus, producing bowel-like cramps."
       },
       {
-        "symptom": "Bloating or abdominal distension",
-        "category": "gastrointestinal/fluid",
-        "notes": "Usually appears in the luteal phase. May involve 1\u20132 pounds of water weight gain. Can worsen existing IBS or digestive symptoms."
+        "symptom": "Nausea, especially perimenstrually",
+        "category": "digestive",
+        "notes": "Associated with prostaglandin surge and progesterone-related delayed gastric emptying."
       },
       {
-        "symptom": "Breast tenderness or swelling",
-        "category": "musculoskeletal",
-        "notes": "Typically peaks a few days before menstruation. Related to progesterone and fluid retention. Usually subsides after period begins."
+        "symptom": "Increased food sensitivity or intolerances in the luteal phase",
+        "category": "digestive",
+        "notes": "Gut barrier permeability may increase under hormonal influence; foods tolerated earlier in the cycle may cause symptoms in the second half."
       },
       {
-        "symptom": "Fatigue or low energy",
-        "category": "systemic",
-        "notes": "Often most severe in the luteal phase. May be related to progesterone effects on sleep, energy metabolism, or iron loss. Can be worsened by poor sleep or heavy flow."
+        "symptom": "Rectal pressure or pain with bowel movements around menstruation",
+        "category": "digestive",
+        "notes": "When severe, may suggest endometriosis affecting the bowel rather than simple hormonal effect."
       },
       {
-        "symptom": "Headache or migraine",
+        "symptom": "Increased visceral pain sensitivity (gut cramping from normal amounts of gas)",
+        "category": "pain",
+        "notes": "Oestrogen and progesterone modulate pain processing pathways; visceral hypersensitivity tends to peak perimenstrually."
+      },
+      {
+        "symptom": "Headaches and migraines around menstruation",
         "category": "neurological",
-        "notes": "Can occur at any cycle phase but often worsens during menstruation or late luteal phase. Menstrual migraine specifically occurs near period onset due to estrogen withdrawal."
+        "notes": "Often co-occur with gut symptoms due to shared prostaglandin and oestrogen-withdrawal mechanisms."
       },
       {
-        "symptom": "Sleep disturbance (insomnia or fragmented sleep)",
-        "category": "sleep",
-        "notes": "Common in the luteal phase; may be due to progesterone's sedating effect creating irregular sleep architecture, or anxiety/mood symptoms. Night sweats or vivid dreams may occur."
+        "symptom": "Fatigue worsening gut symptoms",
+        "category": "systemic",
+        "notes": "Sleep disruption and fatigue in the luteal and perimenstrual phase can amplify gut pain and reduce tolerance to food."
       },
       {
-        "symptom": "Joint or muscle pain",
-        "category": "musculoskeletal",
-        "notes": "May include general achiness, lower back pain, or exacerbation of existing fibromyalgia or arthritis symptoms. Often correlates with luteal phase."
-      },
-      {
-        "symptom": "Appetite changes or cravings",
-        "category": "metabolic",
-        "notes": "Luteal phase often brings increased hunger and cravings for carbohydrates or salt. Related to progesterone's effects on metabolism and blood sugar regulation."
-      },
-      {
-        "symptom": "Difficulty concentrating or brain fog",
-        "category": "cognitive",
-        "notes": "Affects memory, focus, and mental clarity, especially in luteal phase. May be related to progesterone's effects on neurotransmitters or secondary to poor sleep and fatigue."
-      },
-      {
-        "symptom": "Acne or skin flares",
+        "symptom": "Skin flushing, hives, or itching tied to cycle phase",
         "category": "skin",
-        "notes": "Breakouts often cluster around ovulation (when androgens rise) or in the luteal phase. Related to hormonal triggers of sebum production."
+        "notes": "In individuals with histamine or mast cell reactivity, oestrogen peaks can trigger skin and gut symptoms simultaneously."
       },
       {
-        "symptom": "Nausea or digestive upset",
-        "category": "gastrointestinal",
-        "notes": "May accompany other luteal phase symptoms. Can worsen existing IBS or reflux. Typically mild unless related to migraine."
+        "symptom": "Anxiety, mood changes, and heightened gut sensitivity (premenstrual)",
+        "category": "psychological",
+        "notes": "The gut-brain axis is bidirectional; luteal-phase anxiety can worsen gut symptoms and vice versa, creating a reinforcing loop."
       },
       {
-        "symptom": "Pelvic pain or cramping beyond normal menstruation",
-        "category": "reproductive",
-        "notes": "May indicate dysmenorrhea (painful periods) or, if occurs throughout cycle, may suggest endometriosis or other gynecological conditions requiring investigation."
-      },
-      {
-        "symptom": "Fluid retention or weight fluctuation",
-        "category": "fluid/metabolic",
-        "notes": "Water retention peaks in luteal phase and often resolves within 1\u20132 days of menstruation. Weight may fluctuate 3\u20135+ pounds across cycle. Not fat gain."
+        "symptom": "Increased appetite and food cravings in the luteal phase",
+        "category": "systemic",
+        "notes": "Can lead to dietary changes that are then blamed for gut symptoms, obscuring the underlying hormonal pattern."
       }
     ],
     "testing": {
       "key_patterns": [
-        "Symptoms appear consistently in the same phase of your cycle (usually luteal/pre-menstrual) and resolve shortly after menstruation begins\u2014the cyclical pattern is the key diagnostic feature.",
-        "Mood or physical symptoms noticeably worsen in the 1\u20132 weeks before your period and improve within days of bleeding starting.",
-        "Symptoms cluster together (e.g., bloating + fatigue + mood dip, or migraine + anxiety + poor sleep), rather than appearing randomly.",
-        "Symptom severity and type are relatively consistent from cycle to cycle, making them predictable once tracked.",
-        "Symptoms interfere with work, relationships, school, or daily functioning during the affected phase, not just cause minor discomfort."
+        "Symptoms that reliably worsen in the same cycle phase each month and improve predictably afterward",
+        "Diarrhoea or urgency confined to the first 1\u20132 days of bleeding that resolves without treatment",
+        "Constipation and bloating that onset after ovulation and clear at menstruation",
+        "Food sensitivities that are phase-dependent \u2014 certain foods cause reactions in one half of the cycle but not the other",
+        "IBS or gut symptoms that were first diagnosed around puberty, postpartum, or perimenopause \u2014 all hormonal transition points",
+        "Symptom severity that correlates with cycle irregularity (worse months with hormonal disruption)"
       ],
       "at_home": [
         {
-          "name": "Menstrual cycle and symptom tracking",
-          "description": "Use a calendar, spreadsheet, or app (Clue, Flo, Kindara) to log the dates of menstruation, cycle length, symptom timing, mood ratings (1\u201310), pain level, sleep quality, energy, and any other relevant notes. Track for a minimum of 2\u20133 cycles (2\u20133 months). Look for patterns: do symptoms cluster in the luteal phase? Do they improve after menstruation begins? Does severity repeat each cycle?",
-          "safety_notes": "This is a safe observation tool. No contraindications. Tracking can itself be therapeutic and helps you recognize your personal pattern. Share your log with a healthcare provider for accurate diagnosis."
+          "name": "Cycle-symptom tracking diary",
+          "description": "Track daily gut symptoms (stool type using Bristol Stool Scale, pain score 1\u201310, bloating, nausea) alongside menstrual cycle day for at least 2\u20133 months. Free apps such as Clue, Flo, or a simple spreadsheet can be used. Look for repeating patterns across the same cycle days. This is the single most valuable diagnostic tool for this condition.",
+          "safety_notes": "No safety risks. If severe pain, rectal bleeding, or significant weight loss is noted alongside tracking, prompt clinical assessment is warranted."
         },
         {
-          "name": "Cervical mucus or basal body temperature monitoring",
-          "description": "Track cervical mucus changes (thicker and stretchy around ovulation) or take basal body temperature each morning (rises slightly after ovulation) to pinpoint ovulation and correlate symptom timing with cycle phase more precisely. This helps distinguish follicular vs. luteal phase symptoms.",
-          "safety_notes": "These methods are non-invasive. Useful for understanding personal cycle physiology but require consistency and learning a technique. Irregular cycles or shift work can make temperature tracking unreliable."
+          "name": "Food and phase correlation tracking",
+          "description": "When tracking symptoms, also note foods consumed. If a food causes symptoms in the luteal phase but not the follicular phase on repeated exposure, this points toward hormonal modulation of gut sensitivity rather than a fixed food intolerance.",
+          "safety_notes": "Avoid removing entire food groups based on self-observation alone; work with a dietitian if food restriction is becoming extensive."
+        },
+        {
+          "name": "Prostaglandin response observation",
+          "description": "Some individuals find that taking ibuprofen (if medically appropriate) at the onset of menstruation reduces not just uterine cramps but also the associated diarrhoea and bowel urgency. If this works consistently, it supports a prostaglandin-driven mechanism for those gut symptoms.",
+          "safety_notes": "Ibuprofen is not appropriate for everyone, particularly those with gastric sensitivity, kidney issues, or taking blood thinners. Use only as directed and discuss with a prescriber if unsure."
         }
       ],
       "clinical": [
         {
-          "name": "Prospective symptom diary (Daily Record of Severity of Problems, DRSP)",
+          "name": "Reproductive hormone panel (cycle-timed)",
           "type": "standard",
-          "description": "Gold standard for PMS and PMDD diagnosis. You complete a detailed daily symptom rating form over at least two full menstrual cycles. Rates mood, physical symptoms, and functional impairment on a scale. PMDD diagnosis requires 5+ emotional or physical symptoms present for 7+ days before menstruation, severe impairment, and confirmed timing over two cycles.",
-          "availability": "Requested by your gynecologist, primary care physician, or psychiatrist. Can download the DRSP form from the International Association for Premenstrual Disorders (IAPMD) website or ask your provider. Typically not formally billed but supported as part of clinical evaluation."
+          "description": "Measures oestradiol, progesterone, FSH, and LH at specific cycle days (typically day 2\u20133 for FSH/LH/oestradiol; day 21 for progesterone in a 28-day cycle). Can identify insufficient progesterone, oestrogen dominance patterns, or anovulatory cycles that may contribute to symptom severity.",
+          "availability": "Ordered by a GP, gynaecologist, or functional medicine doctor. Timing of the blood draw matters \u2014 untimed results are often uninformative."
         },
         {
-          "name": "Pelvic ultrasound",
-          "type": "standard",
-          "description": "Visualizes the uterus, ovaries, and pelvic structures to rule out endometriosis, fibroids, cysts, or other gynecological pathology that might cause or worsen cycle-related pain or symptoms.",
-          "availability": "Ordered by a gynecologist or primary care doctor. Performed at radiology clinics, ultrasound centers, or hospital radiology departments. Usually covered by insurance if clinically indicated."
-        },
-        {
-          "name": "Hormone level testing (estrogen, progesterone, FSH, LH)",
-          "type": "standard",
-          "description": "Blood tests measuring sex hormone levels at specific cycle phases. Follicular phase levels (days 3\u20135) and luteal phase levels (day 21) help assess whether hormone production is normal and rule out conditions like PCOS or thyroid dysfunction. Less useful for diagnosing PMS/PMDD specifically (which are based on timing and symptoms, not hormone levels), but helpful for excluding other causes.",
-          "availability": "Ordered by a gynecologist, endocrinologist, or primary care doctor. Requires blood draw at specific cycle days; timing is important. Covered by most insurance if clinically indicated."
-        },
-        {
-          "name": "Thyroid function tests (TSH, free T3, free T4)",
-          "type": "standard",
-          "description": "Blood tests to assess thyroid function. Thyroid dysfunction can cause or exacerbate mood and energy symptoms that may be mistaken for or overlap with hormonal cycle effects. Distinguishing between the two is important for treatment.",
-          "availability": "Ordered by a primary care doctor, gynecologist, or endocrinologist. Simple blood draw, no cycle timing required. Covered by most insurance."
-        },
-        {
-          "name": "Salivary or serum cortisol, DHEA-S (stress hormone assessment)",
+          "name": "DUTCH Complete (Dried Urine Test for Comprehensive Hormones)",
           "type": "emerging",
-          "description": "Measures stress hormones that may be dysregulated and contribute to or worsen cycle-related mood and physical symptoms. Some functional medicine practitioners use this to personalize treatment. Less commonly ordered in mainstream medicine.",
-          "availability": "Available through functional medicine practices, integrative clinics, or specialty labs. May not be covered by conventional insurance; costs $100\u2013$300."
+          "description": "A urine-based test measuring sex hormones and their metabolites across a full day, with optional cycle mapping. Provides more nuanced information about oestrogen metabolism pathways, progesterone metabolites, and cortisol rhythms than standard blood panels.",
+          "availability": "Available through functional medicine practitioners, integrative gynaecologists, and some naturopathic doctors. Not routinely available through NHS or standard insurance-covered care."
+        },
+        {
+          "name": "Pelvic ultrasound and laparoscopy (if endometriosis suspected)",
+          "type": "gold_standard",
+          "description": "Ultrasound can identify larger endometriotic lesions and ovarian cysts; laparoscopy (surgical procedure under anaesthesia) is the definitive diagnostic test for endometriosis. Indicated when bowel symptoms are severe, cyclic, and accompanied by pelvic pain, painful intercourse, or bleeding irregularities.",
+          "availability": "Ordered by a gynaecologist. Wait times can be significant in public health systems; private referral may be faster. A specialist with endometriosis expertise is preferable to a general gynaecologist."
+        },
+        {
+          "name": "Thyroid panel (TSH, free T3, free T4, thyroid antibodies)",
+          "type": "standard",
+          "description": "Thyroid dysfunction is both hormonally driven and can worsen cyclically. Hypothyroidism causes constipation and bloating; hyperthyroidism causes diarrhoea. Thyroid autoimmunity fluctuates with sex hormone levels and can be triggered by hormonal transitions (postpartum, perimenopause).",
+          "availability": "Ordered by a GP. Many standard panels only measure TSH; request free T3 and T4 and antibodies (TPO, TgAb) for a complete picture."
+        },
+        {
+          "name": "Symptom diary review with a clinician",
+          "type": "standard",
+          "description": "Bringing a completed 2\u20133 month cycle-symptom diary to a clinical appointment is often more diagnostically useful than any single test. It allows a practitioner to visually confirm the cyclical pattern and rule in or out hormonal drivers before pursuing more invasive investigations.",
+          "availability": "Can be used in any clinical setting; particularly valuable with gynaecologists, endocrinologists, and functional medicine practitioners."
         }
       ]
     },
     "related_conditions": [
       {
-        "name": "Depression and anxiety disorders",
-        "relationship": "comorbid",
-        "explanation": "People with major depression, anxiety disorder, or bipolar disorder often experience worsening of mood symptoms in the luteal phase. Conversely, PMDD is a disorder of mood cycling. The two can coexist; proper diagnosis requires distinguishing between baseline mood disorder and cyclical exacerbation."
-      },
-      {
-        "name": "Migraine headaches (especially menstrual migraine)",
-        "relationship": "comorbid",
-        "explanation": "Estrogen fluctuations, particularly the drop in estrogen before menstruation, trigger migraines in about 60% of women with migraine. Menstrual migraine is a recognized subtype and is often worsened by hormonal contraceptives that alter estrogen stability."
-      },
-      {
+        "id": "ibs",
         "name": "Irritable bowel syndrome (IBS)",
-        "relationship": "comorbid",
-        "explanation": "IBS symptoms often worsen in the luteal phase due to progesterone's effects on gut motility and visceral sensitivity. Hormonal fluctuations can trigger or amplify bloating, cramping, diarrhea, or constipation in people with IBS."
+        "relationship": "often_confused",
+        "explanation": "IBS and hormonal gut symptoms share almost identical symptom profiles. Many people with cyclical gut symptoms are diagnosed with IBS without the hormonal pattern being identified. IBS is also genuinely more common in women, partly because hormonal factors amplify gut sensitivity and motility changes. The two can co-exist."
       },
       {
+        "id": "endometriosis",
+        "name": "Endometriosis",
+        "relationship": "comorbid",
+        "explanation": "Endometriosis frequently causes bowel symptoms including severe cyclic diarrhoea, rectal pain, and constipation that are almost universally misdiagnosed as IBS. It is estimated that people with endometriosis wait an average of 7\u201310 years for diagnosis, during which gut symptoms are a major complaint."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
+        "relationship": "mechanistic_link",
+        "explanation": "Oestrogen directly stimulates mast cell degranulation and inhibits DAO (diamine oxidase), the enzyme that breaks down histamine. As a result, mast cell and histamine symptoms often worsen at oestrogen peaks (ovulation, early luteal phase), creating a hormonal pattern within MCAS."
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "mechanistic_link",
+        "explanation": "Oestrogen upregulates histamine receptors and downregulates DAO enzyme activity. This means histamine from food may be less well-tolerated in the high-oestrogen phases of the cycle, producing cycle-phase-dependent food reactions that can mimic or overlap with histamine intolerance."
+      },
+      {
+        "id": "pelvic_floor",
+        "name": "Pelvic floor dysfunction",
+        "relationship": "comorbid",
+        "explanation": "Hormonal changes affect connective tissue laxity and pelvic floor muscle tone across the cycle. Pelvic floor dysfunction can amplify or be amplified by cyclic gut symptoms, particularly constipation, urgency, and pelvic pain."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "comorbid",
+        "explanation": "Thyroid function is tightly linked to sex hormone balance. Hypothyroidism (which causes constipation and bloating) is more common in women and can be triggered or worsened by hormonal transitions. Both conditions may coexist and amplify each other's gut effects."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "mechanistic_link",
+        "explanation": "Oestrogen is partially metabolised and recycled by the gut microbiome via the 'oestrobolome' \u2014 a set of gut bacteria that deconjugate oestrogen for reabsorption. Dysbiosis can impair this process, altering circulating oestrogen levels and contributing to hormonal imbalance that worsens cyclic gut symptoms."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation / visceral hypersensitivity",
+        "relationship": "mechanistic_link",
+        "explanation": "Sex hormones modulate central pain processing. Oestrogen tends to increase pain sensitivity while progesterone may reduce it. This means visceral pain thresholds fluctuate across the cycle, explaining why the same meal or the same amount of gas causes dramatically different pain at different cycle phases."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "comorbid",
+        "explanation": "Anxiety worsens predictably in the luteal phase (premenstrual dysphoric disorder pattern) and amplifies gut symptoms via the gut-brain axis. Many people experience a reinforcing loop where premenstrual anxiety worsens gut symptoms, and gut symptoms increase anxiety."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / Hypermobility spectrum disorder",
+        "relationship": "comorbid",
+        "explanation": "Connective tissue laxity in hEDS is influenced by relaxin and oestrogen, causing symptoms to worsen cyclically. Gut dysmotility is common in hEDS and may follow the hormonal pattern, with progesterone-driven slowing adding to already impaired motility."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / Dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "POTS symptoms often worsen in the luteal phase and around menstruation due to oestrogen's effects on blood volume, renin-angiotensin signalling, and sympathetic tone. Gut symptoms in POTS \u2014 including nausea and bloating \u2014 may therefore follow a hormonal cycle pattern."
+      },
+      {
+        "id": "gastroparesis",
+        "name": "Gastroparesis",
+        "relationship": "mechanistic_link",
+        "explanation": "Progesterone slows gastric emptying as part of its general smooth-muscle relaxant effect. In people with existing gastroparesis, the luteal phase may significantly worsen symptoms. Hormonal cyclic worsening of gastric emptying delay is documented in research."
+      },
+      {
+        "id": "fibromyalgia",
         "name": "Fibromyalgia",
         "relationship": "comorbid",
-        "explanation": "People with fibromyalgia frequently report worsening of pain, fatigue, and cognitive symptoms during the luteal phase. Hormonal fluctuations may exacerbate central sensitization and pain processing."
+        "explanation": "Fibromyalgia disproportionately affects women and involves central sensitisation that fluctuates with hormonal changes. Pain sensitivity peaks perimenstrually, amplifying both musculoskeletal and gut symptoms."
       },
       {
-        "name": "Endometriosis",
-        "relationship": "mechanistic_link",
-        "explanation": "Endometriosis causes pelvic pain and can severely worsen in the luteal phase. While both endometriosis and PMS are hormone-related, endometriosis is a structural condition requiring specific evaluation (imaging, diagnostic laparoscopy) and treatment distinct from PMS."
-      },
-      {
-        "name": "Polycystic ovary syndrome (PCOS)",
-        "relationship": "upstream",
-        "explanation": "PCOS involves irregular ovulation and altered hormone levels (elevated androgens, insulin resistance), which can disrupt normal cycle patterns and either prevent typical PMS symptoms or produce atypical hormonal effects. PCOS should be evaluated if cycles are irregular or other PCOS features are present."
-      },
-      {
-        "name": "Thyroid disorders (hypothyroidism, hyperthyroidism)",
-        "relationship": "often_confused",
-        "explanation": "Thyroid dysfunction can cause mood, energy, and cognitive symptoms that overlap with or worsen during the luteal phase, making them difficult to distinguish from hormonal cycle effects. Thyroid testing is important to rule out or manage concurrently."
-      },
-      {
-        "name": "Vitamin D deficiency",
-        "relationship": "mechanistic_link",
-        "explanation": "Low vitamin D is associated with worse PMS and mood symptoms. Vitamin D modulates serotonin and immune function, both relevant to cycle-related mood and inflammatory symptoms."
-      },
-      {
-        "name": "Sleep disorders",
+        "id": "functional_dyspepsia",
+        "name": "Functional dyspepsia",
         "relationship": "comorbid",
-        "explanation": "Insomnia and sleep apnea may independently disrupt mood and energy; hormonal cycle effects on sleep (progesterone's sedating effects, anxiety-related sleep disruption) can exacerbate or mask underlying sleep pathology."
+        "explanation": "Upper gut symptoms including nausea, early satiety, and epigastric discomfort can follow a cyclical hormonal pattern, particularly due to progesterone-driven slowed gastric emptying in the luteal phase."
       },
       {
-        "name": "Substance use disorder or medication side effects",
-        "relationship": "downstream",
-        "explanation": "Severe PMS/PMDD symptoms may lead to self-medication with alcohol or drugs. Conversely, stimulant or antidepressant medications may interact with hormonal fluctuations or affect symptom expression."
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "mechanistic_link",
+        "explanation": "Progesterone-driven slowing of gut motility in the luteal phase may impair the migrating motor complex, potentially allowing bacterial overgrowth to worsen cyclically. People with SIBO may notice their symptoms are reliably worse in the second half of their cycle."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
-          "name": "Lifestyle modifications: regular exercise",
-          "category": "lifestyle",
-          "description": "Aim for 150 minutes of moderate aerobic activity (brisk walking, jogging, cycling) or 75 minutes of vigorous activity per week, plus strength training 2+ days per week. Exercise reduces luteal phase symptoms by improving mood (via endorphins and serotonin), decreasing bloating, improving sleep, and stabilizing blood sugar. Some evidence suggests high-intensity interval training may be particularly beneficial for mood.",
-          "evidence_level": "strong",
-          "notes": "Exercise is most effective when consistent. Start with small, sustainable increases (e.g., 20 minutes, 3 days/week) rather than overexertion. May need to adjust intensity across cycle phases (some people prefer lighter activity during luteal phase). No medication interactions or side effects."
-        },
-        {
-          "name": "Sleep optimization",
-          "category": "lifestyle",
-          "description": "Prioritize 7\u20139 hours of consistent sleep, maintain a regular sleep schedule, and create a cool, dark sleep environment. Poor sleep worsens all hormonal symptoms. Progesterone in the luteal phase can disrupt sleep architecture; good sleep hygiene becomes especially important. Evening routines, limiting screen time 1 hour before bed, and avoiding caffeine after 2 PM can help.",
-          "evidence_level": "strong",
-          "notes": "Sleep deprivation amplifies mood and pain symptoms. If insomnia is severe during luteal phase, discuss with provider; short-term sedating medication or melatonin may help. Sleep apnea screening is important if you have fatigue despite adequate sleep opportunity."
-        },
-        {
-          "name": "Dietary modifications: balance blood sugar and reduce salt/sugar",
+          "name": "Cycle-phase dietary adaptation",
           "category": "diet",
-          "description": "Eat regular meals (every 3\u20134 hours) with balanced macronutrients (protein, healthy fat, complex carbs) to stabilize blood glucose. During luteal phase, metabolism increases but blood sugar stability becomes harder; consistent eating prevents energy crashes and mood swings. Reduce added sugars and salt, particularly in the luteal phase, to minimize cravings, water retention, and energy dips. Increase whole grains, lean proteins, and vegetables.",
-          "evidence_level": "strong",
-          "notes": "Luteal phase cravings for carbs are physiological; rather than resisting, choose complex carbs (oats, brown rice, sweet potato). Very restrictive diets often backfire and worsen symptoms. Calcium and magnesium intake is also associated with better PMS outcomes (see supplements below)."
-        },
-        {
-          "name": "Cognitive behavioral therapy (CBT) or psychotherapy",
-          "category": "lifestyle",
-          "description": "CBT helps identify thought patterns that worsen mood symptoms (catastrophizing, rumination) and develop coping strategies specific to cycle phases. Therapy provides validation, reduces shame, and teaches practical stress-management techniques. Can be delivered in-person or online.",
-          "evidence_level": "strong",
-          "notes": "Particularly effective for PMDD-related mood symptoms and for managing relationship strain. May take 8\u201312 weeks to see full benefit. Works best combined with other strategies (exercise, medication if needed). Some therapists specialize in reproductive mental health."
-        },
-        {
-          "name": "Calcium supplementation",
-          "category": "supplement",
-          "description": "Supplementing 1,000\u20131,200 mg of calcium daily (divided dose, with food for absorption) reduces PMS symptoms by 48% in some studies. Mechanism likely involves calcium's role in neurotransmitter and hormone regulation. Food sources include dairy, fortified plant milks, leafy greens, and tofu; supplementation ensures adequacy.",
-          "evidence_level": "strong",
-          "notes": "Requires consistent daily intake, not just luteal phase. Take with vitamin D (see below) to optimize absorption. Generally safe; excess >2,000 mg/day may increase kidney stone risk in susceptible people. Interacts with some medications; discuss with provider."
-        },
-        {
-          "name": "Magnesium supplementation",
-          "category": "supplement",
-          "description": "Magnesium (200\u2013400 mg daily, especially in luteal phase) improves mood, energy, and pain symptoms. Magnesium supports neurotransmitter function, muscle relaxation, and stress response. Can be combined with calcium (which is depleted by magnesium in high doses). Glycinate form is gentler on digestion than oxide.",
-          "evidence_level": "moderate",
-          "notes": "High doses (>400 mg) can cause loose stools or GI upset. Timing in luteal phase specifically may be more effective than daily dosing year-round. Magnesium threonate or glycinate preferred over citrate or oxide for tolerability."
-        },
-        {
-          "name": "Vitamin D supplementation",
-          "category": "supplement",
-          "description": "Low vitamin D levels (<30 ng/mL) are associated with worse PMS and mood symptoms. Supplementing 1,000\u20134,000 IU daily (or higher if deficient, determined by blood test) may reduce symptoms. Vitamin D supports serotonin production and immune regulation.",
-          "evidence_level": "moderate",
-          "notes": "Get baseline serum 25-hydroxyvitamin D level to determine need. Dose adjusted based on level and sun exposure. Safe up to 4,000 IU daily without testing; higher doses require monitoring. Combine with calcium and K2 for optimal absorption."
-        },
-        {
-          "name": "Vitamin B6 (pyridoxine) supplementation",
-          "category": "supplement",
-          "description": "Vitamin B6 50\u2013100 mg daily may reduce PMS mood and physical symptoms, particularly in combination with magnesium. B6 supports serotonin and dopamine synthesis.",
-          "evidence_level": "moderate",
-          "notes": "Evidence is mixed; some studies show benefit, others do not. High doses (>200 mg/day chronically) can cause nerve damage (peripheral neuropathy); stay below this level. B6 from food sources (chickpeas, salmon, potatoes, bananas) is safe; supplementation should be moderate and time-limited."
-        },
-        {
-          "name": "Hormonal contraceptives (continuous or modified regimens)",
-          "category": "medication",
-          "description": "Birth control pills, patches, or rings that reduce hormonal fluctuation\u2014especially continuous or extended-cycle formulations that skip or reduce placebo/hormone-free weeks\u2014can significantly reduce PMS and PMDD symptoms. By suppressing ovulation or smoothing hormone levels, these prevent the luteal phase symptoms. Progestin-only methods (mini-pill, IUD, implant) may also help.",
-          "evidence_level": "strong",
-          "notes": "Effectiveness varies widely by individual and formulation. Some people worsen on hormonal contraceptives. Requires a prescription. May take 2\u20133 months for full effect. Consider side effects (nausea, headache, mood effects, VTE risk) and lifestyle factors. Not suitable for people with certain contraindications (migraine with aura, VTE history, >35 years old and smoking). Discuss risks and benefits with gynecologist."
-        },
-        {
-          "name": "Selective serotonin reuptake inhibitors (SSRIs)",
-          "category": "medication",
-          "description": "Medications like sertraline, fluoxetine, paroxetine, or citalopram are first-line for PMDD and severe PMS. Can be dosed daily or only during luteal phase (14 days/month). SSRIs increase serotonin availability, reducing mood symptoms (irritability, anxiety, depression) by 50\u201370% in PMDD patients. Often the most effective pharmacological option.",
-          "evidence_level": "strong",
-          "notes": "Requires prescription from doctor. Luteal-phase-only dosing is as effective as daily dosing for PMDD and may reduce side effects. Full benefit may take 2\u20133 months. Common side effects include sexual dysfunction (20\u201340%), nausea, insomnia, or apathy; often dose-dependent and may resolve. Not suitable during pregnancy in some cases; discuss with provider if planning conception."
-        },
-        {
-          "name": "Spironolactone (diuretic)",
-          "category": "medication",
-          "description": "A potassium-sparing diuretic that reduces water retention and bloating, particularly effective for physical PMS symptoms. Dosed 50\u2013100 mg daily or during luteal phase only. Works by blocking aldosterone, which regulates fluid balance.",
-          "evidence_level": "moderate",
-          "notes": "Prescription only. Takes 2\u20133 cycles to see full benefit. May cause dizziness, hyperkalemia (high potassium), or electrolyte imbalances, especially combined with NSAIDs or ACE inhibitors. Requires baseline potassium and kidney function tests. Better for bloating than mood symptoms."
-        },
-        {
-          "name": "NSAIDs (nonsteroidal anti-inflammatory drugs)",
-          "category": "medication",
-          "description": "Over-the-counter options like ibuprofen or naproxen reduce pain (cramps, headaches, muscle aches) and may improve mood via anti-inflammatory effects. More effective when started before pain begins (preemptive dosing during luteal phase) or at first symptom onset.",
-          "evidence_level": "moderate",
-          "notes": "Best for physical pain rather than mood symptoms. Can be taken regularly during luteal phase or as needed. Avoid chronic use (>2 weeks/month regularly) due to GI and renal risks. Not suitable for people with GI ulcers, cardiovascular disease, or kidney disease. Lower effective dose is preferable."
-        },
-        {
-          "name": "Stress management and relaxation techniques",
-          "category": "lifestyle",
-          "description": "Practices like mindfulness meditation, progressive muscle relaxation, deep breathing, yoga, or tai chi reduce stress hormones (cortisol) and anxiety, which amplify hormonal symptoms. Even 10\u201315 minutes daily can help. Luteal phase may require extra emphasis on these practices as stress sensitivity is higher.",
-          "evidence_level": "moderate",
-          "notes": "Free or low-cost. Most beneficial when practiced consistently, not just during symptom flares. Apps like Insight Timer, Calm, or local yoga classes make these accessible. Combine with other strategies for best effect."
-        },
-        {
-          "name": "Chasteberry (Vitex) supplement",
-          "category": "supplement",
-          "description": "An herbal supplement derived from Vitex agnus-castus that may help regulate progesterone levels and reduce PMS symptoms. Some studies show modest benefit for mood and physical symptoms with doses of 40 mg/day. Mechanism is not fully understood but may involve dopamine pathway modulation.",
+          "description": "Rather than maintaining a single restrictive diet year-round, some individuals find it helpful to temporarily reduce known triggers (high-FODMAP foods, histamine-rich foods, high-fat meals) only in the 5\u20137 days before menstruation when gut sensitivity peaks. This approach may help some people avoid unnecessary long-term dietary restriction.",
           "evidence_level": "anecdotal",
-          "notes": "Evidence is mixed and lower quality than for SSRIs or calcium. May take 2\u20133 months to see benefit. Generally well-tolerated but can cause nausea, dizziness, or rash. Not recommended during pregnancy. May interact with dopamine-blocking medications (antipsychotics). Considered complementary rather than first-line."
+          "notes": "Works best once a clear symptom pattern is established through tracking. A FODMAP-trained dietitian can help design this approach without leading to nutritional inadequacy."
         },
         {
-          "name": "Evening primrose oil (EPO) supplement",
-          "category": "supplement",
-          "description": "Contains omega-6 polyunsaturated fatty acids (GLA) that theoretically reduce inflammation and support hormonal balance. Some older studies showed benefit for PMS symptoms; newer evidence is weaker.",
-          "evidence_level": "anecdotal",
-          "notes": "Dosing typically 1,000\u20133,000 mg daily. Evidence is modest and mixed. Generally safe but may increase bleeding risk or interact with blood thinners. Not as well-established as calcium or magnesium."
-        },
-        {
-          "name": "Iron supplementation (if deficient)",
-          "category": "supplement",
-          "description": "Heavy menstrual bleeding can deplete iron stores, leading to fatigue and worsening mood symptoms. If iron deficiency is confirmed by blood work (low ferritin, low hemoglobin), supplementing 25\u201365 mg elemental iron daily can improve fatigue and overall well-being.",
+          "name": "NSAIDs at menstruation onset for prostaglandin-driven symptoms",
+          "category": "medication",
+          "description": "Ibuprofen or naproxen taken at the very start of menstruation (before cramps and diarrhoea begin) can reduce prostaglandin levels and significantly decrease both uterine cramping and associated bowel urgency and diarrhoea. Starting before symptoms peak rather than after is key.",
           "evidence_level": "moderate",
-          "notes": "Only supplement if deficient; excess iron is harmful. Requires blood tests (CBC, ferritin, iron panel) to confirm. Iron on an empty stomach is better absorbed but causes GI upset; take with food if needed. Black stools are normal. Take separate from calcium, magnesium, or certain medications that interfere with absorption."
+          "notes": "Not appropriate for people with gastric ulcers, kidney impairment, or NSAID sensitivity. Should be discussed with a prescriber, especially if used regularly."
         },
         {
-          "name": "Cycle syncing: activity and nutrition adjustments across phases",
-          "category": "lifestyle",
-          "description": "Tailor exercise intensity, nutrition, and work demands to match your cycle phase. Follicular phase (higher energy, mental clarity): high-intensity exercise, challenging projects, networking. Luteal phase (lower energy, need for rest): gentler exercise, introspective work, self-care. This honors natural rhythm rather than fighting it.",
+          "name": "Magnesium supplementation (glycinate or citrate)",
+          "category": "supplement",
+          "description": "Magnesium levels drop in the luteal phase and around menstruation. Supplementation may help reduce smooth muscle cramping, improve constipation (magnesium citrate), support progesterone production, and reduce premenstrual anxiety that worsens gut symptoms.",
+          "evidence_level": "moderate",
+          "notes": "Magnesium citrate has a laxative effect and may be useful for luteal-phase constipation; magnesium glycinate is better tolerated without this effect. High doses can cause diarrhoea \u2014 start low."
+        },
+        {
+          "name": "Progesterone support (prescription or bioidentical)",
+          "category": "medication",
+          "description": "In individuals with documented low luteal-phase progesterone, supplementation may reduce the severity of premenstrual gut symptoms. This is relevant particularly for those with luteal phase defect or perimenopause-related hormonal irregularity.",
+          "evidence_level": "moderate",
+          "notes": "Requires hormone testing and prescriber involvement. Synthetic progestins and bioidentical progesterone have different effects on gut and mood; this distinction is worth discussing with an experienced practitioner."
+        },
+        {
+          "name": "Combined oral contraceptive pill (suppression of cyclical variation)",
+          "category": "medication",
+          "description": "For some individuals, hormonal contraception that suppresses natural cycle fluctuations may significantly reduce the predictable worsening of gut symptoms. This approach works by flattening the hormonal variation that drives cyclic changes in gut motility, permeability, and pain sensitivity.",
+          "evidence_level": "moderate",
+          "notes": "Not suitable for everyone. Some individuals find the pill worsens gut symptoms, particularly those with histamine sensitivity (synthetic oestrogens can raise histamine). A gynaecologist or GP can discuss options including continuous (no pill-free week) regimes."
+        },
+        {
+          "name": "Gut microbiome support (probiotic-containing foods and diversity)",
+          "category": "diet",
+          "description": "The gut microbiome's oestrobolome influences circulating oestrogen levels. Supporting microbiome diversity through fermented foods, fibre variety, and targeted probiotics may help modulate oestrogen recycling and reduce the amplitude of hormonal gut effects.",
           "evidence_level": "anecdotal",
-          "notes": "Evidence is limited and largely anecdotal, but many people find it helpful for reducing symptom burden and improving overall well-being. Requires good cycle awareness. May not apply if using hormonal contraceptives that suppress cycles. Not a substitute for medical treatment of PMS/PMDD."
+          "notes": "The oestrobolome is an active research area. Current evidence does not support a specific probiotic protocol for this purpose; general microbiome health practices are reasonable to pursue."
+        },
+        {
+          "name": "Stress and nervous system regulation",
+          "category": "lifestyle",
+          "description": "The HPA axis (stress response) and HPG axis (sex hormone axis) are closely linked. Chronic stress disrupts progesterone production and amplifies visceral pain sensitivity. Practices that regulate the nervous system \u2014 including regular sleep, slow-paced exercise, and breathwork \u2014 may reduce both hormonal dysregulation and gut symptom severity.",
+          "evidence_level": "moderate",
+          "notes": "Particularly relevant in the perimenstrual phase when the nervous system is most reactive. Sleep disruption in the luteal phase is a common and underappreciated amplifier of gut symptoms."
+        },
+        {
+          "name": "Heat therapy for cramping and bowel urgency",
+          "category": "lifestyle",
+          "description": "Applying heat (hot water bottle, heat pack) to the lower abdomen during menstruation can reduce smooth muscle cramping in both the uterus and bowel, providing symptomatic relief for associated diarrhoea and urgency.",
+          "evidence_level": "moderate",
+          "notes": "Simple, low-risk, and effective for many people. Most useful when symptoms are at their peak in the first 1\u20132 days of bleeding."
+        },
+        {
+          "name": "DAO enzyme supplementation (for cycle-linked histamine symptoms)",
+          "category": "supplement",
+          "description": "In individuals whose gut and systemic symptoms worsen at oestrogen peaks due to histamine reactivity, taking DAO (diamine oxidase) enzyme supplements before histamine-rich meals during high-oestrogen days may reduce symptom severity.",
+          "evidence_level": "anecdotal",
+          "notes": "Useful specifically for those with a clear oestrogen-histamine pattern. Does not address root cause but can provide practical relief."
         }
       ],
       "things_to_avoid": [
-        "Caffeine excess (especially in luteal phase)\u2014increases anxiety, disrupts sleep, worsens migraines, and heightens emotional reactivity. Limit to <100 mg/day during luteal phase.",
-        "Alcohol\u2014depressant effects worsen mood, impair sleep quality, and dehydrate. Increases bloating and inflammation. Particularly harmful during luteal phase.",
-        "Very restrictive diets or fasting\u2014can destabilize mood and blood sugar, exacerbate cravings, and worsen fatigue. Luteal phase metabolism is higher; eating adequate calories is important.",
-        "Intense exercise only during luteal phase or overtraining\u2014can stress the body further and worsen fatigue. Balance vigor in follicular phase with gentler activity in luteal phase.",
-        "Ignoring severe mood symptoms as 'just PMS'\u2014PMDD is a serious condition requiring treatment. Untreated PMDD increases suicide risk; do not normalize severe despair or rage.",
-        "Blaming hormones for all symptoms\u2014while hormones matter, other factors (sleep, stress, diet, underlying mental health, other medical conditions) also play roles. Comprehensive assessment is important.",
-        "Starting multiple new supplements or medications simultaneously\u2014makes it impossible to identify what helps or causes side effects. Introduce one intervention at a time, wait 2\u20133 cycles, then assess.",
-        "Relying solely on tracking apps for diagnosis\u2014tracking is helpful but not diagnostic. Formal PMDD diagnosis requires clinical evaluation with tools like the DRSP and symptom criteria.",
-        "Uncontrolled high-dose vitamin supplementation\u2014excess B6 (>200 mg/day), vitamin A (>10,000 IU/day), or other fat-soluble vitamins can cause toxicity. Stick to recommended ranges or discuss with provider."
+        "Assuming all gut symptoms are caused by food: in individuals with a cyclical pattern, food restriction without cycle tracking may lead to unnecessary dietary elimination and nutritional deficiency",
+        "Starting extensive gut investigations (breath tests, endoscopy) without first ruling in or out a hormonal pattern through symptom tracking \u2014 this avoids misattribution and unnecessary procedures",
+        "Using the pill to manage symptoms without understanding whether it helps or worsens reactivity: synthetic oestrogens can worsen histamine-driven symptoms in susceptible individuals",
+        "High-fat, processed, and alcohol-heavy meals in the 3\u20135 days before menstruation, which may amplify prostaglandin production and worsen gut cramping and urgency",
+        "Dismissing the cyclical pattern as 'just PMS': the physiological effects of hormonal shifts on the gut are documented and can be severe enough to be disabling",
+        "Ignoring severe cyclic bowel pain, rectal bleeding, or pain on defecation without gynaecological assessment, as these may indicate endometriosis rather than functional hormonal effects"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "Many people spend years pursuing gut diagnoses \u2014 SIBO tests, colonoscopies, food intolerance panels \u2014 without anyone ever asking them to track whether their symptoms follow their menstrual cycle. The answer is sometimes visible in two months of diary data.",
+        "why_resisted": "Gut symptoms feel like gut problems. It is intuitive to seek gut explanations, and many clinicians are not trained to think across the gut-hormone interface. Tracking a cycle takes effort and feels unrelated to the immediate problem.",
+        "path_forward": "People who track their symptoms against their cycle for 2\u20133 months often arrive at a clinical appointment with clear evidence of the hormonal pattern that reshapes the entire clinical conversation \u2014 and sometimes avoids years of further investigation."
+      },
+      {
+        "truth": "A diagnosis of IBS does not rule out hormonal drivers \u2014 it often obscures them. 'IBS' describes a symptom pattern, not a mechanism, and a large proportion of women with IBS have symptoms that are primarily or substantially hormonally driven.",
+        "why_resisted": "IBS is a recognised diagnosis that provides closure and comes with management guidelines. Revisiting it feels like going backwards, and clinicians may resist reopening an apparently settled diagnosis.",
+        "path_forward": "Individuals who identify the hormonal component of their IBS often find that targeted management \u2014 particularly around the perimenstrual window \u2014 is more effective than generic IBS treatment applied uniformly throughout the month."
+      },
+      {
+        "truth": "If bowel symptoms are severe, cyclic, and accompanied by pelvic pain, painful sex, or significant pain on defecation, the probability of endometriosis affecting the bowel is meaningful \u2014 and most people with bowel endometriosis are diagnosed with IBS first and endometriosis years later.",
+        "why_resisted": "Endometriosis requires specialist referral, often long waiting times, and potentially invasive investigation (laparoscopy). Many people and clinicians prefer to manage symptoms than pursue the diagnosis. Acceptance of an IBS label is easier.",
+        "path_forward": "People who pursue gynaecological assessment with a specialist in endometriosis \u2014 particularly a centre of excellence \u2014 and receive a correct diagnosis can access treatments (hormonal suppression, excision surgery) that produce meaningful and sometimes dramatic improvement in bowel symptoms that no gut treatment had touched."
+      },
+      {
+        "truth": "Food 'intolerances' that appear and disappear depending on cycle phase are often not true intolerances \u2014 they reflect fluctuating gut permeability and visceral sensitivity driven by hormones. Eliminating those foods long-term addresses the symptom but not the driver, and may not be necessary outside of high-sensitivity phases.",
+        "why_resisted": "Food elimination feels controllable and immediate. Accepting that gut permeability and pain sensitivity fluctuate hormonally is harder to act on and requires practitioner support to address.",
+        "path_forward": "Working with a FODMAP-trained or functional dietitian to test food tolerance at different cycle phases allows many individuals to significantly expand their diet outside the perimenstrual window, reducing nutritional restriction and improving quality of life."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Accurate diagnosis and tracking over 2\u20133 full cycles",
-          "why_it_matters": "You cannot effectively manage what you do not understand. A clear diagnosis (PMS vs. PMDD vs. secondary to another condition) determines treatment eligibility and effectiveness. Tracking reveals personal patterns and provides objective evidence for healthcare discussions.",
-          "how_to_start": "Download or print a cycle tracking app or calendar. Daily log menstruation dates, top 3 symptoms, mood (1\u201310), sleep (hours), and key events. At 2\u20133 cycles, review for patterns. Share log with gynecologist or primary care doctor to confirm diagnosis.",
-          "timeline": "2\u20133 months to establish clear pattern and diagnosis; diagnostic confidence increases with more data.",
-          "requires_professional": true
-        },
-        {
-          "lever": "Consistent exercise (especially aerobic, weekly, across full cycle)",
-          "why_it_matters": "Exercise is one of the most robustly evidence-supported interventions for all PMS symptoms\u2014mood, fatigue, pain, bloating. It works via serotonin, endorphins, stress hormone reduction, and improved sleep. Effects compound over time.",
-          "how_to_start": "Choose an activity you genuinely enjoy (walking, cycling, dancing, swimming, running). Start with 20\u201330 minutes, 3 days per week. Aim for moderate intensity (able to talk but not sing). Increase gradually to 150 min/week. Adjust intensity across cycle if desired (vigorous follicular, gentler luteal).",
-          "timeline": "Mood and energy benefits often appear within 2\u20133 weeks; pain and bloating improvement may take 4\u20138 weeks. Consistency matters more than intensity.",
+          "lever": "Consistent cycle-symptom tracking for 2\u20133 months",
+          "why_it_matters": "This is the foundation of everything. Without documented pattern data, hormonal contributions remain invisible to both the individual and their clinician. It is also free and low-risk.",
+          "how_to_start": "Choose a tracking method \u2014 a dedicated app (Clue, Flo, Bearable) or a simple spreadsheet. Every day, log: cycle day, stool type (Bristol scale 1\u20137), bloating score, pain score, and any notable symptoms. Add food notes if helpful.",
+          "timeline": "A clear pattern is usually visible within 2\u20133 complete cycles \u2014 around 6\u201310 weeks.",
           "requires_professional": false
         },
         {
-          "lever": "Sleep: prioritize 7\u20139 hours nightly with consistent schedule",
-          "why_it_matters": "Sleep deprivation amplifies every symptom\u2014mood, pain, fatigue, cognitive fog, cravings. Hormonal changes already disrupt sleep in luteal phase; poor sleep hygiene makes this worse. Good sleep is foundational to all other improvements.",
-          "how_to_start": "Set a target sleep time (e.g., 10 PM\u20136 AM). Aim for consistency 6\u20137 nights/week. Create a wind-down routine starting 1 hour before bed: dim lights, no screens, warm bath, reading, or meditation. Keep bedroom cool (65\u201368\u00b0F), dark, quiet. Avoid caffeine after 2 PM.",
-          "timeline": "Sleep improvements can begin within 1 week; mood and energy benefits follow within 2\u20134 weeks. Substantial improvement in luteal phase symptoms can take 4\u20138 weeks once sleep is solid.",
+          "lever": "Identifying the dominant hormonal mechanism driving symptoms",
+          "why_it_matters": "The pattern of symptoms (when they occur in the cycle) points to different drivers: progesterone-driven constipation needs different management from prostaglandin-driven diarrhoea or oestrogen-driven histamine reactivity. Treating the right mechanism dramatically improves outcomes.",
+          "how_to_start": "Map the cycle-symptom data against known hormonal phases: follicular (days 1\u201314), ovulation (~day 14), luteal (days 14\u201328), and perimenstrual. Match symptom peaks to the relevant hormonal shift.",
+          "timeline": "Clearer within 1\u20132 months of tracking.",
           "requires_professional": false
         },
         {
-          "lever": "Calcium supplementation (1,000\u20131,200 mg daily)",
-          "why_it_matters": "Calcium is consistently supported by evidence as reducing PMS symptoms by ~40\u201350%. It is inexpensive, safe, and works across physical and mood domains. Compliance is easy once routine is established.",
-          "how_to_start": "Aim to get 1,000\u20131,200 mg daily from food first (3 servings dairy, fortified plant milk, leafy greens, tahini) and supplement only the gap. For example, if diet provides 600 mg, add 600 mg supplement. Divide doses (not >500 mg absorbed at once). Take with food.",
-          "timeline": "Effects on PMS build gradually over 2\u20133 cycles (consistent daily intake required). Month 1: modest improvement; Month 2\u20133: more noticeable reduction in both mood and physical symptoms.",
-          "requires_professional": false
-        },
-        {
-          "lever": "SSRIs (sertraline, fluoxetine, paroxetine, or citalopram) if PMDD or severe PMS",
-          "why_it_matters": "SSRIs are the most effective pharmacological treatment for PMDD and severe mood-related PMS, with ~60\u201370% symptom reduction. Luteal-phase dosing (14 days/month) is as effective as daily dosing for PMDD and may reduce side effects. Life-changing for people with severe symptoms.",
-          "how_to_start": "Consult a gynecologist or psychiatrist. Discuss symptom severity, prior medication trials, and preferences (daily vs. luteal-only dosing). Start at a low dose (e.g., sertraline 50 mg daily or luteal-phase only). Expect 2\u20134 weeks to notice initial effect; full benefit at 6\u20138 weeks.",
-          "timeline": "Initial response 2\u20134 weeks; peak effectiveness 6\u201312 weeks. If no benefit after 8 weeks at adequate dose, discuss switching to a different SSRI. Some people respond better to specific agents.",
+          "lever": "Hormone evaluation with cycle-timed testing",
+          "why_it_matters": "Testing reproductive hormones at the correct cycle days can reveal low progesterone, relative oestrogen excess, anovulatory cycles, or perimenopause \u2014 all of which have specific treatment implications that can reduce gut symptom severity significantly.",
+          "how_to_start": "Request a cycle-day 2\u20133 and cycle-day 21 blood test from a GP, gynaecologist, or functional medicine practitioner. Bring the cycle-symptom diary to the appointment.",
+          "timeline": "Results available within 1\u20132 weeks; treatment adjustment may take 2\u20133 cycles to show effect.",
           "requires_professional": true
         },
         {
-          "lever": "Hormonal contraceptive optimization (if appropriate and not contraindicated)",
-          "why_it_matters": "Hormonal contraceptives suppress ovulation or reduce hormonal fluctuation, directly addressing the cyclical hormone changes that drive symptoms. Continuous or extended-cycle formulations (skip placebo weeks) are often more effective than cyclic pills. Can be transformative for severe PMS/PMDD.",
-          "how_to_start": "Discuss with gynecologist. If interested, review options: combination oral contraceptives (especially extended-cycle), transdermal patch, vaginal ring, progestin-only methods (mini-pill, IUD, implant). Trial period is typically 2\u20133 cycles to assess tolerance and symptom response. Different formulations may work differently for each person.",
-          "timeline": "Initial response varies; full effect usually apparent at 2\u20133 months. Some people notice worsening of mood initially (2\u20134 weeks), which may resolve. If no improvement after 3 months or persistent negative effects, consider switching formulation or method.",
+          "lever": "Finding a practitioner who takes the gut-hormone connection seriously",
+          "why_it_matters": "Most gastroenterologists and many GPs do not routinely investigate hormonal contributions to gut symptoms. Finding a practitioner who does \u2014 whether a functional medicine doctor, an integrative gynaecologist, or a hormone-literate dietitian \u2014 changes the quality of the investigation and treatment options available.",
+          "how_to_start": "Search specifically for functional medicine practitioners, integrative gynaecologists, or gynaecologists with endometriosis expertise. The cycle diary is the most persuasive tool to bring to any appointment.",
+          "timeline": null,
           "requires_professional": true
         },
         {
-          "lever": "Stress reduction and emotional processing (therapy, mindfulness, community support)",
-          "why_it_matters": "Stress amplifies hormonal symptoms; unprocessed emotion and maladaptive thought patterns worsen mood cycling. CBT, mindfulness, and supportive community provide coping tools and reduce isolation and shame. Psychological resilience improves symptom tolerance and overall quality of life.",
-          "how_to_start": "Consider therapy (CBT, somatic therapy, or supportive psychotherapy) with a provider experienced in reproductive mental health or PMDD. Alternatively, start with free or low-cost mindfulness apps (Insight Timer, Calm), online support communities (r/PMDD, Ava Club), or local support groups. Even 10 min/day of meditation helps.",
-          "timeline": "Mindfulness or meditation: benefits appear within 2\u20134 weeks with consistent practice. Therapy: typical benefit at 6\u201312 weeks; longer-term therapy (6\u201312 months) provides deeper tools and insight.",
+          "lever": "Addressing gut microbiome health (oestrobolome support)",
+          "why_it_matters": "The gut microbiome metabolises oestrogen. Poor microbiome diversity can dysregulate oestrogen recycling, contributing to the hormonal imbalances that worsen gut symptoms. This is a modifiable factor.",
+          "how_to_start": "Increase dietary fibre variety (30+ different plant foods per week), include fermented foods (kefir, sauerkraut, yoghurt) if tolerated, and reduce ultra-processed food intake. Address any known dysbiosis, SIBO, or fungal overgrowth with appropriate professional support.",
+          "timeline": "Meaningful microbiome changes can occur within 4\u20138 weeks of sustained dietary change.",
           "requires_professional": false
         }
       ],
       "common_mistakes": [
-        "Diagnosing yourself with PMS/PMDD based on one or two difficult cycles without systematic tracking\u2014hormone levels and life stress naturally fluctuate, causing one-off bad months. Genuine PMS/PMDD requires consistent cyclical pattern over 2\u20133+ cycles. Misdiagnosis leads to unnecessary treatment or missed other diagnoses (thyroid, depression, etc.).",
-        "Expecting immediate relief from interventions\u2014most strategies take 2\u20133 cycles to show full benefit (calcium, magnesium, sleep changes, exercise). Starting an SSRI and stopping after 2 weeks because it did not work yet is premature. Patience and consistency are essential.",
-        "Trying multiple new supplements or lifestyle changes simultaneously\u2014makes it impossible to identify what helps. If you start calcium, vitamin D, exercise, and therapy all at once, you cannot tell which (if any) caused improvement. Introduce one intervention, wait 2\u20133 cycles, then assess before adding another.",
-        "Using hormonal contraceptives or SSRIs without adequate trial duration\u2014both typically require 2\u20133 months for full effect. Switching after 4\u20136 weeks due to impatience or initial side effects misses the window where benefit emerges. Discuss timeline expectations with your doctor.",
-        "Restricting calories or nutrients during luteal phase\u2014luteal phase metabolism is actually higher; undereating causes energy crashes, mood instability, and worse cravings. Eating adequate balanced nutrition is more important, not less, during luteal phase.",
-        "Attributing all difficult emotions or pain to hormones\u2014while hormones are real, other factors (stress, sleep, diet, relationship issues, work demands, underlying mental health conditions) also matter. A truly comprehensive assessment looks at all factors, not just hormones.",
-        "Avoiding medical evaluation because you believe it 'is just hormones'\u2014severe symptoms deserve investigation. PMDD is a real disorder with effective treatments. Untreated PMDD increases depression, anxiety, and suicide risk. Do not normalize suffering; get proper diagnosis and treatment.",
-        "Refusing all medication because you want a 'natural' approach\u2014hormonal effects are powerful and sometimes lifestyle changes alone are insufficient. SSRIs and hormonal contraceptives are evidence-based, safe, and appropriate for moderate-to-severe PMDD. Combining medication with lifestyle changes is often optimal.",
-        "Isolating and not communicating with partners, family, or friends about cycle-related struggles\u2014shame and silence worsen symptoms and strain relationships. Education and open communication help people around you understand and support you, and help you normalize the experience.",
-        "Not addressing underlying thyroid, metabolic, or sleep disorders that interact with or mimic hormonal symptoms\u2014thyroid dysfunction, untreated sleep apnea, insulin resistance, and poor glycemic control all worsen cycle-related symptoms. Full evaluation is important before attributing everything to hormones."
+        "Treating every gut symptom the same way regardless of cycle phase \u2014 this leads to blanket dietary restriction or medications that are unnecessary for most of the month",
+        "Pursuing extensive gut testing (SIBO breath tests, colonoscopy, food intolerance panels) before establishing whether symptoms are cyclical \u2014 this misattributes the problem and delays effective treatment",
+        "Stopping tracking after the pattern is obvious: ongoing tracking helps detect changes (worsening, improving, shifting pattern) that guide treatment adjustments",
+        "Expecting a single intervention to fix everything: hormonal gut effects are multifactorial, and most people need a combination of approaches targeting different mechanisms",
+        "Accepting the first clinician's dismissal if the cyclic pattern is clear: this is a documented physiological phenomenon and deserves proper investigation",
+        "Conflating perimenopause gut changes with new gut disease: new or worsening gut symptoms in the mid-to-late 40s should be evaluated in the context of hormonal transition before extensive gut investigation begins"
       ]
     },
     "finding_help": {
       "specialists": [
         {
-          "type": "Gynecologist or OB-GYN",
-          "role": "Specialist in reproductive health who can diagnose PMS/PMDD using formal criteria, rule out gynecological pathology (endometriosis, fibroids, PCOS), prescribe hormonal contraceptives or cycle-specific medications, and coordinate treatment. Often the first and best provider to contact for menstrual cycle symptom evaluation.",
-          "notes": "Some gynecologists are more knowledgeable about PMDD than others; ask about their experience with PMDD diagnosis and treatment if you suspect this condition. Look for providers who listen to your tracking data and take mood symptoms seriously."
+          "type": "Gynaecologist (endometriosis-specialist)",
+          "role": "Essential if severe cyclic bowel symptoms, pelvic pain, painful intercourse, or pain on defecation are present. Can investigate and treat endometriosis involving the bowel, which is frequently the true driver behind what has been called IBS.",
+          "notes": "Seek a specialist at a recognised endometriosis centre rather than a general gynaecologist; expertise varies significantly. Long NHS waiting times mean private referral is often faster for initial assessment."
         },
         {
-          "type": "Primary care physician (MD or DO)",
-          "role": "Can provide initial evaluation, order screening tests (thyroid, hormone levels), diagnose PMS based on symptom pattern, and prescribe first-line treatments (SSRIs, NSAIDs, lifestyle counseling). Useful for distinguishing hormonal symptoms from other medical conditions.",
-          "notes": "Many primary care doctors are less familiar with PMDD than gynecologists; be prepared to educate or request referral to gynecology if primary care seems dismissive."
+          "type": "Functional medicine doctor",
+          "role": "Investigates hormonal, gut, and immune contributions as a system rather than in silos. Can order comprehensive hormone testing (including DUTCH), microbiome analysis, and thyroid panels, and interpret them in the context of the full clinical picture.",
+          "notes": "Quality varies significantly; look for practitioners with training from the Institute for Functional Medicine (IFM) or equivalent. Not routinely available through mainstream NHS or insurance-covered care."
         },
         {
-          "type": "Psychiatrist",
-          "role": "Mental health specialist who can evaluate and treat mood disorders (depression, anxiety, bipolar disorder) that may coexist with or be exacerbated by hormonal cycles. Can prescribe SSRIs or other psychiatric medications and provide diagnostic clarity regarding PMDD vs. primary mood disorder.",
-          "notes": "Look for psychiatrists with interest in reproductive psychiatry or women's mental health. Reproductive psychiatry is a growing subspecialty with additional expertise in hormone-mood interactions."
+          "type": "Integrative gynaecologist or women's health endocrinologist",
+          "role": "Specialises in hormonal balance across the reproductive lifespan. Particularly useful for perimenopause, PCOS, or complex hormone patterns driving gut symptoms.",
+          "notes": "This specialty sits at the intersection of conventional and functional medicine. Finding practitioners who are comfortable discussing the gut-hormone axis specifically is important."
         },
         {
-          "type": "Therapist/psychologist (specializing in reproductive or women's mental health)",
-          "role": "Provides CBT, psychodynamic therapy, somatic therapy, or supportive counseling to address thought patterns, stress management, emotion regulation, and relationship impacts of hormonal symptoms. Particularly helpful for PMDD-related mood and functional impairment.",
-          "notes": "Look for therapists with explicit training in reproductive mental health, trauma-informed care, or CBT. Not all therapists are familiar with PMDD; ask about their experience. Some insurance plans cover therapy; others do not."
+          "type": "FODMAP-trained registered dietitian",
+          "role": "Can help distinguish food-driven gut symptoms from hormonally-driven ones, and design a cycle-phase-adapted dietary approach that avoids unnecessary long-term restriction.",
+          "notes": "Look specifically for dietitians with FODMAP certification and ideally some experience in women's health or hormonal gut interaction. General dietitians may not have this expertise."
         },
         {
-          "type": "Functional medicine doctor or naturopathic doctor (if interested in supplement/lifestyle approach)",
-          "role": "May provide in-depth nutritional assessment, supplement recommendations, stress management coaching, and lifestyle modification. Focuses on root causes and individualized protocols. Approach varies widely in evidence-basis.",
-          "notes": "Evidence base is mixed; some recommendations are sound (calcium, magnesium, exercise), others are less robust (herbal supplements, specialized 'women's formulas'). Functional medicine can be a valuable complement to conventional care but is typically not covered by insurance and is expensive ($150\u2013500+ per visit). Verify credentials: 'MD' or 'DO' + functional medicine training is more credible than 'ND' alone."
+          "type": "Gastroenterologist (with interest in women's health)",
+          "role": "Useful for ruling out structural causes and inflammatory bowel disease, and for managing gut symptoms that persist outside of hormonal phases. Less likely than the above practitioners to investigate hormonal drivers unless specifically interested in the area.",
+          "notes": "Mainstream gastroenterologists may manage symptoms without investigating hormonal contributions. Finding one who takes the menstrual cycle into account, or supplementing with one of the above practitioners, is often necessary."
         },
         {
-          "type": "Registered Dietitian (RD or RDN)",
-          "role": "Provides evidence-based nutrition assessment and personalized meal planning to optimize cycle-related nutrition, blood sugar stability, mineral intake, and overall diet quality. Can help you understand cycle-specific eating strategies.",
-          "notes": "A dietitian is especially valuable if you have history of disordered eating or restrictive dieting. Referral through primary care or gynecologist often results in insurance coverage. Otherwise, private dietitian consultations cost $75\u2013200+ per session."
+          "type": "Pelvic floor physiotherapist",
+          "role": "Addresses pelvic floor dysfunction that co-occurs with or amplifies cyclic bowel symptoms, including constipation, urgency, rectal pressure, and pain on defecation.",
+          "notes": "An often-overlooked component of cyclic gut care. Particularly relevant when pelvic pain is prominent or when symptoms include difficulty initiating defecation or incomplete emptying."
         }
       ],
       "patient_communities": [
         {
-          "name": "International Association for Premenstrual Disorders (IAPMD)",
-          "platform": "website and online community",
-          "url": "https://www.iapmd.org",
-          "notes": "Medical and scientific organization dedicated to PMDD and PMS. Offers education resources, finds providers trained in PMDD, hosts webinars, and maintains research database. Primary resource for PMDD information and diagnostics (DRSP form available). Highly credible and evidence-based."
-        },
-        {
-          "name": "r/PMDD (subreddit)",
+          "name": "r/PMDD",
           "platform": "Reddit",
           "url": "https://www.reddit.com/r/PMDD/",
-          "notes": "Active online community of people with PMDD sharing experiences, coping strategies, medication trials, and emotional support. Moderated to maintain respectful discussion. Thousands of members. Good for feel less alone and learning from others' experiences, but not a substitute for medical care."
+          "notes": "While focused on premenstrual dysphoric disorder, this community has extensive discussion of cyclic physical symptoms including gut changes. Members often share detailed symptom patterns and management strategies."
         },
         {
-          "name": "Ava Club",
-          "platform": "website and online forum",
-          "url": "https://www.avoclubpmd.com",
-          "notes": "Community and support platform specifically for people with PMDD and severe PMS. Offers peer support groups, expert Q&A, and resources. Focuses on lived experience and validation."
+          "name": "r/Endo",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Endo/",
+          "notes": "Large, active community for people with endometriosis. Contains significant discussion of bowel symptoms, misdiagnosis as IBS, and navigating specialist care. Valuable for those investigating whether endometriosis may be the driver of their cyclic gut symptoms."
         },
         {
-          "name": "PMS/PMDD Facebook groups",
-          "platform": "Facebook",
-          "url": "Search 'PMDD support' or 'PMS community' on Facebook",
-          "notes": "Various moderated and unmoderated groups. Quality and tone vary. Many offer daily check-in threads, resource sharing, and emotional support. Easier for some people than Reddit; verify group moderation standards to avoid misinformation."
+          "name": "Endometriosis UK",
+          "platform": "Forum and community",
+          "url": "https://www.endometriosis-uk.org/",
+          "notes": "UK-based charity with community forums, specialist directories, and patient support. Particularly useful for navigating NHS referral pathways for endometriosis."
         },
         {
-          "name": "National Institute of Mental Health (NIMH) - PMDD information",
-          "platform": "website",
-          "url": "https://www.nimh.nih.gov",
-          "notes": "Government health information on PMDD diagnosis, research, and treatment. Reliable, evidence-based resource from a trusted source."
+          "name": "r/Perimenopause",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Perimenopause/",
+          "notes": "Supportive community where gut symptoms tied to hormonal transition in the 40s are frequently discussed. Useful for those whose cyclic gut symptoms emerged or worsened in perimenopause."
         },
         {
-          "name": "Period Whisperer / cycle syncing communities",
-          "platform": "Instagram, TikTok, YouTube, various blogs",
-          "url": "Variable (search 'cycle syncing' or 'menstrual cycle wellness')",
-          "notes": "Influencer and coach communities focused on cycle syncing, hormonal health, and lifestyle adaptation to menstrual cycle. Quality highly variable; some evidence-based and helpful, others promote pseudoscience or unproven supplements. Consume with critical eye; verify claims and crosscheck with medical sources. Can be a source of ideas but not medical advice."
-        },
-        {
-          "name": "Local women's health support groups or clinics",
-          "platform": "In-person or hybrid",
-          "url": "Search local gynecology clinics, women's health centers, or mental health agencies",
-          "notes": "Many communities offer in-person support groups for women's health, reproductive mental health, or chronic conditions. Check with local hospital systems, Planned Parenthood, or women's centers. Often free or low-cost."
+          "name": "Nancy's Nook Endometriosis Education",
+          "platform": "Facebook Group",
+          "url": null,
+          "notes": "Large, moderated Facebook group providing evidence-based education about endometriosis, including bowel involvement. Maintains a list of excision-specialist surgeons by country. A key resource for those navigating endometriosis care."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "Practical Premenstrual Symptoms Management",
-        "type": "book",
-        "author_or_source": "IAPMD (International Association for Premenstrual Disorders)",
-        "url": "https://www.iapmd.org",
-        "description": "Clinical guide co-authored by leading PMDD researchers and physicians. Evidence-based, practical, and authoritative. Free or low-cost download available. Excellent for understanding diagnosis, treatment options, and lifestyle strategies from the most credible source.",
-        "audience": "beginner"
-      },
-      {
-        "title": "The Period Effect: How Hormones Can Empower Your Best Self",
-        "type": "book",
-        "author_or_source": "Nicola Rinaldi",
-        "url": null,
-        "description": "Accessible book explaining how menstrual cycle hormones affect mood, energy, cognition, and performance. Includes practical advice on cycle syncing, exercise, nutrition, and managing symptoms. Good introduction for understanding your cycle without being overly medical.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Period Repair Manual: Natural Treatment for Better Hormones and Better Periods",
-        "type": "book",
-        "author_or_source": "Lara Briden",
-        "url": null,
-        "description": "Practical guide to natural and conventional approaches to hormonal health. Covers PMS, PMDD, and other menstrual issues. Includes self-assessment tools, supplement guidance, and lifestyle strategies. Written by a naturopathic doctor; good balance of evidence-based and holistic perspectives.",
-        "audience": "beginner"
-      },
-      {
-        "title": "In the FLO: Unlock Your Hormonal Advantage and Revolutionize Your Life",
+        "title": "In the Flo: Unlock Your Hormonal Advantage and Revolutionize Your Life",
         "type": "book",
         "author_or_source": "Alisa Vitti",
         "url": null,
-        "description": "Popular book on cycle syncing and hormonal optimization. Includes meal plans, workout suggestions, and productivity tips tailored to each cycle phase. Engaging and practical, though some claims are not rigorously evidence-based. Good for motivation and cycle awareness, but not a medical resource.",
+        "description": "Introduces the concept of cycle syncing \u2014 adapting diet, exercise, and lifestyle to the four phases of the menstrual cycle. Accessible entry point for understanding how hormonal fluctuations affect the whole body including the gut. Some claims are not fully evidenced but the framework is useful.",
         "audience": "beginner"
       },
       {
-        "title": "DRSP (Daily Record of Severity of Problems)",
-        "type": "tool/form",
-        "author_or_source": "IAPMD",
-        "url": "https://www.iapmd.org/drsp",
-        "description": "Gold-standard diagnostic tool for PMDD. Downloadable PDF form that guides you to track symptoms daily for two menstrual cycles. Essential for confirming diagnosis. Free, evidence-based, and recommended by all major medical organizations.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Clue, Flo, or Kindara (menstrual tracking apps)",
-        "type": "tool/app",
-        "author_or_source": "Various developers",
-        "url": "Available on App Store and Google Play",
-        "description": "Smartphone apps that log menstruation, symptoms, mood, and other data. Help identify patterns across cycles. Many include educational articles and medication reminders. Flo and Clue have scientific advisory boards and evidence-based content. Essential for self-tracking and discussion with providers.",
-        "audience": "beginner"
-      },
-      {
-        "title": "PMDD: A Handbook for Patients and Families",
+        "title": "Period Power: Harness Your Hormones and Get Your Cycle Working For You",
         "type": "book",
-        "author_or_source": "IAPMD",
-        "url": "https://www.iapmd.org",
-        "description": "Comprehensive patient guide to PMDD diagnosis, emotional impact, treatment options, and strategies for partners and family. Evidence-based and empathetic. Free or low-cost PDF. Highly recommended for PMDD specifically.",
+        "author_or_source": "Maisie Hill",
+        "url": null,
+        "description": "Practical, accessible book covering how menstrual cycle hormones affect the body across each phase. Written by a women's health practitioner with a grounded approach. Useful for building cycle literacy before or alongside clinical investigation.",
         "audience": "beginner"
       },
       {
-        "title": "Researching and Understanding PMDD (peer-reviewed journal articles)",
+        "title": "Sex hormones and the female gut",
         "type": "research paper",
-        "author_or_source": "Authors: Yonkers et al., Halbreich et al., Houghton et al., et al.",
-        "url": "PubMed.gov, IAPMD research database",
-        "description": "Scientific literature on PMDD diagnosis, epidemiology, pathophysiology, and treatment. Credible sources for in-depth understanding. Challenging read for layperson but invaluable if you want to understand mechanisms and latest research.",
+        "author_or_source": "Chen et al. / multiple published reviews in journals including Neurogastroenterology & Motility",
+        "url": null,
+        "description": "Multiple published review papers examine how oestrogen, progesterone, and androgens modulate gut motility, permeability, pain sensitivity, and the microbiome. Searching PubMed for 'sex hormones gut motility' or 'menstrual cycle IBS' provides access to the underlying research for those who want to read the evidence directly.",
         "audience": "advanced"
       },
       {
-        "title": "Reproductive Mental Health: An Evidence-Based Approach",
+        "title": "Endometriosis and the Gut: Why Bowel Symptoms Are Common",
+        "type": "website",
+        "author_or_source": "Endometriosis UK",
+        "url": "https://www.endometriosis-uk.org/endometriosis-and-bowel",
+        "description": "Clear, well-written patient information about how endometriosis affects the bowel, why it is mistaken for IBS, and when to seek specialist assessment. Valuable for those whose cyclic gut symptoms may have an endometriosis component.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Cycle Syncing Handbook",
         "type": "book",
-        "author_or_source": "Edited by Anita Asante Boadu, et al.",
+        "author_or_source": "Angie Arriesgado",
         "url": null,
-        "description": "Academic but accessible text on reproductive mental health, including PMDD, postpartum mood disorders, and perimenopause. For readers wanting deeper understanding of the intersection of hormones and mental health.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "Tracking Your Cycle and Symptoms (IAPMD educational videos)",
-        "type": "video",
-        "author_or_source": "IAPMD",
-        "url": "https://www.iapmd.org/pmdd-webinars",
-        "description": "Free educational webinars by PMDD specialists explaining diagnosis, tracking, treatment options, and real patient stories. Accessible, evidence-based, and directly from leading experts.",
+        "description": "Practical guide to understanding hormonal phases and adapting daily habits accordingly. More workbook-style than Vitti's book; useful for those who prefer a structured tracking and planning approach.",
         "audience": "beginner"
       },
       {
-        "title": "The Menstruators Podcast",
+        "title": "Hormones and the Gut-Brain Axis",
+        "type": "research paper",
+        "author_or_source": "Mulak et al., Journal of Physiology and Pharmacology",
+        "url": null,
+        "description": "Academic review examining how sex hormones interact with the enteric nervous system and gut-brain axis. Relevant for those who want to understand the physiological mechanisms behind cyclic gut symptoms at a detailed level.",
+        "audience": "advanced"
+      },
+      {
+        "title": "The Menstruality Podcast",
         "type": "podcast",
-        "author_or_source": "Various reproductive health experts",
-        "url": "https://www.themenstruators.com",
-        "description": "Podcast addressing menstrual health, PMS, PMDD, endometriosis, and related topics. Evidence-based, interview format. Good for audio learners or commute listening. Covers personal stories and expert advice.",
-        "audience": "beginner"
+        "author_or_source": "Red School",
+        "url": null,
+        "description": "Wide-ranging podcast exploring menstrual health, hormonal cycles, and their effects on physical and psychological wellbeing. Includes episodes relevant to gut health and the body-wide effects of cyclic hormonal change.",
+        "audience": "intermediate"
       }
     ],
     "relevance_signal": "Gut symptoms **clearly fluctuate with the menstrual cycle** \u2014 worse in the luteal phase (week before period), better mid-cycle. Progesterone slows gut transit."
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

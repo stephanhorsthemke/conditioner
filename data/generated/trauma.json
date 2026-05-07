@@ -2,656 +2,731 @@
   "condition_id": "trauma",
   "condition_name": "Trauma / PTSD",
   "generated_at": "2026-04-16T10:44:11.278607Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "PTSD (post-traumatic stress disorder) is a condition that can develop after experiencing or witnessing a traumatic event. People with PTSD have persistent distressing memories, avoid reminders of the trauma, experience negative changes in thinking and mood, and show signs of increased arousal (hypervigilance, startle response). It's treatable, and many people recover fully with appropriate support.",
-    "detailed_summary": "Post-traumatic stress disorder (PTSD) is a psychiatric condition triggered by exposure to actual or threatened death, serious injury, or sexual violence\u2014either directly experienced or witnessed. Not everyone exposed to trauma develops PTSD; individual vulnerability depends on genetics, prior trauma history, social support, and the nature of the trauma itself. PTSD involves four main symptom clusters: intrusive memories (flashbacks, nightmares), avoidance of trauma-related cues, persistent negative changes in cognition and mood (guilt, emotional numbness, loss of interest), and alterations in arousal and reactivity (hypervigilance, exaggerated startle, reckless behavior). Symptoms must persist for more than one month and cause significant functional impairment. The condition affects the brain's stress-response systems, particularly the amygdala (fear center) and prefrontal cortex (rational thinking), making threat detection hypersensitive and emotional regulation difficult. Early intervention, trauma-informed therapy, and social support significantly improve outcomes.",
+    "plain_summary": "Trauma and PTSD (post-traumatic stress disorder) are conditions that develop after exposure to overwhelming experiences \u2014 such as abuse, accidents, violence, combat, medical trauma, or prolonged stress \u2014 that the nervous system could not fully process at the time. The result is a nervous system that stays stuck in a state of threat, replaying the past through flashbacks, nightmares, hypervigilance, and physical symptoms, even when the danger is long gone. PTSD is not a sign of weakness or a character flaw; it is a biological response to experiences that exceeded the capacity to cope.",
+    "detailed_summary": "Post-traumatic stress disorder (PTSD) is a psychiatric and neurobiological condition that arises when the brain and nervous system fail to properly integrate a traumatic experience. During trauma, the brain's threat-detection system (the amygdala) becomes hyperactivated while the memory-consolidation and contextualisation functions of the prefrontal cortex and hippocampus are suppressed. This leaves traumatic memories stored in a fragmented, sensory-based form rather than as coherent narrative memories \u2014 meaning they can be involuntarily reactivated by cues that resemble the original event.\n\nThe resulting symptoms fall into four clusters recognised by DSM-5: intrusion symptoms (flashbacks, nightmares, intrusive thoughts), avoidance of reminders, negative alterations in mood and cognition, and hyperarousal (startle responses, sleep disruption, irritability, hypervigilance). Many people with PTSD also experience dissociation \u2014 a sense of unreality or disconnection from the body or environment.\n\nBeyond the psychological symptoms, PTSD profoundly affects the body. Chronic dysregulation of the HPA (hypothalamic-pituitary-adrenal) axis and the autonomic nervous system leads to altered cortisol patterns, persistent inflammation, gut disturbance, cardiovascular stress, and immune dysregulation. This is why people with PTSD often develop a wide range of physical health conditions.\n\nComplex PTSD (C-PTSD) \u2014 increasingly recognised as a distinct diagnosis \u2014 describes the additional layers of difficulty that develop after prolonged or repeated trauma, particularly in childhood. It includes profound disruptions to self-identity, emotional regulation, and the capacity to form safe relationships, beyond the core PTSD cluster.\n\nDiagnosis is clinical, based on structured interview and symptom questionnaires. Many people with PTSD go years without a correct diagnosis \u2014 especially when trauma history is not disclosed, or when physical symptoms are the presenting complaint. Effective trauma-focused treatments exist, but access and quality vary widely. Finding a practitioner trained specifically in trauma is often the critical step.",
     "prevalence": {
-      "summary": "Roughly 3\u20134% of U.S. adults experience PTSD in any given year, though many more will experience traumatic events without developing the disorder.",
-      "estimate": "3\u20134% of the adult U.S. population annually; lifetime prevalence around 8\u20139%",
-      "notes": "Prevalence varies widely by trauma type, age, and population. Military personnel, first responders, and survivors of violence, sexual assault, and accidents show higher rates. Women are roughly twice as likely to develop PTSD as men. Estimates may undercount because stigma, lack of awareness, and limited access to diagnosis affect reporting."
+      "summary": "PTSD affects roughly 1 in 11 people at some point in their lives, though rates are substantially higher in people who have experienced certain types of trauma.",
+      "estimate": "Approximately 7\u20138% lifetime prevalence in the general population; point prevalence around 3\u20134%",
+      "notes": "Rates vary significantly by population and trauma type. Combat veterans, sexual assault survivors, and refugees show rates of 20\u201350%+. Women are diagnosed at roughly twice the rate of men, though this may partly reflect underdiagnosis in men and differences in trauma type. C-PTSD is not yet separately tracked in most epidemiological studies. Many cases go undiagnosed, particularly where trauma history is not explored by clinicians. Adverse childhood experiences (ACEs) studies suggest the cumulative burden of early trauma is far more widespread than clinical PTSD diagnoses capture."
     },
     "subgroups": [
       {
+        "name": "Acute stress disorder (ASD)",
+        "description": "A time-limited precursor to PTSD occurring within 4 weeks of a traumatic event. Many people who meet criteria for ASD go on to develop PTSD if untreated.",
+        "distinguishing_features": [
+          "Onset within days to weeks of the traumatic event",
+          "Duration less than one month (if it persists, reassessment for PTSD is appropriate)",
+          "High levels of dissociation are common",
+          "Early intervention at this stage may prevent PTSD from consolidating"
+        ]
+      },
+      {
+        "name": "Classic PTSD (single-event trauma)",
+        "description": "Develops after a discrete traumatic event such as an accident, assault, natural disaster, or medical emergency. Often more circumscribed, with clearer trauma triggers.",
+        "distinguishing_features": [
+          "Identifiable onset linked to a specific event",
+          "Trauma triggers tend to be specific and recognisable",
+          "Generally responds well to trauma-focused therapies such as EMDR or prolonged exposure",
+          "Fewer disturbances in identity or relational functioning compared to C-PTSD"
+        ]
+      },
+      {
         "name": "Complex PTSD (C-PTSD)",
-        "description": "Develops after prolonged, repeated trauma (e.g., childhood abuse, domestic violence, war, trafficking) and includes additional symptoms beyond standard PTSD, particularly difficulties with emotion regulation, self-perception, and relationships.",
+        "description": "Develops after prolonged, repeated, or inescapable trauma \u2014 particularly childhood abuse, neglect, domestic violence, or captivity. Recognised as a distinct diagnosis in ICD-11, though not yet in DSM-5.",
         "distinguishing_features": [
-          "Profound disturbance in self-concept (shame, self-blame, sense of worthlessness)",
-          "Difficulty regulating emotions and risk of self-harm",
-          "Negative beliefs about others and relationships; persistent isolation or distrust",
-          "Altered sense of time, dissociation, or depersonalization",
-          "Often emerges from childhood or interpersonal trauma rather than single-incident trauma"
+          "Core PTSD symptoms plus significant disturbances in emotional regulation",
+          "Deeply negative or unstable self-concept ('I am worthless', 'I am permanently damaged')",
+          "Difficulty in relationships \u2014 cycles of idealisation and collapse, fear of abandonment, difficulty with trust",
+          "Dissociative symptoms often more prominent and persistent",
+          "Higher rates of somatic symptoms and chronic pain",
+          "Often misdiagnosed as borderline personality disorder, bipolar disorder, or treatment-resistant depression"
         ]
       },
       {
-        "name": "Acute Stress Disorder (ASD)",
-        "description": "An immediate stress response (3 days to 1 month post-trauma) that resembles PTSD but is shorter-lived; if symptoms persist beyond one month, PTSD diagnosis applies.",
+        "name": "Developmental / childhood trauma (ACEs)",
+        "description": "Trauma occurring during childhood development \u2014 before the brain and attachment system have fully formed \u2014 can have particularly wide-ranging effects on development, identity, biology, and adult health.",
         "distinguishing_features": [
-          "Occurs within 3 days of trauma exposure",
-          "Symptoms resolve within one month in many cases",
-          "Early intervention can prevent progression to PTSD",
-          "Same core symptom clusters as PTSD but in the acute phase"
+          "May not be recognised as 'trauma' by the person who experienced it ('that was just normal in our family')",
+          "Strong association with adult physical illness via ACE-score pathways (cardiovascular disease, autoimmune conditions, chronic pain)",
+          "Attachment disruption and disorganised attachment patterns in adult relationships",
+          "Often presents in adulthood as depression, anxiety, self-sabotage, or interpersonal difficulties rather than classic PTSD symptoms",
+          "Requires therapists trained in developmental or attachment-informed trauma approaches"
         ]
       },
       {
-        "name": "Moral Injury",
-        "description": "Psychological harm from perpetrating, witnessing, or failing to prevent acts that violate deeply held moral beliefs; common in military and healthcare workers. Overlaps with PTSD but centers on guilt, shame, and loss of trust rather than fear-based threat response.",
+        "name": "Medical / healthcare trauma",
+        "description": "PTSD triggered by frightening or dehumanising medical experiences \u2014 including ICU stays, cancer diagnosis, difficult childbirth, invasive procedures, or feeling dismissed or disbelieved by healthcare providers.",
         "distinguishing_features": [
-          "Core features are shame, guilt, and loss of faith or trust",
-          "Often accompanied by self-condemnation and apathy",
-          "May develop without meeting full PTSD criteria",
-          "Requires spiritual or value-based healing alongside trauma processing"
+          "Avoidance of medical settings, which can prevent necessary care",
+          "Triggered by hospital environments, medical equipment, or clinical interactions",
+          "Often underrecognised by medical teams who focus on the physical illness",
+          "Particularly common in NICU parents, post-cardiac event survivors, and people who experienced traumatic birth"
         ]
       },
       {
-        "name": "Adjustment Disorder with Anxiety or Disturbance of Mood",
-        "description": "A milder stress response to a specific identifiable stressor (not necessarily a traumatic event in the traditional sense); symptoms are less severe and shorter-lasting than PTSD.",
+        "name": "Dissociative subtype of PTSD",
+        "description": "A distinct variant characterised by prominent depersonalisation (feeling detached from oneself) and derealisation (feeling the world is unreal), rather than hyperarousal.",
         "distinguishing_features": [
-          "Triggered by a clear stressor but does not meet trauma criteria",
-          "Symptoms emerge within 3 months of stressor and resolve within 6 months if stressor removed",
-          "Less functional impairment than PTSD",
-          "Does not include flashbacks, severe dissociation, or hyperarousal"
+          "Often presents with emotional numbing rather than intense distress or hyperarousal",
+          "May appear outwardly calm but is internally disconnected",
+          "Associated with more severe or prolonged trauma histories",
+          "May not respond as well to standard exposure-based therapies without first addressing the dissociation",
+          "Requires careful pacing in therapy to avoid destabilisation"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Intrusive memories or flashbacks\u2014vivid, involuntary recall of the traumatic event as if it were happening in the present",
-        "category": "neurological / psychological",
-        "notes": "May occur during waking hours or in dreams/nightmares. Triggered by reminders (sounds, smells, situations similar to the trauma). Can be distressing enough to disrupt daily life. Distinguish from voluntary memory recall by the sense of re-living rather than remembering."
+        "symptom": "Intrusive flashbacks \u2014 involuntary reliving of the trauma as if it is happening now",
+        "category": "psychological",
+        "notes": "Flashbacks can be visual, sensory, emotional, or bodily. They are triggered by cues that may not be consciously linked to the trauma, making them feel unpredictable and uncontrollable."
       },
       {
-        "symptom": "Nightmares related to the traumatic event or emotionally intense themes",
-        "category": "sleep / neurological",
-        "notes": "Often vivid and disturbing. May lead to sleep avoidance, insomnia, and daytime fatigue. Can recur nightly or intermittently."
+        "symptom": "Recurrent trauma-related nightmares",
+        "category": "sleep",
+        "notes": "May be literal replays of the event or thematically related. Night terrors and thrashing during sleep are also reported. Sleep disruption reinforces daytime dysregulation."
       },
       {
-        "symptom": "Avoidance of trauma-related thoughts, conversations, or reminders",
-        "category": "behavioral / psychological",
-        "notes": "Person deliberately avoids people, places, activities, or conversations connected to the trauma. Can become progressively broader, limiting life and relationships. Avoidance provides short-term relief but perpetuates PTSD."
+        "symptom": "Hypervigilance \u2014 persistent sense of threat and scanning for danger",
+        "category": "autonomic / psychological",
+        "notes": "Often described as being unable to relax, always on guard, feeling unsafe in apparently neutral environments. Physically exhausting and can resemble anxiety."
       },
       {
-        "symptom": "Emotional numbing or detachment from loved ones",
-        "category": "psychological / social",
-        "notes": "Reduced ability to feel positive emotions; may seem withdrawn, cold, or unresponsive. Often creates relationship strain and isolation, which worsens symptoms."
+        "symptom": "Exaggerated startle response",
+        "category": "autonomic",
+        "notes": "Disproportionate physical reaction to sudden sounds, movements, or touch. Reflects a nervous system calibrated to threat."
       },
       {
-        "symptom": "Persistent negative beliefs or blame (e.g., 'the world is dangerous' or 'I am to blame')",
-        "category": "cognitive / psychological",
-        "notes": "Thought patterns shift to extreme interpretations of the trauma. May develop generalized mistrust, shame, or self-condemnation. Distorts how the person views themselves, others, and future."
+        "symptom": "Emotional numbing and disconnection",
+        "category": "psychological",
+        "notes": "Difficulty feeling positive emotions, feeling cut off from others, reduced interest in life. Can be mistaken for depression."
       },
       {
-        "symptom": "Hypervigilance\u2014exaggerated awareness of potential threats in the environment",
-        "category": "neurological / behavioral",
-        "notes": "Constant scanning for danger, even when objectively safe. Exhausting and interferes with concentration and relaxation. Often paired with startle response."
+        "symptom": "Avoidance of people, places, thoughts, or feelings that serve as reminders",
+        "category": "behavioural",
+        "notes": "Avoidance reduces short-term distress but prevents processing, maintaining and often widening the scope of PTSD over time."
       },
       {
-        "symptom": "Exaggerated startle response\u2014jumping or flinching at sudden stimuli (loud noises, unexpected touch)",
-        "category": "neurological / autonomic",
-        "notes": "Indicates dysregulated amygdala and autonomic nervous system. Occurs even when person knows the stimulus is harmless."
+        "symptom": "Dissociation \u2014 depersonalisation or derealisation",
+        "category": "psychological",
+        "notes": "Feeling detached from one's body, watching oneself from outside, or experiencing the world as unreal or dreamlike. More prominent in complex or early-onset trauma."
       },
       {
-        "symptom": "Increased irritability or aggressive behavior",
-        "category": "behavioral / psychological",
-        "notes": "May manifest as verbal outbursts, anger, or physical aggression, even in response to minor provocation. Often distressing to the person and damaging to relationships."
+        "symptom": "Negative beliefs about self and the world ('I am broken', 'nowhere is safe')",
+        "category": "cognitive",
+        "notes": "These beliefs often feel like objective reality rather than trauma-distorted thinking. Central to C-PTSD and closely linked to shame."
       },
       {
-        "symptom": "Reckless or self-destructive behavior",
-        "category": "behavioral",
-        "notes": "Substance abuse, risky driving, unprotected sex, or other dangerous actions. Reflects dysregulation and possible self-punishment or numbness-seeking."
+        "symptom": "Emotional dysregulation \u2014 rapid or extreme shifts in emotional state",
+        "category": "psychological",
+        "notes": "Rage, panic, grief, or shame that arrives quickly and feels overwhelming. Particularly prominent in C-PTSD. Can be misinterpreted as personality disorder."
       },
       {
-        "symptom": "Difficulty concentrating or forgetfulness",
-        "category": "cognitive / neurological",
-        "notes": "Hypervigilance and intrusive thoughts consume cognitive resources. May be mistaken for ADHD or dementia."
+        "symptom": "Memory gaps and fragmented recall of the trauma",
+        "category": "cognitive",
+        "notes": "Trauma memories are often stored in sensory fragments rather than coherent narrative, making them hard to consciously recall but easy to be triggered by."
       },
       {
-        "symptom": "Sleep disturbance\u2014insomnia, early waking, or frequent waking",
-        "category": "sleep / neurological",
-        "notes": "May be fear-based (nightmares), hyperarousal, or avoidance of sleep. Chronic sleep loss worsens all PTSD symptoms."
+        "symptom": "Difficulty concentrating and cognitive fog",
+        "category": "cognitive",
+        "notes": "The hyperaroused or dissociated nervous system diverts resources from executive function. Often misread as ADHD or laziness."
       },
       {
-        "symptom": "Anxiety or panic attacks\u2014sudden onset of fear, chest pain, shortness of breath, or sense of doom",
-        "category": "neurological / autonomic",
-        "notes": "May be triggered by reminders or occur unpredictably. Can be mistaken for a medical emergency."
+        "symptom": "Persistent shame and guilt \u2014 often out of proportion to actual responsibility",
+        "category": "psychological",
+        "notes": "Particularly common in survivors of interpersonal trauma and abuse. Shame is often a core organising feature of C-PTSD."
       },
       {
-        "symptom": "Depression, persistent sadness, or loss of interest in activities previously enjoyed (anhedonia)",
-        "category": "psychological / mood",
-        "notes": "Common co-occurring condition. Can develop concurrently with PTSD or later in the course. Increases suicide risk."
+        "symptom": "Chronic pain \u2014 especially musculoskeletal, pelvic, or headache",
+        "category": "physical / pain",
+        "notes": "Trauma is stored in the body. Chronic muscle tension, jaw clenching, pelvic holding patterns, and pain sensitisation are common. Often evaluated medically without trauma being considered."
       },
       {
-        "symptom": "Dissociation\u2014feeling detached from body, thoughts, or surroundings; 'going blank'",
-        "category": "neurological / psychological",
-        "notes": "Can include depersonalization (feeling disconnected from self) or derealization (surroundings feel unreal). Protective mechanism that can become habitual and disabling. More common in complex PTSD."
+        "symptom": "Gastrointestinal disturbance \u2014 nausea, bloating, IBS-like symptoms, gut pain",
+        "category": "digestive",
+        "notes": "The gut-brain axis is profoundly affected by chronic stress and trauma. PTSD is significantly overrepresented in people with IBS and functional gut disorders."
       },
       {
-        "symptom": "Physical pain without clear medical cause (chronic pain, headaches, muscle tension)",
-        "category": "pain / somatic",
-        "notes": "Trauma becomes encoded in the body. Muscle tension from chronic hypervigilance can lead to neck, shoulder, or lower back pain. Stress and anxiety lower pain threshold."
+        "symptom": "Sleep disturbance \u2014 difficulty falling asleep, staying asleep, or unrefreshing sleep",
+        "category": "sleep",
+        "notes": "Beyond nightmares: racing thoughts at night, fear of sleeping, or sleeping too much as avoidance are all common patterns."
       },
       {
-        "symptom": "Gastrointestinal symptoms (nausea, diarrhea, constipation, IBS-like symptoms)",
-        "category": "digestive / autonomic",
-        "notes": "Stress triggers vagal and autonomic dysregulation. Gut-brain connection means sustained anxiety alters digestion."
+        "symptom": "Fatigue and exhaustion",
+        "category": "physical",
+        "notes": "Chronic nervous system activation is biologically expensive. Fatigue is often profound and may overlap with conditions such as ME/CFS."
       },
       {
-        "symptom": "Heart palpitations or chest discomfort",
-        "category": "cardiovascular / autonomic",
-        "notes": "May mimic cardiac disease but is typically related to hyperarousal and autonomic dysregulation. Cardiac workup recommended if new or severe."
+        "symptom": "Heightened sensitivity to sound, light, touch, or other sensory input",
+        "category": "sensory",
+        "notes": "A nervous system calibrated to threat may treat ordinary sensory input as a potential danger signal."
+      },
+      {
+        "symptom": "Interpersonal difficulties \u2014 difficulty trusting others, relationship instability, fear of abandonment",
+        "category": "relational / psychological",
+        "notes": "Central to C-PTSD. Relationships may cycle through idealisation and collapse, or the person may avoid closeness altogether."
+      },
+      {
+        "symptom": "Substance use as self-medication",
+        "category": "behavioural",
+        "notes": "Alcohol, cannabis, opioids, and other substances are commonly used to manage hyperarousal, emotional pain, or to induce sleep. Complicates and often delays treatment."
+      },
+      {
+        "symptom": "Self-harm or suicidal ideation",
+        "category": "psychological",
+        "notes": "Rates are significantly elevated in PTSD and C-PTSD. Self-harm may function as a coping mechanism for emotional dysregulation or dissociation. Requires direct assessment."
       }
     ],
     "testing": {
       "key_patterns": [
-        "A traumatic event (real or perceived threat to life, safety, or bodily integrity) followed by involuntary, distressing re-experiencing of that event through flashbacks, nightmares, or triggered memories",
-        "Active avoidance of people, places, thoughts, or conversations related to the trauma, combined with emotional numbing or detachment",
-        "Persistent hypervigilance, exaggerated startle, irritability, or reckless behavior suggesting dysregulated stress response",
-        "Symptom onset or worsening in response to identifiable trauma reminders, and duration of more than one month",
-        "Functional impairment in work, relationships, or daily self-care despite no obvious physical injury"
+        "Persistent re-experiencing of a traumatic event through flashbacks, nightmares, or intrusive memories that feel vivid and present-tense",
+        "Active avoidance of reminders \u2014 people, places, sensations, topics \u2014 that cause significant restriction of life",
+        "Persistent negative changes in mood, thinking, or beliefs about self and world following trauma",
+        "Persistent hyperarousal or hypervigilance, with exaggerated startle response and sleep disruption",
+        "In C-PTSD: the above plus emotional dysregulation, profoundly negative self-concept, and persistent relational difficulties",
+        "Symptoms lasting more than one month and causing significant functional impairment",
+        "Pattern of repeated misdiagnosis (depression, anxiety, BPD, ADHD, somatic illness) without trauma history being explored"
       ],
       "at_home": [
         {
-          "name": "Trauma history timeline",
-          "description": "Write down the traumatic event(s) you experienced, approximately when they occurred, and what triggered or reminded you of them over time. Note which reminders cause the strongest reactions. This helps clarify whether your symptoms are linked to specific traumas and whether avoidance patterns have expanded.",
-          "safety_notes": "Writing about trauma can be emotionally triggering. Do this in a safe, private space. If intense distress arises, pause and use grounding techniques (see symptom management). Consider doing this with a therapist present, especially if trauma is severe or recent."
+          "name": "PCL-5 (PTSD Checklist for DSM-5)",
+          "description": "A validated 20-item self-report questionnaire that maps directly onto DSM-5 PTSD symptom clusters. Freely available online. Scores of 33 or above suggest probable PTSD and warrant clinical assessment. Useful as a starting point for self-understanding and for bringing to a clinical appointment.",
+          "safety_notes": "A questionnaire cannot diagnose PTSD \u2014 clinical interview by a trauma-trained professional is required. Completing the PCL-5 can itself be activating for some people; take breaks if needed and have support available."
         },
         {
-          "name": "Symptom tracking\u2014daily log",
-          "description": "For 1\u20132 weeks, record each day: (1) intrusive thoughts or flashbacks (frequency, intensity, trigger); (2) avoidance behaviors; (3) sleep quality and nightmares; (4) hyperarousal or irritability; (5) mood or numbing; (6) functional impact (work, relationships, self-care). Use a simple 0\u201310 scale. This baseline clarifies severity, patterns, and triggers, and is useful to share with a provider.",
-          "safety_notes": "Journaling can intensify distress if not grounded. Limit time spent (e.g., 10 minutes) and follow with a grounding activity. Avoid logging immediately before bed."
+          "name": "IES-R (Impact of Event Scale \u2013 Revised)",
+          "description": "A 22-item scale measuring intrusion, avoidance, and hyperarousal symptoms following a specific event. Widely used in research and clinical practice. Freely available online.",
+          "safety_notes": "As with all trauma-related self-assessments, completing this can bring up distressing material. Treat results as informational, not diagnostic."
         },
         {
-          "name": "Trigger identification and safety planning",
-          "description": "Identify specific triggers (sounds, places, people, sensations) that reliably evoke flashbacks or intense anxiety. For each, develop a concrete safety plan: a grounding technique (5-4-3-2-1 sensory method, cold water on face, deep breathing), a safe person to call, or a safe place to go. Knowing your triggers and having a plan reduces panic and shame when they occur.",
-          "safety_notes": "Avoid deliberately exposing yourself to triggers without professional guidance. Testing triggers informally may escalate distress. This exercise is about awareness and preparation, not exposure therapy."
+          "name": "ACE (Adverse Childhood Experiences) questionnaire",
+          "description": "A 10-item questionnaire assessing childhood exposure to abuse, neglect, and household dysfunction. Higher ACE scores are strongly associated with adult mental and physical health problems. Useful for understanding the role of early trauma when adult symptoms seem disproportionate to obvious triggers.",
+          "safety_notes": "Reviewing childhood experiences can be emotionally difficult. This is best done when in a stable emotional state, ideally with therapeutic support in place."
+        },
+        {
+          "name": "Symptom tracking journal",
+          "description": "Keeping a record of triggers, flashbacks, nightmares, dissociative episodes, sleep, mood, and physical symptoms over 2\u20134 weeks can help identify patterns and provide useful clinical information. Note what triggered each episode and the intensity of the response.",
+          "safety_notes": "Detailed trauma journaling can be re-traumatising for some people. Focus on patterns and functional impact rather than reliving events in detail."
         }
       ],
       "clinical": [
         {
-          "name": "Structured Clinical Interview for PTSD (CAPS-5 or PCL-5)",
+          "name": "Structured clinical interview (CAPS-5 or SCID)",
           "type": "gold_standard",
-          "description": "Gold-standard diagnostic tool. CAPS-5 is a clinician-administered interview covering all DSM-5 PTSD criteria (trauma exposure, intrusive symptoms, avoidance, negative cognitions/mood, hyperarousal), onset, duration, and functional impairment. PCL-5 is a self-report version. Both yield severity scores and clarify differential diagnosis. Requires trained clinician for CAPS-5.",
-          "availability": "CAPS-5 administered by psychiatrists, psychologists, trauma-trained therapists, or primary care physicians with training. PCL-5 freely available online; can be self-administered or administered by any provider."
+          "description": "The Clinician-Administered PTSD Scale for DSM-5 (CAPS-5) is the gold-standard diagnostic tool \u2014 a detailed structured interview conducted by a trained clinician that evaluates each DSM-5 criterion. The SCID (Structured Clinical Interview for DSM Disorders) is also used. These assessments establish diagnosis, severity, and the nature of the traumatic events.",
+          "availability": "Conducted by psychologists, psychiatrists, or specifically trained therapists in clinical or research settings. Not available in standard GP consultations. Trauma clinics and psychology services typically use these tools."
         },
         {
-          "name": "PTSD Checklist for DSM-5 (PCL-5)",
+          "name": "PCL-5 administered as clinical screening",
           "type": "standard",
-          "description": "20-item self-report questionnaire assessing frequency and intensity of PTSD symptoms over the past month on a 0\u20134 scale. Total score \u226533 suggests probable PTSD; higher scores indicate greater severity. Quick, validated, and widely used in primary care and research. Can be repeated over time to track treatment progress.",
-          "availability": "Freely available online (www.ptsd.va.gov). Can be administered by any provider or self-administered. Typically takes 5\u201310 minutes. Often used as screening tool in primary care."
+          "description": "The same questionnaire used for self-assessment can be administered in clinical settings to screen and monitor symptom severity over time.",
+          "availability": "Should be available in any mental health or primary care setting, though not all clinicians routinely screen for PTSD."
         },
         {
-          "name": "Davidson Trauma Scale (DTS)",
+          "name": "International Trauma Questionnaire (ITQ) for C-PTSD",
           "type": "standard",
-          "description": "17-item self-report scale measuring frequency and severity of PTSD symptoms plus overall distress. Generates subscale scores (re-experiencing, avoidance/numbing, arousal) and total score. Sensitive to treatment change over time.",
-          "availability": "Administered in clinical and research settings by mental health providers. Requires licensing agreement but widely available."
+          "description": "A validated measure specifically designed to assess both PTSD and C-PTSD according to ICD-11 criteria, capturing the additional domains of disturbances in self-organisation. Particularly useful where C-PTSD is suspected.",
+          "availability": "Available in clinical psychology settings and some trauma-specialist services. Less widely known than the PCL-5."
         },
         {
-          "name": "Functional brain imaging (fMRI) or PET scan",
+          "name": "Neurobiological and physiological markers (HRV, cortisol, inflammatory markers)",
           "type": "emerging",
-          "description": "Research-based neuroimaging showing altered brain activity patterns in PTSD, particularly in the amygdala (fear processing), prefrontal cortex (emotional regulation), and anterior cingulate (attention/emotion integration). Not yet standard diagnostic tool but useful for understanding neurobiology and tracking treatment response in research settings.",
-          "availability": "Currently primarily in research centers and specialized academic medical centers. Not standard in clinical practice and not covered by most insurance for PTSD diagnosis."
+          "description": "Research has consistently shown altered cortisol rhythms, reduced heart rate variability (HRV), and elevated inflammatory markers in PTSD. These are not yet part of routine clinical diagnosis but may be measured in research settings or functional medicine assessments and can help contextualise physical symptoms.",
+          "availability": "Cortisol testing (salivary diurnal cortisol) available through functional medicine practitioners and some integrative clinicians. HRV measurable via wearable devices or clinical equipment."
         },
         {
-          "name": "Biological markers (cortisol, inflammatory cytokines, heart rate variability)",
-          "type": "emerging",
-          "description": "Chronic stress in PTSD dysregulates the HPA axis; cortisol levels may be abnormally low. Inflammatory markers (IL-6, TNF-\u03b1) and reduced heart rate variability also suggest autonomic dysregulation. These biomarkers correlate with PTSD severity and treatment response but are not diagnostic on their own.",
-          "availability": "Blood cortisol and inflammatory markers available through specialty labs; not part of routine clinical diagnosis. Heart rate variability can be assessed with wearable devices or clinical monitors."
-        },
-        {
-          "name": "Comprehensive medical workup (CBC, metabolic panel, TSH, cardiac evaluation if indicated)",
+          "name": "Differential diagnosis assessment",
           "type": "standard",
-          "description": "Ruled out medical mimics (hyperthyroidism, anemia, cardiac arrhythmia, neurological conditions) that can present with anxiety, insomnia, or autonomic symptoms. Important because PTSD often co-occurs with medical conditions and anxiety symptoms overlap with physical illness.",
-          "availability": "Primary care physician or emergency department can order routine labs. EKG and cardiac workup if chest pain, palpitations, or family history warrants."
+          "description": "Clinical evaluation to distinguish PTSD from bipolar disorder, borderline personality disorder, ADHD, dissociative identity disorder, and other conditions that can overlap or be misdiagnosed in trauma survivors. Requires a trauma-informed clinician who takes a full developmental and trauma history.",
+          "availability": "Psychiatrists and clinical psychologists with trauma training. Many general practitioners and even general psychiatrists do not routinely take a detailed trauma history."
         }
       ]
     },
     "related_conditions": [
       {
-        "name": "Major Depressive Disorder (MDD)",
+        "id": "anxiety",
+        "name": "Anxiety disorder",
         "relationship": "comorbid",
-        "explanation": "Approximately 50% of people with PTSD develop major depression. Shared symptoms include anhedonia, sleep disturbance, and emotional numbing, but depression lacks the trauma-specific re-experiencing and hyperarousal of PTSD. Both are treated, though trauma-focused therapy for PTSD often improves co-occurring depression."
+        "explanation": "Anxiety disorders (particularly generalised anxiety, panic disorder, and social anxiety) co-occur with PTSD at high rates. Both involve dysregulated threat-detection systems. In trauma survivors, anxiety often represents chronic hyperarousal rather than a primary anxiety disorder, and treating only the anxiety without addressing the trauma typically produces limited results."
       },
       {
-        "name": "Generalized Anxiety Disorder (GAD)",
+        "id": "depression",
+        "name": "Depression",
         "relationship": "comorbid",
-        "explanation": "Chronic worry and hyperarousal overlap with PTSD hypervigilance. GAD is not tied to a specific trauma and involves worry about future events; PTSD is tied to a past traumatic event. They can co-occur and may require combined treatment."
+        "explanation": "Major depressive disorder co-occurs in 50\u201370% of people with PTSD. Chronic trauma exposure, disrupted HPA axis function, neuroinflammation, and the toll of avoidance and isolation all contribute. Depression in trauma survivors often includes strong shame, worthlessness, and anhedonia, and may not respond adequately to antidepressants alone without trauma-focused treatment."
       },
       {
-        "name": "Panic Disorder",
+        "id": "ibs",
+        "name": "IBS",
         "relationship": "comorbid",
-        "explanation": "Recurrent panic attacks (unexpected or cued by trauma reminders) are common in PTSD. Both involve autonomic hyperarousal and fear conditioning. Panic attacks in PTSD are often triggered; in panic disorder, they may be uncued."
+        "explanation": "PTSD significantly increases the risk of IBS and functional gut disorders. The gut-brain axis is dysregulated by chronic stress and trauma, altering gut motility, visceral sensitivity, and the gut microbiome. Studies show PTSD is overrepresented in IBS populations and vice versa. Gut symptoms may be directly trauma-triggered."
       },
       {
-        "name": "Substance Use Disorder",
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
         "relationship": "comorbid",
-        "explanation": "People with PTSD often self-medicate with alcohol, opioids, or stimulants to reduce nightmares, anxiety, or emotional pain. This creates a negative reinforcement cycle. Roughly 40% of people with PTSD have comorbid substance use. Both conditions must be addressed for recovery."
+        "explanation": "PTSD and fibromyalgia share significant overlap in mechanisms \u2014 central sensitisation, HPA axis dysregulation, and neuroinflammation \u2014 and frequently co-occur. Trauma history is common in fibromyalgia populations. The two conditions may share a common pathway through chronic stress-induced neurobiological changes."
       },
       {
-        "name": "Sleep Disorders (Insomnia, Sleep Apnea)",
-        "relationship": "comorbid",
-        "explanation": "PTSD nightmares and hyperarousal disrupt sleep; poor sleep worsens PTSD. Sleep apnea is also more common in trauma survivors and further disrupts sleep architecture. Sleep treatment is often necessary alongside PTSD treatment."
-      },
-      {
-        "name": "Chronic Pain Syndromes (Fibromyalgia, Chronic Fatigue Syndrome)",
-        "relationship": "comorbid",
-        "explanation": "Trauma is encoded in the body through muscle tension, altered pain processing, and autonomic dysregulation. PTSD and chronic pain share overlapping mechanisms and high co-occurrence rates. Treating both improves outcomes."
-      },
-      {
-        "name": "Dissociative Disorders (DID, DDNOS, Depersonalization Disorder)",
+        "id": "central_sensitisation",
+        "name": "Central sensitisation",
         "relationship": "mechanistic_link",
-        "explanation": "Severe or prolonged trauma can lead to dissociation as a protective mechanism. Complex PTSD and dissociative disorders share dissociation as a core feature. Untreated PTSD may progress to more entrenched dissociative patterns."
+        "explanation": "Chronic trauma and PTSD can drive central sensitisation \u2014 a state in which the central nervous system becomes amplified in its pain and threat processing. This explains why many PTSD survivors develop widespread pain, sensory hypersensitivity, and hypersensitivity to environmental triggers."
       },
       {
-        "name": "Borderline Personality Disorder (BPD)",
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "PTSD profoundly disrupts autonomic nervous system regulation, and dysautonomia is increasingly recognised as a consequence of chronic trauma. Symptoms such as rapid heart rate, dizziness on standing, and exercise intolerance may reflect autonomic dysregulation with a trauma component."
+      },
+      {
+        "id": "adhd",
+        "name": "ADHD",
         "relationship": "often_confused",
-        "explanation": "Childhood trauma is a risk factor for both PTSD and BPD. BPD is diagnosed by pervasive interpersonal instability, self-harm, and identity disturbance; PTSD is tied to trauma re-experiencing. A person can have both. Distinguishing them affects treatment approach (trauma-focused for PTSD, dialectical behavior therapy for BPD)."
+        "explanation": "PTSD and ADHD share overlapping symptoms \u2014 difficulty concentrating, impulsivity, emotional dysregulation, hyperactivity, and sleep problems \u2014 leading to frequent misdiagnosis in both directions. Childhood trauma in particular can produce a clinical picture that closely resembles ADHD. Some individuals have both conditions. Distinguishing them requires a thorough trauma history."
       },
       {
-        "name": "Attachment Disorders",
-        "relationship": "upstream",
-        "explanation": "Early childhood trauma and neglect impair secure attachment and increase vulnerability to PTSD from later traumas. Attachment difficulties are both a risk factor for and a consequence of PTSD."
+        "id": "mcas",
+        "name": "Mast cell activation syndrome",
+        "relationship": "comorbid",
+        "explanation": "Emerging evidence suggests that chronic stress and trauma can activate mast cells via neuroinflammatory pathways, and MCAS is increasingly recognised in complex trauma populations. The overlap between PTSD-related sensory hypersensitivity and MCAS symptoms is an active area of investigation."
       },
       {
-        "name": "Cardiovascular Disease",
-        "relationship": "downstream",
-        "explanation": "Chronic PTSD-related hyperarousal, elevated cortisol, and inflammation increase risk of hypertension, coronary artery disease, and stroke. PTSD accelerates aging of cardiovascular system. Treating PTSD reduces cardiovascular risk."
+        "id": "eds",
+        "name": "hEDS / HSD",
+        "relationship": "comorbid",
+        "explanation": "Hypermobile EDS and related connective tissue disorders appear to co-occur with PTSD and anxiety at higher rates than expected by chance. Some researchers suggest shared neurobiological pathways (e.g. noradrenergic dysregulation) that increase vulnerability to both conditions. The chronic pain and disability of hEDS can itself be traumatising."
       },
       {
-        "name": "Immune Dysregulation (Autoimmune Conditions, Frequent Infections)",
-        "relationship": "downstream",
-        "explanation": "Chronic stress from PTSD dysregulates the immune system, increasing inflammation and susceptibility to infection and autoimmune disease. Trauma survivors have higher rates of lupus, rheumatoid arthritis, and other inflammatory conditions."
+        "id": "endometriosis",
+        "name": "Endometriosis",
+        "relationship": "comorbid",
+        "explanation": "People with endometriosis have significantly elevated rates of PTSD, which may reflect both the trauma of living with a painful, often dismissed chronic illness and the impact of chronic pain on the nervous system. The relationship between trauma, central sensitisation, and endometriosis severity is an emerging area of research."
       },
       {
-        "name": "Acute Stress Disorder (ASD)",
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
         "relationship": "mechanistic_link",
-        "explanation": "ASD is the immediate stress response (3 days to 1 month post-trauma); PTSD develops if symptoms persist beyond 1 month. Early intervention in ASD can prevent progression to chronic PTSD."
+        "explanation": "Chronic stress and trauma alter the gut microbiome through neuroendocrine pathways, reducing microbial diversity and shifting microbial composition. Dysbiosis in turn amplifies neuroinflammation and HPA axis reactivity, potentially maintaining PTSD symptoms. The gut-brain axis is bidirectional in trauma."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "comorbid",
+        "explanation": "Chronic HPA axis dysregulation from PTSD can affect thyroid function. Thyroid dysfunction (both hypo- and hyperthyroidism) shares symptoms with PTSD including fatigue, mood disturbance, cognitive fog, and sleep disruption, and should be ruled out in complex presentations."
+      },
+      {
+        "id": "pelvic_floor",
+        "name": "Pelvic floor dysfunction",
+        "relationship": "downstream",
+        "explanation": "Trauma \u2014 especially sexual trauma, but also generalised threat-state \u2014 can cause chronic pelvic floor muscle tension and dysfunction. The pelvic floor often holds trauma in the body. Pelvic floor dysfunction may present with pelvic pain, urinary urgency, or sexual dysfunction and may require trauma-informed physiotherapy."
+      },
+      {
+        "id": null,
+        "name": "Borderline personality disorder (BPD)",
+        "relationship": "often_confused",
+        "explanation": "C-PTSD and BPD share many features \u2014 emotional dysregulation, unstable relationships, fear of abandonment, self-harm, and identity disturbance \u2014 leading to frequent misdiagnosis. The ICD-11 recognises C-PTSD as distinct from BPD. Many people diagnosed with BPD have significant trauma histories, and the label has historically been applied without trauma being explored. The treatment implications differ significantly."
+      },
+      {
+        "id": null,
+        "name": "Dissociative identity disorder (DID)",
+        "relationship": "mechanistic_link",
+        "explanation": "DID lies at the extreme end of the dissociative spectrum and typically develops from severe, prolonged childhood trauma. It exists on a continuum with C-PTSD. Many people with DID are initially diagnosed with PTSD or other conditions. Both require trauma-informed treatment, but DID requires specific expertise."
+      },
+      {
+        "id": null,
+        "name": "Substance use disorders",
+        "relationship": "comorbid",
+        "explanation": "Alcohol, cannabis, opioids, and stimulants are frequently used by PTSD survivors to manage hyperarousal, emotional pain, and sleep disturbance. Comorbid substance use is present in 35\u201350% of people seeking treatment for PTSD. Integrated treatment addressing both conditions simultaneously produces better outcomes than treating either in isolation."
+      },
+      {
+        "id": null,
+        "name": "Chronic fatigue syndrome / ME",
+        "relationship": "comorbid",
+        "explanation": "Trauma and PTSD are significantly overrepresented in ME/CFS populations. Shared mechanisms include HPA axis dysregulation, neuroinflammation, and autonomic dysfunction. The boundary between the two is not always clear, and many people with ME/CFS have unaddressed trauma histories."
+      },
+      {
+        "id": null,
+        "name": "Eating disorders",
+        "relationship": "comorbid",
+        "explanation": "PTSD \u2014 particularly interpersonal trauma \u2014 substantially increases the risk of eating disorders, including anorexia, bulimia, and binge-eating disorder. Disordered eating may function as a way to regulate emotions, manage dissociation, or assert control. Trauma-informed eating disorder treatment is needed."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
-          "name": "Trauma-focused Cognitive Behavioral Therapy (TF-CBT)",
-          "category": "psychotherapy",
-          "description": "Structured, evidence-based therapy combining exposure therapy (gradually confronting trauma reminders in safe contexts) and cognitive processing (identifying and changing trauma-related distorted thoughts). Typically 12\u201316 sessions. Helps desensitize fear responses and correct unhelpful beliefs about the trauma and self.",
+          "name": "Trauma-focused cognitive behavioural therapy (TF-CBT / CPT / PE)",
+          "category": "psychological therapy",
+          "description": "Cognitive Processing Therapy (CPT) and Prolonged Exposure (PE) are the most extensively researched trauma-focused therapies. CPT works by identifying and challenging unhelpful beliefs that emerged from the trauma (stuck points). PE involves gradual, structured exposure to trauma memories and reminders to reduce avoidance and desensitise the fear response. Both require a trained therapist and typically involve 8\u201316 sessions.",
           "evidence_level": "strong",
-          "notes": "Considered first-line treatment for PTSD. Requires working with a trained trauma therapist. Early sessions may involve psychoeducation and coping skills; exposure is introduced gradually. Not appropriate for actively suicidal or psychotic patients without concurrent stabilization."
+          "notes": "These are first-line recommended treatments in most clinical guidelines. They can feel demanding and temporarily increase distress during processing. Not appropriate for everyone \u2014 particularly those with severe dissociation, active substance use, or insufficient safety and stability \u2014 without modification."
         },
         {
-          "name": "Cognitive Processing Therapy (CPT)",
-          "category": "psychotherapy",
-          "description": "Similar to TF-CBT but focuses more on identifying and changing stuck trauma-related thoughts without formal prolonged exposure. Emphasizes how trauma changed beliefs about safety, trust, control, and self. Typically 12 sessions.",
+          "name": "EMDR (Eye Movement Desensitisation and Reprocessing)",
+          "category": "psychological therapy",
+          "description": "EMDR uses bilateral sensory stimulation (typically eye movements, but also tapping or sound) while the person holds elements of the traumatic memory in mind. The mechanism is not fully understood but may involve disrupting the reconsolidation of traumatic memories and reducing their vividness and emotional charge. Widely used and recommended in international guidelines.",
           "evidence_level": "strong",
-          "notes": "May be gentler than full exposure therapy for some; equally effective in trials. Good for people who struggle with direct exposure. Also requires trained therapist."
+          "notes": "Particularly useful for discrete trauma memories. Some individuals process trauma more rapidly with EMDR than with verbal therapies. Requires a certified EMDR therapist. Can be adapted for C-PTSD with an extended stabilisation phase."
         },
         {
-          "name": "Prolonged Exposure Therapy (PE)",
-          "category": "psychotherapy",
-          "description": "Involves repeated, structured exposure to trauma reminders (through imaginal recounting and in-vivo exposure to avoided places/activities) to reduce avoidance and emotional reactivity. Sessions typically 90 minutes, twice weekly for 8\u201312 weeks.",
-          "evidence_level": "strong",
-          "notes": "Highly effective but challenging. Requires strong therapeutic alliance and careful preparation. Not suitable during acute crisis or if person is not committed to facing trauma memories."
-        },
-        {
-          "name": "Eye Movement Desensitization and Reprocessing (EMDR)",
-          "category": "psychotherapy",
-          "description": "Combines bilateral stimulation (eye movements, tapping, or sounds) with trauma memory processing. Theoretically helps the brain reprocess traumatic memories; mechanism is debated. Typically 8\u201312 sessions. May feel less verbally demanding than CBT.",
-          "evidence_level": "strong",
-          "notes": "Effective in multiple randomized trials; approved by VA/DoD. Works differently for different people. Requires trained EMDR therapist. Some people respond quickly; others need longer treatment."
-        },
-        {
-          "name": "Mindfulness and meditation",
-          "category": "lifestyle / behavioral",
-          "description": "Regular practice (e.g., 10\u201320 minutes daily) of observing thoughts and sensations without judgment, using techniques like body scans, breath awareness, or loving-kindness meditation. Reduces hyperarousal, improves emotional regulation, and lowers reactivity to trauma triggers.",
+          "name": "Somatic and body-based approaches",
+          "category": "psychological therapy",
+          "description": "Approaches such as Somatic Experiencing (SE), Sensorimotor Psychotherapy, and the Polyvagal-informed therapy address trauma stored in the body through awareness of bodily sensations, movement, and nervous system states \u2014 rather than primarily through narrative or cognitive processing. Particularly useful where verbal processing is limited or where somatic symptoms are prominent.",
           "evidence_level": "moderate",
-          "notes": "Helps when practiced regularly. Some trauma survivors find mindfulness triggering initially (e.g., body scans can trigger dissociation or flashbacks in severe PTSD); start gently and with guidance. May be combined with trauma-focused therapy."
+          "notes": "Evidence base is growing but less extensive than for CPT, PE, or EMDR. Many trauma survivors find body-based approaches transformative, particularly those with dissociation or alexithymia (difficulty identifying emotions). Requires a specifically trained therapist."
         },
         {
-          "name": "Grounding techniques (5-4-3-2-1 sensory method, ice-cold water, deep breathing)",
-          "category": "behavioral / emergency coping",
-          "description": "Techniques to interrupt flashbacks or panic in the moment. For 5-4-3-2-1: identify 5 things you see, 4 you can touch, 3 you hear, 2 you smell, 1 you taste. Alternatively, hold ice cubes or splash cold water on face to activate the vagus nerve and calm the nervous system. Deep breathing (4-7-8 pattern: inhale 4, hold 7, exhale 8) activates parasympathetic tone.",
+          "name": "Stabilisation and window of tolerance work",
+          "category": "psychological therapy",
+          "description": "Before trauma processing can begin safely, many people \u2014 particularly those with C-PTSD or ongoing life stressors \u2014 need to build the capacity to stay within their 'window of tolerance' (the zone of arousal in which processing is possible). Stabilisation includes grounding techniques, distress tolerance skills, and developing internal resources.",
           "evidence_level": "moderate",
-          "notes": "Quick, portable, and safe to practice alone. Especially useful in early stages or during acute distress. Not a replacement for professional treatment but valuable adjunct. Practice when calm so you remember during crisis."
+          "notes": "Not a standalone treatment for PTSD, but an essential phase for many people. Skipping stabilisation and moving straight to trauma processing can be destabilising, particularly in complex cases. Phase-based treatment (stabilise, process, integrate) is considered best practice for C-PTSD."
         },
         {
-          "name": "Physical exercise (aerobic, strength training, yoga)",
-          "category": "lifestyle",
-          "description": "Regular exercise (3\u20135 times weekly, 30+ minutes) reduces PTSD symptoms, anxiety, depression, and sleep disturbance. Aerobic exercise (running, cycling, swimming) is particularly effective. Yoga and tai chi combine movement with mindfulness and may help with hyperarousal and dissociation.",
+          "name": "Nervous system regulation practices",
+          "category": "lifestyle / self-management",
+          "description": "Practices that activate the parasympathetic nervous system can reduce chronic hyperarousal and build regulatory capacity over time. These include diaphragmatic breathing, extended exhale breathing (physiological sigh), vagal toning exercises, cold water exposure, and humming or singing (which vibrate the vagus nerve). Yoga, qigong, and tai chi have evidence specifically in PTSD populations.",
+          "evidence_level": "moderate",
+          "notes": "These are adjuncts to \u2014 not replacements for \u2014 trauma-focused therapy. Trauma-sensitive yoga in particular has shown promise in clinical trials with trauma survivors. Regular practice over weeks to months appears necessary for durable change."
+        },
+        {
+          "name": "SSRI / SNRI medication",
+          "category": "medication",
+          "description": "Sertraline, paroxetine (SSRIs), and venlafaxine (SNRI) are the medications with the strongest evidence base for PTSD symptom reduction and are FDA-approved for PTSD. They can reduce hyperarousal, nightmares, and depressive symptoms, and may make engagement with therapy more possible.",
           "evidence_level": "strong",
-          "notes": "Exercise regulates HPA axis, reduces inflammation, and improves sleep. Trauma survivors sometimes avoid exercise due to body disconnection; start gently. Avoid group exercise if crowds trigger anxiety initially; build toward it."
+          "notes": "Medication alone rarely resolves PTSD and is generally considered most useful as an adjunct to trauma-focused therapy. Response rates are modest compared to therapy. Prazosin has evidence specifically for PTSD-related nightmares. Should be managed by a prescriber familiar with trauma, ideally a psychiatrist."
+        },
+        {
+          "name": "MDMA-assisted psychotherapy (clinical trials)",
+          "category": "emerging / investigational",
+          "description": "MDMA-assisted therapy, delivered in carefully controlled clinical settings with trained therapists, has shown striking efficacy in Phase 2 and Phase 3 trials, particularly for treatment-resistant PTSD. MDMA is thought to temporarily reduce amygdala reactivity and increase social trust, allowing deeper trauma processing than is possible in ordinary therapeutic states.",
+          "evidence_level": "strong",
+          "notes": "Not yet approved for routine clinical use (as of 2025, FDA review is ongoing following initial rejection). Available only through clinical trials or specialist centres in some jurisdictions. Not appropriate for people with certain cardiovascular or psychiatric conditions."
         },
         {
           "name": "Sleep hygiene and nightmare management",
+          "category": "lifestyle / self-management",
+          "description": "Given how central sleep disruption is to PTSD severity, targeted sleep support can reduce the overall symptom burden. Image Rehearsal Therapy (IRT) \u2014 a technique in which the person consciously rewrites the ending of recurring nightmares while awake and rehearses the new version \u2014 has good evidence for reducing nightmare frequency.",
+          "evidence_level": "moderate",
+          "notes": "IRT requires some instruction, often from a therapist familiar with the technique. Basic sleep hygiene (regular schedule, dark room, avoiding screens and stimulants) remains foundational."
+        },
+        {
+          "name": "Social support and safe relational connection",
+          "category": "relational / lifestyle",
+          "description": "Safe, consistent social connection \u2014 whether through relationships, support groups, peer communities, or group therapy \u2014 directly supports nervous system co-regulation. Humans are biological social animals and recover from trauma more effectively in safe relational contexts than in isolation.",
+          "evidence_level": "strong",
+          "notes": "C-PTSD in particular often disrupts the capacity to access relational support. Trauma-focused group therapy can be powerful precisely because it addresses interpersonal trauma in a relational context. Forced social situations or unsafe relationships do not help and may re-traumatise."
+        },
+        {
+          "name": "Physical exercise",
           "category": "lifestyle",
-          "description": "Establish consistent sleep schedule, cool/dark bedroom, avoid screens 1 hour before bed, limit caffeine and alcohol. For nightmares: Image Rehearsal Therapy (mentally rehearsing a revised, less distressing version of the dream during waking hours) can reduce nightmare frequency and intensity.",
+          "description": "Aerobic exercise has evidence for reducing PTSD severity, improving sleep, reducing depression, and supporting neuroplasticity (including hippocampal volume, which is often reduced in PTSD). Trauma-sensitive movement practices (yoga, walking, martial arts) can also reconnect people with their bodies in a safe way.",
           "evidence_level": "moderate",
-          "notes": "Sleep deprivation worsens all PTSD symptoms. Alcohol initially helps sleep but disrupts REM and worsens nightmares long-term. Prazosin (an alpha-blocker) is FDA-approved for nightmares in PTSD if non-pharmacological approaches fail."
-        },
-        {
-          "name": "Social support and connection",
-          "category": "lifestyle / relationship",
-          "description": "Isolation perpetuates PTSD; regular contact with trusted people reduces symptoms. Participate in group activities (trauma support groups, community clubs, religious groups) to rebuild connection. Supportive relationships are protective factors and accelerate recovery.",
-          "evidence_level": "strong",
-          "notes": "Many trauma survivors withdraw or feel they will burden others. Communicating needs to trusted people is crucial. Group trauma-specific therapy combines treatment with shared experience."
-        },
-        {
-          "name": "Substance abuse treatment and avoidance of self-medication",
-          "category": "behavioral",
-          "description": "If using alcohol, drugs, or medications to escape PTSD symptoms, address the substance use simultaneously with trauma treatment. Substance abuse worsens PTSD, delays recovery, and creates new trauma. Work with an addiction specialist if needed.",
-          "evidence_level": "strong",
-          "notes": "Self-medication temporarily reduces distress but prevents emotional processing and perpetuates avoidance. Recovery from PTSD requires facing, not fleeing, the trauma. Dual-diagnosis programs integrate trauma and addiction treatment."
-        },
-        {
-          "name": "Selective Serotonin Reuptake Inhibitors (SSRIs) \u2014 sertraline, paroxetine, fluoxetine",
-          "category": "medication",
-          "description": "FDA-approved for PTSD (sertraline and paroxetine). SSRIs increase serotonin, reducing anxiety, depression, and intrusive thoughts. Typically take 2\u20134 weeks to show effect and require 8\u201312 weeks for full benefit. Dosing and duration discussed with prescriber.",
-          "evidence_level": "strong",
-          "notes": "Helpful adjunct to therapy; not a stand-alone cure. Side effects (sexual dysfunction, weight gain, sleep disruption) are common but often manageable. Tapering off requires gradual reduction to avoid withdrawal. Other antidepressants (SNRIs like venlafaxine) are also used off-label."
-        },
-        {
-          "name": "Prazosin for trauma nightmares",
-          "category": "medication",
-          "description": "An alpha-1 antagonist that blocks norepinephrine signaling; FDA-approved for nightmare symptoms in PTSD. Typically 2\u201320 mg at bedtime. Reduces nightmare frequency and intensity. Particularly useful if nightmares are severely disrupting sleep.",
-          "evidence_level": "moderate",
-          "notes": "Not a first-line treatment but evidence-based for nightmares specifically. Requires blood pressure monitoring (can lower BP). Often prescribed by psychiatrists or sleep specialists."
-        },
-        {
-          "name": "Somatic Experiencing or body-based therapy",
-          "category": "psychotherapy / somatic",
-          "description": "Therapy focused on releasing stored trauma held in the body. Uses awareness of physical sensations, gentle movement, and breathing to help the nervous system complete interrupted fight/flight/freeze responses and return to baseline. May involve shaking, rocking, or conscious muscle relaxation.",
-          "evidence_level": "moderate",
-          "notes": "Effective for people with strong body-level disconnection or dissociation. Requires trained somatic therapist. May initially intensify bodily sensations; guidance is important."
-        },
-        {
-          "name": "Psilocybin or MDMA-assisted therapy (emerging)",
-          "category": "medication / psychotherapy",
-          "description": "Investigational treatments combining controlled doses of psilocybin (psychedelic) or MDMA (empathogen) in structured therapy sessions. Early research suggests rapid, sustained improvement in PTSD symptoms by enhancing emotional processing and reducing fear. MDMA-assisted therapy for PTSD is in Phase 3 trials and may gain approval within years.",
-          "evidence_level": "emerging",
-          "notes": "Not yet standard of care; available only in research trials in most jurisdictions. Promising but not appropriate for active psychosis, cardiac instability, or pregnancy. Requires specialized medical supervision."
-        },
-        {
-          "name": "Omega-3 fatty acids (fish oil, algae supplements)",
-          "category": "supplement",
-          "description": "Omega-3s (EPA and DHA) support neural health, reduce inflammation, and improve mood. Some evidence for reduced PTSD symptoms in combination with therapy. Typical dose: 1,000\u20132,000 mg daily. Works slowly (weeks to months).",
-          "evidence_level": "anecdotal",
-          "notes": "Safe for most. May have blood-thinning effects at high doses. Not a substitute for therapy or medication. Evidence is mixed; use as adjunct."
-        },
-        {
-          "name": "Magnesium supplementation",
-          "category": "supplement",
-          "description": "Magnesium supports nervous system regulation, may reduce anxiety and improve sleep. Chronic stress depletes magnesium stores. Typical dose: 200\u2013400 mg daily (as glycinate or threonate for better absorption). May help with hyperarousal and muscle tension.",
-          "evidence_level": "anecdotal",
-          "notes": "Generally safe but can cause loose stools. Does not replace professional treatment. Start with lower doses and assess tolerance."
-        },
-        {
-          "name": "Limiting caffeine and avoiding alcohol",
-          "category": "diet / lifestyle",
-          "description": "Caffeine heightens anxiety and startle response; alcohol disrupts sleep and disinhibits emotional regulation. Reducing or eliminating both can decrease hyperarousal and improve sleep quality.",
-          "evidence_level": "moderate",
-          "notes": "Gradual reduction of caffeine (to avoid withdrawal headaches) is better than abrupt cessation. Alcohol use should be addressed more directly if entrenched; may need addiction support."
+          "notes": "Exercise intensity may need to be adapted \u2014 high-intensity exercise can activate the same physiological state as trauma triggers for some people. Starting with lower-intensity, rhythmic, predictable movement is often better tolerated initially."
         }
       ],
       "things_to_avoid": [
-        "Prolonged isolation or withdrawal from relationships \u2014 this perpetuates avoidance and emotional numbness; aim to stay connected even when it feels hard",
-        "Self-medication with alcohol or drugs \u2014 provides temporary relief but prevents emotional processing, worsens sleep, and creates new traumas",
-        "Deliberate, unsupervised exposure to trauma reminders \u2014 without professional guidance, re-traumatization is possible; planned exposure should be done with a trained therapist",
-        "Suppressing or 'forcing' oneself not to think about the trauma \u2014 this often backfires, increasing intrusive thoughts; processing (with help) is more effective",
-        "Blaming yourself for the trauma or for PTSD symptoms \u2014 trauma is not the survivor's fault; symptoms are a normal response to abnormal events. Self-compassion aids recovery",
-        "Avoidance of medical or mental health care due to shame or stigma \u2014 untreated PTSD worsens over time and increases risk of depression, substance abuse, and suicide",
-        "Overdoing grounding or reassurance-seeking \u2014 while helpful in acute moments, reliance on repeated reassurance can become avoidance and prevent habituation",
-        "Extreme or excessive exercise as an escape mechanism \u2014 use exercise to regulate, not to dissociate or further exhaust an already dysregulated system"
+        "Avoiding all trauma reminders indefinitely \u2014 avoidance maintains and extends PTSD by preventing the brain from learning that the memory is not the same as the event",
+        "Alcohol and sedatives as the primary means of managing distress \u2014 they impair sleep quality, impair trauma processing, and increase the risk of dependence",
+        "Trauma processing therapy without a stabilisation phase when dissociation is prominent \u2014 this can lead to destabilisation, flooding, and dropout from treatment",
+        "Generic counselling or supportive talking therapy without trauma-specific training \u2014 it may provide support but is unlikely to resolve core PTSD symptoms and may inadvertently reinforce avoidance",
+        "Pushing through exposure without adequate coping tools \u2014 gradual, titrated approach ('pendulation' between distress and safety) is more effective and less harmful than forcing exposure before the person is ready",
+        "Isolating as a coping strategy \u2014 although understandable, prolonged isolation maintains hyperarousal and removes the co-regulatory benefits of safe social connection",
+        "Minimising or normalising the original trauma ('it wasn't that bad', 'others had it worse') \u2014 this maintains shame and blocks processing",
+        "Expecting a linear recovery \u2014 PTSD recovery typically involves periods of improvement, setbacks, and reopening of previously worked-through material, particularly at life transitions"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "Talking about trauma in open-ended, unstructured ways without a trained trauma therapist often does not help and can make things worse. Ventilating the story without processing it can reinforce and deepen the traumatic memory network.",
+        "why_resisted": "Sharing the story feels cathartic and is socially encouraged. Many well-meaning people (and untrained therapists) believe that 'getting it out' is the same as healing. People often mistake emotional release during retelling for therapeutic progress.",
+        "path_forward": "Working with a therapist specifically trained in structured, trauma-focused methods (EMDR, CPT, PE, somatic therapy) \u2014 who guides titrated processing rather than unstructured retelling \u2014 produces measurable, durable symptom reduction in most people who complete treatment."
+      },
+      {
+        "truth": "The nervous system does not care about intellectual insight. Understanding why PTSD developed, or knowing cognitively that the trauma is over, does not resolve the body's threat response. PTSD lives in implicit memory and physiology, not in narrative understanding.",
+        "why_resisted": "Insight feels like progress and is highly valued. People invest heavily in understanding their trauma history. The idea that knowing is not enough is deeply frustrating, especially for people who are highly self-aware.",
+        "path_forward": "Prioritising body-based, processing-focused interventions rather than purely narrative or analytical ones. Many people find that progress accelerates significantly once they shift from understanding the trauma to reprocessing it at a physiological level."
+      },
+      {
+        "truth": "PTSD recovery typically requires directly engaging with the traumatic material at some point \u2014 there is no lasting resolution through avoidance alone, no matter how sophisticated the coping strategies become.",
+        "why_resisted": "Approaching traumatic memories feels genuinely dangerous. Avoidance reduces distress in the short term, making it strongly reinforcing. Many people have been managing for years and fear that opening the trauma will be permanently destabilising.",
+        "path_forward": "With an appropriately skilled therapist, adequate stabilisation, and titrated pacing, the majority of people who engage with trauma processing report that it is less overwhelming than they feared and that their overall functioning improves significantly."
+      },
+      {
+        "truth": "Many physical symptoms experienced by people with PTSD \u2014 chronic pain, fatigue, gut problems, autoimmune flares \u2014 have a significant trauma-driven neurobiological component that will not fully resolve through medical treatment alone, however many physical investigations are done.",
+        "why_resisted": "Physical symptoms feel physical and unambiguously real. The idea that they might have a trauma component can feel like being told it is 'all in the head' \u2014 which it is not. The neurobiological changes in PTSD are measurable and physiological, not imagined, but this is poorly communicated by medical systems.",
+        "path_forward": "People who pursue trauma treatment alongside medical management of physical symptoms typically report better overall outcomes than those who pursue physical treatment alone. The body responds to trauma resolution."
+      },
+      {
+        "truth": "Most people with PTSD are not diagnosed for years \u2014 sometimes decades. Many have seen multiple clinicians who treated the symptoms (depression, anxiety, chronic pain, substance use) without ever asking about or identifying the trauma.",
+        "why_resisted": "This feels like a systemic failure that is both angering and demoralising. It is. Acknowledging it requires sitting with the fact that one might have suffered longer than necessary, which can be hard to accept.",
+        "path_forward": "Finding a trauma-trained clinician \u2014 not just any mental health professional \u2014 changes the treatment trajectory. Many people report that the first time a clinician took their trauma history seriously and named what had happened was itself a significant turning point."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Start trauma-focused psychotherapy (TF-CBT, CPT, PE, or EMDR) early",
-          "why_it_matters": "Professional trauma therapy addresses the root of PTSD\u2014unprocessed traumatic memories and maladaptive thought patterns. It has the strongest evidence and produces sustained improvement. Without it, symptom management alone often leads to recurring patterns and long-term disability.",
-          "how_to_start": "Seek a therapist trained in PTSD (search directories: ISSTD, SAMHSA, VA/DoD clinical guidelines). Initial consultation identifies which modality (CBT, EMDR, etc.) fits your needs. Start with one session weekly and commit to 12+ sessions for meaningful change.",
-          "timeline": "First improvements often visible in 4\u20138 weeks; substantial change by 12\u201316 weeks. Some people improve faster; others need longer. Consistency matters more than intensity.",
+          "lever": "Finding a therapist with specific, advanced training in trauma-focused methods",
+          "why_it_matters": "The evidence clearly shows that PTSD responds to specific interventions (EMDR, CPT, PE, somatic therapies) that most generalist therapists are not trained to deliver. Seeing any therapist \u2014 without this training \u2014 often produces years of supportive but non-curative work. Matching to the right treatment modality is arguably the single most important factor in recovery.",
+          "how_to_start": "Search specifically for therapists credentialed in EMDR (EMDR International Association), certified in CPT, or trained in somatic trauma therapies. Ask directly: 'What trauma-specific training do you have?' before booking. Trauma-focused therapists exist in private practice, specialist trauma services, and veteran/survivor organisations.",
+          "timeline": "Most people completing a full course of trauma-focused therapy (8\u201320 sessions) experience significant symptom reduction. Some require longer, particularly with C-PTSD.",
           "requires_professional": true
         },
         {
-          "lever": "Establish stable sleep\u2014prioritize nightmares and insomnia management",
-          "why_it_matters": "Sleep loss amplifies all PTSD symptoms and impairs emotional processing. Trauma is consolidated in sleep; poor sleep prevents the brain from integrating traumatic memories. Addressing sleep dramatically improves tolerance for therapy and recovery.",
-          "how_to_start": "Keep a sleep log (time to bed, waking, nightmare details) for 1 week. Identify patterns. Apply sleep hygiene (consistent bedtime, dark room, no screens 1 hour pre-bed). If nightmares persist, ask therapist about Image Rehearsal Therapy. If 2+ weeks of poor sleep despite hygiene, discuss with doctor (prazosin may help).",
-          "timeline": "Sleep improvements can appear within days of consistent hygiene; nightmare-specific therapies show results in 2\u20134 weeks.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Build social support and reduce isolation",
-          "why_it_matters": "Isolation perpetuates avoidance, shame, and intrusive symptoms. Connection is protective and accelerates recovery. Support (from friends, family, or group therapy) provides witness-bearing, validation, and motivation.",
-          "how_to_start": "Identify one trusted person (friend, family member, or group). Communicate clearly about your needs: 'I'm dealing with PTSD. Sometimes I'll be withdrawn, but it helps to know someone cares.' Attend a trauma support group (in-person or online). Start with one contact per week.",
-          "timeline": "Benefits of social support are immediate (reduced loneliness, increased hope) and cumulative over months.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Establish a regular physical exercise routine (3\u20135 times weekly)",
-          "why_it_matters": "Exercise regulates the HPA axis, reduces inflammatory markers, improves sleep, and boosts mood. It's one of the most reliable non-medication interventions for PTSD and works synergistically with therapy.",
-          "how_to_start": "Choose an activity you can sustain (walking, cycling, swimming, yoga). Start with 20\u201330 minutes, 3 times weekly. Gradually increase frequency and intensity. Track workouts to maintain accountability.",
-          "timeline": "Mood and sleep improvements within 2 weeks. Anxiety reduction over 4\u20138 weeks. Long-term benefits cumulative.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Address substance use if present",
-          "why_it_matters": "Alcohol or drug use, common in PTSD for self-medication, prevents trauma processing and creates a secondary addiction problem. Dual-diagnosis treatment (addressing both PTSD and substance use) is needed for sustained recovery.",
-          "how_to_start": "Honestly assess your use with a healthcare provider. If significant, seek an addiction specialist or dual-diagnosis program (which integrates trauma therapy). If minimal, discuss with your trauma therapist as part of treatment planning.",
-          "timeline": "Addiction treatment itself takes months; PTSD improvement accelerates once substance use is addressed.",
+          "lever": "Stabilising safety \u2014 external and internal",
+          "why_it_matters": "Trauma processing is not possible when someone is in ongoing danger, severe instability, or crisis. External safety (leaving an abusive situation, housing, financial stability) and internal safety (basic emotion regulation capacity, reduced substance use, a minimal network of support) are prerequisites for trauma therapy to work. Attempting processing without safety often leads to decompensation and treatment dropout.",
+          "how_to_start": "Assess current safety honestly. Work with a therapist or support service on stabilisation first. Address active crises \u2014 domestic violence, homelessness, active severe substance use \u2014 in parallel with beginning trauma-informed support.",
+          "timeline": "Stabilisation may take weeks to months before active trauma processing can begin, depending on circumstances. This is not delay \u2014 it is necessary foundation-building.",
           "requires_professional": true
         },
         {
-          "lever": "If medication is considered (SSRIs), use it as an adjunct to therapy, not instead of it",
-          "why_it_matters": "Medication reduces symptoms enough to engage in therapy but doesn't heal trauma. Therapy + medication shows better outcomes than either alone. Medication without therapy often leads to relapse when medication stops.",
-          "how_to_start": "Discuss with psychiatrist or primary care doctor. Start SSRI (sertraline or paroxetine) while simultaneously beginning therapy. Allow 4\u20136 weeks to assess response. Adjust dose in consultation with prescriber.",
-          "timeline": "Medication effects at 2\u20134 weeks; full benefit at 8\u201312 weeks. Therapy benefits overlap and extend beyond medication effects.",
+          "lever": "Consistent nervous system regulation practice",
+          "why_it_matters": "The HPA axis and autonomic nervous system can be directly shaped through regular practice. Building a daily nervous system regulation practice \u2014 even 10\u201320 minutes \u2014 over months creates a measurable shift in baseline arousal, resilience to triggers, and capacity to engage with therapy. This is not about 'calming down' but about rewiring default threat-state calibration.",
+          "how_to_start": "Identify one accessible practice \u2014 diaphragmatic breathing, extended exhale breathing, trauma-sensitive yoga, or cold water exposure \u2014 and begin daily. Track how it affects baseline mood and reactivity over 4\u20136 weeks.",
+          "timeline": "Noticeable shift in baseline arousal typically within 4\u20138 weeks of consistent daily practice; more significant neurobiological changes require 3\u20136 months.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Reducing avoidance gradually and systematically",
+          "why_it_matters": "Every avoidance behaviour \u2014 no matter how understandable \u2014 signals to the nervous system that the avoided thing is genuinely dangerous, maintaining and often enlarging the scope of PTSD. Gradual, supported approach towards avoided situations is necessary for recovery.",
+          "how_to_start": "With therapist support, build a hierarchy of avoided situations from least to most distressing. Begin with the least distressing and work upward. Do not attempt this alone or rapidly \u2014 pacing matters.",
+          "timeline": "Measurable reduction in avoidance-driven life restriction is often visible within weeks to months of systematic exposure work.",
           "requires_professional": true
+        },
+        {
+          "lever": "Addressing sleep",
+          "why_it_matters": "Sleep is when memory consolidation and emotional processing occur. Chronic sleep disruption from nightmares and hyperarousal perpetuates trauma memory dysregulation, emotional lability, and cognitive impairment. Improving sleep quality has wide-ranging downstream effects on PTSD severity.",
+          "how_to_start": "Implement sleep hygiene basics. Consider Image Rehearsal Therapy for recurring nightmares (a therapist can guide this). Discuss medication options for severe nightmares with a prescriber (prazosin has evidence). Evaluate caffeine and alcohol timing.",
+          "timeline": "Sleep improvements from IRT typically emerge within 2\u20134 weeks of practice.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Trauma-informed community and peer connection",
+          "why_it_matters": "Humans recover from trauma within safe relationships. Safe, consistent connection with others who understand \u2014 whether through peer support groups, group therapy, or survivor communities \u2014 directly supports nervous system co-regulation and reduces the shame and isolation that maintain PTSD.",
+          "how_to_start": "Identify one community \u2014 an in-person or online peer support group specific to the type of trauma experienced, or a group therapy programme \u2014 and make contact. Start with lower-risk formats (online, reading others' experiences) if in-person connection feels too exposing initially.",
+          "timeline": "Benefits of peer connection tend to build gradually over weeks to months of consistent engagement.",
+          "requires_professional": false
         }
       ],
       "common_mistakes": [
-        "Waiting for medication alone to fix PTSD without engaging in therapy \u2014 symptoms may improve slightly, but trauma-specific therapy is necessary for sustained recovery and full functioning",
-        "Starting exposure therapy or trauma processing too aggressively without stabilization \u2014 rushed exposure without proper coping skills can re-traumatize; slow, supported approach is more effective",
-        "Believing 'I just need to move on' and avoiding trauma processing \u2014 avoidance perpetuates PTSD; healing requires facing trauma memories in a safe context",
-        "Isolating and withdrawing from relationships to avoid 'burdening' others \u2014 isolation worsens symptoms and prevents the healing of connection and trust",
-        "Switching therapists or modalities too frequently \u2014 PTSD therapy requires building trust and time; changing providers every few weeks undermines progress. Give each approach 8\u201312 weeks minimum",
-        "Expecting rapid recovery \u2014 PTSD treatment is effective but not instant. Expecting symptom relief in 1\u20132 weeks can lead to premature dropout when progress is slower",
-        "Using grounding or reassurance-seeking as primary coping mechanism \u2014 while helpful acutely, over-reliance prevents habituation to triggers and maintains avoidance",
-        "Combining multiple medications without clear indication or psychiatrist coordination \u2014 polypharmacy increases side effects and doesn't accelerate PTSD recovery; fewer, targeted medications are often better",
-        "Attempting self-directed trauma processing without professional guidance \u2014 journaling or repeatedly confronting trauma alone without structure can deepen dissociation or re-traumatization",
-        "Treating co-occurring depression separately from PTSD \u2014 the two interact; trauma-focused therapy often improves both simultaneously"
+        "Choosing the nearest available therapist rather than one specifically trained in trauma \u2014 this often results in years of supportive but non-curative work and can inadvertently reinforce avoidance",
+        "Expecting to process trauma before building adequate regulation and stabilisation capacity \u2014 leads to overwhelm, flooding, and sometimes retreat from treatment altogether",
+        "Using alcohol, cannabis, or other substances to manage PTSD symptoms \u2014 provides short-term relief but impairs sleep quality, undermines processing, and often escalates over time",
+        "Treating only the downstream diagnoses (depression, IBS, chronic pain, anxiety) while the trauma driving them remains unaddressed \u2014 produces partial and often temporary improvement",
+        "Interpreting temporary worsening during trauma processing as evidence that the therapy is harmful \u2014 some increase in distress during active processing is normal and expected; it does not mean the approach is wrong",
+        "Attempting to 'think through' or 'intellectualise' recovery without engaging with the physiological and emotional dimensions of trauma \u2014 yields insight without resolution",
+        "Stopping therapy prematurely when early gains are made \u2014 substantial gains are possible in a short time, but consolidation and addressing deeper layers typically requires continuing beyond initial symptom relief",
+        "Expecting a straight line of recovery and measuring progress against pre-trauma functioning rather than against where one was a year ago \u2014 recovery is non-linear and irregular, and comparing to pre-trauma baseline can be demoralising and misleading"
       ]
     },
     "finding_help": {
       "specialists": [
         {
-          "type": "Trauma-Specialized Psychologist or Therapist",
-          "role": "Primary provider for PTSD. Conducts diagnostic assessment, delivers trauma-focused psychotherapy (TF-CBT, CPT, PE, EMDR), monitors symptom progress, and coordinates with other providers. Essential for effective treatment.",
-          "notes": "Seek therapists with specific PTSD certification (e.g., Certified EMDR Therapist, CPT-trained). Ask about their experience, modality, and training in trauma. Your initial fit matters; a few sessions can clarify alignment."
+          "type": "Trauma-specialist psychologist or psychotherapist (EMDR, CPT, PE trained)",
+          "role": "The most critical practitioner for the majority of people with PTSD. Delivers the specific, evidence-based interventions that resolve PTSD rather than simply managing it. Look for specific credentials: EMDR International Association certification, CPT certification, or advanced training in somatic trauma therapies.",
+          "notes": "Not all psychologists or therapists have trauma-specific training. Asking directly about their trauma training and approach before booking is appropriate and important. A general counsellor or CBT therapist without trauma specialisation is unlikely to be sufficient for moderate to severe PTSD."
         },
         {
-          "type": "Psychiatrist",
-          "role": "Prescribes medication (SSRIs, prazosin, etc.), monitors for side effects and medication interactions, manages co-occurring conditions (depression, anxiety, sleep). Provides medical oversight if PTSD is severe or complicated.",
-          "notes": "Some psychiatrists combine medication with psychotherapy; others focus on medication alone. Ideal psychiatrist coordinates closely with your therapist. Many areas have shortage; telepsychiatry can expand access."
+          "type": "Trauma-informed psychiatrist",
+          "role": "Provides diagnostic clarity, manages medication (SSRIs, prazosin for nightmares), and can coordinate complex care where PTSD overlaps with other psychiatric conditions. A trauma-informed psychiatrist is one who takes a thorough trauma history and understands trauma's role in the overall presentation.",
+          "notes": "Many psychiatrists are primarily medication-focused and do not offer trauma therapy themselves. A psychiatrist who understands trauma can still be invaluable for medication management and differential diagnosis, particularly in complex presentations."
         },
         {
-          "type": "Primary Care Physician (PCP)",
-          "role": "Initial assessment for PTSD, rule out medical mimics (thyroid, heart, neurological), prescribe SSRIs, refer to specialists. First point of contact for many."
+          "type": "Somatic therapist (Somatic Experiencing, Sensorimotor Psychotherapy)",
+          "role": "Addresses the physiological and bodily dimensions of trauma \u2014 particularly useful where verbal processing is limited, where somatic symptoms are prominent, or where the person has tried talk-based approaches without success.",
+          "notes": "Relatively less common than EMDR or CBT therapists. Somatic Experiencing practitioners are certified through the Somatic Experiencing International organisation. Sensorimotor Psychotherapy practitioners have their own certification track."
         },
         {
-          "type": "Veteran-Specific Providers (VA Mental Health, Vet Centers)",
-          "role": "For military PTSD: VA medical centers offer trauma-specialized care, evidence-based therapies, group therapy, medication, and peer support, often free. Vet Centers provide readjustment counseling and crisis support.",
-          "notes": "VA is major provider of evidence-based PTSD care; wait times vary by location. Vet Centers are non-VA, peer-staffed, and often more accessible than VA directly."
+          "type": "Trauma-informed GP or integrative medicine physician",
+          "role": "Can provide initial screening, referral to appropriate services, and address physical comorbidities. A trauma-informed GP will take a trauma history as part of evaluating complex, persistent, or unexplained health problems.",
+          "notes": "Many GPs do not routinely screen for PTSD or take detailed trauma histories. Finding a GP who does \u2014 or who is willing to engage with the trauma model \u2014 can significantly improve navigation of the healthcare system."
         },
         {
-          "type": "Psychiatric Nurse Practitioner (PMHNP) or Physician Assistant (PA)",
-          "role": "Can assess PTSD, prescribe medications, monitor treatment, and coordinate care. Often more available than psychiatrists in rural areas or primary care settings."
+          "type": "Trauma-informed pelvic floor physiotherapist",
+          "role": "For those with PTSD-related pelvic floor tension, chronic pelvic pain, or sexual dysfunction, a physiotherapist trained in trauma-informed pelvic care can address the physical holding patterns that often accompany trauma.",
+          "notes": "Standard physiotherapy without trauma-informed training may inadvertently re-traumatise through physical interventions. Look specifically for trauma-informed pelvic floor practitioners."
         },
         {
-          "type": "Trauma-Informed Social Worker or Licensed Professional Counselor (LPC)",
-          "role": "Provides evidence-based therapy for PTSD (CBT, EMDR, etc.), may coordinate with medical providers. Often more affordable than psychologists; qualifications vary by state."
-        },
-        {
-          "type": "Somatic Therapist or Certified Trauma Practitioner",
-          "role": "Specializes in body-centered trauma healing; useful if dissociation or body disconnection is prominent. Works alongside conventional therapy, not as sole treatment."
-        },
-        {
-          "type": "Addiction Specialist (if substance use is present)",
-          "role": "Treats co-occurring PTSD and substance use disorder. Dual-diagnosis programs integrate trauma and addiction care; critical for recovery if both are present."
+          "type": "Social worker or trauma-informed case worker",
+          "role": "Essential for navigating access to services, particularly for those dealing with financial hardship, housing instability, domestic violence, or systemic barriers to care. Practical stabilisation is a prerequisite for trauma therapy.",
+          "notes": "Often overlooked but critical for people whose trauma is ongoing or whose circumstances are unstable. Many trauma-focused organisations combine therapy and practical support."
         }
       ],
       "patient_communities": [
         {
-          "name": "r/PTSD (Reddit)",
+          "name": "r/PTSD",
           "platform": "Reddit",
-          "url": "https://www.reddit.com/r/PTSD/",
-          "notes": "Large, moderated community where people share experiences, coping strategies, and treatment updates. Anonymous, accessible, and active. Moderation keeps conversations respectful and trauma-informed."
+          "url": "https://www.reddit.com/r/ptsd/",
+          "notes": "Large, active community for people with PTSD. Rules-based to maintain safety. Useful for peer support, shared experience, and practical information about treatment options and finding therapists."
         },
         {
-          "name": "ISSTD (International Society for the Study of Trauma and Dissociation)",
-          "platform": "Website/Directory",
-          "url": "https://www.isstd.org/",
-          "notes": "Professional organization with therapist finder, educational resources, and research on trauma and dissociation. Good for locating specially trained providers."
+          "name": "r/CPTSD",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/CPTSD/",
+          "notes": "Specifically focused on complex PTSD. One of the most active and well-moderated trauma communities online. Strong culture of peer support and self-directed education. Particularly valuable for those whose trauma is developmental or relational."
         },
         {
-          "name": "PTSD Alliance (formerly National Center for PTSD)",
-          "platform": "Website",
-          "url": "https://www.ptsd.va.gov/",
-          "notes": "VA-run resource offering evidence-based information, screening tools (PCL-5), provider locator, and support community. Highly credible, free resources."
+          "name": "After Silence",
+          "platform": "Forum",
+          "url": "https://www.aftersilence.org/",
+          "notes": "Peer support community specifically for survivors of rape and sexual assault. Moderated, safe, and long-established."
         },
         {
-          "name": "Crisis Text Line",
-          "platform": "Text messaging / App",
-          "url": "Text HOME to 741741",
-          "notes": "Free, 24/7 crisis support via text. Useful for acute distress or suicidal thoughts when you need immediate help without calling."
+          "name": "PTSD UK",
+          "platform": "Website / community",
+          "url": "https://www.ptsduk.org/",
+          "notes": "UK-based charity providing information, peer support, and signposting to services for PTSD and C-PTSD. Includes a community support group directory."
         },
         {
-          "name": "National Suicide Prevention Lifeline",
-          "platform": "Phone",
-          "url": "988 (US; call or text)",
-          "notes": "24/7 free support for suicidal or severe mental health crisis. PTSD increases suicide risk; know this number and use it if in crisis."
-        },
-        {
-          "name": "NAMI (National Alliance on Mental Illness)",
-          "platform": "Website / In-person Groups",
-          "url": "https://www.nami.org/",
-          "notes": "Peer-led support groups, education, and advocacy for mental health conditions including PTSD. Local chapters often host in-person meetings and discussion groups."
-        },
-        {
-          "name": "Trauma-Focused Support Groups (In-person and Online)",
-          "platform": "Various (Meetup, Zoom, community mental health centers)",
-          "url": null,
-          "notes": "Many communities offer trauma survivor support groups, EMDR processing groups, or peer-led recovery circles. Ask your therapist for local referrals or search Meetup.com for 'PTSD support group' in your area."
-        },
-        {
-          "name": "Military/Veteran PTSD Communities",
-          "platform": "Vet Centers, VA, Online Forums",
-          "url": "https://www.vetcenter.va.gov/",
-          "notes": "If military: Vet Centers offer readjustment counseling and groups specifically for veterans. Useful for military-specific trauma (combat, MST) and peer understanding."
-        },
-        {
-          "name": "SAMHSA National Helpline",
-          "platform": "Phone",
-          "url": "1-800-662-4357 (US; free, confidential, 24/7)",
-          "notes": "Government helpline for mental health and substance use referrals. Can connect you to local treatment, support groups, and resources."
+          "name": "Gift From Within",
+          "platform": "Website / community",
+          "url": "https://www.giftfromwithin.org/",
+          "notes": "Long-running peer support organisation for PTSD survivors, with particular focus on first responders, military, and disaster survivors. Articles, survivor stories, and community resources."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "What Happened to You?: Conversations on Trauma, Resilience, and Healing",
-        "type": "book",
-        "author_or_source": "Bruce D. Perry and Oprah Winfrey",
-        "url": null,
-        "description": "Accessible, compassionate introduction to trauma neurobiology and healing. Explains how trauma affects the brain and what helps recovery. Excellent for understanding the 'why' behind symptoms.",
-        "audience": "beginner"
-      },
-      {
-        "title": "The Boy Who Was Raised as a Dog",
-        "type": "book",
-        "author_or_source": "Bruce D. Perry",
-        "url": null,
-        "description": "Clinical case studies illustrating trauma's effects on children and recovery. Readable, grounded in neuroscience, and emphasizes hope.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Trauma and Recovery: The Aftermath of Violence\u2014from Domestic Abuse to Political Terror",
-        "type": "book",
-        "author_or_source": "Judith Herman",
-        "url": null,
-        "description": "Classic, comprehensive overview of trauma and recovery. Covers PTSD, complex trauma, and the three stages of recovery (safety, remembrance, reconnection). More in-depth and academic.",
-        "audience": "intermediate"
-      },
-      {
         "title": "The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma",
         "type": "book",
         "author_or_source": "Bessel van der Kolk",
         "url": null,
-        "description": "Bestseller explaining neurobiology of PTSD, how trauma gets stored in the body, and diverse healing modalities (EMDR, yoga, neurofeedback). Highly engaging and evidence-based.",
-        "audience": "beginner to intermediate"
-      },
-      {
-        "title": "Emotional First Aid: Healing Rejection, Guilt, Failure, and Other Everyday Hurts",
-        "type": "book",
-        "author_or_source": "Guy Winch",
-        "url": null,
-        "description": "Short, practical guide on emotional resilience and self-care after emotional wounds. Less focused on PTSD specifically but helpful for understanding emotion regulation.",
+        "description": "The most widely read book on trauma and its physical impact. Explains how trauma reshapes the brain and body, why talk therapy alone is often insufficient, and what body-based and experiential approaches can do. Accessible to non-specialists. Essential reading for anyone trying to understand why their body reacts the way it does.",
         "audience": "beginner"
       },
       {
-        "title": "VA/DoD Clinical Practice Guideline for PTSD",
-        "type": "resource document",
-        "author_or_source": "U.S. Department of Veterans Affairs & Department of Defense",
-        "url": "https://www.ptsd.va.gov/professional/pages/cpg_index.asp",
-        "description": "Evidence-based recommendations for PTSD diagnosis and treatment. Authoritative, regularly updated. May be dense but invaluable reference.",
-        "audience": "intermediate to advanced"
+        "title": "Complex PTSD: From Surviving to Thriving",
+        "type": "book",
+        "author_or_source": "Pete Walker",
+        "url": null,
+        "description": "A practical, compassionate guide to C-PTSD written by a therapist who is himself a trauma survivor. Covers emotional flashbacks, the inner critic, the fawn response, and practical tools for recovery. Particularly valuable for those with developmental or relational trauma who recognise themselves in the C-PTSD description but may not have had a formal diagnosis.",
+        "audience": "beginner"
       },
       {
-        "title": "PTSD Self-Help Course",
-        "type": "website / educational resource",
-        "author_or_source": "National Center for PTSD (VA)",
+        "title": "Waking the Tiger: Healing Trauma",
+        "type": "book",
+        "author_or_source": "Peter Levine",
+        "url": null,
+        "description": "The foundational text on Somatic Experiencing, explaining how trauma is held in the body and how physiological completion of the trauma response can bring resolution. Accessible and includes practical exercises. A valuable introduction to somatic approaches.",
+        "audience": "beginner"
+      },
+      {
+        "title": "What My Bones Know: A Memoir of Healing from Complex Trauma",
+        "type": "book",
+        "author_or_source": "Stephanie Foo",
+        "url": null,
+        "description": "A journalist's account of discovering her C-PTSD diagnosis and navigating the treatment landscape. Combines memoir with thorough investigation of the science and treatment options. Particularly good at conveying what C-PTSD actually feels like from the inside, and at demystifying the treatment process.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Polyvagal Theory in Therapy",
+        "type": "book",
+        "author_or_source": "Deb Dana",
+        "url": null,
+        "description": "An accessible explanation of Polyvagal Theory \u2014 the science of how the autonomic nervous system shapes safety, connection, and trauma responses \u2014 and how it applies to therapeutic work. Helps make sense of why the nervous system does what it does and what regulation actually means.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Trauma-Informed Care Implementation Resource Center",
+        "type": "website",
+        "author_or_source": "Center for Health Care Strategies",
+        "url": "https://www.traumainformedcare.chcs.org/",
+        "description": "A comprehensive professional and patient resource on trauma-informed care principles, research, and implementation. Useful for understanding what trauma-informed care means and what to look for \u2014 and ask for \u2014 from healthcare providers.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "National Center for PTSD",
+        "type": "website",
+        "author_or_source": "U.S. Department of Veterans Affairs",
         "url": "https://www.ptsd.va.gov/",
-        "description": "Free online modules covering PTSD basics, coping skills, and resources. Interactive, self-paced, and evidence-based.",
+        "description": "The most comprehensive publicly available evidence-based resource on PTSD. Includes information on diagnosis, treatment options, self-help tools (including the PTSD Coach app), and a treatment provider locator. Well-referenced and regularly updated. Not only for veterans \u2014 the information is widely applicable.",
         "audience": "beginner"
       },
       {
-        "title": "Podcast: Unlocking Us with Bren\u00e9 Brown (select episodes on shame, vulnerability, trauma)",
-        "type": "podcast",
-        "author_or_source": "Bren\u00e9 Brown",
-        "url": "https://brenebrown.com/podcast/",
-        "description": "Conversations on shame, resilience, and emotional healing, with occasional trauma experts. Accessible, warm tone. Focus is broader than PTSD but highly relevant.",
+        "title": "PTSD Coach App",
+        "type": "website",
+        "author_or_source": "National Center for PTSD / VA",
+        "url": "https://www.ptsd.va.gov/appvid/mobile/ptsdcoach_app.asp",
+        "description": "A free, evidence-informed app for managing PTSD symptoms between therapy sessions. Includes psychoeducation, symptom tracking, coping tools, and crisis contacts. Designed for use alongside \u2014 not instead of \u2014 therapy.",
         "audience": "beginner"
       },
       {
-        "title": "EMDR International Association (EMDRIA) Therapist Finder and Resources",
-        "type": "website / directory",
-        "author_or_source": "EMDRIA",
-        "url": "https://www.emdria.org/",
-        "description": "If interested in EMDR treatment: find trained therapists, learn about the modality, and access research.",
-        "audience": "beginner to intermediate"
+        "title": "Recovering from Trauma (TED Talk)",
+        "type": "video",
+        "author_or_source": "Victor Schwartz / various, TED",
+        "url": "https://www.ted.com/topics/trauma",
+        "description": "TED's collection of trauma-related talks covers neuroscience, recovery approaches, and personal accounts. A good entry point for people who prefer video to reading. Bessel van der Kolk, Peter Levine, and others have given accessible talks on trauma and healing.",
+        "audience": "beginner"
       },
       {
-        "title": "Cognitive Processing Therapy Manual",
-        "type": "book / clinical manual",
-        "author_or_source": "Resick & Schnicke",
-        "url": null,
-        "description": "Structured therapy manual for CPT. Not for self-treatment but helpful for understanding the approach if you're pursuing CPT with a therapist.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "The Myth of Normal: Trauma, Illness, and Healing in a Culture of Victimhood",
+        "title": "Healing Trauma: A Pioneering Program for Restoring the Wisdom of Your Body",
         "type": "book",
-        "author_or_source": "Bessel van der Kolk & Michael Rowe",
+        "author_or_source": "Peter Levine",
         "url": null,
-        "description": "Recent work reframing 'mental illness' in context of trauma and adversity. Challenges stigma and emphasizes cultural/systemic factors. Good for perspective shift.",
-        "audience": "intermediate"
+        "description": "A shorter, more practical companion to 'Waking the Tiger', including guided exercises for working with the body's trauma responses at home. Useful for those who want to begin somatic self-work while seeking a therapist.",
+        "audience": "beginner"
       },
       {
-        "title": "Tara Westover's 'Educated' (Memoir)",
-        "type": "book",
-        "author_or_source": "Tara Westover",
-        "url": null,
-        "description": "Personal narrative of trauma, education, and recovery. Shows resilience and the power of connection and learning. Readable, moving.",
-        "audience": "beginner"
+        "title": "ICD-11 Clinical Descriptions and Diagnostic Guidelines for C-PTSD",
+        "type": "research paper",
+        "author_or_source": "World Health Organization / Cloitre et al.",
+        "url": "https://www.who.int/classifications/classification-of-diseases",
+        "description": "For those who want to understand the formal diagnostic criteria for C-PTSD as recognised in ICD-11 \u2014 useful when seeking diagnosis or explaining the distinction between PTSD and C-PTSD to clinicians who may not be familiar with the ICD-11 category.",
+        "audience": "advanced"
       }
     ],
     "relevance_signal": "**History of significant trauma** \u2014 childhood adversity, abuse, major loss \u2014 and IBS that has never responded to dietary or medication approaches. Gut symptoms are treatment-resistant."
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

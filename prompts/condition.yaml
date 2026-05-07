@@ -37,17 +37,6 @@ user_prefix: |
 
 fields:
 
-  relevance_signal:
-    prompt: |
-      A single sentence in plain patient language (≤25 words) that points at the
-      specific distinguishing pattern that makes this condition worth investigating
-      — not generic symptoms. Focus on the particular cluster, trigger, or timing
-      that separates this condition from similar-looking ones. Phrase it as
-      something the user might recognise about themselves, e.g. "Your gut symptoms
-      appear within 30 minutes of red wine or aged cheese — not after most other
-      foods." Avoid hedging ("might", "sometimes"); be concrete.
-    schema: string
-
   plain_summary:
     prompt: |
       Write 2–3 short sentences that orient the reader — someone with brain fog and average medical

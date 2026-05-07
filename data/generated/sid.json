@@ -2,418 +2,494 @@
   "condition_id": "sid",
   "condition_name": "Sucrase-isomaltase deficiency",
   "generated_at": "2026-04-16T09:26:31.197877Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "Sucrase-isomaltase deficiency is a condition where your small intestine cannot break down certain sugars (sucrose and some starches) properly, leading to digestive symptoms like bloating, diarrhea, and abdominal pain when you eat foods containing these sugars. It can be congenital (present from birth) or acquired after an illness that damages the intestinal lining.",
-    "detailed_summary": "Sucrase-isomaltase deficiency occurs when the enzyme sucrase-isomaltase, which lines the small intestine, is either absent or not functioning properly. This enzyme is responsible for breaking down sucrose (table sugar) and some polysaccharides into absorbable glucose and fructose. Without adequate enzyme activity, undigested sugars pass into the colon, where bacteria ferment them, producing gas, bloating, and osmotic diarrhea. The condition can be primary (congenital sucrase-isomaltase deficiency, rare) or secondary (acquired after infection, celiac disease, or other intestinal damage). Secondary forms often improve as the intestinal lining heals, while congenital forms are lifelong but manageable through dietary modification.",
+    "plain_summary": "Sucrase-isomaltase deficiency (SID) is a genetic condition in which the small intestine lacks enough of the enzyme sucrase-isomaltase to break down sucrose (table sugar) and the starch digestion products maltose and isomaltose. Undigested sugars pass into the colon, where bacteria ferment them, producing gas, bloating, cramping, and diarrhea. It is frequently mistaken for IBS, functional diarrhea, or carbohydrate intolerances of other kinds, and many people with SID go years without a correct diagnosis.",
+    "detailed_summary": "Sucrase-isomaltase (SI) is a brush-border enzyme embedded in the lining of the small intestine. It performs two distinct jobs: sucrase cleaves sucrose into glucose and fructose, and isomaltase cleaves the alpha-1,6 branch points of starch digestion products (isomaltose, limit dextrins). When SI activity is absent or severely reduced \u2014 due to genetic variants in the SI gene on chromosome 3q25-26 \u2014 neither sucrose nor the isomaltose fraction of starch is absorbed efficiently. The osmotic load and bacterial fermentation that follow cause watery or loose stools, gas, bloating, and abdominal pain that are tightly linked to dietary carbohydrate intake.\n\nThe condition exists on a spectrum. Congenital sucrase-isomaltase deficiency (CSID) is the classical form, present from birth, and tends to be most severe. It is caused by biallelic loss-of-function variants in the SI gene. However, research in the past decade \u2014 particularly studies by Treem, Husein, and the team behind the Sucraid trials \u2014 has established that a significant proportion of adults diagnosed with IBS carry heterozygous hypomorphic variants in the SI gene that reduce but do not abolish enzyme activity. This partial or 'compound heterozygous' form may be far more common than the congenital form and is likely underdiagnosed in the adult IBS population.\n\nDiagnosis historically required a small intestinal biopsy with direct enzyme assay or a disaccharidase panel from endoscopic biopsy, which remains the gold standard. A 13C-sucrose breath test is emerging as a less invasive option. Genetic testing for SI variants is increasingly available but requires careful interpretation because not all variants are fully characterized. An empirical sucrose elimination trial is often used as a first step in self-directed investigation.\n\nManagement centers on reducing dietary sucrose and, to a lesser degree, starch-derived isomaltose, and on enzyme replacement with sacrosidase (Sucraid), a yeast-derived sucrase enzyme approved in the United States and Canada. Some individuals with partial deficiency manage well with diet modification alone. Starch tolerance varies substantially depending on the degree of isomaltase loss.",
     "prevalence": {
-      "summary": "Congenital sucrase-isomaltase deficiency is rare; secondary deficiency is more common but prevalence varies by underlying cause.",
-      "estimate": "Congenital form: fewer than 1 in 5,000 births; secondary form prevalence unknown but occurs in a significant proportion of people recovering from severe gastroenteritis or with active celiac disease",
-      "notes": "Prevalence data for congenital forms are sparse and vary by ethnicity. Secondary deficiency is underdiagnosed because it often resolves with treatment of the underlying condition. Many cases may be misattributed to irritable bowel syndrome or lactose intolerance."
+      "summary": "Relatively rare in its severe congenital form but potentially much more common in milder genetic variants that present as adult IBS.",
+      "estimate": "Classical CSID: approximately 1 in 5,000 in North American and European populations; up to 1 in 10 in certain Indigenous Arctic populations (Greenlandic Inuit, Alaskan Native). Partial SID variants: estimated in up to 4\u20139% of people diagnosed with IBS in some North American studies.",
+      "notes": "Prevalence figures for the severe congenital form are reasonably well established. The prevalence of hypomorphic SI variants in the general population and among IBS patients is an area of active research and estimates vary. The figure of ~4% of IBS patients carrying functionally relevant SI variants comes from the 2020 study by Husein et al. and related work; it is plausible but not yet universally accepted. Underdiagnosis is likely significant given the reliance on biopsy-based enzyme assays that are not routinely ordered."
     },
     "subgroups": [
       {
         "name": "Congenital sucrase-isomaltase deficiency (CSID)",
-        "description": "A rare genetic condition present from birth in which the sucrase-isomaltase enzyme is permanently absent or severely deficient from the intestinal brush border.",
+        "description": "Classical form caused by homozygous or compound heterozygous loss-of-function mutations in the SI gene, resulting in near-total absence of SI enzyme activity. Onset from infancy when sucrose-containing foods are introduced.",
         "distinguishing_features": [
-          "Symptoms begin within days to weeks of birth or introduction of sucrose-containing foods",
-          "Lifelong enzyme deficiency requiring permanent dietary management",
-          "May also have reduced activity of other disaccharidases (lactase, maltase)",
-          "Genetic testing can identify mutations in the SI gene"
+          "Severe, watery diarrhea beginning in infancy when fruit juices or sucrose-containing formula are introduced",
+          "Failure to thrive in infancy in severe cases",
+          "Near-zero sucrase activity on disaccharidase biopsy panel",
+          "Full diagnosis typically made in pediatric gastroenterology"
+        ]
+      },
+      {
+        "name": "Partial or adult-onset SID (hypomorphic variants)",
+        "description": "Caused by heterozygous or compound heterozygous SI variants that reduce but do not abolish enzyme activity. Symptoms may be milder, more variable, or emerge in adulthood. This group overlaps heavily with people diagnosed with IBS-D or IBS-M.",
+        "distinguishing_features": [
+          "Symptoms often present in adolescence or adulthood, not necessarily infancy",
+          "Reduced \u2014 not absent \u2014 sucrase activity on biopsy panel",
+          "May be triggered or unmasked by dietary changes, gut infections, or stress",
+          "Often diagnosed as IBS before SID is considered",
+          "Symptoms may partially improve on a low-FODMAP diet that incidentally reduces sucrose, masking the true diagnosis"
         ]
       },
       {
         "name": "Secondary sucrase-isomaltase deficiency",
-        "description": "Acquired deficiency that develops after damage to the intestinal lining from infection, inflammation, or other intestinal disease. The enzyme production usually recovers as the intestine heals.",
+        "description": "Acquired, temporary reduction in SI activity due to damage to the small intestinal brush border from another cause, such as coeliac disease, Crohn's disease, post-infectious enteropathy, or severe SIBO. Resolves when the underlying injury heals.",
         "distinguishing_features": [
-          "Symptoms develop after a trigger event (gastroenteritis, celiac disease diagnosis, Crohn's disease flare)",
-          "Often temporary; improves with healing of the underlying condition",
-          "Can occur alongside other disaccharidase deficiencies",
-          "More common than congenital form"
-        ]
-      },
-      {
-        "name": "Partial sucrase-isomaltase deficiency",
-        "description": "Reduced but measurable enzyme activity, either congenital or secondary, causing milder symptoms that may only appear with large sugar loads.",
-        "distinguishing_features": [
-          "Symptoms triggered primarily by high-sucrose foods rather than all sucrose exposure",
-          "May tolerate small amounts of sucrose without symptoms",
-          "Can improve with gradual exposure in some cases (enzyme adaptation)"
+          "Not genetic \u2014 no SI gene variants expected",
+          "Onset linked to a known gut insult or illness",
+          "Sucrase activity recovers with treatment of the primary condition",
+          "Important to distinguish from genetic SID before committing to lifelong management"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Watery diarrhea",
+        "symptom": "Chronic or recurrent watery or loose diarrhea",
         "category": "digestive",
-        "notes": "Typically begins 30 minutes to 2 hours after eating sucrose-containing foods; severity correlates with amount consumed. More pronounced in congenital forms; may be absent in partial deficiency."
-      },
-      {
-        "symptom": "Bloating and abdominal distension",
-        "category": "digestive",
-        "notes": "Caused by gas produced by bacterial fermentation of undigested sugars; often worse in afternoon and evening. Improves when trigger foods are avoided."
+        "notes": "Classically triggered within 30\u201390 minutes of consuming sucrose or sucrose-containing foods. In infants, onset coincides with introduction of fruit or sucrose-containing foods."
       },
       {
         "symptom": "Abdominal cramping and pain",
         "category": "digestive",
-        "notes": "Can range from mild discomfort to severe cramping. Often described as colicky in infants. Timing and intensity relate to food intake."
+        "notes": "Typically occurs in the lower abdomen; worsens after high-sucrose meals such as fruit juice, candy, sweetened drinks, or baked goods."
       },
       {
-        "symptom": "Flatulence (gas)",
+        "symptom": "Bloating and abdominal distension",
         "category": "digestive",
-        "notes": "Result of bacterial fermentation in the colon. May be the only symptom in partial deficiency with small sugar loads."
+        "notes": "Results from bacterial fermentation of undigested sucrose and isomaltose in the colon, producing hydrogen and methane gas."
+      },
+      {
+        "symptom": "Excessive intestinal gas and flatulence",
+        "category": "digestive",
+        "notes": "Often described as pronounced and foul-smelling; worsens after starchy or sugary meals."
       },
       {
         "symptom": "Nausea",
         "category": "digestive",
-        "notes": "Less common but can occur, especially with rapid gastric emptying or severe symptoms. May precede other digestive symptoms."
+        "notes": "May accompany acute episodes, particularly after large sugar loads."
       },
       {
-        "symptom": "Failure to thrive (in infants)",
+        "symptom": "Urgency to defecate",
+        "category": "digestive",
+        "notes": "Can be socially limiting; often follows meals containing sucrose within an hour or two."
+      },
+      {
+        "symptom": "Failure to thrive or poor weight gain in infancy",
+        "category": "growth / nutrition",
+        "notes": "Specific to the congenital form presenting in infancy; often the presenting feature that prompts investigation."
+      },
+      {
+        "symptom": "Fatigue and low energy",
         "category": "systemic",
-        "notes": "Poor weight gain, reduced growth velocity, or developmental delays in congenital cases if diagnosis is delayed. Resolves with proper dietary management."
+        "notes": "May relate to poor nutrient absorption during frequent diarrhea episodes and the cumulative burden of chronic symptoms."
       },
       {
-        "symptom": "Diaper rash or anal irritation (in infants)",
-        "category": "skin",
-        "notes": "Caused by acidic stools from fermentation. May be the presenting sign in congenital disease."
+        "symptom": "Nutritional deficiencies (iron, B vitamins, fat-soluble vitamins)",
+        "category": "nutritional",
+        "notes": "Secondary to chronic malabsorption and frequent loose stools; more common in severe or long-undiagnosed cases."
+      },
+      {
+        "symptom": "Irritability and behavioral symptoms in children",
+        "category": "neurological / behavioral",
+        "notes": "Reported in pediatric CSID; may reflect chronic gut discomfort or nutritional deficits."
       }
     ],
     "testing": {
       "key_patterns": [
-        "Symptoms occur reliably after eating sucrose-containing foods (table sugar, some fruits, candy, desserts, sauces) but not after glucose or lactose",
-        "Timing is predictable: symptoms begin 30 minutes to 2 hours after trigger foods",
-        "Symptoms resolve when sucrose is eliminated from diet",
-        "Severity correlates with the amount of sucrose consumed; small amounts may not trigger symptoms",
-        "Symptoms do not occur with foods containing glucose, honey, or lactose alone",
-        "In congenital cases, symptoms begin early in infancy after introduction of sucrose-containing foods"
+        "Symptoms that worsen specifically after consuming sucrose (table sugar, fruit juice, sweets, honey) and improve on a sugar-restricted diet",
+        "Symptoms that also worsen after heavily starchy meals (bread, pasta, rice, potatoes) \u2014 suggesting isomaltase component",
+        "Partial or incomplete response to a low-FODMAP diet, because sucrose is not a FODMAP but is not tolerated",
+        "Family history of similar digestive symptoms, particularly if of Greenlandic Inuit, Alaskan Native, or Northern European ancestry",
+        "Onset of symptoms in childhood or adolescence without a clear structural explanation",
+        "Low or absent sucrase band on a small intestinal disaccharidase assay from endoscopic biopsy"
       ],
       "at_home": [
         {
           "name": "Sucrose elimination trial",
-          "description": "Remove all sucrose-containing foods (table sugar, candy, many fruits, sweetened beverages, baked goods with added sugar) for 5\u20137 days while keeping other foods constant. Track bloating, diarrhea, gas, and cramping. If symptoms largely resolve, this supports the diagnosis. Then reintroduce small amounts of sucrose to confirm symptoms return.",
-          "safety_notes": "Generally safe; ensure adequate nutrition from other foods during elimination. Not a definitive diagnostic test but useful for self-assessment. If you are diabetic or have other medical conditions, consult your doctor before major dietary changes."
+          "description": "Remove all sucrose and obvious sugar sources (table sugar, fruit juice, honey, high-sugar fruits, processed foods with added sugars, sucrose-containing medications) for 2\u20134 weeks. A food and symptom diary helps track changes precisely. If symptoms improve substantially, reintroducing a sucrose challenge (e.g., a glass of fruit juice or a sugary drink on an empty stomach) and noting a return of symptoms within 1\u20132 hours provides supporting evidence.",
+          "safety_notes": "Elimination of sucrose is nutritionally safe for most people for a short trial period. Those on restricted diets for other reasons should ensure adequate caloric intake. This is an exploratory step, not a diagnostic confirmation \u2014 a positive result should prompt clinical testing."
         },
         {
-          "name": "Sucrose challenge",
-          "description": "On a day with mild symptoms, consume 25\u201350 grams of table sugar (1\u20132 tablespoons) dissolved in water on an empty stomach in the morning. Observe and record symptoms (diarrhea, bloating, cramping, gas) over 3 hours. Repeat with a control (glucose or plain water) on another day to compare.",
-          "safety_notes": "Do not attempt if you currently have severe diarrhea or abdominal pain. Stop immediately if you develop severe symptoms. Not suitable for people with diabetes. Results are subjective and not diagnostic on their own."
+          "name": "Structured symptom and food diary",
+          "description": "Record all foods and drinks consumed alongside symptom timing, severity, and type for at least 2 weeks before any elimination. Look specifically for a temporal relationship between sugary or starchy foods and symptoms occurring 30\u2013120 minutes later. Note whether fizzy drinks, sweets, fruit, or baked goods are consistent triggers.",
+          "safety_notes": "No risks. Detailed diaries significantly improve the quality of clinical consultations and help distinguish SID from other carbohydrate intolerances."
         }
       ],
       "clinical": [
         {
-          "name": "Hydrogen breath test (sucrose challenge)",
+          "name": "Small intestinal disaccharidase assay (biopsy-based)",
           "type": "gold_standard",
-          "description": "You consume a 25-gram sucrose load after fasting, and breath hydrogen levels are measured at intervals (usually 0, 15, 30, 60, 90, 120, 180 minutes). Elevated hydrogen indicates malabsorption of sucrose\u2014undigested sugars reach the colon where bacteria produce hydrogen gas that is absorbed and exhaled. Symptoms during the test are also noted.",
-          "availability": "Ordered by gastroenterologist or primary care doctor; performed in a clinic or hospital lab with specialized equipment. Common procedure but not all centers offer it."
+          "description": "Multiple biopsy specimens are taken from the duodenum or jejunum during upper endoscopy (gastroscopy) and sent to a specialized laboratory for direct measurement of enzyme activities: sucrase, isomaltase, lactase, maltase, and palatinase. Low sucrase activity \u2014 typically below 25\u201330 U/g protein, though laboratory reference ranges vary \u2014 confirms the diagnosis. This is the most definitive test available.",
+          "availability": "Requires upper endoscopy, which is ordered by a gastroenterologist. The biopsy specimens must be sent to a laboratory that performs the full disaccharidase panel \u2014 not all hospital pathology labs offer this. In the United States, specialized labs such as Baylor St. Luke's GI Motility lab or similar academic centers process these samples. Ordering clinicians may need prompting to specify the full disaccharidase panel."
         },
         {
-          "name": "Small intestinal biopsy with disaccharidase enzyme assay",
-          "type": "gold_standard",
-          "description": "A small tissue sample is obtained from the duodenum or jejunum during endoscopy, and the sucrase-isomaltase enzyme activity is directly measured in the laboratory. This is the definitive test for diagnosing congenital and secondary forms. The biopsy also allows assessment of intestinal structure to rule out other causes of villous damage.",
-          "availability": "Performed by a gastroenterologist during upper endoscopy. Considered the gold standard but more invasive than breath testing. Reserved for cases where diagnosis is uncertain or for evaluation of congenital disease."
-        },
-        {
-          "name": "Genetic testing (SI gene sequencing)",
+          "name": "13C-sucrose breath test",
           "type": "emerging",
-          "description": "DNA sequencing identifies mutations in the SI gene that encodes sucrase-isomaltase. Useful for confirming congenital sucrase-isomaltase deficiency. Increasingly available through specialized labs.",
-          "availability": "Ordered by geneticist or gastroenterologist; performed on blood or saliva sample. Useful primarily for diagnosing congenital forms and for family planning. Not widely available but becoming more accessible."
+          "description": "An orally ingested dose of 13C-labeled sucrose is given, and breath samples are collected at intervals to measure 13CO2 excretion, reflecting sucrose hydrolysis and absorption. Reduced 13CO2 production indicates impaired sucrase activity. Less invasive than biopsy and potentially more accessible.",
+          "availability": "Not yet widely available outside specialist centers and research settings in many countries. Available at some academic gastroenterology units in the United States and Europe. May become a standard screening tool as access expands."
         },
         {
-          "name": "Clinical diagnosis based on history and response to diet",
+          "name": "Hydrogen/methane breath test with sucrose substrate",
           "type": "standard",
-          "description": "In secondary deficiency (e.g., after gastroenteritis or in celiac disease), diagnosis is often made on clinical grounds: symptoms appear after intestinal injury, improve with sucrose elimination, and resolve as the underlying condition heals. Formal testing may not be necessary.",
-          "availability": "Assessed by primary care doctor or gastroenterologist based on clinical presentation and dietary trial."
+          "description": "Similar in principle to lactose or fructose breath tests. A sucrose substrate is ingested and breath hydrogen/methane measured at intervals. Elevated hydrogen or methane suggests colonic fermentation of undigested sucrose. Less specific than the disaccharidase assay \u2014 results can be confounded by SIBO or rapid transit \u2014 but more accessible.",
+          "availability": "Available at most gastroenterology units and some functional medicine or private clinics that offer breath testing. Some direct-to-consumer breath test providers offer sucrose breath tests with a home collection kit, though clinical interpretation is recommended."
+        },
+        {
+          "name": "SI gene genetic testing / variant panel",
+          "type": "emerging",
+          "description": "Sequencing of the SI gene to identify known pathogenic or likely pathogenic variants. Panels vary in the number of variants assessed. Useful as a supporting tool and increasingly used to identify the partial/hypomorphic variants associated with adult IBS-like presentations.",
+          "availability": "Available through clinical genetics services and increasingly through specialist GI genetic panels. Some direct-to-consumer genetic testing companies include SI variants on carbohydrate intolerance panels, though variant interpretation requires clinical expertise. Not yet a standalone diagnostic standard."
+        },
+        {
+          "name": "Empirical sacrosidase (Sucraid) trial",
+          "type": "standard",
+          "description": "In some clinical settings, particularly in pediatrics, a therapeutic trial with the enzyme replacement sacrosidase (Sucraid) is used diagnostically. A clear and reproducible symptom response \u2014 improvement when taking the enzyme with sucrose-containing meals and return of symptoms when the enzyme is stopped \u2014 provides strong supporting evidence for SID.",
+          "availability": "Sucraid is a prescription medication in the United States and Canada. Its high cost and restricted availability mean this approach is more common in pediatric than adult practice."
         }
       ]
     },
     "related_conditions": [
       {
-        "name": "Lactose intolerance",
-        "relationship": "often_confused",
-        "explanation": "Both cause similar symptoms (bloating, diarrhea, cramping) after consuming specific foods. Key distinction: lactose intolerance is triggered by milk products and dairy, while sucrase deficiency is triggered by sucrose. They can coexist, especially in secondary deficiency after intestinal damage. Dietary trials targeting each sugar type help differentiate them."
-      },
-      {
-        "name": "Celiac disease",
-        "relationship": "mechanistic_link",
-        "explanation": "Celiac disease damages the small intestinal lining, leading to secondary sucrase-isomaltase deficiency alongside other disaccharidase deficiencies. As celiac disease is treated with a gluten-free diet and the intestine heals, enzyme activity may recover. Testing for celiac should accompany investigation of sucrase deficiency."
-      },
-      {
+        "id": "ibs",
         "name": "Irritable bowel syndrome (IBS)",
         "relationship": "often_confused",
-        "explanation": "IBS and sucrase deficiency can both cause bloating, diarrhea, and cramping, making misdiagnosis common. Sucrase deficiency causes reproducible symptoms after specific foods; IBS is triggered by various factors and lacks a clear dietary trigger. A food and symptom diary helps distinguish them. Some people have both conditions."
+        "explanation": "SID, particularly the partial adult form, is frequently misdiagnosed as IBS-D or IBS-M. The symptom profiles overlap substantially, and sucrose is not assessed by standard IBS workups. Studies suggest several percent of IBS patients carry functionally relevant SI variants."
       },
       {
-        "name": "Infectious gastroenteritis (rotavirus, norovirus, bacterial infection)",
-        "relationship": "upstream",
-        "explanation": "Viral or bacterial intestinal infections damage the brush border where sucrase-isomaltase is produced, causing secondary deficiency. Deficiency typically resolves within 2\u20138 weeks as the intestinal lining regenerates. Secondary deficiency following gastroenteritis is often underrecognized."
+        "id": "lactase",
+        "name": "Lactase deficiency",
+        "relationship": "comorbid",
+        "explanation": "Both are brush-border enzyme deficiencies of the small intestine. They can coexist, particularly in secondary deficiency states where intestinal damage reduces multiple enzyme activities simultaneously. Distinguishing them requires careful dietary testing or a full disaccharidase panel."
       },
       {
+        "id": "fructose",
+        "name": "Fructose malabsorption",
+        "relationship": "often_confused",
+        "explanation": "Sucrose is composed of glucose and fructose. When sucrase activity is impaired, the undigested sucrose load in the colon mimics fructose malabsorption symptomatically and can produce a positive fructose breath test, leading to misdiagnosis. However, fructose malabsorption relates to GLUT-5 transporter capacity, not enzyme activity."
+      },
+      {
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "downstream",
+        "explanation": "Chronic delivery of undigested sugars to the upper GI tract can alter the microbial environment and potentially promote bacterial overgrowth. SIBO can also secondarily reduce SI enzyme activity by damaging the brush border. The two conditions can coexist and complicate each other's diagnosis."
+      },
+      {
+        "id": "coeliac",
+        "name": "Coeliac disease",
+        "relationship": "mechanistic_link",
+        "explanation": "Active coeliac disease damages the small intestinal villi and brush border, causing secondary (acquired) reductions in sucrase-isomaltase and other disaccharidase activities. This secondary SID resolves with a gluten-free diet and intestinal healing. Coeliac disease should be excluded before attributing low disaccharidase activity to a genetic cause."
+      },
+      {
+        "id": "ibd_remission",
         "name": "Crohn's disease",
         "relationship": "mechanistic_link",
-        "explanation": "Chronic intestinal inflammation in Crohn's disease can damage the brush border and cause secondary disaccharidase deficiency, including sucrase-isomaltase. Deficiency may persist during active disease and improve with remission. May complicate management of Crohn's disease symptoms."
+        "explanation": "Small bowel Crohn's disease can damage the enterocytes responsible for producing sucrase-isomaltase, causing secondary enzyme deficiency. Persistent GI symptoms in Crohn's patients in apparent remission may reflect SID rather than active inflammation."
       },
       {
-        "name": "Acute and chronic diarrhea",
-        "relationship": "downstream",
-        "explanation": "Sucrase deficiency causes osmotic diarrhea; if severe or prolonged, it can lead to dehydration, electrolyte loss, and nutritional deficiency. In infants with undiagnosed congenital disease, chronic diarrhea may cause failure to thrive. Proper management prevents complications."
-      },
-      {
-        "name": "FODMAP sensitivity or fructose malabsorption",
+        "id": "epi",
+        "name": "Exocrine pancreatic insufficiency (EPI)",
         "relationship": "often_confused",
-        "explanation": "Some fruits and foods high in fructose trigger symptoms in people with sucrase deficiency (since sucrose breaks down into glucose and fructose) and also in those with fructose malabsorption. Symptoms overlap, but fructose malabsorption is independent of sucrose intake. Testing and dietary trials help clarify."
+        "explanation": "Both EPI and SID cause malabsorption with diarrhea, bloating, and gas after eating. EPI primarily affects fat digestion, while SID affects sugar digestion, but the symptom overlap is sufficient to cause diagnostic confusion, particularly when fat intake coincides with sugar intake."
+      },
+      {
+        "id": null,
+        "name": "Congenital glucose-galactose malabsorption",
+        "relationship": "often_confused",
+        "explanation": "Another rare congenital carbohydrate absorption disorder presenting in infancy. Distinguished from CSID by the specific sugars that trigger symptoms and by different underlying mechanisms (SGLT1 transporter defect versus enzyme deficiency)."
+      },
+      {
+        "id": null,
+        "name": "Aldolase B deficiency (hereditary fructose intolerance)",
+        "relationship": "often_confused",
+        "explanation": "Both conditions cause adverse reactions to sucrose (which contains fructose). Hereditary fructose intolerance is a liver enzyme disorder with more systemic and potentially severe consequences, while SID is purely intestinal. The distinction has important management implications."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "downstream",
+        "explanation": "Chronic colonic fermentation of undigested sucrose and isomaltose may alter the composition of the gut microbiome over time, potentially promoting dysbiosis. This is a plausible secondary consequence rather than a cause."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
-          "name": "Eliminate or strictly limit sucrose intake",
+          "name": "Sucrose restriction diet",
           "category": "diet",
-          "description": "Remove table sugar, candy, sweetened beverages, most desserts, many fruits (especially dried fruit and high-sucrose varieties like raisins, bananas, and grapes), honey-sweetened foods, and many sauces with added sugar. This is the primary management strategy. Check food labels for 'sugar' or 'sucrose' in the ingredient list.",
+          "description": "Reducing or eliminating dietary sucrose is the cornerstone of SID management. This involves avoiding table sugar, fruit juice, honey, high-sugar fruits, most commercially processed foods with added sugar, and sucrose-containing syrups. A registered dietitian familiar with SID or rare carbohydrate disorders can help design a nutritionally complete diet. Starch restriction (particularly foods high in isomaltose-yielding starches) may also be needed depending on isomaltase activity.",
           "evidence_level": "strong",
-          "notes": "Most effective intervention; symptoms often resolve within days to 1 week. In congenital disease, strict avoidance is lifelong. In secondary disease, as the intestine heals, tolerance may improve over weeks to months. You may tolerate small amounts of sucrose without symptoms\u2014individual tolerance varies."
+          "notes": "Tolerance levels vary between individuals and between the congenital and partial forms. Some people with partial SID tolerate small amounts of sucrose. A dietitian's guidance is important to avoid unnecessary over-restriction, which can compromise nutrition and quality of life."
         },
         {
-          "name": "Choose low-sucrose fruits and carbohydrates",
-          "category": "diet",
-          "description": "Focus on fruits lower in sucrose: berries, citrus (oranges, lemons), avocados, and non-sweet vegetables. Choose whole grains (rice, oats, quinoa), legumes, and starchy vegetables (potatoes, sweet potatoes) for carbohydrates. Use glucose-based sweeteners (glucose tablets, dextrose) or sugar alcohols like erythritol or stevia if you need sweetness, though some sugar alcohols may cause bloating in large amounts.",
-          "evidence_level": "strong",
-          "notes": "Allows continued dietary variety while avoiding triggers. Whole grains are well tolerated because the sucrose content is negligible. Caution: some sugar alcohols (sorbitol, xylitol, maltitol) can trigger symptoms in some individuals."
-        },
-        {
-          "name": "Enzyme replacement with sacrosidase (Sucraid)",
+          "name": "Sacrosidase (Sucraid) enzyme replacement",
           "category": "medication",
-          "description": "Sacrosidase is a liquid enzyme derived from yeast that breaks down sucrose in the small intestine. Taken orally before or with meals containing sucrose, it reduces or eliminates symptoms. Dose is typically 8,500 International Units (IU) per dose, taken 1\u20134 times daily depending on sucrose intake.",
+          "description": "Sacrosidase is a yeast-derived sucrase enzyme taken orally with each sucrose-containing meal or snack. It supplements the deficient enzyme at the brush border. It is FDA-approved for CSID and has strong evidence in the congenital form. Some clinicians use it off-label in adults with partial SID.",
           "evidence_level": "strong",
-          "notes": "FDA-approved for congenital and acquired sucrase-isomaltase deficiency. Effective at allowing consumption of sucrose-containing foods without symptoms. Cost and availability can be limiting; not covered by all insurance plans. Less effective for isomaltase deficiency. Requires prescription. Enteric-coated products may be damaged by high stomach acid."
+          "notes": "Sacrosidase is very expensive in the United States and access can be a barrier without strong insurance coverage. It does not replace isomaltase activity, so starch tolerance may still be limited. It is formulated in a sucrose-free, preservative-free solution and is sensitive to heat. Patients with yeast hypersensitivity should use with caution."
         },
         {
-          "name": "Gradual reintroduction of small sucrose amounts",
+          "name": "Low-starch dietary modification",
           "category": "diet",
-          "description": "In partial deficiency or secondary deficiency during healing, systematically introduce small amounts of sucrose (e.g., 5 grams) and gradually increase as tolerated over weeks. This may allow the bowel to adapt and increase enzyme production, expanding your tolerance range.",
+          "description": "For individuals with significant isomaltase deficiency alongside sucrase deficiency, reducing intake of highly processed starches \u2014 particularly those with a high isomaltose yield such as waxy corn starch and some potato products \u2014 may reduce symptoms. Whole intact grains may be better tolerated than refined starch products in some individuals.",
           "evidence_level": "moderate",
-          "notes": "Works better in secondary deficiency and partial congenital forms than in complete congenital deficiency. Requires patience and careful self-monitoring. Not all individuals show tolerance improvement. Can be frustrating if symptoms worsen with reintroduction."
+          "notes": "The isomaltase component of SID is less well characterized in terms of dietary management guidance. Individual tolerance testing under dietitian supervision is recommended rather than blanket starch restriction."
         },
         {
-          "name": "Probiotics and prebiotics",
+          "name": "Digestive enzyme supplements (non-prescription)",
           "category": "supplement",
-          "description": "Probiotics (live beneficial bacteria) and prebiotics (food for bacteria) may help normalize gut flora after infection or antibiotic use and potentially improve symptom tolerance over time. Common strains: Lactobacillus and Bifidobacterium.",
+          "description": "Some over-the-counter digestive enzyme blends contain sucrase or invertase activity derived from fungal or plant sources. These may provide modest benefit for people with partial SID who cannot access or afford Sucraid. Quality and potency vary widely between products.",
           "evidence_level": "anecdotal",
-          "notes": "Limited evidence specifically for sucrase deficiency; more studied in general diarrhea and IBS. May help after gastroenteritis or antibiotic therapy. Individual response varies widely. Choose supplements with well-characterized strains. Effects take weeks to months."
+          "notes": "No randomized controlled trial data exist for OTC sucrase supplements specifically in SID. Some individuals report benefit; others do not. These should not be used as a substitute for diagnosis or in place of prescription sacrosidase in confirmed CSID. Discuss with a clinician before relying on these."
         },
         {
-          "name": "Adequate hydration and electrolyte replacement",
+          "name": "Nutritional supplementation",
+          "category": "supplement",
+          "description": "People with long-undiagnosed SID may have developed nutritional deficiencies from years of malabsorption and dietary restriction. Iron, B12, folate, vitamin D, and other fat-soluble vitamins may need supplementation guided by blood testing.",
+          "evidence_level": "moderate",
+          "notes": "Supplementation should be guided by laboratory testing rather than assumed. A dietitian or physician with an interest in malabsorption conditions is helpful here."
+        },
+        {
+          "name": "Structured food and symptom tracking",
           "category": "lifestyle",
-          "description": "Diarrhea and gas-related symptoms can lead to dehydration. Drink water regularly, and use oral rehydration solutions (containing salt and glucose) if diarrhea is frequent or severe, especially in children. Electrolyte imbalances (low sodium, potassium) can occur with chronic symptoms.",
-          "evidence_level": "strong",
-          "notes": "Essential for preventing complications like dehydration and nutrient deficiency. Oral rehydration solutions containing glucose (but not sucrose) are well tolerated. Monitor urine color and thirst as hydration indicators."
-        },
-        {
-          "name": "Small, frequent meals",
-          "category": "diet",
-          "description": "Eating smaller portions at regular intervals reduces the osmotic load reaching the colon at once, minimizing bloating and diarrhea. Aim for 4\u20136 smaller meals rather than 2\u20133 large meals.",
+          "description": "Maintaining a detailed diary linking food intake to symptom timing and severity allows individuals to identify their personal threshold and specific trigger foods. This is particularly useful in partial SID where the dose-response relationship with sucrose is more nuanced.",
           "evidence_level": "moderate",
-          "notes": "Helps reduce symptom severity, especially when combined with sucrose avoidance. Particularly useful during the acute phase or if tolerance is very low."
-        },
-        {
-          "name": "Identify and avoid other trigger foods",
-          "category": "diet",
-          "description": "Some people with sucrase deficiency may have reduced lactase or maltase activity as well. Track foods like milk (lactose) and refined grains (maltose) to see if they trigger symptoms. Avoid if they do; they may improve as the intestine heals.",
-          "evidence_level": "moderate",
-          "notes": "Secondary deficiency often affects multiple disaccharidases. Individual tolerance varies. Keep a detailed food and symptom diary to identify other culprits beyond sucrose."
+          "notes": "Useful both as a management tool and as supporting data for clinical consultations."
         }
       ],
       "things_to_avoid": [
-        "Table sugar, candy, sweetened beverages, and desserts \u2014 direct triggers that cause bloating, diarrhea, and cramping",
-        "High-sucrose fruits like raisins, dried fruit, bananas, grapes, and mango \u2014 concentrated sugars often cause symptoms more easily than fresh fruit",
-        "Store-bought sauces, ketchup, and condiments \u2014 many contain added sugar; check labels and choose unsweetened versions",
-        "Sweetened breakfast cereals and granola \u2014 high in added sucrose; choose low-sugar or unsweetened cereals",
-        "Honey and agave nectar \u2014 contain high sucrose; use glucose-based sweeteners instead if needed",
-        "Fruit juices and smoothies \u2014 concentrated sugars, even if unsweetened, can trigger symptoms due to rapid absorption",
-        "Starches with added sugar (e.g., canned fruit in syrup, sweetened yogurt) \u2014 combined with maltose from starch digestion may overwhelm remaining enzyme capacity",
-        "Large meals high in carbohydrates \u2014 big osmotic loads worsen symptoms; eat smaller, more frequent meals",
-        "Rapid consumption of sucrose on an empty stomach \u2014 slows gastric emptying and worsens symptoms; always eat with other foods or take sacrosidase"
+        "Fruit juices and sweetened soft drinks \u2014 very high in sucrose or free fructose, among the most reliable triggers",
+        "Table sugar, icing sugar, caster sugar, and products listing sucrose as a main ingredient",
+        "Honey and agave syrup \u2014 high in fructose and sucrose",
+        "High-sugar processed foods: confectionery, cakes, biscuits, flavored yogurts, cereals with added sugar",
+        "Sucrose-containing liquid medications and syrups \u2014 a frequently overlooked source",
+        "Relying on a low-FODMAP diet as the primary management approach \u2014 it does not restrict sucrose and will miss this condition",
+        "Assuming all starchy foods are equally problematic without individual testing \u2014 unnecessary restriction can compromise nutrition",
+        "Delaying enzyme replacement (Sucraid) in confirmed congenital CSID, particularly in children, where growth and development may be affected"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "Most gastroenterologists do not routinely test for SID, and many are unfamiliar with the adult partial form. People can spend years on IBS management that will never fully work because the underlying enzyme deficiency is never identified.",
+        "why_resisted": "It is easier to accept an IBS label and try symptom management than to pursue obscure enzyme testing that requires specialist referral and endoscopy. Many people hope that diet tweaks or probiotics will eventually work.",
+        "path_forward": "Individuals who request a full disaccharidase panel via endoscopic biopsy \u2014 and who find a gastroenterologist willing to order it \u2014 often get a clear result within weeks of the procedure. A confirmed diagnosis completely redirects management toward something that actually targets the cause."
+      },
+      {
+        "truth": "A low-FODMAP diet can partially mask SID by incidentally reducing some sugary foods, creating the impression that IBS is being managed \u2014 while the true diagnosis remains invisible.",
+        "why_resisted": "Partial improvement feels like progress and discourages further investigation. The low-FODMAP framework does not include sucrose as a target, so neither patients nor their dietitians are prompted to look further.",
+        "path_forward": "Recognizing that sucrose is not a FODMAP \u2014 and specifically testing sucrose restriction as a separate dietary variable \u2014 reveals whether SID is the missing piece. People who do this often describe a degree of symptom control they never achieved on low-FODMAP alone."
+      },
+      {
+        "truth": "Sacrosidase (Sucraid) is extremely expensive in the United States, and cost can be a genuine barrier to optimal management even after a confirmed diagnosis. There is currently no generic alternative.",
+        "why_resisted": "People hope cost issues will resolve, or they delay pursuing diagnosis if treatment seems unaffordable.",
+        "path_forward": "Dietary sucrose restriction \u2014 while demanding \u2014 can achieve meaningful symptom control for many people with partial SID without enzyme replacement. For confirmed CSID, patient assistance programs through the manufacturer and aggressive insurance prior authorization processes have helped some patients access the medication at reduced cost."
+      },
+      {
+        "truth": "The genetic picture of SID is complex and not fully characterized. A 'negative' genetic test does not rule out functionally significant SID \u2014 only the disaccharidase enzyme assay from biopsy can confirm reduced enzyme activity.",
+        "why_resisted": "People often expect genetic testing to give a definitive answer. A negative or 'variant of uncertain significance' result can falsely reassure both patient and clinician.",
+        "path_forward": "Individuals who understand that the biopsy-based enzyme assay remains the diagnostic standard pursue that test directly rather than waiting for genetic results to resolve. This avoids years of diagnostic delay."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Strict sucrose elimination and label reading",
-          "why_it_matters": "Sucrose is the direct substrate; removing it at the source eliminates the trigger for malabsorption and fermentation, stopping symptoms at their root cause. This is the most effective long-term strategy.",
-          "how_to_start": "Identify and remove obvious sources: table sugar, candy, soda. Then read ingredient lists on packaged foods; look for 'sugar,' 'sucrose,' 'cane juice,' or 'honey.' Replace sweetened foods with unsweetened versions. Start with a week-long trial to confirm improvement.",
-          "timeline": "Symptoms typically improve within 3\u20137 days of sucrose elimination; maximum improvement within 2 weeks.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Diagnosis and recognition of secondary versus congenital disease",
-          "why_it_matters": "Secondary deficiency often resolves as the underlying intestinal injury heals (weeks to months), so expectations and management differ from congenital disease. Proper diagnosis guides whether dietary restriction is lifelong or temporary and whether enzyme replacement is needed.",
-          "how_to_start": "Consult a gastroenterologist if you have ongoing unexplained bloating and diarrhea after an infection or digestive illness, or if you have celiac disease. Request testing (hydrogen breath test or biopsy) to confirm diagnosis and determine type.",
-          "timeline": "Diagnosis can be made within 1\u20132 weeks; secondary forms may resolve within 2\u20138 weeks as intestine heals; congenital forms require lifelong management.",
+          "lever": "Obtain a confirmed diagnosis via disaccharidase biopsy panel",
+          "why_it_matters": "Without a confirmed diagnosis, management remains guesswork. The biopsy panel gives a quantitative measure of enzyme activity that definitively guides treatment decisions and communicates the severity of deficiency.",
+          "how_to_start": "Request a referral to a gastroenterologist specifically for upper endoscopy with a disaccharidase panel. Bring documentation of dietary patterns and symptom correlations to the consultation. If the first gastroenterologist is unfamiliar with the test, seek a second opinion at an academic medical center.",
+          "timeline": "Endoscopy can typically be arranged within weeks to a few months. Results from a specialized laboratory take 1\u20132 weeks after the procedure.",
           "requires_professional": true
         },
         {
-          "lever": "Use of sacrosidase enzyme replacement when appropriate",
-          "why_it_matters": "For people with congenital disease who want to maintain a normal diet, sacrosidase directly compensates for the missing enzyme, allowing sucrose consumption without symptoms. Improves quality of life and reduces social burden.",
-          "how_to_start": "Ask your gastroenterologist for a prescription. Learn proper administration (timing relative to meals, correct dose). Start with a trial to find the minimum effective dose. Check insurance coverage and cost.",
-          "timeline": "Symptom relief is immediate (within the meal containing sacrosidase); benefits are sustained with consistent use.",
+          "lever": "Implement a structured sucrose-restricted diet guided by a knowledgeable dietitian",
+          "why_it_matters": "Dietary sucrose restriction directly removes the substrate that causes symptoms. Done carefully with professional guidance, it is nutritionally sustainable and can produce dramatic symptom improvement without medication.",
+          "how_to_start": "Find a registered dietitian with experience in rare carbohydrate disorders, enzyme deficiencies, or pediatric GI nutrition (for CSID). The CSID Cares Foundation and similar organizations can provide dietitian referral resources. Begin with a clear elimination phase, then structured reintroduction to find personal tolerance thresholds.",
+          "timeline": "Clear symptom improvement is often seen within 1\u20132 weeks of sucrose elimination. Fine-tuning for starch tolerance and individual thresholds takes several months.",
           "requires_professional": true
         },
         {
-          "lever": "Treatment of underlying cause in secondary deficiency",
-          "why_it_matters": "In secondary deficiency, treating the root cause (e.g., starting a gluten-free diet for celiac disease, healing after gastroenteritis) allows the intestine to regenerate and enzyme production to recover. This often eliminates the need for permanent dietary restriction.",
-          "how_to_start": "If secondary deficiency is identified, work with your doctor to treat the underlying condition. If celiac disease: strict gluten-free diet. If post-infectious: supportive care and time. If Crohn's: work on disease remission.",
-          "timeline": "Recovery of enzyme activity typically occurs over 2\u20138 weeks; some improvement may be seen within days of treating the underlying cause.",
+          "lever": "Enzyme replacement with sacrosidase (Sucraid) for confirmed CSID or partial SID with significant functional impairment",
+          "why_it_matters": "Replacing the missing enzyme at the point of digestion addresses the root cause directly, allowing a broader diet and reducing the social and nutritional burden of strict sucrose elimination.",
+          "how_to_start": "Discuss prescription sacrosidase with the treating gastroenterologist or pediatric GI specialist following confirmed diagnosis. Explore insurance coverage, manufacturer assistance programs, and prior authorization pathways proactively.",
+          "timeline": "Symptom response to sacrosidase is typically seen within days of correct dosing with sucrose-containing meals.",
           "requires_professional": true
         },
         {
-          "lever": "Systematic dietary adaptation and food exploration",
-          "why_it_matters": "Over time, identifying your personal tolerance threshold for sucrose and finding appealing low-sucrose alternatives improves adherence and reduces the sense of dietary restriction. This supports long-term symptom control.",
-          "how_to_start": "Keep a detailed food and symptom diary for 2 weeks. Test individual foods or meals in controlled portions to identify your personal tolerance window. Build a list of favorite low-sucrose foods you enjoy.",
-          "timeline": "Takes 2\u20134 weeks to identify patterns and establish a comfortable diet; ongoing refinement as you learn what works for you.",
+          "lever": "Address nutritional deficiencies accumulated during years of malabsorption",
+          "why_it_matters": "Correcting iron, B12, vitamin D, and other deficits improves energy, cognitive function, and overall wellbeing \u2014 areas that do not resolve from dietary change alone if stores are depleted.",
+          "how_to_start": "Request a comprehensive nutritional blood panel from a GP or internist, including ferritin, B12, folate, vitamin D, zinc, and a full blood count. Use results to guide targeted supplementation.",
+          "timeline": "Nutritional repletion typically takes 3\u20136 months for meaningful improvement in markers and symptoms.",
           "requires_professional": false
         }
       ],
       "common_mistakes": [
-        "Eliminating all fruits and carbohydrates, leading to nutritional deficiency and unnecessarily restricted diet \u2014 many fruits (berries, citrus, avocado) are low in sucrose and well tolerated; whole grains and legumes contain minimal sucrose.",
-        "Attempting to maintain a normal diet without diagnosis or enzyme replacement, leading to ongoing symptoms and frustration \u2014 clarity on diagnosis (congenital vs. secondary) and access to sacrosidase changes the treatment approach.",
-        "Assuming secondary deficiency will resolve immediately after starting gluten-free diet or treatment for celiac \u2014 intestinal healing takes weeks to months; dietary restriction is still necessary during this period.",
-        "Using sugar alcohols or artificial sweeteners without testing, assuming they are sucrose-free and symptom-free \u2014 some sugar alcohols (sorbitol, xylitol) can cause bloating and diarrhea in people with deficiency.",
-        "Not reading food labels carefully, missing hidden sucrose in ketchup, sauces, yogurt, and 'healthy' granola bars \u2014 sucrose is added to many foods beyond obvious desserts.",
-        "Restricting diet more severely than necessary based on initial diagnosis, leading to unnecessary hardship \u2014 many people with partial deficiency tolerate moderate sucrose without symptoms; tolerance can be expanded gradually.",
-        "Discontinuing enzyme replacement abruptly when hoping the condition will spontaneously improve \u2014 in congenital disease, enzyme activity does not return; ongoing use of sacrosidase is necessary if maintaining a regular diet is desired."
+        "Treating SID like generic IBS with fiber supplements, probiotics, or antispasmodics \u2014 these do not address the enzyme deficiency and provide minimal lasting benefit",
+        "Restricting fructose (via low-FODMAP) while leaving sucrose unrestricted \u2014 the wrong carbohydrate is being targeted",
+        "Relying on genetic testing as a diagnostic endpoint and abandoning investigation when variants are absent or uncertain",
+        "Restricting all starches broadly and permanently without testing individual starch tolerance \u2014 this creates unnecessary nutritional restriction and reduced quality of life",
+        "Using Sucraid as an excuse to eat unlimited sucrose \u2014 enzyme replacement has dosing limits and does not provide unlimited sucrose hydrolysis capacity",
+        "Diagnosing secondary SID (caused by coeliac disease or Crohn's) as genetic SID without excluding the primary condition first",
+        "Failing to check sucrose content in medications, liquid supplements, and children's vitamins \u2014 a hidden sucrose source that can undermine dietary management"
       ]
     },
     "finding_help": {
       "specialists": [
         {
-          "type": "Gastroenterologist",
-          "role": "Primary specialist for diagnosis and management. Performs or orders hydrogen breath tests and small intestinal biopsies, interprets results, and develops a treatment plan. Experienced in distinguishing sucrase deficiency from other causes of diarrhea.",
-          "notes": "Often the first doctor to diagnose; familiar with both congenital and secondary forms. Important for initial diagnosis, especially if symptoms are unexplained or refractory."
+          "type": "Gastroenterologist (academic or specialist center preferred)",
+          "role": "Primary specialist for ordering and interpreting the disaccharidase biopsy panel, performing upper endoscopy, and coordinating enzyme replacement prescription.",
+          "notes": "Community gastroenterologists may not be familiar with SID in adults. Seeking care at an academic medical center or a center with a known interest in malabsorption disorders significantly increases the likelihood of appropriate testing being ordered. Pediatric gastroenterologists are generally more familiar with CSID."
         },
         {
-          "type": "Registered dietitian (especially pediatric or gastrointestinal specialty)",
-          "role": "Provides detailed dietary counseling, helps identify trigger foods, creates a sustainable meal plan that avoids sucrose while ensuring balanced nutrition, and offers ongoing support. Critical for long-term management, especially in children.",
-          "notes": "Often overlooked but invaluable for practical, individualized advice. Request a referral from your gastroenterologist; many insurance plans cover dietitian visits if ordered by a physician."
+          "type": "Registered dietitian (specializing in GI or rare metabolic disorders)",
+          "role": "Designs and monitors a nutritionally adequate sucrose-restricted diet, identifies hidden sucrose sources, manages starch tolerance testing, and addresses any nutritional deficiencies.",
+          "notes": "Dietitians with experience in CSID or rare carbohydrate enzyme disorders are uncommon but exist, particularly in pediatric GI programs. The CSID Cares Foundation maintains a referral network. Standard IBS dietitians may not have familiarity with SID-specific dietary management."
         },
         {
-          "type": "Pediatrician or primary care physician",
-          "role": "For children, the first point of contact. Can recognize patterns suggestive of sucrase deficiency, order initial testing, and refer to gastroenterology. For adults, can diagnose secondary deficiency and manage overall health.",
-          "notes": "Mainstream doctors may be unfamiliar with sucrase deficiency; a high index of suspicion is needed. Educating your doctor about the condition helps."
+          "type": "Pediatric gastroenterologist",
+          "role": "The specialist most likely to be familiar with the congenital form and its management in children; also the most experienced prescribers of sacrosidase (Sucraid).",
+          "notes": "Adults with long-undiagnosed CSID or partial SID may find that pediatric GI specialists (who may see adult patients or transition patients to adult care) have the most relevant clinical experience."
         },
         {
-          "type": "Hepatologist or infectious disease specialist",
-          "role": "Relevant if secondary deficiency is caused by hepatitis, severe infection, or post-infection complications. Helps manage the underlying illness and coordinate care.",
-          "notes": "Specialized role; relevant only in certain cases."
+          "type": "Clinical geneticist or metabolic disease specialist",
+          "role": "Can provide interpretation of SI gene variants, family counseling, and guidance in complex genetic presentations.",
+          "notes": "Most relevant when there is a family history or when genetic testing returns variants of uncertain significance that require further interpretation."
+        },
+        {
+          "type": "Functional medicine doctor or integrative gastroenterologist",
+          "role": "May be more willing to pursue non-standard diagnostic pathways, including empirical dietary trials and ordering of specialist tests that mainstream clinicians might not consider.",
+          "notes": "Variable quality and evidence-basis. Most useful as a complement to, not a replacement for, conventional GI investigation. Awareness of SID varies. Useful if mainstream gastroenterology has been dismissive."
         }
       ],
       "patient_communities": [
         {
-          "name": "International Association for Disaccharidase Deficiency",
-          "platform": "Website and support groups",
-          "url": "https://www.disaccharidasedeficiency.org/ (if available) or search IADD",
-          "notes": "Dedicated to disaccharidase deficiencies including sucrase-isomaltase deficiency. Provides educational resources, support groups, and connections to specialists."
+          "name": "CSID Cares Foundation",
+          "platform": "Website / patient organization",
+          "url": "https://www.csidcares.org",
+          "notes": "The primary patient advocacy and information organization for CSID internationally. Provides dietitian referrals, physician lists, dietary resources, a sucrose-free product database, and a patient community. The most important single resource for people navigating this diagnosis."
         },
         {
-          "name": "Reddit: r/IBS, r/Celiac, r/GastroParesis (relevant communities)",
-          "platform": "Reddit",
-          "url": "https://www.reddit.com/r/IBS/",
-          "notes": "Not dedicated to sucrase deficiency but large communities discussing similar symptoms. Useful for sharing experiences with bloating, diarrhea, and dietary management. Posts are diverse in quality; scientific discussion is mixed with anecdotes."
-        },
-        {
-          "name": "Facebook groups for sucrase-isomaltase deficiency and secondary disaccharidase deficiency",
+          "name": "CSID / Sucrase Isomaltase Deficiency Support Group",
           "platform": "Facebook",
-          "url": "Search 'sucrase-isomaltase deficiency' or 'CSID support'",
-          "notes": "Several closed groups for people with congenital and secondary deficiency. Peer support, recipe sharing, and advice from others managing the condition. Quality varies; moderation standards differ by group."
+          "url": null,
+          "notes": "An active Facebook group for patients and families managing CSID and SID. Useful for practical dietary advice, product recommendations, and connecting with others who understand the condition. Search 'CSID' on Facebook to find current active groups."
         },
         {
-          "name": "American Gastroenterological Association (AGA) patient resources",
-          "platform": "Website",
-          "url": "https://gastro.org/",
-          "notes": "Provides patient-friendly information about digestive conditions and helps locate gastroenterologists. Less focused on sucrase deficiency specifically but useful for general support and education."
+          "name": "r/CSID",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/CSID/",
+          "notes": "A small but growing subreddit for people with CSID and related enzyme deficiencies. Useful for anecdotal experience, dietary tips, and navigating diagnosis."
         },
         {
-          "name": "Celiac Disease Foundation (relevant if secondary to celiac)",
-          "platform": "Website and support groups",
-          "url": "https://celiac.org/",
-          "notes": "If your sucrase deficiency is secondary to celiac disease, this organization offers resources, community, and advocacy specific to gluten-related conditions."
+          "name": "Rare Digestive Disorders \u2014 HealthUnlocked",
+          "platform": "HealthUnlocked (forum)",
+          "url": "https://healthunlocked.com",
+          "notes": "Community forum covering rare GI conditions including SID. May be particularly relevant for UK-based patients navigating NHS pathways."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "Sucrase-Isomaltase Deficiency: A Rare but Manageable Condition",
-        "type": "article",
-        "author_or_source": "GastroenterologyHQ or similar medical website",
-        "url": null,
-        "description": "Accessible overview of congenital and secondary sucrase-isomaltase deficiency, including causes, symptoms, diagnosis, and management strategies. Good starting point for understanding the condition.",
+        "title": "CSID Cares Foundation \u2014 Patient and Clinician Resources",
+        "type": "website",
+        "author_or_source": "CSID Cares Foundation",
+        "url": "https://www.csidcares.org",
+        "description": "The most comprehensive patient-facing resource for SID. Covers diagnosis, diet, Sucraid access, recipes, dietitian referrals, and physician finder. Essential first stop for anyone newly exploring this diagnosis.",
         "audience": "beginner"
       },
       {
-        "title": "Congenital Sucrase-Isomaltase Deficiency: A Rare but Treatable Condition",
-        "type": "research paper",
-        "author_or_source": "Pediatric Gastroenterology, Hepatology & Nutrition journals",
-        "url": null,
-        "description": "Peer-reviewed scientific articles on the pathophysiology, genetics, diagnosis, and management of CSID. Useful for understanding the underlying mechanisms and current medical approaches.",
+        "title": "Sucrase-Isomaltase Deficiency \u2014 GeneReviews (NCBI)",
+        "type": "research paper / reference",
+        "author_or_source": "National Center for Biotechnology Information (NCBI) / NIH",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK1397/",
+        "description": "The authoritative clinical genetics review of CSID. Covers molecular genetics, clinical features, diagnosis criteria, management, and genetic counseling. Written for clinicians but accessible to informed patients. Regularly updated.",
         "audience": "advanced"
       },
       {
-        "title": "The Sucraid (sacrosidase) Package Insert and Patient Information",
-        "type": "document",
-        "author_or_source": "QOL Biopharma (manufacturer)",
+        "title": "Congenital Sucrase-Isomaltase Deficiency: Identification and Treatment",
+        "type": "research paper",
+        "author_or_source": "Treem WR \u2014 Journal of Pediatric Gastroenterology and Nutrition",
         "url": null,
-        "description": "Official prescribing information for sacrosidase enzyme replacement, including dosing, administration, side effects, and clinical efficacy data. Essential reference if considering enzyme therapy.",
+        "description": "A foundational review by one of the leading researchers in CSID. Covers pathophysiology, clinical presentation, and management. Useful for understanding the scientific basis of the condition. Available via PubMed.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Prevalence of Sucrase-Isomaltase Gene Mutations in Patients Diagnosed with Irritable Bowel Syndrome",
+        "type": "research paper",
+        "author_or_source": "Husein DM et al. \u2014 Alimentary Pharmacology & Therapeutics (2020)",
+        "url": null,
+        "description": "Key study establishing that a meaningful subset of IBS patients carry functionally relevant SI gene variants. Important reading for anyone with an IBS diagnosis who suspects SID. Available via PubMed.",
         "audience": "intermediate"
       },
       {
-        "title": "Hydrogen Breath Testing: A Guide for Patients",
-        "type": "article",
-        "author_or_source": "GI societies or hospital patient education materials",
-        "url": null,
-        "description": "Explains how hydrogen breath testing works, what to expect, and how results are interpreted. Useful preparation if you are scheduled for breath testing.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Low-FODMAP Diet and Disaccharidase Deficiency: Navigating Dietary Management",
-        "type": "article",
-        "author_or_source": "Registered dietitian organizations or gastroenterology journals",
-        "url": null,
-        "description": "Clarifies overlap between FODMAP sensitivity and disaccharidase deficiency, and how to approach dietary management when both are suspected. Helps avoid overly restrictive diets.",
+        "title": "Sucraid (sacrosidase) Prescribing Information and Patient Guide",
+        "type": "website",
+        "author_or_source": "QOL Medical LLC",
+        "url": "https://www.sucraid.com",
+        "description": "Official information on the prescription enzyme replacement sacrosidase, including dosing, access support, and patient assistance programs. Relevant for confirmed CSID patients and their clinicians.",
         "audience": "intermediate"
       },
       {
-        "title": "Sucrase-Isomaltase Deficiency: Genetics and Pathophysiology",
-        "type": "research paper",
-        "author_or_source": "Molecular Genetics and Metabolism or Gastroenterology journals",
+        "title": "The Specific Carbohydrate Diet \u2014 Breaking the Vicious Cycle",
+        "type": "book",
+        "author_or_source": "Elaine Gottschall",
         "url": null,
-        "description": "In-depth scientific review of the SI gene, genetic mutations causing congenital disease, and how enzyme deficiency leads to malabsorption and symptoms. For those wanting deep understanding.",
-        "audience": "advanced"
-      },
-      {
-        "title": "Recovery of Disaccharidase Activity After Infectious Gastroenteritis and Celiac Disease",
-        "type": "research paper",
-        "author_or_source": "Journal of Pediatric Gastroenterology and Nutrition",
-        "url": null,
-        "description": "Studies on timelines for enzyme activity recovery in secondary deficiency and factors that influence healing. Helps set realistic expectations for recovery in acquired forms.",
-        "audience": "advanced"
-      },
-      {
-        "title": "Practical Food Label Reading for Sucrose Avoidance",
-        "type": "guide",
-        "author_or_source": "Patient education or dietitian websites",
-        "url": null,
-        "description": "How to identify hidden sucrose on food labels, common aliases for sugar, and tips for finding sucrose-free alternatives. Practical reference for grocery shopping.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Patient Stories and Blogs on Living with CSID",
-        "type": "blog or personal narrative",
-        "author_or_source": "Individual patient blogs or CSID community websites",
-        "url": null,
-        "description": "Real-world accounts of diagnosis, management challenges, successful dietary strategies, and coping with a chronic digestive condition. Offers emotional support and practical tips from others with lived experience.",
+        "description": "While not specifically written for SID, the Specific Carbohydrate Diet (SCD) eliminates sucrose and most complex starches and is used by some SID patients as a framework. The science has evolved since publication, but the book remains a useful practical resource for very low-sucrose eating. Should be read critically and adapted with dietitian guidance.",
         "audience": "beginner"
       }
     ],
-    "relevance_signal": "Symptoms after **sweet foods, bread, pasta** even on a low-FODMAP diet. Bloating and diarrhoea from table sugar, fruit juice, or starches that most people tolerate."
+    "relevance_signal": "Chronic diarrhea, bloating, and gas that worsen specifically after eating sugar, starchy foods, or fruit \u2014 particularly since childhood \u2014 and that have not resolved despite IBS treatment or low-FODMAP diets."
+  },
+  "section_meta": {
+    "relevance_signal": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "3028670440bb3a54"
+    },
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

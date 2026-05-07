@@ -5,6 +5,7 @@ import click
 
 from condition_navigator.graph import load_graph
 from condition_navigator.generator.claude import generate_condition, DEFAULT_MODEL
+from condition_navigator.generator.signals import generate_signals
 from condition_navigator import storage
 
 DATA_DIR = Path(__file__).parent.parent.parent / "data"
@@ -76,6 +77,46 @@ def generate(condition_ids: tuple[str, ...], model: str, force: bool, sections: 
     click.echo("Done.")
 
 
+@cli.command("generate-signals")
+@click.option("--id", "condition_ids", multiple=True, help="Parent condition ID. Repeatable. Omit to process all syndromic conditions.")
+@click.option("--model", default=DEFAULT_MODEL, show_default=True, help="Anthropic model ID.")
+@click.option("--force", is_flag=True, help="Ignore existing section_meta and regenerate.")
+def generate_signals_cmd(condition_ids: tuple[str, ...], model: str, force: bool) -> None:
+    """Generate horizontal relevance signals for sub-conditions of syndromic conditions."""
+    graph = load_graph(CONDITIONS_FILE)
+
+    if condition_ids:
+        targets = []
+        for cid in condition_ids:
+            c = graph.by_id(cid)
+            if c is None:
+                raise click.ClickException(f"Unknown condition id: {cid}")
+            if not c.sub_conditions:
+                raise click.ClickException(f"Condition '{cid}' has no sub-conditions.")
+            targets.append(c)
+    else:
+        targets = [c for c in graph.conditions if c.sub_conditions]
+
+    for parent in targets:
+        sub_conditions = [graph.by_id(sc.id) for sc in parent.sub_conditions]
+        sub_conditions = [c for c in sub_conditions if c is not None]
+
+        existing = storage.load(parent, GENERATED_DIR)
+        click.echo(f"Generating signals: {parent.name} ({parent.id})")
+        data = generate_signals(
+            parent,
+            sub_conditions,
+            model=model,
+            existing=existing,
+            force=force,
+        )
+        if data is not existing:
+            storage.save(data, parent, GENERATED_DIR)
+
+    _write_index(graph.conditions)
+    click.echo("Done.")
+
+
 @cli.command("index")
 def build_index() -> None:
     """Write data/generated/index.json listing all conditions and their data status."""
@@ -89,20 +130,15 @@ def _write_index(conditions) -> None:
     entries = []
     for c in conditions:
         has_data = storage.condition_path(c, GENERATED_DIR).exists()
-        relevance_signal = ""
-        if has_data:
-            data = storage.load(c, GENERATED_DIR)
-            if data:
-                relevance_signal = data.sections.get("relevance_signal", "") or ""
         entries.append({
             "id": c.id,
             "name": c.name,
+            "full_name": c.full_name,
             "aliases": c.aliases,
             "group_id": c.group_id,
             "group_label": c.group_label,
             "parents": c.parents,
             "has_data": has_data,
-            "relevance_signal": relevance_signal,
             "diagnosis_type": c.diagnosis_type,
             "sub_conditions": [sc.model_dump() for sc in c.sub_conditions],
         })

@@ -2,450 +2,576 @@
   "condition_id": "sibo_ch4",
   "condition_name": "Methane SIBO",
   "generated_at": "2026-04-16T09:39:49.919953Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "Methane SIBO is a condition where bacteria in your small intestine produce excess methane gas, causing bloating, constipation, and abdominal discomfort. It develops when bacteria overgrow in a part of your digestive tract where they shouldn't be in large numbers.",
-    "detailed_summary": "Small Intestinal Bacterial Overgrowth (SIBO) with methane-dominant presentation occurs when bacteria proliferate abnormally in the small intestine and produce methane as a byproduct of fermentation. Unlike hydrogen-dominant SIBO (which typically causes diarrhoea), methane SIBO tends to slow intestinal movement, leading to constipation and a sensation of food sitting in the gut. The condition is thought to result from impaired intestinal motility, low stomach acid, previous infections, or disrupted gut barrier function. Symptoms can range from mild bloating to severe constipation and fatigue. Diagnosis requires breath testing, and treatment typically involves antimicrobial therapy, dietary changes, and management of underlying motility problems.",
+    "plain_summary": "Methane SIBO (now more precisely called Intestinal Methanogen Overgrowth, or IMO) occurs when methane-producing archaea \u2014 primarily Methanobrevibacter smithii \u2014 are present in excessive numbers in the gut. Unlike bacterial SIBO, these are not bacteria but a separate class of microorganism. Methane gas slows the movement of the intestine, which is why the hallmark symptom is constipation rather than diarrhea. Many people with this condition have been told they have IBS-C or chronic constipation with no clear cause, and remain undiagnosed for years.",
+    "detailed_summary": "Methane SIBO \u2014 more accurately termed Intestinal Methanogen Overgrowth (IMO) \u2014 is a condition in which archaea, primarily Methanobrevibacter smithii, overpopulate the gut and produce excessive methane gas. Unlike hydrogen-dominant SIBO, which is driven by bacteria and typically causes diarrhea or mixed-pattern symptoms, methane overgrowth is strongly associated with constipation. Methane gas itself has been shown in animal and human research to slow intestinal transit time \u2014 it acts on smooth muscle in a way that reduces peristaltic activity. This makes the condition mechanistically distinct, not just a variant of other SIBO types.\n\nBecause methanogens reside throughout the gut \u2014 not exclusively in the small intestine \u2014 the term 'IMO' was introduced by some researchers to better reflect the biology. The distinction matters clinically: the methanogen overgrowth may be present in the colon as well as the small intestine, which may explain why some treatment protocols targeting only the small bowel produce incomplete results.\n\nDiagnosis is typically made via a lactulose or glucose breath test measuring both hydrogen and methane. Elevated methane (generally \u226510 ppm at any point during the test, though criteria vary by lab) is the key finding. Treatment often combines rifaximin with neomycin or metronidazole \u2014 the addition of a second antibiotic targeting methanogens is more effective than rifaximin alone. Herbal antimicrobials such as allicin (derived from garlic) are also used, particularly by integrative practitioners.\n\nMany people with this condition have spent years being told they have idiopathic constipation or IBS-C, receiving laxatives and fiber recommendations that provide minimal or inconsistent relief. Self-directed investigation via breath testing \u2014 now available through some direct-to-consumer labs \u2014 has helped many people get to this diagnosis without relying on a gastroenterologist who may not test for methane.",
     "prevalence": {
-      "summary": "SIBO affects a meaningful minority of people, with methane-dominant SIBO accounting for roughly one-third to one-half of SIBO cases.",
-      "estimate": "SIBO overall: 5\u201315% of the general population; methane-dominant SIBO: ~2\u20138% estimated",
-      "notes": "Estimates vary widely due to differences in testing protocols, diagnostic thresholds, and patient populations studied. Prevalence is higher in people with IBS, functional constipation, and post-infection syndromes. Many cases may go undiagnosed because symptoms overlap with IBS. Diagnostic criteria remain somewhat contested in mainstream medicine."
+      "summary": "A meaningful minority of people with IBS-C or chronic constipation \u2014 estimates suggest methane-positive breath tests occur in roughly one-third of people investigated for functional constipation.",
+      "estimate": "Methane-positive breath tests are found in approximately 30\u201350% of people with IBS-C, and in 10\u201315% of general IBS populations tested; population-level prevalence of symptomatic IMO is not well established.",
+      "notes": "Prevalence figures vary considerably depending on the testing protocol, cutoff thresholds used, and the population studied. Some labs use a cutoff of \u226510 ppm methane at any point in the test; others use different thresholds. IMO may be underdiagnosed because methane is not measured in all breath test panels \u2014 older tests measured only hydrogen. Methane elevation appears more common in women and in people with a history of prolonged constipation."
     },
     "subgroups": [
       {
-        "name": "Methane-dominant SIBO (vs. hydrogen-dominant)",
-        "description": "Methane SIBO is characterised by bacterial production of methane rather than hydrogen. Because methane is produced by archaea (methanogens) that consume hydrogen, it typically correlates with slower gut transit and constipation, in contrast to hydrogen-dominant SIBO which tends to cause diarrhoea.",
+        "name": "IMO with pure constipation (IBS-C overlap)",
+        "description": "The most common presentation: slow transit constipation driven by methane-related reduction in gut motility. Often misdiagnosed as functional constipation or IBS-C.",
         "distinguishing_features": [
-          "Constipation is the dominant bowel pattern, rather than diarrhoea",
-          "Breath test shows elevated methane (>10 ppm baseline or >10 ppm rise post-lactulose)",
-          "Methanogens (Methanobrevibacter smithii most common) consume hydrogen, slowing gas clearance",
-          "May be more difficult to treat and more prone to recurrence than hydrogen-dominant SIBO"
+          "Predominantly or exclusively constipated \u2014 few or no loose stools",
+          "Significant abdominal bloating that worsens throughout the day",
+          "Incomplete evacuation, straining, hard/pellet stools",
+          "Breath test shows elevated methane with low or absent hydrogen"
         ]
       },
       {
-        "name": "Mixed hydrogen and methane SIBO",
-        "description": "Some patients produce both hydrogen and methane, showing a mixed pattern on breath testing.",
+        "name": "Mixed hydrogen + methane SIBO",
+        "description": "Some individuals produce both hydrogen and methane, suggesting concurrent bacterial SIBO alongside methanogen overgrowth. Symptoms may be more variable \u2014 alternating constipation and diarrhea.",
         "distinguishing_features": [
-          "Breath test shows elevations in both hydrogen and methane",
-          "Symptoms may include both bloating/diarrhoea and constipation, or alternate between them",
-          "Often requires combination treatment strategies"
+          "Both hydrogen and methane elevated on breath test",
+          "May alternate between constipation and looser stools",
+          "Often associated with more complex dysbiosis or underlying motility issues",
+          "May require broader treatment targeting both hydrogen producers and methanogens"
+        ]
+      },
+      {
+        "name": "Post-infectious IMO",
+        "description": "Methanogen overgrowth that develops following a gut infection (e.g. gastroenteritis), possibly via disruption of the migrating motor complex or changes in the microbial environment that favor methanogens.",
+        "distinguishing_features": [
+          "Clear onset following a gastrointestinal illness",
+          "May be associated with post-infectious IBS pattern",
+          "Constipation symptoms that began after an acute infection",
+          "May resolve more readily with targeted treatment if the underlying motility disruption is addressed"
+        ]
+      },
+      {
+        "name": "IMO secondary to structural or motility disorder",
+        "description": "Methanogen overgrowth driven by an underlying cause \u2014 such as gastroparesis, adhesions, hypothyroidism, or dysmotility \u2014 that slows intestinal transit and creates favorable conditions for methanogens.",
+        "distinguishing_features": [
+          "Recurrent or treatment-resistant IMO",
+          "Associated history of abdominal surgery, diabetes, thyroid disease, or neurological disorder",
+          "Symptoms return quickly after treatment",
+          "Investigation of root cause is essential for durable improvement"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Bloating and abdominal distension",
+        "symptom": "Chronic constipation",
         "category": "digestive",
-        "notes": "Often worsens after eating, especially with fermentable foods. Can be severe enough to cause visible swelling that fluctuates through the day."
+        "notes": "The most characteristic symptom \u2014 often severe, with infrequent bowel movements (fewer than 3 per week), hard or pellet-like stools, and significant straining. Frequently unresponsive to fiber or over-the-counter laxatives."
       },
       {
-        "symptom": "Constipation",
+        "symptom": "Abdominal bloating",
         "category": "digestive",
-        "notes": "Hallmark of methane SIBO. Can range from infrequent bowel movements to severely difficult passage. Methane slows intestinal transit."
+        "notes": "Typically worsens throughout the day and after meals. Many people describe a visible distension by evening. May be present even after a bowel movement."
+      },
+      {
+        "symptom": "Incomplete evacuation",
+        "category": "digestive",
+        "notes": "A persistent feeling that the bowel has not fully emptied, which can cause repeated attempts at defecation."
       },
       {
         "symptom": "Abdominal pain or cramping",
         "category": "digestive",
-        "notes": "Often improves after bowel movement. Can be sharp or dull, and may be diffuse or localised."
+        "notes": "Often dull or pressure-like rather than sharp; may be diffuse or concentrated in the lower abdomen."
       },
       {
-        "symptom": "Excessive gas and belching",
+        "symptom": "Excessive flatulence",
         "category": "digestive",
-        "notes": "May be accompanied by visible bloating. Belching often provides temporary relief."
+        "notes": "Gas may be odourless or have a distinct smell depending on co-occurring organisms. Volume is often greater than peers eating the same diet."
+      },
+      {
+        "symptom": "Slow gastric emptying / feeling of fullness",
+        "category": "digestive",
+        "notes": "Methane-related dysmotility can affect the upper GI tract as well, producing early satiety or prolonged fullness after meals."
       },
       {
         "symptom": "Nausea",
         "category": "digestive",
-        "notes": "More common when bloating is severe, or related to food sensitivities triggered by SIBO."
+        "notes": "More common when methane overgrowth co-exists with gastroparesis or upper GI dysmotility."
       },
       {
-        "symptom": "Fatigue or low energy",
+        "symptom": "Fatigue",
         "category": "systemic",
-        "notes": "May result from malabsorption of nutrients (especially B12, iron, fat-soluble vitamins), or from systemic inflammation related to bacterial overgrowth."
+        "notes": "May reflect impaired nutrient absorption, systemic inflammation, or the metabolic burden of chronic dysbiosis. Often disproportionate to the GI symptoms."
       },
       {
-        "symptom": "Brain fog or difficulty concentrating",
+        "symptom": "Brain fog",
         "category": "neurological",
-        "notes": "Controversial, but some evidence suggests bacterial metabolites or inflammation may affect cognition. Improves in some patients after treatment."
+        "notes": "Difficulty concentrating, word-finding issues, or mental sluggishness reported by a subset of people with IMO. Mechanism is not fully understood but may involve gut-brain axis signalling."
       },
       {
-        "symptom": "Joint or muscle pain",
-        "category": "musculoskeletal",
-        "notes": "Anecdotally reported; may relate to systemic inflammation or nutrient malabsorption rather than direct bacterial effect."
+        "symptom": "Weight gain or difficulty losing weight",
+        "category": "metabolic",
+        "notes": "Methanogens increase caloric extraction from fermented carbohydrates; research has linked elevated methane production with higher BMI and increased energy harvest from food."
       },
       {
-        "symptom": "Food intolerances or sensitivities",
+        "symptom": "Food sensitivities / intolerances",
         "category": "digestive",
-        "notes": "Worsening of symptoms after eating high-FODMAP foods, fibre, or fats. May develop new intolerances during active SIBO."
+        "notes": "High-fibre and fermentable carbohydrate (FODMAP) foods often worsen symptoms because they provide substrate for methanogens."
       }
     ],
     "testing": {
       "key_patterns": [
-        "Constipation (rather than diarrhoea) combined with bloating that worsens after meals",
-        "Symptoms that improve temporarily after a bowel movement or passing gas",
-        "Strong correlation between specific foods (especially fermentable carbohydrates) and symptom flare",
-        "Symptoms that developed or worsened after a bout of food poisoning, traveller's diarrhoea, or acute gastroenteritis",
-        "Bloating that is noticeably worse at the end of the day or after eating",
-        "Chronic symptoms despite an 'normal' colonoscopy or endoscopy"
+        "Methane \u226510 ppm at any point during a lactulose or glucose breath test (note: some labs and researchers use different thresholds)",
+        "Constipation-dominant pattern that is unexplained by structural causes on imaging or colonoscopy",
+        "Symptoms worsening on high-fibre or FODMAP-rich diets",
+        "Prior normal colonoscopy and stool tests with no structural explanation for constipation",
+        "Partial or temporary response to antibiotics, followed by relapse \u2014 suggesting ongoing overgrowth"
       ],
       "at_home": [
         {
-          "name": "Symptom and response tracking",
-          "description": "Keep a daily log of bloating (0\u201310 scale), bowel movements, abdominal pain, and foods eaten for 1\u20132 weeks. Track how symptoms correlate with meals and identify trigger foods. This helps establish whether symptoms are consistent with SIBO and provides a baseline before testing.",
-          "safety_notes": "This is observation only and carries no risk. Do not delay seeking clinical testing or diagnosis based on self-tracking alone."
+          "name": "Symptom and food journal",
+          "description": "Tracking bowel frequency, stool consistency (using the Bristol Stool Scale), bloating severity, and foods consumed can help identify patterns and establish a baseline before testing. A structured 2\u20134 week journal is more useful than unstructured observation.",
+          "safety_notes": "No safety concerns. Useful to bring to appointments with any practitioner."
         },
         {
-          "name": "Elimination diet trial (low-FODMAP)",
-          "description": "Remove fermentable carbohydrates (FODMAP foods: wheat, onions, garlic, beans, certain fruits, dairy) for 3\u20135 days and observe symptom changes. If bloating and constipation improve markedly, it suggests bacterial fermentation is a major driver, consistent with SIBO. This is not diagnostic but helps confirm the problem and identify safe foods.",
-          "safety_notes": "Short-term trials (under 2 weeks) are safe. Longer low-FODMAP diets should be done under dietitian supervision to avoid nutritional deficiency. Do not use as a substitute for clinical testing."
+          "name": "At-home breath test (direct-to-consumer)",
+          "description": "Several companies (e.g. Trio-Smart, AIRE, some integrative lab services) offer postal breath test kits that measure hydrogen and methane following a lactulose or glucose challenge. The individual collects breath samples at timed intervals at home and returns the kit for analysis.",
+          "safety_notes": "The preparatory diet (usually 24 hours of low-fermentable foods) must be followed carefully \u2014 not doing so can invalidate results. Those with diabetes should note that the lactulose challenge involves a specific substrate. Results should ideally be interpreted with a knowledgeable practitioner rather than in isolation."
         }
       ],
       "clinical": [
         {
-          "name": "Lactulose or glucose hydrogen and methane breath test (HMBT)",
+          "name": "Lactulose breath test (hydrogen and methane)",
           "type": "gold_standard",
-          "description": "You drink a solution of lactulose or glucose (a non-absorbed sugar) and breathe into tubes at regular intervals (usually baseline, 20, 40, 60, 90, 120 minutes). Excess bacteria in the small intestine ferment the sugar and produce hydrogen and/or methane, which is absorbed into the bloodstream, exhaled, and measured. Elevated methane (>10 ppm baseline or >10 ppm rise above baseline) supports methane SIBO diagnosis. Fasting and antibiotic cessation (2 weeks prior) are typically required for accuracy.",
-          "availability": "Ordered by a gastroenterologist, functional medicine practitioner, or primary care doctor. Available through hospital labs, private labs, and commercial breath-test providers. Cost varies (~\u00a3100\u2013300 in the UK; insurance coverage variable)."
+          "description": "The most widely used diagnostic test. The person drinks a lactulose solution (a non-absorbable sugar) after an overnight fast, then breathes into collection tubes at regular intervals (typically every 20 minutes for 2\u20133 hours). Levels of hydrogen and methane are measured. A methane reading of \u226510 ppm at any point is commonly used to indicate IMO, though criteria vary. Lactulose tests the entire small intestine and part of the colon.",
+          "availability": "Can be ordered by gastroenterologists, functional medicine doctors, and some GPs. Direct-to-consumer options exist through specialist labs. Not universally available via standard NHS/public health systems \u2014 may require private testing in many countries."
         },
         {
-          "name": "Hydrogen breath test (HBT) alone",
+          "name": "Glucose breath test (hydrogen and methane)",
           "type": "standard",
-          "description": "Similar to HMBT but measures only hydrogen. Methane is not detected with this test, so methane-dominant SIBO may be missed. Useful for hydrogen-dominant SIBO or if methane testing is unavailable, but less sensitive for methane-dominant cases.",
-          "availability": "More widely available and cheaper than HMBT, but should be combined with methane measurement for comprehensive SIBO assessment."
+          "description": "Uses glucose rather than lactulose as the substrate. Glucose is fully absorbed in the proximal small intestine, so this test is more specific for overgrowth in the upper small bowel but may miss distal small intestinal or colonic methanogen overgrowth. Some labs offer this as an alternative or complement to lactulose testing.",
+          "availability": "Similar availability to lactulose breath testing. Less likely to detect methane elevation originating in the colon."
         },
         {
-          "name": "Endoscopy with small intestinal aspirate and culture",
-          "type": "standard",
-          "description": "An endoscope is passed into the small intestine and fluid is aspirated and cultured to count bacteria. Gold standard for diagnosis but invasive, expensive, and not routinely used for SIBO. Useful when diagnosis is unclear or if additional pathology (e.g. Crohn's disease) is suspected.",
-          "availability": "Ordered by a gastroenterologist in hospital settings. Requires sedation and is more costly than breath testing."
-        },
-        {
-          "name": "Stool microbiome analysis (research/emerging)",
+          "name": "Trio-Smart breath test (hydrogen, methane, hydrogen sulphide)",
           "type": "emerging",
-          "description": "Next-generation sequencing of stool bacteria to assess overall microbiota composition. May identify dysbiosis patterns consistent with SIBO, but does not measure small-intestinal bacteria directly and cannot diagnose SIBO alone. Emerging role in research and functional medicine.",
-          "availability": "Available through private functional medicine labs and research institutions. Not standard clinical practice for SIBO diagnosis."
+          "description": "A newer three-gas breath test that measures hydrogen, methane, and hydrogen sulphide simultaneously. Particularly useful when the clinical picture is complex or when standard two-gas tests are inconclusive. Developed in part by researchers at Cedars-Sinai.",
+          "availability": "Available through the Trio-Smart lab (US-based) and select integrative practitioners internationally. Postal kit available."
+        },
+        {
+          "name": "Small intestinal aspirate and culture",
+          "type": "gold_standard",
+          "description": "An endoscopic procedure in which fluid from the proximal small intestine is aspirated and cultured. Considered the historical gold standard for SIBO but has significant practical limitations: it is invasive, expensive, samples only the proximal bowel, and methanogen culture requires specific anaerobic conditions not widely available. Rarely performed in routine clinical practice for IMO specifically.",
+          "availability": "Specialist gastroenterology centres only. Not commonly used for IMO diagnosis."
+        },
+        {
+          "name": "Comprehensive stool analysis (PCR-based microbiome testing)",
+          "type": "emerging",
+          "description": "Advanced stool testing (e.g. from labs such as Genova Diagnostics or Doctor's Data) can detect Methanobrevibacter smithii and assess overall microbiome composition. Does not directly diagnose IMO but may support the clinical picture and reveal co-existing dysbiosis.",
+          "availability": "Available through functional medicine practitioners and some private labs. Not widely used in conventional gastroenterology for this indication."
+        },
+        {
+          "name": "Thyroid function panel (TSH, Free T3, Free T4)",
+          "type": "standard",
+          "description": "Hypothyroidism is a common driver of gut dysmotility and can cause or perpetuate methanogen overgrowth. Testing thyroid function is important in anyone with treatment-resistant or recurrent IMO, particularly when fatigue and constipation are prominent.",
+          "availability": "Widely available through GP or primary care. May need to request Free T3 specifically as some standard panels only measure TSH."
         }
       ]
     },
     "related_conditions": [
       {
-        "name": "Irritable bowel syndrome (IBS)",
+        "id": "ibs",
+        "name": "IBS-C (constipation-predominant IBS)",
         "relationship": "often_confused",
-        "explanation": "Many IBS diagnoses may actually be undiagnosed SIBO, particularly IBS-C (constipation-dominant). Both present with bloating, abdominal pain, and altered bowel habits. SIBO is a potential treatable cause of IBS-like symptoms; testing helps differentiate."
+        "explanation": "Many people diagnosed with IBS-C have undetected methane overgrowth as an underlying driver. The symptom overlap is near-complete; breath testing is the primary way to distinguish them. Some researchers argue IMO is a detectable biological subtype within what is broadly labelled IBS-C."
       },
       {
-        "name": "Functional constipation",
+        "id": "sibo",
+        "name": "SIBO (general)",
         "relationship": "mechanistic_link",
-        "explanation": "Methane SIBO slows intestinal transit, causing or worsening constipation. Conversely, chronic constipation increases risk of SIBO by promoting bacterial overgrowth. The two conditions feed into each other."
+        "explanation": "IMO is classified under the broader SIBO umbrella but is mechanistically distinct: methanogens are archaea, not bacteria, and consume hydrogen produced by other microbes, making the ecosystem interdependent. Treatment approaches differ meaningfully from hydrogen-dominant SIBO."
       },
       {
-        "name": "Intestinal motility disorders (e.g. pseudo-obstruction, gastroparesis)",
+        "id": "sibo_h2",
+        "name": "Hydrogen SIBO",
+        "relationship": "mechanistic_link",
+        "explanation": "Hydrogen-producing bacteria supply the substrate that methanogens require to produce methane. The two conditions can co-exist (mixed SIBO), and hydrogen SIBO may precede or drive methane overgrowth."
+      },
+      {
+        "id": "sibo_h2s",
+        "name": "Hydrogen sulphide SIBO",
+        "relationship": "comorbid",
+        "explanation": "H2S-producing bacteria and methanogens can co-exist in the gut; three-gas breath testing is needed to identify all three gas types. Symptoms may overlap, but H2S SIBO is more associated with diarrhea and urgency."
+      },
+      {
+        "id": "gastroparesis",
+        "name": "Gastroparesis",
         "relationship": "upstream",
-        "explanation": "Impaired intestinal muscle contraction and nerve signalling predispose to SIBO by allowing bacteria to accumulate. These are often underlying causes rather than consequences."
+        "explanation": "Delayed gastric emptying slows the delivery of food through the GI tract, creating conditions that favour methanogen overgrowth. In people with recurrent or treatment-resistant IMO, gastroparesis should be investigated as a root cause."
       },
       {
-        "name": "Post-infectious IBS (PI-IBS)",
+        "id": "thyroid",
+        "name": "Hypothyroidism",
+        "relationship": "upstream",
+        "explanation": "Low thyroid function reduces gut motility systemically, creating a slow-transit environment that favours methanogens. Correcting hypothyroidism can improve or resolve IMO in some individuals."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
         "relationship": "mechanistic_link",
-        "explanation": "Acute gastroenteritis can damage the enteric nervous system, impairing motility and leading to SIBO. SIBO may explain persistent symptoms in post-infectious IBS."
+        "explanation": "IMO represents a specific form of dysbiosis. Broader microbiome imbalance \u2014 including insufficient diversity and reduced butyrate-producing bacteria \u2014 often co-exists with methanogen overgrowth."
       },
       {
-        "name": "Coeliac disease and non-coeliac gluten sensitivity",
+        "id": "adhesions",
+        "name": "Surgical adhesions",
+        "relationship": "upstream",
+        "explanation": "Adhesions from prior abdominal surgery can cause partial obstruction or slow transit, providing conditions that promote methanogen overgrowth. IMO may be difficult to treat without addressing the adhesion-related motility problem."
+      },
+      {
+        "id": "pelvic_floor",
+        "name": "Pelvic floor dysfunction",
         "relationship": "comorbid",
-        "explanation": "Both intestinal damage from coeliac disease and gluten sensitivity can impair motility and increase SIBO risk. Some SIBO patients improve when underlying gluten sensitivity is addressed."
+        "explanation": "Pelvic floor dyssynergia (failure of pelvic floor muscles to relax during defecation) can compound constipation in IMO. The two conditions frequently co-exist and both need to be addressed for meaningful improvement."
       },
       {
-        "name": "Small intestinal fungal overgrowth (SIFO)",
+        "id": "endometriosis",
+        "name": "Endometriosis",
         "relationship": "comorbid",
-        "explanation": "Fungal overgrowth can coexist with SIBO. Both result from dysbiosis and impaired intestinal barriers. Testing for both may be warranted in refractory cases."
+        "explanation": "Endometriosis can affect bowel motility and structure, and is associated with increased rates of SIBO/IMO. Hormonal fluctuations and pelvic inflammation may contribute to both conditions."
       },
       {
-        "name": "Leaky gut (intestinal permeability)",
-        "relationship": "mechanistic_link",
-        "explanation": "Bacterial overgrowth and their metabolites can increase intestinal permeability, and vice versa. This may contribute to food sensitivities and systemic symptoms."
-      },
-      {
-        "name": "Dysbiosis (altered colonic microbiota)",
+        "id": "eds",
+        "name": "Hypermobile EDS / HSD",
         "relationship": "comorbid",
-        "explanation": "SIBO and dysbiosis often coexist. Treatment of SIBO may improve colonic dysbiosis, or dysbiosis may perpetuate SIBO recurrence."
+        "explanation": "Connective tissue laxity in hEDS can affect gut motility and structural integrity, predisposing to SIBO and IMO. GI symptoms are among the most common complaints in this population."
       },
       {
-        "name": "Histamine intolerance",
+        "id": "pots",
+        "name": "POTS / dysautonomia",
         "relationship": "comorbid",
-        "explanation": "Overgrown bacteria produce histamine. In people with low diamine oxidase (DAO) enzyme activity, histamine accumulates, causing headaches, flushing, and digestive symptoms. Both may need to be managed."
+        "explanation": "Autonomic dysfunction affects gut motility via the enteric nervous system, and SIBO/IMO is a documented comorbidity of POTS. Slow transit driven by dysautonomia can perpetuate methanogen overgrowth."
+      },
+      {
+        "id": "functional_dyspepsia",
+        "name": "Functional dyspepsia",
+        "relationship": "comorbid",
+        "explanation": "Upper GI dysmotility and delayed gastric emptying, common in functional dyspepsia, can coexist with IMO and contribute to a slow-transit environment throughout the gut."
+      },
+      {
+        "id": "fructose",
+        "name": "Fructose malabsorption",
+        "relationship": "comorbid",
+        "explanation": "Unabsorbed fructose reaching the colon provides fermentable substrate that can exacerbate methane production. Many people with IMO find fructose-rich foods significantly worsen bloating and constipation."
+      },
+      {
+        "id": "lactase",
+        "name": "Lactase deficiency",
+        "relationship": "comorbid",
+        "explanation": "Undigested lactose provides fermentable substrate that can worsen symptoms in people with IMO, particularly bloating and gas."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation / visceral hypersensitivity",
+        "relationship": "comorbid",
+        "explanation": "Chronic gut dysfunction can sensitise the visceral nervous system, leading to disproportionate pain or discomfort even when gas levels or distension are modest. Addressing IMO alone may not fully resolve pain in individuals who have developed central sensitisation."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
+          "name": "Rifaximin + neomycin combination antibiotic therapy",
+          "category": "medication",
+          "description": "The most studied antibiotic protocol for methane overgrowth. Rifaximin alone (which is effective for hydrogen SIBO) has limited activity against methanogens; adding neomycin or metronidazole significantly improves methane clearance. Typically prescribed for 10\u201314 days. Requires a prescribing physician.",
+          "evidence_level": "moderate",
+          "notes": "Metronidazole is sometimes used instead of neomycin and may have fewer renal concerns for those with kidney issues. Relapse is common without addressing underlying motility drivers. Not appropriate for self-prescription."
+        },
+        {
+          "name": "Allicin (stabilised allicin from garlic)",
+          "category": "supplement",
+          "description": "High-dose stabilised allicin (e.g. Allimed or equivalent) has antimicrobial activity against methanogens and is used as an alternative or adjunct to antibiotics, particularly in herbal antimicrobial protocols. Often combined with other herbal agents such as berberine or oregano oil. Protocols typically run 4\u20138 weeks.",
+          "evidence_level": "moderate",
+          "notes": "Evidence is largely from practitioner clinical experience and a small number of comparative studies, not large RCTs. May be a preferred option for those wanting to avoid antibiotics or for whom rifaximin is inaccessible. Discuss with a knowledgeable practitioner."
+        },
+        {
           "name": "Low-FODMAP diet",
           "category": "diet",
-          "description": "Restrict fermentable carbohydrates (oligosaccharides, disaccharides, monosaccharides, and polyols) that feed bacteria in the small intestine. This reduces substrate for fermentation, decreasing bloating and gas. Common foods to reduce: wheat, onions, garlic, beans, certain fruits (apples, pears), high-fructose foods, and sugar alcohols. Implement for 4\u20138 weeks while pursuing diagnostic testing and treatment.",
+          "description": "Reducing fermentable carbohydrates (FODMAPs) limits the substrate available to methanogens, which can reduce gas production and bloating. A low-FODMAP diet can help manage symptoms during and after treatment but is not a cure \u2014 it starves the methanogens rather than eliminating them.",
           "evidence_level": "strong",
-          "notes": "Very effective for symptom relief but is not a cure; bacteria persist. Should be combined with antimicrobial or motility therapy. Work with a dietitian to avoid malnutrition. Reintroduce foods gradually after treatment to maintain diversity."
+          "notes": "Long-term strict low-FODMAP eating is not recommended as it can reduce microbial diversity. Ideally used as a short-to-medium term tool under the guidance of a FODMAP-trained dietitian, followed by a structured reintroduction phase."
         },
         {
-          "name": "Antimicrobial therapy (rifaxomicin, metronidazole, or herbal alternatives)",
+          "name": "Low-fermentation diet (elemental or semi-elemental)",
+          "category": "diet",
+          "description": "An elemental diet \u2014 in which all nutrition is provided in pre-digested, readily absorbed form \u2014 starves methanogens of fermentable substrate. Research (including work by Dr Mark Pimentel's team at Cedars-Sinai) has shown elemental diet can normalise breath tests in a subset of SIBO/IMO cases after 2\u20133 weeks. A semi-elemental approach (very low-residue, easily digested foods) is a less intensive version.",
+          "evidence_level": "moderate",
+          "notes": "Full elemental diet is nutritionally challenging and socially restrictive; compliance is a significant barrier. Best considered under medical supervision, particularly for those for whom antibiotics are not tolerated or accessible."
+        },
+        {
+          "name": "Prokinetics (motility agents)",
           "category": "medication",
-          "description": "Prescription antibiotics (rifaxomicin, metronidazole, neomycin) or herbal antimicrobials (berberine, oregano oil, allicin) reduce bacterial overgrowth. Rifaxomicin is preferred for methane SIBO due to better efficacy against methanogens, though it is more expensive. Herbal options may have fewer side effects but weaker evidence.",
+          "description": "Agents that stimulate the migrating motor complex (MMC) \u2014 the gut's housekeeping wave between meals \u2014 help prevent reaccumulation of methanogens. Options include low-dose naltrexone (LDN), prucalopride, erythromycin (low-dose), and herbal prokinetics such as ginger, 5-HTP, or iberogast. Prokinetics are considered essential for relapse prevention.",
+          "evidence_level": "moderate",
+          "notes": "Prokinetics are often under-used in standard care. They should be continued after antimicrobial treatment \u2014 not just taken during it. Prescription options require a doctor; herbal options may be self-initiated but should be discussed with a practitioner."
+        },
+        {
+          "name": "Addressing root causes (hypothyroidism, adhesions, gastroparesis)",
+          "category": "lifestyle",
+          "description": "When IMO is secondary to a structural or systemic cause \u2014 hypothyroidism, surgical adhesions, diabetic neuropathy, or gastroparesis \u2014 treating that root cause is essential for durable improvement. Antimicrobials alone will produce only temporary benefit if slow transit is ongoing.",
           "evidence_level": "strong",
-          "notes": "Prescription antibiotics require doctor oversight and are used for 7\u201314 days. Herbal antimicrobials are self-directed and less regulated. Relapse is common (30\u201350%) and may require retreatment. Antibiotics can disrupt the healthy microbiota; consider concurrent or post-treatment probiotics. Not recommended as monotherapy without dietary support."
+          "notes": "Root cause investigation is often neglected in standard gastroenterology care. Functional medicine practitioners and integrative GI specialists are more likely to systematically investigate drivers."
         },
         {
-          "name": "Prokinetic agents (domperidone, prucalopride, metoclopramide)",
-          "category": "medication",
-          "description": "Drugs that enhance intestinal muscle contraction and motility, addressing the underlying cause of bacterial overgrowth. Domperidone and prucalopride are often preferred for methane SIBO due to fewer central side effects than metoclopramide. Help clear bacteria and prevent recurrence.",
-          "evidence_level": "moderate",
-          "notes": "Prokinetics are particularly important for methane SIBO because slowed motility is a core driver. Results are variable; some patients respond well, others less so. Usually combined with antimicrobials and dietary changes. Long-term use may be needed to prevent recurrence."
-        },
-        {
-          "name": "Elemental diet (amino acid or peptide-based)",
-          "category": "diet",
-          "description": "Consume only easily absorbed, pre-digested nutrients (amino acids, simple sugars, fats) from a medical-grade supplement for 2\u20134 weeks. Starves bacteria by removing fermentable material in the small intestine. Very restrictive but highly effective for rapid symptom relief and bacterial reduction.",
-          "evidence_level": "moderate",
-          "notes": "Difficult to tolerate for extended periods due to monotony and unpleasant taste. Most effective when combined with antimicrobials. Useful as a reset before reintroducing normal foods. Requires medical supervision and nutritionist support."
-        },
-        {
-          "name": "Magnesium supplementation (especially oxide or citrate forms)",
-          "category": "supplement",
-          "description": "Magnesium citrate or oxide has mild laxative properties and helps promote bowel movement, addressing constipation and gas clearance. Typical dose: 300\u2013500 mg daily, taken at bedtime. Also addresses magnesium deficiency, which is common in SIBO due to malabsorption.",
-          "evidence_level": "moderate",
-          "notes": "Gentle and safe for ongoing use. Helps manage constipation without harsh side effects. Do not use as a substitute for antimicrobial and motility therapy. If stools become loose, reduce dose."
-        },
-        {
-          "name": "Probiotics (specific strains)",
-          "category": "supplement",
-          "description": "Certain probiotic strains (e.g. Lactobacillus plantarum, Saccharomyces boulardii) may help restore healthy microbiota balance and reduce bloating. Should be used cautiously in SIBO, as some probiotics can worsen symptoms in susceptible individuals. Best used after antimicrobial therapy to aid recovery.",
-          "evidence_level": "anecdotal",
-          "notes": "Evidence for SIBO is limited and mixed. Individual response varies widely. Avoid during active infection; use post-treatment. Choose well-studied, clinical-grade strains. Start low and go slow to monitor tolerance."
-        },
-        {
-          "name": "Pancreatic enzyme supplements",
-          "category": "supplement",
-          "description": "Supplemental pancreatic enzymes (amylase, protease, lipase) improve digestion of carbohydrates, proteins, and fats, reducing undigested material available for bacterial fermentation. Useful if pancreatic insufficiency is suspected (e.g. after chronic pancreatitis or in cystic fibrosis).",
-          "evidence_level": "moderate",
-          "notes": "Most beneficial in patients with documented pancreatic insufficiency. Not a primary treatment for primary SIBO but useful adjunct if digestion is impaired. Take with meals."
-        },
-        {
-          "name": "Ginger or peppermint tea",
-          "category": "diet",
-          "description": "Ginger and peppermint have traditionally been used to ease bloating, cramping, and nausea. Both have mild pro-motility and anti-inflammatory properties. Drink as herbal tea 2\u20133 times daily, or take as capsules.",
-          "evidence_level": "anecdotal",
-          "notes": "Safe and inexpensive. Provides symptomatic relief but does not treat underlying SIBO. Peppermint oil may relax the lower oesophageal sphincter in some people, worsening reflux; avoid if prone to heartburn."
-        },
-        {
-          "name": "Stress management and sleep optimisation",
+          "name": "Spacing meals (intermittent fasting between meals)",
           "category": "lifestyle",
-          "description": "Chronic stress and poor sleep impair intestinal motility and immune function, worsening SIBO. Practice relaxation (yoga, meditation, breathing exercises), maintain regular sleep (7\u20139 hours), and reduce caffeine/alcohol. These support the nervous system and gut healing.",
+          "description": "The MMC \u2014 the intestinal cleaning wave that sweeps bacteria and archaea toward the colon \u2014 only activates when the gut is in a fasted state. Eating frequently suppresses MMC activity. Allowing 4\u20135 hours between meals (no snacking) can support MMC function and may reduce methane accumulation over time.",
           "evidence_level": "moderate",
-          "notes": "Indirect but important contributor to recovery. The gut\u2013brain axis means psychological stress directly affects motility and symptoms. Not a primary treatment, but essential for healing."
+          "notes": "This does not mean prolonged fasting \u2014 just avoiding constant grazing. This lifestyle change is low-risk and can be started independently."
         },
         {
-          "name": "Gentle movement and exercise",
+          "name": "Targeted probiotic use (with care)",
+          "category": "supplement",
+          "description": "Evidence for probiotics in IMO is mixed. Certain spore-based or soil-based probiotics (e.g. Bacillus coagulans, Bacillus subtilis) and saccharomyces boulardii may support the broader microbial environment without worsening methane. Lactobacillus-heavy probiotics are sometimes reported to worsen symptoms in some individuals with SIBO/IMO.",
+          "evidence_level": "anecdotal",
+          "notes": "Probiotic use in SIBO/IMO is controversial and individual responses vary widely. Not universally recommended without professional input. Some practitioners suggest delaying probiotics until after antimicrobial treatment."
+        },
+        {
+          "name": "Stress management and vagal tone support",
           "category": "lifestyle",
-          "description": "Light to moderate exercise (walking, yoga, swimming) enhances intestinal motility and gas clearance, helping manage constipation and bloating. Avoid intense exercise during acute flares, as it may exacerbate symptoms.",
-          "evidence_level": "moderate",
-          "notes": "Walking after meals is particularly helpful for promoting transit. Consistency matters more than intensity. Adapt to current symptoms; some patients need very gentle approaches during flares."
+          "description": "The vagus nerve regulates gut motility; chronic stress impairs vagal tone and can slow gut transit, creating conditions that favour methanogens. Practices such as diaphragmatic breathing, slow-paced breathing, meditation, and cold exposure may support vagal tone and indirectly improve gut motility.",
+          "evidence_level": "anecdotal",
+          "notes": "Unlikely to resolve IMO on its own but may support other interventions and reduce symptom severity."
         }
       ],
       "things_to_avoid": [
-        "High-FODMAP foods (wheat, onions, garlic, beans, certain fruits, sugar alcohols, high-fructose foods) during active SIBO, as these feed bacterial overgrowth and worsen bloating.",
-        "Excessive fibre and whole grains before bacterial load is reduced, as undigested fibre feeds bacteria; reintroduce gradually after antimicrobial treatment.",
-        "Alcohol and caffeine, which can impair motility and irritate the gut lining, exacerbating symptoms.",
-        "Large meals and eating too quickly, which overwhelm digestive capacity and promote fermentation; eat smaller, slower meals instead.",
-        "Unnecessary antibiotics (for non-bacterial infections) that disrupt healthy microbiota and increase SIBO risk.",
-        "Prolonged use of proton-pump inhibitors (PPIs) for acid reflux, as low stomach acid increases SIBO risk; discuss alternatives with your doctor.",
-        "Raw vegetables and salads when acutely symptomatic, as they are harder to digest; prefer cooked, soft, easily digestible foods.",
-        "Sugar and sweetened foods, which feed bacteria; use natural sweeteners in moderation if needed."
+        "High-FODMAP foods during active overgrowth \u2014 these provide fermentable substrate for methanogens and worsen gas and bloating",
+        "Frequent snacking and grazing \u2014 this suppresses the migrating motor complex and promotes ongoing methane accumulation",
+        "Excess dietary fibre (especially fermentable fibres like inulin and FOS) before methane overgrowth is treated \u2014 fibre feeds methanogens and worsens constipation in this context",
+        "Rifaximin alone without a second agent targeting methanogens \u2014 rifaximin has limited efficacy against archaea and is unlikely to clear methane overgrowth on its own",
+        "Long-term use of stimulant laxatives without addressing the underlying overgrowth \u2014 these provide temporary symptom relief but do not treat the cause and can lead to dependency",
+        "Assuming treatment is complete after one course of antibiotics \u2014 methane overgrowth has high relapse rates without ongoing motility support and root cause management",
+        "High-dose Lactobacillus probiotics during active IMO \u2014 these may worsen SIBO-related symptoms in some individuals; evidence is mixed but worth monitoring closely"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "A normal colonoscopy does not rule out methane overgrowth. Most people with IMO have entirely normal colonoscopy and imaging results \u2014 these tests are not designed to detect methanogen populations.",
+        "why_resisted": "People often feel relief when a colonoscopy is normal and assume this means nothing is wrong. Clinicians may also incorrectly reassure patients based on normal structural findings, discouraging further investigation.",
+        "path_forward": "People who pursue a lactulose or glucose breath test \u2014 specifically one that measures methane \u2014 often get a clear positive result that explains years of unresolved constipation and bloating, and opens the door to targeted treatment."
+      },
+      {
+        "truth": "Adding more fibre often makes methane SIBO significantly worse. Standard advice for constipation (eat more fibre, take psyllium) can actively worsen bloating and constipation when methanogens are the cause.",
+        "why_resisted": "High-fibre diets for constipation are so deeply embedded in medical guidance that questioning this feels counterintuitive. Many people spend years following this advice and blame themselves for not responding.",
+        "path_forward": "Identifying that a low-fermentation or low-FODMAP approach produces symptom relief \u2014 while high-fibre intake worsens symptoms \u2014 is often one of the first real clues that methane overgrowth is involved."
+      },
+      {
+        "truth": "Methane overgrowth commonly returns after treatment if the underlying motility problem is not corrected. Antibiotics are not a permanent cure \u2014 they reduce the microbial load, but if transit is still slow, methanogens repopulate.",
+        "why_resisted": "After a successful course of treatment, people understandably hope the problem is resolved. Accepting that ongoing management \u2014 including prokinetics, dietary habits, and possibly investigating structural causes \u2014 is necessary can feel discouraging.",
+        "path_forward": "People who consistently use post-treatment prokinetics, maintain meal spacing, and address root causes (such as hypothyroidism or gastroparesis where applicable) report substantially longer symptom-free periods than those who rely on antibiotic courses alone."
+      },
+      {
+        "truth": "Methane overgrowth may be increasing caloric extraction from food, contributing to weight gain that resists standard dietary interventions. Treating the overgrowth \u2014 not eating less \u2014 may be what is needed.",
+        "why_resisted": "Weight difficulties carry significant stigma, and the idea that a gut microorganism is driving weight gain challenges deeply held beliefs about personal responsibility and dietary control.",
+        "path_forward": "Some individuals report easier weight management following successful treatment of IMO, consistent with research showing that methane producers enhance caloric harvest from fermented carbohydrates."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Antimicrobial treatment (prescription or herbal) combined with dietary restriction (low-FODMAP)",
-          "why_it_matters": "Directly reduces bacterial overgrowth while starving remaining bacteria. This is the foundational step that allows symptom resolution and gut healing. Without addressing the bacterial excess, symptoms persist despite dietary changes alone.",
-          "how_to_start": "Work with a gastroenterologist or functional medicine doctor to confirm SIBO via breath test and prescribe appropriate antimicrobials. Simultaneously, adopt a low-FODMAP diet for the duration of treatment and 2\u20134 weeks after, with guidance from a dietitian.",
-          "timeline": "Symptom improvement often begins within 1\u20132 weeks of starting antimicrobials and low-FODMAP diet. Maximum benefit is usually seen by 4\u20138 weeks.",
-          "requires_professional": true
-        },
-        {
-          "lever": "Prokinetic therapy to address underlying motility defect",
-          "why_it_matters": "Methane SIBO develops because of impaired intestinal muscle contraction. Fixing motility prevents recurrence and addresses the root cause, not just the symptom. This is especially critical for methane-dominant SIBO, which has high relapse rates.",
-          "how_to_start": "Ask your doctor about low-side-effect prokinetic options (domperidone, prucalopride). Start at the lowest effective dose and combine with antimicrobial and dietary therapy. Reassess after 4\u20138 weeks.",
-          "timeline": "Prokinetics often take 2\u20134 weeks to show full effect. Long-term use (months to years) may be needed to prevent recurrence.",
-          "requires_professional": true
-        },
-        {
-          "lever": "Gradual reintroduction of foods and microbiota restoration post-treatment",
-          "why_it_matters": "After antimicrobials, the gut microbiota is depleted. Carefully reintroducing foods and restoring healthy bacteria diversity prevents relapse and allows long-term tolerance of a normal diet. This transition is often overlooked but critical for lasting improvement.",
-          "how_to_start": "After 4\u20138 weeks of low-FODMAP diet and antimicrobial treatment, work with a dietitian to reintroduce small amounts of higher-FODMAP foods (one at a time, every 3\u20135 days) while monitoring symptoms. Consider a post-treatment probiotic course or fermented foods (if tolerated).",
-          "timeline": "Reintroduction can take 8\u201312 weeks to identify your personal food threshold. Full recovery of diet flexibility may take 3\u20136 months.",
-          "requires_professional": true
-        },
-        {
-          "lever": "Identify and address underlying causes (motility, infection, medication, malabsorption)",
-          "why_it_matters": "SIBO is a symptom, not a primary disease. Recurrence is common if the root cause (e.g. post-infectious enteric neuropathy, chronic PPI use, low stomach acid) is not addressed. Treating only the bacteria without fixing the underlying problem leads to relapse.",
-          "how_to_start": "Work with your doctor to investigate: did SIBO start after an infection? Are you taking PPIs or other motility-impairing drugs? Is there evidence of malabsorption or pancreatic insufficiency? Address modifiable causes (e.g. taper PPIs under supervision, treat low stomach acid).",
-          "timeline": "Investigation and cause identification can take 4\u20138 weeks. Addressing underlying issues may take months to show full effect.",
-          "requires_professional": true
-        },
-        {
-          "lever": "Lifestyle changes: stress management, sleep, gentle movement",
-          "why_it_matters": "The gut\u2013brain axis means chronic stress and poor sleep directly impair motility and immune function, perpetuating SIBO. These are foundational for all healing but often overlooked.",
-          "how_to_start": "Establish a sleep routine (7\u20139 hours nightly), begin a daily relaxation practice (10\u201315 minutes of meditation, breathing, or gentle yoga), and add light movement (20\u201330 minute walks). Start with one change and build gradually.",
-          "timeline": "Sleep and stress improvements often show benefit within 1\u20132 weeks and compound over months.",
+          "lever": "Accurate breath testing for methane (not just hydrogen)",
+          "why_it_matters": "Many breath tests only measure hydrogen. Without specifically measuring methane, the diagnosis is invisible \u2014 and all downstream treatment decisions are based on an incomplete picture.",
+          "how_to_start": "Request or order a breath test that measures both hydrogen AND methane (and ideally hydrogen sulphide via Trio-Smart). Confirm the methodology before testing.",
+          "timeline": "Testing takes a single day; results typically available within 1\u20132 weeks.",
           "requires_professional": false
+        },
+        {
+          "lever": "Combination antimicrobial treatment targeting methanogens",
+          "why_it_matters": "Rifaximin alone has limited activity against archaea. Adding neomycin, metronidazole, or high-dose allicin meaningfully improves methane clearance compared to single-agent therapy.",
+          "how_to_start": "Present breath test results to a gastroenterologist or functional medicine doctor who is familiar with IMO protocols, and discuss combination treatment options.",
+          "timeline": "A standard antibiotic course is 10\u201314 days; herbal protocols run 4\u20138 weeks. Breath test retesting 2\u20134 weeks post-treatment helps confirm clearance.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Post-treatment prokinetic therapy",
+          "why_it_matters": "Without ongoing motility support after antimicrobial treatment, methanogens repopulate in slow-transit environments. Prokinetics are the primary relapse-prevention strategy.",
+          "how_to_start": "Discuss prokinetic options with a practitioner after completing antimicrobial treatment. Herbal options (ginger, iberogast) can be explored independently; prescription options (prucalopride, low-dose naltrexone) require a prescriber.",
+          "timeline": "Prokinetics are often used ongoing, not as a time-limited course. Some people discontinue after 3\u20136 months of symptom stability; others continue long-term.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Meal spacing (4\u20135 hours between meals, no snacking)",
+          "why_it_matters": "The migrating motor complex \u2014 which clears microorganisms from the small intestine \u2014 only activates in a fasted state. Constant eating suppresses this mechanism and allows methanogens to accumulate.",
+          "how_to_start": "Begin eating 3 structured meals per day with no snacks between them. Allow at least 4 hours between meals. This requires no professional guidance and can start immediately.",
+          "timeline": "Some people notice reduced bloating within days to weeks of consistent meal spacing.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Investigation and treatment of root cause",
+          "why_it_matters": "In people with recurrent or treatment-resistant IMO, a structural or systemic driver \u2014 hypothyroidism, gastroparesis, adhesions, dysautonomia \u2014 is commonly present. Treating the archaea without addressing the cause produces only temporary relief.",
+          "how_to_start": "Request thyroid function testing (including Free T3), discuss gastric emptying study if relevant, and review surgical or medical history for potential contributors to slow transit.",
+          "timeline": "Root cause investigation may take weeks to months; treatment effects (e.g. thyroid correction) may take 3\u20136 months to improve gut motility.",
+          "requires_professional": true
         }
       ],
       "common_mistakes": [
-        "Treating with antimicrobials or diet alone, without addressing underlying motility defects. This leads to rapid relapse (30\u201350% within months). Always combine antimicrobials with prokinetics and motility investigation.",
-        "Staying on a low-FODMAP diet indefinitely after treatment. This can cause microbiota depletion and malnutrition. Use low-FODMAP as a short-term tool (4\u20138 weeks during and immediately after treatment), then gradually reintroduce foods.",
-        "Assuming SIBO is cured after one round of antibiotics. Relapse is common without ongoing prokinetic support and dietary management. Plan for long-term prokinetic use or recurrent treatment cycles.",
-        "Not investigating why SIBO developed. If an underlying motility disorder, chronic PPI use, or post-infection damage is not addressed, SIBO will likely recur.",
-        "Using probiotics during active antimicrobial treatment or immediately after. Timing matters; probiotics should be introduced 1\u20132 weeks after finishing antimicrobials, not concurrently.",
-        "Reintroducing high-FODMAP foods too quickly after treatment. This can trigger relapse. Reintroduce slowly, one food at a time, over weeks to months.",
-        "Ignoring stress and sleep. These are foundational to gut healing. Without addressing them, recovery is slower and relapse risk is higher.",
-        "Self-prescribing antimicrobials or high-dose herbs without medical supervision. Inappropriate use can disrupt the healthy microbiota and lead to side effects. Work with a practitioner."
+        "Using rifaximin alone without a second agent \u2014 this is unlikely to clear methane overgrowth and may give a false sense of having treated the condition",
+        "Retesting too soon after treatment \u2014 breath testing within 2 weeks of completing antibiotics may give a false negative as the microbial population is still recovering",
+        "Treating IMO repeatedly with antibiotics without investigating why it keeps returning \u2014 this cycles through symptom relief and relapse without addressing the driver",
+        "Increasing dietary fibre to manage constipation \u2014 in the context of active methane overgrowth, this feeds the methanogens and typically worsens both bloating and constipation",
+        "Assuming the condition is resolved after symptoms improve \u2014 methanogens can be present at lower levels without full symptom resolution, and incomplete treatment leads to quicker relapse",
+        "Neglecting prokinetics after treatment \u2014 this is the most common single reason for rapid relapse",
+        "Stopping investigation after a negative hydrogen-only breath test \u2014 a test that does not measure methane cannot rule out IMO"
       ]
     },
     "finding_help": {
       "specialists": [
         {
-          "type": "Gastroenterologist",
-          "role": "Specialist in digestive system diseases. Can order breath testing, perform endoscopy if needed, and prescribe antimicrobials (rifaxomicin, metronidazole) and prokinetics. Often the first specialist to consider SIBO diagnosis.",
-          "notes": "Some gastroenterologists are knowledgeable about SIBO; others are sceptical or unfamiliar. Seek one with experience in functional GI disorders or small intestinal motility. Availability via NHS or private practice."
+          "type": "Gastroenterologist (SIBO/IMO-literate)",
+          "role": "Diagnosis via breath testing, prescription of combination antibiotic protocols (rifaximin + neomycin/metronidazole), investigation of structural causes (gastroparesis, adhesions), and exclusion of other diagnoses",
+          "notes": "Not all gastroenterologists are familiar with IMO or routinely test for methane. Seeking one with explicit experience in SIBO/IMO, or affiliated with motility disorders programmes, significantly improves outcomes. Mainstream GIs may manage constipation symptomatically without investigating methane."
         },
         {
-          "type": "Functional or integrative medicine doctor",
-          "role": "Often more specialised in SIBO diagnosis and treatment. May use breath testing, herbal antimicrobials, targeted supplementation, and detailed dietary management. Takes a more systems-based approach to root causes.",
-          "notes": "Not all are evidence-based; quality and training vary. Look for practitioners with formal functional medicine training and familiarity with SIBO literature. Typically private practice; costs vary."
+          "type": "Functional medicine doctor",
+          "role": "Often more likely to order comprehensive breath testing (including methane), investigate root causes systemically (thyroid, dysautonomia, microbiome), and use integrative treatment protocols including herbal antimicrobials and prokinetics",
+          "notes": "Quality varies significantly; seek practitioners with specific GI training or credentials. Often the most accessible route to methane breath testing in regions where GIs are hesitant to test."
         },
         {
-          "type": "Registered dietitian (especially specialising in GI health or low-FODMAP diet)",
-          "role": "Essential for meal planning, low-FODMAP implementation, food reintroduction, and ensuring nutritional adequacy. Guides you through dietary transitions during and after treatment.",
-          "notes": "Look for credentials (RD, Registered Dietitian). GI-specialised dietitians are most helpful. Available via NHS in some areas or through private practice. Investment in dietitian support significantly improves outcomes."
+          "type": "FODMAP-trained registered dietitian",
+          "role": "Expert guidance on dietary modification \u2014 low-FODMAP implementation, low-fermentation approaches, and structured reintroduction after treatment. Can also identify dietary patterns that may be perpetuating symptoms.",
+          "notes": "Dietary intervention alone cannot resolve IMO but is an important adjunct. A dietitian with specific SIBO experience (not just general gut health) is preferable."
         },
         {
-          "type": "General practitioner (GP)",
-          "role": "Can initiate investigations, rule out other conditions, and co-ordinate specialist referrals. May support PPI deprescribing or manage comorbid conditions like IBS.",
-          "notes": "Many GPs are not familiar with SIBO; education may be needed. Building a collaborative relationship helps. Ask for referral to a gastroenterologist or functional medicine practitioner if your GP is unfamiliar."
+          "type": "Integrative or naturopathic physician (GI-focused)",
+          "role": "Can supervise herbal antimicrobial protocols (allicin-based), order or interpret microbiome testing, and manage prokinetic supplementation",
+          "notes": "Particularly relevant for those who cannot access or prefer not to use prescription antibiotics. Evidence base for herbal protocols is growing but remains less robust than pharmaceutical options."
+        },
+        {
+          "type": "Endocrinologist or GP (for thyroid and metabolic investigation)",
+          "role": "Investigation of hypothyroidism and other metabolic drivers of gut dysmotility that may underlie recurrent IMO",
+          "notes": "Often the first step if weight gain, fatigue, and constipation suggest a systemic rather than purely GI cause. TSH alone may miss subclinical hypothyroidism \u2014 requesting Free T3 and Free T4 gives a fuller picture."
         }
       ],
       "patient_communities": [
         {
-          "name": "SIBO Awareness (formerly SIBO Info)",
-          "platform": "Website and Facebook group",
-          "url": "https://siboinfo.com/",
-          "notes": "Comprehensive information hub with evidence summaries, practitioner directory, and active community. Reputable, evidence-focused resource with both hydrogen and methane SIBO content."
-        },
-        {
-          "name": "SIBO Subreddit (r/SIBO)",
+          "name": "r/SIBO",
           "platform": "Reddit",
           "url": "https://www.reddit.com/r/SIBO/",
-          "notes": "Active community where people share experiences, treatment protocols, symptom patterns, and recipes. Useful for peer support and hearing diverse experiences, though not all advice is evidence-based."
+          "notes": "The largest active online community for SIBO and IMO. Contains extensive discussion of methane-specific protocols, breath test interpretation, treatment experiences, and practitioner recommendations. Highly practical for self-directed researchers."
         },
         {
-          "name": "SIBO-specific Facebook groups",
+          "name": "SIBO SOS Community",
+          "platform": "Facebook / Website",
+          "url": "https://sibosos.com",
+          "notes": "Practitioner-connected community with access to webinars, practitioner directories, and patient support groups. Includes IMO-specific content from clinicians such as Dr Allison Siebecker."
+        },
+        {
+          "name": "The IBS Network",
+          "platform": "Website / forum",
+          "url": "https://www.theibsnetwork.org",
+          "notes": "UK-based charity and patient network covering IBS and related functional GI conditions, including access to a nurse helpline and patient forums."
+        },
+        {
+          "name": "SIBO / IMO Support Group",
           "platform": "Facebook",
           "url": null,
-          "notes": "Many closed or public groups exist (search 'SIBO support' or 'methane SIBO'). Vary in moderation quality and evidence-focus. Look for groups with knowledgeable admin and evidence-based discussions."
-        },
-        {
-          "name": "Low-FODMAP communities",
-          "platform": "Multiple (Monash University FODMAP app, Reddit r/FODMAPS, blogs)",
-          "url": null,
-          "notes": "While not SIBO-specific, these communities are valuable for dietary support, meal ideas, and navigating low-FODMAP reintroduction. Monash University is the most authoritative source for FODMAP information."
-        },
-        {
-          "name": "Functional Gut Health communities",
-          "platform": "Various (Discord, private forums, functional medicine practice communities)",
-          "url": null,
-          "notes": "Some functional medicine practices host patient communities. These tend to be more prokinetic-focused and may have deeper discussions of root causes and long-term recovery strategies."
+          "notes": "Multiple active Facebook groups exist for SIBO and IMO support. Searching 'SIBO support' or 'methane SIBO' within Facebook will surface the largest active groups. Useful for real-world treatment experience and practitioner recommendations."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "Methane SIBO: An Emerging Understanding",
-        "type": "research paper",
-        "author_or_source": "Ghoshal, Rimbara, Levinthal",
-        "url": null,
-        "description": "A clinical review focused specifically on methane-producing bacteria (methanogens), their role in SIBO, and treatment implications. Explains why methane SIBO differs from hydrogen-dominant and why it is more challenging to treat. Technical but essential reading for understanding the condition.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "SIBO Awareness Official Website",
+        "title": "Allison Siebecker's SIBO website (SIBOinfo.com)",
         "type": "website",
-        "author_or_source": "SIBO Awareness (Dr. Shelley Ford and team)",
-        "url": "https://siboinfo.com/",
-        "description": "Comprehensive, evidence-based resource with sections on diagnosis, treatment options, dietary management, and a directory of informed practitioners. Regularly updated with current research and patient guides.",
-        "audience": "beginner"
-      },
-      {
-        "title": "The Complete Digestive Health Handbook",
-        "type": "book",
-        "author_or_source": "Gerard E. Mullin, MD",
-        "url": null,
-        "description": "Practical guide to digestive health including SIBO, written by a gastroenterologist. Discusses diagnosis, antimicrobial and dietary approaches, and long-term gut healing. Accessible to general readers but evidence-based.",
-        "audience": "beginner"
-      },
-      {
-        "title": "The Low FODMAP Diet Step by Step",
-        "type": "book",
-        "author_or_source": "Sue Shepherd and Peter Gibson (Monash University)",
-        "url": null,
-        "description": "Authoritative guide to implementing and managing a low-FODMAP diet, including detailed food lists, meal plans, and reintroduction protocols. Essential for anyone managing SIBO-related symptoms through diet.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Small Intestinal Bacterial Overgrowth: Diagnosis and Management",
-        "type": "research paper / review",
-        "author_or_source": "Fikree, Byrne (Gastroenterology and Hepatology Reviews)",
-        "url": null,
-        "description": "Systematic clinical review covering SIBO diagnosis (breath testing protocols, diagnostic criteria), treatment modalities (antibiotics, prokinetics, dietary interventions), and prognosis. Evidence-based and comprehensive.",
+        "author_or_source": "Dr Allison Siebecker, ND",
+        "url": "https://www.siboinfo.com",
+        "description": "One of the most comprehensive freely available clinical resources on SIBO and IMO. Covers methane-specific protocols, herbal and pharmaceutical treatment options, dietary approaches, and relapse prevention. Used by both patients and clinicians.",
         "audience": "intermediate"
       },
       {
-        "title": "The Metagenomics of Human Bacterial Overgrowth in the Small Intestine",
-        "type": "research paper",
-        "author_or_source": "Levinthal, Rasmussen, et al.",
+        "title": "The Microbiome Connection",
+        "type": "book",
+        "author_or_source": "Dr Mark Pimentel and Dr Ami Bhatt",
         "url": null,
-        "description": "Molecular characterisation of SIBO pathophysiology, including the role of methanogens and hydrogen producers. For readers wanting to understand the microbiology behind methane SIBO.",
+        "description": "Written by leading SIBO/IMO researcher Dr Mark Pimentel (Cedars-Sinai), this book explains the science behind SIBO, methane overgrowth, and IBS with unusual clarity. Covers diagnosis, treatment, and the low-fermentation diet in accessible language.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Cedars-Sinai MAST Program resources",
+        "type": "website",
+        "author_or_source": "Cedars-Sinai Medical Center",
+        "url": "https://www.cedars-sinai.org/programs/digestive-motility.html",
+        "description": "Research and clinical resources from one of the leading centres globally for SIBO and IMO research. Includes information on the Trio-Smart breath test and the low-fermentation diet developed from this programme.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "SIBO SOS Summit recordings",
+        "type": "video",
+        "author_or_source": "Shivan Sarna / SIBO SOS",
+        "url": "https://sibosos.com",
+        "description": "A series of practitioner interviews and patient education sessions covering SIBO and IMO in depth. Good for understanding the range of clinical approaches and hearing from multiple practitioners on methane-specific treatment.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Intestinal Methanogen Overgrowth (IMO) \u2014 review by Pimentel et al.",
+        "type": "research paper",
+        "author_or_source": "Pimentel M et al. \u2014 American Journal of Gastroenterology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32618576/",
+        "description": "The paper that proposed renaming methane SIBO as 'Intestinal Methanogen Overgrowth' and outlined the evidence for its distinct biology and clinical significance. Useful for anyone wanting to understand the scientific rationale behind the IMO designation.",
         "audience": "advanced"
       },
       {
-        "title": "Rifaxomicin for the Treatment of Small Intestinal Bacterial Overgrowth: A Meta-Analysis",
-        "type": "research paper",
-        "author_or_source": "Mazzawi, Laine",
-        "url": null,
-        "description": "Systematic review and meta-analysis of rifaxomicin (an antibiotic particularly effective for methane SIBO) showing efficacy, safety, and relapse rates. Useful for understanding evidence for treatment choices.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "Podcast: The SIBO Doctor Podcast",
+        "title": "Dr Nirala Jacobi's SIBO Made Simple podcast",
         "type": "podcast",
-        "author_or_source": "Dr. Robynne Chutkan and Dr. Ruscio (various hosts)",
-        "url": null,
-        "description": "Regular interviews with SIBO researchers, gastroenterologists, and functional medicine doctors discussing diagnosis, treatment innovations, and case studies. Accessible, current, and evidence-focused.",
+        "author_or_source": "Dr Nirala Jacobi, ND",
+        "url": "https://www.thesibodoctor.com/sibo-made-simple-podcast/",
+        "description": "A practitioner-led podcast covering SIBO and IMO with accessible explanations of testing, treatment, and root cause investigation. Several episodes specifically address methane overgrowth and treatment protocols.",
         "audience": "beginner"
-      },
-      {
-        "title": "FODMAP Friendly Official Website",
-        "type": "website",
-        "author_or_source": "FODMAP Friendly (Monash University accredited)",
-        "url": "https://www.fodmapfriendly.com/",
-        "description": "Accredited low-FODMAP food guide, app, and resource library. Authoritative source for accurate FODMAP classification of foods, recipes, and meal planning tools.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Proton Pump Inhibitors and the Risk of Chronic Kidney Disease",
-        "type": "research paper",
-        "author_or_source": "Lazarus, Sinha, et al. (JAMA Internal Medicine)",
-        "url": null,
-        "description": "While focused on PPI harms, this paper (and others like it) explains why long-term PPI use increases SIBO risk by reducing stomach acid. Useful for understanding a common modifiable risk factor.",
-        "audience": "intermediate"
       }
     ],
-    "relevance_signal": "**Constipation dominant** with bloating. Slow transit. Symptoms worse with fibre. Hard, infrequent stools despite adequate hydration."
+    "relevance_signal": "Chronic constipation, bloating, and slow gut motility that persists despite dietary changes \u2014 especially when a lactulose or glucose breath test shows elevated methane gas"
+  },
+  "section_meta": {
+    "relevance_signal": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "3028670440bb3a54"
+    },
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

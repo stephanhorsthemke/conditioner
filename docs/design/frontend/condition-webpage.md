@@ -28,6 +28,11 @@ Display all generated data for a single condition in a readable, navigable way â
 - Find help | `finding_help` (specialists + communities) |
 - Learn more | `learning_resources` |
 
+#### Ideas for new sections
+don't implement yet.
+- New scientific findings
+     - helps people to get an update of the newest findings of the last 3-5 years. Links to science
+
 ## Output Format
 
 Route: `/condition/:id`. See [general.md](general.md) for the shared tech stack and visual design decisions.

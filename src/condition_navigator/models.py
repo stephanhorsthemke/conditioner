@@ -22,6 +22,7 @@ class SubCondition(BaseModel):
 class Condition(BaseModel):
     id: str
     name: str
+    full_name: str = ""
     group_id: str = ""
     group_label: str = ""
     aliases: list[str] = Field(default_factory=list)

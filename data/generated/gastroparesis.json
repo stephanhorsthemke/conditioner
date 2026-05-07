@@ -2,52 +2,64 @@
   "condition_id": "gastroparesis",
   "condition_name": "Gastroparesis",
   "generated_at": "2026-04-16T10:36:03.847439Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "Gastroparesis is a condition where the stomach moves food into the small intestine more slowly than normal, even though there is no physical blockage. This delay can cause nausea, vomiting, bloating, and poor nutrition because food sits in the stomach too long.",
-    "detailed_summary": "Gastroparesis (literally 'stomach paralysis') occurs when the stomach's muscles don't contract properly to push food forward, or when the valve between the stomach and small intestine (pylorus) doesn't relax enough. The stomach empties more slowly than normal, causing food to remain in the stomach for hours. This can lead to symptoms like severe nausea, vomiting, early fullness, bloating, and abdominal pain. Over time, slow gastric emptying can result in malnutrition, dehydration, and blood sugar control problems. The condition may be triggered by diabetes, certain medications, vagus nerve damage, or gastric surgery, but in many cases the cause is unknown (idiopathic gastroparesis).",
+    "plain_summary": "Gastroparesis is a condition in which the stomach empties too slowly \u2014 not because of a physical blockage, but because the nerves or muscles that control stomach movement are not working properly. Food sits in the stomach for longer than it should, causing nausea, bloating, vomiting, and a feeling of fullness after eating only a small amount. It can range from mildly disruptive to severely disabling, and it is frequently underdiagnosed because its symptoms overlap with many other digestive conditions.",
+    "detailed_summary": "Gastroparesis \u2014 literally 'stomach paralysis' \u2014 is a motility disorder in which gastric emptying is delayed in the absence of a mechanical obstruction. The stomach relies on coordinated contractions of smooth muscle, regulated by the autonomic nervous system and the enteric nervous system (the 'second brain' of the gut), to grind food and push it into the small intestine. When this system is disrupted, the process stalls.\n\nThe most common identifiable causes are diabetes (where chronic high blood sugar damages the vagus nerve), post-viral injury (particularly after viral gastroenteritis or viral illnesses affecting the enteric nervous system), and prior surgery near the stomach or oesophagus. However, in up to 35\u201350% of diagnosed cases, no clear cause is found \u2014 this is called idiopathic gastroparesis. There is growing evidence that idiopathic gastroparesis may in many cases follow unrecognised viral injury or reflect underlying autonomic nervous system dysfunction.\n\nThe hallmark symptoms \u2014 nausea, early satiety, postprandial fullness, bloating, and vomiting of undigested food \u2014 arise because retained stomach contents trigger stretch receptors and disrupt normal hormonal signalling. Over time, inadequate nutrition, dehydration, and the psychological burden of a poorly managed chronic condition can compound the physical impairment significantly.\n\nDiagnosis requires objective measurement of gastric emptying \u2014 most often through a gastric emptying scintigraphy (GES) study, which tracks a radiolabelled meal. Many people spend years receiving IBS, anxiety, or functional dyspepsia diagnoses before gastroparesis is properly tested for. Treatment focuses primarily on symptom management \u2014 dietary adjustments, prokinetic medications, and, in severe cases, nutritional support or gastric electrical stimulation \u2014 rather than on reversing the underlying cause. This reflects a real gap in clinical understanding, and individuals affected often benefit from actively advocating for comprehensive investigation.",
     "prevalence": {
-      "summary": "Gastroparesis affects roughly 1-4 people per 100,000 each year, though the true number may be higher because many cases go undiagnosed.",
-      "estimate": "1\u20134 per 100,000 population per year; chronic prevalence estimated at 0.1\u20130.3%",
-      "notes": "Estimates vary widely because symptoms overlap with other conditions and diagnosis requires specialized testing. Diabetes is the most common known cause, and diabetic gastroparesis may be more common than idiopathic forms. Women are diagnosed more often than men, possibly due to better symptom reporting or true sex-based differences in prevalence. Many patients suffer for years before diagnosis."
+      "summary": "Gastroparesis affects roughly 1\u20135% of the general population, with women significantly more commonly affected than men.",
+      "estimate": "Approximately 1.8% of the US population based on community-based studies; some estimates suggest up to 5 million Americans affected.",
+      "notes": "Prevalence figures vary considerably depending on whether community-based or clinic-based data are used. Because the condition requires a specialist test (gastric emptying scintigraphy) to confirm, many cases go undiagnosed. Women are diagnosed 3\u20134 times more often than men, though it is unclear how much of this reflects true biological difference versus diagnostic bias. Diabetic gastroparesis is better studied; idiopathic and post-surgical forms are likely underestimated. A 2022 analysis of US health records suggested the condition may affect up to 5 million Americans when subthreshold or undiagnosed cases are included."
     },
     "subgroups": [
       {
         "name": "Diabetic gastroparesis",
-        "description": "Occurs in people with type 1 or type 2 diabetes, caused by high blood sugar damaging the vagus nerve and stomach muscles over time.",
+        "description": "Occurs in people with type 1 or type 2 diabetes as a result of vagus nerve damage from chronic hyperglycaemia. This is the best-studied form and can progress gradually alongside other diabetic neuropathies.",
         "distinguishing_features": [
-          "Often develops after many years of diabetes",
-          "May improve with tight blood sugar control",
-          "Symptoms may fluctuate with blood glucose levels",
-          "More common and may progress more slowly than idiopathic form"
+          "Long-standing or poorly controlled diabetes, often type 1",
+          "Associated peripheral neuropathy or other signs of autonomic dysfunction",
+          "Glycaemic control is further destabilised by unpredictable gastric emptying, creating a difficult feedback cycle",
+          "Symptoms may be more severe and persistent than idiopathic forms"
+        ]
+      },
+      {
+        "name": "Post-viral (post-infectious) gastroparesis",
+        "description": "Develops after a viral illness \u2014 most often viral gastroenteritis, but also reported after influenza, Epstein-Barr virus, SARS-CoV-2, and other systemic infections. Thought to reflect viral injury to enteric nervous system neurons, particularly interstitial cells of Cajal (ICC).",
+        "distinguishing_features": [
+          "Clear onset following an acute illness",
+          "Often younger patients with no prior GI history",
+          "May partially or fully resolve over months to years in some individuals",
+          "COVID-19-associated gastroparesis is an increasingly documented subtype"
         ]
       },
       {
         "name": "Idiopathic gastroparesis",
-        "description": "No identifiable cause can be found despite testing; sometimes follows a viral illness.",
+        "description": "No identifiable cause is found despite thorough investigation. This is the most common diagnosis in women without diabetes, and likely represents a heterogeneous group with various underlying mechanisms including occult autonomic dysfunction, prior unrecognised infections, or connective tissue disorders.",
         "distinguishing_features": [
-          "Often more severe and harder to treat than diabetic form",
-          "May follow acute gastroenteritis (post-viral)",
-          "More common in young to middle-aged women",
-          "Diagnosis requires exclusion of other causes"
+          "Predominantly affects younger to middle-aged women",
+          "No diabetes, prior surgery, or clear precipitating illness",
+          "Often associated with other functional or systemic conditions such as POTS, hEDS, or MCAS",
+          "Diagnosis of exclusion \u2014 other causes must be ruled out first"
         ]
       },
       {
         "name": "Post-surgical gastroparesis",
-        "description": "Develops after gastric surgery (bariatric, ulcer repair, or other abdominal procedures), usually temporary but can persist.",
+        "description": "Follows surgery involving the stomach, oesophagus, or nearby structures \u2014 including fundoplication, bariatric surgery, oesophagectomy, or vagotomy. Vagus nerve damage or direct disruption of gastric anatomy is the likely mechanism.",
         "distinguishing_features": [
-          "Clear temporal link to surgery",
-          "Often resolves within weeks to months",
-          "May be related to vagus nerve injury or scarring"
+          "Clear temporal link to a surgical procedure",
+          "May be immediate or develop weeks to months post-operatively",
+          "Symptoms may overlap with post-surgical dumping syndrome, which requires different management",
+          "Prognosis varies; some cases are permanent"
         ]
       },
       {
-        "name": "Medication-induced gastroparesis",
-        "description": "Caused by medications that slow stomach contractions, such as opioids, certain antipsychotics, or anticholinergics.",
+        "name": "Gastroparesis in connective tissue and dysautonomia overlap",
+        "description": "An increasingly recognised subgroup in which gastroparesis occurs alongside hypermobile Ehlers-Danlos syndrome (hEDS), POTS, or MCAS. Autonomic nervous system dysregulation and connective tissue fragility may impair gastric motility via multiple mechanisms.",
         "distinguishing_features": [
-          "Symptoms improve when the offending medication is stopped or reduced",
-          "Generally reversible if the drug is discontinued",
-          "Opioids are the most common culprit"
+          "Associated with joint hypermobility, skin changes, or dysautonomia symptoms",
+          "POTS symptoms (lightheadedness, tachycardia on standing) often coexist",
+          "May respond differently to standard prokinetics",
+          "Requires a multidisciplinary approach that addresses the underlying systemic disorder"
         ]
       }
     ],
@@ -55,493 +67,564 @@
       {
         "symptom": "Nausea",
         "category": "digestive",
-        "notes": "Often the primary symptom; may be worse after eating. Persistent and can be severe enough to interfere with daily life."
+        "notes": "Often the dominant and most persistent symptom. Can be present throughout the day, typically worsening after eating. May occur even without vomiting."
       },
       {
-        "symptom": "Vomiting or retching",
+        "symptom": "Vomiting of undigested or partially digested food",
         "category": "digestive",
-        "notes": "Occurs when the stomach cannot empty food normally. May happen hours after eating and lead to dehydration and electrolyte loss."
+        "notes": "A hallmark feature \u2014 food eaten hours earlier may be vomited with little breakdown. Distinguishes gastroparesis from many other GI conditions."
       },
       {
-        "symptom": "Early satiety (feeling full very quickly)",
+        "symptom": "Early satiety",
         "category": "digestive",
-        "notes": "Eating even small amounts of food causes a sense of fullness and bloating, making adequate nutrition difficult."
+        "notes": "Feeling uncomfortably full after eating only a small amount. Often leads people to eat less and less over time, contributing to weight loss and malnutrition."
       },
       {
-        "symptom": "Bloating and abdominal distension",
+        "symptom": "Postprandial bloating and abdominal distension",
         "category": "digestive",
-        "notes": "Occurs as food accumulates and gas builds up in the stomach."
+        "notes": "Bloating that comes on after eating and persists for hours. May be visible distension of the upper abdomen."
       },
       {
-        "symptom": "Abdominal pain or discomfort",
+        "symptom": "Upper abdominal pain or discomfort",
         "category": "digestive",
-        "notes": "Can range from mild cramping to severe pain, often epigastric (upper abdomen)."
+        "notes": "Often described as pressure, fullness, or cramping in the epigastric region. Less prominent than nausea in most people but can be the dominant symptom in some."
+      },
+      {
+        "symptom": "Heartburn and acid reflux",
+        "category": "digestive",
+        "notes": "Delayed emptying allows stomach contents to reflux into the oesophagus. Some people receive a GERD diagnosis before gastroparesis is identified."
       },
       {
         "symptom": "Loss of appetite",
         "category": "digestive",
-        "notes": "Often due to nausea and discomfort rather than true appetite suppression."
+        "notes": "Chronic nausea and early satiety naturally suppress hunger. Can lead to significant unintentional weight loss over time."
       },
       {
-        "symptom": "Weight loss or failure to gain weight",
-        "category": "nutritional",
-        "notes": "Results from inadequate food intake and poor nutrient absorption when meals are small and infrequent."
-      },
-      {
-        "symptom": "Malnutrition or micronutrient deficiencies",
-        "category": "nutritional",
-        "notes": "Chronic undereating can lead to deficiencies in protein, iron, calcium, and vitamins."
-      },
-      {
-        "symptom": "Blood sugar swings or worsening diabetes control",
-        "category": "metabolic",
-        "notes": "Unpredictable gastric emptying makes it difficult to time insulin or predict blood glucose response to meals."
-      },
-      {
-        "symptom": "Fatigue",
+        "symptom": "Unintentional weight loss",
         "category": "systemic",
-        "notes": "May result from poor nutrition, chronic nausea, or metabolic disruption."
+        "notes": "A consequence of reduced food intake. In severe cases, nutritional deficiencies can develop and may require medical intervention."
       },
       {
-        "symptom": "Halitosis (bad breath)",
+        "symptom": "Malnutrition and micronutrient deficiencies",
+        "category": "systemic",
+        "notes": "Long-term inadequate intake can result in deficiencies of iron, B12, vitamin D, and other nutrients. Often not assessed routinely."
+      },
+      {
+        "symptom": "Erratic blood glucose levels (in diabetic gastroparesis)",
+        "category": "metabolic",
+        "notes": "Unpredictable gastric emptying makes blood glucose management very difficult \u2014 glucose can spike hours after eating, or hypoglycaemia can occur if insulin was taken at meal time."
+      },
+      {
+        "symptom": "Bezoar formation",
         "category": "digestive",
-        "notes": "Caused by food sitting in the stomach and fermenting due to slow emptying."
+        "notes": "In severe cases, retained food can solidify into a mass (bezoar) in the stomach, which can obstruct the pylorus and worsen symptoms. Rare but serious."
+      },
+      {
+        "symptom": "Fatigue and low energy",
+        "category": "systemic",
+        "notes": "Partly from inadequate caloric and nutritional intake, partly from the physical and emotional burden of managing a chronic and often poorly understood condition."
+      },
+      {
+        "symptom": "Anxiety and depression",
+        "category": "psychological",
+        "notes": "Common in people with gastroparesis, both as a result of the condition's impact on daily life and potentially through gut-brain axis dysregulation. Often not adequately addressed by GI-focused clinicians."
+      },
+      {
+        "symptom": "Lightheadedness or orthostatic symptoms",
+        "category": "autonomic",
+        "notes": "Particularly in people with co-existing autonomic dysfunction or POTS. Postural symptoms may be worsened by dehydration from vomiting or inadequate fluid intake."
       }
     ],
     "testing": {
       "key_patterns": [
-        "Persistent nausea and early fullness after eating, even small meals",
-        "Symptoms that worsen after fatty or high-fiber foods",
-        "Weight loss or difficulty maintaining weight despite adequate calorie intake attempts",
-        "Symptoms lasting weeks or months, not improving with lifestyle changes alone",
-        "A clear trigger event such as surgery, diabetes diagnosis, or acute illness before symptoms began",
-        "Symptoms that do not respond to standard antacid or acid-reflux medications"
+        "Persistent nausea and/or vomiting that is worse after eating and not explained by structural causes on endoscopy or imaging",
+        "Early satiety, upper abdominal bloating, and feeling of fullness hours after eating \u2014 especially if meals are small and symptoms still occur",
+        "Normal upper endoscopy (OGD) with retained food after an adequate fast \u2014 a strong clinical clue",
+        "In diabetic patients: deteriorating glycaemic control without clear explanation, or wide blood glucose swings",
+        "Onset following a viral illness with persistent nausea and GI dysmotility symptoms",
+        "Symptom cluster of nausea + early satiety + vomiting + bloating in someone with POTS, hEDS, or MCAS"
       ],
       "at_home": [
         {
-          "name": "Food and symptom diary",
-          "description": "Record everything eaten (type, amount, fat content, fiber), the time eaten, and the timing and severity of nausea, fullness, vomiting, or bloating for 1\u20132 weeks. Note any patterns (e.g., symptoms always appear 3 hours after a large meal, or after fatty foods).",
-          "safety_notes": "This is observational and safe for all. It helps you and your doctor identify patterns but does not diagnose gastroparesis."
+          "name": "Symptom and food diary",
+          "description": "Keeping a detailed log of food intake, meal timing, symptom onset and severity, and vomiting episodes can reveal patterns \u2014 such as consistent symptom flares 1\u20134 hours after eating, or specific food types (high-fat, high-fibre) triggering more severe symptoms. This diary is also valuable for appointments.",
+          "safety_notes": "No physical risk. Be aware that restrictive eating in response to symptoms can escalate into disordered eating patterns \u2014 if food restriction is becoming severe, involving a dietitian early is important."
         },
         {
-          "name": "Dietary trial: small, frequent, low-fat meals",
-          "description": "For 1\u20132 weeks, eat 5\u20136 small meals per day with minimal fat and fiber. Note whether symptoms improve. Gastroparesis typically responds to smaller portions; other conditions may not.",
-          "safety_notes": "Safe and non-invasive. If symptoms worsen or you develop malnutrition signs (dizziness, severe fatigue), return to normal eating and seek professional evaluation."
+          "name": "Small-meal tolerance testing",
+          "description": "Observing whether symptoms are less severe with very small, low-fat, low-fibre meals compared to normal-sized mixed meals. Many people with gastroparesis find small soft or liquid meals more tolerable. This is both a practical approach and a useful indicator of motility-related symptoms.",
+          "safety_notes": "This is not a diagnostic test \u2014 other conditions can also respond to small meals. Do not sustain a very restrictive intake without dietitian guidance, as nutritional status can deteriorate."
         }
       ],
       "clinical": [
         {
-          "name": "Gastric emptying scintigraphy (radionuclide scintigraphy)",
+          "name": "Gastric emptying scintigraphy (GES)",
           "type": "gold_standard",
-          "description": "The patient eats a small amount of food tagged with a radioactive tracer (usually a low-dose technetium-99m), and a gamma camera tracks how quickly the stomach empties over 1\u20134 hours. Delayed emptying confirms gastroparesis. This is the most specific diagnostic test.",
-          "availability": "Ordered by gastroenterologists or primary care doctors; performed at hospital or imaging centers with nuclear medicine capability."
+          "description": "The standard diagnostic test for gastroparesis. A radiolabelled meal (typically scrambled eggs with technetium-99m) is eaten, and gamma camera imaging tracks how much food remains in the stomach at 1, 2, and 4 hours. Retention of more than 10% at 4 hours is considered diagnostic. The 4-hour protocol is important \u2014 shortened protocols can miss cases.",
+          "availability": "Performed at hospitals and nuclear medicine departments. Requires referral from a gastroenterologist or in some cases a GP. Availability varies \u2014 rural areas may have limited access. Patients should confirm the 4-hour protocol will be used, as some centres only perform 2-hour studies."
         },
         {
-          "name": "Wireless motility capsule",
+          "name": "Wireless motility capsule (SmartPill)",
           "type": "standard",
-          "description": "Patient swallows a small capsule that measures stomach contractions and transit time as it moves through the digestive tract. Data is recorded wirelessly. Less radiation than scintigraphy but more invasive.",
-          "availability": "Specialized gastroenterology centers; less widely available than scintigraphy."
+          "description": "A swallowed capsule that measures pressure, pH, and temperature throughout the GI tract, providing data on gastric emptying time as well as small bowel and colonic transit. Useful when whole-gut motility is in question or when scintigraphy is unavailable.",
+          "availability": "Available at specialist motility centres. Less widely available than scintigraphy. May require prior authorisation from insurers in some countries."
         },
         {
-          "name": "Antral manometry (electrogastrography or high-resolution gastric pressure topography)",
+          "name": "Upper endoscopy (OGD / EGD)",
           "type": "standard",
-          "description": "A thin tube with pressure sensors is passed into the stomach to directly measure muscle contractions and pyloric sphincter function. Identifies abnormal contractions or delayed emptying.",
-          "availability": "Specialized centers with motility expertise; less common than scintigraphy."
+          "description": "Not a test for gastroparesis itself, but important for ruling out structural causes of symptoms \u2014 peptic ulcer disease, pyloric stenosis, malignancy, or eosinophilic gastritis. May reveal retained food after adequate fasting, which is suggestive of delayed emptying.",
+          "availability": "Widely available via gastroenterology referral."
         },
         {
-          "name": "Upper endoscopy (EGD)",
+          "name": "13C-octanoic acid breath test",
           "type": "standard",
-          "description": "A thin camera is passed into the stomach to directly visualize the stomach lining and look for obstructions, ulcers, or other blockages. Does not measure emptying rate but rules out mechanical causes.",
-          "availability": "Standard procedure available at most hospitals and endoscopy centers; often done as first step to exclude obstruction."
+          "description": "A non-radioactive alternative to scintigraphy. A labelled meal is consumed and breath samples collected over 4 hours; the rate of 13CO2 exhalation correlates with gastric emptying rate. Less widely validated than scintigraphy but avoids radiation and is more accessible in some settings.",
+          "availability": "Available at some specialist GI centres and academic hospitals. Not yet universally available."
         },
         {
-          "name": "CT or MRI of the abdomen",
-          "type": "standard",
-          "description": "Imaging to rule out mechanical obstruction, scarring, or other structural abnormalities that could mimic gastroparesis.",
-          "availability": "Widely available; typically ordered to exclude other causes."
-        },
-        {
-          "name": "Breath testing (13C octanoic acid breath test)",
+          "name": "Antroduodenal manometry",
           "type": "emerging",
-          "description": "Patient ingests food labeled with non-radioactive stable isotope (13C). As the stomach empties, the tracer is absorbed and metabolized, appearing in exhaled breath. Less radiation than scintigraphy; more convenient but less widely validated.",
-          "availability": "Available in some specialized centers; not yet standard in all countries."
+          "description": "Measures pressure patterns in the stomach and duodenum using a pressure-sensing catheter. Used in complex cases to characterise the motility pattern in detail and differentiate gastroparesis from other motility disorders. Invasive and time-consuming.",
+          "availability": "Only at specialist neurogastroenterology or motility centres. Not a routine first-line investigation."
+        },
+        {
+          "name": "Autonomic nervous system testing",
+          "type": "emerging",
+          "description": "Tests such as heart rate variability analysis, tilt table testing, and quantitative sudomotor axon reflex testing (QSART) can identify autonomic dysfunction \u2014 relevant in suspected idiopathic, post-viral, or connective tissue\u2013associated gastroparesis. Helps identify POTS as a co-driver.",
+          "availability": "Available at autonomic neurology clinics or specialist dysautonomia centres. May require targeted referral."
+        },
+        {
+          "name": "Nutritional blood panel",
+          "type": "standard",
+          "description": "Assessment of iron, ferritin, B12, folate, vitamin D, zinc, magnesium, albumin, and pre-albumin. Important for monitoring the nutritional consequences of reduced intake and identifying deficiencies that compound fatigue and wellbeing.",
+          "availability": "Orderable by GPs and most physicians. Often not routinely requested unless specifically asked for."
         }
       ]
     },
     "related_conditions": [
       {
-        "name": "Type 1 and Type 2 Diabetes",
-        "relationship": "upstream",
-        "explanation": "Chronic hyperglycemia damages the vagus nerve and stomach muscle, leading to gastroparesis in up to 30% of long-term diabetic patients. Conversely, gastroparesis worsens blood sugar control by making meal timing unpredictable."
-      },
-      {
-        "name": "Gastroesophageal reflux disease (GERD)",
+        "id": "pots",
+        "name": "POTS / dysautonomia",
         "relationship": "comorbid",
-        "explanation": "Slow gastric emptying can promote acid reflux because food and acid remain in the stomach longer. Conversely, severe GERD symptoms may be mistaken for gastroparesis."
+        "explanation": "Gastroparesis and POTS frequently co-occur, particularly in women with idiopathic gastroparesis. Both conditions involve autonomic nervous system dysfunction, and POTS-related reduced blood flow to the gut after eating (splanchnic pooling) may worsen gastric motility. Treating POTS can sometimes improve gastroparesis symptoms."
       },
       {
+        "id": "eds",
+        "name": "hEDS / HSD",
+        "relationship": "comorbid",
+        "explanation": "Hypermobile Ehlers-Danlos syndrome is increasingly recognised as a risk factor for gastroparesis and other GI motility disorders. Connective tissue abnormalities may affect the structure of the GI tract and autonomic regulation of motility. Many people in the hEDS community report gastroparesis as part of a wider cluster of GI symptoms."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome",
+        "relationship": "comorbid",
+        "explanation": "MCAS can cause nausea, vomiting, and GI dysmotility through the release of inflammatory mediators including histamine and prostaglandins. It co-occurs with POTS and hEDS in a recognised triad, and all three conditions may contribute to or mimic gastroparesis symptoms."
+      },
+      {
+        "id": "functional_dyspepsia",
         "name": "Functional dyspepsia",
         "relationship": "often_confused",
-        "explanation": "Both cause postprandial fullness, bloating, and nausea. Functional dyspepsia is diagnosed when upper endoscopy and gastric emptying studies are normal; the two can coexist."
+        "explanation": "Functional dyspepsia shares many symptoms with gastroparesis \u2014 nausea, early satiety, postprandial distress \u2014 but gastric emptying is normal on testing. The two conditions exist on a continuum, and some researchers consider mildly delayed emptying a subtype of functional dyspepsia rather than true gastroparesis. Both are real and impairing, but management differs."
       },
       {
-        "name": "Irritable bowel syndrome (IBS)",
-        "relationship": "comorbid",
-        "explanation": "Overlapping symptoms of nausea, bloating, and pain. Some patients have both slow gastric emptying and disturbed small bowel motility; the conditions may share underlying neuromotor dysfunction."
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "downstream",
+        "explanation": "Delayed gastric emptying reduces the normal cleansing function of the migrating motor complex and increases the risk of bacterial overgrowth in the small intestine. SIBO can develop as a consequence of gastroparesis and may add bloating, gas, and altered bowel habits on top of existing symptoms."
       },
       {
-        "name": "Eating disorders (anorexia nervosa, bulimia)",
+        "id": "ibs",
+        "name": "IBS",
         "relationship": "often_confused",
-        "explanation": "Restrictive eating and purging can slow gastric emptying (secondary gastroparesis), and symptoms may overlap. Distinguishing primary gastroparesis from eating disorder-related dysfunction requires careful history and psychological assessment."
+        "explanation": "Gastroparesis and IBS overlap considerably in symptom profile \u2014 both can cause bloating, nausea, and abdominal discomfort. IBS is predominantly a lower GI disorder while gastroparesis is upper GI, but both can be present simultaneously. IBS is often diagnosed first in people who later turn out to have gastroparesis."
       },
       {
-        "name": "Parkinson's disease",
-        "relationship": "mechanistic_link",
-        "explanation": "Dopamine dysfunction affects both the brain and gastrointestinal motility. Patients with Parkinson's are at higher risk for gastroparesis."
-      },
-      {
-        "name": "Systemic sclerosis (scleroderma)",
-        "relationship": "mechanistic_link",
-        "explanation": "Fibrosis and smooth muscle dysfunction in scleroderma can impair gastric motility, leading to secondary gastroparesis."
-      },
-      {
-        "name": "Migraine disorders",
+        "id": "anxiety",
+        "name": "Anxiety disorder",
         "relationship": "comorbid",
-        "explanation": "Both gastroparesis and migraines involve dysmotility and neuronal dysregulation. Patients with migraines have higher rates of gastroparesis, and migraine medications (e.g., sumatriptan) can affect gastric motility."
+        "explanation": "Anxiety is both a common consequence of living with chronic nausea and disability, and a potential upstream driver via the gut-brain axis. The vagus nerve, which regulates gastric motility, is bidirectionally connected to autonomic and emotional regulation centres. Chronic anxiety may worsen motility; chronic nausea and dietary restriction reliably worsen anxiety."
       },
       {
-        "name": "Anxiety and depression",
+        "id": "depression",
+        "name": "Depression",
         "relationship": "comorbid",
-        "explanation": "Psychological stress and negative affect can worsen gastric motility and symptom perception. Gastroparesis can also cause or exacerbate anxiety and depression due to chronic illness burden."
+        "explanation": "Depression occurs at significantly elevated rates in people with gastroparesis, driven by chronic symptom burden, social isolation from eating difficulties, and often inadequate medical support. Depression can also reduce gut motility through central mechanisms, creating a reinforcing cycle."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "upstream",
+        "explanation": "Hypothyroidism can slow GI motility and cause symptoms that overlap with or mimic gastroparesis. Thyroid function should be checked in all people presenting with new or unexplained GI dysmotility. In some cases, treating hypothyroidism resolves or substantially improves gastric emptying."
+      },
+      {
+        "id": "coeliac",
+        "name": "Coeliac disease",
+        "relationship": "mechanistic_link",
+        "explanation": "Coeliac disease can cause autonomic neuropathy and GI dysmotility. Some studies have found delayed gastric emptying in untreated coeliac disease that improves with a gluten-free diet. Coeliac serology should be checked in people with unexplained gastroparesis."
+      },
+      {
+        "id": "eosinophilic",
+        "name": "Eosinophilic GI disorders",
+        "relationship": "often_confused",
+        "explanation": "Eosinophilic gastritis can cause nausea, early satiety, and postprandial symptoms that closely mimic gastroparesis. It requires biopsy to diagnose and is treated differently. Upper endoscopy with biopsies is important in the diagnostic workup."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation / visceral hypersensitivity",
+        "relationship": "mechanistic_link",
+        "explanation": "In some individuals, the severity of nausea and discomfort does not correlate well with the degree of delayed emptying measured on scintigraphy. Visceral hypersensitivity \u2014 amplified pain and nausea signalling from the gut to the brain \u2014 may be an independent driver of symptom severity in gastroparesis."
+      },
+      {
+        "id": "hpylori",
+        "name": "H. pylori infection",
+        "relationship": "upstream",
+        "explanation": "H. pylori infection can impair gastric motility and contribute to delayed emptying through local inflammation and disruption of pyloric function. Eradicating H. pylori has been shown to improve gastric emptying in some studies. Testing for H. pylori is part of the standard workup."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
-          "name": "Small, frequent, low-fat meals",
+          "name": "Small, frequent, low-fat, low-fibre meals",
           "category": "diet",
-          "description": "Eat 5\u20136 small meals per day instead of 3 large ones. Keep each meal under 500 kcal and fat under 30% of calories. Small meals are easier for the impaired stomach to move forward; low fat reduces the stimulus for delayed emptying (fat is the slowest macronutrient to empty).",
+          "description": "Fat and insoluble fibre slow gastric emptying in healthy people and can dramatically worsen symptoms in those with gastroparesis. Eating 4\u20136 small meals per day, emphasising soft or liquid textures, low fat content, and easily digestible foods, reduces the burden on an already slow stomach. Liquid meals empty faster than solids and are better tolerated by many people.",
           "evidence_level": "strong",
-          "notes": "Foundational first-line approach. Individual tolerance varies; some people do better with even smaller portions. Monitor weight and nutrition; may need supplements if eating becomes too restricted."
+          "notes": "Individual tolerance varies significantly. Working with a registered dietitian experienced in GI motility disorders is strongly recommended to ensure adequate nutrition is maintained while adjusting meal composition and timing."
         },
         {
-          "name": "Low-fiber diet",
+          "name": "Nutritional liquid supplementation",
           "category": "diet",
-          "description": "Limit high-fiber foods (whole grains, raw vegetables, beans) in favor of refined carbs, well-cooked vegetables, and processed foods. Fiber can mass in the stomach and slow emptying further.",
-          "evidence_level": "strong",
-          "notes": "Temporary measure for symptom relief; long-term low-fiber eating may reduce beneficial microbiota. Gradually reintroduce fiber as symptoms improve."
+          "description": "When solid food intake is severely limited, oral nutritional supplements (e.g. polymeric formulas) in liquid form may help maintain caloric and protein intake. Some people with gastroparesis tolerate liquids far better than solids, and liquid nutrition can be a bridge during flares or during diet optimisation.",
+          "evidence_level": "moderate",
+          "notes": "Formula composition matters \u2014 high-fat or high-osmolarity formulas can worsen symptoms. A dietitian should guide product selection."
         },
         {
-          "name": "Liquid and semi-liquid meals",
+          "name": "Prokinetic medications",
+          "category": "medication",
+          "description": "Medications that accelerate gastric emptying \u2014 including metoclopramide (first-line in many countries), domperidone (available outside the US), erythromycin (low dose, as a motilin agonist), and prucalopride \u2014 can reduce nausea and improve emptying rates. Effects may diminish over time with continuous use.",
+          "evidence_level": "moderate",
+          "notes": "Metoclopramide carries a risk of tardive dyskinesia with long-term use and is typically limited to 12 weeks of continuous use. Domperidone carries cardiac risks at higher doses. Erythromycin tolerance develops over weeks. All prokinetics require careful prescribing by a knowledgeable clinician."
+        },
+        {
+          "name": "Anti-emetic medications",
+          "category": "medication",
+          "description": "Ondansetron, prochlorperazine, promethazine, and other anti-emetics do not improve gastric emptying but can reduce nausea and vomiting enough to allow adequate oral intake. They are often used alongside prokinetics or during acute flares.",
+          "evidence_level": "moderate",
+          "notes": "Anti-emetics manage symptoms without addressing the underlying motility problem. Useful as part of a broader plan, not as sole treatment."
+        },
+        {
+          "name": "Dietary texture modification (soft and pureed foods)",
           "category": "diet",
-          "description": "Soups, smoothies, yogurt, applesauce, pudding, and broths are easier to empty than solid foods. Blending solid foods increases surface area and speeds digestion.",
+          "description": "Mechanically softened or pureed food reduces the stomach's mechanical workload \u2014 the antrum does not need to grind soft food as forcefully before it can empty into the duodenum. Many people find a soft diet substantially reduces symptom severity.",
+          "evidence_level": "moderate",
+          "notes": "Taste, variety, and social eating become significantly affected. A dietitian can assist with adapting meals to maintain enjoyment and nutritional completeness."
+        },
+        {
+          "name": "Glycaemic optimisation (in diabetic gastroparesis)",
+          "category": "lifestyle",
+          "description": "Acute hyperglycaemia directly inhibits gastric motility even in people without diabetes. In diabetic gastroparesis, improving blood glucose control \u2014 through careful insulin timing, continuous glucose monitoring, and meal composition \u2014 can meaningfully improve gastric emptying. This creates a positive cycle: better emptying improves glucose predictability, and better glucose control improves emptying.",
           "evidence_level": "strong",
-          "notes": "Very helpful for acute symptom relief. Can be harder to meet caloric and nutrient needs with liquids alone; may need nutritional supplements."
+          "notes": "Continuous glucose monitoring (CGM) is particularly valuable as it reveals the erratic glucose swings caused by unpredictable emptying. Endocrinology and gastroenterology co-management is ideal."
         },
         {
-          "name": "Metoclopramide",
-          "category": "medication",
-          "description": "A dopamine antagonist that enhances stomach muscle contractions and improves gastric emptying. Typical dose is 10 mg three times daily before meals.",
+          "name": "Gastric electrical stimulation (GES / Enterra therapy)",
+          "category": "procedure",
+          "description": "A surgically implanted device delivers mild electrical pulses to the stomach wall, which can reduce nausea and vomiting in some individuals with refractory gastroparesis. It does not reliably speed up gastric emptying but may reduce symptom severity through neural modulation. Approved by the FDA under a humanitarian device exemption.",
+          "evidence_level": "moderate",
+          "notes": "Reserved for people with severe, refractory gastroparesis who have not responded to dietary and medical management. Outcomes are variable. Requires specialist surgical and GI teams. Diabetic gastroparesis may respond better than idiopathic forms."
+        },
+        {
+          "name": "Enteral or parenteral nutrition",
+          "category": "medical support",
+          "description": "In severe gastroparesis where oral intake cannot sustain adequate nutrition, enteral feeding via a jejunostomy tube (bypassing the stomach entirely) or parenteral nutrition via IV can maintain nutritional status. These are not permanent solutions for most people but may be necessary during severe flares or for those with very advanced disease.",
           "evidence_level": "strong",
-          "notes": "Most commonly prescribed medication for gastroparesis. Long-term use (>3 months) carries a small risk of tardive dyskinesia (involuntary movements). Regular reassessment is recommended; some patients develop tolerance. Not suitable for those with prolactin-sensitive tumors or certain psychiatric conditions."
+          "notes": "Nasogastric or nasojejunal tubes are sometimes used as a temporary bridge. Long-term tube feeding carries significant QoL implications and should be planned carefully with a multidisciplinary team."
         },
         {
-          "name": "Domperidone",
-          "category": "medication",
-          "description": "Another dopamine antagonist, works similarly to metoclopramide but does not cross the blood-brain barrier as much, so lower risk of CNS side effects. Available in many countries outside the US.",
+          "name": "Mind-body and gut-directed psychological therapies",
+          "category": "psychological",
+          "description": "Gut-directed hypnotherapy, cognitive-behavioural therapy (CBT), and acceptance-based approaches may reduce nausea severity by modulating the gut-brain axis, improving central pain and nausea processing, and reducing the anxiety-nausea reinforcement loop. Evidence is strongest for functional GI disorders but increasingly being applied to organic motility disorders.",
           "evidence_level": "moderate",
-          "notes": "Not FDA-approved in the US but widely used elsewhere. May be obtained through compassionate use programs. Similar efficacy to metoclopramide with potentially fewer neurological side effects."
+          "notes": "These approaches address real physiological signalling, not just 'thinking positively'. They work best as part of a comprehensive management plan, not instead of medical investigation."
         },
         {
-          "name": "Domperidone",
-          "category": "medication",
-          "description": "Another dopamine antagonist, works similarly to metoclopramide but does not cross the blood-brain barrier as much, so lower risk of CNS side effects. Available in many countries outside the US.",
+          "name": "Addressing co-existing conditions (POTS, MCAS, hEDS, hypothyroidism)",
+          "category": "multidisciplinary",
+          "description": "In people with gastroparesis driven or worsened by POTS, MCAS, hypothyroidism, or connective tissue disorders, treating the underlying comorbidity may meaningfully improve gastric motility and symptom burden. Targeting only the stomach while ignoring these upstream contributors often leads to poor outcomes.",
           "evidence_level": "moderate",
-          "notes": "Not FDA-approved in the US but widely used elsewhere. May be obtained through compassionate use programs. Similar efficacy to metoclopramide with potentially fewer neurological side effects."
+          "notes": "This requires identifying and coordinating care across multiple specialties \u2014 gastroenterology, cardiology/autonomic neurology, allergy/immunology, and rheumatology or clinical genetics as relevant."
         },
         {
-          "name": "Prucalopride",
-          "category": "medication",
-          "description": "A selective serotonin 5-HT4 agonist that enhances acetylcholine release and improves gastric contractions. Emerging option with possibly fewer long-term side effects than dopamine antagonists.",
+          "name": "Postural strategies after eating",
+          "category": "lifestyle",
+          "description": "Remaining upright for at least 1\u20132 hours after meals uses gravity to assist gastric emptying. Lying down after eating significantly increases symptom severity in many people with gastroparesis. Gentle walking after eating may also help.",
           "evidence_level": "moderate",
-          "notes": "Evidence base is growing but smaller than for metoclopramide. May be offered in specialized centers or as a second-line option if metoclopramide fails or is not tolerated."
+          "notes": "Simple but consistently underestimated. Combined with meal composition changes, postural habits after eating can make a meaningful difference to daily symptom levels."
         },
         {
           "name": "Ginger supplementation",
           "category": "supplement",
-          "description": "Ginger root (fresh, powder, or extract, typically 1\u20132 g daily) may enhance gastric contractions and reduce nausea through multiple mechanisms.",
-          "evidence_level": "moderate",
-          "notes": "More evidence for nausea relief than for improved gastric emptying. Generally safe and well-tolerated; can be combined with medications. Effects are modest and variable."
-        },
-        {
-          "name": "Peppermint oil",
-          "category": "supplement",
-          "description": "Enteric-coated peppermint oil capsules may reduce bloating and abdominal pain by relaxing smooth muscle, though effects on gastric emptying are unclear.",
+          "description": "Ginger has prokinetic and anti-emetic properties supported by both laboratory and some clinical evidence. Some people with gastroparesis report meaningful nausea reduction with ginger in supplement or tea form. Effect size is modest but the safety profile is good.",
           "evidence_level": "anecdotal",
-          "notes": "Primarily helpful for symptom comfort rather than addressing delayed emptying. Well-tolerated; do not use if acid reflux is severe."
-        },
-        {
-          "name": "Acupuncture",
-          "category": "environment",
-          "description": "Traditional acupuncture or electroacupuncture applied to specific points (e.g., ST36, CV12) may stimulate gastric contractions and improve symptoms in some patients.",
-          "evidence_level": "anecdotal",
-          "notes": "Limited high-quality evidence. Some patients report symptom relief; effects are variable. May be worth trying if conventional treatments are ineffective or poorly tolerated."
-        },
-        {
-          "name": "Eating position and pacing",
-          "category": "lifestyle",
-          "description": "Eat upright (not reclined) and chew thoroughly. Slow eating allows better sensory feedback and may reduce symptom perception. Remain upright for 30 minutes after eating to aid gravity-assisted emptying.",
-          "evidence_level": "moderate",
-          "notes": "Simple behavioral change with evidence support. Particularly helpful when combined with other strategies."
-        },
-        {
-          "name": "Stress reduction and relaxation",
-          "category": "lifestyle",
-          "description": "Techniques like deep breathing, meditation, yoga, or progressive muscle relaxation can reduce the negative impact of stress and anxiety on stomach motility.",
-          "evidence_level": "moderate",
-          "notes": "Psychological stress worsens symptoms. Regular practice improves both subjective symptoms and, in some cases, measurable gastric function."
-        },
-        {
-          "name": "Warm liquids and soups",
-          "category": "diet",
-          "description": "Warm foods and broths may aid gastric relaxation and comfort, and provide calories and hydration.",
-          "evidence_level": "anecdotal",
-          "notes": "Subjective preference varies. Avoid very hot liquids if reflux is present."
-        },
-        {
-          "name": "Nutritional supplementation",
-          "category": "supplement",
-          "description": "If oral intake is insufficient, liquid nutrition supplements (e.g., Ensure, Boost) or micronutrient supplements (iron, B12, calcium) may prevent deficiencies.",
-          "evidence_level": "strong",
-          "notes": "Essential if solid food intake is severely limited. Consider with a dietitian to tailor to individual needs. In severe cases, tube feeding or parenteral nutrition may be required."
-        },
-        {
-          "name": "Avoid or minimize opioid medications",
-          "category": "medication",
-          "description": "Opioids slow gastric emptying and worsen gastroparesis. If pain control is needed, discuss non-opioid alternatives with your doctor.",
-          "evidence_level": "strong",
-          "notes": "Crucial intervention if opioids are being used. Even small doses can have a significant impact on motility."
+          "notes": "Not a substitute for medical treatment but can help some people as an adjunct. Standard ginger ale typically contains minimal real ginger \u2014 supplements or fresh ginger preparations are more likely to be effective."
         }
       ],
       "things_to_avoid": [
-        "High-fat foods (fried foods, butter, cream, fatty meats) \u2014 fat is the slowest macronutrient to empty and triggers delayed emptying",
-        "High-fiber foods, especially raw vegetables and whole grains \u2014 fiber can mass in the stomach and obstruct flow",
-        "Large meals \u2014 overwhelm the weakened stomach and prolong emptying; multiple small meals are better tolerated",
-        "Carbonated drinks and artificial sweeteners \u2014 gas and sugar alcohols worsen bloating and discomfort",
-        "Alcohol and caffeine \u2014 both can irritate the stomach and impair motility",
-        "Spicy or high-fat condiments (hot sauce, mayonnaise, creamy dressings) \u2014 can trigger symptoms in sensitive individuals",
-        "Opioid pain relievers \u2014 directly slow gastric emptying and worsen the condition",
-        "Anticholinergic medications (antihistamines like diphenhydramine, certain antidepressants) \u2014 reduce stomach contractions",
-        "Lying down immediately after eating \u2014 gravity assists emptying; recumbency promotes reflux and delays gastric transit"
+        "High-fat meals \u2014 fat dramatically slows gastric emptying and consistently worsens nausea and fullness",
+        "High insoluble fibre foods (raw vegetables, skins, seeds, legumes, bran) \u2014 hard to digest and may contribute to bezoar formation in severe gastroparesis",
+        "Large meals \u2014 overwhelming a slow stomach rapidly escalates symptoms; volume matters as much as content",
+        "Lying down immediately after eating \u2014 removes the gravitational assistance for gastric emptying",
+        "Carbonated drinks \u2014 worsen bloating and distension, and the gas volume can increase discomfort significantly",
+        "Alcohol \u2014 delays gastric emptying and irritates the gastric mucosa",
+        "High-sugar, high-osmolarity liquids \u2014 can worsen nausea and cause dumping-like symptoms in some individuals",
+        "NSAIDs (ibuprofen, naproxen etc.) \u2014 can worsen gastric inflammation and are poorly tolerated on a slow, sensitive stomach",
+        "Opioid medications unless absolutely necessary \u2014 opioids strongly inhibit GI motility and can precipitate or severely worsen gastroparesis",
+        "GLP-1 receptor agonists (e.g. semaglutide, liraglutide) \u2014 these medications intentionally slow gastric emptying and are contraindicated in gastroparesis; newly prescribed individuals should verify their history of GI dysmotility with prescribers"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "Gastroparesis has no reliable cure for most people, and current medical treatments primarily manage symptoms rather than restore normal motility. Many people will need to permanently adapt their diet and lifestyle, not temporarily.",
+        "why_resisted": "Patients often hope that the right medication or procedure will fix the underlying problem. The lack of a definitive cure is rarely communicated clearly by clinicians, and the medical framing around 'treatment' implies a reversible process.",
+        "path_forward": "People who accept the chronic nature of the condition and invest in long-term dietary adaptation, nutritional monitoring, and sustainable symptom management routines typically maintain far better quality of life than those who cycle through treatments looking for a cure. Building a management plan that works long-term \u2014 even if imperfect \u2014 is what most stabilised patients achieve."
+      },
+      {
+        "truth": "The severity of symptoms often does not correlate well with how delayed gastric emptying is on a test. Someone with moderately delayed emptying can be profoundly disabled, while someone with severely delayed emptying may function reasonably well. Visceral hypersensitivity, anxiety, and central sensitisation are real contributors to symptom burden and cannot be ignored.",
+        "why_resisted": "Being told that the brain or psychological factors contribute to symptoms feels dismissive \u2014 as if the condition is 'not real'. Many patients have fought hard to be taken seriously and resist any suggestion that psychological factors are relevant.",
+        "path_forward": "Accepting that gut-brain signalling genuinely amplifies physical symptoms opens the door to gut-directed psychological therapies that have measurable physiological effects on nausea and motility. Patients who engage with this alongside medical treatment typically report better symptom control than those who pursue only prokinetics and dietary changes."
+      },
+      {
+        "truth": "Many gastroenterologists provide limited ongoing support for gastroparesis beyond the initial diagnosis and a standard medication trial. Finding a clinician genuinely interested in complex motility disorders often requires deliberate effort and potentially specialist centre referral.",
+        "why_resisted": "Patients expect that a confirmed diagnosis will be followed by a comprehensive management plan. The reality of how outpatient GI care operates \u2014 high volume, limited appointment time, few available tools \u2014 is rarely acknowledged.",
+        "path_forward": "Patients who research motility specialist centres, build a care team that includes a FODMAP or GI-experienced dietitian, and bring structured symptom records to appointments extract significantly more useful clinical input than those who wait passively for guidance."
+      },
+      {
+        "truth": "Restricting the diet aggressively in response to symptoms can become its own problem \u2014 nutritional deficiencies, disordered eating patterns, and severe dietary limitation can compound disability significantly and make recovery harder.",
+        "why_resisted": "Restricting food feels like a rational response to symptoms that reliably worsen with eating. In the short term, eating less does reduce the immediate symptom trigger. The downstream consequences are gradual and easy to rationalise.",
+        "path_forward": "Early involvement of a registered dietitian helps set the minimum viable diet \u2014 the least restrictive approach that manages symptoms while protecting nutritional status. People who engage with a dietitian before restriction becomes severe tend to have better long-term nutritional outcomes."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Establishing a consistent pattern of small (300\u2013400 kcal), low-fat (<10 g), refined-carb meals every 2\u20133 hours",
-          "why_it_matters": "This is the single most impactful dietary modification because it directly addresses the core problem (stomach's reduced ability to handle volume and fat). Consistency allows the stomach to anticipate and process meals more smoothly.",
-          "how_to_start": "Map out 5 small meals a day for a week: breakfast, mid-morning snack, lunch, afternoon snack, early dinner. Use simple, well-tolerated foods (plain chicken, white rice, bananas, applesauce). Track how you feel after each meal.",
-          "timeline": "Symptom relief often begins within days to 1\u20132 weeks; more complete stabilization may take 4\u20138 weeks.",
+          "lever": "Sustained dietary restructuring with dietitian support",
+          "why_it_matters": "Diet is the most consistently modifiable factor in gastroparesis symptom severity. Meal size, fat content, texture, and timing all directly affect gastric emptying and symptom load. This is not a short-term adjustment \u2014 it is the foundation of long-term management.",
+          "how_to_start": "Seek referral to a registered dietitian with GI motility experience. In the interim, start by reducing meal size and fat content, and trialling soft or liquid meal formats. Keep a symptom-meal diary for 2\u20133 weeks before the appointment.",
+          "timeline": "Initial symptom improvement often within 2\u20134 weeks of significant dietary restructuring. Nutritional adequacy assessment typically requires 6\u201312 weeks of monitoring.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Identifying and treating co-existing autonomic or systemic conditions",
+          "why_it_matters": "In idiopathic gastroparesis, untreated POTS, thyroid dysfunction, coeliac disease, or MCAS may be contributing substantially to motility impairment. Treating the stomach alone while these conditions persist leaves a major driver unaddressed.",
+          "how_to_start": "Request baseline screening: thyroid function, coeliac serology, and an assessment of orthostatic symptoms. If POTS features are present, seek referral to an autonomic neurology or cardiology service experienced with dysautonomia.",
+          "timeline": "Variable depending on the condition identified. Thyroid correction may show GI benefits within 2\u20133 months. POTS treatment benefits are often gradual over months.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Nutritional status monitoring and correction",
+          "why_it_matters": "Chronic undernutrition impairs gastric motility itself \u2014 a malnourished GI tract functions less well. Iron deficiency anaemia, B12 deficiency, and low vitamin D all worsen fatigue, cognitive function, and wellbeing in ways that make the whole condition harder to manage.",
+          "how_to_start": "Request a comprehensive nutritional blood panel including iron studies, B12, folate, vitamin D, zinc, magnesium, and albumin. Supplement deficiencies identified \u2014 noting that liquid or sublingual forms may absorb better given slow gastric transit.",
+          "timeline": "Iron and B12 repletion may show energy and cognitive benefits within 4\u20138 weeks. Vitamin D normalisation typically takes 3\u20136 months.",
           "requires_professional": false
         },
         {
-          "lever": "Tight blood sugar control (if diabetic)",
-          "why_it_matters": "High blood glucose directly impairs stomach muscle function and vagal signaling. Even modest improvements in A1C can meaningfully improve gastric emptying and gastroparesis symptoms.",
-          "how_to_start": "Work with your diabetes care team to review and optimize insulin timing, doses, and medication regimen. More frequent blood glucose monitoring or continuous glucose monitor (CGM) use can help you identify patterns between glucose levels and symptoms.",
-          "timeline": "Improvements in gastric function may take weeks to months as nerve and muscle function gradually recover with sustained better control.",
+          "lever": "Gut-directed psychological therapy",
+          "why_it_matters": "The gut-brain axis is a physiologically real bidirectional communication system. Central and autonomic nervous system dysregulation amplifies nausea perception and impairs motility. Gut-directed hypnotherapy and CBT have measurable effects on GI symptom severity independent of structural changes.",
+          "how_to_start": "Seek a psychologist, therapist, or clinical hypnotherapist with specific GI or health psychology experience. The Rome Foundation provides resources on gut-directed hypnotherapy. Some programmes are available online.",
+          "timeline": "Most structured programmes (e.g. gut-directed hypnotherapy) involve 6\u201312 sessions. Meaningful symptom changes are often reported within 6\u20138 weeks.",
           "requires_professional": true
         },
         {
-          "lever": "Discontinuing or switching away from medications that impair motility (opioids, anticholinergics, certain antipsychotics)",
-          "why_it_matters": "These medications directly slow stomach contractions and can fully reverse gastroparesis symptoms once withdrawn. This is one of the highest-impact interventions when applicable.",
-          "how_to_start": "Review your medication list with your doctor. If you're on opioids for pain, discuss non-opioid alternatives (NSAIDs, acetaminophen, topical agents, physical therapy, or pain psychology). Never stop medications suddenly without medical guidance.",
-          "timeline": "Symptom improvement can begin within days after stopping the culprit drug.",
-          "requires_professional": true
-        },
-        {
-          "lever": "Medication optimization: starting or adjusting prokinetic agents (metoclopramide, prucalopride, domperidone)",
-          "why_it_matters": "Prokinetics directly enhance stomach contractions and accelerate gastric emptying, often providing significant symptom relief and allowing a broader diet.",
-          "how_to_start": "If dietary changes alone are insufficient after 2\u20134 weeks, discuss with your gastroenterologist or primary care doctor. Metoclopramide is most commonly prescribed; prucalopride or domperidone may be options if first-line agents fail.",
-          "timeline": "Symptom relief often begins within 1\u20132 weeks; full benefit may take 4 weeks. Tolerance can develop over months to years, so regular reassessment is important.",
-          "requires_professional": true
-        },
-        {
-          "lever": "Addressing psychological stress and anxiety",
-          "why_it_matters": "The gut-brain axis means stress and negative affect directly worsen gastric motility and symptom perception. Stress reduction improves both measurable gastric function and subjective symptom burden.",
-          "how_to_start": "Identify a stress-reduction practice that fits your life: daily 10-minute meditation, yoga, therapy, or even a daily walk. Cognitive-behavioral therapy (CBT) for health anxiety or medical trauma is particularly helpful.",
-          "timeline": "Symptom improvement often appears within 2\u20134 weeks of consistent practice; sustained benefit builds over months.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Nutritional assessment and supplementation to prevent deficiencies",
-          "why_it_matters": "Chronic undereating leads to protein, iron, B12, calcium, and micronutrient deficiencies, which worsen fatigue, weakness, and symptom perception. Correcting deficiencies improves energy and resilience.",
-          "how_to_start": "Ask for a referral to a dietitian experienced in gastroparesis. Get baseline labs (complete blood count, iron panel, B12, folate, calcium, albumin, pre-albumin) to identify gaps. Use the results to guide targeted supplementation.",
-          "timeline": "Laboratory markers improve over weeks to months; symptom improvement (reduced fatigue, better energy) often appears within 4\u201312 weeks of correction.",
+          "lever": "Prokinetic trial with an informed clinician",
+          "why_it_matters": "Prokinetics can provide meaningful symptom relief for many people and allow better nutritional intake during dietary restructuring. Finding the right agent at the right dose matters \u2014 not all prokinetics work equally for all individuals, and side effect profiles differ.",
+          "how_to_start": "Discuss the available prokinetic options with a gastroenterologist or GP, including the evidence, duration limits, and side effect monitoring required. Metoclopramide, domperidone, erythromycin, and prucalopride have different profiles.",
+          "timeline": "Initial response often evident within 2\u20134 weeks. Long-term use requires periodic reassessment.",
           "requires_professional": true
         }
       ],
       "common_mistakes": [
-        "Attempting a normal diet too soon or eating large meals \u2014 leads to repeated nausea and vomiting cycles that reinforce the condition and worsen anxiety",
-        "Restricting calories to the point of malnutrition \u2014 attempting to 'eat less to feel less' backfires by reducing energy and worsening nutrient deficiencies",
-        "Stopping medications prematurely without medical guidance \u2014 symptoms often rebound, and some medications (especially antidepressants) require slow tapering",
-        "Ignoring blood sugar control if diabetic \u2014 high glucose perpetuates the underlying nerve and muscle damage",
-        "Continuing opioid use 'because you need them for pain' \u2014 opioids directly worsen gastroparesis and create a vicious cycle",
-        "Over-relying on anti-nausea medications (ondansetron) without addressing root causes \u2014 masks symptoms but does not improve gastric function or nutrition",
-        "Delaying diagnosis and treatment for years in hopes it will resolve on its own \u2014 idiopathic gastroparesis often requires professional intervention; early diagnosis prevents malnutrition and psychological burden",
-        "Dismissing the psychological toll \u2014 chronic gastroparesis is genuinely burdensome; ignoring anxiety and depression worsens both motility and quality of life"
+        "Restricting diet so severely that nutritional status deteriorates \u2014 this worsens motility, fatigue, and psychological wellbeing in a reinforcing cycle",
+        "Treating gastroparesis in isolation without investigating underlying POTS, thyroid dysfunction, or MCAS \u2014 these can be major drivers of continued symptoms",
+        "Expecting prokinetics alone to resolve the condition without dietary and lifestyle changes \u2014 medications are one tool, not a complete solution",
+        "Accepting a functional dyspepsia or IBS diagnosis without requesting a gastric emptying study when upper GI symptoms are the dominant complaint and symptoms are consistent with gastroparesis",
+        "Using opioid pain relief for gastroparesis-related discomfort \u2014 opioids profoundly worsen gastric motility and can convert a manageable condition into a severe one",
+        "Waiting for a single gastroenterologist to coordinate all aspects of care \u2014 gastroparesis often requires a dietitian, and potentially a neurologist and/or autonomic specialist, to address all contributing factors",
+        "Abandoning dietary changes too quickly \u2014 it often takes several weeks of consistent dietary restructuring to see meaningful change, and the temptation to revert to normal eating before the pattern is established is common and counterproductive"
       ]
     },
     "finding_help": {
       "specialists": [
         {
-          "type": "Gastroenterologist",
-          "role": "The primary specialist for diagnosis and medical management. Performs upper endoscopy to exclude obstruction, orders gastric emptying studies, and manages medication trials. Often the first point of contact.",
-          "notes": "Seek a gastroenterologist with experience in motility disorders if possible; not all general gastroenterologists have deep expertise in gastroparesis."
+          "type": "Neurogastroenterologist / GI motility specialist",
+          "role": "The most relevant specialist \u2014 focuses specifically on disorders of gut movement and the gut-brain axis, including gastroparesis. Performs and interprets gastric emptying studies, manages prokinetic therapy, and considers the full motility picture including small bowel transit.",
+          "notes": "Not all gastroenterologists have subspecialty training in motility. Seeking a gastroenterologist with an explicit interest in neurogastroenterology or motility disorders \u2014 often based at academic medical centres \u2014 significantly improves the quality of investigation and management."
         },
         {
-          "type": "Registered Dietitian (RD) with expertise in GI or gastroparesis",
-          "role": "Essential for developing and refining a personalized eating plan, ensuring adequate nutrition despite dietary restrictions, and monitoring for deficiencies. Helps with meal planning and troubleshooting.",
-          "notes": "Request a referral from your gastroenterologist or primary care doctor. Dietitians trained in gastroparesis know how to balance symptom control with nutrition\u2014generic low-fiber diets often fall short."
+          "type": "Registered dietitian (GI motility or gastroparesis-experienced)",
+          "role": "Essential for designing a nutritionally adequate diet that minimises gastric burden. Can advise on meal texture, fat and fibre modification, nutritional supplementation, and oral nutrition strategies. Critical for preventing the malnutrition that commonly develops from unchecked dietary restriction.",
+          "notes": "Seek a dietitian with specific GI experience, ideally familiar with gastroparesis or functional GI disorders. A general dietitian without GI experience may not be familiar with the nuances of motility-adapted nutrition."
         },
         {
-          "type": "Primary care physician (MD, DO, or NP)",
-          "role": "Often the first to hear symptoms and can provide initial evaluation, order tests, start dietary counseling, and manage comorbidities (diabetes, anxiety). Can coordinate referrals.",
-          "notes": "Some primary care doctors are unfamiliar with gastroparesis; if your doctor dismisses symptoms, ask for a gastroenterology referral."
+          "type": "Autonomic neurologist / dysautonomia specialist",
+          "role": "Important for people with co-existing POTS, orthostatic symptoms, or suspected autonomic neuropathy. Can investigate the autonomic nervous system dysfunction that may be driving or worsening gastroparesis, and coordinate treatment of dysautonomia alongside GI management.",
+          "notes": "Often based at academic neurology departments or specialist dysautonomia centres. Referral may require advocacy \u2014 not all GI teams think to involve neurology."
         },
         {
-          "type": "Gastroenterologist specializing in motility disorders",
-          "role": "Offers specialized expertise in complex cases, access to advanced testing (high-resolution manometry, wireless capsule), and more sophisticated pharmacological management (e.g., prucalopride trials).",
-          "notes": "Usually found at tertiary care centers or specialized motility clinics. Worth seeking if initial treatment fails or symptoms are severe."
+          "type": "Endocrinologist",
+          "role": "Critical in diabetic gastroparesis \u2014 optimising glycaemic control requires close coordination between endocrinology and gastroenterology. Also useful if thyroid dysfunction is identified as a contributing factor.",
+          "notes": "Continuous glucose monitoring (CGM) can reveal the erratic glucose patterns caused by unpredictable gastric emptying and is valuable data to bring to endocrinology appointments."
         },
         {
-          "type": "Endocrinologist (if diabetic)",
-          "role": "Helps optimize diabetes control, which directly improves gastroparesis. Works with primary care and gastroenterology to coordinate care.",
-          "notes": "Especially important if your gastroparesis is diabetic and blood sugar control is suboptimal."
+          "type": "Functional medicine doctor",
+          "role": "May investigate upstream contributors to autonomic dysfunction and GI motility that are not typically pursued in mainstream gastroenterology \u2014 including viral triggers, mitochondrial function, nutritional status, and systemic inflammation. Can be particularly useful in idiopathic gastroparesis where conventional workup has not yielded answers.",
+          "notes": "Quality varies widely. Seek practitioners with credible training and who work alongside rather than instead of conventional medical care. Be cautious of expensive untested protocols."
         },
         {
-          "type": "Pain management specialist or anesthesiologist",
-          "role": "Helps identify non-opioid pain control strategies for patients with comorbid pain conditions who must avoid opioids.",
-          "notes": "Useful if you have chronic pain and gastroparesis; can offer interventional techniques, non-opioid medications, or behavioral strategies."
-        },
-        {
-          "type": "Mental health professional (therapist, psychologist, psychiatrist)",
-          "role": "Addresses anxiety, depression, medical trauma, and eating-related psychological issues that develop with or exacerbate gastroparesis. Cognitive-behavioral therapy (CBT) is particularly useful.",
-          "notes": "Gastroparesis is psychologically burdensome; therapy is not 'optional' for many patients and can significantly improve both mental health and symptom perception."
-        },
-        {
-          "type": "Functional medicine doctor or integrative medicine specialist",
-          "role": "May offer additional perspectives on diet, supplements, stress reduction, and underlying causes. Some have specific interest in motility disorders.",
-          "notes": "Approach with discernment; functional medicine is less regulated. Look for practitioners with clear evidence-based recommendations and collaboration with conventional gastroenterology."
+          "type": "GI psychologist / gut-directed hypnotherapist",
+          "role": "Addresses the gut-brain axis component of symptom severity, including visceral hypersensitivity, anxiety-nausea cycles, and the psychological burden of managing a chronic eating-related condition. Gut-directed hypnotherapy and GI-focused CBT have the strongest evidence base.",
+          "notes": "Look for practitioners specifically trained in gut-directed psychological therapies, not general therapists. The Rome Foundation and Monash University IBS research groups have resources for finding qualified practitioners."
         }
       ],
       "patient_communities": [
         {
-          "name": "American Motility Society",
-          "platform": "Website and patient resources",
-          "url": "https://www.americanmotilitysociety.org/",
-          "notes": "Professional organization with some patient education and specialist locator. Credible and evidence-based."
-        },
-        {
-          "name": "Gastroparesis Support Community (Facebook)",
-          "platform": "Facebook Group",
-          "url": null,
-          "notes": "Large peer support group where patients share experiences, tips, medication side effects, and emotional support. Helpful for finding sympathy and practical advice, but verify medical claims with your doctor."
-        },
-        {
-          "name": "International Foundational Motility Disorders Organization (IFMDO)",
-          "platform": "Website and forums",
-          "url": null,
-          "notes": "International patient and professional organization. Publishes guidelines, patient education, and curates specialist directories by region."
-        },
-        {
-          "name": "Rare Digestive Diseases Network (RDDN)",
-          "platform": "Website",
-          "url": null,
-          "notes": "A network for rare and underdiagnosed GI conditions, including some gastric motility disorders. Provides resources and research updates."
-        },
-        {
-          "name": "Reddit r/gastroparesis",
+          "name": "r/Gastroparesis",
           "platform": "Reddit",
-          "url": "https://www.reddit.com/r/gastroparesis/",
-          "notes": "Active community for symptom discussion, medication experiences, and emotional support. Diverse perspectives; moderated for accuracy."
+          "url": "https://www.reddit.com/r/Gastroparesis/",
+          "notes": "Active community of people with gastroparesis sharing experiences, dietary tips, medication responses, and support. Useful for understanding real-world experiences with treatments and navigating diagnosis. Quality of medical information varies \u2014 cross-reference with clinical sources."
+        },
+        {
+          "name": "Association of Gastrointestinal Motility Disorders (AGMD)",
+          "platform": "Website / patient organisation",
+          "url": "https://www.agmd-gimotility.org/",
+          "notes": "US-based non-profit specifically focused on GI motility disorders including gastroparesis. Provides patient education, physician referral resources, and advocacy support. A valuable starting point for understanding the condition and finding specialist centres."
+        },
+        {
+          "name": "Gastroparesis Patient Association for Cures and Treatments (G-PACT)",
+          "platform": "Website / patient organisation",
+          "url": "https://www.g-pact.org/",
+          "notes": "US-based organisation dedicated specifically to gastroparesis advocacy, patient support, and research funding. Runs awareness campaigns and has resources for newly diagnosed individuals."
+        },
+        {
+          "name": "Gastroparesis Support Group",
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/groups/gastroparesisbattle/",
+          "notes": "Large Facebook group with tens of thousands of members. Useful for peer support, recipe ideas, and hearing how others manage specific situations. Medical accuracy is inconsistent \u2014 treat as peer support rather than medical guidance."
+        },
+        {
+          "name": "Dysautonomia International Community",
+          "platform": "Facebook / Website",
+          "url": "https://www.dysautonomiainternational.org/",
+          "notes": "Particularly relevant for people with gastroparesis linked to POTS or autonomic dysfunction. Strong patient and medical community, research summaries, and physician resources."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "American Gastroenterological Association (AGA) Gastroparesis Guidelines",
+        "title": "Gastroparesis: Symptoms, Causes, Diagnosis, Treatment",
+        "type": "website",
+        "author_or_source": "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)",
+        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/gastroparesis",
+        "description": "Clear, evidence-based overview from the US government health agency. Covers the basics of what gastroparesis is, how it is diagnosed, and current treatment options. A reliable starting point for anyone newly diagnosed or investigating the condition.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Gastroparesis: Pathogenesis, Presentation, Diagnosis and Management",
         "type": "research paper",
-        "author_or_source": "American Gastroenterological Association",
-        "url": "https://www.gastrojournal.org/",
-        "description": "Evidence-based clinical guidelines for diagnosis and management of gastroparesis. Dense but authoritative; useful for patients who want to understand the medical evidence.",
-        "audience": "intermediate"
+        "author_or_source": "Camilleri M et al. \u2014 BMJ 2018",
+        "url": "https://www.bmj.com/content/360/bmj.k194",
+        "description": "A comprehensive clinical review by leading gastric motility researchers. Covers mechanisms, diagnostic testing standards, and evidence for all treatment modalities. Highly informative for people who want to understand the clinical science at an intermediate to advanced level.",
+        "audience": "advanced"
       },
       {
-        "title": "Gastroparesis: An Overview (Medscape)",
+        "title": "The Gastroparesis and Dysmotilities Association (GPDA) Patient Guide",
         "type": "website",
-        "author_or_source": "Medscape",
-        "url": "https://emedicine.medscape.com/article/169105-overview",
-        "description": "Comprehensive but accessible medical overview covering etiology, pathophysiology, clinical presentation, diagnosis, and management. More detailed than typical patient resources but written for healthcare providers and educated patients.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "What I Wish I Knew About Gastroparesis: A Patient Guide",
-        "type": "website",
-        "author_or_source": "IFM/IFMDO or similar organizations",
-        "url": null,
-        "description": "Written by and for patients; covers symptoms, diagnosis, treatment options, dietary strategies, and living with gastroparesis. Practical and validating.",
+        "author_or_source": "GPDA",
+        "url": "https://www.digestivedistress.com/",
+        "description": "Patient-oriented resource covering dietary guidance, treatment options, and living with gastroparesis. Written accessibly with practical detail. Useful for newly diagnosed individuals looking for real-world management strategies.",
         "audience": "beginner"
       },
       {
-        "title": "Gastroparesis: Symptoms, Causes, and Treatment (Mayo Clinic)",
-        "type": "website",
-        "author_or_source": "Mayo Clinic",
-        "url": "https://www.mayoclinic.org/diseases-conditions/gastroparesis/symptoms-causes/syc-20355269",
-        "description": "Clear, well-organized patient-friendly overview from a trusted institution. Good for understanding basics and when to seek care.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Living with Gastroparesis: A Diet and Lifestyle Guide",
+        "title": "Living (Well!) with Gastroparesis",
         "type": "book",
-        "author_or_source": "Compiled by dietitians and gastroenterologists",
+        "author_or_source": "Crystal Zaborowski Saltrelli",
         "url": null,
-        "description": "Practical guide with meal planning ideas, recipes, symptom management strategies, and emotional support. Often available through patient organizations or gastroenterology practices.",
+        "description": "A widely recommended patient guide written by a registered dietitian who also has gastroparesis. Covers dietary management, practical strategies, emotional aspects, and working with medical teams. Particularly valued in the gastroparesis community for its balanced, practical approach.",
         "audience": "beginner"
       },
       {
-        "title": "The Mind-Gut Connection (podcast or book excerpt)",
-        "type": "podcast",
-        "author_or_source": "Dr. Emeran Mayer",
-        "url": null,
-        "description": "Explores the gut-brain axis and how stress, anxiety, and psychological factors influence GI function. Helpful context for understanding why stress management matters in gastroparesis.",
-        "audience": "beginner"
+        "title": "Autonomic Nervous System and Gastroparesis \u2014 Dysautonomia International Resources",
+        "type": "website",
+        "author_or_source": "Dysautonomia International",
+        "url": "https://www.dysautonomiainternational.org/page/Gastroparesis",
+        "description": "Specifically addresses the connection between POTS, autonomic dysfunction, and gastroparesis. Valuable for people who suspect their motility issues are part of a broader autonomic picture. Includes research summaries and physician resources.",
+        "audience": "intermediate"
       },
       {
-        "title": "Idiopathic Gastroparesis: Clinical Heterogeneity and Management Strategies",
-        "type": "research paper",
-        "author_or_source": "Gastroparesis Research Foundation or journals like Neurogastroenterology & Motility",
-        "url": null,
-        "description": "Peer-reviewed article diving into the heterogeneity of idiopathic gastroparesis and why treatment outcomes vary. Good for understanding why your experience may differ from others'.",
-        "audience": "advanced"
+        "title": "Gastroparesis Clinical Study Consortium \u2014 Patient Resources",
+        "type": "website",
+        "author_or_source": "NIDDK Gastroparesis Clinical Study Consortium",
+        "url": "https://www.jhucct.com/gcsi/",
+        "description": "The GCSC has been a major driver of gastroparesis research. Their resources include information on clinical trials, standardised symptom measurement tools (GCSI \u2014 Gastroparesis Cardinal Symptom Index), and research findings. Useful for those interested in participating in research or understanding how symptom severity is measured clinically.",
+        "audience": "intermediate"
       },
       {
-        "title": "Metoclopramide and Tardive Dyskinesia: A Review and Alternatives",
-        "type": "research paper",
-        "author_or_source": "Medical journals",
+        "title": "Gut: The Inside Story of Our Body's Most Underrated Organ",
+        "type": "book",
+        "author_or_source": "Giulia Enders",
         "url": null,
-        "description": "Discusses the long-term risk of tardive dyskinesia with metoclopramide use, newer prokinetic options, and strategies for risk mitigation. Important for informed decision-making about long-term medication use.",
-        "audience": "advanced"
-      },
-      {
-        "title": "Gastroparesis Patient Education Series (Video)",
-        "type": "video",
-        "author_or_source": "American Gastroenterological Association or university GI centers",
-        "url": null,
-        "description": "Short, animated explainers of gastroparesis mechanisms, tests, and treatment. Often free on hospital or organization websites.",
+        "description": "A highly readable, evidence-based introduction to how the digestive system works, including the enteric nervous system and gut-brain connection. Not specific to gastroparesis, but provides valuable foundational understanding of GI physiology that helps people contextualise their condition.",
         "audience": "beginner"
       }
     ],
     "relevance_signal": "**Feeling full very quickly**, nausea after meals, upper abdominal bloating that starts during eating rather than hours later. Worse with fatty meals."
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

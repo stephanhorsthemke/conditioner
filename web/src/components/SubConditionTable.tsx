@@ -7,6 +7,7 @@ interface Props {
   probabilityById?: Record<string, number>;
   symptomPatterns?: SymptomPattern[];
   subConditionAffinities?: SubConditionAffinity[];
+  signalsByConditionId?: Record<string, string>;
 }
 
 function renderSignal(text: string): React.ReactNode {
@@ -80,9 +81,10 @@ const cellStyle: React.CSSProperties = {
   verticalAlign: "top",
 };
 
-export default function SubConditionTable({ rows, probabilityById, symptomPatterns, subConditionAffinities }: Props) {
+export default function SubConditionTable({ rows, probabilityById, symptomPatterns, subConditionAffinities, signalsByConditionId }: Props) {
   const navigate = useNavigate();
   const hasProbability = !!probabilityById && Object.keys(probabilityById).length > 0;
+  const hasSignals = !!signalsByConditionId && Object.keys(signalsByConditionId).length > 0;
 
   const [patternFilter, setPatternFilter] = useState<string | null>(null);
   const [search, setSearch] = useState("");
@@ -170,28 +172,31 @@ export default function SubConditionTable({ rows, probabilityById, symptomPatter
 
       <table style={{ width: "100%", borderCollapse: "collapse", tableLayout: "fixed" }}>
         <colgroup>
-          <col style={{ width: "38%" }} />
-          <col />
+          <col style={{ width: hasSignals ? "38%" : "100%" }} />
+          {hasSignals && <col />}
         </colgroup>
         <thead>
           <tr>
             <th style={{ ...headerCellStyle, textAlign: "left" }}>Condition</th>
-            <th style={{ ...headerCellStyle, textAlign: "left" }}>
-              <HeaderTooltip label="Relevant if…">
-                <p style={{ margin: 0 }}>
-                  A short pointer at the <strong>distinguishing pattern</strong> that separates this condition from the others — not generic symptoms.
-                </p>
-                <p style={{ margin: "0.4rem 0 0", color: "#6b7280", fontSize: "0.75rem" }}>
-                  AI-assisted summary. Use it to decide whether to read more, not as a diagnostic check.
-                </p>
-              </HeaderTooltip>
-            </th>
+            {hasSignals && (
+              <th style={{ ...headerCellStyle, textAlign: "left" }}>
+                <HeaderTooltip label="Relevant if…">
+                  <p style={{ margin: 0 }}>
+                    A short pointer at the <strong>distinguishing pattern</strong> that separates this condition from the others — not generic symptoms.
+                  </p>
+                  <p style={{ margin: "0.4rem 0 0", color: "#6b7280", fontSize: "0.75rem" }}>
+                    AI-assisted summary. Use it to decide whether to read more, not as a diagnostic check.
+                  </p>
+                </HeaderTooltip>
+              </th>
+            )}
           </tr>
         </thead>
         <tbody>
           {visible.map((c) => {
             const greyed = isGreyed(c);
             const clickable = !greyed && c.has_data;
+            const signal = signalsByConditionId?.[c.id];
             return (
               <tr
                 key={c.id}
@@ -222,9 +227,11 @@ export default function SubConditionTable({ rows, probabilityById, symptomPatter
                     </span>
                   )}
                 </td>
-                <td style={{ ...cellStyle, fontSize: "0.82rem", color: c.relevance_signal ? "#4b5563" : "#d1d5db", lineHeight: 1.45, paddingTop: "0.45rem" }}>
-                  {c.relevance_signal ? renderSignal(c.relevance_signal) : "—"}
-                </td>
+                {hasSignals && (
+                  <td style={{ ...cellStyle, fontSize: "0.82rem", color: signal ? "#4b5563" : "#d1d5db", lineHeight: 1.45, paddingTop: "0.45rem" }}>
+                    {signal ? renderSignal(signal) : "—"}
+                  </td>
+                )}
               </tr>
             );
           })}

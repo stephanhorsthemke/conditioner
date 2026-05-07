@@ -8,12 +8,12 @@ export interface SubConditionRef {
 export interface ConditionIndex {
   id: string;
   name: string;
+  full_name?: string;
   aliases: string[];
   group_id: string;
   group_label: string;
   parents: string[];
   has_data: boolean;
-  relevance_signal?: string;
   diagnosis_type?: DiagnosisType;
   sub_conditions?: SubConditionRef[];
 }
@@ -154,6 +154,7 @@ export interface SymptomPatterns {
 export interface ConditionSections {
   plain_summary: string;
   detailed_summary: string;
+  sub_condition_signals?: Record<string, string>;
   prevalence: Prevalence;
   symptom_patterns?: SymptomPatterns;
   subgroups: Subgroup[];

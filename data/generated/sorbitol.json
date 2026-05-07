@@ -2,469 +2,545 @@
   "condition_id": "sorbitol",
   "condition_name": "Sorbitol / polyol intolerance",
   "generated_at": "2026-04-16T09:28:52.023050Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "Sorbitol and polyol intolerance is a digestive condition where the body has difficulty absorbing certain sweeteners and sugar alcohols found in many foods and products. This leads to bloating, gas, diarrhoea, and abdominal discomfort after eating affected foods. It is not an allergy, but rather a problem with how the intestines process these substances.",
-    "detailed_summary": "Sorbitol and polyol intolerance occurs when the small intestine cannot adequately absorb polyols\u2014a group of sugar alcohols that includes sorbitol, xylitol, maltitol, and mannitol. These are commonly used as artificial sweeteners in diet foods, sugar-free products, and some fruits. When polyols reach the colon unabsorbed, they draw water in osmotically and are fermented by bacteria, producing gas, bloating, and changes in bowel habit. The condition is thought to be a form of carbohydrate malabsorption, similar to lactose intolerance or fructose malabsorption. It may coexist with other functional digestive conditions and is not caused by immune system activation.",
+    "plain_summary": "Sorbitol and polyol intolerance is a digestive condition in which the small intestine absorbs certain sugar alcohols \u2014 sorbitol, mannitol, xylitol, maltitol, and others \u2014 poorly or incompletely. Unabsorbed polyols draw water into the gut and are fermented by colonic bacteria, causing bloating, cramping, gas, and diarrhea. The condition is extremely common but widely unrecognised, partly because polyols occur naturally in many 'healthy' foods and are heavily used as sweeteners in sugar-free and low-calorie products whose packaging rarely warns of digestive effects.",
+    "detailed_summary": "Polyols are a class of short-chain carbohydrates that includes the sugar alcohols sorbitol, mannitol, xylitol, maltitol, erythritol, and isomalt. They are the 'P' in the FODMAP acronym (Fermentable Oligosaccharides, Disaccharides, Monosaccharides And Polyols). Unlike glucose and fructose, polyols are absorbed via a slow, passive, concentration-dependent mechanism in the small intestine rather than through dedicated active transporters. This means absorption is inherently incomplete in most people at higher doses, and individuals vary considerably in how efficiently they absorb them.\n\nWhen unabsorbed polyols reach the colon, two things happen: they exert an osmotic effect, drawing water into the intestinal lumen, which can accelerate transit and produce loose stools; and they are rapidly fermented by colonic bacteria, producing hydrogen, carbon dioxide, and sometimes methane gas. The result is a cluster of symptoms \u2014 bloating, distension, cramping, flatulence, urgency, and diarrhea \u2014 that typically appear within 30 minutes to 4 hours of ingestion.\n\nSorbitol occurs naturally at high levels in stone fruits (apricots, cherries, peaches, plums, prunes), apples, pears, and some berries. It is also a common additive in sugar-free confectionery, chewing gum, breath mints, some medicines and supplements, and low-calorie drinks. Mannitol is found in mushrooms, cauliflower, snow peas, and watermelon. Xylitol, maltitol, and erythritol are widely used in diabetic and keto-friendly products.\n\nPolyol intolerance may be an isolated sensitivity, but it frequently co-exists with other FODMAP intolerances \u2014 particularly fructose malabsorption and lactase deficiency \u2014 as well as with IBS, SIBO, and gut dysbiosis, which can amplify fermentative symptoms. The dose-response relationship is important: many people tolerate small amounts without symptoms but react to larger cumulative loads, particularly when multiple polyol sources are consumed together.\n\nDiagnosis is primarily dietary \u2014 structured elimination and reintroduction (as part of a FODMAP protocol or a targeted polyol challenge) reliably identifies the threshold and the specific polyols causing problems. Hydrogen breath tests for sorbitol are available but inconsistently offered in routine clinical practice. Most mainstream gastroenterologists manage the condition under the umbrella of IBS without distinguishing the specific carbohydrate driver.",
     "prevalence": {
-      "summary": "Sorbitol and polyol intolerance is common but exact prevalence is unclear\u2014likely affects a significant minority of the population.",
-      "estimate": "Estimated 5\u201320% of the general population, possibly higher in people with irritable bowel syndrome (IBS)",
-      "notes": "Prevalence estimates vary widely because the condition is often underdiagnosed and not routinely tested. It overlaps with IBS and FODMAP sensitivity. No large-scale epidemiological studies have precisely defined prevalence by region or age group."
+      "summary": "Partial polyol malabsorption is almost universal at high doses; symptomatic intolerance at moderate doses is very common and often unrecognised",
+      "estimate": "Estimated 40\u201370% of people malabsorb sorbitol at challenge doses; clinically significant intolerance affects a substantial subset, possibly 10\u201320% of the general population",
+      "notes": "Prevalence figures vary widely depending on the dose used in challenge studies and the definition of 'intolerance'. Because polyol intolerance is frequently subsumed under IBS diagnoses, dedicated epidemiological data is sparse. Sensitivity appears higher in women and in people with pre-existing IBS. Children, older adults, and people with prior gut injury may be more vulnerable. Most people with symptoms have never identified polyols as the cause."
     },
     "subgroups": [
       {
-        "name": "Primary polyol intolerance",
-        "description": "Reduced capacity to absorb sorbitol and other polyols due to low expression of sorbitol transporter (GLUT5) or other genetic factors. Symptoms occur with relatively small doses of polyols.",
+        "name": "Isolated sorbitol intolerance",
+        "description": "Reactivity primarily to sorbitol, with tolerance of other polyols (mannitol, xylitol, etc.) at normal dietary amounts",
         "distinguishing_features": [
-          "Symptoms triggered by small amounts of sorbitol or sugar-free products",
-          "Occurs independently of other food intolerances",
-          "May be lifelong and relatively stable"
+          "Symptoms triggered specifically by stone fruits, apples, pears, and sorbitol-sweetened products",
+          "Mannitol-rich foods (mushrooms, cauliflower) are tolerated without symptoms",
+          "Often identified through targeted food diary or FODMAP reintroduction challenge"
         ]
       },
       {
-        "name": "Secondary or stress-related polyol intolerance",
-        "description": "Reduced absorption capacity triggered or worsened by gut inflammation, dysbiosis, high stress, or concurrent infection. Severity may fluctuate.",
+        "name": "Pan-polyol intolerance",
+        "description": "Reactivity to multiple or all polyols, including sorbitol, mannitol, xylitol, and maltitol",
         "distinguishing_features": [
-          "Symptoms worse during or after illness, or during high-stress periods",
-          "May improve with treatment of underlying inflammation or dysbiosis",
-          "Often coexists with IBS or other functional disorders"
+          "Broader range of trigger foods including mushrooms, cauliflower, and a wide array of sugar-free products",
+          "Typically more severe or persistent symptoms",
+          "More likely to co-occur with other FODMAP intolerances",
+          "May require stricter, longer-term dietary management"
         ]
       },
       {
-        "name": "Polyol intolerance as part of FODMAP sensitivity",
-        "description": "Difficulty absorbing polyols as one component of broader low-FODMAP intolerance, which also includes problems with excess fructose, lactose, or fructans.",
+        "name": "FODMAP-combined intolerance with polyol sensitivity",
+        "description": "Polyol intolerance occurring alongside fructose malabsorption, lactase deficiency, or fructan sensitivity",
         "distinguishing_features": [
-          "Triggered by multiple FODMAP foods, not just polyols",
-          "May improve significantly with low-FODMAP diet",
-          "Often diagnosed in IBS population"
+          "Symptoms triggered by a wide variety of foods, making the specific driver hard to identify without structured testing",
+          "Cumulative load effects are prominent \u2014 small amounts of multiple FODMAPs together cause reactions",
+          "Usually requires full low-FODMAP protocol and staged reintroduction to identify all drivers",
+          "Benefits most from working with a FODMAP-trained registered dietitian"
+        ]
+      },
+      {
+        "name": "IBS-associated polyol intolerance",
+        "description": "Polyol sensitivity in the context of diagnosed IBS, where gut hypersensitivity amplifies symptoms at lower thresholds",
+        "distinguishing_features": [
+          "Reacts to lower doses than would cause symptoms in healthy individuals",
+          "Visceral hypersensitivity means even well-absorbed quantities may cause discomfort",
+          "Stress and hormonal fluctuations modulate symptom severity",
+          "Dietary management alone may not fully resolve symptoms \u2014 gut motility and central sensitisation may also need addressing"
+        ]
+      },
+      {
+        "name": "SIBO-driven secondary polyol intolerance",
+        "description": "Polyol intolerance that has worsened or developed following small intestinal bacterial overgrowth",
+        "distinguishing_features": [
+          "History of onset or deterioration after a gut infection, antibiotic course, or period of altered motility",
+          "Fermentative symptoms are particularly pronounced and may occur rapidly after ingestion",
+          "Dietary restriction provides partial but not complete relief until SIBO is treated",
+          "Hydrogen breath testing may reveal elevated baseline or early-peak hydrogen"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Bloating and abdominal distension",
+        "symptom": "Abdominal bloating and visible distension",
         "category": "digestive",
-        "notes": "Often appears within 30 minutes to 2 hours of eating polyol-containing foods; may worsen through the day."
+        "notes": "Often appears within 30\u201390 minutes of ingesting polyols; can be severe relative to the quantity eaten, which is a characteristic feature"
       },
       {
-        "symptom": "Abdominal cramping or pain",
+        "symptom": "Excessive flatulence",
         "category": "digestive",
-        "notes": "Can range from mild to severe; often relieved by defecation or passing gas."
+        "notes": "Result of bacterial fermentation of unabsorbed polyols in the colon; hydrogen and carbon dioxide gas production"
       },
       {
-        "symptom": "Excessive gas or flatulence",
+        "symptom": "Abdominal cramping and pain",
         "category": "digestive",
-        "notes": "Results from bacterial fermentation of unabsorbed polyols in the colon."
+        "notes": "Cramping is often colicky and may be relieved temporarily by passing gas or having a bowel movement"
       },
       {
-        "symptom": "Diarrhoea or loose stools",
+        "symptom": "Loose stools or diarrhea",
         "category": "digestive",
-        "notes": "Due to osmotic effect of polyols drawing water into the bowel; may be the primary symptom for some people."
+        "notes": "Osmotic effect of unabsorbed polyols draws water into the bowel; the laxative effect of sorbitol is dose-dependent and is the same mechanism used in medicinal prune juice"
       },
       {
-        "symptom": "Constipation",
+        "symptom": "Urgency to defecate",
         "category": "digestive",
-        "notes": "Less common but can occur in some individuals, particularly if polyol intake is low and other factors are involved."
+        "notes": "Can appear within 1\u20133 hours of ingestion; sometimes unexpected, which causes significant anxiety around eating out or travel"
       },
       {
         "symptom": "Nausea",
         "category": "digestive",
-        "notes": "May accompany severe bloating or cramping; usually mild."
+        "notes": "Less common than gas and bloating; more likely at higher polyol doses or in individuals with concurrent gut dysmotility"
       },
       {
-        "symptom": "Fatigue or brain fog",
-        "category": "general",
-        "notes": "May result from dysbiosis, malabsorption, or reaction to fermentation byproducts; more common during flares."
+        "symptom": "Borborygmi (loud gut rumbling)",
+        "category": "digestive",
+        "notes": "Audible intestinal gurgling associated with increased fluid and gas movement through the colon"
+      },
+      {
+        "symptom": "Fatigue after a symptomatic episode",
+        "category": "systemic",
+        "notes": "Post-reaction fatigue is reported by many people with functional gut conditions; may relate to systemic inflammatory signalling from gut fermentation or disrupted sleep"
+      },
+      {
+        "symptom": "Brain fog coinciding with gut flares",
+        "category": "neurological",
+        "notes": "Some individuals report cognitive sluggishness during or after significant gut symptoms; the mechanism is not fully established but gut-brain axis involvement is plausible"
+      },
+      {
+        "symptom": "Increased anxiety or mood dip during flares",
+        "category": "psychological",
+        "notes": "The gut-brain bidirectional relationship means severe GI symptoms can acutely worsen mood and anxiety, particularly in people with pre-existing sensitivity"
       }
     ],
     "testing": {
       "key_patterns": [
-        "Symptoms appear 30 minutes to 2 hours after eating sugar-free products, artificial sweeteners, or certain fruits (especially stone fruits and pears).",
-        "Bloating and gas are relieved by bowel movements or passing flatus.",
-        "Symptoms improve within days of avoiding sorbitol and polyols.",
-        "Symptoms worsen on days with multiple sugar-free or low-calorie products; improve on regular foods.",
-        "Diarrhoea is most common after meals containing polyols; constipation is less typical.",
-        "No symptoms with naturally sweet foods like honey, ripe bananas, or regular sugar (unless other intolerances exist)."
+        "Symptoms reliably appear within 30 minutes to 4 hours after eating stone fruits, apples, pears, or products containing sugar alcohols",
+        "Symptoms are dose-dependent \u2014 small amounts are tolerated but larger amounts or multiple polyol sources together cause reactions",
+        "Sugar-free gum, mints, or 'diet' confectionery containing sorbitol, xylitol, or maltitol triggers bloating and loose stools",
+        "Symptoms improve significantly when polyol-containing foods are eliminated for 2\u20134 weeks",
+        "Reactions are reproducible \u2014 eating the same trigger food consistently produces similar symptoms",
+        "Symptoms are worse when multiple FODMAP-containing foods are eaten together (cumulative load effect)"
       ],
       "at_home": [
         {
-          "name": "Elimination and rechallenge diet",
-          "description": "Remove all known polyol sources for 3\u20135 days and observe symptoms. Then reintroduce one polyol-containing food at a time in small amounts, waiting 2 hours and noting any response. Repeat with different foods on separate days to identify which polyols trigger symptoms.",
-          "safety_notes": "Safe to do at home. If symptoms are severe, spread challenges over a longer period. If you have multiple food intolerances, elimination of only polyols may not fully clarify the picture; consider working with a dietitian."
+          "name": "Structured food and symptom diary",
+          "description": "Recording everything eaten, including ingredient lists of packaged foods, alongside a symptom log (timing, type, severity rated 0\u201310) for at least 2\u20133 weeks. Looking for consistent patterns between polyol-containing foods and symptom onset within 4 hours. Pay particular attention to stone fruits, apples, pears, dried fruit, mushrooms, cauliflower, and any product labelled 'sugar-free', 'diet', or 'no added sugar' \u2014 these often contain polyols.",
+          "safety_notes": "No significant safety risks. If symptoms are severe, bloody, or involve unexplained weight loss, clinical investigation should take priority over dietary self-testing."
         },
         {
-          "name": "Food and symptom diary",
-          "description": "Record all foods, drinks, and timing, along with symptom onset, type, and severity. Review after 1\u20132 weeks to identify patterns. Include context like stress, sleep, and menstrual cycle if relevant.",
-          "safety_notes": "Non-invasive and informative. Can be time-consuming but is often more revealing than clinical tests."
+          "name": "Polyol elimination trial",
+          "description": "Eliminating all high-polyol foods and polyol-sweetened products for 2\u20134 weeks, then reintroducing them one at a time. Common elimination targets: apricots, cherries, nectarines, peaches, plums, prunes, apples, pears, avocado (moderate), mushrooms, cauliflower, snow peas, watermelon, and all products listing sorbitol (E420), mannitol (E421), xylitol (E967), maltitol (E965), or isomalt (E953) in the ingredients. Relief of symptoms during elimination followed by return of symptoms on reintroduction is strong evidence for polyol intolerance.",
+          "safety_notes": "Eliminate only high-polyol foods \u2014 do not adopt a fully restrictive diet without guidance, as this can cause nutritional gaps and disordered eating patterns. If no improvement after 4 weeks, broader FODMAP testing or clinical investigation may be needed. Not suitable as a long-term diet without professional input."
+        },
+        {
+          "name": "Specific polyol challenge test (self-directed)",
+          "description": "After a baseline period of avoidance, testing individual polyols by consuming a standardised dose on an otherwise low-symptom day. Example: eat 5 dried apricots (high sorbitol) mid-morning after a low-FODMAP breakfast, then monitor symptoms for 6 hours. Repeat with mannitol sources (e.g. 75g mushrooms) on a different day. This helps identify which specific polyols are problematic and at what threshold.",
+          "safety_notes": "Challenges should be done on a day when being symptomatic is manageable. Avoid testing multiple potential triggers simultaneously. If symptoms are severe or prolonged, stop the challenge and return to baseline eating. This approach mirrors clinical FODMAP challenge protocols but without the structured professional support \u2014 working with a FODMAP-trained dietitian provides better precision."
         }
       ],
       "clinical": [
         {
-          "name": "Hydrogen and methane breath test (after sorbitol challenge)",
+          "name": "Hydrogen and methane breath test (sorbitol)",
           "type": "standard",
-          "description": "Patient fasts overnight and then consumes a measured dose of sorbitol (typically 10\u201325 g). Breath samples are collected at baseline and at 30-minute intervals over 2\u20133 hours. High levels of hydrogen or methane indicate sorbitol malabsorption. A positive test strongly supports the diagnosis.",
-          "availability": "Offered by gastroenterologists and digestive health clinics. Less commonly available than lactose or fructose breath tests but increasingly used for FODMAP assessment."
+          "description": "The patient ingests a standard dose of sorbitol (typically 5g or 10g in water) after fasting. Breath samples are collected at regular intervals over 3\u20134 hours and analysed for hydrogen and methane \u2014 gases produced exclusively by bacterial fermentation, not by human cells. A rise in hydrogen of \u226520ppm above baseline indicates colonic fermentation of malabsorbed sorbitol. Methane measurement adds sensitivity for slow-transit presentations.",
+          "availability": "Available at specialist gastroenterology centres and some private functional medicine clinics. Not universally offered in routine GI workup \u2014 patients may need to specifically request it or seek a practitioner who regularly investigates FODMAP-related disorders. At-home breath test kits (e.g. FoodMarble) can measure hydrogen and methane and may provide supporting data, though clinical-grade interpretation requires professional review."
         },
         {
-          "name": "Hydrogen and methane breath test (after mannitol or xylitol)",
+          "name": "Low-FODMAP elimination and reintroduction protocol (dietitian-supervised)",
+          "type": "gold_standard",
+          "description": "A structured 2\u20136 week elimination of all high-FODMAP foods followed by a systematic reintroduction phase that tests each FODMAP subgroup \u2014 including polyols \u2014 individually and at different doses. The reintroduction phase is what identifies polyol sensitivity specifically and establishes personal thresholds. This is considered the gold standard for identifying dietary triggers in IBS and functional gut disorders.",
+          "availability": "Requires a registered dietitian trained in the Monash University FODMAP protocol. Increasingly available through NHS dietetic referral, private dietetic practice, and telehealth. The Monash FODMAP app supports the protocol but does not replace professional guidance for complex cases."
+        },
+        {
+          "name": "Small intestinal carbohydrate absorption assessment",
+          "type": "emerging",
+          "description": "Some specialist centres offer comprehensive carbohydrate malabsorption panels using breath testing for multiple substrates (lactose, fructose, sorbitol, lactulose for SIBO) in a single assessment session. This can efficiently identify co-existing intolerances and distinguish carbohydrate-specific malabsorption from broader gut dysbiosis.",
+          "availability": "Available at specialist gastroenterology and functional GI clinics; not standard in routine care. May require self-referral or referral from a GP or gastroenterologist willing to investigate FODMAP-specific drivers."
+        },
+        {
+          "name": "SIBO breath test (lactulose or glucose)",
           "type": "standard",
-          "description": "Similar to sorbitol breath test but using mannitol or xylitol as the challenge agent. Different polyols may be absorbed differently by individual patients, so testing with multiple polyols may be informative.",
-          "availability": "Less commonly ordered than sorbitol testing but available at specialized gastroenterology or functional medicine clinics."
-        },
-        {
-          "name": "Stool test for markers of dysbiosis",
-          "type": "emerging",
-          "description": "Measures bacterial composition, diversity, and fermentation byproducts (short-chain fatty acids, phenols). May reveal dysbiosis that worsens polyol intolerance, though not diagnostic for polyol malabsorption itself.",
-          "availability": "Offered by functional medicine practitioners and some gastroenterologists. Not routine NHS practice; often requires private testing."
-        },
-        {
-          "name": "Genetic testing for GLUT5 transporter variants",
-          "type": "emerging",
-          "description": "Tests for genetic variations in the sorbitol transporter gene (SLC5A1). May identify individuals with genetic predisposition to polyol malabsorption, but clinical utility is still being established.",
-          "availability": "Research-level or offered through specialized functional medicine clinics. Not widely available or routinely recommended for clinical diagnosis."
+          "description": "Tests for bacterial overgrowth in the small intestine, which can amplify polyol fermentation symptoms by increasing the bacterial load available to ferment incompletely absorbed carbohydrates. Elevated early-peak hydrogen or methane following a lactulose or glucose load suggests SIBO.",
+          "availability": "Available at gastroenterology departments and functional medicine clinics. Useful when symptoms are disproportionately severe, when there is a history of food poisoning, prior gut surgery, or when dietary management alone provides insufficient relief."
         }
       ]
     },
     "related_conditions": [
       {
+        "id": "fructose",
         "name": "Fructose malabsorption",
-        "relationship": "often_confused",
-        "explanation": "Both are carbohydrate malabsorption disorders with similar symptoms. Fructose intolerance is often tested alongside polyol sensitivity. Some people have both conditions and must avoid both high-fructose and high-polyol foods."
-      },
-      {
-        "name": "Lactose intolerance",
-        "relationship": "often_confused",
-        "explanation": "Another form of sugar malabsorption causing similar bloating, gas, and diarrhoea. People with one carbohydrate intolerance often have others. Distinguishing between them requires targeted dietary trials or breath testing."
-      },
-      {
-        "name": "Irritable bowel syndrome (IBS)",
         "relationship": "comorbid",
-        "explanation": "Polyol intolerance is common in people with IBS and may account for some of their symptoms. FODMAP restriction (which includes polyol avoidance) is an evidence-based treatment for IBS."
+        "explanation": "Fructose and sorbitol share overlapping food sources (apples, pears, stone fruits) and are often malabsorbed together. Sorbitol also appears to inhibit fructose absorption in the small intestine, meaning combined intake worsens symptoms more than either alone. Both are FODMAP subgroups and frequently co-exist."
       },
       {
-        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "id": "ibs",
+        "name": "IBS (Irritable bowel syndrome)",
+        "relationship": "often_confused",
+        "explanation": "Polyol intolerance is one of the most common identifiable dietary drivers of IBS-type symptoms. Many people diagnosed with IBS-D or IBS-M have unrecognised polyol intolerance. The IBS label describes a symptom cluster; polyol intolerance can be a specific, manageable cause within it."
+      },
+      {
+        "id": "lactase",
+        "name": "Lactase deficiency",
+        "relationship": "comorbid",
+        "explanation": "Lactase deficiency and polyol intolerance commonly co-occur, both as part of broader FODMAP sensitivity. Having one carbohydrate intolerance does not cause the other, but the cumulative FODMAP load from both is a significant driver of symptoms in many people."
+      },
+      {
+        "id": "sibo",
+        "name": "SIBO (Small intestinal bacterial overgrowth)",
+        "relationship": "upstream",
+        "explanation": "SIBO can worsen polyol intolerance by increasing the bacterial mass available to ferment incompletely absorbed polyols before they even reach the colon, producing earlier and more severe fermentative symptoms. SIBO treatment can reduce polyol sensitivity in some individuals."
+      },
+      {
+        "id": "sibo_h2",
+        "name": "Hydrogen SIBO",
         "relationship": "mechanistic_link",
-        "explanation": "Dysbiosis and bacterial overgrowth increase fermentation of unabsorbed polyols, worsening bloating and gas. Treating SIBO may reduce polyol intolerance symptoms."
+        "explanation": "Hydrogen-producing bacterial overgrowth amplifies the fermentative response to unabsorbed polyols. People with hydrogen SIBO often have exaggerated bloating and diarrhea after polyol ingestion compared to those without SIBO."
       },
       {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "mechanistic_link",
+        "explanation": "An altered colonic microbiome composition can increase the proportion of highly fermentative bacteria, lowering the threshold at which polyols cause symptoms. Dysbiosis may explain why some people are more sensitive to polyols than others with similar absorptive capacity."
+      },
+      {
+        "id": "sid",
+        "name": "Sucrase-isomaltase deficiency",
+        "relationship": "often_confused",
+        "explanation": "SID causes intolerance to sucrose and some starches and can present with very similar symptoms to polyol intolerance \u2014 particularly bloating, diarrhea, and gas. Both conditions may be missed under an IBS umbrella diagnosis, and they can co-exist."
+      },
+      {
+        "id": "functional_dyspepsia",
         "name": "Functional dyspepsia",
         "relationship": "comorbid",
-        "explanation": "Polyol intolerance may coexist with upper digestive dysfunction, causing early fullness, nausea, and discomfort alongside lower GI symptoms."
+        "explanation": "Upper GI symptoms including nausea and early satiety can accompany polyol intolerance in people with broad gut sensitivity, and the two conditions overlap significantly in the IBS-spectrum population."
       },
       {
-        "name": "Dysbiosis or microbial imbalance",
-        "relationship": "downstream",
-        "explanation": "Polyol fermentation can favour certain bacteria over others, potentially driving dysbiosis. Conversely, dysbiosis worsens the intolerance by increasing gas-producing bacteria."
-      },
-      {
-        "name": "Intestinal permeability (leaky gut)",
+        "id": "central_sensitisation",
+        "name": "Central sensitisation / visceral hypersensitivity",
         "relationship": "mechanistic_link",
-        "explanation": "Fermentation byproducts and dysbiosis may increase intestinal permeability, potentially worsening symptoms and cross-talk with other food intolerances."
+        "explanation": "People with visceral hypersensitivity experience gut pain and discomfort at lower levels of distension or fermentation than others. This lowers the effective threshold for polyol intolerance symptoms and explains why some individuals react even to modest polyol amounts that would not trouble most people."
+      },
+      {
+        "id": "gastroparesis",
+        "name": "Gastroparesis",
+        "relationship": "comorbid",
+        "explanation": "Delayed gastric emptying can alter the rate at which polyols arrive in the small intestine, potentially affecting absorption kinetics. Gastroparesis and polyol intolerance can co-exist, particularly in people with diabetic or post-viral gut dysmotility."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "comorbid",
+        "explanation": "Anxiety is bidirectionally linked with functional gut disorders. Gut-brain axis signalling means that anxiety can worsen gut motility and sensitivity, lowering the polyol tolerance threshold, while chronic gut symptoms can sustain or worsen anxiety \u2014 a reinforcing cycle."
+      },
+      {
+        "id": "coeliac",
+        "name": "Coeliac disease",
+        "relationship": "upstream",
+        "explanation": "Active coeliac disease damages intestinal epithelial cells, which can impair carbohydrate absorption including polyols. Even after going gluten-free, some people with coeliac disease retain FODMAP sensitivity, including polyol intolerance, due to residual mucosal damage or altered microbiome."
+      },
+      {
+        "id": "ibd_remission",
+        "name": "IBD in remission",
+        "relationship": "comorbid",
+        "explanation": "People with Crohn's disease or ulcerative colitis in remission frequently continue to experience functional gut symptoms. Polyol intolerance is one identifiable dietary driver of ongoing symptoms in IBD remission that is distinct from disease activity."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
-          "name": "Strict polyol avoidance",
+          "name": "Targeted polyol reduction (not total elimination)",
           "category": "diet",
-          "description": "Remove sorbitol, xylitol, maltitol, mannitol, and isomalt from the diet. This means avoiding sugar-free sweets, diet drinks, artificial sweeteners, certain fruits (pears, stone fruits, watermelon), mushrooms, cauliflower, and some vegetables. Read food labels carefully. Most people see significant symptom improvement within 3\u20137 days.",
+          "description": "Identifying and reducing the highest-polyol foods to a tolerated threshold rather than eliminating all sources indefinitely. Many people can tolerate small quantities of polyols without symptoms \u2014 the goal is to find a sustainable personal threshold rather than achieve zero exposure. This preserves dietary variety and reduces the risk of nutritional restriction.",
           "evidence_level": "strong",
-          "notes": "This is the primary and most effective treatment. However, complete avoidance can be socially limiting. Some people tolerate small amounts if spread throughout the day. Once symptoms resolve, cautious reintroduction can help identify individual tolerance thresholds."
+          "notes": "Works best when supported by a FODMAP-trained registered dietitian who can guide precise reintroduction and threshold identification. Blanket avoidance without reintroduction is a common error that leads to unnecessarily restricted diets."
         },
         {
-          "name": "Low-FODMAP diet",
+          "name": "Low-FODMAP diet (structured protocol)",
           "category": "diet",
-          "description": "A structured, evidence-based diet that limits fermentable carbohydrates, including polyols, excess fructose, lactose, and fructans. Usually overseen by a registered dietitian. Typically done in three phases: strict elimination (2\u20136 weeks), systematic reintroduction (8\u201312 weeks), and personalised maintenance.",
+          "description": "Following the Monash University low-FODMAP protocol \u2014 a time-limited elimination phase (2\u20136 weeks) followed by systematic reintroduction of each FODMAP subgroup. The reintroduction phase specifically tests sorbitol and mannitol as separate challenges, revealing individual sensitivity and dose thresholds. The protocol is not intended as a permanent diet.",
           "evidence_level": "strong",
-          "notes": "Most effective for IBS-related polyol intolerance. Requires professional guidance to ensure nutritional adequacy and to identify which foods are genuinely problematic. Not necessary for everyone with polyol intolerance alone."
+          "notes": "Evidence supports low-FODMAP diet for symptom reduction in IBS; specific polyol intolerance subgroup data is extrapolated from FODMAP trial data. Long-term strict adherence without reintroduction can negatively affect gut microbiome diversity and is not recommended."
         },
         {
-          "name": "Gradual reintroduction and threshold mapping",
+          "name": "Label reading for hidden polyols",
           "category": "diet",
-          "description": "After symptoms resolve (after 2\u20134 weeks of avoidance), slowly reintroduce polyol-containing foods in small amounts to identify individual tolerance levels. Some people can tolerate small portions of polyols if they avoid other triggers. Record amounts and symptoms to create a personal 'tolerance map'.",
+          "description": "Learning to identify polyol additives in packaged foods: sorbitol (E420), mannitol (E421), xylitol (E967), maltitol (E965), maltitol syrup (E965), isomalt (E953), lactitol (E966), erythritol (E968). These appear in sugar-free sweets, chewing gum, protein bars, some medications (particularly liquid medicines and lozenges), breath mints, toothpaste (xylitol), and low-calorie beverages.",
+          "evidence_level": "strong",
+          "notes": "This is often a significant and overlooked source of exposure. 'Diabetic' or 'keto-friendly' products are particularly likely to be high in polyols. Even small cumulative amounts from several sources throughout the day can exceed personal thresholds."
+        },
+        {
+          "name": "Cumulative load management",
+          "category": "diet",
+          "description": "Spreading polyol-containing foods across the day rather than consuming multiple sources at once, and avoiding stacking polyols with other FODMAPs. A single portion of apple may be tolerated; apple plus dried apricots plus a sugar-free snack in the same meal is likely to exceed the threshold. Thinking in terms of daily FODMAP load rather than single-food avoidance.",
           "evidence_level": "moderate",
-          "notes": "Helps distinguish between complete intolerance and dose-dependent sensitivity. Not all polyols are equally problematic for each person."
+          "notes": "This approach requires some familiarity with FODMAP content of foods. The Monash FODMAP app is useful for portion-level guidance."
         },
         {
-          "name": "Spacing meals and eating slowly",
-          "category": "lifestyle",
-          "description": "Eat smaller, more frequent meals and chew food thoroughly. This slows gastric emptying and reduces the bolus of unabsorbed carbohydrates entering the colon at once, potentially reducing bloating and pain.",
-          "evidence_level": "anecdotal",
-          "notes": "Simple and can provide mild symptom relief, especially for bloating. Does not eliminate the problem if polyol intake is high."
-        },
-        {
-          "name": "Adequate hydration",
-          "category": "lifestyle",
-          "description": "Drink sufficient water throughout the day. Dehydration can worsen constipation and concentrate fermentation byproducts, increasing bloating.",
-          "evidence_level": "anecdotal",
-          "notes": "General health measure; does not directly address polyol malabsorption but supports digestive function."
-        },
-        {
-          "name": "Regular physical activity",
-          "category": "lifestyle",
-          "description": "Gentle to moderate exercise (walking, yoga, swimming) can promote gut motility and reduce bloating. Vigorous exercise during a flare may worsen symptoms.",
+          "name": "Gut microbiome support",
+          "category": "supplement",
+          "description": "Some research suggests that a diverse, resilient gut microbiome may modulate fermentative responses to incompletely absorbed carbohydrates. Dietary diversity (within tolerance), adequate fibre from low-FODMAP sources, and targeted probiotic use may help over time. Specific probiotic strains (e.g. Lactobacillus rhamnosus GG, Bifidobacterium species) have some evidence in IBS populations.",
           "evidence_level": "moderate",
-          "notes": "Helps with overall IBS management and gas clearance. Benefits vary by individual."
+          "notes": "Probiotic evidence in FODMAP-specific intolerance is not yet definitive. Some people find that fermented foods worsen symptoms initially, particularly if SIBO is present. Professional guidance is useful for targeted probiotic selection."
         },
         {
-          "name": "Stress reduction and sleep",
-          "category": "lifestyle",
-          "description": "Stress and poor sleep worsen gut permeability, dysbiosis, and intolerance symptoms. Practise relaxation, meditation, or mindfulness; prioritise 7\u20139 hours of sleep.",
-          "evidence_level": "moderate",
-          "notes": "Addresses a key modifiable driver of secondary polyol intolerance. Can significantly reduce symptoms when combined with dietary avoidance."
-        },
-        {
-          "name": "Peppermint oil (enteric-coated capsules)",
-          "category": "supplement",
-          "description": "Peppermint oil relaxes intestinal smooth muscle and may reduce bloating, cramping, and pain. Enteric-coated capsules are designed to release in the small intestine.",
-          "evidence_level": "moderate",
-          "notes": "Evidence is stronger for IBS than specifically for polyol intolerance, but often helpful as symptomatic relief. Take 30\u201360 minutes before meals. Avoid if you have acid reflux."
-        },
-        {
-          "name": "Digestive enzymes (non-systemic)",
-          "category": "supplement",
-          "description": "Some formulations claim to aid the digestion of sugar alcohols, though evidence is limited. Protease and amylase may help with overall carbohydrate digestion.",
-          "evidence_level": "anecdotal",
-          "notes": "No specific enzyme breaks down sorbitol or xylitol. May offer placebo benefit or mild general support; avoidance remains the primary approach."
-        },
-        {
-          "name": "Probiotics and prebiotics (selected)",
-          "category": "supplement",
-          "description": "Some people report symptom improvement with specific probiotic strains (e.g., Bifidobacterium or Lactobacillus) that ferment carbohydrates less vigorously. Prebiotics may worsen symptoms during active intolerance.",
-          "evidence_level": "anecdotal",
-          "notes": "Evidence is mixed. Probiotics may help secondary intolerance but are unlikely to resolve primary intolerance. Avoid inulin and FOS-based prebiotics if polyol-sensitive. Work with a practitioner to select appropriate strains."
-        },
-        {
-          "name": "Pancreatic digestive enzyme supplementation (if needed)",
-          "category": "supplement",
-          "description": "For people with concurrent pancreatic insufficiency or severe dysbiosis, pancreatic enzyme supplements may improve overall digestion and reduce fermentation load.",
-          "evidence_level": "anecdotal",
-          "notes": "Only relevant if pancreatic insufficiency is confirmed. Not standard for isolated polyol intolerance."
-        },
-        {
-          "name": "Antispasmodic medications (short-term)",
+          "name": "SIBO treatment (if confirmed)",
           "category": "medication",
-          "description": "Prescription medications like dicycloverine or hyoscyamine relax intestinal muscle and can provide short-term relief of cramping and pain during flares.",
+          "description": "If SIBO is identified as a co-driver, treating bacterial overgrowth with rifaximin (or other antimicrobials / herbal antimicrobial protocols) can reduce the fermentative bacterial load in the small intestine, decreasing the severity of polyol-triggered symptoms. This may raise the effective tolerance threshold for polyols.",
           "evidence_level": "moderate",
-          "notes": "Used as needed for symptomatic relief, not for long-term management. Dietary avoidance is the primary approach. Overuse can contribute to constipation."
+          "notes": "Requires clinical confirmation of SIBO via breath testing and management by a gastroenterologist or functional medicine practitioner. SIBO frequently recurs without addressing the underlying motility or anatomical driver."
         },
         {
-          "name": "Loperamide or bismuth subsalicylate (short-term)",
-          "category": "medication",
-          "description": "Over-the-counter anti-motility or anti-diarrhoeal agents can provide temporary relief of diarrhoea. Bismuth subsalicylate may also reduce gas and pain.",
+          "name": "Peppermint oil (enteric-coated)",
+          "category": "supplement",
+          "description": "Enteric-coated peppermint oil capsules have antispasmodic effects on intestinal smooth muscle and can reduce cramping and bloating associated with fermentative gut conditions including FODMAP intolerance. May provide symptomatic relief during flares.",
           "evidence_level": "moderate",
-          "notes": "Use only occasionally during flares, not as routine management. Avoid if symptoms are severe or if there is bloody stool. Can mask underlying problem if overused."
+          "notes": "Not a treatment for the underlying malabsorption. Can worsen GERD symptoms in some individuals. Enteric-coated formulations are preferred to avoid upper GI side effects."
+        },
+        {
+          "name": "Gut-directed hypnotherapy or cognitive behavioural therapy",
+          "category": "lifestyle",
+          "description": "For people with co-existing visceral hypersensitivity or IBS, gut-directed hypnotherapy and CBT have strong evidence for reducing symptom severity and improving quality of life. These approaches lower gut reactivity and break the anxiety-symptom cycle, which can effectively raise the functional tolerance threshold for dietary triggers including polyols.",
+          "evidence_level": "strong",
+          "notes": "Particularly relevant when dietary management alone provides incomplete relief. Not a substitute for dietary management but a complementary approach with durable effects in motivated individuals."
         }
       ],
       "things_to_avoid": [
-        "Sugar-free gum, mints, and sweets\u2014virtually all contain sorbitol or xylitol.",
-        "Diet or 'zero sugar' soft drinks and energy drinks\u2014almost all contain artificial sweeteners including polyols.",
-        "High-dose polyol-containing fruits (pears, apples with skin, peaches, plums, avocados, watermelon) unless tolerance is confirmed.",
-        "Mushrooms and cauliflower in large quantities\u2014both contain significant polyols.",
-        "Processed low-calorie foods marketed as 'guilt-free' or 'sugar-free'\u2014common sources of hidden polyols.",
-        "Sugar substitutes like sorbitol, xylitol, and maltitol in cooking, baking, or beverages.",
-        "Eating large meals quickly\u2014increases the bolus of unabsorbed carbohydrates entering the colon.",
-        "High-fibre intake without adequate hydration\u2014can worsen bloating and gas when combined with polyol fermentation.",
-        "Stress and sleep deprivation\u2014both worsen gut barrier function and intolerance symptoms.",
-        "Antibiotics (if possible)\u2014can kill beneficial bacteria and worsen dysbiosis, increasing fermentation and symptoms."
+        "Sugar-free chewing gum \u2014 often very high in xylitol or sorbitol; even 2\u20133 pieces can exceed individual thresholds",
+        "Medicinal syrups, liquid antibiotics, and dissolvable or chewable medications \u2014 frequently contain sorbitol or mannitol as excipients; ask a pharmacist for polyol-free alternatives",
+        "Dried stone fruits (prunes, dried apricots, dried cherries) \u2014 extremely concentrated in sorbitol; a small handful contains many times more sorbitol than fresh fruit",
+        "'Diet', 'light', 'no added sugar', 'diabetic', or 'keto-friendly' processed foods without reading the label \u2014 these categories routinely use polyol sweeteners",
+        "Consuming multiple polyol sources in the same meal or within a few hours \u2014 cumulative load drives symptoms more than any single food",
+        "Long-term strict polyol elimination without reintroduction testing \u2014 unnecessary restriction, nutritional narrowing, and increased food anxiety without identifying actual thresholds",
+        "Assuming all fruit is safe because it is 'natural' \u2014 many commonly eaten fruits are high in sorbitol or mannitol at normal serving sizes",
+        "Ignoring polyol content in protein bars and sports nutrition products \u2014 many use maltitol or xylitol as sugar replacements and are a common hidden trigger"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "Many foods widely promoted as healthy \u2014 stone fruits, apples, pears, dried fruit \u2014 are significant triggers, and there is no 'healthy eating' workaround that sidesteps this for people with genuine polyol intolerance.",
+        "why_resisted": "People are told from childhood that fruit is healthy and beneficial without qualification. Accepting that specific fruits reliably cause symptoms feels counterintuitive and can provoke guilt or denial, particularly for people who have built their diet around these foods.",
+        "path_forward": "Once personal thresholds are established through proper reintroduction testing, many people find they can eat small amounts of high-polyol fruits without symptoms \u2014 and they shift to lower-polyol alternatives (strawberries, grapes, oranges, kiwi, banana) for daily intake. Nutritional adequacy is maintained with a different selection of foods, not by pushing through symptoms."
+      },
+      {
+        "truth": "Sugar-free and diet products \u2014 marketed as healthier choices \u2014 are often the hidden cause of the worst symptom days, and the product packaging will almost never warn susceptible consumers.",
+        "why_resisted": "People use these products precisely because they believe they are making a virtuous health choice. The cognitive dissonance of a 'health food' being the cause of significant symptoms is genuinely difficult. The packaging does not help: EU/US labelling requirements include the additive code but rarely a direct warning for people with IBS or FODMAP sensitivity.",
+        "path_forward": "People who systematically audit their sugar-free product use \u2014 including gum, mints, protein supplements, and medications \u2014 and eliminate or swap those sources consistently report significant symptom reduction within days to a week, often more rapidly than from eliminating natural food sources."
+      },
+      {
+        "truth": "Most gastroenterologists and GPs will not identify polyol intolerance specifically \u2014 the diagnosis requires dietary detective work that the current healthcare system rarely provides time or resources for.",
+        "why_resisted": "People reasonably expect that seeing a specialist will result in a precise diagnosis and a clear management plan. Receiving an IBS label and a leaflet about stress management \u2014 without any investigation of specific dietary triggers \u2014 feels dismissive and leaves people without actionable guidance.",
+        "path_forward": "People who seek out a FODMAP-trained registered dietitian (rather than waiting for a gastroenterologist to address dietary specifics) consistently reach faster, more precise answers about their triggers and more practical management plans. The dietitian, not the gastroenterologist, is the primary clinical resource for this condition."
+      },
+      {
+        "truth": "Symptom improvement on a low-FODMAP diet is not the end of the process \u2014 without a structured reintroduction phase, people remain on an unnecessarily restricted diet indefinitely and never establish their actual personal thresholds.",
+        "why_resisted": "Once symptoms improve, the motivation to reintroduce trigger foods is low \u2014 reintroduction requires deliberately making oneself symptomatic, which is psychologically aversive. There is also a fear that things will go back to being bad. Many people stay in the elimination phase far longer than intended.",
+        "path_forward": "Completing the reintroduction phase, ideally with a dietitian, reveals that most people tolerate moderate amounts of even their worst triggers. The result is a personalised, varied, long-term diet rather than permanent restriction \u2014 with predictable symptom control rather than constant vigilance."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Consistent polyol avoidance and label reading",
-          "why_it_matters": "This is the only way to prevent symptoms at the source. Without dietary control, medications and supplements provide only temporary symptomatic relief. A single exposure can derail progress and take days to recover.",
-          "how_to_start": "Spend one afternoon reading the labels of your most-eaten packaged foods and swapping obvious culprits (diet drinks, sugar-free snacks, artificial sweeteners). Keep a reference list on your phone of 10\u201315 safe and unsafe foods.",
-          "timeline": "Symptom improvement within 3\u20137 days; full stabilisation within 2\u20134 weeks.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Working with a registered dietitian to personalise the diet",
-          "why_it_matters": "A one-size-fits-all avoidance diet can become restrictive and nutritionally inadequate. A dietitian helps identify which polyols matter most for you, what you can tolerate in small amounts, and ensures adequate fibre, micronutrients, and calories.",
-          "how_to_start": "Ask your GP for a referral to a registered dietitian (RD) or search for one specialising in IBS or FODMAP. Many now offer telehealth appointments.",
-          "timeline": "Usually 3\u20136 sessions over 2\u20133 months to map tolerance and develop a sustainable plan. Ongoing benefits as you learn to manage the condition.",
+          "lever": "Work with a FODMAP-trained registered dietitian to complete the full elimination and reintroduction protocol",
+          "why_it_matters": "Self-directed elimination without reintroduction leaves people unable to identify their specific triggers, dose thresholds, or which polyols (if any) they actually need to avoid long-term. Professional guidance produces more precise outcomes, better nutritional adequacy, and less diet-related anxiety.",
+          "how_to_start": "Search for a dietitian certified or trained in the Monash University FODMAP protocol. In the UK, FODMAP-trained RDs are available through NHS dietetic referral or private practice. In the US, Australia, and Canada, the Monash FODMAP website directory lists trained practitioners.",
+          "timeline": "Full protocol (elimination + reintroduction) typically takes 8\u201312 weeks. Many people notice significant symptom improvement within the first 2\u20133 weeks of elimination.",
           "requires_professional": true
         },
         {
-          "lever": "Stress management and sleep quality",
-          "why_it_matters": "Stress and poor sleep increase intestinal permeability, worsen dysbiosis, and amplify intolerance symptoms. These are modifiable and have broad health benefits.",
-          "how_to_start": "Choose one stress-reduction practice (e.g. daily 10-minute meditation, evening walks, or breathing exercises) and commit to it for 4 weeks. Simultaneously audit sleep: aim for 7\u20139 hours, no screens 1 hour before bed, consistent sleep/wake times.",
-          "timeline": "Subjective improvement in bloating and fatigue within 2\u20134 weeks; more pronounced benefits by 8 weeks.",
+          "lever": "Systematic elimination of hidden polyol sources from packaged foods and medications",
+          "why_it_matters": "For many people, the most significant and consistent source of polyol exposure is not natural food but polyol-sweetened products they consume daily \u2014 gum, sugar-free mints, protein bars, liquid medicines, and supplements. Eliminating these before tackling natural food sources often produces rapid and dramatic improvement.",
+          "how_to_start": "Audit every packaged food, supplement, and medicine for E420 (sorbitol), E421 (mannitol), E967 (xylitol), E965 (maltitol), E953 (isomalt), and E968 (erythritol). Remove all identified sources for two weeks and monitor symptoms. Ask a pharmacist to identify polyol-free alternatives for any medications that list these additives.",
+          "timeline": "Noticeable improvement often within 3\u20137 days of eliminating high-frequency daily sources such as gum or mints.",
           "requires_professional": false
         },
         {
-          "lever": "Identifying and treating dysbiosis or secondary gut issues",
-          "why_it_matters": "If dysbiosis, SIBO, or inflammation is present, polyol intolerance symptoms can be severe even with avoidance. Addressing the underlying dysbiosis can restore tolerance and improve overall health.",
-          "how_to_start": "Work with a gastroenterologist or functional medicine practitioner to evaluate for SIBO (breath test), dysbiosis (stool test), or inflammation (fecal calprotectin). If found, treat with targeted antimicrobials, probiotics, or other interventions.",
-          "timeline": "If dysbiosis or SIBO is present and treated, tolerance may improve significantly over 8\u201312 weeks. If no underlying issue, avoidance remains the sole lever.",
+          "lever": "Understand personal dose thresholds, not just trigger foods",
+          "why_it_matters": "Polyol intolerance is dose-dependent \u2014 the threshold at which symptoms occur varies by individual, by total daily load, and by what else has been eaten. People who understand their thresholds can make informed choices about when and how much to eat, rather than experiencing symptoms unpredictably or avoiding all trigger foods permanently.",
+          "how_to_start": "Keep a detailed symptom diary noting quantity of polyol-containing foods eaten. During reintroduction, test each polyol source at increasing doses (quarter-serve, half-serve, full serve) on separate days to establish the personal threshold.",
+          "timeline": "Threshold identification through structured reintroduction typically takes 4\u20136 weeks within a full FODMAP protocol.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Address SIBO if suspected or confirmed",
+          "why_it_matters": "SIBO can amplify fermentative responses to polyols and lower the effective tolerance threshold significantly. In some people, SIBO is the primary driver of symptom severity, and dietary management alone provides only partial relief until bacterial overgrowth is treated.",
+          "how_to_start": "Seek a hydrogen and methane breath test (lactulose or glucose substrate) from a gastroenterologist or functional medicine practitioner if dietary changes provide incomplete relief, if symptoms came on after a gut infection, or if there is a history of altered gut motility.",
+          "timeline": "SIBO treatment (if successful) typically produces symptom improvement within 2\u20134 weeks; dietary tolerance may improve measurably within 1\u20133 months post-treatment.",
           "requires_professional": true
         },
         {
-          "lever": "Gradual expansion of tolerance through planned reintroduction",
-          "why_it_matters": "Most people can eventually tolerate small amounts of polyols if symptoms are first controlled and the gut environment improves. This restores dietary flexibility and quality of life without triggering relapse.",
-          "how_to_start": "After 4+ weeks of strict avoidance and symptom resolution, reintroduce one low-polyol food (e.g. a small slice of apple) at lunch, note symptoms over 2 hours, and record the result. Try a new food every 2\u20133 days on separate occasions.",
-          "timeline": "Threshold mapping takes 4\u20138 weeks. Most people identify at least a few foods they can reincorporate in small amounts.",
-          "requires_professional": false
+          "lever": "Gut-directed psychological therapy for concurrent visceral hypersensitivity",
+          "why_it_matters": "When gut sensitivity is amplified by central sensitisation or anxiety, even tolerable levels of polyols can produce symptoms. Gut-directed hypnotherapy and CBT have strong evidence for reducing baseline gut reactivity, effectively raising the functional polyol tolerance threshold without any dietary change.",
+          "how_to_start": "Ask a GP or gastroenterologist for a referral to a gut-directed hypnotherapy or IBD/IBS-specialist psychological therapist. Online programmes (e.g. Nerva app for gut-directed hypnotherapy) are an accessible starting point for those without immediate access to in-person therapy.",
+          "timeline": "Gut-directed hypnotherapy trials typically show benefit after 6\u201312 sessions over 3 months.",
+          "requires_professional": true
         }
       ],
       "common_mistakes": [
-        "Assuming that because a food is 'natural' or 'healthy' it is safe\u2014pears, stone fruits, and mushrooms are nutritious but can trigger severe symptoms.",
-        "Relying on 'sugar-free' alternatives without reading labels\u2014many contain hidden polyols, perpetuating the problem.",
-        "Eliminating all fibre and fermentable foods at once\u2014can lead to constipation and nutritional deficiency. Removal should be targeted and monitored.",
-        "Not checking medication labels\u2014some liquid medications, especially for children, contain sorbitol as a sweetener.",
-        "Expecting antibiotics or probiotics to 'cure' the problem\u2014avoidance is the primary treatment. Supplements can support but do not replace dietary change.",
-        "Reintroducing too many foods at once\u2014makes it impossible to identify which foods are tolerated.",
-        "Feeling ashamed or hiding the condition\u2014this can lead to unplanned exposure and hamper social recovery. Being upfront helps friends and family support you.",
-        "Cycling between strict avoidance and indulgent relapses\u2014this perpetuates symptoms and dysbiosis. Gradual, planned reintroduction is far more effective.",
-        "Assuming that because symptoms improve on low-FODMAP diet, all high-FODMAP foods must be avoided forever\u2014most can be reintroduced in moderation after symptom control.",
-        "Neglecting stress and sleep in favour of diet alone\u2014these are equally important drivers of symptom severity."
+        "Staying on the elimination phase of the low-FODMAP diet indefinitely without completing reintroduction \u2014 this creates unnecessary restriction and never identifies actual thresholds",
+        "Eliminating natural high-polyol foods while continuing to consume polyol-sweetened sugar-free products daily \u2014 these are often the larger and more consistent source of symptoms",
+        "Testing multiple potential triggers simultaneously and being unable to attribute symptoms to a specific food",
+        "Treating all fruit as safe or all fruit as off-limits \u2014 polyol content varies enormously between fruits and the serving size matters",
+        "Expecting a single intervention (e.g. probiotics alone, or elimination alone) to resolve symptoms when multiple drivers are present",
+        "Seeking diagnosis and management only from gastroenterologists when a FODMAP-trained dietitian is the more appropriate and effective primary practitioner for this specific condition",
+        "Abandoning dietary investigation after one failed attempt rather than working with a practitioner to design a better protocol"
       ]
     },
     "finding_help": {
       "specialists": [
         {
-          "type": "Registered Dietitian (RD) or Registered Nutritionist",
-          "role": "Essential for personalising polyol avoidance, identifying tolerable threshold levels, and ensuring nutritional adequacy. Can provide one-to-one support for meal planning and label reading.",
-          "notes": "Ask for someone with expertise in IBS, FODMAP, or carbohydrate malabsorption. Dietitians are most useful once polyol intolerance is suspected or confirmed; they do not diagnose but help manage."
+          "type": "FODMAP-trained registered dietitian",
+          "role": "The most directly useful practitioner for polyol intolerance. Can guide the full Monash FODMAP elimination and reintroduction protocol, interpret results, identify co-existing FODMAP intolerances, ensure nutritional adequacy, and establish personalised long-term dietary management. Should be the first specialist most people with suspected polyol intolerance seek.",
+          "notes": "Look specifically for a dietitian with FODMAP training rather than a general RD. Monash University maintains a directory of trained practitioners. Private dietitian consultations are often more accessible than specialist gastroenterology referrals."
         },
         {
           "type": "Gastroenterologist",
-          "role": "Can order and interpret breath tests, rule out organic disease, and diagnose secondary conditions like SIBO. Often the first specialist to encounter and formally diagnose polyol intolerance.",
-          "notes": "Not all gastroenterologists are familiar with polyol intolerance; ask specifically if they can order sorbitol breath testing. Some are sceptical of FODMAP and functional diagnoses\u2014may need to seek out a more open-minded practitioner."
+          "role": "Useful for ordering and interpreting hydrogen and methane breath tests, ruling out organic pathology (coeliac disease, IBD, microscopic colitis), confirming or excluding SIBO, and investigating cases where dietary management provides insufficient relief.",
+          "notes": "Many gastroenterologists manage IBS at the symptom level without investigating specific dietary drivers. Finding one who is familiar with FODMAP science and carbohydrate malabsorption testing produces better diagnostic yield. Do not expect dietary precision from a gastroenterologist \u2014 that is the dietitian's domain."
         },
         {
-          "type": "Functional or integrative medicine doctor",
-          "role": "Takes a systems-based approach, investigates dysbiosis and root causes, and may order comprehensive stool testing or genetic testing. Often more familiar with polyol intolerance and FODMAP concepts.",
-          "notes": "These practitioners may be outside the NHS; check credentials. Evidence base varies; ensure they use evidence-based testing and avoid unproven supplements."
+          "type": "Functional medicine doctor",
+          "role": "May investigate root causes more systematically than mainstream GPs, including SIBO testing, comprehensive microbiome assessment, and carbohydrate absorption panels. More likely to integrate dietary and microbiome-focused approaches.",
+          "notes": "Quality varies significantly. Look for practitioners with formal medical training who integrate evidence-based functional testing rather than those who rely primarily on unvalidated proprietary panels. Costs can be high and are often not covered by insurance."
         },
         {
-          "type": "GP or primary care physician",
-          "role": "Can refer to gastroenterology, dietetics, or functional medicine. Can rule out serious underlying causes (IBD, coeliac disease, etc.) and coordinate care.",
-          "notes": "GPs vary in familiarity with polyol intolerance. Providing them with clear information about your symptoms and suspected diagnosis helps prompt appropriate referrals."
+          "type": "General practitioner / primary care physician",
+          "role": "First point of contact for ruling out red-flag symptoms, requesting basic investigations (coeliac serology, inflammatory markers, thyroid function), and making specialist referrals.",
+          "notes": "GPs rarely investigate dietary specifics in depth. The most productive GP interaction is one that rules out serious pathology, confirms an IBS-type presentation, and provides a referral to a FODMAP-trained dietitian."
         }
       ],
       "patient_communities": [
         {
-          "name": "IBS Network",
-          "platform": "Website and online community",
-          "url": "https://www.theibsnetwork.org/",
-          "notes": "UK-based charity with resources, forums, and support groups specifically for IBS, which commonly coexists with polyol intolerance. Good starting point for general IBS management and FODMAP information."
-        },
-        {
-          "name": "FODMAP Friendly",
-          "platform": "Website and app",
-          "url": "https://www.fodmapfriendly.com/",
-          "notes": "Australian resource with a searchable food database, recipes, and information on low-FODMAP eating. Includes specific guidance on polyol-containing foods."
-        },
-        {
-          "name": "r/IBS (subreddit)",
-          "platform": "Reddit",
-          "url": "https://www.reddit.com/r/IBS/",
-          "notes": "Large, active community sharing experiences, tips, and support. Frequently discusses FODMAP and polyol avoidance. Moderated but quality varies; take anecdotes with caution."
-        },
-        {
-          "name": "r/FODMAPS (subreddit)",
+          "name": "r/FODMAPS",
           "platform": "Reddit",
           "url": "https://www.reddit.com/r/FODMAPS/",
-          "notes": "Dedicated to low-FODMAP diet and FODMAP intolerances, including polyol sensitivity. Active discussion of food challenges, recipes, and coping strategies."
+          "notes": "Active community of people navigating FODMAP-related intolerances including polyol sensitivity. Useful for practical advice on identifying hidden sources, navigating social eating, and sharing product recommendations. Quality is generally good but medical advice should be verified with a professional."
         },
         {
-          "name": "FODMAP Friendly Facebook Groups",
+          "name": "IBS Network Community Forum",
+          "platform": "Forum (theibsnetwork.org)",
+          "url": "https://www.theibsnetwork.org/",
+          "notes": "UK-based charity with a patient forum covering IBS and dietary triggers including FODMAPs. Useful for UK-specific resources, dietitian directory, and peer support."
+        },
+        {
+          "name": "r/ibs",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/ibs/",
+          "notes": "Large community discussing IBS management including dietary approaches. Many members discuss FODMAP and polyol experiences. Broader scope than r/FODMAPS but high engagement and useful for real-world symptom comparison."
+        },
+        {
+          "name": "FODMAP Friendly Community",
           "platform": "Facebook",
           "url": null,
-          "notes": "Various private and public groups focussed on low-FODMAP eating and IBS management. Peer support and real-world recipe sharing; search for groups in your country or region."
-        },
-        {
-          "name": "Digestive Health Alliance",
-          "platform": "Website and forums",
-          "url": null,
-          "notes": "Some chapters or online communities focus on functional GI disorders and food intolerances. Availability varies by region."
+          "notes": "Several active Facebook groups (search 'FODMAP friendly' or 'low FODMAP diet support') provide recipe sharing, label-reading tips, and community support for people managing FODMAP-related intolerances including polyols."
         }
       ]
     },
     "learning_resources": [
       {
+        "title": "Monash University FODMAP Diet App",
+        "type": "app / website",
+        "author_or_source": "Monash University (monashfodmap.com)",
+        "url": "https://www.monashfodmap.com",
+        "description": "The authoritative FODMAP database maintained by the research team that developed the FODMAP concept. The app provides portion-level FODMAP ratings for hundreds of foods including specific polyol content, and includes a structured guide to the elimination and reintroduction protocol. Essential practical tool for anyone managing polyol intolerance.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Low-FODMAP Diet Step by Step",
+        "type": "book",
+        "author_or_source": "Kate Scarlata RDN and D\u00e9d\u00e9 Wilson",
+        "url": null,
+        "description": "A practical, protocol-focused guide to the low-FODMAP diet written by a leading FODMAP dietitian. Covers the elimination and reintroduction phases in accessible language, with recipes and a systematic approach to identifying specific triggers including polyols. Useful for people beginning the FODMAP process without professional support.",
+        "audience": "beginner"
+      },
+      {
         "title": "The Complete Low-FODMAP Diet",
         "type": "book",
-        "author_or_source": "Shepherd et al.",
+        "author_or_source": "Dr Sue Shepherd and Prof Peter Gibson",
         "url": null,
-        "description": "Comprehensive guide to low-FODMAP eating, including detailed food lists, three-phase approach, and recipes. Covers the science behind FODMAP and practical implementation. Written by the developers of the diet at Monash University.",
-        "audience": "beginner"
-      },
-      {
-        "title": "IBS: Free at Last",
-        "type": "book",
-        "author_or_source": "Shepherd & Gibson",
-        "url": null,
-        "description": "Practical guide to managing IBS using low-FODMAP principles. Includes meal plans, lifestyle advice, and troubleshooting common problems.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Monash University Low-FODMAP Diet",
-        "type": "website",
-        "author_or_source": "Monash University",
-        "url": "https://www.monashfodmap.com/",
-        "description": "Official source of FODMAP science and practice. Includes food database, app, research summaries, and practitioner resources. Authoritative and regularly updated.",
-        "audience": "beginner"
-      },
-      {
-        "title": "NICE Guideline NG159: Irritable Bowel Syndrome in Adults",
-        "type": "clinical guideline",
-        "author_or_source": "National Institute for Health and Care Excellence (NICE)",
-        "url": "https://www.nice.org.uk/guidance/ng159",
-        "description": "Evidence-based guideline from NICE on IBS diagnosis and management, including discussion of FODMAP and other dietary approaches. Relevant for understanding how polyol intolerance fits into IBS care.",
+        "description": "Written by the Australian researchers who developed and validated the FODMAP approach, this book explains the science behind FODMAP intolerances and provides a structured dietary programme. More scientifically grounded than most FODMAP books. Particularly useful for understanding why polyols cause symptoms and how to use the diet correctly.",
         "audience": "intermediate"
       },
       {
-        "title": "Hydrogen Breath Testing in Gastrointestinal Disorders",
+        "title": "Sorbitol malabsorption and intolerance \u2014 review literature",
         "type": "research paper",
-        "author_or_source": "Gasbarrini et al.",
-        "url": null,
-        "description": "Technical review of breath testing for detecting carbohydrate malabsorption, including sorbitol and other polyols. Useful for understanding how testing works and its limitations.",
+        "author_or_source": "Various; PubMed search: 'sorbitol malabsorption intolerance'",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/?term=sorbitol+malabsorption+intolerance",
+        "description": "For those who want to understand the mechanistic evidence base, searching PubMed for sorbitol malabsorption literature provides access to the clinical studies behind breath testing, dose-response relationships, and co-absorption interactions with fructose. Useful for people who want to engage with primary evidence.",
         "audience": "advanced"
       },
       {
-        "title": "Polyol Intolerance and FODMAP Sensitivity",
+        "title": "About FODMAPs and IBS \u2014 Monash University",
         "type": "website",
-        "author_or_source": "Various dietetic resources",
-        "url": null,
-        "description": "Many registered dietitian websites provide plain-language explanations and food lists specific to polyol avoidance. Search for 'polyol intolerance' or 'sorbitol intolerance' combined with dietitian resources.",
+        "author_or_source": "Monash University",
+        "url": "https://www.monashfodmap.com/about-fodmap-and-ibs/",
+        "description": "Free, authoritative overview of the FODMAP concept including a clear explanation of how polyols specifically cause symptoms, the difference between polyol subgroups, and how the low-FODMAP diet works. A reliable starting point for understanding the condition without needing to purchase a book.",
         "audience": "beginner"
       },
       {
-        "title": "Eating Well with IBS: 100 Recipes for a Healthier Digestive System",
-        "type": "book",
-        "author_or_source": "Heather Van Vorous",
-        "url": null,
-        "description": "Collection of IBS-friendly recipes that avoid common triggers including polyols. Practical and accessible for meal planning.",
-        "audience": "beginner"
-      },
-      {
-        "title": "The Gut Health Doctor",
-        "type": "book",
-        "author_or_source": "Megan Rossi",
-        "url": null,
-        "description": "Guide to gut health including discussion of food intolerances, dysbiosis, and the low-FODMAP diet. Evidence-based and practical.",
-        "audience": "beginner"
-      },
-      {
-        "title": "FODMAP AI App",
-        "type": "app",
-        "author_or_source": "Various developers",
-        "url": null,
-        "description": "Mobile apps designed to help users navigate low-FODMAP eating, with searchable food databases, meal logging, and recipes. Monash University also has an official app.",
-        "audience": "beginner"
-      },
-      {
-        "title": "YouTube: Dietitian reviews of FODMAP and polyol avoidance",
-        "type": "video",
-        "author_or_source": "Various registered dietitians",
-        "url": null,
-        "description": "Search for registered dietitians discussing FODMAP, IBS, or polyol intolerance on YouTube. Visual explanations and real-world food examples can be helpful for learning.",
-        "audience": "beginner"
+        "title": "Kate Scarlata's FODMAP blog",
+        "type": "website",
+        "author_or_source": "Kate Scarlata RDN",
+        "url": "https://www.katescarlata.com",
+        "description": "Detailed, evidence-informed articles from a leading US FODMAP dietitian covering specific aspects of FODMAP intolerances including polyols, hidden sources, label reading, and managing the diet in real-world contexts. More practically detailed than the Monash website for day-to-day questions.",
+        "audience": "intermediate"
       }
     ],
-    "relevance_signal": "**Gas, bloating, urgency** after stone fruits (peaches, plums, cherries), sugar-free gum, or diet products containing xylitol or sorbitol."
+    "relevance_signal": "Symptoms appear after eating sugar-free or 'diet' products, stone fruits, apples, pears, or chewing gum \u2014 bloating, gas, and loose stools that seem disproportionate to the amount eaten"
+  },
+  "section_meta": {
+    "relevance_signal": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "3028670440bb3a54"
+    },
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

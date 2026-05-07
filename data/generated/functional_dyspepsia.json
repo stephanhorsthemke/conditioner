@@ -2,585 +2,590 @@
   "condition_id": "functional_dyspepsia",
   "condition_name": "Functional dyspepsia",
   "generated_at": "2026-04-29T10:13:49.778442Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "Functional dyspepsia (FD) is indigestion without an obvious cause like ulcers or reflux disease. It involves recurring discomfort or pain in the upper stomach, often triggered by eating. The exact cause is unclear, but it may involve how the stomach moves food, sensitivity to normal sensations, or gut bacteria.",
-    "detailed_summary": "Functional dyspepsia is a common disorder characterised by chronic or recurrent symptoms in the upper abdomen\u2014such as early fullness, bloating, belching, nausea, or epigastric pain\u2014that occur in the absence of organic disease (ulcers, inflammation, or malignancy). Symptoms typically begin or worsen after eating. The pathophysiology is heterogeneous and may involve impaired gastric accommodation, delayed gastric emptying, visceral hypersensitivity, low-grade inflammation, alterations in gut microbiota, or psychological factors. It is diagnosed clinically after exclusion of alarm features (e.g. weight loss, vomiting, anaemia) and often after a brief course of acid suppression; endoscopy is not routinely required unless red flags are present.",
+    "plain_summary": "Functional dyspepsia (FD) is a chronic digestive condition causing persistent upper abdominal discomfort, pain, bloating, early fullness, or nausea \u2014 without any structural cause found on endoscopy or imaging. It is one of the most common functional gastrointestinal disorders, yet it remains poorly understood and is often inadequately treated in mainstream clinical settings.",
+    "detailed_summary": "Functional dyspepsia is defined by bothersome symptoms originating in the upper gastrointestinal tract \u2014 particularly the stomach and duodenum \u2014 that persist for at least three months with onset at least six months prior, and that cannot be explained by structural abnormalities such as ulcers, tumours, or visible inflammation. The Rome IV diagnostic criteria formally divide it into two overlapping subtypes: postprandial distress syndrome (PDS), dominated by meal-triggered fullness and early satiation, and epigastric pain syndrome (EPS), characterised by pain or burning centred in the upper abdomen that may be unrelated to eating.\n\nDespite the absence of visible pathology, FD is not imaginary or purely psychological. Research has identified several plausible biological mechanisms: impaired gastric accommodation (the stomach's inability to relax properly after a meal), delayed gastric emptying, duodenal hypersensitivity to acid and fat, low-grade duodenal inflammation involving eosinophils and mast cells, disruption of the gut-brain axis, altered gut microbiota, and heightened visceral pain perception. Post-infectious FD \u2014 arising after a bout of acute gastroenteritis \u2014 is a well-documented subtype, suggesting that gut infection can trigger lasting changes in nerve sensitivity and mucosal immune activity.\n\nH. pylori infection is an important and treatable contributor in a subset of people; eradication can provide lasting symptom relief in roughly 10\u201315% of those infected, making testing a standard first step. Beyond that, management is often trial-and-error. Dietary modifications, acid suppression, prokinetic drugs, low-dose antidepressants targeting gut-brain signalling, and psychological therapies each help some people but not others. Many individuals spend years cycling through treatments without identifying their personal drivers.\n\nSelf-directed investigation \u2014 food and symptom journalling, trialling dietary changes methodically, researching the literature, and seeking out practitioners who investigate root causes rather than only managing symptoms \u2014 is a legitimate and often necessary part of living with FD. Finding a gastroenterologist willing to go beyond endoscopy-and-PPI, or a functional medicine clinician who investigates motility, microbiome, and mucosal immune function, can make a meaningful difference.",
     "prevalence": {
-      "summary": "Functional dyspepsia affects roughly 1 in 5 to 1 in 4 people globally, making it one of the most common gastrointestinal complaints.",
-      "estimate": "15\u201325% of the population; 5\u201310% meet diagnostic criteria for FD",
-      "notes": "Prevalence varies by geography and diagnostic criteria applied. Many people with mild symptoms do not seek care. Female predominance is modest (1.1:1 to 1.3:1). Onset is often in young adulthood, but can occur at any age. Rates are higher in healthcare-seeking populations."
+      "summary": "Functional dyspepsia affects roughly one in eight people globally, making it one of the most common functional GI disorders.",
+      "estimate": "7\u201315% of the global population",
+      "notes": "Prevalence estimates vary widely depending on diagnostic criteria used (Rome III vs Rome IV) and how 'functional dyspepsia' is separated from overlapping conditions like IBS and GERD. Rome IV criteria are more restrictive than older definitions, so prevalence may appear lower in newer studies. FD is more commonly diagnosed in women, and it disproportionately affects people in younger to middle adult age groups, though it occurs across all ages. Many people with FD never receive a formal diagnosis."
     },
     "subgroups": [
       {
-        "name": "Postprandial distress syndrome (PDS)",
-        "description": "Symptoms predominantly triggered or worsened by eating; characterised by early satiety and postprandial fullness.",
+        "name": "Postprandial Distress Syndrome (PDS)",
+        "description": "The meal-triggered subtype of FD, characterised by symptoms that arise after eating even normal-sized meals. It is the more common of the two Rome IV subtypes.",
         "distinguishing_features": [
-          "Symptoms occur after normal-sized or small meals",
-          "Early satiety (feeling full quickly)",
-          "Postprandial bloating and discomfort",
-          "Often associated with impaired gastric accommodation or delayed emptying"
+          "Bothersome postprandial fullness occurring after ordinary meals",
+          "Early satiation that prevents finishing a normal-sized meal",
+          "Symptoms reliably worsened by eating, particularly fatty or large meals",
+          "Upper abdominal bloating and nausea are common",
+          "Often associated with impaired gastric accommodation \u2014 the stomach fails to relax to receive food",
+          "May overlap significantly with gastroparesis"
         ]
       },
       {
-        "name": "Epigastric pain syndrome (EPS)",
-        "description": "Symptoms dominated by epigastric pain or burning, which may or may not be meal-related.",
+        "name": "Epigastric Pain Syndrome (EPS)",
+        "description": "The pain-dominant subtype of FD, characterised by epigastric pain or burning that may not be consistently related to meals.",
         "distinguishing_features": [
-          "Recurrent epigastric pain or burning",
-          "Pain may occur between meals",
-          "Less consistent relationship to food intake",
-          "May overlap with reflux-like or ulcer-like presentations"
+          "Intermittent pain or burning localised to the epigastric region (upper centre of the abdomen)",
+          "Pain may be relieved or worsened by eating \u2014 relationship to food is variable",
+          "Not relieved by defecation (distinguishes it from IBS-related pain)",
+          "Pain can be severe enough to disrupt daily activity",
+          "May respond better to acid suppression than PDS",
+          "Can be confused with peptic ulcer disease or GERD"
         ]
       },
       {
-        "name": "Overlapping/mixed presentations",
-        "description": "Many patients have features of both PDS and EPS simultaneously.",
+        "name": "Post-infectious FD",
+        "description": "A subtype that develops after an episode of acute infectious gastroenteritis, with no prior history of dyspepsia.",
         "distinguishing_features": [
-          "Both postprandial fullness and epigastric pain",
-          "Variable symptom predominance over time",
-          "May respond differently to different treatments"
+          "Clear temporal link \u2014 symptoms begin in the weeks following a bout of food poisoning, traveller's diarrhoea, or viral gastroenteritis",
+          "Duodenal immune activation (mast cells, eosinophils) often found on biopsy",
+          "May be associated with impaired gastric motility as a result of enteric nerve damage",
+          "Can partially resemble post-infectious IBS but with predominantly upper GI symptoms",
+          "Prognosis may differ \u2014 some people recover more fully over time than those with idiopathic FD"
+        ]
+      },
+      {
+        "name": "H. pylori-associated FD",
+        "description": "FD in which Helicobacter pylori infection is present and eradication leads to sustained symptom improvement.",
+        "distinguishing_features": [
+          "Active H. pylori infection confirmed on testing",
+          "Symptoms may improve meaningfully following successful antibiotic eradication",
+          "Some guidelines now classify post-eradication, symptom-free patients as 'cured' rather than FD",
+          "Represents the only clearly reversible infectious driver in FD",
+          "H. pylori does not cause FD in everyone infected \u2014 most remain asymptomatic"
+        ]
+      },
+      {
+        "name": "Overlap FD\u2013IBS",
+        "description": "A significant minority of people meet diagnostic criteria for both functional dyspepsia and irritable bowel syndrome simultaneously.",
+        "distinguishing_features": [
+          "Both upper GI (epigastric pain, nausea, early fullness) and lower GI symptoms (altered bowel habit, bloating, cramping) present",
+          "Higher overall symptom burden and worse quality of life than either condition alone",
+          "Suggests shared pathophysiology \u2014 possibly involving central sensitisation and gut-brain axis dysregulation across the whole GI tract",
+          "May respond to treatments targeting both upper and lower GI function",
+          "More commonly seen in women and those with a history of anxiety or early-life adversity"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Early satiety (feeling full quickly after starting to eat)",
+        "symptom": "Postprandial fullness",
         "category": "digestive",
-        "notes": "Often one of the earliest and most bothersome symptoms; may lead to reduced food intake and weight loss in severe cases"
+        "notes": "A heavy, lingering sensation of fullness after eating that persists well beyond what would be expected given the meal size. Even modest meals can trigger significant discomfort."
       },
       {
-        "symptom": "Postprandial bloating or abdominal fullness",
+        "symptom": "Early satiation",
         "category": "digestive",
-        "notes": "Typically occurs 30 minutes to 2 hours after eating; severity may not correlate with actual meal size"
+        "notes": "Feeling uncomfortably full after only a few bites, making it difficult or impossible to finish a normal-sized meal. Often linked to impaired gastric accommodation."
       },
       {
-        "symptom": "Epigastric pain or burning",
+        "symptom": "Epigastric pain",
         "category": "digestive",
-        "notes": "May be dull, sharp, or burning; can be meal-related or occur between meals; often worse in the evening or after large meals"
+        "notes": "Pain or aching centred in the upper abdomen, between the navel and breastbone. May occur between meals or be triggered by eating. Can vary from dull to sharp."
+      },
+      {
+        "symptom": "Epigastric burning",
+        "category": "digestive",
+        "notes": "A burning sensation in the upper abdomen distinct from heartburn (which is felt in the chest). May be acid-related or a result of visceral hypersensitivity."
       },
       {
         "symptom": "Nausea",
         "category": "digestive",
-        "notes": "May occur after eating or independently; rarely progresses to vomiting in FD alone"
+        "notes": "Often meal-related but can be present at other times. Rarely leads to vomiting in FD without another cause. Persistent nausea is one of the most disabling symptoms."
       },
       {
-        "symptom": "Belching or excessive burping",
+        "symptom": "Upper abdominal bloating",
         "category": "digestive",
-        "notes": "Often reflexive; may be related to air swallowing (aerophagia) or impaired gastric venting"
+        "notes": "A sensation of pressure, tightness, or distension in the upper abdomen. Distinct from lower abdominal bloating more typical of IBS."
       },
       {
-        "symptom": "Bloating (with or without visible abdominal distension)",
+        "symptom": "Excessive belching",
         "category": "digestive",
-        "notes": "Subjective sensation of bloating may be more prominent than objective distension; worsens throughout the day"
+        "notes": "Frequent or bothersome burping, which can be supragastric (air swallowing driven by discomfort) or a result of abnormal gastric gas handling."
       },
       {
-        "symptom": "Loss of appetite or reduced food intake",
+        "symptom": "Loss of appetite",
         "category": "digestive",
-        "notes": "Secondary to early satiety or pain; may lead to nutritional concerns if severe"
+        "notes": "Reduced desire to eat, often because eating triggers or worsens symptoms. Over time this can lead to unintentional weight loss."
       },
       {
-        "symptom": "Abdominal discomfort or cramping",
-        "category": "digestive",
-        "notes": "Usually in the epigastrium or upper abdomen; may be relieved or worsened by eating or bowel movements"
+        "symptom": "Unintentional weight loss",
+        "category": "systemic",
+        "notes": "Can occur as a result of food avoidance. Significant or rapid unexplained weight loss warrants investigation to exclude organic disease."
       },
       {
-        "symptom": "Vague upper abdominal heaviness after eating",
+        "symptom": "Heartburn or reflux-like symptoms",
         "category": "digestive",
-        "notes": "Sensation of 'weight' in the stomach; distinct from pain but equally bothersome"
+        "notes": "Overlap with GERD is common. Presence of heartburn does not exclude FD but warrants separate evaluation."
+      },
+      {
+        "symptom": "Fatigue",
+        "category": "systemic",
+        "notes": "Chronic fatigue is common in FD, partly due to disrupted sleep from nocturnal symptoms and partly due to the broader systemic burden of chronic pain and poor nutrition."
+      },
+      {
+        "symptom": "Anxiety and mood changes",
+        "category": "psychological",
+        "notes": "The gut-brain axis runs both ways \u2014 GI distress drives anxiety, and anxiety amplifies gut symptoms. These are mechanistically linked, not simply a psychological response to illness."
+      },
+      {
+        "symptom": "Sleep disturbance",
+        "category": "neurological",
+        "notes": "Nocturnal epigastric pain or discomfort can interrupt sleep. Poor sleep in turn lowers pain thresholds and worsens gut motility."
       }
     ],
     "testing": {
       "key_patterns": [
-        "Symptoms triggered or worsened by eating, particularly after moderately large or high-fat meals",
-        "Absence of alarm features (weight loss, persistent vomiting, anaemia, dysphagia) that would suggest organic disease",
-        "Symptoms lasting at least 3 months with onset at least 6 months before diagnosis",
-        "Normal or non-specific findings on endoscopy or imaging (if performed)",
-        "Possible association with stress, anxiety, or mood changes"
+        "Symptoms meeting Rome IV criteria: bothersome postprandial fullness, early satiation, epigastric pain, or epigastric burning \u2014 present for at least 3 months with onset at least 6 months prior",
+        "Normal upper endoscopy (oesophagogastroduodenoscopy) \u2014 absence of peptic ulcer, oesophagitis, malignancy, or other structural pathology",
+        "H. pylori testing positive \u2014 an important and actionable finding even when structural pathology is absent",
+        "Gastric emptying study showing delayed emptying \u2014 present in a subset of FD patients, suggesting overlap with gastroparesis",
+        "Duodenal eosinophilia on biopsy \u2014 emerging finding in some FD patients, particularly post-infectious cases",
+        "Symptom pattern worsened consistently by fat-rich or large meals, suggesting impaired gastric accommodation",
+        "Symptom onset traceable to an acute gastrointestinal infection \u2014 a key history finding for post-infectious FD"
       ],
       "at_home": [
         {
-          "name": "Symptom diary",
-          "description": "Record the timing, severity (0\u201310 scale), type of food eaten, portion size, and any associated stressors for 1\u20132 weeks. Note which meals trigger symptoms, whether certain foods are worse, and any patterns with stress, sleep, or menstrual cycle. Look for meal-related onset or worsening, even if variability is high.",
-          "safety_notes": "This is a low-risk observation tool. Keeping a diary may heighten awareness of symptoms, which can be helpful but may also increase anxiety in some people; use it as a tool, not a source of worry."
+          "name": "Detailed food and symptom diary",
+          "description": "Keeping a structured daily log of everything eaten (including portion size, fat content, meal timing), alongside symptom type, severity, and timing relative to meals. Running this for at least 2\u20134 weeks can reveal patterns \u2014 for example, whether high-fat meals, large portions, or specific foods (onions, wheat, coffee, alcohol, spicy food) consistently trigger symptoms.",
+          "safety_notes": "This is a low-risk information-gathering exercise. Those already restricting food significantly should be cautious about further elimination without professional guidance, as nutritional adequacy can be affected."
         },
         {
-          "name": "Meal size and composition test",
-          "description": "For 3\u20135 days, try eating smaller, more frequent meals with lower fat content. Record onset time of symptoms and severity. FD often improves with smaller portions and lower-fat foods, whereas other conditions (e.g. GORD) may show different patterns.",
-          "safety_notes": "This is safe and often therapeutic. If symptoms worsen dramatically or you develop new red-flag symptoms (persistent vomiting, weight loss, blood in stool), seek clinical evaluation."
+          "name": "Meal size and composition experiment",
+          "description": "Systematically trialling smaller, more frequent meals with reduced fat content for 1\u20132 weeks to assess whether symptom burden changes. This targets impaired gastric accommodation \u2014 a common driver in PDS.",
+          "safety_notes": "Ensure caloric and nutritional adequacy is maintained. If symptoms worsen significantly or new symptoms emerge, stop and seek clinical assessment."
         },
         {
-          "name": "Stress and symptom correlation",
-          "description": "Note whether symptoms cluster around times of high stress, poor sleep, or anxiety. Track mood or stress level alongside GI symptoms for 2 weeks. Psychological factors often exacerbate FD.",
-          "safety_notes": "Do not use this to convince yourself that symptoms are 'just in your head'; FD is real and involves measurable physiological changes. The aim is to identify modifiable triggers."
+          "name": "Low-FODMAP trial (short-term)",
+          "description": "A structured 2\u20136 week elimination of fermentable carbohydrates (FODMAPs), commonly used in IBS, may also benefit some people with FD given the significant overlap between these conditions. Symptoms are tracked during elimination and then foods are reintroduced one category at a time.",
+          "safety_notes": "The low-FODMAP diet is nutritionally restrictive and is best done with guidance from a FODMAP-trained dietitian. Long-term restriction without reintroduction is not recommended and can affect gut microbiota diversity."
+        },
+        {
+          "name": "Caffeine and alcohol elimination",
+          "description": "Removing coffee, tea, energy drinks, and alcohol completely for 2\u20134 weeks while tracking symptoms. Both caffeine and alcohol stimulate acid secretion and can impair gastric motility.",
+          "safety_notes": "Abrupt caffeine withdrawal causes transient headaches for several days \u2014 this is normal and not a gut symptom. Gradual reduction may be preferable."
         }
       ],
       "clinical": [
         {
-          "name": "Upper endoscopy (oesophagogastroduodenoscopy, OGD)",
-          "type": "standard",
-          "description": "Visual inspection of the oesophagus, stomach, and first part of the small intestine via a thin camera. Allows direct visualisation and biopsy if needed. In FD, endoscopy is typically normal unless alarm features are present.",
-          "availability": "Ordered by primary care or gastroenterology; performed in endoscopy units (hospital or private clinic). May be done if red flags exist or symptoms are severe."
+          "name": "Upper endoscopy (OGD / EGD)",
+          "type": "gold_standard",
+          "description": "Direct visualisation of the oesophagus, stomach, and duodenum to rule out peptic ulcer disease, erosive oesophagitis, gastric malignancy, coeliac disease (via duodenal biopsy), and other structural pathology. In FD, results are by definition normal or near-normal. Biopsies of the duodenum may be taken to assess for eosinophilia or coeliac disease.",
+          "availability": "Ordered by a gastroenterologist. Generally performed under light sedation in an endoscopy unit. May require a referral from a GP or primary care physician."
         },
         {
-          "name": "Gastric emptying study (scintigraphy)",
+          "name": "H. pylori testing",
           "type": "standard",
-          "description": "Measures how long food (labelled with a radioactive tracer) takes to leave the stomach. Delayed gastric emptying is present in ~30% of FD patients. Performed by swallowing a labelled meal followed by imaging at timed intervals over 1\u20134 hours.",
-          "availability": "Ordered by gastroenterology; performed in nuclear medicine departments. Less commonly used now unless gastroparesis is suspected or symptoms are severe."
+          "description": "Can be performed non-invasively via urea breath test (UBT) or stool antigen test, or via biopsy taken during endoscopy (rapid urease test, histology, culture). All non-invasive tests require stopping proton pump inhibitors (PPIs) for at least 2 weeks beforehand for accurate results.",
+          "availability": "Urea breath test and stool antigen test are widely available through GPs and gastroenterologists. Serology (blood antibody test) is less accurate and does not distinguish active from past infection."
         },
         {
-          "name": "Gastric accommodation test (SPECT or 3D ultrasound)",
+          "name": "Gastric emptying scintigraphy",
+          "type": "standard",
+          "description": "The standard test for gastroparesis, performed by having the patient eat a radiolabelled solid meal (typically egg) and imaging gastric emptying over 4 hours. Delayed emptying is found in a meaningful subset of FD patients and changes management. Normal emptying does not exclude FD.",
+          "availability": "Available at most teaching hospitals and larger gastroenterology centres. Requires specialist referral. Not universally ordered in routine FD workup \u2014 may need to be specifically requested."
+        },
+        {
+          "name": "Duodenal biopsy with eosinophil count",
           "type": "emerging",
-          "description": "Measures the stomach's ability to relax and expand after a meal. Impaired accommodation is found in ~40% of FD patients. SPECT uses a radioactive tracer; 3D ultrasound is non-invasive but less standardised.",
-          "availability": "Specialised centres only; not widely available. Primarily a research tool."
+          "description": "Biopsies taken from the duodenum during endoscopy are assessed for elevated eosinophil counts and mast cell infiltration. Duodenal eosinophilia has been identified in FD patients, particularly post-infectious cases, and may guide treatment with mast-cell-stabilising or anti-eosinophilic therapies.",
+          "availability": "Available at centres where pathologists are familiar with GI eosinophil counting. Not yet a standard part of routine FD workup \u2014 requires a gastroenterologist who is aware of the research and specifically requests eosinophil quantification."
         },
         {
-          "name": "Upper abdominal ultrasound or CT",
-          "type": "standard",
-          "description": "Imaging to exclude structural abnormalities (e.g. gallstones, pancreatic disease). Non-invasive and quick, but low sensitivity for functional motility disorders. Useful to rule out other causes.",
-          "availability": "Ordered by primary care or gastroenterology; performed in radiology departments."
+          "name": "Gastric accommodation test (nutrient drink test / gastric barostat)",
+          "type": "emerging",
+          "description": "Assesses the stomach's ability to relax and expand to receive a meal. The nutrient drink test involves gradually drinking a standardised liquid meal until fullness is reached \u2014 impaired accommodation correlates with early satiation. The gastric barostat is a research tool using an intragastric balloon.",
+          "availability": "The nutrient drink test is used in specialist centres and some academic gastroenterology units. The barostat is largely research-only. Not routinely available in standard clinical practice."
         },
         {
-          "name": "H. pylori serology or breath/stool testing",
+          "name": "Coeliac disease serology",
           "type": "standard",
-          "description": "Tests for Helicobacter pylori infection, which can cause or mimic FD. A positive result warrants eradication therapy. Serology detects antibodies (past or current infection); breath or stool tests detect active infection.",
-          "availability": "Ordered by primary care or gastroenterology; blood test, breath test, or stool test performed in primary care or laboratory."
+          "description": "Blood tests including anti-tissue transglutaminase IgA (tTG-IgA) and total IgA, used to screen for coeliac disease \u2014 which can present with upper GI symptoms mimicking FD. Positive serology is confirmed by duodenal biopsy.",
+          "availability": "Widely available through GPs and gastroenterologists. Must be performed while the patient is eating gluten (not already on a gluten-free diet) to be meaningful."
         },
         {
-          "name": "Coeliac serology (tTG-IgA)",
+          "name": "Abdominal ultrasound",
           "type": "standard",
-          "description": "Screens for coeliac disease, which can present with dyspepsia and may co-exist with FD. A positive result requires confirmation with endoscopic biopsy.",
-          "availability": "Ordered by primary care or gastroenterology; blood test performed in primary care or laboratory."
+          "description": "Used to exclude gallstones, biliary pathology, and pancreatic abnormalities that may cause upper abdominal pain mimicking FD. Generally one of the first-line investigations ordered alongside blood tests.",
+          "availability": "Widely available through radiology departments. Ordered by GP or specialist."
         },
         {
-          "name": "Full blood count and basic metabolic panel",
+          "name": "Hydrogen breath testing",
           "type": "standard",
-          "description": "Checks for anaemia (suggesting chronic bleeding or malabsorption) and electrolyte abnormalities. Reassuring if normal in the absence of alarming symptoms.",
-          "availability": "Ordered by primary care; blood test performed in primary care or laboratory."
+          "description": "Can assess for small intestinal bacterial overgrowth (SIBO) and carbohydrate malabsorption (lactose, fructose), which overlap significantly with FD and may contribute to upper GI symptoms in some people.",
+          "availability": "Available through gastroenterology departments and some specialist functional medicine clinics. Home breath test kits are also commercially available, though clinical interpretation is recommended."
         }
       ]
     },
     "related_conditions": [
       {
+        "id": "ibs",
+        "name": "Irritable bowel syndrome (IBS)",
+        "relationship": "comorbid",
+        "explanation": "FD and IBS co-occur in 30\u201340% of cases \u2014 far more often than chance. They share overlapping pathophysiology including gut-brain axis dysregulation, visceral hypersensitivity, and altered motility. Many people with FD-IBS overlap experience a higher overall symptom burden and worse quality of life than those with either condition alone."
+      },
+      {
         "id": "gastroparesis",
         "name": "Gastroparesis",
-        "relationship": "mechanistic_link",
-        "explanation": "Delayed gastric emptying occurs in ~30% of FD patients and may be a primary driver of early satiety and postprandial fullness. Gastroparesis (severe delayed emptying) is a distinct but overlapping disorder."
+        "relationship": "often_confused",
+        "explanation": "Gastroparesis (delayed gastric emptying confirmed on scintigraphy) and FD-PDS share almost identical symptoms \u2014 postprandial fullness, early satiation, nausea, and bloating. The distinction requires formal gastric emptying testing; a meaningful subset of PDS patients have delayed emptying, and the boundary between the two conditions is debated in the literature."
       },
       {
         "id": "hpylori",
         "name": "H. pylori infection",
         "relationship": "upstream",
-        "explanation": "H. pylori can cause or exacerbate dyspepsia. Testing and eradication (if positive) is a standard first step; some FD may resolve post-eradication, though many persist."
+        "explanation": "Active H. pylori infection can cause or contribute to dyspeptic symptoms, and eradication leads to sustained symptom resolution in approximately 10\u201315% of infected individuals \u2014 a proportion that seems modest but represents a significant number of people. H. pylori testing and treatment is a standard first step in FD investigation."
+      },
+      {
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "comorbid",
+        "explanation": "SIBO can produce upper GI symptoms including bloating, early fullness, nausea, and epigastric discomfort that overlap with FD. Impaired gastric motility in FD may predispose to SIBO by slowing the migrating motor complex. Some people with a diagnosis of FD improve with SIBO treatment."
       },
       {
         "id": "central_sensitisation",
-        "name": "Central sensitisation",
+        "name": "Central sensitisation / visceral hypersensitivity",
         "relationship": "mechanistic_link",
-        "explanation": "Visceral hypersensitivity\u2014heightened perception of normal stomach sensations\u2014is a core feature in many FD patients, similar to central sensitisation in other chronic pain conditions."
+        "explanation": "Heightened sensitivity to normal levels of gastric distension, acid, and fat \u2014 mediated by sensitised afferent nerves and altered central pain processing \u2014 is a core mechanism in FD, particularly EPS. This explains why symptoms can be severe in the absence of any tissue damage visible on endoscopy."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
+        "relationship": "mechanistic_link",
+        "explanation": "Mast cell infiltration of the duodenal mucosa has been documented in FD, particularly post-infectious cases. Mast cells release mediators that sensitise enteric nerves and impair smooth muscle function. In some individuals, broader mast cell activation syndrome may be an underlying driver of FD-like symptoms."
       },
       {
         "id": "anxiety",
         "name": "Anxiety disorder",
         "relationship": "comorbid",
-        "explanation": "Anxiety and FD frequently co-occur and bidirectionally influence each other. Anxiety increases symptom perception and may impair gastric function via gut\u2013brain axis pathways."
+        "explanation": "Anxiety is significantly more prevalent in people with FD than in the general population. The relationship is bidirectional \u2014 anxiety amplifies gut sensitivity via the gut-brain axis, and persistent GI symptoms drive anxiety. Treating anxiety often improves GI symptoms independently of direct GI treatment."
       },
       {
         "id": "depression",
         "name": "Depression",
         "relationship": "comorbid",
-        "explanation": "Depression and FD are commonly comorbid. Depressive symptoms are associated with symptom severity, poor outcomes, and reduced treatment response."
+        "explanation": "Depressive disorders co-occur with FD at elevated rates. Shared serotonergic pathways likely contribute \u2014 the gut contains approximately 95% of the body's serotonin, which regulates both mood and gut motility. Low-dose tricyclic antidepressants target this overlap therapeutically."
       },
       {
-        "id": "trauma",
-        "name": "Trauma / PTSD",
-        "relationship": "upstream",
-        "explanation": "Early-life adversity, abuse, or trauma are associated with increased FD risk and severity via dysregulation of stress response and gut\u2013brain signalling."
-      },
-      {
-        "id": "sibo",
-        "name": "SIBO",
+        "id": "ncgs",
+        "name": "Non-coeliac gluten sensitivity (NCGS)",
         "relationship": "often_confused",
-        "explanation": "Small intestinal bacterial overgrowth can mimic FD with bloating, early fullness, and discomfort. Some FD patients may have concurrent SIBO, though causality is debated."
+        "explanation": "NCGS can produce upper GI symptoms including bloating, nausea, and epigastric discomfort indistinguishable from FD. Some people labelled with FD improve significantly on a gluten-free diet without having coeliac disease. The overlap is difficult to disentangle without systematic elimination and rechallenge."
+      },
+      {
+        "id": "coeliac",
+        "name": "Coeliac disease",
+        "relationship": "often_confused",
+        "explanation": "Coeliac disease can present primarily with upper GI symptoms \u2014 nausea, bloating, and postprandial discomfort \u2014 without the classic diarrhoea, making it a mimicker of FD. Serology and duodenal biopsy are needed to exclude it, and this is a standard part of the FD workup."
+      },
+      {
+        "id": "eosinophilic",
+        "name": "Eosinophilic GI disorders",
+        "relationship": "mechanistic_link",
+        "explanation": "Eosinophilic gastritis and duodenitis can produce symptoms identical to FD. Duodenal eosinophilia has been found in a subset of FD patients, suggesting a mucosal immune mechanism. These conditions may only be identified if biopsies are specifically examined for eosinophil density."
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "comorbid",
+        "explanation": "Some people with FD-like symptoms have an underlying sensitivity to dietary histamine, producing upper GI symptoms including nausea, early fullness, and epigastric discomfort after high-histamine foods. The mast-cell involvement documented in FD provides a plausible mechanistic link."
       },
       {
         "id": "dysbiosis",
         "name": "Gut dysbiosis",
         "relationship": "mechanistic_link",
-        "explanation": "Altered gut microbiota composition and function are implicated in FD pathophysiology. Dysbiosis may contribute to inflammation, fermentation, and altered motility."
-      },
-      {
-        "id": "eds",
-        "name": "Hypermobile EDS / HSD",
-        "relationship": "comorbid",
-        "explanation": "Connective tissue disorders (particularly hEDS) are associated with gastric dysmotility and increased prevalence of FD-like symptoms."
+        "explanation": "Alterations in the composition and function of the gut microbiome have been described in FD. Dysbiosis may contribute to low-grade mucosal inflammation, altered gut motility, and changes in gut-brain signalling. This is an active area of research with growing evidence."
       },
       {
         "id": "pots",
         "name": "POTS / dysautonomia",
         "relationship": "comorbid",
-        "explanation": "Dysautonomic features (autonomic dysfunction) may impair gastric innervation and motility, increasing FD risk in autonomic disorder populations."
+        "explanation": "Autonomic nervous system dysfunction \u2014 as seen in POTS \u2014 can impair gastric motility and accommodation, producing upper GI symptoms that overlap substantially with FD. People with unexplained FD alongside orthostatic symptoms, palpitations, or fatigue may benefit from cardiovascular autonomic evaluation."
       },
       {
-        "id": "mcas",
-        "name": "Mast cell activation syndrome",
-        "relationship": "mechanistic_link",
-        "explanation": "Mast cell-mediated inflammation and mediator release may contribute to visceral hypersensitivity and dysmotility in some FD patients."
-      },
-      {
-        "id": "histamine",
-        "name": "Histamine intolerance",
-        "relationship": "downstream",
-        "explanation": "Impaired histamine degradation may worsen FD symptoms via mast cell activation and increased intestinal permeability in susceptible individuals."
-      },
-      {
-        "id": "igg",
-        "name": "IgG food sensitivities",
-        "relationship": "often_confused",
-        "explanation": "IgG testing is not validated for FD diagnosis, but some patients attribute symptoms to food sensitivities. True food allergy or intolerance can co-exist but is distinct from FD."
-      },
-      {
-        "id": "lactase",
-        "name": "Lactase deficiency",
+        "id": "eds",
+        "name": "hEDS / HSD (hypermobile Ehlers-Danlos syndrome)",
         "relationship": "comorbid",
-        "explanation": "Lactose intolerance can coexist with and mimic FD; testing or trial elimination may help clarify if dairy is a trigger."
-      },
-      {
-        "id": "fructose",
-        "name": "Fructose malabsorption",
-        "relationship": "comorbid",
-        "explanation": "Fructose malabsorption can cause bloating and early fullness similar to FD; may coexist and require separate dietary management."
-      },
-      {
-        "id": "hormonal",
-        "name": "Hormonal / menstrual cycle effects",
-        "relationship": "comorbid",
-        "explanation": "FD symptoms often fluctuate with the menstrual cycle in women; oestrogen and progesterone modulate gastric motility and visceral sensitivity."
+        "explanation": "Gastrointestinal dysmotility, including gastroparesis and functional dyspepsia, is common in hypermobile EDS and HSD, possibly due to autonomic dysfunction and connective tissue abnormalities in the gut wall. FD in the context of joint hypermobility, chronic pain, and dysautonomia warrants consideration of an underlying connective tissue disorder."
       },
       {
         "id": "thyroid",
         "name": "Thyroid dysfunction",
-        "relationship": "upstream",
-        "explanation": "Hypothyroidism can impair gastric motility and cause dyspepsia-like symptoms; should be screened and ruled out."
+        "relationship": "often_confused",
+        "explanation": "Both hypothyroidism and hyperthyroidism can alter gastric motility and produce GI symptoms including nausea, bloating, and altered appetite that overlap with FD. Thyroid function testing is a standard part of excluding organic causes of dyspeptic symptoms."
       },
       {
-        "id": "coeliac",
-        "name": "Coeliac disease",
-        "relationship": "comorbid",
-        "explanation": "Coeliac disease can present with upper GI symptoms similar to FD; serological screening is recommended to exclude this treatable cause."
+        "id": "epi",
+        "name": "Exocrine pancreatic insufficiency (EPI)",
+        "relationship": "often_confused",
+        "explanation": "EPI can cause postprandial bloating, nausea, and upper abdominal discomfort \u2014 particularly after fatty meals \u2014 that mimics FD. It is underdiagnosed and not always considered in the FD workup. Faecal elastase testing can help exclude significant pancreatic enzyme insufficiency."
+      },
+      {
+        "id": "trauma",
+        "name": "Trauma / PTSD",
+        "relationship": "upstream",
+        "explanation": "Adverse childhood experiences and psychological trauma are significantly overrepresented in people with functional GI disorders including FD. Trauma alters HPA axis function and autonomic tone, which in turn affects gut motility, mucosal immunity, and visceral pain sensitivity. This is not a claim that FD is 'psychological' but that the nervous system changes caused by trauma have real physiological consequences in the gut."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
-          "name": "Dietary modification: smaller, more frequent meals",
+          "name": "Small, frequent, low-fat meals",
           "category": "diet",
-          "description": "Eat 5\u20136 smaller meals per day (200\u2013300 kcal each) rather than 2\u20133 large ones. Smaller portions reduce the stimulus for early satiety and reduce postprandial discomfort. Distribute eating throughout the day to maintain adequate intake.",
+          "description": "Eating 5\u20136 smaller meals across the day rather than 2\u20133 large ones reduces the distension load on a stomach with impaired accommodation. Reducing dietary fat is especially relevant because fat slows gastric emptying and triggers the release of cholecystokinin, which further reduces gastric motility. This is often the single most impactful dietary change for those with PDS.",
+          "evidence_level": "moderate",
+          "notes": "Nutritional adequacy must be maintained. Some people undershoot calories significantly over time when using this approach. Tracking with a dietitian or nutrition app can help."
+        },
+        {
+          "name": "H. pylori eradication",
+          "category": "medication",
+          "description": "For those testing positive for H. pylori, a standard 14-day triple or quadruple antibiotic regimen (with confirmation of eradication via breath or stool test 4+ weeks after completing treatment) offers sustained symptom relief for roughly 10\u201315% \u2014 and is the only FD intervention with a clear curative potential.",
           "evidence_level": "strong",
-          "notes": "This is often the first-line dietary intervention and is safe. Effectiveness varies; some patients improve significantly, others require additional measures. May need to time meals around work or activity schedules."
+          "notes": "Eradication must be confirmed. Antibiotic resistance is increasing; bismuth quadruple therapy may be preferred in areas with high clarithromycin resistance. Probiotics during and after antibiotics may reduce side effects."
         },
         {
-          "name": "Dietary modification: reduce fat intake",
-          "category": "diet",
-          "description": "Lower fat content, particularly saturated and fried fats, as these slow gastric emptying and trigger symptoms. Aim for <30\u201340% of calories from fat. Choose lean proteins, low-fat dairy, and healthy oils in moderation.",
+          "name": "Proton pump inhibitors (PPIs)",
+          "category": "medication",
+          "description": "PPIs (omeprazole, lansoprazole, esomeprazole) reduce gastric acid and are most useful for the EPS subtype \u2014 particularly epigastric burning and pain. A 4\u20138 week trial is typically recommended. They are less effective for PDS-predominant symptoms.",
+          "evidence_level": "moderate",
+          "notes": "Long-term PPI use has potential downsides including increased risk of SIBO, magnesium deficiency, and altered microbiome composition. They are generally not intended as indefinite treatment for FD. Many people are prescribed them without a clear endpoint."
+        },
+        {
+          "name": "Low-dose tricyclic antidepressants (TCAs)",
+          "category": "medication",
+          "description": "Low doses of amitriptyline or nortriptyline (typically 10\u201350 mg/day \u2014 well below antidepressant doses) target gut-brain signalling, reduce visceral pain sensitivity, and modulate gut motility. The DIAMOND trial showed amitriptyline significantly outperformed PPI in functional dyspepsia, particularly EPS.",
           "evidence_level": "strong",
-          "notes": "High-fat foods are the strongest meal-related trigger. Gradual reduction often works better than abrupt elimination. Monitor overall nutrition."
+          "notes": "Effects on mood at these doses are minimal; the mechanism is neuromodulation of gut afferent pathways. Common side effects include drowsiness, dry mouth, and constipation. Nortriptyline tends to be better tolerated. Should be initiated and monitored by a clinician."
         },
         {
-          "name": "Dietary modification: avoid triggers",
-          "category": "diet",
-          "description": "Common triggers include: spicy foods, caffeine, alcohol, carbonated beverages, and chocolate. Keep a diary to identify personal triggers and eliminate or reduce them systematically. Not all trigger foods are universal; individualisation is key.",
-          "evidence_level": "moderate",
-          "notes": "Triggers vary widely between individuals. Elimination should be evidence-based (i.e. documented in diary) rather than arbitrary. Reintroduce after 2\u20134 weeks to confirm causality."
-        },
-        {
-          "name": "Eat slowly and chew thoroughly",
-          "category": "lifestyle",
-          "description": "Chew food well (20\u201330 times per mouthful) and eat slowly (20\u201330 minutes for a meal). This aids mechanical digestion, reduces air swallowing, and allows for earlier satiety signals to reach the brain.",
-          "evidence_level": "moderate",
-          "notes": "This is a simple, cost-free intervention. Effectiveness requires consistent effort and behavioural change. May be harder in busy environments."
-        },
-        {
-          "name": "Avoid lying down immediately after meals",
-          "category": "lifestyle",
-          "description": "Remain upright for 2\u20133 hours after eating. This uses gravity to aid stomach emptying and reduces reflux-like symptoms and bloating.",
-          "evidence_level": "moderate",
-          "notes": "Particularly important for evening meals. Even gentle activity (standing, walking) is beneficial."
-        },
-        {
-          "name": "Proton pump inhibitor (PPI) trial (short-term)",
+          "name": "Mirtazapine",
           "category": "medication",
-          "description": "A 4-week course of omeprazole, lansoprazole, or similar PPI to suppress acid production. Used diagnostically: if symptoms resolve, acid-related disease may be present; if not, FD is more likely. Also reduces epigastric pain in EPS subtype.",
+          "description": "A low-dose antidepressant that improves gastric accommodation and reduces nausea. Particularly useful for people with FD-associated weight loss, nausea, and early satiation. Has appetite-stimulating effects.",
           "evidence_level": "moderate",
-          "notes": "First-line pharmacological approach. Long-term PPI use is associated with risks (B12 deficiency, bone loss, C. difficile). Discontinue after 4 weeks if not clearly beneficial and reassess diagnosis."
+          "notes": "Significant sedation and weight gain at higher doses. At low doses (7.5\u201315 mg) these effects are less marked. Requires prescription and clinician oversight."
         },
         {
-          "name": "H2-receptor antagonist (ranitidine, famotidine)",
+          "name": "Prokinetic medications",
           "category": "medication",
-          "description": "Reduces gastric acid. Less potent than PPIs but often well-tolerated. May help with epigastric pain or heartburn-like symptoms.",
+          "description": "Drugs that accelerate gastric emptying (domperidone, metoclopramide, itopride, acotiamide) may help those with PDS and confirmed or suspected delayed gastric emptying. Acotiamide has the strongest evidence base specifically for FD.",
           "evidence_level": "moderate",
-          "notes": "Ranitidine was withdrawn in 2020 due to contamination concerns; famotidine and cimetidine remain available. Not as effective as PPIs for FD alone."
-        },
-        {
-          "name": "Prokinetic agents (domperidone, metoclopramide)",
-          "category": "medication",
-          "description": "Enhance gastric muscle contractions to speed emptying. Domperidone is preferred (fewer CNS side effects); metoclopramide is a stronger dopamine antagonist but carries risk of tardive dyskinesia with long-term use. Typically used for 4\u201312 weeks.",
-          "evidence_level": "moderate",
-          "notes": "Modest efficacy in FD; more beneficial if gastric emptying is documented as slow. Metoclopramide is reserved for short-term use due to neurological risks. May lose efficacy over time (tachyphylaxis)."
-        },
-        {
-          "name": "Tricyclic antidepressants (amitriptyline, nortriptyline)",
-          "category": "medication",
-          "description": "Low-dose tricyclics (10\u201350 mg daily at bedtime) reduce visceral hypersensitivity and improve global FD symptoms, independent of mood. Mechanism includes anticholinergic effects and analgesic properties.",
-          "evidence_level": "strong",
-          "notes": "Often effective for pain-predominant FD (EPS). Side effects include dry mouth, sedation, weight gain, and constipation. Start low and titrate slowly. Takes 2\u20134 weeks to show benefit."
-        },
-        {
-          "name": "Selective serotonin reuptake inhibitor (SSRI)",
-          "category": "medication",
-          "description": "SSRIs (sertraline, paroxetine) may help if anxiety or depression is prominent. Improvement often reflects treatment of comorbid mood disorder rather than direct FD effect.",
-          "evidence_level": "moderate",
-          "notes": "Less evidence than tricyclics for FD alone. Consider if significant anxiety or depression is present. Takes 4\u20136 weeks to show effect."
-        },
-        {
-          "name": "Cognitive-behavioural therapy (CBT)",
-          "category": "lifestyle",
-          "description": "Structured psychological intervention addressing thoughts, beliefs, and behaviours related to GI symptoms. Reduces symptom amplification, improves coping, and may improve symptom perception and distress.",
-          "evidence_level": "strong",
-          "notes": "Most effective when anxiety, catastrophising, or health anxiety is prominent. Benefits persist after therapy ends. Requires motivated engagement and trained therapist availability."
+          "notes": "Acotiamide is approved for FD in Japan and some other markets but not widely available in the UK or US. Domperidone carries a small cardiac risk at higher doses. Metoclopramide has CNS side effects with long-term use. Access and availability vary significantly by country."
         },
         {
           "name": "Gut-directed hypnotherapy",
-          "category": "lifestyle",
-          "description": "Guided relaxation and hypnotic suggestion focussed on the GI tract. May reduce visceral hypersensitivity and improve global symptoms. Sessions typically occur weekly for 8\u201312 weeks.",
+          "category": "psychological",
+          "description": "Structured hypnotherapy protocols targeting gut hypersensitivity and the gut-brain axis have evidence for both IBS and FD. Multiple sessions reduce visceral pain sensitivity and improve overall symptom burden in a meaningful proportion of participants.",
           "evidence_level": "moderate",
-          "notes": "Strong evidence in IBS; emerging evidence in FD. Requires a trained practitioner. Effective for some but not all patients; best for those open to the approach."
+          "notes": "Not widely available in standard care. Practitioner quality varies. Audio-based self-guided gut hypnotherapy programmes (such as those developed by Peter Whorwell's group) may offer a more accessible starting point."
         },
         {
-          "name": "Stress reduction and relaxation techniques",
-          "category": "lifestyle",
-          "description": "Mindfulness, progressive muscle relaxation, or other stress-reduction practices performed daily. Reduces physiological stress response and gut\u2013brain signalling dysregulation. Even 10\u201315 minutes daily is beneficial.",
+          "name": "Cognitive behavioural therapy (CBT)",
+          "category": "psychological",
+          "description": "CBT adapted for GI conditions addresses the thought patterns and behaviours (food avoidance, hypervigilance to symptoms, catastrophising) that amplify the gut-brain symptom cycle. Evidence for functional GI disorders broadly is good; FD-specific trials are fewer but supportive.",
           "evidence_level": "moderate",
-          "notes": "Low-risk, inexpensive, and widely accessible (apps, online resources). Effectiveness varies; some people find it very helpful, others require structured therapy."
+          "notes": "Most effective when integrated with physical management rather than offered as a standalone 'it's all in your head' intervention. Patients often resist psychological referral for this reason \u2014 framing it as a gut-brain tool rather than a mental health treatment may help."
         },
         {
-          "name": "Regular physical activity",
-          "category": "lifestyle",
-          "description": "Moderate aerobic exercise (30 minutes, 3\u20135 times per week) or gentle movement (walking, yoga). Improves gastric motility, reduces stress, and enhances overall GI function.",
-          "evidence_level": "moderate",
-          "notes": "Should be mild to moderate; intense or high-impact exercise may worsen symptoms in some. Walking after meals is particularly beneficial."
-        },
-        {
-          "name": "Improve sleep quality and duration",
-          "category": "lifestyle",
-          "description": "Aim for 7\u20139 hours, maintain a regular sleep schedule, and optimise sleep environment (dark, cool, quiet). Poor sleep exacerbates FD symptoms and impairs stress regulation.",
-          "evidence_level": "moderate",
-          "notes": "Sleep and GI symptoms are bidirectionally linked. Often requires behavioural change (sleep hygiene) or medical management of sleep disorders."
-        },
-        {
-          "name": "Peppermint oil",
+          "name": "STW 5 (Iberogast)",
           "category": "supplement",
-          "description": "Enteric-coated peppermint oil (0.2\u20130.4 mL, 3 times daily) may reduce bloating, discomfort, and motility dysfunction. Works via smooth muscle relaxation. Typical trial is 4\u20138 weeks.",
+          "description": "A herbal preparation combining nine plant extracts including iberis amara, liquorice, peppermint, and chamomile. Has been studied in multiple randomised controlled trials for FD and IBS, showing significant improvement in symptom scores compared to placebo. Improves gastric accommodation and reduces hypersensitivity.",
           "evidence_level": "moderate",
-          "notes": "Some evidence in IBS and FD. Generally well-tolerated; may cause heartburn if not enteric-coated. Not first-line but reasonable to try if dietary measures are insufficient."
+          "notes": "Generally well tolerated. Rare hepatotoxicity cases have been reported \u2014 a precautionary warning exists in some countries. Should be used at recommended doses and not combined with other potentially hepatotoxic supplements or medications."
         },
         {
-          "name": "Ginger",
+          "name": "Peppermint oil (enteric-coated)",
           "category": "supplement",
-          "description": "Fresh or powdered ginger (1\u20132 g daily, divided) may improve gastric motility and reduce nausea and bloating. Often used as a tea or in food.",
-          "evidence_level": "anecdotal",
-          "notes": "Limited robust evidence in FD specifically, but long traditional use and general safety. May interact with medications; use with caution if on blood thinners."
+          "description": "Peppermint oil has antispasmodic effects on smooth muscle and may reduce epigastric pain and discomfort. Enteric-coated capsules release in the small intestine rather than the oesophagus, reducing the risk of heartburn.",
+          "evidence_level": "moderate",
+          "notes": "Evidence is stronger for IBS than FD specifically, but the overlap and similar mechanism make it worth considering. Avoid if heartburn or reflux is a primary symptom \u2014 peppermint relaxes the lower oesophageal sphincter."
         },
         {
-          "name": "Probiotics",
-          "category": "supplement",
-          "description": "Specific probiotic strains (e.g. Lactobacillus, Bifidobacterium) may reduce bloating and improve symptoms by altering gut microbiota composition. Typical trial is 4\u201312 weeks.",
-          "evidence_level": "anecdotal",
-          "notes": "Evidence is mixed and strain-specific. Not all probiotics are equal. Efficacy varies widely between individuals. Consider if dysbiosis is suspected or after antibiotics."
+          "name": "Mindfulness-based stress reduction (MBSR)",
+          "category": "lifestyle",
+          "description": "Structured mindfulness practice reduces autonomic arousal and may lower visceral pain sensitivity over time. Several studies support benefit for functional GI disorders. Daily practice (20\u201345 minutes) over 8 weeks is the standard protocol.",
+          "evidence_level": "moderate",
+          "notes": "Effects are cumulative \u2014 benefit requires sustained practice. Some people find that intensive body-focused meditation initially increases awareness of symptoms before it reduces them."
         },
         {
-          "name": "Fermented foods",
+          "name": "Regular aerobic exercise",
+          "category": "lifestyle",
+          "description": "Moderate-intensity aerobic exercise (walking, cycling, swimming \u2014 30 minutes, 4\u20135 times per week) improves gastric motility, reduces anxiety, and lowers systemic inflammation. Several studies show benefit for GI motility disorders.",
+          "evidence_level": "moderate",
+          "notes": "High-intensity exercise immediately before or after meals can worsen symptoms in some people. Timing matters \u2014 exercise between meals is generally better tolerated."
+        },
+        {
+          "name": "Low-FODMAP diet",
           "category": "diet",
-          "description": "Incorporate fermented foods (sauerkraut, kefir, tempeh, miso) gradually to promote beneficial bacteria. May improve digestive tolerance over time.",
-          "evidence_level": "anecdotal",
-          "notes": "Generally safe and may support microbiota diversity. Introduce slowly; fermented foods can initially increase bloating if dysbiosis is severe."
+          "description": "A structured elimination and reintroduction diet that reduces fermentable carbohydrates. Most evidence is in IBS, but given the high FD-IBS overlap and similar mechanisms (fermentation-driven distension, visceral hypersensitivity), a supervised FODMAP trial may benefit some people with FD.",
+          "evidence_level": "moderate",
+          "notes": "Must be supervised by a FODMAP-trained dietitian to ensure the reintroduction phase is completed \u2014 long-term full restriction is not the goal and may worsen gut microbiome diversity. Results are highly individual."
         }
       ],
       "things_to_avoid": [
-        "Large meals: they trigger early satiety, pain, and bloating more than small, frequent eating does",
-        "High-fat foods: they are the strongest meal-related trigger and slow gastric emptying significantly",
-        "Caffeine and alcohol: both stimulate acid production and impair stomach function in susceptible people",
-        "Carbonated and fizzy drinks: they increase bloating and abdominal distension",
-        "Spicy foods: they irritate the gastric lining and trigger pain in many FD patients",
-        "Lying down or bending over immediately after eating: this impairs stomach emptying and worsens symptoms",
-        "Eating too quickly or without chewing: it increases air swallowing and overwhelms the stomach, worsening early satiety",
-        "Chronic long-term PPI or NSAID use without monitoring: both carry risks (nutrient malabsorption, side effects) and may not address underlying FD mechanisms",
-        "Rumination about symptoms or health anxiety: this amplifies symptom perception and perpetuates the cycle of distress",
-        "Rigid or overly restrictive diets: they often exacerbate anxiety and may worsen nutritional status without clear symptom benefit"
+        "Large meals \u2014 even in the absence of trigger foods, meal volume alone can overwhelm impaired gastric accommodation and trigger symptoms",
+        "High-fat foods \u2014 fatty meals delay gastric emptying and stimulate cholecystokinin release, worsening both fullness and pain",
+        "NSAIDs (ibuprofen, naproxen, aspirin) \u2014 damage the gastric mucosa and can worsen epigastric pain significantly; paracetamol is a safer analgesic alternative",
+        "Alcohol \u2014 stimulates acid secretion, impairs gastric motility, and damages the gastric mucosa",
+        "Caffeine in large amounts \u2014 stimulates gastric acid and can worsen epigastric burning, particularly in EPS",
+        "Spicy foods \u2014 common trigger for epigastric pain and burning in sensitive individuals",
+        "Carbonated drinks \u2014 increase intragastric gas and pressure, worsening bloating and fullness",
+        "Eating late at night \u2014 reduces gastric emptying time available before sleep, increasing nocturnal symptoms",
+        "Lying down immediately after eating \u2014 slows gastric emptying and increases reflux risk",
+        "Prolonged, unsupervised PPI use without reassessment \u2014 masks symptoms without addressing drivers, and carries its own risks with long-term use",
+        "Highly restrictive elimination diets without professional guidance \u2014 can lead to nutritional deficiency and food-related anxiety without reliably identifying triggers"
       ]
     },
     "uncomfortable_truths": [
       {
-        "truth": "Functional dyspepsia is not curable by medication alone. Medications manage symptoms temporarily, but once you stop them, symptoms typically return unless underlying triggers are addressed.",
-        "why_resisted": "Patients hope for a 'pill' to fix the problem and want quick relief without lifestyle change. The term 'functional' is often misheard as meaning 'not real,' leading patients to seek a magic cure rather than accept ongoing self-management.",
-        "path_forward": "Engaged patients learn to identify and modify their specific triggers (meal size, fat content, stress, sleep) and build sustainable habits. They move from symptom suppression to symptom prevention, which requires effort but gives them control and reduces medication dependence over time."
+        "truth": "A normal endoscopy does not mean nothing is wrong \u2014 it means no structural damage was found. FD involves real biological dysfunction in motility, nerve sensitivity, and mucosal immune activity that endoscopy cannot see.",
+        "why_resisted": "Being told 'everything looks normal' after invasive testing is often interpreted \u2014 by both patients and clinicians \u2014 as a signal that symptoms are exaggerated or psychological. This causes many people to stop investigating or to feel dismissed.",
+        "path_forward": "People who understand that FD is a disorder of function rather than structure \u2014 like a software problem, not a hardware defect \u2014 are better positioned to pursue the right investigations (motility testing, duodenal biopsies, H. pylori testing) and the right treatments (neuromodulators, gut-brain therapies, prokinetics) rather than cycling through endoscopies waiting for a structural answer that will not come."
       },
       {
-        "truth": "Your gut and brain are strongly connected. FD is not 'all in your head,' but psychological factors\u2014stress, anxiety, catastrophising\u2014genuinely worsen stomach function. You cannot will your stomach to work better, but you can reduce the psychological load that makes it worse.",
-        "why_resisted": "Patients fear being told their symptoms are psychosomatic or 'not real.' Acknowledging anxiety's role feels like admitting defeat or accepting blame. Many resist psychological treatment because they see it as invalidating their physical symptoms.",
-        "path_forward": "Patients who accept the gut\u2013brain connection often find that managing stress, sleep, and mood\u2014via therapy, meditation, or lifestyle change\u2014reduces symptoms more reliably than medication alone. They stop waiting for a diagnosis to change and start actively managing the interaction between their thoughts, stress, and stomach."
+        "truth": "Stress and anxiety are not just consequences of FD \u2014 they are active biological drivers of it, mediated through the gut-brain axis. Addressing only the gut while ignoring mental health leaves a major lever untouched.",
+        "why_resisted": "Many people rightly resist the framing that their symptoms are 'just stress', because it has historically been used to dismiss them without treatment. Acknowledging the gut-brain connection can feel like validating a dismissive narrative.",
+        "path_forward": "Those who frame gut-brain interventions (CBT, hypnotherapy, neuromodulators, mindfulness) as tools for retraining a sensitised nervous system \u2014 rather than admissions that symptoms are imaginary \u2014 tend to engage more effectively with these treatments and achieve meaningful, lasting reductions in symptom severity."
       },
       {
-        "truth": "FD is variability. Symptoms will fluctuate. Some days are worse than others, and this is normal. Seeking a cause for every fluctuation or expecting a straight line of improvement will drive you mad.",
-        "why_resisted": "Patients want predictability and a clear cause-and-effect link. They search for the 'one thing' that triggered today's symptoms and become frustrated when the same meal is fine one day and terrible the next. This searching amplifies symptom focus.",
-        "path_forward": "Patients who accept variability shift their attention from 'Why today?' to 'How can I cope today?' They recognise that multiple factors (stress, sleep, gut inflammation, hormones, meal composition) interact unpredictably. This acceptance reduces anxiety and allows them to focus on modifiable factors rather than chasing phantom triggers."
+        "truth": "There is no universal FD treatment that works for most people \u2014 individual drivers vary significantly, and management requires systematic identification of personal triggers and mechanisms, not just following a standard protocol.",
+        "why_resisted": "People naturally want a diagnosis followed by a definitive treatment. The idea that FD requires prolonged self-investigation and iterative trial-and-error is exhausting and frustrating, especially for those who have already been unwell for years.",
+        "path_forward": "Those who commit to methodical self-investigation \u2014 structured food diaries, systematic elimination, targeted testing for SIBO, H. pylori, gastroparesis, and coeliac disease \u2014 arrive at a clearer personal picture of their condition and achieve better outcomes than those waiting for a clinician to hand them a complete answer."
       },
       {
-        "truth": "If you have been diagnosed with FD after normal endoscopy and basic tests, further expensive testing (advanced motility studies, imaging, specialised blood work) is unlikely to change your management. The diagnosis is clinical, and your improvement depends on trying the interventions that work for most people, not on identifying a rare cause.",
-        "why_resisted": "Patients feel there 'must be something,' so they pursue more tests hoping for an explanation. They delay starting treatment because they fear treating symptoms without knowing the 'real' cause. Fear of missed diagnosis drives testing cycles.",
-        "path_forward": "Patients who engage with evidence-based FD management (dietary change, stress management, targeted medication if needed) often see meaningful improvement within 4\u201312 weeks. They stop waiting for the perfect diagnosis and start treating the problem that exists now."
+        "truth": "Many gastroenterologists manage FD with PPIs or a single medication trial and consider the workup complete after a normal endoscopy. Finding the right clinician \u2014 one who investigates motility, mucosal immune function, and the gut-brain axis \u2014 often requires active effort from the patient.",
+        "why_resisted": "People trust that the specialist system will route them to the right expertise. Accepting that it may not \u2014 and that advocating for specific tests or seeking a second opinion may be necessary \u2014 feels burdensome, particularly when already unwell.",
+        "path_forward": "People who research the full diagnostic landscape of FD (gastric emptying studies, duodenal biopsy eosinophil counts, H. pylori testing, breath testing for SIBO), identify which tests they have not had, and specifically request them or seek out clinicians who routinely offer them \u2014 are more likely to identify actionable findings."
       }
     ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Establish consistent meal size and composition (small, low-fat, frequent meals)",
-          "why_it_matters": "This is the single most modifiable trigger for FD. Large, fatty meals directly impair stomach function and trigger early satiety, bloating, and pain. Consistency reduces day-to-day variability and allows other factors (stress, sleep) to stabilise.",
-          "how_to_start": "Choose one meal per day\u2014usually the largest (often dinner)\u2014and reduce portion by 30\u201340%. Replace some calories with an extra snack 2\u20133 hours later. Keep a simple log of meal size and symptom timing. After 1 week, adjust the next largest meal. Within 3 weeks, you'll see if this is your main lever.",
-          "timeline": "Symptom improvement often begins within 3\u20137 days; significant improvement by 2\u20134 weeks if this is a major trigger.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Identify and reduce dietary fat, especially from trigger foods",
-          "why_it_matters": "Fat is the most potent slower of gastric emptying. Reducing fat from ~40% of calories to 25\u201330% improves stomach emptying and reduces postprandial bloating in most people.",
-          "how_to_start": "For 1 week, note all high-fat foods you eat (butter, oil, fatty meats, cheese, cream, fried foods). Replace three of them with lower-fat alternatives. For example: use low-fat yoghurt instead of full-fat, grilled chicken instead of fried, olive oil spray instead of butter. Start small\u2014don't overhaul diet overnight.",
-          "timeline": "Noticeable improvement often appears within 1\u20132 weeks. Optimal benefit takes 4 weeks as the stomach adapts.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Manage stress and sleep actively (not passively)",
-          "why_it_matters": "Poor sleep and chronic stress directly impair gastric motility and increase visceral hypersensitivity. These factors drive 30\u201350% of FD symptom variation. No dietary or medication change will succeed if stress and sleep are neglected.",
-          "how_to_start": "Pick one small stress-management tool: 10 minutes of walking daily, 5 minutes of box breathing (4-in, 4-hold, 4-out) twice daily, or one 20-minute yoga session weekly. For sleep, pick one sleep habit: no screens 1 hour before bed, or a consistent bedtime \u00b130 min, or a cool, dark bedroom. Start with ONE, master it for 2 weeks, then add a second.",
-          "timeline": "Sleep quality improves within 1 week; stress-related GI symptoms often follow within 2\u20133 weeks. Full benefit takes 4\u20138 weeks.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Address anxiety or depression if present",
-          "why_it_matters": "Comorbid anxiety and depression predict worse FD outcomes and amplify symptom perception. Treating mood often improves GI symptoms, even if medication is weak. Psychological therapy can be as effective as medication.",
-          "how_to_start": "Discuss mood and anxiety screening with your primary care provider. If present, ask about low-dose tricyclic antidepressant (amitriptyline 10\u201325 mg at bedtime) or referral to CBT. Even starting therapy (rather than waiting for therapy availability) begins the process.",
-          "timeline": "Medication effect takes 2\u20134 weeks; therapy effects take 6\u20138 weeks but are more durable. Combined approach is strongest.",
+          "lever": "H. pylori testing and eradication",
+          "why_it_matters": "The only intervention in FD with genuinely curative potential for a subset of people. It is inexpensive, low-risk, and non-invasive. Missing this step means missing the only straightforward fix.",
+          "how_to_start": "Request a urea breath test or stool antigen test from a GP or gastroenterologist. Ensure PPIs have been stopped for at least 2 weeks beforehand. If positive, complete the full eradication course and confirm eradication with a follow-up test.",
+          "timeline": "4\u20138 weeks from treatment completion to symptom assessment",
           "requires_professional": true
         },
         {
-          "lever": "Test for and treat H. pylori if positive",
-          "why_it_matters": "H. pylori eradication resolves FD in a minority of people but is essential to rule out. A positive result changes management decisively.",
-          "how_to_start": "Ask your primary care provider for H. pylori serology or breath/stool test if not already done. If positive, pursue a standard eradication course (PPI + two antibiotics for 7\u201314 days). Retest 4 weeks after completion to confirm eradication.",
-          "timeline": "Test results in 3\u20137 days; eradication takes 1\u20132 weeks; symptom response (if any) takes 4\u20138 weeks post-eradication.",
+          "lever": "Neuromodulator therapy (low-dose TCA or mirtazapine)",
+          "why_it_matters": "Visceral hypersensitivity and gut-brain dysregulation are central mechanisms in FD. Low-dose neuromodulators directly target these pathways, reduce pain thresholds, and in the case of mirtazapine, improve gastric accommodation. The DIAMOND trial data strongly supports amitriptyline for FD, yet it remains underused in clinical practice.",
+          "how_to_start": "Raise the option with a gastroenterologist or GP who is familiar with gut-brain pharmacology. Starting doses are very low (10 mg amitriptyline or nortriptyline at night) and titrated slowly. A 3-month trial is typically needed to assess benefit.",
+          "timeline": "4\u201312 weeks to meaningful symptom change",
           "requires_professional": true
         },
         {
-          "lever": "Trial of tricyclic antidepressant (amitriptyline) if pain or sensitivity is prominent",
-          "why_it_matters": "Low-dose tricyclics reduce visceral pain and improve global FD symptoms in 40\u201350% of patients, particularly for pain-predominant (EPS) subtype. Effect is independent of mood benefits.",
-          "how_to_start": "Ask your primary care provider or gastroenterologist about starting amitriptyline 10 mg at bedtime (or nortriptyline if amitriptyline is not tolerated). Increase by 10 mg every 3\u20137 days to target dose of 25\u201350 mg. Set a 4-week review to assess benefit.",
-          "timeline": "Mild benefit may appear within 2 weeks; full benefit takes 4\u20138 weeks. Requires trial period of at least 4\u20136 weeks to fairly assess.",
+          "lever": "Dietary restructuring \u2014 meal size and fat reduction",
+          "why_it_matters": "In impaired gastric accommodation (the dominant mechanism in PDS), meal volume and fat content are the two most direct triggers for postprandial symptoms. Reducing them reduces the physiological demand on a dysfunctional system.",
+          "how_to_start": "Begin a 2-week trial of 5\u20136 small meals per day with fat content at approximately 20\u201325% of calories. Track symptoms carefully. Work with a dietitian to ensure nutritional adequacy.",
+          "timeline": "1\u20133 weeks to observe change in postprandial symptoms",
+          "requires_professional": false
+        },
+        {
+          "lever": "Gut-directed psychological therapy",
+          "why_it_matters": "Gut-brain therapies (hypnotherapy, CBT, MBSR) address the central sensitisation and autonomic dysregulation that perpetuate FD. They produce durable benefit rather than ongoing symptom suppression and complement \u2014 not replace \u2014 physical treatments.",
+          "how_to_start": "Look for a therapist with specific experience in functional GI disorders. The Monash University gut-directed hypnotherapy programme and the Rome Foundation directory are useful starting points. Self-guided audio programmes by Whorwell's group are an accessible entry point.",
+          "timeline": "8\u201312 weeks of consistent practice for meaningful change",
+          "requires_professional": true
+        },
+        {
+          "lever": "Systematic investigation of contributing conditions",
+          "why_it_matters": "FD frequently co-occurs with SIBO, coeliac disease, EPI, gastroparesis, and MCAS \u2014 conditions that can be identified and specifically treated. Remaining on symptom-management medications indefinitely without investigating these drivers produces partial and unstable improvement.",
+          "how_to_start": "Create a list of conditions not yet tested for. Work through them systematically \u2014 starting with those that have non-invasive testing (H. pylori, coeliac serology, breath testing, thyroid function) before moving to more complex investigations.",
+          "timeline": "3\u201312 months to complete a thorough workup and act on findings",
           "requires_professional": true
         }
       ],
       "common_mistakes": [
-        "Chasing a diagnosis instead of starting treatment: Excessive testing delays evidence-based management and increases healthcare costs and anxiety. FD is a clinical diagnosis; start dietary and lifestyle changes while waiting for results.",
-        "Eliminating too many foods at once: Overly restrictive diets worsen nutritional status and anxiety without clearly identifying triggers. Eliminate one trigger at a time, confirm benefit, then move to the next.",
-        "Expecting linear improvement: FD is variable. A bad day does not mean treatment failed; focus on the trend over 2\u20134 weeks, not day-to-day fluctuation. Expecting perfection increases frustration and discontinuation of helpful strategies.",
-        "Stopping medication or lifestyle change too early: Many people see initial benefit, then stop the intervention (e.g. small meals) and relapse. True improvement requires sustained behaviour change for at least 4\u20138 weeks; benefits are often conditional on continuing the strategy.",
-        "Neglecting stress and sleep while pursuing medication: No medication will work optimally if sleep is poor and stress is unmanaged. Medication + lifestyle is far more effective than either alone.",
-        "Using medication alone without dietary change: PPIs, H2 blockers, and prokinetics provide symptomatic relief but do not address meal-related triggers. Combining medication with smaller, lower-fat meals is more effective than medication alone.",
-        "Ruminating on symptoms and becoming hypervigilant: Constant symptom monitoring amplifies perception and anxiety, worsening symptoms. Set specific symptom check-in times (e.g. note bloating once daily at dinner) rather than all-day monitoring.",
-        "Blaming yourself or feeling shame: FD is not caused by eating wrong or being 'weak.' It is a real physiological disorder with multiple drivers. Self-blame reduces engagement and perpetuates anxiety."
+        "Accepting 'normal endoscopy = nothing wrong' as the end of the workup \u2014 functional tests (gastric emptying, accommodation, breath testing) and biopsy interpretation are separate and often not performed",
+        "Long-term PPI use without reassessment or investigation of the underlying driver \u2014 PPIs treat acid-related symptoms but do not address motility, visceral hypersensitivity, or duodenal mucosal inflammation",
+        "Pursuing ever more restrictive elimination diets without a structured reintroduction \u2014 this can lead to nutritional deficiency, disordered eating patterns, and social isolation without reliably identifying true triggers",
+        "Refusing neuromodulators because 'it's a gut problem, not a mental health problem' \u2014 gut-brain medications work primarily on enteric nerve sensitivity, not mood, and missing them means missing a well-evidenced treatment",
+        "Waiting for a clinician to initiate investigation of all contributing conditions rather than self-advocating for specific tests \u2014 most routine FD workups stop after endoscopy and H. pylori testing",
+        "Treating anxiety and GI symptoms in isolation rather than as an interconnected system \u2014 both improve more when treated together",
+        "Abandoning interventions (dietary changes, psychological therapies, low-dose medications) prematurely \u2014 FD responds slowly; many people stop trials before the therapeutic window has fully elapsed"
       ]
     },
     "finding_help": {
       "specialists": [
         {
-          "type": "General practitioner (GP) or primary care physician",
-          "role": "Often the first point of contact. Can perform initial assessment, exclude red flags (anaemia, weight loss, vomiting), test for H. pylori and coeliac disease, and prescribe first-line treatments (PPI, prokinetics). Can refer to gastroenterology or mental health services as needed.",
-          "notes": "Some GPs are very knowledgeable about FD management; others may under-recognise it or over-investigate. Clear, specific communication about symptoms and impact is helpful."
+          "type": "Gastroenterologist (with interest in functional GI disorders)",
+          "role": "Performs and interprets endoscopy with biopsies, orders motility studies including gastric emptying scintigraphy, manages H. pylori eradication, and prescribes neuromodulators and prokinetics.",
+          "notes": "Not all gastroenterologists take FD beyond endoscopy. Those with a declared interest in functional GI disorders, neurogastroenterology, or gut-brain medicine tend to offer more thorough investigation and management. Seeking a second opinion from a specialist at an academic or teaching hospital is worth considering if initial management is limited to PPIs."
         },
         {
-          "type": "Gastroenterologist",
-          "role": "Specialist in digestive diseases. Performs upper endoscopy if indicated, diagnoses complicated FD (rule out organic disease), and initiates advanced treatments (prokinetics, tricyclic antidepressants). Often the most familiar with FD diagnostic criteria and management.",
-          "notes": "Often the first gastroenterology referral; most FD is managed in primary care once diagnosed. A gastroenterologist experienced in functional disorders is ideal; some focus primarily on organic disease and may be less familiar with FD nuances."
+          "type": "FODMAP-trained registered dietitian",
+          "role": "Guides structured dietary investigation including FODMAP elimination and reintroduction, small meal restructuring, and nutritional adequacy monitoring during restriction.",
+          "notes": "General dietary advice for FD is often vague. A dietitian trained specifically in functional GI conditions (look for those affiliated with Monash University FODMAP training or similar programmes) will provide evidence-based, personalised guidance rather than generic 'avoid spicy food' advice."
         },
         {
-          "type": "Functional or integrative medicine doctor",
-          "role": "Focuses on underlying mechanisms (nutrient absorption, microbiota, food triggers, stress) and individualised treatment plans. May spend more time on dietary assessment and lifestyle factors than conventional gastroenterology. Often more willing to explore complementary approaches.",
-          "notes": "Quality and evidence-base vary widely. Some practise evidence-based functional medicine; others promote unvalidated tests or supplements. Verify credentials and avoid practitioners dismissing conventional diagnosis or promoting unnecessary testing."
+          "type": "Functional medicine doctor / integrative gastroenterologist",
+          "role": "Investigates root causes including gut dysbiosis, SIBO, food sensitivities, mast cell activation, and mucosal immune dysfunction that are often not assessed in standard gastroenterology care.",
+          "notes": "Mainstream clinicians may be sceptical of some functional medicine approaches. Look for practitioners who use evidence-based testing (breath tests, comprehensive stool analysis, elimination-reintroduction protocols) and are transparent about the evidence base for their recommendations."
         },
         {
-          "type": "Clinical psychologist or psychotherapist (CBT-trained)",
-          "role": "Provides cognitive-behavioural therapy or other psychological interventions to address anxiety, catastrophising, stress, and gut\u2013brain dysregulation. Evidence-based and often highly effective, particularly for anxiety-driven FD.",
-          "notes": "May be under-utilised in FD management. Ideally someone with experience in GI conditions or chronic pain. Ask whether they are trained in gut-directed therapy or have experience with FD."
+          "type": "Psychogastroenterologist / GI psychologist",
+          "role": "Delivers gut-directed hypnotherapy, cognitive behavioural therapy adapted for functional GI disorders, and mindfulness-based interventions targeting the gut-brain axis.",
+          "notes": "This is a small subspecialty and access varies greatly by geography. The Rome Foundation maintains a patient resources directory that includes practitioners. In areas without access, self-guided programmes and therapists willing to learn GI-specific protocols may be an alternative."
         },
         {
-          "type": "Dietitian (registered, RD or RDN)",
-          "role": "Provides structured dietary assessment, identifies specific food triggers, and designs a sustainable, nutritionally balanced eating plan tailored to FD (meal size, composition, timing). Helps avoid unnecessary elimination diets.",
-          "notes": "Often under-referred for FD despite strong evidence supporting dietary management. A dietitian with experience in GI conditions is ideal. Ask whether they work in collaboration with your GI doctor."
-        },
-        {
-          "type": "Hypnotherapist (gut-directed, ICHP-certified or similar)",
-          "role": "Delivers hypnotherapy specifically designed for GI symptoms, helping reduce visceral hypersensitivity and improve symptom control. Evidence is emerging but shows promise in FD.",
-          "notes": "Less readily available than other practitioners. Verify training and certification in gut-directed therapy; general hypnotherapy may be less effective for FD. Often used as a complementary approach alongside medical management."
+          "type": "GP / primary care physician",
+          "role": "First port of call for initial testing (H. pylori, coeliac serology, thyroid, ultrasound), referrals, and prescription of first-line medications. Can also request gastric emptying studies if familiar with the evidence.",
+          "notes": "Many GPs have limited time to investigate FD thoroughly. Being specific about which tests are being requested \u2014 and bringing evidence summaries or printed Rome IV criteria to the appointment \u2014 can significantly improve the efficiency of primary care consultations."
         }
       ],
       "patient_communities": [
         {
-          "name": "ROME Foundation (International Foundation for Functional Gastrointestinal Disorders)",
-          "platform": "Website and educational resources",
-          "url": "https://theromefoundation.org/",
-          "notes": "Official source of ROME diagnostic criteria and evidence-based FD information. Excellent patient education materials, expert blogs, and research summaries. Not a community forum, but authoritative and balanced information."
-        },
-        {
-          "name": "IBS Network / IBS Symptom Tracker",
-          "platform": "Website, forum, and app",
-          "url": "https://www.theibsnetwork.org/",
-          "notes": "UK-based charity with resources for FD and IBS overlap. Forum and app for symptom tracking. Practical, peer-reviewed content and supportive community."
-        },
-        {
-          "name": "National Functional Neurogastroenterology and Motility Society (NFNMS) / Patient Support Resources",
-          "platform": "Website",
-          "url": "https://www.nfnms.org/",
-          "notes": "Professional organisation with some patient-facing resources. Useful for finding specialists and accessing research summaries on FD and motility disorders."
-        },
-        {
-          "name": "Reddit: r/FunctionalDyspepsia",
+          "name": "r/functionaldyspepsia",
           "platform": "Reddit",
-          "url": "https://www.reddit.com/r/FunctionalDyspepsia/",
-          "notes": "Active, supportive community where people share symptoms, dietary findings, medication experiences, and coping strategies. Peer-driven; quality varies but generally evidence-informed. Good for real-world symptom patterns."
+          "url": "https://www.reddit.com/r/functionaldyspepsia/",
+          "notes": "The most active dedicated FD community online. Contains detailed shared experience about investigations, medications tried (including neuromodulators, prokinetics, and herbals), dietary strategies, and navigating the medical system. Posts from people who have achieved significant improvement are particularly valuable."
         },
         {
-          "name": "Facebook groups: Functional Dyspepsia Support",
-          "platform": "Facebook",
-          "url": null,
-          "notes": "Multiple active groups with thousands of members sharing experiences, recipes, and tips. Often very supportive but variable medical accuracy; approach anecdotes as observations, not proof."
+          "name": "r/GERD",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/GERD/",
+          "notes": "Many people with FD initially seek help in this community due to symptom overlap. Contains useful experience about PPI use, dietary management, and distinguishing GERD from functional symptoms, though FD is not always clearly distinguished from reflux disease."
         },
         {
-          "name": "Inspire: Digestive Health Community",
-          "platform": "Website and moderated forum",
-          "url": "https://www.inspire.com/",
-          "notes": "Moderated patient communities for various GI conditions, including FD. Peer support with professional moderation. Good balance of empathy and accuracy."
+          "name": "r/ibs",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/ibs/",
+          "notes": "Relevant for those with FD-IBS overlap. Extensive community experience with FODMAP diets, SIBO investigation, and gut-brain treatments that are also applicable to FD management."
         },
         {
-          "name": "Functional Gut Network (FODMAP Diet and Beyond)",
-          "platform": "Website and resources",
-          "url": null,
-          "notes": "Focuses on low-FODMAP diet and functional GI disorders. Not FD-specific but valuable for those with overlapping IBS or bloating/fermentation concerns. Dietitian-led content."
+          "name": "Functional Gut Clinic patient resources",
+          "platform": "Website",
+          "url": "https://www.functionalgutclinic.com/",
+          "notes": "UK-based specialist centre with publicly available educational content on functional GI disorders including FD. Useful for understanding the clinical landscape and what specialist care should look like."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "The Rome Foundation Functional Dyspepsia Patient Guide",
-        "type": "website / document",
+        "title": "Rome IV Functional Gastrointestinal Disorders \u2014 Patient Information",
+        "type": "website",
         "author_or_source": "Rome Foundation",
-        "url": "https://theromefoundation.org/",
-        "description": "Official, evidence-based guide on FD, including cause, symptoms, diagnosis, and treatment options. Written for patients in accessible language, but comprehensive and medically accurate.",
+        "url": "https://theromefoundation.org/rome-iv/rome-iv-criteria/",
+        "description": "The Rome Foundation sets the diagnostic criteria for functional GI disorders worldwide. Their patient-facing resources explain the Rome IV criteria for FD in accessible language and provide background on the gut-brain axis and functional GI mechanisms.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Functional Dyspepsia \u2014 A Review",
+        "type": "research paper",
+        "author_or_source": "Talley NJ, Ford AC \u2014 New England Journal of Medicine, 2015",
+        "url": "https://www.nejm.org/doi/full/10.1056/NEJMra1501505",
+        "description": "A comprehensive, authoritative clinical review of functional dyspepsia covering epidemiology, pathophysiology, diagnosis, and treatment by two of the leading researchers in the field. Useful for those who want to understand the medical evidence base in depth before or during clinical encounters.",
+        "audience": "advanced"
+      },
+      {
+        "title": "The Gut-Brain Connection (Monash University FODMAP blog)",
+        "type": "website",
+        "author_or_source": "Monash University",
+        "url": "https://www.monashfodmap.com/blog/",
+        "description": "The Monash FODMAP team publishes accessible, evidence-based articles on functional GI disorders, the FODMAP diet, the gut-brain axis, and related topics. Particularly useful for those considering dietary approaches to FD management.",
         "audience": "beginner"
       },
       {
@@ -588,90 +593,84 @@
         "type": "book",
         "author_or_source": "Giulia Enders",
         "url": null,
-        "description": "Accessible, illustrated introduction to how the digestive system works, including gut-brain connections, the microbiome, and common GI issues. Entertaining and informative without being overly technical.",
+        "description": "An accessible and engaging overview of how the gut works \u2014 including the enteric nervous system, gut motility, and the gut-brain connection. Does not address FD specifically but provides essential conceptual background that helps people with FD understand what is actually happening in their bodies.",
         "audience": "beginner"
       },
       {
-        "title": "The Whole Body Approach to Clinical Obesity and Weight Regain: Impact of Gastrointestinal Dysfunction",
-        "type": "research article / educational review",
-        "author_or_source": "Clinical Gastroenterology and Hepatology",
+        "title": "Functional Dyspepsia: Mechanisms and Therapy (Gastroenterology Clinics)",
+        "type": "research paper",
+        "author_or_source": "Camilleri M \u2014 Gastroenterology Clinics of North America",
         "url": null,
-        "description": "Provides mechanistic insight into how FD and gastric dysfunction impair eating and weight management. For those interested in deeper understanding of pathophysiology.",
+        "description": "A detailed review of the mechanisms underlying FD including impaired accommodation, duodenal hypersensitivity, and gut-brain dysregulation, with an evidence-based overview of therapeutic options. Best suited to those who want to understand the science at a clinical level.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Effect of Amitriptyline and Escitalopram on Functional Dyspepsia (DIAMOND Trial)",
+        "type": "research paper",
+        "author_or_source": "Talley NJ et al. \u2014 Gastroenterology, 2015",
+        "url": "https://doi.org/10.1053/j.gastro.2015.04.020",
+        "description": "The landmark randomised controlled trial demonstrating that low-dose amitriptyline significantly outperforms placebo and PPI for functional dyspepsia, particularly epigastric pain syndrome. Essential reading for anyone whose clinician has not discussed neuromodulators as an option.",
         "audience": "intermediate"
       },
       {
-        "title": "Functional Dyspepsia and the Microbiome: What the Evidence Tells Us",
-        "type": "research review",
-        "author_or_source": "Various, available in Clinical and Translational Gastroenterology",
-        "url": null,
-        "description": "Reviews emerging evidence on gut dysbiosis and SIBO in FD, including probiotics and dietary approaches. Technical but important for understanding FD's complex aetiology.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness",
-        "type": "book",
-        "author_or_source": "Jon Kabat-Zinn",
-        "url": null,
-        "description": "Foundational text on mindfulness-based stress reduction (MBSR) and the mind\u2013body connection. Highly relevant for FD's psychological and stress components. Practical, research-backed, and accessible.",
+        "title": "About IBS \u2014 Patient Education Centre (IFFGD)",
+        "type": "website",
+        "author_or_source": "International Foundation for Gastrointestinal Disorders (IFFGD)",
+        "url": "https://www.aboutibs.org/",
+        "description": "Although primarily focused on IBS, IFFGD's resources cover functional GI disorders broadly, including functional dyspepsia. The site has patient-friendly explanations of gut-brain treatments, dietary approaches, and how to navigate the medical system \u2014 highly relevant given the FD-IBS overlap.",
         "audience": "beginner"
-      },
-      {
-        "title": "The Gut Feeling: Psychosomatic Aspects of Functional Gastrointestinal Disorders",
-        "type": "research article / educational review",
-        "author_or_source": "Gastroenterology and Hepatology",
-        "url": null,
-        "description": "Explains the gut\u2013brain axis, how stress exacerbates FD, and why psychological intervention is not 'giving up' but essential management. Helps reframe the mind\u2013body connection.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "CBT for Irritable Bowel Syndrome and Functional Dyspepsia",
-        "type": "research review / treatment summary",
-        "author_or_source": "Various, searchable via PubMed or Google Scholar",
-        "url": null,
-        "description": "Reviews evidence for cognitive-behavioural therapy in FD, including specific techniques and expected outcomes. For those considering or beginning psychological treatment.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "Low FODMAP Diet for Functional Dyspepsia: What the Evidence Shows",
-        "type": "research article / summary",
-        "author_or_source": "American Journal of Gastroenterology",
-        "url": null,
-        "description": "Critically examines low-FODMAP diet in FD (evidence is modest); useful for those considering this diet to understand its place in FD management.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "Functional Dyspepsia: Advances in Diagnosis and Treatment",
-        "type": "podcast / video series",
-        "author_or_source": "GI Society, American College of Gastroenterology",
-        "url": null,
-        "description": "Expert interviews and talks on FD diagnosis, treatment options, and emerging research. Accessible multimedia format for learning.",
-        "audience": "intermediate"
-      },
-      {
-        "title": "The Mind\u2013Gut Connection: How the Hidden Conversation Within Our Bodies Impacts Mental Health and Shapesour Futures",
-        "type": "book",
-        "author_or_source": "Emeran Mayer, MD",
-        "url": null,
-        "description": "Deep dive into the neurobiology of the gut\u2013brain axis, written by a leading researcher in the field. Science-based and accessible; important for understanding why FD is more than just 'dysmotility.'",
-        "audience": "intermediate"
-      },
-      {
-        "title": "ACG Clinical Guideline: Diagnosis and Management of Dyspepsia",
-        "type": "clinical guideline",
-        "author_or_source": "American College of Gastroenterology",
-        "url": "https://journals.lww.com/ajg/fulltext/2021/02000/acg_clinical_guideline__diagnosis_and_management.14.aspx",
-        "description": "Official, evidence-based clinical guideline for FD diagnosis and management, targeted at healthcare professionals but readable for informed patients. Summarises current standard of care.",
-        "audience": "advanced"
-      },
-      {
-        "title": "ROME IV Criteria for Functional Dyspepsia",
-        "type": "clinical reference",
-        "author_or_source": "Rome Foundation",
-        "url": "https://theromefoundation.org/",
-        "description": "Diagnostic criteria used worldwide for FD. Understanding these helps clarify whether your symptoms meet the definition and what to expect from medical evaluation.",
-        "audience": "advanced"
       }
     ],
     "relevance_signal": "**Pain or fullness in the upper stomach** (not lower), early satiety, or burning \u2014 without an ulcer or H. pylori."
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }

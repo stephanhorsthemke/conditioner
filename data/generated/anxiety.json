@@ -2,677 +2,690 @@
   "condition_id": "anxiety",
   "condition_name": "Anxiety disorder",
   "generated_at": "2026-04-16T10:40:50.104967Z",
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-sonnet-4-6",
   "sections": {
-    "plain_summary": "Anxiety disorder is a condition where intense worry, fear, or nervous feelings occur regularly and interfere with daily life. Unlike normal stress or nervousness, anxiety disorder involves persistent symptoms that are difficult to control and can happen even without an obvious trigger.",
-    "detailed_summary": "Anxiety disorder is a group of mental health conditions characterized by excessive and persistent worry, fear, or apprehension that lasts weeks to months and causes significant distress or impairment in functioning. People with anxiety disorder experience physical symptoms (racing heart, sweating, trembling), emotional symptoms (intense worry, sense of doom), and behavioral changes (avoidance, restlessness). The condition can develop gradually or suddenly, often triggered by stress, major life changes, or trauma, though sometimes no clear trigger is identifiable. Anxiety disorder is treatable with therapy, medication, lifestyle changes, or a combination of approaches.",
+    "plain_summary": "Anxiety disorder is a family of conditions in which the brain's threat-detection system becomes persistently overactive, producing fear, worry, or physical stress responses that are out of proportion to actual danger and that interfere with daily life. It is one of the most common mental health conditions worldwide, yet it is frequently under-treated, misunderstood, or dismissed \u2014 and its physical symptoms are often investigated for years before the connection to anxiety is made.",
+    "detailed_summary": "Anxiety disorders arise from complex interactions between genetics, early life experience, nervous system regulation, neurochemistry, and ongoing stress load. The autonomic nervous system \u2014 particularly the sympathetic 'fight-or-flight' branch \u2014 becomes easier to activate and harder to down-regulate. This produces both psychological symptoms (persistent worry, fear, avoidance) and a wide range of physical symptoms that can mimic cardiac, gastrointestinal, neurological, or endocrine disease.\n\nThe category includes several distinct diagnoses: generalised anxiety disorder (GAD), panic disorder, social anxiety disorder, specific phobias, agoraphobia, separation anxiety, and selective mutism. Each shares the core feature of disproportionate fear or avoidance, but differs in trigger pattern, symptom profile, and treatment response.\n\nAnxiety disorders have strong bidirectional relationships with other conditions. The gut-brain axis means chronic anxiety can drive IBS, functional dyspepsia, and gut dysbiosis \u2014 and gut pathology can in turn amplify anxiety. Conditions like POTS, MCAS, and hEDS are frequently misidentified as 'just anxiety' by clinicians unfamiliar with them, while those same conditions also genuinely raise baseline sympathetic tone. Trauma history, ADHD, and depression are frequently co-occurring.\n\nMany people with chronic anxiety have spent years being told their physical symptoms have no cause, or have been given medication without any investigation of upstream drivers such as sleep deprivation, nervous system dysregulation, inflammatory load, or hormonal factors. Finding practitioners willing to investigate root contributors \u2014 rather than simply managing symptoms \u2014 can make a significant difference to long-term outcomes.",
     "prevalence": {
-      "summary": "Anxiety disorder is one of the most common mental health conditions, affecting roughly 1 in 10 adults at some point.",
-      "estimate": "4\u20137% of the global population; higher in high-income countries (up to 10% in some regions)",
-      "notes": "Women are about twice as likely to be diagnosed as men. Rates vary by age (peaks in young adulthood and older age) and culture. Underdiagnosis is common in some populations due to stigma, different symptom expression, or lack of access to screening."
+      "summary": "Anxiety disorders affect roughly one in five people at some point in their lives, making them the most common category of mental health condition globally.",
+      "estimate": "Approximately 7\u201318% of the population at any given time; lifetime prevalence around 20\u201330%",
+      "notes": "Prevalence figures vary considerably by diagnostic criteria, country, and methodology. Women are diagnosed approximately twice as often as men, though this may partly reflect reporting differences and clinician bias. Rates in people with chronic physical illness, neurodivergent populations, and trauma survivors are substantially higher. Subclinical anxiety \u2014 significant but not meeting full diagnostic criteria \u2014 is far more prevalent still."
     },
     "subgroups": [
       {
-        "name": "Generalized Anxiety Disorder (GAD)",
-        "description": "Persistent worry about multiple aspects of daily life (work, health, finances, relationships) lasting at least 6 months, with difficulty controlling the worry.",
+        "name": "Generalised Anxiety Disorder (GAD)",
+        "description": "Persistent, difficult-to-control worry spanning multiple life domains \u2014 work, health, relationships, finances \u2014 lasting at least six months. Often experienced as 'always waiting for the next bad thing'.",
         "distinguishing_features": [
-          "Worry is present more days than not",
-          "Worry is about ordinary, everyday concerns",
-          "Difficult to turn off or control",
-          "Often accompanied by fatigue, poor concentration, and sleep disruption"
-        ]
-      },
-      {
-        "name": "Social Anxiety Disorder",
-        "description": "Intense fear of social situations, public speaking, or being judged by others, leading to avoidance of social interactions.",
-        "distinguishing_features": [
-          "Fear is triggered by social or performance situations",
-          "Concern about being embarrassed, judged, or scrutinized",
-          "Symptoms appear immediately in feared situations",
-          "Often includes blushing, trembling, or sweating in social contexts"
+          "Chronic rather than episodic anxiety",
+          "Muscle tension, fatigue, and sleep disturbance are prominent",
+          "Worry feels uncontrollable and jumps between topics",
+          "Physical symptoms are diffuse rather than acute"
         ]
       },
       {
         "name": "Panic Disorder",
-        "description": "Recurrent, unexpected panic attacks (sudden surge of intense fear) followed by worry about future attacks or their consequences.",
+        "description": "Recurrent unexpected panic attacks \u2014 surges of intense fear with acute physical symptoms \u2014 followed by persistent fear of future attacks or their consequences.",
         "distinguishing_features": [
-          "Panic attacks are brief but intensely frightening",
-          "Physical symptoms mimic cardiac events (chest pain, palpitations, shortness of breath)",
-          "Anticipatory anxiety between attacks",
-          "Often leads to agoraphobia (avoidance of places where escape might be difficult)"
+          "Sudden onset of intense physical symptoms: racing heart, chest tightness, breathlessness, dizziness, tingling",
+          "Attacks typically peak within 10 minutes",
+          "Anticipatory anxiety about future attacks is central",
+          "Avoidance of situations associated with past attacks",
+          "Frequently misdiagnosed as cardiac or neurological events initially"
         ]
       },
       {
-        "name": "Specific Phobia",
-        "description": "Intense, irrational fear of a particular object, animal, or situation (e.g., heights, flying, needles, dogs) that leads to avoidance.",
+        "name": "Social Anxiety Disorder",
+        "description": "Intense fear of social or performance situations where scrutiny or embarrassment is possible, leading to significant avoidance.",
         "distinguishing_features": [
-          "Fear is focused on one specific trigger",
-          "Anxiety is proportionally excessive relative to actual danger",
-          "Avoidance is the primary coping strategy",
-          "Anxiety appears immediately upon encounter with the feared object or situation"
+          "Anxiety is specifically triggered by social evaluation",
+          "Physical symptoms (blushing, sweating, shaking) in social contexts",
+          "Often mistaken for introversion or shyness",
+          "High overlap with ADHD and autism spectrum traits"
         ]
       },
       {
-        "name": "Agoraphobia",
-        "description": "Fear and avoidance of places or situations where escape might be difficult or embarrassing, or where help may not be available during a panic attack.",
+        "name": "Health Anxiety (Illness Anxiety Disorder / Somatic Symptom Disorder)",
+        "description": "Persistent, disproportionate preoccupation with having or developing a serious illness, often driven by misinterpretation of normal bodily sensations.",
         "distinguishing_features": [
-          "Often develops after panic attacks",
-          "Avoidance of public transit, crowded places, open spaces, or being outside the home alone",
-          "Can become severely limiting and lead to housebound behavior",
-          "Linked to fear of panic symptoms rather than the situation itself"
+          "Reassurance from tests provides only temporary relief",
+          "Symptom monitoring and body-checking behaviours",
+          "Doctor-shopping or, conversely, avoidance of medical care due to fear",
+          "High comorbidity with other anxiety disorders and depression"
         ]
       },
       {
-        "name": "Separation Anxiety Disorder",
-        "description": "Excessive fear and worry about being separated from attachment figures (parents, caregivers, close relationships), typically beginning in childhood but can persist into adulthood.",
+        "name": "Anxiety secondary to medical conditions",
+        "description": "Anxiety symptoms driven by an underlying physiological condition \u2014 including thyroid dysfunction, POTS, MCAS, hypoglycaemia, or hormonal imbalance \u2014 that mimics or triggers primary anxiety.",
         "distinguishing_features": [
-          "Anxiety emerges specifically when separated or anticipating separation",
-          "May involve fears of harm coming to self or attachment figure",
-          "Can include nightmares, physical complaints when separation occurs",
-          "May result in school refusal or difficulty being alone"
+          "Anxiety symptoms fluctuate in parallel with physical condition",
+          "May not respond to standard psychological treatments alone",
+          "Physical triggers can often be identified (posture changes, eating, hormonal cycles)",
+          "Requires investigation of the underlying condition for meaningful improvement"
+        ]
+      },
+      {
+        "name": "Trauma-driven anxiety (PTSD / complex PTSD)",
+        "description": "Anxiety arising from the nervous system remaining in a state of chronic threat-readiness following traumatic experience.",
+        "distinguishing_features": [
+          "Hypervigilance, startle response, and emotional reactivity are prominent",
+          "Triggers are often identifiable and trauma-linked",
+          "Avoidance and dissociation may be present",
+          "Standard CBT-based anxiety treatment may be insufficient without trauma-specific approaches"
         ]
       }
     ],
     "symptoms": [
       {
-        "symptom": "Racing or pounding heartbeat (palpitations)",
-        "category": "cardiovascular",
-        "notes": "Often one of the first physical signs; can trigger fear of a heart attack, which reinforces anxiety"
+        "symptom": "Persistent worry or rumination that is difficult to control",
+        "category": "psychological",
+        "notes": "Characteristic of GAD; worry tends to shift topics rather than resolve"
       },
       {
-        "symptom": "Shortness of breath or feeling of choking",
+        "symptom": "Racing or pounding heart (palpitations)",
+        "category": "cardiovascular",
+        "notes": "Particularly prominent in panic disorder and health anxiety; can be difficult to distinguish from cardiac arrhythmia without investigation"
+      },
+      {
+        "symptom": "Chest tightness or chest pain",
+        "category": "cardiovascular",
+        "notes": "One of the most common reasons anxiety is initially investigated as a cardiac problem"
+      },
+      {
+        "symptom": "Shortness of breath or feeling unable to take a full breath",
         "category": "respiratory",
-        "notes": "May occur during panic attacks or in social situations; can feel like suffocation"
+        "notes": "Often driven by hyperventilation pattern; can become a focus of health anxiety itself"
       },
       {
-        "symptom": "Chest pain or tightness",
-        "category": "cardiovascular",
-        "notes": "Often mistaken for cardiac symptoms; may lead to unnecessary medical testing"
+        "symptom": "Muscle tension, aching, or trembling",
+        "category": "musculoskeletal",
+        "notes": "Particularly neck, jaw, and shoulders; contributes to tension headaches"
       },
       {
-        "symptom": "Trembling or shaking",
-        "category": "muscular/neurological",
-        "notes": "Can be subtle (inner trembling) or obvious; worse during panic attacks or social anxiety"
+        "symptom": "Fatigue and exhaustion",
+        "category": "systemic",
+        "notes": "Chronic sympathetic activation is metabolically costly; fatigue is a core feature of GAD"
       },
       {
-        "symptom": "Excessive sweating",
-        "category": "thermoregulatory",
-        "notes": "Can occur without physical exertion; more pronounced during panic attacks or in social situations"
-      },
-      {
-        "symptom": "Dizziness, lightheadedness, or feeling faint",
+        "symptom": "Sleep disturbance \u2014 difficulty falling or staying asleep",
         "category": "neurological",
-        "notes": "Often related to rapid breathing or blood pressure changes; common in panic disorder"
+        "notes": "Both a symptom and a driver of anxiety; creates a reinforcing cycle"
       },
       {
-        "symptom": "Nausea or stomach discomfort",
-        "category": "gastrointestinal",
-        "notes": "May be chronic or occur only during anxious episodes; can lead to avoidance of eating"
+        "symptom": "Nausea, stomach upset, or 'nervous stomach'",
+        "category": "digestive",
+        "notes": "Gut-brain axis: anxiety activates the enteric nervous system directly; frequently accompanies social anxiety and panic"
+      },
+      {
+        "symptom": "Diarrhoea or loose stools during periods of high anxiety",
+        "category": "digestive",
+        "notes": "Stress accelerates gut motility; may overlap with or trigger IBS"
+      },
+      {
+        "symptom": "Dizziness or lightheadedness",
+        "category": "neurological",
+        "notes": "Can result from hyperventilation, orthostatic changes, or vagal activation; may overlap with POTS"
+      },
+      {
+        "symptom": "Tingling or numbness in hands, feet, or face",
+        "category": "neurological",
+        "notes": "Often caused by hyperventilation-induced changes in blood CO2; can be misread as neurological disease"
+      },
+      {
+        "symptom": "Sweating, flushing, or chills without obvious cause",
+        "category": "autonomic",
+        "notes": "Reflects sympathetic nervous system dysregulation; may overlap with MCAS or hormonal fluctuation"
+      },
+      {
+        "symptom": "Hypervigilance \u2014 heightened alertness to surroundings or bodily sensations",
+        "category": "psychological",
+        "notes": "Characteristic of trauma-driven anxiety and GAD; drives symptom amplification and health anxiety"
+      },
+      {
+        "symptom": "Irritability or feeling on edge",
+        "category": "psychological",
+        "notes": "Often the presenting feature in men and adolescents, where classic 'worry' may be less prominent"
+      },
+      {
+        "symptom": "Difficulty concentrating or mind going blank",
+        "category": "cognitive",
+        "notes": "Overlaps significantly with ADHD; both conditions often co-exist"
+      },
+      {
+        "symptom": "Avoidance of situations, people, or activities that feel threatening",
+        "category": "behavioural",
+        "notes": "Avoidance provides short-term relief but maintains and often worsens anxiety over time"
+      },
+      {
+        "symptom": "Frequent urination",
+        "category": "urological",
+        "notes": "Sympathetic activation increases bladder urgency; common but often unrecognised as anxiety-related"
       },
       {
         "symptom": "Dry mouth",
-        "category": "oral",
-        "notes": "Result of reduced saliva production during anxiety response"
-      },
-      {
-        "symptom": "Persistent worry or excessive thoughts",
-        "category": "cognitive",
-        "notes": "Often about health, finances, relationships, or work; difficult to dismiss or control"
-      },
-      {
-        "symptom": "Difficulty concentrating or 'mind going blank'",
-        "category": "cognitive",
-        "notes": "Can affect work, school, or reading comprehension; frustrating for those trying to function"
-      },
-      {
-        "symptom": "Irritability or mood changes",
-        "category": "emotional",
-        "notes": "May be constant or worse when anxiety levels spike; can strain relationships"
-      },
-      {
-        "symptom": "Sense of impending doom or catastrophe",
-        "category": "emotional",
-        "notes": "A hallmark of panic attacks; feeling that something terrible is about to happen"
-      },
-      {
-        "symptom": "Insomnia or poor sleep quality",
-        "category": "sleep",
-        "notes": "Worry keeps mind active; difficulty falling asleep or waking in the night with anxiety"
-      },
-      {
-        "symptom": "Restlessness or inability to relax",
-        "category": "behavioral",
-        "notes": "Feeling 'on edge' or unable to sit still; constant fidgeting or pacing"
-      },
-      {
-        "symptom": "Avoidance of anxiety-triggering situations",
-        "category": "behavioral",
-        "notes": "May avoid social events, public transportation, places, or activities; can limit life significantly"
-      },
-      {
-        "symptom": "Muscle tension or aches",
-        "category": "muscular",
-        "notes": "Chronic tension in shoulders, neck, or jaw; results from sustained 'fight or flight' state"
-      },
-      {
-        "symptom": "Hot flashes or chills",
-        "category": "thermoregulatory",
-        "notes": "Sudden temperature changes; can be startling and reinforce anxiety"
-      },
-      {
-        "symptom": "Numbness or tingling sensations",
-        "category": "neurological",
-        "notes": "Often in hands, feet, or face; can feel alarming and mistaken for neurological disease"
+        "category": "autonomic",
+        "notes": "Parasympathetic suppression reduces saliva production during sympathetic activation"
       }
     ],
     "testing": {
       "key_patterns": [
-        "Worry or fear that is difficult to control and occurs most days for at least several weeks",
-        "Physical symptoms (racing heart, sweating, trembling) that appear without obvious physical cause",
-        "Avoidance of situations, places, or people due to anxiety or fear of panic attacks",
-        "Anxiety that interferes with work, school, relationships, or daily activities",
-        "Panic attacks: sudden intense fear with physical symptoms, often feeling like a medical emergency",
-        "Symptoms that improve with distraction or reassurance but quickly return"
+        "Symptoms that worsen predictably during stress and improve during rest, holiday, or low-demand periods",
+        "Physical symptoms (palpitations, breathlessness, GI upset) with normal investigation results across cardiac, respiratory, and GI workups",
+        "Sleep disruption that worsens symptom severity across all domains",
+        "History of early adversity, ongoing chronic stress, or traumatic events that precede symptom onset",
+        "High-functioning periods punctuated by episodes of acute physical and psychological distress",
+        "Physical symptoms that fluctuate with life events, relationships, or work demands rather than following a purely physiological pattern"
       ],
       "at_home": [
         {
-          "name": "Symptom diary",
-          "description": "Keep a daily log for 2\u20134 weeks noting when anxiety or panic occurs, what triggered it (or if unclear), physical symptoms, how long it lasted, and what helped. Note also sleep, caffeine intake, and life events. This creates a pattern map useful for discussing with a clinician.",
-          "safety_notes": "Tracking can sometimes increase anxiety focus in some people. If the diary itself causes distress, focus on weekly summaries instead of daily entries."
+          "name": "Symptom and trigger diary",
+          "description": "Tracking symptoms alongside context \u2014 stress level, sleep quality, food, hormonal phase, social demands, life events \u2014 across several weeks can reveal patterns that clarify whether anxiety is a likely driver and what specific triggers are involved.",
+          "safety_notes": "Excessive monitoring can increase health anxiety in some individuals. If diary-keeping increases distress rather than providing useful information, it may be worth pausing or doing this with support."
         },
         {
-          "name": "Breathing observation",
-          "description": "When you notice anxiety, observe your breathing pattern without trying to change it. Note if breathing is rapid, shallow, or held. Hyperventilation (fast, deep breathing) can trigger or worsen physical anxiety symptoms. This helps identify if breathing changes are part of your anxiety cycle.",
-          "safety_notes": "Do not practice hyperventilation intentionally or for extended periods, as it can cause dizziness or lightheadedness."
+          "name": "GAD-7 and PHQ-9 self-report questionnaires",
+          "description": "The GAD-7 (Generalised Anxiety Disorder 7-item scale) and PHQ-9 (depression screen) are validated, freely available tools used to assess symptom severity. Completing these before a clinical appointment can help communicate symptom burden more precisely.",
+          "safety_notes": "These are screening tools, not diagnostic instruments. Scores guide conversation \u2014 they do not replace clinical assessment."
         },
         {
-          "name": "Trigger identification",
-          "description": "Reflect on situations, times of day, or thoughts that precede anxiety. Are there patterns (e.g., anxiety before social events, after caffeine, when sleep-deprived)? Note both external triggers (situations, people) and internal triggers (thoughts, physical sensations).",
-          "safety_notes": "Avoid intentionally exposing yourself to triggers without professional guidance, as this can reinforce anxiety or trigger panic in unprepared individuals."
+          "name": "Breath-hold and breathing pattern assessment",
+          "description": "A pattern of frequent sighing, yawning, or feeling unable to take a satisfying breath \u2014 especially when at rest \u2014 may indicate chronic low-level hyperventilation, which both results from and perpetuates anxiety. Noting whether symptoms improve briefly after slow, diaphragmatic breathing can be informative.",
+          "safety_notes": "Breath-focus can itself trigger anxiety in some people. Gentle experimentation is appropriate; stopping if distress increases is always correct."
         },
         {
-          "name": "Generalized Anxiety Disorder 7-item scale (GAD-7) self-screening",
-          "description": "A simple 7-question checklist asking how often in the past 2 weeks you experienced symptoms like worry, inability to control worry, trouble relaxing, and irritability. Freely available online. Scores help gauge severity (mild, moderate, severe). Not diagnostic but useful for self-reflection.",
-          "safety_notes": "A screening tool is not a diagnosis. High scores warrant professional evaluation, but low scores don't rule out anxiety disorder."
+          "name": "Orthostatic symptom check",
+          "description": "Noting whether dizziness, palpitations, or anxiety sensations worsen on standing from sitting or lying is relevant \u2014 this pattern may suggest POTS or autonomic dysfunction rather than, or in addition to, primary anxiety disorder.",
+          "safety_notes": "Orthostatic symptoms that are severe or accompanied by fainting warrant prompt clinical investigation rather than self-monitoring alone."
         }
       ],
       "clinical": [
         {
-          "name": "Clinical interview and symptom assessment",
+          "name": "Structured clinical interview (DSM-5 / ICD-11 diagnostic assessment)",
           "type": "gold_standard",
-          "description": "A mental health professional (psychiatrist, psychologist, clinical social worker) asks detailed questions about symptom onset, duration, triggers, impact on functioning, medical history, and family mental health history. This is the foundation of anxiety disorder diagnosis.",
-          "availability": "Available through primary care providers, psychiatry clinics, psychology practices, community mental health centers, or telehealth platforms"
+          "description": "A trained clinician \u2014 psychiatrist, psychologist, or appropriately trained GP \u2014 takes a detailed history to distinguish between anxiety disorder subtypes and rule out other diagnoses. This remains the primary diagnostic method.",
+          "availability": "Available through psychiatry, psychology, and some GP practices. In many countries, a GP referral is the first step."
         },
         {
-          "name": "Standardized anxiety rating scales (GAD-7, HAMA, STAI)",
+          "name": "Thyroid function tests (TSH, free T3, free T4)",
           "type": "standard",
-          "description": "Clinician or patient completes validated questionnaires that measure symptom severity and frequency. Results quantify anxiety level and track change over time with treatment.",
-          "availability": "Administered in mental health clinics, primary care offices, or via telehealth; often free or low-cost"
+          "description": "Both hyperthyroidism and, less commonly, hypothyroidism can produce anxiety-like symptoms. Thyroid function should be checked before attributing symptoms solely to primary anxiety disorder.",
+          "availability": "Routinely available through any GP; included in most standard blood panels."
         },
         {
-          "name": "Differential diagnosis workup (physical examination and laboratory tests)",
+          "name": "Full blood count, metabolic panel, and iron studies",
           "type": "standard",
-          "description": "Physical exam and lab tests (thyroid function, complete blood count, metabolic panel, ECG if cardiac symptoms present, toxicology screen) rule out medical conditions that mimic anxiety (hyperthyroidism, cardiac arrhythmia, stimulant use, anemia, infections) and confirm anxiety as primary diagnosis.",
-          "availability": "Primary care doctor or urgent care can order; results guide next steps"
+          "description": "Anaemia, electrolyte imbalance, and blood glucose dysregulation can each produce or amplify anxiety symptoms. A baseline panel helps rule out these contributors.",
+          "availability": "Standard GP-ordered blood tests."
         },
         {
-          "name": "Structured Diagnostic Interview (SCID or MINI)",
+          "name": "24-hour Holter monitor or event monitor (cardiac)",
           "type": "standard",
-          "description": "A comprehensive clinician-administered interview assessing presence and severity of multiple anxiety disorders and other mental health conditions. Provides precise diagnostic classification (GAD vs. panic disorder vs. social anxiety, etc.).",
-          "availability": "Conducted by psychiatrists, clinical psychologists, or trained mental health professionals in specialty clinics"
+          "description": "For individuals with prominent palpitations, a Holter monitor can rule out arrhythmia before attributing symptoms to anxiety. This also provides reassurance that supports psychological treatment.",
+          "availability": "Ordered by GP or cardiologist; widely available."
         },
         {
-          "name": "Functional neuroimaging (fMRI, PET scan)",
+          "name": "Cortisol and adrenal function assessment",
           "type": "emerging",
-          "description": "Brain imaging studies showing altered activity in regions associated with fear processing (amygdala), attention (prefrontal cortex), and threat detection. Not routine for diagnosis but used in research to understand mechanisms.",
-          "availability": "Primarily in research settings; not standard clinical care"
+          "description": "Chronic anxiety is associated with HPA axis dysregulation. Salivary or urinary cortisol patterns across the day (cortisol awakening response) may indicate chronic stress load or HPA suppression in long-standing cases. This is more commonly used in functional medicine than standard psychiatry.",
+          "availability": "Available through some functional medicine practitioners and integrative doctors; not routinely ordered in mainstream psychiatric care."
+        },
+        {
+          "name": "Tilt table test or NASA lean test (POTS screening)",
+          "type": "standard",
+          "description": "For individuals whose anxiety symptoms are prominently positional or accompanied by heart rate surges on standing, POTS should be screened for. Anxiety and POTS are frequently confused and can co-exist.",
+          "availability": "Ordered by cardiologist, autonomic specialist, or sometimes a knowledgeable GP."
+        },
+        {
+          "name": "Neuropsychological assessment (for ADHD, autism, or trauma comorbidity)",
+          "type": "standard",
+          "description": "In people whose anxiety is long-standing, treatment-resistant, or accompanied by significant concentration difficulties and emotional dysregulation, formal assessment for ADHD or autism spectrum traits may clarify the full picture.",
+          "availability": "Available through psychologists, psychiatrists, and specialist ADHD/autism services."
+        },
+        {
+          "name": "Hormonal panel (oestrogen, progesterone, testosterone, DHEA)",
+          "type": "emerging",
+          "description": "Hormonal fluctuation \u2014 particularly perimenopausal oestrogen decline and premenstrual progesterone changes \u2014 is strongly associated with anxiety onset or worsening. Relevant especially for women with anxiety that fluctuates with the menstrual cycle or began around perimenopause.",
+          "availability": "Available through GP, gynaecologist, or functional medicine practitioner. Timing of the test relative to the menstrual cycle matters significantly."
         }
       ]
     },
     "related_conditions": [
       {
+        "id": "depression",
         "name": "Depression",
         "relationship": "comorbid",
-        "explanation": "Anxiety and depression often co-occur (up to 60% of people with anxiety disorder also experience depression). Shared genetic factors, similar brain changes, and bidirectional causation (anxiety can lead to depression, and vice versa) link these conditions."
+        "explanation": "Anxiety and depression co-occur in approximately 50% of cases. They share overlapping neurobiological mechanisms and often require integrated treatment. Each condition can also drive the other \u2014 chronic anxiety is exhausting and demoralising, while depression reduces coping resources and raises threat sensitivity."
       },
       {
-        "name": "Post-Traumatic Stress Disorder (PTSD)",
+        "id": "trauma",
+        "name": "Trauma / PTSD",
+        "relationship": "upstream",
+        "explanation": "Adverse childhood experiences, attachment disruption, and adult trauma are among the strongest predictors of anxiety disorder development. In trauma-driven anxiety, the nervous system remains in a state of chronic readiness; standard anxiety management may have limited effect without addressing the trauma foundation."
+      },
+      {
+        "id": "ibs",
+        "name": "IBS",
         "relationship": "mechanistic_link",
-        "explanation": "Both involve heightened threat perception and anxiety. PTSD develops following trauma and includes flashbacks and hypervigilance; anxiety disorder is more generalized. Trauma is a strong risk factor for developing anxiety disorders."
+        "explanation": "The gut-brain axis creates a bidirectional relationship between anxiety and IBS. Anxiety activates the enteric nervous system, altering motility and visceral sensitivity. Gut dysfunction, dysbiosis, and inflammation can in turn signal the brain via the vagus nerve, amplifying anxiety. Up to 60% of people with IBS meet criteria for an anxiety disorder."
       },
       {
-        "name": "Obsessive-Compulsive Disorder (OCD)",
-        "relationship": "mechanistic_link",
-        "explanation": "OCD involves intrusive, anxiety-provoking thoughts (obsessions) followed by repetitive behaviors (compulsions) to reduce anxiety. While OCD is distinct, anxiety is the core driver."
-      },
-      {
-        "name": "Insomnia",
-        "relationship": "comorbid",
-        "explanation": "Anxiety and sleep problems reinforce each other. Worry keeps the mind active at night, preventing sleep. Poor sleep worsens emotional regulation and increases daytime anxiety."
-      },
-      {
-        "name": "Irritable Bowel Syndrome (IBS)",
-        "relationship": "comorbid",
-        "explanation": "Anxiety and IBS frequently co-occur. Anxiety alters gut motility and visceral sensitivity; stress hormones affect gut bacteria and inflammation. The gut-brain axis links these conditions bidirectionally."
-      },
-      {
-        "name": "Substance use disorder",
-        "relationship": "comorbid",
-        "explanation": "People with anxiety may self-medicate with alcohol or drugs, leading to dependence. Conversely, some substances (stimulants, alcohol withdrawal) trigger anxiety. Comorbid treatment is essential."
-      },
-      {
-        "name": "Hyperthyroidism",
+        "id": "pots",
+        "name": "POTS / dysautonomia",
         "relationship": "often_confused",
-        "explanation": "Overactive thyroid causes rapid heartbeat, trembling, sweating, anxiety, and insomnia\u2014mimicking anxiety disorder. Thyroid testing is crucial to rule this out."
+        "explanation": "POTS produces palpitations, dizziness, shortness of breath, and cognitive dysfunction that are frequently attributed to anxiety. The two conditions genuinely co-exist but POTS requires specific investigation and management. Treating POTS-driven symptoms as purely psychological is a common and significant clinical error."
       },
       {
-        "name": "Caffeine sensitivity or overconsumption",
-        "relationship": "mechanistic_link",
-        "explanation": "Caffeine increases heart rate, trembling, and alertness, triggering or worsening anxiety symptoms in susceptible individuals. Reducing caffeine can significantly improve anxiety."
-      },
-      {
-        "name": "Cardiac arrhythmias",
+        "id": "mcas",
+        "name": "Mast cell activation syndrome",
         "relationship": "often_confused",
-        "explanation": "Heart rhythm problems cause palpitations, chest discomfort, and shortness of breath, mimicking panic attacks. ECG or cardiac monitoring is needed to differentiate."
+        "explanation": "MCAS can produce flushing, palpitations, sudden dread, and systemic reactivity that closely resemble panic attacks. Mast cell mediators including histamine have direct effects on the central nervous system. The two conditions are frequently confused, and both can be present simultaneously."
       },
       {
-        "name": "Attention-Deficit/Hyperactivity Disorder (ADHD)",
+        "id": "eds",
+        "name": "hEDS / HSD",
         "relationship": "comorbid",
-        "explanation": "ADHD and anxiety disorder often co-occur. Difficulty focusing and managing attention in ADHD can worsen anxiety; anxiety can exacerbate ADHD symptoms. Treating both is important."
+        "explanation": "Hypermobile Ehlers-Danlos syndrome carries a strikingly elevated rate of anxiety disorder, likely due to proprioceptive dysregulation, autonomic dysfunction (often POTS), and the psychological burden of chronic pain and diagnostic invalidation. Anxiety in this context often has clear physiological amplifiers."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "often_confused",
+        "explanation": "Hyperthyroidism \u2014 and sometimes subclinical thyroid overactivity \u2014 produces a near-identical symptom profile to generalised anxiety and panic disorder: palpitations, tremor, heat intolerance, irritability, and sleep disruption. Thyroid function should always be checked before attributing these symptoms solely to anxiety."
+      },
+      {
+        "id": "adhd",
+        "name": "ADHD",
+        "relationship": "comorbid",
+        "explanation": "ADHD and anxiety disorder co-occur in approximately 25\u201350% of cases. ADHD-driven chaos, failure, and social friction can generate secondary anxiety; the two conditions share some symptoms (restlessness, concentration difficulty) and can be difficult to distinguish. Treating anxiety alone when ADHD is the primary driver typically produces poor results."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "Fibromyalgia and anxiety disorder share overlapping mechanisms including central sensitisation, HPA axis dysregulation, and sleep disruption. Each amplifies the other; a significant proportion of people with fibromyalgia have comorbid anxiety disorders."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation",
+        "relationship": "mechanistic_link",
+        "explanation": "Chronic anxiety lowers the threshold for pain and sensory processing, contributing to central sensitisation \u2014 a state in which the nervous system amplifies all incoming signals. This can produce or worsen widespread pain, sound and light sensitivity, and GI symptoms."
+      },
+      {
+        "id": "functional_dyspepsia",
+        "name": "Functional dyspepsia",
+        "relationship": "comorbid",
+        "explanation": "Anxiety is one of the strongest predictors of functional dyspepsia. Autonomic dysregulation and gut-brain signalling alter gastric motility, acid secretion, and visceral sensitivity. Nausea, early satiety, and upper abdominal discomfort are frequently anxiety-driven in the absence of structural pathology."
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "often_confused",
+        "explanation": "Elevated histamine from dietary sources or endogenous production can produce agitation, palpitations, flushing, and anxiety-like symptoms. Some people working to understand their anxiety find that reducing high-histamine foods produces meaningful improvement in symptom frequency."
+      },
+      {
+        "id": "hormonal",
+        "name": "Hormonal / menstrual cycle effects",
+        "relationship": "upstream",
+        "explanation": "Premenstrual oestrogen and progesterone fluctuations are potent modulators of anxiety. PMDD, perimenopause, and postpartum hormonal shifts are among the most common yet under-recognised drivers of anxiety disorder onset or worsening in women. Tracking symptoms across the cycle often reveals a clear pattern."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "mechanistic_link",
+        "explanation": "The gut microbiome communicates with the brain via the vagus nerve, immune signalling, and short-chain fatty acid production. Dysbiosis \u2014 an imbalanced microbial community \u2014 may contribute to anxiety by altering GABA signalling, increasing systemic inflammation, and reducing production of precursors to serotonin and other neurotransmitters."
       }
     ],
     "symptom_management": {
       "strategies": [
         {
-          "name": "Cognitive-Behavioral Therapy (CBT)",
-          "category": "therapy",
-          "description": "Structured psychological therapy helping you identify anxiety-triggering thoughts, challenge unhelpful thought patterns, and gradually face feared situations through exposure. CBT is evidence-based and typically 12\u201320 sessions.",
+          "name": "Cognitive Behavioural Therapy (CBT)",
+          "category": "psychological therapy",
+          "description": "CBT is the most extensively researched psychological treatment for anxiety disorders. It targets the relationship between thoughts, emotions, and behaviours \u2014 particularly the avoidance patterns that maintain anxiety. Exposure-based components are especially important for panic disorder, phobias, and social anxiety.",
           "evidence_level": "strong",
-          "notes": "Considered first-line treatment for most anxiety disorders. Can be delivered in-person or online. Requires active participation and can feel uncomfortable initially when facing fears, but is highly effective."
+          "notes": "CBT is most effective when delivered by a trained practitioner rather than self-guided apps alone. It may be insufficient as the sole treatment when ADHD, trauma, or physiological drivers are present and unaddressed."
         },
         {
-          "name": "Selective Serotonin Reuptake Inhibitors (SSRIs)",
+          "name": "Acceptance and Commitment Therapy (ACT)",
+          "category": "psychological therapy",
+          "description": "ACT focuses on accepting difficult thoughts and feelings rather than fighting them, and on building a values-driven life despite anxiety. It may be particularly useful for people who have tried CBT without sufficient benefit, and for those with health anxiety or chronic illness-related anxiety.",
+          "evidence_level": "strong",
+          "notes": "Growing evidence base; may be better tolerated than exposure-focused CBT for some individuals."
+        },
+        {
+          "name": "SSRI / SNRI medication",
           "category": "medication",
-          "description": "Antidepressant medications (sertraline, escitalopram, paroxetine, etc.) that increase serotonin availability in the brain. SSRIs reduce worry, panic, and physical anxiety symptoms. Typically taken daily; effects build over 4\u20136 weeks.",
+          "description": "Selective serotonin reuptake inhibitors (SSRIs) such as sertraline and escitalopram, and serotonin-norepinephrine reuptake inhibitors (SNRIs) such as venlafaxine, are first-line pharmacological treatments for most anxiety disorder subtypes. They typically require 4\u20136 weeks to take effect.",
           "evidence_level": "strong",
-          "notes": "First-line medication for anxiety disorders. Side effects (nausea, sexual dysfunction, sleep changes) are common initially but often improve. Requires consistent use and professional monitoring. Not immediately sedating but effective over time."
+          "notes": "Medication is most effective when combined with psychological therapy. Not all individuals respond to the first agent tried; switching class or dose may be needed. Side effects, particularly initial activation or increased anxiety in the first 1\u20132 weeks, should be discussed with the prescribing clinician."
         },
         {
-          "name": "Benzodiazepines (e.g., lorazepam, alprazolam)",
-          "category": "medication",
-          "description": "Sedative medications that quickly calm anxiety and panic by enhancing GABA activity in the brain. Provide rapid relief (15\u201330 minutes) and are useful for acute panic or short-term anxiety spikes.",
-          "evidence_level": "strong",
-          "notes": "High risk of dependence with regular use. Recommended only for short-term relief (days to weeks) or acute panic attacks. Long-term use not advised due to tolerance and addiction potential. Can impair driving and coordination."
-        },
-        {
-          "name": "Deep breathing exercises (diaphragmatic/belly breathing)",
+          "name": "Diaphragmatic breathing and physiological sigh",
           "category": "lifestyle",
-          "description": "Breathing slowly and deeply into the belly (not the chest) activates the parasympathetic nervous system, counteracting the anxiety 'fight or flight' response. Techniques include 4-7-8 breathing (4 counts in, 7 hold, 8 out) or simple slow breathing (5\u20136 breaths per minute).",
+          "description": "Slow, diaphragmatic breathing \u2014 typically 4\u20136 breaths per minute \u2014 activates the parasympathetic nervous system via the vagus nerve, reducing heart rate and cortisol. The 'physiological sigh' (double inhale through the nose followed by a long exhale) has shown rapid effects on acute stress in research.",
           "evidence_level": "strong",
-          "notes": "Most effective when practiced regularly, not just during panic. Some people find breathing exercises trigger anxiety initially; if so, try grounding techniques first. Safe for all ages."
-        },
-        {
-          "name": "Progressive Muscle Relaxation (PMR)",
-          "category": "lifestyle",
-          "description": "Systematically tensing and releasing muscle groups (starting with toes, moving to head) to reduce physical tension and increase body awareness. Typically done lying down for 15\u201320 minutes.",
-          "evidence_level": "moderate",
-          "notes": "Effective for reducing muscle tension associated with anxiety. Works best as a regular practice, not just during acute anxiety. May feel awkward initially but becomes easier with repetition."
+          "notes": "Most effective as a regular practice rather than only when distressed. Breath-focused techniques can briefly increase anxiety in some people \u2014 starting with short sessions and titrating up is advisable."
         },
         {
           "name": "Regular aerobic exercise",
           "category": "lifestyle",
-          "description": "30 minutes of moderate-intensity exercise (brisk walking, running, cycling, swimming) 3\u20135 times weekly reduces anxiety symptoms by lowering stress hormones, increasing endorphins, and improving sleep. Benefits build over weeks.",
+          "description": "Exercise is one of the most robustly evidenced non-pharmacological interventions for anxiety. It reduces baseline cortisol, increases GABA and serotonin availability, improves sleep quality, and creates a context in which physical sensations of arousal (elevated heart rate, breathing) are experienced as safe \u2014 a process relevant to panic disorder particularly.",
           "evidence_level": "strong",
-          "notes": "As effective as medication for mild-to-moderate anxiety in some studies. Best done consistently; a single workout helps temporarily but sustained practice is key. Avoid intense exercise 3\u20134 hours before bed."
+          "notes": "Even moderate-intensity exercise (30 minutes, 3\u20135 times per week) produces measurable effects. People with POTS or chronic fatigue should adjust intensity and type carefully."
         },
         {
-          "name": "Sleep hygiene optimization",
+          "name": "Sleep prioritisation",
           "category": "lifestyle",
-          "description": "Consistent sleep schedule, dark/cool bedroom, avoiding screens 1 hour before bed, limiting caffeine after 2 PM, and avoiding large meals near bedtime. Poor sleep worsens anxiety, so quality sleep reduces symptoms.",
+          "description": "Sleep deprivation is one of the most potent amplifiers of anxiety \u2014 it raises amygdala reactivity and reduces prefrontal regulation. Improving sleep quality and quantity often produces rapid and substantial reduction in anxiety severity across all subtypes.",
           "evidence_level": "strong",
-          "notes": "Sleep and anxiety bidirectionally influence each other. Improving sleep often noticeably reduces daytime anxiety within days to weeks. May require lifestyle adjustments but has no side effects."
+          "notes": "Sleep improvement may require addressing sleep anxiety specifically (common in GAD), treating any co-occurring sleep apnoea, and consistent sleep hygiene. Medication that disrupts sleep architecture (including some commonly prescribed anxiolytics) may worsen this lever."
+        },
+        {
+          "name": "Mindfulness-Based Stress Reduction (MBSR)",
+          "category": "psychological therapy",
+          "description": "MBSR is an 8-week structured programme combining mindfulness meditation, body scan practices, and gentle movement. It reduces anxiety severity by improving awareness of and relationship to anxious thoughts and sensations without being controlled by them.",
+          "evidence_level": "strong",
+          "notes": "Available in group, individual, and digital formats. Some individuals find meditation briefly increases anxiety initially \u2014 working with a qualified instructor can help navigate this."
         },
         {
           "name": "Caffeine reduction or elimination",
           "category": "diet",
-          "description": "Reducing or eliminating caffeine (coffee, tea, energy drinks, chocolate) decreases physical anxiety symptoms (jitteriness, racing heart, trembling) in sensitive individuals. Gradual reduction over 2\u20133 weeks minimizes withdrawal headaches.",
-          "evidence_level": "strong",
-          "notes": "Caffeine sensitivity varies; some people notice dramatic improvement, others less so. Limit to \u2264100 mg daily (one cup of tea) or none. Avoid abrupt cessation if a heavy user due to withdrawal."
-        },
-        {
-          "name": "Mindfulness meditation or acceptance-based approaches",
-          "category": "lifestyle",
-          "description": "Training the mind to observe anxious thoughts and bodily sensations without judgment or trying to change them. Regular practice (10\u201320 minutes daily) reduces reactivity to anxiety triggers and increases emotional resilience.",
+          "description": "Caffeine is an adenosine antagonist that increases cortisol, heart rate, and sympathetic tone \u2014 directly mimicking and amplifying anxiety. Many individuals with anxiety disorder are highly sensitive to caffeine's effects, and reduction or elimination often produces meaningful symptom improvement.",
           "evidence_level": "moderate",
-          "notes": "Effective but requires consistent practice. Can initially feel challenging if racing thoughts are prominent. Apps like Headspace or Calm provide guided meditation. Benefits accumulate over weeks to months."
+          "notes": "Withdrawal period of several days with potential headache and fatigue. Effects on anxiety become apparent within 1\u20132 weeks of sustained reduction."
         },
         {
-          "name": "Limit alcohol and avoid sedative drug use",
-          "category": "lifestyle",
-          "description": "Alcohol and sedative drugs may provide temporary relief but worsen anxiety long-term through sleep disruption, dependence, and rebound anxiety. Avoiding these protects mental health and prevents co-occurring addiction.",
-          "evidence_level": "strong",
-          "notes": "One or two drinks may feel calming initially, but regular use increases anxiety overall. If using alcohol to cope with anxiety, discuss alternatives with a healthcare provider."
-        },
-        {
-          "name": "Social connection and support",
-          "category": "lifestyle",
-          "description": "Maintaining relationships, joining groups, or sharing worries with trusted friends reduces isolation and provides emotional support. Social interaction buffers against anxiety and depression.",
+          "name": "Magnesium supplementation",
+          "category": "supplement",
+          "description": "Magnesium plays a role in GABA receptor function and HPA axis regulation. Deficiency \u2014 common in chronic stress and poor diet \u2014 is associated with increased anxiety and sleep disruption. Magnesium glycinate or threonate may be better tolerated and more bioavailable than oxide forms.",
           "evidence_level": "moderate",
-          "notes": "Social anxiety may make this difficult; start small (one trusted person) or seek support groups. Isolation worsens anxiety, so connection is protective even if initially uncomfortable."
+          "notes": "Evidence is reasonable but not definitive. Generally well-tolerated. High doses of some forms can cause loose stools. Worth trialling in consultation with a knowledgeable practitioner."
         },
         {
-          "name": "Exposure therapy (guided)",
-          "category": "therapy",
-          "description": "Gradually facing feared situations or objects (e.g., public speaking for social anxiety, driving for agoraphobia) under professional guidance. Exposure teaches the brain that the feared situation is safe, reducing avoidance.",
+          "name": "Trauma-informed therapy (EMDR, somatic approaches)",
+          "category": "psychological therapy",
+          "description": "For anxiety with a clear trauma foundation, standard CBT approaches may be insufficient. EMDR (Eye Movement Desensitisation and Reprocessing) and somatic therapies (e.g. Somatic Experiencing, sensorimotor psychotherapy) work directly with the nervous system's trauma response rather than only with thought patterns.",
           "evidence_level": "strong",
-          "notes": "Core component of CBT; highly effective for specific phobias and panic disorder. Must be done systematically to avoid traumatization. Do not attempt on your own; requires professional guidance and pacing."
+          "notes": "EMDR has strong evidence for PTSD; evidence for generalised anxiety is growing. These approaches require trained practitioners and may initially increase distress before improvement. Pacing matters."
         },
         {
-          "name": "Limit avoidance behaviors",
-          "category": "behavioral",
-          "description": "While anxiety feels safer when you avoid triggers, avoidance reinforces anxiety by teaching the brain that triggers are dangerous. Gradually reducing avoidance (with professional support) breaks this cycle.",
-          "evidence_level": "strong",
-          "notes": "Avoidance is a natural coping response but ultimately worsens anxiety. Professional guidance is important to avoid overwhelming yourself."
-        },
-        {
-          "name": "Stress management techniques (yoga, tai chi, hobbies)",
+          "name": "Alcohol reduction or elimination",
           "category": "lifestyle",
-          "description": "Regular stress-reducing activities calm the nervous system and provide healthy distraction. Yoga, tai chi, gardening, art, or sports reduce cortisol and anxiety while improving mood.",
-          "evidence_level": "moderate",
-          "notes": "Most beneficial when done regularly. Choose activities you enjoy for sustainability. Not a standalone treatment for clinical anxiety but valuable as part of a comprehensive approach."
+          "description": "Alcohol is commonly used to self-manage anxiety but produces rebound anxiety during withdrawal \u2014 even after a single night of drinking. Chronic use worsens sleep quality and depletes GABA reserves. Reducing or eliminating alcohol often produces significant and relatively rapid improvement in baseline anxiety.",
+          "evidence_level": "strong",
+          "notes": "For those with alcohol dependence, withdrawal requires medical supervision. The improvement in anxiety after sustained abstinence is often greater than people anticipate."
         }
       ],
       "things_to_avoid": [
-        "Caffeine in large amounts\u2014increases heart rate and trembling, triggering or intensifying anxiety symptoms",
-        "Alcohol or recreational drugs\u2014provide temporary relief but worsen anxiety long-term and increase dependence risk",
-        "Avoidance of anxiety triggers\u2014reinforces the belief that triggers are dangerous, expanding the range of feared situations over time",
-        "Excessive reassurance-seeking\u2014temporarily soothes anxiety but increases dependence on reassurance and prolongs the anxiety cycle",
-        "Skipping sleep or maintaining an erratic sleep schedule\u2014depletes emotional resilience and significantly worsens anxiety",
-        "Catastrophic thinking without reality-testing\u2014feeding catastrophic thoughts without questioning them strengthens anxiety beliefs",
-        "Isolating yourself\u2014loneliness worsens anxiety and depression; connection is protective",
-        "Over-exercising compulsively to 'burn off' anxiety\u2014can become avoidant behavior; moderate, enjoyable exercise is more sustainable",
-        "Overreliance on benzodiazepines without addressing underlying causes\u2014leads to dependence and tolerance without long-term improvement"
+        "Long-term benzodiazepine use as a primary treatment \u2014 tolerance develops rapidly, withdrawal is difficult, and they do not address underlying mechanisms; they may also worsen depression and cognitive function over time",
+        "Using avoidance as a long-term coping strategy \u2014 while it provides immediate relief, avoidance is the primary mechanism by which anxiety maintains and expands itself",
+        "Excessive caffeine intake \u2014 it directly activates the sympathetic nervous system and amplifies all anxiety symptoms",
+        "Sleep deprivation or irregular sleep schedules \u2014 among the most potent amplifiers of anxiety severity",
+        "High alcohol use as self-medication \u2014 rebound anxiety is pharmacologically guaranteed, and the cycle of use and withdrawal worsens baseline anxiety over time",
+        "Ignoring physical symptoms without adequate investigation \u2014 dismissing all symptoms as 'just anxiety' can delay identification of genuine co-occurring conditions such as POTS, MCAS, or thyroid dysfunction",
+        "Excessive reassurance-seeking \u2014 in health anxiety particularly, seeking reassurance provides only brief relief and reinforces the belief that symptoms are dangerous",
+        "Treating anxiety in isolation when ADHD is a significant co-driver \u2014 stimulant treatment for ADHD can paradoxically reduce anxiety by addressing the chaos and failure that generate it"
       ]
     },
-    "uncomfortable_truths": [],
+    "uncomfortable_truths": [
+      {
+        "truth": "Avoidance feels like the solution but is actually the maintenance mechanism. Every situation avoided confirms to the nervous system that the threat was real and that avoidance was necessary.",
+        "why_resisted": "Avoidance works in the short term \u2014 it immediately reduces distress. The relief is real, fast, and reinforcing. The long-term cost accumulates slowly and invisibly until the avoided territory has become very small.",
+        "path_forward": "People who engage systematically with graduated exposure \u2014 facing feared situations in a structured, supported way \u2014 typically find that their anxiety about a given situation reduces with each successful encounter, and that the range of situations they can manage expands progressively over months."
+      },
+      {
+        "truth": "Anxiety disorders often have identifiable physiological contributors \u2014 poor sleep, hormonal imbalance, POTS, thyroid dysfunction, ADHD, or trauma \u2014 that standard psychiatric care may not investigate. Accepting medication without exploring these drivers means the underlying problem continues.",
+        "why_resisted": "The mental health system is oriented around symptom management rather than root cause investigation. Patients often lack the information to know what to ask for, and clinicians may not have time or training to look beyond the presenting diagnosis.",
+        "path_forward": "People who methodically investigate contributors \u2014 working with integrative practitioners, tracking symptom patterns, and pursuing hormonal, autonomic, and neuropsychological assessment where relevant \u2014 frequently find modifiable factors that, when addressed, reduce anxiety severity substantially and allow psychological treatment to be more effective."
+      },
+      {
+        "truth": "Alcohol worsens anxiety over time, even though it reliably relieves it in the short term. The pharmacological rebound from even moderate drinking increases baseline anxiety the following day.",
+        "why_resisted": "The short-term relief is immediate, reliable, and socially normalised. The connection between drinking and next-day anxiety is rarely made because the gap in time obscures the cause.",
+        "path_forward": "People who reduce or eliminate alcohol typically notice \u2014 within 2\u20134 weeks of sustained change \u2014 a meaningful reduction in baseline anxiety, improved sleep quality, and a greater sense of being able to manage without chemical regulation."
+      },
+      {
+        "truth": "Anxiety disorders do not resolve by understanding them. Insight is necessary but not sufficient \u2014 improvement requires behavioural change, often while still anxious.",
+        "why_resisted": "Researching one's condition feels productive and is less frightening than exposure, behaviour change, or engaging with avoided emotions. Many people with anxiety are intellectually oriented and find understanding a more comfortable approach than doing.",
+        "path_forward": "People who combine genuine understanding of their condition with consistent behavioural practice \u2014 particularly exposure, sleep improvement, and exercise \u2014 make progress that knowledge alone does not produce. The anxiety does not need to be gone before action is taken; it reduces through action."
+      }
+    ],
     "sustainable_improvement": {
       "key_levers": [
         {
-          "lever": "Reducing avoidance (gradual exposure to feared situations or triggers)",
-          "why_it_matters": "Avoidance is the most powerful maintaining factor in anxiety disorder. Each time you avoid something feared, anxiety temporarily decreases, reinforcing the habit. Breaking the avoidance cycle teaches your brain that feared situations are tolerable, leading to lasting improvement.",
-          "how_to_start": "Identify one small avoidable situation (e.g., a public place you haven't visited, a social call you've declined). With professional support, plan a single exposure with a clear success definition. Start small to build confidence.",
-          "timeline": "Noticeable shifts in anxiety tolerance occur within 2\u20134 weeks of consistent small exposures. Major behavioral change takes 8\u201312 weeks or more.",
-          "requires_professional": true
-        },
-        {
-          "lever": "Consistent aerobic exercise (30 min, 3\u20135 times weekly)",
-          "why_it_matters": "Exercise reduces cortisol and adrenaline, increases mood-boosting endorphins, improves sleep, and strengthens emotional resilience. It is as effective as medication for mild-to-moderate anxiety and has lasting benefits.",
-          "how_to_start": "Choose an activity you enjoy (walking, cycling, swimming, dancing). Start with 15\u201320 minutes 2\u20133 times weekly and gradually increase to 30 minutes 3\u20135 times weekly. Consistency matters more than intensity.",
-          "timeline": "Improvements in mood and sleep begin within 1\u20132 weeks; anxiety reduction deepens over 4\u20138 weeks with consistent effort.",
+          "lever": "Consistent quality sleep (7\u20139 hours, regular schedule)",
+          "why_it_matters": "Sleep is when the brain processes threat information and resets the amygdala. Chronic sleep deprivation keeps threat-detection systems perpetually sensitised and undermines every other intervention \u2014 medication, therapy, and lifestyle changes all work less well on a poorly-sleeping brain.",
+          "how_to_start": "Set a consistent wake time first (before trying to fix sleep onset), reduce screen light 60\u201390 minutes before bed, and keep the bedroom cool and dark. If sleep anxiety is a barrier, a brief course of CBT-I (Cognitive Behavioural Therapy for Insomnia) may be the single highest-leverage starting point.",
+          "timeline": "Noticeable improvement in mood and anxiety sensitivity within 1\u20132 weeks of consistent sleep improvement",
           "requires_professional": false
         },
         {
-          "lever": "Regular CBT or psychotherapy with an anxious-disorder specialist",
-          "why_it_matters": "CBT directly addresses the thought-behavior-emotion cycle driving anxiety. A trained therapist helps identify unhelpful thinking patterns, challenges catastrophic beliefs, and guides safe exposure to triggers, producing long-term remission in 50\u201370% of people.",
-          "how_to_start": "Seek a therapist specializing in anxiety disorders (check Psychology Today directory, ADAA, or ask your primary care doctor for a referral). Schedule an initial appointment and commit to 12\u201320 sessions.",
-          "timeline": "Some relief in 4\u20136 weeks; significant improvement by 12 weeks with consistent weekly sessions; maintenance gains over 6\u201312 months.",
+          "lever": "Evidence-based psychological treatment (CBT, ACT, or trauma-focused therapy)",
+          "why_it_matters": "Anxiety disorder is a learned pattern \u2014 at the neural level, at the behavioural level, and at the level of how situations are appraised. Evidence-based therapy works by actively creating new neural pathways through repeated corrective experience. Without it, even medication tends to manage rather than resolve the condition.",
+          "how_to_start": "Identify the anxiety subtype (GAD, panic, social, health, trauma-driven) and seek a therapist with specific training in that area. Not all therapists are equivalent \u2014 method and training matter. Initial sessions focused on psychoeducation and formulation are a meaningful starting point.",
+          "timeline": "Meaningful improvement typically within 12\u201320 sessions for uncomplicated presentations; longer for complex trauma or treatment-resistant cases",
           "requires_professional": true
         },
         {
-          "lever": "Improving sleep quantity and quality (7\u20139 hours nightly, consistent schedule)",
-          "why_it_matters": "Sleep deprivation worsens emotional regulation, increases threat perception, and heightens anxiety. Good sleep directly reduces anxiety symptoms and enhances resilience to stressors.",
-          "how_to_start": "Set a consistent bedtime and wake time. Create a dark, cool, quiet bedroom. Stop screens 1 hour before bed. Aim for 7\u20139 hours nightly. Track how you feel.",
-          "timeline": "Anxiety improvement noticeable within days of better sleep; consistent gains within 1\u20132 weeks.",
+          "lever": "Regular aerobic exercise (3\u20135 times per week)",
+          "why_it_matters": "Exercise reduces cortisol, increases GABA and brain-derived neurotrophic factor (BDNF), improves sleep architecture, and \u2014 crucially for panic disorder \u2014 creates repeated safe experiences of elevated heart rate and breathlessness, reducing interoceptive fear.",
+          "how_to_start": "Begin with 20 minutes of brisk walking three times per week. Consistency matters far more than intensity. Building to 150 minutes per week of moderate aerobic activity over 4\u20136 weeks is a realistic target.",
+          "timeline": "Mood and anxiety effects measurable within 2\u20134 weeks of consistent practice",
           "requires_professional": false
         },
         {
-          "lever": "Eliminating or dramatically reducing caffeine intake",
-          "why_it_matters": "Caffeine amplifies physical anxiety symptoms (racing heart, trembling, jitteriness) and can trigger panic in sensitive individuals. Removal directly reduces symptom severity.",
-          "how_to_start": "Identify your daily caffeine sources (coffee, tea, energy drinks, chocolate, medication). Gradually reduce over 2\u20133 weeks (abrupt cessation causes withdrawal headaches). Note symptom changes.",
-          "timeline": "Noticeable reduction in physical anxiety symptoms within 3\u20137 days; full benefits by 2\u20133 weeks.",
-          "requires_professional": false
-        },
-        {
-          "lever": "Medication (SSRI or other first-line agent) when symptoms are moderate-to-severe",
-          "why_it_matters": "SSRIs reduce baseline anxiety and panic frequency, making other treatments (therapy, lifestyle) more tolerable and effective. They don't cure anxiety but reduce symptoms enough to engage in therapy.",
-          "how_to_start": "Discuss options with a psychiatrist or primary care doctor. Start a trial SSRI at a low dose, titrating gradually. Plan for 4\u20136 weeks to see benefits; continue at least 6\u201312 months.",
-          "timeline": "Initial effects in 4\u20136 weeks; full benefit by 8\u201312 weeks; ongoing improvement with therapy and lifestyle changes.",
+          "lever": "Identification and treatment of co-occurring conditions (ADHD, POTS, thyroid, hormonal factors)",
+          "why_it_matters": "When anxiety is partially or substantially driven by an untreated physiological condition, psychological and pharmacological treatments for anxiety alone produce limited results. Addressing the physiological amplifier can produce improvements in anxiety that years of standard treatment failed to achieve.",
+          "how_to_start": "Map whether anxiety symptoms fluctuate with specific patterns \u2014 posture (POTS), hormonal cycle, specific foods, stimulant response. Pursue targeted investigation with a practitioner willing to look beyond the primary anxiety diagnosis.",
+          "timeline": "Variable depending on the co-occurring condition; hormone-related anxiety may improve within 1\u20132 menstrual cycles once treated; POTS management may produce improvement within weeks",
           "requires_professional": true
         },
         {
-          "lever": "Building a strong support system and reducing isolation",
-          "why_it_matters": "Social isolation worsens anxiety; connection provides emotional regulation, perspective, and practical help. Relationships buffer stress and improve mental health outcomes.",
-          "how_to_start": "Reach out to a trusted friend, family member, or support group (online or in-person). Start with small, low-pressure interactions. Consider group therapy or an anxiety support community.",
-          "timeline": "Emotional benefit often immediate; protective effects build over weeks to months.",
+          "lever": "Sustained reduction of alcohol and caffeine",
+          "why_it_matters": "Both substances directly modulate the neurochemical environment in ways that worsen anxiety \u2014 caffeine by activating sympathetic tone, alcohol through rebound GABAergic withdrawal. Removing or substantially reducing both reduces the physiological noise in which anxiety is embedded.",
+          "how_to_start": "Reduce caffeine gradually over 2 weeks to avoid withdrawal headache. Reduce alcohol by setting clear rules about quantity and frequency rather than relying on willpower in the moment.",
+          "timeline": "Baseline anxiety reduction typically apparent within 2\u20134 weeks of sustained change",
+          "requires_professional": false
+        },
+        {
+          "lever": "Regular nervous system regulation practice (breathwork, meditation, body-based practices)",
+          "why_it_matters": "The autonomic nervous system can be trained toward greater parasympathetic tone and more flexible recovery from stress. This is a skill that improves with consistent practice \u2014 the nervous system is plastic, and regular regulation practice produces measurable changes in heart rate variability, cortisol patterns, and subjective anxiety.",
+          "how_to_start": "Start with 5 minutes of slow diaphragmatic breathing (4 counts in, 6 counts out) once daily, preferably at the same time. Build gradually toward 15\u201320 minutes daily.",
+          "timeline": "Acute effects immediate; sustained baseline change apparent within 6\u20138 weeks of daily practice",
           "requires_professional": false
         }
       ],
       "common_mistakes": [
-        "Relying on short-term avoidance to manage anxiety\u2014avoidance feels good immediately but expands fear over time, ultimately worsening the condition",
-        "Stopping medication or therapy too early\u2014anxiety often rebounds if treatment is discontinued prematurely; most benefit from 6\u201312 months of consistent treatment",
-        "Using alcohol or benzodiazepines as primary coping tools\u2014provides temporary relief but causes dependence and worsens anxiety long-term",
-        "Expecting overnight recovery\u2014anxiety disorder develops over time and improves gradually; sustainable change takes weeks to months, not days",
-        "Attempting self-directed exposure therapy without professional guidance\u2014unstructured exposure to feared situations can backfire and reinforce anxiety if not done carefully",
-        "Ignoring sleep, exercise, or caffeine habits while expecting medication alone to work\u2014lifestyle factors are foundational; medication is most effective combined with these changes",
-        "Seeking endless reassurance instead of learning to tolerate uncertainty\u2014reassurance provides brief relief but strengthens the anxiety cycle; tolerating some uncertainty is key",
-        "Not addressing comorbid depression\u2014if depression is present, it must be treated alongside anxiety for full recovery",
-        "Giving up after one therapy approach doesn't work\u2014different therapies work for different people; trying another modality or therapist may be necessary"
+        "Treating anxiety with avoidance rather than engagement \u2014 this maintains and expands the disorder over time while feeling like self-protection",
+        "Using alcohol regularly to manage anxiety \u2014 each use worsens the baseline anxiety it temporarily relieves",
+        "Starting psychological therapy but stopping before the most important (and most uncomfortable) phase of exposure work is reached",
+        "Relying on benzodiazepines long-term without concurrent therapy \u2014 symptom management without mechanism change",
+        "Seeking reassurance excessively for health anxiety \u2014 each reassurance cycle reinforces the belief that the threat was real",
+        "Treating anxiety without screening for ADHD, POTS, or thyroid dysfunction \u2014 when these drive the anxiety, standard treatment produces limited benefit",
+        "Expecting medication alone to produce lasting recovery \u2014 medication is most effective as a platform for therapy and behavioural change, not a replacement for them",
+        "Abandoning an SSRI during the initial activation period (weeks 1\u20132) without discussing it with the prescribing clinician \u2014 this phase passes and is not predictive of the final response",
+        "Conflating high-functioning periods with recovery \u2014 anxiety disorders characteristically have periods of relative remission that can mask the underlying pattern and delay sustained treatment"
       ]
     },
     "finding_help": {
       "specialists": [
         {
+          "type": "Clinical psychologist or psychotherapist trained in CBT / ACT / EMDR",
+          "role": "The primary practitioner for evidence-based psychological treatment. A well-matched therapist with specific anxiety training and relevant subtype experience is the highest-value clinical relationship for most people with anxiety disorder.",
+          "notes": "Not all therapists are equivalent. It is reasonable to ask about specific experience with the relevant subtype (panic disorder, health anxiety, social anxiety, PTSD) before committing to treatment. Method and training matter more than general therapy experience."
+        },
+        {
           "type": "Psychiatrist",
-          "role": "Medical doctor specializing in mental health who can diagnose anxiety disorder, prescribe and monitor psychiatric medications, and provide or coordinate therapy. Often involved for moderate-to-severe cases or when medication is considered.",
-          "notes": "Often the first specialist to confirm diagnosis and initiate medication. May also provide therapy. Insurance often requires psychiatrist for medication management; availability varies widely."
+          "role": "For medication management, complex presentations, or when diagnosis is uncertain. Particularly relevant where anxiety co-occurs with depression, bipolar disorder, or psychosis, or when multiple medication trials are needed.",
+          "notes": "Psychiatrists vary considerably in their willingness to investigate non-psychiatric drivers of anxiety. Those with integrative or functional training may investigate more broadly."
         },
         {
-          "type": "Clinical psychologist or therapist (LCSW, LPC, LMFT)",
-          "role": "Mental health professional trained in evidence-based psychotherapies like CBT, exposure therapy, and mindfulness-based interventions. Often provide the primary ongoing treatment for anxiety disorder.",
-          "notes": "Psychologists (PhD or PsyD) have advanced training; LCSWs, LPCs, and LMFTs also provide therapy. Therapist specialization in anxiety disorders is important. Many can be accessed through insurance, employee assistance programs, or online platforms."
+          "type": "Functional medicine doctor or integrative physician",
+          "role": "Investigates physiological contributors to anxiety \u2014 hormonal imbalance, thyroid dysfunction, nutritional deficiencies, HPA axis dysregulation, and autonomic nervous system function \u2014 that mainstream psychiatry may not address.",
+          "notes": "Quality and evidence-orientation varies in this field. Practitioners associated with IFMCP (Institute for Functional Medicine Certified Practitioners) credentialling may be more reliable. Mainstream clinicians are often dismissive of this approach."
         },
         {
-          "type": "Primary care doctor (MD, DO, NP, PA)",
-          "role": "Often the first point of contact. Can screen for anxiety, rule out medical causes (thyroid, heart), start SSRIs, and refer to specialists. Valuable for coordinating care and ongoing monitoring.",
-          "notes": "May lack time or expertise for detailed anxiety assessment. Referral to a mental health specialist is standard and recommended. Many PCPs can manage stable anxiety with medication but therapy benefits from a specialist."
+          "type": "Cardiologist or autonomic specialist (for POTS evaluation)",
+          "role": "Essential when anxiety symptoms are accompanied by postural palpitations, dizziness on standing, or other features suggesting dysautonomia. POTS is frequently mistaken for \u2014 and missed behind \u2014 an anxiety diagnosis.",
+          "notes": "A knowledgeable GP can order initial orthostatic blood pressure and heart rate measurements, but formal tilt-table testing typically requires specialist referral."
         },
         {
-          "type": "Counselor or anxiety disorder specialist (cognitive behavior therapist)",
-          "role": "Mental health professional with specialized training in anxiety disorders and CBT. Provides evidence-based therapy focused on exposure and cognitive restructuring.",
-          "notes": "Often more affordable than psychiatry; may have shorter wait times. Look for therapists certified in CBT or members of the Anxiety and Depression Association of America (ADAA)."
+          "type": "ADHD / neurodevelopmental specialist (psychologist or psychiatrist)",
+          "role": "For long-standing or treatment-resistant anxiety accompanied by attention difficulties, emotional dysregulation, or a pattern consistent with ADHD or autism. Correctly identifying neurodevelopmental contributions can fundamentally change the treatment approach.",
+          "notes": "Adult ADHD assessment is often under-resourced. Private assessment may be faster in many countries. A comprehensive assessment will differentiate ADHD-driven anxiety from primary anxiety disorder."
         },
         {
-          "type": "Nurse practitioner (NP) or physician assistant (PA) in psychiatry",
-          "role": "Advanced practice providers who can diagnose anxiety disorder and prescribe psychiatric medications. Often available in community mental health centers and offer more accessible care than psychiatrists.",
-          "notes": "May have more availability and shorter wait times than psychiatrists. Often work in collaborative care models with therapists."
-        },
-        {
-          "type": "Occupational therapist (OT)",
-          "role": "Professional who helps with functional coping strategies, daily routine organization, and environmental modifications to reduce anxiety triggers and improve quality of life.",
-          "notes": "Less commonly sought for anxiety alone but valuable in combination with other treatments, especially for severe cases affecting functioning."
+          "type": "GP with interest in mental health",
+          "role": "First-line assessment, ruling out physical causes, and initiating or overseeing medication. A GP who takes the time to investigate thyroid function, hormonal factors, and lifestyle contributors before prescribing is valuable.",
+          "notes": "Many GPs are skilled at initial assessment but limited in time and training for complex or treatment-resistant cases. Requesting specific investigations (thyroid, iron, hormonal panel) is a reasonable and informed use of a GP appointment."
         }
       ],
       "patient_communities": [
         {
-          "name": "Anxiety and Depression Association of America (ADAA) Support Groups",
-          "platform": "Website and in-person groups",
-          "url": "https://adaa.org/finding-help/support-groups",
-          "notes": "Official organization dedicated to anxiety disorders. Offers peer support groups, therapist directories, webinars, and evidence-based resources. Highly credible and widely recommended."
-        },
-        {
-          "name": "r/Anxiety (Reddit)",
+          "name": "r/Anxiety",
           "platform": "Reddit",
           "url": "https://www.reddit.com/r/Anxiety/",
-          "notes": "Large, active community where people share experiences, coping strategies, and support. Helpful for normalizing anxiety and learning what others do. Moderated but highly variable advice quality."
+          "notes": "Large, active community with discussions spanning lived experience, treatment options, medication experiences, and practical coping strategies. Useful for normalisation and peer experience, though clinical accuracy varies."
         },
         {
-          "name": "Anxiety UK Community Forum",
-          "platform": "Online forum",
-          "url": "https://www.anxietyuk.org.uk/",
-          "notes": "UK-based organization with community forums, resources, and support. Evidence-based information and peer support from people with lived experience."
+          "name": "r/PanicAttack",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/PanicAttack/",
+          "notes": "Focused on panic disorder specifically \u2014 useful for people whose primary experience is panic attacks rather than generalised anxiety."
         },
         {
-          "name": "International OCD Foundation (IOCDF) Community",
-          "platform": "Website and support groups",
-          "url": "https://iocdf.org/",
-          "notes": "Specifically for OCD but overlaps with anxiety. Offers support groups, therapist finder, and educational resources. Useful if anxiety is intertwined with obsessive-compulsive symptoms."
+          "name": "Anxiety and Depression Association of America (ADAA) Community",
+          "platform": "Forum / website",
+          "url": "https://adaa.org",
+          "notes": "Organisation providing evidence-based information, therapist finder tools, and community resources. More clinically oriented than Reddit."
         },
         {
-          "name": "NAMI (National Alliance on Mental Illness) Support Groups",
-          "platform": "In-person and online",
-          "url": "https://www.nami.org/support-groups",
-          "notes": "Peer-led support groups for various mental health conditions including anxiety. Free, confidential, and widespread across the US. Focuses on recovery and lived experience."
+          "name": "No More Panic",
+          "platform": "Forum",
+          "url": "https://www.nomorepanic.co.uk",
+          "notes": "Long-running UK-based forum for anxiety, panic, and agoraphobia. Particularly useful for people dealing with panic disorder and its specific challenges."
         },
         {
-          "name": "7 Cups Emotional Support Chat",
-          "platform": "Online chat",
-          "url": "https://www.7cups.com/",
-          "notes": "Free emotional support via trained listeners. Good for immediate support or when professional help is not yet accessible. Not therapy but comforting peer-like connection."
-        },
-        {
-          "name": "Anxiety Support Group (Facebook Groups)",
-          "platform": "Facebook",
-          "url": "Search for 'Anxiety Support Group' on Facebook",
-          "notes": "Multiple private groups offering peer support, shared experiences, and coping tips. Variable moderation; helpful for finding people with specific anxiety types (e.g., health anxiety, social anxiety)."
-        },
-        {
-          "name": "Mental Health America (MHA) Screening and Community",
-          "platform": "Website",
-          "url": "https://www.mhanational.org/",
-          "notes": "Free online mental health screening tools, resource guides, and peer support options. Provides information on finding local services."
+          "name": "r/HealthAnxiety",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/HealthAnxiety/",
+          "notes": "Community specifically for health anxiety / illness anxiety disorder. Useful for peer experience, though the reassurance-seeking dynamic that characterises the condition is also present in the community and worth navigating mindfully."
         }
       ]
     },
     "learning_resources": [
       {
-        "title": "Feeling Good: The New Mood Therapy",
+        "title": "Dare: The New Way to End Anxiety and Stop Panic Attacks",
         "type": "book",
-        "author_or_source": "David D. Burns, MD",
+        "author_or_source": "Barry McDonagh",
         "url": null,
-        "description": "A foundational self-help book on cognitive therapy for anxiety and depression. Offers practical techniques for identifying and challenging unhelpful thoughts. Clear, accessible, and evidence-based; one of the most recommended self-help books for anxiety.",
+        "description": "A practical, experience-driven guide to anxiety and panic based on acceptance-based principles. Widely recommended by people with anxiety for its clear framework and accessible tone. Complements rather than replaces formal therapy.",
         "audience": "beginner"
       },
       {
-        "title": "The Anxiety and Phobia Workbook",
+        "title": "The Anxiety and Worry Workbook",
         "type": "book",
-        "author_or_source": "Edmund J. Bourne, PhD",
+        "author_or_source": "Clark and Beck",
         "url": null,
-        "description": "Comprehensive workbook with step-by-step exercises for managing anxiety, panic, and phobias. Includes breathing, progressive relaxation, cognitive restructuring, and exposure guidelines. Highly practical and widely recommended by therapists.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Mind Over Mood: Change How You Feel by Changing the Way You Think",
-        "type": "book",
-        "author_or_source": "Dennis Greenberger and Christine A. Padesky",
-        "url": null,
-        "description": "A workbook-style CBT guide for anxiety and depression. Interactive, easy to follow, with worksheets and examples. Designed to teach cognitive therapy skills; often used alongside professional therapy.",
-        "audience": "beginner"
-      },
-      {
-        "title": "The Relaxation and Stress Reduction Workbook",
-        "type": "book",
-        "author_or_source": "Martha Davis, Elizabeth Robbins Eshelman, and Matthew McKay",
-        "url": null,
-        "description": "Evidence-based workbook covering relaxation techniques, breathing, progressive muscle relaxation, imagery, and mindfulness. Practical, hands-on approach; good for learning coping skills.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Anxiety UK: Tips for Anxiety Management",
-        "type": "website",
-        "author_or_source": "Anxiety UK",
-        "url": "https://www.anxietyuk.org.uk/",
-        "description": "UK-based organization offering free information on anxiety disorders, treatments, and coping strategies. Includes symptom guides, advice on seeking help, and links to support.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Headspace and Calm Meditation Apps",
-        "type": "app/website",
-        "author_or_source": "Headspace/Calm",
-        "url": "https://www.headspace.com/ and https://www.calm.com/",
-        "description": "Guided mindfulness and meditation apps with programs tailored to anxiety. Beginner-friendly with daily sessions ranging from 3 to 30 minutes. Subscription-based but free trials available.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Anxiety and Depression Association of America (ADAA): Learn About Anxiety",
-        "type": "website",
-        "author_or_source": "ADAA",
-        "url": "https://adaa.org/understanding-anxiety",
-        "description": "Comprehensive, evidence-based educational resource on all anxiety disorders. Includes fact sheets, videos, and information on treatment options. Authoritative and accessible.",
-        "audience": "beginner"
-      },
-      {
-        "title": "The Diagnostic and Statistical Manual of Mental Disorders (DSM-5) \u2014 Anxiety Disorders Section",
-        "type": "book/reference",
-        "author_or_source": "American Psychiatric Association",
-        "url": null,
-        "description": "Official diagnostic criteria and descriptions of anxiety disorder subtypes. Technical but the gold standard for diagnosis; useful for understanding official definitions.",
-        "audience": "advanced"
-      },
-      {
-        "title": "Cognitive Therapy of Anxiety Disorders: Science and Practice",
-        "type": "book",
-        "author_or_source": "David A. Clark, PhD and Christopher G. Fairburn, MD",
-        "url": null,
-        "description": "Advanced textbook on CBT mechanisms and applications for anxiety. Detailed, evidence-based, and primarily for therapists or those wanting deep understanding of CBT theory.",
-        "audience": "advanced"
-      },
-      {
-        "title": "The Upward Spiral: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time",
-        "type": "book",
-        "author_or_source": "Alex Korb, PhD",
-        "url": null,
-        "description": "Explains brain science behind anxiety and depression and how small behavioral changes (sleep, exercise, social connection) create upward spirals of improvement. Practical and grounded in neuroscience.",
+        "description": "A structured, evidence-based CBT workbook for generalised anxiety and worry, written by two of the leading figures in cognitive therapy. Suitable for self-guided work alongside or between therapy sessions.",
         "audience": "intermediate"
       },
       {
-        "title": "The How of Happiness: The Scientific Foundations of a Positive Psychology",
+        "title": "Why Zebras Don't Get Ulcers",
         "type": "book",
-        "author_or_source": "Sonja Lyubomirsky, PhD",
+        "author_or_source": "Robert Sapolsky",
         "url": null,
-        "description": "Research-backed guide to happiness practices that reduce anxiety and improve mood. Includes gratitude, kindness, social connection, and other evidence-based strategies.",
+        "description": "A deeply engaging scientific account of stress biology \u2014 why chronic psychological stress produces physical damage, and what the nervous system is actually doing during anxiety. Builds the biological understanding that can motivate meaningful behaviour change.",
         "audience": "intermediate"
       },
       {
-        "title": "Mindfulness-Based Stress Reduction (MBSR) Online Course",
-        "type": "online course/video",
-        "author_or_source": "University of Massachusetts Medical School / Palouse Mindfulness",
-        "url": "https://www.palousemindfulness.com/",
-        "description": "Free, self-guided 8-week MBSR course based on Jon Kabat-Zinn's program. Includes videos, meditations, and body scans. Evidence-based for anxiety and stress reduction.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Anxiety and Depression in Primary Care: Recognition and Management (CME/PCP Resource)",
-        "type": "website/educational module",
-        "author_or_source": "NIH/American Family Physician",
+        "title": "The Body Keeps the Score",
+        "type": "book",
+        "author_or_source": "Bessel van der Kolk",
         "url": null,
-        "description": "Educational resource for healthcare providers on anxiety recognition and evidence-based treatment. Useful for understanding what your doctor should know.",
+        "description": "Essential reading for anyone whose anxiety has roots in trauma. Explains how traumatic experience is held in the body and nervous system, and why talk therapy alone may be insufficient \u2014 while opening access to somatic and body-based treatment approaches.",
         "audience": "intermediate"
       },
       {
-        "title": "TED Talks on Anxiety and Mental Health",
-        "type": "video",
-        "author_or_source": "Various speakers (e.g., Bren\u00e9 Brown, Esther Perel)",
-        "url": "https://www.ted.com/",
-        "description": "Accessible, engaging talks on anxiety, vulnerability, resilience, and mental health from leading researchers and clinicians. Good for motivation and perspective shifts.",
-        "audience": "beginner"
-      },
-      {
-        "title": "Neurobiology of Anxiety Disorders (Research Overview)",
-        "type": "research paper/journal",
-        "author_or_source": "Harvard Review of Psychiatry, Neuropsychology journals",
-        "url": null,
-        "description": "Peer-reviewed scientific papers on brain changes in anxiety disorder. For those wanting deep understanding of the neuroscience; highly technical.",
-        "audience": "advanced"
-      },
-      {
-        "title": "The Anxious Brain Podcast",
+        "title": "Huberman Lab \u2014 Master Your Stress, Anxiety and Fear",
         "type": "podcast",
-        "author_or_source": "Hosted by anxiety disorder experts",
-        "url": "Search major podcast platforms",
-        "description": "Podcast series discussing anxiety science, personal stories, and coping strategies. Accessible and engaging format for learning while commuting or exercising.",
+        "author_or_source": "Andrew Huberman",
+        "url": "https://hubermanlab.com",
+        "description": "Neuroscience-grounded episodes on the mechanisms of anxiety, stress, and fear \u2014 including practical, evidence-informed tools for nervous system regulation. Episodes on breathing, sleep, and the physiological sigh are particularly relevant.",
         "audience": "beginner"
+      },
+      {
+        "title": "ACT Made Simple",
+        "type": "book",
+        "author_or_source": "Russ Harris",
+        "url": null,
+        "description": "Although written for clinicians, this is accessible to motivated individuals wanting to understand and apply Acceptance and Commitment Therapy to their anxiety. Particularly useful for those who have tried CBT without sufficient benefit.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Anxiety Disorders \u2014 NICE Guideline NG224",
+        "type": "website",
+        "author_or_source": "National Institute for Health and Care Excellence (NICE)",
+        "url": "https://www.nice.org.uk/guidance/ng224",
+        "description": "The UK's national clinical guideline for anxiety disorders in adults. Useful for understanding what treatments have the strongest evidence base and for informed conversations with clinicians about care standards.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "The Polyvagal Theory in Therapy",
+        "type": "book",
+        "author_or_source": "Deb Dana",
+        "url": null,
+        "description": "An accessible introduction to Polyvagal Theory \u2014 the framework describing how the autonomic nervous system shapes psychological states and social behaviour. Relevant for people whose anxiety involves significant shutdown, dissociation, or chronic hypervigilance, especially in a trauma context.",
+        "audience": "intermediate"
       }
     ],
     "relevance_signal": "**Gut symptoms clearly worse during stressful periods** \u2014 before events, at work, during conflict. Gut and anxiety seem to feed each other. Gut settles when stress resolves."
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
   }
 }
