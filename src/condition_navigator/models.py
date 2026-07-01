@@ -8,15 +8,7 @@ from pydantic import BaseModel, Field, field_validator
 
 DiagnosisType = Literal["syndromic", "pathophysiological", "aetiological", "constitutional", "masquerader"]
 
-
-class SubCondition(BaseModel):
-    id: str
-    probability: int = 1
-
-    @field_validator("probability")
-    @classmethod
-    def _clamp(cls, v: int) -> int:
-        return max(1, min(5, v))
+StartingPointKind = Literal["syndrome", "symptom"]
 
 
 class Condition(BaseModel):
@@ -29,7 +21,6 @@ class Condition(BaseModel):
     parents: list[str] = Field(default_factory=list)
     tags: list[str] = Field(default_factory=list)
     diagnosis_type: DiagnosisType = "pathophysiological"
-    sub_conditions: list[SubCondition] = Field(default_factory=list)
 
 
 class ConditionGraph(BaseModel):
@@ -44,21 +35,35 @@ class ConditionGraph(BaseModel):
     def roots(self) -> list[Condition]:
         return [c for c in self.conditions if not c.parents]
 
-    def sub_conditions_of(self, condition_id: str) -> list[tuple[Condition, int]]:
-        """Resolve a descriptive condition's curated sub_conditions list to (Condition, probability) pairs.
 
-        Unknown ids are silently dropped, mirroring the frontend's tolerance to
-        renames in spaces.yaml.
-        """
-        parent = self.by_id(condition_id)
-        if parent is None:
-            return []
-        out: list[tuple[Condition, int]] = []
-        for sc in parent.sub_conditions:
-            child = self.by_id(sc.id)
-            if child is not None:
-                out.append((child, sc.probability))
-        return out
+class SymptomPattern(BaseModel):
+    id: str
+    label: str
+    description: str = ""
+
+
+class SubConditionRef(BaseModel):
+    id: str
+    probability: int = 1
+    patterns: list[str] = Field(default_factory=list)
+
+    @field_validator("probability")
+    @classmethod
+    def _clamp(cls, v: int) -> int:
+        return max(1, min(5, v))
+
+
+class StartingPoint(BaseModel):
+    id: str
+    label: str
+    full_label: str = ""
+    kind: StartingPointKind
+    # For kind=syndrome: id of the Condition whose page users can drill into for
+    # the full biology/testing/management content. None for kind=symptom.
+    condition_id: str | None = None
+    intro: str = ""
+    symptom_patterns: list[SymptomPattern] = Field(default_factory=list)
+    sub_conditions: list[SubConditionRef] = Field(default_factory=list)
 
 
 class GeneratedSection(BaseModel):
@@ -93,6 +98,15 @@ class ConditionData(BaseModel):
     """Full generated output for one condition."""
     condition_id: str
     condition_name: str
+    generated_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    model: str = ""
+    sections: dict[str, Any] = Field(default_factory=dict)
+    section_meta: dict[str, SectionMeta] = Field(default_factory=dict)
+
+
+class StartingPointData(BaseModel):
+    """Generated output attached to a starting point (currently just sub_condition_signals)."""
+    starting_point_id: str
     generated_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     model: str = ""
     sections: dict[str, Any] = Field(default_factory=dict)

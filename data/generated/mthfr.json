@@ -1,0 +1,664 @@
+{
+  "condition_id": "mthfr",
+  "condition_name": "MTHFR / methylation variants",
+  "generated_at": "2026-07-01T11:58:42.009094Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "MTHFR variants are common genetic polymorphisms that reduce the activity of an enzyme involved in processing folate and producing a key molecule called methylfolate. This affects a cellular process called methylation, which influences DNA repair, neurotransmitter production, detoxification, cardiovascular health, and more. Many people carry these variants without symptoms, but in others \u2014 particularly when combined with nutritional deficiencies, other genetic variants, or high toxic load \u2014 reduced methylation capacity may contribute to a wide range of chronic symptoms including fatigue, mood disorders, brain fog, recurrent pregnancy loss, and elevated homocysteine.",
+    "detailed_summary": "The MTHFR gene encodes methylenetetrahydrofolate reductase, an enzyme that converts dietary folate into 5-methyltetrahydrofolate (5-MTHF), the active form used in the methylation cycle. Two polymorphisms are most studied: C677T and A1298C. Individuals who inherit two copies of C677T (homozygous) may have enzyme activity reduced by up to 70%. Heterozygous carriers have milder reductions, and compound heterozygotes (one copy of each variant) fall somewhere in between.\n\nMethylation is a fundamental biochemical process involved in synthesising and recycling SAMe (S-adenosylmethionine), the body's primary methyl donor. SAMe is essential for producing neurotransmitters (dopamine, serotonin, norepinephrine), regulating gene expression via epigenetics, repairing DNA, processing oestrogen, synthesising glutathione (the main antioxidant), and managing homocysteine \u2014 a potentially damaging amino acid that accumulates when methylation is impaired.\n\nThe clinical picture of MTHFR variants is deeply contested. Population-level carrier rates are very high (some variants affect 40\u201360% of certain ethnic groups), which means most carriers have no recognisable illness. What appears to matter more is whether reduced enzyme function is compounded by: low dietary folate or B12 intake; deficiency of cofactors like riboflavin (B2), B6, or zinc; concurrent genetic variants in related pathways (CBS, COMT, MTR, MTRR); high homocysteine; oxidative stress; or significant toxin exposure.\n\nFor those who do experience symptoms, the pattern often involves fatigue, mood instability, poor stress tolerance, and a personal or family history of cardiovascular disease, pregnancy complications, or psychiatric illness. Elevated homocysteine on a standard blood panel is the most clinically actionable finding \u2014 it is an objective marker of methylation insufficiency and carries independent cardiovascular risk. Genetic testing alone, without functional markers, has limited predictive value.\n\nSupporting the methylation cycle typically involves supplementing with the active (methylated) forms of folate and B12, addressing cofactor deficiencies, and reducing homocysteine. However, some people \u2014 particularly those with overmethylation tendencies or concurrent COMT variants \u2014 respond poorly to aggressive methyl donor supplementation and require a more carefully titrated approach. Working with a practitioner who understands the full methylation pathway, rather than simply supplementing MTHFR in isolation, tends to produce better outcomes.",
+    "prevalence": {
+      "summary": "Extremely common genetic variants \u2014 most people carry at least one copy of a MTHFR polymorphism.",
+      "estimate": "C677T heterozygous: ~40% of general population; C677T homozygous: ~10\u201315%; A1298C heterozygous: ~30%; compound heterozygous: ~15%. Figures vary substantially by ethnicity.",
+      "notes": "Because carrier rates are so high, the variants alone are poor predictors of disease. Prevalence of clinically significant methylation impairment (evidenced by elevated homocysteine or deficiency of active folate) is much lower and not well-characterised. Some researchers argue that routine genetic testing for MTHFR in the absence of elevated homocysteine or other clinical indications is of limited value."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "MTHFR C677T homozygous",
+        "description": "Two copies of the C677T variant, associated with the greatest reduction in enzyme activity (up to 70%). Most associated with elevated homocysteine, cardiovascular risk, and neural tube defect risk in pregnancy.",
+        "distinguishing_features": [
+          "Homocysteine more likely to be elevated on standard blood work",
+          "Greatest need for active folate (5-MTHF) rather than folic acid",
+          "Strongest association with recurrent miscarriage and pregnancy complications",
+          "Higher cardiovascular and stroke risk if homocysteine not managed"
+        ]
+      },
+      {
+        "id": null,
+        "name": "MTHFR A1298C homozygous",
+        "description": "Two copies of the A1298C variant. Tends to have less impact on homocysteine but may affect BH4 (tetrahydrobiopterin) production, influencing neurotransmitter synthesis and nitric oxide pathways more than the C677T variant.",
+        "distinguishing_features": [
+          "Homocysteine often normal even with reduced enzyme function",
+          "May present more prominently with neurological or mood symptoms",
+          "BH4 pathway impairment can affect dopamine and serotonin production",
+          "Less cardiovascular risk signal than C677T homozygous"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Compound heterozygous (C677T + A1298C)",
+        "description": "One copy each of both major variants. Functional enzyme impairment is intermediate, combining features of both variants. Often the presentation that prompts clinical investigation.",
+        "distinguishing_features": [
+          "Can show both elevated homocysteine and neurological/mood features",
+          "May have moderate reductions in active folate and BH4",
+          "Common in people who present to integrative practitioners with unexplained fatigue and mood issues"
+        ]
+      },
+      {
+        "id": null,
+        "name": "MTHFR with elevated homocysteine",
+        "description": "The functionally significant subgroup \u2014 those whose MTHFR variant(s) have resulted in measurably elevated homocysteine, indicating real-world methylation insufficiency regardless of genotype.",
+        "distinguishing_features": [
+          "Homocysteine >10\u201312 \u00b5mol/L on blood testing",
+          "Higher independent cardiovascular risk",
+          "Most likely to benefit from targeted B-vitamin supplementation",
+          "This is the clinically actionable finding \u2014 genotype alone is not sufficient"
+        ]
+      },
+      {
+        "id": null,
+        "name": "MTHFR with overmethylation tendency",
+        "description": "A subset of individuals who, when started on methylated B vitamins, develop anxiety, irritability, insomnia, or agitation \u2014 suggesting they are already methylating adequately or have concurrent variants (such as COMT) that slow methyl group clearance.",
+        "distinguishing_features": [
+          "Worsening anxiety or agitation after starting methyl-B12 or methylfolate",
+          "Often have COMT variants reducing catecholamine breakdown",
+          "May do better with hydroxocobalamin or folinic acid rather than methylated forms",
+          "Requires a cautious, low-and-slow supplementation approach"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Persistent fatigue not relieved by rest",
+        "category": "energy",
+        "notes": "May reflect impaired mitochondrial function, reduced glutathione, or poor energy metabolism. Common but highly non-specific."
+      },
+      {
+        "symptom": "Brain fog \u2014 difficulty concentrating, word retrieval problems, mental slowness",
+        "category": "neurological",
+        "notes": "Often reported alongside fatigue. May relate to neurotransmitter synthesis impairment or elevated homocysteine affecting cerebral circulation."
+      },
+      {
+        "symptom": "Anxiety, panic, or heightened stress response",
+        "category": "psychiatric / neurological",
+        "notes": "May relate to impaired regulation of catecholamines or reduced GABA synthesis. Those with concurrent COMT variants may be particularly prone."
+      },
+      {
+        "symptom": "Depression or low mood",
+        "category": "psychiatric",
+        "notes": "Folate deficiency is a recognised contributor to depression. Some treatment-resistant depression patients are found to have MTHFR variants affecting active folate availability for serotonin synthesis."
+      },
+      {
+        "symptom": "Irritability, mood instability, poor emotional regulation",
+        "category": "psychiatric",
+        "notes": "Can fluctuate significantly; sometimes described as emotional reactivity out of proportion to circumstances."
+      },
+      {
+        "symptom": "Recurrent miscarriage or pregnancy complications",
+        "category": "reproductive",
+        "notes": "Most strongly associated with C677T homozygous status and elevated homocysteine. Folate is essential for neural tube development and placental function."
+      },
+      {
+        "symptom": "Elevated homocysteine on blood testing",
+        "category": "cardiovascular / metabolic",
+        "notes": "This is the key functional marker \u2014 not a symptom per se, but often the discovery that prompts investigation. Homocysteine >10\u201312 \u00b5mol/L is considered elevated by most integrative practitioners."
+      },
+      {
+        "symptom": "Cardiovascular symptoms \u2014 palpitations, poor exercise tolerance, early hypertension",
+        "category": "cardiovascular",
+        "notes": "Elevated homocysteine damages vascular endothelium and increases clotting risk. These symptoms require conventional cardiac evaluation as a first step."
+      },
+      {
+        "symptom": "Migraines, especially with aura",
+        "category": "neurological",
+        "notes": "MTHFR variants \u2014 particularly C677T \u2014 are associated with increased migraine frequency in some studies. Homocysteine and nitric oxide metabolism may be involved."
+      },
+      {
+        "symptom": "Poor tolerance of folic acid supplements or foods high in synthetic folate",
+        "category": "digestive / metabolic",
+        "notes": "Some individuals with MTHFR variants cannot convert folic acid to active methylfolate efficiently, and unmetabolised folic acid may accumulate and cause symptoms including nausea or worsened neurological symptoms."
+      },
+      {
+        "symptom": "Insomnia or disrupted sleep",
+        "category": "neurological / sleep",
+        "notes": "May relate to impaired melatonin synthesis (which requires methylation steps) or elevated excitatory neurotransmitters."
+      },
+      {
+        "symptom": "Chemical or environmental sensitivities",
+        "category": "immune / detoxification",
+        "notes": "Reduced glutathione production (a methylation-dependent process) can impair Phase II liver detoxification, potentially increasing sensitivity to toxins, alcohol, and medications."
+      },
+      {
+        "symptom": "Numbness, tingling, or neuropathy",
+        "category": "neurological",
+        "notes": "May reflect functional B12 deficiency (even when serum B12 appears normal) because methylation is required for B12 activation."
+      },
+      {
+        "symptom": "Poor detoxification \u2014 hangover sensitivity, medication intolerance",
+        "category": "metabolic / detoxification",
+        "notes": "Those with impaired methylation often report unusual sensitivity to alcohol, caffeine, medications, and environmental chemicals."
+      },
+      {
+        "symptom": "Low mood or depression in the post-partum period",
+        "category": "psychiatric / reproductive",
+        "notes": "Folate demand is high during pregnancy; depletion post-partum combined with MTHFR variants may contribute to post-partum depression in susceptible individuals."
+      },
+      {
+        "symptom": "ADHD-like symptoms \u2014 inattention, impulsivity, hyperactivity",
+        "category": "neurological / psychiatric",
+        "notes": "Some research links MTHFR variants with ADHD risk, potentially through dopamine and norepinephrine synthesis pathways. The relationship is associative, not causative."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Elevated homocysteine (>10\u201312 \u00b5mol/L) \u2014 the single most clinically useful functional marker; present regardless of whether symptoms are clearly linked to MTHFR",
+        "Low or low-normal serum folate alongside MTHFR variants suggests functional deficiency even at 'normal' reference range levels",
+        "Low active B12 (methylcobalamin) with normal serum B12 \u2014 functional deficiency not captured by standard tests",
+        "Elevated methylmalonic acid (MMA) alongside low B12 confirms functional B12 deficiency at the cellular level",
+        "Red blood cell (RBC) folate lower than expected for dietary intake",
+        "Low SAMe:SAH ratio on organic acid testing (where available) suggests reduced methylation capacity",
+        "Concurrent variants on expanded methylation panels (COMT, CBS, MTR, MTRR, BHMT) may help explain why some people with MTHFR do better or worse with methyl donor supplementation"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom and response tracking journal",
+          "description": "Before starting any supplementation, individuals can document their baseline symptoms (energy, mood, sleep, cognition, anxiety) on a 1\u201310 scale daily for 2\u20134 weeks. This creates a reliable comparison baseline before introducing methylated B vitamins. The same tracking approach can identify whether a supplement is helping or causing overmethylation symptoms.",
+          "safety_notes": "This is observational only. Do not adjust prescription medications based on self-tracking without medical guidance."
+        },
+        {
+          "name": "Direct-to-consumer genetic testing (23andMe, AncestryDNA)",
+          "description": "Raw genetic data from consumer DNA kits can be uploaded to free interpretation tools (e.g. Genetic Genie, Livewello) to identify MTHFR and related variants. This provides a genotype, not a functional assessment \u2014 variant presence does not equal impaired function.",
+          "safety_notes": "Raw data interpretation tools vary in accuracy and should not be used to make clinical decisions. Homocysteine testing provides far more actionable information than genotype alone."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Homocysteine blood test",
+          "type": "gold_standard",
+          "description": "Measures circulating homocysteine, which accumulates when methylation is insufficient to convert it to methionine or cysteine. Elevated levels (>10\u201312 \u00b5mol/L in most integrative frameworks; >15 \u00b5mol/L by conventional standards) indicate clinically relevant methylation impairment and independent cardiovascular risk.",
+          "availability": "Orderable through most GPs, internists, and functional medicine practitioners. Available as a standalone test from private labs. Some NHS GPs will order it; otherwise available privately for ~\u00a330\u201360."
+        },
+        {
+          "name": "MTHFR genotyping",
+          "type": "standard",
+          "description": "PCR-based genetic test for C677T and A1298C variants. Identifies carrier status but does not measure functional methylation capacity. Most useful when interpreted alongside homocysteine and B-vitamin levels.",
+          "availability": "Available through some NHS labs (especially in cardiovascular risk or recurrent miscarriage workup contexts), most private GP labs, and functional medicine practitioners. Also derivable from consumer DNA raw data."
+        },
+        {
+          "name": "Serum folate and red blood cell (RBC) folate",
+          "type": "standard",
+          "description": "Serum folate reflects recent intake; RBC folate reflects longer-term tissue stores. Both may be normal while active methylfolate is still deficient \u2014 but low values alongside MTHFR variants are clinically significant.",
+          "availability": "Routinely available through GP or private labs."
+        },
+        {
+          "name": "Serum B12 and methylmalonic acid (MMA)",
+          "type": "standard",
+          "description": "Serum B12 can be normal while functional deficiency exists at the cellular level. MMA elevation is a more sensitive marker of functional B12 deficiency. Holotranscobalamin (active B12) is more specific than total B12.",
+          "availability": "B12 routinely available through GP. MMA and holotranscobalamin may require a functional medicine practitioner or private lab request."
+        },
+        {
+          "name": "Organic acid test (OAT)",
+          "type": "emerging",
+          "description": "Urine-based test measuring metabolic byproducts including markers of mitochondrial function, neurotransmitter metabolism, B-vitamin status, and methylation markers (e.g. methylmalonate, formiminoglutamate/FIGLU). Can provide a broader picture of methylation pathway function than blood tests alone.",
+          "availability": "Primarily available through functional medicine practitioners and integrative clinics. Not available through standard NHS or conventional GP referral."
+        },
+        {
+          "name": "Expanded methylation genetic panel",
+          "type": "emerging",
+          "description": "Tests for variants in genes beyond MTHFR that affect the methylation cycle: COMT, CBS, MTR, MTRR, BHMT, FOLR1, and others. Helps explain why individuals with identical MTHFR genotypes can have very different responses to treatment.",
+          "availability": "Available through functional medicine practitioners and specialist nutrigenomic labs (e.g. SpectraCell, Genova, NutriPATH). Interpretation requires a practitioner familiar with methylation pathway interactions."
+        },
+        {
+          "name": "SAMe and SAH levels",
+          "type": "emerging",
+          "description": "Direct measurement of S-adenosylmethionine (the primary methyl donor) and S-adenosylhomocysteine (its metabolic byproduct). The SAMe:SAH ratio reflects actual methylation capacity.",
+          "availability": "Available through specialised functional medicine or research labs. Not widely available in standard clinical settings."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "b12_deficiency",
+        "name": "Vitamin B12 deficiency",
+        "relationship": "mechanistic_link",
+        "explanation": "B12 is a direct cofactor in the methylation cycle. MTHFR impairment and B12 deficiency synergistically raise homocysteine and impair DNA methylation. Functional B12 deficiency can exist even with normal serum B12 levels in those with methylation pathway variants."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "mechanistic_link",
+        "explanation": "Active folate (5-MTHF) is required for synthesis of serotonin, dopamine, and norepinephrine. MTHFR variants that reduce 5-MTHF availability have been associated with increased depression risk and poor antidepressant response in multiple studies."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "mechanistic_link",
+        "explanation": "Impaired methylation may dysregulate catecholamine balance (particularly when COMT variants are also present), reducing the body's ability to clear excess adrenaline and other excitatory neurotransmitters."
+      },
+      {
+        "id": "adhd",
+        "name": "ADHD",
+        "relationship": "mechanistic_link",
+        "explanation": "MTHFR variants have been associated with ADHD in several research studies, potentially via dopamine pathway impairment. The relationship is associative \u2014 not all ADHD is related to methylation, and not all MTHFR carriers develop ADHD."
+      },
+      {
+        "id": "migraine",
+        "name": "Migraine",
+        "relationship": "comorbid",
+        "explanation": "C677T homozygous status is associated with increased migraine frequency, particularly migraine with aura. Elevated homocysteine and impaired nitric oxide metabolism may be contributing mechanisms."
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "mechanistic_link",
+        "explanation": "Histamine is broken down partly via methylation (HNMT enzyme). Reduced methylation capacity can impair histamine clearance, contributing to histamine intolerance symptoms \u2014 particularly in those who also have DAO enzyme insufficiency."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome",
+        "relationship": "comorbid",
+        "explanation": "Methylation impairment may affect mast cell regulation and histamine metabolism. MCAS and MTHFR variants are seen together more frequently than expected in some integrative clinical populations, though the mechanistic relationship is not fully established."
+      },
+      {
+        "id": "endometriosis",
+        "name": "Endometriosis",
+        "relationship": "mechanistic_link",
+        "explanation": "Methylation is involved in oestrogen metabolism and DNA epigenetic regulation. MTHFR variants have been studied in relation to oestrogen-driven conditions including endometriosis, with some evidence of association."
+      },
+      {
+        "id": "hormonal",
+        "name": "Hormonal / menstrual cycle effects",
+        "relationship": "mechanistic_link",
+        "explanation": "Oestrogen is metabolised in part via methylation pathways (COMT). Impaired methylation can slow oestrogen clearance, contributing to oestrogen dominance symptoms and worsening of cyclical mood and pain symptoms."
+      },
+      {
+        "id": "me_cfs",
+        "name": "ME / CFS",
+        "relationship": "comorbid",
+        "explanation": "Mitochondrial dysfunction, oxidative stress, and impaired glutathione production \u2014 all downstream of methylation impairment \u2014 are implicated in ME/CFS. Some researchers propose methylation cycle dysfunction as a contributing mechanism in a subset of ME/CFS patients."
+      },
+      {
+        "id": "mitochondrial",
+        "name": "Mitochondrial dysfunction",
+        "relationship": "mechanistic_link",
+        "explanation": "SAMe (the primary product of methylation) is required for synthesis of coenzyme Q10 and other mitochondrial components. Methylation impairment can therefore reduce mitochondrial energy production capacity."
+      },
+      {
+        "id": "heavy_metals",
+        "name": "Heavy metal toxicity",
+        "relationship": "comorbid",
+        "explanation": "Glutathione \u2014 the body's primary chelator and antioxidant \u2014 is synthesised via the methylation/transsulfuration pathway. Reduced methylation capacity impairs glutathione production, potentially increasing susceptibility to heavy metal accumulation and toxicity."
+      },
+      {
+        "id": "mold_cirs",
+        "name": "Mold illness / CIRS",
+        "relationship": "comorbid",
+        "explanation": "Detoxification of biotoxins depends on adequate glutathione and Phase II liver enzyme activity, both of which rely on methylation. MTHFR variants may worsen outcomes in CIRS by impairing the clearance of inflammatory biotoxins."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "Some fibromyalgia research has found higher rates of MTHFR variants and elevated homocysteine. Shared mechanisms may include impaired neurotransmitter regulation, oxidative stress, and neuroinflammation."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor sleep / insomnia",
+        "relationship": "mechanistic_link",
+        "explanation": "Melatonin synthesis requires methylation (the final step from serotonin to melatonin is catalysed by ASMT, an SAMe-dependent methyltransferase). Impaired methylation may reduce melatonin production and disrupt sleep architecture."
+      },
+      {
+        "id": "coeliac",
+        "name": "Coeliac disease",
+        "relationship": "comorbid",
+        "explanation": "Coeliac disease causes malabsorption of folate and B12, which compounds the functional impact of MTHFR variants. In someone with both conditions, correcting the underlying malabsorption is a prerequisite for addressing methylation."
+      },
+      {
+        "id": "iron_deficiency",
+        "name": "Iron deficiency",
+        "relationship": "comorbid",
+        "explanation": "Iron is required for ribonucleotide reductase, which supports DNA synthesis \u2014 a process also dependent on folate and methylation. Iron and folate deficiencies frequently co-occur, and both worsen fatigue and cognitive symptoms."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "comorbid",
+        "explanation": "Thyroid hormone metabolism involves methylation, and hypothyroidism can impair the conversion of folate to its active form. MTHFR variants and thyroid dysfunction are frequently found together in integrative clinical practice, potentially sharing autoimmune drivers."
+      },
+      {
+        "id": "hypothyroidism",
+        "name": "Hypothyroidism",
+        "relationship": "comorbid",
+        "explanation": "Hashimoto's hypothyroidism and MTHFR variants share associations with elevated homocysteine and B-vitamin insufficiency. Treating one without addressing the other often leads to incomplete symptom resolution."
+      },
+      {
+        "id": "long_covid",
+        "name": "Long COVID",
+        "relationship": "comorbid",
+        "explanation": "Long COVID appears to involve mitochondrial dysfunction, elevated homocysteine, and impaired methylation in some patients. MTHFR variants may increase susceptibility to prolonged post-viral illness through reduced detoxification and repair capacity."
+      },
+      {
+        "id": "ebv",
+        "name": "EBV reactivation",
+        "relationship": "comorbid",
+        "explanation": "Viral reactivation risk may be higher when immune surveillance is impaired by oxidative stress and inadequate methylation-dependent DNA repair. Some integrative practitioners investigate MTHFR status in chronic EBV presentations."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Active (methylated) folate supplementation",
+          "category": "supplement",
+          "description": "Supplementing with 5-methyltetrahydrofolate (5-MTHF, also labelled methylfolate or Metafolin) bypasses the impaired MTHFR enzyme step, providing the active form directly. This can lower homocysteine, support neurotransmitter synthesis, and improve energy and mood in those with documented deficiency.",
+          "evidence_level": "strong",
+          "notes": "Dosing matters significantly. Low doses (100\u2013400 mcg) may be appropriate to start; some individuals experience anxiety, irritability, or insomnia with higher doses, particularly if they have concurrent COMT variants. A 'start low and go slow' approach is widely recommended by practitioners in this field."
+        },
+        {
+          "name": "Methylcobalamin (methyl-B12) supplementation",
+          "category": "supplement",
+          "description": "The methylated form of B12 is the active cofactor in the methylation cycle. Methyl-B12 supports homocysteine remethylation to methionine and is often supplemented alongside methylfolate. Sublingual or injectable forms may absorb more reliably than oral tablets in some individuals.",
+          "evidence_level": "strong",
+          "notes": "Some individuals react poorly to methyl-B12 (anxiety, agitation) and may tolerate hydroxocobalamin better. Hydroxocobalamin is a neutral precursor that the body can use to make both methyl-B12 and adenosylcobalamin, and may be preferable for sensitive individuals."
+        },
+        {
+          "name": "Riboflavin (B2) cofactor support",
+          "category": "supplement",
+          "description": "MTHFR is a riboflavin-dependent enzyme. In those with the C677T variant, riboflavin supplementation has been shown in research to lower homocysteine independently of folate status. This is one of the most underutilised interventions in MTHFR management.",
+          "evidence_level": "moderate",
+          "notes": "Particularly relevant for C677T homozygous individuals. Some studies show B2 alone can meaningfully reduce homocysteine in this genotype. Doses used in research are typically 1.6 mg/day (low) up to 10 mg/day."
+        },
+        {
+          "name": "Avoiding synthetic folic acid",
+          "category": "diet",
+          "description": "Standard folic acid (the synthetic form in most supplements and fortified foods) requires MTHFR to convert it to active methylfolate. In those with reduced enzyme activity, unmetabolised folic acid may accumulate and potentially interfere with active folate transport or mask B12 deficiency. Switching to food-based folate and active methylfolate supplements is commonly recommended.",
+          "evidence_level": "moderate",
+          "notes": "This recommendation is more cautious than the mainstream position, which still supports folic acid in pregnancy for neural tube defect prevention. Pregnant individuals with MTHFR variants should discuss their specific supplement choices with a knowledgeable clinician."
+        },
+        {
+          "name": "Diet rich in natural folate",
+          "category": "diet",
+          "description": "Dark leafy greens (spinach, kale, chard), legumes, liver, avocado, and broccoli provide natural food folate in forms that require less conversion than synthetic folic acid. A consistently folate-rich diet reduces the burden on the impaired MTHFR enzyme.",
+          "evidence_level": "strong",
+          "notes": "Cooking destroys a significant proportion of food folate. Lightly steamed or raw preparations preserve more."
+        },
+        {
+          "name": "B6 (pyridoxal-5-phosphate / P5P) supplementation",
+          "category": "supplement",
+          "description": "B6 is required for the transsulfuration pathway, which converts homocysteine to cysteine and then to glutathione. Ensuring adequate B6 (ideally as P5P, the active form) supports both homocysteine clearance and glutathione production.",
+          "evidence_level": "moderate",
+          "notes": "Pyridoxal-5-phosphate is better tolerated than pyridoxine HCl in high doses. Peripheral neuropathy risk exists with chronic high-dose pyridoxine \u2014 P5P at moderate doses is considered safer."
+        },
+        {
+          "name": "Betaine (TMG \u2014 trimethylglycine)",
+          "category": "supplement",
+          "description": "TMG provides methyl groups via an alternative pathway (BHMT enzyme) that bypasses MTHFR entirely, directly remethylating homocysteine to methionine. It can lower homocysteine without relying on folate availability.",
+          "evidence_level": "moderate",
+          "notes": "TMG can be an effective adjunct, particularly when folate-based methylation support causes overmethylation symptoms. It should be used with monitoring, as excessive methyl donation can also cause issues."
+        },
+        {
+          "name": "Glutathione support",
+          "category": "supplement",
+          "description": "Because methylation supports glutathione synthesis, those with impaired methylation often have reduced antioxidant capacity. Supporting glutathione through N-acetylcysteine (NAC), liposomal glutathione, or precursor nutrients (glycine, glutamine, selenium) may reduce oxidative burden.",
+          "evidence_level": "moderate",
+          "notes": "NAC is the most evidence-supported precursor. Oral glutathione absorption is variable; liposomal forms may be more bioavailable. Those with sulphur sensitivity should start cautiously with NAC."
+        },
+        {
+          "name": "Reducing homocysteine through comprehensive B-vitamin support",
+          "category": "supplement",
+          "description": "The most evidence-based intervention for MTHFR-related cardiovascular risk is ensuring adequate B12, methylfolate, B6, and riboflavin \u2014 the four primary cofactors in homocysteine metabolism. A comprehensive B-complex using active forms (methylfolate, methyl-B12, P5P, riboflavin-5-phosphate) is the foundation of most clinical protocols.",
+          "evidence_level": "strong",
+          "notes": "Lowering homocysteine with B vitamins has been shown to reduce stroke risk and cognitive decline risk in meta-analyses, though cardiovascular event reduction findings are more mixed."
+        },
+        {
+          "name": "Stress reduction and sleep optimisation",
+          "category": "lifestyle",
+          "description": "Chronic psychological stress increases demand for methyl groups (via cortisol synthesis and catecholamine breakdown). Poor sleep impairs cellular repair processes that depend on methylation. Both directly worsen functional methylation capacity in those already at the lower edge of enzyme reserve.",
+          "evidence_level": "moderate",
+          "notes": "These are foundational changes. Supplementation on top of high chronic stress and poor sleep may have attenuated benefit."
+        },
+        {
+          "name": "Reducing alcohol intake",
+          "category": "lifestyle",
+          "description": "Alcohol depletes folate, B12, and B6, directly impairing methylation capacity. Even moderate alcohol consumption can be particularly problematic for those with MTHFR variants and borderline B-vitamin status.",
+          "evidence_level": "moderate",
+          "notes": "The threshold at which alcohol meaningfully impairs methylation varies individually, but consistent heavy drinking will undermine any supplement protocol."
+        }
+      ],
+      "things_to_avoid": [
+        "Synthetic folic acid in high doses \u2014 may accumulate as unmetabolised folic acid and potentially worsen symptoms in those with impaired conversion",
+        "Nitrous oxide (laughing gas) \u2014 inactivates B12 and can precipitate acute neurological crisis in those with borderline B12 status, particularly relevant for MTHFR carriers undergoing surgery or dental procedures",
+        "High-dose methyl donors without gradual titration \u2014 can trigger anxiety, agitation, or insomnia (overmethylation), particularly in those with COMT variants",
+        "Ignoring a confirmed elevated homocysteine and waiting \u2014 elevated homocysteine carries independent cardiovascular risk that accumulates over years",
+        "Treating the genetic variant without checking functional markers \u2014 genotype does not equal disease; clinical decisions should be driven by homocysteine, B12, folate, and symptom patterns, not genetics alone",
+        "Chronic high-dose pyridoxine (B6 as HCl form) \u2014 peripheral neuropathy risk; use P5P form instead",
+        "Assuming all fatigue, depression, or brain fog is from MTHFR \u2014 the variants are common and symptoms are non-specific; other causes must be investigated concurrently"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "Having an MTHFR variant is not, by itself, a diagnosis. Most carriers are entirely healthy, and the variant alone explains very little without objective functional markers like homocysteine.",
+        "why_resisted": "Finding a genetic 'reason' for years of unexplained symptoms feels validating. The idea that one gene variant explains everything is emotionally appealing when the medical system has provided no answers.",
+        "path_forward": "People who pursue homocysteine testing, active folate and B12 levels, and organic acid markers \u2014 rather than stopping at the genetic result \u2014 are the ones who obtain actionable information. If markers are abnormal, treatment has clear targets. If markers are normal, the symptoms require investigation elsewhere."
+      },
+      {
+        "truth": "The MTHFR supplement industry has outrun the evidence. Many people spend significant money on expensive methylation protocols based on genetic testing interpreted by practitioners whose claims exceed what the science supports.",
+        "why_resisted": "When someone has been dismissed by conventional medicine, a practitioner who offers a detailed, biochemically-framed explanation feels like the answer. It is easier to buy a protocol than to face uncertainty.",
+        "path_forward": "People who use objective markers (homocysteine, MMA, RBC folate) to test whether their supplementation is actually working \u2014 and who are willing to stop or adjust if markers do not improve \u2014 get real information rather than spending indefinitely on assumption."
+      },
+      {
+        "truth": "Overmethylation is a real risk. More methylfolate and methyl-B12 is not always better, and aggressively supplementing without monitoring can cause significant anxiety, agitation, and neurological symptoms \u2014 particularly in those with COMT or other pathway variants.",
+        "why_resisted": "Online MTHFR communities sometimes promote higher and higher doses based on the logic that 'you can't get enough of what you were deficient in.' This misunderstands how methylation cycles work.",
+        "path_forward": "Individuals who start with low doses (e.g. 100\u2013200 mcg methylfolate), monitor their response over weeks, and adjust based on both subjective symptoms and objective markers \u2014 rather than following a fixed high-dose protocol \u2014 are far more likely to reach a well-tolerated therapeutic dose."
+      },
+      {
+        "truth": "Correcting methylation markers does not guarantee symptom resolution. Other conditions frequently co-occur, and if they are not identified and addressed separately, optimising methylation produces limited benefit.",
+        "why_resisted": "It is natural to want a single root cause. Accepting that multiple conditions are operating simultaneously requires more investigation, more clinical relationships, and more time.",
+        "path_forward": "Those who treat MTHFR as one piece of a broader picture \u2014 and who systematically investigate thyroid function, gut health, sleep quality, stress load, and other concurrent conditions \u2014 are most likely to experience meaningful improvement."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Test homocysteine before and after treatment",
+          "why_it_matters": "Homocysteine is the one objective, widely-available marker of real-world methylation capacity. It provides a target and allows verification that a protocol is actually working. Without it, supplementation is guesswork.",
+          "how_to_start": "Request a fasting homocysteine blood test through a GP, integrative practitioner, or private lab. Repeat 8\u201312 weeks after starting a B-vitamin protocol.",
+          "timeline": "Homocysteine typically responds to supplementation within 6\u201312 weeks",
+          "requires_professional": false
+        },
+        {
+          "lever": "Switch from folic acid to methylfolate and from cyanocobalamin to hydroxo or methylcobalamin",
+          "why_it_matters": "Standard B-vitamin supplements use forms that require the impaired MTHFR enzyme to activate. Switching to pre-activated forms removes this bottleneck at the supplement level.",
+          "how_to_start": "Review all current supplements and fortified foods; replace any containing folic acid or cyanocobalamin with active alternatives. Check multivitamins carefully as folic acid is pervasive.",
+          "timeline": "2\u20134 weeks to notice tolerability; 8\u201312 weeks to assess homocysteine impact",
+          "requires_professional": false
+        },
+        {
+          "lever": "Start low and titrate methylated B vitamin doses slowly",
+          "why_it_matters": "Overmethylation \u2014 manifesting as anxiety, insomnia, or agitation \u2014 is a common and preventable adverse response. Low-dose initiation allows identification of tolerance before committing to therapeutic doses.",
+          "how_to_start": "Begin with 100\u2013200 mcg methylfolate (rather than 1000+ mcg) and a low-dose methyl-B12. Keep a daily symptom log. Increase dose every 2\u20134 weeks if well tolerated.",
+          "timeline": "Titration typically takes 2\u20133 months to reach an optimal dose",
+          "requires_professional": false
+        },
+        {
+          "lever": "Identify and address concurrent conditions",
+          "why_it_matters": "MTHFR variants rarely operate in isolation. Coeliac disease causing folate malabsorption, hypothyroidism impairing methylation enzyme activity, or MCAS increasing histamine load can all prevent methylation support from working effectively.",
+          "how_to_start": "Pursue systematic investigation of the most likely concurrent conditions based on the full symptom picture \u2014 not just MTHFR. Work with a functional medicine doctor or integrative GP who thinks systemically.",
+          "timeline": "Investigation process typically takes 3\u20136 months",
+          "requires_professional": true
+        },
+        {
+          "lever": "Build a folate-rich whole foods dietary foundation",
+          "why_it_matters": "Supplementation works more effectively when dietary cofactors and natural folate are consistently adequate. A processed diet high in synthetic folic acid (fortified foods) may introduce unmetabolised folic acid faster than the impaired enzyme can handle.",
+          "how_to_start": "Increase dark leafy greens (spinach, kale, rocket), legumes (lentils, chickpeas), and avocado. Reduce heavily processed and fortified grain products. This shift does not need to be sudden.",
+          "timeline": "Dietary changes take 3\u20136 months to meaningfully shift serum folate levels",
+          "requires_professional": false
+        },
+        {
+          "lever": "Ensure riboflavin (B2) adequacy specifically for C677T homozygous individuals",
+          "why_it_matters": "MTHFR enzyme function in C677T homozygotes is riboflavin-dependent. Riboflavin supplementation has shown meaningful homocysteine reduction in this specific genotype \u2014 an effect not widely known even among practitioners.",
+          "how_to_start": "Confirm C677T homozygous status through genotyping. Add riboflavin 1.6\u201310 mg/day (as riboflavin-5-phosphate or standard riboflavin) alongside standard methylation support.",
+          "timeline": "Effect on homocysteine measurable within 12 weeks",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Testing only for the genetic variant without measuring homocysteine, RBC folate, or active B12 \u2014 leaving no objective baseline or treatment target",
+        "Starting at high doses of methylfolate (800 mcg \u2013 1 mg+) without titration, causing overmethylation symptoms that are misinterpreted as worsening of the underlying condition",
+        "Assuming symptom improvement on methylated B vitamins confirms MTHFR as the sole cause \u2014 without ruling out other concurrent conditions",
+        "Using cheap cyanocobalamin B12 and standard folic acid in multivitamins and expecting results, because these forms still require the impaired enzyme",
+        "Stopping supplementation when homocysteine normalises and symptoms improve, then not rechecking homocysteine 3\u20136 months later \u2014 it commonly rises again without ongoing support",
+        "Pursuing an expensive expanded methylation gene panel before addressing the basics (homocysteine, B12, folate) \u2014 interpretation of complex multi-gene panels is highly contested even among specialists",
+        "Ignoring lifestyle factors \u2014 chronic stress, alcohol, poor sleep, and a folate-poor diet can defeat even well-designed supplementation protocols"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Functional medicine doctor or integrative GP",
+          "role": "The most useful primary practitioner for MTHFR \u2014 will investigate full methylation pathway function, order homocysteine and cofactor testing, interpret genetic data in clinical context, and design a personalised protocol rather than treating the gene in isolation.",
+          "notes": "Mainstream GPs and most specialists are unlikely to investigate beyond the genetic variant itself. Many will not order homocysteine unless there is an obvious cardiovascular indication. Finding a practitioner familiar with the full methylation cycle \u2014 not just MTHFR genotyping \u2014 makes a significant difference."
+        },
+        {
+          "type": "Clinical nutritionist or registered dietitian with nutrigenomics training",
+          "role": "Can design dietary and supplementation approaches based on the full metabolic picture, with particular expertise in folate forms, B-vitamin interactions, and practical implementation. Often more accessible and less expensive than medical practitioners for ongoing protocol management.",
+          "notes": "Look specifically for practitioners with nutrigenomics or functional nutrition training; general dietitians may not have specific MTHFR or methylation expertise."
+        },
+        {
+          "type": "Reproductive endocrinologist or haematologist",
+          "role": "Relevant for those with recurrent miscarriage, pregnancy complications, or clotting issues potentially related to elevated homocysteine. May order thrombophilia workup that includes MTHFR testing in this context.",
+          "notes": "Often the entry point into MTHFR investigation for women with recurrent pregnancy loss. May focus primarily on clotting risk management rather than the broader methylation picture."
+        },
+        {
+          "type": "Psychiatrist or integrative mental health practitioner",
+          "role": "For those whose primary symptoms are treatment-resistant depression, anxiety, or bipolar features \u2014 particularly if standard antidepressants have had poor or adverse responses. L-methylfolate is FDA-approved as an adjunct antidepressant in the US.",
+          "notes": "Mainstream psychiatrists are unlikely to test MTHFR proactively, but some are familiar with L-methylfolate (Deplin) as a therapeutic adjunct. Integrative psychiatrists may investigate methylation more systematically."
+        },
+        {
+          "type": "Neurologist",
+          "role": "Relevant when elevated homocysteine has caused neurological symptoms, when migraines are a primary concern, or when neuropathy is present. May not investigate MTHFR proactively but can evaluate neurological manifestations and order relevant markers.",
+          "notes": "Most useful for ruling out serious neurological consequences of chronic elevated homocysteine rather than for designing a methylation support protocol."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/MTHFR",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/MTHFR/",
+          "notes": "Active community of people self-investigating MTHFR variants. Useful for practical questions about supplementation, testing, and finding practitioners. Quality of information varies; treat advice critically and verify with a practitioner."
+        },
+        {
+          "name": "MTHFR Support (Facebook Group)",
+          "platform": "Facebook",
+          "url": null,
+          "notes": "Large community group sharing experiences with methylation support protocols. Many members have done extensive self-research. Useful for anecdotal experiences with specific supplements and practitioners."
+        },
+        {
+          "name": "r/Methylation",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Methylation/",
+          "notes": "Broader focus on methylation beyond MTHFR, including related pathway variants (COMT, CBS, MTR). More technically oriented than r/MTHFR; good for people who have moved beyond basic MTHFR investigation."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "MTHFR: A Comprehensive Guide",
+        "type": "website",
+        "author_or_source": "MTHFR.net (Dr Ben Lynch)",
+        "url": "https://mthfr.net",
+        "description": "The most widely referenced practitioner-authored resource on MTHFR and methylation. Dr Lynch is a prominent advocate for methylation medicine. The site contains detailed articles on variants, testing, and supplements. Read with awareness that Dr Lynch's commercial interests (supplement brand Seeking Health) create a potential conflict of interest, but the educational content is extensive.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Dirty Genes",
+        "type": "book",
+        "author_or_source": "Dr Ben Lynch",
+        "url": null,
+        "description": "A consumer-friendly book covering MTHFR and seven related gene variants (COMT, DAO, MAOA, PEMT, GST/GPX, NOS3). Explains how lifestyle and environment interact with gene variants. A good starting point for those new to methylation concepts. Oversimplifies some mechanisms but provides a practical framework.",
+        "audience": "beginner"
+      },
+      {
+        "title": "MTHFR Gene, Neural Tube Defects, and Cardiovascular Disease Risk",
+        "type": "research paper",
+        "author_or_source": "Yates & Lucock (various research groups)",
+        "url": null,
+        "description": "The academic literature on MTHFR is extensive. Searching PubMed for 'MTHFR C677T homocysteine' and 'MTHFR cardiovascular risk' will return high-quality systematic reviews and meta-analyses. These provide a counterbalance to the sometimes overstated clinical claims in the popular methylation community.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Methylation and the MTHFR Controversy \u2014 Chris Masterjohn",
+        "type": "website",
+        "author_or_source": "Chris Masterjohn PhD",
+        "url": "https://chrismasterjohnphd.com",
+        "description": "Dr Masterjohn (nutritional biochemist) provides a technically rigorous critique of oversimplified MTHFR narratives and a nuanced view of what the biochemistry actually supports. His articles on choline, B vitamins, and methylation are among the most scientifically careful freely available resources. Recommended for those who have already done basic reading and want to move beyond mainstream MTHFR content.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Riboflavin and the MTHFR C677T polymorphism: evidence for a gene-nutrient interaction",
+        "type": "research paper",
+        "author_or_source": "Mc Nulty, Ward et al. \u2014 various published studies including work from University of Ulster",
+        "url": null,
+        "description": "A body of research establishing that riboflavin (B2) status is a key modifier of MTHFR C677T enzyme function and homocysteine levels \u2014 an underappreciated finding in clinical practice. Searchable on PubMed: 'riboflavin MTHFR C677T homocysteine'.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Seeking Health \u2014 Methylation Learning Center",
+        "type": "website",
+        "author_or_source": "Seeking Health (Dr Ben Lynch's company)",
+        "url": "https://www.seekinghealth.com/pages/learn",
+        "description": "Educational content on methylation pathways, supplement forms, and testing. Note the commercial context (supplement sales), but the factual articles on cofactors, active forms, and pathway interactions are useful for those wanting to understand the biochemistry practically.",
+        "audience": "beginner"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

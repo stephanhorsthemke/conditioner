@@ -1,0 +1,676 @@
+{
+  "condition_id": "uars",
+  "condition_name": "Upper airway resistance syndrome",
+  "generated_at": "2026-07-01T11:58:42.034044Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Upper airway resistance syndrome (UARS) is a sleep-breathing disorder in which the airway partially narrows during sleep, causing the brain to repeatedly rouse itself to restore normal breathing \u2014 without the complete airway collapse seen in obstructive sleep apnea. These arousals are usually too brief to remember but severely fragment sleep architecture, leaving people chronically exhausted despite spending adequate time in bed. UARS is frequently missed on standard sleep tests because oxygen levels remain normal and the typical apnea count stays low, yet the person's quality of life can be just as impaired as in moderate sleep apnea.",
+    "detailed_summary": "Upper airway resistance syndrome sits on a spectrum of sleep-disordered breathing between simple snoring and obstructive sleep apnea (OSA). During sleep, the muscles that keep the throat open relax. In UARS, this relaxation causes the airway to narrow enough to significantly increase the effort required to breathe \u2014 a phenomenon measured as increased upper airway resistance \u2014 but not enough to fully collapse and trigger a classic apnea. The resulting surge in breathing effort activates the brain's arousal response, producing brief micro-arousals that interrupt the deeper, restorative stages of sleep dozens or even hundreds of times per night. Because oxygen saturation often remains normal and the apnea-hypopnea index (AHI) stays below the conventional OSA threshold of 5 events per hour, standard overnight oximetry and basic polysomnography scoring frequently return 'normal' or 'mild' results. The person is told their sleep study is fine, yet they wake unrefreshed every morning.\n\nThe physiological consequences extend well beyond tiredness. Chronic sleep fragmentation dysregulates the autonomic nervous system, shifting the balance toward sympathetic (fight-or-flight) dominance. This underlies many of the non-sleep symptoms that make UARS appear puzzling: orthostatic intolerance, cold hands and feet, morning headaches, cognitive fog, mood instability, heightened pain sensitivity, and even gastrointestinal symptoms mediated by disrupted gut-brain signalling. UARS has strong demographic and anatomical associations: it disproportionately affects lean individuals, women, and younger adults \u2014 populations less likely to be investigated for sleep-disordered breathing \u2014 and is frequently linked to a small jaw, high arched palate, nasal obstruction, or other airway-narrowing anatomy. Many people with UARS have spent years or decades receiving diagnoses of chronic fatigue, fibromyalgia, IBS, anxiety, or depression without the underlying sleep disorder ever being identified.",
+    "prevalence": {
+      "summary": "Affects an estimated 5\u201315% of the general population, though true prevalence is unknown due to widespread underdiagnosis.",
+      "estimate": "Estimates range from ~5% to over 15% depending on diagnostic criteria used",
+      "notes": "Because standard AHI-based scoring frequently misses UARS, published prevalence figures are almost certainly underestimates. UARS disproportionately affects women, lean individuals, and younger adults \u2014 groups in whom sleep-disordered breathing is often not suspected. Some researchers argue UARS and OSA lie on a single continuum and should not be separated statistically, further complicating prevalence data."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "UARS with prominent dysautonomia",
+        "description": "Individuals in whom autonomic nervous system dysfunction is the dominant clinical picture \u2014 orthostatic intolerance, tachycardia, cold extremities, and blood pressure dysregulation \u2014 driven by chronic sympathetic activation from sleep fragmentation.",
+        "distinguishing_features": [
+          "Significant orthostatic symptoms upon standing (lightheadedness, palpitations)",
+          "Low resting blood pressure or hypotension",
+          "Cold hands and feet even in warm environments",
+          "High overlap with POTS diagnosis"
+        ]
+      },
+      {
+        "id": null,
+        "name": "UARS with craniofacial / anatomical drivers",
+        "description": "Cases in which the primary driver is structural \u2014 small mandible, retrognathia, high arched palate, or significant nasal obstruction \u2014 making anatomical interventions (oral appliances, surgical expansion, nasal correction) the most relevant treatment path.",
+        "distinguishing_features": [
+          "Visibly narrow dental arch or recessed chin",
+          "History of orthodontic treatment including premolar extractions",
+          "Mouth breathing during the day and night",
+          "Chronic nasal congestion or deviated septum"
+        ]
+      },
+      {
+        "id": null,
+        "name": "UARS with RERAs as primary event type",
+        "description": "Cases where respiratory effort-related arousals (RERAs) are the dominant finding on full polysomnography, rather than apneas or hypopneas. Requires a sleep lab that scores RERAs separately to be identified.",
+        "distinguishing_features": [
+          "AHI below 5 but RDI (respiratory disturbance index) elevated above 5\u201310",
+          "Esophageal pressure monitoring showing increasing respiratory effort before arousal",
+          "Normal or near-normal oxygen saturation throughout the night",
+          "Unrefreshing sleep with no obvious explanation on basic testing"
+        ]
+      },
+      {
+        "id": null,
+        "name": "UARS overlapping with functional somatic syndromes",
+        "description": "A large subgroup who carry prior diagnoses of fibromyalgia, chronic fatigue, IBS, or functional neurological symptoms, where UARS may be a significant contributing or driving factor that was never investigated.",
+        "distinguishing_features": [
+          "Multiple prior diagnoses with incomplete treatment responses",
+          "Symptoms worsening after poor sleep and improving after unusually restorative nights",
+          "Heightened pain sensitivity and sensory processing differences",
+          "History of being told that investigations are normal"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Unrefreshing sleep despite adequate hours in bed",
+        "category": "sleep",
+        "notes": "Often the central complaint. People commonly report waking feeling as tired as when they went to bed, regardless of sleep duration."
+      },
+      {
+        "symptom": "Excessive daytime sleepiness or fatigue",
+        "category": "sleep",
+        "notes": "May manifest as sleepiness, or more commonly in UARS as a heavy, depleted fatigue rather than a tendency to fall asleep."
+      },
+      {
+        "symptom": "Frequent nighttime awakenings",
+        "category": "sleep",
+        "notes": "Often dismissed as insomnia; in UARS these may be driven by unrecognised arousal responses to respiratory effort."
+      },
+      {
+        "symptom": "Difficulty falling back to sleep after waking",
+        "category": "sleep",
+        "notes": "Sympathetic nervous system activation during the night can make settling back to sleep difficult."
+      },
+      {
+        "symptom": "Morning headaches",
+        "category": "neurological",
+        "notes": "Often present on waking, possibly related to mild CO2 fluctuations or disrupted sleep architecture."
+      },
+      {
+        "symptom": "Brain fog and impaired concentration",
+        "category": "neurological",
+        "notes": "Cognitive symptoms are often prominent and may be misattributed to anxiety, depression, or attention disorders."
+      },
+      {
+        "symptom": "Memory difficulties",
+        "category": "neurological",
+        "notes": "Deep sleep stages essential for memory consolidation are disproportionately disrupted in UARS."
+      },
+      {
+        "symptom": "Mood instability, irritability, or low mood",
+        "category": "psychological",
+        "notes": "Secondary to chronic sleep deprivation and autonomic dysregulation; frequently leads to anxiety or depression diagnoses."
+      },
+      {
+        "symptom": "Snoring (often light or absent)",
+        "category": "respiratory",
+        "notes": "UARS patients often do not snore loudly, or snore intermittently, which can reduce clinical suspicion for a sleep breathing disorder."
+      },
+      {
+        "symptom": "Mouth breathing during sleep or at rest",
+        "category": "respiratory",
+        "notes": "Common in those with nasal obstruction or narrow airway anatomy."
+      },
+      {
+        "symptom": "Orthostatic intolerance (symptoms on standing)",
+        "category": "cardiovascular / autonomic",
+        "notes": "Lightheadedness, rapid heartbeat, or visual greying upon standing \u2014 linked to sympathetic dysregulation from sleep fragmentation."
+      },
+      {
+        "symptom": "Cold hands and feet",
+        "category": "cardiovascular / autonomic",
+        "notes": "Peripheral vasoconstriction driven by chronic sympathetic nervous system activation."
+      },
+      {
+        "symptom": "Low or unstable blood pressure",
+        "category": "cardiovascular / autonomic",
+        "notes": "Hypotension is common in UARS, contrasting with the hypertension more often seen in OSA."
+      },
+      {
+        "symptom": "Heart palpitations",
+        "category": "cardiovascular / autonomic",
+        "notes": "Often reported on waking or during periods of fatigue; reflect autonomic instability."
+      },
+      {
+        "symptom": "Heightened sensitivity to pain, light, sound, or sensation",
+        "category": "neurological",
+        "notes": "Sensory amplification consistent with central sensitisation; often co-occurs with or leads to fibromyalgia diagnosis."
+      },
+      {
+        "symptom": "Gastrointestinal symptoms (bloating, IBS-like symptoms, nausea)",
+        "category": "digestive",
+        "notes": "Gut motility and function are regulated by the autonomic nervous system; chronic sympathetic dominance can disrupt gut-brain signalling."
+      },
+      {
+        "symptom": "Teeth grinding (bruxism)",
+        "category": "dental / musculoskeletal",
+        "notes": "Sleep bruxism is associated with micro-arousals and sleep-disordered breathing events; can indicate UARS in the absence of other obvious signs."
+      },
+      {
+        "symptom": "Temporomandibular joint (TMJ) pain or jaw soreness",
+        "category": "dental / musculoskeletal",
+        "notes": "Often secondary to bruxism; some jaw structure abnormalities contribute to both UARS and TMJ dysfunction."
+      },
+      {
+        "symptom": "Frequent urination at night (nocturia)",
+        "category": "urological",
+        "notes": "Arousals and autonomic dysregulation during sleep can trigger the urge to urinate."
+      },
+      {
+        "symptom": "Dry mouth on waking",
+        "category": "respiratory / dental",
+        "notes": "Common in mouth breathers and those with nighttime nasal congestion."
+      },
+      {
+        "symptom": "Anxiety, particularly physical or somatic anxiety",
+        "category": "psychological",
+        "notes": "Chronic sympathetic activation from sleep fragmentation can manifest as persistent physical anxiety symptoms even in people who do not consider themselves anxious."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "RDI (respiratory disturbance index) elevated above 5\u201310 events/hour while AHI remains below 5 \u2014 the classic UARS pattern missed by AHI-only scoring",
+        "Esophageal pressure (Pes) monitoring showing progressive increase in respiratory effort terminating in an arousal (the definitive RERA signature)",
+        "Frequent cortical arousals on EEG without clear apneas or hypopneas to explain them",
+        "Normal or near-normal overnight oxygen saturation despite severe sleep fragmentation",
+        "Flattened inspiratory airflow curve on nasal pressure waveform (flow limitation) without reaching hypopnea threshold",
+        "Elevated RERA count (respiratory effort-related arousals) on detailed polysomnography scoring",
+        "Daytime autonomic findings: low heart rate variability, orthostatic blood pressure drop, sympathetic dominance on autonomic testing"
+      ],
+      "at_home": [
+        {
+          "name": "Sleep symptom diary",
+          "description": "Track wake time, time in bed, perceived sleep quality (1\u201310), morning energy, daytime fatigue, headaches, and mood each day for 2\u20134 weeks. Look for consistently unrefreshing sleep regardless of hours slept, and correlation of worst days with worst night scores.",
+          "safety_notes": "No safety concerns. This data is useful to bring to a specialist to demonstrate the chronic nature of the problem."
+        },
+        {
+          "name": "Consumer sleep tracker analysis",
+          "description": "Devices such as Oura Ring, Garmin, or Withings Sleep Mat estimate sleep stages and heart rate variability (HRV). UARS may show reduced deep and REM sleep, frequent brief awakenings, and low or erratic HRV. While not diagnostic, consistently poor HRV and disrupted architecture despite adequate time in bed can build a case for investigation.",
+          "safety_notes": "Consumer trackers are not diagnostic tools and can miss or misclassify events. Use as supportive evidence only, not as a basis for treatment decisions."
+        },
+        {
+          "name": "Epworth Sleepiness Scale (ESS)",
+          "description": "A validated 8-question self-report questionnaire scoring likelihood of dozing in everyday situations. Available free online. A score above 10 suggests excessive daytime sleepiness warranting investigation. Note: some UARS patients score lower than expected because they experience fatigue rather than sleepiness.",
+          "safety_notes": "Low score does not rule out UARS \u2014 the ESS was validated primarily for OSA, not UARS."
+        },
+        {
+          "name": "Orthostatic self-test (poor man's tilt table)",
+          "description": "Lie flat for 5 minutes, then stand and measure heart rate at 0, 1, 2, and 10 minutes using a pulse oximeter or smartwatch. A rise of 30+ beats per minute in the first 10 minutes on repeated occasions suggests orthostatic tachycardia and dysautonomia, which is commonly associated with UARS.",
+          "safety_notes": "Stop and sit down if lightheadedness, near-fainting, or visual greyout occurs. Do not perform during acute illness."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Full in-lab polysomnography (PSG) with RERA scoring",
+          "type": "gold_standard",
+          "description": "Overnight sleep study measuring EEG (brain activity), respiratory airflow, respiratory effort via thoracic/abdominal belts, oxygen saturation, and leg movements. The key requirement for UARS is that the lab scores RERAs (respiratory effort-related arousals) separately and reports the RDI, not just the AHI. Without RERA scoring, UARS is commonly missed. Some labs also use nasal cannula pressure transducers that detect airflow limitation more sensitively than older thermistor sensors.",
+          "availability": "Available at accredited sleep labs. A referral from a GP, pulmonologist, ENT, or sleep physician is typically required. Explicitly requesting RDI and RERA scoring \u2014 and confirming the lab performs it \u2014 is important before booking."
+        },
+        {
+          "name": "Esophageal pressure (Pes) monitoring",
+          "type": "gold_standard",
+          "description": "A thin pressure catheter placed through the nose into the esophagus directly measures the effort of each breath. Increasing negative pressure spikes before arousals constitute the definitive RERA signature. Widely regarded as the most accurate method for detecting UARS, but invasive and uncomfortable, which limits routine use.",
+          "availability": "Available only at specialist sleep centres; rarely offered as routine clinical care. More commonly used in research settings or by sleep physicians with a specific interest in UARS."
+        },
+        {
+          "name": "Home sleep apnea test (HSAT) with advanced flow analysis",
+          "type": "standard",
+          "description": "Portable devices that measure airflow, oxygen saturation, and sometimes respiratory effort at home. Standard HSATs frequently miss UARS because they score AHI only. Some newer devices with nasal pressure transducers can detect flow limitation and are more sensitive, but RERA scoring is often not available on home tests.",
+          "availability": "Widely available through sleep specialists and some GPs. Useful as a first step to rule in OSA, but a negative or borderline HSAT should not be taken as ruling out UARS."
+        },
+        {
+          "name": "Upper airway / craniofacial assessment",
+          "type": "standard",
+          "description": "ENT examination of nasal passages, palate, and oropharynx; lateral cephalometric X-ray or CBCT (cone beam CT) to assess jaw anatomy, airway dimensions, and tongue position. Dentists and orthodontists trained in sleep medicine can identify retrognathia, narrow arches, and other anatomical contributors.",
+          "availability": "ENT referral is widely available. Cephalometric imaging is available through dental schools, sleep-focused dentists, oral surgeons, and some radiology centres."
+        },
+        {
+          "name": "Autonomic nervous system testing",
+          "type": "emerging",
+          "description": "Heart rate variability (HRV) analysis, tilt table test, or QSART (quantitative sudomotor axon reflex test) to characterise the degree of sympathetic/parasympathetic imbalance. These tests can corroborate the autonomic impact of UARS and are useful when POTS or dysautonomia is suspected.",
+          "availability": "Tilt table testing is available through neurology or cardiology departments. HRV analysis is increasingly available through functional medicine practitioners. QSART is a specialist test available at academic neurology centres."
+        },
+        {
+          "name": "Drug-induced sleep endoscopy (DISE)",
+          "type": "emerging",
+          "description": "An ENT procedure in which the patient is lightly sedated and a flexible camera is passed through the nose to directly visualise where and how the airway collapses during simulated sleep. Helps guide surgical or device-based treatment decisions.",
+          "availability": "Available at specialist ENT or sleep surgery centres. Usually considered when surgery or mandibular advancement is being planned."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "sleep_apnea",
+        "name": "Obstructive sleep apnea (OSA)",
+        "relationship": "often_confused",
+        "explanation": "UARS and OSA lie on the same spectrum of sleep-disordered breathing. UARS involves partial airway narrowing and increased respiratory effort without complete collapse, while OSA involves complete or near-complete airway obstruction. They share anatomy, risk factors, and treatments, but standard OSA scoring (AHI) frequently misses UARS. Many UARS cases eventually progress to OSA."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "Chronic sleep fragmentation in UARS drives sympathetic nervous system dominance, which can manifest as or worsen POTS. Orthostatic intolerance is one of the most common non-sleep presentations of UARS. Some researchers believe undiagnosed UARS is an underappreciated driver of POTS in younger, lean individuals."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "UARS-driven sleep fragmentation suppresses slow-wave sleep, which is essential for musculoskeletal recovery and pain regulation. Many people with fibromyalgia have undiagnosed sleep-disordered breathing including UARS. Treating the sleep disorder sometimes results in meaningful reduction of fibromyalgia symptoms."
+      },
+      {
+        "id": "me_cfs",
+        "name": "ME / CFS",
+        "relationship": "often_confused",
+        "explanation": "The symptom overlap between UARS and ME/CFS is substantial \u2014 unrefreshing sleep, post-exertional malaise, cognitive impairment, and autonomic symptoms are central to both. UARS is considered an important differential and potential contributor in ME/CFS workups; some individuals diagnosed with ME/CFS have UARS as a primary or contributing driver."
+      },
+      {
+        "id": "ibs",
+        "name": "IBS (Irritable bowel syndrome)",
+        "relationship": "comorbid",
+        "explanation": "Autonomic dysregulation from chronic sleep fragmentation can disrupt gut motility and visceral sensation. IBS and UARS frequently co-occur, and both are overrepresented in people with central sensitisation syndromes."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "often_confused",
+        "explanation": "The physical symptoms of chronic sympathetic activation in UARS \u2014 palpitations, hyperarousal, tension, and physical anxiety \u2014 are frequently attributed to an anxiety disorder. In some cases, treating UARS substantially reduces anxiety symptoms, suggesting the sleep disorder was driving the autonomic state."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "comorbid",
+        "explanation": "Chronic sleep fragmentation is a major driver of depressive symptoms. UARS is consistently undertreated in people whose mood disorders are blamed on psychological factors, when the root cause may be fragmented sleep architecture."
+      },
+      {
+        "id": "chronic_sinusitis",
+        "name": "Chronic sinusitis / rhinosinusitis",
+        "relationship": "upstream",
+        "explanation": "Nasal obstruction from chronic sinusitis increases upper airway resistance during sleep and is a common contributor to UARS. Treating nasal obstruction can meaningfully reduce UARS severity."
+      },
+      {
+        "id": "deviated_septum",
+        "name": "Deviated septum",
+        "relationship": "upstream",
+        "explanation": "A deviated nasal septum increases nasal airflow resistance, which raises the work of breathing during sleep and can precipitate or worsen UARS. Septoplasty is sometimes part of surgical management."
+      },
+      {
+        "id": "tmd",
+        "name": "Temporomandibular disorder (TMD/TMJ)",
+        "relationship": "comorbid",
+        "explanation": "Sleep bruxism \u2014 common in UARS due to micro-arousals \u2014 places excessive load on the temporomandibular joint. Additionally, the small jaw and narrow arch anatomy that predispose to UARS also alter TMJ biomechanics. The two conditions frequently co-occur and are often managed by the same sleep-focused dental specialists."
+      },
+      {
+        "id": "allergic_rhinitis",
+        "name": "Allergic rhinitis",
+        "relationship": "upstream",
+        "explanation": "Nasal inflammation from allergies reduces nasal airway diameter, increasing resistance during sleep and contributing to UARS. Managing allergic rhinitis (with nasal corticosteroids, antihistamines, or allergen avoidance) is often a component of UARS treatment."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / HSD (Hypermobile Ehlers-Danlos syndrome)",
+        "relationship": "comorbid",
+        "explanation": "Connective tissue laxity in hEDS affects airway tissues, potentially increasing collapsibility. UARS, POTS, and chronic fatigue are all overrepresented in hEDS populations, likely sharing an underlying autonomic and structural vulnerability."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation",
+        "relationship": "mechanistic_link",
+        "explanation": "Chronic sleep fragmentation, particularly suppression of slow-wave sleep, is one of the established mechanisms driving central sensitisation. UARS may initiate or perpetuate widespread pain sensitivity and sensory amplification syndromes."
+      },
+      {
+        "id": "migraine",
+        "name": "Migraine",
+        "relationship": "comorbid",
+        "explanation": "Sleep disruption is a well-known migraine trigger. People with UARS often report frequent morning headaches, and migraine frequency can worsen with sleep fragmentation. Treating the sleep disorder sometimes reduces headache burden."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor sleep / insomnia",
+        "relationship": "often_confused",
+        "explanation": "UARS-driven micro-arousals are frequently misinterpreted as insomnia, particularly sleep maintenance insomnia. People with UARS are sometimes placed on sedative medications that can actually worsen upper airway muscle tone and respiratory events."
+      },
+      {
+        "id": "poor_posture",
+        "name": "Poor posture / forward head posture",
+        "relationship": "upstream",
+        "explanation": "Forward head posture reduces the cross-sectional area of the pharyngeal airway and increases soft tissue load on the throat. It is both a contributor to airway narrowing during sleep and a common feature in people with the craniofacial anatomy associated with UARS."
+      },
+      {
+        "id": "cortisol_dysreg",
+        "name": "Cortisol dysregulation",
+        "relationship": "downstream",
+        "explanation": "Chronic sleep fragmentation disrupts the normal cortisol awakening response and HPA axis rhythm, leading to dysregulated cortisol patterns. This contributes to fatigue, mood instability, immune dysregulation, and metabolic effects associated with UARS."
+      },
+      {
+        "id": "low_blood_pressure",
+        "name": "Low blood pressure / hypotension",
+        "relationship": "comorbid",
+        "explanation": "Hypotension is common in UARS (contrasting with the hypertension more typical of OSA) and is part of the autonomic dysregulation pattern. It contributes to orthostatic symptoms and the light-headedness many UARS patients experience."
+      },
+      {
+        "id": "cervical_instability",
+        "name": "Cervical instability",
+        "relationship": "comorbid",
+        "explanation": "Laxity of cervical ligaments can allow positional changes during sleep that compress or narrow the upper airway. Some practitioners managing complex UARS and dysautonomia cases investigate cervical instability as a contributing structural factor."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "CPAP or APAP therapy",
+          "category": "medical device",
+          "description": "Continuous or auto-titrating positive airway pressure keeps the upper airway open by delivering pressurised air through a mask during sleep. CPAP is effective for many UARS patients but requires careful pressure titration \u2014 pressures effective for OSA may be too high or too low for UARS. Bilevel PAP (BiPAP) or pressure-relief modes (C-Flex, EPAP reduction) are sometimes better tolerated when standard CPAP causes discomfort on exhalation.",
+          "evidence_level": "strong",
+          "notes": "Some UARS patients have difficulty tolerating CPAP, particularly those with small jaws or claustrophobia. UARS patients may need lower pressures than OSA patients, and over-treatment can cause its own arousals (complex sleep apnea). Working with a sleep physician experienced in UARS titration matters."
+        },
+        {
+          "name": "Mandibular advancement device (MAD)",
+          "category": "dental / medical device",
+          "description": "A custom-fitted oral appliance worn during sleep that holds the lower jaw slightly forward, enlarging the oropharyngeal airway. Often better tolerated than CPAP and effective for mild-to-moderate UARS, particularly when retrognathia or a recessed jaw is a contributing anatomy. Custom devices fitted by sleep dentists are significantly more effective than over-the-counter versions.",
+          "evidence_level": "strong",
+          "notes": "Can cause jaw soreness, bite changes, or TMJ symptoms if not fitted properly. Long-term use requires monitoring by a dentist. Efficacy varies with the degree of airway improvement achieved \u2014 imaging can help predict response."
+        },
+        {
+          "name": "Nasal obstruction treatment",
+          "category": "medical / lifestyle",
+          "description": "Addressing nasal congestion or obstruction through nasal corticosteroid sprays, antihistamines for allergic rhinitis, nasal dilator strips at night, saline irrigation, or surgical correction of a deviated septum or turbinate hypertrophy. Reducing nasal resistance can meaningfully lower the overall work of breathing during sleep.",
+          "evidence_level": "moderate",
+          "notes": "Most effective when nasal obstruction is clearly identified as a contributing factor. Nasal dilator strips are a low-risk first step. Septoplasty and turbinate reduction should be considered after conservative measures."
+        },
+        {
+          "name": "Myofunctional therapy",
+          "category": "lifestyle / rehabilitation",
+          "description": "Structured exercises for the tongue, lips, and oropharyngeal muscles that improve muscle tone and encourage nasal breathing. Multiple randomised controlled trials show myofunctional therapy reduces AHI and improves sleep quality in adults with sleep-disordered breathing. Particularly relevant for UARS where mouth breathing and low-tone upper airway muscles contribute to airway collapse.",
+          "evidence_level": "moderate",
+          "notes": "Requires consistency \u2014 benefits emerge over months of daily practice. Best delivered by a certified orofacial myofunctional therapist. May be used alongside PAP, oral appliances, or orthodontic/surgical treatment."
+        },
+        {
+          "name": "Positional therapy",
+          "category": "lifestyle",
+          "description": "Sleeping on the side (lateral position) rather than supine reduces the gravitational load of the tongue and soft palate on the airway. Simple interventions include body pillows, positional alarms, or specially designed positional sleep devices. Most effective for people whose UARS events are predominantly or exclusively in the supine position.",
+          "evidence_level": "moderate",
+          "notes": "Positional dependence can be confirmed on a sleep study \u2014 if most RERAs occur supine, this is a high-yield intervention. Not sufficient as a sole treatment if events occur in all positions."
+        },
+        {
+          "name": "Surgical airway expansion (maxillomandibular advancement, palate expansion)",
+          "category": "surgical",
+          "description": "Procedures that physically enlarge the airway skeleton \u2014 maxillomandibular advancement (MMA) surgery moves both jaws forward to expand the airway space; palatal expansion (including adult expanders like the MSE or MARPE) widens the hard palate. These are considered when anatomy is the primary driver and non-surgical treatments have failed. MMA has some of the highest success rates of any UARS/OSA surgery.",
+          "evidence_level": "strong",
+          "notes": "Major surgical procedures requiring specialist oral or maxillofacial surgeons. Recovery can take months. Patient selection matters significantly \u2014 cephalometric assessment is used to identify likely responders. Not appropriate or necessary for all UARS patients."
+        },
+        {
+          "name": "Sleep hygiene optimisation",
+          "category": "lifestyle",
+          "description": "Consistent sleep and wake times, dark and cool sleep environment, avoidance of alcohol and sedatives (which relax airway muscles), and avoiding heavy meals close to bedtime. These measures reduce the overall severity of sleep fragmentation and improve the therapeutic window of other interventions.",
+          "evidence_level": "moderate",
+          "notes": "Sleep hygiene alone is unlikely to resolve UARS but reduces compounding factors. Alcohol in particular significantly worsens upper airway muscle tone and should be minimised in anyone with UARS."
+        },
+        {
+          "name": "Autonomic support (salt, fluids, compression)",
+          "category": "lifestyle / supplement",
+          "description": "For those with prominent orthostatic symptoms and hypotension, increasing sodium and fluid intake, wearing compression stockings, and elevating the head of the bed can help stabilise blood pressure and reduce dysautonomia symptoms while the underlying sleep disorder is being treated.",
+          "evidence_level": "moderate",
+          "notes": "Most effective as a bridge while UARS is being treated. Should be discussed with a clinician, particularly in anyone with cardiovascular conditions or kidney disease."
+        },
+        {
+          "name": "Allergy management for rhinitis",
+          "category": "medication / lifestyle",
+          "description": "Treating allergic rhinitis with intranasal corticosteroids (e.g. fluticasone), antihistamines, or allergen avoidance reduces nasal mucosal inflammation and airway resistance. Particularly relevant in seasonal worsening of UARS symptoms.",
+          "evidence_level": "moderate",
+          "notes": "First-generation sedating antihistamines (e.g. diphenhydramine, chlorphenamine) may worsen sleep architecture and should be avoided. Non-sedating antihistamines (e.g. cetirizine, loratadine) or nasal steroid sprays are preferred."
+        },
+        {
+          "name": "Weight management (if relevant)",
+          "category": "lifestyle",
+          "description": "Excess weight, particularly central and pharyngeal fat deposition, increases airway collapsibility. In those who are overweight, weight reduction can reduce airway resistance and improve sleep quality. Note: UARS frequently affects lean individuals for whom this does not apply.",
+          "evidence_level": "moderate",
+          "notes": "This strategy applies primarily to the subset of UARS patients with excess weight. Many UARS patients are lean or underweight, and weight management is irrelevant to their treatment."
+        }
+      ],
+      "things_to_avoid": [
+        "Alcohol within 3\u20134 hours of sleep \u2014 significantly relaxes pharyngeal muscles and worsens airway collapse",
+        "Sedative medications (benzodiazepines, Z-drugs, first-generation antihistamines) \u2014 reduce upper airway tone and can worsen UARS without the person being aware",
+        "Sleeping supine if positionally dependent UARS is suspected \u2014 gravity loads the airway in the supine position",
+        "Accepting a 'normal sleep study' result without confirming that RERAs and RDI were scored \u2014 AHI-only reporting routinely misses UARS",
+        "Dismissing UARS because of absence of loud snoring \u2014 many UARS patients breathe quietly, which paradoxically reduces clinical suspicion",
+        "Starting sleep hygiene interventions as the sole treatment when a structural or anatomical driver is present \u2014 habits cannot change anatomy",
+        "Over-the-counter sleep aids or supplements marketed for insomnia without investigating whether a sleep breathing disorder underlies the insomnia"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "A 'normal' or 'borderline' sleep study result does not mean normal sleep. Standard scoring misses UARS by design.",
+        "why_resisted": "Being told a test is normal is reassuring, and it is tempting to stop investigating. It is also difficult to advocate for repeat or different testing when a specialist has reviewed the results.",
+        "path_forward": "People who understand that UARS requires RDI scoring, not just AHI, can go back to their sleep lab or seek a second opinion with a specialist who scores RERAs. Some eventually get the study repeated with esophageal pressure monitoring or at a facility that uses nasal cannula pressure transducers. With the right test, the diagnosis becomes visible."
+      },
+      {
+        "truth": "UARS is not widely taught in medical training and many general practitioners and even sleep physicians are unfamiliar with it as a distinct diagnosis.",
+        "why_resisted": "Patients are inclined to trust that if a specialist has reviewed their case, nothing has been missed. Accepting that a knowledge gap may exist in experienced clinicians is uncomfortable.",
+        "path_forward": "Those who learn enough about UARS to communicate the specific diagnostic criteria \u2014 RDI above 5, RERA scoring, RDI vs AHI distinction \u2014 can have more informed conversations with specialists and seek practitioners known to evaluate for this condition. Finding a sleep-focused dentist, an ENT experienced with airway anatomy, or a sleep physician who explicitly mentions UARS in their practice profile often makes the difference."
+      },
+      {
+        "truth": "Years of anxiety, depression, IBS, or fibromyalgia diagnoses may reflect untreated UARS rather than independent conditions \u2014 and treating the sleep disorder may be the most direct intervention.",
+        "why_resisted": "After years of managing symptoms through therapy, medication, and lifestyle change, the idea that a mechanical airway problem could be a root cause can feel both hopeful and destabilising. It may also imply that earlier investigations were incomplete.",
+        "path_forward": "People in this position who successfully treat UARS \u2014 through PAP therapy, an oral appliance, or surgical correction \u2014 frequently report that longstanding symptoms resolve or significantly improve without changing any other treatment. The functional diagnoses may remain as labels, but their severity often diminishes once the sleep driver is addressed."
+      },
+      {
+        "truth": "UARS treatment often requires commitment to a device, dental appliance, or surgical procedure \u2014 there is no lifestyle or supplement approach that reliably resolves the underlying airway problem.",
+        "why_resisted": "Non-invasive approaches feel easier to try first, and the commitment involved in CPAP therapy or oral appliance use is significant. Surgical options carry real risks and recovery periods.",
+        "path_forward": "People who accept that anatomical airway narrowing requires a mechanical solution, and commit to proper titration and device use \u2014 or appropriate surgical evaluation \u2014 are those who see the most durable improvement. Partial measures help at the margins; addressing the structural driver changes the trajectory."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Obtaining a sleep study that scores RERAs and reports RDI",
+          "why_it_matters": "Without accurate diagnosis, all subsequent management is guesswork. The single most common reason UARS goes untreated for years is an inadequate sleep study. Once RERAs and RDI are properly measured, the condition becomes visible and treatable.",
+          "how_to_start": "Before booking any sleep study, call the sleep lab and ask specifically whether they score RERAs and report the RDI. If not, seek a facility that does, or ask for referral to a sleep specialist known to investigate UARS. Request nasal pressure transducer recording rather than thermistor-only flow measurement.",
+          "timeline": "The diagnostic step itself can take weeks to months depending on waitlists, but having the right study done changes the clinical trajectory fundamentally.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Addressing nasal airway obstruction",
+          "why_it_matters": "The nose is the primary intended route for sleep breathing. Any significant narrowing \u2014 from a deviated septum, turbinate hypertrophy, nasal polyps, or chronic allergic rhinitis \u2014 compounds upper airway resistance and makes all other UARS treatments less effective. Treating nasal obstruction is often the highest-leverage, lowest-risk intervention.",
+          "how_to_start": "Start with a GP or ENT assessment of nasal airway patency. Trial a nasal corticosteroid spray for allergic rhinitis, and assess response. Nasal dilator strips at night are a safe immediate self-test of whether nasal airflow is a limiting factor.",
+          "timeline": "Nasal steroid sprays show meaningful effect within 2\u20134 weeks. Surgical correction (septoplasty) requires several months of recovery before full benefit is apparent.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Committing to PAP therapy with proper titration",
+          "why_it_matters": "For most people with UARS, positive airway pressure is the most immediately effective treatment for sleep fragmentation. The challenge is that standard CPAP titration protocols are optimised for OSA and may not achieve optimal settings for UARS. Working with a sleep physician to dial in pressure settings \u2014 sometimes using data from the device's detailed flow data \u2014 is essential.",
+          "how_to_start": "If already on CPAP, review compliance data and detailed flow data from the device (many CPAP machines export this to apps like OSCAR or SleepHQ). Look for residual flow limitation, excessive leak, or pressure-induced central apneas. Bring this data to a sleep physician for titration review.",
+          "timeline": "Initial adjustment takes days to weeks; many people take 1\u20133 months to optimise settings and adapt to the device. Consistent use of 4+ hours nightly is needed to assess benefit.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Myofunctional therapy to improve upper airway muscle tone",
+          "why_it_matters": "Muscle tone of the tongue, soft palate, and pharynx is modifiable through targeted exercise. Myofunctional therapy addresses a real physiological driver \u2014 low-tone, poorly coordinated airway musculature \u2014 and has randomised trial evidence for reducing sleep-disordered breathing severity. It can work synergistically with PAP or oral appliances.",
+          "how_to_start": "Find a certified orofacial myofunctional therapist (AOMT directory in the US; equivalent bodies in other countries). Programs typically run 3\u20136 months with daily home exercises.",
+          "timeline": "Benefits typically emerge over 3\u20136 months of consistent practice. Some people notice improved nasal breathing and reduced mouth breathing within weeks.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Craniofacial and airway anatomy assessment for structural interventions",
+          "why_it_matters": "When UARS is driven primarily by skeletal anatomy \u2014 small jaw, retrognathia, narrow palate \u2014 non-surgical approaches treat the consequence but not the cause. Structural assessment can identify whether an oral appliance, palatal expansion, or surgical advancement would produce durable improvement that devices cannot.",
+          "how_to_start": "Seek a dentist or orthodontist with sleep medicine training, or an oral and maxillofacial surgeon, for a cephalometric or CBCT assessment. Ask specifically about airway dimensions, tongue space, and mandibular position.",
+          "timeline": "Orthodontic or expansion-based approaches take 12\u201324 months. Surgical MMA recovery is 3\u20136 months to full benefit.",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Accepting a standard overnight sleep study as definitive without confirming that RERAs were scored and RDI reported \u2014 the most common reason UARS goes undiagnosed for years",
+        "Using CPAP at OSA-standard pressures without confirming they address UARS-level events \u2014 over- or under-treatment both cause residual sleep fragmentation",
+        "Treating downstream diagnoses (anxiety, fibromyalgia, IBS) without investigating whether UARS is the upstream driver",
+        "Stopping CPAP because of initial discomfort without trying mask fitting adjustments, pressure relief settings, or alternative devices \u2014 early intolerance is often solvable",
+        "Relying on weight loss as a treatment strategy when UARS anatomy is the driver \u2014 many UARS patients are lean and this is not relevant to their case",
+        "Trying supplements or sleep hygiene interventions as the primary management when a structural airway problem is present",
+        "Ignoring the role of nasal breathing \u2014 mouth breathing during sleep significantly worsens airway resistance and is often directly addressable"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Sleep physician (with UARS/RERA expertise)",
+          "role": "Diagnoses UARS through properly conducted polysomnography, interprets RDI and RERA data, and manages PAP therapy titration. The most important factor is finding someone who is familiar with UARS specifically \u2014 not all sleep physicians investigate beyond AHI.",
+          "notes": "Ask prospective sleep physicians directly whether they diagnose and treat UARS and whether their lab scores RERAs. Practices affiliated with academic medical centres or sleep research programmes are more likely to have this expertise."
+        },
+        {
+          "type": "Sleep-focused dentist or orthodontist",
+          "role": "Assesses craniofacial anatomy (jaw size, palate, tongue space), fits custom mandibular advancement devices, and in some cases manages palatal expansion or refers for orthognathic surgery. Often the most accessible specialist with deep UARS anatomy knowledge.",
+          "notes": "Look for credentials in dental sleep medicine (ABDSM diplomates in the US, or equivalent). These practitioners often work in close collaboration with sleep physicians and ENT surgeons."
+        },
+        {
+          "type": "ENT (otolaryngologist) with sleep interest",
+          "role": "Assesses and treats nasal obstruction (deviated septum, turbinate hypertrophy, nasal polyps), evaluates pharyngeal anatomy, performs DISE (drug-induced sleep endoscopy), and considers surgical interventions including MMA in collaboration with oral surgeons.",
+          "notes": "Not all ENTs investigate sleep-disordered breathing. Seek those who list sleep surgery or sleep medicine as a subspecialty interest."
+        },
+        {
+          "type": "Orofacial myofunctional therapist",
+          "role": "Delivers structured exercise programmes targeting tongue, lip, and pharyngeal muscle tone to improve nasal breathing and reduce airway collapsibility. Addresses a modifiable physiological driver of UARS.",
+          "notes": "Certification through the International Association of Orofacial Myology (IAOM) or the Academy of Orofacial Myofunctional Therapy (AOMT) indicates specialist training. Some speech-language pathologists also provide myofunctional therapy."
+        },
+        {
+          "type": "Functional medicine doctor or integrative sleep specialist",
+          "role": "Investigates the broader context \u2014 autonomic dysfunction, HPA axis, nutritional factors, and comorbidities like POTS or chronic fatigue \u2014 and coordinates care across specialties. Useful when UARS is embedded in a complex multi-system presentation.",
+          "notes": "Quality varies substantially. Look for practitioners who combine rigorous diagnostic testing with an integrative approach, rather than those who rely primarily on supplements."
+        },
+        {
+          "type": "Oral and maxillofacial surgeon",
+          "role": "Performs maxillomandibular advancement (MMA) surgery, genioglossus advancement, and related skeletal procedures to physically enlarge the airway. Relevant only when anatomy is the primary driver and non-surgical approaches have failed or been declined.",
+          "notes": "MMA is a major procedure. Second opinions and thorough pre-surgical imaging are standard. Some centres combine MMA with simultaneous orthognathic correction for bite issues."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/UARS",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/UARS/",
+          "notes": "Active community focused specifically on UARS. Contains substantial patient experience with PAP titration, oral appliances, surgical options, and navigating the diagnostic process. High signal-to-noise ratio compared to general sleep disorder communities."
+        },
+        {
+          "name": "r/SleepApnea",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/SleepApnea/",
+          "notes": "Broader sleep-disordered breathing community. Useful for CPAP troubleshooting, device data interpretation (OSCAR, SleepHQ), and general support. Many UARS members participate here."
+        },
+        {
+          "name": "ApneaBoard",
+          "platform": "Forum",
+          "url": "https://www.apneaboard.com/",
+          "notes": "Technical forum focused on CPAP data analysis. Members help interpret detailed flow data from CPAP machines to identify residual events, flow limitation, and optimal pressure settings. Highly useful for those trying to optimise PAP therapy for UARS."
+        },
+        {
+          "name": "Airway Health / The Breathe Institute Community",
+          "platform": "Various (Facebook, practitioner network)",
+          "url": "https://www.thebreatheinstitute.com/",
+          "notes": "Resources and community associated with Breathe Institute, a practice specialising in airway-centred medicine. Useful for finding practitioners and understanding the myofunctional and craniofacial dimensions of UARS."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "The Effect of Upper Airway Resistance Syndrome on Sleep Quality (Guilleminault & Chowdhuri, 2000)",
+        "type": "research paper",
+        "author_or_source": "Guilleminault C, Chowdhuri S \u2014 Sleep Medicine Reviews",
+        "url": null,
+        "description": "One of the foundational papers by Christian Guilleminault, the researcher who first described UARS. Sets out the core diagnostic criteria and distinguishes UARS from OSA. Important background for those trying to understand why standard AHI scoring misses the condition.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Sleep, Interrupted: A Physician Reveals the #1 Reason Why So Many of Us Are Sick and Tired",
+        "type": "book",
+        "author_or_source": "Steven Y. Park, MD",
+        "url": null,
+        "description": "Written by an ENT and sleep surgeon, this book explains how subtle sleep-disordered breathing \u2014 including UARS \u2014 underlies a wide range of seemingly unrelated symptoms. Accessible to non-specialists and useful for understanding the autonomic consequences of sleep fragmentation.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Doctorstevenpark.com",
+        "type": "website",
+        "author_or_source": "Dr Steven Y. Park",
+        "url": "https://doctorstevenpark.com/",
+        "description": "Extensive educational resource on UARS, sleep-disordered breathing, and upper airway anatomy from a clinician specialising in this area. Includes podcast episodes, articles, and patient guidance. One of the most thorough publicly accessible resources on UARS.",
+        "audience": "beginner"
+      },
+      {
+        "title": "OSCAR (Open Source CPAP Analysis Reporter)",
+        "type": "website",
+        "author_or_source": "Open source / CPAP community",
+        "url": "https://www.sleepfiles.com/OSCAR/",
+        "description": "Free software that reads detailed data from most CPAP machines and displays flow curves, pressure, leak, and event data in high resolution. Allows people to identify residual flow limitation and UARS events that device summaries do not show. Essential for those trying to optimise PAP therapy.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Breathe Well, Sleep Well: The Drug-Free Programme for Snoring and Sleep Apnoea",
+        "type": "book",
+        "author_or_source": "Dr David McIntosh",
+        "url": null,
+        "description": "Covers nasal breathing, myofunctional approaches, and lifestyle interventions for sleep-disordered breathing. Useful for understanding the nasal and airway hygiene component of UARS management.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Airway-Centric TMJ Disorders and Bruxism (Gerber & Kramer, Sleep & Breathing)",
+        "type": "research paper",
+        "author_or_source": "Various \u2014 Sleep & Breathing journal",
+        "url": null,
+        "description": "Reviews the relationship between sleep-disordered breathing including UARS, bruxism, and temporomandibular disorders. Useful for understanding the dental and jaw dimensions of UARS.",
+        "audience": "advanced"
+      },
+      {
+        "title": "The UARS Community Wiki (r/UARS)",
+        "type": "website",
+        "author_or_source": "Reddit community contributors",
+        "url": "https://www.reddit.com/r/UARS/wiki/",
+        "description": "Community-maintained resource covering diagnostic criteria, PAP settings, oral appliances, surgical options, and practitioner-finding tips for UARS. Reflects lived patient experience and is frequently updated.",
+        "audience": "beginner"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

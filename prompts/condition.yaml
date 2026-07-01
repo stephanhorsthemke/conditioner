@@ -1,10 +1,9 @@
 id: condition
 description: "Comprehensive condition page data"
 
-# Fields tagged `descriptive_skip: true` are omitted when generating data for a
-# `descriptive` condition (a syndrome label like IBS whose page focuses on
-# routing the user to a sub-condition rather than enumerating symptoms /
-# testing / management of the syndrome itself).
+# Each field runs as one section of a single prompt. Sub-condition tables and
+# symptom-pattern chips live on starting points (data/starting_points.yaml),
+# not on conditions — so this file describes only per-condition content.
 
 system: |
   This condition information is for people who have chronic conditions — many of whom have
@@ -108,19 +107,24 @@ fields:
       notes: "string — caveats, contested numbers, demographic skew"
 
   subgroups:
-    descriptive_skip: true
     prompt: |
       Are there known subtypes, subgroups, or presentations of this condition that
       differ meaningfully in cause, symptoms, or treatment? If none are
       well-established, return an empty list.
+
+      After generating each entry, check whether its name or a common alias matches
+      a condition in the LINKABLE CONDITIONS catalog. Use fuzzy matching — a subtype
+      called "Hydrogen SIBO" should match a catalog entry named "Hydrogen SIBO (H2-SIBO)"
+      with alias "H2-SIBO". If a reasonable match exists, set `id` to that exact catalog
+      id so the frontend can link to its page. Otherwise set `id` to null.
     schema:
-      - name: "string — name of the subgroup or subtype"
+      - id: "string | null — catalog id if this subtype has a dedicated condition page; otherwise null"
+        name: "string — name of the subgroup or subtype"
         description: "string — how it differs from the general condition"
         distinguishing_features:
           - "string — key differences in symptoms, triggers, or lab findings"
 
   symptoms:
-    descriptive_skip: true
     prompt: |
       All notable symptoms associated with this condition — both common and less
       obvious ones. Group them by body system or category where that helps. For
@@ -132,7 +136,6 @@ fields:
         notes: "string | null — any useful context, e.g. timing, triggers, or distinguishing features"
 
   testing:
-    descriptive_skip: true
     prompt: "ways to test for or confirm the condition."
     schema:
       key_patterns:
@@ -161,48 +164,22 @@ fields:
             description: "string — what it measures and how it is performed"
             availability: "string — how or where to get it ordered"
 
-  # symptom_patterns is curated by hand (and may eventually be produced by a
-  # more precise pipeline than a single prompt). The data lives in the same
-  # generated JSON file but is never written by `cn generate` — manual: true
-  # excludes it from the schema sent to Claude entirely.
-  symptom_patterns:
-    manual: true
-    descriptive_only: true
-    schema:
-      patterns:
-        - id: string
-          label: string
-          description: string
-      sub_condition_affinities:
-        - sub_condition_id: string
-          patterns: [string]
-
   related_conditions:
     prompt: |
       Conditions that are commonly comorbid, often confused with, or mechanistically
       linked to this one. Explain the relationship briefly for each.
 
-      Generate this list based on medical knowledge and clinical comorbidity — do
-      NOT restrict yourself to conditions in the LINKABLE CONDITIONS catalog
-      provided in this prompt. The catalog is a small curated set; real
-      comorbidity is much broader. A complete, useful list will include many
-      conditions that are not in the catalog, and that is correct.
+      ORDERING — sort strictly by strength of medical relationship (comorbidity rate,
+      mechanistic evidence, clinical relevance). Do NOT let the presence of a condition
+      in the LINKABLE CONDITIONS catalog influence ordering or inclusion. The catalog is
+      a small curated set; most medically important related conditions will not be in it,
+      and that is expected. A condition should appear here because it is genuinely related
+      — not because it exists in the catalog.
 
-      The catalog exists only so the frontend can render cross-page links. After
-      you have generated each entry, check whether its name or a common alias
-      matches one of the catalog entries. If yes, set `id` to that exact id.
-      If no, set `id` to null. Expect most entries to have id: null — that is
-      the normal case, not a failure.
-
-      Do not invent ids that aren't in the catalog.
-
-      EXCLUDE sub-conditions: any condition listed in the SUB-CONDITIONS list
-      (when present in this prompt) is surfaced separately on the page and must
-      not appear here. `related_conditions` is for mechanistically-related
-      conditions, comorbidities, and often-confused differentials that are NOT
-      already a declared sub-condition. Subtype relationships (e.g. SIBO and its
-      hydrogen/methane subtypes) belong in sub_conditions, never in
-      related_conditions — there is no `subtype` value in the relationship enum.
+      CATALOG use — after generating and ordering the list, check each entry's name and
+      aliases against the LINKABLE CONDITIONS catalog. If a match exists, set `id` to
+      that exact catalog id. Otherwise set `id` to null. Most entries will have id: null.
+      Do not invent ids that are not in the catalog.
 
       Language discipline: frame explanations informatively, not prescriptively. Use
       "People with both conditions often experience..." or "The overlap suggests..."
@@ -214,7 +191,6 @@ fields:
         explanation: "string — why these two conditions are connected"
 
   symptom_management:
-    descriptive_skip: true
     prompt: |
       Practical ways to reduce or manage symptoms in daily life. Cover diet,
       lifestyle, medications, supplements, and environmental changes where relevant.

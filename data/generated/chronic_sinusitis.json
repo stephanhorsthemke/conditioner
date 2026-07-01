@@ -1,0 +1,718 @@
+{
+  "condition_id": "chronic_sinusitis",
+  "condition_name": "Chronic sinusitis",
+  "generated_at": "2026-07-01T11:58:42.157950Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Chronic sinusitis (also called chronic rhinosinusitis, or CRS) is a condition in which the sinuses \u2014 the air-filled cavities around the nose \u2014 remain inflamed for 12 weeks or more, despite attempts at treatment. The lining of the sinuses swells, drainage is blocked, and mucus accumulates. This leads to persistent pressure, congestion, postnasal drip, and impaired sense of smell. Unlike an acute sinus infection that clears in a few weeks, CRS is a long-term inflammatory condition with a variety of underlying drivers that mainstream care does not always investigate thoroughly.",
+    "detailed_summary": "Chronic rhinosinusitis (CRS) is defined clinically as inflammation of the nasal passages and sinuses lasting 12 weeks or longer, with at least two cardinal symptoms: nasal obstruction, mucopurulent discharge, facial pain or pressure, and/or reduced sense of smell. It affects a substantial portion of the population and is one of the most common reasons for primary care visits and ENT referrals worldwide.\n\nCRS is not a single disease. It divides broadly into two phenotypes: CRS with nasal polyps (CRSwNP) and CRS without nasal polyps (CRSsNP). These differ in their underlying inflammatory patterns, associated conditions, and treatment responses. A third emerging category \u2014 allergic fungal sinusitis \u2014 involves a hypersensitivity reaction to inhaled fungi.\n\nThe root drivers of CRS are varied and often layered. In some individuals, structural factors such as a deviated nasal septum or enlarged turbinates impair mucociliary clearance and create environments where pathogens and inflammatory cycles persist. In others, allergy, immune dysregulation, fungal colonization, biofilm-forming bacteria, or dysregulation of mast cells and eosinophils drives chronic mucosal inflammation. A significant subset of CRS cases involve an imbalanced microbiome within the sinuses themselves \u2014 an area of active research.\n\nMany people with CRS cycle through antibiotic courses, steroid sprays, and decongestants without addressing what is perpetuating the inflammation. While these treatments may provide temporary relief, they rarely resolve the condition when the underlying driver \u2014 allergy, structural obstruction, immune dysregulation, environmental exposure, or fungal sensitivity \u2014 has not been identified and addressed.\n\nSelf-directed investigation is legitimate and often necessary. Mainstream ENT care tends to focus on symptom management or surgery. Finding practitioners who investigate immune drivers, environmental exposures, mold sensitivity, and functional contributors can make a meaningful difference for people who have not responded to standard care.",
+    "prevalence": {
+      "summary": "Affects roughly 1 in 8 adults in high-income countries, making it one of the most prevalent chronic conditions overall.",
+      "estimate": "10\u201315% of the adult population in the US and Europe; estimated 28\u201331 million adults in the US alone",
+      "notes": "Prevalence estimates vary widely depending on whether self-reported symptoms or clinical diagnosis criteria are used. Rates may be higher in urban environments and areas with air pollution. CRS with nasal polyps disproportionately affects middle-aged adults and is more common in men. Aspirin-exacerbated respiratory disease (AERD) subtype has its own demographic pattern. Many cases are likely undertreated or misattributed to recurrent acute infections."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "CRS without nasal polyps (CRSsNP)",
+        "description": "The more common form, involving chronic mucosal inflammation without visible polyp growth. Often associated with bacterial biofilms, structural factors, and type 1 (Th1-skewed) inflammation. Tends to present with congestion, pressure, and discharge rather than loss of smell.",
+        "distinguishing_features": [
+          "No polyps visible on nasal endoscopy or imaging",
+          "More often associated with structural obstruction, bacterial biofilm, or immune dysfunction",
+          "Less responsive to biologic therapies than CRSwNP",
+          "Facial pain and pressure more prominent than smell loss"
+        ]
+      },
+      {
+        "id": null,
+        "name": "CRS with nasal polyps (CRSwNP)",
+        "description": "Characterized by type 2 (eosinophilic) inflammation driving the growth of soft, grape-like tissue growths within the nasal passages. Strongly associated with asthma, aspirin sensitivity, and MCAS. Loss of smell is often the dominant symptom.",
+        "distinguishing_features": [
+          "Polyps visible on endoscopy; may be seen as total or near-total loss of smell",
+          "Strongly associated with comorbid asthma and aspirin-exacerbated respiratory disease (AERD)",
+          "High tissue eosinophil and IgE levels common",
+          "More responsive to corticosteroids and IL-4/IL-13-targeting biologics (e.g., dupilumab)",
+          "High recurrence rate after surgical removal without addressing immune driver"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Allergic fungal rhinosinusitis (AFRS)",
+        "description": "A subtype in which a hypersensitivity reaction to ubiquitous airborne fungi drives intense eosinophilic inflammation and characteristic thick, dark mucin that accumulates in the sinuses. Often misdiagnosed as standard CRS for years.",
+        "distinguishing_features": [
+          "Dense, dark or clay-like 'allergic mucin' seen on CT or at surgery",
+          "Positive fungal-specific IgE or skin testing",
+          "Elevated total IgE",
+          "Unilateral or markedly asymmetric on imaging",
+          "High recurrence rate without antifungal or immunotherapy management"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Aspirin-exacerbated respiratory disease (AERD / Samter's triad)",
+        "description": "A triad of CRS with polyps, asthma, and sensitivity to aspirin and NSAIDs. Driven by arachidonic acid pathway dysregulation and overproduction of cysteinyl leukotrienes. Aspirin desensitization is a recognized treatment approach.",
+        "distinguishing_features": [
+          "Reactions (rhinorrhea, bronchospasm, flushing) within 30\u2013180 min of aspirin or NSAID ingestion",
+          "Severe, recurrent nasal polyps often beginning in adulthood",
+          "Comorbid asthma, often poorly controlled",
+          "Elevated urinary leukotriene E4 levels",
+          "Aspirin desensitization under specialist supervision may reduce polyp recurrence"
+        ]
+      },
+      {
+        "id": "mold_cirs",
+        "name": "Mold-related / CIRS-associated sinusitis",
+        "description": "In individuals with certain HLA gene variants, water-damaged building exposure can drive a dysregulated innate immune response with persistent sinus inflammation as a prominent feature. This overlaps with CIRS (chronic inflammatory response syndrome). MARCoNS (multiple antibiotic-resistant coagulase-negative staphylococci) deep nasal colonization is often found in this population.",
+        "distinguishing_features": [
+          "History of living or working in water-damaged buildings",
+          "Abnormal visual contrast sensitivity (VCS) testing",
+          "Elevated inflammatory markers: TGF-\u03b21, MMP-9, C4a",
+          "Positive MARCoNS culture from deep nasal swab",
+          "HLA-DR haplotype associated with biotoxin susceptibility",
+          "Symptoms often extend beyond sinuses to fatigue, brain fog, joint pain"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Nasal congestion and obstruction",
+        "category": "nasal/sinus",
+        "notes": "Often bilateral; may be worse in the morning or when lying down. Can fluctuate with posture."
+      },
+      {
+        "symptom": "Thick mucopurulent nasal discharge",
+        "category": "nasal/sinus",
+        "notes": "May be yellow, green, or brown. Can drain forward (rhinorrhea) or backward (postnasal drip)."
+      },
+      {
+        "symptom": "Postnasal drip",
+        "category": "nasal/sinus",
+        "notes": "Mucus draining down the back of the throat, often causing throat clearing, cough, or nausea."
+      },
+      {
+        "symptom": "Facial pain, pressure, or fullness",
+        "category": "nasal/sinus",
+        "notes": "Typically felt around the cheeks, forehead, between or behind the eyes, or at the top of the head. Often worse when bending forward."
+      },
+      {
+        "symptom": "Reduced or absent sense of smell (hyposmia or anosmia)",
+        "category": "nasal/sinus",
+        "notes": "More prominent in CRS with polyps. Often underreported. Loss of taste typically follows from loss of smell."
+      },
+      {
+        "symptom": "Chronic nasal drip-related cough",
+        "category": "respiratory",
+        "notes": "A common but often underrecognized consequence of postnasal drip irritating the pharynx and larynx."
+      },
+      {
+        "symptom": "Fatigue",
+        "category": "systemic",
+        "notes": "Pervasive tiredness is reported by a majority of people with CRS and is often underappreciated as a sinus symptom. Driven by chronic inflammation, sleep disruption, and mouth breathing."
+      },
+      {
+        "symptom": "Sleep disruption and poor sleep quality",
+        "category": "systemic",
+        "notes": "Nasal obstruction leads to mouth breathing, snoring, and increased risk of sleep-disordered breathing including obstructive sleep apnea."
+      },
+      {
+        "symptom": "Brain fog and cognitive difficulties",
+        "category": "neurological",
+        "notes": "Often described as difficulty concentrating, mental slowness, or memory lapses. May be driven by chronic inflammation, poor sleep, or in mold-related cases, neuroinflammation."
+      },
+      {
+        "symptom": "Headache",
+        "category": "neurological",
+        "notes": "Sinus-related pressure headaches; may be misdiagnosed as migraine or tension headache and vice versa. True sinusitis headache is usually associated with other sinonasal symptoms."
+      },
+      {
+        "symptom": "Ear fullness or pressure",
+        "category": "ear/throat",
+        "notes": "Eustachian tube dysfunction caused by sinus and nasal inflammation. May cause muffled hearing or pain."
+      },
+      {
+        "symptom": "Sore throat and throat clearing",
+        "category": "ear/throat",
+        "notes": "Secondary to postnasal drip chronically irritating the posterior pharynx."
+      },
+      {
+        "symptom": "Halitosis (bad breath)",
+        "category": "oral",
+        "notes": "From stagnant infected mucus, postnasal drip, and mouth breathing, which dries the oral mucosa."
+      },
+      {
+        "symptom": "Dental or upper jaw pain",
+        "category": "oral",
+        "notes": "The roots of upper back teeth lie near or within the maxillary sinuses. Maxillary sinusitis can mimic toothache."
+      },
+      {
+        "symptom": "Recurrent acute flares",
+        "category": "systemic",
+        "notes": "People with CRS often have acute exacerbations triggered by colds, allergen exposures, or environmental changes, layered on top of baseline chronic inflammation."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Symptoms lasting 12+ weeks with at least two of: nasal obstruction, mucopurulent discharge, facial pressure/pain, reduced smell \u2014 with or without positive imaging findings",
+        "CT sinus scan showing mucosal thickening, opacification, or air-fluid levels in absence of acute infection",
+        "Nasal endoscopy revealing polyps, mucopurulent discharge in the middle meatus, or mucosal edema",
+        "Elevated blood eosinophils (above ~300\u2013400 cells/\u03bcL) suggesting eosinophilic or atopic inflammation",
+        "Elevated total serum IgE with or without specific allergen IgE, pointing toward allergic drivers",
+        "Positive skin-prick or specific IgE testing to fungi (Alternaria, Aspergillus, Cladosporium) in suspected AFRS",
+        "Aspirin reaction history (bronchospasm, rhinorrhea, flushing within hours) combined with polyps and asthma, suggesting AERD",
+        "Abnormal visual contrast sensitivity test combined with water-damaged building exposure, suggesting mold/CIRS involvement",
+        "MARCoNS on deep nasal culture in individuals with persistent CRS unresponsive to standard treatment"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom diary",
+          "description": "Tracking daily symptoms (congestion, discharge color/character, smell, fatigue, headache, sleep quality) and potential triggers (weather, diet, allergen exposures, building environments) over 4\u20138 weeks. Patterns often reveal environmental or dietary triggers that are not obvious in retrospect.",
+          "safety_notes": "No safety concerns. Useful for preparing for clinical consultations and identifying patterns."
+        },
+        {
+          "name": "Nasal saline irrigation (monitoring tool and intervention)",
+          "description": "Using a neti pot or saline rinse bottle with sterile, distilled, or previously boiled water and pharmaceutical-grade saline. Observing the character of what drains out \u2014 color, thickness, blood \u2014 can provide useful information. Improvement with irrigation supports a mucosal inflammation diagnosis.",
+          "safety_notes": "Always use sterile or distilled water \u2014 never tap water directly, due to risk of rare but serious amoeba infection (Naegleria fowleri). Use pre-made sterile saline sachets when possible."
+        },
+        {
+          "name": "Environmental exposure audit",
+          "description": "Systematically assessing whether symptoms improve away from home or work for several days, which may suggest indoor mold, dust, or chemical exposure as a driver. Checking for visible mold, musty odors, or history of water leaks in living spaces.",
+          "safety_notes": "If mold illness is suspected, professional air quality testing or an ERMI (environmental relative moldiness index) test can provide more objective data."
+        },
+        {
+          "name": "ERMI / HERTSMI-2 home mold test",
+          "description": "A dust sample collected from the home (usually bedroom and living area) is sent to a laboratory for DNA-based mold species analysis. Elevated scores, particularly for water-damage indicator species, suggest a problematic indoor environment.",
+          "safety_notes": "Results require some interpretation; a practitioner familiar with CIRS/mold illness can help contextualize findings."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Nasal endoscopy",
+          "type": "gold_standard",
+          "description": "A thin flexible or rigid scope is passed into the nasal cavity under local anesthetic to directly visualize polyps, mucosal swelling, discharge character, and structural anatomy. The most accurate way to confirm CRS and characterize its type.",
+          "availability": "Performed by ENT (otolaryngologist) in clinic. Often covered by insurance when CRS is suspected."
+        },
+        {
+          "name": "CT scan of the sinuses",
+          "type": "gold_standard",
+          "description": "Low-dose CT imaging of the paranasal sinuses is the standard imaging for CRS. Reveals mucosal thickening, opacification, anatomic variants, and polyp burden. More useful than MRI for bony anatomy; MRI may be added for soft tissue detail or suspected fungal disease.",
+          "availability": "Ordered by ENT or primary care. Generally covered when CRS is being evaluated."
+        },
+        {
+          "name": "Allergy testing (skin-prick or specific serum IgE)",
+          "type": "standard",
+          "description": "Identifies IgE-mediated sensitization to inhalant allergens (pollens, dust mites, mold spores, animal dander) that may be perpetuating sinus inflammation. Fungal-specific IgE testing (Alternaria, Aspergillus, etc.) is particularly relevant for AFRS.",
+          "availability": "Performed by allergist/immunologist or ordered by ENT. Widely available."
+        },
+        {
+          "name": "Blood eosinophil count and total IgE",
+          "type": "standard",
+          "description": "Elevated peripheral eosinophils and total IgE suggest an atopic or eosinophilic inflammatory pattern, which has treatment implications (e.g., biologic candidacy, antifungal consideration). Available on standard bloodwork.",
+          "availability": "Ordered by any clinician as part of a CBC with differential and metabolic panel."
+        },
+        {
+          "name": "Mucosal biopsy with tissue eosinophil count",
+          "type": "standard",
+          "description": "Tissue sampled during endoscopic sinus surgery or office biopsy can be analyzed histologically. High tissue eosinophil counts (eosinophilic CRS) predict recurrence and guide biologic therapy decisions.",
+          "availability": "Performed in context of endoscopic sinus surgery or nasal biopsy by ENT."
+        },
+        {
+          "name": "Sinus culture (endoscopically guided)",
+          "type": "standard",
+          "description": "A swab of the middle meatus or material aspirated from the sinus under endoscopic guidance identifies bacterial or fungal pathogens and their antibiotic sensitivities. More accurate than anterior nasal swabs, which often reflect commensal flora.",
+          "availability": "Performed by ENT. Not routinely done unless recurrent or treatment-resistant infection is suspected."
+        },
+        {
+          "name": "Deep nasal culture for MARCoNS",
+          "type": "emerging",
+          "description": "A culture of the deep nasal passages specifically looking for multiple antibiotic-resistant coagulase-negative staphylococci (MARCoNS), which are associated with biofilm-based colonization and may perpetuate sinus and systemic inflammation in mold/CIRS-susceptible individuals.",
+          "availability": "Ordered through CIRS-literate practitioners. Processed at specialized labs (e.g., Microbiology DX). Not widely available through mainstream ENT."
+        },
+        {
+          "name": "Visual contrast sensitivity (VCS) test",
+          "type": "emerging",
+          "description": "A functional vision test that detects subtle neurological impairment associated with biotoxin illness (CIRS/mold illness). An abnormal result in the context of refractory CRS and building exposure history may prompt further CIRS workup.",
+          "availability": "Can be taken online at survivingmold.com for screening. Formal version administered clinically."
+        },
+        {
+          "name": "CIRS inflammatory biomarker panel",
+          "type": "emerging",
+          "description": "Measures markers including TGF-\u03b21, C4a, MSH (melanocyte-stimulating hormone), MMP-9, VEGF, and others that reflect innate immune dysregulation from biotoxin exposure. Useful when mold-related CRS is suspected and standard allergy workup is negative.",
+          "availability": "Ordered by functional medicine or CIRS-trained practitioners. Not standard ENT workup."
+        },
+        {
+          "name": "Aspirin challenge (aspirin desensitization evaluation)",
+          "type": "standard",
+          "description": "Conducted under allergist supervision to confirm AERD and initiate aspirin desensitization therapy. Involves graded aspirin dosing with monitoring for respiratory or nasal reactions.",
+          "availability": "Performed by allergist/immunologist in a supervised clinical setting. Available at tertiary care centers and specialist allergy clinics."
+        },
+        {
+          "name": "Cystic fibrosis and primary ciliary dyskinesia testing",
+          "type": "standard",
+          "description": "In individuals with early-onset, severe, or unusually recalcitrant CRS \u2014 particularly with bronchiectasis or infertility \u2014 genetic or functional testing for CF (sweat chloride, CFTR genotyping) and PCD (nasal nitric oxide, ciliary biopsy) may be warranted.",
+          "availability": "Ordered by specialist (ENT, pulmonologist, geneticist). More commonly considered in pediatric or young adult cases."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "allergic_rhinitis",
+        "name": "Allergic rhinitis",
+        "relationship": "upstream",
+        "explanation": "Allergic rhinitis is among the most common drivers of CRS. Ongoing IgE-mediated inflammation of the nasal mucosa from allergen exposure promotes mucosal swelling, impaired drainage, and a tissue environment that facilitates chronic sinus inflammation. Managing allergic rhinitis \u2014 through avoidance, antihistamines, nasal steroids, or immunotherapy \u2014 is often central to controlling CRS."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
+        "relationship": "mechanistic_link",
+        "explanation": "Mast cell activation in the nasal and sinus mucosa may contribute to chronic inflammation, mucosal edema, and polyp formation independently of IgE-mediated allergy. People with CRSwNP who do not respond fully to standard allergy treatment sometimes have an underlying mast cell dysregulation component."
+      },
+      {
+        "id": "mold_cirs",
+        "name": "Mold illness / CIRS",
+        "relationship": "upstream",
+        "explanation": "Chronic inflammatory response syndrome driven by water-damaged building exposure can manifest prominently as refractory CRS, particularly in genetically susceptible individuals (HLA-DR variants). Nasal colonization with MARCoNS and dysregulated innate immunity perpetuate sinus inflammation. Standard ENT treatment often fails in this group without addressing the biotoxin/environmental driver."
+      },
+      {
+        "id": "fungal",
+        "name": "Fungal overgrowth / SIFO",
+        "relationship": "mechanistic_link",
+        "explanation": "Fungal colonization of the sinus mucosa \u2014 whether via allergic hypersensitivity (AFRS) or non-allergic direct fungal presence \u2014 can perpetuate chronic sinus inflammation. Antifungal treatment (topical or systemic) helps some people with refractory CRS for whom fungal involvement is confirmed."
+      },
+      {
+        "id": "sleep_apnea",
+        "name": "Obstructive sleep apnea",
+        "relationship": "comorbid",
+        "explanation": "Chronic nasal obstruction from CRS promotes mouth breathing and worsens upper airway collapsibility, increasing the risk of obstructive sleep apnea. Conversely, untreated sleep apnea contributes to systemic inflammation and fatigue that amplifies CRS burden. Addressing nasal obstruction can improve CPAP tolerance."
+      },
+      {
+        "id": "uars",
+        "name": "Upper airway resistance syndrome (UARS)",
+        "relationship": "comorbid",
+        "explanation": "Nasal obstruction from CRS increases upper airway resistance during sleep, contributing to UARS \u2014 a condition involving fragmented, non-restorative sleep without frank apnea. Many people with CRS and unexplained fatigue have unrecognized UARS."
+      },
+      {
+        "id": "deviated_septum",
+        "name": "Deviated septum",
+        "relationship": "upstream",
+        "explanation": "Anatomical septal deviation can obstruct the ostiomeatal complex, impairing sinus drainage and creating conditions that promote chronic mucosal inflammation. Septoplasty \u2014 surgical correction \u2014 is sometimes necessary as part of CRS management but does not address inflammatory drivers on its own."
+      },
+      {
+        "id": "allergy",
+        "name": "Allergy (IgE-mediated)",
+        "relationship": "upstream",
+        "explanation": "Sensitization to inhalant allergens is found in a substantial proportion of people with CRS and is often an upstream perpetuating driver, particularly in CRSsNP. Allergen immunotherapy (subcutaneous or sublingual) may reduce sinus inflammation over time by modifying the underlying immune response."
+      },
+      {
+        "id": null,
+        "name": "Asthma",
+        "relationship": "comorbid",
+        "explanation": "The airway is a unified mucosa, and CRS and asthma co-occur far more often than chance. Poorly controlled CRS worsens asthma through postnasal drip, systemic inflammation, and aspiration of inflammatory mediators. Treating CRS often leads to meaningful improvement in asthma control \u2014 a principle called the 'unified airway' model."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "Fibromyalgia and CRS co-occur at higher rates than expected in the general population. Shared mechanisms may include central sensitization and immune dysregulation, and the sleep disruption caused by CRS can worsen fibromyalgia symptoms."
+      },
+      {
+        "id": "me_cfs",
+        "name": "ME/CFS",
+        "relationship": "comorbid",
+        "explanation": "Chronic sinusitis with significant fatigue and cognitive symptoms can overlap with or contribute to ME/CFS presentations. Refractory CRS \u2014 especially mold-related or immune-driven \u2014 is sometimes present in individuals diagnosed with ME/CFS, and addressing sinus pathology may partially relieve their systemic symptom burden."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "mechanistic_link",
+        "explanation": "Emerging research suggests the sinus microbiome is distinct in health versus CRS, with depletion of commensal bacteria (e.g., Lactobacillus) and overgrowth of pathogenic species. Gut-sinus microbiome crosstalk via immune regulation may link gut dysbiosis to sinus susceptibility, though this remains an active area of investigation."
+      },
+      {
+        "id": "ncgs",
+        "name": "Non-coeliac gluten sensitivity (NCGS)",
+        "relationship": "mechanistic_link",
+        "explanation": "Some individuals with refractory CRS and systemic inflammatory symptoms report significant improvement on a gluten-free diet, suggesting an immune or mucosal link. The mechanism is not fully established, but shared mucosal immune dysregulation and dietary inflammatory load may play a role."
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "mechanistic_link",
+        "explanation": "Elevated histamine levels \u2014 from dietary intake or endogenous mast cell activation \u2014 can worsen nasal mucosal swelling and congestion, compounding CRS symptoms. Some individuals with CRS and dietary sensitivities to fermented or high-histamine foods may benefit from histamine-reducing strategies."
+      },
+      {
+        "id": "migraine",
+        "name": "Migraine",
+        "relationship": "often_confused",
+        "explanation": "Migraine is frequently misdiagnosed as 'sinus headache' and vice versa. Research shows that many people who self-diagnose sinus headaches meet criteria for migraine. True sinus headaches are typically accompanied by purulent nasal discharge and fever. A clinician evaluation can help distinguish the two, as they require different management."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "comorbid",
+        "explanation": "Chronic pain, poor sleep, cognitive impairment, and uncertainty about diagnosis contribute to high rates of anxiety in people with CRS. Anxiety in turn worsens symptom perception and may impair immune regulation. Both benefit from parallel treatment."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor sleep / insomnia",
+        "relationship": "downstream",
+        "explanation": "Nasal obstruction and nocturnal mouth breathing reliably disrupt sleep architecture, leading to non-restorative sleep and daytime fatigue. Insomnia worsens inflammatory tone, creating a cycle where CRS and poor sleep perpetuate each other."
+      },
+      {
+        "id": "tmd",
+        "name": "Temporomandibular disorder (TMD)",
+        "relationship": "comorbid",
+        "explanation": "Chronic mouth breathing secondary to nasal obstruction alters jaw posture and places increased stress on the temporomandibular joint. People with long-standing CRS have elevated rates of TMD. Correcting nasal breathing often reduces TMD load over time."
+      },
+      {
+        "id": "coeliac",
+        "name": "Coeliac disease",
+        "relationship": "mechanistic_link",
+        "explanation": "Coeliac disease is associated with dysregulated mucosal immunity that can extend to the upper respiratory tract, and some individuals with CRS and GI symptoms who test negative for standard CRS drivers may have undiagnosed coeliac disease driving immune dysregulation."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Nasal saline irrigation",
+          "category": "lifestyle",
+          "description": "Regular flushing of the nasal passages with isotonic or hypertonic saline using a neti pot, squeeze bottle, or powered irrigator. Mechanically removes mucus, biofilm, allergens, and inflammatory mediators from the nasal lining. Hypertonic saline (higher salt concentration) may provide greater decongestion. Should always use sterile or distilled water.",
+          "evidence_level": "strong",
+          "notes": "One of the most evidence-supported self-management tools for CRS. Best performed once or twice daily during symptomatic periods. Use pharmaceutical-grade saline sachets to ensure correct concentration and sterility."
+        },
+        {
+          "name": "Intranasal corticosteroid sprays",
+          "category": "medication",
+          "description": "Corticosteroid nasal sprays (e.g., fluticasone, mometasone, budesonide) reduce mucosal inflammation and, with regular use, can shrink polyps and improve drainage. Used daily as a maintenance treatment. Technique matters \u2014 direct the spray toward the outer wall of the nasal cavity, not the septum.",
+          "evidence_level": "strong",
+          "notes": "Most effective when used consistently over weeks to months. Budesonide nasal rinse (adding budesonide respules to saline irrigation) penetrates further into the sinuses and is commonly used by ENTs for more severe or polyp-related CRS. Often requires a prescription."
+        },
+        {
+          "name": "Allergen avoidance and environmental control",
+          "category": "environment",
+          "description": "Identifying and reducing exposure to specific allergens \u2014 dust mites, pet dander, mold spores, pollen \u2014 through HEPA filtration, dehumidification, allergen-proof bedding, and regular cleaning. Building inspection and remediation for water damage when mold exposure is suspected.",
+          "evidence_level": "strong",
+          "notes": "Effective allergen reduction requires systematic, consistent effort. A single intervention (e.g., air purifier alone) is often insufficient. For those with mold-related CRS, relocation from the affected building may be necessary for meaningful improvement."
+        },
+        {
+          "name": "Allergen immunotherapy",
+          "category": "medication",
+          "description": "Subcutaneous immunotherapy (allergy shots) or sublingual immunotherapy (drops or tablets) gradually desensitizes the immune system to specific allergens. May reduce the atopic inflammatory load driving CRS over a 3\u20135 year course.",
+          "evidence_level": "moderate",
+          "notes": "Most effective when specific allergen sensitivities are confirmed and are clearly contributing to CRS. Administered or supervised by an allergist. Results take months to emerge and commitment to the full course matters."
+        },
+        {
+          "name": "Biologic therapy (dupilumab, mepolizumab, others)",
+          "category": "medication",
+          "description": "Monoclonal antibodies targeting type 2 inflammatory mediators (IL-4, IL-13, IL-5, IgE) are approved for CRSwNP, particularly in those with recurrent polyps despite surgery and steroids. Dupilumab is the best-supported option and can dramatically reduce polyp burden and restore smell.",
+          "evidence_level": "strong",
+          "notes": "Expensive and typically requires prior authorization and specialist prescribing (ENT or allergist). Most appropriate for CRSwNP with significant type 2 inflammatory burden. Not effective for all CRS subtypes."
+        },
+        {
+          "name": "Aspirin desensitization (for AERD)",
+          "category": "medication",
+          "description": "A supervised protocol in which aspirin doses are incrementally increased under clinical monitoring until tolerance is achieved. Long-term high-dose aspirin then suppresses leukotriene overproduction, reducing polyp recurrence and improving asthma control in people with AERD.",
+          "evidence_level": "moderate",
+          "notes": "Requires supervised initiation by an allergist experienced in AERD, typically following sinus surgery. Must be continued long-term to maintain benefit. Diet low in omega-6 fats may complement the approach."
+        },
+        {
+          "name": "Endoscopic sinus surgery (FESS)",
+          "category": "procedure",
+          "description": "Functional endoscopic sinus surgery opens blocked sinus ostia, removes polyps, and improves drainage pathways. Most effective when combined with continued medical management of the underlying inflammatory driver. Does not cure CRS on its own.",
+          "evidence_level": "strong",
+          "notes": "Best outcomes occur when post-operative medical management (nasal steroids, saline irrigation, allergen management) is sustained. Recurrence is common without ongoing treatment, especially in CRSwNP and AFRS."
+        },
+        {
+          "name": "Anti-inflammatory diet",
+          "category": "diet",
+          "description": "Reducing pro-inflammatory dietary patterns (high processed food, refined sugar, omega-6 seed oils) and increasing anti-inflammatory foods (omega-3 rich fish, vegetables, olive oil) may reduce systemic inflammatory tone contributing to sinus inflammation. For AERD, low-salicylate or omega-6 restricted approaches have specific rationale.",
+          "evidence_level": "anecdotal",
+          "notes": "Limited direct RCT evidence for CRS specifically, but anti-inflammatory dietary patterns have a reasonable mechanistic basis and broad health benefits. Individualized dietary investigation may help identify food-related contributors."
+        },
+        {
+          "name": "Nasal breathing retraining and mouth-taping",
+          "category": "lifestyle",
+          "description": "Restoring habitual nasal breathing \u2014 via Buteyko method, mouth-taping at night, or myofunctional therapy \u2014 reduces mouth breathing, preserves nasal nitric oxide (antiviral and vasodilatory), and may reduce nocturnal symptoms and sleep disruption.",
+          "evidence_level": "anecdotal",
+          "notes": "Particularly relevant when structural obstruction has been addressed but habitual mouth breathing persists. Mouth-taping should be used cautiously by those with significant residual obstruction."
+        },
+        {
+          "name": "Topical antifungal irrigation (for fungal-related CRS)",
+          "category": "medication",
+          "description": "In individuals with confirmed or strongly suspected fungal sinus involvement, irrigation with antifungal agents (e.g., amphotericin B nasal rinse) or systemic antifungals has been used. Evidence is mixed and antifungal selection should be guided by culture results.",
+          "evidence_level": "anecdotal",
+          "notes": "Evidence from clinical trials has been inconsistent. Most useful when a fungal driver is confirmed rather than empirically applied. Should be supervised by an ENT or allergist familiar with fungal CRS."
+        },
+        {
+          "name": "Treatment of MARCoNS (for mold/CIRS-associated CRS)",
+          "category": "medication",
+          "description": "In individuals with confirmed MARCoNS nasal colonization in the context of CIRS, compounded nasal sprays containing EDTA (to disrupt biofilm) with or without antibiotics may be used to eradicate nasal colonization as part of a broader CIRS treatment protocol.",
+          "evidence_level": "anecdotal",
+          "notes": "This approach is used within the Shoemaker CIRS protocol and is not standard ENT care. Requires a CIRS-literate practitioner. Should not be used without confirmatory deep nasal culture."
+        },
+        {
+          "name": "Vitamin D optimization",
+          "category": "supplement",
+          "description": "Vitamin D plays an important role in mucosal immune defense and regulation of type 2 inflammation. Deficiency is common and has been associated with more severe CRS and atopic disease. Optimizing levels (typically to 50\u201380 ng/mL by some functional medicine practitioners) may support immune regulation.",
+          "evidence_level": "anecdotal",
+          "notes": "Should be guided by serum 25-OH vitamin D testing. High-dose supplementation should include cofactors (vitamin K2, magnesium) and periodic level monitoring."
+        }
+      ],
+      "things_to_avoid": [
+        "Tap water in nasal irrigation \u2014 use sterile, distilled, or previously boiled water only, to avoid rare but serious infections",
+        "Prolonged use of over-the-counter decongestant nasal sprays containing oxymetazoline (e.g., Afrin) beyond 3 days \u2014 causes rebound congestion (rhinitis medicamentosa) that is difficult to reverse",
+        "Assuming antibiotics will resolve CRS \u2014 the majority of chronic sinusitis is inflammatory, not caused by acute bacterial infection, and repeated antibiotic courses can disrupt the sinus microbiome without resolving the underlying problem",
+        "Ignoring postnasal drip-related cough \u2014 this is commonly treated with cough suppressants rather than addressing the sinus origin",
+        "Untreated mold exposure while attempting to treat CRS \u2014 ongoing exposure overwhelms any topical or pharmaceutical intervention",
+        "Aspirin, ibuprofen, and other NSAIDs without medical guidance in individuals who suspect AERD \u2014 these can trigger severe bronchospasm and anaphylactoid reactions",
+        "Relying on sinus surgery alone without addressing the perpetuating inflammatory driver \u2014 surgery without post-operative medical management has high recurrence rates",
+        "Dismissing fatigue and cognitive symptoms as 'just stress' \u2014 these are legitimate sinus-driven systemic symptoms that deserve investigation"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "Most people with chronic sinusitis never have the cause of their inflammation properly investigated. They are managed symptomatically \u2014 antibiotics, sprays, surgery \u2014 without identifying whether the driver is allergy, fungal sensitization, mold exposure, immune dysregulation, or structural anatomy.",
+        "why_resisted": "Primary care and even ENT visits are often brief. Symptom management is quicker and more reimbursable than root-cause investigation. Patients often accept whatever is offered rather than pushing for diagnostic workup.",
+        "path_forward": "People who insist on allergy testing, CT imaging, nasal endoscopy, and \u2014 where appropriate \u2014 CIRS or fungal-specific testing, and who find practitioners willing to interpret these results together, achieve significantly better long-term outcomes than those who cycle through treatments without understanding their disease."
+      },
+      {
+        "truth": "Endoscopic sinus surgery does not cure chronic sinusitis. Without sustained post-operative medical management of the underlying inflammatory process, polyps and symptoms typically return \u2014 often within months to a few years.",
+        "why_resisted": "Surgery is presented to patients as a definitive fix, and patients naturally want a clear endpoint. The necessary commitment to ongoing nasal irrigation, steroid rinses, and allergen management after surgery is often underemphasized.",
+        "path_forward": "People who treat surgery as an adjunct to \u2014 not a replacement for \u2014 long-term medical management, and who maintain daily saline irrigation and topical steroids afterward, sustain far better results and have longer intervals between recurrences."
+      },
+      {
+        "truth": "If CRS does not improve despite multiple antibiotic courses, surgery, and standard allergy treatment, the environment \u2014 specifically water-damaged buildings \u2014 must be seriously considered as a driver, particularly for people with concurrent fatigue and cognitive symptoms.",
+        "why_resisted": "Mold illness is poorly recognized by mainstream medicine, and patients often dismiss the possibility because visible mold is not obvious or because they do not feel they can afford to move. The investigation process requires effort and finding a practitioner who takes it seriously.",
+        "path_forward": "Individuals who complete an ERMI test, pursue a CIRS biomarker panel, and \u2014 when findings are positive \u2014 take steps to remediate or leave the problematic environment, often experience the first significant improvement in CRS symptoms they have had in years."
+      },
+      {
+        "truth": "Many people labeled with 'sinus headaches' actually have migraine, and many with migraine are told they have sinusitis. These are different conditions requiring different treatments. Misdiagnosis is common and leads to years of ineffective care.",
+        "why_resisted": "Facial pain and nasal symptoms occur in both conditions. The self-label of 'sinus headache' is culturally familiar and reinforced by OTC sinus medication marketing. Neither patients nor clinicians always distinguish carefully.",
+        "path_forward": "People who pursue a careful symptom-pattern evaluation by a neurologist or headache specialist \u2014 especially when standard CRS treatment has not improved their headaches \u2014 often discover their primary diagnosis is migraine, unlocking effective treatment they were never offered."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Identify and address the primary inflammatory driver",
+          "why_it_matters": "CRS will not remit sustainably unless the mechanism perpetuating mucosal inflammation is identified \u2014 whether allergy, mold exposure, fungal sensitization, aspirin sensitivity, or immune dysregulation. Symptom treatment without driver identification produces temporary relief and eventual recurrence.",
+          "how_to_start": "Request nasal endoscopy, CT sinus imaging, allergy panel (including fungal IgE), and blood eosinophil count from an ENT or allergist. Bring a symptom diary including environmental patterns. Ask specifically about what might be driving the inflammation, not just how to manage symptoms.",
+          "timeline": "Driver identification may take weeks to months depending on access; subsequent treatment response may take 3\u201312 months of consistent management",
+          "requires_professional": true
+        },
+        {
+          "lever": "Daily nasal saline irrigation",
+          "why_it_matters": "Irrigation physically removes allergens, biofilm, inflammatory mediators, and mucus stasis. It is one of the best-supported self-management interventions for CRS and significantly reduces symptom burden and antibiotic need when practiced consistently.",
+          "how_to_start": "Obtain a sterile squeeze bottle or neti pot and pharmaceutical-grade saline sachets. Begin with once-daily isotonic irrigation using distilled or previously boiled water. Many people eventually transition to budesonide nasal rinse under clinician guidance.",
+          "timeline": "Noticeable improvement in drainage and congestion typically within 2\u20134 weeks of daily use",
+          "requires_professional": false
+        },
+        {
+          "lever": "Environmental mold and allergen control",
+          "why_it_matters": "Ongoing inhalant allergen or mold exposure continuously re-provokes mucosal inflammation. Medications and surgery cannot outpace constant environmental challenge. Reducing the antigenic load is a prerequisite for durable improvement.",
+          "how_to_start": "HEPA air purifier in the bedroom as a first step. Allergen-proof mattress and pillow covers for dust mite control. Investigate for water damage with ERMI testing if symptoms are refractory or if building exposure is suspected. For CIRS, a practitioner familiar with the Shoemaker protocol can guide environmental remediation steps.",
+          "timeline": "Allergen control measures show partial benefit within weeks; full benefit of environmental remediation (especially mold) may take months",
+          "requires_professional": false
+        },
+        {
+          "lever": "Allergen immunotherapy (for allergy-driven CRS)",
+          "why_it_matters": "Unlike antihistamines and steroids that suppress symptoms, immunotherapy modifies the underlying immune response, reducing the atopic inflammation driving CRS over time. It may be the most durable intervention for individuals with confirmed IgE-mediated allergy.",
+          "how_to_start": "Request a comprehensive inhalant allergen panel from an allergist. If relevant sensitizations are confirmed, discuss subcutaneous or sublingual immunotherapy options and realistic timelines.",
+          "timeline": "Meaningful immune modification typically requires 12\u201318 months; full course 3\u20135 years",
+          "requires_professional": true
+        },
+        {
+          "lever": "Sustained post-surgical medical management",
+          "why_it_matters": "Surgery opens sinus drainage pathways and removes polyps, but inflammation recurs unless suppressed with ongoing nasal steroids, irrigation, and allergy management. The difference between people who maintain remission after surgery and those who recur within a year is almost always the consistency of post-operative care.",
+          "how_to_start": "Before agreeing to surgery, discuss with the ENT surgeon what the post-operative medical management plan will be. Establish daily nasal irrigation with budesonide rinse and intranasal steroids. Schedule follow-up endoscopy to monitor mucosal status.",
+          "timeline": "Post-operative management is indefinite; deescalation may be possible once stable",
+          "requires_professional": true
+        },
+        {
+          "lever": "Sleep quality restoration",
+          "why_it_matters": "Nasal obstruction driving mouth breathing and sleep disruption perpetuates systemic inflammation, fatigue, and cognitive symptoms, which in turn lower immune resilience. Restoring nasal breathing \u2014 through treatment of obstruction \u2014 often produces dramatic improvements in energy and cognitive function.",
+          "how_to_start": "Track sleep quality during symptom management. Consult a sleep specialist or have a sleep study if fatigue remains prominent after sinus symptoms improve, to exclude co-existing OSA or UARS.",
+          "timeline": "Improvement in sleep quality can be rapid once nasal obstruction is meaningfully reduced",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Treating each acute flare with antibiotics without addressing why the underlying inflammation persists \u2014 this creates antibiotic resistance and microbiome disruption without resolving the condition",
+        "Using nasal saline irrigation with tap water \u2014 this invalidates the safety profile of what is otherwise a safe and effective intervention",
+        "Stopping nasal irrigation and steroid sprays after symptoms improve \u2014 CRS requires ongoing maintenance, not just reactive treatment",
+        "Assuming surgery is the end of treatment rather than part of a longer management strategy",
+        "Failing to investigate mold exposure when CRS is refractory and accompanied by fatigue and brain fog",
+        "Treating 'sinus headache' with sinus medications when the underlying diagnosis is actually migraine",
+        "Pursuing repeat antibiotic courses for what is a non-infectious inflammatory condition \u2014 most chronic sinusitis is not primarily bacterial",
+        "Ignoring sleep disturbance as a perpetuating factor that worsens immune regulation and inflammatory tone"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Otolaryngologist (ENT surgeon)",
+          "role": "Primary specialist for CRS diagnosis, nasal endoscopy, CT interpretation, surgical management, and overall coordination of care. Can perform functional endoscopic sinus surgery and office-based procedures.",
+          "notes": "ENTs vary significantly in their interest in investigating inflammatory drivers versus proceeding to surgery. Those with a specific interest in rhinology (sinus subspecialty) or allergy tend to offer more thorough non-surgical workup. Seeking a rhinologist at an academic center may be warranted for refractory or complex cases."
+        },
+        {
+          "type": "Allergist / Immunologist",
+          "role": "Identifies and manages allergic drivers of CRS through comprehensive allergy testing, immunotherapy planning, biologic therapy (dupilumab) prescribing, and aspirin desensitization for AERD. Often the most important specialist for CRS that has an atopic or immune component.",
+          "notes": "Many ENTs do not routinely offer comprehensive allergy evaluation in-house. Referral to an allergist should be sought when allergy is suspected or when CRS is recurrent and not fully explained by structural factors."
+        },
+        {
+          "type": "Functional medicine practitioner",
+          "role": "Investigates root causes that mainstream ENT may not address: mold/CIRS, gut-immune axis dysregulation, dietary inflammatory triggers, microbiome imbalance, and nutrient deficiencies. May coordinate CIRS biomarker testing and environmental investigation.",
+          "notes": "Quality varies widely. Look for practitioners trained in the Shoemaker CIRS protocol (survivingmold.com directory) for mold-related CRS, or functional medicine board-certified practitioners (IFM) for broader root-cause investigation."
+        },
+        {
+          "type": "CIRS-literate practitioner (Shoemaker protocol)",
+          "role": "Evaluates and manages chronic inflammatory response syndrome triggered by water-damaged buildings, which is a common unrecognized driver of refractory CRS. Interprets CIRS biomarker panels, arranges MARCoNS testing, and guides environmental and treatment steps.",
+          "notes": "Directory available at survivingmold.com. This is a niche but evidence-informed approach. Mainstream ENTs are generally not familiar with this protocol."
+        },
+        {
+          "type": "Rhinologist (academic ENT subspecialist)",
+          "role": "ENT specialist who focuses specifically on nasal and sinus disorders. Best equipped for complex, refractory, or severe CRS, including revision surgery, AFRS, and polyp management with biologics.",
+          "notes": "More commonly found at academic medical centers and tertiary care hospitals. Appropriate for those who have had inadequate response to one or more surgeries or first-line ENT management."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/Sinusitis",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Sinusitis/",
+          "notes": "Active community of people with chronic sinusitis sharing experiences with treatments, surgery, practitioners, and self-management strategies. Useful for understanding the range of presentations and what has worked for others."
+        },
+        {
+          "name": "r/ChronicSinusitis",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/ChronicSinusitis/",
+          "notes": "Focused specifically on chronic rather than acute sinusitis. Good resource for those who have had surgery or are considering it, and for those exploring root causes."
+        },
+        {
+          "name": "Surviving Mold Community",
+          "platform": "Website / forum",
+          "url": "https://www.survivingmold.com",
+          "notes": "Resource and community for those investigating mold/CIRS as a driver of chronic illness including refractory sinusitis. Includes practitioner directory, educational material, and community forum. Relevant for those whose CRS is unresponsive to standard treatment and who have environmental exposure history."
+        },
+        {
+          "name": "AERD (Aspirin-Exacerbated Respiratory Disease) Community",
+          "platform": "Facebook",
+          "url": null,
+          "notes": "Facebook groups specifically for people with Samter's triad / AERD. Highly valuable for those navigating aspirin desensitization, surgical decisions, and dietary management (low-salicylate, omega-6 reduction). Community knowledge is often ahead of mainstream clinical guidance."
+        },
+        {
+          "name": "Nasal Polyps Support Group",
+          "platform": "Facebook",
+          "url": null,
+          "notes": "Community of people with CRSwNP sharing experiences with biologics, surgery, and management strategies. Particularly useful for those exploring dupilumab or navigating polyp recurrence after surgery."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Chronic Rhinosinusitis \u2014 NICE Guideline (NG219)",
+        "type": "clinical guideline / website",
+        "author_or_source": "National Institute for Health and Care Excellence (NICE), UK",
+        "url": "https://www.nice.org.uk/guidance/ng219",
+        "description": "Comprehensive evidence-based clinical guideline on the diagnosis and management of CRS. Accessible to informed non-clinicians. Covers diagnostic criteria, treatment algorithms, surgery indications, and follow-up recommendations.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "International Consensus Statement on Allergy and Rhinology: Rhinosinusitis (ICAR:RS)",
+        "type": "research paper / clinical reference",
+        "author_or_source": "International Rhinology Society",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33236525/",
+        "description": "The most comprehensive academic consensus document on CRS pathophysiology, diagnosis, and management. Covers all subtypes, evidence levels for treatments, and emerging therapies. A deep resource for those who want to understand the evidence base thoroughly.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Surviving Mold \u2014 Understanding CIRS",
+        "type": "website",
+        "author_or_source": "Dr. Ritchie Shoemaker / SurvivingMold.com",
+        "url": "https://www.survivingmold.com",
+        "description": "The primary resource for understanding chronic inflammatory response syndrome (CIRS) from water-damaged building exposure, including its sinusitis-related presentations. Includes educational material, diagnostic criteria, practitioner directory, and ERMI testing guidance. Essential for anyone exploring mold as a driver of refractory CRS.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Sinusitis Help Book: A Comprehensive Guide for Patients",
+        "type": "book",
+        "author_or_source": "Jordan S. Josephson, MD",
+        "url": null,
+        "description": "A patient-oriented overview of chronic sinusitis covering anatomy, diagnosis, surgical and non-surgical treatments, and self-management. Written by an ENT specialist. Useful for those newly navigating CRS or considering surgery.",
+        "audience": "beginner"
+      },
+      {
+        "title": "AERD: Aspirin-Exacerbated Respiratory Disease \u2014 Brigham and Women's Hospital Resource",
+        "type": "website",
+        "author_or_source": "Brigham and Women's Hospital / AERD.org",
+        "url": "https://aerd.org",
+        "description": "Dedicated patient and clinician resource for AERD (Samter's triad). Covers diagnosis, aspirin desensitization, diet (low omega-6 and low-salicylate approaches), and biologic therapy. One of the best condition-specific patient education sites available.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Sinus Survival: The Holistic Medical Treatment for Sinusitis",
+        "type": "book",
+        "author_or_source": "Robert S. Ivker, DO",
+        "url": null,
+        "description": "A functional and integrative medicine approach to understanding and managing chronic sinusitis, covering environmental, dietary, psychological, and conventional treatment dimensions. Useful for people who want to understand their condition beyond symptom management.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Unified Airway Disease \u2014 Review Article",
+        "type": "research paper",
+        "author_or_source": "Passalacqua G, Ciprandi G, Canonica GW \u2014 Allergy",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11251393/",
+        "description": "Foundational paper establishing the 'unified airway' model connecting upper and lower airway inflammation \u2014 the mechanism linking allergic rhinitis, CRS, and asthma. Useful background for understanding why CRS management often needs to include asthma and allergy treatment.",
+        "audience": "advanced"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

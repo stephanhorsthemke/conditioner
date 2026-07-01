@@ -1,9 +1,8 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import AccordionSection, { AccordionSubsection } from "../components/AccordionSection";
 import Layout from "../components/Layout";
-import SubConditionTable from "../components/SubConditionTable";
 import { ConditionData, ConditionIndex, DiagnosisType, Space } from "../types";
 import { loadSpaces } from "../spaces";
 
@@ -223,23 +222,6 @@ export default function ConditionPage() {
 
   const s = data?.sections;
 
-  const subConditionRows = useMemo(() => {
-    if (!meta || meta.diagnosis_type !== "syndromic" || !meta.sub_conditions?.length || indexMap.size === 0) {
-      return [] as ConditionIndex[];
-    }
-    return meta.sub_conditions
-      .map((sc) => indexMap.get(sc.id))
-      .filter((c): c is ConditionIndex => !!c);
-  }, [meta, indexMap]);
-
-  const subConditionProbability = useMemo(() => {
-    const map: Record<string, number> = {};
-    if (meta?.sub_conditions) {
-      for (const sc of meta.sub_conditions) map[sc.id] = sc.probability;
-    }
-    return map;
-  }, [meta]);
-
   return (
     <Layout>
     <div style={{ maxWidth: 680, margin: "1rem auto", padding: "0 1rem", fontFamily: "system-ui, sans-serif" }}>
@@ -283,25 +265,37 @@ export default function ConditionPage() {
             <p style={{ color: "#6b7280" }}>Data for this condition has not been generated yet. Run <code>cn generate --id {meta.id}</code>.</p>
           )}
 
-          {s && <p style={{ lineHeight: 1.6, color: "#374151" }}>{s.plain_summary}</p>}
+          {s && (
+            <p style={{
+              fontSize: "1.1rem",
+              lineHeight: 1.65,
+              color: "#111827",
+              margin: "0.75rem 0 0",
+            }}>
+              {s.plain_summary}
+            </p>
+          )}
         </div>
       )}
 
-      {meta?.diagnosis_type === "syndromic" && subConditionRows.length > 0 && (
-        <div style={{ margin: "0 0 2rem" }}>
-          <h2 style={{ fontSize: "0.95rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", color: "#374151", margin: "0 0 0.5rem" }}>
-            Investigate which underlying conditions fit you
-          </h2>
-          <p style={{ color: "#6b7280", fontSize: "0.875rem", margin: "0 0 1rem" }}>
-            {meta.name} is a syndrome label — these are the conditions worth ruling in or out, best-effort sorted by how often each shows up in {meta.name} patients. Filters can help prioritise but might be imprecise.
-          </p>
-          <SubConditionTable
-            rows={subConditionRows}
-            probabilityById={subConditionProbability}
-            symptomPatterns={s?.symptom_patterns?.patterns}
-            subConditionAffinities={s?.symptom_patterns?.sub_condition_affinities}
-            signalsByConditionId={s?.sub_condition_signals}
-          />
+      {meta?.diagnosis_type === "syndromic" && (
+        <div style={{ margin: "0 0 1.5rem" }}>
+          <Link
+            to={`/start/${meta.id}`}
+            style={{
+              display: "inline-block",
+              padding: "0.5rem 0.85rem",
+              fontSize: "0.875rem",
+              fontWeight: 600,
+              color: "#2563eb",
+              background: "#eff6ff",
+              border: "1px solid #dbeafe",
+              borderRadius: "0.375rem",
+              textDecoration: "none",
+            }}
+          >
+            Investigate underlying conditions →
+          </Link>
         </div>
       )}
 
@@ -317,15 +311,29 @@ export default function ConditionPage() {
           </AccordionSection>
 
           <AccordionSection title="Known subtypes" isEmpty={isEmpty(s.subgroups)}>
-            {(s.subgroups ?? []).map((sg) => (
+            {(s.subgroups ?? []).map((sg) => {
+              const hasPage = sg.id && indexMap.get(sg.id)?.has_data;
+              return (
               <div key={sg.name} style={{ marginBottom: "1rem" }}>
-                <strong>{sg.name}</strong>
+                {hasPage ? (
+                  <Link
+                    to={`/condition/${sg.id}`}
+                    style={{ fontWeight: 600, color: "#2563eb", textDecoration: "none" }}
+                    onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
+                    onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
+                  >
+                    {sg.name} →
+                  </Link>
+                ) : (
+                  <strong>{sg.name}</strong>
+                )}
                 <p style={{ margin: "0.25rem 0", color: "#4b5563" }}>{sg.description}</p>
                 <ul style={{ margin: "0.25rem 0 0 1rem", color: "#6b7280", fontSize: "0.875rem" }}>
                   {(sg.distinguishing_features ?? []).map((f, i) => <li key={i}>{f}</li>)}
                 </ul>
               </div>
-            ))}
+              );
+            })}
           </AccordionSection>
 
           <AccordionSection title="Symptoms" isEmpty={isEmpty(s.symptoms)}>

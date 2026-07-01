@@ -1,0 +1,649 @@
+{
+  "condition_id": "alcohol",
+  "condition_name": "Alcohol / hangover",
+  "generated_at": "2026-07-01T11:58:42.074786Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Alcohol intoxication and the hangover that follows involve a cascade of physiological disruptions \u2014 dehydration, blood sugar swings, acetaldehyde toxicity, inflammation, and disrupted sleep \u2014 that together produce the familiar cluster of headache, nausea, fatigue, and cognitive fog. While acute in most people, some individuals experience disproportionately severe or prolonged symptoms that point to underlying vulnerabilities worth investigating.",
+    "detailed_summary": "When alcohol is consumed, it is metabolised primarily in the liver by alcohol dehydrogenase (ADH) into acetaldehyde, a toxic intermediate that is then converted to acetate by aldehyde dehydrogenase (ALDH2). The speed and efficiency of both steps varies significantly between individuals based on genetic variants, nutritional status, and gut health. Acetaldehyde accumulation \u2014 even at low levels \u2014 can cause flushing, nausea, rapid heartbeat, and cognitive impairment. Beyond the metabolic pathway, alcohol acts as a diuretic, suppresses antidiuretic hormone (ADH/vasopressin), disrupts sleep architecture, causes reactive hypoglycaemia, triggers gut permeability changes, elevates inflammatory cytokines, and depletes key micronutrients including B vitamins, magnesium, and zinc.\n\nThe 'hangover' phase \u2014 typically peaking 6\u201312 hours after peak blood alcohol and resolving within 24 hours \u2014 represents the combined fallout of these mechanisms. Cognitive fog ('alcohol-induced fog') often persists longest and reflects both acetaldehyde toxicity and neuroinflammation. People who experience unusually severe hangovers at low alcohol doses, or who notice marked cognitive fog lasting days, may have underlying factors worth investigating: histamine intolerance (alcohol liberates histamine and inhibits DAO), mast cell activation, ALDH2 variants, gut dysbiosis, MTHFR methylation variants affecting detoxification, or pre-existing mitochondrial vulnerability. Alcohol also significantly worsens a wide range of underlying conditions, making it both a symptom amplifier and a diagnostic tool \u2014 many people first recognise their underlying sensitivities through their response to alcohol.",
+    "prevalence": {
+      "summary": "Hangovers are among the most common adverse health experiences in adults who drink alcohol",
+      "estimate": "Approximately 75% of people who drink to intoxication experience hangover symptoms; around 25% report being 'hangover resistant'",
+      "notes": "Severe or disproportionate hangovers at low alcohol doses are less well-studied. Genetic variants in ADH1B and ALDH2 affect severity substantially and are more common in East Asian populations. Some individuals with histamine intolerance or MCAS experience significant reactions from even small amounts of alcohol. Self-report studies vary widely in methodology."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "ALDH2-deficient individuals (Asian flush)",
+        "description": "People with the ALDH2*2 variant \u2014 predominantly of East Asian descent \u2014 have reduced ability to convert acetaldehyde to acetate, leading to rapid acetaldehyde accumulation even from small amounts of alcohol.",
+        "distinguishing_features": [
+          "Facial flushing, rapid heartbeat, and nausea even from one or two drinks",
+          "Disproportionate severity relative to intake",
+          "Genetic in nature; detectable via DNA testing",
+          "Associated with increased risk of alcohol-related oesophageal cancer with regular use"
+        ]
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine-sensitive individuals",
+        "description": "Alcohol both contains histamine (especially wine, beer, champagne) and inhibits diamine oxidase (DAO), the enzyme that breaks down dietary histamine. In people with histamine intolerance, even small amounts can trigger pronounced symptoms.",
+        "distinguishing_features": [
+          "Symptoms include flushing, hives, nasal congestion, headache, and gut upset",
+          "Reactions may be worse with wine, beer, or champagne than with spirits",
+          "May also react to other high-histamine foods",
+          "Low DAO activity may be detectable via blood test"
+        ]
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS) overlap",
+        "description": "Alcohol is a mast cell degranulator. In people with MCAS, even modest alcohol intake can trigger systemic mast cell reactions that go well beyond typical hangover symptoms.",
+        "distinguishing_features": [
+          "Multi-system reactions disproportionate to the amount consumed",
+          "May include urticaria, anaphylactoid symptoms, severe GI upset, or profound fatigue",
+          "Reactions may occur during drinking rather than only the next day",
+          "Often associated with reactions to other triggers (foods, medications, stress)"
+        ]
+      },
+      {
+        "id": "mthfr",
+        "name": "MTHFR / methylation variants",
+        "description": "Individuals with impaired methylation capacity may have reduced ability to process acetaldehyde and replenish depleted methyl donors, potentially leading to prolonged symptoms.",
+        "distinguishing_features": [
+          "Extended cognitive fog or fatigue lasting more than 24 hours",
+          "May also react poorly to other methylation-demanding exposures",
+          "Detectable via genetic testing for MTHFR C677T or A1298C variants",
+          "B-vitamin supplementation (methylated forms) may markedly reduce symptoms"
+        ]
+      },
+      {
+        "id": null,
+        "name": "People with underlying gut dysbiosis or leaky gut",
+        "description": "Alcohol increases intestinal permeability and alters the gut microbiome. People who already have dysbiosis or leaky gut may experience amplified systemic inflammation from even modest alcohol intake.",
+        "distinguishing_features": [
+          "GI symptoms are prominent and may outlast the cognitive or neurological symptoms",
+          "May notice worsened bloating, loose stools, or abdominal pain the day after drinking",
+          "Pre-existing gut conditions (SIBO, IBS) often markedly worsen with alcohol",
+          "Recovery may take several days rather than hours"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Throbbing or pressure headache",
+        "category": "neurological",
+        "notes": "Primarily caused by dehydration, vasodilation, and prostaglandin-mediated inflammation; typically peaks 6\u201312 hours after peak blood alcohol"
+      },
+      {
+        "symptom": "Cognitive fog and difficulty concentrating",
+        "category": "neurological",
+        "notes": "Driven by acetaldehyde toxicity, neuroinflammation, and disrupted sleep; can persist 24\u201348 hours in sensitive individuals"
+      },
+      {
+        "symptom": "Nausea and vomiting",
+        "category": "digestive",
+        "notes": "Caused by gastric irritation, acetaldehyde, delayed gastric emptying, and elevated cytokines"
+      },
+      {
+        "symptom": "Fatigue and lethargy",
+        "category": "systemic",
+        "notes": "Results from poor sleep quality, mitochondrial stress, hypoglycaemia, and depleted B vitamins and magnesium"
+      },
+      {
+        "symptom": "Increased heart rate (tachycardia)",
+        "category": "cardiovascular",
+        "notes": "Common during hangover; acetaldehyde directly elevates heart rate; may be pronounced in ALDH2 variants"
+      },
+      {
+        "symptom": "Excessive thirst and dry mouth",
+        "category": "systemic",
+        "notes": "Driven by ADH suppression causing excess urination and consequent fluid loss"
+      },
+      {
+        "symptom": "Light sensitivity (photophobia)",
+        "category": "neurological",
+        "notes": "Associated with alcohol-triggered vasodilation and neuroinflammation; overlaps with migraine physiology"
+      },
+      {
+        "symptom": "Sound sensitivity (phonophobia)",
+        "category": "neurological",
+        "notes": "Accompanies headache phase; mechanism similar to migraine sensitisation"
+      },
+      {
+        "symptom": "Anxiety and restlessness ('hangxiety')",
+        "category": "psychological",
+        "notes": "Rebound excitability from GABA-A receptor downregulation after alcohol's depressant effect wears off; can be severe in people with anxiety disorders"
+      },
+      {
+        "symptom": "Shakiness and tremor",
+        "category": "neurological",
+        "notes": "Reflects rebound central nervous system excitability; concerning if severe, as it can be an early sign of withdrawal in heavy drinkers"
+      },
+      {
+        "symptom": "Diarrhoea or loose stools",
+        "category": "digestive",
+        "notes": "Alcohol accelerates gut motility and alters bile acid secretion; more pronounced in people with IBS or bile acid malabsorption"
+      },
+      {
+        "symptom": "Flushing and skin redness",
+        "category": "skin",
+        "notes": "Driven by acetaldehyde accumulation or histamine release; pronounced in ALDH2 variants and histamine-sensitive individuals"
+      },
+      {
+        "symptom": "Low mood and emotional flatness",
+        "category": "psychological",
+        "notes": "Serotonin and dopamine systems are transiently disrupted after alcohol; often resolves within 24 hours in occasional drinkers"
+      },
+      {
+        "symptom": "Muscle aches and weakness",
+        "category": "musculoskeletal",
+        "notes": "Alcohol impairs muscle protein synthesis and increases systemic inflammation; compounded by dehydration and electrolyte loss"
+      },
+      {
+        "symptom": "Sweating and chills",
+        "category": "systemic",
+        "notes": "Autonomic rebound effect; can accompany tremor in the context of significant alcohol intake"
+      },
+      {
+        "symptom": "Difficulty sleeping or non-restorative sleep",
+        "category": "sleep",
+        "notes": "Alcohol suppresses REM sleep and causes rebound arousal in the second half of the night, leading to unrefreshing sleep even when total hours are adequate"
+      },
+      {
+        "symptom": "Bloating and abdominal discomfort",
+        "category": "digestive",
+        "notes": "Alcohol disrupts gastric motility, increases gut permeability, and can feed bacterial overgrowth, causing gas and bloating"
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Symptoms disproportionate to the amount consumed \u2014 suggesting genetic, metabolic, or underlying sensitivity issues",
+        "Flushing and nausea from minimal alcohol \u2014 pointing toward ALDH2 deficiency or histamine intolerance",
+        "Multi-day cognitive fog after modest intake \u2014 suggesting impaired detoxification, methylation issues, or mitochondrial vulnerability",
+        "Marked anxiety the day after drinking \u2014 consistent with GABA rebound, particularly in people with anxiety disorders or trauma history",
+        "GI symptoms dominating the hangover \u2014 pointing toward IBS, SIBO, bile acid malabsorption, or existing gut dysbiosis",
+        "Urticaria, hives, or anaphylactoid symptoms with alcohol \u2014 raising suspicion for MCAS or histamine intolerance",
+        "Symptoms worse with wine or beer than spirits \u2014 suggesting histamine content of the beverage rather than pure ethanol sensitivity"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom and intake diary",
+          "description": "Track drink type (wine, beer, spirits), quantity, food consumed alongside, and symptom severity and duration for several occasions. Look for patterns: Does wine cause worse reactions than vodka? Does eating beforehand reduce symptoms? Do symptoms last longer than 24 hours?",
+          "safety_notes": "This is observational only. Do not intentionally drink to excess to test responses. If significant symptoms occur at very low intake (one drink), discontinue self-testing and investigate underlying causes."
+        },
+        {
+          "name": "Histamine-type vs. ethanol-type symptom sorting",
+          "description": "Histamine-mediated reactions (flushing, hives, nasal congestion, headache) tend to occur faster \u2014 sometimes during or within 30 minutes of drinking \u2014 and are more pronounced with wine and beer than spirits. Pure ethanol reactions peak later (6\u201312 hours). Noting the timing and beverage type helps separate these mechanisms.",
+          "safety_notes": "If reactions include throat tightening, significant difficulty breathing, or severe hives, this may indicate an allergic reaction requiring immediate medical attention."
+        },
+        {
+          "name": "Electrolyte and B-vitamin response trial",
+          "description": "Some people find that pre-loading with electrolytes and B-complex vitamins before and after drinking significantly reduces hangover severity. Tracking whether this intervention helps narrows down dehydration and B-vitamin depletion as contributors.",
+          "safety_notes": "Safe for most people. High-dose B6 (over 100mg/day long-term) can cause nerve damage; standard B-complex doses are appropriate for this purpose."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "ALDH2 and ADH1B genetic testing",
+          "type": "standard",
+          "description": "Identifies variants in the genes encoding key alcohol-metabolising enzymes. ALDH2*2 causes acetaldehyde accumulation. ADH1B*2 causes faster ethanol conversion to acetaldehyde. Both affect hangover severity and long-term cancer risk with alcohol use.",
+          "availability": "Available through consumer genetic testing platforms (23andMe, AncestryDNA with third-party interpretation tools like Promethease) or clinical genetic testing ordered by a GP or functional medicine practitioner"
+        },
+        {
+          "name": "MTHFR genetic panel",
+          "type": "standard",
+          "description": "Tests for C677T and A1298C variants affecting methylation capacity. Impaired methylation may slow acetaldehyde processing and B-vitamin recycling.",
+          "availability": "Orderable through GPs, functional medicine practitioners, or consumer genetics services"
+        },
+        {
+          "name": "Diamine oxidase (DAO) activity test",
+          "type": "emerging",
+          "description": "Measures the activity of the enzyme responsible for breaking down dietary histamine. Low DAO activity is associated with histamine intolerance, which alcohol worsens by both contributing histamine and inhibiting DAO.",
+          "availability": "Available through some specialist labs and functional medicine practitioners; not routinely ordered in mainstream medicine"
+        },
+        {
+          "name": "Serum and urine histamine / tryptase",
+          "type": "standard",
+          "description": "Elevated histamine or tryptase in the context of alcohol reactions can point toward mast cell involvement or histamine intolerance. Tryptase should ideally be drawn during or shortly after a reaction.",
+          "availability": "Orderable through allergists or immunologists; tryptase timing is important \u2014 best within 1\u20132 hours of a reaction"
+        },
+        {
+          "name": "Comprehensive metabolic panel and liver function tests",
+          "type": "gold_standard",
+          "description": "Assesses liver health (AST, ALT, GGT, bilirubin), blood glucose, and electrolytes. Useful for anyone with chronic or severe alcohol reactions to rule out liver dysfunction or impaired glucose regulation as amplifying factors.",
+          "availability": "Routinely available through any GP"
+        },
+        {
+          "name": "Magnesium and B-vitamin status",
+          "type": "standard",
+          "description": "Alcohol depletes magnesium, B1 (thiamine), B6, B9 (folate), and B12. Red blood cell magnesium is more sensitive than serum magnesium. Identifying deficiencies helps explain prolonged fatigue and neurological symptoms.",
+          "availability": "Orderable through GPs; RBC magnesium may require requesting specifically, as standard panels measure serum magnesium"
+        },
+        {
+          "name": "Gut microbiome testing",
+          "type": "emerging",
+          "description": "For individuals with prominent GI hangover symptoms or those noticing gut symptoms worsening over time with alcohol use, microbiome analysis can identify dysbiosis patterns that alcohol is exacerbating.",
+          "availability": "Consumer and clinical options available; clinical interpretation by a gut-specialist dietitian or functional medicine practitioner is valuable"
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "mechanistic_link",
+        "explanation": "Alcohol is both a histamine liberator and a DAO inhibitor, making it a powerful trigger for histamine intolerance. People who react disproportionately to wine and beer, or who experience flushing and nasal congestion, often have this underlying sensitivity."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
+        "relationship": "mechanistic_link",
+        "explanation": "Alcohol directly degranulates mast cells. In people with MCAS, this can cause multi-system reactions well beyond typical hangover symptoms, including urticaria, flushing, severe GI upset, and anaphylactoid responses."
+      },
+      {
+        "id": "migraine",
+        "name": "Migraine",
+        "relationship": "mechanistic_link",
+        "explanation": "Alcohol triggers migraine in a significant proportion of people who experience them, through vasodilation, histamine release, and serotonin disruption. Alcohol-induced headache and migraine share overlapping physiology and can be difficult to distinguish."
+      },
+      {
+        "id": "mthfr",
+        "name": "MTHFR / methylation variants",
+        "relationship": "mechanistic_link",
+        "explanation": "Impaired methylation capacity can reduce the efficiency of acetaldehyde detoxification and B-vitamin recycling, potentially explaining prolonged cognitive fog and fatigue after modest alcohol intake."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "mechanistic_link",
+        "explanation": "Alcohol disrupts the gut microbiome, reduces microbial diversity, and promotes growth of endotoxin-producing bacteria. Pre-existing dysbiosis amplifies hangover severity, particularly gut-related symptoms."
+      },
+      {
+        "id": "leaky_gut",
+        "name": "Leaky gut (intestinal hyperpermeability)",
+        "relationship": "mechanistic_link",
+        "explanation": "Alcohol is one of the best-documented causes of acute intestinal permeability increases, allowing bacterial endotoxins (LPS) into the bloodstream and triggering systemic inflammation \u2014 a key driver of hangover symptoms including fog and fatigue."
+      },
+      {
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "comorbid",
+        "explanation": "Alcohol impairs migrating motor complex (MMC) function, which normally clears bacteria from the small intestine between meals. Frequent alcohol use may promote or worsen SIBO, and people with SIBO often experience amplified gut symptoms after drinking."
+      },
+      {
+        "id": "reactive_hypoglycemia",
+        "name": "Reactive hypoglycaemia",
+        "relationship": "mechanistic_link",
+        "explanation": "Alcohol suppresses hepatic gluconeogenesis, causing blood sugar to drop hours after drinking. This contributes to the weakness, shakiness, sweating, and cognitive impairment typical of hangover, and may be a dominant factor in people who already have reactive hypoglycaemia."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "comorbid",
+        "explanation": "Alcohol temporarily reduces anxiety through GABA-A potentiation, but the rebound excitability the following day ('hangxiety') can be severe \u2014 especially in people with pre-existing anxiety disorders. This creates a reinforcing use pattern that worsens both conditions over time."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "comorbid",
+        "explanation": "Alcohol is a CNS depressant that transiently elevates mood but causes rebound low mood as serotonin and dopamine systems recover. Repeated cycles worsen baseline mood over time, and depression is both a driver of and a consequence of problematic alcohol use."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor sleep / insomnia",
+        "relationship": "mechanistic_link",
+        "explanation": "Alcohol suppresses REM sleep and causes rebound arousal in the second half of the sleep cycle. Even a single night of alcohol-disrupted sleep contributes substantially to next-day cognitive fog and fatigue. Chronic use significantly degrades overall sleep quality."
+      },
+      {
+        "id": "mitochondrial",
+        "name": "Mitochondrial dysfunction",
+        "relationship": "mechanistic_link",
+        "explanation": "Alcohol metabolism generates reactive oxygen species and depletes NAD+, directly impairing mitochondrial function. In people with pre-existing mitochondrial vulnerability, this can cause disproportionate fatigue and prolonged recovery."
+      },
+      {
+        "id": "dehydration",
+        "name": "Dehydration",
+        "relationship": "downstream",
+        "explanation": "Alcohol suppresses antidiuretic hormone (ADH/vasopressin), causing significantly increased urine output and fluid loss. Dehydration is one of the primary drivers of hangover headache, fatigue, and cognitive impairment."
+      },
+      {
+        "id": "b12_deficiency",
+        "name": "Vitamin B12 deficiency",
+        "relationship": "downstream",
+        "explanation": "Alcohol impairs B12 absorption and metabolism. Chronic use depletes B12 and other B vitamins, contributing to neurological symptoms, fatigue, and cognitive difficulties that may outlast the acute hangover."
+      },
+      {
+        "id": "functional_dyspepsia",
+        "name": "Functional dyspepsia",
+        "relationship": "comorbid",
+        "explanation": "Alcohol irritates the gastric lining, delays gastric emptying, and increases acid secretion. In people with functional dyspepsia, even small amounts of alcohol can trigger significant nausea, epigastric pain, and bloating."
+      },
+      {
+        "id": "me_cfs",
+        "name": "ME / CFS",
+        "relationship": "often_confused",
+        "explanation": "People with ME/CFS often find that even minimal alcohol consumption causes a prolonged crash resembling a severe, extended hangover. What appears to be unusual sensitivity to alcohol may in some cases be an early or unrecognised presentation of ME/CFS, particularly when post-exertional malaise is also present."
+      },
+      {
+        "id": "insulin_resistance",
+        "name": "Insulin resistance",
+        "relationship": "comorbid",
+        "explanation": "Insulin resistance impairs glucose regulation, making reactive hypoglycaemia after alcohol more likely and more severe. The combination amplifies fatigue, shakiness, and cognitive impairment in the hangover phase."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Hydration with electrolytes",
+          "category": "lifestyle",
+          "description": "Drinking water addresses volume depletion, but replacing electrolytes \u2014 particularly sodium, potassium, and magnesium \u2014 addresses the mineralogical aspect of alcohol-driven fluid loss. Electrolyte solutions or tablets before sleep and upon waking may reduce headache and fatigue severity.",
+          "evidence_level": "moderate",
+          "notes": "Water alone without electrolytes can dilute remaining sodium; electrolyte-containing fluids are more effective for hangover hydration than plain water."
+        },
+        {
+          "name": "B-complex vitamins (methylated forms)",
+          "category": "supplement",
+          "description": "Alcohol depletes B1, B2, B6, B9, and B12. Supplementing before or after drinking may reduce the severity and duration of neurological symptoms including fog and fatigue. Methylated forms (methylfolate, methylcobalamin) are preferable for those with MTHFR variants.",
+          "evidence_level": "moderate",
+          "notes": "Thiamine (B1) in particular is important for neurological protection, especially with heavier drinking. B6 supplementation above 100mg/day long-term carries neuropathy risk."
+        },
+        {
+          "name": "N-acetylcysteine (NAC)",
+          "category": "supplement",
+          "description": "A precursor to glutathione, NAC may support acetaldehyde detoxification and reduce oxidative stress from alcohol metabolism. Some people find it useful taken before drinking rather than after.",
+          "evidence_level": "anecdotal",
+          "notes": "Taking NAC during drinking rather than before may theoretically increase toxic nitroso compound formation in some contexts; the evidence for timing is mixed. Use cautiously and research individual context."
+        },
+        {
+          "name": "Food before and during drinking",
+          "category": "lifestyle",
+          "description": "Eating slows alcohol absorption, reduces peak blood alcohol concentration, and helps maintain blood glucose levels. Fat and protein are particularly effective at slowing gastric emptying.",
+          "evidence_level": "strong",
+          "notes": "Carbohydrate-rich meals after drinking may help address reactive hypoglycaemia contributing to next-day symptoms."
+        },
+        {
+          "name": "Pacing and choosing lower-histamine drinks",
+          "category": "diet",
+          "description": "For histamine-sensitive individuals, spirits (vodka, gin, pure whisky) typically contain far less histamine than wine, beer, and champagne. Slowing intake allows more time for histamine metabolism. Avoiding mixing alcohol with high-histamine foods (aged cheese, cured meats) at the same meal may reduce total histamine load.",
+          "evidence_level": "moderate",
+          "notes": "Sulfites in wine can also trigger symptoms in sensitive individuals independently of histamine."
+        },
+        {
+          "name": "Magnesium supplementation",
+          "category": "supplement",
+          "description": "Alcohol causes significant magnesium excretion. Low magnesium contributes to muscle cramps, headache, anxiety, and poor sleep \u2014 all common hangover features. Magnesium glycinate or malate taken before sleep may reduce next-day severity.",
+          "evidence_level": "moderate",
+          "notes": "Magnesium oxide is poorly absorbed. Citrate and glycinate forms are preferable. High doses may cause loose stools."
+        },
+        {
+          "name": "Prioritising sleep quality",
+          "category": "lifestyle",
+          "description": "Alcohol disrupts REM sleep. Avoiding alcohol within 3\u20134 hours of sleep where possible, or at minimum ensuring adequate total sleep time, reduces the cognitive fog component of hangover.",
+          "evidence_level": "strong",
+          "notes": "Even if total hours of sleep are adequate, alcohol-disrupted sleep architecture leads to non-restorative rest. Sleep quality matters as much as quantity."
+        },
+        {
+          "name": "Anti-inflammatory analgesics (ibuprofen/aspirin) for headache",
+          "category": "medication",
+          "description": "NSAIDs address the prostaglandin-mediated inflammatory component of hangover headache more effectively than paracetamol/acetaminophen. Ibuprofen or aspirin with food may reduce headache severity.",
+          "evidence_level": "moderate",
+          "notes": "Avoid paracetamol/acetaminophen after significant alcohol consumption \u2014 the combination can be hepatotoxic. NSAIDs can also irritate the gastric lining; take with food. Not appropriate for those with GI ulcers or NSAID sensitivity."
+        },
+        {
+          "name": "DAO enzyme supplementation",
+          "category": "supplement",
+          "description": "For individuals with histamine intolerance, taking a DAO enzyme supplement shortly before drinking may reduce histamine-mediated symptoms including flushing, headache, and nasal congestion.",
+          "evidence_level": "anecdotal",
+          "notes": "DAO supplements are most useful for histamine from food and drink, not for endogenous histamine release from mast cells. Response is highly individual."
+        },
+        {
+          "name": "Reducing or eliminating alcohol",
+          "category": "lifestyle",
+          "description": "The most effective intervention for alcohol-related symptoms at any severity level. Even reducing frequency or quantity significantly reduces cumulative impact on gut health, sleep, and cognitive function.",
+          "evidence_level": "strong",
+          "notes": "For people with ALDH2 variants, MCAS, histamine intolerance, or severe underlying conditions, even small amounts may cause disproportionate harm. The threshold is individual."
+        }
+      ],
+      "things_to_avoid": [
+        "Paracetamol/acetaminophen after drinking \u2014 the combination with alcohol metabolites is hepatotoxic even at standard doses",
+        "'Hair of the dog' \u2014 drinking more alcohol to relieve hangover symptoms delays recovery, worsens dehydration, and reinforces dependency patterns",
+        "Caffeine as the primary hydration strategy \u2014 coffee is mildly diuretic and worsens dehydration; it may also amplify anxiety rebound",
+        "Mixing alcohol with high-histamine foods (aged cheese, cured meats, fermented foods) in histamine-sensitive individuals \u2014 compounds histamine load significantly",
+        "Alcohol as a sleep aid \u2014 even though it induces initial sedation, it severely degrades sleep architecture and worsens next-day cognition",
+        "Ignoring disproportionate reactions \u2014 severe symptoms at low doses are a signal worth investigating, not simply tolerating"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "If alcohol reliably causes cognitive fog, severe gut symptoms, or multi-day recovery, the drink itself is not the problem \u2014 the underlying biology is. Optimising or eliminating alcohol will help, but the underlying vulnerability remains and is likely being triggered by other things too.",
+        "why_resisted": "It is easier to frame the issue as 'I just need to drink less' or 'I handled it badly last night' than to consider that something deeper \u2014 histamine intolerance, MCAS, methylation impairment, gut dysbiosis \u2014 is worth investigating.",
+        "path_forward": "People who investigate and address their underlying sensitivities often find that not only do their alcohol reactions improve, but a cluster of other symptoms (unexplained fatigue, GI issues, headaches) also diminish \u2014 because the same mechanism was driving all of them."
+      },
+      {
+        "truth": "Using alcohol to manage anxiety, sleep, or social discomfort creates a biological trap: each use makes the underlying anxiety and sleep quality measurably worse over time, requiring more alcohol for the same effect.",
+        "why_resisted": "The short-term relief is real and immediate; the long-term worsening is gradual and easy to rationalise away.",
+        "path_forward": "People who address the underlying anxiety or sleep disorder (through therapy, lifestyle, or appropriate treatment) commonly find their relationship with alcohol changes naturally \u2014 the need that drove use diminishes, and reduction or elimination becomes easier without white-knuckling."
+      },
+      {
+        "truth": "Severe or prolonged hangovers are not simply a consequence of poor choices \u2014 they are diagnostic information. They indicate that the body's detoxification, metabolic, or immune systems are under stress, either acutely or chronically.",
+        "why_resisted": "There is cultural normalisation of hangover suffering as deserved or inevitable, which discourages treating it as a signal worth reading.",
+        "path_forward": "People who treat disproportionate alcohol reactions as diagnostic information \u2014 investigating histamine status, genetic variants, gut health, and nutrient status \u2014 often identify patterns that explain not just hangover severity but other seemingly unrelated health complaints."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Identify and address the specific mechanism driving disproportionate reactions",
+          "why_it_matters": "Not all hangover severity is equivalent \u2014 ALDH2 deficiency, histamine intolerance, MCAS, MTHFR variants, and gut dysbiosis each drive different symptom profiles and respond to different interventions. Treating them generically yields poor results.",
+          "how_to_start": "Begin with a symptom diary noting drink type, quantity, food, timing, and symptom pattern. Use this to form a hypothesis (histamine-type vs. ethanol metabolite-type vs. gut-type) and seek targeted testing.",
+          "timeline": "2\u20134 weeks of diary data is usually sufficient to identify patterns",
+          "requires_professional": false
+        },
+        {
+          "lever": "Correct nutritional depletions (B vitamins, magnesium, zinc)",
+          "why_it_matters": "Alcohol actively depletes the cofactors required for its own metabolism. Chronically low B1, B6, B12, folate, and magnesium create a deficit that worsens with each drinking occasion and impairs recovery. Correcting these can substantially reduce baseline symptom burden.",
+          "how_to_start": "Test RBC magnesium and B12 levels. Begin a quality methylated B-complex and magnesium glycinate daily, not only around drinking occasions.",
+          "timeline": "4\u20138 weeks to notice meaningful improvement in baseline energy and cognition",
+          "requires_professional": false
+        },
+        {
+          "lever": "Gut microbiome and permeability repair",
+          "why_it_matters": "Alcohol-driven gut permeability and dysbiosis amplify systemic inflammation, worsen GI symptoms, and slow recovery. Restoring gut integrity reduces the inflammatory burden of each alcohol exposure and improves overall resilience.",
+          "how_to_start": "Reduce alcohol frequency, increase dietary fibre and fermented foods, consider a probiotic with evidence for gut barrier support (Lactobacillus rhamnosus, Bifidobacterium species). Seek microbiome testing if GI symptoms are prominent.",
+          "timeline": "6\u201312 weeks for meaningful microbiome shifts; gut permeability markers can improve within 4 weeks of alcohol reduction",
+          "requires_professional": false
+        },
+        {
+          "lever": "Address underlying anxiety or sleep disorders driving alcohol use",
+          "why_it_matters": "When alcohol is being used to manage anxiety or initiate sleep, reducing it without addressing the underlying driver is very difficult to sustain. Treating the root cause makes alcohol reduction far more achievable.",
+          "how_to_start": "Consult a therapist experienced in anxiety (CBT, ACT), or a sleep specialist if insomnia is the driver. Consider whether other tools (magnesium, sleep hygiene, short-term pharmacological support if appropriate) can replace the alcohol function.",
+          "timeline": "Varies widely; 8\u201316 weeks of therapy typically produces meaningful anxiety reduction",
+          "requires_professional": true
+        },
+        {
+          "lever": "Reduce overall frequency and quantity of alcohol intake",
+          "why_it_matters": "Even without addressing underlying mechanisms, reducing frequency allows the gut, liver, and nervous system to recover between episodes. The cumulative biological impact of regular alcohol use is substantially greater than the same total amount consumed less frequently.",
+          "how_to_start": "Identify the specific occasions or functions alcohol serves and design substitutes or alternatives. Track drinks weekly to build objective awareness.",
+          "timeline": "Improvements in sleep quality and gut function often appear within 2\u20134 weeks of significant reduction",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Treating every hangover with the same generic approach (water, rest, painkillers) rather than investigating the specific mechanisms driving disproportionate symptoms",
+        "Relying on 'hangover cure' supplements without addressing the underlying nutritional deficits or sensitivities that make symptoms severe in the first place",
+        "Using alcohol to aid sleep, which reliably worsens sleep architecture and creates a reinforcing cycle of poor sleep and increased alcohol use",
+        "Assuming that reactions are purely about quantity consumed, when drink type, histamine content, food timing, and individual genetic factors are often more important than absolute volume",
+        "Continuing to drink at the same frequency while adding supplements, rather than addressing the underlying biological burden that alcohol creates"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Functional medicine doctor",
+          "role": "Best positioned to investigate upstream drivers of disproportionate alcohol reactions \u2014 including genetic variants (ALDH2, MTHFR), nutritional deficiencies, histamine intolerance, mast cell involvement, and gut dysbiosis \u2014 rather than managing symptoms in isolation.",
+          "notes": "Many mainstream GPs will address alcohol as a behavioural issue rather than investigating why reactions are disproportionate. Functional medicine practitioners are more likely to run root-cause testing."
+        },
+        {
+          "type": "Allergist / Immunologist",
+          "role": "Appropriate when reactions include flushing, urticaria, angioedema, or anaphylactoid symptoms \u2014 to evaluate for MCAS, IgE-mediated alcohol or additive allergy, and histamine-related mechanisms. Can measure tryptase and run allergen-specific testing.",
+          "notes": "Tryptase testing is most informative if drawn during or within 1\u20132 hours of a reaction."
+        },
+        {
+          "type": "Registered dietitian (histamine/FODMAP-trained)",
+          "role": "For individuals whose reactions appear histamine-mediated or who have significant GI symptoms, a dietitian specialising in food chemical sensitivities can design elimination approaches, trial DAO support, and help identify dietary patterns that interact with alcohol.",
+          "notes": "Not all dietitians are trained in histamine intolerance or food chemical sensitivities \u2014 seeking one with this specific background matters."
+        },
+        {
+          "type": "Gastroenterologist",
+          "role": "Relevant when GI symptoms (diarrhoea, significant bloating, nausea) are the dominant concern, or when there is suspicion of SIBO, bile acid malabsorption, or gastric mucosal damage from alcohol.",
+          "notes": "Mainstream gastroenterologists may focus on diagnosing structural pathology and may not investigate subtler issues like gut dysbiosis or functional gut sensitisation."
+        },
+        {
+          "type": "Addiction medicine specialist or therapist (CBT/ACT)",
+          "role": "When alcohol is being used to manage anxiety, pain, or emotional regulation, and voluntary reduction proves consistently difficult despite intent to change, specialist support addresses the psychological and neurobiological dimensions of problematic use.",
+          "notes": "This is not about labelling someone an 'alcoholic' \u2014 functional use of alcohol to manage anxiety or sleep is a distinct and common pattern that responds well to targeted therapeutic approaches."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/alcohol",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/alcohol/",
+          "notes": "General community discussing alcohol use, hangover experiences, and reduction strategies. Useful for shared experiences but not medically moderated."
+        },
+        {
+          "name": "r/StopDrinking",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/StopDrinking/",
+          "notes": "Supportive community for those seeking to reduce or eliminate alcohol. Non-judgmental and highly active; useful for people whose reactions are prompting them to reconsider their relationship with alcohol."
+        },
+        {
+          "name": "r/Histamine_Intolerance",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Histamine_Intolerance/",
+          "notes": "Relevant for those whose alcohol reactions are dominated by flushing, headache, or nasal symptoms. Members share experiences with drink types, DAO supplementation, and low-histamine approaches."
+        },
+        {
+          "name": "r/MCAS",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/MCAS/",
+          "notes": "For those whose alcohol reactions may involve mast cell activation \u2014 particularly those with multi-system reactions to small amounts. Good for navigating investigation and management."
+        },
+        {
+          "name": "Sober October / Dry January communities",
+          "platform": "Various (Reddit, Facebook, apps)",
+          "url": null,
+          "notes": "Structured alcohol-free challenge communities useful for testing how health changes with abstinence \u2014 effectively a self-directed elimination trial."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Alcohol Metabolism: An Update",
+        "type": "research paper",
+        "author_or_source": "National Institute on Alcohol Abuse and Alcoholism (NIAAA)",
+        "url": "https://pubs.niaaa.nih.gov/publications/aa72/aa72.htm",
+        "description": "Accessible overview of how alcohol is metabolised, the role of ADH and ALDH2, and why metabolism varies between individuals. Useful for understanding the biochemistry underlying hangover symptoms.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "The Alcohol Hangover Research Group: Consensus Statement on Best Practice in Alcohol Hangover Research",
+        "type": "research paper",
+        "author_or_source": "Alcohol and Alcoholism journal",
+        "url": "https://academic.oup.com/alcalc/article/45/3/242/193410",
+        "description": "The closest thing to a scientific consensus document on hangover mechanisms, measurement, and research. Good for those wanting to understand what is and isn't well-established in hangover science.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Alcohol and the Gut Microbiome",
+        "type": "research paper",
+        "author_or_source": "Biomedicines",
+        "url": "https://www.mdpi.com/2227-9059/10/6/1461",
+        "description": "Reviews how alcohol affects gut microbial diversity, permeability, and systemic inflammation \u2014 relevant for those whose hangover symptoms are GI-dominated or who notice gut issues worsening over time.",
+        "audience": "advanced"
+      },
+      {
+        "title": "This Naked Mind: Control Alcohol",
+        "type": "book",
+        "author_or_source": "Annie Grace",
+        "url": null,
+        "description": "A widely-read book that investigates the psychological and neurobiological mechanisms behind alcohol use, particularly the anxiety-relief cycle. Useful for people who notice their relationship with alcohol is driven by anxiety management or social habit rather than genuine desire.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Huberman Lab: What Alcohol Does to Your Body, Brain & Health",
+        "type": "podcast",
+        "author_or_source": "Andrew Huberman",
+        "url": "https://www.hubermanlab.com/episode/what-alcohol-does-to-your-body-brain-health",
+        "description": "A detailed, evidence-referenced episode covering alcohol's mechanisms across multiple organ systems \u2014 sleep disruption, gut permeability, neurological effects, and cancer risk. Good entry point for people wanting a comprehensive mechanistic overview.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Histamine Intolerance and Alcohol: Understanding the Connection",
+        "type": "website",
+        "author_or_source": "Histamine Intolerance Awareness",
+        "url": "https://www.histamineintolerance.org.uk",
+        "description": "Plain-language resource explaining how alcohol interacts with histamine metabolism, relevant drink types to avoid, and how to investigate histamine intolerance as an underlying factor.",
+        "audience": "beginner"
+      },
+      {
+        "title": "ALDH2 Deficiency (Asian Flush): Understanding the Genetic Basis",
+        "type": "website",
+        "author_or_source": "ALDH2 Research / Stanford University",
+        "url": "https://aldh2deficiency.com",
+        "description": "Comprehensive resource on ALDH2*2 variants, the mechanism of acetaldehyde accumulation, health risks of continued alcohol use with this variant, and the population distribution of the gene.",
+        "audience": "beginner"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

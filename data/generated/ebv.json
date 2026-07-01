@@ -1,0 +1,644 @@
+{
+  "condition_id": "ebv",
+  "condition_name": "EBV reactivation",
+  "generated_at": "2026-07-01T11:58:41.861368Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Epstein-Barr virus (EBV) is the virus responsible for infectious mononucleosis (glandular fever). After the initial infection, EBV remains dormant in the body for life. In some people \u2014 particularly those under chronic stress, with immune dysfunction, or with certain genetic factors \u2014 the virus can reactivate repeatedly, causing a pattern of relapsing fatigue, sore throat, swollen glands, and cognitive difficulties that can persist for months or years. This is often called chronic EBV or EBV reactivation. It is poorly understood, frequently dismissed by mainstream clinicians, and sits in a grey zone between infectious disease and immune dysfunction.",
+    "detailed_summary": "Epstein-Barr virus belongs to the herpesvirus family and infects over 90% of adults worldwide. Primary infection typically occurs in childhood (often asymptomatically) or in adolescence as infectious mononucleosis. After recovery, EBV establishes lifelong latency in B lymphocytes. The immune system \u2014 primarily through cytotoxic T cells and NK cells \u2014 normally keeps the virus in check. When immune surveillance is impaired, EBV can reactivate, producing viral proteins and, in some cases, detectable viral replication.\n\nEBV reactivation as a chronic clinical syndrome is contested territory. Mainstream infectious disease guidelines do not formally recognise 'chronic active EBV' (CAEBV) as a common adult diagnosis, reserving that term for a rare and severe paediatric condition. However, a growing body of research suggests that subclinical or low-grade EBV reactivation may contribute to a broader spectrum of illness in immunologically vulnerable adults \u2014 including those with post-viral fatigue, autoimmune disease, and conditions like ME/CFS and long COVID.\n\nThe mechanisms by which reactivated EBV causes symptoms are not fully established. Proposed pathways include: persistent immune activation and elevated inflammatory cytokines; molecular mimicry triggering autoimmune responses; direct EBV-driven disruption of B cell function; and impaired interferon signalling. EBV has been implicated as a trigger or cofactor in multiple sclerosis, systemic lupus erythematosus, Hashimoto's thyroiditis, and other autoimmune diseases.\n\nDiagnosis is hampered by the absence of standardised clinical criteria for adult chronic EBV. Many people with this pattern have EBV antibody profiles suggesting past infection with intermittent reactivation \u2014 elevated VCA IgG, elevated EA-D IgG, and sometimes low or absent EBNA antibodies \u2014 but standard panels are not designed to assess chronicity. Clinicians trained in conventional medicine often interpret any EBV antibody result as simply 'past infection' and offer no further investigation. Those researching their own symptoms often arrive at EBV reactivation as a hypothesis after years of unanswered illness.",
+    "prevalence": {
+      "summary": "EBV itself infects nearly the entire adult population; the subset who develop persistent or recurrent reactivation illness is unknown but likely underestimated.",
+      "estimate": "Over 90% of adults are EBV-seropositive; chronic symptomatic reactivation is estimated to affect a small minority, though no reliable population figure exists",
+      "notes": "True chronic active EBV (CAEBV) as defined by strict criteria is rare \u2014 estimated at fewer than 1 in 100,000. Subclinical or recurring reactivation contributing to fatigue syndromes is likely far more common but is not formally tracked. Women, people with HLA variants affecting immune regulation, and those with other herpesvirus co-infections may be more susceptible."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Chronic Active EBV (CAEBV) \u2014 severe/classic form",
+        "description": "A rare, severe, and formally recognised condition predominantly in children and young adults, involving persistent EBV infection of T cells or NK cells (not B cells), high viral load in blood, and systemic organ involvement. Distinct from the more common adult reactivation pattern.",
+        "distinguishing_features": [
+          "Elevated EBV DNA in peripheral blood (quantitative PCR)",
+          "EBV found in T or NK cells rather than B cells",
+          "Fever, hepatosplenomegaly, haemophagocytic lymphohistiocytosis",
+          "Can be life-threatening without treatment",
+          "Predominantly affects East Asian and Indigenous Latin American populations"
+        ]
+      },
+      {
+        "id": "me_cfs",
+        "name": "Post-EBV ME/CFS (post-infectious fatigue)",
+        "description": "A subgroup of people who develop ME/CFS-like illness following a documented acute EBV infection. EBV is one of the most studied triggers of post-infectious ME/CFS. Whether ongoing reactivation drives symptoms or the immune dysregulation itself persists is debated.",
+        "distinguishing_features": [
+          "Clear onset following documented infectious mononucleosis or EBV seroconversion",
+          "Post-exertional malaise meeting ME/CFS criteria",
+          "May have elevated early antigen (EA) antibodies suggesting ongoing viral activity",
+          "Cognitive dysfunction often prominent"
+        ]
+      },
+      {
+        "id": "long_covid",
+        "name": "EBV reactivation in Long COVID",
+        "description": "Multiple studies have documented EBV reactivation as a co-occurring feature in a subset of people with long COVID. It is unclear whether SARS-CoV-2 triggers EBV reactivation or whether reactivated EBV contributes to long COVID symptomatology.",
+        "distinguishing_features": [
+          "EBV VCA IgG and EA IgG elevated in context of COVID-19 history",
+          "May overlap with long COVID fatigue, brain fog, and dysautonomia",
+          "One study (Gold et al. 2021) found EBV reactivation in 66% of long COVID patients"
+        ]
+      },
+      {
+        "id": null,
+        "name": "EBV-associated autoimmune overlap",
+        "description": "A group in whom EBV reactivation appears to be a driver or co-trigger of autoimmune conditions including Hashimoto's thyroiditis, lupus, and multiple sclerosis. Molecular mimicry between EBV proteins and host tissue antigens is the leading hypothesis.",
+        "distinguishing_features": [
+          "Positive or borderline autoimmune markers (ANA, anti-thyroid antibodies)",
+          "EBV reactivation pattern on serology alongside autoimmune diagnosis",
+          "May have disproportionate immune flares during or after viral illnesses"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Profound, unrefreshing fatigue",
+        "category": "energy / systemic",
+        "notes": "Often described as different from normal tiredness \u2014 a heavy, bone-deep exhaustion that does not improve with rest. May fluctuate in waves."
+      },
+      {
+        "symptom": "Recurrent sore throat",
+        "category": "ENT / immune",
+        "notes": "A hallmark carry-over from acute EBV infection. May recur every few weeks or during reactivation episodes, without a positive strep test."
+      },
+      {
+        "symptom": "Swollen lymph nodes",
+        "category": "immune",
+        "notes": "Particularly in the neck and axillae. Usually tender but not dramatically enlarged. May persist for weeks or recur cyclically."
+      },
+      {
+        "symptom": "Cognitive dysfunction (brain fog)",
+        "category": "neurological",
+        "notes": "Difficulty with word retrieval, working memory, processing speed. Often reported as one of the most disabling features."
+      },
+      {
+        "symptom": "Post-exertional malaise",
+        "category": "energy / systemic",
+        "notes": "Symptom flare 12\u201348 hours after physical or cognitive exertion that exceeds the individual's current threshold. Highly characteristic when present."
+      },
+      {
+        "symptom": "Low-grade fever or temperature dysregulation",
+        "category": "immune / systemic",
+        "notes": "Temperatures of 37.2\u201337.8\u00b0C (99\u2013100\u00b0F) are common. Many people report feeling feverish but having a 'normal' reading by standard thresholds."
+      },
+      {
+        "symptom": "Muscle aches and joint pain",
+        "category": "musculoskeletal",
+        "notes": "Often migratory and disproportionate to exertion. May be accompanied by flu-like aching during reactivation episodes."
+      },
+      {
+        "symptom": "Headaches",
+        "category": "neurological",
+        "notes": "Often described as pressure or dull aching rather than migraine-type. May worsen with exertion or cognitive load."
+      },
+      {
+        "symptom": "Sleep disturbance",
+        "category": "neurological / sleep",
+        "notes": "Typically non-restorative sleep \u2014 individuals may sleep 10\u201312 hours and wake feeling unrefreshed. Hypersomnia is common during reactivation episodes."
+      },
+      {
+        "symptom": "Splenomegaly (enlarged spleen)",
+        "category": "immune / digestive",
+        "notes": "More common during acute episodes or CAEBV. Adults with recurrent reactivation may have subclinical spleen enlargement detected on imaging."
+      },
+      {
+        "symptom": "Nausea and appetite suppression",
+        "category": "digestive",
+        "notes": "Common during reactivation flares. Not specific to EBV but may accompany other systemic symptoms."
+      },
+      {
+        "symptom": "Anxiety and mood changes",
+        "category": "psychological / neurological",
+        "notes": "May be partly driven by immune-mediated neuroinflammation. The experience of relapsing, unexplained illness also independently drives anxiety."
+      },
+      {
+        "symptom": "Skin rash",
+        "category": "skin",
+        "notes": "A maculopapular rash can appear during acute or reactivation episodes, particularly if penicillin-based antibiotics are taken (a known trigger for EBV-related rash)."
+      },
+      {
+        "symptom": "Sensitivity to light and sound",
+        "category": "neurological / sensory",
+        "notes": "Reported by some individuals, particularly those with ME/CFS overlap. May reflect central sensitisation driven by neuroinflammation."
+      },
+      {
+        "symptom": "Elevated liver enzymes (transaminitis)",
+        "category": "hepatic",
+        "notes": "EBV has tropism for liver tissue. Mild elevations in ALT/AST are common during active or reactivation phases and may be an underappreciated lab clue."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Elevated VCA IgG (viral capsid antigen) \u2014 indicates past infection; nearly universal in adults and not alone diagnostic of reactivation",
+        "Elevated EA-D IgG (early antigen, diffuse) \u2014 suggests recent or ongoing viral activity; the most clinically relevant marker for reactivation in adults",
+        "Low or absent EBNA IgG \u2014 antibodies to Epstein-Barr nuclear antigen normally develop after primary infection and persist; their absence in an otherwise seropositive adult may suggest atypical immune response",
+        "Elevated EBV DNA by quantitative PCR in blood \u2014 detectable viral load is the strongest objective evidence of active replication; absent in most adults even with symptoms",
+        "Elevated inflammatory markers (CRP, ferritin, ESR) during flares \u2014 non-specific but supports systemic immune activation",
+        "Mild lymphocytosis with atypical lymphocytes on CBC differential \u2014 seen during active reactivation, mirrors the pattern of primary infection",
+        "Mildly elevated ALT/AST \u2014 hepatic involvement is a subtle clue often overlooked in chronic presentations",
+        "NK cell count and function \u2014 impaired NK cell activity has been documented in chronic EBV and ME/CFS; available at specialist labs"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom and energy diary",
+          "description": "Tracking daily symptom severity, sleep quality, throat pain, lymph node tenderness, and activity levels across several weeks can reveal the cyclical or relapsing pattern typical of EBV reactivation. Note any identifiable triggers (stress, illness, overexertion). This documentation is useful when presenting to clinicians.",
+          "safety_notes": "No risks. Avoid the urge to push through fatigue during this tracking period \u2014 rest is part of the process."
+        },
+        {
+          "name": "Basal body temperature tracking",
+          "description": "Taking temperature twice daily (morning and afternoon) over several weeks can document patterns of persistent low-grade fever (37.2\u201337.8\u00b0C / 99\u2013100\u00b0F) that clinicians may not detect in a single office visit.",
+          "safety_notes": "Use a reliable digital thermometer. If temperature consistently exceeds 38\u00b0C (100.4\u00b0F), seek clinical assessment promptly."
+        },
+        {
+          "name": "Orthostatic assessment (DIY tilt test)",
+          "description": "Measuring heart rate lying down, then immediately after standing, and again after 2\u20133 minutes standing can help identify orthostatic intolerance \u2014 common in EBV-associated ME/CFS and dysautonomia. A rise of 30+ bpm in 10 minutes suggests POTS.",
+          "safety_notes": "Stop if feeling faint or very unwell. Have someone present if possible."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "EBV antibody panel (full)",
+          "type": "gold_standard",
+          "description": "Measures VCA IgM, VCA IgG, EA-D IgG, and EBNA IgG. The combination of elevated EA-D IgG with absent or low EBNA IgG is the most clinically discussed pattern for possible reactivation. VCA IgM can appear during reactivation but is less reliable. Must be interpreted in clinical context.",
+          "availability": "Orderable through most primary care or internal medicine practitioners. Private lab testing (e.g. LabCorp, Quest, Medichecks in UK) is available without referral in many regions."
+        },
+        {
+          "name": "EBV DNA quantitative PCR (viral load)",
+          "type": "gold_standard",
+          "description": "Detects actual EBV DNA in peripheral blood. Positive results are strong evidence of active viral replication. Most adults with EBV reactivation symptoms have undetectable viral load by standard PCR, which does not rule out the condition \u2014 it may reflect localised rather than systemic replication.",
+          "availability": "Available at specialist labs and most hospital systems. Often requires an infectious disease or immunology referral for ordering."
+        },
+        {
+          "name": "Complete blood count (CBC) with differential",
+          "type": "standard",
+          "description": "Checks for lymphocytosis, atypical lymphocytes, and mild anaemia \u2014 all seen during EBV reactivation flares. Inexpensive and widely available baseline test.",
+          "availability": "Orderable by any clinician."
+        },
+        {
+          "name": "Liver function tests (LFTs)",
+          "type": "standard",
+          "description": "EBV has hepatic tropism. Elevated ALT and AST \u2014 even mildly so \u2014 during symptomatic periods may support EBV activity. Serial testing across flares increases diagnostic value.",
+          "availability": "Orderable by any clinician."
+        },
+        {
+          "name": "Inflammatory markers (CRP, ESR, ferritin)",
+          "type": "standard",
+          "description": "Elevated ferritin in particular is associated with viral immune activation and haemophagocytic states. CRP and ESR may be mildly elevated during flares. Helps document systemic inflammation.",
+          "availability": "Orderable by any clinician."
+        },
+        {
+          "name": "NK cell count and cytotoxic function",
+          "type": "emerging",
+          "description": "Low NK cell count and/or impaired NK cell cytotoxicity has been documented in both chronic EBV and ME/CFS. Some specialist labs offer functional NK cell assays. Useful for understanding immune context and may help guide treatment decisions.",
+          "availability": "Available at specialist immunology labs. Not standard in most clinical settings \u2014 typically requires a referral to immunology or a knowledgeable functional medicine practitioner."
+        },
+        {
+          "name": "Lymphocyte subset panel (T cell, B cell, NK cell counts)",
+          "type": "standard",
+          "description": "Assesses the balance of CD4/CD8 T cells, B cells, and NK cells. Abnormalities can reflect chronic viral immune engagement. Often overlooked in standard fatigue workups.",
+          "availability": "Available through immunology or specialist referral; some private labs."
+        },
+        {
+          "name": "Heterophile antibody test (Monospot)",
+          "type": "standard",
+          "description": "Useful for diagnosing acute primary EBV infection (mononucleosis). Negative in most adults with chronic EBV or reactivation \u2014 not useful for diagnosing reactivation specifically.",
+          "availability": "Widely available but has limited utility beyond acute primary infection."
+        },
+        {
+          "name": "Abdominal ultrasound",
+          "type": "standard",
+          "description": "Can detect splenomegaly or hepatomegaly during or after acute or reactivation episodes. Important safety check given the risk of splenic rupture with vigorous activity during active EBV illness.",
+          "availability": "Orderable by a GP or specialist. Recommended if abdominal discomfort or left upper quadrant fullness is present."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "me_cfs",
+        "name": "ME/CFS",
+        "relationship": "mechanistic_link",
+        "explanation": "EBV is one of the best-documented triggers of post-infectious ME/CFS, and ongoing EBV reactivation may contribute to the immune dysfunction seen in a subset of ME/CFS patients. The symptom overlap \u2014 post-exertional malaise, unrefreshing sleep, cognitive dysfunction \u2014 is near-complete."
+      },
+      {
+        "id": "long_covid",
+        "name": "Long COVID",
+        "relationship": "comorbid",
+        "explanation": "Multiple studies have found EBV reactivation at higher rates in long COVID patients compared to recovered controls. Whether EBV drives long COVID symptoms or is a bystander reactivated by immune disruption from SARS-CoV-2 remains under investigation."
+      },
+      {
+        "id": "hypothyroidism",
+        "name": "Hashimoto's thyroiditis / Hypothyroidism",
+        "relationship": "mechanistic_link",
+        "explanation": "EBV has been identified as a potential trigger for Hashimoto's thyroiditis via molecular mimicry \u2014 EBV proteins share structural similarities with thyroid antigens, which may confuse the immune system into attacking thyroid tissue. EBV DNA has been found in thyroid tissue of Hashimoto's patients in some studies."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "Fibromyalgia can develop following EBV infection or reactivation episodes. Central sensitisation driven by chronic immune activation may underlie the overlap. The conditions share widespread pain, fatigue, and cognitive symptoms."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
+        "relationship": "mechanistic_link",
+        "explanation": "Viral triggers including EBV can activate or prime mast cells. MCAS and EBV reactivation frequently co-occur in people with complex multisystem illness, and each may amplify the other through shared inflammatory pathways."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / Dysautonomia",
+        "relationship": "downstream",
+        "explanation": "Post-infectious dysautonomia, including POTS, has been documented following EBV infection and reactivation. Autonomic nerve dysfunction may result from immune-mediated nerve damage or autoantibody generation triggered by EBV."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "comorbid",
+        "explanation": "Chronic undiagnosed or undertreated illness drives anxiety in many people, and neuroinflammation from persistent EBV immune activity may directly affect limbic system function. The two conditions frequently co-occur and reinforce each other."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "comorbid",
+        "explanation": "Both the psychological burden of chronic illness and potential direct cytokine-mediated effects on the brain contribute to depression in people with EBV reactivation. Elevated IL-6, IL-1\u03b2, and TNF-\u03b1 \u2014 common in EBV immune activation \u2014 are also implicated in inflammatory depression."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "mechanistic_link",
+        "explanation": "Beyond Hashimoto's, EBV has been linked to broader thyroid immune dysregulation. Thyroid symptoms \u2014 fatigue, weight changes, temperature intolerance \u2014 can mimic EBV reactivation and should always be tested in this population."
+      },
+      {
+        "id": "lyme",
+        "name": "Lyme disease / chronic Lyme",
+        "relationship": "comorbid",
+        "explanation": "EBV reactivation and Lyme disease co-occur in some patients and produce overlapping symptoms. Borrelia infection may compromise immune function sufficiently to allow EBV reactivation, and vice versa. Specialist practitioners in this area often test for both."
+      },
+      {
+        "id": "mold_cirs",
+        "name": "Mold illness / CIRS",
+        "relationship": "comorbid",
+        "explanation": "Biotoxin-related immune dysregulation from mold exposure may impair the immune control of latent viruses including EBV. Both conditions cause fatigue, cognitive dysfunction, and widespread inflammation and are sometimes found together in people with complex multisystem illness."
+      },
+      {
+        "id": "vitamin_d_deficiency",
+        "name": "Vitamin D deficiency",
+        "relationship": "upstream",
+        "explanation": "Vitamin D plays a key role in regulating the immune response to EBV. Deficiency impairs T cell and NK cell function, potentially reducing the immune surveillance that keeps EBV latent. Vitamin D deficiency is common in people with frequent EBV reactivation."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor sleep / insomnia",
+        "relationship": "comorbid",
+        "explanation": "Chronic poor sleep suppresses NK cell activity and T cell function \u2014 two of the primary immune mechanisms controlling EBV latency. Poor sleep is both a symptom and a potential driver of recurrent EBV reactivation."
+      },
+      {
+        "id": "chronic_stress",
+        "name": "Chronic stress / HPA overload",
+        "relationship": "upstream",
+        "explanation": "Psychological and physiological stress suppress cellular immunity through cortisol-mediated mechanisms. Chronic stress is one of the most consistently identified triggers for EBV reactivation in both research and clinical experience."
+      },
+      {
+        "id": "iron_deficiency",
+        "name": "Iron deficiency / anaemia",
+        "relationship": "comorbid",
+        "explanation": "Iron deficiency impairs lymphocyte function and NK cell activity. It can both result from and predispose to EBV reactivation, and is frequently found in people with chronic fatigue of any cause."
+      },
+      {
+        "id": "mitochondrial",
+        "name": "Mitochondrial dysfunction",
+        "relationship": "downstream",
+        "explanation": "EBV proteins have been shown to directly impair mitochondrial function in infected cells. Chronic immune activation from EBV reactivation is energetically costly and may deplete cellular energy reserves, contributing to the characteristic fatigue."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Pacing and energy envelope management",
+          "category": "lifestyle",
+          "description": "Staying within individual energy limits \u2014 avoiding overexertion that triggers post-exertional malaise \u2014 is the most important self-management principle for those with EBV-related fatigue. The energy envelope concept involves identifying daily activity limits and building rest into the day as a non-negotiable, not a concession.",
+          "evidence_level": "moderate",
+          "notes": "Graded exercise therapy (GET) is contraindicated in people with post-exertional malaise \u2014 it consistently worsens this group. Pacing is distinct from rest-only: gentle, carefully graded movement within tolerance may be beneficial when introduced slowly."
+        },
+        {
+          "name": "Sleep optimisation",
+          "category": "lifestyle",
+          "description": "Consistent sleep schedules, darkness, reduced blue light before bed, and addressing any co-occurring sleep disorders (sleep apnea, restless legs) can meaningfully improve sleep quality and, indirectly, immune function. NK cell activity is particularly sensitive to sleep disruption.",
+          "evidence_level": "strong",
+          "notes": "Individuals with EBV-related fatigue often experience hypersomnia (excessive sleep) rather than insomnia. The goal is restorative quality, not simply total duration."
+        },
+        {
+          "name": "Stress reduction and nervous system regulation",
+          "category": "lifestyle",
+          "description": "Chronic psychological stress is a documented trigger for EBV reactivation via cortisol-mediated immunosuppression. Practices that reduce sympathetic nervous system overactivation \u2014 including mindfulness, breathwork, restorative yoga, or nature exposure \u2014 may help reduce reactivation frequency. This is biological, not dismissive.",
+          "evidence_level": "moderate",
+          "notes": "This should not be misread as 'your illness is caused by stress.' Stress management is a biologically rational immune support strategy, not an alternative to medical investigation."
+        },
+        {
+          "name": "Antiviral medications (Valacyclovir / Valganciclovir)",
+          "category": "medication",
+          "description": "Some clinicians with expertise in chronic EBV and ME/CFS use antiviral medications \u2014 particularly valacyclovir or valganciclovir \u2014 for people with documented EBV reactivation. Small clinical trials (including work by Dr Jos\u00e9 Montoya at Stanford) have suggested benefit in a subgroup of ME/CFS patients with elevated EBV antibody titres. These are prescription medications with significant side effect profiles.",
+          "evidence_level": "moderate",
+          "notes": "This approach remains off-label and controversial in mainstream medicine. Requires careful clinical assessment and monitoring. Not appropriate for self-prescription. Finding a practitioner willing to consider this approach may require seeking out specialists in post-viral illness or ME/CFS."
+        },
+        {
+          "name": "Vitamin D optimisation",
+          "category": "supplement",
+          "description": "Vitamin D is essential for T cell and NK cell function \u2014 the primary immune mechanisms controlling EBV latency. Bringing vitamin D levels into optimal range (often considered 50\u201380 ng/mL in functional medicine contexts) may support immune surveillance. Testing before supplementing is recommended.",
+          "evidence_level": "moderate",
+          "notes": "Standard reference ranges for 'sufficient' vitamin D (above 20 ng/mL) may be too low for immune optimisation purposes. Testing 25-OH vitamin D and working with a practitioner to dose appropriately is advisable. High-dose vitamin D without monitoring carries risks including hypercalcaemia."
+        },
+        {
+          "name": "Zinc supplementation",
+          "category": "supplement",
+          "description": "Zinc is required for NK cell activity, T cell maturation, and antiviral immune responses. Deficiency is common and impairs the immune control of latent herpesviruses including EBV. Supplementing to correct deficiency \u2014 not to excess \u2014 may help support immune function.",
+          "evidence_level": "moderate",
+          "notes": "Optimal zinc is around 80\u2013100 mcg/dL on serum zinc testing. Supplementing beyond need is counterproductive. Zinc competes with copper absorption \u2014 long-term supplementation above 15\u201325mg/day should include copper balance monitoring."
+        },
+        {
+          "name": "Lysine supplementation",
+          "category": "supplement",
+          "description": "The amino acid lysine has antiviral properties against herpesviruses and is commonly used by people with recurrent herpes simplex virus (HSV). Some individuals extend this to EBV management based on shared herpesvirus biology. Evidence specific to EBV in humans is limited but the mechanism is plausible.",
+          "evidence_level": "anecdotal",
+          "notes": "Generally well tolerated at 1\u20133g/day. Not a substitute for medical treatment in severe cases. Reducing dietary arginine (found in nuts, chocolate, seeds) alongside lysine is a common complementary strategy based on herpesvirus biology."
+        },
+        {
+          "name": "Anti-inflammatory dietary approach",
+          "category": "diet",
+          "description": "Reducing dietary drivers of systemic inflammation \u2014 processed foods, refined sugars, excess omega-6 oils \u2014 and increasing anti-inflammatory foods (omega-3 fatty acids, polyphenol-rich vegetables, berries) may reduce the inflammatory burden associated with EBV reactivation. A whole-food diet reduces cytokine-driven symptoms in multiple conditions.",
+          "evidence_level": "moderate",
+          "notes": "No specific 'EBV diet' has been validated in clinical trials. Individual responses vary. Those with MCAS or histamine intolerance comorbidity may need to modify further."
+        },
+        {
+          "name": "Monolaurin (glycerol monolaurate)",
+          "category": "supplement",
+          "description": "Monolaurin is a derivative of lauric acid (found in coconut oil) with in vitro antiviral and immunomodulatory properties against enveloped viruses including EBV. It is used in functional and integrative medicine contexts and has a significant anecdotal following among people with chronic herpesvirus conditions.",
+          "evidence_level": "anecdotal",
+          "notes": "Human clinical trial data specifically for EBV are absent. Widely considered safe at standard doses. Should not displace evidence-based approaches but may be reasonable to explore alongside them."
+        },
+        {
+          "name": "Medicinal mushrooms (beta-glucans)",
+          "category": "supplement",
+          "description": "Mushrooms such as reishi (Ganoderma lucidum), lion's mane, and turkey tail contain beta-glucan polysaccharides that have demonstrated immunomodulatory effects \u2014 including NK cell activation \u2014 in research settings. Some people with chronic viral conditions use them as immune support.",
+          "evidence_level": "anecdotal",
+          "notes": "Human data specific to EBV are limited. Some preparations may interact with immunosuppressive medications. Quality and standardisation varies widely across products."
+        },
+        {
+          "name": "Low-dose naltrexone (LDN)",
+          "category": "medication",
+          "description": "At low doses (typically 1.5\u20134.5mg), naltrexone has immunomodulatory effects including upregulation of endogenous opioid receptors and reduction of neuroinflammation and microglial activation. It is used in ME/CFS, fibromyalgia, and some autoimmune conditions, and is increasingly being explored in post-viral contexts including EBV-related illness.",
+          "evidence_level": "moderate",
+          "notes": "Prescription medication. Off-label use. Requires a prescribing clinician who is familiar with LDN \u2014 this is not all practitioners, but the community of willing prescribers is growing. Generally well tolerated. May take several months to assess effect."
+        }
+      ],
+      "things_to_avoid": [
+        "Graded exercise therapy (GET) in people with post-exertional malaise \u2014 systematically worsens this subgroup and can cause sustained setbacks",
+        "Pushing through fatigue ('boom and bust' cycling) \u2014 overexertion followed by crashes perpetuates the cycle and may worsen immune function",
+        "Penicillin-based antibiotics during active EBV infection or reactivation \u2014 can trigger a distinctive full-body rash (not a true allergy, but an EBV-drug interaction); inform treating clinicians of EBV status before antibiotics are prescribed",
+        "High-intensity exercise during symptomatic flares \u2014 aerobic exercise acutely suppresses NK cell activity in the post-exercise window and can trigger immune-mediated crashes in EBV reactivation",
+        "Alcohol \u2014 suppresses NK cell and T cell function, worsens sleep quality, and increases inflammatory burden; particularly counterproductive during flares",
+        "Dismissing the diagnosis after a single normal EBV test \u2014 standard serology is not designed to detect low-level reactivation, and a single negative or 'past infection' result does not rule out active immune disruption from EBV",
+        "Ignoring spleen symptoms \u2014 any left upper quadrant pain, fullness, or tenderness should prompt urgent evaluation; splenic rupture, while rare in chronic presentations, is a medical emergency",
+        "Excess arginine-rich foods during active flares \u2014 arginine supports herpesvirus replication; foods like peanuts, chocolate, and sunflower seeds are particularly high in arginine relative to lysine"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "Most conventional doctors will not recognise or diagnose chronic EBV reactivation as an adult clinical entity \u2014 and many will tell patients their results are 'normal' or that nothing can be done.",
+        "why_resisted": "Patients hope their GP or internist will have answers. Accepting that the mainstream medical system does not have an agreed framework for this condition means accepting that finding help requires seeking outside that system \u2014 which is costly, uncertain, and exhausting when already ill.",
+        "path_forward": "People who navigate this successfully typically find practitioners in integrative, functional medicine, or post-viral illness spaces who are familiar with the pattern. Building a personal medical case file \u2014 documented symptom history, serial labs, known triggers \u2014 becomes the currency for productive specialist consultations."
+      },
+      {
+        "truth": "EBV antibody results are frequently misinterpreted, and a result labelled as 'consistent with past infection' may contain markers of active immune engagement that a knowledgeable clinician would read very differently.",
+        "why_resisted": "Patients trust laboratory reports as definitive. Challenging the interpretation \u2014 and learning to read EBV serology themselves \u2014 feels presumptuous or outside their role.",
+        "path_forward": "Learning the specific meaning of each EBV antibody (VCA IgG, EA-D IgG, EBNA IgG) and how combinations are interpreted by clinicians familiar with reactivation allows patients to have a more informed conversation and to request the right tests rather than accepting a panel that doesn't include early antigen."
+      },
+      {
+        "truth": "Stress \u2014 psychological, physiological, and immunological \u2014 is a genuine biological trigger for EBV reactivation, not a psychosomatic explanation or dismissal of the illness.",
+        "why_resisted": "Decades of patients being told their unexplained symptoms are 'just stress' has made any mention of stress-illness connection feel like gaslighting. But this specific mechanism is biochemically documented, and dismissing it means missing a genuine lever for improvement.",
+        "path_forward": "Distinguishing between 'stress causes your symptoms (implying they are not real)' and 'stress suppresses cellular immunity, which controls EBV latency, through cortisol-mediated mechanisms (a documented biological pathway)' allows patients to use stress regulation as an immune strategy rather than a concession."
+      },
+      {
+        "truth": "Recovery from chronic EBV illness is rarely linear and is measured in months to years, not weeks \u2014 and some people manage rather than fully resolve the condition.",
+        "why_resisted": "Modern medicine and internet wellness narratives suggest that the right protocol produces quick, measurable improvement. Accepting a longer timeline feels like giving up or admitting defeat.",
+        "path_forward": "People who stabilise successfully typically build a personal baseline \u2014 understanding their triggers, their energy envelope, their early warning signs \u2014 and focus on reducing the frequency and severity of flares rather than demanding immediate full recovery. This is a functional, attainable goal that most engaged patients reach."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Identifying and addressing immune suppression drivers",
+          "why_it_matters": "EBV reactivation occurs when immune surveillance breaks down. Finding and addressing what is suppressing immunity \u2014 whether vitamin D deficiency, chronic stress, poor sleep, another infection, or an autoimmune process \u2014 removes the conditions that permit reactivation.",
+          "how_to_start": "Request a comprehensive baseline panel: full EBV serology, CBC with differential, CRP, ferritin, LFTs, vitamin D, zinc, thyroid panel (TSH, free T4, free T3, anti-TPO). Document results over time to identify patterns.",
+          "timeline": "Initial lab results in days to weeks; meaningful immune improvement from addressing deficiencies typically over 2\u20136 months",
+          "requires_professional": true
+        },
+        {
+          "lever": "Strict pacing with post-exertional malaise awareness",
+          "why_it_matters": "For those with PEM, overexertion produces an immune cascade \u2014 including spike in inflammatory cytokines \u2014 that can sustain or worsen EBV reactivation. Consistent pacing prevents the immune crashes that extend illness.",
+          "how_to_start": "Use a wearable heart rate monitor to keep aerobic activity below the anaerobic threshold (roughly 60% of age-predicted max heart rate for most people, or where speaking becomes effortful). Begin activity tracking to establish personal limits before gradually exploring extension.",
+          "timeline": "Most people notice reduced crash frequency within 4\u20138 weeks of consistent pacing",
+          "requires_professional": false
+        },
+        {
+          "lever": "Optimising sleep architecture",
+          "why_it_matters": "NK cell cytotoxic activity \u2014 the primary immune mechanism keeping EBV latent \u2014 peaks during slow-wave sleep. Consistent, restorative sleep is among the highest-yield immune interventions available.",
+          "how_to_start": "Set a consistent sleep and wake time seven days a week. Eliminate artificial light after sunset (use blue-light blocking glasses or amber lighting). If non-restorative sleep persists despite good sleep hygiene, investigate sleep apnea.",
+          "timeline": "Sleep quality often improves within 2\u20134 weeks of consistent scheduling; immune effects accumulate over months",
+          "requires_professional": false
+        },
+        {
+          "lever": "Finding a knowledgeable clinician",
+          "why_it_matters": "Without a practitioner who understands the EBV reactivation pattern, it is difficult to obtain the right tests, interpret results accurately, or access prescription antivirals or LDN if indicated. Self-management has limits.",
+          "how_to_start": "Search for functional medicine practitioners with post-viral illness or ME/CFS experience. Organisations like the Institute for Functional Medicine (IFM) have practitioner directories. Patient communities (Phoenix Rising, Bateman Horne Center resources) often maintain informal lists of knowledgeable clinicians.",
+          "timeline": "Finding the right practitioner can take weeks to months given current specialist availability",
+          "requires_professional": true
+        },
+        {
+          "lever": "Nutrient repletion (Vitamin D, Zinc, B12)",
+          "why_it_matters": "Deficiencies in these nutrients impair the specific immune pathways \u2014 NK cells, T cells, interferon signalling \u2014 that control EBV. Correcting deficiencies removes a modifiable brake on immune function.",
+          "how_to_start": "Test before supplementing. Work with a practitioner to establish targets and appropriate dosing. Vitamin D, zinc, and B12 can be tested by any GP or through private labs.",
+          "timeline": "Deficiency correction typically takes 3\u20136 months to meaningfully shift immune function markers",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Treating every EBV test result as either 'active infection' or 'past infection' with nothing in between \u2014 the reactivation pattern requires knowledge of the full antibody constellation, not just VCA IgG",
+        "Starting aggressive exercise programmes during remission phases \u2014 overexertion is a known EBV reactivation trigger and can undo months of stability",
+        "Supplementing broadly without testing \u2014 high-dose vitamin D, zinc, or other immune-active nutrients can cause harm if levels are already normal or high",
+        "Abandoning investigation after one negative PCR or one 'normal' antibody result \u2014 EBV reactivation is often subclinical with normal viral load but abnormal immune dynamics detectable with the right panel and clinician interpretation",
+        "Focusing exclusively on antivirals while ignoring immune environment \u2014 antivirals address viral replication but do not fix the underlying immune suppression that permits reactivation to occur",
+        "Expecting recovery to be linear \u2014 many people experience periods of significant improvement followed by relapses, particularly after stress, infection, or overexertion; interpreting each relapse as total failure leads to abandoning effective strategies",
+        "Isolating from social connection to conserve energy \u2014 social connection has documented immune-modulatory effects; total withdrawal may worsen immune function over time despite reducing immediate physical demands"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Functional medicine doctor",
+          "role": "Most likely to investigate EBV reactivation systematically, order the full antibody panel including early antigen, assess immune context, and consider treatments such as antivirals, LDN, or nutrient repletion protocols.",
+          "notes": "Quality varies significantly \u2014 seek practitioners with specific post-viral illness or ME/CFS experience. IFM-certified practitioners are a reasonable starting point. Be prepared for out-of-pocket costs as this area sits largely outside standard insurance-covered care."
+        },
+        {
+          "type": "Infectious disease specialist",
+          "role": "Can diagnose and rule out severe CAEBV, order viral load PCR, and manage acute or severe reactivation episodes. May be less engaged with chronic low-level presentations.",
+          "notes": "Mainstream infectious disease specialists may not recognise adult chronic EBV reactivation as a clinical entity outside the severe CAEBV definition. Those affiliated with academic medical centres or post-viral research programs are more likely to take a nuanced approach."
+        },
+        {
+          "type": "Clinical immunologist",
+          "role": "Can assess NK cell counts and function, lymphocyte subsets, and other immune parameters that contextualise EBV reactivation. Useful if there is concern about underlying immune deficiency driving recurrent reactivation.",
+          "notes": "Particularly valuable if multiple infections or opportunistic infections co-occur, suggesting a primary immune deficiency rather than stress-induced immune suppression."
+        },
+        {
+          "type": "ME/CFS specialist",
+          "role": "Many ME/CFS specialists are familiar with EBV as a trigger and driver, and are experienced in post-exertional malaise management, pacing, and the full spectrum of post-viral immune dysfunction.",
+          "notes": "Specialist ME/CFS centres (e.g. Bateman Horne Center in the US, forward-thinking NHS fatigue services in the UK) offer the most evidence-aligned care for the post-viral fatigue pattern. Waiting lists can be long."
+        },
+        {
+          "type": "Integrative or naturopathic doctor with viral illness experience",
+          "role": "May offer comprehensive supplement and lifestyle protocols, order relevant functional labs, and provide nutritional and immune support strategies while patients navigate the mainstream medical system.",
+          "notes": "Quality and evidence-alignment varies widely. Look for practitioners who work collaboratively with medical doctors and who do not make implausible cure claims."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "Phoenix Rising ME/CFS Forums",
+          "platform": "Forum",
+          "url": "https://phoenixrising.me",
+          "notes": "One of the most comprehensive and scientifically literate patient communities for post-viral illness. EBV reactivation is extensively discussed. Members often share lab results, research papers, and clinician experiences. Useful for evidence-gathering and finding practitioner recommendations."
+        },
+        {
+          "name": "r/cfs (ME/CFS subreddit)",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/cfs/",
+          "notes": "Active community with significant EBV reactivation discussion, given the overlap with ME/CFS. Good for real-world treatment experiences and navigating medical systems."
+        },
+        {
+          "name": "Chronic EBV / Epstein-Barr Virus Support Group",
+          "platform": "Facebook",
+          "url": null,
+          "notes": "Multiple Facebook groups exist for chronic EBV \u2014 search 'Epstein-Barr virus support' or 'chronic EBV'. Useful for peer connection and sharing clinical experiences, though evidence quality varies and should be cross-referenced with research."
+        },
+        {
+          "name": "Long COVID groups (with EBV reactivation focus)",
+          "platform": "Reddit / Facebook",
+          "url": "https://www.reddit.com/r/covidlonghaulers/",
+          "notes": "Given the documented overlap between long COVID and EBV reactivation, long COVID communities are increasingly discussing EBV. r/covidlonghaulers is particularly active and has a strong research-sharing culture."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Epstein-Barr Virus and Multiple Sclerosis (Science, 2022)",
+        "type": "research paper",
+        "author_or_source": "Bjornevik et al., Science",
+        "url": "https://www.science.org/doi/10.1126/science.abj8222",
+        "description": "Landmark study demonstrating a 32-fold increased risk of MS following EBV infection, providing the strongest human evidence to date that EBV is a causal driver of a major autoimmune disease. Helps people understand the biological plausibility of EBV as a disease driver, not just a coincidental finding.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "EBV Reactivation in Long COVID (Pathogens, 2021)",
+        "type": "research paper",
+        "author_or_source": "Gold et al., Pathogens",
+        "url": "https://www.mdpi.com/2076-0817/10/6/763",
+        "description": "Documented EBV reactivation in 66% of a long COVID cohort. One of the most-cited papers by patients and practitioners in understanding the EBV-long COVID connection. Useful for bringing evidence to clinical appointments.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Bateman Horne Center \u2014 ME/CFS & Post-Viral Education",
+        "type": "website",
+        "author_or_source": "Bateman Horne Center",
+        "url": "https://www.batemanhornecenter.org",
+        "description": "One of the most clinically rigorous patient-facing resources on ME/CFS and post-viral illness, run by specialists who take EBV seriously. Includes diagnostic resources, treatment information, and guidance on pacing. Highly recommended for newly diagnosed or investigative patients.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Epstein-Barr Virus Factsheet \u2014 Patient Information",
+        "type": "website",
+        "author_or_source": "UK National Health Service (NHS)",
+        "url": "https://www.nhs.uk/conditions/glandular-fever/",
+        "description": "Good starting point for understanding primary EBV infection (glandular fever), though it does not address chronic reactivation in depth. Useful baseline reference for those new to EBV.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Herpesvirus Reactivation and the Immune System \u2014 Review",
+        "type": "research paper",
+        "author_or_source": "Fuentes-Gonzalez et al., multiple publishers",
+        "url": null,
+        "description": "Searching PubMed for 'EBV reactivation immune dysfunction' or 'Epstein-Barr virus chronic fatigue' yields several review articles suitable for those wanting the mechanistic detail behind how EBV interacts with the immune system over decades. Key terms: NK cell, CD8 T cell, viral latency, lytic reactivation.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Montoya & Kogelnik \u2014 Valacyclovir in ME/CFS with EBV",
+        "type": "research paper",
+        "author_or_source": "Montoya JG et al., Journal of Medical Virology, 2006",
+        "url": null,
+        "description": "One of the earliest and most influential studies supporting antiviral treatment in ME/CFS patients with high EBV antibody titres. Frequently cited by patients researching whether antiviral medication is appropriate for their case. Provides useful context for conversations with clinicians about this treatment option.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Why Can't I Get Better? Solving the Mystery of Lyme and Chronic Disease",
+        "type": "book",
+        "author_or_source": "Dr Richard Horowitz",
+        "url": null,
+        "description": "Focuses on Lyme disease but extensively addresses co-infections and chronic viral reactivation including EBV in the context of complex multisystem illness. Useful for understanding how EBV fits into a broader picture of chronic immune dysfunction, particularly for those investigating multiple potential drivers simultaneously.",
+        "audience": "intermediate"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

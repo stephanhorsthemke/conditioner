@@ -1,0 +1,681 @@
+{
+  "condition_id": "leaky_gut",
+  "condition_name": "Leaky gut",
+  "generated_at": "2026-05-09T11:57:26.311596Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Leaky gut, or intestinal permeability, refers to a state in which the lining of the small intestine becomes more permeable than normal, allowing substances such as partially digested food particles, bacterial fragments, and toxins to pass into the bloodstream more easily than they should. This can trigger immune responses and low-grade inflammation throughout the body. The concept is well-supported by basic science research, though it remains an area of active debate in mainstream gastroenterology regarding its role as a primary driver of symptoms versus a secondary effect of other conditions.",
+    "detailed_summary": "The intestinal lining is a single layer of epithelial cells joined together by structures called tight junctions. These junctions act as gatekeepers, controlling what passes from the gut into the bloodstream. When tight junctions become disrupted \u2014 by factors such as chronic stress, certain medications, alcohol, dysbiosis, infections, or inflammatory dietary patterns \u2014 the barrier becomes more permeable. This state is measurable and is referred to clinically as intestinal hyperpermeability.\n\nWhen the barrier is compromised, molecules that would normally be excluded \u2014 including lipopolysaccharides (LPS) from bacterial cell walls, undigested food antigens, and microbial metabolites \u2014 can translocate into portal circulation and systemic tissue. The immune system responds to these as foreign invaders, generating inflammatory cytokines and, in some individuals, cross-reactive antibodies that may target the body's own tissues.\n\nLeaky gut is rarely a standalone diagnosis. It tends to occur alongside or as a consequence of other conditions \u2014 including SIBO, gut dysbiosis, coeliac disease, IBD, and chronic stress states \u2014 and may in turn contribute to conditions such as food sensitivities, histamine intolerance, mast cell activation, and systemic inflammatory symptoms.\n\nMainstream gastroenterology has historically been cautious about leaky gut as a clinical entity, in part because the term has been widely used in wellness circles with overclaiming around cures. However, a robust body of peer-reviewed research on intestinal permeability does exist, and measuring tight junction proteins and permeability markers is an established area of scientific inquiry. The challenge is that increased intestinal permeability is a mechanism, not a diagnosis \u2014 it sits within a wider picture that requires investigation to understand.",
+    "prevalence": {
+      "summary": "Increased intestinal permeability is thought to be common, particularly among people with chronic digestive, inflammatory, or autoimmune conditions, but population-wide prevalence figures are not established.",
+      "estimate": "No reliable population estimate; studies suggest elevated permeability markers in 30\u201360% of people with IBS, and near-universally in active IBD and coeliac disease",
+      "notes": "Prevalence is difficult to establish because there is no single agreed clinical definition or diagnostic threshold. It likely exists on a spectrum rather than as a binary state. It appears more common in people with chronic gut conditions, autoimmune disease, high psychological stress loads, heavy alcohol use, and regular NSAID use. Some degree of transient increased permeability may be universal in response to acute stressors."
+    },
+    "subgroups": [
+      {
+        "name": "Post-infectious intestinal hyperpermeability",
+        "description": "People whose gut barrier was disrupted by a gastrointestinal infection (bacterial, viral, or parasitic) and in whom permeability has not normalised after the acute illness resolved.",
+        "distinguishing_features": [
+          "Clear onset following a gut infection or gastroenteritis episode",
+          "May overlap with post-infectious IBS",
+          "Symptoms often begin acutely and persist for months to years",
+          "Food sensitivities may develop or worsen following infection"
+        ]
+      },
+      {
+        "name": "Dysbiosis-driven permeability",
+        "description": "Individuals in whom bacterial imbalance \u2014 including SIBO or reduced diversity in the colon \u2014 is the primary driver of barrier disruption, often through altered short-chain fatty acid production and increased LPS exposure.",
+        "distinguishing_features": [
+          "Concurrent bloating, gas, and altered stool patterns consistent with SIBO or dysbiosis",
+          "Symptoms often worsen with fermentable carbohydrates",
+          "Breath testing or stool analysis may identify the microbial driver",
+          "Permeability symptoms may improve when underlying dysbiosis is treated"
+        ]
+      },
+      {
+        "name": "Medication and NSAID-induced permeability",
+        "description": "People in whom regular use of non-steroidal anti-inflammatory drugs, proton pump inhibitors, or antibiotics has compromised the mucosal barrier.",
+        "distinguishing_features": [
+          "Strong temporal association between medication use and symptom onset",
+          "NSAIDs directly disrupt prostaglandin-mediated mucosal defence",
+          "PPIs may alter microbiome composition and increase permeability indirectly",
+          "Improvement may follow medication reduction or cessation"
+        ]
+      },
+      {
+        "name": "Stress and HPA-axis dysregulation subgroup",
+        "description": "Individuals in whom chronic psychological stress, trauma, or HPA-axis dysregulation is a primary driver of gut barrier compromise, via corticotropin-releasing hormone (CRH) acting on mast cells and tight junctions.",
+        "distinguishing_features": [
+          "Symptoms closely track stress load \u2014 flares during high-stress periods",
+          "Often co-occurs with central sensitisation, anxiety, or PTSD",
+          "Gut symptoms may be accompanied by fatigue, brain fog, and immune dysregulation",
+          "Nervous system interventions (e.g. vagus nerve support, trauma therapy) may have outsized effect"
+        ]
+      },
+      {
+        "name": "Autoimmune and inflammatory disease-associated permeability",
+        "description": "Individuals with established autoimmune or inflammatory conditions (coeliac disease, IBD, rheumatoid arthritis, Hashimoto's thyroiditis) in whom intestinal permeability is both a feature of the condition and a potential driver of disease activity.",
+        "distinguishing_features": [
+          "Permeability is measurably elevated during disease flares",
+          "Managing gut barrier may help reduce systemic inflammatory burden",
+          "Requires working alongside the specialist managing the primary condition",
+          "Zonulin and anti-endotoxin antibodies may be elevated on testing"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Bloating and abdominal distension",
+        "category": "digestive",
+        "notes": "Often worse after meals; may be driven by co-occurring dysbiosis or SIBO rather than permeability directly"
+      },
+      {
+        "symptom": "Food sensitivities that are broad or increasing over time",
+        "category": "digestive / immune",
+        "notes": "When the barrier is compromised, food antigens can elicit immune responses; people often report developing new sensitivities progressively"
+      },
+      {
+        "symptom": "Chronic diarrhoea or loose stools",
+        "category": "digestive",
+        "notes": "May alternate with constipation; often overlaps with IBS symptom pattern"
+      },
+      {
+        "symptom": "Constipation or sluggish bowel motility",
+        "category": "digestive",
+        "notes": "Less common than diarrhoea in this context but can occur, particularly when methane-producing organisms are co-present"
+      },
+      {
+        "symptom": "Abdominal cramping and pain",
+        "category": "digestive",
+        "notes": "Can be diffuse and unpredictable; may reflect immune activation in the gut wall"
+      },
+      {
+        "symptom": "Brain fog and difficulty concentrating",
+        "category": "neurological",
+        "notes": "Thought to involve LPS-mediated neuroinflammation and cytokine effects on the brain; often described as a primary complaint"
+      },
+      {
+        "symptom": "Fatigue and low energy",
+        "category": "systemic",
+        "notes": "Chronic immune activation and nutrient malabsorption can both contribute; often disproportionate to digestive symptoms"
+      },
+      {
+        "symptom": "Joint pain and stiffness",
+        "category": "musculoskeletal",
+        "notes": "Immune complexes and circulating LPS may contribute to systemic inflammatory joint symptoms"
+      },
+      {
+        "symptom": "Skin rashes, acne, or eczema",
+        "category": "skin",
+        "notes": "Gut-skin axis: immune activation originating in the gut may manifest on the skin; often cyclical with gut flares"
+      },
+      {
+        "symptom": "Headaches and migraines",
+        "category": "neurological",
+        "notes": "May relate to systemic inflammatory load; some individuals notice headaches cluster with gut symptom flares"
+      },
+      {
+        "symptom": "Mood disturbance \u2014 anxiety or low mood",
+        "category": "psychological",
+        "notes": "Gut-brain axis: inflammatory cytokines affect neurotransmitter production; bidirectional with psychological stress driving permeability"
+      },
+      {
+        "symptom": "Nutrient deficiencies despite adequate dietary intake",
+        "category": "systemic",
+        "notes": "Mucosal damage can impair absorption of zinc, iron, B vitamins, magnesium, and fat-soluble vitamins"
+      },
+      {
+        "symptom": "Recurrent or persistent infections",
+        "category": "immune",
+        "notes": "Chronic immune activation may paradoxically impair immune competence; some individuals report frequent colds or slow recovery"
+      },
+      {
+        "symptom": "Histamine-type reactions (flushing, itching, hives)",
+        "category": "immune / skin",
+        "notes": "Increased gut permeability may allow more dietary histamine to be absorbed, or co-occurring mast cell activation may be involved"
+      },
+      {
+        "symptom": "Sensitivity to alcohol",
+        "category": "systemic",
+        "notes": "Alcohol itself increases permeability; people with a compromised barrier often report heightened reactions to small amounts"
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Broad and increasing food sensitivities alongside digestive symptoms \u2014 particularly when reactions occur to foods that were previously well tolerated",
+        "Systemic symptoms (brain fog, fatigue, joint pain, skin issues) co-occurring with gut symptoms, suggesting translocation of inflammatory molecules",
+        "Elevated zonulin on stool testing, particularly in the context of known triggers such as SIBO, dysbiosis, or gluten exposure in sensitive individuals",
+        "Elevated serum LPS-binding protein or anti-endotoxin core antibodies, indicating bacterial translocation",
+        "Elevated lactulose-to-mannitol ratio on urinary permeability testing",
+        "Low or declining nutrient levels (zinc, iron, vitamin D, B12, magnesium) not explained by dietary insufficiency",
+        "Elevated calprotectin or markers of gut inflammation alongside systemic symptoms"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom and food diary",
+          "description": "Keeping a detailed record of foods eaten, symptom timing, severity, and any associated factors (stress, sleep, alcohol). Looking for patterns across 2\u20134 weeks: widening food reactivity, post-meal systemic symptoms (brain fog, fatigue, joint ache within 1\u20133 hours of eating), and consistency of reactions.",
+          "safety_notes": "No physical risk. Avoid over-restriction based on diary findings alone without clinical guidance \u2014 extreme elimination diets can cause nutritional harm."
+        },
+        {
+          "name": "Alcohol and NSAID elimination trial",
+          "description": "Removing alcohol and non-prescription NSAIDs (ibuprofen, aspirin) for 4\u20136 weeks, as both directly increase intestinal permeability. Tracking whether digestive and systemic symptoms improve.",
+          "safety_notes": "People taking NSAIDs for chronic pain management should discuss alternatives with a clinician before stopping. Alcohol cessation is safe for most people; seek medical support if heavy dependence is present."
+        },
+        {
+          "name": "Gluten elimination trial",
+          "description": "Removing all dietary gluten for 4\u20136 weeks while monitoring symptoms. Gliadin (a component of gluten) is known to stimulate zonulin release and increase tight junction permeability in many individuals, not only those with coeliac disease. Note: coeliac disease should ideally be tested for before going gluten-free, as elimination interferes with test accuracy.",
+          "safety_notes": "Rule out coeliac disease with serology and biopsy before eliminating gluten if possible. A gluten-free diet is safe for most people but should not be nutritionally restrictive \u2014 whole food alternatives are preferable to ultra-processed gluten-free substitutes."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Lactulose-mannitol urinary permeability test",
+          "type": "gold_standard",
+          "description": "The person drinks a solution containing two non-metabolised sugars \u2014 lactulose (large molecule) and mannitol (small molecule). Urine is collected over 5\u20136 hours. In a healthy gut, mannitol is readily absorbed but lactulose is not. An elevated lactulose-to-mannitol ratio indicates paracellular permeability \u2014 meaning gaps between epithelial cells are larger than they should be. This is the most established research-grade measure of intestinal permeability.",
+          "availability": "Ordered through functional medicine practitioners, integrative doctors, or specialist gastroenterologists with an interest in permeability. Not routinely available through standard NHS or public healthcare pathways. Available through several private laboratory services."
+        },
+        {
+          "name": "Stool zonulin testing",
+          "type": "emerging",
+          "description": "Zonulin is a protein that regulates tight junction opening. Elevated stool zonulin is used as a proxy marker for intestinal barrier disruption. Offered by specialist gut testing laboratories including Diagnostic Solutions (GI-MAP) and Genova Diagnostics. Note: the clinical specificity and standardisation of zonulin assays is still debated in the scientific literature; results should be interpreted in context rather than in isolation.",
+          "availability": "Available through private functional medicine practitioners and directly from specialist stool testing laboratories in the UK, US, and Australia. Not available on standard NHS testing panels."
+        },
+        {
+          "name": "Serum LPS-binding protein (LBP) and anti-endotoxin antibodies",
+          "type": "emerging",
+          "description": "LBP is an acute-phase protein that rises when lipopolysaccharide (a component of gram-negative bacterial cell walls) enters the bloodstream \u2014 a sign of bacterial translocation through the gut wall. Anti-endotoxin core antibodies (EndoCAb) may also be measured. These markers provide evidence of microbial permeation rather than physical permeability per se.",
+          "availability": "Available through some private laboratories and integrative medicine clinics. Research-grade assays may not be widely standardised for clinical use. Some functional medicine panels include these markers."
+        },
+        {
+          "name": "Comprehensive stool microbiome analysis",
+          "type": "standard",
+          "description": "PCR-based stool analysis (e.g. GI-MAP, Genova GI Effects, Diagnostic Solutions) looks at bacterial composition, overgrowth patterns, inflammation markers (calprotectin, secretory IgA), digestive markers (elastase, fat), and some permeability proxies. While not a direct permeability test, dysbiosis and inflammatory patterns are closely linked to barrier dysfunction.",
+          "availability": "Widely available privately. Some markers (calprotectin, H. pylori) are accessible through NHS. Full PCR-based microbiome panels are private-only."
+        },
+        {
+          "name": "SIBO breath testing",
+          "type": "standard",
+          "description": "Hydrogen and methane breath tests assess for small intestinal bacterial overgrowth, which is one of the most common and treatable drivers of intestinal permeability. Lactulose or glucose is used as the substrate. Performed at home or in clinic.",
+          "availability": "Available through gastroenterologists, some GPs, and privately. At-home kits available from several providers. Interpretation requires clinical context."
+        },
+        {
+          "name": "Coeliac serology and small bowel biopsy",
+          "type": "gold_standard",
+          "description": "Tests for coeliac disease \u2014 a condition in which gluten triggers severe intestinal permeability and villous atrophy. Serology (tissue transglutaminase IgA, EMA IgA) with confirmatory duodenal biopsy is essential before any gluten-free diet is started. Must be performed while the individual is consuming gluten.",
+          "availability": "Available through NHS and public healthcare systems worldwide. Should be a first-line investigation when gluten sensitivity is suspected."
+        },
+        {
+          "name": "Serum nutrient panel",
+          "type": "standard",
+          "description": "Assessment of zinc, ferritin, vitamin B12, folate, vitamin D, and magnesium. Deficiencies \u2014 particularly zinc \u2014 are both a consequence and a driver of barrier dysfunction. Zinc is essential for tight junction integrity.",
+          "availability": "Most markers available through NHS GP; full micronutrient panels available privately."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "upstream",
+        "explanation": "SIBO is one of the most common drivers of intestinal permeability. Bacterial overgrowth in the small intestine increases LPS exposure, disrupts mucosal immunity, alters tight junction signalling, and depletes protective secretory IgA. Treating SIBO often improves permeability markers."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "mechanistic_link",
+        "explanation": "An imbalanced gut microbiome \u2014 with reduced diversity, depleted butyrate-producing species, and overgrowth of gram-negative bacteria \u2014 directly compromises barrier function. Butyrate produced by healthy colonic bacteria is the primary fuel for colonocytes and plays a key role in maintaining tight junction integrity."
+      },
+      {
+        "id": "ibs",
+        "name": "IBS",
+        "relationship": "comorbid",
+        "explanation": "Intestinal permeability is elevated in a significant proportion of IBS patients, particularly the diarrhoea-predominant subtype. The relationship is bidirectional: IBS drivers (stress, dysbiosis, post-infection changes) can increase permeability, and permeability may amplify visceral hypersensitivity."
+      },
+      {
+        "id": "coeliac",
+        "name": "Coeliac disease",
+        "relationship": "mechanistic_link",
+        "explanation": "Coeliac disease is a paradigmatic example of immune-mediated intestinal hyperpermeability. Gliadin activates zonulin, opening tight junctions, and immune destruction of villi severely disrupts the barrier. Leaky gut in this context is both a mechanism and a consequence of ongoing gluten exposure."
+      },
+      {
+        "id": "ibd_remission",
+        "name": "IBD in remission",
+        "relationship": "mechanistic_link",
+        "explanation": "Intestinal permeability is elevated during active IBD and may remain elevated in remission, potentially predicting relapse. Barrier restoration is an emerging therapeutic target in Crohn's disease and ulcerative colitis management."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome",
+        "relationship": "comorbid",
+        "explanation": "Mast cells in the gut wall are activated by LPS and food antigens that breach the barrier. In turn, mast cell mediators (histamine, tryptase, CRH) directly increase epithelial permeability, creating a self-reinforcing loop. MCAS and leaky gut frequently co-occur and amplify each other."
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "downstream",
+        "explanation": "A compromised gut barrier allows dietary histamine to be absorbed in larger quantities while also permitting bacterial metabolites to enter the bloodstream. Reduced production of diamine oxidase (DAO), the enzyme that breaks down histamine in the gut, is associated with mucosal damage from permeability."
+      },
+      {
+        "id": "ncgs",
+        "name": "Non-coeliac gluten sensitivity",
+        "relationship": "mechanistic_link",
+        "explanation": "Gliadin peptides stimulate zonulin release and tight junction disruption even in people without coeliac disease. Leaky gut may be the mechanism underlying many NCGS symptoms, allowing immune activation by gluten fragments without the autoimmune villous destruction seen in coeliac disease."
+      },
+      {
+        "id": "igg",
+        "name": "IgG food sensitivities",
+        "relationship": "downstream",
+        "explanation": "When food antigens cross a compromised barrier, the immune system may generate IgG antibodies against them. IgG food sensitivity panels often show multiple reactions across otherwise unrelated foods, which can be a sign of barrier dysfunction rather than true individual food intolerances."
+      },
+      {
+        "id": "fungal",
+        "name": "Fungal overgrowth / Candida overgrowth",
+        "relationship": "upstream",
+        "explanation": "Candida and other fungal organisms can physically penetrate the intestinal lining in their hyphal form, directly damaging the epithelial layer and increasing permeability. Dysbiosis that favours fungal overgrowth may therefore drive barrier dysfunction."
+      },
+      {
+        "id": "parasite",
+        "name": "Parasitic infection",
+        "relationship": "upstream",
+        "explanation": "Parasites such as Giardia lamblia directly disrupt tight junctions and intestinal architecture, causing acute and potentially persistent increases in permeability. Post-parasitic intestinal hyperpermeability can outlast the infection itself."
+      },
+      {
+        "id": "hpylori",
+        "name": "H. pylori infection",
+        "relationship": "upstream",
+        "explanation": "H. pylori disrupts gastric mucosal integrity and alters the immune environment of the gut. Chronic infection may increase permeability through altered gastric acid production and downstream effects on small intestinal flora and mucosal immunity."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "mechanistic_link",
+        "explanation": "Corticotropin-releasing hormone (CRH) released during chronic stress and anxiety directly activates mast cells in the gut and increases tight junction permeability. The relationship is bidirectional: LPS translocation through a leaky gut promotes neuroinflammation and anxiety-like states."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "mechanistic_link",
+        "explanation": "Systemic inflammation driven by LPS translocation and cytokine release has been implicated in the pathophysiology of depression. Elevated LPS-binding protein has been found in some studies of depressed individuals, and gut barrier restoration is an area of research interest in the context of inflammatory depression."
+      },
+      {
+        "id": "atopic_dermatitis",
+        "name": "Atopic dermatitis",
+        "relationship": "comorbid",
+        "explanation": "The gut-skin axis is well established. Intestinal permeability allows food antigens and microbial products to reach the immune system, potentially triggering or worsening atopic skin conditions. Skin barrier dysfunction and gut barrier dysfunction may share mechanistic drivers."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "comorbid",
+        "explanation": "Autoimmune thyroid conditions (Hashimoto's thyroiditis, Graves' disease) are associated with increased intestinal permeability. Whether leaky gut drives autoimmunity or vice versa is debated, but restoring gut barrier integrity is increasingly discussed in the integrative management of autoimmune thyroid disease."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "Elevated markers of intestinal permeability have been found in some fibromyalgia cohorts. Shared mechanisms may include mast cell activation, central sensitisation driven by systemic inflammation, and the gut-brain axis."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation",
+        "relationship": "comorbid",
+        "explanation": "Chronic systemic inflammation originating in part from gut barrier dysfunction may contribute to central sensitisation \u2014 a state of amplified pain processing. LPS-driven neuroinflammation is one proposed mechanism linking leaky gut to widespread pain and sensory amplification."
+      },
+      {
+        "id": "oxalate",
+        "name": "Oxalate accumulation",
+        "relationship": "mechanistic_link",
+        "explanation": "A damaged gut lining may absorb significantly more dietary oxalate than a healthy one. Gut permeability is a recognised factor in hyperoxaluria, which can contribute to kidney stones and systemic oxalate-related symptoms."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / HSD",
+        "relationship": "comorbid",
+        "explanation": "People with hypermobile Ehlers-Danlos syndrome frequently report gastrointestinal symptoms, and altered gut motility and connective tissue vulnerability throughout the GI tract may contribute to barrier dysfunction. MCAS, which commonly overlaps with hEDS, also drives permeability."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "Some researchers have proposed that LPS translocation from a leaky gut may contribute to the systemic immune activation and mast cell involvement seen in a subset of POTS patients. The overlap between POTS, MCAS, hEDS, and gut permeability is an active area of investigation."
+      },
+      {
+        "id": "endometriosis",
+        "name": "Endometriosis",
+        "relationship": "comorbid",
+        "explanation": "Emerging research suggests that altered gut microbiome and intestinal permeability may influence the oestrogen levels and systemic inflammation relevant to endometriosis. Women with endometriosis show higher rates of gut symptoms and dysbiosis."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Gluten reduction or elimination",
+          "category": "diet",
+          "description": "Gliadin (a wheat protein) is the most studied dietary trigger for zonulin-mediated tight junction disruption. Reducing or removing gluten may help reduce permeability-driven symptoms in individuals who are gluten-sensitive, even without coeliac disease. The benefit appears most pronounced in people with NCGS, autoimmune conditions, and those with documented permeability.",
+          "evidence_level": "moderate",
+          "notes": "Coeliac disease should be excluded before starting a strict gluten-free diet. Not all people with leaky gut respond to gluten removal \u2014 dysbiosis and other drivers may be dominant in some individuals. Avoid replacing gluten-containing wholegrains with highly processed gluten-free substitutes."
+        },
+        {
+          "name": "Removal of alcohol",
+          "category": "diet / lifestyle",
+          "description": "Alcohol directly disrupts tight junctions, reduces protective mucus production, and alters the gut microbiome in ways that increase permeability. Even moderate alcohol consumption has measurable effects on intestinal barrier function. Removing alcohol is one of the most impactful single interventions for gut barrier restoration.",
+          "evidence_level": "strong",
+          "notes": "Effects may be noticeable within weeks of abstinence. For people with heavy alcohol dependence, medically supervised reduction is important."
+        },
+        {
+          "name": "NSAID reduction",
+          "category": "medication",
+          "description": "Non-steroidal anti-inflammatory drugs (ibuprofen, naproxen, aspirin) directly suppress prostaglandin production, which is essential for mucosal defence and repair. Regular NSAID use is one of the most reliably documented causes of intestinal permeability. Where clinically possible, reducing or replacing NSAIDs with alternatives may allow mucosal repair.",
+          "evidence_level": "strong",
+          "notes": "Do not stop prescribed NSAIDs without discussing with the prescribing clinician. If pain management is the reason for NSAID use, a clinician can help identify alternatives."
+        },
+        {
+          "name": "L-glutamine supplementation",
+          "category": "supplement",
+          "description": "L-glutamine is the primary fuel for enterocytes (the cells lining the intestine) and plays a direct role in maintaining tight junction integrity. Supplementation at doses typically ranging from 5\u201315 g/day has been studied in intestinal permeability, post-chemotherapy gut damage, and critical illness. Some studies show meaningful improvement in permeability markers.",
+          "evidence_level": "moderate",
+          "notes": "Well-tolerated by most people. People with certain conditions (seizure disorders, some cancers) should consult a clinician before use. Quality of evidence varies; most robust data comes from clinical rather than functional medicine settings."
+        },
+        {
+          "name": "Zinc supplementation",
+          "category": "supplement",
+          "description": "Zinc is directly required for tight junction protein synthesis and epithelial repair. Zinc deficiency \u2014 common in people with gut malabsorption \u2014 worsens permeability, and repleting zinc has been shown to restore tight junction integrity in clinical studies. Zinc carnosine is a form with specific mucosal-protective evidence.",
+          "evidence_level": "moderate",
+          "notes": "Excess zinc supplementation can interfere with copper absorption. Testing serum zinc or red blood cell zinc before supplementing is advisable. Zinc carnosine (typically 75 mg twice daily) has the strongest specific evidence for mucosal repair."
+        },
+        {
+          "name": "Butyrate support (dietary or supplemental)",
+          "category": "supplement / diet",
+          "description": "Butyrate is a short-chain fatty acid produced when gut bacteria ferment dietary fibre. It is the primary fuel for colonocytes and a key regulator of tight junction proteins, mucus production, and mucosal immune tolerance. Supporting butyrate through increased prebiotic fibre (from whole foods) and/or supplemental sodium or calcium butyrate can help restore barrier function.",
+          "evidence_level": "moderate",
+          "notes": "In people with significant dysbiosis or SIBO, rapidly increasing fermentable fibre can worsen bloating. A gradual increase or working with a dietitian is advisable. Direct butyrate supplementation bypasses this issue for some people."
+        },
+        {
+          "name": "Targeted probiotic use",
+          "category": "supplement",
+          "description": "Specific probiotic strains \u2014 particularly Lactobacillus rhamnosus GG, Lactobacillus plantarum, and Bifidobacterium species \u2014 have evidence for supporting barrier function, increasing mucin production, and reducing inflammatory cytokine activity at the gut wall. Generic probiotics are less well evidenced; strain specificity matters.",
+          "evidence_level": "moderate",
+          "notes": "Probiotics may temporarily worsen symptoms in people with SIBO. In that context, addressing SIBO first is usually recommended before introducing probiotics. Not all probiotics are equally effective; research the specific strain and dose."
+        },
+        {
+          "name": "Chronic stress reduction and nervous system regulation",
+          "category": "lifestyle",
+          "description": "The stress hormone CRH directly activates intestinal mast cells and increases tight junction permeability via the HPA axis and enteric nervous system. Chronic psychological stress perpetuates barrier dysfunction. Interventions that down-regulate the stress response \u2014 including diaphragmatic breathing, vagus nerve stimulation, meditation, and trauma-focused therapies \u2014 can have measurable effects on gut permeability over time.",
+          "evidence_level": "moderate",
+          "notes": "This is often underestimated as a driver. For people with trauma history, working with a trauma-informed therapist may be necessary to achieve meaningful nervous system change."
+        },
+        {
+          "name": "Collagen and bone broth",
+          "category": "diet / supplement",
+          "description": "Collagen peptides and traditional bone broth contain glycine, proline, and hydroxyproline \u2014 amino acids involved in mucosal repair and tight junction protein synthesis. Anecdotally widely reported as helpful; direct clinical evidence for intestinal permeability is limited but mechanistic rationale exists.",
+          "evidence_level": "anecdotal",
+          "notes": "Food-based approaches are low-risk. Quality of commercial bone broth varies considerably. Those with histamine intolerance may react to slow-cooked bone broth, as long cooking increases histamine content."
+        },
+        {
+          "name": "Addressing root cause conditions (SIBO, dysbiosis, infections)",
+          "category": "medication / clinical",
+          "description": "When intestinal permeability is driven by an identifiable upstream condition \u2014 SIBO, Candida overgrowth, parasitic infection, H. pylori \u2014 treating that condition is likely to produce the greatest improvement in barrier function. Symptom management without addressing root drivers typically provides only partial and temporary relief.",
+          "evidence_level": "strong",
+          "notes": "This requires appropriate testing and clinical guidance. Many people are given supplements for leaky gut without an underlying cause being investigated, which limits recovery."
+        },
+        {
+          "name": "Mucosa-supporting nutrients: Vitamin D, vitamin A, omega-3 fatty acids",
+          "category": "supplement",
+          "description": "Vitamin D regulates tight junction gene expression and mucosal immune tolerance; deficiency is associated with increased permeability. Vitamin A (particularly as retinol) supports goblet cells and mucus layer integrity. Omega-3 fatty acids (EPA and DHA) modulate pro-inflammatory cytokines that otherwise degrade tight junctions.",
+          "evidence_level": "moderate",
+          "notes": "Vitamin D testing is advisable before high-dose supplementation. Vitamin A toxicity is possible with high-dose retinol; food sources and beta-carotene are safer starting points for most people."
+        }
+      ],
+      "things_to_avoid": [
+        "Regular or frequent NSAID use (ibuprofen, aspirin, naproxen) \u2014 directly damages the mucosal barrier and suppresses repair mechanisms",
+        "Alcohol, including moderate habitual consumption \u2014 disrupts tight junctions and alters the microbiome even at low-to-moderate levels",
+        "Ultra-processed foods and emulsifiers (carboxymethylcellulose, polysorbate-80) \u2014 some emulsifiers used in processed food have been shown in animal and preliminary human studies to disrupt the mucus layer and gut microbiome",
+        "Chronic sleep deprivation \u2014 sleep is a primary period for mucosal repair; insufficient or fragmented sleep sustains inflammation and impairs barrier recovery",
+        "Aggressive or prolonged antibiotic courses without gut restoration support \u2014 can deplete butyrate-producing species and worsen dysbiosis-driven permeability",
+        "High-dose and low-quality probiotic use in the presence of SIBO \u2014 can worsen bacterial overgrowth symptoms before the underlying condition is addressed",
+        "Extreme elimination diets pursued indefinitely without clinical guidance \u2014 risk nutritional deficiency and do not address root causes of permeability"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "Leaky gut is real and measurable, but it is almost never the root cause \u2014 it is a consequence of something else, and treating it with supplements while ignoring what is driving it will not produce lasting recovery.",
+        "why_resisted": "The wellness industry has built a large market around leaky gut supplements and protocols. People are frequently told they can heal their gut with the right products, which bypasses the harder and more expensive work of identifying actual drivers like SIBO, chronic stress, or medication use.",
+        "path_forward": "People who identify and address the upstream driver \u2014 whether through SIBO treatment, stress regulation, removal of gut-damaging medications, or treatment of a microbial infection \u2014 typically see more sustained improvement in permeability and systemic symptoms than those who take supplements without investigation."
+      },
+      {
+        "truth": "Psychological stress and trauma are physiologically significant drivers of intestinal permeability, not secondary factors \u2014 and no amount of dietary intervention or supplementation fully compensates for an unregulated nervous system.",
+        "why_resisted": "Many people prefer a purely physical explanation for physical symptoms and resist the idea that psychological states have direct structural effects on the gut. There is also stigma around mental health treatment that makes this harder to engage with.",
+        "path_forward": "People who engage nervous system regulation \u2014 through evidence-based therapies, breathwork, vagal toning, or trauma-focused treatment \u2014 often find that gut symptoms respond in ways that diet alone did not achieve. This does not mean symptoms are 'in the head'; it means the stress pathway is a legitimate and treatable physiological driver."
+      },
+      {
+        "truth": "Many mainstream clinicians remain dismissive of intestinal permeability as a clinical concept, and people may be told it is not real or that there is nothing to investigate \u2014 even when a significant body of research says otherwise.",
+        "why_resisted": "The term 'leaky gut' has been used carelessly in wellness spaces, which has created justified scepticism among evidence-focused clinicians. People often take clinician dismissal at face value and stop investigating.",
+        "path_forward": "People who find practitioners familiar with the permeability literature \u2014 including gastroenterologists with a research interest, integrative/functional medicine doctors, and dietitians trained in GI nutrition \u2014 are more likely to have appropriate testing offered and a coherent investigative path opened."
+      },
+      {
+        "truth": "Broad, escalating food sensitivity lists \u2014 sometimes reaching 30 or more foods \u2014 are usually a sign of barrier dysfunction, not genuine individual food intolerances. Eliminating every reactive food does not fix the barrier and often makes things worse.",
+        "why_resisted": "When someone reacts to many foods, eliminating them feels logical and temporarily reduces symptoms. The temporary relief feels like confirmation. The underlying barrier problem continues and may worsen.",
+        "path_forward": "People who focus their efforts on barrier repair \u2014 rather than building ever-longer elimination lists \u2014 often find their food reactions reduce in number and severity as the barrier recovers, allowing a broader and more nutritionally adequate diet over time."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Identify and treat the primary driver of permeability",
+          "why_it_matters": "Supplements and dietary changes can support the barrier but cannot outpace a continuing insult. Finding the root cause \u2014 SIBO, dysbiosis, fungal overgrowth, parasitic infection, chronic stress, medication damage \u2014 is the highest-leverage action available.",
+          "how_to_start": "Request or arrange appropriate testing based on the most likely driver: SIBO breath test, comprehensive stool analysis, coeliac serology, a review of current medications with a clinician. Work with a functional medicine doctor or integrative gastroenterologist if mainstream pathways are not offering investigation.",
+          "timeline": "Identifying a driver: 4\u201312 weeks of testing. Treatment of a specific driver and measurable barrier improvement: 3\u20136 months typically",
+          "requires_professional": true
+        },
+        {
+          "lever": "Remove the most impactful gut-damaging inputs: alcohol and NSAIDs",
+          "why_it_matters": "Both are direct, well-evidenced causes of tight junction disruption. Their removal removes an ongoing physical insult and allows repair processes to function. This is low-cost, immediately actionable, and often underestimated in impact.",
+          "how_to_start": "Eliminate alcohol completely for at least 6\u20138 weeks as a therapeutic trial. Discuss NSAID alternatives with a prescribing clinician if they are being used regularly.",
+          "timeline": "Measurable mucosal improvement can begin within 2\u20134 weeks of alcohol removal in some individuals",
+          "requires_professional": false
+        },
+        {
+          "lever": "Rebuild butyrate production through dietary fibre",
+          "why_it_matters": "Butyrate is the primary fuel for the cells lining the large intestine and a key regulator of tight junction proteins. Many people with gut conditions have depleted butyrate-producing bacteria. Dietary fibre \u2014 particularly from diverse whole plant foods \u2014 feeds these bacteria. This works on the underlying microbial ecosystem, not just the symptom surface.",
+          "how_to_start": "Gradually increase variety and quantity of whole plant foods: legumes, cooked and cooled starches, vegetables, nuts, seeds. Go slowly if bloating is a concern \u2014 increase by one small addition per week. Consider working with a dietitian.",
+          "timeline": "Microbiome shifts from dietary change: 4\u201312 weeks. Barrier improvement: 3\u20136 months of sustained dietary change",
+          "requires_professional": false
+        },
+        {
+          "lever": "Zinc repletion if deficient",
+          "why_it_matters": "Zinc is directly required for synthesis of tight junction proteins. Deficiency \u2014 common in people with poor absorption from a damaged gut \u2014 creates a self-perpetuating cycle of barrier weakness. Correcting zinc status is one of the more evidence-supported nutritional interventions for mucosal repair.",
+          "how_to_start": "Test zinc status (serum zinc or RBC zinc). If deficient or low-normal, supplement with zinc (preferably zinc carnosine or zinc bisglycinate) under guidance. Also support dietary zinc through animal protein, shellfish, nuts, and seeds.",
+          "timeline": "Zinc status can normalise within 4\u20138 weeks of adequate supplementation",
+          "requires_professional": false
+        },
+        {
+          "lever": "Chronic stress regulation and nervous system support",
+          "why_it_matters": "The stress-permeability pathway via CRH and mast cells is direct and well characterised. Without addressing this, even optimal nutrition and supplementation are partially undermined by ongoing stress-driven tight junction disruption.",
+          "how_to_start": "Introduce a daily brief vagal toning practice: slow diaphragmatic breathing (5 breaths per minute) for 10 minutes per day. If significant trauma history exists, seek a trauma-informed therapist. Explore what aspect of life generates the largest sustained stress load and identify one concrete reduction.",
+          "timeline": "Acute benefits to gut motility and mast cell activation: days to weeks. Structural nervous system change: 3\u20136 months of sustained practice",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Taking a leaky gut supplement protocol without investigating what is driving the permeability \u2014 supplements support repair but cannot overcome an untreated upstream driver like SIBO or chronic alcohol use",
+        "Pursuing extreme elimination diets that remove 20+ foods simultaneously \u2014 this creates nutritional deficiency, does not repair the barrier, and makes it harder to identify specific triggers when foods are reintroduced",
+        "Treating leaky gut in isolation while ignoring co-occurring psychological stress or trauma \u2014 the HPA-CRH-mast cell pathway means unmanaged stress directly sustains barrier disruption",
+        "Expecting fast resolution \u2014 mucosal barrier repair takes months, not days; people often abandon effective strategies too early because results are not immediate",
+        "Confusing improvement in symptoms with completion of healing \u2014 symptoms may reduce before structural barrier repair is complete, leading to premature return to gut-damaging habits",
+        "Over-relying on zonulin alone as a diagnostic marker \u2014 zonulin assay standardisation is imperfect, and a single normal result does not rule out permeability issues; clinical picture matters",
+        "Starting high-dose probiotics while SIBO is present and untreated \u2014 can worsen bacterial overgrowth symptoms and make testing less reliable"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Functional medicine doctor",
+          "role": "Offers the most thorough investigative approach to intestinal permeability, including root cause identification, comprehensive stool testing, permeability markers, and integrated treatment plans. Most likely to take the concept seriously and investigate upstream drivers.",
+          "notes": "Not available through public healthcare systems in most countries. Private cost can be significant. Quality varies considerably \u2014 look for practitioners with relevant training such as IFMCP (Institute for Functional Medicine Certified Practitioner). Mainstream clinicians may not consider this a valid specialty."
+        },
+        {
+          "type": "Integrative or holistic gastroenterologist",
+          "role": "A gastroenterologist who combines conventional diagnostic capability (endoscopy, biopsy, breath testing) with an interest in intestinal permeability and root-cause investigation. Offers the best of both \u2014 access to gold-standard procedures and openness to permeability as a clinical concept.",
+          "notes": "Less common than standard gastroenterologists. Finding one may require research. Ask specifically about their interest in intestinal permeability and microbiome investigation when choosing."
+        },
+        {
+          "type": "Registered dietitian (GI-specialist)",
+          "role": "Plays a critical role in designing practical, nutritionally adequate gut-healing dietary approaches \u2014 including careful elimination and reintroduction protocols, fibre optimisation, and micronutrient repletion. Can also help navigate FODMAP and other overlapping dietary frameworks.",
+          "notes": "Seek a dietitian with specific GI experience rather than a generalist. In some countries (e.g. UK), NHS referrals to specialist dietitians are possible through a GP. Private access is more flexible."
+        },
+        {
+          "type": "Standard gastroenterologist",
+          "role": "Important for ruling out structural gut conditions \u2014 IBD, microscopic colitis, coeliac disease \u2014 that may be driving permeability. Endoscopy and biopsy are best accessed through this route.",
+          "notes": "Many mainstream gastroenterologists do not recognise leaky gut as a clinical entity or engage with permeability testing beyond coeliac disease. They are valuable for exclusion of serious pathology but may not lead further investigation of barrier function."
+        },
+        {
+          "type": "Naturopathic doctor (ND) with GI specialisation",
+          "role": "May offer a comprehensive, root-cause approach including herbal antimicrobials, detoxification support, and nutritional protocols. Approaches vary widely in evidence base.",
+          "notes": "Regulation and training standards differ significantly between countries. Evidence base for some naturopathic approaches is limited. Most useful when working alongside rather than instead of evidence-based clinical investigation."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/leakygut",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/leakygut/",
+          "notes": "Active community of people sharing personal experience with leaky gut protocols, testing, and practitioners. Quality of information varies widely \u2014 read critically and cross-reference with clinical sources. Useful for practitioner recommendations and understanding what other patients have tried."
+        },
+        {
+          "name": "r/SIBO",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/SIBO/",
+          "notes": "SIBO is one of the most common drivers of intestinal permeability. This community has extensive practical knowledge about testing, treatment, and recovery. Highly relevant for those investigating an overlap between SIBO and leaky gut."
+        },
+        {
+          "name": "r/Microbiome",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Microbiome/",
+          "notes": "Science-leaning community discussing gut microbiome research and practical interventions. Good for understanding the dysbiosis mechanisms behind permeability and interpreting stool test results."
+        },
+        {
+          "name": "The Leaky Gut Community (Facebook groups)",
+          "platform": "Facebook",
+          "url": null,
+          "notes": "Multiple groups exist under variations of this name. Size and moderation quality varies. Can be useful for finding others going through similar experiences, but wellness-product promotion is common \u2014 exercise healthy scepticism."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Intestinal Permeability: Pathophysiology and Clinical Applications",
+        "type": "research paper",
+        "author_or_source": "Camilleri et al. \u2014 American Journal of Gastroenterology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31645627/",
+        "description": "A rigorous clinical review of intestinal permeability from mainstream gastroenterology, covering measurement methods, clinical associations, and therapeutic evidence. This is a useful resource for people who want to understand the science behind what is measurable and what is contested in the field.",
+        "audience": "advanced"
+      },
+      {
+        "title": "The Gut: Our Second Brain \u2014 Role of Intestinal Permeability",
+        "type": "research paper",
+        "author_or_source": "Fasano A. \u2014 Clinical Gastroenterology and Hepatology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22902068/",
+        "description": "Alessio Fasano is one of the leading researchers on zonulin and intestinal permeability. This paper provides an accessible scientific overview of how the gut barrier works, what disrupts it, and the link to systemic disease. Good for building a solid mechanistic understanding.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Leaky Gut As a Danger Signal for Autoimmune Diseases",
+        "type": "research paper",
+        "author_or_source": "Mu et al. \u2014 Frontiers in Immunology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28706546/",
+        "description": "Open-access review covering the evidence for intestinal permeability as a mechanism in autoimmune disease. Covers tight junction regulation, zonulin, the role of the microbiome, and therapeutic implications. Relevant for those with autoimmune conditions investigating a gut connection.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Gut: The Inside Story of Our Body's Most Underrated Organ",
+        "type": "book",
+        "author_or_source": "Giulia Enders",
+        "url": null,
+        "description": "An accessible and evidence-informed introduction to how the gut works, including digestion, the gut-brain axis, and the microbiome. Does not focus exclusively on leaky gut but provides essential contextual knowledge. An excellent starting point for people new to researching gut health.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Microbiome Solution",
+        "type": "book",
+        "author_or_source": "Robynne Chutkan MD",
+        "url": null,
+        "description": "Written by a gastroenterologist with an integrative perspective. Covers gut dysbiosis, intestinal permeability, and practical dietary and lifestyle approaches to restoring gut health. Grounded in clinical experience and more evidence-aware than much popular gut health literature.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Zonulin and Its Regulation of Intestinal Barrier Function: The Biological Door to Inflammation, Autoimmunity, and Cancer",
+        "type": "research paper",
+        "author_or_source": "Fasano A. \u2014 Physiological Reviews",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22013197/",
+        "description": "A comprehensive scientific review of the zonulin system \u2014 the mechanism by which the gut regulates its own permeability. Essential reading for understanding the physiology behind intestinal hyperpermeability. More technical than the other Fasano reference but worth the effort for those seeking depth.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Diet-Induced Alterations in Gut Microflora Contribute to Lethal Pulmonary Damage in TLR2/TLR4-Deficient Mice",
+        "type": "website",
+        "author_or_source": "Healthline \u2014 Leaky Gut Syndrome: What It Is, Symptoms, and More",
+        "url": "https://www.healthline.com/nutrition/leaky-gut-syndrome",
+        "description": "A consumer-friendly overview of leaky gut that is more carefully evidenced than most popular health website content. Good introductory reading for people who are new to the concept and want a plain-language orientation before exploring primary literature.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Gut-Brain Axis: How the Microbiome Influences Anxiety and Depression",
+        "type": "podcast",
+        "author_or_source": "Found My Fitness \u2014 Dr. Rhonda Patrick",
+        "url": "https://www.foundmyfitness.com",
+        "description": "Several episodes by Dr. Rhonda Patrick cover intestinal permeability, the microbiome-brain connection, and systemic inflammation in depth. Evidence-heavy and suitable for listeners who want scientific rigour in an audio format. Search the site for 'leaky gut' and 'gut microbiome' episodes.",
+        "audience": "intermediate"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7b1745470040180e"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "fc774353094491d0"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

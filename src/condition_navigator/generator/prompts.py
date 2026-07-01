@@ -16,7 +16,7 @@ from condition_navigator.models import Condition, ConditionData, model_family_ra
 
 PROMPT_FILE = Path(__file__).parent.parent.parent.parent / "prompts" / "condition.yaml"
 
-_FIELD_META_KEYS = {"prompt", "schema", "descriptive_skip", "descriptive_only", "manual"}
+_FIELD_META_KEYS = {"prompt", "schema"}
 
 
 def _is_field_wrapper(value: object) -> bool:
@@ -27,7 +27,7 @@ def _is_field_wrapper(value: object) -> bool:
 
 
 def _extract_schema(value: object) -> object:
-    """Recursively strip {prompt, schema, ...meta} wrappers, keeping only the output shape."""
+    """Recursively strip {prompt, schema} wrappers, keeping only the output shape."""
     if isinstance(value, dict):
         if _is_field_wrapper(value):
             return _extract_schema(value["schema"])
@@ -43,22 +43,6 @@ def section_prompt_hash(system: str, field_prompt: str, schema: object) -> str:
     return hashlib.sha256(payload.encode()).hexdigest()[:16]
 
 
-def _applicable_fields(spec: dict, condition: Condition) -> dict[str, dict]:
-    """Return the fields that apply to this condition after descriptive_skip / descriptive_only / manual filters."""
-    has_sub_conditions = len(condition.sub_conditions) > 0
-    out: dict[str, dict] = {}
-    for name, field in spec["fields"].items():
-        if isinstance(field, dict):
-            if field.get("manual"):
-                continue
-            if has_sub_conditions and field.get("descriptive_skip"):
-                continue
-            if not has_sub_conditions and field.get("descriptive_only"):
-                continue
-        out[name] = field
-    return out
-
-
 def condition_prompt(
     condition: Condition,
     known_conditions: list[Condition] | None = None,
@@ -69,19 +53,18 @@ def condition_prompt(
 ) -> tuple[str, str, dict[str, str]]:
     """Build the (system, user) prompt and a {section_name: prompt_hash} map for sections that will be regenerated.
 
-    Smart-regen logic — a field is included unless:
-      - it is `manual: true` in condition.yaml (always excluded from prompt-driven generation), or
-      - `existing.section_meta[name]` already covers it with the same prompt_hash AND a model
-        of equal-or-higher family rank.
+    Smart-regen logic — a field is included unless `existing.section_meta[name]`
+    already covers it with the same prompt_hash AND a model of equal-or-higher
+    family rank.
 
-    `force=True` skips the meta-based skip but still respects `manual: true`.
-    `only_sections=[...]` keeps only those sections (also respecting `manual: true`).
+    `force=True` skips the meta-based skip.
+    `only_sections=[...]` keeps only those sections.
 
     Returns ("", "", {}) when nothing needs regenerating — the caller should skip the API call.
     """
     spec = yaml.safe_load(PROMPT_FILE.read_text())
     system = spec["system"]
-    fields = _applicable_fields(spec, condition)
+    fields = spec["fields"]
 
     existing_meta = existing.section_meta if existing else {}
 
@@ -135,30 +118,6 @@ def condition_prompt(
         prefix = re.sub(r"\{\{#if aliases\}\}.*?\{\{/if\}\}", "", prefix, flags=re.DOTALL)
 
     parts = [prefix]
-
-    has_sub_conditions = len(condition.sub_conditions) > 0
-    if has_sub_conditions and known_conditions:
-        sub_lookup = {c.id: c for c in known_conditions}
-        sub_catalog = []
-        for sc in condition.sub_conditions:
-            child = sub_lookup.get(sc.id)
-            if child is None:
-                continue
-            sub_catalog.append({
-                "id": child.id,
-                "name": child.name,
-                "aliases": child.aliases,
-            })
-        if sub_catalog:
-            parts.append(
-                "SUB-CONDITIONS — the curated set of conditions surfaced as a "
-                "prominent table on this condition's page. These are listed "
-                "separately and must NOT appear in `related_conditions`. When "
-                "writing `plain_summary` and `detailed_summary` you may refer "
-                "to them by name as the candidates the reader should "
-                "investigate.\n"
-                + json.dumps(sub_catalog, indent=2)
-            )
 
     if known_conditions:
         catalog = [

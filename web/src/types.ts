@@ -1,9 +1,6 @@
 export type DiagnosisType = "syndromic" | "pathophysiological" | "aetiological" | "constitutional" | "masquerader";
 
-export interface SubConditionRef {
-  id: string;
-  probability: number;
-}
+export type StartingPointKind = "syndrome" | "symptom";
 
 export interface ConditionIndex {
   id: string;
@@ -15,7 +12,6 @@ export interface ConditionIndex {
   parents: string[];
   has_data: boolean;
   diagnosis_type?: DiagnosisType;
-  sub_conditions?: SubConditionRef[];
 }
 
 export type SpaceInclude = "all" | string[] | { groups: string[] };
@@ -39,6 +35,7 @@ export interface Prevalence {
 }
 
 export interface Subgroup {
+  id?: string | null;
   name: string;
   description: string;
   distinguishing_features: string[];
@@ -135,28 +132,10 @@ export interface LearningResource {
   audience: "beginner" | "intermediate" | "advanced";
 }
 
-export interface SymptomPattern {
-  id: string;
-  label: string;
-  description: string;
-}
-
-export interface SubConditionAffinity {
-  sub_condition_id: string;
-  patterns: string[];
-}
-
-export interface SymptomPatterns {
-  patterns: SymptomPattern[];
-  sub_condition_affinities: SubConditionAffinity[];
-}
-
 export interface ConditionSections {
   plain_summary: string;
   detailed_summary: string;
-  sub_condition_signals?: Record<string, string>;
   prevalence: Prevalence;
-  symptom_patterns?: SymptomPatterns;
   subgroups: Subgroup[];
   symptoms: Symptom[];
   testing: Testing;
@@ -173,4 +152,41 @@ export interface ConditionData {
   condition_name: string;
   generated_at: string;
   sections: ConditionSections;
+}
+
+// ---- Starting points ------------------------------------------------------
+
+export interface SymptomPattern {
+  id: string;
+  label: string;
+  description: string;
+}
+
+export interface SubConditionRef {
+  id: string;
+  probability: number;
+  patterns: string[];
+}
+
+export interface StartingPointIndex {
+  id: string;
+  label: string;
+  full_label: string;
+  kind: StartingPointKind;
+  condition_id: string | null;
+  intro: string;
+  symptom_patterns: SymptomPattern[];
+  sub_conditions: SubConditionRef[];
+  has_signals: boolean;
+}
+
+export interface StartingPointSections {
+  sub_condition_signals?: Record<string, string>;
+}
+
+export interface StartingPointData {
+  starting_point_id: string;
+  generated_at: string;
+  model: string;
+  sections: StartingPointSections;
 }

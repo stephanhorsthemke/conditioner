@@ -1,0 +1,628 @@
+{
+  "condition_id": "b12_deficiency",
+  "condition_name": "Vitamin B12 deficiency",
+  "generated_at": "2026-07-01T11:58:41.886144Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Vitamin B12 deficiency occurs when the body does not have enough cobalamin \u2014 a vitamin essential for making red blood cells, maintaining the nervous system, and producing DNA. It can cause profound fatigue, neurological symptoms, and mood changes, and is often missed or under-investigated because symptoms develop slowly and the standard blood test cutoff may be set too low to catch early or functional deficiency.",
+    "detailed_summary": "Vitamin B12 (cobalamin) is a water-soluble vitamin that the body cannot synthesise on its own \u2014 it must come from diet or supplements. Once ingested, B12 binds to a protein called intrinsic factor (IF), produced by parietal cells in the stomach, which allows absorption in the terminal ileum. Any disruption along this pathway \u2014 from inadequate dietary intake, to reduced stomach acid, to autoimmune destruction of parietal cells, to small intestinal disease \u2014 can result in deficiency.\n\nB12 plays three critical roles: it is required for the synthesis of myelin (the protective sheath around nerve fibres), for the conversion of homocysteine to methionine (a key methylation reaction), and for red blood cell maturation. Deficiency therefore produces a triad of haematological, neurological, and psychiatric effects.\n\nClinically significant B12 deficiency can take years to develop, because the liver stores a 3\u20135 year supply. This long latency means that by the time symptoms are obvious, deficiency may already be causing nerve damage. The haematological picture \u2014 macrocytic (large-cell) anaemia \u2014 is a late-stage finding; neurological and psychiatric symptoms can appear first, particularly in people who take folate supplements that mask the blood abnormality.\n\nThe most commonly recognised cause is pernicious anaemia, an autoimmune condition in which antibodies target parietal cells or intrinsic factor itself. But increasingly common causes include long-term use of proton pump inhibitors (PPIs), metformin use, strict vegan or vegetarian diets, and gut conditions such as SIBO, coeliac disease, or Crohn's disease affecting the terminal ileum. Older adults are disproportionately affected because stomach acid production naturally declines with age.\n\nDiagnosis is complicated by the fact that standard serum B12 tests measure total B12 (including inactive analogues) and the 'normal' reference range varies widely between laboratories. Many practitioners now consider methylmalonic acid (MMA) and homocysteine as more reliable functional markers of cellular B12 status. Holotranscobalamin (active B12) testing is emerging as a more sensitive early marker.\n\nTreatment depends on the cause. Where absorption is intact, high-dose oral B12 can be effective. Where intrinsic factor is absent or absorption is severely impaired, intramuscular (IM) injections bypass the gut entirely. People with pernicious anaemia typically require lifelong injections. Response to treatment can be dramatic for fatigue and cognitive symptoms, but neurological damage that has been present for a long time may only partially reverse.",
+    "prevalence": {
+      "summary": "Affects roughly 6% of adults under 60 and up to 20% of those over 60, with higher rates among vegans, those on PPIs or metformin, and people with autoimmune or gut conditions.",
+      "estimate": "6\u201320% depending on age group; up to 40\u201380% of strict vegans without supplementation",
+      "notes": "Prevalence figures vary considerably depending on the serum B12 cutoff used (typically 148\u2013200 pmol/L depending on the lab). Some researchers argue that 'low-normal' levels (200\u2013300 pmol/L) are functionally deficient in many people, which would dramatically increase estimated prevalence. Pernicious anaemia specifically affects roughly 0.1% of the general population and 1.9% of those over 60."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Pernicious anaemia",
+        "description": "An autoimmune condition in which antibodies attack gastric parietal cells and/or intrinsic factor, permanently impairing B12 absorption from food. The most common cause of severe B12 deficiency in developed countries among people eating animal products.",
+        "distinguishing_features": [
+          "Positive intrinsic factor antibodies (IFA) or parietal cell antibodies (PCA) on blood test",
+          "Macrocytic anaemia often present on full blood count",
+          "No improvement with oral B12 \u2014 requires injections",
+          "Often associated with other autoimmune conditions (thyroid disease, type 1 diabetes, vitiligo)",
+          "Family history is common"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Dietary / vegan B12 deficiency",
+        "description": "Occurs in people who consume little or no animal products without adequate supplementation. B12 is found almost exclusively in animal-derived foods; plant sources are negligible or unreliable.",
+        "distinguishing_features": [
+          "Strict vegan or vegetarian diet without B12-fortified foods or supplements",
+          "Normal intrinsic factor function \u2014 oral supplementation is effective",
+          "Often younger age at presentation than pernicious anaemia",
+          "Deficiency may take several years to manifest due to hepatic stores",
+          "Breastfed infants of B12-deficient vegan mothers are at high risk of severe neurological harm"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Drug-induced B12 deficiency",
+        "description": "Caused by medications that reduce stomach acid (PPIs, H2 blockers) or interfere with B12 absorption (metformin). An increasingly recognised cause as PPI and metformin prescribing has expanded dramatically.",
+        "distinguishing_features": [
+          "Temporal correlation with starting PPI, H2 blocker, or metformin",
+          "Risk increases with duration and dose of medication",
+          "Intrinsic factor is intact \u2014 but reduced acid impairs B12 release from food",
+          "Crystalline B12 supplements may absorb normally (not food-bound); worth trialling",
+          "Often missed because symptoms are attributed to the underlying condition being treated"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Malabsorptive B12 deficiency",
+        "description": "Caused by structural or functional gut disease impairing B12 absorption \u2014 including coeliac disease, Crohn's disease (particularly terminal ileal involvement), SIBO, post-gastric surgery, and gastric atrophy.",
+        "distinguishing_features": [
+          "Terminal ileal disease or resection is a major risk factor",
+          "SIBO may consume dietary B12 before it can be absorbed",
+          "Often co-occurs with other nutrient deficiencies (iron, folate, vitamin D, zinc)",
+          "Treating the underlying gut condition is essential alongside B12 repletion",
+          "Injections may be required depending on extent of malabsorption"
+        ]
+      },
+      {
+        "id": "mthfr",
+        "name": "MTHFR / methylation-related functional B12 deficiency",
+        "description": "People with MTHFR or other methylation pathway variants may have difficulty converting B12 into its active methylcobalamin form, leading to functional deficiency despite apparently adequate serum levels.",
+        "distinguishing_features": [
+          "Serum B12 may appear normal or even high",
+          "Elevated homocysteine and/or MMA may be more revealing",
+          "May respond better to methylcobalamin or adenosylcobalamin forms rather than cyanocobalamin",
+          "Often benefits from a broader methylation support approach including methylfolate",
+          "MTHFR genotyping can confirm variant status but does not prove functional impairment"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Extreme fatigue and weakness",
+        "category": "systemic",
+        "notes": "Often described as a deep, bone-level exhaustion that is not relieved by sleep. Can be one of the earliest and most prominent symptoms."
+      },
+      {
+        "symptom": "Cognitive difficulties \u2014 brain fog, poor concentration, memory lapses",
+        "category": "neurological",
+        "notes": "Impaired myelin synthesis affects nerve conduction speed and efficiency. Often described as thinking through cotton wool. Can precede anaemia."
+      },
+      {
+        "symptom": "Peripheral neuropathy \u2014 tingling, numbness, or burning in hands and feet",
+        "category": "neurological",
+        "notes": "A hallmark of neurological B12 deficiency. Often starts in the feet and moves upward. Can become irreversible if deficiency is prolonged."
+      },
+      {
+        "symptom": "Balance and coordination problems",
+        "category": "neurological",
+        "notes": "Subacute combined degeneration of the spinal cord can cause proprioceptive loss, unsteady gait, and falls \u2014 typically a sign of advanced or longstanding deficiency."
+      },
+      {
+        "symptom": "Pallor or yellowish skin tone",
+        "category": "skin / haematological",
+        "notes": "Pallor reflects anaemia; mild jaundice (lemon-yellow tint) can occur due to increased red blood cell destruction (ineffective erythropoiesis)."
+      },
+      {
+        "symptom": "Sore, smooth, or inflamed tongue (glossitis)",
+        "category": "oral",
+        "notes": "The tongue may appear abnormally smooth due to atrophy of papillae, red, or swollen. Can cause altered taste and difficulty eating."
+      },
+      {
+        "symptom": "Mouth ulcers",
+        "category": "oral",
+        "notes": "Recurring aphthous ulcers that don't heal well can be an early oral sign."
+      },
+      {
+        "symptom": "Shortness of breath and palpitations",
+        "category": "cardiovascular",
+        "notes": "Consequence of macrocytic anaemia \u2014 fewer functional red blood cells reduce oxygen-carrying capacity, causing the heart and lungs to compensate."
+      },
+      {
+        "symptom": "Depression and low mood",
+        "category": "psychiatric",
+        "notes": "B12 is required for synthesis of serotonin, dopamine, and norepinephrine. Deficiency is associated with depression, and in some cases mood improves substantially with repletion."
+      },
+      {
+        "symptom": "Anxiety and irritability",
+        "category": "psychiatric",
+        "notes": "Less commonly discussed but reported by many people with deficiency. May relate to disrupted neurotransmitter production or elevated homocysteine."
+      },
+      {
+        "symptom": "Psychosis or paranoia",
+        "category": "psychiatric",
+        "notes": "Rare but documented \u2014 sometimes called 'megaloblastic madness'. More likely in severe or prolonged deficiency."
+      },
+      {
+        "symptom": "Visual disturbances",
+        "category": "neurological",
+        "notes": "Optic neuropathy can cause blurred or dimmed vision. Uncommon but recognised in severe deficiency."
+      },
+      {
+        "symptom": "Muscle weakness",
+        "category": "musculoskeletal",
+        "notes": "Can affect limb and core strength. May contribute to poor exercise tolerance or difficulty with physical tasks."
+      },
+      {
+        "symptom": "Elevated heart rate at rest",
+        "category": "cardiovascular",
+        "notes": "Compensatory response to anaemia \u2014 the heart works harder to circulate fewer functional red blood cells."
+      },
+      {
+        "symptom": "Hair thinning or loss",
+        "category": "skin",
+        "notes": "Less specific but reported by some individuals. Possibly related to impaired cell turnover in hair follicles."
+      },
+      {
+        "symptom": "Infertility or menstrual irregularities",
+        "category": "reproductive",
+        "notes": "B12 plays a role in DNA synthesis and cell division; deficiency has been associated with ovulatory disorders and early pregnancy loss."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Serum B12 below 148 pmol/L (200 pg/mL) is widely used as the deficiency cutoff, but many practitioners treat below 300 pmol/L (400 pg/mL) in the presence of symptoms",
+        "Macrocytic anaemia (high MCV) on a full blood count without iron deficiency \u2014 hypersegmented neutrophils on a blood film are a classic finding",
+        "Elevated methylmalonic acid (MMA) is a more specific marker of cellular B12 insufficiency than serum B12 alone",
+        "Elevated homocysteine can indicate functional B12 (or folate) deficiency \u2014 not specific to B12 alone",
+        "Low holotranscobalamin (active B12 / holoTC) may be a more sensitive early marker than total serum B12",
+        "Positive intrinsic factor antibodies (IFA) or parietal cell antibodies (PCA) point toward pernicious anaemia",
+        "Co-existing low folate and/or iron deficiency may mask the macrocytic anaemia picture \u2014 a mixed picture is common in malabsorptive conditions"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom and exposure journal",
+          "description": "Tracking neurological symptoms (tingling, balance problems, brain fog), onset timing relative to dietary changes or medication introduction, and energy patterns over weeks or months can help clarify whether a pattern consistent with B12 deficiency is present before seeking clinical testing.",
+          "safety_notes": "Journaling is safe. However, suspected neurological B12 deficiency (tingling, balance problems, weakness) warrants prompt clinical assessment \u2014 do not delay testing while journalling."
+        },
+        {
+          "name": "Dietary intake review",
+          "description": "Reviewing whether animal-derived foods (meat, fish, dairy, eggs) are consumed regularly, whether B12-fortified foods are included (for vegans), and whether any supplementation is occurring. This helps establish whether dietary deficiency is plausible.",
+          "safety_notes": "This is informational only. Dietary assessment alone cannot confirm or exclude deficiency \u2014 blood testing is required."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Serum B12",
+          "type": "standard",
+          "description": "Measures total vitamin B12 in the blood including both active and inactive forms. Widely available and used as a first-line test, but limited sensitivity \u2014 many people with functional deficiency fall in the low-normal range (200\u2013300 pmol/L). Results should always be interpreted alongside symptoms.",
+          "availability": "Available through any GP, primary care physician, or private blood testing service. Usually covered by standard health systems."
+        },
+        {
+          "name": "Methylmalonic acid (MMA)",
+          "type": "gold_standard",
+          "description": "MMA accumulates in cells when B12 is functionally insufficient \u2014 it is a direct marker of intracellular B12 activity. Elevated MMA (in blood or urine) strongly supports functional deficiency even when serum B12 appears borderline. Urine MMA is available in some home testing kits.",
+          "availability": "Available through most hospital biochemistry labs and many private labs. May need to be specifically requested rather than automatically ordered with serum B12."
+        },
+        {
+          "name": "Homocysteine",
+          "type": "standard",
+          "description": "Elevated homocysteine suggests impaired methylation and can indicate B12 or folate deficiency. Less specific than MMA for B12 specifically, but useful in the overall picture. Also an independent cardiovascular risk marker.",
+          "availability": "Widely available through standard blood panels. Often included in cardiovascular risk or functional medicine workups."
+        },
+        {
+          "name": "Holotranscobalamin (active B12 / holoTC)",
+          "type": "emerging",
+          "description": "Measures only the biologically active fraction of B12 \u2014 the portion bound to transcobalamin II that cells can actually take up. Considered a more sensitive early marker of developing deficiency than total serum B12. May be particularly useful in borderline cases.",
+          "availability": "Available in some specialist labs and through private testing. Not universally available in all standard healthcare systems \u2014 may require a private request or functional medicine practitioner."
+        },
+        {
+          "name": "Full blood count (FBC / CBC)",
+          "type": "standard",
+          "description": "Reveals haematological effects of deficiency: raised mean corpuscular volume (MCV \u2014 macrocytosis), low haemoglobin (anaemia), and characteristic hypersegmented neutrophils on a blood film. These are later-stage findings and may be absent early or masked by concurrent iron deficiency.",
+          "availability": "Routinely available through any clinical laboratory. Should always accompany B12 testing."
+        },
+        {
+          "name": "Intrinsic factor antibodies (IFA) and parietal cell antibodies (PCA)",
+          "type": "standard",
+          "description": "Blood tests that detect the autoimmune markers of pernicious anaemia. IFA is more specific; PCA is more sensitive but less specific. A positive IFA result is diagnostic of pernicious anaemia. A negative result does not rule it out \u2014 IFA has significant false-negative rates.",
+          "availability": "Available through most hospital immunology or haematology labs. Often needs to be specifically requested."
+        },
+        {
+          "name": "MTHFR genotyping",
+          "type": "emerging",
+          "description": "Genetic test for common variants in the MTHFR gene (C677T, A1298C) that impair folate and B12 metabolism. Does not directly measure B12 status but can inform form selection (methylcobalamin vs cyanocobalamin) and overall methylation support strategy.",
+          "availability": "Available through many private labs and direct-to-consumer genetic testing. Interpretation requires clinical context \u2014 variant presence does not automatically mean impaired function."
+        },
+        {
+          "name": "Serum folate and iron studies",
+          "type": "standard",
+          "description": "B12 deficiency frequently coexists with folate deficiency and iron deficiency, especially in malabsorptive conditions. Folate supplementation without B12 can mask haematological signs of B12 deficiency while neurological damage progresses. Always test together.",
+          "availability": "Routinely available through any clinical laboratory alongside B12 testing."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": null,
+        "name": "Pernicious anaemia",
+        "relationship": "upstream",
+        "explanation": "The most common cause of severe B12 deficiency in people eating animal products \u2014 an autoimmune condition destroying intrinsic factor production, making oral B12 from food permanently unabsorbable."
+      },
+      {
+        "id": "coeliac",
+        "name": "Coeliac disease",
+        "relationship": "upstream",
+        "explanation": "Intestinal damage from coeliac disease impairs nutrient absorption broadly, including B12 absorption in the terminal ileum. B12 deficiency is common at coeliac diagnosis and may persist if the gut heals slowly."
+      },
+      {
+        "id": "ibd_remission",
+        "name": "Crohn's disease / IBD",
+        "relationship": "upstream",
+        "explanation": "Crohn's disease frequently affects the terminal ileum \u2014 the specific site where B12 is absorbed. Ileal resection or active inflammation can cause permanent impairment of B12 absorption requiring lifelong injections."
+      },
+      {
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "upstream",
+        "explanation": "Overgrown bacteria in the small intestine can consume dietary B12 before it can be absorbed, leading to deficiency. SIBO treatment is required alongside B12 repletion for lasting improvement."
+      },
+      {
+        "id": "mthfr",
+        "name": "MTHFR / methylation variants",
+        "relationship": "mechanistic_link",
+        "explanation": "MTHFR variants impair the conversion of B12 and folate into their active forms, potentially causing functional deficiency even when serum B12 levels appear normal. Methylcobalamin may be better utilised than cyanocobalamin in this group."
+      },
+      {
+        "id": "hypothyroidism",
+        "name": "Hypothyroidism / Hashimoto's",
+        "relationship": "comorbid",
+        "explanation": "Hashimoto's thyroiditis and pernicious anaemia share autoimmune mechanisms and often co-occur. People with one autoimmune thyroid condition have significantly elevated risk of developing pernicious anaemia, and vice versa."
+      },
+      {
+        "id": "iron_deficiency",
+        "name": "Iron deficiency",
+        "relationship": "comorbid",
+        "explanation": "Iron and B12 deficiency frequently coexist, particularly in malabsorptive conditions. Concurrent iron deficiency can mask the macrocytic anaemia of B12 deficiency, producing a 'normal' MCV that delays diagnosis."
+      },
+      {
+        "id": "vitamin_d_deficiency",
+        "name": "Vitamin D deficiency",
+        "relationship": "comorbid",
+        "explanation": "Both vitamin D and B12 deficiency share common risk groups \u2014 older adults, people with gut malabsorption, and those on restrictive diets. They are frequently found together and both contribute to fatigue and mood symptoms."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "downstream",
+        "explanation": "B12 deficiency disrupts serotonin, dopamine, and norepinephrine synthesis via impaired methylation. Depression is a well-documented consequence of deficiency, and antidepressant response may be poor until B12 status is corrected."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "downstream",
+        "explanation": "Elevated homocysteine from B12 deficiency is associated with anxiety and neurological irritability. Anxiety symptoms can be an early psychiatric manifestation."
+      },
+      {
+        "id": "me_cfs",
+        "name": "ME / CFS",
+        "relationship": "often_confused",
+        "explanation": "Severe B12 deficiency closely mimics ME/CFS \u2014 profound fatigue, cognitive impairment, and post-exertional malaise. B12 deficiency should always be ruled out (with functional markers, not just serum B12) before an ME/CFS diagnosis is accepted."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "often_confused",
+        "explanation": "Muscle pain, fatigue, and cognitive symptoms of B12 deficiency can overlap significantly with fibromyalgia presentations. Some people diagnosed with fibromyalgia may have unrecognised B12 deficiency as a contributing or primary driver."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "mechanistic_link",
+        "explanation": "B12 deficiency causing peripheral nerve damage can contribute to autonomic dysfunction, which may manifest as dysautonomia-like symptoms including orthostatic intolerance and palpitations."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "mechanistic_link",
+        "explanation": "Dysbiosis alters the gut environment in ways that can impair B12 absorption. Conversely, some gut bacteria produce B12 analogues that compete with true B12 for absorption sites without providing biological activity."
+      },
+      {
+        "id": "hpylori",
+        "name": "H. pylori infection",
+        "relationship": "upstream",
+        "explanation": "H. pylori infection damages gastric parietal cells, reducing both stomach acid and intrinsic factor production. Chronic H. pylori infection is an established cause of B12 deficiency, particularly in populations with high infection rates."
+      },
+      {
+        "id": "migraine",
+        "name": "Migraine",
+        "relationship": "mechanistic_link",
+        "explanation": "Elevated homocysteine from B12 (and folate) deficiency is associated with increased migraine frequency. B12 supplementation alongside folate and B6 has shown benefit in reducing homocysteine-associated migraine in some studies."
+      },
+      {
+        "id": "mitochondrial",
+        "name": "Mitochondrial dysfunction",
+        "relationship": "mechanistic_link",
+        "explanation": "One active form of B12, adenosylcobalamin, functions directly within mitochondria in the methylmalonyl-CoA mutase reaction. B12 deficiency can therefore impair mitochondrial energy metabolism, contributing to fatigue and post-exertional symptoms."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Intramuscular B12 injections",
+          "category": "medication",
+          "description": "Hydroxocobalamin or cyanocobalamin injections bypass the gut entirely, delivering B12 directly into muscle tissue for systemic absorption. The standard treatment for pernicious anaemia and other causes of severe malabsorption. Loading doses are typically given daily or every other day for two weeks, followed by maintenance injections every 2\u20133 months (or more frequently for neurological involvement).",
+          "evidence_level": "strong",
+          "notes": "Frequency of maintenance injections is debated \u2014 many patients with neurological symptoms report that 3-monthly injections are insufficient and do better with monthly or more frequent dosing. Hydroxocobalamin is generally preferred over cyanocobalamin as it is retained in the body longer. Self-injection is practised by many patients in countries where this is accessible."
+        },
+        {
+          "name": "High-dose oral B12",
+          "category": "supplement",
+          "description": "At doses of 1000\u20132000 mcg daily, approximately 1% of B12 is absorbed passively (without intrinsic factor) through the gut wall. This passive absorption route can be sufficient to maintain adequate B12 levels in many people, including some with pernicious anaemia, though it requires consistent daily dosing. Sublingual (under-tongue) forms may have marginally better absorption.",
+          "evidence_level": "strong",
+          "notes": "Works well for dietary deficiency and mild malabsorption. Less reliable for established pernicious anaemia \u2014 some people respond, others do not. Should not be assumed adequate without monitoring B12 and MMA levels. Sublingual and nasal forms are popular but evidence advantage over oral is limited."
+        },
+        {
+          "name": "Methylcobalamin vs cyanocobalamin form selection",
+          "category": "supplement",
+          "description": "Methylcobalamin is the active, neurologically relevant form of B12. Cyanocobalamin must be converted by the body. For people with MTHFR variants, methylation difficulties, or those who feel they do not respond to cyanocobalamin, switching to methylcobalamin (or a combination with adenosylcobalamin) may be more effective.",
+          "evidence_level": "moderate",
+          "notes": "Hydroxocobalamin injections are widely considered the best injected form due to superior retention. For oral supplementation, methylcobalamin is a reasonable choice especially for neurological symptoms or methylation concerns. Some people report worsening anxiety or mood on methylcobalamin \u2014 if this occurs, hydroxocobalamin or adenosylcobalamin may suit better."
+        },
+        {
+          "name": "Treating the underlying cause",
+          "category": "lifestyle",
+          "description": "Where deficiency is driven by SIBO, H. pylori, coeliac disease, Crohn's, or medication use (PPIs, metformin), treating the root cause is essential for sustainable improvement. B12 repletion alone without addressing the driver typically requires permanent supplementation.",
+          "evidence_level": "strong",
+          "notes": "This is one area where finding a practitioner who investigates root causes rather than just supplementing matters enormously. Many mainstream clinicians will supplement without investigating the underlying mechanism."
+        },
+        {
+          "name": "Folate co-supplementation",
+          "category": "supplement",
+          "description": "B12 and folate work closely together in methylation pathways. Deficiency of one often coexists with, or unmasks, deficiency of the other. Ensuring adequate folate (ideally methylfolate for those with MTHFR variants) is important alongside B12 repletion.",
+          "evidence_level": "strong",
+          "notes": "Critically: supplementing folate without correcting B12 can resolve anaemia while allowing neurological damage to continue and worsen silently. Always correct B12 before or alongside folate supplementation."
+        },
+        {
+          "name": "Dietary optimisation (for dietary deficiency)",
+          "category": "diet",
+          "description": "For those with dietary B12 deficiency (particularly vegans and vegetarians), reliable B12 sources include supplementation, B12-fortified foods (plant milks, nutritional yeast, cereals), and \u2014 for those willing \u2014 reintroducing animal products. Fermented plant foods do not provide reliable B12.",
+          "evidence_level": "strong",
+          "notes": "Vegans should not rely on diet alone without confirmed supplementation. The NHS, Vegan Society, and most dietetic bodies recommend daily B12 supplementation for all vegans. Nutritional yeast is only a reliable source if specifically fortified with B12."
+        },
+        {
+          "name": "Neurological rehabilitation for established nerve damage",
+          "category": "lifestyle",
+          "description": "Once B12 is repleted, people with peripheral neuropathy or balance impairment may benefit from physiotherapy, balance training, or occupational therapy to support nerve recovery and prevent falls while the nervous system heals.",
+          "evidence_level": "moderate",
+          "notes": "Nerve recovery from B12 deficiency can be slow \u2014 months to years \u2014 and may be incomplete if deficiency was prolonged. Rehabilitation is most productive when begun alongside B12 treatment."
+        }
+      ],
+      "things_to_avoid": [
+        "Supplementing folate alone without first correcting B12 \u2014 this can mask anaemia while neurological damage silently worsens",
+        "Delaying treatment waiting for 'more convincing' lab results when neurological symptoms are already present \u2014 nerve damage that progresses untreated may become irreversible",
+        "Assuming a 'normal' serum B12 result rules out deficiency \u2014 the standard cutoff misses many people with functional deficiency; request MMA and holotranscobalamin if symptomatic",
+        "Stopping B12 injections once symptoms improve in pernicious anaemia \u2014 intrinsic factor deficiency is permanent; treatment must continue lifelong",
+        "Relying on dietary B12 alone if intrinsic factor is impaired \u2014 food-bound B12 requires intrinsic factor; oral crystalline supplements bypass this partially, but injections are more reliable",
+        "Taking high-dose B12 supplements before testing \u2014 this can falsely normalise serum B12 results and obscure the extent of deficiency",
+        "Ignoring concurrent deficiencies \u2014 isolated B12 repletion without also addressing iron, folate, or vitamin D deficiency will give incomplete results in malabsorptive conditions"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "Standard serum B12 testing misses a significant proportion of people who are functionally deficient. A result in the 'normal' range does not mean B12 is adequate for that individual's neurological health.",
+        "why_resisted": "People trust that standard blood tests are designed to catch what matters. Being told their results are normal leads many to stop investigating. Practitioners may also be reluctant to treat in the absence of a clearly abnormal number.",
+        "path_forward": "People who remain symptomatic with low-normal B12 can push for MMA and holotranscobalamin testing, or find a practitioner willing to trial treatment empirically. Some improve dramatically after beginning injections despite 'normal' serum levels \u2014 this clinical response is itself diagnostic."
+      },
+      {
+        "truth": "Neurological damage from B12 deficiency can be irreversible if left untreated for too long. Waiting for symptoms to worsen or for anaemia to appear before treating is a clinically unjustifiable risk.",
+        "why_resisted": "Many people (and clinicians) assume deficiency is easy to correct once it is found. The reversibility of damage is reassuring \u2014 but it depends entirely on how long deficiency has been present. The nervous system does not always fully recover.",
+        "path_forward": "People with any neurological symptoms \u2014 tingling, numbness, balance problems, cognitive changes \u2014 alongside low or borderline B12 should seek prompt treatment. Erring on the side of treatment is safer than waiting for certainty."
+      },
+      {
+        "truth": "Pernicious anaemia is a lifelong autoimmune condition requiring permanent B12 injection therapy \u2014 it is not cured once levels normalise, and stopping treatment causes deficiency to return.",
+        "why_resisted": "Once people feel better, stopping injections feels logical. Feeling well makes continued treatment feel unnecessary. The invisibility of the underlying mechanism (absent intrinsic factor) makes it easy to underestimate.",
+        "path_forward": "People with confirmed pernicious anaemia who understand that the mechanism of deficiency is permanent \u2014 not just low intake \u2014 maintain treatment compliance. Finding a GP or haematologist who schedules structured, long-term monitoring makes this sustainable."
+      },
+      {
+        "truth": "Many GPs prescribe 3-monthly injections as standard without recognising that a substantial number of people with neurological B12 deficiency need more frequent dosing to maintain symptom control.",
+        "why_resisted": "Standard protocols feel authoritative. Patients may not know they can advocate for different injection frequencies. Practitioners may interpret a return of symptoms as something other than under-dosing.",
+        "path_forward": "Patients who document a clear pattern of symptom return in the weeks before their next scheduled injection have a concrete basis for requesting shorter intervals. Patient communities and knowledgeable practitioners can support this advocacy."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Identify and treat the root cause of deficiency, not just the deficiency itself",
+          "why_it_matters": "Without addressing the driver \u2014 whether that is pernicious anaemia, SIBO, coeliac, medications, or diet \u2014 B12 repletion is a maintenance strategy, not a cure. Understanding the mechanism determines the appropriate form and duration of treatment.",
+          "how_to_start": "Request autoimmune markers (IFA, PCA), a thorough medication review, and GI investigation if no obvious dietary cause exists. A functional medicine doctor or gastroenterologist with interest in nutrient deficiencies is better placed than a standard GP to investigate underlying mechanisms.",
+          "timeline": "Diagnosis may take 1\u20133 months of investigation; treatment response begins within weeks for haematological symptoms, and months to over a year for neurological symptoms.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Use functional markers (MMA, holotranscobalamin) not just serum B12 for monitoring",
+          "why_it_matters": "Serum B12 can appear normal while tissue-level deficiency persists. MMA normalisation is a more reliable sign that cells are actually receiving adequate B12. Using the right tests prevents both under- and over-treatment.",
+          "how_to_start": "Request MMA alongside serum B12 at the next blood draw. Aim for MMA within the normal reference range (typically below 0.4 \u00b5mol/L) as an indicator of adequate cellular repletion.",
+          "timeline": "MMA typically normalises within 4\u20138 weeks of adequate B12 treatment.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Establish the correct treatment form and frequency for the individual",
+          "why_it_matters": "One-size-fits-all injection protocols do not account for the variability in how individuals retain and utilise B12. Frequency, form (hydroxocobalamin vs methylcobalamin), and route (injection vs oral) all interact with the specific cause and individual metabolism.",
+          "how_to_start": "Track symptoms on a calendar in relation to injection dates to identify whether symptoms return before the next scheduled dose. If so, bring this record to the prescribing practitioner as evidence for more frequent dosing.",
+          "timeline": "The right protocol usually becomes clear within 2\u20136 months of systematic monitoring.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Optimise the full methylation nutritional context",
+          "why_it_matters": "B12 does not work in isolation \u2014 it requires adequate folate (especially methylfolate), B6, and magnesium to function effectively in methylation reactions. Correcting B12 in isolation with cofactors depleted may give a partial response.",
+          "how_to_start": "Test folate, iron, vitamin D, and B6 alongside B12. A registered dietitian or functional medicine practitioner can help design a comprehensive repletion strategy.",
+          "timeline": "Nutritional optimisation is a 3\u20136 month process with regular monitoring.",
+          "requires_professional": false
+        },
+        {
+          "lever": "For vegans and vegetarians: establish a permanent, reliable supplementation habit",
+          "why_it_matters": "Plant-based diets provide no reliable B12. Once stores are depleted, deficiency will return if supplementation lapses. Building a sustainable, habitual approach is more important than short-term repletion.",
+          "how_to_start": "Choose a daily supplement of at least 250 mcg methylcobalamin or cyanocobalamin (or 1000 mcg taken 2\u20133 times weekly as an alternative dosing schedule). Add B12-fortified foods as a backup layer.",
+          "timeline": "Stores are typically replenished within 3\u20136 months; then ongoing supplementation prevents recurrence indefinitely.",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Stopping injections or supplements once symptoms resolve \u2014 in pernicious anaemia, the deficiency mechanism is permanent and treatment must continue lifelong",
+        "Treating B12 without testing or treating for folate \u2014 the two deficiencies interact and folate supplementation without B12 correction can cause neurological harm",
+        "Accepting '3-monthly injections as standard' without tracking symptom recurrence and advocating for more frequent dosing if needed",
+        "Relying on serum B12 alone to confirm recovery \u2014 normalised serum B12 does not confirm that cells are adequately replete; MMA is a better marker",
+        "Diagnosing dietary deficiency without ruling out pernicious anaemia \u2014 people eating animal products who become deficient have a malabsorption problem, not a dietary one",
+        "Taking B12 supplements before testing \u2014 this contaminates the baseline and prevents accurate diagnosis",
+        "Expecting fast neurological recovery \u2014 fatigue and mood often improve within weeks, but neuropathy and cognitive symptoms may take months to years, and patience with the process is necessary"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Haematologist",
+          "role": "Specialises in blood disorders including pernicious anaemia and megaloblastic anaemia. Best placed to diagnose and manage complex cases, interpret blood film findings, and confirm intrinsic factor antibody results.",
+          "notes": "Often the most appropriate specialist when macrocytic anaemia or a suspected autoimmune cause is involved. May be more willing to investigate the mechanism thoroughly than a GP."
+        },
+        {
+          "type": "Gastroenterologist",
+          "role": "Investigates gut causes of B12 malabsorption \u2014 SIBO, H. pylori, coeliac disease, Crohn's affecting the terminal ileum, or post-surgical changes. Endoscopy and small bowel investigation fall within their scope.",
+          "notes": "Essential if malabsorptive cause is suspected. A gastroenterologist interested in nutrient absorption is more useful than one focused primarily on structural disease."
+        },
+        {
+          "type": "Functional medicine doctor",
+          "role": "Takes a root-cause investigation approach \u2014 useful for identifying MTHFR variants, methylation issues, gut dysbiosis, medication-induced deficiency, and the full nutritional picture alongside B12.",
+          "notes": "Mainstream haematologists and GPs may treat deficiency without fully investigating the driver. Functional medicine practitioners are more likely to order MMA, holotranscobalamin, and comprehensive gut panels. Quality varies \u2014 seek practitioners with recognised functional medicine training."
+        },
+        {
+          "type": "Registered dietitian (nutrition specialist)",
+          "role": "Can assess and design supplementation strategies for dietary B12 deficiency (particularly in vegans and vegetarians), and advise on B12 in the context of broader nutritional deficiencies.",
+          "notes": "Most valuable for dietary-cause deficiency. For pernicious anaemia or malabsorption, a dietitian works best alongside a medical specialist rather than independently."
+        },
+        {
+          "type": "Neurologist",
+          "role": "Relevant when neurological symptoms are prominent \u2014 peripheral neuropathy, balance problems, subacute combined degeneration, or cognitive decline. Can assess the extent of nerve damage and guide rehabilitation.",
+          "notes": "Should be involved when neurological symptoms are significant or not improving with treatment. Nerve conduction studies and MRI can quantify damage."
+        },
+        {
+          "type": "GP / Primary care physician",
+          "role": "First point of contact for testing and initial prescription of B12 treatment. Can prescribe injections, refer to specialists, and monitor ongoing levels.",
+          "notes": "Many GPs follow rigid protocols around B12 cutoffs and injection frequency that may not suit all patients. Being informed about MMA testing and symptom-based frequency adjustments, and bringing this to the consultation, can help navigate standard care more effectively."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "Pernicious Anaemia Society",
+          "platform": "Website / Forum / Facebook",
+          "url": "https://www.pernicious-anaemia-society.org",
+          "notes": "The leading patient organisation for pernicious anaemia and B12 deficiency worldwide. Offers forums, factsheets, a helpline, and advocacy resources. Particularly valuable for people who feel undertreated or struggle to navigate standard injection protocols."
+        },
+        {
+          "name": "r/B12_Deficiency",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/B12_Deficiency/",
+          "notes": "Active community of people investigating and managing B12 deficiency, including pernicious anaemia, dietary deficiency, and neurological recovery. Rich in personal experience with different forms and injection frequencies."
+        },
+        {
+          "name": "B12 Deficiency Support Group",
+          "platform": "Facebook",
+          "url": null,
+          "notes": "Large Facebook group focused on B12 deficiency and pernicious anaemia. Contains member-shared experiences with testing, injection protocols, and practitioner navigation. Search 'B12 Deficiency Support Group' on Facebook."
+        },
+        {
+          "name": "r/vegan (B12 supplementation discussions)",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/vegan/",
+          "notes": "For those with dietary-cause deficiency, the vegan subreddit has extensive community knowledge about B12 supplementation strategies, fortified foods, and blood monitoring."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Could It Be B12? An Epidemic of Misdiagnoses",
+        "type": "book",
+        "author_or_source": "Sally M. Pacholok and Jeffrey J. Stuart",
+        "url": null,
+        "description": "The most comprehensive patient-facing book on B12 deficiency. Covers the breadth of symptoms, the inadequacy of standard testing, causes of deficiency, and the neurological consequences of delayed treatment. Essential reading for anyone who suspects B12 deficiency is being missed or undertreated.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Pernicious Anaemia Society \u2014 Patient Resources",
+        "type": "website",
+        "author_or_source": "Pernicious Anaemia Society",
+        "url": "https://www.pernicious-anaemia-society.org/pa/",
+        "description": "Clear, patient-written factsheets on pernicious anaemia, B12 deficiency, testing, treatment options, and how to advocate for appropriate care. Regularly updated and grounded in clinical evidence.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Vitamin B12 Deficiency \u2014 NICE Guidelines (UK)",
+        "type": "website",
+        "author_or_source": "National Institute for Health and Care Excellence (NICE)",
+        "url": "https://cks.nice.org.uk/topics/anaemia-b12-folate-deficiency/",
+        "description": "The UK clinical standard for diagnosis and management. Useful for patients who want to understand what clinicians should be doing \u2014 and to identify where their own care may be falling short of guideline recommendations.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Vitamin B12 Deficiency \u2014 Diagnosis and Management",
+        "type": "research paper",
+        "author_or_source": "Wolffenbuttel BHR et al., BMJ 2023",
+        "url": "https://www.bmj.com/content/383/bmj-2022-071725",
+        "description": "A high-quality clinical review covering diagnosis, the limitations of serum B12 testing, use of functional markers (MMA, holotranscobalamin), causes, and treatment including injection vs oral debate. Accessible to non-clinicians willing to engage with medical literature.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Vegan Society \u2014 Vitamin B12 Factsheet",
+        "type": "website",
+        "author_or_source": "The Vegan Society",
+        "url": "https://www.vegansociety.com/resources/nutrition-and-health/nutrients/vitamin-b12",
+        "description": "Clear guidance specifically for vegans on why B12 must be supplemented, what forms and doses work, and how to monitor status. Practical and evidence-based.",
+        "audience": "beginner"
+      },
+      {
+        "title": "B12 Deficiency and the Methylation Connection",
+        "type": "website",
+        "author_or_source": "Chris Masterjohn, PhD",
+        "url": "https://chrismasterjohnphd.substack.com",
+        "description": "Detailed, evidence-grounded writing on B12, methylation, MTHFR, and form selection. More technical than most patient resources but highly valuable for those wanting to understand the biochemistry behind their condition. Search the substack for B12-specific content.",
+        "audience": "advanced"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

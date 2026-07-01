@@ -1,0 +1,708 @@
+{
+  "condition_id": "mastocytosis",
+  "condition_name": "Mastocytosis",
+  "generated_at": "2026-05-11T14:54:53.092782Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Mastocytosis is a condition in which abnormal mast cells accumulate in the skin, bone marrow, and internal organs. These cells release powerful chemicals \u2014 including histamine \u2014 that can trigger a wide range of symptoms from flushing and hives to anaphylaxis, bone pain, and digestive problems. The condition ranges from mild skin-only forms to rare systemic variants involving multiple organs.",
+    "detailed_summary": "Mastocytosis is a clonal mast cell disorder characterised by the abnormal proliferation and accumulation of mast cells in one or more tissues. In the vast majority of cases, a somatic mutation in the KIT gene (most commonly D816V) drives uncontrolled mast cell growth. When mast cells are confined to the skin, the condition is called cutaneous mastocytosis \u2014 the most common form in children. When mast cells accumulate in internal organs such as the bone marrow, liver, spleen, or gastrointestinal tract, it is classified as systemic mastocytosis, which is more common in adults.\n\nMast cells are immune cells that normally help defend against pathogens and coordinate inflammatory responses. In mastocytosis, the sheer burden of abnormal mast cells \u2014 combined with their tendency to degranulate inappropriately \u2014 results in episodic release of histamine, tryptase, prostaglandins, leukotrienes, and other mediators. These chemicals produce symptoms that can mimic allergy, irritable bowel syndrome, anaphylaxis, and a range of neurological and cardiovascular events.\n\nSymptoms are often episodic and triggered by identifiable factors \u2014 heat, alcohol, certain foods, physical friction, medications (especially NSAIDs, opioids, and general anaesthetics), insect stings, and emotional stress. This episodic, multi-system nature is one reason mastocytosis is frequently misdiagnosed for years before the correct cause is identified.\n\nDiagnosis requires a careful combination of clinical assessment, serum tryptase measurement, skin biopsy (if urticaria pigmentosa lesions are present), and bone marrow biopsy with KIT mutation testing \u2014 gold-standard tests that are not routinely ordered by general practitioners. People investigating their own symptoms often first identify the pattern through elimination diets, symptom diaries, and reading about mast cell disorders before reaching a specialist.\n\nTreatment focuses on reducing mast cell mediator burden and preventing degranulation, rather than eliminating mast cells in most cases. Antihistamines (both H1 and H2 blockers), mast cell stabilisers, and leukotriene inhibitors form the foundation of symptom management. In advanced systemic variants, targeted therapies such as midostaurin or avapritinib \u2014 KIT inhibitors \u2014 are used under specialist supervision.",
+    "prevalence": {
+      "summary": "Mastocytosis is rare, affecting roughly 1 in 10,000 people, though it is likely under-diagnosed due to its variable presentation.",
+      "estimate": "Approximately 1 in 10,000 people; some estimates range from 1 in 5,000 to 1 in 20,000",
+      "notes": "Cutaneous mastocytosis is more common in children, while systemic mastocytosis predominantly affects adults. The true prevalence is uncertain because many cases go unrecognised or are misdiagnosed as allergy, IBS, or anxiety. Indolent systemic mastocytosis \u2014 the most common adult variant \u2014 carries a near-normal life expectancy. Advanced systemic variants are substantially rarer. There is no strong sex predominance, though some studies suggest slightly higher rates in women."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Cutaneous mastocytosis (CM)",
+        "description": "Mast cell accumulation confined to the skin. The most common form in children. Includes urticaria pigmentosa (mastocytosis in the skin), diffuse cutaneous mastocytosis, and mastocytoma of the skin.",
+        "distinguishing_features": [
+          "Characteristic tan-to-brown spots or plaques on the skin that urticate (wheal and flare) when rubbed \u2014 the Darier sign",
+          "Children often improve or resolve by adulthood",
+          "Serum tryptase typically normal or mildly elevated",
+          "No bone marrow involvement on biopsy",
+          "Systemic symptoms may still occur from mediator release"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Indolent systemic mastocytosis (ISM)",
+        "description": "The most common adult form. Mast cells accumulate in bone marrow and often other organs, but organ function is preserved. Life expectancy is near-normal.",
+        "distinguishing_features": [
+          "Serum tryptase persistently elevated, often above 20 ng/mL",
+          "Bone marrow biopsy shows multifocal dense mast cell aggregates",
+          "KIT D816V mutation detectable in bone marrow or peripheral blood",
+          "Skin lesions (urticaria pigmentosa) often present",
+          "Anaphylaxis risk \u2014 often triggered by insect venom",
+          "Osteoporosis or osteopenia common due to mast cell mediator effects on bone"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Smouldering systemic mastocytosis (SSM)",
+        "description": "An intermediate form with a higher mast cell burden than ISM but without organ damage meeting criteria for advanced disease. Closer monitoring is required.",
+        "distinguishing_features": [
+          "Two or more 'B findings': high mast cell infiltration in marrow, organomegaly, hypercellular marrow",
+          "No 'C findings' (organ dysfunction) \u2014 distinguishes from aggressive forms",
+          "Higher risk of progression to advanced disease than ISM",
+          "Tryptase often markedly elevated"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Aggressive systemic mastocytosis (ASM)",
+        "description": "Advanced form characterised by mast cell infiltration causing organ damage (liver, bone marrow failure, malabsorption, skeletal lesions). Significantly affects prognosis.",
+        "distinguishing_features": [
+          "At least one 'C finding': cytopenias, liver dysfunction with ascites, malabsorption, pathological fractures",
+          "May progress from ISM or SSM",
+          "Requires cytoreductive therapy",
+          "KIT-targeted agents such as midostaurin or avapritinib are used"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Systemic mastocytosis with associated haematological neoplasm (SM-AHN)",
+        "description": "Mastocytosis occurring alongside a separate blood cancer such as myeloid neoplasm or myeloproliferative disorder. Prognosis depends on the associated neoplasm.",
+        "distinguishing_features": [
+          "Diagnosed when a distinct haematological malignancy coexists",
+          "Requires full haematological workup",
+          "Both conditions must be treated",
+          "Formerly called SM-AHNMD"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Mast cell leukaemia (MCL)",
+        "description": "The rarest and most severe form. Circulating mast cells in peripheral blood. Poor prognosis.",
+        "distinguishing_features": [
+          "Mast cells exceed 10% of circulating white cells",
+          "Rapid multi-organ failure",
+          "Aggressive treatment required; historically poor outcomes",
+          "Avapritinib showing promise in clinical settings"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Episodic skin flushing",
+        "category": "skin / cardiovascular",
+        "notes": "Often triggered by heat, alcohol, exercise, or emotional stress. May be accompanied by urticaria or a burning sensation."
+      },
+      {
+        "symptom": "Urticaria pigmentosa \u2014 tan or brown spots that itch or wheal when rubbed",
+        "category": "skin",
+        "notes": "The Darier sign (localised wheal and flare when scratched) is characteristic. Not all individuals with systemic mastocytosis have visible skin lesions."
+      },
+      {
+        "symptom": "Itching (pruritus) \u2014 generalised or localised",
+        "category": "skin",
+        "notes": "Histamine release is the primary driver. Can be severe and disabling."
+      },
+      {
+        "symptom": "Dermatographism \u2014 skin writing",
+        "category": "skin",
+        "notes": "Physical pressure on the skin produces raised, itchy lines due to localised mast cell degranulation."
+      },
+      {
+        "symptom": "Anaphylaxis or severe allergic-type reactions",
+        "category": "immune / systemic",
+        "notes": "Can occur without exposure to a known allergen. Insect stings (particularly Hymenoptera) are a major trigger. Individuals may carry epinephrine auto-injectors."
+      },
+      {
+        "symptom": "Abdominal cramping and pain",
+        "category": "digestive",
+        "notes": "Mast cell mediators stimulate smooth muscle contraction in the gut. Symptoms can closely mimic IBS."
+      },
+      {
+        "symptom": "Diarrhoea \u2014 often episodic",
+        "category": "digestive",
+        "notes": "Histamine and prostaglandins accelerate intestinal transit. May be severe during degranulation episodes."
+      },
+      {
+        "symptom": "Nausea and vomiting",
+        "category": "digestive",
+        "notes": "Particularly during mediator release episodes."
+      },
+      {
+        "symptom": "Malabsorption and weight loss",
+        "category": "digestive",
+        "notes": "More common in aggressive systemic variants where the intestinal mucosa is heavily infiltrated."
+      },
+      {
+        "symptom": "Bone and joint pain",
+        "category": "musculoskeletal",
+        "notes": "Mast cells in bone marrow release mediators that disrupt bone remodelling. Osteoporosis, osteopenia, and pathological fractures can occur."
+      },
+      {
+        "symptom": "Fatigue and cognitive impairment ('brain fog')",
+        "category": "neurological",
+        "notes": "Circulating histamine and other mediators have CNS effects. Can be severe and debilitating between flares."
+      },
+      {
+        "symptom": "Headaches",
+        "category": "neurological",
+        "notes": "Often associated with mediator release episodes or histamine accumulation."
+      },
+      {
+        "symptom": "Hypotension and dizziness",
+        "category": "cardiovascular",
+        "notes": "Histamine causes vasodilation and can drop blood pressure significantly during degranulation. May overlap with POTS-like presentations."
+      },
+      {
+        "symptom": "Heart palpitations",
+        "category": "cardiovascular",
+        "notes": "Associated with mediator-induced cardiovascular effects during episodes."
+      },
+      {
+        "symptom": "Anxiety and panic-like episodes",
+        "category": "neurological / psychological",
+        "notes": "Mast cell mediators \u2014 particularly histamine acting on CNS receptors \u2014 can produce intense anxiety, panic, and a sense of impending doom during degranulation."
+      },
+      {
+        "symptom": "Nasal congestion and rhinorrhoea",
+        "category": "respiratory",
+        "notes": "Histamine-driven mucosal inflammation, similar to allergic rhinitis."
+      },
+      {
+        "symptom": "Wheeze or shortness of breath",
+        "category": "respiratory",
+        "notes": "Bronchospasm can occur during degranulation episodes, particularly with anaphylaxis."
+      },
+      {
+        "symptom": "Splenomegaly and hepatomegaly",
+        "category": "organ / systemic",
+        "notes": "In systemic variants. May cause fullness, discomfort, or be detected only on imaging."
+      },
+      {
+        "symptom": "Cytopenias \u2014 anaemia, low platelets, or low white cells",
+        "category": "haematological",
+        "notes": "Occurs when bone marrow is heavily infiltrated. A marker of more advanced disease ('C finding')."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Persistently elevated serum baseline tryptase (above 20 ng/mL in adults) is a strong indicator of systemic mastocytosis",
+        "Episodic multi-system symptoms \u2014 flushing, GI upset, hypotension, urticaria \u2014 especially with identifiable triggers",
+        "Skin lesions that urticate when rubbed (positive Darier sign)",
+        "Unexplained osteoporosis in a young or middle-aged adult without obvious risk factors",
+        "Recurrent anaphylaxis, especially to insect stings, in the absence of IgE-mediated allergy",
+        "KIT D816V mutation detected in blood or bone marrow",
+        "Bone marrow biopsy showing multifocal dense mast cell clusters with aberrant CD25 or CD2 expression"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom and trigger diary",
+          "description": "Recording symptoms alongside potential triggers \u2014 foods, temperature changes, medications, stress, alcohol, insect contact, physical friction \u2014 can reveal patterns consistent with mast cell degranulation. Noting timing (symptoms typically begin within minutes to hours of a trigger) and duration helps clinicians assess whether episodes fit a mast cell profile.",
+          "safety_notes": "This is an observational tool only. Individuals experiencing severe reactions, throat tightening, or significant drops in blood pressure should seek emergency care immediately."
+        },
+        {
+          "name": "Darier sign self-observation",
+          "description": "If brown or tan skin spots are present, gently rubbing one spot firmly with a blunt object or fingernail and observing for a localised wheal (raised, itchy bump) within a few minutes is a characteristic feature of cutaneous mastocytosis. This should be documented and shown to a clinician.",
+          "safety_notes": "Do not rub aggressively. In individuals with high mast cell burden, strong physical stimulation could theoretically trigger a broader reaction. Observe for any systemic response."
+        },
+        {
+          "name": "Low-histamine dietary trial",
+          "description": "Some individuals with mastocytosis experience fewer GI symptoms on a low-histamine or low-mast-cell-trigger diet (avoiding alcohol, fermented foods, aged cheeses, certain fish, and artificial additives). Tracking symptom change over 2\u20134 weeks can be informative, though dietary modification does not replace clinical investigation.",
+          "safety_notes": "Restrictive diets carry nutritional risk if extended. Working with a dietitian is advisable for anything beyond a short trial."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Serum baseline tryptase",
+          "type": "gold_standard",
+          "description": "Tryptase is a serine protease almost exclusively stored in mast cell granules. A persistently elevated baseline level (above 20 ng/mL on at least two occasions) is a major diagnostic criterion for systemic mastocytosis. Levels rise acutely during anaphylaxis (and are diagnostically useful if measured within 1\u20133 hours of a reaction). Note that a hereditary alpha-tryptasemia \u2014 a benign copy number variant \u2014 can also elevate baseline tryptase and should be distinguished.",
+          "availability": "Ordered by allergists, haematologists, or immunologists; sometimes by GPs. Standard blood test available through most pathology labs. Some clinicians are unaware of the significance of chronically elevated (vs. acutely elevated) tryptase."
+        },
+        {
+          "name": "Bone marrow biopsy with immunohistochemistry",
+          "type": "gold_standard",
+          "description": "The definitive test for systemic mastocytosis. A biopsy sample is examined for multifocal dense mast cell aggregates (15 or more cells per cluster), and immunostaining assesses aberrant marker expression \u2014 particularly CD25 and/or CD2 on mast cells, which are not normally present. Required for formal classification of systemic variants.",
+          "availability": "Performed by haematologists. Requires referral and is typically reserved for cases with elevated tryptase or high clinical suspicion. Not a first-line test in primary care."
+        },
+        {
+          "name": "KIT D816V mutation testing",
+          "type": "gold_standard",
+          "description": "The KIT D816V point mutation is present in over 90% of systemic mastocytosis cases. Sensitive allele-specific PCR can detect this mutation in peripheral blood (with high-sensitivity assays), avoiding the need for bone marrow biopsy in some cases. Detection of KIT D816V in blood has become increasingly standard in specialist centres.",
+          "availability": "Ordered by haematologists or specialist mast cell clinics. High-sensitivity assays are not available at all pathology labs; referral to a specialist centre may be needed."
+        },
+        {
+          "name": "Skin biopsy",
+          "type": "gold_standard",
+          "description": "When urticaria pigmentosa or other characteristic skin lesions are present, punch biopsy with mast cell staining (tryptase or Giemsa) confirms increased dermal mast cells. The most accessible route to a tissue diagnosis in cutaneous mastocytosis.",
+          "availability": "Performed by dermatologists. Widely available."
+        },
+        {
+          "name": "24-hour urine N-methylhistamine and prostaglandin D2 metabolites",
+          "type": "standard",
+          "description": "Measures the metabolic products of histamine and prostaglandins over 24 hours. Elevated levels support ongoing mast cell mediator release. Useful when tryptase is borderline or in assessing mediator burden rather than mast cell clonality.",
+          "availability": "Specialised test; ordered by allergists or haematologists. Not universally available in standard labs. Requires careful sample collection and dietary restrictions beforehand."
+        },
+        {
+          "name": "Flow cytometry of bone marrow mast cells",
+          "type": "standard",
+          "description": "Identifies aberrant surface marker expression (CD25+, CD2+) on mast cells from bone marrow aspirate. Supports diagnosis and classification alongside biopsy.",
+          "availability": "Performed alongside bone marrow biopsy in haematology centres."
+        },
+        {
+          "name": "DEXA bone density scan",
+          "type": "standard",
+          "description": "Measures bone mineral density. Recommended in all adults with systemic mastocytosis given the high prevalence of osteoporosis and fracture risk from mast cell mediator effects on bone.",
+          "availability": "Widely available through rheumatology or endocrinology referral, or in some cases directly ordered."
+        },
+        {
+          "name": "Hereditary alpha-tryptasemia (H\u03b1T) genotyping",
+          "type": "emerging",
+          "description": "A benign copy number variant in the TPSAB1 gene causes elevated baseline tryptase in roughly 5% of the population and can produce symptoms overlapping with MCAS and mastocytosis. Genotyping distinguishes H\u03b1T from clonal mast cell disease. Important in interpreting elevated tryptase when biopsy findings are negative.",
+          "availability": "Specialist research and academic centres; becoming more available through dedicated mast cell disease clinics."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
+        "relationship": "mechanistic_link",
+        "explanation": "MCAS and mastocytosis are both mast cell disorders causing mediator-driven symptoms. MCAS involves pathological mast cell activation without the clonal proliferation or tissue accumulation seen in mastocytosis. They can coexist, and mastocytosis is considered one cause of clonal MCAS. Distinguishing them requires tryptase measurement, bone marrow biopsy, and KIT mutation testing."
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "often_confused",
+        "explanation": "Both conditions can produce flushing, urticaria, GI symptoms, and headaches after histamine-rich foods or alcohol. Histamine intolerance is a non-clonal disorder of histamine metabolism (DAO deficiency), whereas mastocytosis involves excess endogenous histamine production from abnormal mast cells. A low-histamine diet may help both but does not address the clonal driver in mastocytosis."
+      },
+      {
+        "id": "allergy",
+        "name": "IgE-mediated allergy",
+        "relationship": "often_confused",
+        "explanation": "Anaphylaxis and allergic reactions in mastocytosis can be mistaken for IgE-mediated allergy. In mastocytosis, reactions may occur without detectable IgE sensitisation and can be disproportionately severe. Individuals with mastocytosis are at particular risk of severe venom anaphylaxis. Allergy testing may be negative despite significant reactivity."
+      },
+      {
+        "id": "ibs",
+        "name": "Irritable bowel syndrome (IBS)",
+        "relationship": "often_confused",
+        "explanation": "The GI symptoms of mastocytosis \u2014 episodic cramping, diarrhoea, nausea \u2014 closely mimic IBS. Many individuals are diagnosed with IBS for years before mastocytosis is identified. Mast cells are increasingly recognised as players in IBS pathophysiology, and some cases diagnosed as IBS may involve subclinical mast cell activation."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "Mast cell mediators \u2014 particularly histamine \u2014 cause vasodilation and can impair autonomic blood pressure regulation, producing orthostatic intolerance, tachycardia, and dizziness. POTS and mastocytosis/MCAS are increasingly recognised as overlapping conditions, particularly in the hypermobility-MCAS-POTS triad."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / Hypermobile EDS",
+        "relationship": "comorbid",
+        "explanation": "A recognised triad of hypermobile EDS, POTS, and mast cell activation disorders has been described in the literature. The mechanistic links are not fully understood but may involve connective tissue abnormalities affecting mast cell anchoring and autonomic regulation. Mastocytosis is rarer than MCAS in this triad but should be considered."
+      },
+      {
+        "id": "allergic_rhinitis",
+        "name": "Allergic rhinitis",
+        "relationship": "often_confused",
+        "explanation": "Histamine-driven nasal symptoms in mastocytosis \u2014 congestion, rhinorrhoea, sneezing \u2014 are often attributed to allergic rhinitis. Allergy skin testing may be negative, and antihistamines provide partial but incomplete relief."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "often_confused",
+        "explanation": "The neurological effects of mast cell mediators \u2014 including histamine acting on CNS H1 and H2 receptors \u2014 can produce intense anxiety, panic, and cognitive symptoms during degranulation episodes. These are frequently misattributed to primary anxiety disorder, delaying the correct diagnosis by years."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "Widespread pain, fatigue, and cognitive impairment in mastocytosis can resemble fibromyalgia. Mast cell mediators may contribute to central sensitisation. Some individuals carry both diagnoses, and mast cell treatment can improve fibromyalgia-like symptoms in this subset."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation",
+        "relationship": "downstream",
+        "explanation": "Chronic mast cell mediator exposure may sensitise central pain pathways, contributing to widespread pain and hypersensitivity that persists even when acute mediator levels are controlled."
+      },
+      {
+        "id": "osteoporosis",
+        "name": "Osteoporosis",
+        "relationship": "downstream",
+        "explanation": "Mast cell mediators \u2014 particularly histamine, prostaglandins, and tryptase \u2014 disrupt normal bone remodelling, promoting osteoclast activity and suppressing osteoblasts. Unexplained osteoporosis in a young adult is a recognised presentation of systemic mastocytosis and warrants tryptase measurement."
+      },
+      {
+        "id": null,
+        "name": "Hereditary alpha-tryptasemia (H\u03b1T)",
+        "relationship": "often_confused",
+        "explanation": "A common genetic variant causing elevated baseline tryptase and overlapping symptoms including flushing, GI issues, and hypotension. It is distinct from mastocytosis and does not involve clonal mast cell proliferation. Distinguishing H\u03b1T from mastocytosis is important and requires genotyping alongside bone marrow evaluation."
+      },
+      {
+        "id": null,
+        "name": "Insect venom allergy / Hymenoptera anaphylaxis",
+        "relationship": "comorbid",
+        "explanation": "Individuals with mastocytosis \u2014 particularly ISM \u2014 are at substantially elevated risk of severe or fatal anaphylaxis following insect stings. A history of unexpectedly severe venom reactions should prompt tryptase measurement and mastocytosis evaluation. Venom immunotherapy is often recommended as a management strategy."
+      },
+      {
+        "id": "eosinophilic",
+        "name": "Eosinophilic GI disorders",
+        "relationship": "often_confused",
+        "explanation": "Both involve immune cell infiltration of the GI tract causing pain, nausea, and malabsorption. Eosinophilic disorders involve eosinophils rather than mast cells, though mast cells are often co-elevated. Endoscopic biopsy with specific staining differentiates them."
+      },
+      {
+        "id": "microscopic_colitis",
+        "name": "Microscopic colitis",
+        "relationship": "often_confused",
+        "explanation": "Chronic watery diarrhoea in systemic mastocytosis can be mistaken for microscopic colitis. Both conditions appear grossly normal on endoscopy and require biopsy for diagnosis. Mast cell infiltration of the colon may coexist or mimic collagenous and lymphocytic colitis patterns."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "H1 antihistamines \u2014 non-sedating",
+          "category": "medication",
+          "description": "First-line for urticaria, flushing, pruritus, and rhinitis symptoms. Non-sedating H1 blockers (cetirizine, loratadine, fexofenadine) are typically used around the clock rather than as-needed in mastocytosis, as ongoing mast cell activity is continuous. Higher doses may be required under medical guidance.",
+          "evidence_level": "strong",
+          "notes": "H1 blockers do not prevent degranulation \u2014 they compete for histamine receptors after release. They are a treatment for symptoms, not a disease-modifying therapy."
+        },
+        {
+          "name": "H2 antihistamines",
+          "category": "medication",
+          "description": "H2 blockers (famotidine, ranitidine where available) target gastric and intestinal histamine receptors, reducing acid hypersecretion and GI symptoms. Most commonly used alongside H1 blockers for GI-dominant symptoms.",
+          "evidence_level": "strong",
+          "notes": "Combining H1 and H2 blockade provides broader coverage of histamine receptor types than either alone."
+        },
+        {
+          "name": "Mast cell stabilisers \u2014 cromolyn sodium",
+          "category": "medication",
+          "description": "Oral cromolyn sodium (sodium cromoglicate) reduces mast cell degranulation in the GI tract. Can significantly improve abdominal pain, diarrhoea, nausea, and some systemic symptoms in individuals with GI-predominant disease. Must be taken before meals and on a consistent schedule.",
+          "evidence_level": "moderate",
+          "notes": "Oral cromolyn has minimal systemic absorption, so its effects are largely confined to the GI tract. It may take several weeks to reach full benefit. Availability varies by country."
+        },
+        {
+          "name": "Leukotriene receptor antagonists",
+          "category": "medication",
+          "description": "Montelukast and similar agents block prostaglandin and leukotriene receptor effects, which may help with flushing, skin symptoms, and some GI symptoms not fully controlled by antihistamines.",
+          "evidence_level": "moderate",
+          "notes": "Montelukast has a neuropsychiatric side-effect warning; individuals with pre-existing anxiety or mood symptoms should discuss risks with their prescriber."
+        },
+        {
+          "name": "Aspirin for prostaglandin-mediated flushing",
+          "category": "medication",
+          "description": "Low-dose aspirin can reduce prostaglandin D2-driven flushing in some individuals with mastocytosis. Used specifically when flushing is not controlled by antihistamines and prostaglandin excess is confirmed.",
+          "evidence_level": "moderate",
+          "notes": "NSAIDs including aspirin can trigger degranulation in a subset of individuals with mastocytosis \u2014 this is a significant risk. Any use of aspirin or NSAIDs should be introduced under medical supervision, ideally with a test dose in a monitored setting. This is not appropriate for self-initiation."
+        },
+        {
+          "name": "Epinephrine auto-injector (adrenaline pen)",
+          "category": "medication",
+          "description": "Individuals with mastocytosis and a history of anaphylaxis \u2014 or those considered at high risk \u2014 are typically prescribed at least one (often two) epinephrine auto-injectors. Prompt use at the onset of anaphylaxis can be life-saving.",
+          "evidence_level": "strong",
+          "notes": "Some specialist guidelines recommend auto-injectors for all individuals with systemic mastocytosis regardless of prior anaphylaxis history, given the unpredictability of severe reactions. Individuals and caregivers should receive training in use."
+        },
+        {
+          "name": "Trigger identification and avoidance",
+          "category": "lifestyle",
+          "description": "Systematic identification of personal degranulation triggers \u2014 through symptom diaries and careful observation \u2014 allows targeted avoidance. Common triggers include alcohol, heat, cold, physical friction, specific foods (fermented products, aged cheeses, certain fish), insect stings, and specific medications (NSAIDs, opioids, some antibiotics).",
+          "evidence_level": "strong",
+          "notes": "Triggers are highly individual. What causes degranulation in one person may be tolerated by another. Blanket avoidance of all potential triggers can be unnecessarily restrictive; guided, systematic identification is more effective."
+        },
+        {
+          "name": "Low-histamine diet",
+          "category": "diet",
+          "description": "Reducing dietary histamine load \u2014 avoiding fermented foods, aged cheeses, alcohol, canned fish, and certain vegetables \u2014 may reduce the overall mediator burden and improve symptoms in histamine-sensitive individuals. Most useful as an adjunct to medication rather than a standalone treatment.",
+          "evidence_level": "moderate",
+          "notes": "Low-histamine diets are restrictive and not nutritionally complete long-term without guidance. Working with a dietitian with experience in mast cell disorders is recommended. The diet does not address endogenous histamine production from mast cells."
+        },
+        {
+          "name": "Vitamin D and bisphosphonates for bone health",
+          "category": "medication / supplement",
+          "description": "Given the high rate of osteoporosis in systemic mastocytosis, vitamin D and calcium supplementation is commonly recommended. Bisphosphonates may be used under specialist guidance for established osteoporosis or fracture risk.",
+          "evidence_level": "moderate",
+          "notes": "Bone density should be monitored regularly with DEXA scanning. Some individuals with mastocytosis may have reduced tolerance for IV bisphosphonates \u2014 discuss with a haematologist or metabolic bone specialist."
+        },
+        {
+          "name": "Venom immunotherapy",
+          "category": "medication",
+          "description": "For individuals with systemic mastocytosis who have experienced insect venom anaphylaxis, venom immunotherapy (allergy desensitisation injections) substantially reduces the risk of future severe reactions. Often recommended for life in this population given persistent risk.",
+          "evidence_level": "strong",
+          "notes": "Venom immunotherapy is typically managed by a specialist allergist or immunologist. Pre-medication with antihistamines before injections is standard practice."
+        },
+        {
+          "name": "KIT-targeted therapy (midostaurin, avapritinib)",
+          "category": "medication",
+          "description": "For advanced systemic mastocytosis (ASM, SM-AHN, MCL), KIT kinase inhibitors directly reduce the clonal mast cell burden. Avapritinib has shown high response rates and is increasingly used in advanced variants. Midostaurin was the first approved agent for advanced SM.",
+          "evidence_level": "strong",
+          "notes": "These are specialist haematology medications with significant side effect profiles and require formal diagnosis of advanced disease. Not used in indolent mastocytosis where the risk-benefit ratio does not support cytoreductive therapy."
+        },
+        {
+          "name": "Stress management and nervous system regulation",
+          "category": "lifestyle",
+          "description": "Emotional stress is a recognised mast cell degranulation trigger. Practices that reduce autonomic nervous system hyperactivity \u2014 including diaphragmatic breathing, mindfulness, yoga, and regular sleep \u2014 may reduce the frequency and severity of episodes.",
+          "evidence_level": "anecdotal",
+          "notes": "This is a supportive measure and does not address the underlying clonal process. It should not replace medical treatment."
+        }
+      ],
+      "things_to_avoid": [
+        "NSAIDs (including ibuprofen and aspirin unless specifically prescribed and tested) \u2014 can trigger mast cell degranulation and anaphylaxis in a significant proportion of individuals",
+        "Opioid medications \u2014 many opioids (particularly codeine, morphine) directly degranulate mast cells; fentanyl and buprenorphine are generally better tolerated but must be discussed with an anaesthetist before any procedure",
+        "Certain general anaesthetic agents \u2014 rocuronium, atracurium, succinylcholine, and some induction agents have higher rates of mast cell reactions; specialist pre-anaesthetic assessment is essential",
+        "Alcohol \u2014 a potent and consistent mast cell trigger for most individuals with mastocytosis; even small amounts can provoke flushing, GI distress, or anaphylaxis",
+        "Extreme temperature changes \u2014 hot baths, saunas, rapid transitions from cold to warm environments",
+        "Insect stings without preparation \u2014 individuals at risk should carry two epinephrine auto-injectors at all times and wear protective clothing outdoors",
+        "Radiocontrast dye without premedication \u2014 imaging procedures using iodinated contrast carry anaphylaxis risk; radiologists and requesting clinicians must be informed of the diagnosis so premedication protocols can be used",
+        "Tight or rubbing clothing over skin lesions \u2014 friction is a direct physical degranulation trigger",
+        "Delaying use of epinephrine during an anaphylactic episode \u2014 early use is critical; antihistamines alone do not treat anaphylaxis"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "Most general practitioners and even many gastroenterologists and allergists are not trained to diagnose mastocytosis, and a single normal tryptase result can be falsely reassuring if it is taken during a low-activity period rather than as a true baseline.",
+        "why_resisted": "People want to trust that the specialist they finally reached has considered every possibility. Accepting that the diagnostic system has gaps requires advocating for more specific tests, which feels confrontational and exhausting.",
+        "path_forward": "Those who specifically request a fasting baseline tryptase on at least two separate occasions \u2014 and document this request in writing \u2014 are more likely to obtain the data needed to confirm or exclude systemic mastocytosis. Seeking a haematologist or dedicated mast cell disease clinic rather than relying on allergy alone moves the investigation forward."
+      },
+      {
+        "truth": "In indolent systemic mastocytosis, the underlying clonal disease is not curable with current standard treatments \u2014 symptom management is the realistic goal for most people, not eradication of the condition.",
+        "why_resisted": "After years of searching for an answer, receiving a definitive diagnosis can feel like relief should come with it. Learning that treatment is primarily about controlling mediators rather than removing the root cause is genuinely disappointing.",
+        "path_forward": "People who accept the chronic management framework early tend to build more effective, consistent medication and trigger-avoidance routines. Those who do this consistently often achieve substantial functional improvement \u2014 including near-normal daily life \u2014 even without disease remission."
+      },
+      {
+        "truth": "Many of the most distressing symptoms \u2014 including panic attacks, cognitive impairment, and overwhelming fatigue \u2014 are biochemically driven by mast cell mediators, not primary psychiatric conditions. However, because they look psychiatric, they are often treated with psychiatric medications first, which can themselves trigger mast cell reactions.",
+        "why_resisted": "People are often relieved to be told their symptoms are anxiety \u2014 it feels like something manageable \u2014 or they are so dismissed by providers that they accept a psychiatric label to finally get help of any kind.",
+        "path_forward": "Once mastocytosis is treated appropriately and mediator burden is reduced, many previously 'psychiatric' symptoms diminish significantly without dedicated psychiatric treatment. This validates the physiological cause and opens the door to more targeted, effective care."
+      },
+      {
+        "truth": "Dietary management alone \u2014 including low-histamine, low-FODMAP, or elimination diets \u2014 does not treat mastocytosis and can create significant nutritional deficiencies and social isolation if used as a primary strategy without medication.",
+        "why_resisted": "Diet feels like something people can control, and it does provide partial symptom relief. It is also often the first thing suggested online. The idea that medication is necessary feels like giving up control or accepting a more serious diagnosis.",
+        "path_forward": "Using diet as an adjunct to appropriate H1/H2 antihistamine therapy and mast cell stabilisers \u2014 rather than instead of them \u2014 gives people control over one variable while the medication handles the biochemical load. This combination produces better outcomes than diet alone."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Obtaining a confirmed diagnosis with tryptase, KIT mutation testing, and if indicated, bone marrow biopsy",
+          "why_it_matters": "Without a confirmed diagnosis, treatment is guesswork. Knowing whether the condition is indolent, smouldering, or advanced changes the entire management strategy, risk assessment, and urgency of intervention.",
+          "how_to_start": "Request a fasting serum baseline tryptase from a GP or allergy/haematology referral. Bring a written summary of multi-system episodic symptoms, including any anaphylaxis history, to strengthen the referral case.",
+          "timeline": "Baseline tryptase results in days; specialist referral and bone marrow workup typically weeks to months depending on healthcare system",
+          "requires_professional": true
+        },
+        {
+          "lever": "Establishing a consistent H1 + H2 antihistamine regimen taken daily rather than as-needed",
+          "why_it_matters": "Mast cell mediator release is continuous and ongoing, not just episodic. Continuous antihistamine coverage reduces the background level of histamine at receptor sites, dampening both acute episodes and the baseline symptom burden.",
+          "how_to_start": "Discuss with a specialist \u2014 typically an allergist or haematologist \u2014 the appropriate antihistamine combination and dosing. Many individuals require doses above standard allergy dosing.",
+          "timeline": "Improvement in skin, GI, and flushing symptoms may be noticeable within 1\u20134 weeks of consistent use",
+          "requires_professional": true
+        },
+        {
+          "lever": "Systematic personal trigger identification",
+          "why_it_matters": "Triggers are highly individual. Identifying specific personal triggers \u2014 rather than avoiding all possible triggers \u2014 allows informed, targeted avoidance without unnecessary restriction.",
+          "how_to_start": "Keep a daily symptom diary for at least four weeks, noting food, temperature, activity, stress, medications, and products used. Look for patterns of symptom timing relative to potential triggers.",
+          "timeline": "Patterns typically emerge within 4\u20138 weeks of consistent tracking",
+          "requires_professional": false
+        },
+        {
+          "lever": "Carrying and using epinephrine appropriately",
+          "why_it_matters": "Anaphylaxis risk is real and unpredictable in mastocytosis. Early epinephrine use is the single most life-saving intervention during a severe reaction. Delayed use or relying on antihistamines alone worsens outcomes.",
+          "how_to_start": "Request prescription for two epinephrine auto-injectors, complete training in their use, and carry them consistently. Ensure close contacts are also trained.",
+          "timeline": "Immediate; this is a safety prerequisite",
+          "requires_professional": true
+        },
+        {
+          "lever": "Bone density assessment and protection",
+          "why_it_matters": "Osteoporosis from mastocytosis is silent until a fracture occurs. Early identification allows targeted intervention \u2014 supplementation, bisphosphonates if needed, and weight-bearing exercise \u2014 before significant bone loss accumulates.",
+          "how_to_start": "Request a DEXA scan at or shortly after systemic mastocytosis diagnosis. Discuss vitamin D, calcium, and weight-bearing activity with the managing specialist.",
+          "timeline": "DEXA baseline immediately; bone density improvements from intervention take 12\u201324 months",
+          "requires_professional": true
+        },
+        {
+          "lever": "Pre-procedure communication \u2014 surgical, anaesthetic, and imaging",
+          "why_it_matters": "Medical procedures that would be routine in others can be life-threatening in mastocytosis if the team is not prepared. Proactive communication and the use of established premedication protocols prevents avoidable anaphylaxis.",
+          "how_to_start": "Obtain a written medical alert document from the managing specialist listing diagnosis, known triggers, safe and unsafe medications, and emergency protocol. Share this with every healthcare provider before any procedure.",
+          "timeline": "This is a safety baseline, not a long-term project \u2014 begins immediately after diagnosis",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Relying on a single normal tryptase result to exclude mastocytosis \u2014 tryptase can fluctuate, and a low-activity measurement may miss the diagnosis; baseline means at least two fasting measurements",
+        "Stopping antihistamines when feeling better and resuming only during flares \u2014 this reactive approach fails to maintain the consistent receptor blockade that reduces baseline mediator burden",
+        "Avoiding all potential trigger foods permanently without systematic identification \u2014 creates nutritional deficiency and dietary anxiety without establishing which foods are actually personal triggers",
+        "Not disclosing the mastocytosis diagnosis before surgical procedures, dental treatment, or contrast imaging \u2014 placing oneself at risk of avoidable anaphylaxis from agents the clinical team would otherwise modify or premedicate",
+        "Treating anaphylaxis with antihistamines alone without epinephrine \u2014 antihistamines do not reverse the cardiovascular and airway effects of anaphylaxis; epinephrine must be used first",
+        "Accepting an IBS, anxiety, or fibromyalgia label without investigation of mast cell disease when multi-system episodic symptoms are present \u2014 these diagnoses do not exclude mastocytosis and may delay correct treatment by years",
+        "Using KIT-targeted therapies without formal advanced disease criteria \u2014 these drugs carry significant side effects and are not appropriate for indolent disease"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Haematologist with mast cell disease expertise",
+          "role": "The primary specialist for systemic mastocytosis. Performs and interprets bone marrow biopsy, orders KIT mutation testing, manages disease classification, and oversees cytoreductive therapy in advanced cases.",
+          "notes": "Not all haematologists have mast cell disease experience. Academic medical centres and dedicated mast cell clinics \u2014 found at major universities in the US, UK, Germany, and Spain \u2014 offer the most specialist expertise. Seeking a centre that treats significant caseloads of mastocytosis is worthwhile."
+        },
+        {
+          "type": "Allergist / Clinical immunologist",
+          "role": "Evaluates anaphylaxis history, manages epinephrine prescribing, coordinates venom immunotherapy, oversees premedication protocols, and may initiate tryptase testing and mast cell workup.",
+          "notes": "Often the first specialist to consider mastocytosis in individuals presenting with recurrent anaphylaxis. Not all allergists are experienced in distinguishing mastocytosis from MCAS or ordering the full diagnostic panel."
+        },
+        {
+          "type": "Dermatologist",
+          "role": "Performs skin biopsy for cutaneous mastocytosis diagnosis. May manage skin-predominant disease and coordinate phototherapy if appropriate.",
+          "notes": "Most directly involved in cutaneous mastocytosis. In adults with skin lesions and any systemic symptoms, referral from dermatology to haematology for systemic evaluation is important."
+        },
+        {
+          "type": "Gastroenterologist",
+          "role": "Evaluates GI complications including malabsorption, GI blood loss, and liver or spleen involvement. May perform endoscopic biopsy when GI mast cell infiltration is suspected.",
+          "notes": "A gastroenterologist experienced in mast cell GI disease \u2014 rather than one who will default to IBS management \u2014 is most useful. GI symptoms of mastocytosis require disease-specific treatment, not just symptom suppression."
+        },
+        {
+          "type": "Metabolic bone specialist or endocrinologist",
+          "role": "Manages osteoporosis associated with systemic mastocytosis, including DEXA monitoring, bisphosphonate prescribing, and vitamin D optimisation.",
+          "notes": "Often underutilised in mastocytosis management despite the high prevalence of bone complications."
+        },
+        {
+          "type": "Registered dietitian with mast cell disorder experience",
+          "role": "Guides low-histamine dietary modifications in a nutritionally safe and sustainable way. Helps identify dietary triggers through structured elimination without creating unnecessary restriction.",
+          "notes": "Mainstream dietitians may not be familiar with low-histamine approaches or mast cell dietary considerations. Seeking a practitioner with specific experience in food intolerance or mast cell conditions is valuable."
+        },
+        {
+          "type": "Anaesthetist / perioperative specialist",
+          "role": "Develops a safe anaesthetic protocol prior to any surgical procedure, identifying trigger-free medication alternatives and planning emergency response.",
+          "notes": "Every individual with mastocytosis should have a documented anaesthetic risk assessment before elective procedures. This is a critical safety step that many patients have to actively request."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "The Mastocytosis Society (TMS)",
+          "platform": "Website / patient organisation",
+          "url": "https://www.tmsforacure.org",
+          "notes": "The leading US-based patient advocacy organisation for mastocytosis. Provides physician referral lists, educational resources, conference access, and a community of patients and caregivers. Publishes patient-friendly clinical summaries and updated treatment guidelines."
+        },
+        {
+          "name": "Mast Cell Action (UK)",
+          "platform": "Website / patient organisation",
+          "url": "https://www.mastcellaction.org",
+          "notes": "UK-based charity supporting people with mast cell disorders including mastocytosis and MCAS. Provides UK-specific resources, support groups, and advocacy for better NHS awareness and diagnosis."
+        },
+        {
+          "name": "r/Mastocytosis",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Mastocytosis/",
+          "notes": "Active community of people living with cutaneous and systemic mastocytosis. Useful for sharing experiences, navigating the diagnostic process, and finding specialist recommendations. Quality of information varies \u2014 medical decisions should always be confirmed with a clinician."
+        },
+        {
+          "name": "Mastocytosis Facebook Support Groups",
+          "platform": "Facebook",
+          "url": null,
+          "notes": "Multiple active groups exist, including groups specific to cutaneous mastocytosis in children and adult systemic variants. Searching 'mastocytosis support' on Facebook returns several active communities. These groups often share practical management experience and specialist recommendations."
+        },
+        {
+          "name": "AFIRMM (French Mastocytosis Association)",
+          "platform": "Website / patient organisation",
+          "url": "https://www.afirmm.com",
+          "notes": "French-language resource centred around the Mastocytosis Centre at Necker Hospital in Paris \u2014 one of the world's leading mastocytosis research and treatment centres. Content available in French and English; useful for access to European clinical data and specialist networking."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "The Mastocytosis Society \u2014 Patient Education Library",
+        "type": "website",
+        "author_or_source": "The Mastocytosis Society (TMS)",
+        "url": "https://www.tmsforacure.org/education/",
+        "description": "Comprehensive patient-facing library covering diagnosis, subtypes, treatment options, medication safety, and surgical considerations. Written in accessible language and regularly updated to reflect current evidence. A good starting point for anyone newly diagnosed or in the process of investigation.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Diagnosis and Treatment of Systemic Mastocytosis \u2014 an Evidenced-Based Review",
+        "type": "research paper",
+        "author_or_source": "Pardanani A, Mayo Clinic Proceedings",
+        "url": "https://www.mayoclinicproceedings.org/article/S0025-6196(12)00483-5/fulltext",
+        "description": "A thorough clinical review of diagnostic criteria, classification, and treatment approaches for systemic mastocytosis written for clinicians but accessible to engaged patients. Useful for understanding how specialists think about diagnosis and staging.",
+        "audience": "advanced"
+      },
+      {
+        "title": "WHO Classification and Diagnostic Criteria for Mastocytosis",
+        "type": "research paper",
+        "author_or_source": "Valent et al., Journal of Allergy and Clinical Immunology",
+        "url": "https://www.jacionline.org/article/S0091-6749(21)01000-7/fulltext",
+        "description": "The updated WHO 2022 classification criteria for mastocytosis subtypes. Useful for understanding exactly how diagnoses are classified and what bone marrow and laboratory findings define each variant.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Living with Mastocytosis \u2014 TMS Patient Conference Presentations",
+        "type": "video",
+        "author_or_source": "The Mastocytosis Society",
+        "url": "https://www.tmsforacure.org/conference/",
+        "description": "Recorded presentations from the TMS annual patient conference, featuring specialist haematologists, allergists, and researchers presenting on diagnosis, treatment advances, bone disease, GI management, and quality-of-life topics. An excellent way to hear directly from leading experts in accessible language.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Mast Cell Action \u2014 Understanding Mastocytosis",
+        "type": "website",
+        "author_or_source": "Mast Cell Action (UK)",
+        "url": "https://www.mastcellaction.org/mastocytosis",
+        "description": "Plain-language UK-focused overview of mastocytosis covering types, symptoms, diagnosis, and treatment. Particularly helpful for people navigating the NHS pathway and seeking UK-specific guidance on referrals and resources.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Practical Approaches to the Diagnosis and Treatment of Mastocytosis \u2014 Grand Rounds Lectures (available via Brigham and Women's Hospital / Partners Healthcare online archives)",
+        "type": "video",
+        "author_or_source": "Brigham and Women's Hospital / Harvard Medical School faculty",
+        "url": null,
+        "description": "Expert grand rounds presentations on mastocytosis diagnosis and management. Suitable for patients who want a clinical-level understanding of how haematologists and allergists evaluate and manage the condition. Search by institution and condition name for current availability.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Trigger avoidance in mastocytosis \u2014 practical patient guide",
+        "type": "website",
+        "author_or_source": "The Mastocytosis Society",
+        "url": "https://www.tmsforacure.org/living-with-mastocytosis/triggers/",
+        "description": "A practical, evidence-informed guide to known mast cell degranulation triggers \u2014 foods, medications, environmental factors, and procedures \u2014 with guidance on how to discuss trigger risk with clinicians. A valuable reference for newly diagnosed individuals.",
+        "audience": "beginner"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "125fa0e5ff724900"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

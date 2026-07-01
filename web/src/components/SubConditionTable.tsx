@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { ConditionIndex, SymptomPattern, SubConditionAffinity } from "../types";
+import { ConditionIndex, SymptomPattern } from "../types";
+
+export interface SubConditionAffinity {
+  sub_condition_id: string;
+  patterns: string[];
+}
 
 interface Props {
   rows: ConditionIndex[];
@@ -65,21 +70,28 @@ function HeaderTooltip({ label, children }: { label: string; children: React.Rea
 }
 
 const headerCellStyle: React.CSSProperties = {
-  padding: "0.35rem 0.5rem",
-  fontSize: "0.7rem",
+  padding: "0.5rem 0.75rem 0.5rem",
+  fontSize: "0.72rem",
   fontWeight: 600,
   textTransform: "uppercase",
   letterSpacing: "0.05em",
   color: "#9ca3af",
   borderBottom: "1px solid #e5e7eb",
-  paddingBottom: "0.4rem",
   verticalAlign: "middle",
 };
 
 const cellStyle: React.CSSProperties = {
-  padding: "0.35rem 0.5rem",
+  padding: "0.7rem 0.75rem",
   verticalAlign: "top",
 };
+
+const ROW_BG_EVEN = "#ffffff";
+const ROW_BG_ODD = "#fafafa";
+const ROW_BG_HOVER = "#f3f4f6";
+
+function stripedBg(i: number): string {
+  return i % 2 === 0 ? ROW_BG_EVEN : ROW_BG_ODD;
+}
 
 export default function SubConditionTable({ rows, probabilityById, symptomPatterns, subConditionAffinities, signalsByConditionId }: Props) {
   const navigate = useNavigate();
@@ -193,42 +205,44 @@ export default function SubConditionTable({ rows, probabilityById, symptomPatter
           </tr>
         </thead>
         <tbody>
-          {visible.map((c) => {
+          {visible.map((c, idx) => {
             const greyed = isGreyed(c);
             const clickable = !greyed && c.has_data;
             const signal = signalsByConditionId?.[c.id];
+            const baseBg = stripedBg(idx);
             return (
               <tr
                 key={c.id}
                 onClick={() => clickable && navigate(`/condition/${c.id}`)}
-                onMouseEnter={(e) => { if (clickable) e.currentTarget.style.background = "#f9fafb"; }}
-                onMouseLeave={(e) => (e.currentTarget.style.background = "")}
+                onMouseEnter={(e) => { if (clickable) e.currentTarget.style.background = ROW_BG_HOVER; }}
+                onMouseLeave={(e) => (e.currentTarget.style.background = baseBg)}
                 style={{
+                  background: baseBg,
                   cursor: clickable ? "pointer" : "default",
-                  opacity: greyed ? 0.25 : 1,
-                  transition: "opacity 0.15s",
+                  opacity: greyed ? 0.45 : 1,
+                  transition: "opacity 0.15s, background 0.12s",
                 }}
               >
-                <td style={{ ...cellStyle, paddingTop: "0.45rem" }}>
+                <td style={cellStyle}>
                   {clickable ? (
                     <Link
                       to={`/condition/${c.id}`}
                       onClick={(e) => e.stopPropagation()}
-                      style={{ textDecoration: "none", color: "#111827", fontSize: "0.875rem", fontWeight: 600, display: "block" }}
+                      style={{ textDecoration: "none", color: "#111827", fontSize: "0.95rem", fontWeight: 600, display: "block" }}
                     >
                       {c.name}
                     </Link>
                   ) : (
-                    <span style={{ color: "#9ca3af", fontSize: "0.875rem", fontWeight: 600, display: "block" }}>{c.name}</span>
+                    <span style={{ color: "#9ca3af", fontSize: "0.95rem", fontWeight: 600, display: "block" }}>{c.name}</span>
                   )}
                   {c.group_label && (
-                    <span style={{ display: "block", fontSize: "0.68rem", color: "#9ca3af", marginTop: "0.1rem" }}>
+                    <span style={{ display: "block", fontSize: "0.72rem", color: "#9ca3af", marginTop: "0.15rem" }}>
                       {c.group_label}
                     </span>
                   )}
                 </td>
                 {hasSignals && (
-                  <td style={{ ...cellStyle, fontSize: "0.82rem", color: signal ? "#4b5563" : "#d1d5db", lineHeight: 1.45, paddingTop: "0.45rem" }}>
+                  <td style={{ ...cellStyle, fontSize: "0.9rem", color: signal ? "#4b5563" : "#d1d5db", lineHeight: 1.55 }}>
                     {signal ? renderSignal(signal) : "—"}
                   </td>
                 )}

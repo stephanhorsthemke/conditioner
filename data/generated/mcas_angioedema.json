@@ -1,0 +1,696 @@
+{
+  "condition_id": "mcas_angioedema",
+  "condition_name": "MCAS with angioedema",
+  "generated_at": "2026-05-18T21:34:53.847079Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "MCAS with angioedema describes a pattern in which mast cells \u2014 immune cells that release chemical mediators like histamine, tryptase, and prostaglandins \u2014 activate inappropriately and trigger episodes of swelling (angioedema) beneath the skin or mucous membranes, alongside a wide range of other symptoms across multiple body systems. The swelling can affect the face, lips, throat, tongue, hands, feet, or genitals and may be alarming or even dangerous. Unlike classic allergic reactions, a clear IgE-mediated trigger is often absent, which leads to years of misdiagnosis. Many people with this pattern are told their swelling is 'idiopathic' \u2014 meaning no cause has been found \u2014 when in fact mast cell dysfunction is a plausible and investigable driver.",
+    "detailed_summary": "Mast cell activation syndrome (MCAS) is a condition in which mast cells \u2014 abundant in connective tissue, the gut lining, skin, and airways \u2014 release their mediator load in response to triggers that a typical immune system would ignore or tolerate. In the MCAS-with-angioedema subtype, this inappropriate release causes recurring episodes of deep-tissue swelling (angioedema), which may occur with or without urticaria (hives). The swelling results from histamine and other vasoactive mediators increasing vascular permeability and fluid leakage into tissue. Angioedema from mast cell sources is typically non-pitting, asymmetrical, and resolves over hours to days, though laryngeal or gastrointestinal angioedema can be serious.\n\nThe broader MCAS diagnosis refers to pathological mast cell activation that is not caused by mastocytosis (clonal expansion of mast cells) or a defined IgE-mediated allergy. It was formally characterised in the 2010s, though it remains contested in terms of diagnostic criteria, prevalence, and pathophysiology. The condition is thought to be heterogeneous \u2014 some people have subtle clonal features, others have autoimmune drivers (IgG or IgE anti-Fc\u03b5RI antibodies), and still others appear to have dysregulated mast cell signalling of unknown origin.\n\nAngioedema appearing in the absence of hives, or not responding to antihistamines, has historically been investigated under 'idiopathic angioedema', a catch-all that includes bradykinin-mediated subtypes (such as hereditary angioedema) and histaminergic subtypes. When the angioedema is histamine-driven and responsive to H1/H2 antihistamines, MCAS is increasingly considered as a mechanistic explanation. The overlap between idiopathic histaminergic angioedema and MCAS is clinically significant, and the two labels often describe the same underlying process.\n\nSymptoms extend well beyond angioedema: flushing, tachycardia, GI distress, brain fog, fatigue, and widespread chemical and food sensitivities are common. The multi-system nature of the condition means that patients often see many specialists before a unifying diagnosis is considered. Because no single test is definitive, diagnosis typically requires a combination of symptom patterns, laboratory findings during or after an episode (elevated tryptase, urinary histamine metabolites, or prostaglandins), and a demonstrable response to mast cell-targeted treatment.",
+    "prevalence": {
+      "summary": "MCAS is increasingly recognised but its true prevalence is unknown and actively debated; estimates vary widely depending on diagnostic criteria used.",
+      "estimate": "Estimates range from under 1% to as high as 17% of the general population, with the higher figures using broader criteria; angioedema affects roughly 10\u201315% of the population at some point in their lives, with a histaminergic/idiopathic subset that may significantly overlap with MCAS.",
+      "notes": "Prevalence figures for MCAS specifically are unreliable because there is no universally accepted diagnostic standard. Studies using strict criteria (e.g. elevated tryptase during episodes plus response to treatment) yield much lower figures than those using symptom-based criteria. Women appear to be diagnosed more frequently than men, consistent with known hormonal effects on mast cell activation. Many cases are likely undiagnosed or misclassified as chronic urticaria, idiopathic angioedema, IBS, or anxiety."
+    },
+    "subgroups": [
+      {
+        "id": "mcas",
+        "name": "Primary (clonal) MCAS",
+        "description": "Associated with a somatic mutation (commonly KIT D816V) that causes clonal proliferation of mast cells, sometimes at levels below diagnostic thresholds for systemic mastocytosis. Angioedema and anaphylaxis episodes may be more severe.",
+        "distinguishing_features": [
+          "Baseline serum tryptase persistently elevated (often >15 ng/mL)",
+          "KIT D816V mutation detectable in blood or bone marrow",
+          "May have subtle skin findings (Darier's sign, urticaria pigmentosa)",
+          "Bone marrow biopsy may show abnormal mast cell clusters"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Secondary (reactive) MCAS",
+        "description": "Mast cells are activated by an identifiable upstream driver such as IgE-mediated allergy, autoimmune disease, or chronic infection. Treating the underlying condition may improve MCAS symptoms.",
+        "distinguishing_features": [
+          "Clear correlation with known allergen exposure or IgE sensitisation",
+          "Improvement when the primary condition is treated",
+          "Normal baseline tryptase between episodes",
+          "May have co-existing atopic conditions"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Idiopathic (non-clonal) MCAS with angioedema",
+        "description": "The most common and controversial subtype. No clonal mutation, no IgE driver, and no clear upstream cause. Angioedema is histamine-driven and episodic. This is the group most often labelled 'idiopathic histaminergic angioedema'.",
+        "distinguishing_features": [
+          "Angioedema responds to H1/H2 antihistamines or omalizumab",
+          "Tryptase often normal between and during episodes",
+          "Triggers tend to be diffuse: stress, temperature, foods, hormonal shifts",
+          "Other MCAS symptoms (flushing, GI, fatigue) commonly co-present"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Autoimmune MCAS",
+        "description": "Driven by autoantibodies (typically IgG or IgE) targeting Fc\u03b5RI receptors or IgE itself on mast cell surfaces, causing autonomous activation. This mechanism is shared with chronic spontaneous urticaria.",
+        "distinguishing_features": [
+          "May have positive autologous serum skin test (ASST)",
+          "Elevated IgG anti-Fc\u03b5RI\u03b1 or anti-IgE antibodies on specialised testing",
+          "Often responds well to omalizumab",
+          "Associated with other autoimmune conditions (thyroid disease, etc.)"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Recurring angioedema (deep tissue swelling)",
+        "category": "skin / vascular",
+        "notes": "Typically affects face, lips, eyelids, tongue, throat, hands, feet, or genitals. Episodes last hours to 2\u20133 days. May or may not accompany hives. Laryngeal angioedema is a medical emergency."
+      },
+      {
+        "symptom": "Urticaria (hives)",
+        "category": "skin",
+        "notes": "Raised, itchy wheals that come and go within 24 hours. May occur with or independently of angioedema episodes."
+      },
+      {
+        "symptom": "Flushing of the face, neck, or chest",
+        "category": "skin / vascular",
+        "notes": "Sudden reddening often triggered by heat, alcohol, spicy food, exercise, or emotional stress. A hallmark of histamine and prostaglandin release."
+      },
+      {
+        "symptom": "Anaphylaxis or near-anaphylaxis episodes",
+        "category": "systemic",
+        "notes": "May include throat tightening, hypotension, syncope, and multi-system involvement. In MCAS, these episodes may occur without an identifiable allergen."
+      },
+      {
+        "symptom": "Abdominal cramping and diarrhoea",
+        "category": "digestive",
+        "notes": "Caused by mast cell mediators acting on gut mucosa and smooth muscle. May closely mimic IBS, particularly diarrhoea-predominant."
+      },
+      {
+        "symptom": "Nausea and vomiting",
+        "category": "digestive",
+        "notes": "Often episodic rather than constant; may coincide with other flare symptoms."
+      },
+      {
+        "symptom": "Gastrointestinal angioedema",
+        "category": "digestive",
+        "notes": "Swelling of the bowel wall causing severe cramping, nausea, and vomiting. Can mimic surgical emergencies and is often unrecognised as mast-cell driven."
+      },
+      {
+        "symptom": "Tachycardia and palpitations",
+        "category": "cardiovascular",
+        "notes": "Histamine acts directly on H1 and H2 cardiac receptors. May be positional, suggesting overlap with POTS in some individuals."
+      },
+      {
+        "symptom": "Hypotension or near-syncope",
+        "category": "cardiovascular",
+        "notes": "Mast cell mediators cause profound vasodilation. Episodes of presyncope or fainting, especially during flares, are common."
+      },
+      {
+        "symptom": "Widespread pruritus (itching) without rash",
+        "category": "skin",
+        "notes": "Generalised or localised itch without visible skin change; reflects histamine and substance P activity."
+      },
+      {
+        "symptom": "Rhinorrhoea and nasal congestion",
+        "category": "respiratory",
+        "notes": "Mast cells are dense in nasal mucosa. Symptoms may resemble chronic allergic rhinitis but occur without clear IgE sensitisation."
+      },
+      {
+        "symptom": "Wheezing or chest tightness",
+        "category": "respiratory",
+        "notes": "Airway mast cells release histamine and cysteinyl leukotrienes, causing bronchospasm. May be misdiagnosed as asthma."
+      },
+      {
+        "symptom": "Brain fog and cognitive difficulties",
+        "category": "neurological",
+        "notes": "Poor concentration, word-finding difficulty, and memory lapses. Linked to neuroinflammatory effects of mast cell mediators crossing the blood-brain barrier."
+      },
+      {
+        "symptom": "Fatigue and post-exertional malaise",
+        "category": "neurological / systemic",
+        "notes": "Persistent low energy, often worsening after flares or physical activity. Can be severe enough to affect function."
+      },
+      {
+        "symptom": "Bone or joint pain",
+        "category": "musculoskeletal",
+        "notes": "Mast cells in connective tissue and periosteum may contribute to widespread musculoskeletal pain; often reported alongside hypermobility-related conditions."
+      },
+      {
+        "symptom": "Anxiety and mood changes",
+        "category": "psychological",
+        "notes": "Histamine and other mediators influence the central nervous system. Anxiety during flares may be a physiological consequence rather than a psychological cause."
+      },
+      {
+        "symptom": "Chemical, food, and drug sensitivities",
+        "category": "systemic / immune",
+        "notes": "Reactions to a wide range of substances including fragrances, medications (especially NSAIDs, opioids, contrast dye), and foods. This multi-sensitivity pattern is characteristic of MCAS."
+      },
+      {
+        "symptom": "Temperature dysregulation",
+        "category": "systemic",
+        "notes": "Intolerance to heat or cold as mast cell triggers; sweating episodes may also occur."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Episodic multi-system symptoms spanning skin, GI, cardiovascular, and neurological systems",
+        "Angioedema or urticaria that does not have a clear IgE trigger and does not fully respond to standard antihistamines alone",
+        "Elevated serum tryptase during or within 4 hours of an acute episode, compared to a stable baseline",
+        "Elevated 24-hour urine N-methylhistamine, prostaglandin D2 metabolites (11\u03b2-prostaglandin F2\u03b1), or leukotriene E4",
+        "Objective improvement in symptoms with H1/H2 antihistamines, mast cell stabilisers, or anti-IgE therapy (omalizumab)",
+        "Triggers that span multiple categories: foods, fragrances, stress, temperature, exercise, hormonal fluctuation"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom and trigger diary",
+          "description": "A detailed log of every episode \u2014 time, duration, severity, preceding exposures (foods eaten in prior 2\u20134 hours, environmental exposures, emotional state, hormonal phase, physical activity, medications) \u2014 builds a pattern that is critical for both diagnosis and personalised management. Include symptom categories: skin, GI, cardiovascular, neurological.",
+          "safety_notes": "No physical risk. Avoid over-interpreting individual episodes; look for patterns across 4\u20138 weeks minimum."
+        },
+        {
+          "name": "Antihistamine trial observation",
+          "description": "Some people systematically track symptom frequency before and during a consistent antihistamine regimen (e.g. daily non-sedating H1 antihistamine). A clear reduction in angioedema frequency or severity provides supporting evidence of a histamine-driven mechanism and informs clinical conversations.",
+          "safety_notes": "Over-the-counter antihistamines are generally safe for short-term observation in adults without contraindications. This is observational only \u2014 medication choices should be discussed with a clinician, particularly for daily long-term use."
+        },
+        {
+          "name": "Low-histamine dietary observation period",
+          "description": "Eliminating high-histamine foods (fermented foods, aged cheeses, alcohol, cured meats, tomatoes, vinegar, leftovers) for 2\u20134 weeks and tracking symptom frequency and severity. Improvement suggests histamine load is a contributing factor.",
+          "safety_notes": "Low-histamine diets can be nutritionally restrictive if followed long-term without guidance. Use as a diagnostic observation tool, not a permanent lifestyle. Best done with support from a dietitian familiar with mast cell conditions."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Serum tryptase (acute and baseline)",
+          "type": "gold_standard",
+          "description": "Serum total tryptase drawn during or within 4 hours of an episode, compared to a baseline drawn when stable. A 20% + 2 ng/mL rise above baseline during a symptomatic episode is a major diagnostic criterion. A persistently elevated baseline (>15 ng/mL) suggests clonal mast cell disease (mastocytosis or clonal MCAS).",
+          "availability": "Widely available via most hospital laboratories. Requires prompt sample collection during acute episodes \u2014 having a standing order is important. Baseline tryptase can be ordered by allergists, haematologists, or immunologists."
+        },
+        {
+          "name": "24-hour urine histamine metabolites",
+          "type": "standard",
+          "description": "Measures N-methylhistamine (the primary histamine metabolite) in a 24-hour urine collection, reflecting overall histamine production. Best collected during a symptomatic period.",
+          "availability": "Available through specialist allergy and immunology centres, some functional medicine labs, and national reference laboratories. Requires careful sample collection (refrigeration, dietary restrictions on histamine-rich foods before collection)."
+        },
+        {
+          "name": "Urine prostaglandin D2 metabolite (11\u03b2-PGF2\u03b1)",
+          "type": "standard",
+          "description": "Prostaglandin D2 is a major mast cell mediator causing flushing and GI symptoms. Its urinary metabolite 11\u03b2-prostaglandin F2\u03b1 is measured in 24-hour urine and may be elevated when tryptase is normal, making it a useful complementary marker.",
+          "availability": "Specialist laboratory testing; available through academic medical centres and some functional medicine labs. Less widely ordered than tryptase."
+        },
+        {
+          "name": "Urine leukotriene E4",
+          "type": "standard",
+          "description": "Cysteinyl leukotrienes, particularly LTE4, are mast cell mediators contributing to bronchoconstriction and vascular permeability. Elevated urinary LTE4 supports mast cell activation, particularly when respiratory symptoms are prominent.",
+          "availability": "Specialist referral typically required; available through allergy and clinical immunology services."
+        },
+        {
+          "name": "Plasma chromogranin A",
+          "type": "standard",
+          "description": "A non-specific marker of neuroendocrine and mast cell activation. Elevated levels may support the diagnosis but are not specific; proton pump inhibitor use causes false elevation.",
+          "availability": "Available through general laboratories; often ordered by gastroenterologists or endocrinologists investigating flushing syndromes."
+        },
+        {
+          "name": "KIT D816V mutation (blood or bone marrow)",
+          "type": "standard",
+          "description": "Detects the most common somatic mutation associated with clonal mast cell disease. Sensitive next-generation sequencing (NGS) assays on peripheral blood can detect low-level mutation burden. Positive result supports primary/clonal MCAS or systemic mastocytosis.",
+          "availability": "Specialist haematology or allergy referral; increasingly available via peripheral blood with high-sensitivity NGS."
+        },
+        {
+          "name": "Bone marrow biopsy",
+          "type": "gold_standard",
+          "description": "Required for definitive diagnosis of systemic mastocytosis when clonal MCAS is suspected. Examines mast cell morphology, clustering, and CD25/CD2 co-expression. Not required for non-clonal MCAS diagnosis.",
+          "availability": "Haematology specialist; indicated when baseline tryptase is persistently elevated, KIT D816V is detected, or clinical suspicion is high for mastocytosis."
+        },
+        {
+          "name": "IgE panel and skin prick testing",
+          "type": "standard",
+          "description": "Excludes IgE-mediated allergy as the driver of angioedema and identifies secondary MCAS. Negative results in a patient with recurrent angioedema support an idiopathic or MCAS mechanism.",
+          "availability": "Standard allergy and immunology referral."
+        },
+        {
+          "name": "C1-inhibitor level and function, C4 complement",
+          "type": "gold_standard",
+          "description": "Critically important to rule out hereditary angioedema (HAE), which is bradykinin-mediated, not histamine-mediated, and requires entirely different treatment. Low C4 and/or C1-INH strongly suggest HAE rather than MCAS-driven angioedema.",
+          "availability": "Widely available through immunology or clinical genetics services; should be ordered in all cases of unexplained recurrent angioedema."
+        },
+        {
+          "name": "Autologous serum skin test (ASST) or basophil activation test (BAT)",
+          "type": "emerging",
+          "description": "ASST identifies autoimmune-driven mast cell/basophil activation. BAT measures basophil degranulation ex vivo in response to stimuli and can support MCAS diagnosis and guide treatment decisions. More research tools than routine clinical tests at present.",
+          "availability": "Specialist allergy research centres; not widely available in routine practice."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
+        "relationship": "mechanistic_link",
+        "explanation": "MCAS-with-angioedema is a specific clinical presentation within the broader MCAS spectrum. Angioedema is one of the most dramatic and recognisable manifestations of pathological mast cell mediator release."
+      },
+      {
+        "id": "mastocytosis",
+        "name": "Systemic mastocytosis",
+        "relationship": "often_confused",
+        "explanation": "Systemic mastocytosis involves clonal proliferation of mast cells and causes similar symptoms including angioedema and anaphylaxis. Distinguishing clonal from non-clonal mast cell disease requires serum tryptase and bone marrow assessment. Mastocytosis must be excluded before diagnosing idiopathic MCAS."
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "mechanistic_link",
+        "explanation": "Histamine intolerance (reduced diamine oxidase capacity to break down dietary histamine) and MCAS both result in elevated histamine burden but via different mechanisms. They can co-exist, and distinguishing them matters because management differs. Histamine intolerance is load-dependent; MCAS is driven by endogenous overproduction."
+      },
+      {
+        "id": null,
+        "name": "Hereditary angioedema (HAE)",
+        "relationship": "often_confused",
+        "explanation": "HAE is bradykinin-mediated (not histamine-driven) and caused by C1-inhibitor deficiency or dysfunction. It must be ruled out in all recurrent angioedema cases because it does not respond to antihistamines and has specific treatments. MCAS-angioedema and HAE can look identical clinically."
+      },
+      {
+        "id": null,
+        "name": "Chronic spontaneous urticaria (CSU)",
+        "relationship": "mechanistic_link",
+        "explanation": "CSU and MCAS-with-angioedema share autoimmune mast cell activation mechanisms (anti-Fc\u03b5RI antibodies) and both may respond to omalizumab. Many people with CSU meet criteria for MCAS, and the conditions likely exist on a spectrum."
+      },
+      {
+        "id": "allergy",
+        "name": "IgE-mediated allergy",
+        "relationship": "often_confused",
+        "explanation": "Classic IgE-mediated anaphylaxis and allergic angioedema are driven by specific allergen\u2013IgE interactions. MCAS differs in that no specific IgE trigger is found. Allergy testing is needed to distinguish these, and some patients have both."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / HSD (hypermobile Ehlers-Danlos syndrome)",
+        "relationship": "comorbid",
+        "explanation": "MCAS, hEDS, and POTS form a well-recognised triad. Connective tissue abnormalities in hEDS may affect mast cell tissue environments, and mast cells release proteases that can degrade connective tissue. Angioedema is reported more frequently in hEDS populations."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "Postural orthostatic tachycardia syndrome co-occurs with MCAS at rates far above chance. Mast cell mediators cause vasodilation and fluid shifts that exacerbate POTS. Tachycardia during MCAS flares can be difficult to distinguish from POTS episodes."
+      },
+      {
+        "id": "ibs",
+        "name": "IBS",
+        "relationship": "often_confused",
+        "explanation": "GI symptoms of MCAS (cramping, diarrhoea, nausea) frequently meet IBS diagnostic criteria. Mast cell hyperactivation in the gut mucosa is increasingly implicated in IBS pathophysiology, and MCAS may be an unrecognised driver in some IBS cases."
+      },
+      {
+        "id": "allergic_rhinitis",
+        "name": "Allergic rhinitis",
+        "relationship": "comorbid",
+        "explanation": "Chronic rhinitis without clear IgE sensitisation is common in MCAS. Nasal mast cells are abundant and reactive. Some individuals carry both an IgE-mediated component and an MCAS component to their nasal symptoms."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "often_confused",
+        "explanation": "Mast cell mediators directly activate the HPA axis and limbic system, generating anxiety-like states that are physiological rather than purely psychological. MCAS is frequently misdiagnosed as panic disorder, particularly when cardiovascular symptoms (tachycardia, flushing, near-syncope) predominate."
+      },
+      {
+        "id": null,
+        "name": "Carcinoid / neuroendocrine tumour",
+        "relationship": "often_confused",
+        "explanation": "Flushing, diarrhoea, and elevated urine metabolites in MCAS overlap with carcinoid syndrome. Serum chromogranin A and 24-hour urine 5-HIAA should be checked to exclude a neuroendocrine tumour before attributing symptoms to MCAS."
+      },
+      {
+        "id": "hormonal",
+        "name": "Hormonal / menstrual cycle effects",
+        "relationship": "mechanistic_link",
+        "explanation": "Oestrogen upregulates mast cell degranulation, while progesterone may have stabilising effects. Many women report significant MCAS symptom worsening in the peri-ovulatory and premenstrual phases. Hormonal fluctuations are among the most common MCAS triggers."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "Widespread pain, fatigue, and sensory sensitivity overlap between fibromyalgia and MCAS. Mast cell mediators may contribute to central sensitisation. These conditions co-occur more than expected by chance."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation",
+        "relationship": "mechanistic_link",
+        "explanation": "Chronic mast cell mediator release may contribute to neuroinflammation and central sensitisation, amplifying pain and sensory processing. Central sensitisation can also lower the threshold for mast cell triggers, creating a bidirectional loop."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction (autoimmune)",
+        "relationship": "comorbid",
+        "explanation": "Hashimoto's thyroiditis and Graves' disease co-occur with MCAS and chronic urticaria/angioedema at elevated rates, likely reflecting shared autoimmune and mast cell activation mechanisms."
+      },
+      {
+        "id": "leaky_gut",
+        "name": "Leaky gut / intestinal hyperpermeability",
+        "relationship": "mechanistic_link",
+        "explanation": "Mast cells in the gut mucosa regulate tight junction integrity. Dysregulated mast cell activation may increase intestinal permeability, potentially worsening antigen exposure and creating a feedback loop that amplifies systemic mast cell reactivity."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "H1 antihistamines (non-sedating)",
+          "category": "medication",
+          "description": "Daily use of second-generation H1 antihistamines (e.g. cetirizine, fexofenadine, loratadine) blocks histamine at H1 receptors, reducing urticaria, pruritus, and \u2014 in histaminergic angioedema \u2014 episode frequency and severity. Higher doses than standard allergy dosing are often used under medical supervision.",
+          "evidence_level": "strong",
+          "notes": "Standard dosing may be insufficient for MCAS. Some guidelines support up to four times the standard dose under clinician guidance. Response to antihistamines does not rule out bradykinin-mediated angioedema (HAE), but poor response to antihistamines should prompt C1-inhibitor testing."
+        },
+        {
+          "name": "H2 antihistamines",
+          "category": "medication",
+          "description": "H2 blockers (e.g. famotidine) block histamine at H2 receptors in the gut and cardiovascular system. Combined H1/H2 blockade is more effective than H1 alone for MCAS-related GI symptoms, flushing, and some angioedema presentations.",
+          "evidence_level": "moderate",
+          "notes": "Commonly used alongside H1 antihistamines as a base regimen in MCAS management."
+        },
+        {
+          "name": "Omalizumab (anti-IgE therapy)",
+          "category": "medication",
+          "description": "Omalizumab (Xolair) is a monoclonal antibody that reduces free IgE, downregulating Fc\u03b5RI receptor expression on mast cells and basophils. It is highly effective for chronic spontaneous urticaria and has strong evidence in idiopathic/MCAS-driven angioedema. Administered by subcutaneous injection every 2\u20134 weeks.",
+          "evidence_level": "strong",
+          "notes": "Licensed for chronic spontaneous urticaria and increasingly used off-label for MCAS and idiopathic angioedema. Allergists and immunologists typically prescribe this. Response may take 4\u201312 weeks to become apparent."
+        },
+        {
+          "name": "Mast cell stabilisers (cromolyn sodium)",
+          "category": "medication",
+          "description": "Oral cromolyn sodium stabilises mast cell membranes, reducing mediator release in the gut. Particularly useful for gastrointestinal MCAS symptoms including cramping, diarrhoea, nausea, and abdominal bloating. Acts locally in the gut with minimal systemic absorption.",
+          "evidence_level": "moderate",
+          "notes": "Evidence base is small but clinical use is widespread in MCAS specialist practice. Must be taken regularly (typically before meals) and effects may take weeks to emerge."
+        },
+        {
+          "name": "Ketotifen",
+          "category": "medication",
+          "description": "An antihistamine with additional mast cell stabilising properties. Used in some countries as an oral medication for MCAS when standard antihistamines are insufficient. May help with both systemic symptoms and GI involvement.",
+          "evidence_level": "moderate",
+          "notes": "Sedation is a significant side effect. Availability varies by country. Typically initiated under specialist supervision."
+        },
+        {
+          "name": "Leukotriene receptor antagonists (montelukast)",
+          "category": "medication",
+          "description": "Blocks cysteinyl leukotriene receptors, reducing mast cell mediator effects on airways and vascular permeability. May help with respiratory symptoms, flushing, and as adjunct therapy when H1/H2 antihistamines are insufficient.",
+          "evidence_level": "moderate",
+          "notes": "Montelukast carries an FDA black box warning regarding neuropsychiatric effects (anxiety, depression, suicidality); this should be discussed with a prescribing clinician, particularly in those already experiencing anxiety or mood changes."
+        },
+        {
+          "name": "Low-histamine diet",
+          "category": "diet",
+          "description": "Reducing dietary histamine load (avoiding fermented foods, aged cheeses, alcohol, cured meats, tinned fish, vinegars, and leftovers) decreases the total histamine burden and may reduce episode frequency. Most useful as a temporary investigation and during acute periods rather than a permanent restriction.",
+          "evidence_level": "moderate",
+          "notes": "Should be implemented with guidance from a registered dietitian experienced in mast cell conditions. Long-term strict restriction can compromise nutrition and quality of life. DAO enzyme supplements are used by some to support histamine breakdown, with mixed anecdotal results."
+        },
+        {
+          "name": "Trigger identification and avoidance",
+          "category": "lifestyle",
+          "description": "Using a detailed symptom diary to identify personal triggers \u2014 specific foods, fragrances, medications, temperature extremes, exercise intensity, stress, and hormonal phases \u2014 allows targeted avoidance. Trigger patterns are highly individual in MCAS.",
+          "evidence_level": "moderate",
+          "notes": "Complete elimination of all possible triggers is neither feasible nor desirable. The goal is identifying the highest-impact personal triggers, not living in total avoidance."
+        },
+        {
+          "name": "Stress modulation and nervous system regulation",
+          "category": "lifestyle",
+          "description": "The autonomic nervous system directly regulates mast cell activity. Chronic sympathetic nervous system activation increases mast cell reactivity. Practices that shift toward parasympathetic tone \u2014 including breath-focused practices, yoga, tai chi, or structured relaxation \u2014 may reduce baseline mast cell reactivity over time.",
+          "evidence_level": "moderate",
+          "notes": "This is not a suggestion that MCAS is psychological. It reflects the bidirectional neuroimmune relationship between autonomic tone and mast cell regulation. These practices are adjuncts, not primary treatments."
+        },
+        {
+          "name": "Vitamin C",
+          "category": "supplement",
+          "description": "Vitamin C is a co-factor for diamine oxidase (DAO), the primary histamine-degrading enzyme, and has mild antihistamine-like properties. High-dose supplementation is used by some MCAS patients with modest anecdotal benefit.",
+          "evidence_level": "anecdotal",
+          "notes": "Generally safe at moderate doses; high doses can cause GI upset. Not a substitute for medical management."
+        },
+        {
+          "name": "Quercetin",
+          "category": "supplement",
+          "description": "A flavonoid with in vitro mast cell stabilising and anti-inflammatory properties. Widely used in MCAS communities as an adjunct supplement. Some clinicians recommend it alongside pharmaceutical management.",
+          "evidence_level": "anecdotal",
+          "notes": "Clinical trial evidence is limited. Generally considered safe. Absorption is enhanced with bromelain co-administration. Cannot replace pharmaceutical antihistamines or mast cell stabilisers."
+        },
+        {
+          "name": "Epinephrine auto-injector (EpiPen)",
+          "category": "medication",
+          "description": "For individuals with a history of severe angioedema (especially laryngeal) or anaphylaxis, carrying an epinephrine auto-injector is a critical safety measure. Epinephrine is the first-line treatment for anaphylaxis and rapidly reverses airway compromise.",
+          "evidence_level": "strong",
+          "notes": "Any person with a history of throat angioedema or systemic anaphylactic episodes should discuss epinephrine prescription with their allergist or emergency medicine clinician."
+        }
+      ],
+      "things_to_avoid": [
+        "NSAIDs (ibuprofen, aspirin, naproxen) \u2014 directly trigger mast cell degranulation in many MCAS patients and can provoke severe angioedema or anaphylaxis",
+        "Opioid medications (morphine, codeine) \u2014 displace histamine from mast cell granules via non-IgE mechanisms, causing flushing, urticaria, and angioedema",
+        "Radiocontrast dye \u2014 a well-known mast cell trigger; patients should inform radiologists and request pre-medication protocols if contrast imaging is required",
+        "Alcohol \u2014 promotes mast cell degranulation directly and inhibits DAO activity, compounding histamine burden",
+        "High-histamine, fermented, and leftover foods during flare periods \u2014 these elevate circulating histamine load and can precipitate or worsen episodes",
+        "Fragrances, perfumes, and scented products \u2014 aerosolised chemical triggers are among the most common mast cell activators for environmentally reactive patients",
+        "Sudden temperature extremes (especially heat and cold water immersion) \u2014 thermal stress is a potent mast cell trigger",
+        "Vancomycin (red man syndrome risk) and certain antibiotics \u2014 can trigger non-IgE mast cell degranulation; prescribers should be informed of MCAS history",
+        "Delaying epinephrine administration during a severe episode \u2014 antihistamines alone will not reverse anaphylaxis; epinephrine must be used promptly when warranted"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "There is no cure for MCAS, and for many people management is about reducing the frequency and severity of episodes, not eliminating them entirely. Expecting full resolution often leads to chasing treatments that create harm.",
+        "why_resisted": "After years of invalidation and misdiagnosis, receiving a diagnosis feels like it should unlock a treatment pathway leading to recovery. The concept of management-not-cure is hard to accept after a prolonged diagnostic odyssey.",
+        "path_forward": "People who make the most functional progress tend to build a stable multi-layer management plan \u2014 a base antihistamine regimen, a refined trigger list, an emergency protocol \u2014 and then focus energy on expanding what they can do rather than eliminating all reactivity. Periodic reassessment with a knowledgeable clinician can adjust the plan as patterns evolve."
+      },
+      {
+        "truth": "Most mainstream allergists and emergency physicians have limited training in MCAS and may dismiss the diagnosis or offer only reactive treatment (antihistamines, epinephrine for emergencies) without investigating root mechanisms.",
+        "why_resisted": "Patients naturally hope that a visit to a specialist will result in comprehensive care. Discovering that specialists vary enormously in their engagement with MCAS is demoralising, especially after long diagnostic delays.",
+        "path_forward": "Identifying the small number of allergists, immunologists, or functional medicine physicians who actively investigate and manage MCAS \u2014 often through patient community recommendations and published MCAS researchers' practitioner lists \u2014 is the most reliable path to meaningful care. Self-education to the level of being an informed partner in clinical decisions significantly improves care quality."
+      },
+      {
+        "truth": "Hereditary angioedema (HAE) must be definitively ruled out before attributing recurring angioedema to MCAS. HAE does not respond to antihistamines and can be life-threatening without appropriate treatment \u2014 and it is frequently missed.",
+        "why_resisted": "Once a person has found the MCAS framework and it explains much of their experience, it can feel unnecessary or even threatening to pursue further differential testing. HAE is also less commonly known.",
+        "path_forward": "A simple blood test \u2014 C4 complement level and C1-inhibitor function \u2014 performed at any accredited laboratory can confirm or exclude C1-INH-HAE. This test is straightforward, inexpensive, and should be done before a final MCAS-angioedema diagnosis is established."
+      },
+      {
+        "truth": "Dietary restriction in MCAS can spiral into severely limited eating patterns that create nutritional deficiency, social isolation, and disordered eating, without proportional benefit to mast cell stability. The restrictiveness of the diet is often not correlated with improvement.",
+        "why_resisted": "When the body reacts to many things, the intuitive response is to eliminate more and more triggers. Each apparent connection reinforces the belief that restriction equals safety. The gradual erosion of diet to very few 'safe' foods can feel like rational management.",
+        "path_forward": "Working with a registered dietitian who understands mast cell conditions \u2014 not just exclusion diets, but systematic reintroduction and nutritional adequacy \u2014 consistently produces better long-term outcomes than escalating self-directed restriction. The goal is identifying the smallest set of dietary changes that produces the largest functional benefit."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Establishing a stable daily antihistamine base",
+          "why_it_matters": "Consistent daily H1 (and often H2) antihistamine use reduces baseline mast cell reactivity, lowering the frequency and severity of angioedema episodes. Reactive-only dosing (taking antihistamines only during episodes) is far less effective than maintaining steady-state receptor blockade.",
+          "how_to_start": "Discuss a daily antihistamine regimen with an allergist or immunologist. Track episode frequency over 6\u20138 weeks before and after initiating daily dosing to objectively assess impact.",
+          "timeline": "Meaningful reduction in episode frequency is often observed within 4\u20138 weeks of consistent daily dosing.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Personalised trigger mapping",
+          "why_it_matters": "MCAS triggers are highly individual. Identifying the 3\u20135 highest-impact personal triggers \u2014 rather than attempting to avoid all possible triggers \u2014 allows proportionate, liveable risk reduction while preserving quality of life.",
+          "how_to_start": "Keep a detailed episode diary for 6\u20138 weeks noting all food, environmental, physical, and emotional exposures in the 4 hours before each flare. Share with a clinician or MCAS-informed dietitian for pattern analysis.",
+          "timeline": "Patterns typically become identifiable after 6\u201310 documented episodes.",
+          "requires_professional": false
+        },
+        {
+          "lever": "HAE exclusion and accurate diagnosis",
+          "why_it_matters": "Misdiagnosis has serious consequences. HAE requires specific treatments (C1-INH concentrate, icatibant, lanadelumab) that are completely different from MCAS management. Delayed HAE diagnosis is associated with preventable mortality from laryngeal attacks.",
+          "how_to_start": "Request C4 complement and C1-inhibitor level and function testing through an immunologist or allergist. If these are normal and the pattern fits histaminergic angioedema, MCAS investigation proceeds with greater confidence.",
+          "timeline": "Blood test results typically available within 1\u20132 weeks.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Emergency action plan for severe episodes",
+          "why_it_matters": "Laryngeal angioedema and anaphylaxis are medical emergencies. Having a clear written action plan \u2014 including when to use epinephrine, when to call emergency services, and what to tell emergency staff \u2014 reduces the risk of fatal delay during severe episodes.",
+          "how_to_start": "Discuss the need for epinephrine auto-injector prescription and a written anaphylaxis action plan with an allergist. Carry the auto-injector at all times and ensure those close to the person are trained in its use.",
+          "timeline": "Plan should be in place before the next potential episode.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Nervous system regulation practices",
+          "why_it_matters": "Chronic sympathetic activation lowers the threshold for mast cell firing. Regular practices that build parasympathetic tone may reduce baseline reactivity over months. This is a low-cost, low-risk adjunct with meaningful quality-of-life impact for many.",
+          "how_to_start": "Identify one sustainable daily practice \u2014 slow diaphragmatic breathing, yoga, or structured relaxation \u2014 and build consistency before adding others. Apps such as Insight Timer or structured breathwork programs offer accessible starting points.",
+          "timeline": "Subjective improvement in baseline reactivity often reported after 6\u201312 weeks of consistent practice.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Consideration of omalizumab for refractory angioedema",
+          "why_it_matters": "For individuals with frequent angioedema episodes despite optimised antihistamine therapy, omalizumab has a strong evidence base and has been transformative for many with histaminergic angioedema. It addresses an upstream IgE-driven mechanism rather than just blocking downstream histamine effects.",
+          "how_to_start": "Raise omalizumab as a treatment option with an allergist or immunologist if daily antihistamines are insufficient. Bring documentation of episode frequency and response to prior treatment.",
+          "timeline": "Response may be seen within 4\u201312 weeks; full effect often emerges by 3\u20136 months.",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Using antihistamines reactively (only during episodes) rather than as a daily prophylactic regimen \u2014 reactive use provides relief but does not reduce baseline mast cell reactivity or episode frequency",
+        "Pursuing an increasingly restrictive diet without systematic reintroduction \u2014 this often leads to significant nutritional deficiency, food fear, and social impairment with diminishing returns on symptom control",
+        "Failing to rule out hereditary angioedema before concluding the angioedema is MCAS-driven \u2014 this is a potentially dangerous diagnostic gap",
+        "Attributing all symptoms to MCAS once the diagnosis is established \u2014 this can cause other treatable conditions (thyroid disease, coeliac disease, IBD) to be missed",
+        "Avoiding all medical care or procedures due to fear of reactions without pre-medication protocols in place \u2014 blanket avoidance is not safer than working with a knowledgeable clinician on risk mitigation",
+        "Self-discontinuing medications that are working because of side effect fears or perceived improvement \u2014 changes to a stable regimen should be made gradually and with clinical input",
+        "Dismissing the neuropsychiatric component of MCAS (anxiety, mood changes, brain fog) as psychological \u2014 these are physiological mediator effects and should be addressed within the MCAS management framework"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Allergist / Clinical Immunologist",
+          "role": "The primary specialist for investigating and managing MCAS-with-angioedema. Can order and interpret serum tryptase, urinary mediator panels, IgE panels, and C1-inhibitor testing; can prescribe omalizumab; can manage anaphylaxis risk and develop emergency protocols.",
+          "notes": "Significant variation in MCAS familiarity exists among allergists. Those who actively see chronic urticaria and idiopathic angioedema are generally more engaged with MCAS. Asking about their experience with MCAS specifically before a first appointment is reasonable."
+        },
+        {
+          "type": "Haematologist",
+          "role": "Required if clonal mast cell disease (systemic mastocytosis or clonal MCAS) is suspected based on elevated baseline tryptase or positive KIT D816V. Can perform and interpret bone marrow biopsy and initiate cytoreductive therapy if indicated.",
+          "notes": "Most people with MCAS-with-angioedema will not need haematology unless tryptase is persistently elevated or a clonal marker is found."
+        },
+        {
+          "type": "Functional medicine physician",
+          "role": "May take a broader investigation approach, including gut microbiome, hormonal drivers, toxic burden, and nutrient status, that mainstream allergy may not address. Can help with the multi-system complexity of MCAS.",
+          "notes": "Quality varies considerably. Look for practitioners with specific MCAS knowledge rather than generic functional medicine interest. This should complement, not replace, immunology care."
+        },
+        {
+          "type": "Registered dietitian (mast cell / low-histamine specialist)",
+          "role": "Critical for guiding dietary interventions safely. Helps distinguish which dietary modifications are genuinely impactful versus which are creating unnecessary restriction. Can support structured trigger identification through elimination and reintroduction.",
+          "notes": "Few dietitians specialise in MCAS; those with experience in elimination diets, food intolerances, and GI conditions are the most applicable. Patient communities are often the best source of practitioner recommendations."
+        },
+        {
+          "type": "Gastroenterologist",
+          "role": "Relevant when GI symptoms (abdominal angioedema, severe cramping, diarrhoea) are prominent. Can investigate structural causes, perform colonoscopy or upper endoscopy with mast cell staining of biopsies, and manage GI-specific aspects of MCAS.",
+          "notes": "Gastrointestinal mast cell involvement is often underrecognised by generalist gastroenterologists. A pathologist willing to count mast cells per high-power field and use appropriate stains (tryptase, CD117) is important."
+        },
+        {
+          "type": "Clinical geneticist or EDS/POTS specialist",
+          "role": "Important if hypermobility or dysautonomia co-exists, as the MCAS-hEDS-POTS triad benefits from coordinated management across all three conditions.",
+          "notes": "These specialists are rare but exist in academic medical centres; patient advocacy organisations often maintain referral lists."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/MCAS",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/MCAS/",
+          "notes": "Active community of people living with MCAS, including many with angioedema. Useful for practitioner recommendations, medication experiences, and peer support. Information should be verified with a clinician."
+        },
+        {
+          "name": "The Mast Cell Disease Society (TMS)",
+          "platform": "Website / forum",
+          "url": "https://tmsforacure.org",
+          "notes": "US-based non-profit focused on mast cell diseases including MCAS. Provides patient education resources, research updates, and a physician referral service. High-quality, evidence-informed content."
+        },
+        {
+          "name": "Mast Cell Action",
+          "platform": "Website / UK charity",
+          "url": "https://www.mastcellaction.org",
+          "notes": "UK-based charity focused on MCAS awareness and support. Provides downloadable patient guides, symptom trackers, and information for healthcare professionals. Particularly useful for UK patients navigating the NHS."
+        },
+        {
+          "name": "Mast Cell Connect",
+          "platform": "Facebook Group",
+          "url": null,
+          "notes": "Large patient-run Facebook community sharing personal experiences with MCAS diagnosis and management. Anecdotal but valuable for real-world treatment experiences and specialist recommendations."
+        },
+        {
+          "name": "HAE (Hereditary Angioedema) International",
+          "platform": "Website",
+          "url": "https://www.haeintl.org",
+          "notes": "Important resource for those whose angioedema has not been definitively attributed to MCAS and who want to understand the HAE differential. Provides global specialist directory."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Mast Cell Activation Syndrome: Consensus-2 (Molderings et al.)",
+        "type": "research paper",
+        "author_or_source": "Molderings GJ et al., Journal of Hematology & Oncology",
+        "url": "https://doi.org/10.1186/s13045-014-0070-6",
+        "description": "One of the foundational consensus papers establishing diagnostic criteria for MCAS. Useful for understanding the evidence base behind the diagnosis and what clinicians use to confirm it.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Never Bet Against Occam: Mast Cell Activation Disease and the Modern Epidemics of Chronic Illness and Medical Complexity",
+        "type": "book",
+        "author_or_source": "Lawrence Afrin, MD",
+        "url": null,
+        "description": "Written by one of the physicians who helped characterise MCAS, this book provides a comprehensive account of the condition for both patients and clinicians. Detailed case histories make it highly relevant for those identifying their own pattern.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Mast Cell Action \u2014 Patient Resources",
+        "type": "website",
+        "author_or_source": "Mast Cell Action (UK charity)",
+        "url": "https://www.mastcellaction.org/resources",
+        "description": "Free downloadable guides on MCAS diagnosis, management, and living with the condition. Written in accessible language with input from medical advisors. Includes guidance on talking to healthcare professionals.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Mast Cell Disease Society \u2014 Educational Resources",
+        "type": "website",
+        "author_or_source": "The Mast Cell Disease Society (TMS)",
+        "url": "https://tmsforacure.org/education/",
+        "description": "Covers MCAS and mastocytosis with evidence-based patient education materials, treatment overviews, and research summaries. One of the most reliable patient-facing repositories for mast cell disease information.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Diagnosis and treatment of mast cell activation syndrome: a meta-analysis (Akin et al.)",
+        "type": "research paper",
+        "author_or_source": "Akin C et al., Journal of Allergy and Clinical Immunology",
+        "url": null,
+        "description": "A rigorous review of MCAS diagnostic criteria and treatment evidence that is useful for patients who want to understand the clinical research landscape and what constitutes evidence for the treatments they are being offered.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Idiopathic Angioedema \u2014 HAE International Patient Education",
+        "type": "website",
+        "author_or_source": "HAE International",
+        "url": "https://www.haeintl.org/patients/types-of-angioedema/",
+        "description": "Explains the different types of angioedema including histaminergic, bradykinin-mediated, and idiopathic subtypes. Essential reading for anyone navigating the angioedema differential diagnosis.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Mast Cells in Health and Disease (Metzger et al.) \u2014 Review",
+        "type": "research paper",
+        "author_or_source": "Various; multiple review articles available via PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/?term=mast+cell+activation+syndrome+angioedema",
+        "description": "PubMed search landing page for peer-reviewed research on MCAS and angioedema. Useful for those who want to track current evidence directly from the scientific literature.",
+        "audience": "advanced"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "125fa0e5ff724900"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

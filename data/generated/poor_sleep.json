@@ -1,0 +1,760 @@
+{
+  "condition_id": "poor_sleep",
+  "condition_name": "Poor sleep / insomnia",
+  "generated_at": "2026-07-01T11:58:42.076478Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Poor sleep and insomnia describe difficulty falling asleep, staying asleep, or waking unrefreshed despite adequate time in bed. For many people this is a chronic, recurring problem rather than a temporary response to stress. It can be a standalone condition or a symptom of something else \u2014 and in complex chronic illness it is often both at once.",
+    "detailed_summary": "Insomnia and non-restorative sleep are among the most common and most debilitating complaints in chronic illness. They exist on a spectrum: sleep-onset insomnia (difficulty falling asleep), sleep-maintenance insomnia (frequent or prolonged waking), early-morning awakening, and non-restorative sleep (waking feeling unrefreshed regardless of duration). These patterns often overlap. Chronic insomnia is formally defined as difficulty sleeping at least three nights per week for at least three months that causes daytime impairment.\n\nThe mechanisms are multiple and frequently layered. Hyperarousal \u2014 a persistent state of physiological and cognitive alertness \u2014 is central to most primary insomnia. The autonomic nervous system remains in a sympathetically-dominant state that prevents the transition into deep, restorative sleep stages. Cortisol and circadian rhythm dysregulation can shift the timing of sleep pressure. Inflammatory signalling, elevated histamine, mast cell activity, pain, airway obstruction, and gastrointestinal dysfunction can all fragment sleep architecture independently of psychological factors.\n\nMany people with chronic insomnia have been told it is purely psychological, given a brief CBT-I referral or a sleeping pill, and left to manage on their own. This framing misses the large subset of people whose poor sleep is driven or perpetuated by identifiable physiological factors \u2014 thyroid dysfunction, sleep-disordered breathing, cortisol dysregulation, MCAS, chronic pain, restless legs, or post-infectious changes. Self-directed investigation to understand which factors apply is a legitimate and often necessary part of finding lasting improvement.",
+    "prevalence": {
+      "summary": "Chronic insomnia affects roughly one in ten adults, making it one of the most common medical complaints worldwide.",
+      "estimate": "10\u201315% of adults for chronic insomnia; up to 30\u201335% report occasional insomnia symptoms",
+      "notes": "Prevalence rises significantly with age, chronic illness, anxiety, depression, and shift work. Women are diagnosed approximately 1.5\u20132x more often than men. Rates may be underestimated because many people normalise poor sleep or attribute it entirely to stress. Non-restorative sleep (sleeping adequate hours but waking unrefreshed) is common in fibromyalgia, ME/CFS, and sleep-disordered breathing and may not be captured in standard insomnia surveys."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Primary / psychophysiological insomnia",
+        "description": "Insomnia driven mainly by hyperarousal, conditioned wakefulness, and cognitive-emotional factors rather than a clear underlying medical cause. The bed becomes associated with wakefulness and anxiety about sleep.",
+        "distinguishing_features": [
+          "Sleeps better away from home or in unfamiliar environments",
+          "Racing thoughts or monitoring of sleep on waking",
+          "History often begins with a stressful period but persists long after",
+          "No clear medical driver identified on investigation"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Non-restorative sleep",
+        "description": "Individuals sleep adequate hours but consistently wake feeling unrefreshed, foggy, or exhausted. Often reflects disrupted sleep architecture rather than insufficient duration.",
+        "distinguishing_features": [
+          "Sleep duration appears normal on sleep diary or actigraphy",
+          "Significant daytime fatigue despite time in bed",
+          "Common in fibromyalgia, ME/CFS, UARS, and sleep apnea",
+          "Alpha-wave intrusion into deep NREM sleep may be visible on polysomnography"
+        ]
+      },
+      {
+        "id": "sleep_apnea",
+        "name": "Insomnia comorbid with obstructive sleep apnea (COMISA)",
+        "description": "A recognised co-occurrence of insomnia and obstructive sleep apnea in the same person. Each condition worsens the other and standard treatments for one may underperform without addressing both.",
+        "distinguishing_features": [
+          "Snoring, witnessed apneas, gasping, or bed partner reports",
+          "Waking with headache, dry mouth, or racing heart",
+          "Daytime sleepiness combined with difficulty initiating sleep",
+          "BMI, neck circumference, or anatomical risk factors present"
+        ]
+      },
+      {
+        "id": "uars",
+        "name": "Insomnia driven by upper airway resistance syndrome (UARS)",
+        "description": "Frequent sleep fragmentation caused by increased respiratory effort against a narrowed airway, without meeting full apnea criteria. Often missed on standard screening.",
+        "distinguishing_features": [
+          "Thin body habitus is common \u2014 does not fit the typical sleep apnea profile",
+          "Frequent arousal from sleep without obvious cause",
+          "Fatigue and cognitive dysfunction disproportionate to reported sleep length",
+          "May not be detected on standard overnight pulse-oximetry or home sleep tests"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Circadian rhythm disorder",
+        "description": "The timing of the sleep-wake cycle is shifted relative to conventional hours. Sleep itself may be of normal quality once achieved but occurs at the wrong biological time.",
+        "distinguishing_features": [
+          "Delayed sleep phase: cannot fall asleep until very late, wakes late, functions well if allowed to follow natural schedule",
+          "Advanced sleep phase: falls asleep very early, wakes very early",
+          "Night-shift or jet-lag-related variants also exist",
+          "Sleep quality is often normal when the circadian window is respected"
+        ]
+      },
+      {
+        "id": "cortisol_dysreg",
+        "name": "Cortisol dysregulation-driven insomnia",
+        "description": "Abnormal cortisol patterns \u2014 including elevated night-time cortisol, a blunted morning rise, or inverted diurnal rhythm \u2014 disrupt the normal sleep pressure cycle.",
+        "distinguishing_features": [
+          "Wired-but-tired pattern: exhausted in the day, alert at night",
+          "Waking between 2\u20134 am and unable to return to sleep",
+          "History of chronic stress, trauma, or burnout",
+          "Abnormal findings on salivary cortisol testing across the day"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Post-infectious or post-viral insomnia",
+        "description": "Sleep disruption emerging or worsening after a viral illness, particularly COVID-19, EBV, or other infections. May involve neuroinflammation, autonomic dysfunction, or altered neurotransmitter activity.",
+        "distinguishing_features": [
+          "Clear onset linked to an infection",
+          "Often accompanied by fatigue, cognitive symptoms, or POTS",
+          "May not respond to standard CBT-I approaches",
+          "Emerging literature specifically in Long COVID"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Difficulty falling asleep (sleep-onset insomnia)",
+        "category": "sleep",
+        "notes": "Often accompanied by racing thoughts, physical restlessness, or heightened awareness of bodily sensations. May take 30 minutes to several hours."
+      },
+      {
+        "symptom": "Frequent night waking",
+        "category": "sleep",
+        "notes": "Waking one or more times per night, sometimes at predictable times (e.g. 2\u20134am), and struggling to return to sleep."
+      },
+      {
+        "symptom": "Early morning awakening",
+        "category": "sleep",
+        "notes": "Waking significantly earlier than intended and being unable to return to sleep. Can be a feature of depression or cortisol dysregulation."
+      },
+      {
+        "symptom": "Unrefreshing or non-restorative sleep",
+        "category": "sleep",
+        "notes": "Waking feeling as tired or more tired than before going to bed, despite adequate hours. Common in fibromyalgia, ME/CFS, and sleep-disordered breathing."
+      },
+      {
+        "symptom": "Daytime fatigue and low energy",
+        "category": "neurological / cognitive",
+        "notes": "A direct consequence of inadequate or fragmented sleep. Differs from sleepiness \u2014 many chronic insomniacs feel fatigued but cannot nap."
+      },
+      {
+        "symptom": "Cognitive impairment (brain fog, poor concentration, memory difficulty)",
+        "category": "neurological / cognitive",
+        "notes": "Sleep is essential for memory consolidation and glymphatic clearance. Even moderate chronic sleep restriction degrades cognitive performance significantly."
+      },
+      {
+        "symptom": "Mood disturbance (irritability, low mood, anxiety)",
+        "category": "psychological",
+        "notes": "Bidirectional relationship \u2014 poor sleep worsens mood and anxiety, which in turn worsen sleep. Difficult to untangle cause from effect."
+      },
+      {
+        "symptom": "Heightened pain sensitivity",
+        "category": "musculoskeletal / neurological",
+        "notes": "Sleep deprivation lowers pain thresholds and worsens conditions such as fibromyalgia, headache, and musculoskeletal pain."
+      },
+      {
+        "symptom": "Heart pounding or racing on waking",
+        "category": "cardiovascular",
+        "notes": "Can indicate autonomic arousal, sleep apnea micro-arousals, or anxiety-mediated hyperarousal. Worth documenting for clinical evaluation."
+      },
+      {
+        "symptom": "Restless legs or uncomfortable sensations at night",
+        "category": "neurological / sleep",
+        "notes": "Restless legs syndrome and periodic limb movement disorder are common and underdiagnosed causes of sleep-onset and maintenance insomnia."
+      },
+      {
+        "symptom": "Hypnic jerks or startling on sleep onset",
+        "category": "sleep",
+        "notes": "Common in hyperarousal states. Can be worsened by stimulant use, anxiety, or fatigue."
+      },
+      {
+        "symptom": "Increased sensitivity to light, sound, or temperature at night",
+        "category": "sensory / neurological",
+        "notes": "Sensory hypervigilance during the pre-sleep period is a hallmark of the hyperarousal model of insomnia."
+      },
+      {
+        "symptom": "Gastrointestinal discomfort at night",
+        "category": "digestive",
+        "notes": "Nocturnal acid reflux, IBS symptoms, or gut motility changes can independently fragment sleep, especially in people with GI disorders."
+      },
+      {
+        "symptom": "Excessive sweating during sleep",
+        "category": "autonomic",
+        "notes": "Night sweats can reflect autonomic dysregulation, hormonal fluctuation (perimenopause, testosterone changes), infection, or medication effects."
+      },
+      {
+        "symptom": "Difficulty functioning in work, relationships, or daily tasks",
+        "category": "functional",
+        "notes": "Part of the formal diagnostic criteria for insomnia disorder \u2014 impairment must be present to distinguish clinically significant insomnia from mild sleep variation."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Sleep diary over 2 weeks showing consistent long sleep-onset latency (>30 min), frequent waking, or unrefreshing sleep despite adequate time in bed",
+        "Elevated night-time cortisol or inverted diurnal cortisol curve on 4-point salivary testing",
+        "Oxygen desaturations or respiratory disturbances on overnight sleep testing despite no classic sleep apnea symptoms",
+        "Ferritin below 50 ng/mL, which can drive restless legs syndrome and sleep fragmentation",
+        "Thyroid dysfunction (TSH, free T3, free T4) contributing to insomnia \u2014 both hypo- and hyperthyroidism can disrupt sleep",
+        "Elevated fasting insulin or glucose dysregulation causing nocturnal hypoglycaemia and cortisol-driven arousal",
+        "Wearable data showing chronically suppressed deep sleep percentage (<15%) or elevated resting heart rate at night"
+      ],
+      "at_home": [
+        {
+          "name": "Two-week sleep diary",
+          "description": "Record: time in bed, estimated time to fall asleep, number of wakings and duration, final wake time, subjective sleep quality, and daytime energy. Use a standardised format such as the Consensus Sleep Diary (freely available online). Patterns over two weeks are far more informative than any single night.",
+          "safety_notes": "Avoid excessive clock-watching during the night as this can increase arousal. Record estimates the following morning rather than monitoring in real time."
+        },
+        {
+          "name": "Wearable sleep tracking (with caveats)",
+          "description": "Devices such as Oura Ring, Whoop, or Garmin watches estimate sleep stages, HRV, resting heart rate, and respiratory rate. While not clinically validated for sleep staging, trends over weeks can reveal patterns (e.g. chronically low deep sleep, elevated night-time heart rate, respiratory disturbance index) that are useful conversation starters with clinicians.",
+          "safety_notes": "Avoid becoming obsessive about sleep scores \u2014 'orthosomnia' (anxiety generated by tracking data) can worsen insomnia. Use trends, not individual nights."
+        },
+        {
+          "name": "Evening cortisol self-assessment",
+          "description": "Note subjective energy and alertness levels across the day \u2014 morning, midday, late afternoon, evening, and pre-bed. A consistent pattern of low morning energy and high evening alertness ('second wind' after 9pm) may suggest a delayed or dysregulated cortisol rhythm. This observation can guide targeted testing.",
+          "safety_notes": "Self-assessment is a screening tool only. Salivary cortisol testing is needed for confirmation."
+        },
+        {
+          "name": "Caffeine and alcohol elimination trial",
+          "description": "Remove all caffeine (including tea, chocolate, energy drinks) for two weeks and all alcohol for at least one week. Document changes to sleep onset, waking frequency, and morning refreshedness. Caffeine has a half-life of 5\u20137 hours and disrupts deep sleep even when it does not prevent sleep onset.",
+          "safety_notes": "Caffeine withdrawal can cause headaches and fatigue for 3\u20135 days. Gradual reduction may be more comfortable than abrupt cessation."
+        },
+        {
+          "name": "Light exposure audit",
+          "description": "Track bright light exposure patterns: is there bright natural light in the morning? Is there significant screen or LED light in the 2 hours before bed? Poor morning light and high evening light are among the most common circadian disruptors. Using blue-light-blocking glasses from 9pm onwards and noting any sleep change over 2 weeks is a low-cost observational trial.",
+          "safety_notes": "Not a substitute for clinical evaluation of circadian rhythm disorders."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Polysomnography (PSG)",
+          "type": "gold_standard",
+          "description": "Overnight in-laboratory sleep study measuring brain activity (EEG), eye movements, muscle tone, respiration, oxygen saturation, and heart rhythm simultaneously. Provides detailed sleep architecture data and is the definitive test for sleep-disordered breathing, periodic limb movements, parasomnias, and REM behaviour disorder.",
+          "availability": "Ordered by sleep physicians, neurologists, or respiratory physicians. Available in hospital sleep centres; often requires a referral and may have waiting lists. Expensive if not covered by insurance."
+        },
+        {
+          "name": "Home sleep apnea test (HSAT)",
+          "type": "standard",
+          "description": "Portable overnight monitoring of respiratory effort, airflow, and oxygen saturation. More accessible than full PSG but misses sleep staging and may underdiagnose UARS or mild apnea. Appropriate first-line screening for moderate-to-high-risk obstructive sleep apnea.",
+          "availability": "Can be ordered by GPs, sleep physicians, or ENT. Available through sleep clinics and some direct-to-consumer services. Less expensive than in-lab PSG."
+        },
+        {
+          "name": "Actigraphy",
+          "type": "standard",
+          "description": "Wrist-worn accelerometer worn for 1\u20134 weeks that estimates sleep-wake patterns objectively. Particularly useful for diagnosing circadian rhythm disorders, assessing treatment response, and correlating sleep diary data with objective movement patterns.",
+          "availability": "Ordered by sleep physicians or chronobiologists. Some private sleep clinics offer actigraphy assessment."
+        },
+        {
+          "name": "4-point salivary cortisol panel",
+          "type": "standard",
+          "description": "Saliva collected at waking, 30 minutes post-waking, midday, and evening (or at waking, noon, late afternoon, and bedtime). Maps the diurnal cortisol rhythm. Elevated evening cortisol or a flat curve can explain the wired-but-tired pattern and night-time arousal.",
+          "availability": "Available through functional medicine doctors, integrative practitioners, and some NHS/private endocrinology services. Direct-access testing labs also offer this. Not routinely ordered by mainstream GPs."
+        },
+        {
+          "name": "Ferritin, iron panel, and full blood count",
+          "type": "standard",
+          "description": "Low ferritin (even without anaemia) is a recognised driver of restless legs syndrome and may contribute to sleep fragmentation. A ferritin below 50\u201375 ng/mL is often considered suboptimal for neurological function even when within standard laboratory reference ranges.",
+          "availability": "Routinely available through GPs. Patients may need to specifically request ferritin rather than a standard iron check."
+        },
+        {
+          "name": "Thyroid function tests (TSH, free T3, free T4)",
+          "type": "standard",
+          "description": "Both hypothyroidism and hyperthyroidism (including subclinical forms) can significantly disrupt sleep. TSH alone may miss free hormone abnormalities; full panel is preferable in people with unexplained sleep disturbance.",
+          "availability": "Routinely available through GPs, though free T3 is not always included in standard panels."
+        },
+        {
+          "name": "Fasting glucose and insulin / HbA1c",
+          "type": "standard",
+          "description": "Nocturnal hypoglycaemia and insulin resistance can cause cortisol-driven arousals in the early morning hours (classically 2\u20134am). Fasting insulin alongside glucose gives a better picture of metabolic health than glucose alone.",
+          "availability": "Fasting glucose and HbA1c are routinely available. Fasting insulin is available through GPs and private labs; not always offered unless specifically requested."
+        },
+        {
+          "name": "Multiple sleep latency test (MSLT)",
+          "type": "standard",
+          "description": "Daytime test performed after PSG, measuring how quickly a person falls asleep across five scheduled nap opportunities. Used to diagnose narcolepsy and quantify objective daytime sleepiness. Not routinely used for primary insomnia.",
+          "availability": "Specialist sleep centres; requires prior night polysomnography."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "comorbid",
+        "explanation": "Anxiety and insomnia have a strongly bidirectional relationship. Hyperarousal, rumination, and sympathetic nervous system activation that characterise anxiety directly impair sleep onset and maintenance. Poor sleep then amplifies anxiety reactivity the following day, creating a self-reinforcing cycle."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "comorbid",
+        "explanation": "Insomnia is both a symptom and a risk factor for depression. Early morning awakening with inability to return to sleep is a classic feature of depressive episodes. Chronic insomnia roughly doubles the risk of developing depression. Effective treatment of insomnia can improve depression outcomes."
+      },
+      {
+        "id": "sleep_apnea",
+        "name": "Obstructive sleep apnea",
+        "relationship": "often_confused",
+        "explanation": "Sleep apnea frequently causes insomnia symptoms \u2014 night waking, unrefreshing sleep, and daytime fatigue \u2014 and the two conditions co-occur (COMISA) in a significant minority of patients. Treating only the insomnia without identifying the apnea leads to partial or no improvement."
+      },
+      {
+        "id": "uars",
+        "name": "Upper airway resistance syndrome (UARS)",
+        "relationship": "upstream",
+        "explanation": "UARS causes repeated micro-arousals from increased respiratory effort without meeting standard apnea/hypopnea thresholds. It often presents as insomnia or non-restorative sleep in thin individuals and is frequently missed on standard home sleep tests."
+      },
+      {
+        "id": "cortisol_dysreg",
+        "name": "Cortisol dysregulation",
+        "relationship": "upstream",
+        "explanation": "Dysregulated cortisol \u2014 particularly elevated evening cortisol or an inverted diurnal curve \u2014 promotes wakefulness at night and suppresses the normal sleep pressure cycle. This is a common but underinvestigated physiological driver of chronic insomnia."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "Non-restorative sleep is a cardinal feature of fibromyalgia. Alpha-wave intrusion into slow-wave sleep \u2014 a pattern where brain activity associated with light wakefulness interrupts deep sleep \u2014 has been documented in fibromyalgia and produces the characteristic morning unrefreshingness."
+      },
+      {
+        "id": "me_cfs",
+        "name": "ME/CFS",
+        "relationship": "comorbid",
+        "explanation": "Unrefreshing sleep is a diagnostic criterion for ME/CFS. The sleep disturbance in ME/CFS appears to involve disrupted sleep architecture and possibly autonomic dysregulation rather than conventional insomnia mechanisms. Standard CBT-I approaches often have limited effect."
+      },
+      {
+        "id": "chronic_stress",
+        "name": "Chronic stress / HPA overload",
+        "relationship": "upstream",
+        "explanation": "Prolonged stress activates the HPA axis and sympathetic nervous system in ways that persistently elevate arousal, even after the stressor resolves. This is one of the most common initiators of chronic insomnia that then becomes self-perpetuating via conditioned hyperarousal."
+      },
+      {
+        "id": "perimenopause",
+        "name": "Perimenopause",
+        "relationship": "upstream",
+        "explanation": "Oestrogen and progesterone fluctuations during perimenopause are a major driver of insomnia in midlife women. Night sweats, hot flushes, and direct hormonal effects on sleep architecture all contribute. This is significantly underdiagnosed."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "upstream",
+        "explanation": "Both hypothyroidism and hyperthyroidism (including subclinical forms) disrupt sleep. Hyperthyroid states cause difficulty sleeping due to hyperarousal; hypothyroidism can cause fragmented, unrefreshing sleep and may also contribute to sleep apnea."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
+        "relationship": "upstream",
+        "explanation": "Histamine is a potent arousal-promoting neurotransmitter. Mast cell degranulation, which can peak at night in some individuals, releases histamine and other mediators that fragment sleep and cause nocturnal arousal. People with MCAS frequently report severe night-time symptoms."
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "upstream",
+        "explanation": "High dietary histamine load or impaired histamine metabolism (DAO enzyme deficiency) can elevate systemic histamine levels, promoting wakefulness, particularly in the early morning hours. High-histamine foods eaten in the evening may worsen sleep."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "Autonomic nervous system dysfunction in POTS is associated with poor sleep quality, non-restorative sleep, and sometimes insomnia. Elevated sympathetic tone at rest and abnormal nocturnal heart rate patterns are documented."
+      },
+      {
+        "id": "trauma",
+        "name": "Trauma / PTSD",
+        "relationship": "upstream",
+        "explanation": "PTSD and trauma history are strongly associated with insomnia, hyperarousal, nightmares, and disrupted sleep architecture. The nervous system remains in a threat-detection state that is incompatible with deep restorative sleep. Sleep disturbance often precedes full PTSD symptom recognition."
+      },
+      {
+        "id": "adhd",
+        "name": "ADHD",
+        "relationship": "comorbid",
+        "explanation": "Delayed sleep phase, difficulty winding down, and racing thoughts at bedtime are very common in ADHD. Stimulant medications can worsen sleep onset if taken too late. Insomnia in ADHD is often under-recognised and under-treated."
+      },
+      {
+        "id": "long_covid",
+        "name": "Long COVID",
+        "relationship": "comorbid",
+        "explanation": "Sleep disturbance \u2014 including insomnia, non-restorative sleep, and hypersomnia \u2014 is among the most commonly reported Long COVID symptoms. Proposed mechanisms include neuroinflammation, autonomic dysfunction, and disrupted neurotransmitter signalling."
+      },
+      {
+        "id": "iron_deficiency",
+        "name": "Iron deficiency",
+        "relationship": "upstream",
+        "explanation": "Low ferritin is a well-established driver of restless legs syndrome, which causes uncomfortable limb sensations that prevent sleep onset. Iron is also required for dopamine synthesis and serotonin metabolism, both relevant to sleep regulation."
+      },
+      {
+        "id": "migraine",
+        "name": "Migraine",
+        "relationship": "comorbid",
+        "explanation": "Insomnia and migraine have a bidirectional relationship. Poor sleep is a major migraine trigger, and migraine attacks \u2014 including silent vestibular or subclinical events \u2014 can disrupt sleep. Disrupted sleep-wake cycles may destabilise migraine threshold."
+      },
+      {
+        "id": "mold_cirs",
+        "name": "Mold illness / CIRS",
+        "relationship": "comorbid",
+        "explanation": "Chronic inflammatory response syndrome from mold or biotoxin exposure is associated with severe sleep disruption, including non-restorative sleep and insomnia. Inflammatory cytokines and neurological effects of biotoxins may disrupt sleep architecture."
+      },
+      {
+        "id": "reactive_hypoglycemia",
+        "name": "Reactive hypoglycemia",
+        "relationship": "upstream",
+        "explanation": "Nocturnal hypoglycaemic episodes trigger cortisol and adrenaline release, which cause arousal from sleep \u2014 often around 2\u20134am. This pattern is commonly missed because blood glucose is not routinely measured during sleep."
+      },
+      {
+        "id": "tmd",
+        "name": "Temporomandibular disorder (TMD)",
+        "relationship": "comorbid",
+        "explanation": "Jaw clenching and bruxism are strongly associated with insomnia and sleep fragmentation. TMD pain can independently disrupt sleep, and the relationship is bidirectional \u2014 poor sleep worsens pain sensitivity and bruxism."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Cognitive Behavioural Therapy for Insomnia (CBT-I)",
+          "category": "psychological / behavioural",
+          "description": "CBT-I is a structured programme that addresses the cognitive patterns (catastrophising about sleep, monitoring the clock) and behavioural patterns (irregular schedules, spending excessive time in bed) that perpetuate insomnia. Core components include sleep restriction therapy, stimulus control, relaxation techniques, and cognitive restructuring. It is considered the first-line treatment for chronic primary insomnia by most sleep medicine bodies.",
+          "evidence_level": "strong",
+          "notes": "Evidence is strongest for primary and psychophysiological insomnia. Response may be slower or incomplete when a physiological driver (e.g. sleep apnea, MCAS, cortisol dysregulation) has not been addressed. Available digitally through apps such as Sleepio and programmes such as Somryst. Access to a trained CBT-I therapist improves outcomes."
+        },
+        {
+          "name": "Sleep restriction therapy",
+          "category": "behavioural",
+          "description": "A component of CBT-I in which time in bed is temporarily restricted to closely match actual sleep time, consolidating sleep and rebuilding homeostatic sleep pressure. Counterintuitive but among the most effective single behavioural interventions.",
+          "evidence_level": "strong",
+          "notes": "Can cause significant short-term fatigue and is contraindicated in people with seizure disorders, bipolar disorder, or who perform safety-critical work such as driving or operating machinery. Should ideally be guided by a trained practitioner."
+        },
+        {
+          "name": "Consistent sleep-wake timing",
+          "category": "lifestyle",
+          "description": "Maintaining the same wake time seven days a week \u2014 regardless of how much sleep was obtained \u2014 anchors the circadian rhythm and rebuilds sleep drive. The wake time is more important than the bedtime for circadian stability.",
+          "evidence_level": "strong",
+          "notes": "Weekend lie-ins ('social jetlag') significantly disrupt circadian rhythm and are among the most common undermining behaviours in people trying to improve sleep."
+        },
+        {
+          "name": "Morning bright light exposure",
+          "category": "lifestyle / environment",
+          "description": "Exposure to bright natural light (or a 10,000 lux light box) within 30\u201360 minutes of waking suppresses residual melatonin, anchors the circadian clock, and moves the sleep phase earlier over time. Particularly useful for delayed sleep phase and seasonal patterns.",
+          "evidence_level": "strong",
+          "notes": "Even on cloudy days, outdoor light is typically far brighter than indoor environments. 10\u201330 minutes outside, or 20\u201330 minutes with a light therapy box, is usually sufficient. Light boxes are inexpensive and widely available."
+        },
+        {
+          "name": "Evening light reduction",
+          "category": "lifestyle / environment",
+          "description": "Reducing exposure to bright, blue-spectrum light in the 2 hours before bed supports natural melatonin rise. Strategies include blue-light-blocking glasses, dimming overhead lighting, using night mode on screens, or switching to amber/red lighting in the evening.",
+          "evidence_level": "moderate",
+          "notes": "The effect size of screen-related light exposure on sleep has been somewhat overstated in popular media, but it is still a relevant factor, particularly for those with delayed circadian timing. Psychological stimulation from screens (social media, news) may matter as much as the light itself."
+        },
+        {
+          "name": "Low-dose melatonin",
+          "category": "supplement",
+          "description": "Melatonin at low doses (0.5\u20131mg) taken 60\u201390 minutes before the desired sleep time can help shift circadian timing and reduce sleep-onset latency. It is most effective as a chronobiotic (circadian signal) rather than a sedative. Timing matters more than dose.",
+          "evidence_level": "moderate",
+          "notes": "High doses (5\u201310mg) commonly sold OTC are pharmacologically larger than physiological melatonin levels and may cause next-day grogginess. Low doses (0.3\u20131mg) are more physiologically appropriate. Evidence is strongest for circadian phase disorders and jet lag. Effects on sleep maintenance insomnia are more modest."
+        },
+        {
+          "name": "Magnesium supplementation",
+          "category": "supplement",
+          "description": "Magnesium plays a role in GABA receptor function and may support nervous system downregulation at night. Glycinate and threonate forms are generally better tolerated than oxide. Some people with insomnia report meaningful improvement.",
+          "evidence_level": "moderate",
+          "notes": "Evidence from clinical trials is modest and largely in older adults or people with demonstrated deficiency. However, widespread dietary magnesium inadequacy makes this a low-risk trial for most people. Magnesium oxide is poorly absorbed and more likely to cause loose stools."
+        },
+        {
+          "name": "Temperature regulation",
+          "category": "environment",
+          "description": "Core body temperature must drop by approximately 1\u20132\u00b0C for sleep onset to occur. A cool bedroom (16\u201319\u00b0C / 60\u201367\u00b0F), warm bath or shower 1\u20132 hours before bed (which paradoxically accelerates cooling), and breathable bedding all support this.",
+          "evidence_level": "moderate",
+          "notes": "Overheating is a commonly overlooked contributor to poor sleep quality, particularly in warmer months or for people who sleep with partners with different temperature preferences."
+        },
+        {
+          "name": "Addressing nocturnal blood glucose instability",
+          "category": "diet / metabolic",
+          "description": "Avoiding high-glycaemic foods in the evening, not going to bed on an empty stomach, and considering a small protein-and-fat snack before bed may reduce the likelihood of nocturnal hypoglycaemic cortisol surges waking people in the early hours.",
+          "evidence_level": "anecdotal",
+          "notes": "Particularly relevant for people with reactive hypoglycaemia, insulin resistance, or those following low-carbohydrate diets. If 2\u20134am awakening is the main complaint, this mechanism is worth investigating."
+        },
+        {
+          "name": "CPAP or oral appliance therapy for sleep-disordered breathing",
+          "category": "medical / device",
+          "description": "For those with confirmed obstructive sleep apnea or UARS, treating the airway obstruction is essential and often dramatically improves both sleep quality and daytime function. CPAP is first-line for moderate-to-severe OSA; mandibular advancement devices are an alternative for mild-to-moderate OSA or UARS.",
+          "evidence_level": "strong",
+          "notes": "CPAP adherence is a significant challenge. Working with a respiratory therapist or sleep technician to optimise mask fit and pressure settings substantially improves adherence. Some people with COMISA need combined CBT-I and CPAP."
+        },
+        {
+          "name": "Antihistamines for MCAS-related sleep disruption",
+          "category": "medication",
+          "description": "In people with mast cell activation or histamine intolerance, H1 and H2 antihistamines taken at night may reduce histamine-mediated nocturnal arousal. This should be pursued under medical supervision and is most relevant when MCAS or histamine issues are suspected or confirmed.",
+          "evidence_level": "anecdotal",
+          "notes": "First-generation antihistamines (e.g. diphenhydramine) cause tolerance rapidly and are not recommended for regular use. Second-generation antihistamines (e.g. loratadine, cetirizine) or H2 blockers may be more appropriate depending on the mechanism."
+        },
+        {
+          "name": "Nervous system regulation practices",
+          "category": "lifestyle / psychological",
+          "description": "Practices that activate the parasympathetic nervous system and reduce physiological arousal in the pre-sleep window: diaphragmatic breathing (e.g. 4-7-8 breath), progressive muscle relaxation, yoga nidra, body scan meditation, and gentle yin yoga. These are particularly relevant for hyperarousal-driven insomnia.",
+          "evidence_level": "moderate",
+          "notes": "Consistency over weeks matters more than any single session. Apps such as Insight Timer, Calm, or Headspace offer guided versions. Evidence for mindfulness-based interventions for insomnia (MBTI) is growing."
+        }
+      ],
+      "things_to_avoid": [
+        "Alcohol as a sleep aid \u2014 it suppresses REM sleep and causes rebound arousal in the second half of the night, worsening sleep fragmentation even when it helps with sleep onset",
+        "Long daytime naps (>20\u201330 minutes) \u2014 these reduce homeostatic sleep pressure and make it harder to fall asleep at night, unless someone has severe sleep deprivation requiring recovery",
+        "Clock-watching during the night \u2014 monitoring the clock increases arousal and anxiety and amplifies sleep-related worry; removing clocks from view is a standard CBT-I recommendation",
+        "Spending excessive time in bed awake \u2014 this associates the bed with wakefulness rather than sleep; if awake for more than 20 minutes, leaving the bed until sleepy is recommended in CBT-I",
+        "Caffeine after early afternoon \u2014 caffeine's half-life of 5\u20137 hours means afternoon caffeine is present in the brain at bedtime; even if sleep onset is not affected, deep sleep percentage is reduced",
+        "Irregular sleep schedules including weekend lie-ins \u2014 social jetlag created by shifting sleep timing on weekends undermines circadian stability and makes Monday-morning insomnia worse",
+        "Catastrophising about sleep \u2014 the belief that one cannot function without perfect sleep, or that a bad night has lasting consequences, amplifies arousal and is one of the main maintaining factors in chronic insomnia",
+        "Relying on sleep medications long-term without addressing drivers \u2014 Z-drugs (zopiclone, zolpidem) and benzodiazepines are associated with tolerance, dependence, rebound insomnia on withdrawal, and suppressed deep sleep; they are not a solution for chronic insomnia",
+        "Forcing sleep through willpower \u2014 sleep is a passive process that cannot be achieved through effort; trying harder to sleep increases arousal and makes sleep less likely",
+        "Vigorous exercise within 2\u20133 hours of bedtime for those sensitive to it \u2014 for some individuals, late-day high-intensity exercise raises core temperature and cortisol, delaying sleep onset"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "CBT-I works, but it temporarily makes sleep worse before it gets better \u2014 and most people quit before the benefit arrives.",
+        "why_resisted": "Sleep restriction is uncomfortable. Being told to sleep less when already exhausted feels counterintuitive and even cruel. The short-term fatigue is real. People stop after a few days and conclude the treatment doesn't work.",
+        "path_forward": "Those who complete a full 6\u20138 week structured CBT-I programme \u2014 especially with support from a trained therapist \u2014 achieve remission rates of 70\u201380%. The people who see the most durable improvement are those who pushed through the first two to three uncomfortable weeks."
+      },
+      {
+        "truth": "Sleeping pills do not produce normal sleep \u2014 they produce sedation, which is physiologically different from restorative sleep and suppresses the deep sleep stages that make sleep feel refreshing.",
+        "why_resisted": "Feeling sedated provides immediate relief from the distress of lying awake, and the short-term effect feels like progress. The suppression of sleep architecture is invisible without a sleep study.",
+        "path_forward": "People who use sleep medication as a temporary bridge while learning CBT-I, and then taper carefully, often end up with better sleep quality than they had on medication long-term. Taper should be done slowly and with support."
+      },
+      {
+        "truth": "Anxiety about sleep is often the primary perpetuating factor \u2014 meaning the insomnia may have started for a different reason but is now largely maintained by the fear of not sleeping.",
+        "why_resisted": "Accepting this feels like being told it's 'all in your head,' which dismisses the very real physiological distress of hyperarousal. People resist because they believe (often correctly) that something physical started it.",
+        "path_forward": "Understanding the distinction between what triggered insomnia and what is now sustaining it allows both to be addressed simultaneously. Treating the physiological driver AND the conditioned arousal is more effective than either alone."
+      },
+      {
+        "truth": "If insomnia has been present for years and has not responded to standard advice, there is a meaningful probability that an unidentified physiological driver \u2014 sleep-disordered breathing, MCAS, cortisol dysregulation, restless legs, hormonal change \u2014 is sustaining it.",
+        "why_resisted": "Many clinicians frame chronic insomnia as a psychological or lifestyle problem and do not investigate further. Patients accept this framing, especially after being told there is nothing physically wrong.",
+        "path_forward": "Seeking out a sleep physician, functional medicine doctor, or specialist who will investigate physiological contributors \u2014 and being specific about symptoms like 2\u20134am waking, non-restorative sleep, or night sweats \u2014 often reveals treatable drivers that were previously missed."
+      },
+      {
+        "truth": "The harder someone tries to sleep, the less likely they are to sleep \u2014 effort is the enemy of sleep onset.",
+        "why_resisted": "Trying harder is the default human response to problems. Giving up the effort feels like accepting failure or giving up control.",
+        "path_forward": "Paradoxical intention (deliberately trying to stay awake rather than fall asleep) is an evidence-based CBT-I technique that consistently reduces sleep-onset anxiety and latency. Accepting wakefulness without struggle is a learnable skill that changes the physiological response to being in bed."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Complete a structured CBT-I programme",
+          "why_it_matters": "CBT-I addresses the conditioned hyperarousal and cognitive patterns that maintain chronic insomnia regardless of what originally triggered it. It produces durable improvements that persist after the programme ends \u2014 unlike medication, which only works while taken.",
+          "how_to_start": "Access the free Sleepio app, the NHS-recommended Sleepstation programme, or find a CBT-I trained psychologist or sleep coach. The Consensus Sleep Diary (free PDF) is the starting point for self-monitoring before any programme.",
+          "timeline": "Meaningful improvement typically begins in weeks 3\u20134 of a structured programme; full benefit by 6\u20138 weeks",
+          "requires_professional": false
+        },
+        {
+          "lever": "Rule out sleep-disordered breathing",
+          "why_it_matters": "Sleep apnea and UARS are extremely common, frequently undiagnosed, and cause exactly the symptoms people attribute to insomnia \u2014 fragmented sleep, unrefreshing sleep, morning headache, daytime fatigue. Treating the wrong condition produces no improvement.",
+          "how_to_start": "Ask a GP or sleep physician for a home sleep apnea test or referral to a sleep clinic. Be explicit about symptoms: night waking, unrefreshing sleep, daytime fatigue. If thin and female, specifically ask about UARS, which standard screening tools underestimate.",
+          "timeline": "Diagnosis within weeks; CPAP or device benefit often felt within the first 2\u20134 weeks of consistent use",
+          "requires_professional": true
+        },
+        {
+          "lever": "Anchor the circadian clock with consistent timing and light",
+          "why_it_matters": "The circadian rhythm governs the timing of cortisol, melatonin, body temperature, and sleep pressure. Consistent wake time and morning light exposure are the two most powerful free tools to stabilise it. Without this foundation, other interventions have limited durability.",
+          "how_to_start": "Set a fixed wake time and maintain it for at least four weeks, including weekends. Go outside within 30 minutes of waking for at least 10\u201315 minutes. Dim lights and avoid screens from 9\u201310pm onwards.",
+          "timeline": "Circadian stabilisation takes 2\u20134 weeks of consistent behaviour",
+          "requires_professional": false
+        },
+        {
+          "lever": "Investigate and address cortisol dysregulation",
+          "why_it_matters": "Elevated night-time cortisol is an invisible but physiologically compelling explanation for wired-but-tired patterns and early morning waking. It is rarely tested in mainstream care but responds to targeted interventions once identified.",
+          "how_to_start": "Request or self-order a 4-point salivary cortisol test. Work with a functional medicine doctor, integrative GP, or endocrinologist to interpret results and address drivers (chronic stress, blood sugar instability, light exposure, sleep timing).",
+          "timeline": "3\u20136 months of consistent intervention to normalise cortisol rhythm",
+          "requires_professional": true
+        },
+        {
+          "lever": "Check and optimise ferritin for restless legs",
+          "why_it_matters": "Restless legs syndrome is a common and underdiagnosed cause of sleep-onset insomnia, and low ferritin (even within 'normal' range) is a correctable driver. Iron repletion can eliminate or dramatically reduce restless legs symptoms.",
+          "how_to_start": "Request a ferritin test. If below 50\u201375 ng/mL, discuss iron supplementation with a doctor. Oral iron with vitamin C away from food, or IV iron if oral is poorly tolerated or ineffective.",
+          "timeline": "Ferritin repletion typically takes 3\u20136 months; symptom improvement may begin within 4\u20138 weeks",
+          "requires_professional": true
+        },
+        {
+          "lever": "Address hormonal contributors in perimenopause",
+          "why_it_matters": "Hormonal fluctuation is one of the most common and most under-recognised causes of new or worsening insomnia in women from their mid-to-late 40s. Night sweats and progesterone decline directly fragment sleep architecture. HRT or targeted hormonal support can produce rapid and substantial improvement.",
+          "how_to_start": "Track symptom onset relative to menstrual cycle changes. Consult a menopause specialist or gynaecologist with menopause expertise rather than a general GP who may attribute symptoms only to anxiety.",
+          "timeline": "HRT effects on sleep can be felt within 4\u201312 weeks",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Starting CBT-I sleep restriction but abandoning it after 2\u20133 days because fatigue worsens \u2014 this is normal and the programme requires 6\u20138 weeks to show full benefit",
+        "Taking melatonin at high doses (5\u201310mg) at bedtime as a sedative \u2014 this is pharmacologically incorrect; low-dose melatonin (0.5\u20131mg) taken 60\u201390 minutes before the desired sleep time is more physiologically appropriate",
+        "Addressing only the psychological layer (CBT-I, meditation) without investigating physiological drivers, leading to incomplete and frustrating improvement",
+        "Sleeping in after a bad night to 'catch up' \u2014 this shifts the circadian clock, reduces sleep pressure the following night, and perpetuates the cycle",
+        "Trying every supplement and sleep hygiene hack simultaneously, making it impossible to identify what is actually helping",
+        "Accepting a prescription for Z-drugs or benzodiazepines long-term without being offered CBT-I as a first-line treatment \u2014 guidelines across major sleep medicine bodies recommend CBT-I over medication for chronic insomnia",
+        "Conflating sleepiness with fatigue \u2014 many people with chronic insomnia are fatigued but not sleepy, meaning standard advice to 'nap when tired' may worsen the condition by reducing nocturnal sleep drive",
+        "Assuming that because sleep tracking shows low deep sleep percentage, something is structurally wrong \u2014 wearables are inaccurate at staging sleep, and a single metric should not drive anxiety or decision-making"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Sleep physician / sleep medicine specialist",
+          "role": "Diagnoses and treats the full range of sleep disorders including insomnia, sleep apnea, UARS, circadian rhythm disorders, restless legs, and parasomnias. Can order polysomnography and MSLT. The most comprehensive specialist for complex or treatment-resistant sleep problems.",
+          "notes": "Access varies significantly by country. In the UK, NHS sleep services have long waits; private sleep clinics offer faster access. Referral usually comes via GP."
+        },
+        {
+          "type": "CBT-I therapist or sleep coach",
+          "role": "Delivers structured Cognitive Behavioural Therapy for Insomnia \u2014 the gold-standard treatment for chronic insomnia. A trained CBT-I therapist is more effective than self-directed CBT-I for complex or severe cases.",
+          "notes": "CBT-I training is distinct from general CBT; look for practitioners specifically trained in insomnia. The Society of Behavioral Sleep Medicine (SBSM) has a clinician directory. Digital CBT-I programmes (Sleepio, Somryst) are evidence-based alternatives."
+        },
+        {
+          "type": "Functional medicine doctor",
+          "role": "Investigates physiological drivers that mainstream clinicians often overlook: cortisol rhythm, thyroid function, hormonal imbalance, gut-brain axis, inflammatory markers, and nutrient deficiencies. Particularly useful when insomnia is part of a broader chronic illness picture.",
+          "notes": "Quality varies considerably. Look for practitioners with specific training from the Institute for Functional Medicine (IFM) or equivalent. Mainstream GPs may be sceptical of this approach but these investigations can reveal treatable contributors."
+        },
+        {
+          "type": "Menopause specialist or gynaecologist with menopause expertise",
+          "role": "Essential for perimenopausal or menopausal women with new or worsening insomnia. Can assess hormonal contribution and discuss HRT or non-hormonal options appropriately. Better equipped than general GPs for nuanced hormonal management.",
+          "notes": "The British Menopause Society and Menopause Society (US) maintain directories of accredited specialists. 'Menopause-trained' GPs also exist in many practices."
+        },
+        {
+          "type": "Psychiatrist or psychologist specialising in sleep",
+          "role": "Relevant when insomnia is closely entangled with anxiety, depression, PTSD, or OCD. Can provide CBT-I alongside psychiatric treatment and manage complex cases where sleep and mental health conditions are mutually reinforcing.",
+          "notes": "May be the appropriate route when insomnia does not respond to behavioural approaches alone and a psychiatric dimension is suspected."
+        },
+        {
+          "type": "Respiratory physician or ENT (for sleep-disordered breathing)",
+          "role": "Can assess and treat obstructive sleep apnea, UARS, and nasal airway contributors to sleep disruption. ENT is particularly relevant when structural nasal or upper airway anatomy contributes.",
+          "notes": "ENT referral is often appropriate when UARS is suspected or when nasal obstruction is contributing to breathing-related sleep disruption."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/insomnia",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/insomnia/",
+          "notes": "Large, active community of people living with chronic insomnia. Useful for peer support, sharing experiences with treatments, and finding information on CBT-I. Quality of advice varies; medical information should be verified independently."
+        },
+        {
+          "name": "r/sleep",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/sleep/",
+          "notes": "Broader sleep community covering general sleep science, sleep tracking, and general sleep health alongside clinical sleep issues."
+        },
+        {
+          "name": "r/UARS",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/UARS/",
+          "notes": "Dedicated community for upper airway resistance syndrome \u2014 particularly valuable for people who have non-restorative sleep and do not fit the typical sleep apnea profile. One of the best sources of patient-level information on this underdiagnosed condition."
+        },
+        {
+          "name": "r/SleepApnea",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/SleepApnea/",
+          "notes": "Community specifically for sleep apnea patients. Very active, with detailed discussions on CPAP settings, masks, titration, and COMISA (comorbid insomnia and sleep apnea)."
+        },
+        {
+          "name": "The Sleep Charity community resources",
+          "platform": "Website / helpline",
+          "url": "https://thesleepcharity.org.uk",
+          "notes": "UK-based charity providing accessible information, a helpline, and signposting to services for people with sleep disorders. Good starting point for UK patients navigating the system."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Say Good Night to Insomnia",
+        "type": "book",
+        "author_or_source": "Gregg D. Jacobs",
+        "url": null,
+        "description": "A practical, evidence-based self-help guide to CBT-I written by a Harvard sleep researcher. Covers sleep restriction, stimulus control, relaxation, and cognitive restructuring in a format people can follow independently. One of the most widely recommended books for primary insomnia.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Why We Sleep",
+        "type": "book",
+        "author_or_source": "Matthew Walker",
+        "url": null,
+        "description": "An accessible overview of sleep science covering why sleep matters, what goes wrong, and the consequences of chronic deprivation. Note: some specific claims have been contested in the academic literature for overstating certainty, but it provides an excellent conceptual foundation for understanding sleep biology.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Sleepio (CBT-I digital programme)",
+        "type": "website",
+        "author_or_source": "Big Health",
+        "url": "https://www.sleepio.com",
+        "description": "A clinically validated digital CBT-I programme delivered through an interactive app. Based on the Oxford CBT-I protocol. Evidence from RCTs supports its effectiveness. Available free through some NHS trusts and insurers; paid subscription otherwise.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Sleep Diplomat podcast",
+        "type": "podcast",
+        "author_or_source": "Russell Foster",
+        "url": null,
+        "description": "Oxford professor of circadian neuroscience discusses the science of sleep, circadian rhythms, and practical implications. Evidence-based, accessible, and nuanced on the complexity of sleep disorders.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "The Huberman Lab \u2014 Sleep episodes",
+        "type": "podcast",
+        "author_or_source": "Andrew Huberman",
+        "url": "https://www.hubermanlab.com",
+        "description": "Several episodes specifically on sleep optimisation, circadian biology, light exposure, and supplements including melatonin and magnesium. Practical and mechanistic. Note: always verify specific supplement recommendations with a clinician.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Overcoming Insomnia: A Cognitive-Behavioral Therapy Approach (Workbook)",
+        "type": "book",
+        "author_or_source": "Jack D. Edinger and Colleen E. Carney",
+        "url": null,
+        "description": "A therapist-designed workbook walking through full CBT-I protocol. More structured and clinically rigorous than most popular self-help books. Particularly useful for those who want to work systematically through the programme.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Society of Behavioral Sleep Medicine (SBSM) \u2014 clinician directory",
+        "type": "website",
+        "author_or_source": "SBSM",
+        "url": "https://www.behavioralsleep.org",
+        "description": "Professional body for behavioural sleep medicine, providing a searchable directory of CBT-I trained clinicians. Useful for finding qualified practitioners rather than general therapists claiming CBT-I competence.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Insomnia: A Clinical Guide to Assessment and Treatment",
+        "type": "book",
+        "author_or_source": "Charles M. Morin and Colin A. Espie",
+        "url": null,
+        "description": "Academic text for clinicians and well-informed patients wanting depth on insomnia assessment, CBT-I protocols, pharmacotherapy, and research evidence. Not a casual read but the most comprehensive clinical reference available.",
+        "audience": "advanced"
+      },
+      {
+        "title": "UARS subreddit wiki and pinned resources",
+        "type": "website",
+        "author_or_source": "r/UARS community",
+        "url": "https://www.reddit.com/r/UARS/wiki/index",
+        "description": "Community-compiled resources on upper airway resistance syndrome \u2014 one of the most practical patient-level guides to understanding, diagnosing, and treating UARS for people who have been told their sleep study was normal.",
+        "audience": "intermediate"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

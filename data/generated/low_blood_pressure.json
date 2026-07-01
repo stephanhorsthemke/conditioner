@@ -1,0 +1,696 @@
+{
+  "condition_id": "low_blood_pressure",
+  "condition_name": "Low blood pressure",
+  "generated_at": "2026-07-01T11:58:42.109224Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Low blood pressure (hypotension) means the force of blood pushing against artery walls is lower than normal \u2014 generally below 90/60 mmHg. For some people this is simply their baseline and causes no problems. For others it produces persistent symptoms including dizziness, fainting, fatigue, brain fog, and nausea, particularly when standing up. The underlying causes range from dehydration and medication side effects to serious autonomic nervous system disorders, hormonal conditions, and heart problems. Identifying the subtype and cause is essential because management differs substantially depending on why pressure is low.",
+    "detailed_summary": "Blood pressure is the product of cardiac output and vascular resistance. When either falls \u2014 due to low fluid volume, poor heart function, impaired autonomic signalling, or blood vessel dilation \u2014 pressure drops. Most clinical guidelines define hypotension as a sustained reading below 90 mmHg systolic or 60 mmHg diastolic, but symptoms can appear at higher readings in people whose baseline is normally elevated.\n\nThe most clinically significant and poorly recognised subtype is orthostatic hypotension \u2014 a drop of at least 20 mmHg systolic or 10 mmHg diastolic within three minutes of standing. A related and often confused condition is POTS (postural orthostatic tachycardia syndrome), in which the heart rate rises dramatically on standing even when blood pressure changes are modest. Both involve failure of the autonomic nervous system to maintain pressure against gravity.\n\nChronic low blood pressure can have many upstream causes: insufficient fluid or salt intake, anaemia, adrenal insufficiency (including Addison's disease), hypothyroidism, autonomic neuropathy (from diabetes, autoimmune disease, or long COVID), medications (antihypertensives, diuretics, antidepressants), heart valve problems, and connective tissue disorders like hypermobile EDS which cause blood vessels to pool excessively.\n\nMany people with chronic low blood pressure have spent years being told their readings are 'fine' or even enviable. The investigation of symptomatic hypotension requires more than a single seated reading \u2014 it requires tilt table testing or active stand tests, hormonal panels, autonomic function studies, and a thorough medication review. Self-directed investigation of symptoms, triggers, and patterns is a legitimate and often necessary starting point for people who have not yet received a satisfactory explanation.",
+    "prevalence": {
+      "summary": "Affects a meaningful minority of the population; orthostatic hypotension alone affects roughly 5\u201320% of older adults and a smaller but significant proportion of younger people.",
+      "estimate": "Approximately 5\u201320% prevalence of orthostatic hypotension in adults over 65; estimates of 1\u20133% in the broader population for symptomatic chronic hypotension, though many cases go undiagnosed.",
+      "notes": "Prevalence figures vary widely because definitions differ across studies and many people are asymptomatic. Women are more commonly affected than men, particularly in younger age groups. POTS \u2014 a closely related autonomic condition \u2014 is estimated to affect 1\u20133 million people in the US alone, predominantly women of reproductive age. Postprandial hypotension (after meals) is common in older adults and often overlooked."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Orthostatic hypotension (OH)",
+        "description": "A sustained drop of \u226520 mmHg systolic or \u226510 mmHg diastolic within three minutes of standing. The most common clinically significant subtype.",
+        "distinguishing_features": [
+          "Symptoms occur specifically on rising from sitting or lying",
+          "Dizziness, greying of vision, or near-fainting within seconds to minutes of standing",
+          "Confirmed by active stand test or tilt table test",
+          "Can be neurogenic (autonomic failure) or non-neurogenic (volume depletion, medications)"
+        ]
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "description": "Postural orthostatic tachycardia syndrome involves a heart rate increase of \u226530 bpm (\u226540 bpm in adolescents) on standing, often without classical blood pressure drop, but with significant symptom overlap with orthostatic hypotension.",
+        "distinguishing_features": [
+          "Prominent rapid heartbeat on standing, sometimes without significant BP drop",
+          "Chronic fatigue, brain fog, and exercise intolerance are hallmarks",
+          "Predominantly affects women aged 15\u201350",
+          "Often associated with hEDS, autoimmune conditions, or post-viral illness including long COVID"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Postprandial hypotension",
+        "description": "A drop in blood pressure occurring 30\u2013120 minutes after eating, as blood is diverted to the gut. More common in older adults and those with autonomic dysfunction.",
+        "distinguishing_features": [
+          "Symptoms reliably occur after meals rather than on standing",
+          "More prominent after high-carbohydrate meals",
+          "Can cause syncope or falls in elderly individuals",
+          "May coexist with orthostatic hypotension"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Neurally mediated hypotension (NMH) / vasovagal syncope",
+        "description": "A reflex-driven sudden drop in blood pressure and heart rate triggered by prolonged standing, emotional stress, heat, pain, or other stimuli. Often called a 'vasovagal episode' or 'fainting spell'.",
+        "distinguishing_features": [
+          "Sudden, episodic drops rather than sustained low pressure",
+          "Often preceded by warmth, nausea, or tunnel vision",
+          "Recovery is rapid when lying down",
+          "Common in younger, otherwise healthy individuals"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Drug-induced hypotension",
+        "description": "Many medications can lower blood pressure as a primary or side effect, including antihypertensives, diuretics, alpha-blockers, some antidepressants (especially tricyclics and MAOIs), and Parkinson's medications.",
+        "distinguishing_features": [
+          "Onset correlated with starting or increasing a medication",
+          "Often orthostatic in character",
+          "Resolves or improves with dose reduction or medication change",
+          "Requires careful medication review by a prescriber"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Adrenal insufficiency-related hypotension",
+        "description": "Primary adrenal insufficiency (Addison's disease) or secondary adrenal insufficiency can cause chronic low blood pressure due to insufficient cortisol and aldosterone.",
+        "distinguishing_features": [
+          "Associated with profound fatigue, salt craving, weight loss, and skin darkening (Addison's)",
+          "Low sodium and high potassium may appear on basic blood panel",
+          "Confirmed by morning cortisol and ACTH stimulation test",
+          "Potentially dangerous if untreated \u2014 requires specialist input"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Constitutional hypotension",
+        "description": "Chronically low blood pressure with no identifiable underlying cause and minimal or no symptoms. Common in young, lean, physically fit individuals.",
+        "distinguishing_features": [
+          "No associated illness or medication cause",
+          "Often runs in families",
+          "Symptoms, if any, are mild and non-progressive",
+          "Typically does not require treatment beyond lifestyle measures"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Dizziness or lightheadedness on standing",
+        "category": "cardiovascular / neurological",
+        "notes": "The hallmark symptom of orthostatic hypotension. Occurs within seconds to a few minutes of rising and typically resolves quickly when sitting or lying back down."
+      },
+      {
+        "symptom": "Fainting or near-fainting (presyncope/syncope)",
+        "category": "cardiovascular / neurological",
+        "notes": "May occur without warning. Vasovagal episodes are often preceded by a prodrome of nausea, sweating, and tunnel vision."
+      },
+      {
+        "symptom": "Brain fog and difficulty concentrating",
+        "category": "neurological / cognitive",
+        "notes": "Reduced cerebral perfusion \u2014 even without outright fainting \u2014 can impair cognitive clarity throughout the day. Often dismissed as unrelated to blood pressure."
+      },
+      {
+        "symptom": "Chronic fatigue and low energy",
+        "category": "systemic",
+        "notes": "Persistent tiredness that is not relieved by rest is common. The body expends significant effort compensating for poor perfusion."
+      },
+      {
+        "symptom": "Blurred or greyed vision on standing",
+        "category": "visual",
+        "notes": "Temporary reduction in blood flow to the eyes. Usually lasts seconds. Often called 'greying out'."
+      },
+      {
+        "symptom": "Heart palpitations or rapid heartbeat",
+        "category": "cardiovascular",
+        "notes": "The heart may compensate for low pressure by beating faster, especially on standing. Prominent in POTS."
+      },
+      {
+        "symptom": "Nausea",
+        "category": "digestive",
+        "notes": "Can accompany postural changes or vasovagal episodes. Postprandial hypotension may also cause nausea after eating."
+      },
+      {
+        "symptom": "Headache",
+        "category": "neurological",
+        "notes": "Low cerebral perfusion pressure can trigger headaches, often positional in character \u2014 worse upright, better lying down."
+      },
+      {
+        "symptom": "Cold hands and feet",
+        "category": "circulatory",
+        "notes": "Peripheral vasoconstriction as the body attempts to maintain central blood pressure. Common in those with poor autonomic regulation."
+      },
+      {
+        "symptom": "Exercise intolerance",
+        "category": "cardiovascular / systemic",
+        "notes": "Physical exertion may trigger symptoms as demand for perfusion increases. Common in POTS and autonomic dysfunction."
+      },
+      {
+        "symptom": "Salt and fluid craving",
+        "category": "metabolic",
+        "notes": "The body may signal a need for more volume. Strong salt craving \u2014 especially combined with fatigue and low BP \u2014 warrants checking adrenal function."
+      },
+      {
+        "symptom": "Pallor and feeling of weakness",
+        "category": "systemic",
+        "notes": "Blood is redirected away from the skin during episodes of hypotension. People may look visibly pale during an episode."
+      },
+      {
+        "symptom": "Difficulty standing for prolonged periods",
+        "category": "cardiovascular / neurological",
+        "notes": "Pooling of blood in the legs when stationary can worsen symptoms. Worse in warm environments, after large meals, or in the morning."
+      },
+      {
+        "symptom": "Worsening symptoms after alcohol or large meals",
+        "category": "cardiovascular / digestive",
+        "notes": "Both alcohol and eating divert blood to peripheral vessels and the gut, lowering central pressure further."
+      },
+      {
+        "symptom": "Morning symptoms",
+        "category": "chronobiological",
+        "notes": "Blood pressure is naturally lowest in the morning. Individuals with baseline low pressure may experience the worst symptoms shortly after waking."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Resting BP consistently below 90/60 mmHg on multiple readings",
+        "Drop of \u226520 mmHg systolic or \u226510 mmHg diastolic within 3 minutes of standing (orthostatic hypotension)",
+        "Heart rate increase of \u226530 bpm on standing without adequate BP recovery (suggestive of POTS)",
+        "Low sodium or high potassium on basic metabolic panel (may indicate adrenal insufficiency)",
+        "Low morning cortisol (below 400 nmol/L or local reference range) on fasting sample",
+        "Anaemia or low ferritin alongside hypotension (volume and oxygen-carrying capacity both reduced)",
+        "Symptoms correlating reliably with meals, standing, heat, or specific medications"
+      ],
+      "at_home": [
+        {
+          "name": "Active stand test (NASA lean test)",
+          "description": "Lie flat for 10 minutes, then stand up. Take blood pressure and heart rate readings at 1, 3, 5, and 10 minutes of standing using a home blood pressure monitor with a validated cuff. Record all readings and the presence of symptoms. A drop of \u226520/10 mmHg suggests orthostatic hypotension; a heart rate rise of \u226530 bpm without adequate BP response suggests POTS.",
+          "safety_notes": "Have someone nearby in case of fainting. Do not perform during acute illness or immediately after strenuous exercise. Stop and sit if severe dizziness occurs."
+        },
+        {
+          "name": "Symptom and trigger diary",
+          "description": "Track the time of day symptoms occur, what was happening beforehand (standing, eating, heat, stress), fluid and salt intake, sleep, and any medications or supplements taken. Look for patterns over 2\u20134 weeks. This is directly useful for any clinician who investigates further.",
+          "safety_notes": "No safety concerns. The more detail, the more useful the record."
+        },
+        {
+          "name": "Morning blood pressure log",
+          "description": "Take blood pressure each morning before rising, immediately after standing, and again after 3\u20135 minutes upright. Note any symptoms. Multiple readings over several days are more meaningful than a single measurement.",
+          "safety_notes": "Use a validated upper-arm cuff device rather than wrist monitors, which can be less accurate in low-pressure states."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Tilt table test",
+          "type": "gold_standard",
+          "description": "The patient is strapped to a motorised table that tilts from horizontal to 60\u201370 degrees upright. Blood pressure and heart rate are continuously monitored over 20\u201345 minutes. This controlled environment can provoke orthostatic hypotension, POTS, or vasovagal syncope in a safe setting with detailed physiological recording.",
+          "availability": "Available at cardiology, neurology, or dedicated autonomic medicine clinics. Referral usually required. May need to be requested specifically \u2014 not routinely offered for dizziness in primary care."
+        },
+        {
+          "name": "Active stand test (clinic version)",
+          "type": "standard",
+          "description": "BP and HR are measured after 5\u201310 minutes supine, then at 1, 3, and 10 minutes of standing. Simpler than tilt table and widely available, though less controlled.",
+          "availability": "Can be performed in most GP or cardiology offices with a standard BP monitor. Requires the clinician to follow the correct protocol \u2014 many do not."
+        },
+        {
+          "name": "24-hour ambulatory blood pressure monitoring (ABPM)",
+          "type": "standard",
+          "description": "A device worn for 24 hours takes automatic readings throughout the day and night, capturing postural and circadian patterns that a single clinic reading misses.",
+          "availability": "Available through most cardiology departments and increasingly through GPs. Useful for identifying patterns including nocturnal hypotension."
+        },
+        {
+          "name": "Morning cortisol and ACTH stimulation test",
+          "type": "standard",
+          "description": "A fasting morning blood cortisol (best drawn between 8\u20139 am) screens for adrenal insufficiency. If borderline, an ACTH (synacthen) stimulation test confirms whether the adrenal glands respond adequately to stimulation.",
+          "availability": "Morning cortisol is available through most GPs. The ACTH stimulation test requires hospital or endocrinology access."
+        },
+        {
+          "name": "Full blood count and iron studies",
+          "type": "standard",
+          "description": "Anaemia reduces oxygen-carrying capacity and can significantly worsen hypotensive symptoms. Ferritin, haemoglobin, and MCV identify iron deficiency anaemia, B12/folate deficiency anaemia, or other haematological causes.",
+          "availability": "Routine blood test available through GP or direct-access labs."
+        },
+        {
+          "name": "Thyroid function tests (TSH, free T4, free T3)",
+          "type": "standard",
+          "description": "Hypothyroidism can reduce cardiac output and contribute to low blood pressure and fatigue. TSH alone may be insufficient \u2014 free T3 may be relevant in some cases.",
+          "availability": "Standard GP blood test. Free T3 may need to be specifically requested."
+        },
+        {
+          "name": "Autonomic function testing battery",
+          "type": "emerging",
+          "description": "Comprehensive testing of heart rate variability, Valsalva manoeuvre responses, deep breathing tests, and sudomotor function to characterise the type and severity of autonomic dysfunction. Used to differentiate neurogenic from non-neurogenic causes.",
+          "availability": "Specialist autonomic neurology centres only. Not widely available \u2014 may require a referral to a tertiary centre."
+        },
+        {
+          "name": "Plasma renin and aldosterone levels",
+          "type": "standard",
+          "description": "Evaluates the renin-angiotensin-aldosterone system, which regulates blood volume and pressure. Low aldosterone may indicate primary adrenal insufficiency; abnormal ratios can guide treatment decisions.",
+          "availability": "Available through endocrinology or specialist GP. Sample must be taken under specific conditions (upright, fasted) \u2014 timing matters."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "often_confused",
+        "explanation": "POTS involves a compensatory heart rate surge on standing rather than a clean BP drop, but symptom overlap \u2014 dizziness, fatigue, brain fog \u2014 is substantial. The two can coexist, and both stem from failure of autonomic regulation of the circulation."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / HSD",
+        "relationship": "mechanistic_link",
+        "explanation": "Hypermobile connective tissue allows blood vessels to expand excessively, causing blood to pool in the legs and abdomen on standing. This is one mechanism driving orthostatic hypotension and POTS in people with hEDS."
+      },
+      {
+        "id": "me_cfs",
+        "name": "ME / CFS",
+        "relationship": "comorbid",
+        "explanation": "Orthostatic intolerance \u2014 including hypotension and POTS \u2014 is extremely common in ME/CFS and may be a contributing driver of fatigue and cognitive symptoms. Many ME/CFS patients improve when orthostatic dysfunction is identified and managed."
+      },
+      {
+        "id": "long_covid",
+        "name": "Long COVID",
+        "relationship": "upstream",
+        "explanation": "Autonomic dysfunction following COVID-19 infection is a recognised driver of new-onset orthostatic hypotension and POTS. Long COVID may damage the autonomic nervous system through inflammation, autoantibodies, or direct neural injury."
+      },
+      {
+        "id": "dehydration",
+        "name": "Dehydration",
+        "relationship": "upstream",
+        "explanation": "Insufficient fluid intake reduces circulating blood volume, directly lowering blood pressure. Even mild chronic dehydration can cause or worsen orthostatic symptoms."
+      },
+      {
+        "id": "iron_deficiency",
+        "name": "Iron deficiency",
+        "relationship": "upstream",
+        "explanation": "Anaemia reduces oxygen delivery and can exacerbate hypotensive symptoms. Iron deficiency without anaemia may also impair autonomic function."
+      },
+      {
+        "id": "hypothyroidism",
+        "name": "Hypothyroidism",
+        "relationship": "upstream",
+        "explanation": "An underactive thyroid reduces cardiac output and vascular tone, both of which contribute to low blood pressure. Treating hypothyroidism often improves BP."
+      },
+      {
+        "id": "cortisol_dysreg",
+        "name": "Cortisol dysregulation",
+        "relationship": "mechanistic_link",
+        "explanation": "Cortisol is required for maintaining vascular tone and sensitivity to catecholamines. Low cortisol \u2014 whether from adrenal insufficiency or HPA dysregulation \u2014 directly contributes to hypotension."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "often_confused",
+        "explanation": "The symptoms of orthostatic hypotension \u2014 racing heart, dizziness, nausea, and feeling faint \u2014 overlap closely with anxiety and panic. Many people with unrecognised hypotension are told their symptoms are anxiety-driven."
+      },
+      {
+        "id": "medication",
+        "name": "Medication side effect",
+        "relationship": "upstream",
+        "explanation": "Antihypertensives, diuretics, alpha-blockers, tricyclic antidepressants, and several other medication classes can cause or worsen hypotension. Medication review is an essential step in workup."
+      },
+      {
+        "id": "migraine",
+        "name": "Migraine",
+        "relationship": "comorbid",
+        "explanation": "Migraine and orthostatic hypotension share autonomic dysregulation as a common thread. Low perfusion pressure during positional changes may trigger or worsen migraines in susceptible individuals."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "Fibromyalgia has significant overlap with autonomic dysfunction, and orthostatic hypotension or POTS is identified in a substantial proportion of people with fibromyalgia."
+      },
+      {
+        "id": "b12_deficiency",
+        "name": "Vitamin B12 deficiency",
+        "relationship": "upstream",
+        "explanation": "Severe B12 deficiency causes autonomic neuropathy, which impairs the reflex mechanisms that maintain blood pressure on standing."
+      },
+      {
+        "id": "reactive_hypoglycemia",
+        "name": "Reactive hypoglycemia",
+        "relationship": "often_confused",
+        "explanation": "Both conditions cause dizziness, weakness, and brain fog, particularly after meals or in response to dietary changes. They can coexist and reinforce each other."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome",
+        "relationship": "mechanistic_link",
+        "explanation": "Mast cell mediators including histamine cause vasodilation, which can drop blood pressure acutely. MCAS is increasingly recognised as a driver of orthostatic hypotension and POTS, particularly in the hEDS population."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor sleep / insomnia",
+        "relationship": "comorbid",
+        "explanation": "Sleep deprivation impairs autonomic regulation and can worsen orthostatic tolerance. Conversely, disturbed sleep is common in people with hypotension-related symptoms."
+      },
+      {
+        "id": "chronic_stress",
+        "name": "Chronic stress / HPA overload",
+        "relationship": "mechanistic_link",
+        "explanation": "Chronic stress dysregulates the HPA axis, potentially impairing cortisol production and vascular tone regulation, contributing to low blood pressure in susceptible individuals."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Increased fluid intake",
+          "category": "lifestyle",
+          "description": "Drinking 2\u20133 litres of water per day increases circulating blood volume and can significantly reduce orthostatic symptoms. Rapid ingestion of 500ml of cold water has been shown to produce a measurable acute rise in blood pressure within 15\u201330 minutes.",
+          "evidence_level": "strong",
+          "notes": "Volume expansion is one of the most reliably effective non-drug approaches. Individuals with kidney, heart, or fluid-retention conditions should discuss targets with their clinician."
+        },
+        {
+          "name": "Increased salt (sodium) intake",
+          "category": "diet",
+          "description": "Salt retains fluid in the circulation and raises blood pressure. Many guidelines for orthostatic hypotension and POTS recommend 10\u201312g of sodium per day \u2014 significantly more than general population advice. Salt tablets are used by some people for convenience.",
+          "evidence_level": "strong",
+          "notes": "This strategy is contraindicated for people with hypertension, heart failure, or kidney disease. Should ideally be guided by a clinician or specialist dietitian in complex cases."
+        },
+        {
+          "name": "Compression garments",
+          "category": "lifestyle",
+          "description": "Graduated compression stockings (20\u201330 mmHg or higher, thigh-length) and abdominal binders reduce blood pooling in the lower body on standing. Most effective when worn from the moment of getting up.",
+          "evidence_level": "moderate",
+          "notes": "Effectiveness varies. Compliance can be difficult, particularly in warm weather. Abdominal binders are sometimes more tolerable than full stockings."
+        },
+        {
+          "name": "Countermanoeuvres on standing",
+          "category": "lifestyle",
+          "description": "Physical manoeuvres that increase venous return and cardiac output: crossing legs and tensing them, squatting, clenching the buttocks and thighs, or pumping the ankles before rising. These can abort or reduce orthostatic symptoms.",
+          "evidence_level": "moderate",
+          "notes": "These are practical, zero-cost strategies. Patients are rarely taught them by mainstream clinicians despite good evidence of benefit."
+        },
+        {
+          "name": "Elevation of the head of the bed",
+          "category": "lifestyle",
+          "description": "Raising the head of the bed by 10\u201330cm (using bed risers, not extra pillows) reduces overnight fluid shifts from the legs to the torso, preserving more blood volume in the circulation during the day. Particularly useful for orthostatic hypotension that is worst in the morning.",
+          "evidence_level": "moderate",
+          "notes": "Also reduces supine hypertension in people with autonomic failure who have both low pressure when upright and high pressure when lying flat."
+        },
+        {
+          "name": "Meal modification for postprandial hypotension",
+          "category": "diet",
+          "description": "Eating smaller, more frequent meals; reducing refined carbohydrates; and avoiding alcohol with food can reduce the magnitude of postprandial BP drop. Caffeine before meals may help some individuals.",
+          "evidence_level": "moderate",
+          "notes": "Particularly relevant for older adults and those with autonomic neuropathy. Lying down for 30\u201360 minutes after large meals can also help."
+        },
+        {
+          "name": "Recumbent and graduated aerobic exercise",
+          "category": "lifestyle",
+          "description": "Exercise improves cardiac output, blood volume, and autonomic tone. For those with orthostatic intolerance, beginning with recumbent exercises (swimming, rowing, recumbent cycling) and gradually progressing upright is the recommended approach. Sudden vigorous upright exercise can worsen symptoms acutely.",
+          "evidence_level": "strong",
+          "notes": "This is one of the most impactful long-term strategies for POTS and orthostatic hypotension, but must be introduced gradually. A structured protocol (e.g. the Levine protocol for POTS) is more effective than unguided exercise."
+        },
+        {
+          "name": "Fludrocortisone",
+          "category": "medication",
+          "description": "A synthetic mineralocorticoid that promotes sodium and fluid retention, raising blood volume and blood pressure. Often the first-line medication for orthostatic hypotension and POTS when lifestyle measures are insufficient.",
+          "evidence_level": "moderate",
+          "notes": "Requires prescription and monitoring. Side effects include electrolyte disturbance, supine hypertension, and oedema. Not appropriate for everyone \u2014 requires specialist assessment."
+        },
+        {
+          "name": "Midodrine",
+          "category": "medication",
+          "description": "A selective alpha-1 agonist that causes peripheral vasoconstriction, raising blood pressure. Used for orthostatic hypotension, particularly in people who do not respond adequately to volume expansion alone.",
+          "evidence_level": "strong",
+          "notes": "Must be taken during waking hours only \u2014 not within 4 hours of bedtime \u2014 to avoid supine hypertension. Requires prescription and specialist oversight."
+        },
+        {
+          "name": "Beta-blockers (low dose)",
+          "category": "medication",
+          "description": "Low-dose propranolol or other beta-blockers are sometimes used in POTS to reduce compensatory tachycardia. They do not raise blood pressure and are not appropriate for all forms of hypotension.",
+          "evidence_level": "moderate",
+          "notes": "Primarily useful for POTS-related heart rate symptoms. Can worsen hypotension if used inappropriately. Requires careful specialist prescribing."
+        },
+        {
+          "name": "Electrolyte supplementation",
+          "category": "supplement",
+          "description": "Oral rehydration solutions or electrolyte powders containing sodium, potassium, and magnesium may support blood volume more effectively than water alone. Useful for people who struggle to retain adequate fluid.",
+          "evidence_level": "moderate",
+          "notes": "Quality and composition of commercial products vary widely. Avoid high-sugar formulations. Seek products with higher sodium content if managing orthostatic hypotension specifically."
+        },
+        {
+          "name": "Caffeine (strategic use)",
+          "category": "lifestyle",
+          "description": "Caffeine has a short-term vasopressor effect and can acutely raise blood pressure. Morning coffee may help some individuals with morning orthostatic symptoms.",
+          "evidence_level": "anecdotal",
+          "notes": "Effect is transient and tolerance develops. Late-day use disrupts sleep. Some individuals with MCAS or anxiety find caffeine worsens palpitations."
+        }
+      ],
+      "things_to_avoid": [
+        "Prolonged standing without movement \u2014 increases blood pooling in the legs and worsens symptoms",
+        "Hot showers or baths \u2014 vasodilation lowers blood pressure; cool or lukewarm water is better tolerated",
+        "Alcohol \u2014 causes vasodilation and worsens both orthostatic and postprandial hypotension",
+        "Large high-carbohydrate meals \u2014 trigger postprandial hypotension, especially in those with autonomic dysfunction",
+        "Rising quickly from bed, especially in the morning \u2014 slow, staged transitions (sitting before standing) reduce drop severity",
+        "Diuretics (unless medically necessary) \u2014 reduce blood volume and worsen hypotension",
+        "Skipping fluid intake \u2014 even a few hours without adequate hydration can significantly worsen orthostatic symptoms",
+        "Overexertion in heat \u2014 exercise in warm environments compounds vasodilation and volume loss through sweat",
+        "Ignoring medication interactions \u2014 many common drugs lower blood pressure; a pharmacist-led medication review is worthwhile"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "A single normal seated blood pressure reading in a clinic tells almost nothing about whether orthostatic hypotension is present. Many clinicians never perform a standing blood pressure test, leaving the condition undiagnosed for years.",
+        "why_resisted": "People trust that clinicians are checking everything relevant when they take a blood pressure reading. The idea that a standard clinical encounter might be structurally inadequate for identifying this problem is difficult to accept \u2014 and most clinicians do not volunteer this limitation.",
+        "path_forward": "People who track their own home readings in different postures and bring those logs to appointments \u2014 or who explicitly request an active stand test \u2014 are far more likely to get a useful answer. Self-measurement is not a workaround; it is often the most clinically informative data available."
+      },
+      {
+        "truth": "Lifestyle changes \u2014 particularly aggressive fluid and salt loading, compression, and exercise \u2014 are as effective as or more effective than medication for many people with orthostatic hypotension, but require sustained effort and are rarely explained in enough detail to be actionable.",
+        "why_resisted": "Lifestyle advice feels less 'medical' than a prescription and is often delivered too vaguely to implement. People may have already tried 'drinking more water' without the specificity needed to make it work.",
+        "path_forward": "People who learn the specific protocols \u2014 target sodium and fluid volumes, compression specifications, the Levine exercise protocol \u2014 and apply them consistently over weeks to months frequently experience significant improvement that medication alone would not have achieved."
+      },
+      {
+        "truth": "Low blood pressure is not inherently 'good' or safe. The cultural assumption that low readings are desirable causes clinicians and patients alike to underestimate how significantly symptomatic hypotension impairs quality of life.",
+        "why_resisted": "Public health messaging consistently frames high blood pressure as dangerous and low blood pressure as fine. Clinicians often congratulate patients on 'excellent' readings even when those patients feel faint and exhausted daily.",
+        "path_forward": "People who push back on this framing \u2014 specifically naming symptoms and requesting orthostatic testing \u2014 tend to get taken more seriously. Framing the concern as 'my blood pressure drops when I stand and I have these specific symptoms' is more productive than 'my blood pressure is low'."
+      },
+      {
+        "truth": "Orthostatic hypotension and POTS are frequently misidentified as anxiety, panic disorder, or medically unexplained symptoms, delaying effective management by years in some cases.",
+        "why_resisted": "The symptom overlap is genuine \u2014 dizziness, palpitations, breathlessness, and near-fainting are common to both. Many clinicians default to anxiety diagnoses when initial investigations are unremarkable, and patients may internalise this framing.",
+        "path_forward": "People who document the postural, meal-related, or heat-related timing of symptoms \u2014 and who specifically ask for an active stand test rather than accepting a functional diagnosis without investigation \u2014 frequently find a physiological explanation that responds to targeted treatment."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Structured fluid and sodium loading protocol",
+          "why_it_matters": "Blood volume is the foundation of blood pressure. Most people with orthostatic hypotension have insufficient circulating volume, and correcting this addresses the core mechanism rather than just suppressing symptoms.",
+          "how_to_start": "Aim for 2.5\u20133 litres of fluid daily. Add approximately 3\u20135g of sodium above baseline dietary intake (from salty food or electrolyte supplements). Track fluid intake for the first two weeks to calibrate what 'enough' actually means in practice.",
+          "timeline": "Noticeable improvement in orthostatic symptoms within 1\u20132 weeks of consistent adherence.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Graduated recumbent-to-upright exercise programme",
+          "why_it_matters": "Exercise increases red blood cell mass, plasma volume, cardiac stroke volume, and autonomic baroreflex sensitivity \u2014 all of which directly improve orthostatic tolerance. It is one of the few interventions that addresses mechanism rather than just compensating for it.",
+          "how_to_start": "Begin with 20\u201330 minutes three times weekly of recumbent or semi-recumbent exercise (swimming, rowing machine, recumbent cycling). After 4\u20138 weeks, gradually introduce more upright activities as tolerance allows.",
+          "timeline": "Meaningful improvement in exercise tolerance and orthostatic symptoms typically seen over 3\u20136 months of consistent training.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Identifying and addressing the underlying cause",
+          "why_it_matters": "Hypotension is a sign, not a disease. When the cause is treatable \u2014 adrenal insufficiency, hypothyroidism, B12 deficiency, anaemia, MCAS, or a medication \u2014 addressing it often resolves or substantially reduces hypotensive symptoms. Treating only the symptom without the cause produces limited and temporary benefit.",
+          "how_to_start": "Request a systematic blood panel including thyroid function, morning cortisol, full blood count, ferritin, B12, electrolytes, and a medication review. Document symptom patterns to help narrow the differential.",
+          "timeline": "Depends on underlying cause. Correcting anaemia or stopping an offending medication may show benefit within weeks; other conditions require longer treatment.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Postural habits and physical countermanoeuvres",
+          "why_it_matters": "Simple behavioural changes \u2014 rising slowly, using muscle-tensing manoeuvres, avoiding prolonged static standing \u2014 can prevent a large proportion of symptomatic episodes without any intervention. These require no prescription and cost nothing.",
+          "how_to_start": "Practice a three-stage morning rise: sit on the edge of the bed for 60 seconds, dangle legs and pump ankles, then stand slowly. Cross and tense legs when standing for more than a few minutes.",
+          "timeline": "Immediate reduction in episode frequency when applied consistently.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Working with a specialist who investigates autonomic function",
+          "why_it_matters": "Many people with symptomatic hypotension cycle through primary care and general cardiology without receiving a tilt table test or autonomic evaluation. Autonomic specialists, and in some cases dysautonomia-knowledgeable cardiologists or neurologists, are far better positioned to characterise the problem and guide treatment.",
+          "how_to_start": "Request a referral to cardiology with a specific mention of orthostatic hypotension or suspected dysautonomia. If possible, seek a centre with a dedicated autonomic or syncope unit.",
+          "timeline": "Appropriate diagnosis typically achieved within one or two specialist appointments once the right referral pathway is accessed.",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Drinking more water without increasing sodium \u2014 water alone is rapidly excreted without adequate salt to retain it; both must increase together for volume expansion to work",
+        "Relying on a single seated clinic blood pressure reading to rule out orthostatic hypotension \u2014 postural measurements are required",
+        "Assuming low blood pressure is fine because it is 'not high' \u2014 symptomatic hypotension deserves investigation regardless of how readings are culturally framed",
+        "Starting exercise too aggressively in an upright position \u2014 this worsens symptoms acutely and discourages continuation; starting recumbent is essential",
+        "Treating symptoms without identifying the underlying cause \u2014 masking orthostatic symptoms with fludrocortisone while adrenal insufficiency or a causative medication goes unrecognised delays meaningful recovery",
+        "Wearing compression stockings only sometimes \u2014 compression needs to be applied first thing in the morning before standing and worn throughout the day to be effective",
+        "Ignoring sleep position \u2014 lying completely flat allows overnight fluid to redistribute away from the circulation; head-of-bed elevation preserves more volume for daytime use"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Autonomic neurologist",
+          "role": "The specialist most equipped to perform comprehensive autonomic function testing, diagnose the specific type and cause of orthostatic hypotension, and guide both pharmacological and non-pharmacological management.",
+          "notes": "Rare in many regions \u2014 tertiary centre referral may be required. Worth seeking out for persistent or complex cases."
+        },
+        {
+          "type": "Cardiologist (with syncope or autonomic interest)",
+          "role": "Performs tilt table testing, rules out cardiac causes of low blood pressure, and can prescribe first-line medications such as midodrine and fludrocortisone.",
+          "notes": "General cardiologists may have limited interest in orthostatic hypotension. Seeking one with a syncope clinic or electrophysiology background improves the chance of thorough investigation."
+        },
+        {
+          "type": "Endocrinologist",
+          "role": "Investigates and treats hormonal causes of hypotension including adrenal insufficiency (Addison's disease), ACTH deficiency, and thyroid dysfunction.",
+          "notes": "Essential if adrenal insufficiency is suspected. Morning cortisol testing should ideally be followed up with an endocrinologist rather than left uninvestigated in primary care."
+        },
+        {
+          "type": "Functional medicine doctor",
+          "role": "May take a more comprehensive approach to investigating upstream contributors \u2014 including adrenal function, nutrient deficiencies, gut health, and MCAS \u2014 that standard cardiology and neurology assessments may not address.",
+          "notes": "Quality varies widely. Look for practitioners familiar with POTS, dysautonomia, and the connective tissue / MCAS triad. Mainstream clinicians may be dismissive of this approach."
+        },
+        {
+          "type": "Haematologist or GP with interest in anaemia",
+          "role": "Investigates anaemia and iron deficiency as contributing factors. Essential when blood counts or ferritin are low alongside hypotensive symptoms.",
+          "notes": "Often an underappreciated link \u2014 correcting anaemia in parallel with other interventions may produce significant symptom improvement."
+        },
+        {
+          "type": "Physiotherapist (with autonomic / POTS rehabilitation experience)",
+          "role": "Designs and supervises a graded exercise programme appropriate for orthostatic intolerance \u2014 starting recumbent and progressing upright over months.",
+          "notes": "General physiotherapists may not be familiar with dysautonomia-specific exercise rehabilitation. Seek one with explicit experience in POTS, autonomic conditions, or chronic fatigue."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/POTS",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/POTS/",
+          "notes": "Highly active community focused on POTS and orthostatic intolerance. Extensive lived-experience knowledge about symptom management, diagnosis journeys, and navigating medical systems. Many members also have orthostatic hypotension without full POTS criteria."
+        },
+        {
+          "name": "r/dysautonomia",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/dysautonomia/",
+          "notes": "Covers the full spectrum of autonomic disorders including orthostatic hypotension. Good for people who do not fit neatly into a POTS diagnosis but have clear autonomic dysfunction."
+        },
+        {
+          "name": "Dysautonomia International",
+          "platform": "Website / Facebook / forum",
+          "url": "https://www.dysautonomiainternational.org/",
+          "notes": "The leading patient advocacy and research organisation for dysautonomia conditions including POTS and orthostatic hypotension. Maintains a physician directory and excellent educational resources."
+        },
+        {
+          "name": "Standing Up to POTS",
+          "platform": "Website / Facebook",
+          "url": "https://www.standinguptopots.org/",
+          "notes": "Patient-led educational resource with practical guides, a physician finder, and research updates. Particularly useful for newly diagnosed individuals navigating management options."
+        },
+        {
+          "name": "Ehlers-Danlos Society Community",
+          "platform": "Facebook / forum",
+          "url": "https://www.ehlers-danlos.com/",
+          "notes": "Relevant for people whose orthostatic hypotension occurs in the context of hypermobile EDS or HSD, where the triad of hEDS, POTS, and MCAS frequently co-occurs."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Dysautonomia International \u2014 Patient Education",
+        "type": "website",
+        "author_or_source": "Dysautonomia International",
+        "url": "https://www.dysautonomiainternational.org/page.php?ID=30",
+        "description": "Comprehensive, medically reviewed patient education covering types of dysautonomia including orthostatic hypotension, how to pursue diagnosis, and evidence-based management. An essential starting point for anyone investigating autonomic symptoms.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Dysautonomia Project: Understanding Autonomic Nervous System Disorders",
+        "type": "book",
+        "author_or_source": "Michael Ronkin, Kelly Freeman",
+        "url": null,
+        "description": "A patient-and-clinician-accessible guide to autonomic disorders, covering POTS, orthostatic hypotension, neurally mediated syncope, and more. Bridges the gap between medical literature and lived experience.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Orthostatic Hypotension \u2014 Cleveland Clinic Overview",
+        "type": "website",
+        "author_or_source": "Cleveland Clinic",
+        "url": "https://my.clevelandclinic.org/health/diseases/9385-orthostatic-hypotension",
+        "description": "Clear, well-structured clinical overview of orthostatic hypotension including causes, diagnosis criteria, and standard treatment approaches. A reliable reference for understanding what mainstream medicine offers.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Physiology and Pathophysiology of Orthostatic Hypotension",
+        "type": "research paper",
+        "author_or_source": "Lahrmann H et al. \u2014 European Journal of Neurology",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1468-1331.2006.01542.x",
+        "description": "Detailed review of the mechanisms, classification, and clinical management of orthostatic hypotension. Written for clinicians but accessible to informed patients seeking mechanistic understanding.",
+        "audience": "advanced"
+      },
+      {
+        "title": "POTS UK \u2014 Patient Resources",
+        "type": "website",
+        "author_or_source": "POTS UK",
+        "url": "https://www.potsuk.org/",
+        "description": "UK-focused resource covering POTS and related dysautonomia including orthostatic hypotension. Includes practical guides for managing symptoms, information on diagnosis, and advice on interacting with the NHS.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Levine Protocol for POTS / Orthostatic Intolerance",
+        "type": "website",
+        "author_or_source": "Benjamin Levine / Dysautonomia International",
+        "url": "https://www.dysautonomiainternational.org/pdf/CHOP_Modified_Dallas_POTS_Exercise_Program.pdf",
+        "description": "A structured, evidence-based progressive exercise programme specifically designed for people with orthostatic intolerance. Starting from recumbent exercise, it incrementally builds upright tolerance over several months. One of the most impactful non-pharmacological interventions available.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "The Salt Solution (Salt and POTS/Dysautonomia)",
+        "type": "website",
+        "author_or_source": "Standing Up to POTS",
+        "url": "https://www.standinguptopots.org/sodium",
+        "description": "Practical, evidence-cited guide to using increased sodium intake to manage orthostatic intolerance and hypotension. Explains the mechanism, the specific targets recommended in research, and how to implement safely.",
+        "audience": "beginner"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

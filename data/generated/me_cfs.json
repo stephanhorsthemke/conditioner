@@ -1,0 +1,751 @@
+{
+  "condition_id": "me_cfs",
+  "condition_name": "ME / CFS",
+  "generated_at": "2026-07-01T11:58:42.113237Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "ME/CFS (myalgic encephalomyelitis / chronic fatigue syndrome) is a serious, complex illness that causes profound, long-lasting exhaustion that is not relieved by rest. Its defining feature is post-exertional malaise \u2014 a worsening of symptoms after physical or mental activity that can last days or weeks. It affects multiple body systems and frequently follows a viral or bacterial infection. People with ME/CFS are not simply tired; many are severely disabled and unable to work or carry out basic daily activities.",
+    "detailed_summary": "ME/CFS is a multi-system neuroimmune illness characterised by debilitating fatigue, post-exertional malaise (PEM), unrefreshing sleep, cognitive impairment, and \u2014 in many cases \u2014 orthostatic intolerance. It affects people of all ages and backgrounds, though it is more commonly diagnosed in women and often begins after an acute infection. The 2015 National Academy of Medicine (NAM) report fundamentally reframed ME/CFS as a serious, biologically-based illness, and a growing body of research points to immune dysregulation, mitochondrial dysfunction, autonomic nervous system abnormalities, microbiome disruption, and altered energy metabolism as likely contributors.\n\nThe illness is heterogeneous: some people experience mild-to-moderate impairment and can function with careful pacing, while others are severely or very severely affected \u2014 bedbound, unable to tolerate light or sound, and dependent on care. A significant subset meet criteria for POTS or other forms of dysautonomia, and many have comorbid conditions including fibromyalgia, MCAS, and connective tissue disorders.\n\nDiagnosis remains clinical \u2014 there is no single validated biomarker test \u2014 and is made using criteria such as the Canadian Consensus Criteria (CCC), the International Consensus Criteria (ICC), or the Institute of Medicine's SEID criteria, which require PEM as a core feature. Many people wait years for diagnosis, and some are misdiagnosed with depression or anxiety, particularly when clinicians are unfamiliar with the condition.\n\nManagement is currently symptom-focused. Pacing \u2014 especially using heart rate monitoring to stay within the anaerobic threshold \u2014 is the most widely accepted approach for preventing crashes. Graded exercise therapy (GET) was historically recommended but has been removed from UK guidelines after evidence showed it harms many patients. Low-dose naltrexone, beta-blockers for orthostatic symptoms, and antihistamines for suspected mast cell involvement are among the pharmacological approaches used by specialist clinicians. Research into antiviral therapies, immunomodulation, and metabolic interventions is active and accelerating, particularly following the overlap with Long COVID.",
+    "prevalence": {
+      "summary": "Affects roughly 0.2\u20130.4% of the global population, though significant underdiagnosis means real numbers may be higher.",
+      "estimate": "Approximately 0.2\u20130.4% of the population; estimates of 17\u201324 million people worldwide are commonly cited",
+      "notes": "Prevalence figures vary widely depending on diagnostic criteria used. Women are diagnosed approximately 3\u20134 times more often than men. Onset can occur at any age, including childhood, but peaks in the 20s\u201340s. Many cases are never formally diagnosed. The overlap with Long COVID has dramatically increased public and research attention, with some estimates suggesting 10\u201320% of Long COVID cases meet ME/CFS criteria."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Post-infectious ME/CFS",
+        "description": "The most clearly defined onset pattern \u2014 illness begins acutely following a viral, bacterial, or other infectious trigger and does not resolve. Epstein-Barr virus (EBV/glandular fever), enteroviruses, SARS-CoV-2, and Q fever are among identified triggers.",
+        "distinguishing_features": [
+          "Clear infectious onset with documented or recalled illness",
+          "May have detectable immune activation markers",
+          "Overlaps significantly with Long COVID",
+          "Often younger age of onset"
+        ]
+      },
+      {
+        "id": "long_covid",
+        "name": "Long COVID\u2013associated ME/CFS",
+        "description": "A subset of Long COVID patients develop full ME/CFS criteria, particularly those with significant PEM. Mechanistically similar and now the most intensively studied ME/CFS-like group.",
+        "distinguishing_features": [
+          "Clear SARS-CoV-2 trigger",
+          "May have additional cardiovascular or pulmonary symptoms",
+          "Often diagnosed more quickly due to increased clinical awareness",
+          "Research cohort data accumulating rapidly"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Severe / very severe ME/CFS",
+        "description": "A minority of patients (estimated 25%) are housebound or bedbound, unable to tolerate sensory input, and may be unable to eat independently. This subgroup is severely underrepresented in research due to inability to attend clinics.",
+        "distinguishing_features": [
+          "Bedbound or housebound for months to years",
+          "Severe sensory sensitivities (light, sound, touch)",
+          "Crash from minimal exertion \u2014 sometimes just conversation",
+          "High risk of deterioration with inappropriate interventions",
+          "Often severely underweight due to difficulty eating"
+        ]
+      },
+      {
+        "id": null,
+        "name": "ME/CFS with predominant POTS/dysautonomia",
+        "description": "A significant subgroup \u2014 possibly 30\u201350% \u2014 have concurrent postural orthostatic tachycardia syndrome or other dysautonomia forms, which substantially drives symptoms including fatigue, brain fog, and exercise intolerance.",
+        "distinguishing_features": [
+          "Heart rate increases \u226530 bpm on standing",
+          "Dizziness, presyncope, and palpitations prominent",
+          "Symptoms worsen significantly with upright posture",
+          "May respond well to POTS-targeted interventions (salt, fluids, beta-blockers)",
+          "Identifiable on tilt-table test or 10-minute standing test"
+        ]
+      },
+      {
+        "id": null,
+        "name": "ME/CFS with comorbid MCAS",
+        "description": "A subset \u2014 particularly those with hEDS and POTS \u2014 also meet criteria for mast cell activation syndrome, which adds symptoms including allergic-type reactions, food intolerances, skin flushing, and gastrointestinal instability.",
+        "distinguishing_features": [
+          "Widespread food and chemical sensitivities",
+          "Flushing, urticaria, angioedema episodes",
+          "Responds partially to H1/H2 antihistamines",
+          "Often overlaps with hEDS and POTS in a recognised triad"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Paediatric-onset ME/CFS",
+        "description": "ME/CFS in children and adolescents, often following infection. Frequently misdiagnosed as school refusal or psychological disorder. School and social impact is significant.",
+        "distinguishing_features": [
+          "Often follows glandular fever or other acute illness",
+          "High risk of misattribution to psychological causes",
+          "Education disruption prominent",
+          "Prognosis may be somewhat better than adult-onset with appropriate management"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Post-exertional malaise (PEM)",
+        "category": "Core / systemic",
+        "notes": "The defining feature: a worsening of symptoms following physical or cognitive exertion that would not have caused problems in a healthy person. Onset is often delayed 12\u201348 hours after activity, and the 'crash' can last days, weeks, or longer. PEM is distinct from normal tiredness after exercise."
+      },
+      {
+        "symptom": "Profound, unrelenting fatigue",
+        "category": "Core / systemic",
+        "notes": "Not ordinary tiredness. Fatigue is not relieved by sleep or rest, is disproportionate to activity, and has been present for at least 6 months for formal diagnosis. Described by many as a total-body collapse of energy."
+      },
+      {
+        "symptom": "Unrefreshing sleep",
+        "category": "Sleep",
+        "notes": "Waking up feeling as bad or worse than before sleeping. Sleep architecture is often disrupted even without formal sleep apnea. Many experience hypersomnia or reversed sleep cycles."
+      },
+      {
+        "symptom": "Cognitive impairment ('brain fog')",
+        "category": "Neurological / cognitive",
+        "notes": "Difficulties with memory, word-finding, processing speed, and concentration. Often described as thinking through cotton wool. Worsens significantly after exertion or in the post-exertional window."
+      },
+      {
+        "symptom": "Orthostatic intolerance",
+        "category": "Cardiovascular / autonomic",
+        "notes": "Symptoms worsen on standing \u2014 dizziness, nausea, heart pounding, blurred vision, worsening brain fog. Can manifest as POTS, neurally mediated hypotension (NMH), or orthostatic hypotension."
+      },
+      {
+        "symptom": "Widespread muscle pain",
+        "category": "Musculoskeletal",
+        "notes": "Aching, heaviness, or burning in muscles, often without inflammation on investigation. May be accompanied by joint pain."
+      },
+      {
+        "symptom": "Headaches",
+        "category": "Neurological",
+        "notes": "New-onset or worsened headache patterns, often described as pressure-type or migraine-like. Can be triggered or worsened by exertion."
+      },
+      {
+        "symptom": "Sore throat",
+        "category": "Immune / ENT",
+        "notes": "Recurring sore throat, often without infection on culture. May feel like the throat is raw or inflamed. Considered part of the immune activation pattern."
+      },
+      {
+        "symptom": "Tender lymph nodes",
+        "category": "Immune",
+        "notes": "Enlarged or tender cervical or axillary lymph nodes, particularly in the neck. Not usually large enough to be clinically visible but noticeable on palpation."
+      },
+      {
+        "symptom": "Light and sound sensitivity (photophobia / phonophobia)",
+        "category": "Neurological / sensory",
+        "notes": "Often more severe in those with higher illness severity. Can be debilitating in severe ME/CFS, requiring darkened rooms."
+      },
+      {
+        "symptom": "Temperature dysregulation",
+        "category": "Autonomic / systemic",
+        "notes": "Inability to regulate body temperature \u2014 feeling too hot, too cold, or both. Night sweats are common. Low-grade fevers or subnormal temperature may occur."
+      },
+      {
+        "symptom": "Gastrointestinal symptoms",
+        "category": "Digestive",
+        "notes": "Nausea, bloating, abdominal pain, constipation, or diarrhoea. IBS-like symptoms are common. Can be driven by autonomic dysfunction affecting gut motility."
+      },
+      {
+        "symptom": "Palpitations",
+        "category": "Cardiovascular",
+        "notes": "Awareness of heartbeat, rapid heart rate, or irregular rhythms \u2014 often linked to orthostatic stress or autonomic dysfunction."
+      },
+      {
+        "symptom": "Shortness of breath",
+        "category": "Respiratory / autonomic",
+        "notes": "Breathlessness disproportionate to exertion, sometimes at rest. Not usually explained by pulmonary pathology."
+      },
+      {
+        "symptom": "Chemical and food sensitivities",
+        "category": "Immune / systemic",
+        "notes": "Many people develop new sensitivities to perfumes, cleaning products, medications, and foods after illness onset. May reflect mast cell dysregulation or limbic sensitisation."
+      },
+      {
+        "symptom": "Flu-like feeling",
+        "category": "Immune / systemic",
+        "notes": "Persistent or recurrent feeling of being ill \u2014 as if in the early stages of influenza. Malaise, achiness, and a sense of systemic inflammation."
+      },
+      {
+        "symptom": "Cognitive and emotional changes",
+        "category": "Psychological / neurological",
+        "notes": "Irritability, emotional lability, anxiety, and low mood are common. These are often secondary to the illness itself and the profound life disruption it causes, not primary psychiatric conditions."
+      },
+      {
+        "symptom": "Word-finding difficulties and slowed speech",
+        "category": "Neurological / cognitive",
+        "notes": "Difficulty retrieving words mid-sentence, losing track of conversations. Particularly prominent during or after PEM episodes."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Worsening of all symptoms 12\u201348 hours after exertion (classic PEM delay \u2014 diagnostic of ME/CFS when present)",
+        "Normal or near-normal standard labs (CBC, metabolic panel, thyroid) \u2014 ME/CFS is frequently invisible on routine bloods",
+        "Abnormal 2-day CPET showing reduced VO2 max and AT on day 2 compared to day 1 \u2014 the most objective physiological marker of PEM",
+        "Elevated resting heart rate or heart rate that rises \u226530 bpm on standing (10-minute standing test) \u2014 suggests POTS overlap",
+        "Low NK cell function on specialist immune testing",
+        "Elevated cytokine profiles on research testing (not widely clinically available)",
+        "EEG or qEEG abnormalities in cognitive processing studies (research setting)"
+      ],
+      "at_home": [
+        {
+          "name": "Heart rate monitoring for pacing",
+          "description": "Using a wearable heart rate monitor to identify the anaerobic threshold (AT) \u2014 typically estimated as 0.6 \u00d7 (220 \u2212 age) for women or using Karvonen formula. Keeping heart rate below this threshold during all activity is central to preventing PEM. Tracking resting heart rate trends also provides insight into recovery status.",
+          "safety_notes": "This is a management tool, not a diagnostic test. People who are severely affected should be cautious even about the exertion of monitoring. Do not use this as a reason to push harder."
+        },
+        {
+          "name": "10-minute standing test (poor man's tilt table)",
+          "description": "Lie flat for 10 minutes, measure resting heart rate. Stand still (no walking) for 10 minutes and measure heart rate each minute. An increase of \u226530 bpm from lying to standing, or sustained HR above 120 bpm while standing, suggests POTS. Record all symptoms experienced during standing.",
+          "safety_notes": "Have someone present. Stop and lie down if lightheadedness, near-fainting, or severe symptoms occur. Not a replacement for tilt-table testing."
+        },
+        {
+          "name": "Symptom and activity diary",
+          "description": "Tracking activity levels, symptom intensity, and PEM episodes over 2\u20134 weeks to identify the personal activity threshold and lag time before crashes. Helps establish patterns, communicate with clinicians, and guide pacing decisions.",
+          "safety_notes": "Keep entries brief to avoid cognitive overload. Apps designed for ME/CFS (e.g. Visible) can reduce the burden."
+        },
+        {
+          "name": "Sleep tracking",
+          "description": "Using a consumer wearable (Garmin, Oura ring, Fitbit) to track sleep stages, resting heart rate overnight, and heart rate variability (HRV). Low HRV and elevated resting overnight HR can reflect autonomic dysfunction and poor recovery.",
+          "safety_notes": "Consumer devices are not medical-grade. Use for pattern observation, not clinical diagnosis."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Clinical diagnosis via ME/CFS criteria",
+          "type": "gold_standard",
+          "description": "Diagnosis is made clinically by applying validated criteria \u2014 most commonly the Canadian Consensus Criteria (CCC), International Consensus Criteria (ICC), or Institute of Medicine SEID criteria. All require PEM as a core feature. Other criteria include unrefreshing sleep, cognitive impairment, and orthostatic intolerance. Exclusion of other conditions that fully explain symptoms is part of the process.",
+          "availability": "ME/CFS-specialist clinicians, some neurologists, immunologists, and informed GPs. Many mainstream physicians are not trained in current criteria."
+        },
+        {
+          "name": "2-day cardiopulmonary exercise test (CPET)",
+          "type": "gold_standard",
+          "description": "The most objective physiological evidence of PEM. Measures VO2 max and anaerobic threshold on two consecutive days. In healthy individuals and in most other fatiguing conditions, day 2 results are similar to or better than day 1. In ME/CFS, day 2 shows significant, reproducible decline in oxygen utilisation and AT \u2014 demonstrating impaired cellular energy metabolism triggered by exertion.",
+          "availability": "Available at specialist ME/CFS clinics and some academic medical centres. Not widely available on the NHS or in standard outpatient settings. Workwell Foundation in the USA has published extensively on this protocol. Not suitable for severely affected patients."
+        },
+        {
+          "name": "Tilt table test",
+          "type": "standard",
+          "description": "Formal assessment for POTS and neurally mediated hypotension. Patient is strapped to a table and tilted from horizontal to 60\u201380 degrees while heart rate and blood pressure are monitored. Diagnoses orthostatic intolerance formally.",
+          "availability": "Cardiology or neurology departments. May require referral; not universally available on NHS without specialist support."
+        },
+        {
+          "name": "Comprehensive blood panel to exclude differentials",
+          "type": "standard",
+          "description": "Full blood count, metabolic panel, thyroid function (TSH, free T3, free T4), ESR, CRP, ferritin, B12, folate, vitamin D, cortisol, ANA, Lyme serology, EBV/CMV serology, coeliac screen. Used to rule out other explanations for fatigue and identify comorbidities \u2014 not to diagnose ME/CFS, which is typically invisible on standard labs.",
+          "availability": "GP / primary care. Some tests (free T3, cortisol) may need to be specifically requested."
+        },
+        {
+          "name": "Natural killer (NK) cell cytotoxicity testing",
+          "type": "emerging",
+          "description": "Reduced NK cell function is one of the most replicated findings in ME/CFS research. Specialist immune panels can quantify NK cell activity. Not yet a validated diagnostic test but can support clinical picture.",
+          "availability": "Research and private immunology labs. Not routinely available on NHS or in most US insurance-covered settings."
+        },
+        {
+          "name": "Neuropsychological testing",
+          "type": "standard",
+          "description": "Formal cognitive assessment to document and characterise cognitive impairment \u2014 processing speed, working memory, attention, and executive function. Useful for disability documentation and to rule out primary cognitive conditions.",
+          "availability": "Neuropsychologists or specialist ME/CFS clinics. May require referral."
+        },
+        {
+          "name": "Sleep study (polysomnography)",
+          "type": "standard",
+          "description": "Overnight sleep study to assess sleep architecture and exclude obstructive sleep apnea or other primary sleep disorders. Important because sleep apnea can mimic or worsen ME/CFS symptoms.",
+          "availability": "Sleep medicine clinics; available via GP/primary care referral."
+        },
+        {
+          "name": "Metabolomic profiling",
+          "type": "emerging",
+          "description": "Research-level metabolomics studies have identified a hypometabolic signature in ME/CFS resembling dauer-state responses to stress (Naviaux et al.). Plasma metabolomics panels are not yet clinically standardised but represent a promising diagnostic direction.",
+          "availability": "Research settings only at present."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "POTS is present in an estimated 30\u201350% of people with ME/CFS. The conditions share autonomic dysfunction as a likely common mechanism. Orthostatic intolerance substantially drives fatigue, brain fog, and exercise intolerance in this subgroup. Treating POTS can meaningfully reduce ME/CFS symptom burden."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "ME/CFS and fibromyalgia co-occur at high rates (estimates 20\u201370%) and share overlapping mechanisms including central sensitisation, sleep disruption, and HPA axis dysfunction. They can be distinguished by the centrality of PEM in ME/CFS versus widespread musculoskeletal pain in fibromyalgia, though both are commonly present."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
+        "relationship": "comorbid",
+        "explanation": "MCAS is increasingly recognised as a frequent comorbidity in ME/CFS, particularly in those with hEDS and POTS. Mast cell dysregulation may contribute to immune activation, food intolerances, and systemic inflammation seen in ME/CFS."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / hypermobility spectrum disorder",
+        "relationship": "comorbid",
+        "explanation": "A significant subset of people with ME/CFS have hypermobile Ehlers-Danlos syndrome. The triad of hEDS, POTS, and MCAS is well-recognised and frequently overlaps with ME/CFS. Connective tissue abnormalities may contribute to autonomic dysfunction."
+      },
+      {
+        "id": "long_covid",
+        "name": "Long COVID",
+        "relationship": "mechanistic_link",
+        "explanation": "Long COVID and ME/CFS share overlapping symptoms, likely mechanisms (immune dysregulation, mitochondrial dysfunction, microbiome disruption, autonomic dysfunction), and diagnostic criteria. 10\u201320% of Long COVID cases may meet ME/CFS criteria. Research into Long COVID is accelerating understanding of ME/CFS."
+      },
+      {
+        "id": "ebv",
+        "name": "EBV reactivation",
+        "relationship": "upstream",
+        "explanation": "Epstein-Barr virus (glandular fever) is one of the most commonly documented infectious triggers for ME/CFS. Reactivation of latent EBV may also drive ongoing immune activation in established ME/CFS cases."
+      },
+      {
+        "id": "lyme",
+        "name": "Lyme disease / chronic Lyme",
+        "relationship": "often_confused",
+        "explanation": "Post-treatment Lyme disease syndrome can present identically to ME/CFS, and both share PEM, cognitive impairment, and fatigue. Some people receive a ME/CFS diagnosis before Lyme is identified. Serology testing is recommended in those with relevant exposure history."
+      },
+      {
+        "id": "mitochondrial",
+        "name": "Mitochondrial dysfunction",
+        "relationship": "mechanistic_link",
+        "explanation": "Multiple research lines suggest impaired mitochondrial energy metabolism in ME/CFS \u2014 including low ATP production, reduced Complex I function, and altered fatty acid oxidation. This may explain the anaerobic threshold impairment seen on 2-day CPET."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "comorbid",
+        "explanation": "Studies consistently find altered gut microbiome composition in ME/CFS, including reduced microbial diversity and impaired short-chain fatty acid production. Whether dysbiosis contributes to ME/CFS pathophysiology or is secondary to illness and deconditioning is not yet established."
+      },
+      {
+        "id": "ibs",
+        "name": "Irritable bowel syndrome",
+        "relationship": "comorbid",
+        "explanation": "IBS is a common comorbidity in ME/CFS, with shared features of autonomic dysfunction affecting gut motility, visceral hypersensitivity, and microbiome changes. The two conditions may share central sensitisation mechanisms."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation",
+        "relationship": "mechanistic_link",
+        "explanation": "Evidence of central sensitisation \u2014 amplified pain and sensory processing \u2014 is present in ME/CFS and may explain widespread pain, light/sound sensitivity, and the disproportionate symptom response to minor stimuli."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "often_confused",
+        "explanation": "ME/CFS is frequently misdiagnosed as depression, and depression is also a common secondary comorbidity. Key distinguishing features include: PEM is not a feature of depression; many people with ME/CFS have normal or high motivation but physically cannot act on it; and antidepressants alone do not resolve ME/CFS."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "often_confused",
+        "explanation": "Anxiety symptoms are common in ME/CFS as a secondary feature, and ME/CFS is sometimes misattributed to anxiety by clinicians unfamiliar with the condition. Autonomic dysfunction can produce physical anxiety-like symptoms (palpitations, breathlessness) independently of psychological anxiety."
+      },
+      {
+        "id": "hypothyroidism",
+        "name": "Hypothyroidism",
+        "relationship": "often_confused",
+        "explanation": "Hypothyroidism causes fatigue, cognitive impairment, and cold intolerance that overlap with ME/CFS. Standard TSH testing should be done in all cases. Importantly, normal TSH does not fully exclude thyroid-related problems \u2014 free T3 and T4 should also be reviewed."
+      },
+      {
+        "id": "mold_cirs",
+        "name": "Mold illness / CIRS",
+        "relationship": "often_confused",
+        "explanation": "Biotoxin illness from mold exposure can produce a ME/CFS-like syndrome. In cases where symptoms began or significantly worsened in a specific building or after water damage, mold exposure investigation is warranted."
+      },
+      {
+        "id": "sleep_apnea",
+        "name": "Obstructive sleep apnea",
+        "relationship": "often_confused",
+        "explanation": "Undiagnosed sleep apnea causes unrefreshing sleep, fatigue, and cognitive impairment closely resembling ME/CFS. Sleep study is recommended to exclude this before ME/CFS diagnosis is finalised."
+      },
+      {
+        "id": "cortisol_dysreg",
+        "name": "Cortisol dysregulation / HPA axis dysfunction",
+        "relationship": "mechanistic_link",
+        "explanation": "HPA axis dysfunction \u2014 typically characterised by low-normal or blunted cortisol responses \u2014 is a replicated finding in ME/CFS. Dysregulated cortisol may contribute to fatigue, immune activation, and sleep disruption."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Non-restorative sleep / insomnia",
+        "relationship": "comorbid",
+        "explanation": "Unrefreshing sleep is a core diagnostic feature of ME/CFS and a major driver of symptom burden. Alpha intrusion into delta sleep (detected on polysomnography) is a consistent finding. Sleep disruption both results from and perpetuates the condition."
+      },
+      {
+        "id": "iron_deficiency",
+        "name": "Iron deficiency / anaemia",
+        "relationship": "often_confused",
+        "explanation": "Iron deficiency \u2014 even without frank anaemia \u2014 can cause fatigue and cognitive difficulties resembling ME/CFS. Ferritin should be checked and optimised before ME/CFS diagnosis is finalised."
+      },
+      {
+        "id": "b12_deficiency",
+        "name": "Vitamin B12 deficiency",
+        "relationship": "often_confused",
+        "explanation": "B12 deficiency causes fatigue, neurological symptoms, and cognitive impairment overlapping with ME/CFS. Should be excluded by testing, noting that serum B12 can be normal despite functional deficiency."
+      },
+      {
+        "id": "cervical_instability",
+        "name": "Craniocervical instability",
+        "relationship": "often_confused",
+        "explanation": "Some clinicians and patient communities report a subset of ME/CFS cases \u2014 particularly severe cases \u2014 where craniocervical instability compresses neural or vascular structures, contributing to symptoms. This remains controversial and is not mainstream."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Pacing and energy envelope management",
+          "category": "lifestyle",
+          "description": "Staying within the body's available energy envelope to prevent PEM. This means stopping activity before the point of fatigue, not after. Heart rate monitoring to stay below the anaerobic threshold (typically 60% of age-predicted max HR) is a practical tool. Activity includes physical, cognitive, social, and sensory input \u2014 all draw from the same limited energy pool.",
+          "evidence_level": "strong",
+          "notes": "Pacing is the single most consistently supported self-management approach. It requires a significant mindset shift \u2014 the goal is to do less than feels possible, not to build up gradually. REST is an active intervention, not a failure."
+        },
+        {
+          "name": "Graded exercise therapy (GET) \u2014 AVOID",
+          "category": "lifestyle",
+          "description": "GET \u2014 gradually increasing exercise on a fixed schedule \u2014 was historically recommended but has been removed from UK NICE guidelines (2021) after large patient surveys and clinical evidence showed it worsens symptoms and causes lasting harm in a significant proportion of people with ME/CFS.",
+          "evidence_level": "strong",
+          "notes": "This is listed here to actively flag it as harmful for ME/CFS. If a clinician recommends standard GET, that is a warning sign they may be using outdated guidance."
+        },
+        {
+          "name": "POTS management protocol (if orthostatic intolerance is present)",
+          "category": "lifestyle",
+          "description": "Increased salt and fluid intake (often 2\u20133g sodium and 2\u20133L fluid daily), compression garments (waist-high, 20\u201340 mmHg), elevation of the head of the bed, and avoiding prolonged standing. These measures reduce the haemodynamic stress of upright posture and can substantially reduce fatigue and brain fog in those with POTS overlap.",
+          "evidence_level": "moderate",
+          "notes": "Requires ruling out contraindications to high salt intake (hypertension, kidney disease, heart failure). Best implemented with guidance from a cardiologist or POTS-specialist clinician."
+        },
+        {
+          "name": "Sleep hygiene and circadian rhythm support",
+          "category": "lifestyle",
+          "description": "Consistent sleep and wake times, light exposure management (bright light in the morning, blue-light reduction in the evening), avoiding temperature extremes, and managing pain that disrupts sleep. Low-dose melatonin may assist with circadian rhythm resetting.",
+          "evidence_level": "moderate",
+          "notes": "Standard sleep hygiene advice was designed for people without ME/CFS and does not always translate directly. Over-restriction of daytime rest can increase PEM. A nuanced approach is needed."
+        },
+        {
+          "name": "Low-dose naltrexone (LDN)",
+          "category": "medication",
+          "description": "LDN (typically 1.5\u20134.5mg at night) is used off-label by ME/CFS specialists. Proposed mechanisms include microglial modulation, reduced neuroinflammation, and opioid receptor up-regulation. Case series and small trials report improvements in pain, fatigue, and cognitive symptoms in a subset of patients.",
+          "evidence_level": "moderate",
+          "notes": "Well-tolerated in most people with ME/CFS. Vivid dreams in the first weeks are common. Requires a prescription; not universally available via NHS but increasingly prescribed by informed GPs and private physicians."
+        },
+        {
+          "name": "Beta-blockers for POTS/tachycardia",
+          "category": "medication",
+          "description": "Low-dose propranolol, metoprolol, or ivabradine can reduce the heart rate surge on standing and improve orthostatic tolerance in ME/CFS with POTS. Can meaningfully reduce palpitations and functional impairment from dysautonomia.",
+          "evidence_level": "moderate",
+          "notes": "Should be trialled under medical supervision. Not all patients tolerate beta-blockers \u2014 fatigue can worsen in some. Ivabradine (reduces heart rate without blood pressure effect) may be better tolerated in hypotensive patients."
+        },
+        {
+          "name": "Antihistamines (for suspected MCAS overlap)",
+          "category": "medication",
+          "description": "H1 antihistamines (cetirizine, loratadine, fexofenadine) and H2 antihistamines (famotidine) are used by many people with ME/CFS who also have features of mast cell activation. Can reduce systemic symptoms including brain fog, GI symptoms, flushing, and fatigue in this subgroup.",
+          "evidence_level": "anecdotal",
+          "notes": "Non-sedating H1 antihistamines are generally low-risk. Trialling for 4\u20136 weeks while monitoring symptoms can be informative. Best guided by a clinician familiar with MCAS."
+        },
+        {
+          "name": "Nutritional optimisation",
+          "category": "supplement",
+          "description": "Correcting documented deficiencies \u2014 vitamin D, B12, ferritin, magnesium, folate \u2014 is important baseline management. Some people with ME/CFS report benefit from CoQ10 and nicotinamide riboside (NR) or NMN for mitochondrial support, though trial evidence is limited.",
+          "evidence_level": "moderate",
+          "notes": "Start with testing before supplementing, as excessive supplementation without deficiency can cause problems. Introduce one supplement at a time so responses can be tracked. Some people with ME/CFS are sensitive to supplements and should start at low doses."
+        },
+        {
+          "name": "Cognitive rest and sensory load management",
+          "category": "lifestyle",
+          "description": "Reducing cognitive and sensory demands \u2014 screen time, noise exposure, conversations, reading \u2014 as part of the overall pacing strategy. During crashes, lying in a dark, quiet room with minimal input may be the only appropriate intervention.",
+          "evidence_level": "strong",
+          "notes": "Often difficult to implement in practice. People with ME/CFS frequently underestimate cognitive and sensory exertion as contributors to PEM, focusing only on physical activity."
+        },
+        {
+          "name": "Dietary modifications",
+          "category": "diet",
+          "description": "There is no evidence-based ME/CFS diet, but many people find benefit from reducing processed foods, stabilising blood sugar with regular small meals, and identifying personal food triggers (especially relevant if MCAS or IBS coexist). Low-histamine diets help a subset. Anti-inflammatory dietary approaches are often reported as beneficial.",
+          "evidence_level": "anecdotal",
+          "notes": "Severe dietary restriction without clear rationale can worsen nutritional status and is not recommended. Work with a dietitian if multiple food intolerances are present."
+        },
+        {
+          "name": "Psychological support (for adjustment, not 'cure')",
+          "category": "mental health",
+          "description": "Living with ME/CFS causes profound grief, loss of identity, social isolation, and in many cases, trauma from medical gaslighting. Psychological support \u2014 particularly trauma-informed therapy, acceptance and commitment therapy (ACT), or compassion-focused approaches \u2014 can help people adapt to a changed life without framing the illness as psychologically caused.",
+          "evidence_level": "moderate",
+          "notes": "Cognitive behavioural therapy (CBT) designed to challenge illness beliefs and increase activity (the deconditioning model) is not appropriate for ME/CFS and has been shown to cause harm in some patients. CBT focused on coping, not on the belief that the illness is not real, may be useful."
+        }
+      ],
+      "things_to_avoid": [
+        "Graded exercise therapy (GET) \u2014 directly contradicted by NICE 2021 guidelines; causes lasting deterioration in a significant proportion of people with ME/CFS",
+        "Pushing through fatigue ('boom and bust') \u2014 repeatedly exceeding the energy envelope accelerates disease progression and severity",
+        "CBT that frames ME/CFS as maintained by unhelpful illness beliefs \u2014 this model is not supported by current evidence and causes harm",
+        "Excessive or unstructured rest (complete inactivity) \u2014 while rest is necessary, total deconditioning can create additional problems; the goal is strategic pacing, not indefinite bed rest",
+        "Trialling multiple new interventions simultaneously \u2014 makes it impossible to identify what is helping or causing adverse reactions",
+        "Dismissing orthostatic intolerance \u2014 if POTS is present and untreated, efforts at pacing alone will be undermined",
+        "Sleeping excessively during the day without addressing sleep architecture \u2014 excessive daytime sleep can worsen nighttime sleep quality and circadian rhythm disruption",
+        "Stimulants and caffeine as a fatigue workaround \u2014 mask the energy deficit and contribute to boom-bust cycling and worse crashes",
+        "Ignoring mental health support \u2014 psychological suffering from living with a severely disabling and medically dismissed illness is real and deserves treatment"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "There is currently no cure for ME/CFS and no treatment with strong evidence of recovery. Most people improve only partially, and a significant minority remain severely disabled long-term.",
+        "why_resisted": "People in the early stages of illness, and their families, understandably want to believe that the right protocol, supplement, or specialist will restore their previous life. The suffering caused by severe ME/CFS makes hope feel like a survival necessity.",
+        "path_forward": "Patients who accept the current limits of treatment and focus energy on aggressive pacing, comorbidity management (POTS, MCAS, sleep), and quality-of-life optimisation report more stability and fewer severe crashes than those who continue to chase recovery. Stability itself is a meaningful outcome. Emerging research \u2014 particularly from Long COVID funding \u2014 is the most promising development in decades."
+      },
+      {
+        "truth": "Most mainstream doctors \u2014 including GPs and specialists \u2014 are inadequately trained in ME/CFS and may actively dismiss, misdiagnose, or harm patients with outdated advice.",
+        "why_resisted": "People are taught to trust doctors and to believe the medical system will identify and treat serious illness. Accepting that the system has failed for ME/CFS requires questioning deeply held beliefs about medicine.",
+        "path_forward": "Patients who locate ME/CFS-specialist clinicians, connect with patient organisations, and develop their own informed understanding of their condition \u2014 while continuing to engage selectively with mainstream medicine for comorbidities \u2014 navigate the system more effectively than those who wait for mainstream care to catch up."
+      },
+      {
+        "truth": "For severely affected people, aggressive pacing means doing dramatically less than feels possible or acceptable \u2014 potentially including stopping work, cancelling social commitments, and resting after brief conversations. There is no way to partially implement pacing and get the full benefit.",
+        "why_resisted": "The financial, social, and identity costs of severe reduction in activity are enormous. People with high pre-illness functioning often find the required level of rest inconceivable and continue to exceed their threshold, perpetuating cycles of crash and partial recovery.",
+        "path_forward": "Patients who successfully implement strict pacing for 3\u20136 months \u2014 even at the cost of significant life disruption \u2014 typically report a stabilisation of the boom-bust cycle, a reduction in frequency and severity of crashes, and a gradual, modest expansion of the activity envelope. This is slow and not guaranteed, but it is the most consistent pattern reported by those who have genuinely implemented pacing."
+      },
+      {
+        "truth": "The psychological distress in ME/CFS \u2014 grief, depression, trauma, anxiety \u2014 is real, significant, and requires active treatment, even though it is not the cause of the illness.",
+        "why_resisted": "Because ME/CFS has been so frequently dismissed as a psychological illness, many patients resist acknowledging psychological symptoms for fear this will be used to invalidate their physical diagnosis or redirect them to psychiatric care.",
+        "path_forward": "Patients who seek psychological support framed as coping with a serious physical illness \u2014 rather than as treatment for the ME/CFS itself \u2014 report better quality of life and, in many cases, improved physical symptom management, because the emotional load of the illness is no longer suppressing all capacity for self-care."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Heart rate-guided pacing implemented consistently over months",
+          "why_it_matters": "Staying below the anaerobic threshold prevents the mitochondrial and immune disruption that drives PEM and crashes. Consistent pacing breaks the boom-bust cycle and creates the physiological stability in which gradual recovery may be possible.",
+          "how_to_start": "Calculate estimated anaerobic threshold (220 \u2212 age \u00d7 0.6 for women; adjust down if significantly deconditioned). Wear a heart rate monitor during all activity, including conversations and housework. When HR approaches the threshold, stop and rest. Use the Visible app or similar to track.",
+          "timeline": "Meaningful reduction in crash frequency: 2\u20134 months of consistent implementation. Some people see gradual activity expansion over 12\u201324 months.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Identifying and treating POTS if present",
+          "why_it_matters": "Undiagnosed or untreated POTS substantially amplifies ME/CFS symptoms. Addressing circulatory dysfunction \u2014 with salt, fluids, compression, and medication if needed \u2014 removes a major, modifiable driver of fatigue and cognitive impairment.",
+          "how_to_start": "Perform the 10-minute standing test at home. If suggestive, request tilt-table test referral or see a cardiologist or POTS-specialist. Begin salt and fluid loading (with medical clearance) while awaiting testing.",
+          "timeline": "Initial improvements in orthostatic symptoms: 2\u20136 weeks with conservative measures. Medication trials: 4\u20138 weeks for meaningful assessment.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Identifying and treating comorbidities (MCAS, sleep disorders, nutritional deficiencies)",
+          "why_it_matters": "Many people with ME/CFS carry a burden of undertreated comorbidities that independently worsen symptoms. Each addressed comorbidity reduces total symptom load and can unlock capacity for other interventions.",
+          "how_to_start": "Systematic review: sleep study to exclude sleep apnea; full blood panel for deficiencies; antihistamine trial if multiple food/chemical sensitivities and systemic symptoms are present. Document which conditions are and aren't being investigated.",
+          "timeline": "Variable by condition; some (B12 deficiency, sleep apnea) respond within weeks to months.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Building a knowledgeable care team rather than relying on a single GP",
+          "why_it_matters": "ME/CFS requires multidisciplinary input \u2014 clinical knowledge of ME/CFS, dysautonomia, immunology, sleep, nutrition, and mental health. No single generalist can provide all of this. Assembling the right team multiplies the chance of meaningful management.",
+          "how_to_start": "Identify one ME/CFS-aware clinician as a coordinator. Add POTS-specialist cardiologist, registered dietitian, and therapist familiar with chronic illness as resources allow. Patient organisations (MEAction, Solve ME) often have specialist directories.",
+          "timeline": "Building the team: 6\u201318 months. Sustained benefit: ongoing.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Addressing sleep quality directly",
+          "why_it_matters": "Unrefreshing sleep compounds all ME/CFS symptoms and reduces the body's capacity for any recovery. Even partial improvements in sleep architecture can have outsized effects on daily function.",
+          "how_to_start": "Sleep study to exclude apnea. Review medications that disrupt sleep. Consistent sleep/wake schedule. Discuss low-dose melatonin, low-dose tricyclics (e.g. amitriptyline at 5\u201310mg), or trazodone with a clinician if sleep initiation or maintenance is severely disrupted.",
+          "timeline": "4\u20138 weeks for medication effects; habit changes take longer.",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Attempting to 'retrain' the body by gradually increasing activity on a fixed schedule (GET) \u2014 this ignores the physiological reality of PEM and causes deterioration in many patients",
+        "Resting only after symptoms appear \u2014 by the time symptoms signal exhaustion, the physiological damage that causes PEM has already been triggered; pacing must be preventive",
+        "Attributing all symptoms to ME/CFS without investigating treatable comorbidities \u2014 POTS, sleep apnea, MCAS, thyroid disorders, and nutritional deficiencies all require specific management",
+        "Starting multiple interventions simultaneously \u2014 makes it impossible to evaluate responses and increases risk of adverse reactions",
+        "Pursuing expensive, unvalidated treatments \u2014 high-cost private protocols with no evidence base divert financial resources and often cause additional stress when they fail",
+        "Underestimating cognitive and emotional exertion as PEM triggers \u2014 many patients focus only on physical activity while screen time, social interaction, and emotional stress cause equivalent crashes",
+        "Giving up pacing after a few weeks because the pace feels unbearably slow \u2014 the physiological benefits of consistent pacing accumulate over months, not days"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "ME/CFS specialist clinician (GP, internist, or neurologist with ME/CFS expertise)",
+          "role": "Clinical diagnosis, management coordination, prescription of medications such as LDN, antihistamines, and sleep aids. The rarest and most valuable type of clinician for this condition.",
+          "notes": "Very thin on the ground in most countries. MEAction, Solve ME, and patient communities maintain directories of ME/CFS-knowledgeable clinicians. In the UK, specialist ME/CFS services exist but vary in quality \u2014 check that the service uses post-2021 NICE guidelines."
+        },
+        {
+          "type": "Cardiologist or electrophysiologist with POTS expertise",
+          "role": "Diagnosis and management of POTS and dysautonomia comorbidities. Can perform tilt-table testing and prescribe medications for orthostatic intolerance.",
+          "notes": "Not all cardiologists are POTS-literate. Dysautonomia International maintains a provider directory. Paediatric cardiologists often have more POTS experience than adult cardiologists."
+        },
+        {
+          "type": "Immunologist",
+          "role": "Investigation of immune dysfunction, NK cell testing, and potential immunomodulatory interventions. Relevant for the subset with clearly post-infectious onset.",
+          "notes": "Most immunologists do not have specific ME/CFS expertise. Academic medical centres are more likely to have research-informed clinicians."
+        },
+        {
+          "type": "Functional medicine doctor",
+          "role": "Root cause investigation including mitochondrial function, MCAS, HPA axis, gut health, and nutritional status. Often more willing to investigate beyond standard panels and to treat comorbidities comprehensively.",
+          "notes": "Quality varies significantly. Prioritise practitioners with documented ME/CFS experience. Some mainstream clinicians are skeptical of functional medicine \u2014 evaluate on a case-by-case basis."
+        },
+        {
+          "type": "Registered dietitian (with chronic illness or ME/CFS experience)",
+          "role": "Nutritional assessment, addressing deficiencies, supporting dietary modifications for comorbid IBS or MCAS, and managing nutritional adequacy in severely affected patients who have difficulty eating.",
+          "notes": "Nutrition support is often overlooked in ME/CFS management. A dietitian familiar with the energy constraints of ME/CFS will adapt recommendations accordingly."
+        },
+        {
+          "type": "Psychologist or therapist (trauma-informed or chronic illness specialist)",
+          "role": "Support for the grief, identity loss, medical trauma, and relational strain caused by living with ME/CFS. ACT and compassion-focused approaches are better suited than cognitive restructuring models.",
+          "notes": "Explicitly seek a therapist who understands ME/CFS is a physical illness. Some therapists trained in the old model may inadvertently reinforce the idea that psychological work will resolve the physical symptoms."
+        },
+        {
+          "type": "Sleep medicine specialist",
+          "role": "Investigation and treatment of sleep disorders \u2014 particularly sleep apnea and circadian rhythm disruption \u2014 that significantly worsen ME/CFS symptoms.",
+          "notes": "Polysomnography (sleep study) is worth pursuing for most people with ME/CFS, as sleep apnea frequently coexists and is treatable."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/cfs",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/cfs/",
+          "notes": "Large, active, well-moderated community. Excellent for practical management advice, clinician recommendations, and emotional support. Strong culture of evidence-based discussion and pushback against harmful advice."
+        },
+        {
+          "name": "MEAction",
+          "platform": "Website / community forum",
+          "url": "https://www.meaction.net/",
+          "notes": "Patient-led advocacy organisation with provider directories, research updates, and community forums. One of the most credible international ME/CFS organisations."
+        },
+        {
+          "name": "Solve ME/CFS Initiative",
+          "platform": "Website / research community",
+          "url": "https://solvecfs.org/",
+          "notes": "Research-focused organisation with patient registry participation options. Good source of emerging research updates."
+        },
+        {
+          "name": "ME Association (UK)",
+          "platform": "Website / forum",
+          "url": "https://meassociation.org.uk/",
+          "notes": "UK-focused organisation with practical guidance aligned with 2021 NICE guidelines. Useful for navigating NHS services and benefits."
+        },
+        {
+          "name": "Phoenix Rising",
+          "platform": "Forum",
+          "url": "https://forums.phoenixrising.me/",
+          "notes": "Long-established, deeply detailed ME/CFS community forum. Particularly strong on research discussion, medication trials, and nuanced symptom investigation. More advanced than Reddit."
+        },
+        {
+          "name": "Dysautonomia International",
+          "platform": "Website / community",
+          "url": "https://www.dysautonomiainternational.org/",
+          "notes": "Focused on POTS and dysautonomia \u2014 essential resource for those with ME/CFS and orthostatic intolerance overlap. Includes provider directory."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Beyond Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Redefining an Illness",
+        "type": "research report / book",
+        "author_or_source": "National Academy of Medicine (Institute of Medicine)",
+        "url": "https://www.nationalacademies.org/our-work/myalgic-encephalomyelitischronic-fatigue-syndrome",
+        "description": "The landmark 2015 report that fundamentally reframed ME/CFS as a serious, biologically-based illness and introduced the SEID diagnostic criteria. Essential reading for understanding why ME/CFS is not 'just fatigue' and what the evidence base looks like. Free to download.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Unrest",
+        "type": "documentary film",
+        "author_or_source": "Jennifer Brea (director)",
+        "url": "https://www.unrest.film/",
+        "description": "Award-winning documentary made by Jennifer Brea after she became severely ill with ME/CFS. Provides visceral, first-person insight into severe ME/CFS that is difficult to convey in clinical language. Widely credited with increasing public awareness. Essential for newly diagnosed people and their families.",
+        "audience": "beginner"
+      },
+      {
+        "title": "NICE Guideline NG206: Myalgic encephalomyelitis (or encephalopathy) / chronic fatigue syndrome",
+        "type": "clinical guideline",
+        "author_or_source": "National Institute for Health and Care Excellence (UK)",
+        "url": "https://www.nice.org.uk/guidance/ng206",
+        "description": "The 2021 updated NICE guideline explicitly removed GET and restrictive CBT from recommendations. A landmark document that patients can reference when receiving outdated advice from clinicians. Contains detailed evidence summaries for all major management approaches.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Workwell Foundation: ME/CFS and the 2-Day CPET",
+        "type": "website / research papers",
+        "author_or_source": "Workwell Foundation",
+        "url": "https://workwellfoundation.org/",
+        "description": "The leading research group on 2-day cardiopulmonary exercise testing in ME/CFS. Their work provides the physiological basis for why GET causes harm. Resources include patient-accessible explanations of the anaerobic threshold and PEM, as well as published research papers.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "The Energy Envelope Theory and Practical Guide to Pacing",
+        "type": "website",
+        "author_or_source": "Bruce Campbell / CFIDS & Fibromyalgia Self-Help",
+        "url": "https://www.cfidsselfhelp.org/",
+        "description": "Practical, accessible resource for implementing energy envelope pacing. Includes worksheets, guidance on identifying personal thresholds, and patient accounts. One of the most practically useful resources for people newly implementing pacing.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Dysautonomia International: POTS and ME/CFS Overlap Resources",
+        "type": "website",
+        "author_or_source": "Dysautonomia International",
+        "url": "https://www.dysautonomiainternational.org/page.php?ID=30",
+        "description": "Evidence-based, patient-accessible resources on the POTS-ME/CFS overlap, including management protocols and the provider directory. Particularly valuable for those whose ME/CFS includes prominent orthostatic symptoms.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Metabolic features of chronic fatigue syndrome (Naviaux et al., 2016)",
+        "type": "research paper",
+        "author_or_source": "Robert Naviaux et al., PNAS",
+        "url": "https://www.pnas.org/doi/10.1073/pnas.1607571113",
+        "description": "Landmark metabolomics study identifying a hypometabolic signature in ME/CFS resembling a dauer-state survival response. One of the most cited biological studies in ME/CFS. Provides a conceptual model for the energy deficit and informs thinking about mitochondrial approaches.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Health Rising: ME/CFS Research and Community Blog",
+        "type": "website / blog",
+        "author_or_source": "Cort Johnson",
+        "url": "https://www.healthrising.org/",
+        "description": "Highly readable, regularly updated coverage of ME/CFS and fibromyalgia research, written by a patient who has lived with the illness for decades. One of the best sources for making sense of new studies without needing a scientific background. Active comment community.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Osler's Web: Inside the Labyrinth of the Chronic Fatigue Syndrome Epidemic",
+        "type": "book",
+        "author_or_source": "Hillary Johnson",
+        "url": null,
+        "description": "Investigative journalism account of the history of ME/CFS in the United States \u2014 including the CDC's dismissal of the illness and the patient community's fight for recognition. Provides essential context for why distrust of the medical establishment is not paranoia. Sobering and important.",
+        "audience": "intermediate"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

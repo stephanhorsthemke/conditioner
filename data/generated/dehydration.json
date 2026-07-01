@@ -1,0 +1,665 @@
+{
+  "condition_id": "dehydration",
+  "condition_name": "Dehydration",
+  "generated_at": "2026-07-01T11:58:41.917171Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Dehydration occurs when the body loses more fluid than it takes in, leaving cells and systems without enough water to function properly. While most people think of it as simply not drinking enough, chronic or recurring dehydration is often tied to conditions that impair fluid retention, increase fluid losses, or blunt the sensation of thirst \u2014 making it more complex than it first appears.",
+    "detailed_summary": "Water makes up roughly 60% of the adult human body and is essential for virtually every physiological process \u2014 temperature regulation, nutrient transport, waste removal, joint lubrication, nerve conduction, and blood pressure maintenance. Dehydration occurs when fluid output exceeds fluid intake, whether through inadequate drinking, excessive sweating, diarrhoea, vomiting, increased urination, or respiratory losses.\n\nFor most healthy adults, occasional mild dehydration resolves with straightforward fluid intake. But for people researching their own symptoms, dehydration is frequently not a standalone problem \u2014 it may be chronic, recurrent, or driven by underlying conditions that make the body unable to hold onto or properly distribute fluids. Conditions such as POTS (postural orthostatic tachycardia syndrome), diabetes insipidus, adrenal insufficiency, IBS with diarrhoea, and various malabsorption disorders can all produce persistent dehydration even when fluid intake appears adequate.\n\nElectrolyte imbalance is central to understanding dehydration beyond simple thirst. Water alone does not rehydrate effectively if sodium, potassium, and magnesium levels are depleted \u2014 a reality often missed by mainstream advice to 'just drink more water'. The type and timing of fluid intake matters as much as the volume.\n\nChronic dehydration is underappreciated as a contributor to fatigue, brain fog, headache, constipation, orthostatic intolerance, and poor exercise tolerance. Many people experiencing these symptoms are investigated for complex conditions before basic hydration status is properly evaluated. Conversely, people who are chronically unwell may have dehydration as a symptom of something deeper that warrants investigation.",
+    "prevalence": {
+      "summary": "Mild dehydration is extremely common and affects most people at some point; chronic dehydration is less well-quantified but likely affects a significant minority of the population.",
+      "estimate": "Studies suggest 75% of Americans may be chronically mildly dehydrated; older adults and athletes are at highest risk for clinically significant dehydration.",
+      "notes": "Prevalence figures vary widely depending on definition. 'Dehydration' in clinical settings typically refers to >2% body weight fluid loss; chronic mild dehydration at lower thresholds is poorly captured in epidemiological data. Older adults, people in hot climates, those with gastrointestinal illness, and individuals with dysautonomia or kidney conditions are disproportionately affected."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Isotonic dehydration",
+        "description": "Fluid and electrolytes are lost in proportion \u2014 the most common type, seen with diarrhoea, vomiting, or sweating.",
+        "distinguishing_features": [
+          "Serum sodium remains within normal range",
+          "Common in gastrointestinal illness and exercise",
+          "Responds well to oral rehydration with electrolytes"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Hypertonic dehydration (water deficit)",
+        "description": "More water is lost than sodium, raising serum osmolality. Common when fluid intake is severely inadequate or respiratory/insensible losses are high.",
+        "distinguishing_features": [
+          "Elevated serum sodium (hypernatraemia)",
+          "Intense thirst, concentrated urine, neurological symptoms in severe cases",
+          "Common in elderly individuals with blunted thirst, or those with diabetes insipidus"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Hypotonic dehydration (sodium deficit)",
+        "description": "More sodium is lost than water, lowering serum osmolality. Can occur with aggressive water replacement without electrolytes, or with certain medications.",
+        "distinguishing_features": [
+          "Low serum sodium (hyponatraemia)",
+          "Nausea, headache, confusion, muscle cramps",
+          "Risk of over-correction causing cerebral oedema; requires medical management"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Chronic low-grade dehydration",
+        "description": "Persistent mild fluid deficit that does not trigger obvious thirst but affects cognitive function, energy, digestion, and skin over time.",
+        "distinguishing_features": [
+          "Often asymptomatic except for fatigue, brain fog, constipation, and headaches",
+          "Dark urine is a common indicator",
+          "Urine osmolality often elevated on testing",
+          "Frequently unrecognised in people who feel chronically unwell"
+        ]
+      },
+      {
+        "id": "pots",
+        "name": "Dehydration in POTS / dysautonomia",
+        "description": "People with POTS often have reduced plasma volume and impaired fluid retention, making them chronically dehydrated despite reasonable fluid intake.",
+        "distinguishing_features": [
+          "Symptoms worsen significantly on standing (orthostatic intolerance)",
+          "Heart rate spikes on rising from lying to standing",
+          "High salt and fluid intake is often prescribed as a primary treatment",
+          "Standard rehydration advice is often insufficient without sodium co-loading"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Dehydration from gastrointestinal losses",
+        "description": "Diarrhoea, vomiting, high-output stomas, or malabsorption conditions cause substantial fluid and electrolyte losses that are difficult to replace orally.",
+        "distinguishing_features": [
+          "Often concurrent with electrolyte abnormalities",
+          "Serum bicarbonate may be low with diarrhoea",
+          "May require oral rehydration solutions or intravenous fluids in severe cases",
+          "IBS-D, IBD, EPI, and SIBO are common underlying drivers"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Thirst",
+        "category": "general",
+        "notes": "An early and reliable signal in healthy adults, but may be blunted in older adults, those with kidney disease, or people with autonomic dysfunction."
+      },
+      {
+        "symptom": "Dark yellow or amber urine",
+        "category": "urinary",
+        "notes": "One of the most accessible indicators of hydration status. Pale straw colour generally indicates adequate hydration; dark amber suggests concentration. Note: B vitamins and some foods can artificially yellow urine."
+      },
+      {
+        "symptom": "Reduced urine output",
+        "category": "urinary",
+        "notes": "Healthy adults typically urinate 6\u20138 times daily. Less frequent urination may indicate inadequate fluid intake or excessive losses."
+      },
+      {
+        "symptom": "Fatigue and low energy",
+        "category": "general",
+        "notes": "Even mild dehydration (1\u20132% body weight loss) can impair physical performance and increase perceived effort."
+      },
+      {
+        "symptom": "Brain fog and difficulty concentrating",
+        "category": "neurological",
+        "notes": "Cognitive performance, attention, and short-term memory are sensitive to hydration status. Studies show measurable impairment at 1.5% fluid loss."
+      },
+      {
+        "symptom": "Headache",
+        "category": "neurological",
+        "notes": "Often the first neurological symptom. Dehydration is a well-established migraine trigger."
+      },
+      {
+        "symptom": "Dizziness or lightheadedness on standing",
+        "category": "cardiovascular",
+        "notes": "Orthostatic hypotension from low plasma volume. Particularly prominent in POTS and other dysautonomia conditions."
+      },
+      {
+        "symptom": "Rapid heart rate (tachycardia)",
+        "category": "cardiovascular",
+        "notes": "The heart compensates for lower blood volume by beating faster, especially on standing."
+      },
+      {
+        "symptom": "Low blood pressure",
+        "category": "cardiovascular",
+        "notes": "Reduced circulating volume leads to lower blood pressure, which may cause fainting or pre-syncope in severe cases."
+      },
+      {
+        "symptom": "Muscle cramps",
+        "category": "musculoskeletal",
+        "notes": "Often linked to electrolyte losses \u2014 particularly sodium, potassium, and magnesium \u2014 alongside fluid deficit."
+      },
+      {
+        "symptom": "Dry mouth and sticky saliva",
+        "category": "oral",
+        "notes": "Reduced saliva production is an early sign. Can affect swallowing and dental health chronically."
+      },
+      {
+        "symptom": "Dry skin and reduced skin turgor",
+        "category": "skin",
+        "notes": "Skin that tents or remains elevated when pinched is a classic clinical sign, more reliable in younger adults."
+      },
+      {
+        "symptom": "Constipation",
+        "category": "digestive",
+        "notes": "The colon reabsorbs water from stool; when intake is low, stool becomes harder and transit slows."
+      },
+      {
+        "symptom": "Nausea",
+        "category": "digestive",
+        "notes": "Can be both a cause (vomiting leading to dehydration) and a consequence of significant dehydration."
+      },
+      {
+        "symptom": "Sunken eyes",
+        "category": "general",
+        "notes": "A clinical sign of moderate to significant dehydration, particularly in children and older adults."
+      },
+      {
+        "symptom": "Decreased exercise tolerance",
+        "category": "physical performance",
+        "notes": "Even modest dehydration measurably impairs aerobic capacity, strength, and endurance."
+      },
+      {
+        "symptom": "Irritability and mood changes",
+        "category": "psychological",
+        "notes": "Mood and anxiety levels are sensitive to hydration status, particularly in women according to controlled research."
+      },
+      {
+        "symptom": "Cold or mottled skin",
+        "category": "skin",
+        "notes": "Severe dehydration can cause peripheral vasoconstriction as the body prioritises blood flow to core organs."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Dark concentrated urine with high specific gravity (>1.020) and elevated urine osmolality (>500 mOsm/kg) on first morning sample",
+        "Elevated serum osmolality (>295 mOsm/kg) indicating concentrated blood",
+        "Raised serum sodium (hypernatraemia >145 mEq/L) in water-deficit dehydration",
+        "Elevated blood urea nitrogen (BUN) with disproportionate rise relative to creatinine (BUN:creatinine ratio >20) suggesting pre-renal dehydration",
+        "Low urine sodium (<20 mEq/L) indicating the kidney is conserving sodium due to low circulating volume",
+        "Orthostatic vital signs: heart rate rise >30 bpm or systolic blood pressure drop >20 mmHg on standing suggests volume depletion",
+        "Haemoconcentration: elevated haematocrit and haemoglobin without underlying blood disorder"
+      ],
+      "at_home": [
+        {
+          "name": "Urine colour chart",
+          "description": "Compare first morning urine colour against a hydration chart. Pale straw (1\u20133 on a scale of 1\u20138) suggests adequate hydration; dark yellow to amber suggests dehydration. Note that this is a rough guide affected by diet and vitamins.",
+          "safety_notes": "This is an observational tool only. Consistently dark urine alongside symptoms warrants clinical evaluation to rule out kidney or liver conditions."
+        },
+        {
+          "name": "Skin turgor test",
+          "description": "Gently pinch a small fold of skin on the back of the hand or forearm, hold for 2 seconds, then release. In well-hydrated individuals, skin snaps back immediately. Slow return (>2 seconds) may suggest dehydration.",
+          "safety_notes": "Less reliable in older adults due to reduced skin elasticity regardless of hydration status. Not a substitute for clinical assessment."
+        },
+        {
+          "name": "Orthostatic heart rate monitoring",
+          "description": "Lie flat for 5 minutes, then measure resting heart rate. Stand up and measure heart rate again at 30 seconds and 2 minutes. A rise of more than 20\u201330 beats per minute on standing may suggest volume depletion. A wearable heart rate monitor improves accuracy.",
+          "safety_notes": "If dizziness or near-fainting occurs, sit or lie down immediately. A persistent rise of >30 bpm warrants evaluation for POTS or other dysautonomia. Do not perform if prone to fainting."
+        },
+        {
+          "name": "Bodyweight before and after exercise",
+          "description": "Weigh before and after exercise without eating or drinking. Each kilogram lost approximates 1 litre of fluid loss. This helps quantify sweat losses and calibrate rehydration needs.",
+          "safety_notes": "Relevant primarily for athletes or those with heavy sweat losses. Weights should be taken on an empty bladder for consistency."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Serum electrolytes and osmolality",
+          "type": "gold_standard",
+          "description": "Blood test measuring sodium, potassium, chloride, bicarbonate, BUN, creatinine, and calculated or measured osmolality. The pattern helps distinguish dehydration type (hypertonic vs. hypotonic) and identify electrolyte abnormalities.",
+          "availability": "Standard blood panel available through any GP or primary care provider. Often included in a basic metabolic panel (BMP) or comprehensive metabolic panel (CMP)."
+        },
+        {
+          "name": "Urine osmolality and specific gravity",
+          "type": "gold_standard",
+          "description": "Measures the concentration of urine. High osmolality (>800 mOsm/kg) with high specific gravity (>1.025) indicates the kidneys are conserving water \u2014 consistent with dehydration. Can be done on a spot sample or 24-hour collection.",
+          "availability": "Available through GP or primary care. Specific gravity can also be estimated with urine dipstick tests."
+        },
+        {
+          "name": "Orthostatic vital signs measurement",
+          "type": "standard",
+          "description": "Blood pressure and heart rate measured lying, sitting, and standing. A drop in systolic BP >20 mmHg or diastolic BP >10 mmHg, or a rise in heart rate >30 bpm on standing, suggests orthostatic hypotension or POTS \u2014 both often driven by volume depletion.",
+          "availability": "Can be performed in any clinical setting. A tilt table test provides more precise data and is available through cardiology or autonomic medicine departments."
+        },
+        {
+          "name": "BUN:creatinine ratio",
+          "type": "standard",
+          "description": "A ratio above 20:1 suggests pre-renal azotaemia \u2014 the kidneys are not receiving adequate blood flow, often due to dehydration or heart failure. Helps distinguish dehydration from intrinsic kidney disease.",
+          "availability": "Derived from standard blood tests available through any GP."
+        },
+        {
+          "name": "Plasma volume assessment",
+          "type": "emerging",
+          "description": "Indirect markers such as haematocrit, haemoglobin, and albumin can indicate haemoconcentration. Direct plasma volume measurement using dye dilution methods (e.g. Evans blue) is more accurate but primarily used in research settings.",
+          "availability": "Indirect markers available routinely. Direct measurement is a research tool not widely available clinically."
+        },
+        {
+          "name": "Water deprivation test",
+          "type": "standard",
+          "description": "Used specifically to distinguish between central diabetes insipidus, nephrogenic diabetes insipidus, and primary polydipsia when excessive urination and thirst are the presenting complaints. The patient is deprived of fluid under medical supervision while urine and serum osmolality are monitored.",
+          "availability": "Performed in hospital or specialist endocrinology settings. Not a routine dehydration test but important when diabetes insipidus is suspected."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "POTS is characterised by chronic low plasma volume and impaired autonomic control of blood vessel tone. Dehydration worsens POTS symptoms dramatically, and people with POTS are often advised to maintain very high fluid and sodium intake as a core management strategy."
+      },
+      {
+        "id": "low_blood_pressure",
+        "name": "Low blood pressure (hypotension)",
+        "relationship": "mechanistic_link",
+        "explanation": "Dehydration reduces circulating blood volume, which directly lowers blood pressure. Orthostatic hypotension \u2014 blood pressure dropping on standing \u2014 is a common consequence of volume depletion."
+      },
+      {
+        "id": "migraine",
+        "name": "Migraine",
+        "relationship": "mechanistic_link",
+        "explanation": "Dehydration is a well-established migraine trigger, possibly via changes in blood viscosity, intracranial pressure, or electrolyte balance. Adequate hydration is a core prevention strategy for migraine-prone individuals."
+      },
+      {
+        "id": "ibs",
+        "name": "IBS (Irritable Bowel Syndrome)",
+        "relationship": "comorbid",
+        "explanation": "IBS with diarrhoea can cause significant fluid and electrolyte losses, contributing to chronic dehydration. Conversely, inadequate hydration can worsen constipation-predominant IBS."
+      },
+      {
+        "id": "ibd_remission",
+        "name": "IBD (Crohn's disease / ulcerative colitis)",
+        "relationship": "downstream",
+        "explanation": "Active IBD causes substantial fluid and electrolyte losses through diarrhoea and inflammation. People with high-output stomas or short bowel syndrome following surgery are at particularly high risk."
+      },
+      {
+        "id": "epi",
+        "name": "Exocrine pancreatic insufficiency (EPI)",
+        "relationship": "mechanistic_link",
+        "explanation": "EPI causes fat malabsorption and osmotic diarrhoea, which can produce significant fluid and electrolyte losses contributing to chronic dehydration."
+      },
+      {
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "mechanistic_link",
+        "explanation": "SIBO can cause diarrhoea, bloating, and malabsorption that contribute to fluid losses. It may also impair the gut's ability to absorb water and electrolytes efficiently."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "comorbid",
+        "explanation": "Anxiety can mimic and overlap with dehydration symptoms including rapid heartbeat, dizziness, and lightheadedness. Dehydration can also worsen anxiety. The two conditions can create a reinforcing cycle."
+      },
+      {
+        "id": "me_cfs",
+        "name": "ME / CFS",
+        "relationship": "comorbid",
+        "explanation": "Chronic fatigue syndrome is frequently associated with reduced plasma volume, and many people with ME/CFS find that high fluid and sodium intake partially alleviates fatigue and orthostatic symptoms."
+      },
+      {
+        "id": "kidney_disease",
+        "name": "Chronic kidney disease",
+        "relationship": "comorbid",
+        "explanation": "Impaired kidney function affects the body's ability to concentrate urine and regulate fluid balance, increasing dehydration risk. Conversely, recurrent dehydration can accelerate kidney injury."
+      },
+      {
+        "id": null,
+        "name": "Diabetes mellitus (type 1 and 2)",
+        "relationship": "mechanistic_link",
+        "explanation": "High blood glucose causes osmotic diuresis \u2014 excess water is drawn into urine \u2014 producing significant fluid losses and intense thirst. Polyuria and polydipsia are classic presenting symptoms of uncontrolled diabetes."
+      },
+      {
+        "id": null,
+        "name": "Diabetes insipidus",
+        "relationship": "often_confused",
+        "explanation": "Diabetes insipidus (central or nephrogenic) causes extreme water losses through dilute urine due to absent or ineffective ADH signalling. It can closely mimic psychogenic polydipsia and requires a water deprivation test to distinguish."
+      },
+      {
+        "id": null,
+        "name": "Adrenal insufficiency",
+        "relationship": "upstream",
+        "explanation": "The adrenal hormone aldosterone regulates sodium and water retention. Adrenal insufficiency (including Addison's disease) impairs this mechanism, causing salt wasting, low blood pressure, and chronic dehydration."
+      },
+      {
+        "id": "cortisol_dysreg",
+        "name": "Cortisol dysregulation",
+        "relationship": "mechanistic_link",
+        "explanation": "Cortisol helps maintain blood pressure and fluid balance. Dysregulation of the HPA axis can affect aldosterone-cortisol dynamics, contributing to fluid retention problems and orthostatic symptoms."
+      },
+      {
+        "id": "gastroparesis",
+        "name": "Gastroparesis",
+        "relationship": "downstream",
+        "explanation": "Nausea and vomiting from gastroparesis cause direct fluid losses. Reduced food and drink intake further compounds dehydration risk."
+      },
+      {
+        "id": "iron_deficiency",
+        "name": "Iron deficiency",
+        "relationship": "often_confused",
+        "explanation": "Fatigue, brain fog, poor exercise tolerance, and rapid heart rate overlap significantly between iron deficiency and dehydration. Both conditions may coexist and should be evaluated together."
+      },
+      {
+        "id": null,
+        "name": "Heat-related illness (heat exhaustion / heat stroke)",
+        "relationship": "downstream",
+        "explanation": "Dehydration combined with high ambient temperature impairs thermoregulation and can escalate rapidly from heat exhaustion to heat stroke \u2014 a medical emergency."
+      },
+      {
+        "id": "long_covid",
+        "name": "Long COVID",
+        "relationship": "comorbid",
+        "explanation": "Long COVID frequently involves autonomic dysfunction and reduced plasma volume, making people susceptible to dehydration-related symptoms including fatigue, orthostatic intolerance, and cognitive impairment."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Oral rehydration with electrolytes",
+          "category": "diet",
+          "description": "Drinking water alone may not rehydrate effectively if sodium, potassium, and other electrolytes have been depleted. Oral rehydration solutions (ORS) formulated with a specific glucose-to-sodium ratio exploit co-transport mechanisms in the gut to maximise absorption. WHO-standard ORS or commercially available electrolyte products can help. For everyday use, adding a pinch of salt and a small amount of sugar to water approximates this effect.",
+          "evidence_level": "strong",
+          "notes": "The glucose-sodium co-transport mechanism means that plain water is absorbed more slowly than a properly formulated ORS. Drinks such as sports drinks vary widely in electrolyte content and are often too low in sodium for therapeutic rehydration."
+        },
+        {
+          "name": "Increased sodium intake",
+          "category": "diet",
+          "description": "Sodium is the primary driver of extracellular fluid retention. Individuals with POTS, low blood pressure, or chronic plasma volume depletion may benefit from deliberately higher sodium intake \u2014 sometimes 5,000\u201310,000 mg per day under medical supervision \u2014 to retain more fluid in the vascular compartment.",
+          "evidence_level": "strong",
+          "notes": "High sodium intake is contraindicated in hypertension, heart failure, and kidney disease. Should be discussed with a clinician before implementation in these populations. For people with dysautonomia, high-sodium intake is often a core prescribed therapy."
+        },
+        {
+          "name": "Structured fluid intake schedule",
+          "category": "lifestyle",
+          "description": "Rather than relying on thirst \u2014 which can be blunted in older adults, those on certain medications, or people with autonomic dysfunction \u2014 drinking water or electrolyte-containing fluids at regular intervals throughout the day helps maintain consistent hydration. Front-loading fluid intake in the morning may help those with orthostatic symptoms.",
+          "evidence_level": "moderate",
+          "notes": "Individual fluid needs vary based on body size, climate, activity, and health status. Blanket '8 glasses per day' advice lacks strong evidence but structured intake is generally beneficial for those prone to under-drinking."
+        },
+        {
+          "name": "Elevation of head of bed",
+          "category": "lifestyle",
+          "description": "For people with dehydration-related orthostatic intolerance or POTS, sleeping with the head of the bed raised by 10\u201330 degrees may reduce overnight fluid redistribution to the lower body and improve morning hydration status.",
+          "evidence_level": "moderate",
+          "notes": "This intervention is specifically relevant to dysautonomia-related volume depletion and may not be meaningful for other causes of dehydration."
+        },
+        {
+          "name": "Compression garments",
+          "category": "lifestyle",
+          "description": "Compression stockings or abdominal binders help push blood volume toward the core and reduce venous pooling in the legs, partially counteracting the haemodynamic effects of low circulating volume.",
+          "evidence_level": "moderate",
+          "notes": "Most useful in POTS and orthostatic hypotension. Compression needs to extend at least to the thigh to be effective, and abdominal compression may provide additional benefit."
+        },
+        {
+          "name": "Magnesium supplementation",
+          "category": "supplement",
+          "description": "Magnesium is co-depleted with fluid losses through sweat and diarrhoea. Deficiency contributes to muscle cramps, fatigue, and headaches that mimic or worsen dehydration. Supplementation (magnesium glycinate or malate is generally better tolerated than oxide) may help address this co-deficit.",
+          "evidence_level": "moderate",
+          "notes": "High-dose magnesium can cause loose stools. Start with lower doses (100\u2013150 mg elemental magnesium) and titrate. Intravenous magnesium is available clinically for severe deficiency."
+        },
+        {
+          "name": "Intravenous fluid therapy",
+          "category": "medication",
+          "description": "In moderate to severe dehydration, or when oral rehydration is not possible due to vomiting or impaired gut absorption, intravenous normal saline or lactated Ringer's solution restores volume rapidly. Some people with chronic POTS receive periodic IV saline infusions to manage refractory symptoms.",
+          "evidence_level": "strong",
+          "notes": "IV hydration should be administered in clinical settings. The rate and choice of fluid type depends on the type of dehydration and the individual's electrolyte status. Over-rapid correction of hyponatraemia carries serious risks."
+        },
+        {
+          "name": "Desmopressin (DDAVP)",
+          "category": "medication",
+          "description": "A synthetic analogue of ADH (antidiuretic hormone), used specifically in central diabetes insipidus to reduce excessive urinary water loss. Not used for common dehydration.",
+          "evidence_level": "strong",
+          "notes": "Relevant only to those with confirmed central diabetes insipidus. Inappropriate use can cause dangerous hyponatraemia."
+        },
+        {
+          "name": "Fludrocortisone",
+          "category": "medication",
+          "description": "A mineralocorticoid that increases sodium and water retention by the kidneys. Used in POTS and adrenal insufficiency to expand plasma volume and reduce orthostatic symptoms.",
+          "evidence_level": "moderate",
+          "notes": "Prescription medication requiring monitoring of blood pressure and electrolytes. Not appropriate for common dehydration without an underlying autonomic or adrenal indication."
+        },
+        {
+          "name": "Caffeine reduction",
+          "category": "lifestyle",
+          "description": "Caffeine has a mild diuretic effect. Reducing intake \u2014 particularly in those already volume-depleted \u2014 may help reduce unnecessary fluid losses. This effect is modest and may not be relevant for habitual caffeine consumers who have developed tolerance.",
+          "evidence_level": "moderate",
+          "notes": "The diuretic effect of caffeine is often overstated. Habitual coffee drinkers show little net fluid loss from moderate caffeine intake. However, in severe dehydration or during illness, reducing caffeine is a reasonable precaution."
+        }
+      ],
+      "things_to_avoid": [
+        "Drinking plain water only when significantly dehydrated \u2014 without electrolytes, water intake alone can worsen dilutional hyponatraemia in severe cases",
+        "Alcohol during or after significant dehydration \u2014 alcohol is a diuretic and suppresses ADH, accelerating fluid losses",
+        "High-sugar drinks (fruit juices, sodas) as rehydration tools \u2014 high osmolality can draw water into the gut and worsen diarrhoea-related dehydration",
+        "Excessive water intake without sodium \u2014 particularly during endurance activity, which risks exercise-associated hyponatraemia (a potentially fatal condition)",
+        "Waiting for severe thirst before drinking, especially in older adults \u2014 thirst sensation is a late indicator and may be blunted in many chronic conditions",
+        "Hot environments and saunas without proactive fluid and electrolyte replacement \u2014 particularly dangerous for those with POTS or autonomic dysfunction",
+        "Over-relying on urine colour as the sole hydration metric \u2014 medications, supplements, and foods significantly affect urine colour independently of hydration"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "Drinking more water is not enough \u2014 electrolyte balance determines whether the body can actually retain and use the fluid consumed. People who drink large volumes of water but remain symptomatic are often not addressing the sodium and potassium deficit alongside the water deficit.",
+        "why_resisted": "The advice to 'drink more water' is universal and feels like the complete answer. Many people resist adding salt to their diet because public health messaging equates sodium with cardiovascular risk, even though this does not apply uniformly to people with low blood pressure or volume depletion.",
+        "path_forward": "People who switch from plain water to electrolyte-containing fluids and increase sodium intake under appropriate guidance commonly report meaningful reductions in fatigue, brain fog, and orthostatic symptoms within days to weeks."
+      },
+      {
+        "truth": "Chronic dehydration is frequently a symptom of something else \u2014 not a primary problem. If fluid intake appears adequate but dehydration symptoms persist, an underlying driver such as POTS, adrenal insufficiency, diabetes insipidus, or significant gastrointestinal losses needs investigation rather than simply drinking more.",
+        "why_resisted": "It is easier to accept behavioural explanations ('I just don't drink enough') than to pursue further investigation, which requires navigating healthcare systems and may not yield clear answers quickly.",
+        "path_forward": "Individuals who pursue the diagnostic workup \u2014 electrolytes, urine osmolality, orthostatic vitals, and relevant specialist assessment \u2014 often identify an underlying condition that responds to targeted treatment, producing more durable improvement than hydration strategies alone."
+      },
+      {
+        "truth": "The sensation of thirst is not a reliable guide for many people with chronic illness, autonomic dysfunction, or advancing age. Relying on thirst to drink is a strategy that fails many of the people who most need consistent hydration.",
+        "why_resisted": "Trusting the body's signals feels intuitive and natural. Accepting that the body's signalling is impaired requires a shift to deliberate, scheduled behaviour \u2014 which takes sustained effort.",
+        "path_forward": "People who establish structured fluid schedules \u2014 linked to existing habits like meals, medications, or hourly alarms \u2014 maintain more consistent hydration and report fewer symptom spikes compared with those relying on thirst alone."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Electrolyte-complete rehydration",
+          "why_it_matters": "Water absorption in the gut is mediated by sodium co-transport. Without adequate sodium, absorbed water redistributes poorly, and the kidneys excrete it rapidly. Matching fluid with electrolytes, particularly sodium, allows the body to actually retain and distribute what is consumed.",
+          "how_to_start": "Add a small amount of sodium to daily fluid intake \u2014 a pinch of sea salt in water, an electrolyte tablet with defined sodium content (at least 500\u2013700 mg per litre), or salty food alongside water-rich meals.",
+          "timeline": "Improvements in orthostatic symptoms and energy are often noticed within 24\u201372 hours of consistent electrolyte co-supplementation.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Identify and address the underlying driver",
+          "why_it_matters": "If dehydration is secondary to a condition such as POTS, adrenal insufficiency, diabetes insipidus, or GI malabsorption, long-term improvement requires addressing that root cause. Hydration strategies alone will provide incomplete and temporary relief.",
+          "how_to_start": "Track symptoms, urine colour, and fluid intake in a log for 1\u20132 weeks. Note whether symptoms are worse in the morning, after standing, after eating, or after illness. Bring this pattern to a clinician to guide targeted testing.",
+          "timeline": "Diagnosis and treatment of an underlying condition may take weeks to months. Symptom improvement from targeted treatment is often more sustained than from hydration alone.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Structured daily hydration habit",
+          "why_it_matters": "Consistent fluid intake prevents the cycles of significant depletion and rapid re-intake that stress electrolyte balance. Spacing fluid intake throughout the day mirrors how the body optimally absorbs and distributes water.",
+          "how_to_start": "Set reminders for fluid intake at 6\u20138 intervals across waking hours. Tie hydration to existing habits \u2014 a glass upon waking, one with each meal, one mid-morning and mid-afternoon.",
+          "timeline": "Habit formation typically takes 2\u20134 weeks to become automatic. Measurable improvements in energy and urine colour are usually apparent within the first week.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Sodium and fluid loading before provocative situations",
+          "why_it_matters": "For people with POTS or orthostatic symptoms, proactively consuming fluid and sodium before standing for extended periods, exercising, or exposure to heat can significantly blunt the haemodynamic consequences of volume depletion.",
+          "how_to_start": "Drink 500 ml of an electrolyte drink approximately 20\u201330 minutes before anticipated activity, extended standing, or hot weather exposure.",
+          "timeline": "Acute effect is seen within minutes to hours. Consistently applying this strategy before triggering situations prevents cumulative depletion over days.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Magnesium and potassium repletion",
+          "why_it_matters": "These intracellular electrolytes are co-depleted in many dehydration scenarios and are not addressed by sodium-only strategies. Deficiency contributes to muscle cramps, fatigue, poor cardiac function, and blunted recovery.",
+          "how_to_start": "Increase dietary sources of potassium (bananas, avocados, leafy greens, sweet potato) and magnesium (nuts, seeds, legumes, dark chocolate). Supplement with magnesium glycinate or malate if dietary intake appears insufficient.",
+          "timeline": "Gradual improvement over 1\u20134 weeks. Serum potassium can be monitored via blood test if supplementing beyond dietary sources.",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Drinking large volumes of plain water rapidly after recognising dehydration \u2014 this can dilute serum sodium, cause nausea, and be excreted rapidly without correcting cellular dehydration",
+        "Using sports drinks as the primary electrolyte source \u2014 most contain insufficient sodium and excessive sugar for therapeutic rehydration",
+        "Treating dehydration as purely behavioural when it is recurring without an obvious cause \u2014 persistent or recurrent dehydration warrants investigation, not just repeated advice to drink more",
+        "Ignoring potassium and magnesium while focusing only on sodium and water \u2014 incomplete electrolyte correction leaves many symptoms unresolved",
+        "Reducing salt intake in response to blood pressure concerns when the person actually has low or normal blood pressure and is volume-depleted \u2014 this worsens the underlying problem",
+        "Relying on IV hydration as a long-term solution without addressing why oral hydration is insufficient \u2014 IV therapy for chronic dehydration is a bridge, not a cure"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "General practitioner (GP) or primary care physician",
+          "role": "First-line evaluation of dehydration causes. Can order serum electrolytes, kidney function tests, urine osmolality, and refer appropriately. May address obvious causes like medication side effects or poorly controlled diabetes.",
+          "notes": "Many GPs are well-equipped to manage straightforward dehydration but may not investigate autonomic or hormonal drivers unless prompted. Presenting a symptom pattern and requesting specific tests is often necessary."
+        },
+        {
+          "type": "Cardiologist or autonomic medicine specialist",
+          "role": "Essential for evaluating POTS, orthostatic hypotension, and dysautonomia-related volume depletion. Can perform tilt table testing and prescribe targeted interventions such as fludrocortisone or midodrine.",
+          "notes": "Autonomic medicine is a subspecialty not available in all centres. POTS-specialised cardiologists or neurologists may need to be sought out specifically."
+        },
+        {
+          "type": "Endocrinologist",
+          "role": "Evaluates hormonal causes of fluid imbalance, including adrenal insufficiency (Addison's disease), central and nephrogenic diabetes insipidus, SIADH, and primary hyperaldosteronism.",
+          "notes": "Important to seek out if dehydration is accompanied by extreme thirst, excessive urination, low blood pressure, salt cravings, or unusual electrolyte patterns."
+        },
+        {
+          "type": "Nephrologist (kidney specialist)",
+          "role": "Evaluates kidney-related causes of impaired fluid and electrolyte regulation, including nephrogenic diabetes insipidus, chronic kidney disease, and tubular disorders.",
+          "notes": "Usually relevant when urine concentration is persistently abnormal or kidney function markers are elevated."
+        },
+        {
+          "type": "Gastroenterologist",
+          "role": "Investigates GI causes of fluid loss including IBD, malabsorption, high-output fistulas or stomas, and chronic diarrhoea conditions. Can assess for EPI, SIBO, and bile acid malabsorption.",
+          "notes": "Relevant when dehydration is linked to chronic loose stools, malabsorption symptoms, or significant GI illness."
+        },
+        {
+          "type": "Registered dietitian (with experience in electrolyte management or chronic illness)",
+          "role": "Can provide structured guidance on fluid and electrolyte intake, help design practical hydration plans, and advise on food-based sources of electrolytes. Particularly useful for those managing dehydration alongside complex diets or GI conditions.",
+          "notes": "Look for dietitians with experience in POTS, chronic illness, or sports nutrition \u2014 their approach to electrolyte management is more nuanced than general dietary advice."
+        },
+        {
+          "type": "Functional medicine doctor",
+          "role": "May take a more comprehensive approach to investigating persistent dehydration, exploring adrenal function, mineral status, gut health, and hormonal drivers that conventional medicine may not systematically evaluate.",
+          "notes": "Quality and approach vary widely. Useful for individuals who have not received answers through conventional pathways, but credentials and evidence-based practice should be verified."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/POTS",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/POTS/",
+          "notes": "Highly active community where members share detailed experiences with fluid and salt loading, compression, and managing orthostatic symptoms. Excellent practical knowledge base for dehydration management in dysautonomia."
+        },
+        {
+          "name": "r/dysautonomia",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/dysautonomia/",
+          "notes": "Broader dysautonomia community covering POTS, orthostatic hypotension, and related volume regulation issues. Good for understanding the intersection between autonomic dysfunction and chronic dehydration."
+        },
+        {
+          "name": "Dysautonomia International",
+          "platform": "Website and Facebook",
+          "url": "https://www.dysautonomiainternational.org/",
+          "notes": "Advocacy and patient education organisation with well-curated clinical resources, provider directories, and patient forums. A reliable starting point for those exploring POTS-related volume issues."
+        },
+        {
+          "name": "r/ChronicIllness",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/ChronicIllness/",
+          "notes": "General chronic illness community where hydration management is a common discussion topic. Useful for shared experiences across multiple conditions where dehydration is a complicating factor."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Dysautonomia International: POTS and Hydration",
+        "type": "website",
+        "author_or_source": "Dysautonomia International",
+        "url": "https://www.dysautonomiainternational.org/page.php?ID=30",
+        "description": "Clinician-reviewed patient education on fluid and sodium management for POTS and related dysautonomia conditions. Directly relevant to understanding why plain water is insufficient for many people with volume depletion.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Body's Water Balance \u2014 StatPearls",
+        "type": "research paper",
+        "author_or_source": "National Library of Medicine / StatPearls",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK555956/",
+        "description": "Comprehensive clinical reference on fluid physiology, dehydration classification, and management. Useful for those who want to understand the mechanism behind electrolyte-driven rehydration.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Oral Rehydration Therapy \u2014 WHO Guidelines",
+        "type": "website",
+        "author_or_source": "World Health Organization",
+        "url": "https://www.who.int/news-room/questions-and-answers/item/dehydration",
+        "description": "Evidence-based WHO guidance on oral rehydration solutions and their use. Explains the glucose-sodium co-transport principle and appropriate ORS formulation.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Hydration and Cognitive Performance: A Review",
+        "type": "research paper",
+        "author_or_source": "Armstrong et al., Nutrition Reviews",
+        "url": "https://academic.oup.com/nutritionreviews/article/70/suppl_2/S121/1820773",
+        "description": "Peer-reviewed review of evidence linking mild dehydration to cognitive impairment, mood, and fatigue. Useful for those trying to understand whether hydration may be contributing to brain fog.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "The Salt Fix",
+        "type": "book",
+        "author_or_source": "Dr. James DiNicolantonio",
+        "url": null,
+        "description": "Challenges conventional low-sodium dietary advice and makes a case for adequate sodium intake, particularly for those with low blood pressure, POTS, or active lifestyles. Accessible and well-referenced, though some claims should be cross-checked against individual health status.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Dehydration in Older Adults \u2014 Clinical Review",
+        "type": "research paper",
+        "author_or_source": "Hooper et al., Cochrane / BMJ",
+        "url": "https://www.bmj.com/content/347/bmj.f4348",
+        "description": "Examines how dehydration recognition and management differs in older populations, where thirst sensation is blunted and clinical signs are less reliable. Valuable for caregivers and older adults themselves.",
+        "audience": "intermediate"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

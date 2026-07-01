@@ -1,0 +1,757 @@
+{
+  "condition_id": "chronic_stress",
+  "condition_name": "Chronic stress / HPA overload",
+  "generated_at": "2026-07-01T11:58:42.099823Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Chronic stress \u2014 sometimes called HPA axis dysfunction or allostatic overload \u2014 occurs when the body's stress-response system stays switched on for too long without adequate recovery. The hypothalamic-pituitary-adrenal (HPA) axis, which normally regulates cortisol and other stress hormones in short bursts, becomes dysregulated when demands consistently exceed the body's ability to reset. The result is a wide-ranging set of symptoms affecting energy, sleep, digestion, immunity, mood, and cognitive function \u2014 often without any single abnormal lab result that explains everything.",
+    "detailed_summary": "The HPA axis is the body's central stress-management circuit. Under normal conditions, a perceived threat triggers the hypothalamus to signal the pituitary gland, which signals the adrenal glands to release cortisol and adrenaline. These hormones mobilise energy, sharpen focus, suppress non-urgent functions (like digestion and immune repair), and then \u2014 when the threat passes \u2014 return to baseline. Chronic stress disrupts this elegant feedback loop. When stressors are sustained, unpredictable, or accumulate without recovery (a phenomenon researcher Bruce McEwen called 'allostatic overload'), the system begins to misfire. Cortisol rhythms flatten or invert. Receptor sensitivity changes. The body progressively loses the ability to mount a clean acute response and to fully down-regulate afterwards. The downstream effects are widespread: disrupted sleep architecture, impaired gut motility and intestinal barrier integrity, blunted immune surveillance, suppressed reproductive hormones, slowed thyroid conversion, and altered neurotransmitter balance. What makes this condition particularly difficult to navigate is that mainstream medicine does not have a widely accepted clinical entity for sub-pathological HPA dysregulation. Addison's disease (adrenal insufficiency) and Cushing's syndrome (excess cortisol) are well-recognised endpoints, but the large middle ground \u2014 where the axis is dysregulated without meeting criteria for either \u2014 often goes unlabelled. The term 'adrenal fatigue' has been used in functional medicine circles but is contested by endocrinology, partly because of methodological problems with the research and partly because the name implies a peripheral organ failure rather than a central regulatory problem. 'HPA axis dysfunction' and 'allostatic overload' are more mechanistically accurate terms increasingly used in research literature. Self-directed investigation is common and valid here: many people piece together their own pattern from symptom tracking, diurnal cortisol testing, and trial interventions long before receiving any clinical acknowledgement.",
+    "prevalence": {
+      "summary": "Extremely common as an underlying contributor to chronic illness, though rarely formally diagnosed as a standalone condition.",
+      "estimate": "Difficult to quantify; population surveys suggest 70\u201380% of adults report significant chronic stress, and a meaningful proportion show measurable HPA dysregulation on functional testing.",
+      "notes": "Formal prevalence data are sparse because 'HPA axis dysfunction' lacks a standard ICD diagnostic code. Studies of specific downstream conditions \u2014 burnout, chronic fatigue, treatment-resistant depression \u2014 frequently document HPA abnormalities, suggesting the true burden is high but counted indirectly. Women, caregivers, people in low socioeconomic circumstances, and those with trauma histories are disproportionately represented."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "High-cortisol / hyperactivated HPA",
+        "description": "The acute or early chronic stress pattern, where cortisol output remains elevated, particularly in the morning and evening. Often seen in people under active, ongoing pressure \u2014 demanding jobs, relationship crises, caregiving, or early-phase trauma response.",
+        "distinguishing_features": [
+          "Difficulty falling asleep despite exhaustion (wired-but-tired)",
+          "Elevated morning cortisol, high evening cortisol on salivary testing",
+          "Anxiety, irritability, hypervigilance",
+          "Increased appetite, especially for high-carbohydrate foods",
+          "Raised fasting glucose or insulin resistance developing over time"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Flat-curve / hypocortisol pattern",
+        "description": "A later-stage or burnout-associated pattern where the diurnal cortisol rhythm flattens \u2014 low morning cortisol, low evening cortisol, or a blunted awakening response. Often seen after prolonged high-cortisol periods or in those with long-standing ME/CFS or burnout.",
+        "distinguishing_features": [
+          "Profound morning fatigue that does not improve with sleep",
+          "Low or flat cortisol awakening response (CAR) on salivary testing",
+          "Salt and carbohydrate cravings",
+          "Hypoglycaemia-like symptoms between meals",
+          "Reduced immune resilience \u2014 catching every illness"
+        ]
+      },
+      {
+        "id": "cortisol_dysreg",
+        "name": "Cortisol dysregulation with inverted rhythm",
+        "description": "A pattern where morning cortisol is low and evening cortisol is relatively elevated, often disrupting sleep and circadian biology. Associated with shift work, social jetlag, and chronic sleep deprivation compounding HPA stress.",
+        "distinguishing_features": [
+          "Waking unrefreshed despite adequate hours in bed",
+          "Second wind in the late evening \u2014 difficult to sleep before midnight",
+          "Morning brain fog clearing only hours after waking",
+          "Salivary cortisol curve shows low AM, elevated late PM or evening values"
+        ]
+      },
+      {
+        "id": "trauma",
+        "name": "Trauma-driven HPA dysregulation",
+        "description": "Chronic stress originating from adverse childhood experiences (ACEs) or PTSD, which produce lasting epigenetic and structural changes to the HPA axis. Often presents with a hyporeactive cortisol pattern despite high subjective distress.",
+        "distinguishing_features": [
+          "History of significant adverse childhood or adult experiences",
+          "Hypervigilance coexisting with physical exhaustion",
+          "Exaggerated startle response",
+          "HPA abnormalities present even in periods of perceived low stress",
+          "Often requires trauma-specific therapeutic approaches to meaningfully shift"
+        ]
+      },
+      {
+        "id": "me_cfs",
+        "name": "HPA dysfunction within ME/CFS",
+        "description": "A subset of ME/CFS presentations in which HPA dysregulation is a prominent feature, characterised by post-exertional malaise alongside consistently low cortisol output and impaired immune regulation.",
+        "distinguishing_features": [
+          "Post-exertional neuroimmune collapse (PENE/PEM) as a cardinal feature",
+          "Blunted cortisol awakening response",
+          "Orthostatic intolerance often co-present",
+          "Standard stress management approaches may worsen symptoms"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Persistent fatigue that is not relieved by sleep",
+        "category": "energy",
+        "notes": "Often worst in the morning, may improve mid-morning and crash again mid-afternoon \u2014 tracking this timing can help distinguish HPA patterns."
+      },
+      {
+        "symptom": "Difficulty falling asleep despite physical tiredness",
+        "category": "sleep",
+        "notes": "The 'wired but tired' pattern; often linked to elevated evening cortisol failing to fall at the appropriate time."
+      },
+      {
+        "symptom": "Waking between 2\u20134 am and struggling to return to sleep",
+        "category": "sleep",
+        "notes": "May relate to nocturnal cortisol or adrenaline surges, or to blood glucose dips triggering a stress hormone response."
+      },
+      {
+        "symptom": "Brain fog \u2014 difficulty concentrating, slow processing, poor working memory",
+        "category": "cognitive",
+        "notes": "Cortisol has receptors throughout the hippocampus and prefrontal cortex; chronic dysregulation impairs memory consolidation and executive function."
+      },
+      {
+        "symptom": "Irritability or emotional reactivity disproportionate to circumstances",
+        "category": "mood",
+        "notes": "Elevated cortisol reduces prefrontal regulation of the amygdala, lowering the threshold for reactive responses."
+      },
+      {
+        "symptom": "Anxiety or low-grade sense of dread without a clear cause",
+        "category": "mood",
+        "notes": "Can be both a driver and a consequence of HPA overactivation; difficult to separate cause from effect."
+      },
+      {
+        "symptom": "Low mood or emotional flatness",
+        "category": "mood",
+        "notes": "Later-stage or burnout-pattern presentations often involve emotional blunting rather than active anxiety."
+      },
+      {
+        "symptom": "Salt cravings",
+        "category": "metabolic",
+        "notes": "May reflect reduced aldosterone output when adrenal function is broadly suppressed; helps with fluid retention."
+      },
+      {
+        "symptom": "Carbohydrate and sugar cravings, especially in the afternoon",
+        "category": "metabolic",
+        "notes": "Cortisol drives glucose mobilisation; when the rhythm is disrupted, blood sugar instability can create strong cravings."
+      },
+      {
+        "symptom": "Weight gain around the abdomen despite unchanged eating",
+        "category": "metabolic",
+        "notes": "Chronically elevated cortisol promotes visceral fat deposition and insulin resistance."
+      },
+      {
+        "symptom": "Hypoglycaemia-like symptoms between meals \u2014 shakiness, dizziness, irritability",
+        "category": "metabolic",
+        "notes": "The HPA axis normally compensates for falling blood sugar; when blunted, low-cortisol individuals may experience exaggerated drops."
+      },
+      {
+        "symptom": "Digestive symptoms \u2014 bloating, loose stools, constipation, or nausea",
+        "category": "digestive",
+        "notes": "Cortisol and CRH (corticotropin-releasing hormone) directly affect gut motility, intestinal permeability, and the gut microbiome. Stress is a well-established trigger for IBS symptoms."
+      },
+      {
+        "symptom": "Reduced libido",
+        "category": "reproductive/hormonal",
+        "notes": "Chronic cortisol elevation suppresses the HPG (hypothalamic-pituitary-gonadal) axis, reducing sex hormone production."
+      },
+      {
+        "symptom": "Menstrual irregularities or worsening PMS",
+        "category": "reproductive/hormonal",
+        "notes": "HPA-HPG cross-talk means chronic stress commonly disrupts menstrual cycle timing and severity of symptoms."
+      },
+      {
+        "symptom": "Increased susceptibility to infection",
+        "category": "immune",
+        "notes": "Chronically dysregulated cortisol \u2014 especially the flat-curve pattern \u2014 impairs innate immune surveillance."
+      },
+      {
+        "symptom": "Slow recovery from illness or injury",
+        "category": "immune",
+        "notes": "Tissue repair processes are metabolically expensive and cortisol-modulated; dysregulation slows healing."
+      },
+      {
+        "symptom": "Palpitations or awareness of heartbeat, especially at rest",
+        "category": "cardiovascular",
+        "notes": "Sympathetic overdrive secondary to HPA activation can produce this; worth ruling out cardiac causes."
+      },
+      {
+        "symptom": "Muscle tension, jaw clenching, or headaches",
+        "category": "musculoskeletal",
+        "notes": "Chronic sympathetic activation keeps muscles in a semi-contracted state; tension headaches and TMJ symptoms are common."
+      },
+      {
+        "symptom": "Cold hands and feet despite normal core temperature",
+        "category": "vascular",
+        "notes": "Chronic sympathetic tone causes peripheral vasoconstriction, diverting blood toward core organs."
+      },
+      {
+        "symptom": "Dry skin or thinning hair",
+        "category": "skin/hair",
+        "notes": "Prolonged cortisol elevation impairs tissue maintenance, collagen synthesis, and thyroid conversion \u2014 all of which affect skin and hair quality."
+      },
+      {
+        "symptom": "Heightened sensitivity to noise, light, or stimulation",
+        "category": "neurological",
+        "notes": "A form of central sensitisation; the nervous system's filtering capacity degrades under prolonged stress load."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Diurnal salivary or dried urine cortisol showing a flat awakening response (low CAR), elevated evening cortisol, or an inverted curve",
+        "Low DHEA-S relative to age norms, with cortisol:DHEA ratio skewed toward cortisol",
+        "Morning serum cortisol below mid-range (10\u201318 mcg/dL) in someone with significant fatigue symptoms \u2014 not diagnostic alone but part of the picture",
+        "Fasting glucose or insulin trending upward, or reactive hypoglycaemia on a glucose tolerance test, in someone without other metabolic explanation",
+        "Subclinical thyroid changes (low-normal free T3, elevated rT3) without primary thyroid pathology \u2014 may reflect peripheral conversion disruption under cortisol load",
+        "Elevated high-sensitivity CRP in the absence of obvious infection or autoimmune disease \u2014 chronic stress is pro-inflammatory",
+        "Sleep study or actigraphy showing fragmented sleep architecture, frequent arousals, or very low slow-wave sleep proportion"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom and energy tracking journal",
+          "description": "Track energy level, mood, cognitive clarity, hunger, and sleep quality at consistent times each day (on waking, mid-morning, early afternoon, evening, bedtime) for 2\u20134 weeks. Look for patterns: does energy reliably crash at a specific time? Does mood deteriorate without obvious cause? Consistent timing can suggest diurnal cortisol rhythm abnormalities.",
+          "safety_notes": "No physical risk. May increase self-awareness of stress patterns, which can occasionally be emotionally confronting. Useful as a baseline before clinical testing."
+        },
+        {
+          "name": "Orthostatic pulse test (crude autonomic screen)",
+          "description": "Measure resting heart rate lying down for 5 minutes, then stand and measure again at 1 and 3 minutes. A rise of more than 20\u201330 bpm suggests possible orthostatic intolerance, which frequently co-occurs with HPA dysregulation and sympathetic dominance. Not diagnostic for HPA specifically.",
+          "safety_notes": "Stop if dizziness or near-fainting occurs. Do not perform if feeling very unwell. This is a screening observation, not a clinical test."
+        },
+        {
+          "name": "Sleep quality self-assessment",
+          "description": "Use a validated tool such as the Pittsburgh Sleep Quality Index (freely available online) or a wearable device with sleep staging. Document time to fall asleep, number of night wakings, dream recall, and subjective morning refreshment. A clear pattern of early-morning waking or wired-at-night is clinically significant.",
+          "safety_notes": "No physical risk. Wearable sleep data is approximate but trend information is useful."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "4-point salivary cortisol with cortisol awakening response (CAR)",
+          "type": "gold_standard",
+          "description": "Saliva samples collected at waking, 30 minutes post-waking, midday, afternoon, and evening. The CAR \u2014 the rise in cortisol in the first 30 minutes after waking \u2014 is a sensitive marker of HPA axis reactivity. A blunted CAR is associated with burnout, ME/CFS, and trauma. Elevated evening cortisol suggests impaired down-regulation. DUTCH (dried urine) testing captures a similar profile plus metabolites.",
+          "availability": "Can be ordered by functional medicine doctors, integrative GPs, and some naturopathic doctors. Mainstream endocrinology typically does not order this without suspected Addison's or Cushing's. Private labs in the UK (Genova, Regenerus), US (ZRT, DUTCH/Precision Analytical), and Australia (Nutripath) offer direct-to-consumer or practitioner-ordered versions."
+        },
+        {
+          "name": "DHEA-S blood test",
+          "type": "standard",
+          "description": "DHEA-S (dehydroepiandrosterone sulphate) is an adrenal androgen that serves as a counter-regulatory hormone to cortisol. Low DHEA-S relative to age-matched norms, or a high cortisol:DHEA ratio, is a functional marker of allostatic load. Easy to add to standard bloods.",
+          "availability": "Widely available through any GP or via private blood draw. Reference ranges vary by lab and age; low-normal is clinically meaningful in context."
+        },
+        {
+          "name": "Morning serum cortisol",
+          "type": "standard",
+          "description": "A single fasting AM cortisol (ideally drawn between 8\u20139 am) screens for pathological adrenal insufficiency (Addison's). It does not capture the full diurnal rhythm and will miss most functional HPA dysregulation, but it is a useful starting point and may catch severe depletion.",
+          "availability": "Standard NHS/GP test; available through any medical provider or private lab."
+        },
+        {
+          "name": "Short Synacthen (ACTH stimulation) test",
+          "type": "standard",
+          "description": "Synthetic ACTH is administered and cortisol response is measured at 30 and 60 minutes. Rules out primary or secondary adrenal insufficiency. Does not detect functional HPA dysregulation or early-stage HPA hypo-reactivity \u2014 a normal result does not exclude meaningful dysfunction.",
+          "availability": "Ordered by endocrinologists or GPs with strong clinical suspicion of adrenal insufficiency. Typically not offered for general fatigue workup."
+        },
+        {
+          "name": "Comprehensive metabolic panel with fasting insulin and glucose",
+          "type": "standard",
+          "description": "Chronic cortisol dysregulation drives insulin resistance and glucose instability. Fasting glucose, fasting insulin, and HbA1c together with a glucose tolerance test can identify metabolic consequences of long-term HPA overload.",
+          "availability": "Standard GP or private lab panel."
+        },
+        {
+          "name": "High-sensitivity CRP (hsCRP) and inflammatory markers",
+          "type": "standard",
+          "description": "Chronic psychological stress is pro-inflammatory. Persistently elevated hsCRP (even in the 1\u20133 mg/L range) without an obvious infectious or autoimmune cause can reflect allostatic load.",
+          "availability": "Standard or private blood test. Often included in cardiovascular risk panels."
+        },
+        {
+          "name": "DUTCH Complete (dried urine hormone test)",
+          "type": "emerging",
+          "description": "Measures cortisol, cortisone, DHEA, progesterone, oestrogen metabolites, melatonin, and organic acid markers in dried urine. Provides a fuller picture of hormone production, metabolism, and clearance than serum or single-point saliva alone. Includes the cortisol awakening response as an optional add-on.",
+          "availability": "Ordered through functional medicine practitioners, integrative doctors, and some naturopaths. Not available through mainstream NHS or Medicare pathways. Private cost varies by country."
+        },
+        {
+          "name": "Thyroid panel including free T3 and reverse T3",
+          "type": "standard",
+          "description": "Chronic cortisol excess suppresses conversion of T4 to active T3, and can elevate reverse T3 (rT3), which competes at thyroid receptors. A full thyroid panel including free T3 and rT3 \u2014 not just TSH \u2014 may reveal functional hypothyroid effects in someone with normal TSH.",
+          "availability": "Free T3 and rT3 are often not included in standard thyroid screens. Request specifically, or access via private lab."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "mechanistic_link",
+        "explanation": "Chronic HPA activation and anxiety share overlapping neurobiology \u2014 both involve elevated CRH, noradrenaline, and amygdala reactivity. HPA dysfunction can cause anxiety symptoms, and anxiety disorders can drive HPA dysregulation, creating a reinforcing cycle."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "mechanistic_link",
+        "explanation": "Hypercortisolaemia is found in a significant proportion of people with major depression, and HPA axis abnormalities are among the most replicated biological findings in mood disorders. The relationship is bidirectional \u2014 depression activates the stress axis and HPA dysregulation alters neurotransmitter balance."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor sleep / insomnia",
+        "relationship": "mechanistic_link",
+        "explanation": "Cortisol and sleep architecture are tightly coupled. Disrupted diurnal cortisol rhythms fragment sleep; poor sleep in turn elevates cortisol the following day. Both are simultaneously cause and consequence in HPA dysfunction."
+      },
+      {
+        "id": "me_cfs",
+        "name": "ME / CFS",
+        "relationship": "mechanistic_link",
+        "explanation": "ME/CFS involves measurable HPA abnormalities in many patients, including blunted cortisol awakening response and reduced HPA reactivity to challenge. Debate continues about whether HPA dysfunction is causal, contributory, or secondary."
+      },
+      {
+        "id": "ibs",
+        "name": "IBS",
+        "relationship": "mechanistic_link",
+        "explanation": "The HPA axis and gut are bidirectionally linked via the gut-brain axis. CRH released during stress increases intestinal permeability, alters motility, and affects the gut microbiome \u2014 all of which contribute to IBS symptom generation."
+      },
+      {
+        "id": "trauma",
+        "name": "Trauma / PTSD",
+        "relationship": "upstream",
+        "explanation": "Childhood adversity and adult trauma produce lasting epigenetic changes to HPA axis programming. PTSD is associated with a distinct HPA profile (often hypocortisol with exaggerated negative feedback) that differs from standard stress dysregulation."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "mechanistic_link",
+        "explanation": "Fibromyalgia is associated with HPA abnormalities and dysregulated stress reactivity. Altered cortisol rhythms and reduced HPA response to pain stimuli are frequently documented, suggesting shared neuroendocrine pathology."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "downstream",
+        "explanation": "Chronically elevated cortisol suppresses TSH secretion, reduces peripheral T4-to-T3 conversion, and elevates reverse T3. Functional hypothyroid symptoms can emerge in the context of HPA overload without primary thyroid pathology."
+      },
+      {
+        "id": "insulin_resistance",
+        "name": "Insulin resistance",
+        "relationship": "downstream",
+        "explanation": "Cortisol promotes hepatic glucose production and impairs insulin signalling in muscle and fat tissue. Sustained hypercortisolaemia is a well-established driver of insulin resistance and central adiposity."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "downstream",
+        "explanation": "Chronic stress alters gut microbiome composition through changes in motility, intestinal secretions, immune tone, and direct neuroendocrine signalling. Dysbiosis in turn activates inflammatory pathways that feed back to the HPA axis."
+      },
+      {
+        "id": "leaky_gut",
+        "name": "Leaky gut",
+        "relationship": "downstream",
+        "explanation": "CRH and cortisol increase intestinal permeability by loosening tight junctions and altering mucosal immune function. Increased permeability allows bacterial products to enter circulation, sustaining low-grade systemic inflammation that further loads the HPA axis."
+      },
+      {
+        "id": "hormonal",
+        "name": "Hormonal / menstrual cycle effects",
+        "relationship": "downstream",
+        "explanation": "Chronic cortisol elevation suppresses GnRH, LH, and FSH, reducing sex hormone output. Menstrual irregularities, low progesterone, worsening PMS, and reduced fertility are common downstream consequences."
+      },
+      {
+        "id": "low_testosterone",
+        "name": "Low testosterone",
+        "relationship": "downstream",
+        "explanation": "HPA activation suppresses the HPG axis, reducing testosterone in both men and women. Cortisol and testosterone share precursor pathways, and under high demand the body preferentially produces cortisol (the 'pregnenolone steal' hypothesis)."
+      },
+      {
+        "id": "cortisol_dysreg",
+        "name": "Cortisol dysregulation",
+        "relationship": "mechanistic_link",
+        "explanation": "Cortisol dysregulation is the principal biochemical expression of HPA axis dysfunction \u2014 these terms describe overlapping aspects of the same underlying process."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "Autonomic dysfunction and HPA dysfunction frequently co-occur, particularly in post-viral illness, hEDS, and long-term chronic stress. Both involve dysregulated sympathetic-parasympathetic balance and impaired homeostatic adaptation."
+      },
+      {
+        "id": "migraine",
+        "name": "Migraine",
+        "relationship": "mechanistic_link",
+        "explanation": "HPA axis activity modulates trigeminal pain pathways and neuroinflammation. Cortisol fluctuations \u2014 particularly sudden drops \u2014 are a recognised migraine trigger, and chronic stress is associated with increased migraine frequency."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation",
+        "relationship": "mechanistic_link",
+        "explanation": "Prolonged HPA activation alters central pain modulation, reduces descending inhibitory control, and promotes neuroinflammation \u2014 all of which drive central sensitisation. The conditions reinforce each other."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome",
+        "relationship": "mechanistic_link",
+        "explanation": "Stress hormones, particularly CRH, directly activate mast cells independently of IgE. Chronic HPA overactivation can lower the threshold for mast cell degranulation, potentially contributing to or worsening MCAS."
+      },
+      {
+        "id": "long_covid",
+        "name": "Long COVID",
+        "relationship": "mechanistic_link",
+        "explanation": "Long COVID involves documented HPA axis abnormalities including low morning cortisol and altered reactivity. Whether this reflects viral HPA damage, allostatic overload from the acute illness, or a pre-existing vulnerability remains under investigation."
+      },
+      {
+        "id": "reactive_hypoglycemia",
+        "name": "Reactive hypoglycemia",
+        "relationship": "downstream",
+        "explanation": "HPA dysregulation impairs the cortisol counter-regulatory response to falling blood glucose, making affected individuals more susceptible to symptomatic hypoglycaemia after carbohydrate-heavy meals."
+      },
+      {
+        "id": "adhd",
+        "name": "ADHD",
+        "relationship": "mechanistic_link",
+        "explanation": "ADHD involves dysregulated noradrenaline and dopamine systems that closely interact with the stress axis. Chronic HPA activation can worsen ADHD symptom severity, and ADHD-related dysregulation of attention and impulse control may itself generate chronic life stress."
+      },
+      {
+        "id": "mitochondrial",
+        "name": "Mitochondrial dysfunction",
+        "relationship": "downstream",
+        "explanation": "Chronically elevated glucocorticoids impair mitochondrial biogenesis and increase reactive oxygen species production. Mitochondrial dysfunction may underlie much of the fatigue and energy dysregulation seen in allostatic overload."
+      },
+      {
+        "id": "sleep_apnea",
+        "name": "Obstructive sleep apnea",
+        "relationship": "comorbid",
+        "explanation": "Sleep apnea produces repeated nocturnal cortisol and adrenaline surges, independently driving HPA dysregulation. The conditions amplify each other \u2014 HPA overload worsens sleep quality, and fragmented sleep from apnea further loads the HPA axis."
+      },
+      {
+        "id": "perimenopause",
+        "name": "Perimenopause",
+        "relationship": "comorbid",
+        "explanation": "The hormonal volatility of perimenopause interacts with HPA function \u2014 declining oestrogen reduces glucocorticoid receptor sensitivity and alters cortisol feedback. Perimenopausal women with pre-existing chronic stress often experience amplified symptoms."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Sleep prioritisation and circadian anchoring",
+          "category": "lifestyle",
+          "description": "Consistent wake time (even on weekends), morning light exposure within 30 minutes of waking, and dim warm lighting after sunset can help reset a dysregulated cortisol rhythm. The cortisol awakening response is entrained by light and wake time \u2014 anchoring these signals may help restore a healthy diurnal curve over weeks.",
+          "evidence_level": "strong",
+          "notes": "This is arguably the single highest-leverage intervention for HPA rhythm. Cannot be offset by other interventions if sleep architecture remains fragmented."
+        },
+        {
+          "name": "Nervous system down-regulation practices",
+          "category": "lifestyle",
+          "description": "Practices that activate the parasympathetic nervous system directly reduce HPA activation. Evidence-supported options include slow diaphragmatic breathing (4\u20137 second exhale emphasis), yoga nidra, progressive muscle relaxation, and non-sleep deep rest (NSDR) protocols. Even 10\u201320 minutes daily can measurably reduce cortisol output in some people.",
+          "evidence_level": "strong",
+          "notes": "Consistency matters more than duration. A brief daily practice is more effective than an occasional long session. Some individuals with high trauma load may find somatic practices initially activating rather than settling \u2014 trauma-informed guidance may be needed."
+        },
+        {
+          "name": "Cold reduction and stress load audit",
+          "category": "lifestyle",
+          "description": "Identifying and systematically reducing the total allostatic load \u2014 which includes physical stressors (overtraining, poor nutrition, infection, pain), cognitive-emotional stressors, and environmental stressors (noise, toxins, light) \u2014 is essential. No supplement or intervention compensates for ongoing high-volume stress input.",
+          "evidence_level": "strong",
+          "notes": "Patients often underestimate non-psychological stressors. Overtraining, chronic under-eating, poor sleep, and gut dysbiosis all load the HPA axis biochemically in ways that are equivalent to psychological stress."
+        },
+        {
+          "name": "Protein-anchored blood glucose stability",
+          "category": "diet",
+          "description": "Eating regular meals with adequate protein (25\u201335 g per meal) and fibre to slow glucose absorption helps reduce blood sugar volatility. When blood glucose drops sharply, the adrenals must compensate \u2014 in a dysregulated system this adds to total HPA demand. Avoiding long gaps between meals and limiting high-glycaemic-load foods can reduce this demand.",
+          "evidence_level": "moderate",
+          "notes": "Not about restricting carbohydrates per se \u2014 quality and timing matter more than elimination. Most beneficial in those with the wired-but-tired or reactive hypoglycaemia pattern."
+        },
+        {
+          "name": "Caffeine reduction or elimination",
+          "category": "diet",
+          "description": "Caffeine stimulates cortisol release, inhibits adenosine receptors (masking fatigue signals without addressing underlying depletion), and disrupts sleep architecture. Individuals with flat-curve or hypocortisol patterns often become dependent on caffeine to function, which perpetuates the cycle.",
+          "evidence_level": "moderate",
+          "notes": "Reduction should be gradual to avoid withdrawal headaches. Even shifting caffeine intake to before 10 am (to protect sleep) may be beneficial before full elimination is considered."
+        },
+        {
+          "name": "Adaptogenic herbs",
+          "category": "supplement",
+          "description": "Several plant-based compounds have evidence for modulating HPA axis reactivity. Ashwagandha (Withania somnifera) has the strongest clinical trial data for reducing cortisol, perceived stress, and improving sleep onset. Rhodiola rosea has evidence for reducing stress-related fatigue and burnout. Eleuthero (Siberian ginseng) and schisandra have traditional use with emerging trial data.",
+          "evidence_level": "moderate",
+          "notes": "These are not substitutes for addressing root stressors but can support HPA recalibration alongside lifestyle interventions. Ashwagandha should be avoided in pregnancy and thyroid disease without practitioner guidance. Quality varies significantly between products \u2014 third-party tested standardised extracts are preferable."
+        },
+        {
+          "name": "Phosphatidylserine",
+          "category": "supplement",
+          "description": "A phospholipid found in neural membranes, phosphatidylserine (400\u2013800 mg/day) has moderate evidence for blunting the cortisol response to exercise and psychological stress. May be particularly useful in the high-cortisol or post-exercise crash pattern.",
+          "evidence_level": "moderate",
+          "notes": "Well-tolerated in most people. Better studied in the context of exercise-induced cortisol than in clinical HPA dysfunction \u2014 generalisation is reasonable but not fully established."
+        },
+        {
+          "name": "Magnesium supplementation",
+          "category": "supplement",
+          "description": "Magnesium plays a regulatory role in HPA axis function and NMDA receptor activity. Deficiency (common in those with chronic stress due to urinary losses) is associated with increased HPA reactivity. Magnesium glycinate or malate are generally well-tolerated and may improve sleep quality and stress resilience.",
+          "evidence_level": "moderate",
+          "notes": "Magnesium oxide has poor absorption. Start with 200\u2013400 mg elemental magnesium in the evening. Loose stools indicate too-high a dose."
+        },
+        {
+          "name": "Therapeutic exercise \u2014 titrated to recovery capacity",
+          "category": "lifestyle",
+          "description": "Moderate-intensity exercise (walking, swimming, yoga, Zone 2 cardio) activates recovery-promoting pathways and improves HPA regulation. However, high-intensity or prolonged exercise in someone with hypocortisol patterns or ME/CFS can worsen symptoms by exceeding recovery capacity.",
+          "evidence_level": "strong",
+          "notes": "The key is matching exercise intensity to current capacity. People with flat-curve HPA dysfunction often do better starting with restorative movement (walking, stretching, yoga) rather than conventional fitness programmes. Post-exertional symptom worsening is a signal to reduce intensity."
+        },
+        {
+          "name": "Psychotherapy \u2014 particularly somatic or trauma-informed approaches",
+          "category": "psychological",
+          "description": "Cognitive behavioural therapy (CBT) has evidence for stress reduction, but in people with HPA dysfunction rooted in trauma or embodied threat responses, somatic approaches may be more effective. These include EMDR, Somatic Experiencing, Internal Family Systems (IFS), and Polyvagal-informed therapy. These approaches work directly with nervous system regulation rather than only with thought patterns.",
+          "evidence_level": "strong",
+          "notes": "Standard CBT may be insufficient for people whose HPA dysregulation is rooted in early adversity or PTSD. Finding a therapist who works somatically or understands chronic illness presentations matters significantly."
+        },
+        {
+          "name": "Vitamin C",
+          "category": "supplement",
+          "description": "The adrenal glands have the highest concentration of vitamin C of any tissue in the body, and cortisol synthesis consumes vitamin C. Supplementation (500\u20132000 mg/day) may support adrenal function and has been shown to reduce post-exercise cortisol in some studies.",
+          "evidence_level": "anecdotal",
+          "notes": "Inexpensive and well-tolerated at these doses. Evidence base for HPA-specific effects is preliminary. High doses may affect kidney stone risk in susceptible individuals."
+        },
+        {
+          "name": "Social connection and nature exposure",
+          "category": "lifestyle",
+          "description": "Positive social interaction activates oxytocin pathways that buffer HPA reactivity. Time spent in natural environments (forests, parks, green spaces) measurably reduces salivary cortisol in controlled studies (the 'nature therapy' or 'shinrin-yoku' literature). These are often overlooked as clinical interventions.",
+          "evidence_level": "moderate",
+          "notes": "Simple, cost-free, and synergistic with other interventions. Social isolation is itself a HPA activator and should be addressed directly."
+        }
+      ],
+      "things_to_avoid": [
+        "High-intensity exercise without adequate recovery \u2014 in hypocortisol or flat-curve patterns, this can trigger multi-day crashes rather than adaptation",
+        "Skipping meals or prolonged fasting without medical supervision \u2014 causes blood glucose drops that demand adrenal compensation",
+        "Relying on caffeine to manage fatigue \u2014 masks depletion while adding cortisol stimulation that worsens the underlying pattern",
+        "Alcohol \u2014 disrupts sleep architecture, impairs cortisol rhythm, and is a net HPA stressor despite short-term perceived relaxation",
+        "Pursuing aggressive symptom suppression without addressing root stressors \u2014 adding more interventions to an already-overloaded system can increase total load",
+        "Blue light and screens in the final 90 minutes before bed \u2014 delays melatonin onset and impairs the natural cortisol trough needed for sleep",
+        "Dismissing or minimising lifestyle stressors as 'not that bad' \u2014 the HPA axis responds to physiological stressors (overtraining, undernutrition, gut inflammation) as powerfully as to psychological ones",
+        "Stopping adaptogenic supplementation abruptly after long use without tapering, when clinically directed \u2014 discuss with a practitioner"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "No supplement, test, or practitioner can fix HPA dysregulation if the source stressors remain in place. The axis is dysregulated because something is overloading it \u2014 and that something must be reduced.",
+        "why_resisted": "People in high-stress circumstances often cannot immediately remove stressors (jobs, caregiving demands, financial pressure) and hope that an intervention will allow them to keep functioning at the same level. Supplements and protocols feel actionable in a way that structural life changes do not.",
+        "path_forward": "People who improve most significantly do so by auditing their total load \u2014 including overtraining, chronic undernutrition, relationship stress, sleep debt, and gut burden \u2014 and reducing the highest-impact items first, even imperfectly. Small consistent reductions in load, sustained over months, produce measurable recovery that supplements alone do not."
+      },
+      {
+        "truth": "Mainstream medicine will often not validate this diagnosis, offer relevant testing, or treat anything short of Addison's disease or Cushing's syndrome. Most people with genuine HPA dysfunction will leave standard medical consultations without answers.",
+        "why_resisted": "People reasonably trust doctors to identify what is wrong with them, and a clear blood test or diagnosis feels reassuring. Accepting that the relevant testing and frameworks exist outside mainstream pathways requires a shift in how one navigates healthcare.",
+        "path_forward": "Finding a functional medicine doctor, integrative GP, or naturopath with experience in HPA testing \u2014 and accessing DUTCH or 4-point salivary cortisol outside standard referral pathways \u2014 allows many people to finally see their pattern documented, which itself is actionable."
+      },
+      {
+        "truth": "Recovery is measured in months to years, not days to weeks. The HPA axis adapts slowly, and interventions that seem to be 'not working' after two weeks may simply be operating on a longer timescale than expected.",
+        "why_resisted": "Chronic illness creates urgency, and the exhaustion and cognitive impairment it causes make it genuinely difficult to sustain slow, patient recovery strategies. People often try something briefly, feel no dramatic change, and cycle to the next intervention.",
+        "path_forward": "People who make consistent progress typically commit to a core set of interventions \u2014 particularly sleep anchoring, nervous system regulation practice, and load reduction \u2014 for 3\u20136 months before evaluating. Tracking symptoms with timestamps creates objective evidence of slow progress that motivation alone often cannot supply."
+      },
+      {
+        "truth": "Psychological and emotional factors \u2014 including unprocessed trauma, persistent relational stress, and identity structures built around overperformance \u2014 are often significant drivers that cannot be resolved by physical interventions alone.",
+        "why_resisted": "Framing HPA dysfunction as primarily physical feels more legitimate and less stigmatising than acknowledging psychological origins. Many people have also been repeatedly told their symptoms are 'just stress' in a dismissive way, creating understandable resistance to anything that sounds similar.",
+        "path_forward": "People who engage with trauma-informed therapy or somatic work alongside physical interventions tend to achieve more durable improvements. The two framings are not in competition \u2014 the stress response is biological, and trauma is encoded in the body, not a character flaw."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Consistent sleep and morning light anchoring",
+          "why_it_matters": "The cortisol awakening response is the primary circadian signal that sets the diurnal rhythm for the entire day. Anchoring wake time and light exposure consistently \u2014 even on weekends \u2014 begins to re-entrain a dysregulated rhythm within weeks.",
+          "how_to_start": "Set a consistent wake time and spend 5\u201310 minutes outside or near a bright window within 30 minutes of waking. Do this every day for 4 weeks before adding further interventions.",
+          "timeline": "Measurable shifts in morning energy and sleep onset often appear within 3\u20136 weeks of consistent practice.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Daily parasympathetic activation practice",
+          "why_it_matters": "The HPA axis cannot down-regulate while the sympathetic nervous system remains dominant. Deliberately activating the parasympathetic state \u2014 even briefly \u2014 creates the physiological conditions in which cortisol can normalise.",
+          "how_to_start": "Choose one practice: 10 minutes of slow extended-exhale breathing (4 counts in, 7 hold, 8 out), yoga nidra (many free recordings exist), or progressive muscle relaxation. Practise at the same time each day, ideally mid-afternoon or before bed.",
+          "timeline": "Acute cortisol reduction is measurable in a single session. Structural change in baseline reactivity develops over 6\u201312 weeks.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Total allostatic load reduction",
+          "why_it_matters": "The HPA axis does not distinguish between sources of stress. Reducing any component of the load \u2014 even one that seems unrelated (e.g., resolving gut dysbiosis, stopping overtraining, treating sleep apnea) \u2014 reduces overall HPA demand and creates recovery headroom.",
+          "how_to_start": "List all current stressors across categories: sleep, physical training, diet quality, illness, relationship stress, work pressure, environmental noise, digital overwhelm. Identify the two highest-impact items and address those first.",
+          "timeline": "Depends on stressor type. Sleep and diet changes can produce effects in 2\u20134 weeks. Structural life stressors may take months to resolve.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Functional testing to identify personal pattern",
+          "why_it_matters": "High-cortisol and low-cortisol presentations require opposite management approaches. Treating a flat-curve pattern with further cortisol-stimulating interventions (e.g., heavy exercise, intermittent fasting, excessive stimulants) worsens outcomes. Testing reveals which direction to intervene.",
+          "how_to_start": "Request a 4-point salivary cortisol test or DUTCH Complete through a functional medicine practitioner, integrative GP, or private lab. Review results with a knowledgeable practitioner rather than in isolation.",
+          "timeline": "Single test; results typically available within 2 weeks.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Trauma-informed psychological support",
+          "why_it_matters": "For individuals whose HPA dysregulation has roots in adverse experiences, biological interventions produce limited and temporary improvements without addressing the underlying neural programming of threat perception.",
+          "how_to_start": "Seek a therapist trained in EMDR, Somatic Experiencing, or Polyvagal-informed approaches. Ask specifically about experience with chronic illness or somatic symptoms during an initial consultation.",
+          "timeline": "Meaningful shifts in nervous system regulation typically emerge after 3\u20136 months of regular engagement.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Blood sugar stabilisation through diet timing and protein adequacy",
+          "why_it_matters": "Blood glucose dips represent a significant and often overlooked source of adrenal demand. Eliminating this source reduces one of the most frequent daily triggers of cortisol release.",
+          "how_to_start": "Eat breakfast within 1 hour of waking, include 25\u201335 g of protein in each meal, and avoid going more than 4\u20135 hours without eating during the day. Track symptom patterns relative to meal timing for two weeks.",
+          "timeline": "Improvements in energy stability and afternoon crashes often apparent within 1\u20132 weeks.",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Treating HPA dysfunction primarily with stimulants \u2014 including high-intensity exercise, intermittent fasting, and excess caffeine \u2014 which adds to load rather than enabling recovery",
+        "Pursuing many interventions simultaneously, creating confusion about what is working and adding cognitive and logistical burden that itself increases allostatic load",
+        "Expecting linear improvement \u2014 recovery often involves oscillating progress, with setbacks triggered by illness, stress, or sleep disruption; non-linearity is normal, not failure",
+        "Stopping recovery practices when feeling better \u2014 the axis requires sustained support during recovery; early withdrawal of effective interventions commonly leads to relapse",
+        "Treating this as a purely adrenal problem (targeting only supplementation) rather than a central regulatory problem requiring nervous system recalibration",
+        "Pursuing exhaustive diagnostic testing before implementing the core lifestyle pillars \u2014 testing is valuable, but people who defer all action pending results often lose months without meaningful progress",
+        "Accepting the framing that symptoms are 'just stress' and require no investigation \u2014 HPA dysfunction produces measurable physiological changes that warrant proper assessment and a structured recovery plan"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Functional medicine doctor (MD, DO, or equivalent)",
+          "role": "Most likely to order and interpret functional HPA testing (DUTCH, salivary cortisol), understand allostatic load as a clinical concept, and design comprehensive treatment plans addressing multiple contributing factors.",
+          "notes": "Quality varies significantly. Look for practitioners with specific training in HPA axis or neuroendocrinology. The Institute for Functional Medicine (IFM) has a practitioner directory. Many now offer telehealth."
+        },
+        {
+          "type": "Integrative or holistic GP / primary care doctor",
+          "role": "A GP with integrative training can order standard and some functional tests, prescribe when needed (e.g., low-dose DHEA or compounded hormones where legal), and coordinate care. More accessible and often more affordable than specialist functional medicine.",
+          "notes": "Not all GPs are receptive to HPA dysfunction as a diagnostic framework. Ask specifically whether they investigate adrenal and cortisol patterns as part of fatigue workups."
+        },
+        {
+          "type": "Naturopathic doctor (ND)",
+          "role": "NDs with a focus on hormonal or adrenal health often have extensive experience with HPA testing and adaptogenic protocols. They are frequently the most accessible practitioners for this area and often the most conversant with the research.",
+          "notes": "Regulatory status and prescribing authority vary by country and jurisdiction. In the US, licensed NDs have significant authority in many states; in the UK and Australia, naturopathy is unregulated \u2014 verify training carefully."
+        },
+        {
+          "type": "Endocrinologist",
+          "role": "Appropriate for ruling out Addison's disease, Cushing's syndrome, and other pathological adrenal conditions. Typically not the right specialist for functional HPA dysregulation \u2014 most mainstream endocrinologists will report normal results and not pursue further evaluation.",
+          "notes": "Worth seeing once to rule out serious pathology, especially with very low morning cortisol. Managing expectations is important \u2014 functional patterns are outside most endocrinologists' clinical scope."
+        },
+        {
+          "type": "Trauma-informed psychotherapist / somatic therapist",
+          "role": "Essential for individuals whose HPA dysregulation involves significant psychological or trauma components. Practitioners trained in EMDR, Somatic Experiencing, or Polyvagal therapy work directly with nervous system regulation.",
+          "notes": "Therapists do not need to specialise in 'adrenal fatigue' \u2014 those trained in chronic illness, nervous system regulation, or trauma-informed somatic approaches are the most relevant."
+        },
+        {
+          "type": "Sleep specialist / somnologist",
+          "role": "If sleep disturbance is prominent and potentially driven by undiagnosed sleep apnea or UARS, a sleep study is warranted before attributing all sleep dysfunction to HPA dysregulation alone.",
+          "notes": "Sleep disorders significantly compound HPA dysfunction and often must be treated concurrently. Requesting polysomnography (full sleep study) rather than only home oximetry captures more nuanced patterns."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/Hypothyroidism and r/adrenalfatigue",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Hypothyroidism/",
+          "notes": "Despite the name, r/Hypothyroidism has an active community discussing HPA dysfunction, adrenal patterns, and functional hormone testing. r/adrenalfatigue, though smaller, is specifically focused on HPA presentations. Both contain peer-experience reports on testing, practitioners, and protocols."
+        },
+        {
+          "name": "Adrenal Fatigue and HPA Axis Dysfunction Support Group",
+          "platform": "Facebook",
+          "url": null,
+          "notes": "Several active Facebook groups use 'adrenal fatigue' as the organising label but discuss HPA axis dysfunction broadly. Search for groups with high member counts and active moderation. Quality of information varies \u2014 cross-reference with clinical sources."
+        },
+        {
+          "name": "r/cfs (ME/CFS community)",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/cfs/",
+          "notes": "Highly relevant for those whose HPA dysfunction presents within an ME/CFS context. Very patient-led, research-aware community with discussions of HPA findings in ME/CFS research."
+        },
+        {
+          "name": "Burnout and Recovery forums",
+          "platform": "Reddit (r/burnout)",
+          "url": "https://www.reddit.com/r/burnout/",
+          "notes": "Useful for people whose HPA overload stems from occupational or caregiving burnout. Community is peer-support focused rather than medically technical."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Why Zebras Don't Get Ulcers",
+        "type": "book",
+        "author_or_source": "Robert M. Sapolsky",
+        "url": null,
+        "description": "The definitive accessible account of how chronic psychological stress harms the body, written by one of the world's leading stress biology researchers. Covers the HPA axis, cortisol, immune function, cardiovascular disease, and more. Scientifically rigorous but highly readable. Essential background for anyone trying to understand their own stress biology.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Stress Response: HPA Axis Dysregulation",
+        "type": "research paper",
+        "author_or_source": "Stephens & Wand, Alcohol Research & Health (2012)",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3860380/",
+        "description": "A thorough review of HPA axis physiology and how chronic stress dysregulates it. More technical than lay-audience resources but accessible to motivated self-researchers. Covers the biology of allostatic load and its downstream consequences.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Allostasis, Homeostasis, and the Costs of Physiological Adaptation",
+        "type": "book",
+        "author_or_source": "Jay Schulkin (ed.)",
+        "url": null,
+        "description": "Academic text covering the theoretical framework of allostatic load \u2014 the cumulative physiological cost of adapting to chronic stressors. Useful for understanding why the HPA concept of 'overload' is mechanistically distinct from single acute stress responses.",
+        "audience": "advanced"
+      },
+      {
+        "title": "DUTCH Test Education Library",
+        "type": "website",
+        "author_or_source": "Precision Analytical (DUTCH Test)",
+        "url": "https://dutchtest.com/education/",
+        "description": "Free educational resources explaining dried urine hormone testing, cortisol interpretation, and HPA axis patterns. Practitioner-oriented but accessible. Useful for understanding what DUTCH results mean before or after testing.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "The Body Keeps the Score",
+        "type": "book",
+        "author_or_source": "Bessel van der Kolk",
+        "url": null,
+        "description": "Landmark work on how trauma is encoded in the body and the nervous system, with implications for HPA dysregulation in trauma-affected individuals. Explains why talk therapy alone is often insufficient and why somatic approaches matter. Widely read in both clinical and patient communities.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Andrew Huberman \u2014 Cortisol, Stress, and the HPA Axis (Huberman Lab podcast)",
+        "type": "podcast",
+        "author_or_source": "Andrew Huberman, Stanford Neuroscience",
+        "url": "https://hubermanlab.com",
+        "description": "Several episodes cover cortisol regulation, the role of morning light in anchoring the cortisol awakening response, and evidence-based tools for stress management. Free and research-grounded, though some episodes go beyond direct HPA content. Search specifically for episodes on cortisol and stress.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Recovering from Burnout: The Adrenal Reset Protocol",
+        "type": "book",
+        "author_or_source": "Alan Christianson, NMD",
+        "url": null,
+        "description": "Practitioner-authored guide to HPA axis recovery with practical protocols for diet timing, light exposure, and supplement use stratified by cortisol pattern (high, mixed, or low). More clinically actionable than purely academic resources. Informed by functional medicine framework.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Chronic Stress and Hypothalamic-Pituitary-Adrenal Axis Dysregulation \u2014 PubMed search",
+        "type": "research paper",
+        "author_or_source": "PubMed / National Library of Medicine",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/?term=HPA+axis+dysregulation+chronic+stress",
+        "description": "For those who want to go directly to the primary literature, this PubMed search returns hundreds of peer-reviewed papers on HPA dysfunction, allostatic load, burnout biology, and downstream health effects. Filter by review articles for the most accessible starting points.",
+        "audience": "advanced"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

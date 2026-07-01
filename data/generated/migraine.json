@@ -1,0 +1,798 @@
+{
+  "condition_id": "migraine",
+  "condition_name": "Migraine",
+  "generated_at": "2026-07-01T11:58:41.946913Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Migraine is a neurological condition characterised by recurring attacks of moderate-to-severe head pain, often on one side, accompanied by nausea, light sensitivity, and sound sensitivity. Attacks can last 4\u201372 hours and are frequently disabling. It is far more than a bad headache \u2014 it involves complex changes in brain activity, neurotransmitter signalling, and blood vessel behaviour. Many people live with migraine for years without identifying their specific triggers or finding a management approach that meaningfully reduces attack frequency.",
+    "detailed_summary": "Migraine is a primary neurological disorder involving episodic dysfunction of the trigeminal pain pathways, cortical spreading depression, and dysregulation of serotonin, calcitonin gene-related peptide (CGRP), and other neurotransmitters. Attacks typically progress through distinct phases: a prodrome (hours to days before pain begins, involving mood changes, food cravings, fatigue, or yawning), an aura phase (present in roughly 25\u201330% of people, involving reversible neurological symptoms such as visual disturbances, tingling, or speech difficulty), the headache phase itself, and a postdrome ('migraine hangover') of cognitive fog, fatigue, and residual sensitivity.\n\nMigraine has a strong genetic component \u2014 first-degree relatives of people with migraine are 2\u20134 times more likely to also have it. Hormonal fluctuations, particularly the drop in oestrogen before menstruation, are a major driver in women, which partly explains why migraine is approximately three times more prevalent in women than men.\n\nThe condition sits on a spectrum. At one end, some individuals have infrequent episodic attacks; at the other, chronic migraine involves 15 or more headache days per month, with at least 8 meeting migraine criteria. Medication overuse headache (MOH) \u2014 a rebound pattern caused by frequent use of acute pain relievers \u2014 can transform episodic migraine into chronic migraine, representing one of the most important and underappreciated traps in migraine management.\n\nA range of triggers are commonly reported \u2014 including sleep disruption, skipping meals, dehydration, alcohol (particularly red wine and beer), certain foods, hormonal shifts, weather changes, stress and stress letdown, strong sensory stimuli, and overexertion. Triggers are highly individual and often additive: a single trigger may not cause an attack, but two or three in combination frequently does.\n\nUntil recently, preventive treatment options were limited and often poorly tolerated. The development of CGRP-targeted therapies (both monoclonal antibodies and gepants) since 2018 has significantly changed the preventive landscape, offering targeted options for people with frequent or chronic migraine who do not respond to older preventives.",
+    "prevalence": {
+      "summary": "Migraine affects roughly 1 in 7 people worldwide, making it one of the most common neurological conditions and a leading cause of disability.",
+      "estimate": "Approximately 12\u201315% of the global population; around 1 in 5 women and 1 in 16 men",
+      "notes": "Chronic migraine (15+ headache days/month) affects an estimated 1\u20132% of the population. Migraine is consistently ranked among the top causes of years lived with disability globally by the WHO. Underdiagnosis is common, particularly in men and in populations with limited healthcare access. Many people self-manage or attribute attacks to 'tension headaches', meaning true prevalence may be higher than surveys capture."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Migraine without aura",
+        "description": "The most common form, accounting for roughly 70\u201375% of migraine cases. Attacks involve the characteristic headache phase without preceding neurological symptoms.",
+        "distinguishing_features": [
+          "No visual, sensory, or speech disturbances before the headache",
+          "Pain typically unilateral, pulsating, moderate-to-severe",
+          "Worsened by routine physical activity",
+          "Accompanied by nausea and/or photo/phonophobia"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Migraine with aura",
+        "description": "Affects 25\u201330% of people with migraine. Involves reversible focal neurological symptoms developing over 5\u201320 minutes and lasting under 60 minutes, followed by or concurrent with headache.",
+        "distinguishing_features": [
+          "Visual aura most common: zigzag lines (scintillating scotoma), blind spots, flickering lights",
+          "Sensory aura: tingling or numbness spreading across face or hand",
+          "Speech/language aura: word-finding difficulty or slurred speech",
+          "Small increased stroke risk in women with aura who smoke or use combined oral contraceptives",
+          "Aura can occasionally occur without headache following (silent migraine)"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Chronic migraine",
+        "description": "Defined as 15 or more headache days per month for over three months, with at least 8 of those days meeting migraine criteria. Often develops from episodic migraine through a process called chronification.",
+        "distinguishing_features": [
+          "High headache day burden severely impacts daily functioning and quality of life",
+          "Strongly associated with medication overuse headache (MOH)",
+          "More likely to co-occur with anxiety, depression, and sleep disorders",
+          "Requires preventive (not just acute) treatment as a priority",
+          "CGRP-targeted therapies and OnabotulinumtoxinA (Botox) specifically approved for chronic migraine"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Vestibular migraine",
+        "description": "A subtype characterised by recurrent episodes of vertigo, dizziness, or balance disturbance associated with migraine. Frequently misdiagnosed as inner ear disease or BPPV.",
+        "distinguishing_features": [
+          "Vertigo or dizziness (spinning, rocking, or unsteady sensation) is the primary or prominent symptom",
+          "Headache may be absent during vestibular episodes",
+          "Motion sensitivity often extreme",
+          "Auditory symptoms (tinnitus, ear fullness) may be present, creating diagnostic confusion with M\u00e9ni\u00e8re's disease",
+          "Episodes can last minutes to days"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Hemiplegic migraine",
+        "description": "A rare, severe form in which aura includes motor weakness (hemiplegia) on one side of the body. Can be familial (genetic mutations in ion channel genes) or sporadic.",
+        "distinguishing_features": [
+          "Temporary one-sided weakness or paralysis as part of aura",
+          "Can mimic stroke \u2014 requires careful differential diagnosis",
+          "Symptoms may last hours to days",
+          "Familial form linked to mutations in CACNA1A, ATP1A2, or SCN1A genes",
+          "Triptans and ergotamines generally contraindicated"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Menstrual migraine",
+        "description": "Attacks that occur predictably in relation to the menstrual cycle, typically in the window from 2 days before to 3 days after the start of menstruation, driven by the oestrogen drop.",
+        "distinguishing_features": [
+          "Attacks often more severe, longer-lasting, and less responsive to treatment than non-menstrual attacks",
+          "Typically occur without aura",
+          "Predictable timing allows for mini-preventive strategies (e.g. frovatriptan or naproxen perimenstrually)",
+          "Perimenopause often worsens menstrual migraine before improvement post-menopause"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Medication overuse headache (MOH)",
+        "description": "A secondary headache disorder developing in people with a primary headache disorder who overuse acute medications, resulting in headache on 15+ days per month. Also called rebound headache.",
+        "distinguishing_features": [
+          "Headache present on waking, often dull and daily",
+          "Acute medications provide diminishing relief over time",
+          "Associated with use of triptans >10 days/month, simple analgesics >15 days/month, or opioids/ergotamines >10 days/month",
+          "Preventive treatments are less effective while overuse continues",
+          "Requires a supervised withdrawal period \u2014 often results in significant improvement"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Unilateral throbbing or pulsating head pain",
+        "category": "head pain",
+        "notes": "Pain is typically on one side but can be bilateral. Intensity is moderate to severe and worsens with routine physical activity such as climbing stairs."
+      },
+      {
+        "symptom": "Nausea and/or vomiting",
+        "category": "gastrointestinal",
+        "notes": "Present in the majority of attacks. Vomiting can sometimes provide temporary pain relief. Nausea also slows gastric emptying, reducing absorption of oral medications."
+      },
+      {
+        "symptom": "Photophobia (light sensitivity)",
+        "category": "sensory",
+        "notes": "Even ordinary indoor lighting can be intolerable during an attack. Sunlight is particularly problematic."
+      },
+      {
+        "symptom": "Phonophobia (sound sensitivity)",
+        "category": "sensory",
+        "notes": "Normal sounds feel painfully loud. Many people retreat to quiet, dark environments."
+      },
+      {
+        "symptom": "Osmophobia (smell sensitivity)",
+        "category": "sensory",
+        "notes": "Strong smells such as perfume, food, or cleaning products can trigger or worsen attacks. Often underreported."
+      },
+      {
+        "symptom": "Visual aura \u2014 scintillating scotoma or zigzag lines",
+        "category": "neurological / visual",
+        "notes": "Classic visual aura involves a crescent of flickering zigzag lines that slowly expands across the visual field over 20\u201330 minutes. Highly characteristic of migraine with aura."
+      },
+      {
+        "symptom": "Sensory aura \u2014 tingling or numbness",
+        "category": "neurological",
+        "notes": "Typically spreads slowly from fingers up the arm or across one side of the face. Distinct from the sudden onset of stroke symptoms."
+      },
+      {
+        "symptom": "Cognitive aura \u2014 word-finding difficulty or aphasia",
+        "category": "neurological",
+        "notes": "Difficulty finding words or forming sentences during aura. Often alarming but reversible."
+      },
+      {
+        "symptom": "Prodrome symptoms \u2014 fatigue, mood changes, food cravings, yawning",
+        "category": "neurological / systemic",
+        "notes": "Can begin 24\u201348 hours before pain. Yawning and carbohydrate cravings are particularly characteristic. Recognising the prodrome can allow earlier treatment."
+      },
+      {
+        "symptom": "Postdrome \u2014 cognitive fog, fatigue, head tenderness",
+        "category": "neurological / systemic",
+        "notes": "Often called the 'migraine hangover'. Can last 24\u201348 hours after headache resolves. Cognitive impairment during this phase is significant and underrecognised."
+      },
+      {
+        "symptom": "Allodynia \u2014 pain from normally non-painful stimuli",
+        "category": "neurological",
+        "notes": "Skin tenderness during attacks, e.g. pain from combing hair, wearing glasses, or light touch to the scalp. Indicates central sensitisation and is associated with treatment resistance if not treated early."
+      },
+      {
+        "symptom": "Neck pain and stiffness",
+        "category": "musculoskeletal",
+        "notes": "Extremely common \u2014 reported in up to 75% of attacks. Often mistaken for a cervicogenic cause, but in migraine it is typically part of the attack itself via trigeminal-cervical nucleus involvement."
+      },
+      {
+        "symptom": "Dizziness or vertigo",
+        "category": "vestibular / neurological",
+        "notes": "Particularly prominent in vestibular migraine. Can also occur as a minor feature of other migraine types."
+      },
+      {
+        "symptom": "Nasal congestion or runny nose",
+        "category": "autonomic",
+        "notes": "Autonomic symptoms mediated by the trigeminal-autonomic reflex. Often leads to misdiagnosis as sinus headache \u2014 the vast majority of self-diagnosed 'sinus headaches' are actually migraine."
+      },
+      {
+        "symptom": "Increased urination before or during attack",
+        "category": "autonomic",
+        "notes": "Part of the prodrome for some individuals. Related to hypothalamic activation."
+      },
+      {
+        "symptom": "Cognitive difficulty / brain fog during attacks",
+        "category": "neurological / cognitive",
+        "notes": "Difficulty concentrating, slowed thinking, and memory lapses are common during and after attacks."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Recurring headache attacks lasting 4\u201372 hours, unilateral, pulsating, moderate-to-severe, with nausea or photo/phonophobia \u2014 this pattern meets ICHD-3 diagnostic criteria for migraine without aura",
+        "Presence of reversible focal neurological symptoms (visual, sensory, or speech) developing over 5\u201320 minutes before or during headache \u2014 consistent with migraine with aura",
+        "Predictable perimenstrual timing of attacks in women \u2014 suggests hormonal (menstrual) migraine subtype",
+        "Headache frequency escalating over months with acute medication use increasing in parallel \u2014 pattern consistent with medication overuse headache",
+        "Recurrent vertigo or dizziness with accompanying headache, light/sound sensitivity, or motion intolerance \u2014 pattern consistent with vestibular migraine",
+        "Detailed headache diary revealing trigger patterns, prodrome features, and attack frequency \u2014 foundational to diagnosis and management planning"
+      ],
+      "at_home": [
+        {
+          "name": "Headache and migraine diary",
+          "description": "Tracking each headache day with onset time, duration, pain intensity, associated symptoms (nausea, aura, light sensitivity), potential triggers (sleep, meals, stress, menstrual cycle, weather), and medications used. Apps such as Migraine Buddy, N1-Headache, or a simple paper diary work well. After 4\u20138 weeks, patterns often become visible \u2014 including menstrual links, weekend patterns, sleep disruption effects, and dietary triggers.",
+          "safety_notes": "No risks. This is the single most useful thing individuals can do before a clinical appointment. A completed diary significantly improves the quality of any consultation."
+        },
+        {
+          "name": "Trigger elimination trial",
+          "description": "Systematically removing one commonly reported trigger at a time (e.g. alcohol, artificial sweeteners, MSG, skipping meals) for 4\u20136 weeks while tracking attack frequency. Because triggers are often additive and individual, a structured diary approach is needed to draw valid conclusions.",
+          "safety_notes": "Safe when approached methodically. Avoid eliminating multiple food groups simultaneously without guidance from a registered dietitian, as this can create nutritional deficits and increase anxiety around eating."
+        },
+        {
+          "name": "Sleep regularity experiment",
+          "description": "Maintaining consistent sleep and wake times seven days a week \u2014 including weekends \u2014 for 4\u20136 weeks, and tracking whether attack frequency changes. Weekend lie-ins are a well-known migraine trigger ('weekend migraine').",
+          "safety_notes": "No risks. This is one of the highest-yield lifestyle experiments for many people with migraine."
+        },
+        {
+          "name": "Hydration tracking",
+          "description": "Ensuring consistent daily fluid intake (at least 1.5\u20132 litres of water, adjusted for body weight and activity) and noting whether dehydration correlates with attack onset. Tracking urine colour as a proxy for hydration status.",
+          "safety_notes": "Generally safe. Individuals with kidney conditions or heart conditions should confirm fluid targets with their doctor."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Clinical diagnosis using ICHD-3 criteria",
+          "type": "gold_standard",
+          "description": "Migraine is a clinical diagnosis \u2014 there is no definitive biomarker or imaging test. Neurologists and headache specialists apply the International Classification of Headache Disorders (3rd edition) criteria based on history, attack characteristics, and exclusion of secondary causes. A detailed headache diary significantly aids this process.",
+          "availability": "General practitioners can apply ICHD-3 criteria for straightforward cases. Neurologists or dedicated headache clinics are appropriate for complex, chronic, or treatment-refractory cases."
+        },
+        {
+          "name": "MRI brain (with and without contrast)",
+          "type": "standard",
+          "description": "Not required for typical migraine, but indicated to exclude secondary causes when: headache pattern changes suddenly, neurological deficits are present, headache begins after age 50, or when 'thunderclap' onset is reported. Does not diagnose migraine but rules out structural causes.",
+          "availability": "Ordered by GPs, neurologists, or emergency physicians depending on clinical context. May require referral."
+        },
+        {
+          "name": "Hormonal panel (oestrogen, progesterone, LH, FSH)",
+          "type": "standard",
+          "description": "In women whose migraines are clearly menstrually linked or who are in perimenopause, hormonal profiling can help guide treatment decisions \u2014 particularly around hormonal preventive strategies or HRT considerations.",
+          "availability": "Ordered by a GP, gynaecologist, or reproductive endocrinologist. Timing of testing in the cycle is important for interpretation."
+        },
+        {
+          "name": "Comprehensive blood panel (thyroid, iron, B12, inflammatory markers)",
+          "type": "standard",
+          "description": "Used to exclude secondary contributors to headache frequency, such as hypothyroidism, anaemia, or systemic inflammation. Not diagnostic for migraine but important for complete workup, especially in treatment-refractory cases.",
+          "availability": "Ordered by any GP. Often underperformed in people with established migraine diagnosis."
+        },
+        {
+          "name": "Videonystagmography (VNG) / vestibular function testing",
+          "type": "standard",
+          "description": "In suspected vestibular migraine, formal vestibular testing helps differentiate from peripheral vestibular disorders (e.g. M\u00e9ni\u00e8re's disease, BPPV). Measures eye movements and balance responses to various stimuli.",
+          "availability": "Performed by audiologists or ENT/otoneurology departments. Requires referral."
+        },
+        {
+          "name": "CGRP biomarker and calcitonin gene-related peptide assays",
+          "type": "emerging",
+          "description": "Research has established that CGRP levels are elevated during migraine attacks and in chronic migraine between attacks. While not yet in routine clinical use as a diagnostic tool, CGRP measurement underpins the development of CGRP-targeted preventive therapies and may eventually guide treatment selection.",
+          "availability": "Research setting primarily. Not routinely available in clinical practice as a diagnostic test."
+        },
+        {
+          "name": "Neuropsychological testing",
+          "type": "emerging",
+          "description": "Formal cognitive assessment may be used in people with significant cognitive complaints during or between attacks, or to document functional impact. Particularly relevant in chronic migraine with high disability burden.",
+          "availability": "Available through neuropsychologists; referral typically required."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "Migraine and fibromyalgia co-occur at significantly elevated rates, both involving central sensitisation \u2014 a state of amplified pain processing in the central nervous system. People with both conditions often experience more severe and treatment-resistant migraine."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation",
+        "relationship": "mechanistic_link",
+        "explanation": "Central sensitisation is both a feature of individual migraine attacks (allodynia during attacks) and a likely driver of migraine chronification. Repeated attacks may lower pain thresholds over time, creating a self-perpetuating cycle of increasing frequency."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "POTS and migraine co-occur more frequently than chance, particularly in young women. Both may involve dysregulation of the autonomic nervous system and blood flow to the brain. Orthostatic triggers \u2014 such as dehydration or prolonged standing \u2014 can precipitate both conditions."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / HSD",
+        "relationship": "comorbid",
+        "explanation": "Migraine is significantly more prevalent in people with hypermobile Ehlers-Danlos syndrome and hypermobility spectrum disorder. The mechanism may involve autonomic dysfunction, cervical instability, or connective tissue changes affecting vascular tone."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "comorbid",
+        "explanation": "Anxiety and migraine have a bidirectional relationship \u2014 each increases the risk of the other. Anxiety heightens cortical excitability and stress reactivity, which may lower the threshold for attacks. Conversely, the unpredictability of migraine attacks generates significant anticipatory anxiety."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "comorbid",
+        "explanation": "Depression is approximately 2\u20134 times more prevalent in people with migraine than the general population. The relationship is bidirectional and shares serotonergic, neuroinflammatory, and HPA axis mechanisms. Chronic migraine with high disability burden is particularly strongly associated with depression."
+      },
+      {
+        "id": "endometriosis",
+        "name": "Endometriosis",
+        "relationship": "comorbid",
+        "explanation": "Endometriosis and migraine share hormonal sensitivity (particularly to oestrogen fluctuation) and may share neuroinflammatory mechanisms. Both conditions are disproportionately common in women with heightened central pain processing."
+      },
+      {
+        "id": "hormonal",
+        "name": "Hormonal / menstrual cycle effects",
+        "relationship": "mechanistic_link",
+        "explanation": "Oestrogen withdrawal, particularly the pre-menstrual drop, is one of the most well-established migraine triggers. Hormonal fluctuations across the menstrual cycle, pregnancy, postpartum period, and perimenopause profoundly affect attack frequency and severity in many women."
+      },
+      {
+        "id": "perimenopause",
+        "name": "Perimenopause",
+        "relationship": "mechanistic_link",
+        "explanation": "Migraine often worsens significantly during perimenopause due to erratic oestrogen fluctuations, before typically improving after menopause. Perimenopausal migraine escalation is commonly underappreciated and undertreated."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor sleep / insomnia",
+        "relationship": "comorbid",
+        "explanation": "Sleep disruption is both a trigger and a consequence of migraine. Irregular sleep patterns, insufficient sleep, and sleeping too long all commonly precipitate attacks. Insomnia co-occurs with chronic migraine at high rates, creating a reinforcing cycle."
+      },
+      {
+        "id": "cervical_instability",
+        "name": "Cervical instability",
+        "relationship": "often_confused",
+        "explanation": "Cervicogenic headache arising from upper cervical dysfunction can closely mimic migraine and frequently co-exists with it. The trigeminal-cervical nucleus processes signals from both cranial and upper cervical structures, meaning cervical dysfunction can modulate migraine threshold and frequency."
+      },
+      {
+        "id": "tmd",
+        "name": "Temporomandibular disorder",
+        "relationship": "comorbid",
+        "explanation": "TMD and migraine co-occur at elevated rates, sharing trigeminal pain pathways. Jaw tension and bruxism \u2014 which often worsen during stressful periods \u2014 can lower the migraine threshold and trigger attacks. Treating TMD may reduce migraine frequency in some people."
+      },
+      {
+        "id": "post_concussion",
+        "name": "Post-concussion syndrome",
+        "relationship": "upstream",
+        "explanation": "Head injury can trigger the onset of migraine or significantly worsen pre-existing migraine. Post-traumatic headache following concussion often presents identically to migraine and is treated similarly, but requires its own diagnostic framework."
+      },
+      {
+        "id": "bvd",
+        "name": "Binocular vision dysfunction",
+        "relationship": "often_confused",
+        "explanation": "Binocular vision dysfunction causes eyestrain and visual stress that can trigger or closely mimic migraine. It is frequently missed because standard eye exams do not always assess binocular alignment adequately. A trial of prism correction can be diagnostic and therapeutic."
+      },
+      {
+        "id": "chronic_sinusitis",
+        "name": "Chronic sinusitis",
+        "relationship": "often_confused",
+        "explanation": "The overwhelming majority of self-diagnosed 'sinus headaches' are actually migraine \u2014 studies suggest up to 90% of people presenting with presumed sinus headache meet migraine criteria. Autonomic features of migraine (nasal congestion, watery eyes) mimic sinus symptoms."
+      },
+      {
+        "id": "me_cfs",
+        "name": "ME / CFS",
+        "relationship": "comorbid",
+        "explanation": "Migraine occurs at elevated rates in people with ME/CFS. Both conditions may involve neuroinflammation, autonomic dysfunction, and mitochondrial dysfunction. The postdrome of severe migraine attacks shares features with post-exertional malaise."
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "mechanistic_link",
+        "explanation": "Histamine is a potent vasodilator and can trigger migraine attacks in susceptible individuals. Some people with migraine notice that high-histamine foods (aged cheeses, red wine, fermented foods) are reliable triggers, suggesting histamine intolerance may be a contributing factor."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome",
+        "relationship": "comorbid",
+        "explanation": "MCAS involves dysregulated mast cell release of histamine and other mediators, which can trigger migraine attacks. People with MCAS often have heightened reactivity to multiple migraine triggers including foods, scents, and environmental factors."
+      },
+      {
+        "id": "ibs",
+        "name": "IBS",
+        "relationship": "comorbid",
+        "explanation": "IBS and migraine co-occur at significantly elevated rates \u2014 likely reflecting shared mechanisms including central sensitisation, serotonin dysregulation, and heightened visceral and somatic pain processing. People with both conditions tend to have more severe presentations of each."
+      },
+      {
+        "id": "long_covid",
+        "name": "Long COVID",
+        "relationship": "upstream",
+        "explanation": "New-onset migraine and worsening of pre-existing migraine are commonly reported in long COVID. Neuroinflammation, autonomic dysfunction, and CGRP pathway dysregulation following COVID-19 infection are proposed mechanisms."
+      },
+      {
+        "id": "dehydration",
+        "name": "Dehydration",
+        "relationship": "upstream",
+        "explanation": "Dehydration is one of the most consistently reported and physiologically plausible migraine triggers. Even mild dehydration can reduce cerebral blood flow and alter osmotic balance, lowering the attack threshold in susceptible individuals."
+      },
+      {
+        "id": "mthfr",
+        "name": "MTHFR / methylation variants",
+        "relationship": "mechanistic_link",
+        "explanation": "MTHFR polymorphisms that impair folate metabolism and raise homocysteine levels have been associated with migraine with aura specifically. Elevated homocysteine may affect nitric oxide metabolism and endothelial function. High-dose riboflavin and methylfolate supplementation are sometimes used in people with these variants."
+      },
+      {
+        "id": "mitochondrial",
+        "name": "Mitochondrial dysfunction",
+        "relationship": "mechanistic_link",
+        "explanation": "Evidence suggests that impaired mitochondrial energy metabolism may contribute to cortical spreading depression and migraine susceptibility. This is supported by the therapeutic response some people have to mitochondrial-supportive supplements such as CoQ10 and riboflavin."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Triptans (acute treatment)",
+          "category": "medication",
+          "description": "Serotonin (5-HT1B/1D) receptor agonists that constrict dilated cranial blood vessels and block trigeminal pain signalling. Most effective when taken early in an attack, before allodynia develops. Available as tablets, nasal sprays, and subcutaneous injections. Seven triptans are available; individuals may respond differently to different agents.",
+          "evidence_level": "strong",
+          "notes": "Contraindicated in hemiplegic migraine, in people with cardiovascular disease, uncontrolled hypertension, or history of stroke. Using triptans more than 10 days/month risks medication overuse headache. Nasal sprays and injections act faster and bypass nausea-related absorption issues."
+        },
+        {
+          "name": "Gepants (acute and preventive treatment)",
+          "category": "medication",
+          "description": "CGRP receptor antagonists available for acute treatment (ubrogepant, rimegepant) and preventive treatment (atogepant, rimegepant). Unlike triptans, gepants do not cause vasoconstriction, making them suitable for people with cardiovascular contraindications to triptans. Rimegepant taken every other day has shown preventive benefit.",
+          "evidence_level": "strong",
+          "notes": "Gepants carry a lower risk of medication overuse headache than triptans or NSAIDs, though caution is still warranted with frequent use. Currently more expensive and availability varies by country."
+        },
+        {
+          "name": "CGRP monoclonal antibodies (preventive treatment)",
+          "category": "medication",
+          "description": "Monthly or quarterly injectable preventives (erenumab, fremanezumab, galcanezumab) or intravenous infusion (eptinezumab) targeting the CGRP pathway. Represent the first migraine-specific preventive class and are significantly more effective and better tolerated than older preventives for many people. Typically considered after 2\u20133 prior preventives have failed.",
+          "evidence_level": "strong",
+          "notes": "Self-administered subcutaneous injections. Some people achieve complete or near-complete remission. Constipation is the main notable side effect with erenumab. Access may be limited by cost and insurance approval criteria."
+        },
+        {
+          "name": "Traditional preventive medications",
+          "category": "medication",
+          "description": "Includes beta-blockers (propranolol, metoprolol), tricyclic antidepressants (amitriptyline, nortriptyline), anticonvulsants (topiramate, valproate), and calcium channel blockers (flunarizine). These are first-line preventives in most healthcare systems due to cost and availability, though side effect profiles limit tolerability for many people.",
+          "evidence_level": "strong",
+          "notes": "Topiramate causes cognitive side effects ('dopamax') significant enough to discontinue in many people. Valproate is contraindicated in pregnancy. Individual response is highly variable. A 2\u20133 month adequate trial is typically needed before concluding a preventive is ineffective."
+        },
+        {
+          "name": "OnabotulinumtoxinA (Botox) injections",
+          "category": "medication",
+          "description": "FDA and NICE approved specifically for chronic migraine (15+ headache days/month). Given as a series of 31 injections around the head and neck every 12 weeks by a trained clinician. Thought to work by blocking release of pain neurotransmitters from peripheral trigeminal nerve endings.",
+          "evidence_level": "strong",
+          "notes": "Benefits accumulate over multiple treatment cycles \u2014 2\u20133 cycles are typically needed before full effect. Most effective for chronic migraine; not approved for episodic migraine. Available through headache clinics and neurology departments."
+        },
+        {
+          "name": "NSAIDs and simple analgesics (acute treatment)",
+          "category": "medication",
+          "description": "Naproxen sodium, ibuprofen, and aspirin (especially in combination with caffeine, e.g. Excedrin Migraine) can be effective for mild-to-moderate attacks. Indomethacin is particularly effective for certain migraine subtypes. Should be used as a backup to triptans for moderate-severe attacks.",
+          "evidence_level": "strong",
+          "notes": "Overuse risk: analgesics used more than 15 days/month can cause medication overuse headache. Long-term NSAID use carries GI and renal risks. Caffeine can help absorption but caffeine withdrawal can itself trigger migraine."
+        },
+        {
+          "name": "Sleep regularity",
+          "category": "lifestyle",
+          "description": "Maintaining consistent sleep and wake times every day, including weekends, is one of the highest-impact lifestyle changes for many people with migraine. Both insufficient sleep and excessive sleep are common triggers. Addressing underlying insomnia is important.",
+          "evidence_level": "strong",
+          "notes": "The 'weekend migraine' pattern \u2014 attacks on Saturday or Sunday morning \u2014 is often due to sleeping in. Gradual, incremental changes to sleep timing are more sustainable than abrupt shifts."
+        },
+        {
+          "name": "Regular meals and stable blood sugar",
+          "category": "lifestyle",
+          "description": "Skipping meals or prolonged fasting causes blood sugar drops that are well-established migraine triggers. Eating regular, balanced meals every 4\u20135 hours helps maintain metabolic stability. Reactive hypoglycaemia can mimic prodrome symptoms.",
+          "evidence_level": "strong",
+          "notes": "Helpful to keep a small, easily digestible snack available for situations where meals may be delayed. Some people find low-carbohydrate or ketogenic diets helpful, though evidence is preliminary and individual responses vary."
+        },
+        {
+          "name": "Consistent hydration",
+          "category": "lifestyle",
+          "description": "Maintaining adequate daily fluid intake, with attention to increased needs in heat, exercise, or illness. Dehydration is a modifiable trigger that is often overlooked.",
+          "evidence_level": "moderate",
+          "notes": "Starting an attack with oral rehydration fluids (electrolyte solutions rather than plain water) may be more effective. Hydration alone rarely eliminates attacks but can reduce frequency in dehydration-susceptible individuals."
+        },
+        {
+          "name": "Riboflavin (Vitamin B2) supplementation",
+          "category": "supplement",
+          "description": "High-dose riboflavin (400mg/day) has been shown in multiple trials to reduce migraine frequency by approximately 50% in some individuals. Supports mitochondrial energy production (oxidative phosphorylation), addressing a proposed metabolic basis for migraine susceptibility.",
+          "evidence_level": "moderate",
+          "notes": "Very safe, low cost, urine turns bright yellow (harmless). Effects take 2\u20133 months to appear. More effective in some people than others \u2014 possibly those with mitochondrial energy deficits or MTHFR variants. Available over the counter."
+        },
+        {
+          "name": "Coenzyme Q10 (CoQ10) supplementation",
+          "category": "supplement",
+          "description": "300\u2013400mg/day CoQ10 has shown preventive effects in several trials, reducing attack frequency. Like riboflavin, it supports mitochondrial function. Some studies show elevated CoQ10 deficiency in children and adults with migraine.",
+          "evidence_level": "moderate",
+          "notes": "Well tolerated. Ubiquinol form may have better absorption than ubiquinone. Takes 3 months to adequately assess effect. Can be used alongside riboflavin and magnesium."
+        },
+        {
+          "name": "Magnesium supplementation",
+          "category": "supplement",
+          "description": "Magnesium deficiency has been identified in a subset of people with migraine, and magnesium plays a role in NMDA receptor function and cortical spreading depression. Oral magnesium glycinate or citrate (300\u2013600mg elemental magnesium daily) is recommended by multiple headache societies as a safe preventive option.",
+          "evidence_level": "moderate",
+          "notes": "Magnesium oxide has poor bioavailability and causes diarrhoea. Glycinate or citrate forms are better tolerated. IV magnesium sulphate in emergency settings can abort acute attacks. Low serum magnesium may not reflect intracellular deficiency \u2014 red blood cell magnesium testing is more sensitive."
+        },
+        {
+          "name": "Biofeedback and neurofeedback",
+          "category": "behavioural / neurological",
+          "description": "Biofeedback (particularly thermal and EMG biofeedback) has strong evidence for migraine prevention, with effect sizes comparable to first-line medications. Neurofeedback is more emerging. Both approaches help individuals recognise and regulate physiological states that precede attacks.",
+          "evidence_level": "strong",
+          "notes": "Requires access to a trained practitioner and multiple sessions. Less available and often not covered by insurance, but durability of effects may be superior to medication. Particularly valuable for those wanting non-pharmacological options or in pregnancy."
+        },
+        {
+          "name": "Cognitive Behavioural Therapy (CBT)",
+          "category": "psychological",
+          "description": "CBT addresses the psychological components of chronic migraine \u2014 including pain catastrophising, avoidance behaviours, fear of attacks, and the bidirectional relationship between migraine and anxiety/depression. Strong evidence for reducing headache frequency and improving function.",
+          "evidence_level": "strong",
+          "notes": "Most effective when delivered by a therapist with pain psychology training. Telehealth options have expanded access. Particularly important for people with chronic migraine and significant disability."
+        },
+        {
+          "name": "Stress management and relaxation training",
+          "category": "lifestyle / psychological",
+          "description": "Stress is among the most consistently reported migraine triggers. Paradoxically, the 'let-down' after intense stress (weekend, post-deadline) is also a trigger. Progressive muscle relaxation, diaphragmatic breathing, and mindfulness-based approaches can reduce attack frequency.",
+          "evidence_level": "moderate",
+          "notes": "Regular practice matters more than intensity. The goal is sustained reduction of baseline nervous system arousal, not emergency relaxation during an attack."
+        },
+        {
+          "name": "Aerobic exercise",
+          "category": "lifestyle",
+          "description": "Regular moderate aerobic exercise (150 minutes/week) has preventive effects comparable to some medications in several trials. Releases endorphins, reduces cortisol, and improves sleep. Starting exercise during an attack can worsen it, but regular exercise between attacks is preventive.",
+          "evidence_level": "moderate",
+          "notes": "Dehydration and exertion-induced vasodilation can trigger attacks, particularly during the first few weeks of starting a new exercise programme. Gradual ramping up with attention to hydration and electrolytes is advised."
+        },
+        {
+          "name": "Neuromodulation devices",
+          "category": "device",
+          "description": "Several non-invasive neuromodulation devices are FDA-cleared for migraine: transcutaneous supraorbital nerve stimulation (Cefaly), single-pulse transcranial magnetic stimulation (SpringTMS/sTMS), vagus nerve stimulation (gammaCore), and remote electrical neuromodulation (Nerivio). These offer non-pharmacological acute and preventive options.",
+          "evidence_level": "moderate",
+          "notes": "Cost and access vary significantly. Most appropriate for people wanting to minimise medication load, those with contraindications to medications, or those with incomplete response to standard treatments. Evidence strength varies by device."
+        },
+        {
+          "name": "Trigger identification and management",
+          "category": "lifestyle",
+          "description": "Systematically identifying personal triggers through diary tracking, then making targeted adjustments. Common modifiable triggers include irregular sleep, skipped meals, dehydration, excessive caffeine or caffeine withdrawal, alcohol, strong sensory stimuli, and known dietary triggers.",
+          "evidence_level": "moderate",
+          "notes": "Triggers are additive and individual. Overly restrictive trigger avoidance can increase sensitivity and anxiety. The goal is managing trigger load, not eliminating all possible triggers from life. Working with a headache specialist or psychologist helps strike the right balance."
+        }
+      ],
+      "things_to_avoid": [
+        "Using acute medications (triptans, analgesics, NSAIDs) more than 10\u201315 days per month \u2014 this leads to medication overuse headache (MOH), a cycle where the medication itself perpetuates daily or near-daily headache",
+        "Irregular sleep schedules, including sleeping in on weekends \u2014 'weekend migraine' is a direct consequence of this common pattern",
+        "Skipping meals or prolonged fasting \u2014 blood glucose drops are a potent and entirely avoidable trigger",
+        "Excess caffeine intake or abrupt caffeine withdrawal \u2014 both can trigger attacks; if reducing caffeine, doing so gradually over weeks",
+        "Opioid medications for routine migraine management \u2014 opioids are particularly prone to causing MOH, are less effective than triptans for migraine specifically, and increase the risk of chronification",
+        "Diagnosing and treating as 'sinus headache' without confirming a genuine sinus cause \u2014 the vast majority are migraine with autonomic features, and sinus treatments will be ineffective",
+        "Delaying acute treatment \u2014 waiting until pain becomes severe substantially reduces the effectiveness of triptans and allows allodynia (central sensitisation) to develop, making the attack harder to treat",
+        "Ignoring or dismissing the postdrome phase \u2014 pushing through postdrome with cognitive demands or physical activity can extend recovery and trigger a new attack",
+        "Over-restricting dietary triggers without professional guidance \u2014 leads to nutritional imbalances, increased food anxiety, and often does not meaningfully reduce attack frequency without a systematic approach"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "Medication overuse headache is extremely common and is often the primary reason episodic migraine has become chronic \u2014 and the people most at risk are those who are trying hardest to treat their pain.",
+        "why_resisted": "It feels counterintuitive and unfair that the medications prescribed to relieve pain can cause more headache. People in daily pain rely on acute medications to function, and being told to take less medication when in pain feels impossible. Healthcare providers also often fail to explain this risk clearly.",
+        "path_forward": "People who successfully identify MOH and complete a supervised withdrawal \u2014 usually 4\u201312 weeks \u2014 often experience a dramatic reduction in headache days, returning to an episodic pattern. This almost always requires support from a headache neurologist or specialist to manage the transition safely and introduce effective preventives simultaneously."
+      },
+      {
+        "truth": "Most people with frequent migraine are not on any preventive treatment, and most who are trialled one preventive and stopped after experiencing side effects \u2014 never knowing that other options exist or that the newer CGRP-targeted therapies are substantially better tolerated.",
+        "why_resisted": "Preventive treatment requires consistent daily medication with a 2\u20133 month lag before benefit, during which attacks continue. The older preventives (topiramate, amitriptyline) have burdensome side effects that lead many people to discontinue. After one or two failed trials, people and their doctors often give up on prevention.",
+        "path_forward": "Individuals who persist through trials of multiple preventive options \u2014 or who access CGRP monoclonal antibodies after two prior preventive failures \u2014 often achieve 50\u201380% reductions in monthly migraine days. Reaching this point typically requires a neurologist or headache specialist, not a general practitioner."
+      },
+      {
+        "truth": "Lifestyle factors \u2014 particularly sleep regularity, meal timing, and stress management \u2014 have a measurable impact on migraine frequency that is often equal to or greater than medication, and most people have not fully implemented them.",
+        "why_resisted": "Lifestyle advice can feel dismissive to people in significant pain, as if they are being blamed for their condition. The changes required (consistent bedtimes, never skipping meals, daily stress practices) also require ongoing effort without the immediate reward that acute medication provides.",
+        "path_forward": "People who systematically implement sleep regularity, regular meals, consistent hydration, and a sustainable exercise routine alongside their acute and preventive medications typically report meaningfully fewer attacks, shorter durations, and reduced severity within 2\u20133 months. The cumulative effect of consistent lifestyle changes often outperforms any single medication."
+      },
+      {
+        "truth": "Migraine is a condition of the brain's threshold \u2014 not just a series of individual attacks to be treated in isolation \u2014 and without addressing the underlying threshold (through prevention), acute treatments become progressively less effective.",
+        "why_resisted": "The acute pain of a migraine attack demands immediate relief, making it natural to focus on acute management. The concept of a 'brain threshold' is abstract and the benefits of preventive treatment are delayed and probabilistic rather than immediate and certain.",
+        "path_forward": "People who shift their primary management focus from acute to preventive \u2014 tracking attack frequency, working with a specialist on a preventive regimen, and using acute treatments judiciously within monthly limits \u2014 consistently report the best long-term outcomes. The goal is fewer attacks to treat, not better tools to fight each attack."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Consistent preventive treatment with adequate duration and appropriate agent",
+          "why_it_matters": "Most people with frequent migraine (6+ days/month) require preventive treatment to achieve meaningful improvement. Acute-only management leads to treatment escalation, MOH, and chronification. A single failed preventive trial does not mean prevention doesn't work.",
+          "how_to_start": "Request a referral to a neurologist or dedicated headache clinic. Bring a completed 2\u20134 week headache diary to the first appointment. Ask specifically about CGRP-targeted options if older preventives have been trialled and failed.",
+          "timeline": "2\u20133 months per preventive trial to assess effectiveness. CGRP monoclonal antibodies often show benefit within the first month.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Sleep consistency \u2014 fixed wake time seven days a week",
+          "why_it_matters": "Sleep is the single most controllable and consistently reported migraine trigger. The circadian rhythm drives hypothalamic regulation, which directly affects migraine threshold. A fixed wake time \u2014 even on weekends \u2014 anchors the circadian clock more reliably than a fixed bedtime.",
+          "how_to_start": "Choose a realistic consistent wake time. Set a single alarm and commit to it for 4 weeks. Track attack frequency before and after. Do not lie in even after a bad night or an attack.",
+          "timeline": "Improvements in attack frequency often visible within 4\u20136 weeks.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Headache diary with consistent tracking",
+          "why_it_matters": "People who track their attacks identify patterns and triggers that are invisible to them in retrospect. The diary also provides the data needed for accurate diagnosis, medication decision-making, and assessing preventive treatment success.",
+          "how_to_start": "Download a dedicated app (Migraine Buddy is the most feature-complete; N1-Headache is more clinically validated) or start a simple paper log. Track: date, time of onset, duration, pain score, associated symptoms, potential triggers, and medications taken.",
+          "timeline": "Meaningful patterns typically emerge after 4\u20138 weeks of consistent tracking.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Addressing medication overuse if present",
+          "why_it_matters": "Medication overuse headache may be the primary driver of chronification in a significant proportion of people with frequent headache. Reversing MOH almost always results in substantial reduction in headache days \u2014 often more dramatic than any added medication.",
+          "how_to_start": "Count acute medication days per month using the headache diary. If triptans are used >10 days/month or analgesics >15 days/month, discuss MOH with a headache specialist. Supervised withdrawal is safer and more successful than attempting it alone.",
+          "timeline": "Withdrawal period typically 4\u201312 weeks. Improvement often begins within weeks of completing withdrawal.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Supplementation with riboflavin, magnesium, and CoQ10",
+          "why_it_matters": "These three supplements have the strongest evidence base for preventive effect and are recommended in multiple international headache society guidelines. They are safe, low-cost, and can be started independently. Their combined impact may be additive.",
+          "how_to_start": "Start riboflavin 400mg/day (any B2 supplement), magnesium glycinate or citrate 300\u2013400mg elemental magnesium per day, and CoQ10 (ubiquinol form) 300mg/day. Track attacks for 3 months to assess response.",
+          "timeline": "3 months minimum to assess preventive benefit for all three.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Stress regulation through a sustainable daily practice",
+          "why_it_matters": "Chronic stress sustains sympathetic nervous system activation and HPA axis overload, both of which lower the migraine threshold. The 'let-down' phenomenon (attacks on the first day of holiday, weekend, or after a deadline) is a distinct stress-related trigger requiring its own management strategy.",
+          "how_to_start": "Choose one practice sustainable daily: progressive muscle relaxation (15 minutes/day, available via free audio guides), diaphragmatic breathing practice, or a formal mindfulness programme. Consistency matters more than duration. A psychologist trained in pain management or headache CBT can provide structured guidance.",
+          "timeline": "Stress reduction effects on migraine typically emerge after 6\u20138 weeks of consistent practice.",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Trialling a preventive medication for only 4\u20136 weeks and concluding it 'doesn't work' \u2014 most preventives require 8\u201312 weeks at adequate dose to show full effect",
+        "Focusing exclusively on acute treatment (taking the right pill fast enough) while ignoring preventive options \u2014 this approach inevitably leads to more frequent attacks over time",
+        "Treating every prodrome with acute medication, accelerating the path to MOH and potentially aborting attacks that might not have fully developed",
+        "Eliminating too many dietary triggers at once and then being unable to identify which changes made a difference \u2014 systematic, one-at-a-time elimination is far more informative",
+        "Assuming that because one triptan or one preventive didn't work, the whole class is ineffective \u2014 significant individual variation exists within both triptan and preventive categories",
+        "Waiting for a 'perfect' stress management or sleep solution before starting \u2014 small consistent changes compound significantly; perfectionism is itself a migraine risk factor",
+        "Not monitoring and capping acute medication days \u2014 without a daily diary, medication overuse develops gradually and invisibly",
+        "Seeking only a neurologist or GP and not engaging a headache psychologist, which leaves the psychological, behavioural, and biofeedback components \u2014 all with strong evidence \u2014 unaddressed"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Neurologist with headache subspecialty",
+          "role": "Provides accurate diagnosis, manages preventive treatment escalation including CGRP antibodies, administers Botox for chronic migraine, and manages complex or refractory cases.",
+          "notes": "Access to a dedicated headache neurologist (rather than a general neurologist) makes a significant difference. Headache medicine is a recognised subspecialty \u2014 look for a physician listed with the American Headache Society, British Association for the Study of Headache, or equivalent national body."
+        },
+        {
+          "type": "General practitioner / primary care physician",
+          "role": "First point of contact for diagnosis and initial acute and preventive management. Can prescribe triptans and first-line preventives, refer to neurology, and monitor for MOH.",
+          "notes": "GP knowledge of current migraine guidelines (including CGRP options and MOH) varies considerably. People who research their condition and arrive with a headache diary are better positioned to advocate for appropriate treatment."
+        },
+        {
+          "type": "Pain psychologist or headache psychologist",
+          "role": "Provides CBT, biofeedback, relaxation training, and psychological support for the disability, anticipatory anxiety, and behavioural components of chronic migraine.",
+          "notes": "Strongly underutilised component of migraine care. CBT and biofeedback have evidence levels comparable to preventive medications. Most effective when combined with pharmacological management."
+        },
+        {
+          "type": "Gynaecologist or reproductive endocrinologist",
+          "role": "For women whose migraine is clearly hormonally driven \u2014 particularly menstrual migraine, perimenopausal migraine, or those needing guidance on contraception and HRT choices that minimise migraine impact.",
+          "notes": "Combined oral contraceptives with oestrogen can worsen migraine with aura and carry cardiovascular risk. Progestogen-only contraception or non-hormonal methods are typically preferred. HRT decisions in perimenopause require careful discussion of oestrogen delivery method and stability of levels."
+        },
+        {
+          "type": "Otoneurologist or neuro-otologist",
+          "role": "For suspected vestibular migraine or when the differential diagnosis includes M\u00e9ni\u00e8re's disease or other vestibular disorders.",
+          "notes": "Vestibular migraine is frequently misdiagnosed for years. An otoneurologist or a neurologist with vestibular expertise is the appropriate specialist to navigate this diagnosis."
+        },
+        {
+          "type": "Functional medicine doctor or integrative neurologist",
+          "role": "Investigates root causes and contributing factors not routinely explored in standard care \u2014 including nutrient deficiencies, mitochondrial function, hormonal balance, gut-brain axis, MTHFR variants, and inflammatory burden.",
+          "notes": "Evidence quality varies for many integrative approaches. Most useful as a complement to, not replacement for, evidence-based headache care. Particularly valuable for people with multiple overlapping conditions or who have not responded to standard preventives."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/migraine",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/migraine/",
+          "notes": "Large, active community of people living with migraine sharing treatment experiences, medication comparisons (especially for CGRP antibodies), and practical strategies. Useful for understanding real-world experiences with specific treatments."
+        },
+        {
+          "name": "The Migraine Trust Forum",
+          "platform": "Forum (UK)",
+          "url": "https://www.migrainetrust.org/",
+          "notes": "UK charity with a patient forum, detailed evidence-based information, and helpline. Particularly strong on UK treatment access and NICE guidance."
+        },
+        {
+          "name": "American Migraine Foundation Patient Community",
+          "platform": "Website / community forum",
+          "url": "https://americanmigrainefoundation.org/",
+          "notes": "US-based foundation with extensive patient education resources, a 'Find a Doctor' tool for headache specialists, and community forums. Strong emphasis on evidence-based information."
+        },
+        {
+          "name": "Migraine Strong",
+          "platform": "Facebook Group / Website",
+          "url": "https://migrainestrong.com/",
+          "notes": "Community founded by people with chronic migraine, focused on practical management strategies, treatment updates, and peer support. Known for balanced, evidence-informed approach."
+        },
+        {
+          "name": "Miles for Migraine",
+          "platform": "Website / community events",
+          "url": "https://www.milesformigraine.org/",
+          "notes": "US-based patient advocacy organisation that runs community events connecting people with migraine to each other and to headache specialists. Valuable for finding specialist providers."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "The Migraine Brain: Your Breakthrough Guide to Fewer, Less Painful Attacks",
+        "type": "book",
+        "author_or_source": "Carolyn Bernstein, MD",
+        "url": null,
+        "description": "Written by a neurologist who has migraine herself. Accessible, comprehensive overview of the neuroscience, triggers, treatment options, and lifestyle strategies. Well suited to people who want to understand the 'why' behind their condition.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Heal Your Headache: The 1-2-3 Program for Taking Charge of Your Pain",
+        "type": "book",
+        "author_or_source": "David Buchholz, MD",
+        "url": null,
+        "description": "Presents a systematic framework for managing migraine through trigger reduction and preventive medication. The dietary trigger section is detailed and practical. Some of the medication recommendations are dated but the trigger framework remains clinically useful.",
+        "audience": "beginner"
+      },
+      {
+        "title": "American Migraine Foundation \u2014 Resource Library",
+        "type": "website",
+        "author_or_source": "American Migraine Foundation",
+        "url": "https://americanmigrainefoundation.org/resource-library/",
+        "description": "Comprehensive, evidence-based patient education library covering all aspects of migraine \u2014 types, treatments (including CGRP therapies), lifestyle management, comorbidities, and how to work with headache specialists. Regularly updated.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Heads Up \u2014 Podcast by the American Headache Society",
+        "type": "podcast",
+        "author_or_source": "American Headache Society",
+        "url": "https://americanheadachesociety.org/resources/heads-up-podcast/",
+        "description": "Interviews with headache specialists covering clinical topics including new therapies, comorbidities, special populations (pregnancy, menstrual migraine), and practical management. Pitched at an intermediate level accessible to engaged patients.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "My Migraine Life \u2014 Blog and Podcast",
+        "type": "podcast",
+        "author_or_source": "Sdera Haase",
+        "url": "https://www.mymigrainelife.com/",
+        "description": "Patient-led resource with interviews with headache specialists and other people with chronic migraine. Particularly useful for understanding the lived experience of navigating the healthcare system and accessing newer treatments.",
+        "audience": "beginner"
+      },
+      {
+        "title": "ICHD-3 Diagnostic Criteria for Migraine (full text)",
+        "type": "research paper",
+        "author_or_source": "International Headache Society",
+        "url": "https://ichd-3.org/1-migraine/",
+        "description": "The official diagnostic criteria for all migraine subtypes. Reading these criteria helps individuals understand exactly what clinicians are assessing for and how to communicate their symptoms accurately during consultations.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Calcitonin Gene-Related Peptide and Migraine \u2014 Review of the Science",
+        "type": "research paper",
+        "author_or_source": "Edvinsson et al., Nature Reviews Neurology",
+        "url": "https://www.nature.com/articles/s41582-018-0024-7",
+        "description": "Detailed scientific review of the CGRP pathway in migraine pathophysiology and the development of CGRP-targeted therapies. Appropriate for those wanting to understand the mechanism behind the newest generation of migraine treatments.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Migraine Buddy App",
+        "type": "website",
+        "author_or_source": "Healint",
+        "url": "https://migrainebuddy.com/",
+        "description": "The most widely used migraine tracking app. Captures detailed attack data including triggers, symptoms, medications, and pain levels. Generates reports useful for clinical appointments. Free core version is sufficient for most purposes.",
+        "audience": "beginner"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

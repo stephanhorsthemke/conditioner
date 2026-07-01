@@ -1,0 +1,655 @@
+{
+  "condition_id": "iron_deficiency",
+  "condition_name": "Iron deficiency",
+  "generated_at": "2026-07-01T11:58:42.019053Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Iron deficiency occurs when the body does not have enough iron to produce adequate haemoglobin \u2014 the protein in red blood cells that carries oxygen. Even before anaemia develops, low iron stores (measured as low ferritin) can cause significant fatigue, brain fog, hair loss, and reduced exercise tolerance. It is one of the most common nutritional deficiencies worldwide, yet it is frequently under-investigated: many clinicians treat the number rather than finding why iron is low in the first place.",
+    "detailed_summary": "Iron plays a central role in oxygen transport, energy metabolism, DNA synthesis, and neurotransmitter production. Deficiency progresses through stages: first iron stores (ferritin) are depleted, then transport iron (transferrin saturation) falls, and finally haemoglobin drops \u2014 producing frank iron deficiency anaemia. Many people experience significant symptoms at the ferritin-depletion stage, long before their full blood count becomes abnormal, which means standard screening often misses the problem entirely.\n\nCauses fall into three broad categories: insufficient intake (low dietary iron, restrictive diets, veganism), impaired absorption (coeliac disease, H. pylori infection, low stomach acid, post-bariatric surgery, inflammatory bowel disease), and increased losses or demand (heavy menstrual bleeding, GI blood loss, pregnancy, endurance sport). In practice, multiple factors often combine.\n\nA key issue in clinical management is that many practitioners prescribe iron supplements without investigating why stores are depleted \u2014 particularly in premenopausal women, where heavy periods are assumed as the default explanation. Hidden causes such as coeliac disease, inflammatory bowel disease, or GI polyps are missed as a result. Finding the root cause matters both for effective treatment and for ruling out serious pathology.\n\nIron supplementation is effective but frequently complicated by GI side effects. Newer low-dose, gentle formulations and intravenous iron have improved outcomes for those who cannot tolerate standard oral supplements. Dietary strategies and optimising cofactors (vitamin C, stomach acid) also play a role.",
+    "prevalence": {
+      "summary": "The most common nutritional deficiency globally, with a strong skew toward women of reproductive age.",
+      "estimate": "Affects approximately 25% of the global population in some form; iron deficiency anaemia affects around 1.2 billion people. In premenopausal women in high-income countries, estimates of iron deficiency (including pre-anaemic depletion) range from 15\u201330%.",
+      "notes": "Prevalence figures vary widely depending on whether 'iron deficiency' is defined by ferritin alone, by full iron studies, or by the presence of anaemia. Low ferritin without anaemia is far more common than the anaemia figures suggest, and may be systematically undercounted because it is not routinely tested. Children, pregnant women, endurance athletes, and people with GI conditions are disproportionately affected."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Iron deficiency without anaemia (low ferritin, normal haemoglobin)",
+        "description": "The earliest and most commonly missed stage, where iron stores are depleted but red blood cell production has not yet fallen. Symptoms can be severe despite a 'normal' full blood count.",
+        "distinguishing_features": [
+          "Ferritin below approximately 30\u201350 \u00b5g/L (lab reference ranges are often set too low to reflect clinical adequacy)",
+          "Normal haemoglobin and MCV",
+          "Often dismissed by clinicians who only check a full blood count",
+          "Fatigue, hair loss, and cognitive symptoms may precede anaemia by months or years"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Iron deficiency anaemia (IDA)",
+        "description": "The full clinical picture with depleted stores and reduced haemoglobin, typically showing microcytic (small), hypochromic (pale) red blood cells.",
+        "distinguishing_features": [
+          "Low haemoglobin (below 120 g/L in women, 130 g/L in men by WHO criteria)",
+          "Low MCV and MCH on full blood count",
+          "Low ferritin and transferrin saturation",
+          "More severe symptoms including breathlessness and palpitations on exertion"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Anaemia of chronic disease / inflammation (ACD)",
+        "description": "A pattern that mimics iron deficiency but is driven by chronic inflammation sequestering iron. Can coexist with true iron deficiency, making diagnosis complex.",
+        "distinguishing_features": [
+          "Ferritin may be normal or elevated despite functional iron shortage (ferritin is an acute-phase reactant)",
+          "Low transferrin saturation",
+          "Raised inflammatory markers (CRP, ESR)",
+          "Often associated with autoimmune disease, IBD, chronic infection, or cancer",
+          "Does not respond well to oral iron supplementation alone"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Iron deficiency in endurance athletes",
+        "description": "Athletes \u2014 particularly female runners \u2014 can deplete iron through foot-strike haemolysis, sweat losses, GI microbleeding, and high physiological demand.",
+        "distinguishing_features": [
+          "Declining performance and endurance before classic anaemia symptoms appear",
+          "Low ferritin often the first finding",
+          "Haematuria or dark urine in some cases",
+          "Dietary patterns (low meat intake, high phytate intake from training diets) may compound the problem"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Iron deficiency due to malabsorption",
+        "description": "Caused by impaired intestinal iron absorption rather than inadequate intake or blood loss. Commonly associated with coeliac disease, H. pylori, post-bariatric surgery, or atrophic gastritis.",
+        "distinguishing_features": [
+          "Iron deficiency that recurs or fails to respond adequately to oral supplementation",
+          "May present alongside other nutrient deficiencies (B12, folate, vitamin D)",
+          "No obvious source of blood loss",
+          "Requires investigation of the GI tract rather than just increasing iron dose"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Persistent fatigue and low energy, disproportionate to activity level",
+        "category": "energy",
+        "notes": "Often the dominant symptom. Can occur even with normal haemoglobin if ferritin is low, due to impaired mitochondrial function and enzyme activity."
+      },
+      {
+        "symptom": "Brain fog, difficulty concentrating, and poor memory",
+        "category": "neurological / cognitive",
+        "notes": "Iron is essential for dopamine synthesis and myelin production. Cognitive symptoms may be more pronounced than physical fatigue in some people."
+      },
+      {
+        "symptom": "Shortness of breath on exertion",
+        "category": "cardiovascular / respiratory",
+        "notes": "More prominent in iron deficiency anaemia than in pre-anaemic depletion. The body compensates by increasing heart rate."
+      },
+      {
+        "symptom": "Palpitations or awareness of heartbeat",
+        "category": "cardiovascular",
+        "notes": "The heart pumps faster to compensate for reduced oxygen-carrying capacity."
+      },
+      {
+        "symptom": "Diffuse hair loss or hair thinning",
+        "category": "skin / hair",
+        "notes": "Iron deficiency is one of the more reversible causes of telogen effluvium (diffuse shedding). Hair follicles are highly sensitive to iron availability."
+      },
+      {
+        "symptom": "Pale skin, conjunctiva, or nail beds",
+        "category": "skin",
+        "notes": "A clinical sign more apparent in darker anaemia; may be subtle in mild deficiency."
+      },
+      {
+        "symptom": "Cold hands and feet",
+        "category": "circulatory",
+        "notes": "Reduced oxygen delivery to peripheral tissues."
+      },
+      {
+        "symptom": "Restless legs syndrome (an urge to move the legs, especially at night)",
+        "category": "neurological / sleep",
+        "notes": "Iron deficiency is a well-established driver of restless legs syndrome. Serum ferritin below 50 \u00b5g/L is associated with worse RLS symptoms."
+      },
+      {
+        "symptom": "Poor exercise tolerance and reduced physical performance",
+        "category": "musculoskeletal / energy",
+        "notes": "Iron is required for mitochondrial function independent of oxygen transport. Athletes may notice this before anaemia appears."
+      },
+      {
+        "symptom": "Headaches",
+        "category": "neurological",
+        "notes": "May relate to reduced cerebral oxygenation or altered neurotransmitter availability."
+      },
+      {
+        "symptom": "Brittle or spoon-shaped nails (koilonychia)",
+        "category": "skin / nails",
+        "notes": "A classical clinical sign of iron deficiency, though less common in mild cases."
+      },
+      {
+        "symptom": "Cravings for non-food substances (pica) \u2014 especially ice, dirt, or clay",
+        "category": "behavioural / nutritional",
+        "notes": "Ice craving (pagophagia) is particularly associated with iron deficiency and often resolves with treatment."
+      },
+      {
+        "symptom": "Sore or inflamed tongue (glossitis) and mouth cracks at corners (angular cheilitis)",
+        "category": "oral / mucosal",
+        "notes": "Reflects impaired mucosal cell turnover. Can overlap with B12 deficiency."
+      },
+      {
+        "symptom": "Difficulty swallowing (dysphagia)",
+        "category": "gastrointestinal",
+        "notes": "In severe or longstanding cases, iron deficiency can be associated with oesophageal webs (Plummer-Vinson syndrome) \u2014 rare but worth noting."
+      },
+      {
+        "symptom": "Increased susceptibility to infections",
+        "category": "immune",
+        "notes": "Iron plays a role in immune cell function; deficiency may impair both innate and adaptive immunity."
+      },
+      {
+        "symptom": "Low mood, irritability, and anxiety",
+        "category": "mood / psychiatric",
+        "notes": "Iron is a cofactor in serotonin and dopamine synthesis. Mood disturbance can improve significantly with repletion."
+      },
+      {
+        "symptom": "Dizziness or lightheadedness",
+        "category": "cardiovascular / neurological",
+        "notes": "Related to reduced cerebral oxygen delivery, particularly on standing."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Low ferritin (below 30 \u00b5g/L is clearly deficient; many clinicians and researchers consider below 50\u201370 \u00b5g/L as functionally low, particularly in symptomatic individuals)",
+        "Low transferrin saturation (below 20%) alongside low ferritin indicates depleted iron stores with reduced transport iron",
+        "Low haemoglobin with low MCV and low MCH on full blood count \u2014 the classic microcytic hypochromic pattern of iron deficiency anaemia",
+        "Elevated TIBC (total iron-binding capacity) or elevated transferrin \u2014 the body upregulates iron transport proteins when stores are low",
+        "Normal or elevated ferritin with low transferrin saturation and elevated inflammatory markers \u2014 suggests anaemia of chronic disease, possibly coexisting with true iron deficiency",
+        "Recurrent or refractory iron deficiency without clear blood loss \u2014 should prompt investigation for malabsorption (coeliac serology, H. pylori testing, upper endoscopy)"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom and cycle diary",
+          "description": "Tracking fatigue, brain fog, hair shedding, and \u2014 for those who menstruate \u2014 menstrual flow volume (number of pads/tampons per day, presence of clots, duration) can help identify whether heavy periods may be driving iron losses and give a clinician concrete data to act on.",
+          "safety_notes": "Purely observational; no risk. However, heavy menstrual bleeding should be discussed with a gynaecologist \u2014 it often has treatable causes beyond simply taking more iron."
+        },
+        {
+          "name": "Dietary iron audit",
+          "description": "Reviewing weekly intake of haem iron sources (red meat, organ meat, shellfish) and non-haem sources (legumes, leafy greens, fortified foods), as well as inhibitors (tea, coffee, calcium with meals) and enhancers (vitamin C with meals) can reveal whether intake is plausibly adequate.",
+          "safety_notes": "A dietary audit is most useful as a starting point for conversation with a dietitian. Self-diagnosis of 'dietary iron deficiency' should not delay investigation of absorption or blood loss causes."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Serum ferritin",
+          "type": "gold_standard",
+          "description": "The primary marker of iron stores. A low ferritin is highly specific for iron deficiency. However, ferritin is an acute-phase reactant and can be falsely normal or elevated in the presence of inflammation, infection, liver disease, or metabolic syndrome \u2014 meaning iron deficiency can be masked. Interpretation should always be in clinical context.",
+          "availability": "Widely available via GP, private blood testing services, or direct-to-consumer labs. Often needs to be specifically requested alongside a full blood count."
+        },
+        {
+          "name": "Full blood count (FBC / CBC)",
+          "type": "standard",
+          "description": "Measures haemoglobin, MCV (mean cell volume), MCH (mean cell haemoglobin), and red cell distribution width (RDW). Iron deficiency anaemia produces a characteristic low MCV, low MCH, and elevated RDW. A normal FBC does NOT exclude iron deficiency \u2014 it only excludes iron deficiency anaemia.",
+          "availability": "Universally available via primary care. Almost always the first test ordered."
+        },
+        {
+          "name": "Serum iron, TIBC, and transferrin saturation",
+          "type": "standard",
+          "description": "Together with ferritin, these form the 'iron panel' or 'iron studies'. Low serum iron plus elevated TIBC plus low transferrin saturation (below 20%) confirms iron deficiency. These markers can fluctuate with time of day and recent meals \u2014 morning fasting samples are most reliable.",
+          "availability": "Available via GP or private labs. Sometimes ordered as a panel; sometimes individual tests must be requested."
+        },
+        {
+          "name": "Soluble transferrin receptor (sTfR)",
+          "type": "standard",
+          "description": "Elevated sTfR indicates iron-deficient erythropoiesis (the bone marrow is not getting enough iron to make red cells). Unlike ferritin, sTfR is not elevated by inflammation, making it useful for distinguishing true iron deficiency from anaemia of chronic disease. The sTfR/log ferritin index can be particularly informative.",
+          "availability": "Available in many hospital labs and private laboratories; may need to be specifically requested."
+        },
+        {
+          "name": "Reticulocyte haemoglobin content (CHr / RetHe)",
+          "type": "emerging",
+          "description": "Measures the haemoglobin content of newly produced red cells. A low value indicates functional iron deficiency \u2014 the bone marrow is not receiving enough iron right now. Particularly useful in complex cases such as anaemia of chronic disease with concurrent iron deficiency.",
+          "availability": "Available on advanced haematology analysers; not universally offered by all labs. Worth requesting in complex or refractory cases."
+        },
+        {
+          "name": "Coeliac serology (IgA anti-tissue transglutaminase, IgA)",
+          "type": "standard",
+          "description": "Coeliac disease is one of the most common and most frequently overlooked causes of iron deficiency anaemia in adults, particularly women. Testing should include total IgA to detect IgA deficiency, which would cause a false negative tTG result.",
+          "availability": "Available via GP. Guidelines in many countries recommend coeliac testing in unexplained iron deficiency anaemia."
+        },
+        {
+          "name": "H. pylori testing (stool antigen or urea breath test)",
+          "type": "standard",
+          "description": "H. pylori infection reduces gastric acid secretion and can directly impair iron absorption in the stomach. It is a recognised, often overlooked cause of iron deficiency that recurs despite supplementation.",
+          "availability": "Stool antigen tests and urea breath tests are widely available. Serology is less reliable and not preferred for active infection."
+        },
+        {
+          "name": "Upper and/or lower GI endoscopy",
+          "type": "gold_standard",
+          "description": "In people without an obvious cause (no heavy periods, no dietary deficiency), GI endoscopy is recommended to investigate occult blood loss \u2014 from oesophagitis, gastric ulcers, polyps, angiodysplasia, or colorectal cancer. Upper endoscopy also directly visualises the duodenum for signs of coeliac disease or atrophic gastritis.",
+          "availability": "Requires specialist referral (gastroenterologist). Recommended in all postmenopausal women and men with iron deficiency anaemia, and in any age group where malabsorption or occult GI bleeding is suspected."
+        },
+        {
+          "name": "Faecal immunochemical test (FIT) / faecal occult blood test (FOBT)",
+          "type": "standard",
+          "description": "A non-invasive stool test to detect hidden blood in the GI tract. A positive result warrants colonoscopy. Used as a screening or triage tool rather than a definitive investigation.",
+          "availability": "Available via GP; also offered in some national colorectal cancer screening programmes."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "coeliac",
+        "name": "Coeliac disease",
+        "relationship": "upstream",
+        "explanation": "Coeliac disease damages the duodenum \u2014 the primary site of iron absorption \u2014 and is one of the most common causes of unexplained or recurrent iron deficiency anaemia in adults. Iron deficiency is sometimes the only presenting feature of coeliac disease."
+      },
+      {
+        "id": "hpylori",
+        "name": "H. pylori infection",
+        "relationship": "upstream",
+        "explanation": "H. pylori reduces gastric acid and directly competes for or impairs iron absorption. Eradicating the infection can improve iron status even without supplementation."
+      },
+      {
+        "id": "ibd_remission",
+        "name": "IBD (Crohn's disease / ulcerative colitis)",
+        "relationship": "upstream",
+        "explanation": "IBD causes iron deficiency through GI blood loss, chronic inflammation (which sequesters iron), and malabsorption. Iron deficiency is the most common extra-intestinal manifestation of IBD."
+      },
+      {
+        "id": "b12_deficiency",
+        "name": "Vitamin B12 deficiency",
+        "relationship": "comorbid",
+        "explanation": "B12 deficiency and iron deficiency share several upstream causes \u2014 coeliac disease, atrophic gastritis, H. pylori, vegan diet, malabsorption syndromes. They frequently coexist, and concurrent deficiency can produce a mixed anaemia picture that is diagnostically confusing (normal MCV masking both deficiencies)."
+      },
+      {
+        "id": "vitamin_d_deficiency",
+        "name": "Vitamin D deficiency",
+        "relationship": "comorbid",
+        "explanation": "Both deficiencies are common in people with malabsorptive conditions (coeliac disease, IBD, bariatric surgery) and in those with poor dietary diversity. Finding one should prompt investigation of the other."
+      },
+      {
+        "id": "endometriosis",
+        "name": "Endometriosis",
+        "relationship": "upstream",
+        "explanation": "Endometriosis commonly causes heavy menstrual bleeding, which is a leading cause of iron deficiency in women of reproductive age. Treating the underlying endometriosis often reduces iron losses."
+      },
+      {
+        "id": "hormonal",
+        "name": "Hormonal / menstrual cycle effects",
+        "relationship": "upstream",
+        "explanation": "Heavy menstrual bleeding (HMB), often driven by hormonal imbalance, fibroids, or adenomyosis, is the single most common cause of iron deficiency in premenopausal women. Addressing the underlying hormonal driver \u2014 not just supplementing iron \u2014 is the sustainable solution."
+      },
+      {
+        "id": "hypothyroidism",
+        "name": "Hypothyroidism",
+        "relationship": "comorbid",
+        "explanation": "Hypothyroidism can impair iron absorption, reduce gastric acid, and worsen heavy periods \u2014 contributing to iron deficiency through multiple mechanisms. Conversely, iron deficiency impairs thyroid hormone synthesis. Both conditions are common in women and are frequently found together."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "Iron deficiency \u2014 particularly low ferritin \u2014 can worsen orthostatic intolerance and is commonly found in people with POTS. Addressing iron stores is often recommended as part of POTS management."
+      },
+      {
+        "id": "me_cfs",
+        "name": "ME / CFS",
+        "relationship": "comorbid",
+        "explanation": "Iron deficiency and ME/CFS share overlapping symptoms (fatigue, cognitive impairment, post-exertional worsening). Iron deficiency should be ruled out in any fatigue presentation, and may coexist with or worsen ME/CFS."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "mechanistic_link",
+        "explanation": "Iron is a cofactor in serotonin and GABA synthesis. Low iron may amplify anxiety symptoms, and palpitations or breathlessness from iron deficiency can be misattributed to anxiety disorder."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor sleep / insomnia",
+        "relationship": "mechanistic_link",
+        "explanation": "Iron deficiency drives restless legs syndrome, which is a significant cause of sleep disruption. Low ferritin is strongly associated with RLS severity."
+      },
+      {
+        "id": "adhd",
+        "name": "ADHD",
+        "relationship": "mechanistic_link",
+        "explanation": "Iron deficiency has been associated with ADHD in children and adults. Iron is required for dopamine synthesis and dopamine receptor function, which are central to ADHD neurobiology. Low ferritin has been found in a subset of people with ADHD."
+      },
+      {
+        "id": "leaky_gut",
+        "name": "Leaky gut / intestinal permeability",
+        "relationship": "mechanistic_link",
+        "explanation": "Increased intestinal permeability associated with conditions like coeliac disease or IBD can impair iron absorption and increase inflammatory signalling that sequesters iron."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "mechanistic_link",
+        "explanation": "Iron deficiency impairs synthesis of serotonin and dopamine. Fatigue and cognitive symptoms of iron deficiency can overlap significantly with depression, and both conditions may coexist."
+      },
+      {
+        "id": "parasite",
+        "name": "Parasitic infection",
+        "relationship": "upstream",
+        "explanation": "Hookworm and other intestinal parasites are a major global cause of iron deficiency through GI blood loss and mucosal damage. Should be considered in people with unexplained deficiency who have lived in or travelled to endemic regions."
+      },
+      {
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "upstream",
+        "explanation": "SIBO can impair iron absorption through mucosal inflammation and competition for nutrients, and may itself be a downstream consequence of conditions (such as low stomach acid) that also impair iron absorption."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / HSD",
+        "relationship": "comorbid",
+        "explanation": "People with hypermobile EDS have higher rates of GI dysmotility, mast cell activation, and heavy menstrual bleeding \u2014 all of which increase the risk of iron deficiency. Iron deficiency can also worsen POTS, which is frequently comorbid with hEDS."
+      },
+      {
+        "id": "mthfr",
+        "name": "MTHFR / methylation variants",
+        "relationship": "comorbid",
+        "explanation": "MTHFR variants affect folate metabolism and can coexist with iron deficiency in people with nutritional deficiencies or malabsorption. A mixed anaemia (iron + folate/B12 deficiency) may present with a normal or near-normal MCV."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Oral iron supplementation",
+          "category": "supplement / medication",
+          "description": "Ferrous salts (ferrous sulfate, ferrous fumarate, ferrous gluconate) are the most commonly prescribed forms. Lower doses (e.g. 25\u201360 mg elemental iron every other day) may be as effective as high doses for some people and cause significantly fewer GI side effects \u2014 a finding supported by research showing that hepcidin (the iron-regulatory hormone) is lower on alternate days, allowing better absorption.",
+          "evidence_level": "strong",
+          "notes": "High-dose daily iron supplementation (325 mg ferrous sulfate three times daily) is poorly tolerated by many people and is no longer considered necessary for most. Ferric iron forms (e.g. ferric maltol) are better tolerated in people with GI conditions. Liquid iron preparations may suit those with swallowing difficulties. Taking iron with vitamin C enhances absorption. Taking it away from coffee, tea, calcium, and antacids reduces inhibition."
+        },
+        {
+          "name": "Intravenous (IV) iron infusion",
+          "category": "medication",
+          "description": "IV iron (ferric carboxymaltose, iron sucrose, ferric derisomaltose) rapidly replenishes iron stores, bypassing GI absorption entirely. Appropriate for people who cannot tolerate oral iron, have malabsorption conditions, are severely depleted, or need rapid repletion (e.g. pre-surgery, during pregnancy).",
+          "evidence_level": "strong",
+          "notes": "Modern IV iron preparations are generally well-tolerated. A small risk of hypersensitivity reactions means infusions should be given in a clinical setting with monitoring. May need to be accessed via haematology or specialist clinics; some private infusion services also offer this."
+        },
+        {
+          "name": "Dietary iron optimisation",
+          "category": "diet",
+          "description": "Increasing haem iron sources (red meat, liver, shellfish \u2014 particularly clams and oysters) and non-haem sources (lentils, tofu, pumpkin seeds, fortified cereals), while pairing non-haem iron with vitamin C and separating iron-rich meals from tea, coffee, and calcium by at least one hour.",
+          "evidence_level": "moderate",
+          "notes": "Diet alone is unlikely to correct established iron deficiency quickly, but is important for preventing relapse once stores are replenished. Vegans and vegetarians need to be particularly strategic about iron sources, enhancers, and inhibitors."
+        },
+        {
+          "name": "Vitamin C with iron-containing meals",
+          "category": "supplement / diet",
+          "description": "Vitamin C (ascorbic acid) reduces dietary non-haem iron from the ferric to the more absorbable ferrous form, and chelates iron to keep it soluble in the small intestine. A glass of orange juice or 250 mg vitamin C supplement taken with a meal can meaningfully increase iron absorption.",
+          "evidence_level": "strong",
+          "notes": "Most effective for non-haem iron. Less impact on haem iron from meat. Particularly useful for vegans and vegetarians."
+        },
+        {
+          "name": "Treating the underlying cause",
+          "category": "medical investigation / treatment",
+          "description": "Addressing the root driver of iron deficiency \u2014 whether that is coeliac disease (gluten-free diet), H. pylori (eradication therapy), heavy menstrual bleeding (hormonal treatment or surgery), or GI blood loss (endoscopy and appropriate treatment) \u2014 is essential for sustained improvement. Without this, iron stores will deplete again.",
+          "evidence_level": "strong",
+          "notes": "This is the most important intervention and the one most commonly skipped by clinicians who default to prescribing iron without investigating why it is low. People with recurrent iron deficiency despite supplementation should advocate strongly for a thorough investigation."
+        },
+        {
+          "name": "Managing heavy menstrual bleeding",
+          "category": "medical treatment / lifestyle",
+          "description": "Hormonal treatments (combined pill, progestogen-only pill, levonorgestrel IUD / Mirena), tranexamic acid, and NSAIDs can substantially reduce menstrual blood loss. A levonorgestrel IUD can reduce blood loss by up to 90% in some studies. Treating underlying causes (fibroids, adenomyosis, endometriosis) may also be indicated.",
+          "evidence_level": "strong",
+          "notes": "Often the single most impactful intervention for premenopausal women with iron deficiency. Requires referral to a gynaecologist for assessment and management."
+        },
+        {
+          "name": "Optimising stomach acid",
+          "category": "supplement / lifestyle",
+          "description": "Iron is most efficiently absorbed in an acidic environment. People taking proton pump inhibitors (PPIs) or H2 blockers long-term may have impaired iron absorption. Taking iron on an empty stomach (which increases gastric acid) or reviewing the necessity of acid-suppressing medication with a clinician may help.",
+          "evidence_level": "moderate",
+          "notes": "Do not stop prescribed medications without medical advice. This is an area to discuss with the prescribing clinician, not act on unilaterally."
+        }
+      ],
+      "things_to_avoid": [
+        "Taking iron supplements with tea or coffee \u2014 tannins and polyphenols can reduce iron absorption by 50\u201390%",
+        "Taking iron with calcium supplements or dairy \u2014 calcium competitively inhibits iron absorption",
+        "Taking iron with antacids or PPIs \u2014 reduces gastric acid and impairs conversion to absorbable ferrous form",
+        "Assuming a 'normal' full blood count means iron is adequate \u2014 haemoglobin can be normal with significantly depleted ferritin",
+        "Self-treating with high-dose iron without investigating the cause \u2014 iron overload is toxic and the cause matters",
+        "Accepting 'normal' ferritin at face value when CRP or ESR is elevated \u2014 inflammation falsely raises ferritin and can mask deficiency",
+        "Stopping iron supplementation as soon as haemoglobin normalises \u2014 ferritin stores typically take several months more to replenish",
+        "Ignoring recurrent iron deficiency without GI investigation \u2014 unexplained GI blood loss can be an early sign of serious pathology"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "Most clinicians will prescribe iron and call it done \u2014 without ever finding out why iron is low.",
+        "why_resisted": "Patients are relieved to have an explanation and a treatment, and often assume the prescription means the problem is understood. Clinicians face time constraints and may default to the most common cause (heavy periods in women) without investigation.",
+        "path_forward": "People who push for a root-cause workup \u2014 coeliac serology, H. pylori testing, a review of GI symptoms, gynaecological assessment for heavy bleeding \u2014 often find a treatable cause that, once addressed, means iron stores stabilise without lifelong supplementation."
+      },
+      {
+        "truth": "Standard lab reference ranges for ferritin are set far too low to represent clinical adequacy for many people.",
+        "why_resisted": "Lab reports show 'normal' and patients and clinicians take that at face value. Challenging a result that is technically within range requires assertiveness and some knowledge of the evidence.",
+        "path_forward": "People who understand that ferritin below 30\u201350 \u00b5g/L can be functionally insufficient are better positioned to advocate for a therapeutic trial of iron and to track whether their symptoms improve as ferritin rises toward 70\u2013100 \u00b5g/L."
+      },
+      {
+        "truth": "Iron supplementation can make GI conditions worse before it makes them better, and some forms of oral iron feed harmful gut bacteria.",
+        "why_resisted": "People want a simple fix. The idea that the prescribed treatment could cause problems, or that the form of iron matters, is not something most GPs discuss.",
+        "path_forward": "People with IBS, IBD, or SIBO who tolerate oral iron poorly may find that ferric maltol, low-dose alternate-day supplementation, or IV iron avoids GI flares while still replenishing stores."
+      },
+      {
+        "truth": "For women, heavy menstrual bleeding is often treated as an inevitable fact of life rather than a medical problem with treatable causes.",
+        "why_resisted": "Cultural normalisation of heavy periods, clinician dismissal, and lack of awareness of the range of effective treatments mean many women iron-supplement their way through years of preventable blood loss.",
+        "path_forward": "Women who get a gynaecological assessment, rule out fibroids, endometriosis, and adenomyosis, and explore hormonal or procedural options often achieve dramatically reduced blood loss \u2014 resolving the iron deficiency at its source."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Identify and treat the root cause",
+          "why_it_matters": "Iron supplementation without addressing the cause produces a revolving door of deficiency, supplementation, temporary improvement, and relapse. Finding the cause \u2014 malabsorption, blood loss, or dietary \u2014 is the only route to lasting stability.",
+          "how_to_start": "Request a full iron panel (ferritin, serum iron, TIBC, transferrin saturation), coeliac serology, and H. pylori testing alongside a full blood count. Keep a note of GI symptoms and menstrual blood loss to bring to an appointment.",
+          "timeline": "Investigation process typically takes 1\u20133 months depending on access; addressing the cause (e.g. gluten-free diet for coeliac disease, H. pylori eradication) may take a further 3\u20136 months to see ferritin stabilise.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Replenish iron stores fully \u2014 not just to a normal haemoglobin",
+          "why_it_matters": "Haemoglobin normalises before ferritin stores are replenished. Stopping treatment at haemoglobin correction leaves stores depleted, symptoms lingering, and deficiency likely to recur quickly.",
+          "how_to_start": "Continue iron supplementation for at least 3 months after haemoglobin normalises, or until ferritin reaches a target of at least 50\u2013100 \u00b5g/L. Recheck ferritin at that point.",
+          "timeline": "Full repletion typically takes 3\u20136 months of consistent supplementation for moderate deficiency; longer for severe depletion.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Choose the right form and dose of iron to maximise tolerance",
+          "why_it_matters": "GI side effects from standard high-dose ferrous sulfate are a major reason people stop supplementing. Switching to a better-tolerated form or schedule removes the biggest barrier to adherence.",
+          "how_to_start": "Try alternate-day dosing, a lower elemental iron dose, a gentler formulation (ferric maltol, iron bisglycinate), or liquid iron if tablets cause constipation, nausea, or pain. Taking at bedtime can reduce daytime nausea.",
+          "timeline": "Side effects usually clear within 1\u20132 weeks of switching formulation.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Optimise dietary iron absorption long-term",
+          "why_it_matters": "Once stores are replenished, diet determines whether they stay replenished. Strategic dietary habits \u2014 especially for vegetarians and vegans \u2014 can prevent recurrence without permanent supplementation.",
+          "how_to_start": "Work with a registered dietitian to audit current intake, identify inhibitors and enhancers in the diet, and develop practical meal patterns that support adequate iron absorption.",
+          "timeline": "Dietary changes support maintenance from the outset; clinical benefit in terms of ferritin maintenance becomes apparent over 3\u20136 months.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Address heavy menstrual bleeding if present",
+          "why_it_matters": "For premenopausal women, blood loss through heavy periods is typically the dominant driver of iron deficiency. No amount of supplementation can sustainably outpace ongoing significant blood loss.",
+          "how_to_start": "Quantify bleeding with a pictorial blood assessment chart (PBAC) or track products used per day. Seek a gynaecological referral to investigate and treat the cause.",
+          "timeline": "Hormonal treatments can reduce blood loss within 1\u20133 cycles; procedural options (e.g. IUD, endometrial ablation) may take longer to arrange.",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Stopping iron supplements as soon as energy improves \u2014 ferritin stores are not yet replenished and deficiency will return",
+        "Taking iron at the same time as coffee, tea, or calcium \u2014 dramatically reduces absorption and makes supplementation ineffective",
+        "Relying on diet alone to correct established deficiency \u2014 food iron is sufficient for maintenance but rarely fast enough to correct significant depletion",
+        "Not rechecking ferritin after a course of supplementation \u2014 the only way to know if treatment has worked is to retest",
+        "Accepting that iron deficiency is simply 'the way things are' without investigating why \u2014 often a treatable cause is found when someone actually looks",
+        "Assuming iron deficiency is a 'women's problem' and dismissing it in men or postmenopausal women without thorough GI investigation",
+        "Supplementing iron without a confirmed deficiency \u2014 iron overload is toxic, particularly in people with haemochromatosis; testing first is essential"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "GP / primary care physician",
+          "role": "Entry point for testing, initial diagnosis, and standard oral iron prescriptions. Can request most of the relevant blood tests and make specialist referrals.",
+          "notes": "Many GPs will treat to haemoglobin normalisation without investigating the cause or targeting full ferritin repletion. It is reasonable to ask specifically about ferritin targets and root-cause investigation."
+        },
+        {
+          "type": "Gastroenterologist",
+          "role": "Essential for investigating malabsorption, GI blood loss, and conditions such as coeliac disease, H. pylori, IBD, or occult GI bleeding. Performs upper and lower endoscopy.",
+          "notes": "Guidelines recommend gastroenterological referral for all men and postmenopausal women with iron deficiency anaemia, and for anyone with unexplained or recurrent deficiency."
+        },
+        {
+          "type": "Gynaecologist",
+          "role": "Investigates and treats heavy menstrual bleeding, fibroids, endometriosis, and adenomyosis \u2014 the most common causes of iron deficiency in premenopausal women.",
+          "notes": "Many women with iron deficiency driven by heavy periods are never referred to gynaecology. Asking for this referral specifically may require self-advocacy."
+        },
+        {
+          "type": "Haematologist",
+          "role": "Manages complex or refractory anaemia, prescribes and oversees IV iron infusions, and investigates unusual anaemia patterns (e.g. mixed anaemia, suspected anaemia of chronic disease).",
+          "notes": "Referral typically triggered by failure to respond to oral iron, severe anaemia, or a complex blood picture."
+        },
+        {
+          "type": "Registered dietitian (with expertise in nutritional deficiencies)",
+          "role": "Provides tailored dietary assessment and planning to optimise iron intake and absorption, particularly for vegetarians, vegans, athletes, and those with GI conditions limiting food variety.",
+          "notes": "Especially valuable for identifying inhibitors in the diet and designing sustainable eating patterns for long-term iron maintenance. Look for dietitians with experience in plant-based nutrition or GI dietetics."
+        },
+        {
+          "type": "Functional medicine doctor / integrative physician",
+          "role": "May investigate a broader range of contributing factors \u2014 gut health, stomach acid, gut microbiome, inflammatory drivers, and overlapping nutrient deficiencies \u2014 in people whose deficiency is recurrent or unexplained by standard workup.",
+          "notes": "Quality and rigour vary widely. Look for practitioners who order and interpret comprehensive iron panels and seek root causes rather than only prescribing supplements."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/Anemic",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Anemic/",
+          "notes": "Active community of people managing iron deficiency and anaemia. Useful for sharing experiences with different iron formulations, IV infusions, and navigating medical appointments. Peer support rather than medical advice."
+        },
+        {
+          "name": "r/POTS (iron and ferritin discussion)",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/POTS/",
+          "notes": "Iron deficiency and ferritin optimisation are regularly discussed in the POTS community, given the strong overlap between low ferritin and worsening orthostatic symptoms."
+        },
+        {
+          "name": "Iron Disorders Institute",
+          "platform": "Website / patient organisation",
+          "url": "https://www.irondisorders.org/",
+          "notes": "US-based patient advocacy organisation with educational resources on iron deficiency, iron overload, and related blood disorders."
+        },
+        {
+          "name": "Veggies With Iron (Facebook group)",
+          "platform": "Facebook",
+          "url": null,
+          "notes": "Community focused on managing iron deficiency on plant-based diets. Practical dietary advice and peer support for vegans and vegetarians."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Iron Deficiency Anemia \u2014 StatPearls (NCBI)",
+        "type": "website / reference article",
+        "author_or_source": "National Center for Biotechnology Information (NCBI)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK448065/",
+        "description": "Comprehensive, regularly updated clinical reference covering pathophysiology, diagnosis, causes, and treatment. Freely accessible and evidence-based \u2014 a solid foundation for anyone wanting to understand the medical detail.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Why Is My Ferritin Low? Understanding Iron Deficiency Beyond Anaemia",
+        "type": "website",
+        "author_or_source": "Examine.com",
+        "url": "https://examine.com/nutrition/iron/",
+        "description": "Evidence-based nutrition resource covering iron's roles, forms, absorption factors, and supplementation research. Useful for understanding the science behind dietary strategies and supplement choices.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Efficacy and safety of low versus high dose iron supplementation for the treatment of iron deficiency anaemia",
+        "type": "research paper",
+        "author_or_source": "Moretti et al., Lancet Haematology, 2015",
+        "url": "https://doi.org/10.1016/S2352-3026(15)00007-8",
+        "description": "Influential study demonstrating that alternate-day, lower-dose iron supplementation produces better absorption and equivalent or superior efficacy to high-dose daily dosing \u2014 with far fewer side effects. Essential reading for anyone tolerating standard iron poorly.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Heavy Menstrual Bleeding and Iron Deficiency \u2014 NICE Guidance",
+        "type": "website / clinical guideline",
+        "author_or_source": "National Institute for Health and Care Excellence (NICE)",
+        "url": "https://www.nice.org.uk/guidance/ng88",
+        "description": "UK clinical guideline on heavy menstrual bleeding covering investigation, diagnosis, and treatment options. Useful for patients wanting to understand what investigations and treatments they should be offered.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "The Coeliac-Iron Deficiency Connection",
+        "type": "website",
+        "author_or_source": "Coeliac UK",
+        "url": "https://www.coeliac.org.uk/information-and-support/coeliac-disease/getting-diagnosed/anaemia-and-coeliac-disease/",
+        "description": "Clear, accessible explanation of why coeliac disease causes iron deficiency and why iron deficiency anaemia can be the presenting symptom of coeliac disease. Useful for anyone with unexplained or recurrent deficiency.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Iron Deficiency Without Anaemia: A Diagnosis That Dare Not Speak Its Name",
+        "type": "research paper",
+        "author_or_source": "Goodnough & Schrier, American Journal of Hematology, 2014",
+        "url": "https://doi.org/10.1002/ajh.23678",
+        "description": "Argues that clinically significant iron deficiency without anaemia is systematically underdiagnosed and undertreated, and that ferritin-based criteria should be used rather than waiting for haemoglobin to fall. Useful for people who have been told their results are 'normal' despite symptoms.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Restless Legs Syndrome and Iron Deficiency \u2014 Review",
+        "type": "research paper",
+        "author_or_source": "Allen & Earley, Sleep Medicine Reviews, 2007",
+        "url": "https://doi.org/10.1016/j.smrv.2007.05.004",
+        "description": "Detailed review of the evidence linking iron deficiency (particularly brain iron status, reflected by serum ferritin) with restless legs syndrome. Useful for people with RLS who want to understand why ferritin optimisation matters.",
+        "audience": "advanced"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

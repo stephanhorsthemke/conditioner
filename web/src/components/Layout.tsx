@@ -1,6 +1,13 @@
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+    <div style={{
+      display: "flex",
+      flexDirection: "column",
+      minHeight: "100vh",
+      fontSize: "17px",
+      lineHeight: 1.65,
+      color: "#1f2937",
+    }}>
       <header style={{
         borderBottom: "1px solid #f3f4f6",
         padding: "0.6rem 1rem",

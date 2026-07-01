@@ -1,0 +1,751 @@
+{
+  "condition_id": "hypothyroidism",
+  "condition_name": "Hypothyroidism",
+  "generated_at": "2026-07-01T11:58:42.046140Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Hypothyroidism means the thyroid gland is not producing enough thyroid hormone. Because thyroid hormone regulates metabolism in virtually every cell of the body, too little of it slows everything down \u2014 energy production, digestion, temperature regulation, heart rate, mood, and cognition. The most common cause in developed countries is Hashimoto's thyroiditis, an autoimmune condition in which the immune system gradually destroys thyroid tissue. Many people with hypothyroidism are told their labs are 'normal' while still experiencing significant symptoms, which makes self-directed investigation especially important.",
+    "detailed_summary": "The thyroid gland, located at the base of the throat, produces two primary hormones: thyroxine (T4) and triiodothyronine (T3). T4 is the storage form; the body converts it into the active form, T3, primarily in the liver and gut. T3 binds to receptors in nearly every tissue and drives cellular energy metabolism. When thyroid output is insufficient \u2014 due to autoimmune destruction (Hashimoto's), iodine deficiency, prior thyroid surgery, radioactive iodine treatment, or pituitary dysfunction \u2014 metabolic processes across the body slow down.\n\nHashimoto's thyroiditis is the dominant cause in iodine-sufficient regions. It involves immune-mediated inflammation of the thyroid, fluctuating hormone levels (sometimes with temporary hyperthyroid phases as the gland spills stored hormone), and eventual glandular damage. Thyroid peroxidase antibodies (TPO-Ab) and thyroglobulin antibodies (TgAb) are the hallmark lab markers, though antibody levels do not always correlate with symptom severity.\n\nConventional management focuses almost exclusively on TSH \u2014 the pituitary signal that tells the thyroid to produce more hormone. Standard treatment replaces T4 with synthetic levothyroxine and aims to normalize TSH. This works well for many people. However, a significant subset continues to experience symptoms despite normal TSH, often because:\n- T4-to-T3 conversion is impaired (by stress, inflammation, gut dysfunction, selenium or zinc deficiency, or certain medications)\n- Reverse T3 (rT3), an inactive metabolite, accumulates and competes with active T3\n- Cellular receptors are resistant to thyroid hormone despite adequate circulating levels\n- The TSH reference range used by most labs includes people with subclinical thyroid dysfunction, making 'normal' a broad target\n\nFinding a practitioner willing to look beyond TSH \u2014 measuring free T3, free T4, reverse T3, and antibodies \u2014 is often a pivotal step for people who remain symptomatic on standard treatment.",
+    "prevalence": {
+      "summary": "One of the most common endocrine disorders globally, affecting women far more often than men",
+      "estimate": "Approximately 4\u20135% of the US population has hypothyroidism; Hashimoto's affects an estimated 1\u20132% of the general population and up to 10\u201312% of women over 60",
+      "notes": "Subclinical hypothyroidism (elevated TSH, normal T4, often symptomatic) affects an additional 4\u20138%. Many cases are undiagnosed or misattributed to depression, aging, or other conditions. Women are 5\u201310 times more likely to develop Hashimoto's than men. There is significant debate about where the TSH cutoff for diagnosis should sit \u2014 some functional and integrative practitioners argue that conventional lab ranges miss a meaningful number of affected individuals."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Hashimoto's thyroiditis",
+        "description": "An autoimmune condition causing progressive inflammatory damage to the thyroid gland, leading to hypothyroidism over time. The most common cause of hypothyroidism in developed countries.",
+        "distinguishing_features": [
+          "Elevated thyroid peroxidase antibodies (TPO-Ab) and/or thyroglobulin antibodies (TgAb)",
+          "Thyroid ultrasound may show heterogeneous texture and reduced echogenicity",
+          "Fluctuating symptoms, including occasional hyperthyroid episodes ('Hashitoxicosis') as the inflamed gland releases stored hormone",
+          "Strong association with other autoimmune conditions (coeliac disease, type 1 diabetes, rheumatoid arthritis, lupus)",
+          "Gluten and dietary triggers may be relevant for a subset of individuals"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Central / secondary hypothyroidism",
+        "description": "Caused by insufficient TSH production from the pituitary gland, rather than thyroid gland failure. The thyroid itself is capable of producing hormone but is not being adequately stimulated.",
+        "distinguishing_features": [
+          "TSH is low or inappropriately normal despite low free T4 and T3",
+          "Standard TSH-based screening misses this diagnosis",
+          "May be caused by pituitary tumors, head trauma, radiation, or pituitary dysfunction",
+          "Requires measurement of free T4 and free T3 for detection"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Subclinical hypothyroidism",
+        "description": "TSH is elevated above the reference range but free T4 remains within normal limits. Often symptomatic but may not meet the threshold for treatment in mainstream practice.",
+        "distinguishing_features": [
+          "TSH typically between 4.5 and 10 mIU/L",
+          "Symptoms can be significant and overlap fully with overt hypothyroidism",
+          "Associated with elevated cholesterol and cardiovascular risk",
+          "Treatment decisions are often contested \u2014 some guidelines only treat TSH above 10"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Poor T4-to-T3 converters",
+        "description": "Individuals whose thyroid gland or levothyroxine replacement provides adequate T4, but whose bodies do not efficiently convert it to the active T3 form. They may have normal TSH and T4 but low free T3.",
+        "distinguishing_features": [
+          "Normal TSH and free T4 on levothyroxine, but persistent symptoms",
+          "Low-normal or below-range free T3",
+          "Elevated reverse T3 (rT3) may be present",
+          "Conversion impaired by chronic stress, gut inflammation, selenium/zinc deficiency, certain medications (beta-blockers, amiodarone)",
+          "May respond better to combination T4/T3 therapy or natural desiccated thyroid (NDT)"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Post-ablative hypothyroidism",
+        "description": "Hypothyroidism following surgical removal of the thyroid gland or radioactive iodine treatment for hyperthyroidism or thyroid cancer. Complete thyroid hormone replacement is required for life.",
+        "distinguishing_features": [
+          "Abrupt onset of hypothyroidism rather than gradual Hashimoto's-type progression",
+          "No endogenous thyroid production; entirely dependent on replacement therapy",
+          "Conversion issues and T3 deficiency are especially common as the thyroid normally contributes some T3 directly"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Persistent fatigue and low energy that does not resolve with rest",
+        "category": "energy / fatigue",
+        "notes": "Often the most disabling symptom; distinct from tiredness in that sleep does not restore it. Can be profound enough to impair daily functioning."
+      },
+      {
+        "symptom": "Unexplained weight gain or difficulty losing weight despite diet",
+        "category": "metabolic",
+        "notes": "Reflects reduced basal metabolic rate; often modest (5\u201310 lbs) but resistant to caloric restriction"
+      },
+      {
+        "symptom": "Cold intolerance \u2014 feeling cold when others do not, cold hands and feet",
+        "category": "metabolic / thermoregulation",
+        "notes": "A hallmark symptom reflecting reduced heat generation from slowed metabolism"
+      },
+      {
+        "symptom": "Brain fog \u2014 difficulty concentrating, poor memory, slow thinking",
+        "category": "neurological / cognitive",
+        "notes": "Can be severe enough to mimic dementia in older adults; thyroid hormone is critical for neurological function"
+      },
+      {
+        "symptom": "Depression and low mood",
+        "category": "psychological",
+        "notes": "Thyroid hormone directly influences serotonin and dopamine activity; hypothyroid depression often does not respond to antidepressants alone"
+      },
+      {
+        "symptom": "Anxiety and irritability",
+        "category": "psychological",
+        "notes": "Particularly common during Hashimoto's flares or the Hashitoxicosis phase when hormone levels temporarily spike"
+      },
+      {
+        "symptom": "Hair loss or thinning \u2014 diffuse, across the whole scalp",
+        "category": "skin / hair",
+        "notes": "Eyebrow thinning, especially the outer third, is a classic sign; body hair may also thin"
+      },
+      {
+        "symptom": "Dry skin and coarse, thickened skin texture",
+        "category": "skin / hair",
+        "notes": "Reduced sebum production and impaired skin cell turnover"
+      },
+      {
+        "symptom": "Brittle nails",
+        "category": "skin / hair",
+        "notes": null
+      },
+      {
+        "symptom": "Constipation",
+        "category": "digestive",
+        "notes": "Slowed gut motility is a direct consequence of low T3; can be significant and chronic"
+      },
+      {
+        "symptom": "Slow digestion, bloating, and a sensation of fullness",
+        "category": "digestive",
+        "notes": "Hypothyroidism can slow gastric emptying and contribute to SIBO and dysbiosis"
+      },
+      {
+        "symptom": "Elevated cholesterol \u2014 particularly LDL and total cholesterol",
+        "category": "cardiovascular / metabolic",
+        "notes": "Thyroid hormone drives LDL receptor activity in the liver; untreated hypothyroidism often produces dyslipidaemia"
+      },
+      {
+        "symptom": "Slow heart rate (bradycardia)",
+        "category": "cardiovascular",
+        "notes": null
+      },
+      {
+        "symptom": "Puffiness and fluid retention \u2014 especially face, hands, and ankles",
+        "category": "inflammatory / fluid",
+        "notes": "Myxoedema in severe cases \u2014 non-pitting oedema caused by mucopolysaccharide accumulation in tissues"
+      },
+      {
+        "symptom": "Muscle aches, weakness, and cramps",
+        "category": "musculoskeletal",
+        "notes": "Can include carpal tunnel syndrome; elevated creatine kinase (CK) is sometimes seen in labs"
+      },
+      {
+        "symptom": "Joint pain and stiffness",
+        "category": "musculoskeletal",
+        "notes": "Can be caused by the underlying autoimmunity (in Hashimoto's) or direct effect of low thyroid hormone"
+      },
+      {
+        "symptom": "Heavy, irregular, or prolonged menstrual periods",
+        "category": "reproductive / hormonal",
+        "notes": "Hypothyroidism disrupts the HPG (hypothalamic-pituitary-gonadal) axis; can cause fertility difficulties"
+      },
+      {
+        "symptom": "Reduced libido",
+        "category": "reproductive / hormonal",
+        "notes": null
+      },
+      {
+        "symptom": "Hoarse or deepened voice",
+        "category": "throat / ENT",
+        "notes": "Caused by fluid accumulation in the vocal cords; may also be related to goitre"
+      },
+      {
+        "symptom": "Goitre \u2014 visible or palpable swelling at the base of the neck",
+        "category": "thyroid",
+        "notes": "Present in some but not all cases; more common in iodine deficiency and Hashimoto's"
+      },
+      {
+        "symptom": "Slow reflexes",
+        "category": "neurological",
+        "notes": "A clinical sign; delayed relaxation phase of deep tendon reflexes is a classic examination finding"
+      },
+      {
+        "symptom": "Poor tolerance of exercise \u2014 disproportionate breathlessness or fatigue",
+        "category": "cardiovascular / musculoskeletal",
+        "notes": null
+      },
+      {
+        "symptom": "Sleep disturbances, including excessive sleeping or non-restorative sleep",
+        "category": "sleep",
+        "notes": "Hypothyroidism is associated with obstructive sleep apnoea; fatigue may lead to hypersomnia"
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Elevated TSH (above 4.5\u20135.0 mIU/L) with low-normal or below-range free T4 \u2014 the conventional diagnostic pattern",
+        "Normal TSH but low free T3 with persistent symptoms \u2014 suggests T4-to-T3 conversion problem; missed by TSH-only screening",
+        "Positive TPO-Ab or TgAb with or without overt hypothyroidism \u2014 confirms autoimmune (Hashimoto's) aetiology",
+        "Elevated reverse T3 (rT3) relative to free T3 \u2014 may explain symptoms persisting despite apparently adequate T4 replacement",
+        "Elevated TSH alongside normal T4 and T3 (subclinical hypothyroidism) \u2014 often symptomatic, frequently undertreated",
+        "Low TSH with low T4 \u2014 points toward central/pituitary hypothyroidism rather than primary thyroid failure",
+        "Elevated cholesterol, elevated CK, or anaemia in combination with hypothyroid symptoms \u2014 supports biochemical pattern"
+      ],
+      "at_home": [
+        {
+          "name": "Basal body temperature tracking",
+          "description": "Measuring oral or axillary temperature immediately upon waking, before getting out of bed, for 5\u20137 days. A consistent average below approximately 36.6\u00b0C (97.8\u00b0F) may indicate low metabolic rate. This approach was popularised by Dr Broda Barnes as an accessible proxy for thyroid function.",
+          "safety_notes": "This is a directional signal only, not a diagnostic test. Many factors influence basal temperature including infection, ovulation phase, and sleep quality. It can prompt further clinical investigation but should not be used to self-diagnose or self-treat."
+        },
+        {
+          "name": "Symptom diary",
+          "description": "Tracking symptom severity, timing, temperature sensitivity, energy levels, digestive patterns, and menstrual cycles over 4\u20138 weeks. A clear symptom pattern consistent with hypothyroidism, particularly cold intolerance, fatigue, constipation, and hair loss together, provides useful context for a clinical appointment.",
+          "safety_notes": "No physical risk. Useful for identifying patterns and documenting severity to bring to a clinician."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "TSH (thyroid-stimulating hormone)",
+          "type": "gold_standard",
+          "description": "Measures the pituitary hormone that signals the thyroid to produce T4 and T3. Elevated TSH indicates the pituitary is working harder to compensate for low thyroid output. The most widely used initial screening test.",
+          "availability": "Ordered by any GP or primary care physician; also available through private blood testing services (e.g. Medichecks, Thriva, LabCorp, Quest)"
+        },
+        {
+          "name": "Free T4 (fT4)",
+          "type": "gold_standard",
+          "description": "Measures unbound thyroxine \u2014 the main product of the thyroid gland. A low fT4 with elevated TSH confirms overt hypothyroidism. Should always be measured alongside TSH.",
+          "availability": "Routinely ordered alongside TSH; may need to be specifically requested at some practices"
+        },
+        {
+          "name": "Free T3 (fT3)",
+          "type": "standard",
+          "description": "Measures the active form of thyroid hormone. Critical for identifying poor T4-to-T3 conversion. Often not included in standard thyroid panels; low fT3 with normal TSH and fT4 may explain persistent symptoms on levothyroxine.",
+          "availability": "Often requires explicit request; sometimes refused by GPs in the NHS; routinely available through private labs, functional medicine doctors, or integrative practitioners"
+        },
+        {
+          "name": "Thyroid peroxidase antibodies (TPO-Ab) and thyroglobulin antibodies (TgAb)",
+          "type": "gold_standard",
+          "description": "Confirms autoimmune (Hashimoto's) aetiology. Positive antibodies indicate the immune system is attacking thyroid tissue. Can be elevated years before TSH becomes abnormal. TPO-Ab is more sensitive; both should be tested for full picture.",
+          "availability": "Available through GPs, though not always offered routinely; widely available via private testing"
+        },
+        {
+          "name": "Reverse T3 (rT3)",
+          "type": "emerging",
+          "description": "Measures the inactive metabolite produced when T4 is shunted away from active T3 conversion \u2014 often in response to chronic stress, illness, or inflammation. High rT3 can competitively block T3 receptors. Controversial in mainstream endocrinology but used by functional and integrative practitioners.",
+          "availability": "Not routinely available on NHS; available through private labs (e.g. Medichecks, Genova, ZRT) or functional medicine practitioners"
+        },
+        {
+          "name": "Thyroid ultrasound",
+          "type": "standard",
+          "description": "Imaging of the thyroid gland to assess size, texture, and nodule presence. In Hashimoto's, the gland typically shows heterogeneous echotexture and reduced echogenicity. Identifies goitre, cysts, and nodules requiring further investigation.",
+          "availability": "Ordered by endocrinologists or GPs with appropriate clinical indication; available at radiology centres"
+        },
+        {
+          "name": "Full iron panel (ferritin, serum iron, TIBC, transferrin saturation)",
+          "type": "standard",
+          "description": "Iron deficiency is common alongside Hashimoto's and impairs T4-to-T3 conversion. Low ferritin can cause symptoms nearly identical to hypothyroidism. Should be assessed as part of a thorough workup.",
+          "availability": "Standard blood test, orderable by any GP"
+        },
+        {
+          "name": "Selenium, zinc, and iodine levels",
+          "type": "emerging",
+          "description": "Selenium is essential for the deiodinase enzymes that convert T4 to T3 and regulate thyroid hormone metabolism. Zinc is also required for thyroid hormone synthesis. Deficiencies impair thyroid function and may worsen Hashimoto's. Iodine excess or deficiency can both disrupt thyroid function.",
+          "availability": "Available through private functional labs; not routinely tested in mainstream practice"
+        },
+        {
+          "name": "Coeliac antibody panel (tTG-IgA, total IgA)",
+          "type": "standard",
+          "description": "Coeliac disease has a well-established association with Hashimoto's thyroiditis, sharing autoimmune mechanisms. Undiagnosed coeliac disease can impair absorption of levothyroxine and drive continued autoimmunity.",
+          "availability": "Standard blood test available through GPs; often not routinely checked in thyroid patients"
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "coeliac",
+        "name": "Coeliac disease",
+        "relationship": "comorbid",
+        "explanation": "Coeliac disease and Hashimoto's thyroiditis share HLA genetic risk factors and autoimmune mechanisms. Prevalence of coeliac disease is 3\u20135 times higher in people with Hashimoto's than in the general population. Undiagnosed coeliac can also impair levothyroxine absorption in the small intestine, causing apparent treatment resistance."
+      },
+      {
+        "id": "ibs",
+        "name": "IBS",
+        "relationship": "often_confused",
+        "explanation": "Hypothyroid-driven constipation, bloating, and slow motility are frequently misdiagnosed as IBS. Thyroid function should be checked before or alongside an IBS diagnosis, particularly in women."
+      },
+      {
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "downstream",
+        "explanation": "Hypothyroidism slows gut motility, which can impair the migrating motor complex (MMC) \u2014 the cleansing wave that clears bacteria from the small intestine. This creates conditions for bacterial overgrowth. SIBO may in turn impair levothyroxine absorption and worsen nutrient deficiencies relevant to thyroid function."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "often_confused",
+        "explanation": "Hypothyroidism frequently produces depression, low motivation, and emotional blunting that is clinically indistinguishable from primary depression. Thyroid function is often not checked before prescribing antidepressants, and antidepressants alone will not address the underlying hormonal cause."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "often_confused",
+        "explanation": "During Hashimoto's flares or Hashitoxicosis phases, transient hyperthyroidism produces anxiety, palpitations, and irritability. This can be misdiagnosed as an anxiety disorder. In chronic hypothyroidism, anxiety can also emerge as a secondary effect of disrupted neurotransmitter balance."
+      },
+      {
+        "id": "iron_deficiency",
+        "name": "Iron deficiency",
+        "relationship": "comorbid",
+        "explanation": "Iron deficiency is common in Hashimoto's, partly because the same autoimmune tendency increases risk of atrophic gastritis and poor iron absorption. Iron is required for thyroid peroxidase activity and T4-to-T3 conversion. Symptoms of iron deficiency \u2014 fatigue, brain fog, hair loss \u2014 overlap almost completely with hypothyroid symptoms."
+      },
+      {
+        "id": "vitamin_d_deficiency",
+        "name": "Vitamin D deficiency",
+        "relationship": "comorbid",
+        "explanation": "Vitamin D deficiency is significantly more prevalent in people with Hashimoto's than in the general population. Vitamin D has immunomodulatory effects and may help regulate autoimmune thyroid activity. Correction of deficiency is often a component of integrative management."
+      },
+      {
+        "id": "b12_deficiency",
+        "name": "Vitamin B12 deficiency",
+        "relationship": "comorbid",
+        "explanation": "Autoimmune gastritis \u2014 which reduces intrinsic factor production needed for B12 absorption \u2014 is more common in Hashimoto's patients. B12 deficiency produces fatigue, neurological symptoms, and mood changes that overlap with and compound hypothyroid symptoms."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "often_confused",
+        "explanation": "The muscle pain, fatigue, and cognitive symptoms of hypothyroidism are frequently misdiagnosed as fibromyalgia, or the two may coexist. Inadequately treated or undetected hypothyroidism is a driver some researchers believe underlies fibromyalgia in a proportion of patients."
+      },
+      {
+        "id": "me_cfs",
+        "name": "ME / CFS",
+        "relationship": "often_confused",
+        "explanation": "Severe hypothyroidism, particularly with poor T4-to-T3 conversion, can produce a clinical picture closely resembling ME/CFS. Thyroid function \u2014 including fT3 and rT3, not just TSH \u2014 should be fully investigated before an ME/CFS label is applied."
+      },
+      {
+        "id": "insulin_resistance",
+        "name": "Insulin resistance",
+        "relationship": "comorbid",
+        "explanation": "Hypothyroidism impairs glucose metabolism and is associated with insulin resistance and metabolic syndrome. The relationship is bidirectional: insulin resistance and high insulin levels can also impair thyroid hormone signalling."
+      },
+      {
+        "id": "sleep_apnea",
+        "name": "Obstructive sleep apnoea",
+        "relationship": "downstream",
+        "explanation": "Hypothyroidism can cause tissue swelling in the upper airway and reduces respiratory drive, increasing risk of obstructive sleep apnoea. Sleep apnoea in turn impairs sleep quality, worsens fatigue, and creates a cycle of metabolic dysfunction. OSA should be investigated in hypothyroid patients who remain fatigued despite adequate thyroid replacement."
+      },
+      {
+        "id": "cortisol_dysreg",
+        "name": "Cortisol dysregulation",
+        "relationship": "mechanistic_link",
+        "explanation": "Chronic stress elevates cortisol, which suppresses TSH, reduces T4-to-T3 conversion, and increases reverse T3 production. Hypothyroidism and HPA axis dysfunction frequently coexist and reinforce each other. Treating thyroid hormone alone without addressing cortisol dysregulation can produce incomplete symptom resolution."
+      },
+      {
+        "id": "mthfr",
+        "name": "MTHFR / methylation variants",
+        "relationship": "comorbid",
+        "explanation": "MTHFR variants impair methylation, which is required for proper immune regulation and neurotransmitter synthesis. There is a noted co-occurrence of MTHFR variants and Hashimoto's. Elevated homocysteine \u2014 a marker of impaired methylation \u2014 is also more common in hypothyroidism."
+      },
+      {
+        "id": "endometriosis",
+        "name": "Endometriosis",
+        "relationship": "comorbid",
+        "explanation": "Both conditions share immune dysregulation as an underlying feature. Hashimoto's and endometriosis co-occur at higher than expected rates. Both conditions also affect oestrogen metabolism and are associated with progesterone insufficiency."
+      },
+      {
+        "id": "perimenopause",
+        "name": "Perimenopause",
+        "relationship": "often_confused",
+        "explanation": "Perimenopause and hypothyroidism share nearly identical symptoms \u2014 fatigue, weight changes, brain fog, mood disturbance, sleep disruption, and irregular periods. The two can coexist, and one can mask the other. Both thyroid panels and hormonal assessment should be performed in symptomatic women in midlife."
+      },
+      {
+        "id": "leaky_gut",
+        "name": "Leaky gut (intestinal permeability)",
+        "relationship": "mechanistic_link",
+        "explanation": "Increased intestinal permeability may allow dietary proteins and bacterial antigens to cross the gut barrier and trigger or amplify immune responses, potentially including anti-thyroid autoimmunity. A gluten-thyroid molecular mimicry hypothesis has been proposed for Hashimoto's specifically, though the evidence base is still developing."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "Both conditions share autoimmune underpinnings and are overrepresented in similar patient populations (particularly women with connective tissue features). Hypothyroidism can impair cardiovascular autonomic regulation, contributing to symptoms that overlap with POTS."
+      },
+      {
+        "id": "ncgs",
+        "name": "Non-coeliac gluten sensitivity",
+        "relationship": "comorbid",
+        "explanation": "Some people with Hashimoto's report symptom improvement on a gluten-free diet even without a coeliac diagnosis. The mechanism may involve reduction in intestinal inflammation, improved gut barrier function, or reduced antigenic cross-reactivity between gluten peptides and thyroid tissue."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "mechanistic_link",
+        "explanation": "The gut microbiome plays a role in immune regulation and T4-to-T3 conversion; dysbiosis can impair both. Hypothyroidism slows motility, which in turn promotes dysbiosis, creating a feedback loop. Some research suggests certain gut bacteria are consistently altered in Hashimoto's."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome",
+        "relationship": "comorbid",
+        "explanation": "MCAS and Hashimoto's are both autoimmune-adjacent conditions that appear to co-occur. Thyroid hormone influences mast cell activity, and thyroid dysfunction may lower the threshold for mast cell degranulation. Patients with both conditions often have complex, multi-system symptom profiles."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor sleep / insomnia",
+        "relationship": "downstream",
+        "explanation": "Both hypothyroidism and the underlying autoimmunity in Hashimoto's disturb sleep architecture. Poor sleep further impairs T4-to-T3 conversion and elevates cortisol, creating a vicious cycle."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Levothyroxine (synthetic T4)",
+          "category": "medication",
+          "description": "The standard first-line medical treatment for hypothyroidism. Replaces the T4 that the thyroid is not producing in sufficient quantity. Dosage is adjusted based on TSH and symptoms. Taken on an empty stomach, typically 30\u201360 minutes before food, for optimal absorption. Consistency in timing and brand matters.",
+          "evidence_level": "strong",
+          "notes": "Works well for many people but does not address T4-to-T3 conversion problems. Some people convert T4 poorly and continue to experience symptoms despite normalised TSH. Generic and branded versions may differ in bioavailability for sensitive individuals."
+        },
+        {
+          "name": "Combination T4/T3 therapy (levothyroxine + liothyronine)",
+          "category": "medication",
+          "description": "Adding synthetic T3 (liothyronine) to a T4-only regimen can help individuals who do not convert T4 to T3 adequately. Some research suggests this combination improves cognitive function and quality of life in a subset of patients, particularly those with the DIO2 gene variant affecting conversion.",
+          "evidence_level": "moderate",
+          "notes": "Not routinely offered in mainstream endocrinology; requires a knowledgeable prescriber. T3 has a shorter half-life and must be dosed carefully. Some practitioners use slow-release compounded T3."
+        },
+        {
+          "name": "Natural desiccated thyroid (NDT)",
+          "category": "medication",
+          "description": "Porcine-derived thyroid extract containing both T4 and T3 in natural ratio. Used as an alternative to synthetic levothyroxine, particularly by people who feel better on combination therapy. Brands include Armour Thyroid and NP Thyroid.",
+          "evidence_level": "moderate",
+          "notes": "Clinical trial evidence is limited but patient-reported outcomes are often positive. The T3:T4 ratio in NDT is higher than in humans, so dosing requires careful titration. Not all endocrinologists prescribe it; more commonly offered by integrative or functional medicine practitioners."
+        },
+        {
+          "name": "Gluten-free diet (for Hashimoto's)",
+          "category": "diet",
+          "description": "Several studies have shown that a strict gluten-free diet reduces TPO antibody levels and improves quality of life markers in Hashimoto's patients, even in the absence of coeliac disease. The proposed mechanism involves reduced intestinal inflammation and possible molecular mimicry between gluten proteins and thyroid tissue antigens.",
+          "evidence_level": "moderate",
+          "notes": "Evidence is strongest in patients who also have coeliac disease or gluten sensitivity. Not all individuals respond. A supervised trial of 3\u20136 months is a reasonable approach before deciding whether it is beneficial."
+        },
+        {
+          "name": "Selenium supplementation",
+          "category": "supplement",
+          "description": "Selenium is required for the deiodinase enzymes that convert T4 to active T3 and for glutathione peroxidase, which protects the thyroid from oxidative damage. Multiple clinical trials have shown that selenomethionine (200 mcg/day) reduces TPO antibody levels and may reduce thyroid inflammation in Hashimoto's.",
+          "evidence_level": "moderate",
+          "notes": "Selenium can be toxic in excess; supplementation above 400 mcg/day is not recommended. Brazil nuts are a natural source (1\u20133 per day provides approximately 70\u2013200 mcg). Selenium status should ideally be assessed before supplementing."
+        },
+        {
+          "name": "Iron correction",
+          "category": "supplement",
+          "description": "Iron is a cofactor for thyroid peroxidase, the enzyme responsible for T4 synthesis. Iron deficiency impairs thyroid hormone production and T4-to-T3 conversion. Correcting ferritin (ideally to 70\u2013100 ng/mL) can significantly improve thyroid-related symptoms and the efficacy of levothyroxine.",
+          "evidence_level": "strong",
+          "notes": "Iron supplements must be taken separately from levothyroxine (at least 4 hours apart) as iron significantly impairs levothyroxine absorption. Form matters: ferrous bisglycinate is often better tolerated than ferrous sulphate."
+        },
+        {
+          "name": "Vitamin D optimisation",
+          "category": "supplement",
+          "description": "Correcting vitamin D deficiency may help modulate autoimmune activity in Hashimoto's. Some studies report a correlation between lower vitamin D levels and higher TPO antibody titres. Target blood levels of 25(OH)D around 40\u201360 ng/mL (100\u2013150 nmol/L) are often recommended by integrative practitioners.",
+          "evidence_level": "moderate",
+          "notes": "Supplementation of 2,000\u20135,000 IU/day is commonly used; testing before and during supplementation helps avoid toxicity. Co-supplementation with vitamin K2 is recommended when taking higher doses of D3."
+        },
+        {
+          "name": "Magnesium supplementation",
+          "category": "supplement",
+          "description": "Magnesium is required for thyroid hormone synthesis and is commonly depleted in people with autoimmune conditions and chronic stress. Deficiency can worsen fatigue, sleep, constipation, and muscle symptoms. Magnesium glycinate or malate are well-absorbed forms with good tolerability.",
+          "evidence_level": "moderate",
+          "notes": "High doses can cause loose stools; start low and titrate. Avoid magnesium oxide (poor bioavailability)."
+        },
+        {
+          "name": "Zinc supplementation",
+          "category": "supplement",
+          "description": "Zinc is required for thyroid hormone synthesis, receptor binding, and conversion. Zinc deficiency is associated with lower T3 levels. Supplementation (15\u201330 mg/day of zinc bisglycinate or picolinate) may support thyroid function in those who are deficient.",
+          "evidence_level": "moderate",
+          "notes": "Long-term supplementation above 40 mg/day can displace copper; consider a zinc:copper balanced supplement or monitor copper levels. Zinc also impairs levothyroxine absorption if taken at the same time."
+        },
+        {
+          "name": "Stress management and cortisol reduction",
+          "category": "lifestyle",
+          "description": "Chronic psychological and physiological stress elevates cortisol, which suppresses TSH, promotes rT3 production, and impairs thyroid hormone signalling. Practices that reduce HPA axis activation \u2014 including adequate sleep, breathwork, meditation, yoga, and reducing overcommitment \u2014 can meaningfully support thyroid function.",
+          "evidence_level": "moderate",
+          "notes": "This lever is frequently underestimated. People who optimise medication but not stress often plateau. HPA and thyroid axis function are deeply intertwined."
+        },
+        {
+          "name": "Anti-inflammatory diet",
+          "category": "diet",
+          "description": "A diet low in processed foods, refined sugars, and pro-inflammatory seed oils, and rich in omega-3 fatty acids, colourful vegetables, and polyphenols, may help reduce the autoimmune drive in Hashimoto's. The Autoimmune Protocol (AIP) diet is a structured elimination approach some individuals with Hashimoto's find helpful.",
+          "evidence_level": "moderate",
+          "notes": "Individual responses to specific foods vary considerably. An elimination-reintroduction approach can help identify personal triggers. AIP is quite restrictive and works best with professional dietitian support."
+        },
+        {
+          "name": "Optimal levothyroxine absorption practices",
+          "category": "lifestyle",
+          "description": "Levothyroxine absorption is significantly impaired by coffee, calcium, iron, certain antacids, fibre supplements, and food in general. Taking the medication consistently \u2014 ideally on waking with a full glass of water, 30\u201360 minutes before eating or drinking anything other than water \u2014 can make a meaningful difference to effective dosing.",
+          "evidence_level": "strong",
+          "notes": "Some people do better taking levothyroxine at bedtime (at least 2 hours after the last meal). Consistency in timing and avoiding interfering substances is as important as the dose itself."
+        }
+      ],
+      "things_to_avoid": [
+        "Taking levothyroxine within 4 hours of iron, calcium, magnesium, or zinc supplements \u2014 these minerals significantly impair absorption",
+        "Coffee or espresso within 30\u201360 minutes of levothyroxine \u2014 reduces absorption by up to 25\u201330%",
+        "Excessive raw cruciferous vegetables (broccoli, cabbage, kale) in those with iodine deficiency \u2014 goitrogenic compounds in large amounts can mildly suppress thyroid function, though this is minimal with adequate iodine intake and cooking largely deactivates goitrogens",
+        "Very high iodine supplementation \u2014 in autoimmune thyroid disease, excess iodine can trigger or worsen Hashimoto's flares and increase thyroid inflammation",
+        "Relying on TSH alone to gauge treatment adequacy \u2014 TSH can be suppressed by stress, illness, or pituitary dysfunction even when thyroid hormone levels are inadequate at the tissue level",
+        "Starting selenium supplementation without checking selenium status first \u2014 excess selenium is hepatotoxic",
+        "Switching between different brands or formulations of levothyroxine without rechecking levels \u2014 bioavailability differs and can affect TSH significantly",
+        "Treating depression or fatigue with antidepressants before thyroid function has been fully evaluated \u2014 including fT3, fT4, and antibodies, not only TSH",
+        "Skipping follow-up blood testing once symptoms improve \u2014 thyroid requirements change with weight, age, other medications, and disease progression"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "A normal TSH does not mean thyroid function is adequate for a particular individual. Many people with persistent symptoms on levothyroxine have low free T3 that their doctors are not measuring.",
+        "why_resisted": "Patients trust that their doctor has ordered the right tests and that 'normal' means 'fine'. Doctors are trained that TSH is the definitive measure and are often dismissive of symptoms once TSH is in range. Ordering additional tests requires time, clinical curiosity, and sometimes resistance to guidelines.",
+        "path_forward": "People who request fT3, fT4, and rT3 \u2014 and find a practitioner willing to interpret them together with symptoms \u2014 often discover an actionable pattern. Adding T3 to their regimen, optimising conversion, or addressing nutrient deficiencies frequently produces the symptomatic improvement that years of TSH-normalisation alone did not."
+      },
+      {
+        "truth": "Hashimoto's is an autoimmune condition. Treating only the thyroid hormone deficiency is treating the downstream effect, not the upstream disease. The immune dysregulation continues unless it is also addressed.",
+        "why_resisted": "The conventional medical model has no licensed treatment to modify the autoimmune process in Hashimoto's, so practitioners focus on what they can prescribe \u2014 thyroid hormone replacement. Telling patients there is nothing that can be done for the autoimmunity discourages investigation of dietary, environmental, and lifestyle drivers that may be modifiable.",
+        "path_forward": "People who investigate their personal autoimmune triggers \u2014 including gut health, gluten, nutrient deficiencies, stress, sleep, and environmental factors \u2014 often see measurable reductions in antibody levels over time and a reduction in symptom fluctuation and flare frequency."
+      },
+      {
+        "truth": "Fatigue, brain fog, and depression that persist despite 'optimal' TSH may not be solely explained by thyroid disease. Coexisting conditions \u2014 iron deficiency, sleep apnoea, SIBO, cortisol dysregulation, vitamin B12 deficiency \u2014 are common and are often the reason treatment feels incomplete.",
+        "why_resisted": "It is easier to attribute ongoing symptoms to the known diagnosis than to investigate further. Patients also hope that getting the thyroid right will fix everything. Acknowledging that multiple systems may be involved requires more investigation and more patience.",
+        "path_forward": "A systematic investigation of the most common coexisting conditions \u2014 iron panel, B12, vitamin D, cortisol rhythm, sleep study, gut health \u2014 frequently identifies treatable co-drivers. Addressing these alongside thyroid treatment often produces cumulative improvement that thyroid optimisation alone could not achieve."
+      },
+      {
+        "truth": "The conventional reference range for TSH (typically 0.4\u20134.5 mIU/L) was not derived from a population of confirmed healthy thyroid-disease-free individuals. Many researchers and clinicians argue that a TSH above 2.5 mIU/L may already indicate early thyroid insufficiency in symptomatic patients, yet most GPs will not treat or investigate further below 4.5.",
+        "why_resisted": "Patients are repeatedly told their results are normal and feel gaslighted when symptoms persist. Accepting that the reference range is contested requires acknowledging that the system may have missed something \u2014 which is uncomfortable for both parties.",
+        "path_forward": "People who find a practitioner willing to treat based on the full clinical picture \u2014 symptoms plus a complete thyroid panel, not TSH in isolation \u2014 often reach therapeutic doses that make a meaningful functional difference, even if their TSH was technically 'in range' at baseline."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Get a complete thyroid panel, not just TSH",
+          "why_it_matters": "TSH alone misses T4-to-T3 conversion problems, elevated reverse T3, and antibody-positive Hashimoto's with normal TSH. The full picture \u2014 fT4, fT3, rT3, TPO-Ab, TgAb \u2014 determines which mechanism is driving symptoms and what kind of treatment or support is most appropriate.",
+          "how_to_start": "Request a full thyroid panel from your GP; if refused, private labs (Medichecks, Thriva, Ulta Lab Tests, LifeExtension) offer comprehensive thyroid panels without a referral. Bring printed results to appointments with annotated questions.",
+          "timeline": "Results in days; meaningful clinical insight within 1\u20132 appointments",
+          "requires_professional": true
+        },
+        {
+          "lever": "Correct iron deficiency before assuming thyroid medication is inadequate",
+          "why_it_matters": "Low ferritin directly impairs thyroid hormone synthesis and T4-to-T3 conversion, and produces symptoms identical to hypothyroidism. Iron deficiency is extremely common in women with Hashimoto's. Correcting it can substantially improve energy, cognition, and hair loss \u2014 without any change to thyroid medication.",
+          "how_to_start": "Request a full iron panel including ferritin, serum iron, TIBC, and transferrin saturation. Target ferritin above 70\u2013100 ng/mL for thyroid-related symptom resolution, not just the anaemia cutoff of 12\u201320.",
+          "timeline": "Ferritin takes 3\u20136 months to meaningfully increase with supplementation; symptoms may improve before full repletion",
+          "requires_professional": false
+        },
+        {
+          "lever": "Optimise levothyroxine absorption",
+          "why_it_matters": "Many people are effectively under-medicated not because their dose is wrong, but because cofactors are blocking absorption. Correcting timing and avoiding interfering substances can produce a clinically significant improvement equivalent to a dose increase.",
+          "how_to_start": "Take levothyroxine consistently on waking, 30\u201360 minutes before eating, with a full glass of water. Separate iron, calcium, magnesium, and zinc supplements by at least 4 hours. Avoid coffee until after this window.",
+          "timeline": "TSH should be rechecked 6\u20138 weeks after any change",
+          "requires_professional": false
+        },
+        {
+          "lever": "Address the autoimmune driver, not only the hormone deficiency",
+          "why_it_matters": "In Hashimoto's, the immune system is destroying thyroid tissue. If that process continues unchecked, thyroid capacity declines and medication requirements increase over time. Identifying and reducing inflammatory triggers \u2014 gut dysfunction, nutritional deficiencies, chronic stress, undetected coeliac \u2014 can slow or stabilise disease progression.",
+          "how_to_start": "Test for coeliac disease, check vitamin D, selenium, and B12 levels, address gut health, and consider a 3-month gluten-free trial. Work with a functional medicine doctor or integrative practitioner willing to investigate root causes.",
+          "timeline": "Antibody levels typically take 3\u201312 months to show meaningful change with dietary and lifestyle intervention",
+          "requires_professional": true
+        },
+        {
+          "lever": "Prioritise sleep and HPA axis regulation",
+          "why_it_matters": "Chronic sleep deprivation and high cortisol both suppress TSH, increase reverse T3, and impair T4-to-T3 conversion. Addressing these systemic stressors can improve thyroid hormone utilisation without changing medication.",
+          "how_to_start": "Audit sleep quality, duration, and any symptoms of sleep apnoea. Investigate obstructive sleep apnoea if snoring, morning headaches, or non-restorative sleep are present. Implement stress-reduction practices that demonstrably lower resting cortisol.",
+          "timeline": "Sleep improvements can affect energy and mood within weeks; HPA normalisation takes longer",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Accepting 'your TSH is normal' as a complete answer when symptoms persist \u2014 TSH does not measure tissue-level thyroid hormone activity",
+        "Not separating levothyroxine from coffee, iron, or other supplements \u2014 this alone can render the medication significantly less effective",
+        "Taking selenium without checking baseline levels \u2014 excess selenium is toxic, and supplementing into sufficiency is very different from supplementing into excess",
+        "Focusing only on thyroid medication while ignoring iron, B12, vitamin D, and cortisol \u2014 these cofactors can explain a large proportion of persistent symptoms",
+        "Expecting immediate results from dietary and lifestyle changes \u2014 autoimmune modification is a months-long process, not a week-long experiment",
+        "Switching between multiple levothyroxine brands without rechecking labs \u2014 bioavailability differences can shift TSH by a clinically significant amount",
+        "Dismissing the role of stress in thyroid function \u2014 cortisol and thyroid axes are deeply interconnected; high cortisol chronically undermines thyroid hormone efficacy",
+        "Self-treating with NDT or T3 without professional oversight \u2014 T3 has a short half-life and requires careful titration to avoid cardiovascular side effects",
+        "Assuming gluten-free must help because it is an autoimmune condition \u2014 the evidence supports a trial, but not everyone responds, and a trial needs to be strict and long enough to be informative"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Endocrinologist",
+          "role": "Specialist in hormone disorders; the conventional referral pathway for hypothyroidism. Can manage complex medication titration, investigate secondary causes (pituitary dysfunction, thyroid nodules), and order specialist imaging.",
+          "notes": "Many NHS and mainstream endocrinologists follow TSH-centric guidelines and may be reluctant to prescribe T3, NDT, or investigate beyond TSH and fT4. A minority take a more comprehensive approach. Finding one who is willing to treat symptoms alongside labs, not labs alone, makes a significant difference."
+        },
+        {
+          "type": "Functional medicine doctor",
+          "role": "Investigates root causes of autoimmunity and hormonal dysfunction; typically orders a comprehensive thyroid panel (fT3, rT3, antibodies), evaluates conversion issues, and integrates dietary, gut, and lifestyle factors into a treatment plan.",
+          "notes": "The approach most likely to go beyond TSH and look at the full picture. Quality and training vary considerably; look for practitioners with recognised functional medicine qualifications (e.g. IFMCP, BANT). Not covered by most insurance; private cost can be significant."
+        },
+        {
+          "type": "Integrative or holistic GP",
+          "role": "A conventionally trained doctor who also integrates nutritional, lifestyle, and root-cause approaches. May be more willing to prescribe combination T4/T3 or NDT, order complete thyroid panels, and investigate cofactors.",
+          "notes": "Finding a GP with this orientation is often transformative for patients who have been dismissed in standard primary care. They can bridge the gap between conventional prescribing and broader investigation."
+        },
+        {
+          "type": "Registered dietitian (with autoimmune or functional nutrition training)",
+          "role": "Supports dietary approaches \u2014 anti-inflammatory eating, gluten-free trials, AIP protocol \u2014 and helps with nutrient repletion strategies relevant to thyroid function (iron, selenium, zinc, B12, vitamin D).",
+          "notes": "Not all dietitians are familiar with Hashimoto's-specific nutrition; look for those with functional, integrative, or autoimmune nutrition specialisation. British Dietetic Association (BDA) or Academy of Nutrition and Dietetics (AND) directories may help."
+        },
+        {
+          "type": "GP (primary care physician)",
+          "role": "Entry point for diagnosis, initial thyroid panel, levothyroxine prescribing, and referral. The relationship quality with a GP who takes symptoms seriously rather than deferring entirely to TSH cutoffs is highly variable and clinically important.",
+          "notes": "Many people with hypothyroidism spend years cycling through GPs before finding one who investigates comprehensively. Keeping detailed symptom records and requesting specific tests (fT3, antibodies) in writing can help navigate this."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/Hypothyroidism",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/hypothyroidism/",
+          "notes": "Large, active community sharing personal experience with diagnosis, medication, labs, and practitioners. Useful for understanding what lab panels to request and finding others with similar symptom patterns."
+        },
+        {
+          "name": "r/Hashimotos",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Hashimotos/",
+          "notes": "Focused specifically on the autoimmune dimension \u2014 dietary approaches, antibody management, and the emotional experience of living with a chronic autoimmune condition."
+        },
+        {
+          "name": "Thyroid UK",
+          "platform": "Forum / website",
+          "url": "https://www.thyroiduk.org/",
+          "notes": "UK-based charity with detailed patient education, a forum with experienced patient moderators, and a list of thyroid-friendly practitioners. Particularly helpful for navigating NHS limitations and understanding T3 access in the UK."
+        },
+        {
+          "name": "HealthUnlocked \u2014 Thyroid UK community",
+          "platform": "HealthUnlocked (forum)",
+          "url": "https://healthunlocked.com/thyroiduk",
+          "notes": "The online forum associated with Thyroid UK. Very active and knowledgeable community; well-moderated by experienced patients. Useful for interpreting labs, medication questions, and finding practitioners in the UK."
+        },
+        {
+          "name": "Stop the Thyroid Madness Community",
+          "platform": "Facebook / website",
+          "url": "https://stopthethyroidmadness.com/",
+          "notes": "Patient-driven resource and community focused on advocating for T3-inclusive treatment, NDT, and comprehensive lab evaluation. A useful counterpoint to TSH-only mainstream care, though opinions expressed are sometimes assertive \u2014 cross-reference with clinical sources."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Stop the Thyroid Madness (website and book)",
+        "type": "book / website",
+        "author_or_source": "Janie A. Bowthorpe",
+        "url": "https://stopthethyroidmadness.com/",
+        "description": "A patient-written resource that documents the problems with TSH-only management, advocates for comprehensive thyroid testing (fT3, rT3, antibodies), and explains combination T4/T3 and NDT therapy. Blunt and advocacy-oriented. Useful for people who have been undertreated for years.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Thyroid UK \u2014 Patient Information Library",
+        "type": "website",
+        "author_or_source": "Thyroid UK",
+        "url": "https://www.thyroiduk.org/thyroid-disease/",
+        "description": "Evidence-referenced, UK-focused patient education on all aspects of thyroid disease \u2014 diagnosis, treatment options, labs, and navigating the NHS. Well-organised and balanced between mainstream and broader approaches.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Hashimoto's Protocol",
+        "type": "book",
+        "author_or_source": "Izabella Wentz PharmD",
+        "url": null,
+        "description": "Written by a pharmacist who developed Hashimoto's, this book details a structured approach to identifying personal autoimmune triggers \u2014 gut health, infections, nutrient deficiencies, dietary factors, and toxin exposure. Practical and systematic. Should be read critically alongside evidence-based sources.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Why Do I Still Have Thyroid Symptoms When My Lab Tests Are Normal?",
+        "type": "book",
+        "author_or_source": "Datis Kharrazian",
+        "url": null,
+        "description": "A functional medicine clinician's explanation of why standard thyroid treatment fails many patients. Covers conversion issues, autoimmunity, gut-thyroid connection, and nutrient cofactors. A bridge between patient experience and clinical physiology.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Clinical practice guideline: Management of Hypothyroidism \u2014 American Thyroid Association",
+        "type": "research paper / guideline",
+        "author_or_source": "American Thyroid Association",
+        "url": "https://www.liebertpub.com/doi/10.1089/thy.2014.0028",
+        "description": "The mainstream clinical reference for hypothyroidism management. Useful for understanding the evidence base and knowing what the standard of care is \u2014 so that gaps and limitations can be identified and discussed with practitioners.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Selenium and the Thyroid Gland: More Than Just a Micronutrient",
+        "type": "research paper",
+        "author_or_source": "K\u00f6hrle J, G\u00e4rtner R \u2014 European Journal of Endocrinology",
+        "url": "https://eje.bioscientifica.com/view/journals/eje/151/Suppl_3/1515.xml",
+        "description": "A solid scientific overview of selenium's essential role in thyroid hormone metabolism, oxidative protection, and autoimmune thyroid disease. Useful for understanding the mechanistic basis for selenium supplementation.",
+        "audience": "advanced"
+      },
+      {
+        "title": "The Thyroid Pharmacist Podcast",
+        "type": "podcast",
+        "author_or_source": "Izabella Wentz",
+        "url": "https://thyroidpharmacist.com/podcast/",
+        "description": "Episodes covering diet, gut health, root causes, supplement protocols, lab interpretation, and patient stories related to Hashimoto's and hypothyroidism. Accessible and practical; interviews with clinicians and researchers.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Thyroid and Gut Microbiome Connection \u2014 Frontiers in Endocrinology",
+        "type": "research paper",
+        "author_or_source": "Knezevic et al. \u2014 Frontiers in Endocrinology, 2020",
+        "url": "https://www.frontiersin.org/articles/10.3389/fendo.2020.00099/full",
+        "description": "A peer-reviewed review of the bidirectional relationship between the gut microbiome and thyroid function \u2014 including T4-to-T3 conversion by gut bacteria, the impact of gut permeability on autoimmune thyroid disease, and potential microbiome-based interventions.",
+        "audience": "advanced"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

@@ -13,45 +13,52 @@
     },
     "subgroups": [
       {
-        "name": "Primary (Clonal) MCAS",
-        "description": "Mast cell dysfunction caused by a clonal mutation \u2014 most commonly the KIT D816V mutation \u2014 meaning the mast cells themselves are genetically abnormal. This category includes systemic mastocytosis and its variants. Serum tryptase is more likely to be persistently elevated.",
+        "id": null,
+        "name": "Primary (clonal) MCAS",
+        "description": "Associated with a detectable clonal mast cell population, often carrying the KIT D816V mutation at low allele frequency \u2014 below the threshold for a diagnosis of mastocytosis. Represents a monoclonal basis for mast cell hyperactivity.",
         "distinguishing_features": [
-          "Persistently elevated baseline serum tryptase (often >20 ng/mL)",
-          "May have skin findings such as urticaria pigmentosa (brownish macules that wheal when rubbed \u2014 Darier's sign)",
-          "KIT D816V mutation detectable in blood or bone marrow",
-          "Bone marrow biopsy may show mast cell aggregates",
-          "Higher risk of severe anaphylaxis, including to Hymenoptera (bee/wasp) stings"
+          "KIT D816V mutation detectable in blood or tissue at low frequency",
+          "May have mildly elevated baseline tryptase (though often below 20 ng/mL)",
+          "Bone marrow biopsy may show subtle abnormalities without meeting full mastocytosis criteria",
+          "Higher risk of progressing to or overlapping with smouldering systemic mastocytosis",
+          "More likely to be identified in haematology or specialist mast cell clinics"
         ]
       },
       {
-        "name": "Secondary (Reactive) MCAS",
-        "description": "Mast cells are structurally normal but are chronically over-activated by an identifiable underlying driver. Common drivers include IgE-mediated allergic disease, chronic infection, parasitic infestation, autoimmune conditions, or connective tissue disorders.",
+        "id": null,
+        "name": "Secondary MCAS",
+        "description": "Mast cell activation driven by another identifiable underlying condition that chronically stimulates mast cells \u2014 such as IgE-mediated allergy, chronic infection, autoimmune disease, or physical urticaria. Mast cells themselves are not intrinsically abnormal.",
         "distinguishing_features": [
-          "Identifiable underlying condition driving mast cell activation",
-          "Symptom improvement when the underlying condition is treated",
-          "Tryptase may be normal at baseline",
-          "Often overlaps with conditions such as hEDS, POTS, or chronic infections"
+          "An underlying driver condition can be identified and treated",
+          "Treating the underlying condition may significantly reduce or resolve MCAS symptoms",
+          "IgE-mediated allergies, chronic inflammatory conditions, or physical triggers are often identifiable",
+          "Tryptase and clonal markers are typically negative",
+          "Response to allergy treatment or addressing the root condition is often more complete than in idiopathic MCAS"
         ]
       },
       {
-        "name": "Idiopathic MCAS",
-        "description": "The most commonly diagnosed form. Mast cells are hyperreactive without a detectable clonal abnormality and without a clearly identified secondary cause. Diagnosis is primarily clinical, supported by symptom response to mast cell-targeted treatments.",
+        "id": null,
+        "name": "Idiopathic (reactive) MCAS",
+        "description": "The most common form in clinical practice. No clonal abnormality and no identifiable underlying driver. Mast cells activate in a hyperreactive pattern without a clear structural or immunological explanation. This is the form most often described in patient communities.",
         "distinguishing_features": [
-          "Tryptase frequently normal or mildly elevated only during episodes",
-          "Urinary prostaglandin D2 or histamine metabolites may be more informative than tryptase",
-          "Often co-occurs with hEDS and POTS",
-          "Symptoms fluctuate unpredictably with varied and sometimes unidentifiable triggers",
-          "Strong clinical response to H1/H2 antihistamines and mast cell stabilisers supports diagnosis"
+          "Normal baseline tryptase in the majority of cases",
+          "KIT D816V mutation absent",
+          "Diagnosis often made clinically based on multi-system symptoms and response to treatment",
+          "Laboratory confirmation is elusive \u2014 urinary mediator tests may be the most informative",
+          "Triggers are often highly idiosyncratic and may include stress, hormonal shifts, infections, and environmental exposures",
+          "Strong association with hEDS, POTS, and other complex multisystem conditions"
         ]
       },
       {
-        "name": "MCAS with hEDS/POTS Overlap",
-        "description": "A clinically recognised subgroup in which MCAS occurs alongside hypermobile connective tissue disease and/or dysautonomia. Research suggests mast cells in connective tissue may interact with abnormal extracellular matrix, and that autonomic dysfunction may itself destabilise mast cell activity.",
+        "id": "mcas_angioedema",
+        "name": "MCAS with angioedema",
+        "description": "A presentation of MCAS in which episodic angioedema \u2014 swelling of the deeper dermal and submucosal tissues \u2014 is a prominent or defining feature. May be misclassified as hereditary angioedema or idiopathic angioedema. Distinguished from hereditary angioedema by normal C1-inhibitor levels and from IgE-mediated allergy by absence of specific IgE triggers.",
         "distinguishing_features": [
-          "Joint hypermobility, skin extensibility, or chronic musculoskeletal pain alongside mast cell symptoms",
-          "Orthostatic intolerance \u2014 dizziness, palpitations, pre-syncope on standing",
-          "May require coordinated management across multiple specialties",
-          "Symptoms of all three conditions can worsen simultaneously during flares"
+          "Recurrent angioedema without identifiable IgE-mediated allergen",
+          "C1-inhibitor function and levels are normal (distinguishing from hereditary angioedema)",
+          "Often accompanied by flushing, urticaria, or other mast cell symptoms",
+          "May respond to antihistamines and mast cell stabilisers",
+          "Episodes may be triggered by the same range of mast cell triggers as broader MCAS"
         ]
       }
     ],
@@ -635,7 +642,7 @@
     },
     "subgroups": {
       "model": "claude-sonnet-4-6",
-      "prompt_hash": "7b1745470040180e"
+      "prompt_hash": "6589aa7a43ffbecc"
     },
     "symptoms": {
       "model": "claude-sonnet-4-6",

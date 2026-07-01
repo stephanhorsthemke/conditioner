@@ -1,0 +1,681 @@
+{
+  "condition_id": "post_concussion",
+  "condition_name": "Post-concussion syndrome",
+  "generated_at": "2026-07-01T11:58:42.140869Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Post-concussion syndrome (PCS) is a condition where symptoms from a concussion \u2014 such as headaches, brain fog, dizziness, fatigue, and mood changes \u2014 persist for weeks, months, or even years after the initial head injury. Most people recover from a concussion within a few weeks, but a significant minority continue to struggle with symptoms that significantly affect their daily functioning, work, and relationships.",
+    "detailed_summary": "Post-concussion syndrome occurs when the functional disruption caused by a mild traumatic brain injury (mTBI) does not resolve within the expected recovery window \u2014 generally considered to be 4 weeks for most adults. The underlying biology is not fully understood, but likely involves neuroinflammation, disrupted cerebral blood flow autoregulation, autonomic nervous system dysfunction, cervical and vestibular injury, metabolic changes in neurons, and in some cases structural axonal injury detectable only with advanced imaging. Standard MRI and CT scans are almost always normal, which leads many people to be told their symptoms are psychological or that nothing is wrong \u2014 a deeply frustrating experience for those who are genuinely disabled by their symptoms. PCS is now better understood as a heterogeneous condition with multiple overlapping subtypes: some individuals are primarily affected by vestibular dysfunction, others by autonomic dysregulation, cervicogenic headache, mood disturbance, cognitive impairment, or sleep disruption. This subtype model has important practical implications because the most effective treatment differs substantially depending on which system is primarily affected. People with a prior history of migraines, anxiety, ADHD, prior concussions, or female sex at birth are at higher risk of developing PCS. Recovery is possible for most people, particularly with the right rehabilitation approach \u2014 but passive rest beyond the initial acute phase may actually slow recovery. Active, graduated rehabilitation guided by symptom tolerance is now the evidence-based standard.",
+    "prevalence": {
+      "summary": "Affects roughly 15\u201330% of people who sustain a concussion, making it a common complication of a very common injury.",
+      "estimate": "15\u201330% of concussion cases develop prolonged symptoms; approximately 3\u20135 million concussions occur in the US annually",
+      "notes": "Prevalence estimates vary widely depending on how PCS is defined (symptom duration threshold, number of symptoms required) and the population studied. Some studies suggest higher rates in clinical settings due to selection bias. Women, older adults, and those with pre-existing mental health conditions are overrepresented. Military populations have distinct risk profiles due to blast injury mechanisms."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Vestibular / ocular-motor PCS",
+        "description": "Predominant dysfunction in balance, spatial orientation, and visual processing. Often the most disabling subtype for daily activities.",
+        "distinguishing_features": [
+          "Persistent dizziness, vertigo, or motion sensitivity",
+          "Difficulty with visual tracking or busy visual environments (stores, screens)",
+          "Imbalance worsened by head movement",
+          "Responds best to vestibular physiotherapy and vision rehabilitation"
+        ]
+      },
+      {
+        "id": "pots",
+        "name": "Autonomic / POTS-variant PCS",
+        "description": "Head injury disrupts autonomic nervous system regulation, leading to heart rate and blood pressure instability, particularly on standing.",
+        "distinguishing_features": [
+          "Symptoms worsen significantly with upright posture",
+          "Elevated heart rate on standing (orthostatic tachycardia)",
+          "Exercise intolerance as a primary complaint",
+          "Improved with increased salt/fluid intake and graduated aerobic exercise protocols"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Cervicogenic PCS",
+        "description": "Significant contribution from cervical spine and soft tissue injury sustained during the same trauma that caused the concussion.",
+        "distinguishing_features": [
+          "Headaches originating from the neck, often unilateral and occipital",
+          "Neck stiffness and restricted range of motion",
+          "Symptoms worsened by sustained postures (sitting, driving)",
+          "Responds to physiotherapy targeting the cervical spine"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Cognitive / fatigue-dominant PCS",
+        "description": "Primary impairment in memory, processing speed, attention, and mental stamina, with profound cognitive fatigue.",
+        "distinguishing_features": [
+          "Brain fog, word-finding difficulty, and memory lapses",
+          "Rapid mental exhaustion with cognitive tasks",
+          "Symptoms crash after cognitive or sensory overload",
+          "May overlap with ME/CFS-like post-exertional malaise pattern"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Mood / anxiety-dominant PCS",
+        "description": "Neuropsychiatric symptoms predominate, often misattributed entirely to psychological causes rather than the underlying neurobiological injury.",
+        "distinguishing_features": [
+          "Irritability, anxiety, or depression disproportionate to pre-injury baseline",
+          "Emotional dysregulation and low frustration tolerance",
+          "Sleep disruption as a primary driver",
+          "Benefits from trauma-informed therapy alongside physical rehabilitation"
+        ]
+      },
+      {
+        "id": "migraine",
+        "name": "Post-traumatic migraine variant PCS",
+        "description": "Concussion triggers or worsens a migraine disorder, which then becomes a central driver of ongoing symptoms.",
+        "distinguishing_features": [
+          "Severe episodic or near-daily headaches with migraine features (light/sound sensitivity, nausea)",
+          "Prior personal or family history of migraine",
+          "Associated visual disturbances or aura",
+          "May respond to migraine-specific treatments (amitriptyline, topiramate, beta-blockers)"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Persistent headache",
+        "category": "neurological",
+        "notes": "The most common PCS symptom. May be tension-type, migrainous, cervicogenic, or a mixed pattern. Worsened by screens, cognitive effort, and noise."
+      },
+      {
+        "symptom": "Brain fog and difficulty concentrating",
+        "category": "cognitive",
+        "notes": "Described as thinking through cotton wool. Processing speed and working memory are most affected. Worsens with cognitive load and improves with rest."
+      },
+      {
+        "symptom": "Fatigue disproportionate to activity",
+        "category": "cognitive",
+        "notes": "Both mental and physical fatigue. Many individuals experience a boom-and-bust pattern where overexertion causes a symptom crash lasting hours to days."
+      },
+      {
+        "symptom": "Dizziness and balance problems",
+        "category": "vestibular",
+        "notes": "May be constant or triggered by head movement, visual motion, or standing up. Often a vestibular or autonomic mechanism."
+      },
+      {
+        "symptom": "Light sensitivity (photophobia)",
+        "category": "sensory",
+        "notes": "Screens, fluorescent lighting, and bright sunlight are common triggers. A core feature of post-traumatic migraine and ocular-motor dysfunction."
+      },
+      {
+        "symptom": "Noise sensitivity (phonophobia)",
+        "category": "sensory",
+        "notes": "Crowded or loud environments become overwhelming. Central sensitisation may amplify this over time."
+      },
+      {
+        "symptom": "Sleep disturbance",
+        "category": "sleep",
+        "notes": "Insomnia, hypersomnia, or non-restorative sleep are all common. Sleep disruption perpetuates nearly every other PCS symptom."
+      },
+      {
+        "symptom": "Irritability and emotional dysregulation",
+        "category": "mood",
+        "notes": "Low frustration tolerance and emotional reactivity, often out of character for the individual before injury."
+      },
+      {
+        "symptom": "Anxiety and depression",
+        "category": "mood",
+        "notes": "Can be neurobiologically driven by the injury itself, not purely a psychological response to disability \u2014 though both factors often coexist."
+      },
+      {
+        "symptom": "Memory difficulties",
+        "category": "cognitive",
+        "notes": "Especially short-term memory. People may forget conversations, lose words mid-sentence, or struggle to retain new information."
+      },
+      {
+        "symptom": "Slowed thinking and processing speed",
+        "category": "cognitive",
+        "notes": "Tasks that previously felt automatic \u2014 driving, reading, multitasking \u2014 may require significant conscious effort."
+      },
+      {
+        "symptom": "Visual disturbances",
+        "category": "visual",
+        "notes": "Blurred vision, double vision, difficulty tracking text, or eye strain with reading. Often due to ocular-motor dysfunction."
+      },
+      {
+        "symptom": "Neck pain and stiffness",
+        "category": "musculoskeletal",
+        "notes": "Frequently co-occurs due to whiplash-type mechanisms during the injury. Can independently drive headache."
+      },
+      {
+        "symptom": "Heart rate and blood pressure changes with posture",
+        "category": "autonomic",
+        "notes": "Standing can trigger palpitations, lightheadedness, or worsening fatigue \u2014 consistent with a POTS or dysautonomia component."
+      },
+      {
+        "symptom": "Exercise intolerance",
+        "category": "autonomic",
+        "notes": "Even mild physical activity may provoke symptom flares. Linked to autonomic dysfunction and impaired cerebrovascular reactivity."
+      },
+      {
+        "symptom": "Tinnitus",
+        "category": "auditory",
+        "notes": "Ringing or buzzing in the ears. May be related to inner ear disruption or central auditory processing changes."
+      },
+      {
+        "symptom": "Feeling of pressure or fullness in the head",
+        "category": "neurological",
+        "notes": "A frequently reported but hard-to-describe sensation distinct from headache."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Normal standard MRI and CT in the presence of significant, disabling symptoms \u2014 the 'invisible injury' pattern that is the hallmark of PCS",
+        "Symptom provocation with cognitive effort, physical exertion, or upright posture, followed by a crash lasting hours or days",
+        "Heart rate increase of \u226530 bpm (or absolute >120 bpm) within 10 minutes of standing, suggesting an autonomic/POTS component",
+        "Abnormal ocular-motor or vestibular testing in the presence of dizziness, visual symptoms, or balance problems",
+        "Below-expected neuropsychological testing scores for memory, processing speed, or executive function, particularly if prior baseline testing existed",
+        "Symptom onset clearly following a head injury, even if the event seemed minor at the time"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom diary with activity tracking",
+          "description": "Track symptoms (headache intensity, fatigue, cognitive clarity, mood, dizziness) alongside activity level, sleep, and potential triggers each day. Look for patterns \u2014 does cognitive effort, exercise, or screen time reliably produce a symptom crash? How long does recovery take? This data is invaluable for guiding rehabilitation pacing.",
+          "safety_notes": "This is observational only. Do not use it to push through crashes \u2014 the goal is to identify limits, not exceed them."
+        },
+        {
+          "name": "Orthostatic symptom check (NASA Lean Test approximation)",
+          "description": "Lie flat for 5 minutes, then stand upright and note any dizziness, palpitations, worsening brain fog, or nausea. If symptoms reliably worsen on standing and improve lying down, this suggests an autonomic component. A home pulse oximeter with heart rate monitoring can add useful data.",
+          "safety_notes": "Stop if symptoms become severe. Fainting is a safety risk \u2014 stand near a wall or have someone present. This is a preliminary screen only, not a diagnostic test."
+        },
+        {
+          "name": "Sleep quality tracking",
+          "description": "Use a wearable or sleep diary to assess sleep duration, continuity, and whether waking is restorative. Poor sleep is both a driver and a consequence of PCS and can be a modifiable target.",
+          "safety_notes": "No safety risks. Obsessive monitoring can worsen sleep anxiety \u2014 use as a guide, not a focus."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Neuropsychological assessment",
+          "type": "gold_standard",
+          "description": "A comprehensive battery of cognitive tests evaluating memory, attention, processing speed, and executive function. Establishes objective evidence of cognitive impairment and guides work or study accommodations.",
+          "availability": "Ordered by neurologists, neuropsychologists, or sports medicine physicians. Often available through concussion clinics. May require a referral."
+        },
+        {
+          "name": "Vestibular and ocular-motor assessment (VOMS/VOT)",
+          "type": "gold_standard",
+          "description": "Structured clinical examination of smooth pursuit, saccades, near point of convergence, vestibulo-ocular reflex, and visual motion sensitivity. Identifies which vestibular or ocular-motor subsystems are impaired.",
+          "availability": "Performed by vestibular physiotherapists, sports medicine physicians trained in concussion, or neuro-ophthalmologists. Increasingly available at dedicated concussion clinics."
+        },
+        {
+          "name": "Tilt table test or NASA Lean Test",
+          "type": "standard",
+          "description": "Formal assessment of heart rate and blood pressure changes with postural change. Diagnoses POTS or orthostatic hypotension as a co-driver of PCS symptoms.",
+          "availability": "Ordered by cardiologists, autonomic specialists, or knowledgeable sports medicine physicians. Tilt table testing is available in most hospitals; NASA Lean Test can be performed in clinic."
+        },
+        {
+          "name": "Advanced neuroimaging (fMRI, DTI, MR spectroscopy)",
+          "type": "emerging",
+          "description": "Diffusion tensor imaging (DTI) can detect microstructural white matter changes not visible on standard MRI. Functional MRI may show altered connectivity or cerebrovascular reactivity. MR spectroscopy assesses neurometabolic changes. Primarily research tools but increasingly used in clinical settings to validate injury.",
+          "availability": "Limited availability outside major academic medical centres and concussion research programs. Rarely covered by insurance. Useful when diagnosis is disputed."
+        },
+        {
+          "name": "Graded exercise testing with heart rate monitoring (Buffalo Concussion Treadmill Test)",
+          "type": "standard",
+          "description": "A submaximal treadmill test that identifies the heart rate threshold at which PCS symptoms are provoked. Helps guide aerobic exercise rehabilitation intensity and identifies autonomic dysfunction.",
+          "availability": "Available at dedicated concussion clinics and sports medicine programs familiar with the Buffalo Protocol. Requires trained supervision."
+        },
+        {
+          "name": "Blood biomarkers (GFAP, UCH-L1, NfL)",
+          "type": "emerging",
+          "description": "Serum markers of neuronal and glial injury. Neurofilament light chain (NfL) in particular shows promise as an objective marker of axonal injury and may correlate with recovery trajectory. Largely research-stage for PCS.",
+          "availability": "Limited clinical availability. Some specialist concussion clinics may offer NfL testing. Not yet standard of care."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "Concussion can disrupt autonomic nervous system regulation, producing a POTS-like syndrome with orthostatic tachycardia, exercise intolerance, and fatigue. This may be misattributed to deconditioning or anxiety rather than recognised as an autonomic injury."
+      },
+      {
+        "id": "migraine",
+        "name": "Migraine",
+        "relationship": "comorbid",
+        "explanation": "Concussion frequently triggers or unmasks migraine disorder. Post-traumatic migraine is one of the most common PCS subtypes and often drives the most disabling headache symptoms. Pre-existing migraine is also a significant risk factor for developing PCS."
+      },
+      {
+        "id": "me_cfs",
+        "name": "ME / CFS",
+        "relationship": "often_confused",
+        "explanation": "Severe PCS with pronounced cognitive fatigue, post-exertional malaise, and sleep dysfunction can closely resemble ME/CFS. The distinction matters because graded exercise therapy \u2014 sometimes used in ME/CFS \u2014 may worsen PCS, while graduated aerobic exercise within symptom tolerance is beneficial for PCS."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation",
+        "relationship": "mechanistic_link",
+        "explanation": "Prolonged neuroinflammation and pain signalling after concussion can lead to central sensitisation, amplifying pain and sensory symptoms. This may explain why light and noise sensitivity, headaches, and fatigue become self-perpetuating beyond the initial injury."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "comorbid",
+        "explanation": "Anxiety is both a consequence of PCS (driven by neurobiological changes and the psychosocial burden of chronic illness) and a potential perpetuating factor. Pre-existing anxiety is a risk factor for developing PCS after concussion."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "comorbid",
+        "explanation": "Depression occurs in a substantial minority of people with PCS, with both neurobiological and psychological contributions. It can worsen cognitive and fatigue symptoms and requires specific treatment rather than being dismissed as an understandable response to illness."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor sleep / insomnia",
+        "relationship": "comorbid",
+        "explanation": "Sleep disruption is nearly universal in PCS and is bidirectional: the brain injury disrupts sleep architecture, and poor sleep perpetuates every other PCS symptom including headache, cognition, mood, and pain sensitivity."
+      },
+      {
+        "id": "cervical_instability",
+        "name": "Cervical instability",
+        "relationship": "comorbid",
+        "explanation": "The trauma that causes concussion often simultaneously injures cervical structures. Cervicogenic headache and dizziness arising from the upper cervical spine can be mistaken for purely brain-based symptoms, and treating the cervical component is often necessary for full recovery."
+      },
+      {
+        "id": "bvd",
+        "name": "Binocular vision dysfunction",
+        "relationship": "downstream",
+        "explanation": "Concussion frequently disrupts ocular-motor control, leading to binocular vision problems including convergence insufficiency and vertical heterophoria. These can drive headaches, brain fog, and visual fatigue and often require a neuro-optometrist to assess and treat."
+      },
+      {
+        "id": "adhd",
+        "name": "ADHD",
+        "relationship": "often_confused",
+        "explanation": "Pre-existing ADHD is a risk factor for concussion (impulsivity, risk-taking) and for PCS development. Additionally, PCS cognitive symptoms \u2014 inattention, distractibility, poor working memory \u2014 can mimic ADHD, complicating diagnosis in individuals without a prior ADHD history."
+      },
+      {
+        "id": "trauma",
+        "name": "Trauma / PTSD",
+        "relationship": "comorbid",
+        "explanation": "The traumatic circumstances of the injury event itself can produce PTSD, which overlaps substantially with and worsens PCS symptoms. This is particularly common in assault, motor vehicle accidents, and military blast injuries."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "mechanistic_link",
+        "explanation": "Both conditions share central sensitisation as a likely mechanism. Widespread pain and fatigue can develop as downstream consequences of persistent post-concussion neuroinflammation, and the two conditions can coexist."
+      },
+      {
+        "id": "long_covid",
+        "name": "Long COVID",
+        "relationship": "often_confused",
+        "explanation": "Long COVID and PCS share a remarkably similar symptom profile \u2014 brain fog, fatigue, post-exertional malaise, headaches, and autonomic dysfunction. Mechanistic overlaps (neuroinflammation, autonomic injury, mitochondrial dysfunction) are under active investigation. People with prior PCS may be more vulnerable to Long COVID."
+      },
+      {
+        "id": "chronic_stress",
+        "name": "Chronic stress / HPA overload",
+        "relationship": "comorbid",
+        "explanation": "The chronic stress of living with a disabling, poorly-understood condition dysregulates the HPA axis. Elevated cortisol can worsen neuroinflammation and impair sleep, creating a cycle that perpetuates PCS symptoms."
+      },
+      {
+        "id": "vitamin_d_deficiency",
+        "name": "Vitamin D deficiency",
+        "relationship": "comorbid",
+        "explanation": "Vitamin D has neuroprotective and anti-inflammatory roles. Deficiency is common in people with PCS \u2014 partly due to reduced outdoor activity and light sensitivity \u2014 and may worsen neuroinflammation and mood symptoms."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Graduated aerobic exercise (Buffalo Protocol)",
+          "category": "lifestyle",
+          "description": "Sub-symptom-threshold aerobic exercise \u2014 meaning exercise kept below the heart rate at which symptoms are provoked \u2014 has strong evidence for improving PCS outcomes. Daily walking or stationary cycling, gradually increased over weeks, helps restore cerebrovascular reactivity and autonomic function. This is now the recommended approach, replacing the previously common advice of extended complete rest.",
+          "evidence_level": "strong",
+          "notes": "Must be guided by symptom tolerance, not pushed through symptom provocation. Ideally guided by a sports medicine physician or physiotherapist familiar with the Buffalo Protocol. Starting too hard, too soon, reliably causes setbacks."
+        },
+        {
+          "name": "Vestibular physiotherapy",
+          "category": "rehabilitation",
+          "description": "Targeted exercises to retrain the vestibular system \u2014 including habituation exercises, gaze stabilisation, and balance training \u2014 performed by a vestibular-trained physiotherapist. Highly effective for the vestibular subtype of PCS.",
+          "evidence_level": "strong",
+          "notes": "Exercises may initially provoke dizziness \u2014 this is expected and different from the dangerous symptom provocation to avoid with aerobic exercise. Progress should be gradual and guided."
+        },
+        {
+          "name": "Vision therapy and neuro-optometry",
+          "category": "rehabilitation",
+          "description": "Supervised exercises to improve ocular-motor function \u2014 convergence, smooth pursuit, saccades \u2014 performed by a neuro-optometrist or trained vision therapist. May significantly reduce headaches, brain fog, and reading difficulties driven by binocular vision dysfunction.",
+          "evidence_level": "moderate",
+          "notes": "Not all optometrists are trained in post-concussion vision rehabilitation. Seeking a neuro-optometrist with specific concussion experience is important."
+        },
+        {
+          "name": "Sleep optimisation",
+          "category": "lifestyle",
+          "description": "Prioritising consistent sleep timing, darkness, cool temperature, and limiting screens before bed. Treating sleep as a core recovery tool rather than a passive byproduct. CBT-i (cognitive behavioural therapy for insomnia) is first-line for chronic post-concussion insomnia.",
+          "evidence_level": "strong",
+          "notes": "Short-term sleep aids may be appropriate under medical guidance, but long-term reliance on sedatives can worsen cognitive symptoms and disrupt sleep architecture."
+        },
+        {
+          "name": "Cervical physiotherapy",
+          "category": "rehabilitation",
+          "description": "Manual therapy and exercise targeting the upper cervical spine when cervicogenic contributions are identified. Can significantly reduce headaches that are neck-driven rather than purely brain-based.",
+          "evidence_level": "moderate",
+          "notes": "Should be performed by a physiotherapist experienced in post-concussion cervical management, not aggressive manipulation. Aggressive cervical manipulation carries small but real risks."
+        },
+        {
+          "name": "Cognitive pacing and energy management",
+          "category": "lifestyle",
+          "description": "Structuring the day to avoid cognitive overload \u2014 scheduling demanding mental tasks during peak hours, building in recovery breaks, and avoiding the boom-and-bust cycle of overexertion followed by crashes. Occupational therapists can help design practical pacing systems.",
+          "evidence_level": "moderate",
+          "notes": "Pacing is not the same as avoidance. The goal is gradual, sustainable expansion of cognitive capacity over time, not permanent restriction."
+        },
+        {
+          "name": "Melatonin for sleep",
+          "category": "supplement",
+          "description": "Low-dose melatonin (0.5\u20133 mg taken 30\u201360 minutes before the desired sleep time) may help reset disrupted circadian rhythms in PCS, which are common after brain injury.",
+          "evidence_level": "moderate",
+          "notes": "Generally well tolerated. Doses higher than 3\u20135 mg have not been shown to be more effective and may cause next-day grogginess. Check for interactions with other medications."
+        },
+        {
+          "name": "Omega-3 fatty acids",
+          "category": "supplement",
+          "description": "Omega-3 supplementation (particularly DHA) may support neuronal membrane repair and reduce neuroinflammation. Some evidence suggests benefit in both acute concussion and the recovery phase.",
+          "evidence_level": "moderate",
+          "notes": "Typical doses used in research are 1\u20133 g/day of EPA+DHA combined. Generally safe. Choose a high-quality fish oil or algae-based product."
+        },
+        {
+          "name": "Amitriptyline (low dose)",
+          "category": "medication",
+          "description": "Low-dose tricyclic antidepressant (10\u201350 mg at night) commonly used for post-traumatic headache prevention, sleep improvement, and mood stabilisation in PCS. Not specific to PCS but has a long track record in this context.",
+          "evidence_level": "moderate",
+          "notes": "Prescribed by physicians. Side effects include morning grogginess and dry mouth. Should not be used as a standalone treatment without addressing rehabilitation."
+        },
+        {
+          "name": "Increased salt and fluid intake for autonomic subtype",
+          "category": "lifestyle",
+          "description": "For individuals with an autonomic/POTS component, increasing sodium intake (2\u20134 g/day additional salt) and fluid intake (2\u20133 litres/day) can improve blood volume and reduce orthostatic symptoms.",
+          "evidence_level": "moderate",
+          "notes": "Only appropriate when POTS or orthostatic intolerance has been identified. Not recommended for individuals with hypertension or certain cardiac conditions without medical guidance."
+        },
+        {
+          "name": "Cognitive behavioural therapy (CBT) and acceptance-based approaches",
+          "category": "psychological",
+          "description": "Evidence-based psychological therapies can help manage the mood, anxiety, and catastrophising that often accompany chronic PCS. Acceptance and Commitment Therapy (ACT) in particular may help individuals engage with rehabilitation despite persistent symptoms.",
+          "evidence_level": "moderate",
+          "notes": "CBT is not a suggestion that PCS is 'in the head' \u2014 it is a tool for managing the psychological dimensions of a genuine physical injury. Works best alongside physical rehabilitation, not as a replacement."
+        },
+        {
+          "name": "Screen reduction and environmental modification",
+          "category": "environment",
+          "description": "Reducing screen time, using blue light filters, dimming displays, wearing FL-41 tinted lenses in bright environments, and reducing noise exposure can reduce symptom load and allow the brain more recovery capacity.",
+          "evidence_level": "moderate",
+          "notes": "These are symptom management tools, not cures. Complete avoidance of sensory stimulation for extended periods can delay recovery \u2014 graduated exposure is generally the goal."
+        }
+      ],
+      "things_to_avoid": [
+        "Prolonged complete rest beyond the first 24\u201348 hours after concussion \u2014 evidence shows it delays recovery and does not improve outcomes",
+        "Pushing through symptom provocation during exercise \u2014 this reliably causes setbacks and is counterproductive to the graduated approach",
+        "Heavy alcohol consumption \u2014 significantly worsens brain fog, sleep quality, and neuroinflammation",
+        "High-contact sports or activities with significant fall/collision risk before clearance from a concussion specialist \u2014 risks of re-injury before recovery are substantial",
+        "Excessive screen time without breaks \u2014 a major driver of headache and cognitive fatigue in PCS",
+        "Waiting passively for symptoms to resolve on their own without seeking rehabilitation \u2014 the earlier appropriate rehabilitation begins, the better the outcomes",
+        "Dismissing symptoms as purely psychological or anxiety-driven without investigating physical mechanisms \u2014 leads to delayed appropriate treatment",
+        "Overloading the cognitive schedule in an attempt to 'push through' and get back to normal quickly \u2014 this reliably worsens and prolongs symptoms"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "Standard neuroimaging will almost always come back normal, and many clinicians will interpret this as meaning nothing is wrong \u2014 but normal imaging does not mean normal brain function.",
+        "why_resisted": "People with PCS desperately want their suffering validated by a test result. Normal imaging can feel like a door being slammed on accessing care, understanding, or accommodations.",
+        "path_forward": "People who understand that PCS is a functional and metabolic injury \u2014 not a structural one visible on standard scans \u2014 are better positioned to seek the right type of evaluation (neuropsychological testing, vestibular assessment, autonomic testing) and to advocate credibly for themselves in medical settings."
+      },
+      {
+        "truth": "Prolonged rest was the standard advice for concussion for decades, but evidence now shows it prolongs recovery. Many people with PCS who followed this advice and remained inactive may have inadvertently made their recovery harder.",
+        "why_resisted": "Rest feels intuitively correct when the brain is injured, and exertion provokes symptoms \u2014 so avoidance feels protective. The idea that gentle, graduated movement helps despite causing temporary discomfort is counterintuitive and difficult to act on.",
+        "path_forward": "People who engage with graduated aerobic exercise at sub-symptom-threshold intensity, guided by a knowledgeable practitioner, commonly see meaningful improvement in exercise tolerance, cognitive clarity, and headache frequency within weeks to months."
+      },
+      {
+        "truth": "Recovery from PCS is rarely linear. Setbacks after overexertion are normal and do not mean permanent worsening \u2014 but many people interpret each crash as evidence that they will never recover.",
+        "why_resisted": "After months of suffering, each setback feels catastrophic. The unpredictability of symptoms is psychologically destabilising and makes it difficult to maintain hope or a consistent rehabilitation approach.",
+        "path_forward": "Those who track their baseline over weeks and months rather than day-to-day fluctuations typically begin to see a gradual upward trend. Reframing setbacks as information about current limits \u2014 rather than permanent regression \u2014 enables continued engagement with recovery."
+      },
+      {
+        "truth": "Many mainstream neurologists and emergency physicians have limited training in PCS rehabilitation and may offer little beyond reassurance or medication. Finding the right practitioner is a real and necessary part of recovery, not optional.",
+        "why_resisted": "It feels like the medical system should provide the answer. Accepting that you may need to seek out a sports medicine physician, vestibular physio, or concussion clinic yourself \u2014 and that this may take effort and sometimes cost \u2014 is frustrating and exhausting.",
+        "path_forward": "People who find their way to practitioners specifically trained in concussion rehabilitation \u2014 sports medicine physicians, vestibular physiotherapists, concussion clinics \u2014 consistently report better outcomes and a clearer path forward than those managed only in general neurology or emergency settings."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Identify your dominant PCS subtype",
+          "why_it_matters": "PCS is not a single uniform condition. Treatment for vestibular PCS is fundamentally different from treatment for autonomic PCS or cervicogenic PCS. Mismatching treatment to subtype wastes time and may worsen symptoms.",
+          "how_to_start": "Seek evaluation at a concussion clinic or from a sports medicine physician who uses a subtype-based assessment framework. Note which symptom clusters dominate \u2014 dizziness, orthostatic intolerance, neck pain, headache, or cognitive fatigue.",
+          "timeline": "Accurate subtype identification can occur within a single comprehensive assessment; appropriate treatment typically shows early response signals within 4\u20138 weeks.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Graduated aerobic exercise within symptom threshold",
+          "why_it_matters": "Sub-symptom-threshold aerobic exercise is the intervention with the strongest evidence for improving PCS. It restores cerebrovascular reactivity, autonomic function, and mood \u2014 all of which are disrupted after concussion.",
+          "how_to_start": "Start with 20 minutes of light walking or stationary cycling at a comfortable intensity. If symptoms worsen during or significantly after, the intensity was too high. Increase duration and intensity by no more than 10% per week as tolerated.",
+          "timeline": "Measurable improvement in exercise tolerance often seen within 4\u20138 weeks; broader symptom improvement typically lags exercise tolerance by weeks.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Fixing sleep as a foundation",
+          "why_it_matters": "Sleep is when the brain clears metabolic waste via the glymphatic system and consolidates recovery. Poor sleep amplifies every other PCS symptom \u2014 headache, brain fog, mood, and pain. No amount of rehabilitation fully compensates for chronically disrupted sleep.",
+          "how_to_start": "Establish a fixed wake time 7 days per week. Reduce screens 60\u201390 minutes before bed. Keep the bedroom dark and cool. If insomnia persists beyond 3\u20134 weeks, seek a referral for CBT-i rather than long-term sleep medications.",
+          "timeline": "Sleep quality improvements often begin within 2\u20134 weeks of consistent sleep hygiene practices; CBT-i shows benefits within 6\u20138 sessions.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Addressing cervical involvement with targeted physiotherapy",
+          "why_it_matters": "A significant proportion of PCS headaches and dizziness have a cervical rather than purely brain-based origin. Treating the brain while ignoring the neck means persistent symptoms from an addressable source.",
+          "how_to_start": "See a physiotherapist specifically experienced in cervicogenic headache and post-concussion management. Cervical assessment should include upper cervical mobility, muscle tenderness, and joint position sense testing.",
+          "timeline": "Cervicogenic headache often responds within 6\u201312 physiotherapy sessions over 6\u201312 weeks.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Pacing and cognitive load management",
+          "why_it_matters": "Cognitive overexertion is as real a stressor for the recovering brain as physical overexertion. Unmanaged cognitive load perpetuates the boom-bust cycle and prevents neural recovery.",
+          "how_to_start": "Limit demanding cognitive work (reading, screens, planning, socialising) to manageable blocks with genuine rest breaks. Use a symptom diary to identify personal cognitive limits. An occupational therapist can help design a return-to-work or return-to-study plan.",
+          "timeline": "Establishing sustainable pacing habits typically requires 2\u20134 weeks; gradual expansion of cognitive tolerance follows over months.",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Returning to full activity \u2014 work, school, or sport \u2014 too quickly after the injury, before the brain has stabilised, causing repeated setbacks",
+        "Treating PCS as a single uniform condition and following generic advice rather than identifying and targeting the specific subtype",
+        "Relying on medication alone (analgesics, antidepressants) without engaging in active rehabilitation \u2014 medications manage symptoms but do not restore the underlying disrupted physiology",
+        "Using rest as the primary long-term strategy beyond the acute phase \u2014 inactivity worsens autonomic deconditioning, mood, and sleep, and delays recovery",
+        "Overusing analgesics, particularly NSAIDs and triptans \u2014 use on more than 10\u201315 days per month causes medication overuse headache, which compounds PCS headache",
+        "Catastrophising symptoms and interpreting each setback as permanent regression \u2014 this creates a fear-avoidance cycle that reduces engagement with rehabilitation",
+        "Ignoring mood and sleep symptoms as secondary \u2014 these are often the primary drivers perpetuating the entire symptom cluster and deserve direct treatment"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Sports medicine physician (concussion specialist)",
+          "role": "The single most practically useful clinician for PCS management. Sports medicine physicians with concussion expertise can perform subtype-based assessment, order the Buffalo Concussion Treadmill Test, coordinate multidisciplinary rehabilitation, and guide graduated return to activity.",
+          "notes": "Not all sports medicine physicians have dedicated concussion training. Seeking one affiliated with a dedicated concussion clinic is preferable. In many countries these clinics exist within university sports medicine programs or major hospital systems."
+        },
+        {
+          "type": "Vestibular physiotherapist",
+          "role": "Assesses and treats balance, dizziness, and ocular-motor dysfunction \u2014 the vestibular subtype of PCS. Provides specific, evidence-based exercise programs that the brain cannot recover from on its own.",
+          "notes": "Should have specific training in post-concussion vestibular rehabilitation, not just general vestibular physiotherapy. Ask specifically about concussion experience."
+        },
+        {
+          "type": "Neuropsychologist",
+          "role": "Provides objective assessment of cognitive functioning \u2014 memory, attention, processing speed, executive function. Essential for documenting impairment for workplace or academic accommodations and for guiding cognitive rehabilitation.",
+          "notes": "Wait times can be long in public healthcare systems. Private neuropsychological assessment is an option where available."
+        },
+        {
+          "type": "Neuro-optometrist",
+          "role": "Assesses and treats binocular vision dysfunction, convergence insufficiency, and visual processing problems caused by concussion. Can prescribe prism lenses or supervised vision therapy.",
+          "notes": "A standard optometrist will often miss post-concussion binocular vision problems. Specifically seek a neuro-optometrist or developmental optometrist with concussion experience."
+        },
+        {
+          "type": "Neurologist",
+          "role": "Important for ruling out structural brain injury, epilepsy, and other neurological conditions. May assist with headache management including preventive medications.",
+          "notes": "Many neurologists have limited training in PCS rehabilitation and may offer reassurance without specific treatment. They are more useful for ruling out serious pathology than for driving functional recovery."
+        },
+        {
+          "type": "Occupational therapist (OT)",
+          "role": "Helps individuals design practical strategies for managing cognitive fatigue, structuring daily activity, and returning to work or school in a graduated, sustainable way.",
+          "notes": "An OT with neurological or concussion rehabilitation experience is most useful. May not be universally available in all settings."
+        },
+        {
+          "type": "Psychologist or therapist (trauma-informed, CBT or ACT trained)",
+          "role": "Addresses the mood, anxiety, PTSD, and catastrophising components of PCS that perpetuate symptoms and impair rehabilitation engagement. CBT-i for sleep insomnia is also highly effective.",
+          "notes": "Should be aware that PCS has a genuine neurobiological basis and not frame the condition as primarily psychosomatic \u2014 though psychological factors are real and important co-drivers."
+        },
+        {
+          "type": "Cardiologist or autonomic specialist",
+          "role": "Relevant when an autonomic/POTS component is suspected. Can perform tilt table testing and guide treatment of orthostatic intolerance.",
+          "notes": "Many cardiologists are unfamiliar with post-concussion autonomic dysfunction. Seeking one with interest in POTS or dysautonomia may be necessary."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/postconcussion",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/postconcussion/",
+          "notes": "Active, large community of people navigating PCS recovery. Useful for peer support, practitioner recommendations, and understanding the range of lived experience. Quality of medical information varies \u2014 cross-reference with clinical sources."
+        },
+        {
+          "name": "Concussion Alliance",
+          "platform": "Website / community",
+          "url": "https://concussionalliance.org",
+          "notes": "Non-profit organisation providing evidence-based information, a provider directory, and community resources. Particularly useful for understanding the latest research and finding knowledgeable practitioners."
+        },
+        {
+          "name": "PCS Support Group",
+          "platform": "Facebook",
+          "url": null,
+          "notes": "Several active Facebook groups exist for PCS support \u2014 search 'Post Concussion Syndrome Support Group'. Useful for peer connection and practical advice, though medical accuracy is variable."
+        },
+        {
+          "name": "Dysautonomia International (for autonomic subtype)",
+          "platform": "Website / community",
+          "url": "https://www.dysautonomiainternational.org",
+          "notes": "Relevant for those with a significant POTS or autonomic component to their PCS. Provides education, provider directories, and research updates."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Concussion Alliance Resource Library",
+        "type": "website",
+        "author_or_source": "Concussion Alliance",
+        "url": "https://concussionalliance.org",
+        "description": "A well-curated, evidence-based resource covering PCS subtypes, treatment approaches, research summaries, and a practitioner directory. One of the most practically useful starting points for individuals researching their own recovery.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Traumatic Brain Injury and Concussion \u2014 CDC Information",
+        "type": "website",
+        "author_or_source": "US Centers for Disease Control and Prevention",
+        "url": "https://www.cdc.gov/traumaticbraininjury/",
+        "description": "Provides foundational information about concussion and TBI, including the HEADS UP resources. A reliable starting point for understanding the basics.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Concussion \u2014 The Buffalo Concussion Treadmill Test explained",
+        "type": "video",
+        "author_or_source": "Dr. John Leddy / University at Buffalo Concussion Management Clinic",
+        "url": "https://www.youtube.com/watch?v=NqCkK_b3ong",
+        "description": "Explanation of the Buffalo Protocol and the evidence supporting graduated aerobic exercise for PCS recovery. Directly addresses the 'just rest' myth with research evidence.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Life After Impact: The Complete Guide to Recovering from a Concussion",
+        "type": "book",
+        "author_or_source": "Dr. Jane McDevitt",
+        "url": null,
+        "description": "A practical, patient-facing guide to understanding concussion recovery covering the major symptom domains, rehabilitation approaches, and how to navigate the medical system. Well regarded in the PCS community.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Post-Concussion Syndrome: A Guide to Symptoms, Science, and Recovery",
+        "type": "book",
+        "author_or_source": "Dr. Barry Willer and Dr. John Leddy",
+        "url": null,
+        "description": "A clinically grounded overview from two researchers who developed the Buffalo Protocol. Covers the neuroscience of PCS and the evidence base for graduated exercise. More detailed and clinical in tone.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "The Concussion Repair Manual",
+        "type": "book",
+        "author_or_source": "Dr. Dan Engle",
+        "url": null,
+        "description": "A functional medicine and integrative approach to concussion recovery covering nutrition, supplements, sleep, hormones, and rehabilitation. Broader scope than mainstream guides. Useful supplement to conventional rehabilitation.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Persistent Post-Concussive Symptoms \u2014 UpToDate",
+        "type": "research paper",
+        "author_or_source": "UpToDate (Willer and Leddy)",
+        "url": "https://www.uptodate.com",
+        "description": "The standard clinical reference used by physicians for PCS. Requires UpToDate subscription or institutional access but represents the mainstream evidence base. Useful for understanding what well-informed clinicians should know.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Cognitive Rest is No Longer Recommended for Concussion Recovery (podcast discussion)",
+        "type": "podcast",
+        "author_or_source": "Various \u2014 search across concussion and sports medicine podcasts",
+        "url": null,
+        "description": "Multiple sports medicine and neurology podcasts have covered the shift from rest-based to active rehabilitation models. Searching 'concussion graduated exercise protocol podcast' surfaces accessible discussions of the current evidence.",
+        "audience": "beginner"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

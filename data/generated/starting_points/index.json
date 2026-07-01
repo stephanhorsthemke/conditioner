@@ -1,0 +1,857 @@
+[
+  {
+    "id": "ibs",
+    "label": "IBS",
+    "full_label": "Irritable bowel syndrome (IBS)",
+    "kind": "syndrome",
+    "condition_id": "ibs",
+    "intro": "IBS is a syndrome label \u2014 these are the conditions worth ruling in or out,\nbest-effort sorted by how often each shows up in IBS patients. Filters\ncan help prioritise but might be imprecise.\n",
+    "symptom_patterns": [
+      {
+        "id": "ibs-d",
+        "label": "IBS-D \u2014 diarrhea-predominant",
+        "description": "Loose or watery stools are the dominant feature, often urgent and occurring after meals. Cramping and bloating are common, and symptoms may be triggered by stress, food, or both.\n"
+      },
+      {
+        "id": "ibs-c",
+        "label": "IBS-C \u2014 constipation-predominant",
+        "description": "Hard, infrequent, or difficult-to-pass stools dominate, often accompanied by abdominal pain and bloating that may partially improve after a bowel movement.\n"
+      },
+      {
+        "id": "ibs-m",
+        "label": "IBS-M \u2014 mixed bowel habits",
+        "description": "Both diarrhea and constipation occur in the same person, sometimes alternating within days or even hours. This pattern can be particularly difficult to manage with a single treatment approach.\n"
+      },
+      {
+        "id": "bloating-dominant",
+        "label": "Bloating and gas dominant",
+        "description": "Significant abdominal distension, visible bloating, and excessive gas are the primary complaints, with bowel habit changes being secondary or variable.\n"
+      },
+      {
+        "id": "pain-dominant",
+        "label": "Pain-dominant / visceral hypersensitivity pattern",
+        "description": "Abdominal pain is the most disabling symptom, often out of proportion to visible gut changes, suggestive of heightened pain signalling in the gut-brain axis.\n"
+      },
+      {
+        "id": "post-infectious",
+        "label": "Post-infectious IBS (PI-IBS)",
+        "description": "Symptoms began or dramatically worsened following an episode of gastroenteritis, food poisoning, or traveller's diarrhea, suggesting microbial or immune disruption as a trigger.\n"
+      },
+      {
+        "id": "systemic",
+        "label": "Symptoms beyond the gut",
+        "description": "Conditions where significant symptoms appear outside the digestive system \u2014 brain fog, fatigue, skin rashes, joint pain, or widespread pain \u2014 often alongside or instead of classic gut symptoms. If gut issues come with unexplained systemic symptoms, investigating these drivers is especially worthwhile.\n"
+      }
+    ],
+    "sub_conditions": [
+      {
+        "id": "lactase",
+        "probability": 5,
+        "patterns": [
+          "ibs-d",
+          "bloating-dominant",
+          "ibs-m"
+        ]
+      },
+      {
+        "id": "fructose",
+        "probability": 5,
+        "patterns": [
+          "ibs-d",
+          "bloating-dominant",
+          "ibs-m"
+        ]
+      },
+      {
+        "id": "sibo",
+        "probability": 5,
+        "patterns": [
+          "ibs-d",
+          "ibs-c",
+          "bloating-dominant",
+          "post-infectious",
+          "systemic"
+        ]
+      },
+      {
+        "id": "dysbiosis",
+        "probability": 5,
+        "patterns": [
+          "ibs-d",
+          "ibs-m",
+          "bloating-dominant",
+          "post-infectious",
+          "ibs-c"
+        ]
+      },
+      {
+        "id": "central_sensitisation",
+        "probability": 5,
+        "patterns": [
+          "pain-dominant",
+          "ibs-m",
+          "ibs-c",
+          "systemic"
+        ]
+      },
+      {
+        "id": "anxiety",
+        "probability": 5,
+        "patterns": [
+          "ibs-d",
+          "pain-dominant",
+          "ibs-m",
+          "ibs-c",
+          "systemic"
+        ]
+      },
+      {
+        "id": "depression",
+        "probability": 5,
+        "patterns": [
+          "ibs-c",
+          "pain-dominant",
+          "systemic"
+        ]
+      },
+      {
+        "id": "sorbitol",
+        "probability": 4,
+        "patterns": [
+          "ibs-d",
+          "bloating-dominant"
+        ]
+      },
+      {
+        "id": "histamine",
+        "probability": 4,
+        "patterns": [
+          "ibs-d",
+          "ibs-m",
+          "bloating-dominant",
+          "systemic"
+        ]
+      },
+      {
+        "id": "ncgs",
+        "probability": 4,
+        "patterns": [
+          "ibs-d",
+          "ibs-m",
+          "bloating-dominant",
+          "pain-dominant",
+          "ibs-c",
+          "systemic"
+        ]
+      },
+      {
+        "id": "trauma",
+        "probability": 4,
+        "patterns": [
+          "pain-dominant",
+          "ibs-d",
+          "ibs-m",
+          "ibs-c",
+          "systemic"
+        ]
+      },
+      {
+        "id": "hpylori",
+        "probability": 3,
+        "patterns": [
+          "ibs-d",
+          "ibs-m",
+          "bloating-dominant",
+          "ibs-c",
+          "pain-dominant",
+          "post-infectious"
+        ]
+      },
+      {
+        "id": "fungal",
+        "probability": 3,
+        "patterns": [
+          "ibs-d",
+          "bloating-dominant",
+          "post-infectious"
+        ]
+      },
+      {
+        "id": "mcas",
+        "probability": 3,
+        "patterns": [
+          "ibs-d",
+          "pain-dominant",
+          "ibs-m",
+          "ibs-c",
+          "systemic"
+        ]
+      },
+      {
+        "id": "igg",
+        "probability": 3,
+        "patterns": [
+          "ibs-d",
+          "bloating-dominant",
+          "ibs-m",
+          "ibs-c",
+          "systemic"
+        ]
+      },
+      {
+        "id": "salicylate",
+        "probability": 3,
+        "patterns": [
+          "ibs-d",
+          "ibs-m",
+          "bloating-dominant",
+          "systemic"
+        ]
+      },
+      {
+        "id": "thyroid",
+        "probability": 3,
+        "patterns": [
+          "ibs-c",
+          "ibs-d",
+          "systemic"
+        ]
+      },
+      {
+        "id": "coeliac",
+        "probability": 3,
+        "patterns": [
+          "ibs-d",
+          "ibs-m",
+          "bloating-dominant",
+          "systemic"
+        ]
+      },
+      {
+        "id": "sid",
+        "probability": 2,
+        "patterns": [
+          "ibs-d",
+          "bloating-dominant"
+        ]
+      },
+      {
+        "id": "bam",
+        "probability": 2,
+        "patterns": [
+          "ibs-d",
+          "pain-dominant"
+        ]
+      },
+      {
+        "id": "epi",
+        "probability": 2,
+        "patterns": [
+          "ibs-d",
+          "bloating-dominant"
+        ]
+      },
+      {
+        "id": "nickel",
+        "probability": 2,
+        "patterns": [
+          "ibs-d",
+          "ibs-m",
+          "bloating-dominant",
+          "ibs-c",
+          "systemic"
+        ]
+      },
+      {
+        "id": "oxalate",
+        "probability": 2,
+        "patterns": [
+          "pain-dominant",
+          "ibs-c",
+          "systemic"
+        ]
+      },
+      {
+        "id": "eosinophilic",
+        "probability": 2,
+        "patterns": [
+          "ibs-d",
+          "pain-dominant",
+          "bloating-dominant",
+          "systemic"
+        ]
+      },
+      {
+        "id": "eds",
+        "probability": 2,
+        "patterns": [
+          "ibs-c",
+          "ibs-m",
+          "bloating-dominant",
+          "pain-dominant",
+          "systemic"
+        ]
+      },
+      {
+        "id": "pots",
+        "probability": 2,
+        "patterns": [
+          "ibs-d",
+          "ibs-m",
+          "bloating-dominant",
+          "systemic"
+        ]
+      },
+      {
+        "id": "endometriosis",
+        "probability": 2,
+        "patterns": [
+          "ibs-d",
+          "ibs-m",
+          "pain-dominant",
+          "systemic"
+        ]
+      },
+      {
+        "id": "hormonal",
+        "probability": 2,
+        "patterns": [
+          "ibs-d",
+          "ibs-m",
+          "pain-dominant",
+          "ibs-c",
+          "systemic"
+        ]
+      },
+      {
+        "id": "pelvic_floor",
+        "probability": 2,
+        "patterns": [
+          "ibs-c",
+          "pain-dominant"
+        ]
+      },
+      {
+        "id": "microscopic_colitis",
+        "probability": 2,
+        "patterns": [
+          "ibs-d"
+        ]
+      },
+      {
+        "id": "ibd_remission",
+        "probability": 2,
+        "patterns": [
+          "ibs-d",
+          "ibs-m",
+          "pain-dominant",
+          "systemic"
+        ]
+      },
+      {
+        "id": "parasite",
+        "probability": 1,
+        "patterns": [
+          "ibs-d",
+          "ibs-m",
+          "bloating-dominant",
+          "post-infectious",
+          "systemic"
+        ]
+      },
+      {
+        "id": "atopic_dermatitis",
+        "probability": 1,
+        "patterns": [
+          "ibs-d",
+          "ibs-m",
+          "systemic"
+        ]
+      },
+      {
+        "id": "gastroparesis",
+        "probability": 1,
+        "patterns": [
+          "ibs-c",
+          "bloating-dominant",
+          "pain-dominant"
+        ]
+      },
+      {
+        "id": "adhesions",
+        "probability": 1,
+        "patterns": [
+          "ibs-c",
+          "pain-dominant"
+        ]
+      },
+      {
+        "id": "fibromyalgia",
+        "probability": 1,
+        "patterns": [
+          "pain-dominant",
+          "ibs-m",
+          "systemic"
+        ]
+      },
+      {
+        "id": "functional_dyspepsia",
+        "probability": 1,
+        "patterns": [
+          "bloating-dominant",
+          "pain-dominant"
+        ]
+      }
+    ],
+    "has_signals": true
+  },
+  {
+    "id": "brain_fog",
+    "label": "Brain fog",
+    "full_label": "",
+    "kind": "symptom",
+    "condition_id": null,
+    "intro": "Brain fog is a symptom, not a diagnosis. Many different underlying\nconditions can drive it, and the pattern of triggers usually points at\none more than the others. These are the conditions worth ruling in or\nout \u2014 starting with the ones that most commonly show up as drivers.\n",
+    "symptom_patterns": [
+      {
+        "id": "morning-worst",
+        "label": "Worst after waking",
+        "description": "The fog is heaviest first thing in the morning and slowly lifts as the day goes on. Sleep doesn't feel refreshing \u2014 you wake up tired even after a full night, and others may have noticed snoring or gasping. If this fits, the most worthwhile things to look into are how well you breathe and sleep at night.\n"
+      },
+      {
+        "id": "positional",
+        "label": "Worse when you stand up",
+        "description": "The fog gets noticeably worse when you stand or stay upright, and eases when you lie down. You may feel lightheaded, dizzy, or notice your heart racing on standing. This points toward how well blood and oxygen are reaching your brain \u2014 circulation, blood pressure, hydration, or iron.\n"
+      },
+      {
+        "id": "mechanical",
+        "label": "Linked to your neck, jaw, or head pressure",
+        "description": "The fog rises and falls with neck tension, jaw clenching, posture, or the position of your head, and there's often a feeling of pressure or tightness in the head or face. It may come with tinnitus, eye pressure, or dizziness. This points toward structural causes in the neck, jaw, or sinuses.\n"
+      },
+      {
+        "id": "food-triggered",
+        "label": "Triggered by food or meals",
+        "description": "The fog worsens after eating \u2014 either after any large meal, or after specific foods like carbs, sugar, gluten, dairy, or fermented/aged foods \u2014 and often comes with bloating. It may ease when you fast or cut certain foods. This points toward the gut, blood sugar, or food sensitivities.\n"
+      },
+      {
+        "id": "exertional",
+        "label": "Crashes after activity",
+        "description": "You feel worse hours or even a day or two after pushing yourself physically or mentally, and it comes in crashes or flares rather than staying steady. Rest helps, but recovery is slow. This \"push and crash\" pattern points toward post-viral, immune, or energy-system causes.\n"
+      },
+      {
+        "id": "mood-linked",
+        "label": "Tied to mood, stress, and focus",
+        "description": "The fog feels more mental than physical \u2014 blankness, low motivation, or simply not being able to concentrate \u2014 and it tracks with your mood, stress levels, or anxiety. It tends to be worse during low or stressful periods. This points toward mental-health and brain-chemistry causes.\n"
+      },
+      {
+        "id": "post-viral",
+        "label": "Started after an illness",
+        "description": "The fog began, or got dramatically worse, after an infection such as COVID, flu, or a bad cold \u2014 and hasn't fully lifted since. It usually comes with ongoing fatigue. If your fog has a clear \"before and after\" around an illness, post-viral and immune drivers are especially worth investigating.\n"
+      },
+      {
+        "id": "systemic",
+        "label": "Constant and whole-body",
+        "description": "The fog is there most of the time and doesn't clearly follow any single trigger, and it comes alongside other unexplained whole-body symptoms \u2014 fatigue, feeling cold, hair or skin changes, weight changes, or aches. When the fog is part of a bigger whole-body picture, it's worth checking for deficiencies, thyroid or hormone issues, and chronic inflammation.\n"
+      }
+    ],
+    "sub_conditions": [
+      {
+        "id": "sleep_apnea",
+        "probability": 5,
+        "patterns": [
+          "morning-worst",
+          "systemic"
+        ]
+      },
+      {
+        "id": "anxiety",
+        "probability": 5,
+        "patterns": [
+          "mood-linked",
+          "systemic"
+        ]
+      },
+      {
+        "id": "depression",
+        "probability": 5,
+        "patterns": [
+          "mood-linked",
+          "systemic"
+        ]
+      },
+      {
+        "id": "poor_sleep",
+        "probability": 5,
+        "patterns": [
+          "morning-worst",
+          "mood-linked"
+        ]
+      },
+      {
+        "id": "adhd",
+        "probability": 5,
+        "patterns": [
+          "mood-linked"
+        ]
+      },
+      {
+        "id": "hypothyroidism",
+        "probability": 5,
+        "patterns": [
+          "systemic"
+        ]
+      },
+      {
+        "id": "iron_deficiency",
+        "probability": 5,
+        "patterns": [
+          "systemic",
+          "positional"
+        ]
+      },
+      {
+        "id": "long_covid",
+        "probability": 5,
+        "patterns": [
+          "post-viral",
+          "exertional",
+          "systemic"
+        ]
+      },
+      {
+        "id": "b12_deficiency",
+        "probability": 4,
+        "patterns": [
+          "systemic"
+        ]
+      },
+      {
+        "id": "vitamin_d_deficiency",
+        "probability": 4,
+        "patterns": [
+          "systemic"
+        ]
+      },
+      {
+        "id": "dehydration",
+        "probability": 4,
+        "patterns": [
+          "positional",
+          "systemic"
+        ]
+      },
+      {
+        "id": "reactive_hypoglycemia",
+        "probability": 4,
+        "patterns": [
+          "food-triggered"
+        ]
+      },
+      {
+        "id": "histamine",
+        "probability": 4,
+        "patterns": [
+          "food-triggered",
+          "systemic"
+        ]
+      },
+      {
+        "id": "sibo",
+        "probability": 4,
+        "patterns": [
+          "food-triggered",
+          "systemic"
+        ]
+      },
+      {
+        "id": "chronic_stress",
+        "probability": 4,
+        "patterns": [
+          "mood-linked",
+          "systemic"
+        ]
+      },
+      {
+        "id": "me_cfs",
+        "probability": 4,
+        "patterns": [
+          "post-viral",
+          "exertional",
+          "systemic"
+        ]
+      },
+      {
+        "id": "uars",
+        "probability": 4,
+        "patterns": [
+          "morning-worst",
+          "mechanical"
+        ]
+      },
+      {
+        "id": "dysbiosis",
+        "probability": 3,
+        "patterns": [
+          "food-triggered",
+          "systemic"
+        ]
+      },
+      {
+        "id": "fungal",
+        "probability": 3,
+        "patterns": [
+          "food-triggered",
+          "systemic"
+        ]
+      },
+      {
+        "id": "insulin_resistance",
+        "probability": 3,
+        "patterns": [
+          "food-triggered",
+          "systemic"
+        ]
+      },
+      {
+        "id": "ncgs",
+        "probability": 3,
+        "patterns": [
+          "food-triggered",
+          "systemic"
+        ]
+      },
+      {
+        "id": "cortisol_dysreg",
+        "probability": 3,
+        "patterns": [
+          "morning-worst",
+          "mood-linked",
+          "systemic"
+        ]
+      },
+      {
+        "id": "tmd",
+        "probability": 3,
+        "patterns": [
+          "mechanical"
+        ]
+      },
+      {
+        "id": "chronic_sinusitis",
+        "probability": 3,
+        "patterns": [
+          "morning-worst",
+          "mechanical"
+        ]
+      },
+      {
+        "id": "pots",
+        "probability": 3,
+        "patterns": [
+          "positional",
+          "systemic"
+        ]
+      },
+      {
+        "id": "migraine",
+        "probability": 3,
+        "patterns": [
+          "mechanical",
+          "food-triggered",
+          "systemic"
+        ]
+      },
+      {
+        "id": "mcas",
+        "probability": 3,
+        "patterns": [
+          "food-triggered",
+          "exertional",
+          "systemic"
+        ]
+      },
+      {
+        "id": "perimenopause",
+        "probability": 3,
+        "patterns": [
+          "systemic",
+          "mood-linked"
+        ]
+      },
+      {
+        "id": "deviated_septum",
+        "probability": 2,
+        "patterns": [
+          "morning-worst",
+          "mechanical"
+        ]
+      },
+      {
+        "id": "cervical_instability",
+        "probability": 2,
+        "patterns": [
+          "mechanical",
+          "positional"
+        ]
+      },
+      {
+        "id": "atlas_misalignment",
+        "probability": 2,
+        "patterns": [
+          "mechanical",
+          "positional"
+        ]
+      },
+      {
+        "id": "poor_posture",
+        "probability": 2,
+        "patterns": [
+          "mechanical"
+        ]
+      },
+      {
+        "id": "low_blood_pressure",
+        "probability": 2,
+        "patterns": [
+          "positional"
+        ]
+      },
+      {
+        "id": "eds",
+        "probability": 2,
+        "patterns": [
+          "mechanical",
+          "positional",
+          "systemic"
+        ]
+      },
+      {
+        "id": "leaky_gut",
+        "probability": 2,
+        "patterns": [
+          "food-triggered",
+          "systemic"
+        ]
+      },
+      {
+        "id": "coeliac",
+        "probability": 2,
+        "patterns": [
+          "food-triggered",
+          "systemic"
+        ]
+      },
+      {
+        "id": "lyme",
+        "probability": 2,
+        "patterns": [
+          "post-viral",
+          "exertional",
+          "systemic"
+        ]
+      },
+      {
+        "id": "ebv",
+        "probability": 2,
+        "patterns": [
+          "post-viral",
+          "systemic"
+        ]
+      },
+      {
+        "id": "mold_cirs",
+        "probability": 2,
+        "patterns": [
+          "systemic",
+          "exertional"
+        ]
+      },
+      {
+        "id": "low_testosterone",
+        "probability": 2,
+        "patterns": [
+          "systemic",
+          "mood-linked"
+        ]
+      },
+      {
+        "id": "post_concussion",
+        "probability": 2,
+        "patterns": [
+          "mechanical",
+          "exertional",
+          "systemic"
+        ]
+      },
+      {
+        "id": "bvd",
+        "probability": 2,
+        "patterns": [
+          "mechanical"
+        ]
+      },
+      {
+        "id": "medication",
+        "probability": 2,
+        "patterns": [
+          "systemic"
+        ]
+      },
+      {
+        "id": "alcohol",
+        "probability": 2,
+        "patterns": [
+          "morning-worst",
+          "food-triggered"
+        ]
+      },
+      {
+        "id": "tos",
+        "probability": 1,
+        "patterns": [
+          "mechanical",
+          "positional"
+        ]
+      },
+      {
+        "id": "hpylori",
+        "probability": 1,
+        "patterns": [
+          "food-triggered",
+          "systemic"
+        ]
+      },
+      {
+        "id": "mthfr",
+        "probability": 1,
+        "patterns": [
+          "systemic"
+        ]
+      },
+      {
+        "id": "heavy_metals",
+        "probability": 1,
+        "patterns": [
+          "systemic"
+        ]
+      },
+      {
+        "id": "pssd",
+        "probability": 1,
+        "patterns": [
+          "systemic",
+          "mood-linked"
+        ]
+      },
+      {
+        "id": "mitochondrial",
+        "probability": 1,
+        "patterns": [
+          "exertional",
+          "systemic"
+        ]
+      }
+    ],
+    "has_signals": true
+  }
+]

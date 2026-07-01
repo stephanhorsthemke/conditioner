@@ -1,0 +1,810 @@
+{
+  "condition_id": "mold_cirs",
+  "condition_name": "Mold illness / CIRS",
+  "generated_at": "2026-07-01T11:58:41.865078Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Mold illness, also called Chronic Inflammatory Response Syndrome (CIRS) or biotoxin illness, is a condition in which exposure to water-damaged buildings \u2014 and the mold, bacteria, and other biotoxins they produce \u2014 triggers a persistent, dysregulated immune and inflammatory response. In people with a specific genetic pattern affecting immune signaling, the body cannot properly tag and clear these biotoxins. They accumulate, driving widespread inflammation that affects nearly every system in the body. The result is a complex, multi-symptom illness that is frequently missed, dismissed, or misdiagnosed for years.",
+    "detailed_summary": "CIRS is a multi-system, multi-symptom illness driven by an abnormal innate immune response to biotoxins produced in water-damaged buildings (WDB). These biotoxins include mold species such as Aspergillus, Penicillium, Stachybotrys, and Chaetomium, as well as actinomycetes bacteria, endotoxins, beta-glucans, and microbial volatile organic compounds (mVOCs). In people without the genetic susceptibility \u2014 roughly 75\u201380% of the population \u2014 the immune system identifies and clears these toxins efficiently. In those with certain HLA-DR genotypes (estimated 24\u201326% of people), the immune system fails to mount a proper antibody response. Biotoxins are not cleared, they recirculate, and the innate immune system remains chronically activated.\n\nThis persistent activation dysregulates a cascade of downstream systems: cytokine networks, the complement system, vasoactive intestinal peptide (VIP), melanocyte-stimulating hormone (MSH), antidiuretic hormone (ADH), cortisol regulation via ACTH, coagulation pathways, and TGF-beta signaling. The result is a recognizable cluster of abnormal lab markers alongside symptoms spanning fatigue, cognitive dysfunction, pain, respiratory issues, hormonal dysregulation, and autonomic instability.\n\nCIRS was developed as a clinical framework primarily by Dr. Ritchie Shoemaker, whose diagnostic and treatment protocol remains the most systematic approach available, though it sits outside mainstream medicine and its evidence base is contested by some researchers. Despite this, many patients \u2014 particularly those who have been ill for years without explanation \u2014 find it offers the first coherent account of their symptom pattern. The diagnosis is supported by a combination of genetic testing, a cluster of objective biomarkers, symptom screening tools, and environmental exposure history. Treatment centers on removing the exposure, sequentially correcting biomarker abnormalities, and addressing downstream complications.",
+    "prevalence": {
+      "summary": "Estimated to affect a significant minority of people exposed to water-damaged buildings, particularly those with the genetic susceptibility.",
+      "estimate": "Potentially 2\u201310% of the general population; up to 24\u201326% of those with a susceptible HLA-DR genotype who are significantly exposed",
+      "notes": "Prevalence figures are contested and highly uncertain. No large-scale epidemiological studies have been conducted using the CIRS diagnostic framework. Water-damaged buildings are common \u2014 the EPA estimates more than half of US buildings have experienced moisture damage \u2014 but how many people develop CIRS-level illness is unknown. Some researchers dispute whether CIRS exists as a distinct entity. Diagnosis is rarely made in conventional medicine, so most cases likely go unrecognized."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "HLA-susceptible with active WDB exposure",
+        "description": "People with a susceptible HLA-DR genotype who are currently or recently exposed to a water-damaged building. This is the classic CIRS presentation where ongoing exposure drives ongoing illness.",
+        "distinguishing_features": [
+          "Positive HLA-DR susceptibility genotype (e.g., 4-3-53, 11-3-52B, 7-2-53)",
+          "Identifiable current or recent WDB exposure",
+          "ERMI or HERTSMI-2 score elevated in their environment",
+          "Symptoms improve promptly when exposure is removed"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Post-exposure / no longer in WDB",
+        "description": "People who have left the moldy environment but whose inflammatory cascade did not self-correct. The immune dysregulation has become self-sustaining, particularly due to suppressed MSH and altered cytokine signaling.",
+        "distinguishing_features": [
+          "Persistent symptoms despite leaving the WDB",
+          "Ongoing biomarker abnormalities months to years after removal",
+          "Often require the full Shoemaker protocol to recover rather than just avoidance",
+          "May have repeated failed exposures to 'clean' environments due to immune sensitization"
+        ]
+      },
+      {
+        "id": null,
+        "name": "CIRS with dominant neurological pattern",
+        "description": "A subset where cognitive and neurological symptoms dominate \u2014 sometimes called 'brain fog CIRS' \u2014 often associated with NeuroQuant MRI findings of gray matter atrophy or volumetric changes in specific brain regions.",
+        "distinguishing_features": [
+          "Severe cognitive impairment disproportionate to other symptoms",
+          "NeuroQuant MRI showing atrophy in caudate, putamen, or other structures",
+          "Elevated TGF-beta-1 and MMP-9",
+          "Often misdiagnosed as early dementia, psychiatric illness, or ADHD"
+        ]
+      },
+      {
+        "id": null,
+        "name": "CIRS post-Lyme (Lyme-CIRS overlap)",
+        "description": "People with a history of Lyme disease who develop a CIRS-like illness, either due to the biotoxins produced by Borrelia itself or because Lyme treatment involved time in a WDB. The biotoxin model applies to Lyme as well as mold.",
+        "distinguishing_features": [
+          "History of diagnosed or suspected Lyme disease",
+          "Persistent illness despite antibiotic treatment",
+          "HLA-DR susceptibility overlapping with Lyme susceptibility",
+          "Similar biomarker patterns to WDB-CIRS"
+        ]
+      },
+      {
+        "id": null,
+        "name": "CIRS with dominant mast cell activation overlay",
+        "description": "People in whom the biotoxin-driven inflammatory state has activated or destabilized mast cells, producing an overlapping MCAS-like picture. This is increasingly recognized as a common complication.",
+        "distinguishing_features": [
+          "Severe reactivity to foods, chemicals, medications, and environmental triggers",
+          "Histamine-driven symptoms alongside the CIRS core pattern",
+          "May require mast cell stabilization before standard CIRS treatment progresses",
+          "Often the most treatment-refractory presentation"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Profound, unrelenting fatigue",
+        "category": "energy / systemic",
+        "notes": "Often described as exhaustion that does not improve with rest; may fluctuate with exposure levels"
+      },
+      {
+        "symptom": "Cognitive impairment ('brain fog')",
+        "category": "neurological / cognitive",
+        "notes": "Word retrieval difficulties, memory loss, difficulty concentrating, slowed processing speed; often the most debilitating symptom"
+      },
+      {
+        "symptom": "Memory loss \u2014 especially short-term",
+        "category": "neurological / cognitive",
+        "notes": "Difficulty retaining new information; frequently tested with the VCS (Visual Contrast Sensitivity) test"
+      },
+      {
+        "symptom": "Headaches",
+        "category": "neurological",
+        "notes": "Frequent, often pressure-type or migrainous; may worsen in damp or moldy environments"
+      },
+      {
+        "symptom": "Muscle aches and weakness",
+        "category": "musculoskeletal",
+        "notes": "Diffuse, often migratory; can resemble fibromyalgia"
+      },
+      {
+        "symptom": "Joint pain without swelling",
+        "category": "musculoskeletal",
+        "notes": "Commonly affects multiple joints; distinguishable from arthritis by lack of inflammatory markers on standard tests"
+      },
+      {
+        "symptom": "Morning stiffness",
+        "category": "musculoskeletal",
+        "notes": null
+      },
+      {
+        "symptom": "Unusual sharp, ice-pick pains",
+        "category": "musculoskeletal / neurological",
+        "notes": "Brief, stabbing pains in random locations; considered a specific symptom cluster in CIRS screening"
+      },
+      {
+        "symptom": "Light sensitivity (photophobia)",
+        "category": "sensory / visual",
+        "notes": "Often significant; may accompany blurred vision and difficulty adjusting to contrast"
+      },
+      {
+        "symptom": "Visual contrast sensitivity impairment",
+        "category": "sensory / visual",
+        "notes": "The VCS test measures this; impairment correlates with biotoxin burden and is used as a screening and treatment response marker"
+      },
+      {
+        "symptom": "Chronic nasal congestion and sinus symptoms",
+        "category": "respiratory / ENT",
+        "notes": "Persistent runny nose, post-nasal drip, or congestion not explained by allergy testing"
+      },
+      {
+        "symptom": "Shortness of breath or air hunger",
+        "category": "respiratory",
+        "notes": "May occur at rest; sometimes associated with reduced VO2 max; can be severe"
+      },
+      {
+        "symptom": "Cough",
+        "category": "respiratory",
+        "notes": "Chronic, often dry; worsens in WDB environments"
+      },
+      {
+        "symptom": "Excessive thirst and frequent urination",
+        "category": "hormonal / autonomic",
+        "notes": "Related to suppressed ADH/vasopressin; leads to static shocks and difficulty maintaining hydration"
+      },
+      {
+        "symptom": "Excessive static electricity shocks",
+        "category": "autonomic",
+        "notes": "A distinctive and commonly overlooked symptom; linked to low ADH levels"
+      },
+      {
+        "symptom": "Dysregulated body temperature",
+        "category": "autonomic / hormonal",
+        "notes": "Difficulty tolerating heat or cold; sweating abnormalities"
+      },
+      {
+        "symptom": "Abdominal pain, bloating, and diarrhea",
+        "category": "digestive",
+        "notes": "Often diagnosed as IBS; may reflect gut dysbiosis secondary to biotoxin effects or MCAS overlay"
+      },
+      {
+        "symptom": "Appetite changes \u2014 increased appetite with inability to lose weight",
+        "category": "metabolic",
+        "notes": "Related to leptin resistance driven by chronically elevated MSH depletion and cytokine imbalance"
+      },
+      {
+        "symptom": "Mood changes \u2014 anxiety, depression, irritability",
+        "category": "psychological",
+        "notes": "Often attributed to psychiatric illness; may resolve substantially with CIRS treatment"
+      },
+      {
+        "symptom": "Sleep disturbance and non-restorative sleep",
+        "category": "sleep",
+        "notes": "Difficulty falling asleep, staying asleep, or waking unrefreshed despite hours in bed"
+      },
+      {
+        "symptom": "Numbness or tingling",
+        "category": "neurological",
+        "notes": "In extremities or other areas; not explained by nerve entrapment on standard workup"
+      },
+      {
+        "symptom": "Vertigo or dizziness",
+        "category": "neurological / vestibular",
+        "notes": null
+      },
+      {
+        "symptom": "Tremors",
+        "category": "neurological",
+        "notes": "Fine tremor; may be intermittent"
+      },
+      {
+        "symptom": "Skin sensitivity and unusual sensations",
+        "category": "skin / neurological",
+        "notes": "Sensitivity to touch; skin crawling; occasional rash"
+      },
+      {
+        "symptom": "Chemical and odor sensitivity",
+        "category": "sensory / immune",
+        "notes": "Heightened reactivity to smells and environmental chemicals; overlaps with MCS (multiple chemical sensitivity)"
+      },
+      {
+        "symptom": "Palpitations",
+        "category": "cardiovascular / autonomic",
+        "notes": null
+      },
+      {
+        "symptom": "Post-exertional malaise",
+        "category": "energy / systemic",
+        "notes": "Worsening of all symptoms after physical or cognitive exertion; overlaps with ME/CFS pattern"
+      },
+      {
+        "symptom": "Hormonal dysregulation \u2014 low cortisol, sex hormone irregularities",
+        "category": "hormonal",
+        "notes": "Driven by ACTH suppression; may present as fatigue, low libido, menstrual irregularity, or reduced stress tolerance"
+      },
+      {
+        "symptom": "Metallic taste in mouth",
+        "category": "sensory",
+        "notes": null
+      },
+      {
+        "symptom": "Frequent urination at night (nocturia)",
+        "category": "urological",
+        "notes": "Related to ADH dysregulation"
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Low MSH (alpha-melanocyte stimulating hormone) \u2014 often the central deficiency in CIRS, below 35 pg/mL",
+        "Elevated MMP-9 (matrix metalloproteinase-9) \u2014 marker of systemic inflammation, particularly in the vasculature and CNS",
+        "Elevated TGF-beta-1 \u2014 linked to fibrotic and neurological complications; often very high (>2380 pg/mL)",
+        "Abnormal complement C3a and/or C4a \u2014 C4a in particular is frequently markedly elevated in CIRS (>2830 ng/mL)",
+        "Low VIP (vasoactive intestinal peptide) \u2014 below 23 pg/mL; associated with respiratory symptoms and cytokine dysregulation",
+        "Suppressed ACTH and/or cortisol relative to clinical picture \u2014 not necessarily outside normal range but abnormally low given the illness burden",
+        "ADH/osmolality mismatch \u2014 low ADH with high osmolality or vice versa",
+        "VEGF (vascular endothelial growth factor) abnormalities \u2014 often low, associated with air hunger and poor tissue oxygenation",
+        "Positive HLA-DR susceptibility genotype (e.g., 4-3-53, 11-3-52B, 7-2-53, 13-6-52B)",
+        "VCS (Visual Contrast Sensitivity) test failure \u2014 a quick, inexpensive screening tool showing neurological impact",
+        "Elevated HERTSMI-2 or ERMI score in home or workplace \u2014 environmental evidence of WDB contamination",
+        "NeuroQuant MRI showing volumetric brain changes in specific regions (forebrain parenchyma, caudate, putamen)"
+      ],
+      "at_home": [
+        {
+          "name": "VCS (Visual Contrast Sensitivity) online test",
+          "description": "A free or low-cost online test (available at survivingmold.com) that measures the ability to distinguish between subtle shades of grey at different spatial frequencies. People with biotoxin illness frequently fail this test due to neurological effects. Results are not diagnostic alone but correlate well with biotoxin burden and treatment response.",
+          "safety_notes": "Entirely safe. Should be done without contact lenses if possible and in a normally lit room. Not a substitute for clinical testing."
+        },
+        {
+          "name": "Environmental assessment \u2014 ERMI or HERTSMI-2 dust test",
+          "description": "A dust sample collected from home vacuum or settled dust is sent to a certified lab (e.g., Mycometrics) for qPCR-based mold species analysis. HERTSMI-2 is a condensed version focused on the most pathogenic species. A score above 10\u201311 on HERTSMI-2 suggests a problematic environment for CIRS-susceptible individuals.",
+          "safety_notes": "Safe to perform. Be aware that some people react to handling dust samples. Results require interpretation \u2014 a low score does not always rule out WDB if hidden mold is present."
+        },
+        {
+          "name": "Symptom inventory \u2014 Shoemaker symptom cluster scoring",
+          "description": "The 37-symptom cluster list from Dr. Shoemaker's work can be self-assessed. People with CIRS typically report 8 or more symptoms across multiple categories. The pattern \u2014 not just quantity \u2014 is diagnostically meaningful. Available on survivingmold.com.",
+          "safety_notes": "Self-assessment only; use as a starting point for conversation with a clinician familiar with CIRS."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "HLA-DR genotyping",
+          "type": "gold_standard",
+          "description": "Blood or saliva test identifying specific HLA-DR haplotypes that impair biotoxin clearance. Identifies genetic susceptibility; does not confirm active illness but is a key pillar of the CIRS framework. Susceptible haplotypes include 4-3-53, 11-3-52B, 7-2-53, 13-6-52B, 17-2-52A, and the 'dreaded' 11-3-52B.",
+          "availability": "Ordered through labs such as LabCorp or Quest (HLA-DR typing); most straightforwardly accessed through a CIRS-literate practitioner. Some functional medicine doctors order it routinely."
+        },
+        {
+          "name": "CIRS biomarker panel (Shoemaker protocol labs)",
+          "type": "gold_standard",
+          "description": "A panel of approximately 16 biomarkers that together characterize the CIRS pattern. Core markers include: MSH, MMP-9, TGF-beta-1, C3a, C4a, VIP, VEGF, ACTH/cortisol, ADH/osmolality, and leptin. Interpretation requires understanding of expected patterns, not just individual reference ranges.",
+          "availability": "Available through LabCorp and Quest. Must be ordered by a licensed clinician. Many conventional doctors are unfamiliar with the panel; CIRS-certified practitioners (see survivingmold.com provider list) are most likely to order and interpret correctly."
+        },
+        {
+          "name": "NeuroQuant MRI",
+          "type": "emerging",
+          "description": "An FDA-cleared volumetric brain MRI analysis that compares regional brain volumes to age-matched norms. In CIRS, characteristic atrophy patterns are seen in the forebrain parenchyma, caudate, and putamen. Useful for documenting neurological involvement and monitoring treatment response. Requires a specific MRI sequence and software analysis.",
+          "availability": "Available in the US at select radiology centers; the scan must be ordered with the NeuroQuant protocol specified. Most accessible through CIRS-experienced practitioners."
+        },
+        {
+          "name": "Visual Contrast Sensitivity (VCS) clinical test",
+          "type": "standard",
+          "description": "Standardized neurological screening for biotoxin-related visual processing impairment. Used as a treatment response marker. Automated versions available through survivingmold.com; optometrists can perform it in-office.",
+          "availability": "Low cost, widely accessible online; clinical versions through optometrists or CIRS practitioners."
+        },
+        {
+          "name": "ERMI / HERTSMI-2 (Environmental Relative Moldiness Index)",
+          "type": "standard",
+          "description": "qPCR-based dust analysis identifying 36 (ERMI) or 5 (HERTSMI-2) mold species in a home or work environment. Used to establish or rule out significant WDB exposure. HERTSMI-2 focuses on the most clinically significant species: Aspergillus penicillioides, Aspergillus versicolor, Chaetomium globosum, Stachybotrys chartarum, and Wallemia sebi.",
+          "availability": "Self-collected dust sample sent to Mycometrics or similar certified lab. Costs approximately $100\u2013300. Can be ordered by individuals without a doctor's order."
+        },
+        {
+          "name": "Urine mycotoxin testing",
+          "type": "emerging",
+          "description": "Tests (e.g., from RealTime Labs, Great Plains Laboratory / Mosaic Diagnostics, or Vibrant Wellness) that measure mycotoxin metabolites in urine. Contested within the CIRS community \u2014 Shoemaker does not use mycotoxin urine testing in his protocol \u2014 but used by some functional and integrative practitioners as evidence of exposure or body burden. Interpretation is complex and standardization is limited.",
+          "availability": "Available through functional medicine practitioners and some integrative doctors; some labs allow self-pay ordering. Results should be interpreted cautiously."
+        },
+        {
+          "name": "Nasal MARCONS culture",
+          "type": "standard",
+          "description": "A deep nasal swab (reaching the nasopharynx) cultured for Multiple Antibiotic Resistant Coagulase Negative Staphylococci (MARCoNS). These bacteria colonize the sinuses in many CIRS patients, produce hemolysins that further deplete MSH, and perpetuate the inflammatory cycle. Eradicating MARCoNS is Step 4 in the Shoemaker protocol.",
+          "availability": "Must be a deep nasopharyngeal swab \u2014 not a standard nasal swab. Ordered through MicrobiologyDX or similar specialty labs. Requires clinician order."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome (MCAS)",
+        "relationship": "comorbid",
+        "explanation": "Biotoxin-driven inflammation frequently destabilizes mast cells, producing an overlapping MCAS picture. Many CIRS patients develop mast cell reactivity as a downstream complication, and MCAS can be both a complication of and a perpetuating factor in CIRS."
+      },
+      {
+        "id": "me_cfs",
+        "name": "ME/CFS",
+        "relationship": "often_confused",
+        "explanation": "CIRS and ME/CFS share profound fatigue, post-exertional malaise, cognitive impairment, and sleep dysfunction. Some researchers believe WDB exposure is a trigger for a subset of ME/CFS cases. The two can coexist, and CIRS may be a root cause driving an ME/CFS phenotype."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "often_confused",
+        "explanation": "Widespread pain, fatigue, and cognitive fog in CIRS are frequently misdiagnosed as fibromyalgia. Some fibromyalgia cases may have an underlying biotoxin or inflammatory driver."
+      },
+      {
+        "id": "lyme",
+        "name": "Lyme disease / chronic Lyme",
+        "relationship": "mechanistic_link",
+        "explanation": "Borrelia burgdorferi produces biotoxins that can trigger CIRS through the same HLA-DR-mediated mechanism as mold. Many people with persistent Lyme symptoms have overlapping CIRS; the Shoemaker protocol was originally developed to address both Lyme and mold biotoxin illness."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "Autonomic dysregulation is common in CIRS, driven by ADH dysfunction, vasoactive peptide disruption, and systemic inflammation. POTS-like symptoms \u2014 tachycardia, lightheadedness on standing, exercise intolerance \u2014 are frequently reported."
+      },
+      {
+        "id": "ibs",
+        "name": "IBS",
+        "relationship": "often_confused",
+        "explanation": "GI symptoms in CIRS \u2014 bloating, altered motility, abdominal pain \u2014 are commonly diagnosed as IBS. Biotoxin effects on the gut and secondary dysbiosis may drive GI symptoms that resolve with CIRS treatment."
+      },
+      {
+        "id": "sibo",
+        "name": "SIBO",
+        "relationship": "downstream",
+        "explanation": "Gut motility dysregulation driven by CIRS may predispose to SIBO. Some CIRS patients have confirmed SIBO that does not resolve until the underlying mold illness is addressed."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "downstream",
+        "explanation": "Chronic inflammation and immune dysregulation in CIRS can alter the gut microbiome. Mycotoxins can also directly damage gut mucosa and alter bacterial populations."
+      },
+      {
+        "id": "leaky_gut",
+        "name": "Leaky gut / intestinal permeability",
+        "relationship": "mechanistic_link",
+        "explanation": "Mycotoxins, particularly trichothecenes and zearalenone, can directly damage tight junctions in the gut epithelium, increasing intestinal permeability and potentially amplifying the systemic inflammatory load."
+      },
+      {
+        "id": "long_covid",
+        "name": "Long COVID",
+        "relationship": "mechanistic_link",
+        "explanation": "Long COVID shares many features with CIRS \u2014 dysregulated innate immunity, cytokine abnormalities, cognitive impairment, and autonomic dysfunction. Some researchers propose overlapping mechanisms. A subset of long COVID patients may have underlying genetic susceptibilities similar to CIRS."
+      },
+      {
+        "id": "chronic_sinusitis",
+        "name": "Chronic sinusitis",
+        "relationship": "comorbid",
+        "explanation": "MARCoNS colonization of the sinuses is a key complication in CIRS that perpetuates MSH depletion. Chronic sinusitis symptoms \u2014 congestion, post-nasal drip, facial pressure \u2014 are common in CIRS and often fail to respond to standard antibiotics."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "often_confused",
+        "explanation": "Neurological effects of biotoxins and inflammatory cytokines on the brain can produce anxiety, panic, and hyperarousal. These are frequently attributed to primary anxiety disorder rather than to the underlying inflammatory process."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "often_confused",
+        "explanation": "Cytokine-driven neuroinflammation and suppressed MSH can produce a depression phenotype. In some CIRS patients, mood symptoms improve substantially with biotoxin illness treatment without antidepressants."
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine intolerance",
+        "relationship": "comorbid",
+        "explanation": "Mast cell activation in CIRS can produce elevated histamine levels, creating an apparent histamine intolerance overlay. Some symptoms attributed to histamine intolerance may actually reflect CIRS-driven mast cell instability."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / Hypermobility Spectrum Disorder",
+        "relationship": "comorbid",
+        "explanation": "hEDS and CIRS co-occur more frequently than chance in clinical observation, possibly because connective tissue vulnerability amplifies the effects of systemic inflammation, or because shared mechanisms affect collagen and immune regulation."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "comorbid",
+        "explanation": "Chronic inflammatory states including CIRS can suppress thyroid function or create patterns of low T3 despite normal TSH. Thyroid symptoms in CIRS patients may not resolve until the underlying illness is treated."
+      },
+      {
+        "id": "mitochondrial",
+        "name": "Mitochondrial dysfunction",
+        "relationship": "mechanistic_link",
+        "explanation": "Several mycotoxins \u2014 including ochratoxin and trichothecenes \u2014 directly impair mitochondrial function. This may contribute to the profound fatigue, exercise intolerance, and post-exertional malaise seen in CIRS."
+      },
+      {
+        "id": "cortisol_dysreg",
+        "name": "Cortisol dysregulation",
+        "relationship": "downstream",
+        "explanation": "Suppression of ACTH signaling in CIRS leads to reduced cortisol output, producing fatigue, poor stress tolerance, and immune dysregulation. Often misinterpreted as 'adrenal fatigue' without identifying the upstream biotoxin driver."
+      },
+      {
+        "id": "heavy_metals",
+        "name": "Heavy metal toxicity",
+        "relationship": "comorbid",
+        "explanation": "Mycotoxins can impair detoxification pathways that also handle heavy metals. Some CIRS patients have co-existing metal burden that compounds symptoms; others are misdiagnosed with metal toxicity when the primary driver is biotoxin illness."
+      },
+      {
+        "id": "mthfr",
+        "name": "MTHFR / methylation variants",
+        "relationship": "comorbid",
+        "explanation": "MTHFR variants that impair methylation may compound the detoxification burden in CIRS. Addressing methylation support is often part of a broader recovery plan in CIRS patients with this overlap."
+      },
+      {
+        "id": "fungal",
+        "name": "Fungal overgrowth (SIFO / Candida)",
+        "relationship": "comorbid",
+        "explanation": "Immune dysregulation in CIRS can allow gut or systemic fungal overgrowth. Separately, mycotoxin exposure from dietary sources or gut candida may contribute to total biotoxin burden."
+      },
+      {
+        "id": "allergic_rhinitis",
+        "name": "Allergic rhinitis",
+        "relationship": "often_confused",
+        "explanation": "Nasal symptoms in CIRS are often attributed to mold allergy (IgE-mediated) rather than the biotoxin-driven CIRS mechanism. Standard allergy tests can be negative even with significant CIRS, because the mechanism is innate rather than adaptive immune."
+      },
+      {
+        "id": "migraine",
+        "name": "Migraine",
+        "relationship": "comorbid",
+        "explanation": "Headache and migraine are common in CIRS, likely driven by neuroinflammation, cytokine effects on cerebral vasculature, and TGF-beta dysregulation. Migraines in CIRS may worsen with WDB re-exposure."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor sleep / insomnia",
+        "relationship": "downstream",
+        "explanation": "Biotoxin-driven disruption of MSH and melatonin pathways, combined with neuroinflammation, produces characteristic non-restorative sleep. This compounds fatigue and cognitive symptoms."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Removing the exposure (leaving the WDB)",
+          "category": "environment",
+          "description": "The single most critical step. No treatment protocol can produce lasting recovery in the presence of ongoing exposure. This means identifying and leaving the water-damaged building \u2014 home, workplace, school, or car. For sensitized individuals, partial exposure can perpetuate illness.",
+          "evidence_level": "strong",
+          "notes": "This is often the hardest step practically and emotionally. People with severe sensitivity may need to leave behind contaminated belongings. Decisions about remediation vs. relocation should involve an experienced CIRS clinician and qualified mold inspector."
+        },
+        {
+          "name": "Cholestyramine (CSM) or Welchol (colesevelam)",
+          "category": "medication",
+          "description": "Bile acid sequestrants used as biotoxin binders. Cholestyramine is the first-line binder in the Shoemaker protocol. These bind biotoxins in the gut, interrupting enterohepatic recirculation and allowing the body to excrete them. Welchol is used in people who cannot tolerate CSM.",
+          "evidence_level": "moderate",
+          "notes": "Requires prescription. Must be taken away from other medications and supplements (at least 1\u20132 hours) as it binds indiscriminately. Should not be used if still in a moldy environment, as it may increase symptom burden without clearing the source."
+        },
+        {
+          "name": "Nasal VIP (Vasoactive Intestinal Peptide) spray",
+          "category": "medication",
+          "description": "A compounded prescription nasal spray used in late-stage CIRS treatment to restore VIP levels. VIP has anti-inflammatory effects, regulates cytokines, supports pulmonary function, and restores MSH. Used only after MARCoNS has been eradicated and earlier protocol steps are complete.",
+          "evidence_level": "moderate",
+          "notes": "Available through compounding pharmacies with a prescription. Cannot be used safely if MARCoNS is still present \u2014 it may worsen inflammation. Step 11 in the Shoemaker protocol."
+        },
+        {
+          "name": "MARCoNS eradication (BEG spray or alternatives)",
+          "category": "medication",
+          "description": "Deep nasal treatment to eradicate Multiple Antibiotic Resistant Coagulase Negative Staphylococci from the sinopharynx. The traditional approach is BEG spray (Bactroban/EDTA/Gentamicin), a compounded prescription nasal spray. Alternative approaches (e.g., xylitol-based sprays, silver-based sprays, EDTA alone) are used by some practitioners.",
+          "evidence_level": "moderate",
+          "notes": "Must confirm MARCoNS with a proper deep nasopharyngeal culture first. BEG spray requires compounding pharmacy. Re-colonization is possible with ongoing WDB exposure."
+        },
+        {
+          "name": "Vasoactive Intestinal Peptide precursor support / low amylose diet",
+          "category": "diet",
+          "description": "The Shoemaker protocol recommends a low-amylose diet (avoiding high glycemic-index starches and sugars) to reduce leptin resistance and support hormonal recovery. This is used primarily in patients with elevated leptin levels and metabolic dysregulation.",
+          "evidence_level": "anecdotal",
+          "notes": "Evidence base is limited to clinical observation. Some patients find it helpful for energy and weight regulation; others find it an unnecessary restriction."
+        },
+        {
+          "name": "Antifungal nasal sprays (for sinus fungal colonization)",
+          "category": "medication",
+          "description": "Some CIRS patients have concurrent fungal colonization in the sinuses. Compounded antifungal nasal sprays (e.g., amphotericin B, itraconazole) may be used in these cases alongside the standard protocol.",
+          "evidence_level": "anecdotal",
+          "notes": "Not part of the standard Shoemaker protocol but used by some integrative practitioners. Culture confirmation of fungal presence is recommended before treatment."
+        },
+        {
+          "name": "Mast cell stabilization (if MCAS overlay present)",
+          "category": "medication",
+          "description": "In patients with significant mast cell activation complicating CIRS, low-dose mast cell stabilizers (e.g., cromolyn sodium, ketotifen, H1/H2 antihistamines) may be needed to reduce reactivity before other CIRS treatments are tolerable.",
+          "evidence_level": "moderate",
+          "notes": "Requires assessment and prescription. The MCAS layer often needs to be addressed before the person can tolerate standard biotoxin binders or other interventions."
+        },
+        {
+          "name": "Addressing downstream hormonal deficiencies",
+          "category": "medication",
+          "description": "Where ACTH/cortisol, ADH, thyroid, or sex hormone deficiencies are confirmed, appropriate hormone support may be needed \u2014 particularly for quality of life during recovery. DDAVP (desmopressin) is sometimes used for ADH deficiency.",
+          "evidence_level": "moderate",
+          "notes": "Hormonal corrections are ideally done under the guidance of an endocrinologist or CIRS-experienced physician. Some deficiencies resolve as the inflammatory cascade is treated."
+        },
+        {
+          "name": "Cognitive rehabilitation / brain training",
+          "category": "lifestyle",
+          "description": "Structured cognitive exercises, pacing, and brain training tools (e.g., online cognitive training programs) may support neurological recovery during and after CIRS treatment. VCS test performance can be used to track neurological improvement.",
+          "evidence_level": "anecdotal",
+          "notes": "Useful as a supportive measure; not a substitute for addressing the underlying biotoxin exposure."
+        },
+        {
+          "name": "Gentle movement and graded activity",
+          "category": "lifestyle",
+          "description": "In the presence of post-exertional malaise, exercise must be approached cautiously. Gentle movement \u2014 walking, stretching, swimming \u2014 that does not trigger symptom flare can maintain function. Graded increases in activity over months, not weeks, are appropriate for most CIRS patients.",
+          "evidence_level": "moderate",
+          "notes": "Aggressive exercise is contraindicated in active CIRS and can significantly worsen the condition. Post-exertional malaise should be respected as a signal to back off."
+        },
+        {
+          "name": "Reducing total inflammatory and toxic burden",
+          "category": "lifestyle",
+          "description": "Minimizing other sources of toxin exposure (e.g., dietary mycotoxins in certain foods, chemical exposures, cigarette smoke) can reduce the total burden on an already-stressed system. Some practitioners recommend reducing alcohol, processed foods, and certain grains that may carry mycotoxin contamination.",
+          "evidence_level": "anecdotal",
+          "notes": "Diet-based mycotoxin reduction remains controversial and evidence is limited. Pragmatic reduction of obvious toxic exposures is a sensible supportive measure."
+        },
+        {
+          "name": "Psychological support and trauma-informed care",
+          "category": "lifestyle",
+          "description": "CIRS carries a significant psychological burden \u2014 years of being told symptoms are psychosomatic, loss of function, financial stress from illness, and relationship strain. Psychological support, trauma-informed therapy, and community connection are valuable throughout recovery.",
+          "evidence_level": "moderate",
+          "notes": "Addressing psychological burden does not mean symptoms are psychosomatic \u2014 it means the whole person needs support during a long, difficult illness."
+        }
+      ],
+      "things_to_avoid": [
+        "Remaining in or returning to a water-damaged building \u2014 this is the single most counterproductive thing; no treatment can overcome ongoing exposure",
+        "Starting biotoxin binders (e.g., cholestyramine) while still in a moldy environment \u2014 this increases symptoms without addressing the source",
+        "Using VIP nasal spray before MARCoNS has been eradicated \u2014 this can worsen inflammation significantly",
+        "Aggressive exercise during active illness \u2014 post-exertional malaise can cause severe setbacks that last days to weeks",
+        "Assuming a negative standard mold allergy test rules out CIRS \u2014 IgE-mediated mold allergy and CIRS are different mechanisms",
+        "Taking medications and supplements at the same time as cholestyramine \u2014 it binds and inactivates them",
+        "Ignoring belongings from the WDB \u2014 clothing, furniture, and porous items can carry mycotoxins into a clean environment",
+        "Relying solely on air purifiers or bleach cleaning as remediation \u2014 surface cleaning does not address hidden mold behind walls or in HVAC systems",
+        "Dismissing symptoms as anxiety or depression without investigating CIRS \u2014 treating mood symptoms pharmacologically without addressing the root cause typically produces incomplete results",
+        "Attempting to follow the Shoemaker protocol in isolation without lab guidance \u2014 some steps (e.g., VIP) can cause harm if done out of sequence or without confirming prior steps"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "Recovery from CIRS almost always requires leaving behind possessions and possibly your home. You cannot recover while still in the building, and many items \u2014 furniture, clothing, mattresses \u2014 carry biotoxins that will re-expose you in a new location.",
+        "why_resisted": "The financial and emotional cost of leaving a home or discarding possessions is enormous. People hope that remediation, air purifiers, or partial cleaning will be sufficient. They also fear being seen as irrational or extreme.",
+        "path_forward": "People who fully remove themselves from the exposure \u2014 and take appropriate precautions with belongings \u2014 consistently report the clearest and fastest symptom improvement. Those who attempt partial remediation typically experience partial or no recovery. The most engaged patients reach a point where they can identify re-exposure quickly by symptom return and exit environments rapidly, which gives them genuine control over their health."
+      },
+      {
+        "truth": "Most conventional doctors do not recognize CIRS as a diagnosis and will not investigate it. Waiting for a mainstream physician to identify this condition typically means remaining ill for years.",
+        "why_resisted": "Trusting one's doctor is deeply ingrained. Seeking outside-mainstream care risks being seen as a 'difficult patient' or someone who has fallen for pseudoscience. People fear being wrong about a complex diagnosis.",
+        "path_forward": "Patients who actively self-educate, connect with CIRS-literate practitioners, and pursue the diagnostic workup independently reach answers years faster than those who wait for the mainstream to catch up. The biomarker panel provides objective data that can be evaluated critically regardless of which framework is used to interpret it."
+      },
+      {
+        "truth": "CIRS recovery is typically measured in months to years, not weeks. The Shoemaker protocol has 12 sequential steps, and skipping steps or rushing through them tends to produce setbacks, not faster recovery.",
+        "why_resisted": "After years of illness and the hope of finally having answers, people want to feel better quickly. The protocol's sequential structure can feel arbitrarily slow. There is pressure to add supplements and interventions beyond the protocol.",
+        "path_forward": "People who follow the protocol sequentially, confirm step completion with labs, and resist adding too many parallel interventions at once tend to have the most consistent forward trajectory. Many report that what felt like slow progress was in fact building the foundation for a durable recovery."
+      },
+      {
+        "truth": "The CIRS framework has a limited mainstream evidence base, and some of its claims remain contested. Engaging with this diagnosis requires accepting significant diagnostic uncertainty while acting on the best available information.",
+        "why_resisted": "People want certainty, especially after years of being dismissed. Finding an explanatory framework can feel like finding the answer, which creates pressure to treat it as definitively proven. Critical engagement with the limitations feels threatening.",
+        "path_forward": "The most resilient CIRS patients hold the framework seriously but not rigidly. They use objective markers (biomarkers, VCS, environmental testing) to evaluate their own response to treatment and update their understanding based on what actually improves. This makes them effective self-advocates rather than doctrine-followers."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Confirming and removing the exposure source",
+          "why_it_matters": "No downstream treatment can produce lasting recovery while the biotoxin source is active. Removing exposure is the prerequisite for everything else. Even partial ongoing exposure perpetuates the inflammatory cascade.",
+          "how_to_start": "Test the environment with HERTSMI-2 or ERMI dust testing. If results are elevated, arrange a professional mold inspection that includes air sampling, ERMI, and visual assessment of hidden moisture areas (walls, HVAC, crawlspace). Make decisions about remediation vs. relocation based on test results and clinical response.",
+          "timeline": "Environmental testing results available within 1\u20132 weeks. Clinical improvement after removal begins within weeks for some; for others with severe illness, months of treatment are needed before improvement is clear.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Completing HLA-DR genotyping and full biomarker panel",
+          "why_it_matters": "Objective biomarkers allow the diagnosis to be confirmed or refuted, guide treatment sequencing, and provide measurable targets. Without this data, treatment becomes guesswork and progress cannot be tracked objectively.",
+          "how_to_start": "Connect with a CIRS-literate practitioner (see survivingmold.com provider list) or a functional medicine doctor familiar with the Shoemaker protocol. Request the full panel including HLA-DR, MSH, MMP-9, TGF-beta-1, C3a, C4a, VIP, VEGF, ACTH/cortisol, ADH/osmolality, and leptin.",
+          "timeline": "Lab results typically within 1\u20132 weeks of blood draw.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Eradicating MARCoNS",
+          "why_it_matters": "MARCoNS colonization in the sinuses perpetuates MSH depletion, which drives almost all downstream hormonal and immune dysregulation in CIRS. Many patients plateau in recovery until MARCoNS is addressed. It is Step 4 in the protocol because earlier steps create the conditions for eradication to succeed.",
+          "how_to_start": "Get a deep nasopharyngeal culture through MicrobiologyDX or equivalent. If positive, work with a prescribing clinician to obtain BEG spray or an alternative antifungal/antibacterial nasal treatment.",
+          "timeline": "Treatment course typically 30 days; retest after treatment to confirm eradication.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Biotoxin binding with cholestyramine or Welchol",
+          "why_it_matters": "Biotoxins are recirculated through enterohepatic cycling \u2014 reabsorbed from the gut and returned to systemic circulation. Binding agents interrupt this cycle, allowing excretion. This is often the point at which patients first experience meaningful symptom relief.",
+          "how_to_start": "Obtain a prescription from a CIRS-literate clinician. Standard starting dose is 4g cholestyramine up to 4x/day taken 30 minutes before meals and away from other medications. Start slowly if reactive.",
+          "timeline": "Some patients notice improvement within days to weeks; others require months of consistent use alongside other steps.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Sustaining a clean living environment",
+          "why_it_matters": "Re-exposure is the most common cause of relapse and treatment failure. People with susceptible genotypes are often re-sensitized and react to lower levels of biotoxins after initial illness. Maintaining a clean, dry, well-ventilated living environment protects the recovery made through treatment.",
+          "how_to_start": "Use a HEPA air purifier (e.g., IQAir, Austin Air) in bedroom and main living areas. Control indoor humidity below 50% with a dehumidifier in damp climates. Address any water intrusion, leaks, or condensation immediately. Retest environment annually or after any water event.",
+          "timeline": "Ongoing; environmental vigilance is a permanent feature of life for CIRS-susceptible individuals.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Finding and staying with a knowledgeable practitioner",
+          "why_it_matters": "The Shoemaker protocol requires sequential lab-guided treatment across 12 steps over many months. Without a practitioner who understands the protocol, patients cannot access prescription treatments (CSM, BEG, VIP), interpret biomarker patterns correctly, or navigate complications safely.",
+          "how_to_start": "Use the practitioner finder at survivingmold.com. Many CIRS-experienced practitioners work via telehealth, so geographic access is less limiting than it used to be. Functional medicine doctors who have completed CIRS training are the most reliable option.",
+          "timeline": "Establishing care may take weeks. Expect to be a collaborative, informed participant in your care rather than a passive patient.",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Attempting remediation of a severely contaminated building rather than relocating \u2014 remediation often fails for sensitized individuals, and the cost and disruption of multiple failed attempts is significant",
+        "Starting treatment without confirming the exposure source \u2014 treating CIRS biomarkers while still in a moldy environment typically produces no durable improvement",
+        "Adding large numbers of supplements alongside the protocol \u2014 this adds confusion about what is working, can interfere with binders, and overwhelms an already reactive system",
+        "Treating MARCoNS with a standard nasal swab antibiotic rather than a deep nasopharyngeal protocol \u2014 surface treatment does not reach the colonization site",
+        "Using VCS improvement alone (without biomarker retesting) to declare recovery \u2014 VCS normalizes faster than downstream inflammatory markers and can give a false sense of completion",
+        "Bringing contaminated belongings into a new clean environment \u2014 re-exposure via clothing, furniture, and paper materials is a common and frustrating cause of failed relocation",
+        "Stopping binder treatment prematurely \u2014 some patients feel better and stop too early before the biotoxin burden is adequately reduced",
+        "Pursuing aggressive detox protocols (e.g., saunas, high-dose supplements) in the early stages before the exposure is removed \u2014 this can worsen symptoms in already-inflamed and reactive individuals",
+        "Assuming that because CIRS is not mainstream, it cannot be real \u2014 this dismissal prevents engagement with the most coherent explanatory framework many patients have ever encountered"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "CIRS-certified / Shoemaker-trained physician",
+          "role": "The most knowledgeable practitioners for full CIRS diagnosis and protocol implementation. Can order the complete biomarker panel, prescribe CSM, BEG spray, DDAVP, and VIP, and guide patients through the sequential treatment steps.",
+          "notes": "Directory available at survivingmold.com. Many work via telehealth across the US. Numbers are limited \u2014 expect waitlists. These practitioners sit outside mainstream medicine and are not always covered by insurance."
+        },
+        {
+          "type": "Functional medicine doctor",
+          "role": "A functional medicine physician with knowledge of CIRS can order most of the relevant labs, coordinate an integrative treatment approach, and work alongside the Shoemaker framework even without formal certification. Many are more accessible than certified CIRS practitioners.",
+          "notes": "Quality varies significantly. Look specifically for familiarity with the CIRS biomarker panel, HLA-DR testing, and biotoxin illness \u2014 not just general functional medicine."
+        },
+        {
+          "type": "Integrative or environmental medicine physician",
+          "role": "Environmental medicine specialists assess the impact of environmental exposures (including mold, chemicals, and toxins) on health. Some are familiar with CIRS and can coordinate testing and treatment.",
+          "notes": "The American Academy of Environmental Medicine (aaem.com) has a practitioner directory. Not all environmental medicine doctors use the Shoemaker framework."
+        },
+        {
+          "type": "Certified Industrial Hygienist (CIH) / mold inspector",
+          "role": "Not a medical practitioner, but essential for accurate environmental assessment. A qualified inspector can identify hidden moisture damage, collect air and dust samples, and interpret ERMI/HERTSMI-2 results in the context of CIRS.",
+          "notes": "Seek inspectors with CIH credentials who understand the difference between cosmetic and hidden mold. Be cautious of inspectors who also sell remediation services."
+        },
+        {
+          "type": "Allergist / immunologist",
+          "role": "May be useful for ruling out IgE-mediated mold allergy, evaluating immunological labs, or investigating complement abnormalities. Rarely knowledgeable about CIRS itself, but standard immunological evaluation can help build the differential diagnosis.",
+          "notes": "Most allergists are not trained in CIRS and will not recognize C4a elevation or MSH deficiency as meaningful. Useful for ruling out allergy-mediated conditions rather than diagnosing CIRS."
+        },
+        {
+          "type": "Neurologist or neuroradiologist (for NeuroQuant MRI)",
+          "role": "Necessary for ordering and interpreting NeuroQuant MRI when neurological involvement is suspected. Provides objective documentation of brain volumetric changes and a baseline for monitoring recovery.",
+          "notes": "The radiologist must be familiar with NeuroQuant software. Most neurologists are not familiar with CIRS-specific MRI patterns \u2014 the NeuroQuant analysis software provides standardized output that can be interpreted by a CIRS clinician."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/ToxicMold",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/ToxicMold/",
+          "notes": "Active community of people navigating mold illness and CIRS. Good for practical advice on environmental testing, relocation decisions, finding practitioners, and navigating the diagnostic process. Variable quality of medical information \u2014 treat as peer support and experience-sharing, not clinical guidance."
+        },
+        {
+          "name": "Surviving Mold Community Forums",
+          "platform": "Forum (survivingmold.com)",
+          "url": "https://www.survivingmold.com/",
+          "notes": "Dr. Shoemaker's official site includes educational resources, a practitioner directory, the VCS test, and patient forums. The primary educational hub for the CIRS framework. Essential starting point for anyone beginning to research this condition."
+        },
+        {
+          "name": "CIRS and Mold Illness Support Group",
+          "platform": "Facebook",
+          "url": null,
+          "notes": "Several large Facebook groups exist for CIRS and mold illness support. Useful for connecting with others navigating the protocol, sharing practitioner recommendations, and finding peer support during a long recovery. Search 'CIRS support' or 'mold illness support' on Facebook."
+        },
+        {
+          "name": "Biotoxin Journey",
+          "platform": "Website / community",
+          "url": "https://www.biotoxinjourney.com/",
+          "notes": "A patient-created resource with detailed protocol breakdowns, lab interpretation guides, and community forums. Highly practical for patients actively working through the Shoemaker protocol. One of the best independent patient resources available."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Surviving Mold: Triumph Over Illness Caused by Toxic Mold",
+        "type": "book",
+        "author_or_source": "Dr. Ritchie Shoemaker",
+        "url": "https://www.survivingmold.com/",
+        "description": "The foundational text on CIRS by the physician who developed the diagnostic and treatment framework. Explains the underlying mechanism, biomarker patterns, and the protocol in accessible language. Essential reading for anyone seriously investigating this diagnosis.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Mold Warriors",
+        "type": "book",
+        "author_or_source": "Dr. Ritchie Shoemaker",
+        "url": null,
+        "description": "An earlier Shoemaker book with detailed case histories that help readers recognize the CIRS pattern across diverse presentations. Particularly useful for people who are still trying to decide whether CIRS fits their picture.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Ritchie Shoemaker MD \u2014 Surviving Mold (official website)",
+        "type": "website",
+        "author_or_source": "Dr. Ritchie Shoemaker",
+        "url": "https://www.survivingmold.com/",
+        "description": "The authoritative source for the CIRS protocol, including the VCS test, practitioner directory, research papers, and patient education materials. The first stop for anyone beginning to investigate CIRS.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Biotoxin Journey website",
+        "type": "website",
+        "author_or_source": "Patient community",
+        "url": "https://www.biotoxinjourney.com/",
+        "description": "Detailed, patient-written breakdowns of every step of the Shoemaker protocol with lab interpretation guides, treatment logistics, and real-world experience. Invaluable for people actively working through the protocol.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Is Your Home Making You Sick? The Definitive Guide to Identifying and Surviving Biotoxin Illness",
+        "type": "book",
+        "author_or_source": "Dr. Lauren Tessier",
+        "url": null,
+        "description": "A naturopathic physician's accessible guide to biotoxin illness that broadens the perspective beyond Shoemaker's framework. Useful for understanding the condition from a complementary integrative perspective.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Shoemaker Protocol Overview \u2014 peer-reviewed summary",
+        "type": "research paper",
+        "author_or_source": "Ritchie C. Shoemaker et al.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/",
+        "description": "Several papers by Shoemaker and colleagues are indexed on PubMed, including studies on HLA-DR genetics, biomarker patterns, and treatment outcomes. Search 'Shoemaker CIRS' or 'biotoxin illness' on PubMed for the primary literature. Useful for evaluating the evidence base critically.",
+        "audience": "advanced"
+      },
+      {
+        "title": "CIRS Deep Dive \u2014 Dave Asprey / Bulletproof interviews with Shoemaker",
+        "type": "podcast",
+        "author_or_source": "Dave Asprey / Bulletproof Radio",
+        "url": "https://daveasprey.com/",
+        "description": "Several podcast interviews with Dr. Shoemaker covering the CIRS framework in accessible conversational format. A good entry point for auditory learners who want to understand the condition before reading.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Mold Summit (various years)",
+        "type": "video",
+        "author_or_source": "Various CIRS-focused practitioners",
+        "url": null,
+        "description": "Online video summits featuring multiple CIRS and mold illness experts covering diagnosis, treatment, environmental remediation, and patient experience. Free access to recent recordings is often available during and shortly after the events.",
+        "audience": "beginner"
+      },
+      {
+        "title": "CIRS Biomarker Interpretation Guide \u2014 Surviving Mold",
+        "type": "website",
+        "author_or_source": "Survivingmold.com",
+        "url": "https://www.survivingmold.com/diagnosis/lab-tests",
+        "description": "Detailed explanation of each biomarker in the CIRS panel, what abnormal values mean, and how they fit the overall pattern. Essential reference for patients reviewing their own lab results.",
+        "audience": "intermediate"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

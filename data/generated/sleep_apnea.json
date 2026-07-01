@@ -1,0 +1,723 @@
+{
+  "condition_id": "sleep_apnea",
+  "condition_name": "Obstructive sleep apnea",
+  "generated_at": "2026-07-01T11:39:37.899159Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Obstructive sleep apnea (OSA) is a condition in which the upper airway repeatedly collapses or narrows during sleep, causing breathing to stop \u2014 sometimes hundreds of times a night. The brain briefly rouses the person to restore airflow, preventing deep, restorative sleep without the person necessarily remembering these awakenings. The result is fragmented, non-restorative sleep and low oxygen levels that, over time, affect virtually every organ system in the body.",
+    "detailed_summary": "Obstructive sleep apnea occurs when the muscles and soft tissues of the throat relax during sleep to the point where the airway partially or completely closes. Each closure \u2014 called an apnea or hypopnea \u2014 triggers a drop in blood oxygen (hypoxemia) and a surge in carbon dioxide, which activates the brain's arousal response. Breathing resumes, oxygen recovers, and the cycle repeats. Because these micro-arousals are usually too brief to be consciously remembered, many people with OSA are unaware they are sleeping poorly. They simply experience the downstream effects: crushing daytime sleepiness, cognitive fog, mood instability, morning headaches, and a wide range of cardiovascular, metabolic, and hormonal consequences.\n\nOSA exists on a spectrum from mild (5\u201314 events per hour) to moderate (15\u201329) to severe (30 or more events per hour). Severity, however, does not perfectly predict symptoms \u2014 some people with moderate AHI (apnea-hypopnea index) are profoundly impaired, while others with high AHI report little obvious sleepiness, especially if their baseline sleep drive is high.\n\nRisk factors include excess body weight (particularly central and neck fat), a narrow or crowded upper airway, retrognathia (recessed jaw), enlarged tonsils or adenoids, nasal obstruction, alcohol use, sedatives, and age. OSA is significantly more common in men, but the gender gap narrows after menopause, and women often present with atypical symptoms \u2014 fatigue, insomnia, mood changes, and headaches \u2014 rather than classic loud snoring, leading to chronic underdiagnosis in female patients.\n\nLeft untreated, OSA carries meaningful long-term risk: hypertension, atrial fibrillation, coronary artery disease, stroke, type 2 diabetes, insulin resistance, non-alcoholic fatty liver disease, depression, cognitive decline, and increased all-cause mortality. It also dramatically increases the risk of motor vehicle and workplace accidents. For these reasons, OSA is not merely a sleep inconvenience \u2014 it is a significant chronic disease that warrants active investigation and management.",
+    "prevalence": {
+      "summary": "OSA is one of the most common chronic conditions worldwide, yet a large proportion of cases remain undiagnosed.",
+      "estimate": "Approximately 10\u201330% of adults, depending on diagnostic threshold and population studied; severe OSA affects roughly 6\u201317%",
+      "notes": "Estimates vary widely depending on whether AHI \u22655 or AHI \u226515 is used as the threshold, and whether symptoms are required. The Wisconsin Sleep Cohort and subsequent large studies suggest that 1 in 4 men and 1 in 10 women meet diagnostic criteria, but up to 80\u201390% of moderate-to-severe cases may be undiagnosed. Prevalence rises sharply with age and obesity. Rates have increased alongside global obesity trends."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Positional OSA",
+        "description": "A subtype in which the majority of apneas occur in the supine (back-sleeping) position, with significantly fewer or no events in lateral (side-sleeping) positions.",
+        "distinguishing_features": [
+          "AHI in supine position is at least twice that of non-supine positions",
+          "May be adequately managed with positional therapy alone in mild-to-moderate cases",
+          "Often missed when sleep studies do not record body position data"
+        ]
+      },
+      {
+        "id": null,
+        "name": "REM-predominant OSA",
+        "description": "Apneas are disproportionately concentrated during REM sleep, when muscle tone is lowest and the airway most vulnerable.",
+        "distinguishing_features": [
+          "May appear mild on overall AHI but have severe REM-specific AHI",
+          "More common in women and younger patients",
+          "Associated with more vivid dreams being disrupted and significant cardiovascular risk despite a seemingly low overall AHI"
+        ]
+      },
+      {
+        "id": null,
+        "name": "OSA in women",
+        "description": "Women with OSA often present with atypical symptoms that diverge from the classic male presentation, leading to significant diagnostic delay.",
+        "distinguishing_features": [
+          "Dominant symptoms may be fatigue, insomnia, mood disturbance, headaches, or restless legs rather than witnessed apneas or loud snoring",
+          "Prevalence rises sharply after menopause",
+          "Often initially attributed to depression, anxiety, or thyroid dysfunction",
+          "May require a lower AHI threshold to explain symptoms"
+        ]
+      },
+      {
+        "id": null,
+        "name": "OSA with insomnia (COMISA)",
+        "description": "A highly prevalent comorbid presentation where OSA and chronic insomnia co-exist, each worsening the other.",
+        "distinguishing_features": [
+          "Difficulty initiating or maintaining sleep alongside apnea events",
+          "CPAP adherence is often lower without concurrent insomnia treatment",
+          "Cognitive behavioural therapy for insomnia (CBT-I) is needed alongside CPAP"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Non-obese OSA",
+        "description": "OSA in individuals with a normal BMI, typically driven by craniofacial anatomy rather than soft tissue excess.",
+        "distinguishing_features": [
+          "Often involves retrognathia, a high-arched narrow palate, or maxillary deficiency",
+          "Frequently missed because clinicians associate OSA primarily with obesity",
+          "Mandibular advancement devices and surgical options (e.g., maxillomandibular advancement) may be more relevant than CPAP"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Complex / mixed sleep apnea",
+        "description": "A form where central apneas (brain fails to send breathing signal) emerge or coexist alongside obstructive events, sometimes first appearing after CPAP initiation.",
+        "distinguishing_features": [
+          "Central events do not resolve with airway pressure alone",
+          "May require adaptive servoventilation (ASV) or BiPAP-ST therapy",
+          "Distinguished on detailed PAP device data or titration polysomnography"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Loud, chronic snoring",
+        "category": "sleep / respiratory",
+        "notes": "Often reported by a bed partner; may be punctuated by gasping or choking sounds. Absence of snoring does not rule out OSA."
+      },
+      {
+        "symptom": "Witnessed apneas \u2014 observed pauses in breathing during sleep",
+        "category": "sleep / respiratory",
+        "notes": "A highly specific symptom when reported by a partner; the person with OSA is usually unaware."
+      },
+      {
+        "symptom": "Excessive daytime sleepiness",
+        "category": "neurological / sleep",
+        "notes": "Ranges from mild fatigue to irresistible sleep attacks; assessed with the Epworth Sleepiness Scale. More prominent in men; women often report fatigue rather than frank sleepiness."
+      },
+      {
+        "symptom": "Unrefreshing, non-restorative sleep",
+        "category": "sleep",
+        "notes": "Waking feeling as tired as before going to bed despite adequate time in bed."
+      },
+      {
+        "symptom": "Morning headaches",
+        "category": "neurological",
+        "notes": "Typically bifrontal, present on waking, and resolve within 1\u20132 hours; caused by overnight CO2 retention and vascular changes."
+      },
+      {
+        "symptom": "Cognitive impairment \u2014 brain fog, poor concentration, impaired memory",
+        "category": "neurological / cognitive",
+        "notes": "Can be mistaken for ADHD, early dementia, or depression. Often the chief complaint in women with OSA."
+      },
+      {
+        "symptom": "Mood disturbance \u2014 irritability, depression, anxiety",
+        "category": "psychological",
+        "notes": "OSA and depression are bidirectionally linked; mood symptoms often improve significantly with effective OSA treatment."
+      },
+      {
+        "symptom": "Waking with choking, gasping, or a sensation of suffocating",
+        "category": "sleep / respiratory",
+        "notes": "Can be confused with panic attacks, GERD, or laryngospasm."
+      },
+      {
+        "symptom": "Nocturia \u2014 frequent nighttime urination",
+        "category": "urological",
+        "notes": "Caused by atrial natriuretic peptide release triggered by the negative intrathoracic pressure of obstructed breathing. Often misattributed to prostate enlargement or bladder issues."
+      },
+      {
+        "symptom": "Dry mouth or sore throat on waking",
+        "category": "ENT / oral",
+        "notes": "Results from mouth breathing during obstructed nasal airflow."
+      },
+      {
+        "symptom": "Reduced libido and sexual dysfunction",
+        "category": "endocrine / sexual",
+        "notes": "Linked to disrupted testosterone and growth hormone secretion, both of which peak during deep slow-wave sleep."
+      },
+      {
+        "symptom": "Nocturnal sweating",
+        "category": "autonomic",
+        "notes": "Particularly in the upper body and head; driven by autonomic arousal surges accompanying each apnea."
+      },
+      {
+        "symptom": "Gastroesophageal reflux / GERD at night",
+        "category": "digestive",
+        "notes": "The large negative intrathoracic pressure created during obstructed breathing can draw stomach acid into the oesophagus."
+      },
+      {
+        "symptom": "Bruxism \u2014 teeth grinding during sleep",
+        "category": "oral / musculoskeletal",
+        "notes": "Increasingly recognised as a protective response to partially open the airway during obstructive events."
+      },
+      {
+        "symptom": "Hypertension, especially resistant hypertension",
+        "category": "cardiovascular",
+        "notes": "OSA is one of the most common identifiable causes of secondary hypertension. Blood pressure that does not respond to multiple medications warrants OSA investigation."
+      },
+      {
+        "symptom": "Elevated fasting glucose or worsening diabetes control",
+        "category": "metabolic",
+        "notes": "Intermittent hypoxia and sleep fragmentation impair insulin sensitivity."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Epworth Sleepiness Scale score \u226510 combined with snoring, witnessed apneas, or morning headaches strongly suggests OSA",
+        "Resistant hypertension in a patient with neck circumference >40 cm (women) or >43 cm (men) warrants urgent sleep study",
+        "Oxygen desaturation index (ODI) of \u22655 events per hour on overnight oximetry is a sensitive screen",
+        "AHI \u22655 with symptoms, or AHI \u226515 regardless of symptoms, meets standard diagnostic thresholds",
+        "High REM-specific AHI (\u226510\u201315) with overall mild AHI \u2014 especially in women \u2014 indicates REM-predominant OSA requiring treatment",
+        "Morning headaches + nocturia + non-restorative sleep in the absence of obvious snoring \u2014 consider OSA especially in women or non-obese individuals"
+      ],
+      "at_home": [
+        {
+          "name": "Overnight pulse oximetry",
+          "description": "A consumer-grade fingertip or wrist pulse oximeter worn overnight records oxygen saturation and pulse rate. Repeated drops in SpO2 below 90%, or an oxygen desaturation index (ODI) of 5 or more drops of \u22653\u20134% per hour, suggest significant sleep-disordered breathing and warrant clinical investigation. Many modern smartwatches and rings (e.g., Garmin, Oura) include overnight SpO2 tracking.",
+          "safety_notes": "A normal overnight oximetry result does not rule out OSA \u2014 upper airway resistance events can fragment sleep without significant oxygen drops. This is a screening indicator only."
+        },
+        {
+          "name": "Snore recording apps",
+          "description": "Apps such as SnoreLab or Sleep Cycle use the phone microphone to record and analyse snoring patterns overnight. Patterns of loud snoring interrupted by silence (the apnea) followed by gasping can be identified. Useful for building evidence before a clinical appointment.",
+          "safety_notes": "These apps are not diagnostic tools and can be affected by ambient sound. Treat results as indicative only."
+        },
+        {
+          "name": "STOP-BANG questionnaire",
+          "description": "A validated 8-item screening tool covering Snoring, Tiredness, Observed apneas, blood Pressure, BMI, Age, Neck circumference, and Gender. A score of 3 or more indicates intermediate-to-high risk. Widely used and publicly available online.",
+          "safety_notes": "Designed for screening, not diagnosis. Has lower sensitivity in women and non-obese individuals."
+        },
+        {
+          "name": "Sleep diary and symptom log",
+          "description": "Keeping a 2-week log of bedtime, wake time, nocturia events, morning symptoms (headache, dry mouth, mood, energy), and daytime sleepiness helps quantify the impact and pattern of symptoms. Tracking alcohol and sedative use alongside symptom severity can reveal modifiable triggers.",
+          "safety_notes": "No safety concerns. Valuable data to bring to a clinical appointment."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "In-laboratory polysomnography (PSG)",
+          "type": "gold_standard",
+          "description": "An overnight sleep study conducted in a specialist sleep laboratory. Records airflow, respiratory effort, oxygen saturation, EEG (brain waves), EMG (muscle activity), ECG, eye movements, and body position simultaneously. Calculates AHI, RDI, ODI, sleep architecture, and arousal index. Allows for distinction between obstructive, central, and complex apneas and detection of other sleep disorders (RLS, PLMD, parasomnias).",
+          "availability": "Requires a referral to a sleep specialist or sleep centre. Wait times vary by country. Often covered by public health systems or private insurance when criteria are met."
+        },
+        {
+          "name": "Home sleep apnea test (HSAT / type 3 device)",
+          "type": "standard",
+          "description": "A portable device worn at home recording airflow (nasal pressure / thermistor), respiratory effort (chest and abdominal belts), pulse oximetry, and often body position and snoring. Calculates a respiratory event index (REI) or AHI estimate. Considerably more accessible than PSG and sufficient for diagnosing uncomplicated moderate-to-severe OSA in patients with high pre-test probability.",
+          "availability": "Can be ordered by a sleep physician, pulmonologist, ENT, or in many countries by a GP. Available through private sleep clinics without referral in some jurisdictions. May underestimate AHI as recording time is total recording time rather than sleep time."
+        },
+        {
+          "name": "Drug-induced sleep endoscopy (DISE)",
+          "type": "standard",
+          "description": "A procedure performed by an ENT or airway surgeon in which the patient is sedated to a state resembling natural sleep, and a flexible nasendoscope is passed to directly visualise the level and pattern of upper airway collapse. Used to guide surgical or device planning when CPAP has been declined or failed.",
+          "availability": "Specialist ENT or sleep surgery service. Not universally available; more common in tertiary centres."
+        },
+        {
+          "name": "Overnight blood pressure monitoring with sleep study",
+          "type": "standard",
+          "description": "Identifies the characteristic pattern of non-dipping or reverse-dipping blood pressure (BP fails to fall during sleep) seen in OSA-associated hypertension, adding cardiovascular risk context to the apnea diagnosis.",
+          "availability": "Available in specialist centres; can be combined with PSG."
+        },
+        {
+          "name": "Cephalometric X-ray / CT / MRI airway imaging",
+          "type": "standard",
+          "description": "Imaging of the craniofacial skeleton and soft tissue airway to assess jaw position, tongue position, palate size, and the skeletal contribution to airway narrowing. Used in surgical planning, orthodontic device fitting, and non-obese patients where anatomy is the primary driver.",
+          "availability": "Ordered by ENT, oral and maxillofacial surgeons, or sleep physicians. Dental sleep medicine practitioners routinely use cephalometry for mandibular advancement device fitting."
+        },
+        {
+          "name": "Polysomnography with CPAP titration",
+          "type": "standard",
+          "description": "A second in-laboratory night during which CPAP pressure is manually adjusted to find the optimal therapeutic pressure that eliminates apneas across all sleep stages and body positions. Increasingly replaced by auto-titrating CPAP (APAP) at home, but manual titration remains useful for complex or severe cases.",
+          "availability": "Sleep laboratory; requires referral."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "uars",
+        "name": "Upper airway resistance syndrome (UARS)",
+        "relationship": "often_confused",
+        "explanation": "UARS involves repetitive partial upper airway narrowing causing arousals and non-restorative sleep without meeting conventional AHI criteria for OSA. It is frequently misdiagnosed or dismissed because a standard sleep study appears 'normal'. The mechanisms and symptoms overlap substantially with mild OSA, and many researchers consider it part of the same continuum."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor sleep / insomnia",
+        "relationship": "comorbid",
+        "explanation": "OSA and insomnia co-exist in roughly 30\u201350% of people with either condition (COMISA). The sleep fragmentation from apneas creates hyperarousal that maintains insomnia, while insomnia-driven sleep restriction can worsen REM rebound and apnea severity. Each condition requires specific treatment."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "comorbid",
+        "explanation": "The repeated nocturnal hypoxia and autonomic surges of OSA can produce or worsen anxiety. Waking with choking or gasping can mimic panic attacks. Conversely, hyperarousal from anxiety worsens sleep quality, creating a bidirectional relationship."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "comorbid",
+        "explanation": "OSA and depression share a bidirectional relationship. Intermittent hypoxia, sleep fragmentation, and disrupted neurotransmitter metabolism all contribute to depressive symptoms. Many people with OSA are treated for depression for years before the sleep disorder is identified."
+      },
+      {
+        "id": "insulin_resistance",
+        "name": "Insulin resistance / metabolic syndrome",
+        "relationship": "mechanistic_link",
+        "explanation": "Intermittent hypoxia activates inflammatory pathways and impairs glucose metabolism, independently contributing to insulin resistance. OSA and metabolic syndrome share obesity as a common driver but also causally worsen each other."
+      },
+      {
+        "id": "hypothyroidism",
+        "name": "Hypothyroidism",
+        "relationship": "upstream",
+        "explanation": "Hypothyroidism can cause upper airway myopathy, macroglossia, and weight gain \u2014 all of which promote OSA. Treating hypothyroidism may reduce OSA severity. OSA in someone with persistent symptoms despite CPAP warrants thyroid function testing."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "Fibromyalgia and OSA co-occur at rates higher than chance. Sleep fragmentation from OSA lowers pain thresholds and can trigger or maintain central sensitisation patterns seen in fibromyalgia. Effective OSA treatment sometimes reduces fibromyalgia symptom burden substantially."
+      },
+      {
+        "id": "me_cfs",
+        "name": "ME / CFS",
+        "relationship": "often_confused",
+        "explanation": "Undiagnosed OSA is a common finding in patients presenting with ME/CFS-like symptoms. The profound fatigue, post-exertional malaise, and cognitive dysfunction of severe OSA can closely mimic ME/CFS. Ruling out OSA is an important step in any ME/CFS workup."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "Both conditions involve autonomic nervous system dysregulation. OSA-driven sympathetic activation can worsen orthostatic instability, and the two conditions frequently co-occur in younger women with hypermobility-related connective tissue disorders."
+      },
+      {
+        "id": "tmd",
+        "name": "Temporomandibular disorder (TMD)",
+        "relationship": "comorbid",
+        "explanation": "Bruxism \u2014 a recognised protective response to airway obstruction during sleep \u2014 causes jaw joint loading and muscle pain that can produce or worsen TMD. Mandibular advancement devices used to treat OSA can also occasionally exacerbate TMD."
+      },
+      {
+        "id": "allergic_rhinitis",
+        "name": "Allergic rhinitis",
+        "relationship": "upstream",
+        "explanation": "Nasal congestion from allergic rhinitis increases upper airway resistance, promotes mouth breathing, and worsens the severity of OSA. Treating nasal obstruction \u2014 whether allergic, structural, or inflammatory \u2014 is often an important adjunct to OSA management."
+      },
+      {
+        "id": "chronic_sinusitis",
+        "name": "Chronic sinusitis",
+        "relationship": "upstream",
+        "explanation": "Chronic sinonasal inflammation and nasal obstruction increase the respiratory load on the upper airway during sleep, worsening OSA severity and reducing CPAP comfort and compliance."
+      },
+      {
+        "id": "deviated_septum",
+        "name": "Deviated septum",
+        "relationship": "upstream",
+        "explanation": "Significant septal deviation contributes to nasal obstruction, mouth breathing, and increased upper airway resistance during sleep, all of which promote OSA. Septoplasty may reduce OSA severity, particularly in non-obese anatomically-driven cases."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / hypermobility spectrum disorder",
+        "relationship": "comorbid",
+        "explanation": "Hypermobility of connective tissue may affect the pharyngeal tissues and craniofacial structures, potentially increasing susceptibility to airway collapsibility. OSA, UARS, and TMD are reported at elevated rates in hEDS populations."
+      },
+      {
+        "id": "perimenopause",
+        "name": "Perimenopause",
+        "relationship": "upstream",
+        "explanation": "The decline in oestrogen and progesterone during perimenopause reduces upper airway muscle tone and the respiratory drive that protects against apneas. OSA prevalence in women rises substantially through and after the menopausal transition."
+      },
+      {
+        "id": "low_testosterone",
+        "name": "Low testosterone",
+        "relationship": "downstream",
+        "explanation": "OSA disrupts slow-wave sleep, during which the majority of testosterone secretion occurs. Severe OSA is associated with significantly reduced testosterone levels in men; effective CPAP treatment often partially restores testosterone without hormone supplementation."
+      },
+      {
+        "id": "migraine",
+        "name": "Migraine",
+        "relationship": "comorbid",
+        "explanation": "Sleep-disordered breathing is significantly more prevalent among people with migraine. Nocturnal hypoxia and autonomic dysregulation from OSA may trigger or lower the threshold for migraine attacks, and morning headaches from OSA are sometimes misclassified as migraine."
+      },
+      {
+        "id": "adhd",
+        "name": "ADHD",
+        "relationship": "often_confused",
+        "explanation": "The inattention, hyperactivity, and impulsivity associated with sleep-disordered breathing \u2014 especially in children, but also adults \u2014 can closely mimic ADHD. In some children, treating OSA (e.g., tonsillectomy) leads to resolution of apparent ADHD symptoms. Adults with treatment-resistant ADHD symptoms warrant OSA screening."
+      },
+      {
+        "id": "poor_posture",
+        "name": "Poor posture / forward head posture",
+        "relationship": "mechanistic_link",
+        "explanation": "Forward head posture and reduced cervical extension narrow the pharyngeal airway. Postural contributors to airway anatomy are increasingly recognised in non-obese OSA, and myofunctional therapy targeting tongue and neck posture may reduce AHI."
+      },
+      {
+        "id": "cortisol_dysreg",
+        "name": "Cortisol dysregulation",
+        "relationship": "downstream",
+        "explanation": "Each apnea triggers a cortisol and catecholamine surge. Chronic nightly stress hormone activation dysregulates the HPA axis over time, contributing to fatigue, immune dysregulation, and metabolic dysfunction seen in long-standing untreated OSA."
+      },
+      {
+        "id": "long_covid",
+        "name": "Long COVID",
+        "relationship": "often_confused",
+        "explanation": "The fatigue, brain fog, and sleep disturbance of long COVID overlap considerably with undiagnosed or worsening OSA. COVID-19 infection may also worsen pre-existing OSA or unmask latent OSA through weight gain, nasal inflammation, or neural mechanisms."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Continuous positive airway pressure (CPAP) therapy",
+          "category": "medical device",
+          "description": "CPAP delivers pressurised air through a mask to pneumatically splint the upper airway open during sleep, preventing collapse. It is the most effective treatment for moderate-to-severe OSA, and for many people produces rapid, dramatic improvements in sleepiness, cognition, mood, and cardiovascular risk markers. Auto-titrating CPAP (APAP) automatically adjusts pressure breath-by-breath and is the standard initial prescription in most countries.",
+          "evidence_level": "strong",
+          "notes": "Adherence is the critical variable \u2014 CPAP only works when worn. Common barriers include mask discomfort, claustrophobia, nasal congestion, and pressure intolerance. Many of these can be resolved with correct mask fitting, nasal therapy, humidification, and pressure ramp settings. A sleep technician or respiratory therapist experienced in CPAP troubleshooting is invaluable. CPAP data (AHI on device, leak rate, usage hours) should be reviewed regularly \u2014 most modern devices transmit data wirelessly."
+        },
+        {
+          "name": "Mandibular advancement device (MAD)",
+          "category": "dental / oral appliance",
+          "description": "A custom-fitted oral appliance worn during sleep that holds the lower jaw (mandible) forward, enlarging the retropalatal and retroglossal space and reducing airway collapsibility. Particularly effective for mild-to-moderate OSA, positional OSA, and patients who cannot tolerate CPAP. Fitted and adjusted by a dentist trained in dental sleep medicine.",
+          "evidence_level": "strong",
+          "notes": "MADs are less effective than CPAP on average but achieve better real-world outcomes in some patients due to superior adherence. Potential side effects include temporary jaw soreness, tooth movement, and TMJ sensitivity. Titration to the optimal jaw position takes several weeks and may require multiple adjustments."
+        },
+        {
+          "name": "Weight loss",
+          "category": "lifestyle",
+          "description": "In people with OSA driven by excess adipose tissue, weight reduction reduces pharyngeal fat deposition, improves airway patency, and can meaningfully reduce AHI. Even a 10% reduction in body weight can reduce AHI by 26% or more. Bariatric surgery in severe obesity can produce partial or complete remission of OSA.",
+          "evidence_level": "strong",
+          "notes": "Weight loss rarely eliminates OSA entirely and should not be used as a reason to delay CPAP. Anatomical and neuromuscular factors persist even after significant weight loss. However, weight management remains an essential long-term lever, particularly for metabolic comorbidities."
+        },
+        {
+          "name": "Positional therapy",
+          "category": "lifestyle",
+          "description": "For people with confirmed positional OSA, avoiding the supine sleeping position can substantially reduce AHI. Methods include positional alarms, purpose-designed positional devices (e.g., Zzoma, NightShift), wedge pillows, or the classic 'tennis ball in a pocket sewn to the back of pyjamas'. Some people adapt naturally to side-sleeping over time.",
+          "evidence_level": "moderate",
+          "notes": "Positional therapy is most effective as adjunctive therapy in mild-to-moderate positional OSA. Adherence with vibrotactile positional devices is generally better than with passive positioning aids."
+        },
+        {
+          "name": "Myofunctional therapy (orofacial muscle exercises)",
+          "category": "physical therapy",
+          "description": "Structured exercises targeting the tongue, soft palate, and oropharyngeal muscles reduce upper airway collapsibility by increasing muscle tone. Studies show reductions in AHI of 40\u201350% in adults and up to 62% in children. Involves daily repetitions of specific tongue-positioning, swallowing, and lip-sealing exercises, typically guided by a certified orofacial myofunctional therapist.",
+          "evidence_level": "moderate",
+          "notes": "Most effective in mild-to-moderate OSA and in younger patients with good anatomical potential. May improve CPAP and MAD outcomes when used adjunctively. Requires consistent daily practice over at least 8\u201312 weeks to see meaningful change."
+        },
+        {
+          "name": "Nasal obstruction management",
+          "category": "medical / lifestyle",
+          "description": "Reducing nasal resistance through treatment of allergic rhinitis (nasal corticosteroid sprays, antihistamines), nasal saline irrigation, septoplasty for deviated septum, or turbinate reduction improves airflow through the nasal route, reduces mouth breathing, and improves CPAP comfort. Nasal strips or dilators may provide modest benefit.",
+          "evidence_level": "moderate",
+          "notes": "Nasal treatment alone rarely resolves OSA but is an important component of comprehensive management and significantly improves CPAP tolerance."
+        },
+        {
+          "name": "Alcohol and sedative avoidance",
+          "category": "lifestyle",
+          "description": "Alcohol, benzodiazepines, opioids, and other sedatives relax pharyngeal muscles, suppress arousal responses, and substantially worsen OSA severity \u2014 often doubling AHI after moderate alcohol intake. Avoiding these agents, particularly in the 3\u20134 hours before sleep, may produce a meaningful reduction in event frequency.",
+          "evidence_level": "strong",
+          "notes": "This is one of the highest-leverage modifiable factors, yet commonly underemphasised in clinical consultations."
+        },
+        {
+          "name": "Hypoglossal nerve stimulation (Inspire therapy)",
+          "category": "surgical / implantable device",
+          "description": "A surgically implanted device that delivers mild electrical stimulation to the hypoglossal nerve with each breath during sleep, causing tongue protrusion and airway opening. Indicated for moderate-to-severe OSA in patients who have failed or cannot tolerate CPAP, without complete concentric palatal collapse on DISE.",
+          "evidence_level": "strong",
+          "notes": "A significant advance for CPAP-intolerant patients. Not universally available; typically requires ENT or sleep surgery referral, specific AHI criteria (usually 15\u201365), and body habitus considerations."
+        },
+        {
+          "name": "Upper airway surgery",
+          "category": "surgical",
+          "description": "A range of procedures targeting specific sites of obstruction identified on DISE or imaging: uvulopalatopharyngoplasty (UPPP), tonsillectomy/adenoidectomy (especially in children and adults with tonsillar hypertrophy), tongue base reduction, maxillomandibular advancement (MMA \u2014 repositions both jaws to expand the skeletal airway), and nasal surgeries.",
+          "evidence_level": "moderate",
+          "notes": "Outcomes vary considerably depending on patient selection and site of obstruction. MMA has the highest success rates among soft tissue surgeries for skeletal OSA. Tonsillectomy in children with tonsillar OSA is often curative. An ENT or sleep surgeon experienced in DISE-guided surgical planning is essential."
+        },
+        {
+          "name": "Treatment of comorbid insomnia (CBT-I)",
+          "category": "psychological / behavioural",
+          "description": "Cognitive behavioural therapy for insomnia (CBT-I) addresses the hyperarousal, dysfunctional sleep beliefs, and conditioned wakefulness that often accompany OSA. In COMISA, CBT-I improves CPAP adherence and sleep quality beyond what CPAP alone achieves.",
+          "evidence_level": "strong",
+          "notes": "Delivered by a psychologist or sleep therapist trained in CBT-I, or via validated digital programs (e.g., Sleepio, Somryst) where in-person access is limited."
+        }
+      ],
+      "things_to_avoid": [
+        "Alcohol within 3\u20134 hours of bedtime \u2014 significantly relaxes pharyngeal muscles and can double AHI",
+        "Benzodiazepines and non-benzodiazepine hypnotics (Z-drugs) \u2014 suppress arousal responses and worsen airway collapse",
+        "Opioid pain medications where alternatives exist \u2014 profoundly suppress respiratory drive and worsen apneas",
+        "Sleeping supine (on the back) in positional or mild OSA \u2014 most events occur in this position",
+        "Sleep deprivation \u2014 increases REM rebound on recovery nights, worsening REM-concentrated apneas",
+        "Sedating antihistamines (e.g., diphenhydramine) \u2014 impair the arousal response that restores breathing",
+        "Smoking \u2014 causes upper airway mucosal inflammation and oedema, increasing airway resistance",
+        "Using CPAP with an ill-fitting mask and tolerating high leak \u2014 renders therapy ineffective and the device data misleading",
+        "Assuming a 'normal' home sleep test rules out UARS or REM-predominant OSA \u2014 limited devices undercount events in lighter sleepers and women",
+        "Delaying treatment while attempting weight loss \u2014 cardiovascular and metabolic consequences accrue in the interim"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "CPAP is not optional for moderate-to-severe OSA \u2014 tolerating it poorly and using it sporadically produces almost no cardiovascular or cognitive benefit. Usage below 4 hours a night is effectively non-treatment.",
+        "why_resisted": "CPAP is uncomfortable, alien, claustrophobic, and noisy for many people, especially in the first weeks. The initial discomfort feels disproportionate when symptoms feel manageable during the day. Many people rationalise poor adherence by reporting they feel 'okay' without it.",
+        "path_forward": "People who invest the time to find the right mask interface (often requiring 2\u20133 trials), optimise CPAP settings with a respiratory therapist, and treat nasal obstruction before giving up typically achieve comfortable nightly use within 4\u20138 weeks. Tracking AHI and leak data on the device app (e.g., myAir, SleepHQ) creates objective feedback that motivates continued adherence."
+      },
+      {
+        "truth": "OSA in women is frequently missed for years \u2014 not because symptoms are subtle, but because clinicians still filter for the overweight, middle-aged, snoring male presentation.",
+        "why_resisted": "Women are often told their fatigue, mood disturbance, insomnia, and headaches are due to stress, depression, perimenopause, or anxiety \u2014 and they may accept these explanations, having been offered them repeatedly. The absence of a bed partner to report snoring removes a key referral trigger.",
+        "path_forward": "Women who recognise their cluster of symptoms \u2014 particularly non-restorative sleep, morning headaches, nocturia, cognitive fog, and mood disturbance \u2014 and advocate for a home sleep test or polysomnography often achieve diagnosis. Finding a sleep physician or clinic that explicitly acknowledges the female presentation of OSA substantially shortens the diagnostic journey."
+      },
+      {
+        "truth": "A 'mild' AHI of 5\u201314 does not mean symptoms or consequences are mild \u2014 the AHI is a blunt instrument that does not capture arousal burden, hypoxic load, or individual susceptibility.",
+        "why_resisted": "Clinicians sometimes decline to treat 'mild' OSA, and patients are reassured that their results are 'not bad enough' to warrant a CPAP device. This creates frustration and confusion when symptoms remain severe.",
+        "path_forward": "People with mild AHI but significant symptoms may benefit from seeking a sleep physician who reviews the full polysomnography \u2014 including arousal index, oxygen desaturation index, REM-specific AHI, and sleep efficiency \u2014 rather than AHI alone, and who considers a therapeutic trial of APAP to assess symptomatic response."
+      },
+      {
+        "truth": "Untreated OSA is not merely a sleep inconvenience \u2014 it carries the same long-term cardiovascular risk as uncontrolled hypertension, and the brain damage from years of intermittent hypoxia may be only partially reversible.",
+        "why_resisted": "The consequences are invisible and accumulate silently over years. People adapt to feeling unwell and lose their reference point for normal. The threat feels abstract compared to the immediate discomfort of wearing a mask.",
+        "path_forward": "Neuroimaging studies show partial recovery of white matter integrity and cognitive function after effective CPAP use, but this is time-dependent \u2014 the earlier treatment is established, the greater the potential for recovery. People who reframe CPAP as a cardiovascular medication rather than a sleep aid show significantly better long-term adherence."
+      },
+      {
+        "truth": "Feeling less sleepy on CPAP therapy does not mean OSA is adequately treated \u2014 residual AHI and leak data need to be reviewed regularly, as many people are on incorrect pressures or have worsening disease.",
+        "why_resisted": "Feeling somewhat better is taken as sufficient evidence that therapy is working. Most people are not told how to access their device data or what the numbers mean.",
+        "path_forward": "Learning to use a free CPAP data analysis tool (Oscar, SleepHQ) to monitor nightly AHI, leak rate, and pressure percentiles allows people to identify inadequate treatment and bring specific data to their clinician for pressure adjustment or mask change."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Consistent nightly CPAP / APAP use at therapeutic pressure with acceptable mask fit",
+          "why_it_matters": "CPAP is dose-dependent \u2014 cardiovascular risk reduction and cognitive benefit require \u22656 hours of nightly use. Each hour below this threshold reduces efficacy substantially. Residual AHI on CPAP should be below 5.",
+          "how_to_start": "Work with a respiratory therapist or CPAP supplier to trial at least 2\u20133 different mask styles (nasal pillow, nasal, full-face). Use the device's humidifier from day one to reduce dryness. Download the manufacturer's companion app and check your data each morning for the first month.",
+          "timeline": "Most people adapt to CPAP within 4\u20138 weeks with active troubleshooting; sleep and energy improvements are often noticeable within the first 1\u20132 weeks of consistent use",
+          "requires_professional": true
+        },
+        {
+          "lever": "Achieving and sustaining a healthy body weight if excess adipose tissue is a driver",
+          "why_it_matters": "Pharyngeal fat directly reduces airway calibre. Weight loss of 10\u201315% consistently reduces AHI and in some cases allows de-escalation from CPAP to a mandibular device or positional therapy.",
+          "how_to_start": "Address the metabolic contributors to weight in OSA \u2014 insulin resistance, disrupted ghrelin/leptin signalling from poor sleep, and fatigue reducing activity levels. Treating OSA first often makes weight loss more achievable by restoring energy and metabolic function.",
+          "timeline": "AHI improvements are measurable with 10% weight loss; sustained benefit requires sustained weight management",
+          "requires_professional": false
+        },
+        {
+          "lever": "Daily orofacial myofunctional exercises",
+          "why_it_matters": "Pharyngeal muscle tone reduces airway collapsibility. Studies show 40\u201350% AHI reduction with consistent practice \u2014 a magnitude approaching MAD therapy \u2014 at zero cost and no side effects.",
+          "how_to_start": "Find a certified orofacial myofunctional therapist (search through IAOM-US or equivalent national body) or follow a validated protocol. Commit to 20\u201330 minutes of daily exercises for a minimum of 3 months.",
+          "timeline": "Measurable AHI reduction typically seen at 8\u201312 weeks of daily practice",
+          "requires_professional": false
+        },
+        {
+          "lever": "Eliminating alcohol and sedative use in the hours before sleep",
+          "why_it_matters": "Alcohol is one of the most potent pharmacological worseners of OSA, potentially doubling AHI and extending event duration through muscle relaxation and arousal suppression. The effect is dose-dependent and begins with even one standard drink close to bedtime.",
+          "how_to_start": "Implement a strict cut-off of no alcohol within 4 hours of intended sleep time. Track the impact using device AHI data on nights with and without alcohol \u2014 the difference is often striking and highly motivating.",
+          "timeline": "Effect is immediate \u2014 within the same night",
+          "requires_professional": false
+        },
+        {
+          "lever": "Treating nasal obstruction comprehensively",
+          "why_it_matters": "Nasal breathing increases airway resistance by 50% compared to nasal breathing when nasal obstruction is present; mouth breathing bypasses nasal airway support, worsens airway collapse, and makes CPAP therapy nearly intolerable.",
+          "how_to_start": "Trial a nasal corticosteroid spray (e.g., fluticasone) for 4\u20136 weeks. Consider allergy testing if rhinitis is suspected. Discuss structural causes (septal deviation, turbinate hypertrophy) with an ENT. Use saline irrigation daily.",
+          "timeline": "Steroid nasal sprays show benefit within 2\u20134 weeks; structural interventions take longer",
+          "requires_professional": true
+        },
+        {
+          "lever": "Regular CPAP data review and pressure optimisation",
+          "why_it_matters": "Auto-titrating CPAP adjusts pressure within a set range, but the range may be suboptimal. If residual AHI remains above 2\u20133 or pressure percentiles are consistently hitting the upper limit, therapy is inadequate. Many people continue with sub-therapeutic pressures for years without anyone reviewing the data.",
+          "how_to_start": "Download Oscar (free, open-source) or use SleepHQ to analyse device data. Bring printed or exported reports to sleep physician appointments. Request a pressure range adjustment if 95th-percentile pressure is consistently at the set maximum.",
+          "timeline": "Data review can be done immediately; pressure adjustments typically show benefit within 1\u20132 weeks",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Trialling CPAP for 2\u20133 uncomfortable nights and abandoning it before adaptation occurs \u2014 early discomfort is not predictive of long-term tolerance with proper support",
+        "Accepting a 'mild' diagnosis and declining treatment without considering whether symptoms and comorbidities justify a therapeutic trial",
+        "Using CPAP inconsistently \u2014 on 'bad nights' only \u2014 and being surprised that cardiovascular and cognitive outcomes do not improve",
+        "Ignoring the CPAP data entirely and relying only on subjective feeling to assess whether therapy is working",
+        "Choosing a mask based on what looks comfortable in a brochure rather than trialling fit under pressure \u2014 most mask choices need in-person fitting with the device running",
+        "Treating weight loss as the primary intervention and delaying CPAP \u2014 the metabolic disruption of untreated OSA makes weight loss harder and the cardiovascular risk continues to accumulate",
+        "Failing to treat nasal obstruction before concluding CPAP is intolerable",
+        "Accepting a diagnosis of depression or anxiety and taking psychiatric medication for years without ruling out OSA as the underlying driver",
+        "Not informing the DVLA / driving licensing authority as required in many jurisdictions \u2014 driving with untreated severe OSA carries significant legal and safety consequences"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Sleep physician (pulmonologist or neurologist with sleep subspecialty)",
+          "role": "The primary specialist for OSA diagnosis and management. Orders and interprets sleep studies, prescribes and optimises PAP therapy, and manages complex or refractory cases.",
+          "notes": "Quality varies \u2014 seek a physician who reviews full polysomnography data rather than AHI alone, who takes symptoms seriously at lower AHI thresholds, and who actively troubleshoots CPAP issues rather than simply issuing a prescription."
+        },
+        {
+          "type": "Ear, nose and throat (ENT) surgeon / otolaryngologist",
+          "role": "Assesses and treats anatomical contributors to OSA: nasal obstruction, tonsillar hypertrophy, palatal and tongue base anatomy. Performs DISE to identify specific collapse patterns guiding surgical planning. Manages cases where CPAP has failed and surgical options are being explored.",
+          "notes": "Seek an ENT with specific interest in sleep surgery rather than a general otolaryngologist. DISE experience is important for surgical planning beyond simple tonsillectomy."
+        },
+        {
+          "type": "Dental sleep medicine practitioner",
+          "role": "A dentist with postgraduate training in sleep medicine who designs, fits, and titrates mandibular advancement devices. An important alternative pathway for CPAP-intolerant patients with mild-to-moderate OSA.",
+          "notes": "Look for membership of national dental sleep medicine academies (e.g., American Academy of Dental Sleep Medicine, British Society of Dental Sleep Medicine). Cephalometric assessment and follow-up sleep study post-titration are markers of quality care."
+        },
+        {
+          "type": "Respiratory therapist / CPAP specialist",
+          "role": "Often more accessible than a sleep physician for day-to-day CPAP troubleshooting. Helps with mask selection and fitting, humidity and pressure ramp settings, managing mouth breathing with chin straps or full-face masks, and reviewing device data.",
+          "notes": "Invaluable for improving CPAP adherence in the first weeks. Often underutilised \u2014 many patients receive a CPAP device by post with minimal support."
+        },
+        {
+          "type": "Certified orofacial myofunctional therapist",
+          "role": "Delivers structured tongue and oropharyngeal muscle exercise programmes shown to reduce AHI by 40\u201350% in compliant patients. A useful adjunct or alternative for those with mild-to-moderate OSA or CPAP intolerance.",
+          "notes": "Find certified therapists through the International Association of Orofacial Myology (IAOM) or national equivalents. Not all speech therapists have this specific training."
+        },
+        {
+          "type": "Oral and maxillofacial surgeon",
+          "role": "Performs maxillomandibular advancement (MMA) surgery \u2014 repositioning both jaws to expand the skeletal airway \u2014 which achieves among the highest cure rates for skeletal OSA, particularly in non-obese patients with retrognathia.",
+          "notes": "A specialist pathway for patients who have exhausted non-surgical options or have significant craniofacial anatomical drivers. Requires comprehensive pre-surgical planning with the surgical and sleep team."
+        },
+        {
+          "type": "Cardiologist",
+          "role": "Important for people with OSA-associated cardiovascular comorbidities: resistant hypertension, atrial fibrillation, heart failure with Cheyne-Stokes respiration, or established coronary artery disease. Coordinates OSA treatment as part of cardiovascular risk reduction.",
+          "notes": "Many cardiologists now proactively screen for OSA in patients with resistant hypertension and AF, recognising OSA as a modifiable cardiovascular risk factor."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/CPAP",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/CPAP/",
+          "notes": "One of the most active and practically useful patient communities for OSA. Exceptional for CPAP troubleshooting, mask recommendations, data interpretation using Oscar/SleepHQ, and peer support. Contains extensive wikis and community knowledge."
+        },
+        {
+          "name": "r/SleepApnea",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/SleepApnea/",
+          "notes": "Broader community covering diagnosis journeys, treatment options beyond CPAP, and general OSA discussion. Useful for newly diagnosed individuals navigating their options."
+        },
+        {
+          "name": "ApneaBoard Forum",
+          "platform": "Dedicated forum",
+          "url": "https://www.apneaboard.com/forums/",
+          "notes": "A technically advanced community specialising in deep CPAP data analysis. Experts here can interpret Oscar and SleepHQ reports in granular detail and help optimise settings. Invaluable for people whose residual AHI or symptoms remain suboptimal."
+        },
+        {
+          "name": "CPAP Talk",
+          "platform": "Dedicated forum",
+          "url": "https://www.cpaptalk.com/",
+          "notes": "Long-established community with peer support, equipment discussions, and troubleshooting threads. Active moderation and extensive archives."
+        },
+        {
+          "name": "Sleep Apnea Support (Women's focus)",
+          "platform": "Facebook Group",
+          "url": null,
+          "notes": "Search for 'Women with Sleep Apnea' on Facebook. Communities specifically for women with OSA address the diagnostic challenges, atypical symptom presentations, and hormonal interactions that are underrepresented in general OSA communities."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Sleep Apnea: Everything You Need to Know About the Condition, Diagnosis & Treatment",
+        "type": "website",
+        "author_or_source": "Sleep Foundation",
+        "url": "https://www.sleepfoundation.org/sleep-apnea",
+        "description": "Comprehensive, evidence-based overview of OSA written for a lay audience. Covers causes, types, diagnosis, and treatment with links to cited research. A reliable first-stop reference.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Oscar (Open Source CPAP Analysis Reporter)",
+        "type": "website / software",
+        "author_or_source": "Open source / ApneaBoard community",
+        "url": "https://www.sleepfiles.com/OSCAR/",
+        "description": "Free software that downloads and analyses detailed data from most major CPAP brands. Allows people to monitor their nightly AHI, leak rate, pressure graphs, and apnea-hypopnea event timing. Transforms CPAP users from passive recipients to informed participants in their own therapy.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "SleepHQ",
+        "type": "website",
+        "author_or_source": "SleepHQ",
+        "url": "https://sleephq.com/",
+        "description": "A cloud-based CPAP data analysis platform that provides clear visual summaries of device data. Easier to navigate than Oscar for some users, and enables data sharing with clinicians. Useful for ongoing monitoring and demonstrating therapy quality at clinical appointments.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Promise of Sleep",
+        "type": "book",
+        "author_or_source": "William C. Dement, MD, PhD",
+        "url": null,
+        "description": "A foundational text by a pioneer of sleep medicine. Accessible yet scientifically credible, covering the importance of sleep, the consequences of sleep deprivation, and major sleep disorders including OSA. Provides essential context for understanding why sleep disorders matter.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Breathe: The New Science of a Lost Art",
+        "type": "book",
+        "author_or_source": "James Nestor",
+        "url": null,
+        "description": "An accessible science journalism investigation into nasal breathing, airway anatomy, and the consequences of mouth breathing. Covers myofunctional therapy, jaw development, and sleep-disordered breathing in a way that helps readers understand the broader context of OSA. Accessible but should be read alongside more clinically rigorous sources.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Clinician's Guide to Positional Therapy for OSA",
+        "type": "research paper",
+        "author_or_source": "Ravesloot MJL et al., various journals",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/?term=positional+sleep+apnea+treatment+review",
+        "description": "Search PubMed for systematic reviews on positional OSA therapy. The evidence base clearly establishes which patients benefit from positional intervention and to what degree, helping people assess whether this approach warrants investigation in their own pattern.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Oropharyngeal Exercises for Snoring and Obstructive Sleep Apnea (Guimar\u00e3es et al., AJRCCM 2009)",
+        "type": "research paper",
+        "author_or_source": "Guimar\u00e3es KC et al., American Journal of Respiratory and Critical Care Medicine",
+        "url": "https://www.atsjournals.org/doi/10.1164/rccm.200806-972OC",
+        "description": "The landmark randomised controlled trial demonstrating that oropharyngeal (myofunctional) exercises reduce AHI by ~39% and snoring intensity significantly compared to sham exercises. Essential reading for anyone considering myofunctional therapy as part of their management.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Hypoglossal Nerve Stimulation for OSA \u2014 Patient Information (Inspire Medical)",
+        "type": "website",
+        "author_or_source": "Inspire Medical Systems",
+        "url": "https://www.inspiresleep.com/",
+        "description": "Clear patient-facing information about upper airway stimulation therapy, including eligibility criteria, how the device works, and clinical evidence. Useful for people exploring surgical options after CPAP failure.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "The Dental Sleep Medicine Podcast",
+        "type": "podcast",
+        "author_or_source": "Various dental sleep medicine practitioners",
+        "url": null,
+        "description": "Search on major podcast platforms. Covers mandibular advancement devices, the role of craniofacial anatomy in OSA, and the intersection of dentistry and sleep medicine. Useful for people exploring oral appliance therapy or surgical jaw approaches.",
+        "audience": "intermediate"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

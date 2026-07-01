@@ -2,17 +2,7 @@ from pathlib import Path
 
 import yaml
 
-from condition_navigator.models import Condition, ConditionGraph, SubCondition
-
-
-def _parse_sub_conditions(raw: list) -> list[SubCondition]:
-    out: list[SubCondition] = []
-    for entry in raw:
-        if isinstance(entry, str):
-            out.append(SubCondition(id=entry))
-        else:
-            out.append(SubCondition(**entry))
-    return out
+from condition_navigator.models import Condition, ConditionGraph
 
 
 def load_graph(path: Path) -> ConditionGraph:
@@ -43,7 +33,6 @@ def load_graph(path: Path) -> ConditionGraph:
                 group_label=group_label,
                 aliases=c.get("aliases", []),
                 diagnosis_type=c.get("diagnosis_type", "pathophysiological"),
-                sub_conditions=_parse_sub_conditions(c.get("sub_conditions", [])),
             ))
             for sub in c.get("subtypes", []):
                 conditions.append(Condition(
@@ -70,7 +59,6 @@ def load_graph(path: Path) -> ConditionGraph:
                     group_label=group_label,
                     aliases=c.get("aliases", []),
                     diagnosis_type=c.get("diagnosis_type", "pathophysiological"),
-                    sub_conditions=_parse_sub_conditions(c.get("sub_conditions", [])),
                 ))
                 for sub in c.get("subtypes", []):
                     conditions.append(Condition(

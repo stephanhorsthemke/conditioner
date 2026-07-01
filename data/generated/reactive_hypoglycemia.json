@@ -1,0 +1,622 @@
+{
+  "condition_id": "reactive_hypoglycemia",
+  "condition_name": "Reactive hypoglycemia",
+  "generated_at": "2026-07-01T11:58:42.148083Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Reactive hypoglycemia is a condition where blood sugar drops too low in the hours after eating \u2014 typically 1 to 4 hours after a meal \u2014 causing symptoms like shakiness, sweating, brain fog, anxiety, weakness, and a strong urge to eat again. It is distinct from diabetic hypoglycemia and often goes unrecognised because standard fasting blood tests appear normal. The underlying driver is usually an exaggerated insulin response to carbohydrates, but the root cause can vary widely \u2014 from early insulin resistance and gut issues to hormonal imbalances.",
+    "detailed_summary": "Reactive hypoglycemia (also called postprandial hypoglycemia) occurs when blood glucose falls to abnormally low levels \u2014 typically below 70 mg/dL (3.9 mmol/L), though symptoms can appear at higher levels in people who are glucose-sensitive \u2014 in the 1\u20134 hours following a meal. The mechanism most commonly involves an exaggerated or mistimed insulin surge after eating, particularly after carbohydrate-rich or high-glycaemic foods. The pancreas releases more insulin than the meal requires, driving blood sugar down rapidly and triggering a counter-regulatory stress response involving adrenaline (epinephrine), cortisol, and glucagon.\n\nReactive hypoglycemia is not a single disease \u2014 it is a physiological pattern with several potential underlying causes. In many people it represents a functional precursor to insulin resistance or early type 2 diabetes, where the insulin response is dysregulated rather than absent. In others it may be linked to altered gastric emptying (rapid dumping of glucose into the small intestine), prior bariatric surgery, or autonomic dysfunction. Some individuals with POTS or hEDS experience it as part of broader dysautonomia. Idiopathic reactive hypoglycemia \u2014 where no structural cause is found \u2014 is also common.\n\nBecause fasting glucose and standard HbA1c tests are usually normal, reactive hypoglycemia is frequently missed in routine clinical encounters. Many people who experience it are told their blood sugar is 'fine' and may be referred for anxiety or panic disorder instead. Continuous glucose monitoring (CGM) has changed the ability to document these episodes outside a clinical setting and is increasingly used by patients doing their own investigation. The condition responds well to dietary restructuring in many cases, particularly reducing refined carbohydrates, increasing protein and fat at meals, and eating smaller, more frequent meals.",
+    "prevalence": {
+      "summary": "Relatively common but frequently undiagnosed; estimates vary widely due to inconsistent diagnostic criteria.",
+      "estimate": "Estimated to affect 1\u20135% of the general population, with higher rates in people with insulin resistance, PCOS, post-bariatric surgery, or functional GI conditions.",
+      "notes": "True prevalence is difficult to establish because there is no universally agreed diagnostic threshold and many cases are never formally tested. Some researchers believe idiopathic reactive hypoglycemia is substantially underdiagnosed given how rarely postprandial glucose curves are measured in routine care. It appears more common in women, younger adults, and people with a history of dieting or metabolic disruption."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Idiopathic reactive hypoglycemia",
+        "description": "The most common subtype, where postprandial hypoglycemia occurs without an identifiable structural or endocrine cause. The mechanism is presumed to involve an exaggerated or poorly timed insulin response.",
+        "distinguishing_features": [
+          "Normal fasting glucose and HbA1c",
+          "No history of diabetes, bariatric surgery, or tumour",
+          "Symptoms reliably occur 1\u20133 hours after eating",
+          "Responds well to low-glycaemic dietary changes"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Post-bariatric (dumping syndrome-related) hypoglycemia",
+        "description": "Occurs in people who have had gastric bypass or sleeve gastrectomy. Rapid transit of food into the small intestine causes an exaggerated incretin (GLP-1) response and massive insulin surge, leading to severe late postprandial hypoglycemia.",
+        "distinguishing_features": [
+          "History of bariatric surgery (especially Roux-en-Y gastric bypass)",
+          "Symptoms typically 1\u20133 hours after eating, often severe",
+          "May involve neuroglycopenic symptoms (confusion, loss of consciousness)",
+          "Can develop months to years after surgery"
+        ]
+      },
+      {
+        "id": "insulin_resistance",
+        "name": "Insulin resistance-associated reactive hypoglycemia",
+        "description": "In early insulin resistance, insulin secretion becomes delayed then overshoots, driving a late postprandial glucose crash. This is sometimes called 'prediabetic hypoglycemia' and may precede overt type 2 diabetes by years.",
+        "distinguishing_features": [
+          "Often associated with central weight gain, fatigue, and carbohydrate cravings",
+          "Fasting glucose may be in the high-normal or borderline range",
+          "Insulin levels during an oral glucose tolerance test are elevated and delayed",
+          "Strong family history of type 2 diabetes in some cases"
+        ]
+      },
+      {
+        "id": "pots",
+        "name": "Dysautonomia-related postprandial hypoglycemia",
+        "description": "People with POTS or other autonomic dysfunction may experience postprandial hypotension and reduced cerebral perfusion after eating, compounding or mimicking glycaemic drops. True hypoglycemia and autonomic postprandial responses can co-exist.",
+        "distinguishing_features": [
+          "Often occurs alongside postprandial dizziness, tachycardia, or near-syncope",
+          "May not show absolute glucose drop but symptoms triggered by relative shifts",
+          "Associated with broader autonomic symptoms (orthostatic intolerance, heat sensitivity)",
+          "Smaller, lower-carbohydrate meals often help more than in idiopathic RH"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Alimentary hypoglycemia (rapid gastric emptying)",
+        "description": "Caused by abnormally fast gastric emptying \u2014 either post-surgical or functional \u2014 that floods the duodenum with glucose, triggering a disproportionate insulin response.",
+        "distinguishing_features": [
+          "Symptoms often appear earlier (within 1\u20131.5 hours of eating) than other forms",
+          "May coexist with early dumping syndrome (nausea, flushing, diarrhoea shortly after eating)",
+          "Can occur without prior surgery in people with rapid gastric emptying",
+          "Gastric emptying scintigraphy may show accelerated transit"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Shakiness or trembling",
+        "category": "autonomic / neuromuscular",
+        "notes": "A classic adrenergic symptom caused by the counter-regulatory epinephrine surge when glucose drops. Typically appears 1\u20133 hours after eating."
+      },
+      {
+        "symptom": "Sweating without physical exertion",
+        "category": "autonomic",
+        "notes": "Cold or clammy sweating is a reliable marker of adrenergic activation in response to falling blood sugar."
+      },
+      {
+        "symptom": "Heart palpitations or rapid heartbeat",
+        "category": "cardiovascular / autonomic",
+        "notes": "Adrenaline release drives tachycardia; can be alarming and is often mistaken for a panic attack or cardiac arrhythmia."
+      },
+      {
+        "symptom": "Sudden, intense hunger or carbohydrate cravings",
+        "category": "metabolic",
+        "notes": "A compensatory drive to eat, triggered by both low glucose and counter-regulatory hormones. Can feel compulsive and disproportionate to the time since eating."
+      },
+      {
+        "symptom": "Brain fog or difficulty concentrating",
+        "category": "neurological / cognitive",
+        "notes": "The brain is highly dependent on glucose; even modest drops impair working memory, processing speed, and focus. Often described as a sudden 'mental wall'."
+      },
+      {
+        "symptom": "Irritability, anxiety, or sudden mood changes",
+        "category": "psychological / neurological",
+        "notes": "Low glucose plus adrenaline produces a distinctive anxiety-irritability state that resolves rapidly with eating. Often misattributed to a mood disorder."
+      },
+      {
+        "symptom": "Fatigue or sudden energy crash",
+        "category": "metabolic / neurological",
+        "notes": "A predictable energy collapse after a high-carbohydrate meal, often 1\u20132 hours after eating. Frequently described as feeling like 'hitting a wall'."
+      },
+      {
+        "symptom": "Headache",
+        "category": "neurological",
+        "notes": "May reflect cerebral glucose insufficiency or vasoconstriction in response to autonomic activation. Often accompanied by other hypoglycaemic symptoms."
+      },
+      {
+        "symptom": "Lightheadedness or dizziness",
+        "category": "neurological / cardiovascular",
+        "notes": "May involve both glucose drop and postprandial blood pressure shift. Can be hard to distinguish from POTS or orthostatic hypotension without simultaneous glucose and blood pressure monitoring."
+      },
+      {
+        "symptom": "Weakness or feeling physically unsteady",
+        "category": "neuromuscular",
+        "notes": "A sense of muscle weakness or physical fragility during an episode; distinct from chronic fatigue."
+      },
+      {
+        "symptom": "Blurred or altered vision",
+        "category": "neurological / ophthalmological",
+        "notes": "Occurs during more significant glucose drops; reflects neurological effects of hypoglycemia on visual processing."
+      },
+      {
+        "symptom": "Nausea",
+        "category": "digestive / autonomic",
+        "notes": "Can occur as part of the adrenergic response or from rapid gastric emptying. More common in the dumping syndrome subtype."
+      },
+      {
+        "symptom": "Pallor (looking pale or washed out)",
+        "category": "cardiovascular / autonomic",
+        "notes": "Peripheral vasoconstriction during adrenergic activation reduces skin perfusion."
+      },
+      {
+        "symptom": "Tingling or numbness around the mouth or in fingers",
+        "category": "neurological",
+        "notes": "A neuroglycopenic symptom seen in more pronounced episodes; should prompt eating immediately."
+      },
+      {
+        "symptom": "Rapid relief of all symptoms after eating",
+        "category": "diagnostic pattern",
+        "notes": "One of the most diagnostically useful features: near-complete symptom resolution within 10\u201315 minutes of eating carbohydrates is strongly suggestive of reactive hypoglycemia."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Symptoms reliably occurring 1\u20134 hours after eating and resolving quickly after eating again",
+        "Blood glucose below 70 mg/dL (3.9 mmol/L) at the time of symptoms \u2014 ideally documented with a meter or CGM during a symptomatic episode",
+        "Whipple's triad: low blood glucose + symptoms consistent with hypoglycemia + resolution of symptoms with glucose \u2014 considered the clinical standard",
+        "Exaggerated or delayed insulin peak on oral glucose tolerance test (OGTT) with insulin levels",
+        "Continuous glucose monitoring showing rapid glucose descent and trough in the 1\u20134 hour postprandial window",
+        "Normal fasting glucose and HbA1c (distinguishes from overt diabetes)",
+        "Elevated fasting or postprandial insulin relative to glucose (elevated HOMA-IR or high insulin:glucose ratio may suggest insulin resistance as a driver)"
+      ],
+      "at_home": [
+        {
+          "name": "Fingerstick glucose testing during symptoms",
+          "description": "Using an over-the-counter glucometer, people can check blood glucose immediately when symptoms appear after a meal. A reading below 70 mg/dL (3.9 mmol/L) during symptoms \u2014 followed by symptom relief after eating \u2014 is meaningful data to bring to a clinician. Testing should also be done fasting and 1, 2, and 3 hours after a typical meal to map the glucose curve.",
+          "safety_notes": "Safe for most people. If readings are consistently below 60 mg/dL or symptoms include confusion, seizure, or loss of consciousness, urgent medical evaluation is needed rather than self-monitoring alone."
+        },
+        {
+          "name": "Continuous glucose monitor (CGM)",
+          "description": "CGM devices (such as Freestyle Libre or Dexterity) can be worn for 14 days and provide a minute-by-minute glucose curve after every meal. This makes it possible to capture episodes that occur unpredictably or at inconvenient times. Patterns to look for include rapid glucose rises after eating followed by steep descents, troughs occurring 1\u20133 hours post-meal, and correlation between low readings and symptom onset.",
+          "safety_notes": "CGMs are generally available without prescription in many countries. Readings are interstitial (not blood), so they lag blood glucose by 5\u201315 minutes and may read slightly lower during rapid descents. Not a substitute for clinical testing but enormously useful for pattern recognition and documentation."
+        },
+        {
+          "name": "Symptom and food diary",
+          "description": "A detailed log recording meal times, meal composition (particularly carbohydrate content), symptom onset and type, and symptom resolution time can help identify patterns, meal triggers, and the temporal relationship between eating and symptoms. This is useful both for personal understanding and for communicating with practitioners.",
+          "safety_notes": "No safety concerns. The more detailed and consistent the diary, the more useful it becomes as clinical evidence."
+        },
+        {
+          "name": "Structured dietary challenge",
+          "description": "Some people test their pattern by eating a high-carbohydrate, low-protein meal on one day and a low-carbohydrate, protein-rich meal on another, observing whether symptoms appear only after the high-carbohydrate meal. This does not confirm a diagnosis but can help establish that blood sugar dynamics \u2014 not other factors \u2014 are driving symptoms.",
+          "safety_notes": "This is informational only. People should eat normally if they feel unwell and should not restrict food intake in ways that cause additional symptoms."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Mixed meal tolerance test (MMTT)",
+          "type": "gold_standard",
+          "description": "A standardised liquid meal is consumed and blood glucose, insulin, and C-peptide are measured at intervals over 5 hours. This is the preferred clinical test because it more closely mimics real-world eating than a pure glucose load. It can document postprandial glucose nadirs and the corresponding insulin response.",
+          "availability": "Available at endocrinology clinics and some specialist diabetes centres. Often needs to be specifically requested \u2014 it is not a routine test. An endocrinologist or metabolic physician is best placed to order and interpret it."
+        },
+        {
+          "name": "Oral glucose tolerance test (OGTT) with insulin levels \u2014 extended",
+          "type": "standard",
+          "description": "A 75g glucose drink is consumed after an overnight fast and blood glucose plus insulin are measured at 0, 30, 60, 90, 120, and sometimes 180 minutes. The extended version (to 3\u20135 hours) is needed to capture late postprandial drops. An exaggerated early insulin spike or a delayed peak followed by a glucose nadir is diagnostically relevant. Standard 2-hour OGTTs miss late episodes entirely.",
+          "availability": "Widely available through GPs, endocrinologists, and some functional medicine practitioners. The key is requesting the extended version with insulin levels \u2014 standard OGTTs often do not include these."
+        },
+        {
+          "name": "Fasting insulin and HOMA-IR",
+          "type": "standard",
+          "description": "Fasting insulin and glucose are used to calculate HOMA-IR (Homeostatic Model Assessment of Insulin Resistance), a proxy for insulin resistance. Elevated fasting insulin suggests hyperinsulinaemia as a driver of reactive hypoglycemia. Useful as a screening tool when an OGTT is not yet available.",
+          "availability": "Ordered by a GP, endocrinologist, or functional medicine doctor. Not universally included in standard blood panels; often requires specific request."
+        },
+        {
+          "name": "HbA1c and fasting glucose",
+          "type": "standard",
+          "description": "These tests are useful primarily to rule out overt diabetes and to establish a baseline. In reactive hypoglycemia they are typically normal, which can create a false sense of reassurance. Their normality does not exclude significant postprandial dysregulation.",
+          "availability": "Available through any GP or general blood panel. Essentially universal."
+        },
+        {
+          "name": "Continuous glucose monitoring (CGM) with clinical interpretation",
+          "type": "emerging",
+          "description": "Some endocrinologists and metabolic practitioners now use CGM data as part of formal clinical assessment, particularly when patients have already collected CGM data independently. The time-in-range, glucose variability metrics, and postprandial nadir timing are all relevant.",
+          "availability": "CGM devices are available over-the-counter or via prescription. Clinical interpretation of CGM data for non-diabetic patients is an emerging practice, more commonly available through functional medicine or private endocrinology settings."
+        },
+        {
+          "name": "Insulinoma workup (72-hour fast, imaging)",
+          "type": "gold_standard",
+          "description": "In cases where hypoglycemia occurs during fasting as well as postprandially, or where episodes are severe and neuroglycopenic, an insulinoma (insulin-secreting pancreatic tumour) must be excluded. A supervised 72-hour fast with serial glucose and insulin measurements is the standard approach, followed by CT or MRI pancreas if insulin levels are inappropriately elevated during fasting hypoglycemia.",
+          "availability": "Performed in hospital under endocrinology supervision. Only relevant when fasting hypoglycemia is also present \u2014 not a first-line test for typical reactive hypoglycemia."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "insulin_resistance",
+        "name": "Insulin resistance",
+        "relationship": "upstream",
+        "explanation": "Insulin resistance is one of the most common underlying drivers of reactive hypoglycemia. Disrupted insulin signalling leads to compensatory hyperinsulinaemia \u2014 an exaggerated insulin response to meals \u2014 which drives blood glucose down excessively in the postprandial period. Reactive hypoglycemia may be an early sign of metabolic dysfunction that precedes overt type 2 diabetes."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "POTS frequently involves postprandial symptoms including dizziness, tachycardia, and blood pressure shifts after eating. These can mimic or overlap with reactive hypoglycemia. Additionally, autonomic dysfunction can affect insulin secretion and gastric emptying, contributing to genuine postprandial glucose dysregulation."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "often_confused",
+        "explanation": "The adrenergic symptoms of reactive hypoglycemia \u2014 palpitations, sweating, shakiness, anxiety, and a sense of dread \u2014 are nearly identical to panic attacks. Many people with reactive hypoglycemia are diagnosed with anxiety disorder first, particularly when symptoms occur unpredictably. Distinguishing the two requires documented glucose levels during episodes."
+      },
+      {
+        "id": "gastroparesis",
+        "name": "Gastroparesis",
+        "relationship": "mechanistic_link",
+        "explanation": "Gastroparesis (delayed gastric emptying) can produce erratic glucose absorption patterns that lead to late and unpredictable postprandial glucose spikes followed by crashes. The timing is less predictable than in typical reactive hypoglycemia, and symptoms may be more severe."
+      },
+      {
+        "id": "hormonal",
+        "name": "Hormonal / menstrual cycle effects",
+        "relationship": "mechanistic_link",
+        "explanation": "Oestrogen and progesterone influence insulin sensitivity across the menstrual cycle. Many people with reactive hypoglycemia report that symptoms are worse in the luteal phase (the week before menstruation), when progesterone-driven insulin resistance may intensify the postprandial insulin overshoot."
+      },
+      {
+        "id": "cortisol_dysreg",
+        "name": "Cortisol dysregulation",
+        "relationship": "mechanistic_link",
+        "explanation": "Cortisol is a counter-regulatory hormone that raises blood sugar. In people with blunted cortisol responses (such as those with HPA axis dysregulation), the normal correction mechanism for postprandial glucose drops may be impaired, making episodes more symptomatic and prolonged."
+      },
+      {
+        "id": "me_cfs",
+        "name": "ME / CFS",
+        "relationship": "comorbid",
+        "explanation": "People with ME/CFS frequently report postprandial energy crashes and symptom exacerbation after eating, some of which may involve glucose dysregulation. Mitochondrial dysfunction and autonomic dysregulation in ME/CFS may both contribute to impaired postprandial glucose homeostasis."
+      },
+      {
+        "id": "adhd",
+        "name": "ADHD",
+        "relationship": "often_confused",
+        "explanation": "The cognitive effects of reactive hypoglycemia \u2014 poor concentration, impulsivity, emotional dysregulation, and mental fogginess \u2014 can resemble ADHD symptoms. Some people diagnosed with ADHD may have blood sugar dysregulation contributing to or exacerbating their cognitive difficulties, particularly if symptoms worsen predictably in the hours after eating."
+      },
+      {
+        "id": "migraine",
+        "name": "Migraine",
+        "relationship": "comorbid",
+        "explanation": "Skipping meals and postprandial glucose drops are known migraine triggers. People with reactive hypoglycemia may experience more frequent migraine attacks linked to the glucose nadir, and stabilising blood sugar through dietary measures often reduces migraine frequency in this group."
+      },
+      {
+        "id": "ibs",
+        "name": "IBS",
+        "relationship": "comorbid",
+        "explanation": "IBS and reactive hypoglycemia share overlapping triggers (certain foods, stress) and can co-occur. Altered gut motility in IBS may affect the rate of glucose absorption and contribute to erratic postprandial glucose patterns. The two conditions can be difficult to distinguish when gastrointestinal symptoms after eating are the primary complaint."
+      },
+      {
+        "id": "perimenopause",
+        "name": "Perimenopause",
+        "relationship": "upstream",
+        "explanation": "Declining oestrogen during perimenopause reduces insulin sensitivity and disrupts glucose homeostasis. Many people develop reactive hypoglycemia or notice worsening of pre-existing symptoms during the menopausal transition, often attributing them to other menopausal symptoms."
+      },
+      {
+        "id": "chronic_stress",
+        "name": "Chronic stress / HPA overload",
+        "relationship": "mechanistic_link",
+        "explanation": "Chronic stress raises cortisol, which promotes insulin resistance and dysregulates blood sugar rhythms. Over time this can contribute to the hyperinsulinaemia underlying reactive hypoglycemia, and acute stress can worsen the adrenergic response to a glucose drop."
+      },
+      {
+        "id": "functional_dyspepsia",
+        "name": "Functional dyspepsia",
+        "relationship": "often_confused",
+        "explanation": "Postprandial distress syndrome (a subtype of functional dyspepsia) causes nausea, bloating, and discomfort after eating. These symptoms overlap with those of reactive hypoglycemia, and the two conditions can coexist. Glucose testing during episodes helps distinguish them."
+      },
+      {
+        "id": null,
+        "name": "Insulinoma",
+        "relationship": "often_confused",
+        "explanation": "An insulinoma is a rare insulin-secreting pancreatic tumour that causes hypoglycemia. Unlike reactive hypoglycemia, it typically causes fasting as well as postprandial hypoglycemia, and episodes can be severe and neuroglycopenic. It must be excluded in anyone with documented hypoglycemia that also occurs during fasting."
+      },
+      {
+        "id": null,
+        "name": "Post-bariatric hypoglycemia",
+        "relationship": "mechanistic_link",
+        "explanation": "After gastric bypass surgery, rapid transit of nutrients into the small intestine causes an exaggerated GLP-1 and insulin response, producing severe postprandial hypoglycemia. This is the most severe and predictable form of reactive hypoglycemia and often requires specialist management."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Low glycaemic index (GI) diet",
+          "category": "diet",
+          "description": "Replacing high-GI foods (white bread, white rice, sugary drinks, processed cereals) with low-GI alternatives (legumes, whole grains, non-starchy vegetables) slows glucose absorption and blunts the insulin spike that drives postprandial crashes. This is the single most consistently useful dietary change for most people with reactive hypoglycemia.",
+          "evidence_level": "strong",
+          "notes": "Glycaemic index alone does not tell the whole story \u2014 glycaemic load (GI \u00d7 portion size) and the effect of fat and protein on glucose absorption are also important. A registered dietitian can help tailor this approach."
+        },
+        {
+          "name": "Pairing carbohydrates with protein and fat",
+          "category": "diet",
+          "description": "Eating carbohydrates alongside protein, fat, and fibre slows gastric emptying and glucose absorption, flattening the postprandial glucose curve and reducing the insulin overshoot. Avoiding carbohydrates as isolated snacks or meals is often the most practical change people make.",
+          "evidence_level": "strong",
+          "notes": "Even simple changes \u2014 such as adding cheese, nuts, or an egg to a carbohydrate-containing meal \u2014 can meaningfully blunt glucose spikes."
+        },
+        {
+          "name": "Smaller, more frequent meals",
+          "category": "diet",
+          "description": "Eating smaller portions more frequently (every 3\u20134 hours rather than 3 large meals) reduces the glucose load at any one time, limiting the magnitude of the insulin response and preventing the large glucose swings that cause symptoms.",
+          "evidence_level": "moderate",
+          "notes": "This strategy works well for some people but may not suit everyone. Grazing on poor food choices can perpetuate insulin dysregulation. Quality of food matters as much as meal frequency."
+        },
+        {
+          "name": "Reducing or eliminating refined sugar and ultra-processed carbohydrates",
+          "category": "diet",
+          "description": "Sugary drinks, sweets, white bread, pastries, and other rapidly digested carbohydrates produce the fastest and largest glucose spikes, and correspondingly the largest insulin overshoots. Removing these from the regular diet is often the most impactful single change.",
+          "evidence_level": "strong",
+          "notes": "This can be difficult to sustain without identifying satisfying lower-GI alternatives. A dietitian's help with meal planning and practical substitutions is worthwhile."
+        },
+        {
+          "name": "Post-meal walking or light movement",
+          "category": "lifestyle",
+          "description": "Even a 10\u201315 minute walk after eating has been shown to blunt postprandial glucose spikes by promoting glucose uptake in muscles independently of insulin. This can reduce the height of the glucose peak and therefore the magnitude of the subsequent insulin response.",
+          "evidence_level": "moderate",
+          "notes": "Vigorous exercise immediately after eating is not recommended. Light movement \u2014 a walk, standing, or gentle activity \u2014 is the effective and practical approach."
+        },
+        {
+          "name": "Protein-focused breakfast or first meal",
+          "category": "diet",
+          "description": "Starting the day with a protein-rich meal (eggs, Greek yogurt, smoked fish, legumes) rather than a carbohydrate-heavy breakfast (cereal, toast, fruit juice) can set a more stable glucose tone for the day and reduce the frequency of mid-morning crashes.",
+          "evidence_level": "moderate",
+          "notes": "Breakfast choices have a disproportionate influence on glucose dynamics across the whole day in many people with reactive hypoglycemia."
+        },
+        {
+          "name": "Apple cider vinegar before meals",
+          "category": "supplement",
+          "description": "A small body of evidence suggests that consuming diluted apple cider vinegar (1\u20132 tablespoons in water) before meals may reduce postprandial glucose rises by slowing gastric emptying and reducing carbohydrate digestion. Used by some people as an adjunct to dietary changes.",
+          "evidence_level": "anecdotal",
+          "notes": "Evidence is preliminary and mostly from small studies in diabetic populations. May cause oesophageal irritation if undiluted. Not a substitute for dietary restructuring."
+        },
+        {
+          "name": "Magnesium supplementation",
+          "category": "supplement",
+          "description": "Magnesium is involved in insulin receptor signalling and glucose metabolism. Deficiency is common in people with insulin resistance and may worsen blood sugar instability. Magnesium glycinate or magnesium malate are generally well tolerated forms.",
+          "evidence_level": "moderate",
+          "notes": "Best assessed with a serum or red cell magnesium test before supplementing. Doses above 350mg/day can cause loose stools. A functional medicine doctor or dietitian can guide dosing."
+        },
+        {
+          "name": "Chromium supplementation",
+          "category": "supplement",
+          "description": "Chromium is a trace mineral involved in insulin signalling. Small studies suggest it may improve insulin sensitivity and reduce hypoglycaemic symptoms in some people with reactive hypoglycemia, particularly chromium picolinate.",
+          "evidence_level": "anecdotal",
+          "notes": "Evidence is limited and studies are small. Should not replace dietary changes. People on diabetes medications should consult a clinician before using chromium."
+        },
+        {
+          "name": "Addressing underlying insulin resistance",
+          "category": "lifestyle",
+          "description": "For people whose reactive hypoglycemia is driven by insulin resistance, addressing the root cause through consistent dietary change, regular exercise (particularly resistance training), adequate sleep, and stress reduction can improve insulin sensitivity over months to years and substantially reduce or resolve hypoglycaemic episodes.",
+          "evidence_level": "strong",
+          "notes": "This is a long-term intervention \u2014 meaningful improvements in insulin sensitivity typically take 3\u20136+ months. Some people benefit from metformin or other medications under medical supervision, particularly if insulin resistance is confirmed."
+        }
+      ],
+      "things_to_avoid": [
+        "High-sugar drinks and foods on an empty stomach \u2014 these cause the fastest and largest glucose spikes, maximising the subsequent crash",
+        "Skipping meals or going long periods without eating \u2014 low glycogen stores make glucose drops more severe when they do occur",
+        "Caffeine on an empty stomach \u2014 stimulates cortisol and adrenaline release, exacerbating adrenergic symptoms during a glucose drop",
+        "Alcohol, especially without food \u2014 impairs hepatic glucose production (gluconeogenesis), removing a key safety net against postprandial hypoglycemia",
+        "High-carbohydrate breakfasts (cereal, juice, toast alone) \u2014 sets up a high-amplitude glucose swing early in the day",
+        "Using only simple sugars to treat an episode without follow-up protein/fat \u2014 relieves the immediate dip but may trigger a secondary insulin spike and further crash",
+        "Treating reactive hypoglycemia as identical to diabetic hypoglycemia \u2014 the large glucose tablets and drinks used in insulin-dependent diabetes can overcorrect and cause a rebound spike; a small, balanced snack is usually more appropriate"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "A normal fasting glucose and normal HbA1c does not mean blood sugar is fine \u2014 it means it is fine in the fasting state. These tests are completely blind to what happens after eating, which is where reactive hypoglycemia lives.",
+        "why_resisted": "People are told by their doctor that their blood tests are normal and feel reassured. Clinicians rarely explain that standard panels do not capture postprandial dynamics, and patients often stop investigating after being told there is 'nothing wrong'.",
+        "path_forward": "People who get CGM data or extended OGTTs after years of normal standard tests commonly see dramatic postprandial glucose swings that directly correlate with their symptoms \u2014 providing the first concrete explanation and a clear direction for treatment."
+      },
+      {
+        "truth": "Reactive hypoglycemia is often an early warning sign of insulin resistance \u2014 a pre-metabolic disease state \u2014 rather than a benign quirk. Treating it only with snacking strategies without addressing the underlying dysregulation leaves the root cause intact and progressing.",
+        "why_resisted": "The diagnosis is typically framed as a 'lifestyle issue' rather than a metabolic disease. Patients are given dietary tips and discharged. The connection to insulin resistance and the long-term implications for metabolic health are rarely explained.",
+        "path_forward": "People who get a full insulin and glucose picture \u2014 including HOMA-IR and postprandial insulin levels \u2014 and then work systematically on insulin sensitivity through diet and exercise often see their reactive hypoglycemia improve substantially over 6\u201312 months, with measurable improvement in insulin resistance markers."
+      },
+      {
+        "truth": "Many people with reactive hypoglycemia have been diagnosed with anxiety disorder or panic disorder and are being treated for the wrong condition. The two patterns can appear identical, and without glucose documentation during episodes, the correct diagnosis is easily missed.",
+        "why_resisted": "Anxiety is a familiar and acceptable diagnosis. Clinicians find it easy to diagnose when a patient describes palpitations, sweating, and a sense of dread. Patients may also find it emotionally easier to accept a psychological explanation than to overhaul their diet and metabolic habits.",
+        "path_forward": "Documenting glucose levels during symptomatic episodes \u2014 with a glucometer or CGM \u2014 and demonstrating symptom resolution with eating produces objective evidence that distinguishes metabolic from psychological symptoms. People who make this connection often reduce or eliminate their anxiety treatment and experience meaningful improvement with dietary change alone."
+      },
+      {
+        "truth": "The instinct to reach for something sweet when symptoms appear is physiologically sensible in the moment but often makes the underlying pattern worse over time. Frequent sugar intake to manage crashes perpetuates the insulin dysregulation that causes them.",
+        "why_resisted": "Eating something sweet provides near-immediate relief, which powerfully reinforces the behaviour. The connection between this habit and the worsening frequency of crashes is not intuitive.",
+        "path_forward": "People who shift from sweet-snack rescue eating to structured, protein- and fat-anchored meals \u2014 while tolerating some initial difficulty as glucose patterns stabilise \u2014 typically find that crash frequency decreases significantly within 2\u20134 weeks."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Restructuring meals to anchor carbohydrates with protein, fat, and fibre",
+          "why_it_matters": "This is the most direct intervention on the mechanism: slowing glucose absorption blunts the insulin spike, which is the proximate cause of the postprandial crash in most people with reactive hypoglycemia.",
+          "how_to_start": "For one week, add a protein source (eggs, cheese, meat, legumes, Greek yogurt) to every carbohydrate-containing meal or snack. Eliminate standalone carbohydrate snacks. Observe whether symptom frequency changes.",
+          "timeline": "Many people notice meaningful improvement in crash frequency and severity within 1\u20132 weeks of consistent dietary change.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Documenting postprandial glucose with a CGM or glucometer",
+          "why_it_matters": "Objective glucose data transforms this from a suspected pattern into a documented physiological event. It enables targeted dietary adjustments, provides evidence for clinical consultation, and helps identify specific trigger foods and meals.",
+          "how_to_start": "Obtain a CGM sensor (available over-the-counter in many countries) or a basic glucometer with test strips. Wear it or test systematically for 1\u20132 weeks, recording meals and symptoms alongside readings.",
+          "timeline": "Useful insight typically emerges within the first 1\u20132 weeks of monitoring.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Investigating and addressing insulin resistance if present",
+          "why_it_matters": "If insulin resistance is driving hyperinsulinaemia and the consequent postprandial overshoot, symptom management strategies alone will provide limited long-term relief. Addressing the root cause \u2014 through dietary change, exercise, and if needed medication \u2014 offers the possibility of genuine resolution rather than ongoing management.",
+          "how_to_start": "Request fasting insulin, fasting glucose, and HOMA-IR calculation from a GP, endocrinologist, or functional medicine doctor. If elevated, work with a practitioner on a structured plan to improve insulin sensitivity.",
+          "timeline": "Meaningful improvement in insulin sensitivity typically takes 3\u20136 months of consistent intervention.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Regular resistance and aerobic exercise",
+          "why_it_matters": "Skeletal muscle is the primary site of insulin-mediated glucose uptake. Increasing muscle mass and insulin sensitivity through exercise directly addresses a core driver of reactive hypoglycemia in insulin-resistant individuals. Post-meal walking also acutely reduces glucose spikes.",
+          "how_to_start": "Begin with 2\u20133 sessions of resistance training per week (bodyweight exercises are sufficient to start) and aim for a 10\u201315 minute walk after main meals. Build consistency before intensity.",
+          "timeline": "Acute effects on postprandial glucose begin immediately; structural improvements in insulin sensitivity develop over 6\u201312 weeks of consistent training.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Optimising sleep quality and duration",
+          "why_it_matters": "Even one to two nights of poor sleep significantly impairs insulin sensitivity and glucose regulation. Chronic sleep insufficiency is an underappreciated driver of glucose dysregulation that undermines all other dietary and lifestyle interventions.",
+          "how_to_start": "Prioritise consistent sleep and wake times. Address sleep apnea if suspected. Limit screen exposure before bed and avoid large carbohydrate-heavy meals in the 2 hours before sleep.",
+          "timeline": "Glucose regulation improvements can be seen within days of consistent sleep improvement.",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Eating a sugary snack every time symptoms appear without addressing the meal pattern causing the drops \u2014 this treats the symptom while perpetuating the underlying cycle",
+        "Relying on dietary changes alone without investigating whether insulin resistance is an underlying driver \u2014 some people need metabolic evaluation and medical support beyond food choices",
+        "Assuming that because tests came back 'normal' the diagnosis is ruled out \u2014 standard fasting tests are the wrong tool for this condition",
+        "Going very low-carbohydrate abruptly without adjustment \u2014 some people experience worsening symptoms initially as glucose regulation adapts; gradual reduction is usually better tolerated",
+        "Confusing reactive hypoglycemia with diabetic hypoglycemia and over-treating episodes with large amounts of simple sugar \u2014 this causes a rebound spike and may worsen the cycle",
+        "Focusing only on the glycaemic index without considering glycaemic load and overall meal composition \u2014 portion size and food combinations matter as much as food type",
+        "Dismissing the condition as trivial because it is 'just low blood sugar' \u2014 untreated reactive hypoglycemia driven by insulin resistance represents a real metabolic risk that benefits from active management"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Endocrinologist",
+          "role": "Best placed to order and interpret extended OGTTs with insulin levels, mixed meal tolerance tests, and to investigate secondary causes such as insulinoma or post-bariatric hypoglycemia. Can assess insulin resistance formally and guide medical treatment if needed.",
+          "notes": "Many endocrinologists focus primarily on diabetes and may have limited interest in idiopathic reactive hypoglycemia without clear pathology. Finding one with a metabolic or functional orientation can make a significant difference."
+        },
+        {
+          "type": "Registered dietitian (specialising in metabolic health or diabetes prevention)",
+          "role": "Provides the most practical, evidence-based dietary guidance for restructuring meals to stabilise blood sugar. Can work with CGM data and translate glucose patterns into specific food and meal timing strategies.",
+          "notes": "Look for dietitians with experience in insulin resistance, metabolic syndrome, or diabetes prevention \u2014 they understand glucose dynamics better than general dietitians. Many offer telehealth consultations."
+        },
+        {
+          "type": "Functional medicine doctor",
+          "role": "More likely than conventional clinicians to investigate reactive hypoglycemia seriously, order fasting insulin, HOMA-IR, and extended glucose testing, and to connect metabolic symptoms to broader lifestyle and hormonal factors.",
+          "notes": "Quality and approach vary widely. Look for practitioners with formal functional medicine training (IFM-certified) and a specific interest in metabolic health. Mainstream clinicians may be dismissive of this specialty."
+        },
+        {
+          "type": "GP / primary care physician",
+          "role": "Can be the first port of call to request initial blood work (fasting glucose, fasting insulin, HbA1c) and to refer to an endocrinologist. Some GPs will order an OGTT; few will order the extended version with insulin levels without prompting.",
+          "notes": "Arriving with documented CGM or glucometer data showing postprandial dips correlated with symptoms significantly improves the likelihood of being taken seriously and getting appropriate referrals."
+        },
+        {
+          "type": "Cardiologist or autonomic specialist (for POTS/dysautonomia overlap)",
+          "role": "Relevant when postprandial dizziness, tachycardia, and syncope are prominent \u2014 these may reflect autonomic postprandial hypotension compounding or mimicking glycaemic drops. Tilt table testing and autonomic function testing may be warranted.",
+          "notes": "Only relevant when autonomic symptoms are prominent. A standard cardiologist is not likely to evaluate glucose dynamics."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/reactive_hypoglycemia",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/reactive_hypoglycemia/",
+          "notes": "An active community of people documenting their own experiences with reactive hypoglycemia. Particularly useful for practical dietary strategies, CGM experiences, and navigating medical appointments. Useful for self-directed research; medical accuracy varies."
+        },
+        {
+          "name": "r/diabetes_t2 and r/prediabetes",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/prediabetes/",
+          "notes": "Relevant for people whose reactive hypoglycemia is linked to insulin resistance or prediabetes. Strong community knowledge on low-carbohydrate approaches, CGM use, and metabolic health. More structured discussion of evidence than the RH-specific community."
+        },
+        {
+          "name": "Hypoglycemia Support Foundation",
+          "platform": "Website / Forum",
+          "url": "https://hypoglycemia.org",
+          "notes": "A patient-facing organisation with educational resources, personal stories, and a community forum focused specifically on hypoglycemia outside the context of treated diabetes."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Glucose Revolution",
+        "type": "book",
+        "author_or_source": "Jessie Inchausp\u00e9 (Glucose Goddess)",
+        "url": null,
+        "description": "A highly accessible, visually rich book explaining how postprandial glucose spikes and crashes work and practical strategies to flatten glucose curves through meal sequencing, food pairing, and movement. Directly relevant to reactive hypoglycemia. Widely praised by patients and clinicians alike for making the science understandable.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Glucose Goddess Method",
+        "type": "book",
+        "author_or_source": "Jessie Inchausp\u00e9",
+        "url": null,
+        "description": "A structured 4-week programme based on the principles in Glucose Revolution, with specific meal plans and strategies. Useful for people who want a practical starting framework rather than just conceptual understanding.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Why We Get Sick",
+        "type": "book",
+        "author_or_source": "Benjamin Bikman PhD",
+        "url": null,
+        "description": "A detailed examination of hyperinsulinaemia and insulin resistance as root causes of a wide range of chronic conditions. Relevant for people with reactive hypoglycemia who want to understand the metabolic biology behind their symptoms and the case for reducing carbohydrate load as a treatment.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Levels Health Blog \u2014 Reactive Hypoglycemia",
+        "type": "website",
+        "author_or_source": "Levels Health",
+        "url": "https://www.levelshealth.com/blog",
+        "description": "Levels is a CGM-for-metabolic-health company with a substantial library of evidence-based articles on postprandial glucose, reactive hypoglycemia, insulin sensitivity, and the interpretation of CGM data. A reliable, well-referenced resource for self-directed investigation.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Reactive Hypoglycemia: What It Is and What To Do About It",
+        "type": "website",
+        "author_or_source": "Hypoglycemia Support Foundation",
+        "url": "https://hypoglycemia.org/about-hypoglycemia/",
+        "description": "A patient-oriented primer on reactive hypoglycemia covering symptoms, diagnosis, and management. Useful introductory reading for people newly investigating the condition.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Postprandial Hypoglycemia \u2014 Endocrine Society Clinical Guidelines",
+        "type": "research paper",
+        "author_or_source": "Endocrine Society",
+        "url": "https://doi.org/10.1210/jc.2009-1039",
+        "description": "The formal clinical guidance document on evaluation and management of hypoglycemia in adults, including reactive hypoglycemia. Useful for people who want to understand how endocrinologists approach this diagnosis and what tests are considered standard.",
+        "audience": "advanced"
+      },
+      {
+        "title": "The Case for Using CGM Outside Diabetes \u2014 NovaStar Review",
+        "type": "research paper",
+        "author_or_source": "Various \u2014 searchable via PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/?term=continuous+glucose+monitoring+non-diabetic+reactive+hypoglycemia",
+        "description": "A growing body of literature on CGM use in non-diabetic individuals for metabolic health monitoring. Useful for people wanting to understand the science behind using CGM to document and manage reactive hypoglycemia.",
+        "audience": "advanced"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

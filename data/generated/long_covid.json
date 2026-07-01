@@ -1,0 +1,752 @@
+{
+  "condition_id": "long_covid",
+  "condition_name": "Long COVID",
+  "generated_at": "2026-07-01T11:58:42.084711Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Long COVID is a condition where symptoms persist or develop after a COVID-19 infection, lasting weeks, months, or longer after the acute illness resolves. It can affect almost every body system \u2014 most notably causing fatigue, cognitive difficulties (brain fog), breathlessness, and autonomic problems \u2014 and it can occur even after mild initial infection. The underlying biology is still being actively researched, but leading theories involve viral persistence, immune dysregulation, microbiome disruption, and autonomic nervous system damage.",
+    "detailed_summary": "Long COVID, formally termed Post-Acute Sequelae of SARS-CoV-2 (PASC), describes a broad and often fluctuating cluster of symptoms that persist beyond the acute phase of COVID-19 infection \u2014 typically defined as symptoms continuing four or more weeks after initial illness, though many definitions use 12 weeks. The condition affects people regardless of initial infection severity; a significant proportion of those with Long COVID had mild acute illness and were never hospitalised.\n\nResearch has identified several overlapping biological mechanisms that may drive the condition. These include persistence of viral reservoirs (particularly in gut tissue), chronic immune activation and elevated inflammatory markers, reactivation of latent viruses such as Epstein-Barr virus, autoantibody formation targeting tissues or receptors, disruption of the gut microbiome, mitochondrial dysfunction impairing cellular energy production, and damage to the autonomic nervous system producing symptoms consistent with POTS (postural orthostatic tachycardia syndrome) and dysautonomia.\n\nThe symptom profile is highly variable between individuals. Some people experience primarily respiratory or cardiovascular symptoms; others are dominated by neurological and cognitive effects; others present with a fatigue-and-crash pattern that closely resembles ME/CFS, including post-exertional malaise (PEM). Gastrointestinal symptoms are common and may reflect direct gut involvement, microbiome changes, or autonomic dysregulation of gut motility.\n\nDiagnosis remains clinical \u2014 there is currently no single validated biomarker test. Many people with Long COVID receive normal or near-normal standard bloodwork, which does not reflect the functional and cellular-level abnormalities that research has documented. This can make the condition difficult to have recognised in standard medical settings.\n\nManagement approaches vary considerably. A pacing strategy to avoid post-exertional crashes, treatment of identifiable contributing conditions (such as POTS, MCAS, or reactivated infections), and careful rehabilitation are among the better-supported approaches. People with Long COVID often benefit from practitioners who take a multi-system, investigation-driven approach rather than symptom-by-symptom management in isolation.",
+    "prevalence": {
+      "summary": "Affects a substantial minority of people who have had COVID-19, with estimates varying widely by study design and definition used.",
+      "estimate": "Approximately 10\u201320% of people infected with COVID-19 develop some form of Long COVID symptoms; estimates of those with significant ongoing functional impairment at 12 weeks range from 2\u201310%.",
+      "notes": "Prevalence estimates vary dramatically depending on the definition used (4 weeks vs. 12 weeks vs. symptom-specific thresholds), whether studies include self-reported or clinically assessed cases, the COVID variant involved (earlier variants appear to have caused higher rates), and vaccination status (vaccination appears to modestly reduce but not eliminate risk). Women are consistently over-represented in cohort studies. Globally, the WHO estimated over 65 million people had Long COVID by 2023. Population-level incidence declined with Omicron-era variants but did not reach zero."
+    },
+    "subgroups": [
+      {
+        "id": "me_cfs",
+        "name": "ME/CFS-like Long COVID",
+        "description": "A subgroup in which the predominant feature is profound, debilitating fatigue with post-exertional malaise (PEM) \u2014 a characteristic worsening of symptoms after physical or cognitive exertion that can last days or weeks. This pattern meets or closely resembles diagnostic criteria for ME/CFS.",
+        "distinguishing_features": [
+          "Post-exertional malaise (PEM) \u2014 crash after minimal activity is the hallmark",
+          "Unrefreshing sleep regardless of duration",
+          "Orthostatic intolerance often co-present",
+          "Graded exercise therapy (GET) is contraindicated and worsens this subgroup",
+          "Pacing is the cornerstone management strategy"
+        ]
+      },
+      {
+        "id": "pots",
+        "name": "Dysautonomia / POTS-predominant Long COVID",
+        "description": "A subgroup where autonomic nervous system dysfunction dominates, often presenting as postural orthostatic tachycardia syndrome (POTS) \u2014 a large heart rate rise on standing \u2014 along with dizziness, palpitations, pre-syncope, and exercise intolerance.",
+        "distinguishing_features": [
+          "Heart rate increases \u226530 bpm on standing or tilt-table test",
+          "Dizziness, lightheadedness, palpitations worsened by standing",
+          "Often responds to salt/fluid loading, compression garments, and specific medications (beta-blockers, ivabradine, fludrocortisone)",
+          "Frequently co-occurs with ME/CFS-like pattern"
+        ]
+      },
+      {
+        "id": "mcas",
+        "name": "MCAS-associated Long COVID",
+        "description": "A subgroup in which mast cell activation appears to be a significant driver, producing multi-system allergic and inflammatory symptoms. COVID-19 is hypothesised to trigger mast cell dysregulation in susceptible individuals.",
+        "distinguishing_features": [
+          "Flushing, hives, itching, and skin reactivity",
+          "Histamine-type reactions to foods, temperature changes, or stress",
+          "GI symptoms including cramping, diarrhoea, nausea",
+          "Symptoms may improve with antihistamines (H1 + H2 blockers) and mast cell stabilisers",
+          "Serum tryptase and urine prostaglandins/histamine metabolites may be elevated"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Neurological / cognitive-predominant Long COVID",
+        "description": "A subgroup where brain fog, cognitive impairment, headache, and neurological symptoms dominate the clinical picture. Research has found evidence of neuroinflammation, microglial activation, and small fibre neuropathy in some individuals.",
+        "distinguishing_features": [
+          "Severe cognitive impairment disproportionate to other symptoms",
+          "Word-finding difficulty, memory gaps, slowed processing",
+          "Headache often described as pressure-like or new-onset",
+          "Small fibre neuropathy on skin punch biopsy in some cases",
+          "Neuropsychological testing may reveal measurable deficits"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Cardiopulmonary-predominant Long COVID",
+        "description": "A subgroup characterised by ongoing breathlessness, exercise intolerance, chest tightness, and in some cases structural or functional cardiac changes. This includes those with documented microclotting or endothelial damage.",
+        "distinguishing_features": [
+          "Breathlessness on exertion disproportionate to lung function test results",
+          "Reduced VO2 max on cardiopulmonary exercise testing (CPET)",
+          "Evidence of microthrombi or endothelial dysfunction in research settings",
+          "Chest tightness or palpitations at rest or minimal exertion",
+          "Cardiac MRI may show myocarditis or pericarditis in a subset"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Profound, debilitating fatigue",
+        "category": "systemic",
+        "notes": "Often described as unlike normal tiredness \u2014 not improved by rest. Can be the most disabling symptom. Distinct from sleepiness."
+      },
+      {
+        "symptom": "Post-exertional malaise (PEM)",
+        "category": "systemic",
+        "notes": "A worsening of all symptoms triggered by physical or cognitive exertion, often delayed by 12\u201348 hours. A cardinal feature in the ME/CFS-like subgroup."
+      },
+      {
+        "symptom": "Brain fog \u2014 cognitive slowing, memory problems, word-finding difficulty",
+        "category": "neurological",
+        "notes": "One of the most commonly reported and disabling symptoms. Can affect work, reading, and conversation. Fluctuates, often worsened by exertion or standing."
+      },
+      {
+        "symptom": "Breathlessness / dyspnoea on exertion",
+        "category": "respiratory / cardiovascular",
+        "notes": "Can occur even with normal spirometry and chest X-ray. May reflect autonomic or microvascular issues rather than structural lung disease."
+      },
+      {
+        "symptom": "Heart palpitations or racing heart",
+        "category": "cardiovascular",
+        "notes": "Often positional \u2014 worse when standing or after meals. A feature of autonomic dysfunction and POTS."
+      },
+      {
+        "symptom": "Dizziness and lightheadedness on standing",
+        "category": "cardiovascular / autonomic",
+        "notes": "Classic sign of orthostatic intolerance. May cause near-fainting (pre-syncope)."
+      },
+      {
+        "symptom": "Sleep disturbance \u2014 unrefreshing sleep, insomnia",
+        "category": "neurological / sleep",
+        "notes": "Sleep often feels non-restorative even after many hours. Distinct from simple insomnia."
+      },
+      {
+        "symptom": "Headache \u2014 new onset or changed character",
+        "category": "neurological",
+        "notes": "Often described as pressure-like or a persistent dull ache. Can be positional."
+      },
+      {
+        "symptom": "Chest pain or tightness",
+        "category": "cardiovascular / musculoskeletal",
+        "notes": "Important to rule out cardiac causes, but often musculoskeletal or autonomic in nature in Long COVID."
+      },
+      {
+        "symptom": "Joint and muscle pain",
+        "category": "musculoskeletal",
+        "notes": "Often migratory. Can resemble fibromyalgia-type widespread pain."
+      },
+      {
+        "symptom": "Gastrointestinal symptoms \u2014 nausea, bloating, diarrhoea, constipation",
+        "category": "digestive",
+        "notes": "May reflect gut dysbiosis, autonomic dysfunction affecting gut motility, or MCAS. GI symptoms were among the earliest described sequelae."
+      },
+      {
+        "symptom": "Persistent cough",
+        "category": "respiratory",
+        "notes": "Can persist for months after infection. May be neurologically mediated (vagal hypersensitivity)."
+      },
+      {
+        "symptom": "Loss of smell (anosmia) or altered smell (parosmia)",
+        "category": "neurological / sensory",
+        "notes": "Parosmia \u2014 where familiar smells become distorted or unpleasant \u2014 can be highly distressing and may persist for over a year in some individuals."
+      },
+      {
+        "symptom": "Temperature dysregulation \u2014 feeling too hot, too cold, or fluctuating",
+        "category": "autonomic / systemic",
+        "notes": "Autonomic dysfunction can impair thermoregulation. Night sweats are also reported."
+      },
+      {
+        "symptom": "Tinnitus",
+        "category": "neurological / sensory",
+        "notes": "New-onset ringing or buzzing in the ears. Possibly related to neuroinflammation or autonomic effects on cochlear blood flow."
+      },
+      {
+        "symptom": "Skin symptoms \u2014 flushing, hives, rashes, hypersensitivity",
+        "category": "skin / immune",
+        "notes": "Common in those with an MCAS component. May include reactivity to temperature, pressure, or foods."
+      },
+      {
+        "symptom": "Mood changes \u2014 anxiety, low mood, emotional dysregulation",
+        "category": "psychological / neurological",
+        "notes": "May be partly neurobiological (neuroinflammation affecting limbic system) as well as a natural response to chronic illness. Not simply 'psychological'."
+      },
+      {
+        "symptom": "Visual disturbances \u2014 blurring, sensitivity to light",
+        "category": "neurological / sensory",
+        "notes": "Photophobia and blurred vision are reported. May relate to neuroinflammation or autonomic effects on pupillary response."
+      },
+      {
+        "symptom": "Hair loss (telogen effluvium)",
+        "category": "skin / systemic",
+        "notes": "Diffuse hair shedding typically begins 2\u20133 months after acute infection. Usually temporary and related to physiological stress of infection."
+      },
+      {
+        "symptom": "Cognitive fatigue \u2014 inability to sustain mental effort",
+        "category": "neurological",
+        "notes": "Distinct from physical fatigue. Reading, screen time, and conversation may be exhausting. Worse later in the day."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Normal standard bloods (CBC, CMP, thyroid, CRP) in someone with severe functional impairment \u2014 this discrepancy is common and does not mean the condition is not real or biological",
+        "Heart rate increase of \u226530 bpm on standing (or \u226540 bpm in those under 19) \u2014 consistent with POTS, measurable at home with a pulse oximeter",
+        "Symptoms that worsen 12\u201348 hours after physical or cognitive exertion (PEM pattern) \u2014 a key diagnostic clue pointing toward ME/CFS-like subtype",
+        "Elevated serum tryptase, 24-hour urine histamine or prostaglandin D2, or N-methylhistamine \u2014 may indicate mast cell activation",
+        "Reduced VO2 max and early anaerobic threshold on CPET \u2014 an objective marker of exercise intolerance seen even in those without obvious cardiopulmonary disease",
+        "Abnormal small fibre density on skin punch biopsy \u2014 found in a subset with prominent neuropathy or autonomic symptoms",
+        "Elevated D-dimer or fibrinogen \u2014 may reflect microclotting or ongoing vascular inflammation in some individuals",
+        "EBV reactivation markers (elevated EBV VCA IgG, EA-D IgG) \u2014 seen in a subset, possibly indicating viral reactivation as a contributing driver"
+      ],
+      "at_home": [
+        {
+          "name": "NASA Lean Test (poor man's tilt table test)",
+          "description": "Measure heart rate lying flat for 10 minutes, then stand against a wall without moving legs (or stand still) for 10 minutes, measuring heart rate every 2 minutes. A rise of \u226530 bpm is consistent with POTS. Use a pulse oximeter or smartwatch with continuous heart rate monitoring.",
+          "safety_notes": "Stop if feeling faint, severely dizzy, or unwell. Have someone present if possible. Not appropriate during a crash or severe flare."
+        },
+        {
+          "name": "Symptom and activity journal",
+          "description": "Track daily activity levels alongside symptoms with a 24\u201348 hour delay recorded. Helps identify the PEM pattern \u2014 whether symptoms worsen a day or two after exertion rather than immediately. Key for identifying the ME/CFS-like subtype and for establishing a pacing baseline.",
+          "safety_notes": "No physical risks. Emotionally challenging \u2014 keep records factual rather than emotionally loaded."
+        },
+        {
+          "name": "Orthostatic symptom tracking",
+          "description": "Note which symptoms (brain fog, fatigue, palpitations, dizziness) worsen within minutes of standing or are relieved by lying down. This positional pattern is a hallmark of orthostatic intolerance / POTS and is diagnostically useful information for a clinician.",
+          "safety_notes": "No risks. Results should be shared with a clinician for formal testing."
+        },
+        {
+          "name": "Wearable heart rate variability (HRV) monitoring",
+          "description": "Consumer wearables (Garmin, Whoop, Oura ring) can track resting heart rate, HRV, and recovery scores. In Long COVID, resting HR is often elevated and HRV suppressed, and these metrics correlate with symptom burden for many people. Useful for pacing and tracking trend over time.",
+          "safety_notes": "Consumer-grade accuracy varies. Useful as a trend indicator, not a diagnostic tool."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Tilt Table Test (TTT)",
+          "type": "gold_standard",
+          "description": "The patient is strapped to a motorised table, tilted to 60\u201370 degrees, and heart rate and blood pressure are monitored continuously. The gold standard for diagnosing POTS and other forms of orthostatic intolerance. Can also identify neurally mediated hypotension.",
+          "availability": "Available at specialist autonomic clinics, cardiology, and some Long COVID clinics. May require referral. Not universally available at all hospitals."
+        },
+        {
+          "name": "Cardiopulmonary Exercise Test (CPET)",
+          "type": "gold_standard",
+          "description": "Measures VO2 max, anaerobic threshold, ventilatory efficiency, and heart rate response during graded exercise on a bike or treadmill. A two-day CPET protocol (testing on two consecutive days) can objectively demonstrate the PEM pattern by showing a reduced anaerobic threshold on day 2 \u2014 a finding documented in ME/CFS and Long COVID research.",
+          "availability": "Available at specialist cardiopulmonary, exercise physiology, and some Long COVID research centres. Two-day protocol is not widely available in routine practice."
+        },
+        {
+          "name": "Comprehensive autonomic testing",
+          "type": "standard",
+          "description": "Includes quantitative sudomotor axon reflex test (QSART), thermoregulatory sweat test, and cardiovagal and adrenergic testing. Characterises the type and extent of autonomic nervous system dysfunction. May reveal small fibre neuropathy involvement.",
+          "availability": "Available at specialist autonomic neurology centres. Rarely available in general neurology or GP settings."
+        },
+        {
+          "name": "Skin punch biopsy for small fibre neuropathy (SFN)",
+          "type": "emerging",
+          "description": "A small skin sample is taken (typically from thigh and calf) and stained to quantify the density of small nerve fibres. Reduced intraepidermal nerve fibre density (IENFD) is consistent with small fibre neuropathy, documented in a significant subset of Long COVID patients with neuropathic or autonomic symptoms.",
+          "availability": "Available at specialist neurology centres, particularly those with a focus on peripheral neuropathy. Not routinely ordered by most GPs or general neurologists."
+        },
+        {
+          "name": "Mast cell activation testing",
+          "type": "standard",
+          "description": "Includes serum tryptase (ideally measured within 1\u20134 hours of a symptomatic episode), 24-hour urine for N-methylhistamine, prostaglandin D2, and leukotriene E4. Elevated levels across two or more separate measurements support MCAS diagnosis. Baseline serum tryptase is also useful.",
+          "availability": "Serum tryptase is widely available; 24-hour urine panels are available through specialist allergy/immunology or via specialist labs. Requires careful timing and sample handling."
+        },
+        {
+          "name": "Viral reactivation panel",
+          "type": "emerging",
+          "description": "Blood tests for EBV reactivation (VCA IgG, EA-D IgG, EBNA IgG), HHV-6 IgG/IgM, and other herpesviruses. Relevant where fatigue, cognitive symptoms, and lymphadenopathy suggest a viral reactivation component. Interpretation requires specialist context.",
+          "availability": "Available through specialist infectious disease, immunology, or functional medicine practitioners. Standard labs may not automatically order reactivation-specific panels."
+        },
+        {
+          "name": "Advanced inflammatory and autoimmune markers",
+          "type": "emerging",
+          "description": "Includes cytokine panels (IL-6, TNF-alpha, interferon signatures), antinuclear antibodies (ANA), antiphospholipid antibodies, anti-adrenergic receptor antibodies, and complement levels. Research has found autoantibodies in a subset of Long COVID patients targeting G-protein coupled receptors involved in autonomic and immune function.",
+          "availability": "Research-grade cytokine panels and anti-receptor autoantibody testing are not widely available in routine clinical practice. Some functional and integrative medicine labs offer expanded panels. Clinical interpretation is still evolving."
+        },
+        {
+          "name": "Microbiome testing",
+          "type": "emerging",
+          "description": "Stool-based metagenomic or 16S sequencing to characterise gut bacterial composition. COVID-19 has documented effects on the gut microbiome, with reduced diversity and loss of beneficial species. May identify dysbiosis contributing to GI and systemic symptoms.",
+          "availability": "Available through specialist gastroenterology, functional medicine, and direct-to-consumer labs (Viome, Biomesight, uBiome predecessor services). Clinical validation of these tests is ongoing."
+        },
+        {
+          "name": "Standard blood panel (for ruling in comorbidities)",
+          "type": "standard",
+          "description": "CBC, CMP, TSH, ferritin, B12, folate, vitamin D, CRP, ESR, HbA1c. Often normal in Long COVID, but useful for identifying contributing deficiencies (iron, B12, vitamin D are commonly low) and ruling out other explanations. Normal results do not exclude Long COVID.",
+          "availability": "Ordered through any GP or primary care physician. Widely available."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "me_cfs",
+        "name": "ME/CFS (Myalgic Encephalomyelitis / Chronic Fatigue Syndrome)",
+        "relationship": "mechanistic_link",
+        "explanation": "Long COVID and ME/CFS share overlapping biology, symptom profiles, and the hallmark feature of post-exertional malaise. A significant proportion of people with Long COVID meet diagnostic criteria for ME/CFS. Researchers hypothesise that both conditions may share mechanisms of immune dysregulation, autonomic dysfunction, and mitochondrial impairment. Long COVID has reignited research interest in ME/CFS."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / Dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "POTS is one of the most consistently documented comorbidities in Long COVID, affecting an estimated 30\u201360% of those with significant functional impairment. SARS-CoV-2 appears to damage autonomic nerve fibres and may trigger autoimmune responses targeting autonomic receptors."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast Cell Activation Syndrome (MCAS)",
+        "relationship": "comorbid",
+        "explanation": "MCAS is increasingly recognised as a component of Long COVID in a subset of patients. COVID-19 may trigger mast cell dysregulation, producing multi-system inflammatory symptoms. The triad of Long COVID, POTS, and MCAS frequently co-occurs and has been described as a common phenotype in post-COVID clinics."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "mechanistic_link",
+        "explanation": "Widespread musculoskeletal pain, cognitive difficulty, and sleep disruption in Long COVID overlap significantly with fibromyalgia. Some researchers propose that COVID-19 can trigger central sensitisation, a core mechanism in fibromyalgia."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "downstream",
+        "explanation": "COVID-19 infection directly disrupts the gut microbiome, reducing diversity and depleting beneficial species such as Faecalibacterium prausnitzii. This dysbiosis may persist for months and contribute to gastrointestinal symptoms, immune dysregulation, and neurological symptoms via the gut-brain axis."
+      },
+      {
+        "id": "sibo",
+        "name": "Small Intestinal Bacterial Overgrowth (SIBO)",
+        "relationship": "downstream",
+        "explanation": "Autonomic dysfunction in Long COVID can impair the migrating motor complex (MMC) \u2014 the gut's self-cleaning wave \u2014 which may predispose to SIBO. GI symptoms in Long COVID may partially reflect this mechanism."
+      },
+      {
+        "id": "ebv",
+        "name": "EBV Reactivation",
+        "relationship": "comorbid",
+        "explanation": "Reactivation of Epstein-Barr virus has been documented in a significant subset of Long COVID patients. COVID-19's immune disruption may allow latent EBV to reactivate, potentially contributing to fatigue, cognitive symptoms, and lymphadenopathy."
+      },
+      {
+        "id": "histamine",
+        "name": "Histamine Intolerance",
+        "relationship": "mechanistic_link",
+        "explanation": "In Long COVID with an MCAS component, excess histamine release can overwhelm the body's capacity to degrade it. Some individuals respond to low-histamine dietary approaches, suggesting histamine intolerance as a functional overlay."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central Sensitisation",
+        "relationship": "mechanistic_link",
+        "explanation": "Neuroinflammation in Long COVID may lower pain and sensory thresholds, producing central sensitisation \u2014 where the nervous system amplifies pain and sensory signals. This may explain widespread pain, allodynia, and sensory hypersensitivity in some individuals."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety Disorder",
+        "relationship": "comorbid",
+        "explanation": "Anxiety is common in Long COVID, partly as a neurobiological consequence of the infection (neuroinflammation, autonomic dysregulation) and partly as an understandable response to chronic debilitating illness. The two are not mutually exclusive, and dismissing Long COVID symptoms as 'just anxiety' is both inaccurate and harmful."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "comorbid",
+        "explanation": "Depression affects a substantial proportion of those with Long COVID. It may be neurobiologically driven (cytokine-induced, similar to sickness behaviour), secondary to functional impairment and loss, or both. It requires treatment in its own right but does not explain the physical symptoms."
+      },
+      {
+        "id": "mitochondrial",
+        "name": "Mitochondrial Dysfunction",
+        "relationship": "mechanistic_link",
+        "explanation": "Research has documented impaired mitochondrial function in Long COVID, including reduced ATP production, oxidative stress, and disrupted energy metabolism. This may be a key driver of fatigue and exercise intolerance, and is consistent with findings in ME/CFS."
+      },
+      {
+        "id": "leaky_gut",
+        "name": "Leaky Gut (Intestinal Hyperpermeability)",
+        "relationship": "mechanistic_link",
+        "explanation": "COVID-19 infection can increase intestinal permeability, allowing bacterial products (LPS, endotoxins) to translocate into the bloodstream and drive systemic inflammation. This may contribute to ongoing immune activation in Long COVID."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid Dysfunction",
+        "relationship": "comorbid",
+        "explanation": "COVID-19 can cause subacute thyroiditis in the acute phase, and thyroid autoimmunity has been observed post-infection. Thyroid dysfunction may contribute to or mimic Long COVID fatigue, and is worth testing as a treatable contributor."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor Sleep / Insomnia",
+        "relationship": "comorbid",
+        "explanation": "Non-restorative sleep is one of the most common Long COVID symptoms and creates a vicious cycle with fatigue, cognitive impairment, and immune function. Autonomic dysfunction and neuroinflammation may disrupt sleep architecture independently of psychological factors."
+      },
+      {
+        "id": "iron_deficiency",
+        "name": "Iron Deficiency",
+        "relationship": "comorbid",
+        "explanation": "Iron deficiency, even without frank anaemia, can substantially worsen fatigue and cognitive symptoms. It is frequently under-diagnosed in Long COVID and worth testing and correcting as a modifiable contributor."
+      },
+      {
+        "id": "vitamin_d_deficiency",
+        "name": "Vitamin D Deficiency",
+        "relationship": "comorbid",
+        "explanation": "Vitamin D deficiency is common in those who became severely ill with COVID-19 and in those who subsequently reduced outdoor activity due to disability. Low vitamin D may exacerbate immune dysregulation and musculoskeletal symptoms."
+      },
+      {
+        "id": "mold_cirs",
+        "name": "Mold Illness / CIRS",
+        "relationship": "often_confused",
+        "explanation": "Chronic Inflammatory Response Syndrome (CIRS) from mold exposure can produce a symptom profile that closely overlaps with Long COVID, including fatigue, cognitive impairment, and multi-system inflammation. In individuals living in water-damaged buildings, CIRS may co-exist with or amplify Long COVID symptoms."
+      },
+      {
+        "id": "lyme",
+        "name": "Lyme Disease / Chronic Lyme",
+        "relationship": "often_confused",
+        "explanation": "Post-treatment Lyme disease syndrome (PTLDS) shares many features with Long COVID \u2014 fatigue, brain fog, pain, and autonomic symptoms. Some individuals with Long COVID may have undiagnosed Lyme that is contributing to their symptom burden, and vice versa."
+      },
+      {
+        "id": "ibs",
+        "name": "Irritable Bowel Syndrome (IBS)",
+        "relationship": "downstream",
+        "explanation": "Post-infectious IBS is well-documented after gastrointestinal infections, and COVID-19 has similarly been associated with new-onset IBS-like symptoms. Gut dysbiosis, altered motility from autonomic dysfunction, and visceral hypersensitivity may all contribute."
+      },
+      {
+        "id": "gastroparesis",
+        "name": "Gastroparesis",
+        "relationship": "downstream",
+        "explanation": "Autonomic nervous system damage in Long COVID can impair gastric motility, producing delayed gastric emptying. This may present as early satiety, nausea, bloating, and upper GI discomfort that does not respond to standard IBS treatments."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Pacing and energy envelope management",
+          "category": "lifestyle",
+          "description": "Deliberately staying within the body's current energy capacity to avoid triggering post-exertional malaise (PEM). This means stopping activity before reaching the point of fatigue \u2014 not pushing through. The 'energy envelope' concept involves identifying a baseline sustainable activity level and building from there only very gradually, if at all. Tools include heart rate monitoring (staying below approximately 60% of max HR), scheduled rest, and the 'stop before the limit' rule.",
+          "evidence_level": "strong",
+          "notes": "Pacing is particularly critical for those with the ME/CFS-like pattern. It is counter-intuitive for people accustomed to 'pushing through', but is the single most important strategy for preventing deterioration. Graded exercise therapy (GET) as traditionally practised is contraindicated and can cause serious, prolonged setbacks in this subgroup."
+        },
+        {
+          "name": "Treatment of POTS with salt and fluid loading",
+          "category": "lifestyle / diet",
+          "description": "Increasing sodium intake (typically 3\u201310g/day) and fluid intake (2\u20133 litres/day) to expand blood volume and reduce orthostatic intolerance. Often combined with compression garments (waist-high compression at 30\u201340 mmHg). This is a first-line approach for POTS before considering medication.",
+          "evidence_level": "strong",
+          "notes": "Requires assessment of cardiac and renal function before significantly increasing sodium. Not appropriate for those with hypertension, heart failure, or kidney disease without medical supervision."
+        },
+        {
+          "name": "Antihistamines (H1 + H2 blockers) for MCAS component",
+          "category": "medication",
+          "description": "Where MCAS is suspected or confirmed, combining an H1 blocker (e.g. cetirizine, loratadine, or fexofenadine) with an H2 blocker (e.g. famotidine) can reduce histamine-mediated symptoms. Some clinicians add mast cell stabilisers such as cromolyn sodium (oral) or quercetin.",
+          "evidence_level": "moderate",
+          "notes": "Famotidine (Pepcid) has also shown some broader anti-COVID inflammatory effects in observational studies. Antihistamine trials are considered low-risk and worth attempting under supervision. First-generation antihistamines (diphenhydramine) cross the blood-brain barrier and may worsen brain fog."
+        },
+        {
+          "name": "Low-histamine diet",
+          "category": "diet",
+          "description": "Reducing dietary intake of histamine-rich foods (aged cheeses, fermented foods, wine, processed meats, leftovers) and foods that trigger mast cell degranulation. May reduce symptom burden in those with an MCAS or histamine intolerance component.",
+          "evidence_level": "anecdotal",
+          "notes": "Challenging to sustain long-term and very restrictive. Best used as a diagnostic trial rather than a permanent approach. Work with a FODMAP-trained or functional dietitian familiar with histamine."
+        },
+        {
+          "name": "Low-dose naltrexone (LDN)",
+          "category": "medication",
+          "description": "At doses of 1.5\u20134.5mg/day (well below standard doses of 50mg), naltrexone appears to modulate microglial activation and reduce neuroinflammation. Case series and small trials in ME/CFS, fibromyalgia, and Long COVID suggest benefit for fatigue, pain, and cognitive symptoms in some individuals.",
+          "evidence_level": "moderate",
+          "notes": "Not approved specifically for Long COVID; prescribed off-label. Must be compounded at this dose range. Generally well-tolerated. Should not be used in those on opioid medications. Requires a willing prescriber \u2014 often found in integrative/functional medicine."
+        },
+        {
+          "name": "Ivabradine or beta-blockers for POTS",
+          "category": "medication",
+          "description": "For POTS-predominant Long COVID, rate-controlling medications can reduce the symptomatic heart rate rise. Ivabradine (which selectively reduces heart rate without affecting blood pressure) may be particularly appropriate. Low-dose beta-blockers (propranolol, bisoprolol) are an alternative in some cases.",
+          "evidence_level": "moderate",
+          "notes": "Requires formal POTS diagnosis and cardiologist or autonomic specialist involvement. Beta-blockers can worsen fatigue and are less tolerated by some Long COVID patients; ivabradine is often preferred."
+        },
+        {
+          "name": "Breathing retraining",
+          "category": "lifestyle",
+          "description": "Many people with Long COVID develop dysfunctional breathing patterns \u2014 overbreathing, thoracic rather than diaphragmatic breathing, or breath-holding \u2014 which amplify symptoms including dizziness, breathlessness, and anxiety. Techniques such as Buteyko breathing, diaphragmatic breathing, and slow paced breathing (4\u20136 breaths/minute) can recalibrate the respiratory system.",
+          "evidence_level": "moderate",
+          "notes": "Work with a respiratory physiotherapist experienced in Long COVID where possible. Breathing retraining addresses a real physiological pattern and should not be conflated with dismissing symptoms as 'just anxiety'."
+        },
+        {
+          "name": "Gut microbiome support",
+          "category": "diet / supplement",
+          "description": "Supporting microbiome restoration through a diet rich in diverse plant fibres (30+ plant species per week), prebiotic-rich foods (oats, leeks, garlic, bananas), and judicious use of evidence-based probiotics. Some research suggests that specific probiotic strains (notably Lactobacillus and Bifidobacterium species) may help restore post-COVID gut diversity.",
+          "evidence_level": "moderate",
+          "notes": "Introduce fibre gradually to avoid worsening GI symptoms. If SIBO or histamine intolerance is present, some fermented foods and probiotics may initially worsen symptoms. Work with a dietitian or gastroenterologist familiar with post-infectious gut recovery."
+        },
+        {
+          "name": "Cognitive and sensory pacing",
+          "category": "lifestyle",
+          "description": "Limiting sustained cognitive tasks, screen time, noisy or stimulating environments, and social interaction to avoid triggering cognitive PEM. Scheduled cognitive rest \u2014 lying in a dark, quiet room \u2014 can be as important as physical rest for the neurological subtype.",
+          "evidence_level": "moderate",
+          "notes": "This may conflict strongly with work and social demands. Occupational therapy assessment can help structure sustainable cognitive load. Not weakness \u2014 it reflects real neurobiological limits."
+        },
+        {
+          "name": "Vitamin D, B12, and iron correction",
+          "category": "supplement",
+          "description": "Correcting deficiencies in vitamin D, B12, and iron (ferritin) can reduce symptoms that overlap with Long COVID, including fatigue, cognitive impairment, and mood changes. These deficiencies are common and modifiable.",
+          "evidence_level": "strong",
+          "notes": "Require testing before supplementation \u2014 excessive iron or vitamin D can be harmful. Iron is best absorbed on an empty stomach with vitamin C. B12 deficiency may be best treated with methylcobalamin sublingually or by injection in those with absorption issues."
+        },
+        {
+          "name": "Sleep optimisation",
+          "category": "lifestyle",
+          "description": "Prioritising sleep quality through consistent sleep-wake times, dark cool sleeping environment, avoiding screens before bed, and addressing sleep disorders (including sleep apnea, which may be undiagnosed). Sleep is critical for immune regulation, microglial clearance, and autonomic recovery.",
+          "evidence_level": "strong",
+          "notes": "Those with significant autonomic dysfunction may benefit from elevating the head of the bed slightly (10\u201330 degrees) to reduce orthostatic stress during sleep."
+        }
+      ],
+      "things_to_avoid": [
+        "Graded Exercise Therapy (GET) as traditionally prescribed \u2014 pushing through fatigue with incremental physical challenges causes PEM crashes and has been shown to worsen outcomes in ME/CFS-like Long COVID",
+        "Overexertion when feeling relatively well ('boom and bust' cycling) \u2014 good days often lead to overactivity that triggers multi-day crashes",
+        "Dismissive healthcare settings \u2014 repeatedly being told 'tests are normal so nothing is wrong' wastes time and delays appropriate management",
+        "First-generation antihistamines (diphenhydramine / Benadryl) \u2014 cross the blood-brain barrier and can worsen brain fog",
+        "Prolonged fasting or extreme caloric restriction \u2014 can worsen energy depletion, autonomic symptoms, and immune function",
+        "Alcohol \u2014 vasodilates, disrupts sleep architecture, worsens autonomic instability, and may trigger mast cell reactions",
+        "High-caffeine intake to manage fatigue \u2014 masks fatigue signals needed for pacing, increases heart rate and orthostatic symptoms, and disrupts sleep",
+        "Dismissing the condition as purely psychological \u2014 this delays appropriate investigation of biological drivers and causes significant psychological harm",
+        "Comparing recovery trajectory to others \u2014 Long COVID recovery is highly variable and non-linear; comparisons fuel demoralisation"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "Most standard medical appointments will not investigate Long COVID adequately. Normal blood tests do not rule it out, and many clinicians have neither the time nor the training to manage a multi-system condition with no single diagnostic test.",
+        "why_resisted": "People want to trust their doctors. Accepting that the standard medical system may not be equipped for this condition feels frightening and destabilising.",
+        "path_forward": "People who specifically seek out Long COVID clinics, autonomic specialists, and functional or integrative medicine practitioners \u2014 rather than repeatedly attending general appointments and receiving normal results \u2014 are far more likely to have contributing conditions identified and treated."
+      },
+      {
+        "truth": "Recovery for a significant proportion of people with Long COVID is not a straight line back to pre-illness function. Some people plateau, and the goal for the medium term may be stable management rather than full recovery.",
+        "why_resisted": "Accepting a possible long-term change in capacity runs counter to a culture of productivity and can feel like giving up. It is also genuinely unknown territory \u2014 some people do fully recover.",
+        "path_forward": "People who accept their current baseline and build a life that is sustainable within it \u2014 rather than perpetually pushing toward the previous normal \u2014 often find more stability, less suffering, and gradual improvement over time. This is not resignation; it is a strategic foundation."
+      },
+      {
+        "truth": "Pushing through fatigue and post-exertional malaise is not willpower \u2014 it is physiological harm. The 'exercise more to build stamina' approach that works for ordinary deconditioning actively worsens the ME/CFS-like subtype of Long COVID.",
+        "why_resisted": "Western medicine and culture valorise effort and exercise. It feels wrong to rest when tired. Many well-meaning clinicians continue to recommend activity increases.",
+        "path_forward": "People who learn their personal PEM threshold \u2014 using heart rate monitoring and structured pacing \u2014 and consistently stay within it experience fewer crashes, less overall suffering, and often a gradual, stable improvement over months that the boom-and-bust approach never allows."
+      },
+      {
+        "truth": "The psychological distress in Long COVID is partly neurobiological \u2014 it is not primarily a sign of poor coping or a mental health problem masquerading as physical illness. But unmanaged anxiety and depression do worsen the condition, and they deserve treatment on their own terms.",
+        "why_resisted": "People with Long COVID are rightly wary of any psychological framing, because it has been weaponised to dismiss their symptoms. Accepting any psychological component feels like conceding the battle.",
+        "path_forward": "People who treat psychological symptoms as co-occurring biological processes \u2014 with therapy, medication if needed, and nervous system regulation practices \u2014 tend to have lower overall symptom burden and better quality of life, without this in any way invalidating the physical reality of their illness."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Strict pacing and PEM avoidance",
+          "why_it_matters": "PEM crashes cause physiological setbacks that can take days to weeks to recover from. Each crash reinforces the cycle of deterioration. Preventing PEM is the single lever most consistently associated with stability and gradual improvement.",
+          "how_to_start": "Identify the current sustainable activity level \u2014 the amount of physical and cognitive activity that does not produce a crash 24\u201348 hours later. Use a heart rate monitor to stay below approximately 60% of maximum heart rate during activity. Keep a log of activity and symptoms with a 48-hour lag to identify the pattern.",
+          "timeline": "Weeks to months to establish a reliable baseline; improvement from a stable paced foundation typically develops over months to years",
+          "requires_professional": false
+        },
+        {
+          "lever": "Diagnosis and treatment of POTS",
+          "why_it_matters": "Unmanaged POTS dramatically worsens functional capacity and drives many other Long COVID symptoms including fatigue, brain fog, and breathlessness via reduced cerebral perfusion. Treating POTS often produces substantial improvement across multiple symptom domains.",
+          "how_to_start": "Perform a home NASA lean test to assess orthostatic heart rate response. If positive, start with salt and fluid loading (with no medical contraindications) and compression garments. Seek referral to a cardiologist, autonomic neurologist, or Long COVID clinic for formal testing.",
+          "timeline": "Salt/fluid measures can show benefit within days; medication adjustments over weeks; full POTS management is a longer-term process",
+          "requires_professional": true
+        },
+        {
+          "lever": "Addressing gut dysbiosis and GI health",
+          "why_it_matters": "The gut-brain-immune axis means that persistent gut microbiome disruption may maintain systemic inflammation and contribute to neurological and immune symptoms. Restoring gut health is a modifiable lever with downstream effects on the whole system.",
+          "how_to_start": "Increase dietary plant diversity (aim for 30+ different plants per week). Reduce ultra-processed food. Consider stool testing to characterise dysbiosis. Consult a dietitian or gastroenterologist with experience in post-infectious gut recovery.",
+          "timeline": "Initial microbiome shifts visible within 2\u20134 weeks of dietary change; meaningful recovery takes months",
+          "requires_professional": false
+        },
+        {
+          "lever": "Correcting nutritional deficiencies",
+          "why_it_matters": "Deficiencies in vitamin D, B12, and iron are common in Long COVID, often under-detected, and produce symptoms that are indistinguishable from core Long COVID features but are directly treatable. Correcting them does not resolve Long COVID but removes amplifying factors.",
+          "how_to_start": "Request a blood panel including ferritin (not just haemoglobin), B12, folate, and vitamin D from a GP. Correct any identified deficiencies with appropriate supplementation or dietary change. Retest after 3 months.",
+          "timeline": "Iron and B12 repletion typically shows effect within 4\u201312 weeks; vitamin D 8\u201312 weeks",
+          "requires_professional": false
+        },
+        {
+          "lever": "Finding practitioners who investigate rather than manage symptoms",
+          "why_it_matters": "Long COVID has multiple co-occurring, treatable conditions (POTS, MCAS, EBV reactivation, SIBO, nutritional deficiencies) that are missed in standard symptom-by-symptom management. Finding a practitioner who investigates root mechanisms allows targeted treatment rather than indefinite symptomatic management.",
+          "how_to_start": "Seek referral to a dedicated Long COVID clinic where available. Consider functional medicine physicians, integrative internists, or autonomic specialists who take a systems-level approach. Patient advocacy organisations often maintain practitioner directories.",
+          "timeline": "Finding the right practitioner may take months; once found, investigations typically unfold over several appointments",
+          "requires_professional": true
+        },
+        {
+          "lever": "Nervous system regulation and vagal tone support",
+          "why_it_matters": "Autonomic nervous system dysfunction is pervasive in Long COVID. Practices that stimulate parasympathetic activity and improve heart rate variability may help recalibrate the autonomic system over time. These include slow diaphragmatic breathing, gentle cold exposure, and mindfulness-based approaches.",
+          "how_to_start": "Begin with slow-paced breathing (4\u20136 breaths per minute, inhale 4 seconds, exhale 6 seconds) for 10 minutes twice daily. Monitor HRV with a consumer wearable to track changes over weeks. Introduce only one new practice at a time.",
+          "timeline": "HRV changes can be seen within 2\u20134 weeks of consistent practice; autonomic recalibration is a months-to-years process",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Treating good days as evidence of recovery and significantly increasing activity \u2014 this reliably triggers PEM crashes and sets the overall trajectory backward",
+        "Waiting for a single diagnosis or cure rather than investigating and addressing the multiple co-occurring conditions that are driving the symptom burden",
+        "Pursuing purely symptom-suppressing approaches (e.g. escalating pain medications, sleep drugs) without investigating the mechanisms producing the symptoms",
+        "Interpreting normal standard blood tests as proof of health \u2014 long COVID mechanisms often operate at a cellular, neurological, and autonomic level not captured by routine panels",
+        "Starting multiple new supplements or dietary interventions simultaneously \u2014 makes it impossible to identify what is helping or causing new reactions, and the metabolic load can worsen symptoms",
+        "Applying the ME/CFS pacing rules only during a crash rather than consistently \u2014 pacing must be maintained during stable periods to prevent crashes, not only as a response to them",
+        "Assuming that because the condition is poorly understood, nothing can be done \u2014 multiple treatable contributing conditions exist and can often be identified and managed even without a full biological explanation for Long COVID"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Long COVID specialist clinic",
+          "role": "Multidisciplinary clinics specifically established for Long COVID can provide coordinated assessment across cardiology, neurology, respiratory, and rehabilitation. They are the best single point of entry for a comprehensive evaluation.",
+          "notes": "Availability varies enormously by country, region, and healthcare system. Wait times can be long. Not all Long COVID clinics have the same depth of investigation \u2014 some focus on rehabilitation rather than mechanism-level workup."
+        },
+        {
+          "type": "Autonomic neurologist or cardiologist specialising in dysautonomia",
+          "role": "Essential for formal POTS diagnosis, tilt table testing, and autonomic workup. Often the most impactful specialist for those with orthostatic and cardiovascular symptoms.",
+          "notes": "Dysautonomia specialists are relatively scarce. Dysautonomia International (dysautonomiainternational.org) maintains a physician directory."
+        },
+        {
+          "type": "Allergist / Immunologist with MCAS experience",
+          "role": "Appropriate for those with suspected mast cell activation \u2014 flushing, hives, multi-system inflammatory reactions, histamine-type symptoms. Can order mast cell testing and guide antihistamine and mast cell stabiliser regimens.",
+          "notes": "MCAS awareness varies widely among allergists. Seek one who explicitly mentions MCAS in their practice. The American Academy of Allergy, Asthma & Immunology has a specialist finder."
+        },
+        {
+          "type": "Functional or integrative medicine physician",
+          "role": "Takes a systems-level, root-cause approach to multi-system conditions. Often more willing to investigate EBV reactivation, microbiome status, mitochondrial function, and advanced inflammatory markers than mainstream practitioners. Can also manage low-dose naltrexone and other off-label approaches.",
+          "notes": "Quality varies substantially. Look for board-certified physicians with Institute for Functional Medicine (IFM) training. More expensive and often not covered by insurance in the US."
+        },
+        {
+          "type": "Gastroenterologist with post-infectious gut experience",
+          "role": "For those with prominent GI symptoms \u2014 bloating, altered bowel habit, nausea \u2014 assessment of gut motility, microbiome, and post-infectious IBS or gastroparesis is valuable.",
+          "notes": "Many mainstream gastroenterologists focus on structural pathology. Seek those with an interest in functional GI conditions and microbiome-related disease."
+        },
+        {
+          "type": "Physiotherapist / Physical therapist specialising in Long COVID or ME/CFS",
+          "role": "Can provide structured pacing guidance, breathing retraining, and very gentle rehabilitation that respects PEM thresholds. Distinct from standard physiotherapy or graded exercise therapy, which is inappropriate for this condition.",
+          "notes": "Ensure they have specific Long COVID or ME/CFS experience. A physio recommending standard GET or 'push through the fatigue' is not appropriate."
+        },
+        {
+          "type": "Neuropsychologist",
+          "role": "Can perform objective cognitive testing to document the nature and extent of brain fog and cognitive impairment. Useful for both clinical management and occupational or disability documentation.",
+          "notes": "Cognitive testing results can be powerful evidence for workplace accommodations and disability claims."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/covidlonghaulers",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/covidlonghaulers/",
+          "notes": "One of the largest and most active Long COVID patient communities online. Contains a vast library of patient experiences, research summaries, and treatment trials. Quality varies \u2014 exercise discernment \u2014 but the collective intelligence on emerging research and practitioner recommendations is often ahead of mainstream clinical awareness."
+        },
+        {
+          "name": "Body Politic COVID-19 Support Group",
+          "platform": "Slack",
+          "url": "https://www.wearebodypolitic.com/covid19",
+          "notes": "One of the original Long COVID patient advocacy organisations. Their Slack community is large, well-moderated, and includes channels for specific symptoms and conditions. Influential in early Long COVID research advocacy."
+        },
+        {
+          "name": "Long COVID Support (UK)",
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/groups/longcovid/",
+          "notes": "Large UK-based Facebook group with tens of thousands of members. Useful for UK-specific healthcare navigation, benefit/disability advice, and peer support."
+        },
+        {
+          "name": "Dysautonomia International Community",
+          "platform": "Facebook / website",
+          "url": "https://www.dysautonomiainternational.org",
+          "notes": "Essential resource for the POTS/dysautonomia subgroup. Includes a physician directory, research summaries, and a large Facebook community. Particularly valuable for navigating POTS management."
+        },
+        {
+          "name": "Survivor Corps",
+          "platform": "Facebook / website",
+          "url": "https://www.survivorcorps.com",
+          "notes": "Large advocacy and support group with a significant focus on connecting Long COVID patients with research studies. Useful for both community and for those who want to contribute to research."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Long COVID: The facts",
+        "type": "website",
+        "author_or_source": "NHS England / NICE",
+        "url": "https://www.nice.org.uk/guidance/ng188",
+        "description": "The NICE guideline on COVID-19 rapid guideline for managing the long-term effects of COVID-19. A foundational clinical document that forms the basis of UK Long COVID management recommendations, including the acknowledgement that graded exercise therapy is not appropriate for those with PEM.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Survivor Corps Research Repository",
+        "type": "website",
+        "author_or_source": "Survivor Corps",
+        "url": "https://www.survivorcorps.com/research",
+        "description": "A curated database of Long COVID research papers and clinical resources, maintained by and for Long COVID patients. Useful for keeping up with an rapidly evolving research landscape.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Understanding Long COVID: A guide for patients",
+        "type": "website",
+        "author_or_source": "Patient-Led Research Collaborative (PLRC)",
+        "url": "https://patientresearchcovid19.com",
+        "description": "The PLRC is a patient-led research group that has published influential studies on Long COVID symptom profiles. Their website includes accessible summaries of their findings and is notable as a model of patient-driven research. Particularly valuable for understanding the breadth and severity of the symptom landscape.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Long COVID: Science, Research and Policy",
+        "type": "research paper",
+        "author_or_source": "Akiko Iwasaki et al., Nature",
+        "url": "https://www.nature.com/articles/s41586-023-06055-y",
+        "description": "A landmark 2023 Nature paper from leading Long COVID researcher Akiko Iwasaki summarising the current understanding of Long COVID mechanisms, subtypes, and biological evidence. Highly cited and accessible for a scientific paper \u2014 a rigorous foundation for understanding the biology.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Dysautonomia International \u2014 Long COVID and POTS Resources",
+        "type": "website",
+        "author_or_source": "Dysautonomia International",
+        "url": "https://www.dysautonomiainternational.org/page/COVID",
+        "description": "Comprehensive resource on the POTS and dysautonomia component of Long COVID, including patient guides, research, and a physician finder. Essential for anyone whose symptoms are dominated by orthostatic intolerance, palpitations, or dizziness.",
+        "audience": "beginner"
+      },
+      {
+        "title": "ME/CFS Primer for Clinical Practitioners",
+        "type": "website",
+        "author_or_source": "IACFS/ME",
+        "url": "https://iacfsme.org/primer/",
+        "description": "Although written for clinicians, this primer is highly readable by patients and provides rigorous grounding in the ME/CFS disease model \u2014 including PEM, autonomic dysfunction, and why graded exercise is harmful. Directly applicable to the ME/CFS-like subtype of Long COVID.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "The Long Haul: Pioneering Medicine and Moving Science Forward",
+        "type": "podcast",
+        "author_or_source": "UCSF Department of Medicine",
+        "url": "https://longcovidgrandrounds.ucsf.edu",
+        "description": "Academic grand rounds series on Long COVID from UCSF, featuring leading researchers discussing mechanisms, subtypes, and emerging treatments. High-quality and evidence-based. Useful for understanding the cutting edge of Long COVID research.",
+        "audience": "advanced"
+      },
+      {
+        "title": "An Inexplicable Exhaustion: Living With Long COVID",
+        "type": "book",
+        "author_or_source": "Various patient narratives / academic presses",
+        "url": null,
+        "description": "Multiple book-length patient accounts of Long COVID have been published. For those newly diagnosed, reading detailed first-person accounts helps validate the experience and provides practical coping strategies. Check current catalogues for the most recent releases \u2014 this is a fast-moving publishing space.",
+        "audience": "beginner"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

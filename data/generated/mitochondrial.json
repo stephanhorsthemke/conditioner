@@ -1,0 +1,764 @@
+{
+  "condition_id": "mitochondrial",
+  "condition_name": "Mitochondrial dysfunction",
+  "generated_at": "2026-07-01T11:58:42.146017Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Mitochondrial dysfunction refers to impaired function of the mitochondria \u2014 the organelles inside nearly every cell that generate most of the body's energy. When mitochondria fail to produce energy efficiently, virtually every high-energy tissue can suffer: muscles, brain, heart, gut, and eyes. The result is a wide range of symptoms including profound fatigue, muscle weakness, cognitive difficulties, and multi-system problems that often go unrecognised or are dismissed for years.",
+    "detailed_summary": "Mitochondria produce adenosine triphosphate (ATP) through a process called oxidative phosphorylation, involving a series of protein complexes (the electron transport chain) embedded in the inner mitochondrial membrane. When any step in this process is impaired \u2014 whether through genetic mutation, acquired damage from toxins, infections, chronic inflammation, nutritional deficiency, or ageing \u2014 cells cannot meet their energy demands. The result is cellular energy failure.\n\nMitochondrial dysfunction exists on a spectrum. At one end are rare, severe genetic mitochondrial diseases (such as MELAS, Leigh syndrome, or MERRF), caused by mutations in mitochondrial DNA (mtDNA) or nuclear DNA encoding mitochondrial proteins, often diagnosed in childhood. At the other end is 'secondary' or 'acquired' mitochondrial dysfunction \u2014 increasingly recognised in conditions such as ME/CFS, Long COVID, fibromyalgia, diabetes, neurodegenerative disease, and normal ageing \u2014 where mitochondria are structurally intact but functionally impaired, often due to oxidative stress, inflammation, nutrient depletion, or toxic exposures.\n\nA defining feature of mitochondrial disease is heteroplasmy \u2014 the coexistence of normal and mutant mitochondrial DNA within the same cell or tissue \u2014 which helps explain why symptoms can be patchy, fluctuating, and highly variable between individuals even with the same mutation. Energy demand thresholds also mean that symptoms may only become apparent under physiological stress such as infection, exertion, fasting, or surgery.\n\nPeople investigating their own chronic fatigue, exercise intolerance, brain fog, or multi-system illness often encounter the concept of mitochondrial dysfunction as a potential unifying explanation. While primary mitochondrial disease is rare, secondary dysfunction is an active and legitimate area of research with growing clinical recognition.",
+    "prevalence": {
+      "summary": "Primary mitochondrial disease is rare; secondary mitochondrial dysfunction is common across many chronic illnesses",
+      "estimate": "Primary mitochondrial disease affects approximately 1 in 5,000 people. Secondary dysfunction is estimated to be far more widespread, with some estimates suggesting it plays a role in millions of people with ME/CFS, Long COVID, diabetes, and neurodegenerative conditions.",
+      "notes": "Prevalence figures for primary disease are reasonably well established. Figures for secondary dysfunction are contested and difficult to quantify because there is no single agreed diagnostic threshold. Mitochondrial disease is often underdiagnosed due to its heterogeneous presentation and limited clinician awareness. Women and children are disproportionately represented in primary mitochondrial disease diagnoses, though secondary dysfunction affects all demographics."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Primary genetic mitochondrial disease",
+        "description": "Caused by mutations in mitochondrial DNA or nuclear genes encoding mitochondrial proteins. These are heritable conditions, often presenting in childhood or early adulthood, affecting multiple organ systems simultaneously.",
+        "distinguishing_features": [
+          "Onset in childhood or early adulthood",
+          "Multi-system involvement: muscle, brain, eyes, heart, kidneys, endocrine system",
+          "Maternal inheritance pattern if mtDNA mutation; Mendelian if nuclear gene",
+          "Elevated lactate at rest or post-exercise",
+          "Specific syndromes: MELAS, MERRF, Leigh syndrome, NARP, Kearns-Sayre",
+          "Abnormal mitochondrial morphology on muscle biopsy"
+        ]
+      },
+      {
+        "id": "me_cfs",
+        "name": "Mitochondrial dysfunction in ME/CFS",
+        "description": "Secondary mitochondrial dysfunction is increasingly implicated in ME/CFS. Research suggests impaired ATP production, defects in Complex I activity, and abnormal responses to oxidative stress, without classic primary mitochondrial disease findings.",
+        "distinguishing_features": [
+          "Post-exertional malaise (PEM) \u2014 a hallmark not seen in primary disease",
+          "No structural mitochondrial abnormality on biopsy",
+          "Abnormal metabolic responses on two-day CPET testing",
+          "Often triggered by viral illness or significant stress",
+          "Normal or near-normal standard mitochondrial genetic testing"
+        ]
+      },
+      {
+        "id": "long_covid",
+        "name": "Mitochondrial dysfunction in Long COVID",
+        "description": "Emerging evidence suggests SARS-CoV-2 infection can impair mitochondrial function through multiple mechanisms including direct viral interference, persistent inflammation, and microbiome disruption, producing a pattern similar to ME/CFS.",
+        "distinguishing_features": [
+          "Onset following COVID-19 infection",
+          "PEM, fatigue, cognitive impairment",
+          "Elevated inflammatory markers in some individuals",
+          "Overlapping phenotype with ME/CFS",
+          "Microclots and vascular pathology may compound energy delivery impairment"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Mitochondrial dysfunction in neurodegenerative disease",
+        "description": "Mitochondrial impairment is a well-established feature of Parkinson's, Alzheimer's, and ALS, where it contributes to neuronal energy failure and cell death.",
+        "distinguishing_features": [
+          "Age of onset typically later in life",
+          "Progressive neurological decline",
+          "Specific patterns of brain pathology (alpha-synuclein, amyloid, TDP-43)",
+          "Mitochondrial dysfunction is a downstream feature, not the primary cause"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Drug-induced mitochondrial dysfunction",
+        "description": "Certain medications \u2014 particularly statins, nucleoside antiretrovirals, metformin at high doses, and some antibiotics \u2014 can impair mitochondrial function as a side effect.",
+        "distinguishing_features": [
+          "Symptom onset correlated with starting a medication",
+          "Myopathy, elevated CK, fatigue as common presentations",
+          "Often improves on drug discontinuation",
+          "Statins are the most common culprit via CoQ10 depletion"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Toxic and environmental mitochondrial dysfunction",
+        "description": "Heavy metals, pesticides, and persistent organic pollutants can impair the electron transport chain or mitochondrial DNA integrity.",
+        "distinguishing_features": [
+          "Correlates with known toxic exposure history",
+          "Heavy metals detectable in urine, blood, or hair",
+          "Can mimic primary mitochondrial disease",
+          "Liver and kidney toxicity may accompany mitochondrial impairment"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Profound, persistent fatigue not relieved by rest",
+        "category": "energy/systemic",
+        "notes": "Often described as a complete depletion of energy reserves; may worsen with minimal exertion"
+      },
+      {
+        "symptom": "Exercise intolerance and post-exertional malaise",
+        "category": "musculoskeletal",
+        "notes": "Muscle fatigue and systemic symptom worsening that follows physical or cognitive exertion, sometimes delayed by 12\u201348 hours"
+      },
+      {
+        "symptom": "Muscle weakness (myopathy)",
+        "category": "musculoskeletal",
+        "notes": "Particularly in proximal muscles (thighs, upper arms); may fluctuate"
+      },
+      {
+        "symptom": "Muscle pain and cramps",
+        "category": "musculoskeletal",
+        "notes": "Can occur at rest or following minimal activity"
+      },
+      {
+        "symptom": "Cognitive dysfunction ('brain fog')",
+        "category": "neurological",
+        "notes": "Includes memory lapses, slow processing speed, difficulty concentrating; correlates with energy demand in the brain"
+      },
+      {
+        "symptom": "Headaches and migraines",
+        "category": "neurological",
+        "notes": "Common in MELAS and other primary mitochondrial diseases; also reported in secondary dysfunction"
+      },
+      {
+        "symptom": "Stroke-like episodes",
+        "category": "neurological",
+        "notes": "A defining feature of MELAS syndrome; rare in secondary dysfunction"
+      },
+      {
+        "symptom": "Peripheral neuropathy",
+        "category": "neurological",
+        "notes": "Numbness, tingling, or burning in hands and feet"
+      },
+      {
+        "symptom": "Seizures",
+        "category": "neurological",
+        "notes": "Associated with primary mitochondrial diseases including MERRF and MELAS"
+      },
+      {
+        "symptom": "Ptosis (drooping eyelids) and ophthalmoplegia (eye movement problems)",
+        "category": "neurological/ophthalmological",
+        "notes": "Classic features of Kearns-Sayre syndrome and CPEO (chronic progressive external ophthalmoplegia)"
+      },
+      {
+        "symptom": "Visual disturbance or vision loss",
+        "category": "ophthalmological",
+        "notes": "Can result from retinal pigment degeneration or optic nerve involvement"
+      },
+      {
+        "symptom": "Hearing loss (sensorineural)",
+        "category": "sensory",
+        "notes": "A common feature of several mitochondrial syndromes, including MELAS and MERRF"
+      },
+      {
+        "symptom": "Heart arrhythmias and cardiomyopathy",
+        "category": "cardiovascular",
+        "notes": "The heart is highly energy-demanding; conduction defects and dilated cardiomyopathy are associated with some primary mitochondrial diseases"
+      },
+      {
+        "symptom": "Gastrointestinal dysmotility, nausea, vomiting",
+        "category": "digestive",
+        "notes": "Gut smooth muscle and enteric nervous system are energy-intensive; dysmotility and pseudo-obstruction can occur"
+      },
+      {
+        "symptom": "Diabetes (mitochondrial diabetes)",
+        "category": "endocrine/metabolic",
+        "notes": "Mitochondrial dysfunction in pancreatic beta cells can impair insulin secretion; a distinct subtype of diabetes"
+      },
+      {
+        "symptom": "Lactic acidosis",
+        "category": "metabolic",
+        "notes": "Elevated blood lactate occurs when cells cannot use oxygen efficiently and shift to anaerobic metabolism; can be dangerous at high levels"
+      },
+      {
+        "symptom": "Short stature and growth failure",
+        "category": "endocrine/developmental",
+        "notes": "Common in childhood-onset mitochondrial disease"
+      },
+      {
+        "symptom": "Temperature dysregulation",
+        "category": "autonomic",
+        "notes": "Difficulty regulating body temperature; cold intolerance or excessive sweating"
+      },
+      {
+        "symptom": "Sleep disturbance",
+        "category": "neurological",
+        "notes": "Non-restorative sleep, hypersomnia, or insomnia may occur"
+      },
+      {
+        "symptom": "Mood disturbances, anxiety, and depression",
+        "category": "psychiatric",
+        "notes": "May be secondary to neurological involvement or to the chronic burden of living with unexplained multi-system illness"
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Elevated resting or post-exercise blood lactate, or abnormal lactate-to-pyruvate ratio",
+        "Elevated CK (creatine kinase) suggesting muscle damage",
+        "Abnormal organic acid profile in urine (elevated lactate, pyruvate, or Krebs cycle intermediates)",
+        "Low plasma amino acids (alanine elevated; others depleted)",
+        "Abnormal Complex I\u2013V enzyme activity on muscle biopsy",
+        "Ragged red fibres or abnormal mitochondrial morphology on muscle biopsy",
+        "mtDNA mutations or nuclear gene variants on genetic testing",
+        "Abnormal two-day cardiopulmonary exercise testing (CPET) showing impaired oxygen utilisation \u2014 relevant in ME/CFS overlap",
+        "Low CoQ10 levels in some individuals with secondary dysfunction"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom and energy diary",
+          "description": "Tracking daily energy levels, cognitive function, and symptom severity alongside activity, sleep, diet, and stress can reveal characteristic patterns such as delayed post-exertional crashes. A simple 0\u201310 scale for energy and cognitive function recorded morning and evening for 4\u20136 weeks can provide clinically useful data.",
+          "safety_notes": "Avoid pushing through fatigue to 'test' limits; doing so may worsen symptoms, particularly in ME/CFS-related presentations."
+        },
+        {
+          "name": "Heart rate monitoring with orthostatic assessment",
+          "description": "Recording resting, seated, and standing heart rate can identify autonomic instability (POTS-like patterns) that often co-exists with mitochondrial dysfunction. A wearable or pulse oximeter can be used. Note: this does not test mitochondrial function directly.",
+          "safety_notes": "If heart rate is persistently elevated at rest or on standing, or if significant dizziness occurs, seek clinical evaluation."
+        },
+        {
+          "name": "Dietary nutrient assessment",
+          "description": "Many nutrients are cofactors for mitochondrial function (CoQ10, B vitamins, magnesium, carnitine, alpha-lipoic acid). Reviewing dietary intake for chronic deficiencies is a reasonable self-directed step before testing.",
+          "safety_notes": "Self-supplementation without testing can mask deficiencies or cause toxicity; clinical testing is preferable before starting high-dose supplementation."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Blood lactate and pyruvate (resting and post-exercise)",
+          "type": "standard",
+          "description": "Elevated blood lactate, particularly at rest or with an abnormal lactate-to-pyruvate ratio (>20:1), suggests impaired oxidative phosphorylation. Post-exercise sampling increases sensitivity.",
+          "availability": "Ordered by neurologists, metabolic specialists, or functional medicine doctors. Standard hospital laboratory. Requires careful sample handling to avoid false elevation."
+        },
+        {
+          "name": "Urine organic acids",
+          "type": "standard",
+          "description": "Measures metabolites of energy metabolism. Elevated lactate, pyruvate, succinic acid, fumarate, and other Krebs cycle intermediates suggest mitochondrial dysfunction. Also used to screen for other metabolic disorders.",
+          "availability": "Available through metabolic paediatricians, neurologists, functional medicine doctors, and some private laboratories (e.g. Genova Diagnostics, Great Plains Laboratory)."
+        },
+        {
+          "name": "Plasma amino acid panel",
+          "type": "standard",
+          "description": "Elevated alanine (a proxy for elevated lactate) and abnormal amino acid ratios can support a mitochondrial diagnosis.",
+          "availability": "Ordered through metabolic specialists; some functional medicine practitioners. Standard laboratory."
+        },
+        {
+          "name": "Mitochondrial genetic testing (mtDNA and nuclear gene panel)",
+          "type": "gold_standard",
+          "description": "Sequence analysis of the entire mitochondrial genome and/or targeted panels of nuclear genes encoding mitochondrial proteins. Identifies pathogenic mutations underlying primary mitochondrial disease. Next-generation sequencing (NGS) has greatly improved sensitivity.",
+          "availability": "Ordered by neurologists, metabolic geneticists, or clinical geneticists. Available through academic medical centres and specialist genetic laboratories."
+        },
+        {
+          "name": "Muscle biopsy with electron transport chain enzyme assays",
+          "type": "gold_standard",
+          "description": "Tissue taken from the quadriceps or another affected muscle is examined histologically (for ragged red fibres, COX-negative fibres) and biochemically (for Complex I\u2013V enzyme activity). Remains the most definitive test for primary mitochondrial myopathy.",
+          "availability": "Performed at specialist neuromuscular centres. Requires referral to a neurologist or metabolic specialist with mitochondrial expertise."
+        },
+        {
+          "name": "Cardiopulmonary exercise testing (CPET), single and two-day",
+          "type": "emerging",
+          "description": "Measures oxygen uptake, anaerobic threshold, and other metabolic parameters during graded exercise. In ME/CFS and secondary dysfunction, a second CPET 24 hours after the first often reveals abnormal drops in anaerobic threshold and peak VO2, not seen in deconditioning alone.",
+          "availability": "Available at some specialist ME/CFS clinics and exercise physiology units. Less commonly offered in routine practice. Requires referral to a specialist familiar with the two-day protocol."
+        },
+        {
+          "name": "Plasma CoQ10 level",
+          "type": "standard",
+          "description": "Measures circulating coenzyme Q10, an essential electron carrier in the mitochondrial electron transport chain. Low levels are found in some primary and secondary mitochondrial disorders, and in statin users.",
+          "availability": "Available through some NHS specialist services, and through private/functional medicine laboratories."
+        },
+        {
+          "name": "Brain MRI with spectroscopy",
+          "type": "standard",
+          "description": "MRI can reveal stroke-like lesions in MELAS and other primary mitochondrial diseases. MR spectroscopy can detect elevated lactate peaks in affected brain regions.",
+          "availability": "Ordered by neurologists. Available at most major hospitals. Spectroscopy sequences require specific protocols and may need to be requested explicitly."
+        },
+        {
+          "name": "Metabolomics / comprehensive metabolic profiling",
+          "type": "emerging",
+          "description": "Broad-spectrum profiling of hundreds of metabolites in blood or urine can reveal patterns consistent with mitochondrial dysfunction, including disruptions across Krebs cycle, fatty acid oxidation, and amino acid metabolism pathways.",
+          "availability": "Primarily a research tool but increasingly available through specialist functional medicine practitioners and private laboratories such as Metabolon or Genova."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "me_cfs",
+        "name": "ME/CFS",
+        "relationship": "mechanistic_link",
+        "explanation": "Secondary mitochondrial dysfunction is one of the most actively studied mechanisms in ME/CFS, with evidence of impaired ATP production, abnormal Complex I activity, and post-exertional energy failure. Many researchers consider it a central feature rather than an incidental finding."
+      },
+      {
+        "id": "long_covid",
+        "name": "Long COVID",
+        "relationship": "mechanistic_link",
+        "explanation": "SARS-CoV-2 infection may directly impair mitochondrial function through viral interference, persistent inflammation, and endothelial damage, producing fatigue, cognitive dysfunction, and exercise intolerance that closely overlap with ME/CFS and mitochondrial dysfunction patterns."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "mechanistic_link",
+        "explanation": "Reduced mitochondrial density and impaired energy metabolism have been documented in muscle tissue from people with fibromyalgia, potentially contributing to pain amplification and fatigue."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "comorbid",
+        "explanation": "Autonomic dysfunction frequently co-occurs with mitochondrial disease and secondary dysfunction, possibly because autonomic neurons are highly energy-dependent. POTS is commonly reported alongside ME/CFS and mitochondrial presentations."
+      },
+      {
+        "id": "mthfr",
+        "name": "MTHFR / methylation variants",
+        "relationship": "mechanistic_link",
+        "explanation": "MTHFR variants impair folate and methylation pathways that are necessary for mitochondrial DNA synthesis and repair, CoQ10 production, and glutathione recycling, all of which affect mitochondrial health."
+      },
+      {
+        "id": "heavy_metals",
+        "name": "Heavy metal toxicity",
+        "relationship": "upstream",
+        "explanation": "Mercury, lead, arsenic, and cadmium are known mitochondrial toxins that can impair electron transport chain complexes and increase oxidative stress, potentially driving secondary mitochondrial dysfunction."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "mechanistic_link",
+        "explanation": "Thyroid hormones directly regulate mitochondrial biogenesis and oxygen consumption. Hypothyroidism reduces mitochondrial number and function; hyperthyroidism can cause mitochondrial uncoupling. Both directions can produce symptoms that overlap with primary mitochondrial dysfunction."
+      },
+      {
+        "id": "hypothyroidism",
+        "name": "Hypothyroidism",
+        "relationship": "often_confused",
+        "explanation": "Hypothyroidism produces fatigue, muscle weakness, cognitive impairment, and cold intolerance that closely mimic mitochondrial dysfunction. Both should be tested when these symptoms co-exist."
+      },
+      {
+        "id": "iron_deficiency",
+        "name": "Iron deficiency",
+        "relationship": "upstream",
+        "explanation": "Iron is essential for haem-containing components of the electron transport chain (Complexes I, II, III, and IV). Iron deficiency impairs mitochondrial function and oxygen utilisation, compounding fatigue and exercise intolerance."
+      },
+      {
+        "id": "b12_deficiency",
+        "name": "Vitamin B12 deficiency",
+        "relationship": "upstream",
+        "explanation": "B12 is required for methylation reactions that support mitochondrial DNA synthesis and energy metabolism. Deficiency can impair mitochondrial function and neurological health."
+      },
+      {
+        "id": "vitamin_d_deficiency",
+        "name": "Vitamin D deficiency",
+        "relationship": "upstream",
+        "explanation": "Vitamin D receptors are present in mitochondria, and vitamin D plays a role in regulating mitochondrial biogenesis and oxidative stress responses. Deficiency is common in people with fatigue-dominant presentations."
+      },
+      {
+        "id": "insulin_resistance",
+        "name": "Insulin resistance",
+        "relationship": "mechanistic_link",
+        "explanation": "Mitochondrial dysfunction in skeletal muscle and liver is both a cause and consequence of insulin resistance. Reduced mitochondrial fatty acid oxidation contributes to ectopic lipid accumulation and metabolic dysfunction."
+      },
+      {
+        "id": "mold_cirs",
+        "name": "Mold illness / CIRS",
+        "relationship": "upstream",
+        "explanation": "Mycotoxins produced by certain moulds are potent mitochondrial toxins that inhibit electron transport chain complexes, increase oxidative stress, and impair ATP synthesis. CIRS presentations often include profound fatigue consistent with secondary mitochondrial dysfunction."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "mechanistic_link",
+        "explanation": "Gut microbial metabolites can modulate mitochondrial function systemically. Dysbiosis may increase endotoxin load and systemic inflammation, contributing to mitochondrial stress and impaired energy production."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor sleep / insomnia",
+        "relationship": "comorbid",
+        "explanation": "Sleep is critical for mitochondrial repair and clearance of damaged mitochondria (mitophagy). Chronic sleep disruption impairs mitochondrial function, and mitochondrial dysfunction can worsen sleep quality \u2014 a bidirectional relationship."
+      },
+      {
+        "id": "chronic_stress",
+        "name": "Chronic stress / HPA overload",
+        "relationship": "upstream",
+        "explanation": "Sustained cortisol elevation and oxidative stress from chronic psychological or physiological stress can impair mitochondrial membrane integrity and electron transport chain activity."
+      },
+      {
+        "id": "medication",
+        "name": "Medication side effect",
+        "relationship": "upstream",
+        "explanation": "Statins, nucleoside antiretrovirals, metformin, tetracyclines, and certain antifungals are known to impair mitochondrial function. Symptom onset coinciding with a new medication warrants investigation."
+      },
+      {
+        "id": "migraine",
+        "name": "Migraine",
+        "relationship": "mechanistic_link",
+        "explanation": "Mitochondrial dysfunction is well-documented in migraine, particularly in familial hemiplegic migraine and as a feature of MELAS. Neuronal energy insufficiency is thought to lower the threshold for cortical spreading depression."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / HSD",
+        "relationship": "comorbid",
+        "explanation": "Fatigue and post-exertional malaise in hEDS may be partly driven by mitochondrial dysfunction; the conditions co-occur more frequently than expected by chance and share autonomic and energy-related features."
+      },
+      {
+        "id": "leaky_gut",
+        "name": "Leaky gut",
+        "relationship": "mechanistic_link",
+        "explanation": "Increased intestinal permeability allows endotoxins (LPS) to enter circulation, triggering systemic inflammation that can impair mitochondrial function. Mitochondrial dysfunction in gut epithelial cells may in turn worsen barrier integrity."
+      },
+      {
+        "id": "oxalate",
+        "name": "Oxalate accumulation",
+        "relationship": "mechanistic_link",
+        "explanation": "Oxalates, when accumulated in mitochondria, can inhibit ATP synthase and other mitochondrial enzymes, directly impairing energy production. This is particularly relevant when gut dysbiosis or dietary oxalate load is high."
+      },
+      {
+        "id": "cortisol_dysreg",
+        "name": "Cortisol dysregulation",
+        "relationship": "comorbid",
+        "explanation": "HPA axis dysregulation, often seen alongside chronic fatigue conditions, interacts bidirectionally with mitochondrial health. Both low and high cortisol states can impair mitochondrial function."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Coenzyme Q10 (CoQ10 / ubiquinol) supplementation",
+          "category": "supplement",
+          "description": "CoQ10 is an essential electron carrier in the mitochondrial electron transport chain. The reduced, active form (ubiquinol) may be better absorbed in people with impaired conversion. Clinical trials in primary mitochondrial disease and statin-induced myopathy suggest modest benefit; evidence in secondary dysfunction is growing.",
+          "evidence_level": "moderate",
+          "notes": "Doses used in research range from 300mg to 1200mg/day. Individual response varies. High-dose supplementation should ideally be guided by a practitioner familiar with mitochondrial nutrition. Statin users may have particularly depleted CoQ10."
+        },
+        {
+          "name": "B-vitamin support (B1, B2, B3, B12, folate)",
+          "category": "supplement",
+          "description": "B vitamins function as cofactors for mitochondrial enzyme complexes. Riboflavin (B2) is particularly important for Complex I and Complex II function. B1 (thiamine) is critical for pyruvate dehydrogenase. B3 (niacin/nicotinamide riboside) supports NAD+ production, essential for the electron transport chain.",
+          "evidence_level": "moderate",
+          "notes": "Riboflavin-responsive Complex I deficiency is a well-established clinical entity. NAD+ precursors (NR, NMN) are an area of active research in secondary mitochondrial dysfunction and ageing. Testing for specific deficiencies is preferable to blanket supplementation."
+        },
+        {
+          "name": "L-carnitine and acetyl-L-carnitine",
+          "category": "supplement",
+          "description": "Carnitine is essential for transporting long-chain fatty acids into mitochondria for beta-oxidation. Supplementation may help individuals with primary or secondary carnitine deficiency, and in those with secondary dysfunction.",
+          "evidence_level": "moderate",
+          "notes": "Most beneficial where carnitine deficiency has been confirmed. Some individuals experience increased energy; others notice little effect. Acetyl-L-carnitine may have additional neuroprotective properties."
+        },
+        {
+          "name": "Alpha-lipoic acid (ALA)",
+          "category": "supplement",
+          "description": "A powerful antioxidant and mitochondrial cofactor that can regenerate other antioxidants (vitamins C and E, glutathione) and acts as a cofactor for pyruvate dehydrogenase and alpha-ketoglutarate dehydrogenase.",
+          "evidence_level": "moderate",
+          "notes": "May lower blood glucose; relevant in those with insulin resistance. Doses above 600mg/day require monitoring. Evidence in primary mitochondrial disease is limited; used more widely in secondary dysfunction."
+        },
+        {
+          "name": "Pacing and energy envelope management",
+          "category": "lifestyle",
+          "description": "Staying within one's available energy envelope \u2014 avoiding the boom-bust cycle of over-exertion followed by crashes \u2014 is the most consistently supported self-management strategy for those with energy-limiting mitochondrial dysfunction, particularly in ME/CFS-overlap presentations. Heart rate monitoring can help define safe exertion limits (often keeping heart rate below anaerobic threshold).",
+          "evidence_level": "moderate",
+          "notes": "Particularly critical in those with post-exertional malaise. Graded exercise therapy (GET) as traditionally applied in ME/CFS can worsen outcomes in this group and should be approached with caution."
+        },
+        {
+          "name": "Anti-inflammatory and antioxidant diet",
+          "category": "diet",
+          "description": "Diets high in phytonutrients, polyphenols, omega-3 fatty acids, and low in ultra-processed foods may reduce oxidative stress and support mitochondrial membrane integrity. A Mediterranean-style diet is the most evidence-based framework for this goal.",
+          "evidence_level": "moderate",
+          "notes": "No single 'mitochondrial diet' has been validated in RCTs, but reducing chronic inflammation and oxidative burden is mechanistically sound. Individual food sensitivities may also need addressing."
+        },
+        {
+          "name": "Ketogenic or low-carbohydrate diet",
+          "category": "diet",
+          "description": "Ketone bodies (produced during carbohydrate restriction) can bypass impaired steps in glucose oxidation and fuel ATP production via alternative pathways. Used in some primary mitochondrial diseases, particularly those affecting Complex I, with clinical benefit in some cases.",
+          "evidence_level": "anecdotal",
+          "notes": "Not appropriate for all mitochondrial subtypes (e.g. some fatty acid oxidation defects require carbohydrate for energy). Should be supervised by a dietitian familiar with metabolic conditions. Evidence in secondary dysfunction is limited."
+        },
+        {
+          "name": "Magnesium supplementation",
+          "category": "supplement",
+          "description": "Magnesium is a cofactor for over 300 enzymatic reactions including ATP synthesis (ATP exists primarily as Mg-ATP). Deficiency is common and may impair mitochondrial function. Magnesium glycinate or malate are generally well tolerated forms.",
+          "evidence_level": "moderate",
+          "notes": "Serum magnesium is a poor measure of cellular status; red blood cell magnesium is more informative. Common deficiency in Western diets."
+        },
+        {
+          "name": "Improving sleep quality",
+          "category": "lifestyle",
+          "description": "Sleep is the primary period for mitochondrial repair, clearance of damaged organelles (mitophagy), and cellular restoration. Prioritising sleep duration, consistency, and quality may have outsized benefits for mitochondrial health.",
+          "evidence_level": "moderate",
+          "notes": "Treating co-existing sleep apnoea, addressing sleep hygiene, and reducing light exposure in the evening can all improve sleep quality. Sleep disorders are common in mitochondrial disease."
+        },
+        {
+          "name": "Reducing toxic exposures",
+          "category": "environment",
+          "description": "Identifying and reducing exposure to known mitochondrial toxins \u2014 including heavy metals, pesticides, mycotoxins, and certain medications \u2014 may be a meaningful lever in secondary dysfunction. Environmental toxin testing and home air quality assessment may be relevant.",
+          "evidence_level": "moderate",
+          "notes": "Assessment of toxic burden is best done with clinical oversight. Aggressive detoxification protocols without adequate professional guidance can mobilise toxins and worsen symptoms."
+        },
+        {
+          "name": "NAD+ precursor supplementation (NR, NMN)",
+          "category": "supplement",
+          "description": "Nicotinamide riboside (NR) and nicotinamide mononucleotide (NMN) are precursors to NAD+, which is essential for the electron transport chain and cellular energy production. Research in ageing and mitochondrial dysfunction is rapidly expanding.",
+          "evidence_level": "moderate",
+          "notes": "Human trials are promising but not yet definitive for most clinical applications. Some individuals with ME/CFS report benefit. Not all respond equally. Long-term safety data at high doses is still accumulating."
+        }
+      ],
+      "things_to_avoid": [
+        "Pushing through post-exertional crashes \u2014 this can deplete mitochondrial reserves further and worsen baseline function over time, particularly in ME/CFS-overlap presentations",
+        "Statins without CoQ10 monitoring in those already experiencing muscle-related symptoms or fatigue \u2014 statins inhibit the mevalonate pathway and reduce endogenous CoQ10 synthesis",
+        "High-dose iron supplementation without confirmed deficiency \u2014 excess iron generates hydroxyl radicals that cause mitochondrial oxidative damage",
+        "Prolonged fasting or severe caloric restriction without specialist guidance \u2014 mitochondria require adequate substrate availability, and extreme restriction can worsen energy production",
+        "Alcohol \u2014 ethanol directly impairs Complex I activity, disrupts mitochondrial membrane potential, and increases oxidative stress",
+        "Excessive aerobic exercise beyond the anaerobic threshold in those with mitochondrial myopathy or ME/CFS overlap \u2014 this accelerates energy failure and may cause lasting symptom worsening",
+        "Ignoring co-existing conditions (hypothyroidism, iron deficiency, sleep apnoea) that independently impair mitochondrial function and are treatable",
+        "Assuming all fatigue is 'deconditioning' \u2014 in mitochondrial dysfunction, conventional graded exercise therapy without metabolic assessment can worsen rather than improve function"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "Most mainstream doctors have little training in mitochondrial medicine beyond rare paediatric syndromes, and secondary mitochondrial dysfunction is almost never investigated in standard clinical care for fatigue or multi-system illness.",
+        "why_resisted": "People hope their GP or general specialist will connect the dots. Receiving a 'normal' workup can create false reassurance that nothing is wrong, when in fact the right tests were never ordered.",
+        "path_forward": "Those who reach a useful diagnosis typically do so by seeking out metabolic neurologists, specialist mitochondrial clinics, or functional medicine practitioners who routinely order organic acids, lactate-to-pyruvate ratios, and genetic panels. Finding the right practitioner type matters more than getting more tests from the wrong one."
+      },
+      {
+        "truth": "There is currently no cure for primary mitochondrial disease, and no intervention has been proven to reverse established mitochondrial DNA mutations. Management is supportive and symptomatic.",
+        "why_resisted": "The supplement and functional medicine industry offers many products marketed as 'repairing' mitochondria, creating an impression that full reversal is achievable with the right protocol. This hope is understandable but can lead to expensive and ineffective spending.",
+        "path_forward": "Individuals who accept this reality and focus on reducing energy demand, managing symptoms methodically, and reducing modifiable upstream drivers (toxins, inflammation, nutrient deficiencies) often achieve meaningful, stable improvements in function \u2014 not a cure, but a sustainable improvement in quality of life."
+      },
+      {
+        "truth": "Post-exertional malaise in mitochondrial and ME/CFS-overlap presentations is a physiological phenomenon, not a psychological one, and pushing through it causes measurable harm \u2014 not adaptation.",
+        "why_resisted": "The 'no pain, no gain' paradigm is deeply embedded in both medical culture and public expectation. Many people are told their fatigue is deconditioning and that exercise will fix it. Clinicians who have not encountered two-day CPET data or repeat-exercise research often default to this framing.",
+        "path_forward": "People who learn to use heart rate monitors to stay below their anaerobic threshold, and who adopt structured pacing, often stabilise and avoid the progressive deterioration that follows repeated exertional crashes. Functional gains become possible once the cycle of boom-bust is broken."
+      },
+      {
+        "truth": "Fatigue and multi-system symptoms caused by mitochondrial dysfunction can be substantially worsened by co-existing, treatable conditions \u2014 and those conditions are often missed because clinicians stop investigating once they find 'something'.",
+        "why_resisted": "Both patients and clinicians often assume a single diagnosis explains everything. The reality of multi-system illness with overlapping drivers is complex and requires continued investigation even after a partial diagnosis is made.",
+        "path_forward": "Systematically testing for and treating co-existing conditions \u2014 hypothyroidism, iron deficiency, sleep apnoea, vitamin D deficiency, dysbiosis \u2014 on top of addressing mitochondrial health often produces substantially better outcomes than treating any single element in isolation."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Structured pacing using heart rate monitoring",
+          "why_it_matters": "Staying below the anaerobic threshold prevents the lactic acid accumulation and energy debt that follows exertion beyond mitochondrial capacity. This is the single most effective tool for reducing crashes and stabilising function in energy-limited presentations.",
+          "how_to_start": "Calculate a target heart rate ceiling (often estimated as 220 minus age, multiplied by 0.6, as a conservative starting point, or use actual anaerobic threshold data from CPET if available). Use a continuous heart rate monitor during all activities including daily tasks. Reduce or stop when approaching the ceiling.",
+          "timeline": "Stabilisation of crash frequency often occurs within 4\u20138 weeks of consistent pacing; functional improvements may take 3\u20136 months or longer",
+          "requires_professional": false
+        },
+        {
+          "lever": "Identifying and correcting nutrient deficiencies",
+          "why_it_matters": "CoQ10, B vitamins, magnesium, iron, vitamin D, and carnitine are all directly required for mitochondrial ATP production. Even subclinical deficiencies in multiple cofactors can substantially impair energy output.",
+          "how_to_start": "Request a comprehensive panel including ferritin, serum iron, vitamin D, B12, folate, red blood cell magnesium, and CoQ10 if available. Address confirmed deficiencies with appropriate supplementation under clinical guidance.",
+          "timeline": "Correction of nutritional deficiencies typically produces noticeable improvement within 6\u201312 weeks for most nutrients",
+          "requires_professional": true
+        },
+        {
+          "lever": "Removing or reducing mitochondrial toxins",
+          "why_it_matters": "Ongoing toxic burden from heavy metals, mycotoxins, or mitochondria-impairing medications creates a ceiling on how much mitochondrial function can recover regardless of other interventions.",
+          "how_to_start": "Review current medications with a knowledgeable practitioner for mitochondrial impact. Assess environment for mould. Consider heavy metal testing through urine or hair mineral analysis if exposure history is relevant.",
+          "timeline": "Depends heavily on the specific toxin and duration of exposure; months to years for significant improvement in heavy metal burden",
+          "requires_professional": true
+        },
+        {
+          "lever": "Optimising sleep architecture",
+          "why_it_matters": "Mitochondrial repair, clearance of damaged organelles, and cellular restoration occur primarily during sleep, particularly during slow-wave sleep. Chronic sleep impairment prevents this repair cycle and creates a progressive mitochondrial deficit.",
+          "how_to_start": "Address the most impactful sleep disruptors first \u2014 consistent sleep/wake times, darkness, and screening for sleep apnoea with overnight pulse oximetry or formal sleep study if snoring or non-restorative sleep is present.",
+          "timeline": "Sleep quality improvements can occur within 2\u20134 weeks; mitochondrial benefits accumulate over months",
+          "requires_professional": false
+        },
+        {
+          "lever": "Reducing systemic inflammation",
+          "why_it_matters": "Chronic low-grade inflammation (from gut dysbiosis, food sensitivities, infections, or autoimmune activity) generates reactive oxygen species that damage mitochondrial membranes and DNA. Reducing inflammatory load may allow mitochondrial function to partially recover.",
+          "how_to_start": "Adopt an anti-inflammatory dietary pattern (Mediterranean-style; reduce ultra-processed foods, refined sugars, and vegetable seed oils). Investigate and treat active gut dysbiosis or SIBO if suspected. Address identifiable inflammatory triggers.",
+          "timeline": "Dietary inflammation reduction may produce symptom improvements within 4\u20138 weeks; addressing underlying dysbiosis or infections takes longer",
+          "requires_professional": false
+        },
+        {
+          "lever": "Specialist diagnosis and genetic characterisation (primary disease)",
+          "why_it_matters": "For those with primary mitochondrial disease, accurate genetic diagnosis determines inheritance patterns, guides family screening, informs specific supplementation protocols (e.g. riboflavin for Complex I deficiency), and avoids contraindicated treatments.",
+          "how_to_start": "Seek referral to a metabolic neurologist or specialist mitochondrial clinic. In the UK, the NHS Highly Specialised Service for Rare Mitochondrial Disorders at Newcastle or London is the appropriate route. In the US, academic medical centres with mitochondrial disease programmes are the starting point.",
+          "timeline": "Genetic workup may take 3\u201312 months; specific interventions can sometimes begin based on biochemical findings before genetic results",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Starting multiple supplements simultaneously without baseline testing \u2014 it becomes impossible to attribute benefit or harm to any specific intervention, and some combinations may be counterproductive",
+        "Equating all fatigue-related improvement with mitochondrial improvement \u2014 treating co-existing hypothyroidism or iron deficiency may account for the entire improvement, leaving true mitochondrial dysfunction still unaddressed",
+        "Pursuing expensive proprietary 'mitochondrial protocols' without first addressing free or low-cost fundamentals such as sleep, pacing, nutrient deficiencies, and toxin reduction",
+        "Treating ME/CFS-overlap presentations with graded exercise therapy without CPET data \u2014 this approach can cause significant and lasting deterioration in those with genuine post-exertional energy impairment",
+        "Assuming normal standard blood tests rule out mitochondrial dysfunction \u2014 standard panels do not include lactate-pyruvate ratios, organic acids, CoQ10, or genetic testing, and a normal CBC/CMP does not exclude meaningful mitochondrial impairment",
+        "Stopping symptom management investigation once a partial diagnosis is found \u2014 overlapping conditions (e.g. mould illness, POTS, thyroid dysfunction) commonly co-exist and each requires attention"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Metabolic neurologist with mitochondrial expertise",
+          "role": "The most important specialist for suspected primary mitochondrial disease; coordinates genetic testing, muscle biopsy, neurological assessment, and specialist supplementation protocols.",
+          "notes": "Rare specialists; concentrated at major academic medical centres. In the UK, NHS Highly Specialised Services for Rare Mitochondrial Disorders (Newcastle upon Tyne Hospitals NHS Foundation Trust, and UCLH London) are the primary routes. In the US, centres such as the Columbia University Mitochondrial Disease Program or Cleveland Clinic are well regarded."
+        },
+        {
+          "type": "Functional medicine physician",
+          "role": "More likely to investigate secondary mitochondrial dysfunction through organic acids, CoQ10 levels, heavy metal testing, and comprehensive nutrient panels that mainstream practitioners rarely order. Can coordinate multi-system investigations.",
+          "notes": "Quality varies significantly between practitioners. Look for physicians with specific training in mitochondrial medicine or metabolic conditions, ideally with experience in ME/CFS or complex chronic illness."
+        },
+        {
+          "type": "Clinical geneticist / metabolic geneticist",
+          "role": "Interprets complex genetic results, coordinates family testing, and provides genetic counselling when primary mitochondrial disease is confirmed or suspected.",
+          "notes": "Essential when genetic testing reveals a potentially pathogenic variant; can guide interpretation of variants of uncertain significance (VUS)."
+        },
+        {
+          "type": "ME/CFS specialist or complex chronic illness clinic",
+          "role": "For those whose presentation is dominated by post-exertional malaise, fatigue, and cognitive impairment, ME/CFS specialists are most familiar with pacing protocols, two-day CPET testing, and the secondary mitochondrial dysfunction literature.",
+          "notes": "Mainstream fatigue clinics that promote graded exercise therapy without metabolic assessment may not be helpful and can worsen some presentations. Seek practitioners familiar with the post-exertional malaise model."
+        },
+        {
+          "type": "Integrative registered dietitian (metabolic/mitochondrial nutrition)",
+          "role": "Can provide evidence-based dietary guidance for mitochondrial support, ketogenic diet supervision when relevant, and targeted supplementation planning aligned with test results.",
+          "notes": "Look for dietitians with training in metabolic conditions or inborn errors of metabolism for primary disease; for secondary dysfunction, those with functional nutrition or complex chronic illness backgrounds are most useful."
+        },
+        {
+          "type": "Paediatric metabolic specialist",
+          "role": "For children with suspected mitochondrial disease, paediatric metabolic specialists are often the first and most appropriate point of contact, and are more likely to be familiar with the range of presenting phenotypes.",
+          "notes": "Many adult patients with primary disease were not diagnosed in childhood; adult metabolic neurologists are required for adult presentations."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "United Mitochondrial Disease Foundation (UMDF)",
+          "platform": "Website / patient community",
+          "url": "https://www.umdf.org",
+          "notes": "The primary US patient advocacy organisation for primary mitochondrial disease. Provides educational resources, clinician directories, research updates, and community connection. Hosts the annual Mitochondrial Medicine Symposium."
+        },
+        {
+          "name": "Lily Foundation",
+          "platform": "Website / patient community",
+          "url": "https://www.thelilyfoundation.org.uk",
+          "notes": "UK-based charity focused on mitochondrial disease. Provides patient support, research funding, and signposting to NHS specialist services. Particularly helpful for newly diagnosed UK families."
+        },
+        {
+          "name": "r/Mitochondrial",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Mitochondrial/",
+          "notes": "Small community for those with mitochondrial disease. Useful for lived experience, navigating specialist referrals, and discussing emerging research."
+        },
+        {
+          "name": "r/cfs (ME/CFS community)",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/cfs/",
+          "notes": "Large, active community where mitochondrial dysfunction in the context of ME/CFS and Long COVID is frequently discussed. Highly useful for practical pacing strategies, research updates, and specialist recommendations."
+        },
+        {
+          "name": "Mitochondrial Disease Action Committee (MitoAction)",
+          "platform": "Website / patient support",
+          "url": "https://www.mitoaction.org",
+          "notes": "US-based organisation providing patient education, support groups, and resources for both primary mitochondrial disease and secondary dysfunction presentations."
+        },
+        {
+          "name": "ME Association / Phoenix Rising forums",
+          "platform": "Forum / website",
+          "url": "https://forums.phoenixrising.me",
+          "notes": "Phoenix Rising is one of the most research-literate patient communities for ME/CFS and related conditions. Mitochondrial dysfunction is a frequently discussed topic with detailed threads on testing, supplements, and clinical research."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Mitochondrial Disease \u2014 United Mitochondrial Disease Foundation",
+        "type": "website",
+        "author_or_source": "UMDF",
+        "url": "https://www.umdf.org/mitochondrial-disease/",
+        "description": "Comprehensive, patient-accessible overview of mitochondrial diseases, including types, symptoms, diagnosis, and treatment options. Regularly updated to reflect current clinical knowledge.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Mitochondria and the Future of Medicine",
+        "type": "book",
+        "author_or_source": "Dr Lee Know",
+        "url": null,
+        "description": "A well-researched and accessible book covering mitochondrial biology, the role of CoQ10 and other nutrients, and the role of mitochondria in chronic disease. Suitable for motivated lay readers without a science background.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "The Wahls Protocol",
+        "type": "book",
+        "author_or_source": "Dr Terry Wahls",
+        "url": null,
+        "description": "Dr Wahls developed a nutrition-based approach to managing her own progressive MS, grounded in mitochondrial and cellular health. While focused on autoimmune/neurological disease, the mitochondrial principles are broadly applicable and the book explains the science clearly.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Mitochondria in Health and Disease \u2014 Nature Reviews",
+        "type": "research paper",
+        "author_or_source": "Various \u2014 Nature Reviews Molecular Cell Biology",
+        "url": "https://www.nature.com/articles/nrm.2016.8",
+        "description": "A detailed academic review of mitochondrial biology, dysfunction, and its role in ageing and disease. Best suited to readers with a science or medical background.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Two-day CPET Testing in ME/CFS \u2014 Workwell Foundation",
+        "type": "website",
+        "author_or_source": "Workwell Foundation",
+        "url": "https://workwellfoundation.org",
+        "description": "The Workwell Foundation has led research into the use of cardiopulmonary exercise testing (CPET) to document post-exertional energy impairment in ME/CFS, a key mechanism related to secondary mitochondrial dysfunction. Their publications and patient resources explain the science in accessible terms.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Molecular Mechanisms of Mitochondrial Disease",
+        "type": "research paper",
+        "author_or_source": "Gorman et al., Science, 2016",
+        "url": "https://www.science.org/doi/10.1126/science.aac4921",
+        "description": "A landmark review of the molecular basis of primary mitochondrial disease, covering genetics, pathophysiology, diagnosis, and emerging therapies. Authoritative reference for clinicians and informed patients.",
+        "audience": "advanced"
+      },
+      {
+        "title": "MitoAction Patient Education Webinars",
+        "type": "video",
+        "author_or_source": "MitoAction",
+        "url": "https://www.mitoaction.org/resources/webinars/",
+        "description": "Free recorded webinars covering a wide range of topics including diagnosis, symptom management, supplements, and navigating the healthcare system. Presented by clinicians and researchers in accessible language.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Energy and the Epigenome \u2014 Rhonda Patrick interviews on mitochondria",
+        "type": "podcast",
+        "author_or_source": "FoundMyFitness (Dr Rhonda Patrick)",
+        "url": "https://www.foundmyfitness.com",
+        "description": "Several in-depth podcast episodes explore mitochondrial biology, the role of NAD+, heat and cold exposure, and emerging research. Rigorous and evidence-referenced, with transcripts available.",
+        "audience": "intermediate"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

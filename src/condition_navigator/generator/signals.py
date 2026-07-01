@@ -1,8 +1,12 @@
 """
-Horizontal relevance-signal generator.
+Horizontal relevance-signal generator for starting points.
 
-Generates parent-scoped distinguishing signals for all sub-conditions in one
-API call, so the model can calibrate each signal against its peers.
+Generates per-starting-point distinguishing signals for all sub-conditions in
+one API call, so the model can calibrate each signal against its peers.
+
+Output is written as a separate `StartingPointData` file at
+`data/generated/starting_points/<sp_id>.json`, so signals never mingle with
+Condition data.
 """
 
 import hashlib
@@ -14,7 +18,13 @@ import anthropic
 import yaml
 from dotenv import load_dotenv
 
-from condition_navigator.models import Condition, ConditionData, SectionMeta, model_family_rank
+from condition_navigator.models import (
+    Condition,
+    SectionMeta,
+    StartingPoint,
+    StartingPointData,
+    model_family_rank,
+)
 
 load_dotenv()
 
@@ -30,19 +40,19 @@ def _prompt_hash(system: str, user_template: str, sub_condition_ids: list[str]) 
 
 
 def generate_signals(
-    parent: Condition,
+    starting_point: StartingPoint,
     sub_conditions: list[Condition],
     model: str = DEFAULT_MODEL,
-    existing: ConditionData | None = None,
+    existing: StartingPointData | None = None,
     force: bool = False,
-) -> ConditionData:
-    """Generate parent-scoped relevance signals for all sub-conditions in one API call.
+) -> StartingPointData:
+    """Generate parent-scoped relevance signals for a starting point's sub-conditions.
 
     Returns existing unchanged when the prompt hash and model family match.
     """
     if not sub_conditions:
         print("  No sub-conditions — nothing to generate.")
-        return existing or ConditionData(condition_id=parent.id, condition_name=parent.name)
+        return existing or StartingPointData(starting_point_id=starting_point.id)
 
     spec = yaml.safe_load(SIGNALS_PROMPT_FILE.read_text())
     system: str = spec["system"]
@@ -67,7 +77,7 @@ def generate_signals(
     )
     user = (
         user_template
-        .replace("{{parent_name}}", parent.name)
+        .replace("{{parent_name}}", starting_point.label)
         .replace("{{conditions_json}}", conditions_json)
     )
 
@@ -91,7 +101,7 @@ def generate_signals(
     data = (
         existing.model_copy(deep=True)
         if existing
-        else ConditionData(condition_id=parent.id, condition_name=parent.name)
+        else StartingPointData(starting_point_id=starting_point.id)
     )
     data.model = model
     data.sections[SECTION_KEY] = signals

@@ -22,47 +22,6 @@ conditions:
     full_label: Irritable bowel syndrome (IBS)
     group: starting_points
     diagnosis_type: syndromic
-    sub_conditions:
-      - { id: lactase,               probability: 5 }
-      - { id: fructose,              probability: 5 }
-      - { id: sibo,                  probability: 5 }
-      - { id: dysbiosis,             probability: 5 }
-      - { id: central_sensitisation, probability: 5 }
-      - { id: anxiety,               probability: 5 }
-      - { id: depression,            probability: 5 }
-      - { id: sorbitol,              probability: 4 }
-      - { id: sibo_h2,               probability: 4 }
-      - { id: histamine,             probability: 4 }
-      - { id: ncgs,                  probability: 4 }
-      - { id: trauma,                probability: 4 }
-      - { id: sibo_ch4,              probability: 3 }
-      - { id: hpylori,               probability: 3 }
-      - { id: fungal,                probability: 3 }
-      - { id: mcas,                  probability: 3 }
-      - { id: igg,                   probability: 3 }
-      - { id: salicylate,            probability: 3 }
-      - { id: thyroid,               probability: 3 }
-      - { id: coeliac,               probability: 3 }
-      - { id: sid,                   probability: 2 }
-      - { id: bam,                   probability: 2 }
-      - { id: epi,                   probability: 2 }
-      - { id: sibo_h2s,              probability: 2 }
-      - { id: nickel,                probability: 2 }
-      - { id: oxalate,               probability: 2 }
-      - { id: eosinophilic,          probability: 2 }
-      - { id: eds,                   probability: 2 }
-      - { id: pots,                  probability: 2 }
-      - { id: endometriosis,         probability: 2 }
-      - { id: hormonal,              probability: 2 }
-      - { id: pelvic_floor,          probability: 2 }
-      - { id: microscopic_colitis,   probability: 2 }
-      - { id: ibd_remission,         probability: 2 }
-      - { id: parasite,              probability: 1 }
-      - { id: atopic_dermatitis,     probability: 1 }
-      - { id: gastroparesis,         probability: 1 }
-      - { id: adhesions,             probability: 1 }
-      - { id: fibromyalgia,          probability: 1 }
-      - { id: functional_dyspepsia,  probability: 1 }
 
   - id: lactase
     label: Lactase deficiency
@@ -138,10 +97,22 @@ conditions:
     aliases: [SIFO, Candida overgrowth]
     diagnosis_type: pathophysiological
 
+  - id: mastocytosis
+    label: Mastocytosis
+    group: immune
+    aliases: [systemic mastocytosis, cutaneous mastocytosis]
+    diagnosis_type: aetiological
+
   - id: mcas
     label: Mast cell activation syndrome
     group: immune
     aliases: [MCAS]
+    diagnosis_type: pathophysiological
+
+  - id: mcas_angioedema
+    label: MCAS with angioedema
+    group: immune
+    aliases: [MCAS-angioedema, idiopathic angioedema]
     diagnosis_type: pathophysiological
 
   - id: histamine
@@ -173,6 +144,12 @@ conditions:
 
   - id: salicylate
     label: Salicylate intolerance
+    group: immune
+    diagnosis_type: pathophysiological
+
+  - id: leaky_gut
+    label: Leaky gut
+    aliases: [intestinal permeability, intestinal hyperpermeability]
     group: immune
     diagnosis_type: pathophysiological
 
@@ -305,6 +282,231 @@ conditions:
     group: masqueraders
     aliases: [IBD, Crohn's disease, ulcerative colitis]
     full_label: Inflammatory bowel disease in remission (IBD)
+    diagnosis_type: masquerader
+
+  # ---- Nutritional & metabolic (via `enzyme` group) ----
+
+  - id: iron_deficiency
+    label: Iron deficiency
+    aliases: [anaemia, anemia, ferritin deficiency]
+    group: enzyme
+    diagnosis_type: pathophysiological
+
+  - id: b12_deficiency
+    label: Vitamin B12 deficiency
+    aliases: [cobalamin deficiency]
+    group: enzyme
+    diagnosis_type: pathophysiological
+
+  - id: vitamin_d_deficiency
+    label: Vitamin D deficiency
+    group: enzyme
+    diagnosis_type: pathophysiological
+
+  - id: reactive_hypoglycemia
+    label: Reactive hypoglycemia
+    aliases: [postprandial hypoglycemia]
+    group: enzyme
+    diagnosis_type: pathophysiological
+
+  - id: insulin_resistance
+    label: Insulin resistance
+    aliases: [pre-diabetes, metabolic syndrome]
+    group: enzyme
+    diagnosis_type: pathophysiological
+
+  - id: mitochondrial
+    label: Mitochondrial dysfunction
+    group: enzyme
+    diagnosis_type: pathophysiological
+
+  # ---- Sleep, airway, structural (via `structural` group) ----
+
+  - id: sleep_apnea
+    label: Obstructive sleep apnea
+    aliases: [OSA, sleep apnoea]
+    full_label: Obstructive sleep apnea (OSA)
+    group: structural
+    diagnosis_type: pathophysiological
+
+  - id: uars
+    label: Upper airway resistance syndrome
+    aliases: [UARS]
+    full_label: Upper airway resistance syndrome (UARS)
+    group: structural
+    diagnosis_type: pathophysiological
+
+  - id: deviated_septum
+    label: Deviated septum
+    group: structural
+    diagnosis_type: aetiological
+
+  - id: dehydration
+    label: Dehydration
+    group: structural
+    diagnosis_type: pathophysiological
+
+  - id: low_blood_pressure
+    label: Low blood pressure
+    aliases: [hypotension]
+    group: structural
+    diagnosis_type: pathophysiological
+
+  - id: tmd
+    label: Temporomandibular disorder
+    aliases: [TMD, TMJ]
+    full_label: Temporomandibular disorder (TMD)
+    group: structural
+    diagnosis_type: pathophysiological
+
+  - id: cervical_instability
+    label: Cervical instability
+    aliases: [craniocervical instability, CCI]
+    group: structural
+    diagnosis_type: pathophysiological
+
+  - id: atlas_misalignment
+    label: Atlas / craniocervical misalignment
+    aliases: [atlas subluxation]
+    group: structural
+    diagnosis_type: pathophysiological
+
+  - id: poor_posture
+    label: Poor posture / forward head
+    aliases: [forward head posture, tech neck]
+    group: structural
+    diagnosis_type: pathophysiological
+
+  - id: post_concussion
+    label: Post-concussion syndrome
+    aliases: [PCS]
+    full_label: Post-concussion syndrome (PCS)
+    group: structural
+    diagnosis_type: syndromic
+
+  - id: bvd
+    label: Binocular vision dysfunction
+    aliases: [BVD, vertical heterophoria]
+    full_label: Binocular vision dysfunction (BVD)
+    group: structural
+    diagnosis_type: pathophysiological
+
+  - id: perimenopause
+    label: Perimenopause
+    aliases: [menopausal transition]
+    group: structural
+    diagnosis_type: constitutional
+
+  - id: low_testosterone
+    label: Low testosterone
+    aliases: [hypogonadism, androgen deficiency]
+    group: structural
+    diagnosis_type: pathophysiological
+
+  # ---- Microbial / chronic infection ----
+
+  - id: lyme
+    label: Lyme disease
+    aliases: [Borrelia, chronic Lyme]
+    group: microbial
+    diagnosis_type: aetiological
+
+  - id: ebv
+    label: EBV reactivation
+    aliases: [Epstein-Barr virus, chronic EBV]
+    group: microbial
+    diagnosis_type: aetiological
+
+  # ---- Immune / inflammatory / environmental ----
+
+  - id: long_covid
+    label: Long COVID
+    aliases: [post-acute COVID, PASC]
+    group: immune
+    diagnosis_type: syndromic
+
+  - id: chronic_sinusitis
+    label: Chronic sinusitis
+    aliases: [chronic rhinosinusitis]
+    group: immune
+    diagnosis_type: pathophysiological
+
+  - id: mold_cirs
+    label: Mold illness / CIRS
+    aliases: [CIRS, chronic inflammatory response syndrome, biotoxin illness]
+    full_label: Mold illness / chronic inflammatory response syndrome (CIRS)
+    group: immune
+    diagnosis_type: pathophysiological
+
+  - id: heavy_metals
+    label: Heavy metal toxicity
+    aliases: [lead poisoning, mercury toxicity]
+    group: immune
+    diagnosis_type: aetiological
+
+  - id: mthfr
+    label: MTHFR / methylation variants
+    aliases: [MTHFR polymorphism, methylation defect]
+    group: immune
+    diagnosis_type: constitutional
+
+  # ---- Brain-gut & psychological ----
+
+  - id: poor_sleep
+    label: Poor sleep / insomnia
+    aliases: [insomnia, non-restorative sleep]
+    group: braingut
+    diagnosis_type: pathophysiological
+
+  - id: chronic_stress
+    label: Chronic stress / HPA overload
+    aliases: [HPA axis dysfunction, allostatic overload]
+    group: braingut
+    diagnosis_type: pathophysiological
+
+  - id: cortisol_dysreg
+    label: Cortisol dysregulation
+    aliases: [HPA dysregulation, adrenal fatigue]
+    group: braingut
+    diagnosis_type: pathophysiological
+
+  - id: me_cfs
+    label: ME / CFS
+    aliases: [myalgic encephalomyelitis, chronic fatigue syndrome, ME/CFS]
+    full_label: Myalgic encephalomyelitis / chronic fatigue syndrome (ME/CFS)
+    group: braingut
+    diagnosis_type: syndromic
+
+  - id: migraine
+    label: Migraine
+    group: braingut
+    diagnosis_type: pathophysiological
+
+  - id: pssd
+    label: Post-SSRI sexual dysfunction
+    aliases: [PSSD]
+    full_label: Post-SSRI sexual dysfunction (PSSD)
+    group: braingut
+    diagnosis_type: pathophysiological
+
+  # ---- Masqueraders (mimic other conditions rather than being distinct causes) ----
+
+  - id: hypothyroidism
+    label: Hypothyroidism
+    aliases: [underactive thyroid, Hashimoto's]
+    group: masqueraders
+    diagnosis_type: masquerader
+
+  - id: medication
+    label: Medication side effect
+    aliases: [drug-induced brain fog]
+    group: masqueraders
+    diagnosis_type: masquerader
+
+  - id: alcohol
+    label: Alcohol / hangover
+    aliases: [alcohol-induced fog]
+    group: masqueraders
     diagnosis_type: masquerader
 
 

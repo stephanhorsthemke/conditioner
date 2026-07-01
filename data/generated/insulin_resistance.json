@@ -1,0 +1,707 @@
+{
+  "condition_id": "insulin_resistance",
+  "condition_name": "Insulin resistance",
+  "generated_at": "2026-07-01T11:58:42.143604Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Insulin resistance is a condition in which the body's cells stop responding normally to insulin \u2014 the hormone that moves glucose from the blood into cells for energy. When cells become resistant, the pancreas compensates by producing more insulin, keeping blood sugar superficially normal for years while metabolic stress accumulates silently. Eventually the system may break down into type 2 diabetes, but long before that point, high circulating insulin causes real, measurable harm: weight gain concentrated around the abdomen, fatigue, brain fog, hormonal disruption, and increased cardiovascular risk. It is extremely common, frequently undiagnosed, and often reversible \u2014 particularly when identified early.",
+    "detailed_summary": "Insulin resistance sits at the centre of a cluster of overlapping metabolic problems sometimes called metabolic syndrome. In a healthy state, insulin acts like a key that unlocks cells to receive glucose from the bloodstream. When cells become desensitised \u2014 due to excess energy intake, physical inactivity, chronic inflammation, poor sleep, or chronic stress \u2014 the pancreas must secrete progressively more insulin to achieve the same effect. This state of hyperinsulinaemia (chronically elevated insulin) is itself harmful: it promotes fat storage (especially visceral fat), suppresses fat burning, raises triglycerides, lowers HDL cholesterol, promotes inflammation, disrupts sex hormone balance, and drives hunger and carbohydrate cravings. Standard medical screening (fasting glucose, HbA1c) often misses insulin resistance for years because glucose remains normal while insulin is already elevated. Fasting insulin and HOMA-IR (a calculated ratio) are more sensitive early markers but are rarely ordered in routine care. Many people with insulin resistance are told their labs are 'normal' and remain undiagnosed until frank pre-diabetes or type 2 diabetes develops. The condition is strongly influenced by lifestyle \u2014 diet composition, movement patterns, sleep quality, and stress \u2014 and many people see substantial reversal with targeted changes. However, individual variation is significant, and some people require pharmacological support alongside lifestyle work. The condition is not simply caused by eating sugar or being overweight: genetic predisposition, sleep disorders, hormonal conditions like PCOS, and certain medications can all drive insulin resistance independently.",
+    "prevalence": {
+      "summary": "Affects an estimated one in three adults in the US, and likely a similar proportion across other Westernised populations.",
+      "estimate": "30\u201340% of adults in high-income countries; up to 70\u201380% of people with obesity",
+      "notes": "Prevalence figures vary significantly by the diagnostic criteria used. Many studies rely on fasting glucose or HbA1c, which undercount cases. Studies using fasting insulin or HOMA-IR suggest the condition is even more widespread. Pre-diabetes (a formal diagnostic label capturing some but not all insulin-resistant individuals) affects roughly 96 million US adults. The condition is more prevalent in older adults, people with abdominal obesity, and those with sedentary lifestyles, but is increasingly found in younger populations and lean individuals."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Lean insulin resistance (TOFI \u2014 Thin Outside, Fat Inside)",
+        "description": "Individuals with a normal or low body weight who have significant visceral fat and metabolic dysfunction. Often missed because BMI and outward appearance appear healthy.",
+        "distinguishing_features": [
+          "Normal BMI but elevated fasting insulin",
+          "High triglycerides or low HDL despite lean physique",
+          "Elevated liver enzymes suggesting fatty liver",
+          "Strong family history of type 2 diabetes"
+        ]
+      },
+      {
+        "id": null,
+        "name": "PCOS-associated insulin resistance",
+        "description": "Polycystic ovary syndrome is strongly linked to insulin resistance, even in lean individuals. Hyperinsulinaemia drives androgen excess, disrupting ovulation and causing characteristic PCOS symptoms.",
+        "distinguishing_features": [
+          "Irregular or absent menstrual cycles",
+          "Elevated androgens (testosterone, DHEA-S)",
+          "Acne, hirsutism, or male-pattern hair loss",
+          "Insulin resistance often more severe than expected for body weight"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Pre-diabetes",
+        "description": "A formal diagnostic category defined by fasting glucose 100\u2013125 mg/dL or HbA1c 5.7\u20136.4%. Represents advanced insulin resistance where glucose regulation is already impaired, though frank diabetes has not yet developed.",
+        "distinguishing_features": [
+          "Fasting glucose elevated above normal range",
+          "HbA1c in borderline range",
+          "Often diagnosed incidentally during routine screening",
+          "Substantial reversibility remains possible at this stage"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Metabolic syndrome",
+        "description": "A clinical cluster defined by at least three of: abdominal obesity, elevated triglycerides, low HDL, elevated blood pressure, and elevated fasting glucose. Insulin resistance is the unifying mechanism.",
+        "distinguishing_features": [
+          "Multiple metabolic abnormalities co-occurring",
+          "Significantly elevated cardiovascular and diabetes risk",
+          "Waist circumference a key diagnostic criterion",
+          "Often managed as separate conditions rather than a unified metabolic picture"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Non-alcoholic fatty liver disease (NAFLD) with insulin resistance",
+        "description": "Chronically elevated insulin promotes fat deposition in the liver. NAFLD and insulin resistance are tightly linked and mutually reinforcing.",
+        "distinguishing_features": [
+          "Elevated ALT/AST on liver function tests",
+          "Ultrasound or imaging showing fatty liver",
+          "Often no alcohol use",
+          "Liver fat worsens insulin signalling, creating a self-perpetuating cycle"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Sleep apnoea-driven insulin resistance",
+        "description": "Obstructive sleep apnoea causes intermittent hypoxia and sleep fragmentation, both of which independently worsen insulin sensitivity regardless of diet or weight.",
+        "distinguishing_features": [
+          "Metabolic markers disproportionate to diet or weight",
+          "Daytime sleepiness, loud snoring, witnessed apnoeas",
+          "Metabolic improvement may stall until sleep apnoea is treated"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Fatigue after meals, especially after carbohydrate-heavy foods",
+        "category": "energy / metabolic",
+        "notes": "Often described as a 'crash' 1\u20132 hours after eating; reflects poor glucose handling and subsequent reactive drops in blood sugar"
+      },
+      {
+        "symptom": "Persistent fatigue not explained by poor sleep",
+        "category": "energy / metabolic",
+        "notes": "Cells may be energy-deficient despite adequate blood glucose because impaired insulin signalling limits glucose uptake"
+      },
+      {
+        "symptom": "Strong carbohydrate or sugar cravings",
+        "category": "appetite / metabolic",
+        "notes": "Hyperinsulinaemia promotes reactive hypoglycaemia and drives appetite for quick-energy foods, creating a reinforcing cycle"
+      },
+      {
+        "symptom": "Difficulty losing weight despite reduced calorie intake",
+        "category": "weight / metabolic",
+        "notes": "High insulin is a powerful driver of fat storage and suppresses fat burning, making conventional calorie restriction alone ineffective for many"
+      },
+      {
+        "symptom": "Abdominal weight gain (central obesity)",
+        "category": "weight / metabolic",
+        "notes": "Visceral fat accumulation around the waist is both a symptom and a driver of insulin resistance"
+      },
+      {
+        "symptom": "Brain fog and difficulty concentrating",
+        "category": "neurological / cognitive",
+        "notes": "The brain requires stable glucose delivery; poor insulin signalling and blood glucose variability may impair cognitive function"
+      },
+      {
+        "symptom": "Acanthosis nigricans \u2014 dark, velvety skin patches",
+        "category": "skin",
+        "notes": "Typically found in skin folds: neck creases, armpits, groin. A visible marker of high circulating insulin acting on skin cells"
+      },
+      {
+        "symptom": "Skin tags (acrochordons)",
+        "category": "skin",
+        "notes": "Multiple skin tags, particularly around the neck and armpits, are strongly associated with insulin resistance"
+      },
+      {
+        "symptom": "Elevated blood pressure",
+        "category": "cardiovascular",
+        "notes": "Insulin promotes sodium retention and sympathetic nervous system activation, raising blood pressure"
+      },
+      {
+        "symptom": "High triglycerides on lipid panel",
+        "category": "cardiovascular / metabolic",
+        "notes": "Excess insulin drives the liver to convert glucose to triglycerides; fasting triglycerides above 150 mg/dL are a common early signal"
+      },
+      {
+        "symptom": "Low HDL cholesterol",
+        "category": "cardiovascular / metabolic",
+        "notes": "Often accompanies high triglycerides in insulin resistance; a triglyceride-to-HDL ratio above 3.0 is considered a surrogate marker for insulin resistance"
+      },
+      {
+        "symptom": "Irregular menstrual cycles or worsened PCOS symptoms",
+        "category": "hormonal / reproductive",
+        "notes": "Hyperinsulinaemia stimulates androgen production from the ovaries, disrupting the hypothalamic-pituitary-ovarian axis"
+      },
+      {
+        "symptom": "Low testosterone in men",
+        "category": "hormonal / reproductive",
+        "notes": "Metabolic dysfunction and visceral fat are associated with reduced testosterone production and increased aromatisation to oestrogen"
+      },
+      {
+        "symptom": "Increased hunger shortly after eating",
+        "category": "appetite / metabolic",
+        "notes": "Hyperinsulinaemia suppresses the sensation of fullness and promotes rapid return of hunger"
+      },
+      {
+        "symptom": "Difficulty sleeping or non-restorative sleep",
+        "category": "sleep",
+        "notes": "Blood glucose instability overnight can cause nocturnal waking; insulin resistance and sleep disruption are bidirectionally linked"
+      },
+      {
+        "symptom": "Frequent urination or increased thirst",
+        "category": "metabolic",
+        "notes": "More prominent as insulin resistance progresses toward pre-diabetes or type 2 diabetes; reflects rising blood glucose levels"
+      },
+      {
+        "symptom": "Slow wound healing",
+        "category": "immune / metabolic",
+        "notes": "Elevated glucose and poor circulation impair immune and tissue repair processes"
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Fasting insulin above 10 \u00b5IU/mL (some functional medicine practitioners use a stricter threshold of 5\u20137 \u00b5IU/mL as optimal)",
+        "HOMA-IR (fasting insulin \u00d7 fasting glucose / 405) above 1.9 suggests insulin resistance; above 2.9 is often considered significant",
+        "Fasting triglycerides consistently above 150 mg/dL combined with HDL below 40 mg/dL (men) or 50 mg/dL (women)",
+        "Triglyceride-to-HDL ratio above 3.0 \u2014 a widely used surrogate marker for insulin resistance in standard lipid panels",
+        "HbA1c in the 5.7\u20136.4% range (pre-diabetes) or fasting glucose 100\u2013125 mg/dL \u2014 indicates glucose regulation is already impaired",
+        "Elevations in uric acid, liver enzymes (ALT/AST), or blood pressure alongside any of the above strengthens the picture",
+        "Continuous glucose monitoring showing large post-meal spikes (above 140 mg/dL) and prolonged return to baseline"
+      ],
+      "at_home": [
+        {
+          "name": "Continuous glucose monitor (CGM) trial",
+          "description": "Consumer CGMs (e.g. Freestyle Libre, Dexterity) can be purchased without a prescription in many countries. Wearing one for 2\u20134 weeks while eating normally reveals post-meal glucose spikes, time-in-range, nocturnal glucose patterns, and crash-and-craving cycles. A response above 140 mg/dL to a standard meal or a slow return to baseline after 2 hours may indicate impaired glucose handling.",
+          "safety_notes": "CGMs are generally safe for self-monitoring. They do not replace clinical diagnosis. People on insulin or with known diabetes should not self-interpret CGM data without clinical guidance."
+        },
+        {
+          "name": "Waist circumference measurement",
+          "description": "Using a tape measure, measure at the level of the navel. Risk thresholds: above 40 inches (102 cm) in men, above 35 inches (88 cm) in women. Waist-to-height ratio above 0.5 is also a useful marker. Waist circumference is a better predictor of metabolic risk than BMI for many people.",
+          "safety_notes": "A simple screening tool only \u2014 normal waist circumference does not rule out lean insulin resistance."
+        },
+        {
+          "name": "Food and symptom journal with carbohydrate tracking",
+          "description": "Tracking meals and noting energy levels, cravings, and cognitive clarity 1\u20132 hours after eating can reveal patterns consistent with blood glucose dysregulation \u2014 particularly post-meal crashes or strong carbohydrate cravings following high-carbohydrate meals.",
+          "safety_notes": "Journalling is informational only. Avoid using it to justify extreme dietary restriction without clinical input."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Fasting insulin",
+          "type": "gold_standard",
+          "description": "Measures circulating insulin after an overnight fast. Elevated fasting insulin is the earliest detectable sign of insulin resistance, often present years before glucose levels become abnormal. Reference ranges vary by lab, but many functional medicine practitioners consider optimal to be below 5\u20137 \u00b5IU/mL.",
+          "availability": "Often must be specifically requested \u2014 it is not included in standard metabolic panels. Can be ordered by GPs, internists, endocrinologists, or functional medicine doctors. Some direct-to-consumer labs offer this test."
+        },
+        {
+          "name": "HOMA-IR (calculated)",
+          "type": "gold_standard",
+          "description": "The Homeostatic Model Assessment of Insulin Resistance is calculated from fasting insulin and fasting glucose. It is not a separate test \u2014 the formula is applied to existing values. A score above 1.9 suggests insulin resistance; above 2.9 is often considered significant. It is a validated research and clinical tool.",
+          "availability": "Calculated from any lab that provides both fasting glucose and fasting insulin. Many online calculators are available once values are known."
+        },
+        {
+          "name": "HbA1c (glycated haemoglobin)",
+          "type": "standard",
+          "description": "Reflects average blood glucose over the preceding 2\u20133 months. Widely used to screen for pre-diabetes (5.7\u20136.4%) and type 2 diabetes (\u22656.5%). A useful marker of glucose regulation, but can be normal in the presence of significant hyperinsulinaemia.",
+          "availability": "Routinely ordered in primary care and available through most standard blood panels."
+        },
+        {
+          "name": "Fasting lipid panel",
+          "type": "standard",
+          "description": "Triglycerides and HDL are particularly informative. A fasting triglyceride above 150 mg/dL, a low HDL, or a triglyceride-to-HDL ratio above 3.0 are well-established surrogate markers for insulin resistance that appear on standard lipid panels.",
+          "availability": "Standard in routine preventive care. Often already available to patients who have had any lipid screening."
+        },
+        {
+          "name": "Oral glucose tolerance test (OGTT) with insulin levels",
+          "type": "gold_standard",
+          "description": "The patient drinks a standard glucose solution (75g), and blood glucose and insulin are measured at baseline, 1 hour, and 2 hours. Adding insulin measurements to the standard OGTT (which usually only measures glucose) reveals whether the pancreas is producing compensatory hyperinsulinaemia even when glucose appears normal \u2014 a powerful early detection method.",
+          "availability": "Standard OGTT is available in most clinical settings. The version with simultaneous insulin measurements must be specifically requested and may not be offered by all practitioners. Endocrinologists and functional medicine doctors are most likely to order this version."
+        },
+        {
+          "name": "Fasting glucose",
+          "type": "standard",
+          "description": "A basic marker of blood sugar regulation. Normal is below 100 mg/dL; 100\u2013125 is pre-diabetic; 126+ is diagnostic for diabetes. Limitations: glucose can remain normal for years while insulin resistance is already significant and fasting insulin is already elevated.",
+          "availability": "Universally available as part of standard metabolic panels."
+        },
+        {
+          "name": "Uric acid",
+          "type": "emerging",
+          "description": "Elevated uric acid (above 6 mg/dL in women, above 7 mg/dL in men) is associated with fructose overconsumption, impaired uric acid clearance related to hyperinsulinaemia, and metabolic syndrome. Some researchers consider it an underused early biomarker.",
+          "availability": "Inexpensive add-on to standard blood work; can be requested from most GPs."
+        },
+        {
+          "name": "Continuous glucose monitoring (clinical prescription)",
+          "type": "emerging",
+          "description": "A small sensor worn on the arm or abdomen tracks interstitial glucose continuously for 14 days or more. Provides a detailed picture of post-meal responses, time-in-range, nocturnal glucose, and the impact of specific foods, activities, and stress on glucose regulation.",
+          "availability": "Traditionally prescription-only; increasingly available via private clinics and direct-to-consumer programmes. Some endocrinologists and functional medicine doctors prescribe CGM for metabolic investigation in non-diabetic patients."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": null,
+        "name": "Type 2 diabetes",
+        "relationship": "downstream",
+        "explanation": "Insulin resistance is the primary precursor to type 2 diabetes. The transition occurs when the pancreas can no longer compensate with sufficient insulin production, and blood glucose rises into the diabetic range. Most people with type 2 diabetes had years of insulin resistance and hyperinsulinaemia before diagnosis."
+      },
+      {
+        "id": null,
+        "name": "Polycystic ovary syndrome (PCOS)",
+        "relationship": "comorbid",
+        "explanation": "The majority of people with PCOS \u2014 including many who are lean \u2014 have significant insulin resistance. Hyperinsulinaemia stimulates excess androgen production from the ovaries, driving the hallmark features of PCOS. Treating insulin resistance can substantially improve PCOS symptoms."
+      },
+      {
+        "id": null,
+        "name": "Non-alcoholic fatty liver disease (NAFLD)",
+        "relationship": "comorbid",
+        "explanation": "Excess insulin drives the liver to convert glucose into fat (de novo lipogenesis), leading to hepatic fat accumulation. NAFLD and insulin resistance are mutually reinforcing \u2014 fatty liver further impairs insulin signalling."
+      },
+      {
+        "id": "reactive_hypoglycemia",
+        "name": "Reactive hypoglycemia",
+        "relationship": "downstream",
+        "explanation": "In insulin-resistant individuals, the pancreas often overshoots with insulin after a meal, causing blood glucose to drop below normal 1\u20133 hours later. This reactive hypoglycaemia drives the characteristic post-meal crash, fatigue, irritability, and carbohydrate cravings seen in many people with insulin resistance."
+      },
+      {
+        "id": "sleep_apnea",
+        "name": "Obstructive sleep apnea",
+        "relationship": "comorbid",
+        "explanation": "Sleep apnoea causes intermittent hypoxia and sleep fragmentation, which independently worsen insulin sensitivity through cortisol elevation and inflammatory pathways. The relationship is bidirectional: insulin resistance and visceral obesity promote sleep apnoea, which then worsens metabolic function."
+      },
+      {
+        "id": "cortisol_dysreg",
+        "name": "Cortisol dysregulation",
+        "relationship": "mechanistic_link",
+        "explanation": "Cortisol is a counter-regulatory hormone that raises blood glucose. Chronic cortisol elevation \u2014 from psychological stress, poor sleep, or HPA axis dysfunction \u2014 impairs insulin signalling and promotes visceral fat accumulation. Many people with insulin resistance have co-existing cortisol dysregulation that limits metabolic recovery."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor sleep / insomnia",
+        "relationship": "mechanistic_link",
+        "explanation": "Even a single night of poor sleep measurably reduces insulin sensitivity. Chronic sleep deprivation is an independent driver of insulin resistance through cortisol elevation, impaired glucose metabolism, and increased appetite for energy-dense foods."
+      },
+      {
+        "id": "thyroid",
+        "name": "Thyroid dysfunction",
+        "relationship": "comorbid",
+        "explanation": "Hypothyroidism reduces metabolic rate and insulin sensitivity, and the two conditions frequently co-occur. Undiagnosed hypothyroidism can prevent metabolic improvement despite appropriate lifestyle changes."
+      },
+      {
+        "id": "hypothyroidism",
+        "name": "Hypothyroidism",
+        "relationship": "comorbid",
+        "explanation": "Reduced thyroid hormone activity slows glucose metabolism, promotes weight gain, and can independently drive insulin resistance. Optimising thyroid function is often necessary for full metabolic recovery."
+      },
+      {
+        "id": null,
+        "name": "Cardiovascular disease",
+        "relationship": "downstream",
+        "explanation": "Chronic hyperinsulinaemia promotes hypertension, dyslipidaemia, endothelial dysfunction, and inflammation \u2014 all established cardiovascular risk factors. Insulin resistance significantly increases the risk of coronary artery disease, stroke, and heart failure, independent of formal diabetes diagnosis."
+      },
+      {
+        "id": null,
+        "name": "Gout / hyperuricaemia",
+        "relationship": "comorbid",
+        "explanation": "Insulin resistance impairs renal uric acid excretion, raising serum uric acid levels. High fructose intake, which drives both insulin resistance and uric acid production, links the two conditions mechanistically."
+      },
+      {
+        "id": "endometriosis",
+        "name": "Endometriosis",
+        "relationship": "comorbid",
+        "explanation": "Endometriosis and insulin resistance co-occur at rates higher than chance. Shared inflammatory pathways and hormonal dysregulation may underlie this relationship, though the causal direction is not fully established."
+      },
+      {
+        "id": "hormonal",
+        "name": "Hormonal / menstrual cycle effects",
+        "relationship": "mechanistic_link",
+        "explanation": "Insulin resistance disrupts oestrogen, progesterone, and androgen balance. In women, this can manifest as irregular cycles, worsened PMS, or perimenopausal symptom amplification. Insulin resistance worsens during the luteal phase and around menopause due to declining oestrogen."
+      },
+      {
+        "id": "perimenopause",
+        "name": "Perimenopause",
+        "relationship": "comorbid",
+        "explanation": "Declining oestrogen during perimenopause reduces insulin sensitivity, making metabolic syndrome and insulin resistance substantially more prevalent in the menopausal transition. Many women develop insulin resistance for the first time in their 40s or 50s without significant dietary change."
+      },
+      {
+        "id": "mitochondrial",
+        "name": "Mitochondrial dysfunction",
+        "relationship": "mechanistic_link",
+        "explanation": "Impaired mitochondrial function in skeletal muscle reduces the cell's capacity to oxidise glucose and fatty acids, contributing to insulin resistance. Conversely, chronically elevated glucose and free fatty acids from insulin resistance can damage mitochondria."
+      },
+      {
+        "id": "low_testosterone",
+        "name": "Low testosterone",
+        "relationship": "comorbid",
+        "explanation": "In men, visceral fat and hyperinsulinaemia increase aromatase activity (converting testosterone to oestrogen) and suppress LH secretion, reducing testosterone production. Low testosterone in turn promotes further fat gain and worsening insulin resistance \u2014 a self-reinforcing cycle."
+      },
+      {
+        "id": "chronic_stress",
+        "name": "Chronic stress / HPA overload",
+        "relationship": "upstream",
+        "explanation": "Chronic psychological or physiological stress elevates cortisol and adrenaline, which raise blood glucose and suppress insulin signalling. Stress-driven eating patterns and sleep disruption compound the metabolic effects."
+      },
+      {
+        "id": null,
+        "name": "Alzheimer's disease / cognitive decline",
+        "relationship": "downstream",
+        "explanation": "Some researchers refer to Alzheimer's disease as 'type 3 diabetes', reflecting the role of brain insulin resistance in neurodegeneration. Chronic hyperinsulinaemia and glucose dysregulation are associated with increased dementia risk, likely through inflammation, amyloid clearance impairment, and vascular damage."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "mechanistic_link",
+        "explanation": "The gut microbiome influences insulin sensitivity through short-chain fatty acid production, bile acid signalling, lipopolysaccharide-driven inflammation, and gut hormone regulation. Dysbiosis characterised by reduced microbial diversity is consistently associated with metabolic dysfunction."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Low-glycaemic or lower-carbohydrate diet",
+          "category": "diet",
+          "description": "Reducing dietary carbohydrates \u2014 particularly refined carbohydrates, added sugars, and ultra-processed foods \u2014 directly lowers the glucose and insulin load on the body. This can reduce fasting insulin and improve insulin sensitivity significantly within weeks. A range of approaches may help different individuals: low-GI Mediterranean diet, low-carbohydrate diets, or ketogenic diets. The right level of carbohydrate restriction is individual.",
+          "evidence_level": "strong",
+          "notes": "No single diet works for all people with insulin resistance. A registered dietitian with metabolic or low-carbohydrate training can help personalise the approach. Abrupt carbohydrate restriction can cause initial fatigue, headaches, and electrolyte changes \u2014 sometimes called 'keto flu'."
+        },
+        {
+          "name": "Resistance training / strength exercise",
+          "category": "lifestyle",
+          "description": "Skeletal muscle is the primary site of glucose disposal. Building muscle through resistance training increases the body's capacity to absorb glucose without insulin, substantially improving insulin sensitivity. Even modest amounts (2\u20133 sessions per week) show measurable metabolic benefits.",
+          "evidence_level": "strong",
+          "notes": "Resistance training may be more effective than aerobic exercise alone for improving insulin sensitivity, though combining both is ideal. Those new to exercise should start gradually to avoid injury."
+        },
+        {
+          "name": "Post-meal walking",
+          "category": "lifestyle",
+          "description": "A short walk (10\u201315 minutes) after meals significantly blunts post-meal glucose spikes by engaging muscle glucose uptake through a non-insulin-dependent pathway. This is one of the fastest and most accessible ways to immediately reduce the glucose and insulin burden of a meal.",
+          "evidence_level": "strong",
+          "notes": "Even a light, slow walk is effective. This requires no equipment and has virtually no downsides. CGM data often visibly demonstrates the effect within the first day of trying."
+        },
+        {
+          "name": "Sleep optimisation",
+          "category": "lifestyle",
+          "description": "Prioritising 7\u20139 hours of quality, uninterrupted sleep is one of the most effective interventions for insulin sensitivity. Sleep deprivation triggers cortisol and ghrelin surges that impair glucose metabolism and drive appetite for energy-dense foods. Addressing sleep disorders, including sleep apnoea, is often essential.",
+          "evidence_level": "strong",
+          "notes": "Screening for obstructive sleep apnoea is warranted in anyone with insulin resistance who snores, feels unrefreshed on waking, or has significant daytime sleepiness. Untreated sleep apnoea can prevent metabolic improvement regardless of diet and exercise."
+        },
+        {
+          "name": "Time-restricted eating (intermittent fasting)",
+          "category": "lifestyle",
+          "description": "Compressing food intake into an 8\u201310 hour window (e.g. eating between 10am and 6pm) gives the body an extended insulin-free period overnight, which may improve insulin sensitivity, reduce fasting insulin, and support fat loss. Some people find this easier to sustain than calorie counting.",
+          "evidence_level": "moderate",
+          "notes": "Not appropriate for people with a history of eating disorders, those on insulin or certain diabetes medications, or those who are pregnant. Some individuals find skipping breakfast increases cortisol and hunger; individual responses vary. Eating earlier in the day appears metabolically superior to late-night eating windows."
+        },
+        {
+          "name": "Metformin",
+          "category": "medication",
+          "description": "Metformin is the most widely prescribed medication for insulin resistance and pre-diabetes. It primarily works by reducing hepatic glucose production and has a strong safety profile. It is inexpensive, well-tolerated by most, and reduces diabetes progression by ~31% in clinical trials. Some functional medicine practitioners prescribe it off-label for metabolic optimisation.",
+          "evidence_level": "strong",
+          "notes": "Requires a prescription. Can cause gastrointestinal side effects initially \u2014 starting at a low dose and taking with food reduces this. Long-term use can reduce vitamin B12 absorption; monitoring is advisable. Not appropriate in kidney impairment."
+        },
+        {
+          "name": "GLP-1 receptor agonists (e.g. semaglutide, liraglutide)",
+          "category": "medication",
+          "description": "This class of medications improves insulin secretion in a glucose-dependent manner, reduces appetite, slows gastric emptying, and promotes significant weight loss. They have transformed management of metabolic disease and have strong cardiovascular benefit data. Increasingly used for insulin resistance and obesity, even before frank diabetes.",
+          "evidence_level": "strong",
+          "notes": "Expensive without insurance coverage. Common side effects include nausea, vomiting, and reduced appetite. Requires prescription and ongoing monitoring. Not a substitute for lifestyle change \u2014 long-term metabolic benefit requires concurrent dietary and physical activity improvement."
+        },
+        {
+          "name": "Berberine",
+          "category": "supplement",
+          "description": "Berberine is a plant-derived compound with mechanisms similar to metformin (AMPK activation, hepatic glucose reduction). Multiple clinical trials have shown meaningful reductions in fasting glucose, insulin, and HbA1c. Often referred to informally as 'nature's metformin', though it is not a pharmaceutical equivalent.",
+          "evidence_level": "moderate",
+          "notes": "Can interact with medications metabolised by the liver (CYP450 enzymes). Should not be combined with metformin without medical guidance. Not appropriate in pregnancy. Quality and bioavailability vary significantly between supplements."
+        },
+        {
+          "name": "Inositol (myo-inositol / D-chiro-inositol)",
+          "category": "supplement",
+          "description": "Inositol compounds play a role in insulin signal transduction. Supplementation \u2014 particularly myo-inositol \u2014 has shown benefit for insulin resistance in PCOS, improving ovulatory function, androgen levels, and fasting insulin in multiple trials.",
+          "evidence_level": "moderate",
+          "notes": "Most evidence is in the context of PCOS. Evidence for insulin resistance outside PCOS is more limited. Generally well-tolerated. A common protocol is 2g myo-inositol plus 200mcg chromium, twice daily."
+        },
+        {
+          "name": "Magnesium supplementation",
+          "category": "supplement",
+          "description": "Magnesium is a cofactor in over 300 enzymatic reactions, including those involved in insulin signalling and glucose metabolism. Magnesium deficiency is common in insulin-resistant individuals, and supplementation has shown modest improvements in insulin sensitivity in multiple studies.",
+          "evidence_level": "moderate",
+          "notes": "Magnesium glycinate or malate are generally better tolerated than magnesium oxide. Excess magnesium can cause loose stools. Check renal function before supplementing in people with kidney disease."
+        },
+        {
+          "name": "Stress reduction and cortisol management",
+          "category": "lifestyle",
+          "description": "Chronic psychological stress elevates cortisol, which raises blood glucose and impairs insulin signalling. Mind-body practices such as yoga, meditation, breathwork, and regular nature exposure may help reduce cortisol burden and improve metabolic markers in people with high-stress lifestyles.",
+          "evidence_level": "moderate",
+          "notes": "The effect size is modest compared to diet and exercise, but stress is often an overlooked driver of metabolic stagnation. It is particularly relevant in people whose metabolic markers worsen during high-stress periods despite consistent diet and exercise."
+        }
+      ],
+      "things_to_avoid": [
+        "Ultra-processed foods and refined carbohydrates \u2014 rapidly digested carbohydrates cause large glucose and insulin spikes; ultra-processed foods are engineered to drive overconsumption and are strongly associated with metabolic dysfunction",
+        "Sugary beverages (soft drinks, fruit juice, sports drinks) \u2014 liquid sugar is absorbed rapidly, bypasses satiety signals, and causes large insulin surges without providing meaningful nutrition",
+        "Excessive fructose intake \u2014 high-fructose corn syrup and large amounts of fruit juice are processed almost entirely in the liver, promoting de novo lipogenesis, fatty liver, and uric acid elevation",
+        "Sedentary behaviour for prolonged periods \u2014 even regular exercise does not fully offset the metabolic harm of sitting for 8+ hours daily; breaking up sitting with brief movement is important",
+        "Chronic sleep deprivation \u2014 even moderate sleep restriction (6 hours per night) measurably impairs insulin sensitivity within days; this is not a lifestyle luxury, it is a metabolic necessity",
+        "Skipping meals in a chaotic, unplanned way \u2014 unstructured skipping without metabolic context can disrupt cortisol rhythms and drive compensatory overeating in carbohydrate-dense foods",
+        "Alcohol \u2014 alcohol impairs liver glucose regulation and can worsen fasting glucose and insulin sensitivity; high-carbohydrate alcoholic beverages are particularly problematic",
+        "Relying on fasting glucose or HbA1c alone to rule out insulin resistance \u2014 these tests miss significant metabolic dysfunction that fasting insulin and HOMA-IR would reveal",
+        "Taking chromium picolinate in very high doses without monitoring \u2014 while chromium plays a role in insulin signalling, very high supplemental doses have not demonstrated proportionally greater benefit and may carry risk"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "Standard blood tests routinely miss insulin resistance for years. A 'normal' result on a fasting glucose or HbA1c test does not mean metabolism is healthy \u2014 it often means the pancreas is still compensating by producing excess insulin. By the time glucose rises, the condition has usually been present for a decade or more.",
+        "why_resisted": "People trust their doctors, and being told labs are 'normal' provides genuine reassurance. It is uncomfortable to believe that the healthcare system is failing to detect a condition that is causing ongoing harm. Many patients also do not know to ask for fasting insulin or HOMA-IR.",
+        "path_forward": "Those who specifically request fasting insulin alongside standard panels, and who calculate HOMA-IR, consistently get a more accurate picture of their metabolic health years before glucose rises. This enables earlier, more impactful intervention."
+      },
+      {
+        "truth": "Insulin resistance is primarily a lifestyle-driven condition in most people, and lifestyle change is its most powerful treatment \u2014 but lifestyle change is genuinely difficult, requires sustained effort, and often needs professional support to execute correctly. Knowing what to do is not the same as being able to do it.",
+        "why_resisted": "The framing of 'just eat less and move more' is so common, and so routinely unsuccessful, that many people with insulin resistance have concluded lifestyle change doesn't work for them. Often the problem is not their effort but the quality of the guidance they have received.",
+        "path_forward": "People who work with practitioners who understand metabolic disease \u2014 particularly those who address carbohydrate quality rather than only calories, who test fasting insulin, and who investigate sleep and cortisol \u2014 achieve measurably better and more sustained outcomes than those managing alone or with generic advice."
+      },
+      {
+        "truth": "Weight loss alone does not resolve insulin resistance in everyone. Some lean individuals have significant insulin resistance, and some people who lose weight remain insulin-resistant because the metabolic drivers \u2014 sleep apnoea, chronic stress, gut dysbiosis, thyroid dysfunction \u2014 were never addressed.",
+        "why_resisted": "The dominant cultural narrative equates metabolic health with body weight. When someone loses weight and still doesn't feel better, or when a lean person receives a metabolic diagnosis, it challenges deeply held assumptions about body size and health.",
+        "path_forward": "Individuals who investigate and treat the underlying drivers \u2014 not just body weight \u2014 including sleep disorders, cortisol patterns, gut function, and thyroid health, often see metabolic improvement even where weight loss has plateaued or was never a significant factor."
+      },
+      {
+        "truth": "Many mainstream GPs and endocrinologists manage insulin resistance symptomatically \u2014 treating blood pressure, cholesterol, and blood sugar as separate problems with separate medications \u2014 rather than investigating and treating the common upstream driver. Finding the right practitioner matters as much as finding the right information.",
+        "why_resisted": "Patients reasonably assume that their doctor will investigate and treat the root cause. Accepting that a practitioner who is not investigating the cause is providing incomplete care can feel threatening to the trust-based clinical relationship.",
+        "path_forward": "Those who seek out functional medicine physicians, metabolic-focused endocrinologists, or knowledgeable dietitians \u2014 who will order fasting insulin, investigate sleep, and address dietary carbohydrate quality \u2014 routinely report better outcomes and greater understanding of their condition than those managed within standard chronic disease pathways."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Reduce dietary refined carbohydrates and added sugar",
+          "why_it_matters": "Every refined carbohydrate meal causes a glucose spike that demands an insulin response. Reducing the frequency and magnitude of these spikes directly lowers fasting insulin, reduces the liver's glucose-to-fat conversion, and allows cells to gradually regain insulin sensitivity.",
+          "how_to_start": "Remove sugary beverages (replace with water, sparkling water, or unsweetened tea or coffee). Replace refined grain staples (white bread, pasta, white rice) with whole-food alternatives. Do not attempt to make all changes simultaneously \u2014 start with the highest-impact single swap.",
+          "timeline": "Measurable reductions in fasting insulin and triglycerides are often seen within 4\u201312 weeks of consistent dietary change.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Build muscle through resistance training",
+          "why_it_matters": "Skeletal muscle is the body's largest glucose sink. Increased muscle mass dramatically improves glucose disposal capacity, reducing the insulin burden of each meal. This is one of the few interventions that can permanently improve the metabolic set point.",
+          "how_to_start": "Two sessions per week of full-body resistance training using bodyweight, resistance bands, or weights. Focus on compound movements (squats, deadlifts, rows, press). A session with a personal trainer or exercise physiologist to establish correct form is worth the investment.",
+          "timeline": "Insulin sensitivity improvements begin within 1\u20132 weeks of starting; muscle gain and further metabolic benefit accumulate over 3\u20136 months.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Identify and treat obstructive sleep apnoea if present",
+          "why_it_matters": "Untreated sleep apnoea independently drives insulin resistance through intermittent hypoxia, cortisol elevation, and sympathetic nervous system activation. Many people make significant dietary and exercise changes without metabolic improvement because sleep apnoea is the primary driver.",
+          "how_to_start": "Seek evaluation through a GP, sleep physician, or ENT. A home sleep study or in-lab polysomnography can diagnose sleep apnoea. CPAP therapy, positional treatment, or mandibular advancement devices are effective treatments depending on severity.",
+          "timeline": "Metabolic improvements from treating sleep apnoea can appear within weeks of consistent CPAP use.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Test fasting insulin and track it over time",
+          "why_it_matters": "Without measuring fasting insulin and HOMA-IR, it is impossible to know whether the condition is improving. Glucose and HbA1c move too slowly and are too insensitive to serve as early progress markers. Fasting insulin can decrease meaningfully within weeks of effective intervention.",
+          "how_to_start": "Request fasting insulin alongside standard blood work at the next appointment. If the current practitioner will not order it, consider a direct-to-consumer lab test (available in the US and UK without a prescription through services such as Medichecks, Ulta Lab Tests, or LabCorp). Establish a baseline and retest every 3 months during active lifestyle change.",
+          "timeline": "Fasting insulin can change measurably within 4\u20138 weeks of significant dietary or exercise change.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Address chronic stress and cortisol burden",
+          "why_it_matters": "Cortisol raises blood glucose and impairs insulin signalling through multiple pathways. In people with high chronic stress, metabolic improvement from diet and exercise alone is often limited until the cortisol burden is addressed.",
+          "how_to_start": "Identify the primary stress sources. Introduce a daily practice that measurably reduces physiological stress \u2014 consistent sleep schedule, daily outdoor walking, structured relaxation (yoga, breathwork, or meditation). Consider cortisol testing (saliva cortisol curve) through a functional medicine practitioner if stress-driven metabolic dysfunction is suspected.",
+          "timeline": "Cortisol-driven metabolic improvement may take 2\u20136 months of consistent stress reduction practice to manifest in lab values.",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Relying exclusively on calorie restriction without addressing carbohydrate quality \u2014 cutting calories from fat and protein while maintaining a high-carbohydrate diet keeps insulin elevated and impairs fat burning, leading to hunger, muscle loss, and metabolic stagnation",
+        "Doing only cardio and no resistance training \u2014 aerobic exercise improves cardiovascular fitness and modestly improves insulin sensitivity, but without building muscle mass, the metabolic ceiling of improvement is lower",
+        "Treating individual metabolic abnormalities (blood pressure, cholesterol, glucose) as separate problems without investigating the common upstream driver \u2014 this leads to polypharmacy without root-cause resolution",
+        "Assuming that feeling better means the condition has resolved \u2014 fasting insulin should be measured to confirm improvement; symptoms can improve before full metabolic normalisation occurs",
+        "Eating a 'healthy' diet as defined by conventional guidance (low fat, whole grains, fruit juice, low-fat dairy) without recognising that some of these foods are high-glycaemic and appropriate only for metabolically healthy individuals",
+        "Expecting rapid, linear progress \u2014 insulin resistance develops over years and meaningful reversal typically takes months of consistent change; early plateaus are normal and should not prompt abandonment of an effective approach",
+        "Not addressing sleep before optimising diet and exercise \u2014 sleep deprivation actively opposes the metabolic benefits of other interventions; it is not a secondary concern"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Functional medicine doctor or integrative physician",
+          "role": "Most likely to order and interpret fasting insulin, HOMA-IR, and a full metabolic picture; will investigate upstream drivers including sleep, stress, gut health, and hormonal factors; treats root causes rather than individual biomarkers",
+          "notes": "Quality varies significantly. Look for practitioners with specific metabolic or functional medicine training. The Institute for Functional Medicine (IFM) has a practitioner directory. Consultations may not be covered by insurance."
+        },
+        {
+          "type": "Endocrinologist with metabolic interest",
+          "role": "Useful for complex hormonal contributors to insulin resistance (thyroid dysfunction, PCOS, adrenal issues, low testosterone), and for managing more advanced insulin resistance or early type 2 diabetes. Can prescribe medications including metformin and GLP-1 agonists.",
+          "notes": "Many endocrinologists focus on frank diabetes and may be less interested in optimising metabolic health before glucose rises into the diabetic range. It is worth asking specifically about their approach to pre-diabetes and insulin resistance."
+        },
+        {
+          "type": "Registered dietitian specialising in low-carbohydrate or metabolic nutrition",
+          "role": "Can design a personalised, sustainable dietary approach to insulin resistance \u2014 particularly important for individuals with competing conditions (kidney disease, history of eating disorders, PCOS). More practically useful than general dietary advice.",
+          "notes": "Not all dietitians are trained in low-carbohydrate approaches \u2014 specifically seek one with metabolic, low-carbohydrate, or diabetes nutrition expertise. Dietitians in the US, UK, and Australia are regulated professionals."
+        },
+        {
+          "type": "Sleep physician or sleep clinic",
+          "role": "Essential for anyone with insulin resistance who may have obstructive sleep apnoea. Diagnosis and treatment of sleep apnoea can produce metabolic improvements that diet and exercise alone cannot achieve.",
+          "notes": "Home sleep studies are now widely available and less disruptive than in-lab studies. Referral can come from a GP, endocrinologist, or self-referral to private sleep clinics in many countries."
+        },
+        {
+          "type": "Exercise physiologist",
+          "role": "Can design a safe and effective resistance training programme tailored to fitness level, joint health, and metabolic goals. Particularly valuable for people new to strength training or managing obesity-related joint pain.",
+          "notes": "Distinct from a personal trainer \u2014 exercise physiologists have university-level clinical training. Often available via referral in Australia; in the US and UK, may require self-referral."
+        },
+        {
+          "type": "Preventive cardiologist or cardiometabolic specialist",
+          "role": "Relevant for individuals whose insulin resistance is accompanied by cardiovascular risk factors. Some cardiometabolic specialists take a particularly sophisticated approach to lipids, inflammation, and metabolic health.",
+          "notes": "May order advanced lipid markers (ApoB, Lp(a), LDL particle size) that provide additional cardiovascular risk context beyond standard lipid panels."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/InsulinResistance",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/InsulinResistance/",
+          "notes": "Active community of people managing insulin resistance, sharing lab results, dietary approaches, and experiences with practitioners. Good for practical peer support and learning what tests to request."
+        },
+        {
+          "name": "r/keto and r/lowcarb",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/keto/",
+          "notes": "Large communities focused on low-carbohydrate eating, which is highly relevant to insulin resistance management. Quality of information varies; the most useful posts are those citing personal lab data or linking to research."
+        },
+        {
+          "name": "r/PCOS",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/PCOS/",
+          "notes": "Relevant for those with PCOS-associated insulin resistance. Extensive community knowledge about inositol, metformin, dietary approaches, and finding practitioners who take hormonal-metabolic connections seriously."
+        },
+        {
+          "name": "Levels Health Community",
+          "platform": "App / online community",
+          "url": "https://www.levelshealth.com/",
+          "notes": "Associated with the Levels CGM programme; active content around metabolic health, glucose monitoring, and personalised dietary approaches. More health-optimisation oriented than disease-focused."
+        },
+        {
+          "name": "Diet Doctor Community Forum",
+          "platform": "Website forum",
+          "url": "https://www.dietdoctor.com/",
+          "notes": "Evidence-based resource and community focused on low-carbohydrate and ketogenic approaches to metabolic health. Useful for recipes, research summaries, and finding practitioner support."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Why We Get Sick",
+        "type": "book",
+        "author_or_source": "Benjamin Bikman PhD",
+        "url": null,
+        "description": "A rigorous and accessible explanation of insulin resistance as a root cause of most chronic disease. Covers the mechanisms of hyperinsulinaemia in clear language. One of the best starting points for understanding the science of this condition without requiring a medical background.",
+        "audience": "beginner"
+      },
+      {
+        "title": "The Glucose Revolution",
+        "type": "book",
+        "author_or_source": "Jessie Inchausp\u00e9 (Glucose Goddess)",
+        "url": null,
+        "description": "Focuses specifically on practical strategies for flattening glucose spikes \u2014 post-meal walks, food ordering, vinegar, and food swaps. Backed by CGM data and clinical research. Very accessible. Does not directly address insulin testing, but the practical hacks are immediately applicable.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Levels Health Blog and Podcast",
+        "type": "website",
+        "author_or_source": "Levels Health",
+        "url": "https://www.levelshealth.com/blog",
+        "description": "High-quality, evidence-linked content on metabolic health, CGM interpretation, food responses, and insulin resistance management. Interviews with researchers and clinicians. Useful for both beginners and those wanting more depth.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Metabolical",
+        "type": "book",
+        "author_or_source": "Robert Lustig MD",
+        "url": null,
+        "description": "A detailed, science-heavy examination of how the modern food system drives metabolic disease, with particular focus on fructose, insulin, and the failings of mainstream dietary guidance. More technical than most lay-audience books \u2014 suited to those wanting mechanistic depth.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Insulin IQ Podcast",
+        "type": "podcast",
+        "author_or_source": "Brian Mowll",
+        "url": null,
+        "description": "Covers insulin resistance, metabolic health, and type 2 diabetes management with a functional and integrative medicine perspective. Features interviews with clinicians and researchers. Useful for those wanting to go beyond basic dietary advice.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "The Insulin Resistance Diet Protocol",
+        "type": "book",
+        "author_or_source": "Miriam Jacobson RD",
+        "url": null,
+        "description": "A practical dietitian-authored guide to dietary management of insulin resistance, including meal plans, food lists, and strategies for real-world implementation. More clinical and less research-focused than other books on this list.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Glucose: The Complete Guide \u2014 Research Articles",
+        "type": "research paper",
+        "author_or_source": "Frontiers in Endocrinology / PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/?term=insulin+resistance+HOMA-IR",
+        "description": "For those wanting primary research, PubMed searches on HOMA-IR, fasting insulin, and insulin resistance return high-quality peer-reviewed studies. Particularly useful for understanding optimal reference ranges and the evidence base for specific interventions.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Peter Attia MD \u2014 The Drive Podcast (metabolic health episodes)",
+        "type": "podcast",
+        "author_or_source": "Peter Attia MD",
+        "url": "https://peterattiamd.com/podcast/",
+        "description": "Attia is a physician with a deep focus on metabolic health and longevity. Episodes on insulin resistance, CGM use, lipid management, and exercise physiology are technically rigorous and evidence-based. Best for those who want clinical-level depth.",
+        "audience": "advanced"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

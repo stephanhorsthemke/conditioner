@@ -1,0 +1,752 @@
+{
+  "condition_id": "lyme",
+  "condition_name": "Lyme disease",
+  "generated_at": "2026-07-01T11:58:41.990119Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Lyme disease is a bacterial infection caused by Borrelia burgdorferi (and related species), transmitted through the bite of infected black-legged ticks. In many people it resolves with early antibiotic treatment. In others \u2014 particularly those who are diagnosed late, undertreated, or have underlying vulnerabilities \u2014 symptoms can persist for months or years, a phenomenon often called chronic Lyme or post-treatment Lyme disease syndrome (PTLDS). This persistent form is medically controversial but experientially very real for those living with it.",
+    "detailed_summary": "Lyme disease is caused by spirochete bacteria of the Borrelia genus, most commonly Borrelia burgdorferi in North America and Borrelia afzelii or Borrelia garinii in Europe. It is transmitted through the bite of Ixodes ticks, which must typically be attached for 36\u201348 hours to transmit infection. The classic early sign is erythema migrans \u2014 an expanding, sometimes bull's-eye-shaped rash \u2014 but this does not appear in all cases, and many people do not recall being bitten.\n\nWhen caught early and treated promptly with 2\u20134 weeks of doxycycline or amoxicillin, most people recover fully. However, a significant minority \u2014 estimated at 10\u201320% \u2014 continue to experience symptoms after completing standard antibiotic therapy. This is referred to as Post-Treatment Lyme Disease Syndrome (PTLDS) by mainstream medicine, or 'chronic Lyme disease' in patient and integrative medicine communities. The underlying mechanisms of persistent illness are actively debated: proposed explanations include immune dysregulation triggered by the infection, residual bacterial fragments, bacterial persistence in tissue reservoirs, co-infections with other tick-borne pathogens (Babesia, Bartonella, Anaplasma, Ehrlichia), and damage to the nervous system or connective tissue.\n\nDiagnosis is complicated by the notorious limitations of standard two-tier serological testing (ELISA + Western blot), which can miss early infections, produce false negatives in later disseminated disease, and may remain negative in people with genuine Lyme exposure. This gap between clinical reality and test results leaves many people without a valid diagnosis for years. Those who do self-research often arrive at a Lyme hypothesis after cycling through other diagnoses including fibromyalgia, ME/CFS, MS, lupus, psychiatric illness, or 'functional' disorders.\n\nThe illness can affect virtually every organ system, but neurological, musculoskeletal, and cardiovascular involvement are most characteristic. 'Lyme neuroborreliosis' refers to direct neurological infection and can cause symptoms mimicking multiple sclerosis or encephalitis. Co-infections substantially complicate the clinical picture, with Babesia adding a malaria-like relapsing fever pattern and Bartonella contributing distinct neuropsychiatric and dermatological features.\n\nTreatment of persistent Lyme is contentious. Mainstream guidelines (IDSA) do not recommend extended antibiotic courses beyond standard duration and do not recognise 'chronic Lyme' as a valid ongoing infection. ILADS (International Lyme and Associated Diseases Society) guidelines take a different view, supporting longer or combination antibiotic protocols under careful clinical supervision. Many patients pursue functional medicine, herbal antimicrobials, or immune-modulating approaches when conventional treatment has not resolved their symptoms. Self-directed investigation is extremely common in this population and often medically necessary given how difficult it is to obtain a Lyme diagnosis from mainstream practitioners.",
+    "prevalence": {
+      "summary": "Lyme disease is the most common vector-borne disease in the Northern Hemisphere, though true prevalence is thought to be substantially higher than official case counts.",
+      "estimate": "Approximately 476,000 people are diagnosed with Lyme disease annually in the United States (CDC estimate). Globally, estimates range from 50,000\u2013100,000+ new cases per year in Europe. PTLDS affects an estimated 10\u201320% of diagnosed patients.",
+      "notes": "Official case counts are widely regarded as significant underestimates due to diagnostic limitations, underreporting, and the exclusion of seronegative cases. Endemic regions are expanding as tick populations move northward with climate change. Lyme is most prevalent in the northeastern and upper Midwestern United States, parts of Europe (particularly Germany, Czech Republic, Scandinavia), and parts of Asia. Women may be disproportionately affected by persistent symptoms, mirroring patterns seen in other post-infectious and autoimmune conditions."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Early Localised Lyme Disease",
+        "description": "Infection confined to the skin at or near the tick bite site, typically presenting within 3\u201330 days of the bite. Most likely to respond fully to a single antibiotic course.",
+        "distinguishing_features": [
+          "Erythema migrans rash (present in roughly 70\u201380% of cases but not universal)",
+          "Flu-like symptoms: fatigue, fever, headache, muscle aches",
+          "No dissemination to joints, heart, or nervous system yet",
+          "Serology often negative at this stage \u2014 clinical diagnosis is required"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Early Disseminated Lyme Disease",
+        "description": "Bacteria have spread beyond the bite site to other parts of the body, typically within days to weeks of infection. Multiple organ systems may be involved.",
+        "distinguishing_features": [
+          "Multiple erythema migrans lesions at different body sites",
+          "Facial palsy (Bell's palsy) or other cranial nerve involvement",
+          "Lyme carditis: heart block, palpitations, chest pain",
+          "Meningitis or encephalitis symptoms",
+          "Migratory joint pain"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Late Disseminated Lyme Disease",
+        "description": "Months to years after the initial infection, with significant involvement of joints, nervous system, or skin.",
+        "distinguishing_features": [
+          "Lyme arthritis: typically large-joint, especially knees \u2014 can be severely swollen",
+          "Lyme neuroborreliosis: cognitive impairment, peripheral neuropathy, encephalopathy",
+          "Acrodermatitis chronica atrophicans (ACA): skin thinning, primarily in European Borrelia strains",
+          "May occur without memory of a tick bite or earlier illness"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Post-Treatment Lyme Disease Syndrome (PTLDS)",
+        "description": "Persistent symptoms lasting more than 6 months after completing standard antibiotic treatment for confirmed Lyme disease. Mainstream medicine recognises this as a syndrome but debates its cause and treatment.",
+        "distinguishing_features": [
+          "Fatigue that does not improve with rest \u2014 often the dominant complaint",
+          "Cognitive symptoms: brain fog, memory problems, word-finding difficulty",
+          "Musculoskeletal pain: widespread, migratory, or joint-specific",
+          "Sleep disruption despite exhaustion",
+          "Standard testing may be positive, negative, or equivocal"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Chronic Lyme / Seronegative Lyme",
+        "description": "A clinically and patient-community-recognised pattern in which people have ongoing Lyme-consistent symptoms but negative or equivocal standard serology. This category is highly controversial within mainstream medicine but is the focus of significant patient advocacy and integrative medicine practice.",
+        "distinguishing_features": [
+          "Negative ELISA and/or Western blot despite compelling clinical picture",
+          "May have positive results on alternative or specialty testing (IgeneX, DNA-Connexions, etc.)",
+          "Often diagnosed after ruling out other conditions",
+          "Frequently accompanied by co-infections",
+          "Most controversial subtype \u2014 diagnosis and treatment are disputed"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Lyme with Co-Infections",
+        "description": "Ticks often carry multiple pathogens simultaneously. Co-infections with Babesia, Bartonella, Anaplasma, or Ehrlichia can substantially complicate, amplify, or alter the Lyme clinical picture.",
+        "distinguishing_features": [
+          "Babesia: relapsing fever, night sweats, air hunger, haemolytic anaemia \u2014 malaria-like",
+          "Bartonella: neuropsychiatric symptoms, stretch mark-like skin streaks, lymph node swelling, burning pain",
+          "Anaplasma/Ehrlichia: acute flu-like illness, low white cell count, elevated liver enzymes",
+          "Co-infections may not respond to doxycycline alone",
+          "Testing for co-infections is often not performed in standard Lyme workups"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Profound, non-restorative fatigue",
+        "category": "systemic",
+        "notes": "Often the most disabling feature of persistent Lyme; does not improve proportionally with rest and can worsen after physical or cognitive exertion (post-exertional malaise)"
+      },
+      {
+        "symptom": "Migratory joint pain and swelling",
+        "category": "musculoskeletal",
+        "notes": "Pain may move from joint to joint over days; large joints (especially knees) most commonly affected in late Lyme arthritis"
+      },
+      {
+        "symptom": "Widespread muscle pain and stiffness",
+        "category": "musculoskeletal",
+        "notes": "Can mimic fibromyalgia; morning stiffness is common"
+      },
+      {
+        "symptom": "Brain fog \u2014 cognitive slowing, poor concentration, word-finding difficulty",
+        "category": "neurological",
+        "notes": "Often described as 'thinking through cotton wool'; can be severe enough to impair work and daily function"
+      },
+      {
+        "symptom": "Memory impairment \u2014 short-term more than long-term",
+        "category": "neurological",
+        "notes": "Forgetting conversations, appointments, or recently learned information; sometimes called 'Lyme brain'"
+      },
+      {
+        "symptom": "Headaches \u2014 often pressure-like or behind the eyes",
+        "category": "neurological",
+        "notes": "Can be constant or episodic; may be associated with neck stiffness"
+      },
+      {
+        "symptom": "Peripheral neuropathy \u2014 tingling, numbness, burning sensations",
+        "category": "neurological",
+        "notes": "Often in hands and feet; can be asymmetric or migratory; sometimes described as electric shocks"
+      },
+      {
+        "symptom": "Facial nerve palsy (Bell's palsy)",
+        "category": "neurological",
+        "notes": "Drooping of one or both sides of the face; a classic feature of early disseminated Lyme"
+      },
+      {
+        "symptom": "Sleep disturbance \u2014 difficulty falling or staying asleep",
+        "category": "sleep",
+        "notes": "Often present even in exhausted patients; non-restorative sleep is very common"
+      },
+      {
+        "symptom": "Heart palpitations and irregular heartbeat",
+        "category": "cardiovascular",
+        "notes": "Lyme carditis can cause heart block of varying degrees; palpitations are common in both acute and persistent phases"
+      },
+      {
+        "symptom": "Shortness of breath or 'air hunger'",
+        "category": "cardiovascular / respiratory",
+        "notes": "Air hunger at rest or with minimal exertion is particularly associated with Babesia co-infection"
+      },
+      {
+        "symptom": "Erythema migrans rash",
+        "category": "skin",
+        "notes": "The classic expanding bull's-eye rash; present in approximately 70\u201380% of early cases; not always ring-shaped \u2014 can appear as a uniform expanding red oval; may be missed on the scalp or in skin folds"
+      },
+      {
+        "symptom": "Sweating episodes \u2014 particularly night sweats",
+        "category": "systemic",
+        "notes": "Drenching night sweats are more characteristic of Babesia co-infection than Borrelia alone"
+      },
+      {
+        "symptom": "Fever, chills, and flu-like illness",
+        "category": "systemic",
+        "notes": "Common in early infection and during Herxheimer reactions to treatment; relapsing fever pattern suggests Babesia"
+      },
+      {
+        "symptom": "Mood changes \u2014 anxiety, depression, irritability",
+        "category": "psychiatric / neurological",
+        "notes": "Can be disproportionate to circumstance and may predate depression diagnosis; Bartonella in particular is linked to neuropsychiatric symptoms including rage episodes"
+      },
+      {
+        "symptom": "Light, sound, and smell sensitivity",
+        "category": "neurological",
+        "notes": "Common in neuroborreliosis and persistent Lyme; overlaps with features of central sensitisation"
+      },
+      {
+        "symptom": "Vision disturbances \u2014 floaters, blurring, light sensitivity",
+        "category": "ophthalmological",
+        "notes": "Lyme can directly affect the eyes; also associated with intracranial pressure elevation in some patients"
+      },
+      {
+        "symptom": "Neck pain and stiffness",
+        "category": "musculoskeletal / neurological",
+        "notes": "Meningeal irritation in early disseminated disease; also a feature of persistent musculoskeletal involvement"
+      },
+      {
+        "symptom": "Dizziness and balance problems",
+        "category": "neurological",
+        "notes": "Can result from vestibular nerve involvement, autonomic dysfunction, or orthostatic hypotension"
+      },
+      {
+        "symptom": "Gastrointestinal symptoms \u2014 nausea, abdominal pain, altered bowel habits",
+        "category": "digestive",
+        "notes": "Less prominent than neurological or musculoskeletal features but can be driven by autonomic dysfunction, co-infections, or antibiotic disruption of gut flora"
+      },
+      {
+        "symptom": "Skin crawling or electrical sensations (formication)",
+        "category": "neurological / skin",
+        "notes": "A peripheral neuropathy symptom that many patients find difficult to describe to clinicians; not uncommon in neuroborreliosis"
+      },
+      {
+        "symptom": "Lymph node swelling",
+        "category": "immune",
+        "notes": "Particularly around the neck and armpits; more prominent with Bartonella co-infection"
+      },
+      {
+        "symptom": "Orthostatic intolerance \u2014 worsening symptoms on standing",
+        "category": "cardiovascular / autonomic",
+        "notes": "Overlap with POTS; Lyme can cause autonomic nervous system dysfunction"
+      },
+      {
+        "symptom": "Exercise intolerance and post-exertional malaise",
+        "category": "systemic",
+        "notes": "Symptoms worsen 12\u201348 hours after physical or cognitive effort; this pattern overlaps with ME/CFS and is important to recognise because pushing through exercise can worsen the condition"
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Classic presentation: tick bite history + erythema migrans rash + flu-like illness \u2014 clinical diagnosis does not require serology at this stage",
+        "Neurological Lyme pattern: brain fog + peripheral neuropathy + mood changes + fatigue in someone with tick exposure history",
+        "Seronegative pattern: compelling clinical picture with negative standard testing \u2014 does not rule out Lyme, especially in early infection or after partial antibiotic treatment",
+        "Co-infection pattern: Babesia suggested by relapsing fever, night sweats, air hunger, haemolytic anaemia; Bartonella suggested by neuropsychiatric symptoms, skin streaks, lymphadenopathy",
+        "Post-treatment pattern: persistent fatigue, cognitive impairment, pain after completing antibiotics \u2014 labs may be normal or show only low-level immune markers"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom and exposure diary",
+          "description": "Keeping a detailed log of symptoms, their timing, severity, and any pattern (time of day, activity, diet, weather) alongside a record of potential tick exposures \u2014 geographic travel, outdoor activities, contact with animals \u2014 creates a valuable clinical picture that can support or challenge a Lyme hypothesis when presented to a specialist.",
+          "safety_notes": "No physical risk. The value is in the detail; vague logs are less useful than specific, dated entries."
+        },
+        {
+          "name": "Tick identification if bitten",
+          "description": "If a tick is found attached, removing it promptly and correctly (using fine-tipped tweezers, grasping as close to the skin as possible, pulling steadily upward) and preserving it in a sealed bag with a damp cotton ball can allow species and pathogen identification. Several services (TickCheck, TickReport in the US; others in Europe) will test ticks for Borrelia and co-infections for a fee.",
+          "safety_notes": "Do not twist, burn, or apply petroleum jelly \u2014 this can cause the tick to regurgitate and increase infection risk. Removing within 24\u201336 hours substantially reduces transmission risk."
+        },
+        {
+          "name": "Photograph and document any rash",
+          "description": "If a rash appears after a tick bite or in someone with tick exposure, photographing it daily with clear lighting and a ruler or coin for scale provides documentation that can be critical for diagnosis, especially if it resolves before a clinical appointment.",
+          "safety_notes": "Erythema migrans typically expands over days \u2014 sequential photos are more informative than a single image."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Two-tier serology (ELISA + Western blot)",
+          "type": "gold_standard",
+          "description": "The CDC-recommended standard diagnostic approach. An ELISA screening test detects antibodies to Borrelia; if positive or equivocal, a Western blot is performed to confirm. IgM bands suggest recent infection (within 4\u20136 weeks); IgG bands indicate established or past infection. Sensitivity is poor in early disease (approximately 30\u201340% in first weeks) and can be falsely negative in patients who received partial antibiotic treatment or who have immune dysfunction.",
+          "availability": "Ordered by any primary care physician, urgent care, or specialist. Available at standard pathology laboratories. Insurance usually covers this when Lyme is clinically suspected."
+        },
+        {
+          "name": "Specialty Lyme testing (IgeneX, Galaxy Diagnostics, Vibrant Wellness)",
+          "type": "emerging",
+          "description": "Specialty laboratories offer expanded Western blots that include additional Borrelia bands not included in the standard CDC criteria, as well as testing for Bartonella, Babesia, and other co-infections using PCR, FISH, or antigen-based methods. Galaxy Diagnostics is considered particularly strong for Bartonella. These tests are not FDA-approved as diagnostic tests (they operate under CLIA certification) and their results are not accepted by mainstream Lyme guidelines, but many ILADS-affiliated clinicians find them clinically useful.",
+          "availability": "Ordered by physicians, particularly ILADS-affiliated Lyme-literate doctors (LLMDs) or integrative medicine practitioners. Usually requires out-of-pocket payment or prior authorisation; may cost $200\u2013$600+."
+        },
+        {
+          "name": "Comprehensive blood panel for differential diagnosis",
+          "type": "standard",
+          "description": "Full blood count, metabolic panel, thyroid function (TSH, free T3/T4), inflammatory markers (ESR, CRP), ANA, rheumatoid factor, vitamin B12, vitamin D, iron studies, and CBC with differential. Used to rule out other causes of fatigue and neurological symptoms and to identify secondary deficiencies that may be amplifying Lyme symptoms.",
+          "availability": "Ordered by any primary care physician. Standard laboratory."
+        },
+        {
+          "name": "Lyme C6 peptide ELISA (modified second-generation test)",
+          "type": "standard",
+          "description": "A more specific ELISA that detects antibodies to the C6 peptide of Borrelia. Slightly better sensitivity and specificity than the standard first-generation ELISA and can be useful for monitoring treatment response (C6 levels often decline with successful treatment).",
+          "availability": "Available through major reference laboratories (e.g., Quest, LabCorp). Can be ordered by any clinician."
+        },
+        {
+          "name": "Cerebrospinal fluid (CSF) analysis",
+          "type": "standard",
+          "description": "Lumbar puncture with CSF testing for Lyme-specific antibodies, cell count, protein, and glucose. Used when neuroborreliosis is suspected \u2014 can confirm intrathecal antibody production (antibodies made within the CNS) and elevated lymphocyte count. Not routinely required but important in severe neurological presentations.",
+          "availability": "Performed in hospital or specialist setting. Ordered by neurologists or infectious disease specialists."
+        },
+        {
+          "name": "MRI brain and spine",
+          "type": "standard",
+          "description": "Brain MRI may show white matter lesions in neuroborreliosis that can be confused with MS lesions. Useful both to assess the degree of neurological involvement and to exclude structural causes of symptoms. Often normal even in symptomatic neuroborreliosis.",
+          "availability": "Ordered by neurologists or infectious disease specialists. Available in most hospital and radiology settings."
+        },
+        {
+          "name": "Babesia smear and PCR; Babesia antibody serology",
+          "type": "standard",
+          "description": "Peripheral blood smear can show intraerythrocytic ring forms in acute Babesia infection (appears similar to malaria). PCR is more sensitive in established infection. Antibody testing (IgG/IgM) available for Babesia microti and Babesia duncani.",
+          "availability": "Ordered by infectious disease specialists or ILADS-affiliated practitioners. Available through standard reference labs and specialty labs like IgeneX."
+        },
+        {
+          "name": "Neuropsychological testing",
+          "type": "standard",
+          "description": "Formal cognitive testing by a neuropsychologist can objectively document and quantify cognitive impairment in Lyme neuroborreliosis \u2014 including processing speed, memory, attention, and executive function. Useful for disability documentation and treatment monitoring.",
+          "availability": "Referral from neurologist or psychiatrist. Available at academic medical centres and neuropsychology clinics."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "me_cfs",
+        "name": "ME / CFS",
+        "relationship": "often_confused",
+        "explanation": "Post-treatment Lyme disease syndrome and ME/CFS share an almost identical symptom profile \u2014 profound fatigue, post-exertional malaise, cognitive impairment, and sleep disruption. Lyme is considered one of several infectious triggers capable of initiating ME/CFS in susceptible individuals. Some people diagnosed with ME/CFS may have unrecognised Lyme or active co-infections."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "often_confused",
+        "explanation": "Widespread musculoskeletal pain, fatigue, sleep problems, and cognitive symptoms in persistent Lyme are frequently mislabelled as fibromyalgia, particularly when serology is negative. Lyme infection can trigger central sensitisation patterns indistinguishable from fibromyalgia. The conditions can co-exist and may share neuroimmune mechanisms."
+      },
+      {
+        "id": "pots",
+        "name": "POTS / dysautonomia",
+        "relationship": "downstream",
+        "explanation": "Borrelia can damage the autonomic nervous system, resulting in dysautonomia or POTS-like syndromes. Orthostatic intolerance, racing heart on standing, dizziness, and exercise intolerance in Lyme patients may reflect autonomic nerve involvement rather than (or in addition to) cardiac or purely infectious pathology."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome",
+        "relationship": "comorbid",
+        "explanation": "MCAS is increasingly recognised as a comorbidity in people with Lyme disease, particularly those with persistent symptoms. Borrelia and co-infection antigens may directly activate mast cells, and the resulting immune dysregulation can amplify sensitivity reactions across many organ systems."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / HSD",
+        "relationship": "comorbid",
+        "explanation": "Hypermobile Ehlers-Danlos syndrome and Lyme disease frequently co-occur in patient populations and may be mutually amplifying: connective tissue laxity may facilitate bacterial dissemination, while Borrelia can degrade collagen. The overlapping symptom profile (joint pain, fatigue, dysautonomia, cognitive symptoms) makes differential diagnosis challenging."
+      },
+      {
+        "id": "long_covid",
+        "name": "Long COVID",
+        "relationship": "mechanistic_link",
+        "explanation": "Long COVID and chronic Lyme share overlapping biological mechanisms including immune dysregulation, microglial activation, autonomic dysfunction, and mitochondrial impairment. Both are post-infectious syndromes with similar symptom profiles, and research into one is informing understanding of the other."
+      },
+      {
+        "id": "mold_cirs",
+        "name": "Mold illness / CIRS",
+        "relationship": "comorbid",
+        "explanation": "Lyme disease and mold illness (CIRS) share overlapping inflammatory mechanisms and are frequently identified together by functional and integrative medicine practitioners. Both involve chronic immune activation, and many patients report that mold exposure significantly worsens Lyme symptoms. Dr Ritchie Shoemaker's CIRS model explicitly includes Lyme as a biotoxin trigger."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation",
+        "relationship": "downstream",
+        "explanation": "Chronic neuroinflammation in Lyme disease can sensitise central pain processing pathways, producing widespread pain, heightened sensitivity to stimuli, and amplified symptom perception that persists even after the infectious burden is reduced."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "comorbid",
+        "explanation": "Neuroinflammation from Borrelia and co-infections can directly affect mood regulation through cytokine-mediated pathways. Depression in Lyme patients may have a genuine neuroimmune basis rather than being purely reactive, and may not respond to standard antidepressants without addressing the underlying infection."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "comorbid",
+        "explanation": "Anxiety is frequently reported in chronic Lyme and may reflect direct neurological involvement rather than a secondary psychological response. Bartonella co-infection in particular is associated with severe anxiety and panic-like episodes."
+      },
+      {
+        "id": "migraine",
+        "name": "Migraine",
+        "relationship": "comorbid",
+        "explanation": "Migraine-like headaches are common in neuroborreliosis and PTLDS. Lyme-related neuroinflammation and vascular effects may lower the threshold for migraine attacks in susceptible individuals."
+      },
+      {
+        "id": "hypothyroidism",
+        "name": "Hypothyroidism",
+        "relationship": "comorbid",
+        "explanation": "Borrelia infection has been associated with thyroid autoimmunity and hypothyroidism in some studies. Thyroid dysfunction can amplify Lyme-related fatigue and cognitive symptoms; comprehensive thyroid testing is relevant in Lyme evaluation."
+      },
+      {
+        "id": "ebv",
+        "name": "EBV reactivation",
+        "relationship": "comorbid",
+        "explanation": "Lyme-related immune suppression or dysregulation can trigger reactivation of latent Epstein-Barr virus, creating a compounded post-infectious fatigue syndrome. EBV reactivation is a relevant co-factor to investigate in treatment-resistant cases."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "downstream",
+        "explanation": "Extended antibiotic treatment for Lyme \u2014 often necessary in complex cases \u2014 can profoundly disrupt the gut microbiome. The resulting dysbiosis may contribute to ongoing fatigue, immune dysregulation, and GI symptoms, and may impair treatment response."
+      },
+      {
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "downstream",
+        "explanation": "Antibiotic use in Lyme treatment and autonomic dysfunction affecting gut motility can both predispose to SIBO. GI symptoms in Lyme patients may partly reflect this downstream consequence rather than direct Borrelia involvement."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor sleep / insomnia",
+        "relationship": "comorbid",
+        "explanation": "Sleep disturbance is near-universal in Lyme disease and PTLDS, and is not simply a consequence of pain. Borrelia appears to directly disrupt sleep architecture, and poor sleep in turn impairs immune function, cognitive performance, and pain threshold \u2014 creating a self-reinforcing cycle."
+      },
+      {
+        "id": "mitochondrial",
+        "name": "Mitochondrial dysfunction",
+        "relationship": "mechanistic_link",
+        "explanation": "Borrelia and its associated immune response may impair mitochondrial function, contributing to the cellular energy deficit that underlies post-exertional malaise and fatigue in persistent Lyme. This mechanism is shared with ME/CFS and is an area of active research."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Antibiotic treatment \u2014 standard course",
+          "category": "medication",
+          "description": "Oral doxycycline (100mg twice daily for 14\u201321 days) is the first-line treatment for early Lyme disease in adults and children over 8. Amoxicillin or cefuroxime are alternatives for those who cannot tolerate doxycycline. For neurological or cardiac involvement, intravenous ceftriaxone is typically used. In early disease, this approach is highly effective.",
+          "evidence_level": "strong",
+          "notes": "Standard courses are well-supported for early Lyme. The evidence for extended or repeated antibiotic courses in PTLDS is contested \u2014 controlled trials have not shown sustained benefit, but these trials are criticised for patient selection and duration. Clinical decision-making should weigh individual presentation, severity, and co-infections."
+        },
+        {
+          "name": "Extended or combination antibiotics under ILADS protocols",
+          "category": "medication",
+          "description": "ILADS-affiliated practitioners may recommend longer antibiotic courses (weeks to months), combination protocols (e.g., doxycycline with a cyst-buster such as tinidazole, or combined with azithromycin for Bartonella), or pulsed approaches. This is particularly considered when standard treatment has failed and co-infections are present.",
+          "evidence_level": "anecdotal",
+          "notes": "This approach is not endorsed by mainstream infectious disease guidelines and carries risks including antibiotic-associated diarrhoea, C. difficile infection, yeast overgrowth, and antibiotic resistance. Requires careful clinical supervision, ideally including gut microbiome protection with probiotics and dietary support. Self-medicating with antibiotics is dangerous."
+        },
+        {
+          "name": "Herbal antimicrobials",
+          "category": "supplement",
+          "description": "Several herbal protocols are used by integrative practitioners and patients managing persistent Lyme. Stephen Buhner's herbal protocol (including Japanese knotweed, cat's claw, andrographis, and others) has substantial anecdotal support in the Lyme community. A 2020 study published in Frontiers in Medicine found that some botanical extracts showed greater activity against Borrelia persisters in vitro than doxycycline. The Byron White formulas and the Cowden protocol are other commonly used approaches.",
+          "evidence_level": "anecdotal",
+          "notes": "In vitro evidence is promising for some botanicals but clinical trial evidence is very limited. Herbal protocols can have real pharmacological activity and interactions. Supervision by a knowledgeable practitioner is advisable. These approaches are often used alongside (not instead of) antibiotic treatment."
+        },
+        {
+          "name": "Anti-inflammatory diet",
+          "category": "diet",
+          "description": "A whole-food, low-sugar, anti-inflammatory dietary pattern (emphasising vegetables, quality proteins, healthy fats, and avoiding ultra-processed foods, refined sugars, and common inflammatory triggers) may help reduce immune system burden and support recovery. Some people with Lyme also identify specific food sensitivities that worsen symptoms.",
+          "evidence_level": "anecdotal",
+          "notes": "Diet alone does not treat Borrelia infection but may reduce symptom severity and support immune resilience. Gluten elimination is commonly reported to help some patients with cognitive and fatigue symptoms, possibly due to concurrent gut permeability."
+        },
+        {
+          "name": "Gut microbiome protection and restoration",
+          "category": "supplement / diet",
+          "description": "During and after antibiotic treatment, supporting the gut microbiome with high-quality, multi-strain probiotics (taken at least 2 hours away from antibiotics), prebiotic foods, and fermented foods (where tolerated) can help prevent antibiotic-associated dysbiosis and reduce downstream GI complications.",
+          "evidence_level": "moderate",
+          "notes": "Saccharomyces boulardii is specifically evidence-supported for reducing antibiotic-associated diarrhoea. Robust probiotic supplementation during antibiotic treatment is widely recommended by integrative practitioners treating Lyme."
+        },
+        {
+          "name": "Pacing and energy management",
+          "category": "lifestyle",
+          "description": "For those with post-exertional malaise \u2014 symptoms worsening 12\u201348 hours after physical or cognitive effort \u2014 the ME/CFS pacing approach is directly applicable. This means staying within the 'energy envelope', avoiding boom-and-bust activity cycles, and using heart rate monitoring (keeping HR below the anaerobic threshold, often around 60% max HR) to guide activity.",
+          "evidence_level": "moderate",
+          "notes": "Pushing through post-exertional malaise in Lyme can cause prolonged relapse. This is counterintuitive for patients who believe exercise is always beneficial. Graded exercise therapy (GET) as designed for ME/CFS has been associated with worsening in some patients with post-exertional malaise and should be approached cautiously."
+        },
+        {
+          "name": "Sleep optimisation",
+          "category": "lifestyle",
+          "description": "Addressing sleep disturbance through sleep hygiene, blue light reduction, consistent sleep-wake timing, and where indicated, supplements (low-dose melatonin, magnesium glycinate) or medications. Some ILADS practitioners use low-dose naltrexone (LDN) which may improve sleep quality alongside its anti-inflammatory effects.",
+          "evidence_level": "moderate",
+          "notes": "Sleep is foundational to immune function and cognitive recovery. Sleep disruption in Lyme is often biologically driven (not just psychological) and may require more than behavioural approaches to resolve."
+        },
+        {
+          "name": "Low-dose naltrexone (LDN)",
+          "category": "medication",
+          "description": "LDN (typically 1.5\u20134.5mg at bedtime) works by transiently blocking opioid receptors, which upregulates endogenous opioids and modulates microglial and immune function. It is used off-label by many integrative and Lyme-literate practitioners for neuroinflammation, pain, cognitive symptoms, and fatigue in persistent Lyme.",
+          "evidence_level": "anecdotal",
+          "notes": "Evidence is mostly case series and patient-reported; randomised controlled trial data specifically in Lyme is lacking, though LDN has broader emerging evidence in inflammatory and autoimmune conditions. Generally well tolerated. Requires a prescription."
+        },
+        {
+          "name": "Magnesium supplementation",
+          "category": "supplement",
+          "description": "Magnesium deficiency is common in Lyme patients and may worsen muscle cramps, nerve pain, headaches, and sleep problems. Magnesium glycinate or malate are generally better tolerated than magnesium oxide. Some practitioners also use IV magnesium in acute situations.",
+          "evidence_level": "anecdotal",
+          "notes": "Testing serum magnesium can miss deficiency \u2014 red blood cell magnesium is a better indicator but not always available. Supplementation is low-risk at standard doses. Loose stools are the most common side effect \u2014 reducing dose usually resolves this."
+        },
+        {
+          "name": "Psychological support and nervous system regulation",
+          "category": "lifestyle / therapy",
+          "description": "Chronic Lyme involves prolonged immune activation that dysregulates the nervous system. Practices that activate the parasympathetic nervous system \u2014 including heart rate variability (HRV) training, breathing exercises, meditation, somatic therapy, and gentle yoga \u2014 may help reduce symptom severity and improve resilience. Working with a therapist familiar with chronic illness (rather than one who dismisses the organic basis of symptoms) is valuable.",
+          "evidence_level": "moderate",
+          "notes": "This is not the same as saying symptoms are psychological. The nervous system dysregulation is real and bidirectional \u2014 addressing it supports physical recovery. Patients often resist this framing initially, fearing it will be used to dismiss their illness."
+        }
+      ],
+      "things_to_avoid": [
+        "Aggressive exercise when post-exertional malaise is present \u2014 pushing through crashes in Lyme can cause prolonged relapse and is counterproductive to recovery",
+        "Purchasing antibiotics outside of medical supervision \u2014 self-medicating carries serious risks including antibiotic resistance, C. difficile colitis, and missing co-infections that require different treatment",
+        "Relying solely on a negative standard Lyme test to rule out the diagnosis \u2014 sensitivity in early disease is poor, and false negatives are well-documented",
+        "High-sugar and ultra-processed food during active infection \u2014 sugar may support bacterial persistence and worsen inflammation",
+        "Extended raw garlic or high-dose vitamin C without monitoring in acute illness \u2014 some supplements can trigger Herxheimer-like reactions that are difficult to interpret",
+        "Ignoring tick bites in endemic areas \u2014 a 'watch and wait' approach without at least documenting the exposure and monitoring for symptoms delays diagnosis",
+        "Dismissing neuropsychiatric symptoms (anxiety, depression, rage) as purely psychological without investigating Bartonella and neuroborreliosis",
+        "Taking doxycycline with dairy, calcium supplements, or antacids \u2014 these bind the antibiotic and dramatically reduce its absorption"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "Standard Lyme testing misses a significant proportion of genuine cases, and a negative test cannot reliably rule out the diagnosis \u2014 yet most mainstream clinicians treat a negative result as definitive.",
+        "why_resisted": "Patients want a clear answer, and clinicians are trained to trust validated tests. Being told 'your test is negative, so you don't have Lyme' feels authoritative even when the test is poorly sensitive in early or partially treated disease.",
+        "path_forward": "Those who understand the testing limitations can pursue clinical diagnosis alongside more comprehensive specialty testing, seek ILADS-affiliated practitioners who are experienced in seronegative cases, and document their clinical picture thoroughly \u2014 increasing the chance of appropriate evaluation and treatment."
+      },
+      {
+        "truth": "Most mainstream infectious disease specialists and primary care doctors are trained in the IDSA guidelines, which do not recognise chronic Lyme as an ongoing infection and do not support extended antibiotic treatment. Many people with persistent Lyme will not get appropriate care from these practitioners.",
+        "why_resisted": "People want to trust the most credentialed specialists in their healthcare system, and being dismissed by them is demoralising. Seeking care outside mainstream medicine can feel like a step toward quackery.",
+        "path_forward": "Individuals who seek out ILADS-affiliated Lyme-literate doctors (LLMDs), functional medicine practitioners with Lyme experience, and integrative specialists often find more thorough evaluation of co-infections, persistent disease, and treatment options \u2014 while maintaining appropriate scepticism about any practitioner promising guaranteed cures."
+      },
+      {
+        "truth": "Co-infections \u2014 particularly Babesia, Bartonella, and Anaplasma \u2014 are extremely common in people with persistent Lyme symptoms and are frequently not tested for even by Lyme-focused practitioners. Treating Borrelia alone while co-infections remain active explains many treatment failures.",
+        "why_resisted": "Getting a Lyme diagnosis at all is hard enough. The idea that there may be multiple simultaneous infections requiring different treatments is overwhelming. Standard Lyme testing does not include co-infection panels.",
+        "path_forward": "Thorough co-infection testing through specialty labs, and treatment protocols tailored to the specific pathogens identified, can break treatment impasses that otherwise persist for years."
+      },
+      {
+        "truth": "Recovery from persistent Lyme is rarely a linear process \u2014 Herxheimer reactions (symptom flares during treatment as bacteria die), relapse cycles, and multi-year timelines are common even with appropriate treatment. There is no universally effective protocol.",
+        "why_resisted": "People who have been ill for a long time want to find the thing that will make them better quickly. The reality of a long, non-linear recovery is deeply discouraging.",
+        "path_forward": "Patients who understand and accept the likely timeline, plan for it, and build in genuine recovery support \u2014 including pacing, nutrition, sleep, and psychological resources \u2014 are better positioned to make sustained progress than those waiting for a single intervention to resolve everything."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Complete and accurate diagnosis including co-infections",
+          "why_it_matters": "Treatment failure is most commonly explained by missed co-infections (particularly Babesia, Bartonella) or misdiagnosis. Without knowing what is actually present, treatment is at best partially targeted.",
+          "how_to_start": "Seek a Lyme-literate medical doctor (LLMD) affiliated with ILADS, request comprehensive testing through specialty laboratories (IgeneX, Galaxy Diagnostics), and ensure that at minimum Babesia and Bartonella are evaluated alongside Borrelia.",
+          "timeline": "Comprehensive testing and review typically takes 2\u20138 weeks from initial appointment to results.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Appropriate antibiotic or antimicrobial treatment matched to identified pathogens",
+          "why_it_matters": "Borrelia and its co-infections require different antimicrobials. Babesia requires an antiprotozoal approach (atovaquone/azithromycin or quinine/clindamycin). Bartonella typically requires azithromycin, rifampin, or doxycycline in specific combinations. Using doxycycline alone when co-infections are present will not resolve the full clinical picture.",
+          "how_to_start": "Work with an experienced LLMD to design a treatment protocol based on test results and clinical response. Discuss both pharmaceutical and herbal options. Ensure concurrent gut protection.",
+          "timeline": "Initial clinical response may be seen within weeks; full treatment courses typically run months in persistent disease.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Gut microbiome protection during and after antibiotic treatment",
+          "why_it_matters": "Antibiotic-associated dysbiosis is a near-certain consequence of prolonged treatment and can become a significant source of ongoing symptoms and immune dysregulation independent of the infection itself.",
+          "how_to_start": "Begin high-quality multi-strain probiotic supplementation (taken 2 hours from antibiotics), add Saccharomyces boulardii, eat fermented foods if tolerated, and avoid high-sugar foods that feed pathogenic bacteria.",
+          "timeline": "Begin at the start of antibiotic treatment and continue for at least 6 weeks after completion.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Pacing and energy envelope management",
+          "why_it_matters": "Post-exertional malaise (PEM) in Lyme, as in ME/CFS, means that exceeding energy limits triggers immune and neurological flares that can set back recovery by days to weeks. Managing the energy envelope allows the body to allocate resources toward healing rather than crash recovery.",
+          "how_to_start": "Use a heart rate monitor and keep activity below the anaerobic threshold (approximately 60% max HR = 220 minus age \u00d7 0.6). Track activity and symptoms in a diary to identify personal thresholds. Rest proactively rather than reactively.",
+          "timeline": "Consistent pacing over 3\u20136 months typically produces measurable improvement in baseline function.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Identifying and addressing environmental co-factors",
+          "why_it_matters": "Mold exposure (CIRS), heavy metal burden, chronic stress, and poor sleep all impair immune function and can prevent recovery even when antimicrobial treatment is appropriately targeted. Mold illness in particular can mimic and compound Lyme symptoms and may need separate treatment.",
+          "how_to_start": "Assess the living and working environment for water damage or mold. Consider an ERMI test for home mold. Review heavy metal exposure history. Address sleep disturbance as a priority, not an afterthought.",
+          "timeline": "Environmental remediation effects on health can take months to become apparent.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Neurological and autonomic recovery support",
+          "why_it_matters": "Lyme causes real neurological and autonomic nervous system damage that persists beyond the infectious phase. Supporting neural repair through sleep, omega-3 fatty acids, low-dose naltrexone, magnesium, and nervous system regulation practices directly addresses this layer of illness.",
+          "how_to_start": "Optimise sleep quality as the single highest-leverage intervention. Add magnesium glycinate. Explore HRV biofeedback (e.g., using a device like Garmin or Polar with a HRV app). Discuss LDN with a knowledgeable practitioner.",
+          "timeline": "Neurological recovery tends to be the slowest component \u2014 improvement is typically measured in months to years.",
+          "requires_professional": false
+        }
+      ],
+      "common_mistakes": [
+        "Accepting a negative standard ELISA result as definitive and abandoning investigation \u2014 this leads to years of missed diagnosis and progression",
+        "Treating Borrelia with doxycycline alone without evaluating for Babesia, Bartonella, or other co-infections \u2014 the most common reason for treatment failure in complex cases",
+        "Stopping antibiotic treatment at the first sign of improvement rather than completing the recommended course \u2014 incomplete treatment can allow bacterial persistence and relapse",
+        "Pushing through post-exertional malaise with aggressive exercise \u2014 this is the most reliable way to cause prolonged relapse in Lyme with PEM",
+        "Neglecting gut microbiome support during antibiotic treatment \u2014 antibiotic-associated dysbiosis becomes a significant secondary source of symptoms",
+        "Spending years and significant financial resources on Lyme-specific treatments while an unmolded living environment continues to drive immune dysregulation",
+        "Dismissing the neuropsychiatric dimension of Lyme \u2014 depression, anxiety, and cognitive symptoms in this context often have a direct biological cause and may not respond to psychiatric medications without addressing the underlying infection",
+        "Chasing each individual symptom with separate specialists rather than having an integrating clinician who understands the full Lyme picture"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Lyme-literate medical doctor (LLMD) \u2014 ILADS-affiliated",
+          "role": "The most knowledgeable practitioners for persistent and complex Lyme disease. These doctors follow ILADS diagnostic and treatment guidelines, are experienced with co-infections, and are familiar with specialty testing. They typically manage both antibiotic and integrative treatment protocols.",
+          "notes": "Finding an LLMD is not straightforward \u2014 many do not advertise publicly due to medical board scrutiny of Lyme treatment. ILADS has a 'Find a Provider' tool on their website. Expect out-of-pocket costs; many LLMDs are private-pay. Wait times can be long."
+        },
+        {
+          "type": "Functional medicine doctor",
+          "role": "Investigates root causes and is typically more open to comprehensive testing, co-infection evaluation, and integrative treatment than mainstream primary care. May not have deep Lyme-specific expertise but can coordinate care, manage lifestyle factors, and address co-morbidities.",
+          "notes": "Quality varies widely. Look for those with experience specifically in tick-borne disease or chronic infection, not just general functional medicine."
+        },
+        {
+          "type": "Infectious disease specialist (mainstream)",
+          "role": "The mainstream specialist for acute Lyme disease and for IV antibiotic administration. Well-positioned to diagnose and treat early and severe disseminated Lyme.",
+          "notes": "Many infectious disease specialists follow IDSA guidelines and do not recognise chronic Lyme or offer extended treatment. They are most useful for acute presentations, severe neurological or cardiac involvement, and IV ceftriaxone administration. For persistent Lyme, they are often not the right specialist."
+        },
+        {
+          "type": "Neurologist",
+          "role": "Useful for evaluation and documentation of neurological involvement \u2014 nerve conduction studies, MRI, CSF analysis for neuroborreliosis, cognitive testing referral.",
+          "notes": "Many neurologists are not familiar with Lyme neuroborreliosis and may not pursue Lyme as a diagnosis without prompting. Bringing documentation of tick exposure history and testing results is important."
+        },
+        {
+          "type": "Integrative or naturopathic doctor with Lyme experience",
+          "role": "Can support herbal antimicrobial protocols, supplement strategies, detoxification support, and lifestyle-based recovery approaches alongside or between antibiotic courses.",
+          "notes": "Credential variation is significant. Look specifically for experience with tick-borne disease, co-infections, and post-infectious syndromes rather than general naturopathy."
+        },
+        {
+          "type": "Rheumatologist",
+          "role": "Relevant for Lyme arthritis evaluation and for ruling out autoimmune alternatives (lupus, rheumatoid arthritis). Can perform joint aspiration and testing.",
+          "notes": "Rheumatologists are useful for the joint-predominant presentation but may not investigate infectious causes thoroughly unless prompted."
+        },
+        {
+          "type": "POTS / dysautonomia specialist (autonomic neurologist or cardiologist)",
+          "role": "For patients with significant orthostatic intolerance, POTS, or cardiovascular autonomic symptoms, specialist evaluation of the autonomic nervous system is valuable and can guide management independently of Lyme treatment.",
+          "notes": "Increasingly available at academic medical centres. Lyme as a trigger for dysautonomia should be raised explicitly."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/Lyme",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/Lyme/",
+          "notes": "Large, active community of people navigating Lyme diagnosis, treatment, and persistent symptoms. Good source of practitioner recommendations, testing guidance, and experiential knowledge. Moderated but be aware of strong opinions on both sides of treatment debates."
+        },
+        {
+          "name": "Lyme Disease Support Network",
+          "platform": "Facebook Groups",
+          "url": "https://www.facebook.com/groups/lymediseasesupport/",
+          "notes": "One of several large Facebook-based Lyme communities. Useful for treatment experiences, finding LLMDs, and peer support. Many regional and symptom-specific groups also exist."
+        },
+        {
+          "name": "ILADS (International Lyme and Associated Diseases Society)",
+          "platform": "Website / professional organisation",
+          "url": "https://www.ilads.org",
+          "notes": "The professional body for Lyme-literate practitioners. Their patient-facing resources include treatment guidelines, a practitioner finder, and educational materials. Understanding ILADS versus IDSA positions helps navigate the landscape of Lyme medicine."
+        },
+        {
+          "name": "LymeDisease.org (formerly California Lyme Disease Association)",
+          "platform": "Website / advocacy",
+          "url": "https://www.lymedisease.org",
+          "notes": "Patient advocacy organisation with resources, news, research, and the MyLymeData patient registry. The patient registry is a meaningful resource for understanding treatment outcomes across a large self-reported dataset."
+        },
+        {
+          "name": "Inspire Lyme Disease Community",
+          "platform": "Forum",
+          "url": "https://www.inspire.com/groups/lyme-disease/",
+          "notes": "Moderated forum with a large membership. Useful for less anonymous, more structured discussion than Reddit."
+        },
+        {
+          "name": "Tick-borne Disease Alliance / GLA (Global Lyme Alliance)",
+          "platform": "Website / charity",
+          "url": "https://www.globallymealliance.org",
+          "notes": "Research and advocacy focused. Good for staying updated on emerging research, understanding the scientific landscape, and accessing educational materials."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Why Can't I Get Better? Solving the Mystery of Lyme and Chronic Disease",
+        "type": "book",
+        "author_or_source": "Dr Richard Horowitz",
+        "url": null,
+        "description": "Written by one of the most experienced ILADS-affiliated Lyme practitioners in the US, this book explains the MSIDS (Multiple Systemic Infectious Disease Syndrome) model, covers co-infections in depth, and provides a comprehensive framework for understanding and investigating persistent Lyme. One of the most recommended starting points for patients with complex presentations.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "How Can I Get Better? An Action Plan for Treating Resistant Lyme and Chronic Disease",
+        "type": "book",
+        "author_or_source": "Dr Richard Horowitz",
+        "url": null,
+        "description": "The practical follow-up to 'Why Can't I Get Better?', with detailed guidance on treatments, protocols, and what to discuss with practitioners. More actionable than the first book.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Healing Lyme: Natural Healing of Lyme Borreliosis and the Co-infections Chlamydia and Spotted Fever Rickettsioses",
+        "type": "book",
+        "author_or_source": "Stephen Harrod Buhner",
+        "url": null,
+        "description": "The foundational text on herbal antimicrobial protocols for Lyme disease. Buhner's protocol is widely used in the Lyme community and references the in vitro and clinical research that supports specific botanical agents. Essential reading for anyone considering or researching herbal approaches.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "ILADS Treatment Guidelines",
+        "type": "research paper",
+        "author_or_source": "International Lyme and Associated Diseases Society",
+        "url": "https://www.ilads.org/patient-care/ilads-treatment-guidelines/",
+        "description": "The evidence-based guidelines from ILADS covering diagnosis, testing, and treatment of Lyme disease and co-infections. A necessary counterpoint to IDSA guidelines for anyone trying to understand the full clinical picture. Freely available online.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Under Our Skin",
+        "type": "video",
+        "author_or_source": "Andy Abrahams Wilson (Director)",
+        "url": "https://underourskin.com",
+        "description": "Award-winning documentary following the lives of Lyme patients and the medical controversy around chronic Lyme. Provides an accessible introduction to the diagnostic and treatment challenges and the human cost of the IDSA/ILADS divide. A useful starting point before diving into clinical literature.",
+        "audience": "beginner"
+      },
+      {
+        "title": "MyLymeData Patient Registry",
+        "type": "website",
+        "author_or_source": "LymeDisease.org",
+        "url": "https://www.lymedisease.org/lyme-basics/lyme-disease/mylymedata/",
+        "description": "A large patient-reported outcomes registry that collects real-world data on Lyme symptoms, treatments, and outcomes. The published analyses from this registry provide insight into what treatments patients actually experience as helpful \u2014 a valuable complement to formal clinical trials.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "The Beginner's Guide to Lyme Disease",
+        "type": "book",
+        "author_or_source": "Nicola McFadzean Ducharme",
+        "url": null,
+        "description": "A clear and accessible introduction written for patients newly diagnosed with Lyme disease. Covers diagnosis, testing, treatment options, co-infections, and lifestyle support without requiring a medical background. A good first book for those at the beginning of their Lyme journey.",
+        "audience": "beginner"
+      },
+      {
+        "title": "In Vivo and In Vitro Evidence of the Effectiveness of Natural Compounds Against Borrelia burgdorferi",
+        "type": "research paper",
+        "author_or_source": "Feng J et al. \u2014 Frontiers in Medicine",
+        "url": "https://www.frontiersin.org/articles/10.3389/fmed.2020.00006/full",
+        "description": "A peer-reviewed study that tested multiple herbal extracts against Borrelia burgdorferi persister cells (the form believed to survive standard antibiotic treatment) and found that several \u2014 including Cryptolepis, black walnut, sweet wormwood, and cat's claw \u2014 showed greater activity than doxycycline. Important scientific context for herbal Lyme approaches.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Columbia University Lyme and Tick-Borne Diseases Research Center",
+        "type": "website",
+        "author_or_source": "Columbia University Irving Medical Center",
+        "url": "https://www.columbia-lyme.org",
+        "description": "One of the leading academic research centres for Lyme disease. Their website provides access to ongoing research, clinical trial information, and patient resources. Useful for those who want to follow emerging scientific evidence and understand what academic medicine is investigating.",
+        "audience": "advanced"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}

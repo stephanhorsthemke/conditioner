@@ -10,11 +10,18 @@ interface Props {
 export default function AccordionSection({ title, children, isEmpty, defaultOpen }: Props) {
   if (isEmpty) return null;
   return (
-    <details open={defaultOpen} style={{ marginBottom: "0.5rem", borderBottom: "1px solid #e5e7eb", paddingBottom: "0.5rem" }}>
-      <summary style={{ cursor: "pointer", fontWeight: 600, fontSize: "1rem", padding: "0.5rem 0", userSelect: "none" }}>
+    <details open={defaultOpen} style={{ marginBottom: "0.75rem", borderBottom: "1px solid #f3f4f6", paddingBottom: "0.5rem" }}>
+      <summary style={{
+        cursor: "pointer",
+        fontWeight: 600,
+        fontSize: "1.05rem",
+        color: "#374151",
+        padding: "0.75rem 0",
+        userSelect: "none",
+      }}>
         {title}
       </summary>
-      <div style={{ padding: "0.75rem 0 0.25rem 0" }}>
+      <div style={{ padding: "0.5rem 0 0.5rem 0", color: "#374151" }}>
         {children}
       </div>
     </details>

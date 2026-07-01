@@ -1,0 +1,736 @@
+{
+  "condition_id": "tmd",
+  "condition_name": "Temporomandibular disorder",
+  "generated_at": "2026-07-01T11:58:41.975735Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Temporomandibular disorder (TMD) is a broad term for conditions affecting the jaw joint (temporomandibular joint, or TMJ), the surrounding muscles, and the nerves that control jaw movement. People with TMD commonly experience jaw pain, clicking or locking of the jaw, headaches, ear pain, and difficulty chewing. It is often chronic, poorly understood, and undertreated \u2014 partly because it sits at the intersection of dentistry, neurology, and musculoskeletal medicine, and no single specialty reliably owns it.",
+    "detailed_summary": "The temporomandibular joint connects the lower jaw (mandible) to the skull just in front of each ear. It is one of the most complex joints in the body, capable of hinging, sliding, and rotating simultaneously. TMD is not a single diagnosis but a cluster of overlapping conditions involving the joint itself, the disc that cushions it, and the muscles of mastication (chewing). Causes are multifactorial and may include jaw injury, teeth grinding or clenching (bruxism), dental malocclusion, connective tissue disorders, central sensitisation, and psychological stress. Many cases involve a combination of structural and neurological factors, which is why purely mechanical treatments often provide only partial relief. TMD disproportionately affects women, and hormonal influences are thought to play a role. The condition exists on a spectrum \u2014 some people have mild intermittent symptoms that resolve with simple self-care, while others develop chronic, disabling pain with widespread effects on sleep, diet, and quality of life. Diagnosis is largely clinical, as imaging findings often do not correlate well with symptom severity. Because mainstream care (most dentists and GPs) tends to focus on symptom management rather than root cause investigation, many individuals with persistent TMD benefit from seeking multidisciplinary or specialist evaluation.",
+    "prevalence": {
+      "summary": "TMD is one of the most common chronic orofacial pain conditions, affecting a significant minority of the population at some point in their lives.",
+      "estimate": "Approximately 5\u201312% of the general population at any given time; lifetime prevalence estimates range up to 25\u201330%",
+      "notes": "Prevalence varies widely depending on diagnostic criteria used. Women are diagnosed 2\u20133 times more often than men, and peak incidence occurs in the 20\u201340 age range. Many cases are mild or transient; an estimated 5\u20137% of people have symptoms severe enough to seek treatment. Underdiagnosis is likely, particularly in populations with limited dental access."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Myofascial TMD (muscle-dominant)",
+        "description": "Pain and dysfunction originating primarily in the muscles of mastication (masseter, temporalis, pterygoids) rather than the joint itself. This is the most common subtype.",
+        "distinguishing_features": [
+          "Diffuse, aching pain in the face, temples, and neck",
+          "Pain often worsens with jaw use and stress",
+          "Less joint clicking or locking compared to articular subtypes",
+          "Often overlaps with fibromyalgia and widespread myofascial pain",
+          "Bruxism or clenching is frequently present"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Disc displacement with reduction",
+        "description": "The articular disc (cartilage pad inside the joint) is displaced from its normal position but returns during jaw opening, often producing a clicking sound.",
+        "distinguishing_features": [
+          "Audible or palpable clicking or popping on jaw opening",
+          "Click typically occurs early in opening and again on closing",
+          "Pain may be minimal or absent in some cases",
+          "Often progresses over time if untreated"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Disc displacement without reduction (closed lock)",
+        "description": "The disc is displaced and does not return to its normal position, limiting jaw opening. This is the 'locked jaw' presentation.",
+        "distinguishing_features": [
+          "Significantly restricted mouth opening (often under 35mm)",
+          "Jaw may deviate to the affected side on opening",
+          "No clicking (the click that was present may disappear when locking begins)",
+          "Can be acute or chronic; chronic cases may develop fibrous adaptation"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Degenerative joint disease (TMJ osteoarthritis)",
+        "description": "Structural breakdown of the joint surfaces, analogous to osteoarthritis in other joints. More common in older individuals and those with long-standing TMD.",
+        "distinguishing_features": [
+          "Crepitus (grinding, grating sounds) rather than clicking",
+          "Visible or radiographic joint changes",
+          "Progressive limitation of movement",
+          "Persistent pain at rest and with use"
+        ]
+      },
+      {
+        "id": null,
+        "name": "TMD with central sensitisation",
+        "description": "Cases where central nervous system sensitisation amplifies pain signals, leading to widespread pain disproportionate to local tissue findings. Often comorbid with fibromyalgia, IBS, or other chronic pain conditions.",
+        "distinguishing_features": [
+          "Pain that is widespread beyond the jaw region",
+          "Heightened sensitivity to pressure, heat, or light touch (allodynia)",
+          "Poor response to purely mechanical interventions",
+          "Often comorbid with sleep disorders, anxiety, and fatigue",
+          "Psychological factors play a more prominent role"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Sleep bruxism-driven TMD",
+        "description": "TMD symptoms primarily driven by nocturnal teeth grinding or clenching, often linked to sleep-disordered breathing.",
+        "distinguishing_features": [
+          "Symptoms worst in the morning on waking",
+          "Partner may report grinding sounds during sleep",
+          "Visible tooth wear on dental examination",
+          "May coexist with obstructive sleep apnea or UARS",
+          "Jaw muscle fatigue or soreness upon waking"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Jaw pain or facial pain",
+        "category": "musculoskeletal",
+        "notes": "Can be dull and aching or sharp; may be localised to the joint area or spread across the face, cheeks, and temples. Often worsens with chewing, yawning, or talking."
+      },
+      {
+        "symptom": "Clicking, popping, or grating sounds in the jaw",
+        "category": "musculoskeletal",
+        "notes": "Clicking suggests disc displacement with reduction; grating (crepitus) may indicate degenerative change. Sounds alone without pain are not necessarily a sign of significant pathology."
+      },
+      {
+        "symptom": "Restricted mouth opening",
+        "category": "musculoskeletal",
+        "notes": "Normal maximum opening is approximately 40\u201355mm. Opening below 35mm suggests significant restriction, possibly disc locking or muscle spasm."
+      },
+      {
+        "symptom": "Jaw locking (open or closed)",
+        "category": "musculoskeletal",
+        "notes": "Closed lock (unable to open fully) is more common. Open lock (jaw stuck open) is less common and can occur after wide yawning."
+      },
+      {
+        "symptom": "Temporal headaches",
+        "category": "neurological",
+        "notes": "Often described as a band-like pressure around the temples. Caused by tension and referred pain from the temporalis muscle. Can be mistaken for tension-type headache or migraine."
+      },
+      {
+        "symptom": "Ear pain or ear fullness",
+        "category": "ear/sinus",
+        "notes": "Very common and frequently leads to ENT referral before TMD is considered. The TMJ is anatomically close to the ear canal. Tinnitus and a sensation of blocked ears can also occur."
+      },
+      {
+        "symptom": "Tinnitus",
+        "category": "ear/sinus",
+        "notes": "Ringing or buzzing in the ears may worsen with jaw clenching or after periods of high stress. The mechanism is thought to involve shared neural pathways and mechanical proximity to the ear."
+      },
+      {
+        "symptom": "Neck and shoulder pain",
+        "category": "musculoskeletal",
+        "notes": "The masticatory muscles are closely linked functionally with the cervical musculature. Neck pain, stiffness, and upper trapezius tension are common in TMD."
+      },
+      {
+        "symptom": "Tooth pain or sensitivity without dental cause",
+        "category": "dental/oral",
+        "notes": "Referred pain from the TMJ or masticatory muscles can mimic toothache. Tooth sensitivity from bruxism is also common."
+      },
+      {
+        "symptom": "Teeth grinding or clenching (bruxism)",
+        "category": "dental/oral",
+        "notes": "Often nocturnal; the person may be unaware until a dentist observes tooth wear or a partner reports grinding sounds. Daytime clenching is also common, especially under stress."
+      },
+      {
+        "symptom": "Difficulty chewing hard or chewy foods",
+        "category": "functional",
+        "notes": "Pain and fatigue on chewing may lead to dietary restriction, favouring soft foods."
+      },
+      {
+        "symptom": "Facial swelling or muscle hypertrophy",
+        "category": "musculoskeletal",
+        "notes": "Chronic bruxism can cause visible enlargement of the masseter muscles, sometimes misidentified as lymph node swelling."
+      },
+      {
+        "symptom": "Dizziness or vertigo",
+        "category": "neurological",
+        "notes": "The mechanism is debated but may involve referred nerve activity from the TMJ or associated cervical dysfunction. Not always directly caused by TMD."
+      },
+      {
+        "symptom": "Sleep disruption",
+        "category": "sleep",
+        "notes": "Pain, nocturnal bruxism, and associated sleep-disordered breathing can all impair sleep quality."
+      },
+      {
+        "symptom": "Eye pain or pressure behind the eye",
+        "category": "neurological",
+        "notes": "Referred pain from the masseter or temporalis muscles can produce pain that feels like it is behind or around the eye."
+      },
+      {
+        "symptom": "Jaw fatigue or heaviness",
+        "category": "musculoskeletal",
+        "notes": "A sense of tiredness or heaviness in the jaw muscles, especially after talking, eating, or stress."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Jaw pain or clicking reproducible on clinical palpation of the TMJ or masticatory muscles",
+        "Restricted mouth opening (below 35mm) or deviation of the jaw on opening",
+        "Combination of ear pain, temporal headaches, and jaw symptoms without ENT or neurological explanation",
+        "Tooth wear pattern consistent with bruxism observed on dental exam",
+        "Morning jaw pain and headaches, suggesting nocturnal bruxism or sleep-disordered breathing",
+        "Widespread chronic pain with poor sleep and stress \u2014 suggesting central sensitisation component",
+        "MRI showing disc displacement or degenerative joint changes correlating with symptoms"
+      ],
+      "at_home": [
+        {
+          "name": "Jaw opening measurement",
+          "description": "Using a ruler, individuals can measure the distance between the upper and lower front teeth at maximum comfortable opening. Values consistently below 35\u201340mm may suggest restriction worth investigating clinically.",
+          "safety_notes": "Do not force the jaw open. This is an observational measure only, not diagnostic."
+        },
+        {
+          "name": "Symptom and trigger diary",
+          "description": "Tracking when jaw pain, headaches, and ear symptoms occur in relation to stress, sleep, meals, and posture can reveal patterns that help identify whether bruxism, posture, or stress is the primary driver.",
+          "safety_notes": "No physical risk. Useful to bring to clinical appointments."
+        },
+        {
+          "name": "Posture and screen time self-assessment",
+          "description": "Observing whether pain worsens after prolonged screen use, with forward head posture, or during high-stress periods can identify lifestyle contributors. Poor cervical posture is associated with increased masticatory muscle tension.",
+          "safety_notes": "No risk involved. Observation only."
+        },
+        {
+          "name": "Palpation of jaw muscles",
+          "description": "Gently pressing on the masseter (cheekbone-to-jaw area), temporalis (temple), and the area just in front of the ear canal can reveal tenderness that correlates with myofascial TMD. Significant pain on light pressure suggests muscle involvement.",
+          "safety_notes": "Use gentle pressure only. Seek clinical evaluation rather than self-diagnosing from tenderness alone."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Research Diagnostic Criteria for TMD (RDC/TMD) / DC/TMD examination",
+          "type": "gold_standard",
+          "description": "A standardised clinical examination protocol involving measurement of mouth opening, lateral and protrusive movements, joint palpation, and muscle palpation. The Diagnostic Criteria for TMD (DC/TMD) is the current validated standard used in research and specialist practice.",
+          "availability": "Performed by trained orofacial pain specialists, TMD-specialist dentists, and some oral and maxillofacial surgeons. Not routinely used by general dentists."
+        },
+        {
+          "name": "Panoramic dental radiograph (OPG)",
+          "type": "standard",
+          "description": "A basic X-ray of the jaw and teeth that can reveal gross joint changes, tooth wear, and structural abnormalities. Limited for soft tissue evaluation.",
+          "availability": "Available at most dental practices. Often the first imaging ordered."
+        },
+        {
+          "name": "MRI of the TMJ",
+          "type": "gold_standard",
+          "description": "The most informative imaging for visualising the articular disc position, integrity, and joint inflammation. Can identify disc displacement with or without reduction, and early degenerative changes not visible on X-ray.",
+          "availability": "Ordered by oral and maxillofacial surgeons, orofacial pain specialists, or occasionally ENT surgeons. Availability varies; typically requires specialist referral. Note: disc displacement findings on MRI do not always correlate with symptom severity."
+        },
+        {
+          "name": "Cone beam CT (CBCT)",
+          "type": "standard",
+          "description": "Provides three-dimensional imaging of the bony joint surfaces. Useful for identifying osteoarthritic changes, cortical erosions, and condylar morphology. Does not visualise soft tissue well.",
+          "availability": "Available at specialist dental or oral surgery practices. Exposes less radiation than conventional CT."
+        },
+        {
+          "name": "Polysomnography (sleep study)",
+          "type": "standard",
+          "description": "A full overnight sleep study that can diagnose obstructive sleep apnea and, in some protocols, detect bruxism events. Relevant where sleep-disordered breathing is suspected as a driver of nocturnal bruxism.",
+          "availability": "Ordered by sleep physicians, ENT surgeons, or respiratory physicians. Available in hospital sleep labs and via home testing kits for simpler cases."
+        },
+        {
+          "name": "Electromyography (EMG) of masticatory muscles",
+          "type": "emerging",
+          "description": "Measures electrical activity in jaw muscles. Used in research and some specialist TMD clinics to quantify bruxism activity and muscle dysfunction. Not yet standard in routine clinical practice.",
+          "availability": "Available at specialist orofacial pain or oral physiology centres. Limited clinical availability."
+        },
+        {
+          "name": "Psychological assessment",
+          "type": "standard",
+          "description": "Standardised questionnaires assessing pain catastrophising, somatisation, anxiety, and depression. Included in the DC/TMD protocol's Axis II component. Predicts treatment response and guides multidisciplinary care.",
+          "availability": "Administered by psychologists or specialist TMD clinicians as part of a comprehensive assessment."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "comorbid",
+        "explanation": "TMD and fibromyalgia share central sensitisation as a likely common mechanism and co-occur significantly more often than chance. Both involve widespread pain amplification and are more common in women."
+      },
+      {
+        "id": "central_sensitisation",
+        "name": "Central sensitisation",
+        "relationship": "mechanistic_link",
+        "explanation": "Chronic TMD can drive or reflect central sensitisation \u2014 a state of amplified neural pain processing. This explains why some people have pain disproportionate to joint findings, and why stress and sleep disruption worsen symptoms."
+      },
+      {
+        "id": "eds",
+        "name": "hEDS / HSD (Hypermobility spectrum disorder)",
+        "relationship": "comorbid",
+        "explanation": "Connective tissue hypermobility predisposes joints \u2014 including the TMJ \u2014 to instability and recurrent injury. People with hEDS or HSD have elevated rates of TMD, disc displacement, and recurrent jaw locking."
+      },
+      {
+        "id": "sleep_apnea",
+        "name": "Obstructive sleep apnea",
+        "relationship": "mechanistic_link",
+        "explanation": "Sleep-disordered breathing is strongly linked to sleep bruxism, which is a major driver of TMD. Treating OSA with CPAP can in some cases reduce bruxism and secondarily improve TMD symptoms."
+      },
+      {
+        "id": "uars",
+        "name": "Upper airway resistance syndrome",
+        "relationship": "mechanistic_link",
+        "explanation": "UARS, like OSA, is associated with nocturnal bruxism. The airway-bruxism-TMD triad is increasingly recognised, particularly in younger patients without classic obesity-related OSA."
+      },
+      {
+        "id": "migraine",
+        "name": "Migraine",
+        "relationship": "comorbid",
+        "explanation": "Migraine and TMD share trigeminal nerve involvement and co-occur at higher rates than in the general population. Distinguishing referred TMD headache from migraine can be clinically challenging. Treating one condition may partially reduce the other."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "comorbid",
+        "explanation": "Anxiety drives jaw clenching and bruxism, which in turn worsens TMD. Pain and restricted function then increase anxiety, creating a bidirectional feedback loop."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Poor sleep / insomnia",
+        "relationship": "comorbid",
+        "explanation": "TMD pain disrupts sleep; poor sleep lowers pain thresholds and worsens central sensitisation; nocturnal bruxism during poor sleep cycles damages the joint. All three reinforce each other."
+      },
+      {
+        "id": "poor_posture",
+        "name": "Poor posture / forward head posture",
+        "relationship": "mechanistic_link",
+        "explanation": "Forward head posture shifts the mandible posteriorly, alters masticatory muscle activation, and loads the TMJ abnormally. Correction of cervical alignment is often an important part of TMD rehabilitation."
+      },
+      {
+        "id": "cervical_instability",
+        "name": "Cervical instability",
+        "relationship": "mechanistic_link",
+        "explanation": "The cervical spine and TMJ are functionally linked through shared musculature and the trigeminal-cervical complex. Craniocervical instability can produce or exacerbate TMD-like symptoms, and true TMD can drive compensatory cervical tension."
+      },
+      {
+        "id": "atlas_misalignment",
+        "name": "Atlas / craniocervical misalignment",
+        "relationship": "often_confused",
+        "explanation": "Upper cervical dysfunction can refer pain into the jaw and ear region, mimicking or compounding TMD. Some practitioners focus primarily on atlas correction in TMD management, though evidence for this specific approach is limited."
+      },
+      {
+        "id": "chronic_stress",
+        "name": "Chronic stress / HPA overload",
+        "relationship": "upstream",
+        "explanation": "Chronic stress is one of the most consistently identified drivers of TMD onset and flare. Stress increases jaw clenching, elevates inflammation, and lowers pain thresholds \u2014 all of which worsen TMD."
+      },
+      {
+        "id": "chronic_sinusitis",
+        "name": "Chronic sinusitis",
+        "relationship": "often_confused",
+        "explanation": "Sinus pain and pressure can refer to the jaw, cheek, and ear region \u2014 areas that overlap significantly with TMD symptom distribution. Both conditions may coexist, and sinus inflammation may theoretically contribute to local irritation near the TMJ."
+      },
+      {
+        "id": "post_concussion",
+        "name": "Post-concussion syndrome",
+        "relationship": "upstream",
+        "explanation": "Head and jaw trauma from concussive events can directly injure the TMJ and its soft tissues. Post-concussion syndrome and TMD frequently co-occur after head injuries, and jaw pain is often an under-recognised component of post-concussion presentations."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "comorbid",
+        "explanation": "Chronic pain and depression are bidirectionally linked. TMD pain, sleep disruption, and dietary limitation impose significant burden that raises depression risk, while depression amplifies pain perception and reduces motivation for self-management."
+      },
+      {
+        "id": "mcas",
+        "name": "Mast cell activation syndrome",
+        "relationship": "comorbid",
+        "explanation": "MCAS can produce widespread pain and inflammation that affects multiple joint systems including the TMJ. In complex multi-system presentations, MCAS may be an underlying driver worth investigating."
+      },
+      {
+        "id": "trauma",
+        "name": "Trauma / PTSD",
+        "relationship": "upstream",
+        "explanation": "Adverse childhood experiences and PTSD are significantly associated with TMD, likely mediated through chronic muscle tension, sleep disruption, and the physiological effects of sustained stress system activation."
+      },
+      {
+        "id": "hormonal",
+        "name": "Hormonal / menstrual cycle effects",
+        "relationship": "mechanistic_link",
+        "explanation": "Oestrogen receptors are found in the TMJ. Women report TMD flares linked to their menstrual cycle, and onset often coincides with hormonal transitions. The female predominance in TMD prevalence is thought to have a hormonal basis."
+      },
+      {
+        "id": "perimenopause",
+        "name": "Perimenopause",
+        "relationship": "upstream",
+        "explanation": "New or worsening TMD symptoms in women in their 40s and early 50s may be linked to perimenopausal oestrogen fluctuation. Joint laxity and pain sensitivity can change during this hormonal transition."
+      },
+      {
+        "id": "ibs",
+        "name": "IBS (Irritable bowel syndrome)",
+        "relationship": "comorbid",
+        "explanation": "IBS and TMD co-occur at elevated rates, both linked to central sensitisation, stress system dysregulation, and autonomic nervous system dysfunction. They are considered part of a broader family of central sensitivity syndromes."
+      },
+      {
+        "id": "bvd",
+        "name": "Binocular vision dysfunction",
+        "relationship": "often_confused",
+        "explanation": "BVD can produce head tilting and compensatory jaw tension as the body tries to stabilise vision, potentially loading the TMJ abnormally. Headaches and facial pain from BVD may be confused with or worsen TMD."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Occlusal splint (night guard / stabilisation appliance)",
+          "category": "dental device",
+          "description": "A custom-fitted hard acrylic appliance worn over the upper or lower teeth, typically at night. It may reduce the load transmitted to the TMJ during bruxism, help relax masticatory muscles, and protect tooth surfaces. Evidence supports modest symptom reduction in myofascial and bruxism-driven TMD.",
+          "evidence_level": "moderate",
+          "notes": "Soft over-the-counter night guards may actually increase clenching in some individuals. Custom hard appliances from a TMD-trained dentist are generally preferred. The mechanism of how splints help is still debated \u2014 they may work partly through placebo, proprioceptive changes, and habit disruption rather than purely mechanical unloading."
+        },
+        {
+          "name": "Physical therapy (orofacial and cervical)",
+          "category": "physical therapy",
+          "description": "Manual therapy, jaw exercises, cervical mobilisation, and postural training targeting the masticatory muscles, cervical spine, and surrounding structures. Can improve mouth opening, reduce pain, and address underlying postural contributors. Particularly useful for myofascial and cervicogenic components.",
+          "evidence_level": "moderate",
+          "notes": "Best results are seen from physiotherapists with specific training in orofacial or temporomandibular conditions. General physiotherapy without this focus may be less effective."
+        },
+        {
+          "name": "Jaw stretching and muscle exercises",
+          "category": "lifestyle",
+          "description": "Gentle, controlled jaw stretching exercises (e.g., resisted opening, lateral excursion exercises) and self-massage of the masseter and temporalis muscles can reduce muscle tension and improve range of motion. Consistency over weeks matters more than intensity.",
+          "evidence_level": "moderate",
+          "notes": "Exercises should not cause sharp pain. Programmes should ideally be guided by a physiotherapist initially."
+        },
+        {
+          "name": "Stress reduction and psychological intervention",
+          "category": "lifestyle / psychological",
+          "description": "Cognitive-behavioural therapy (CBT), mindfulness-based stress reduction, and biofeedback have evidence for reducing TMD pain, particularly in individuals with high pain catastrophising or significant anxiety. Addressing the stress-clenching cycle is central to long-term management.",
+          "evidence_level": "moderate",
+          "notes": "Pain psychologists or clinical psychologists with chronic pain experience are best placed to deliver these interventions. Often underutilised due to stigma around psychological approaches to physical pain."
+        },
+        {
+          "name": "Heat and cold application",
+          "category": "lifestyle",
+          "description": "Moist heat (warm flannel or heat pack) applied to the jaw and temples can relax muscles and reduce aching pain. Cold packs may help in acute flares with inflammation or after jaw use. Alternating both is sometimes helpful.",
+          "evidence_level": "anecdotal",
+          "notes": "Low risk, inexpensive, and useful as a daily self-management tool."
+        },
+        {
+          "name": "Dietary modification (soft food diet)",
+          "category": "diet",
+          "description": "During flares, reducing mechanical load on the jaw by favouring soft, easy-to-chew foods can allow inflamed muscles and joints to recover. Hard, chewy, or crunchy foods (raw carrots, chewing gum, tough meats, bagels) place the most load on the TMJ.",
+          "evidence_level": "moderate",
+          "notes": "Intended as a short-term management strategy during flares, not a permanent dietary change. Long-term avoidance of all chewing can reduce muscle conditioning."
+        },
+        {
+          "name": "NSAIDs (ibuprofen, naproxen)",
+          "category": "medication",
+          "description": "Short courses of anti-inflammatory medications can reduce acute TMD pain and joint inflammation. Most useful during flares rather than as chronic daily medication.",
+          "evidence_level": "moderate",
+          "notes": "Not suitable for long-term use due to gastrointestinal, cardiovascular, and renal risks. Should be discussed with a GP or physician."
+        },
+        {
+          "name": "Muscle relaxants (low-dose cyclobenzaprine or similar)",
+          "category": "medication",
+          "description": "Low-dose muscle relaxants may reduce nocturnal bruxism and masticatory muscle hyperactivity. Sometimes used short-term for severe flares or as a bridge intervention.",
+          "evidence_level": "moderate",
+          "notes": "Cause sedation; generally used at low doses at bedtime. Require prescription. Not a long-term solution."
+        },
+        {
+          "name": "Low-dose tricyclic antidepressants (e.g., amitriptyline)",
+          "category": "medication",
+          "description": "At doses below those used for depression (typically 10\u201330mg), tricyclics can reduce chronic pain, improve sleep quality, and modulate central sensitisation. Evidence supports their use in chronic myofascial TMD.",
+          "evidence_level": "moderate",
+          "notes": "Side effects include dry mouth, morning drowsiness, and constipation. Require prescription. Response typically takes 2\u20134 weeks."
+        },
+        {
+          "name": "Botulinum toxin (Botox) injections into masticatory muscles",
+          "category": "intervention",
+          "description": "Injection of botulinum toxin into the masseter and sometimes temporalis muscles reduces their force output, decreasing joint loading from bruxism and providing months of symptomatic relief. Evidence is growing, particularly for bruxism-driven myofascial pain.",
+          "evidence_level": "moderate",
+          "notes": "Effects last approximately 3\u20136 months; repeat injections are needed. Performed by oral and maxillofacial surgeons, some dentists, and aesthetic physicians with appropriate training. Not a cure \u2014 does not address underlying drivers."
+        },
+        {
+          "name": "Addressing sleep-disordered breathing",
+          "category": "medical investigation",
+          "description": "In individuals with co-existing OSA or UARS, treating the airway disorder (with CPAP, mandibular advancement devices, or upper airway surgery) can in some cases reduce sleep bruxism and improve TMD outcomes.",
+          "evidence_level": "moderate",
+          "notes": "Mandibular advancement devices used for sleep apnea can sometimes worsen TMD \u2014 careful specialist coordination is needed."
+        },
+        {
+          "name": "Posture and ergonomic correction",
+          "category": "lifestyle",
+          "description": "Addressing forward head posture, screen height, seating position, and neck alignment can reduce the chronic muscular tension that feeds into masticatory muscle overload and TMD.",
+          "evidence_level": "moderate",
+          "notes": "Often requires guidance from a physiotherapist to implement correctly. Changes need to be sustained over months to produce structural benefit."
+        },
+        {
+          "name": "Magnesium supplementation",
+          "category": "supplement",
+          "description": "Magnesium has roles in muscle relaxation and neuromuscular function. Some individuals with bruxism and jaw tension report benefit from magnesium glycinate or malate supplementation, though clinical trial evidence for TMD specifically is limited.",
+          "evidence_level": "anecdotal",
+          "notes": "Generally well-tolerated at standard doses. Excessive magnesium causes loose stools. Should not replace evidence-based treatments."
+        },
+        {
+          "name": "Acupuncture",
+          "category": "complementary",
+          "description": "Some evidence suggests acupuncture can reduce myofascial TMD pain in the short term, possibly through effects on muscle trigger points and pain modulation pathways. Effect size is modest.",
+          "evidence_level": "anecdotal",
+          "notes": "Evidence quality is limited by methodology issues in most trials. May be useful as an adjunct when other measures are insufficient."
+        }
+      ],
+      "things_to_avoid": [
+        "Chewing gum \u2014 places repetitive, sustained load on already stressed jaw muscles and the TMJ",
+        "Hard, crunchy foods (raw carrots, crusty bread, hard nuts, ice) during flares \u2014 create high peak joint loading",
+        "Cradling a phone between the ear and shoulder \u2014 forces prolonged cervical and jaw asymmetry",
+        "Resting the chin on the hand \u2014 loads the jaw asymmetrically and habitually",
+        "Sleeping prone (face down) \u2014 forces the jaw and neck into sustained rotation and loading",
+        "Aggressive self-manipulation of the jaw \u2014 can worsen disc displacement and ligament laxity",
+        "Nail biting or chewing on pens and objects \u2014 habitual parafunctional behaviours that load the joint",
+        "Prolonged wide mouth opening (e.g., very large sandwiches, dental appointments without rests) without appropriate jaw care \u2014 can acutely overload an already sensitive joint",
+        "Ignoring co-existing sleep-disordered breathing \u2014 untreated OSA or UARS perpetuates nocturnal bruxism that drives ongoing joint and muscle damage",
+        "Accepting the first treatment as definitive if symptoms persist \u2014 TMD often requires iterative, multidisciplinary management rather than a single intervention"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "A night guard alone is unlikely to resolve chronic TMD. It manages one symptom of bruxism but does not address why clenching is happening or the joint and muscle changes that have already occurred.",
+        "why_resisted": "Night guards are the most common treatment offered by dentists and feel like a definitive, tangible intervention. People want a simple solution, and the appliance provides one \u2014 partial relief that feels like progress.",
+        "path_forward": "People who pursue root cause investigation \u2014 including stress physiology, sleep quality, posture, and cervical function \u2014 alongside or instead of appliance-only care tend to achieve more durable improvement, particularly when those underlying drivers are identified and addressed systematically."
+      },
+      {
+        "truth": "Stress and psychological factors are not just triggers \u2014 in many chronic TMD cases they are primary drivers. Treating the jaw without addressing the stress system rarely achieves lasting relief.",
+        "why_resisted": "Framing pain as psychological in origin feels like being told the problem is not real or is self-inflicted. Many people resist psychological approaches because they fear it delegitimises their physical suffering.",
+        "path_forward": "Individuals who engage with CBT, somatic therapies, or structured stress management alongside physical treatment consistently show better outcomes in chronic pain research, including TMD. The pain is real; the nervous system and stress physiology are real drivers of it."
+      },
+      {
+        "truth": "Clicking and disc displacement found on MRI are common in people without significant pain, and conversely, severely painful TMD often shows minimal imaging findings. Structural findings do not reliably predict symptoms or guide treatment.",
+        "why_resisted": "People in pain want an explanation that shows up on a test \u2014 a visible abnormality they can point to. Normal or non-diagnostic imaging can feel dismissive.",
+        "path_forward": "Shifting focus from 'what does the scan show' to 'what are the functional and neurological drivers of this pain' opens the door to more effective interventions \u2014 particularly those targeting central sensitisation, muscle function, and systemic contributors."
+      },
+      {
+        "truth": "For many people, TMD is a chronic condition that will require ongoing self-management rather than a cure. The goal shifts from elimination of the condition to minimising impact and preventing escalation.",
+        "why_resisted": "People want resolution and discharge from treatment, not a maintenance programme. Accepting chronicity feels like giving up.",
+        "path_forward": "Those who adopt an active self-management model \u2014 consistent jaw care, stress management, sleep hygiene, posture awareness \u2014 often experience significant reduction in the frequency and severity of flares, reaching a functional baseline that allows normal activity even if the underlying vulnerability remains."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Identifying and reducing nocturnal bruxism",
+          "why_it_matters": "Hours of unconscious jaw clenching or grinding during sleep can cause more cumulative damage than all daytime activity combined. Addressing the sleep dimension is often the single most impactful change.",
+          "how_to_start": "Seek assessment for sleep-disordered breathing (OSA/UARS) alongside dental evaluation for bruxism. Consider a custom hard splint from a TMD-trained dentist as an initial protective measure while investigating the cause of bruxism.",
+          "timeline": "2\u20134 weeks to notice morning symptom change with a well-fitted splint; sleep study and subsequent treatment takes longer",
+          "requires_professional": true
+        },
+        {
+          "lever": "Chronic stress reduction and nervous system downregulation",
+          "why_it_matters": "The stress-clenching cycle is a central mechanism in TMD persistence. Sustained sympathetic nervous system activation drives jaw hypertonicity. Without addressing stress physiology, structural and mechanical treatments tend to produce incomplete results.",
+          "how_to_start": "Begin with structured daily practice \u2014 10\u201315 minutes of diaphragmatic breathing, progressive muscle relaxation, or mindfulness. Consider referral to a pain psychologist or CBT therapist for more systematic intervention.",
+          "timeline": "Noticeable stress-symptom patterns often become clear within 2\u20134 weeks of diary keeping; sustained symptom reduction from stress management typically takes 2\u20133 months of consistent practice",
+          "requires_professional": false
+        },
+        {
+          "lever": "Posture and cervical alignment rehabilitation",
+          "why_it_matters": "Forward head posture increases resting muscle tension in the masticatory system and alters jaw mechanics. Correcting this reduces the chronic background loading on the TMJ and muscles.",
+          "how_to_start": "Consult a physiotherapist with experience in orofacial or craniocervical conditions. Begin with awareness of screen and workstation ergonomics in the interim.",
+          "timeline": "Postural habits typically take 8\u201312 weeks of consistent correction to show meaningful clinical change",
+          "requires_professional": true
+        },
+        {
+          "lever": "Sleep quality optimisation",
+          "why_it_matters": "Poor sleep amplifies pain sensitivity, increases bruxism, and impairs recovery. Sleep is both a driver and a consequence of TMD \u2014 breaking this cycle is essential for long-term improvement.",
+          "how_to_start": "Address sleep hygiene basics (consistent timing, dark and cool room, no screens before bed) and seek evaluation for sleep-disordered breathing if morning symptoms are prominent.",
+          "timeline": "Sleep hygiene changes can produce benefit within 2\u20134 weeks; treating co-existing sleep apnea takes longer but may produce substantial benefit",
+          "requires_professional": false
+        },
+        {
+          "lever": "Multidisciplinary care rather than single-specialty treatment",
+          "why_it_matters": "TMD straddles dentistry, physiotherapy, sleep medicine, and pain psychology. No single specialty has the full picture. People who coordinate care across relevant disciplines consistently achieve better outcomes than those treated in isolation by one practitioner.",
+          "how_to_start": "Seek evaluation at a dedicated orofacial pain clinic if available, or build a team by actively coordinating between a TMD-trained dentist, physiotherapist, and GP.",
+          "timeline": "The coordination investment pays off over 3\u201312 months as treatments are aligned rather than contradictory",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Using a soft over-the-counter night guard \u2014 these can paradoxically increase clenching in some people and are inferior to custom hard appliances",
+        "Treating only the jaw while ignoring cervical posture and neck function, leaving a major contributor unaddressed",
+        "Expecting TMD to resolve after one treatment course \u2014 chronic cases typically require iterative, ongoing management",
+        "Pursuing surgery early \u2014 surgical interventions for TMD have modest evidence and significant risk; conservative care should typically be exhausted first",
+        "Ignoring psychological and stress contributors because the pain 'feels purely physical' \u2014 this delays engagement with one of the most effective treatment domains",
+        "Seeking imaging hoping for a definitive structural explanation \u2014 disc findings on MRI often do not guide management and can lead to over-medicalisation",
+        "Stopping beneficial treatments when symptoms temporarily improve during a good patch, leading to recurrence",
+        "Seeing a general dentist who has no specialist TMD training as the sole point of care for complex or chronic cases"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Orofacial Pain Specialist / TMD-specialist dentist",
+          "role": "The practitioner most specifically trained in TMD diagnosis and management. Uses validated examination protocols (DC/TMD), orders appropriate imaging, coordinates with other disciplines, and can provide or supervise appliance therapy and other interventions.",
+          "notes": "Not all dentists have this training. Look for practitioners with postgraduate qualifications in orofacial pain or TMD, or referral to a dental school orofacial pain clinic. This is the most important specialist to find for complex or chronic cases."
+        },
+        {
+          "type": "Physiotherapist (craniofacial / orofacial / musculoskeletal specialist)",
+          "role": "Addresses muscle dysfunction, restricted jaw movement, cervical spine involvement, and postural contributors. Provides manual therapy, jaw mobilisation, and rehabilitation exercises.",
+          "notes": "Seek a physiotherapist with specific training in temporomandibular and orofacial physiotherapy. General MSK physiotherapists may lack this focus."
+        },
+        {
+          "type": "Oral and Maxillofacial Surgeon (OMFS)",
+          "role": "Evaluates structural joint pathology, orders and interprets imaging, and performs procedures such as arthrocentesis (joint lavage) or surgery for severe cases.",
+          "notes": "Relevant primarily for cases with significant structural pathology, disc locking, or when conservative treatment has failed. Surgery for TMD is generally a last resort."
+        },
+        {
+          "type": "Sleep Physician",
+          "role": "Investigates and manages sleep-disordered breathing (OSA, UARS) that may be driving nocturnal bruxism and perpetuating TMD. Can order and interpret sleep studies.",
+          "notes": "Particularly important in patients with prominent morning symptoms, snoring, fatigue, or suspected airway issues."
+        },
+        {
+          "type": "Pain Psychologist / Clinical Psychologist (chronic pain specialisation)",
+          "role": "Delivers CBT, acceptance and commitment therapy (ACT), mindfulness-based stress reduction, and biofeedback to address the psychological and stress physiology drivers of chronic TMD.",
+          "notes": "One of the most evidence-based interventions for chronic TMD, particularly when central sensitisation is present. Often underutilised or not offered by dental-focused practitioners."
+        },
+        {
+          "type": "Neurologist",
+          "role": "Relevant when headache is a prominent feature and the differential between TMD, migraine, and other headache disorders needs to be clarified, or when neuropathic pain components are suspected.",
+          "notes": "Especially useful if headaches are the dominant symptom and are not responding to TMD-specific treatment."
+        },
+        {
+          "type": "Rheumatologist",
+          "role": "Relevant when TMD coexists with systemic hypermobility (hEDS/HSD), inflammatory arthritis, or connective tissue disorders. Can investigate whether systemic joint disease is contributing to TMJ involvement.",
+          "notes": "Important to rule out systemic rheumatological causes in cases with polyarticular involvement or features of connective tissue disorder."
+        },
+        {
+          "type": "Functional Medicine or Integrative Practitioner",
+          "role": "Can investigate systemic contributors to chronic inflammation, connective tissue vulnerability, hormonal factors, and stress physiology that may be driving or perpetuating TMD \u2014 particularly in complex multi-system presentations.",
+          "notes": "Mainstream TMD care does not routinely investigate systemic drivers. Integrative practitioners may offer a more holistic investigation in difficult-to-treat cases, though evidence quality for some approaches varies."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/TMJ",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/TMJ/",
+          "notes": "Large, active community of people navigating TMD diagnosis, treatments, and daily management. Useful for peer experiences, treatment comparisons, and practitioner recommendations by region. Quality of information varies \u2014 use critically."
+        },
+        {
+          "name": "TMJ Association",
+          "platform": "Website / patient advocacy organisation",
+          "url": "https://www.tmj.org",
+          "notes": "US-based patient advocacy and education organisation focused on TMD. Provides condition information, research updates, and advocacy resources. Useful for understanding the landscape of TMD research and care."
+        },
+        {
+          "name": "Facial Pain Association",
+          "platform": "Website / patient community",
+          "url": "https://www.facingfacialpain.org",
+          "notes": "Focuses on chronic facial pain including TMD. Offers educational content, a patient forum, and resources for finding specialists. Particularly useful for severe or treatment-resistant cases."
+        },
+        {
+          "name": "TMD / Jaw Pain Support Group",
+          "platform": "Facebook",
+          "url": null,
+          "notes": "Several active Facebook groups exist for TMD support. Search 'TMJ support group' or 'TMD support'. Useful for peer sharing of practitioner experiences and coping strategies."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "TMJ Association \u2014 Patient Education Resources",
+        "type": "website",
+        "author_or_source": "TMJ Association",
+        "url": "https://www.tmj.org",
+        "description": "Comprehensive patient-facing education about TMD diagnosis, treatment options, and research. Published by the leading US patient advocacy organisation for TMD. A reliable starting point for newly diagnosed individuals.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Orofacial Pain: Guidelines for Assessment, Diagnosis, and Management",
+        "type": "book",
+        "author_or_source": "Reny de Leeuw & Gary D. Klasser (Eds.) \u2014 American Academy of Orofacial Pain",
+        "url": null,
+        "description": "The standard clinical reference for orofacial pain and TMD used by specialists. Detailed, evidence-based, and comprehensive. Most relevant for those wanting deep understanding of the diagnostic and treatment landscape.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Diagnostic Criteria for Temporomandibular Disorders (DC/TMD) \u2014 Overview",
+        "type": "research paper",
+        "author_or_source": "Schiffman E et al., Journal of Oral & Facial Pain and Headache, 2014",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25353100/",
+        "description": "The foundational paper establishing the current validated diagnostic system for TMD. Useful for understanding how TMD is classified and diagnosed in research and specialist practice.",
+        "audience": "advanced"
+      },
+      {
+        "title": "The Pain That Comes From Nowhere: Chronic Facial Pain and TMD \u2014 National Institute of Dental and Craniofacial Research",
+        "type": "website",
+        "author_or_source": "National Institute of Dental and Craniofacial Research (NIDCR)",
+        "url": "https://www.nidcr.nih.gov/health-info/tmd",
+        "description": "Accessible, evidence-based overview of TMD from the US National Institutes of Health. Covers diagnosis, treatment, and research. Well-suited for those beginning to understand their condition.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Explain Pain",
+        "type": "book",
+        "author_or_source": "David Butler & Lorimer Moseley",
+        "url": null,
+        "description": "A widely recommended resource for understanding the neuroscience of chronic pain, including central sensitisation \u2014 a key mechanism in many chronic TMD presentations. Accessible and written for people experiencing pain, not clinicians. Changes the way many readers relate to their symptoms.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "OPPERA Study \u2014 Orofacial Pain: Prospective Evaluation and Risk Assessment",
+        "type": "research paper",
+        "author_or_source": "Maixner W et al., Journal of Pain, 2011 (ongoing series)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22074749/",
+        "description": "The largest prospective study of TMD onset and risk factors. Its findings on central sensitisation, psychological factors, and systemic comorbidities have significantly shaped modern understanding of TMD as a complex pain condition. For those wanting to understand what science actually says about TMD causes.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Taming the Beast \u2014 Neuroscience pain education for patients",
+        "type": "video",
+        "author_or_source": "Lorimer Moseley",
+        "url": "https://www.youtube.com/watch?v=ikUzvSph7Z4",
+        "description": "An accessible and engaging animated explanation of why the brain produces pain \u2014 directly relevant to understanding chronic TMD. Moseley is one of the world's leading pain researchers. A good first step for understanding the nervous system's role.",
+        "audience": "beginner"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}
