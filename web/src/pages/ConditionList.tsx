@@ -15,9 +15,9 @@ function chipStyle(active: boolean): React.CSSProperties {
     fontSize: "0.75rem",
     padding: "0.2rem 0.6rem",
     borderRadius: "999px",
-    border: `1px solid ${active ? "#374151" : "#d1d5db"}`,
-    background: active ? "#374151" : "white",
-    color: active ? "white" : "#374151",
+    border: `1px solid ${active ? "var(--fg-secondary)" : "var(--border)"}`,
+    background: active ? "var(--fg-secondary)" : "var(--bg)",
+    color: active ? "var(--bg)" : "var(--fg-secondary)",
     cursor: "pointer",
     whiteSpace: "nowrap",
     fontFamily: "inherit",
@@ -83,9 +83,9 @@ export default function ConditionList({ spaceId: spaceIdProp }: Props) {
 
   return (
     <Layout>
-    <div style={{ maxWidth: 880, margin: "1rem auto", padding: "0 1rem", fontFamily: "system-ui, sans-serif" }}>
+    <div style={{ maxWidth: 880, margin: "1rem auto", padding: "0 1rem" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "1rem", marginBottom: "0.25rem" }}>
-        <h1 style={{ fontSize: "1.5rem", fontWeight: 700, margin: 0 }}>
+        <h1 style={{ fontSize: "1.5rem", fontWeight: 700, margin: 0, color: "var(--fg)" }}>
           {titlePrefix} Navigator
           <span
             title="Alpha — prototype, expect rough edges and rapid changes"
@@ -95,9 +95,9 @@ export default function ConditionList({ spaceId: spaceIdProp }: Props) {
               fontWeight: 600,
               textTransform: "uppercase",
               letterSpacing: "0.08em",
-              color: "#92400e",
-              background: "#fef3c7",
-              border: "1px solid #fde68a",
+              color: "var(--warn-fg)",
+              background: "var(--warn-bg)",
+              border: "1px solid var(--warn-border)",
               padding: "0.1rem 0.4rem",
               borderRadius: "0.25rem",
               verticalAlign: "middle",
@@ -109,12 +109,12 @@ export default function ConditionList({ spaceId: spaceIdProp }: Props) {
         </h1>
         <SpaceSwitcher spaces={spaces} currentId={spaceId} />
       </div>
-      <p style={{ color: "#6b7280", marginBottom: "1.5rem" }}>
+      <p style={{ color: "var(--fg-muted)", marginBottom: "1.5rem" }}>
         {space?.description ?? "Search conditions to learn more."}
       </p>
 
       {unknownSpace && (
-        <p style={{ color: "#dc2626", fontSize: "0.875rem" }}>
+        <p style={{ color: "var(--danger)", fontSize: "0.875rem" }}>
           Unknown space "{spaceId}". <Link to="/">Go to all conditions</Link>.
         </p>
       )}
@@ -128,10 +128,11 @@ export default function ConditionList({ spaceId: spaceIdProp }: Props) {
           width: "100%",
           padding: "0.5rem 0.75rem",
           fontSize: "1rem",
-          border: "1px solid #d1d5db",
+          border: "1px solid var(--border)",
+          background: "var(--bg)",
+          color: "var(--fg)",
           borderRadius: "0.375rem",
           marginBottom: "0.75rem",
-          boxSizing: "border-box",
         }}
       />
 
@@ -166,15 +167,15 @@ export default function ConditionList({ spaceId: spaceIdProp }: Props) {
       )}
 
       {error && (
-        <p style={{ color: "#dc2626", fontSize: "0.875rem" }}>{error}</p>
+        <p style={{ color: "var(--danger)", fontSize: "0.875rem" }}>{error}</p>
       )}
 
       {!error && !unknownSpace && filtered.length === 0 && scoped.length === 0 && (
-        <p style={{ color: "#6b7280", fontSize: "0.875rem" }}>This space is empty.</p>
+        <p style={{ color: "var(--fg-muted)", fontSize: "0.875rem" }}>This space is empty.</p>
       )}
 
       {!error && !unknownSpace && filtered.length === 0 && scoped.length > 0 && (
-        <p style={{ color: "#6b7280", fontSize: "0.875rem" }}>
+        <p style={{ color: "var(--fg-muted)", fontSize: "0.875rem" }}>
           {query ? `No conditions match "${query}".` : "No conditions match the selected filters."}
         </p>
       )}

@@ -23,9 +23,9 @@ function AiLabel() {
           fontWeight: 600,
           padding: "0.15rem 0.5rem",
           borderRadius: "0.25rem",
-          background: "#f3f4f6",
-          border: "1px solid #d1d5db",
-          color: "#6b7280",
+          background: "var(--chip-gray-bg)",
+          border: "1px solid var(--chip-gray-border)",
+          color: "var(--fg-muted)",
           cursor: "help",
           letterSpacing: "0.02em",
           outline: "none",
@@ -44,15 +44,15 @@ function AiLabel() {
             zIndex: 20,
             width: 280,
             maxWidth: "min(280px, 90vw)",
-            background: "#fffbeb",
-            border: "1px solid #fde68a",
+            background: "var(--warn-bg)",
+            border: "1px solid var(--warn-border)",
             borderRadius: "0.5rem",
             padding: "0.75rem 0.9rem",
-            color: "#374151",
+            color: "var(--fg-secondary)",
             fontSize: "0.8rem",
             fontWeight: 400,
             lineHeight: 1.5,
-            boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.12)",
             whiteSpace: "normal",
           }}
         >
@@ -124,33 +124,33 @@ export default function StartingPointPage() {
 
   return (
     <Layout>
-      <div style={{ maxWidth: 880, margin: "1rem auto", padding: "0 1rem", fontFamily: "system-ui, sans-serif" }}>
+      <div style={{ maxWidth: 880, margin: "1rem auto", padding: "0 1rem" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           {location.key !== "default" ? (
             <button
               onClick={() => { window.scrollTo(0, 0); navigate(-1); }}
-              style={{ fontSize: "0.875rem", color: "#6b7280", background: "none", border: "none", padding: 0, cursor: "pointer" }}
+              style={{ fontSize: "0.875rem", color: "var(--fg-muted)", background: "none", border: "none", padding: 0, cursor: "pointer" }}
             >
               ← Back
             </button>
           ) : (
-            <Link to="/" style={{ fontSize: "0.875rem", color: "#6b7280", textDecoration: "none" }}>
+            <Link to="/" style={{ fontSize: "0.875rem", color: "var(--fg-muted)", textDecoration: "none" }}>
               ← All conditions
             </Link>
           )}
           <AiLabel />
         </div>
 
-        {error && <p style={{ color: "#dc2626", marginTop: "1rem" }}>{error}</p>}
+        {error && <p style={{ color: "var(--danger)", marginTop: "1rem" }}>{error}</p>}
 
         {sp && (
           <div style={{ margin: "1rem 0 1.5rem" }}>
-            <h1 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "0.25rem" }}>
+            <h1 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "0.25rem", color: "var(--fg)" }}>
               {sp.full_label || sp.label}
             </h1>
             {sp.kind === "syndrome" && sp.condition_id && (
               <p style={{ fontSize: "0.85rem", margin: "0.25rem 0 0.75rem" }}>
-                <Link to={`/condition/${sp.condition_id}`} style={{ color: "#2563eb", textDecoration: "none" }}>
+                <Link to={`/condition/${sp.condition_id}`} style={{ color: "var(--link)", textDecoration: "none" }}>
                   Learn about {sp.label} the condition →
                 </Link>
               </p>
@@ -159,7 +159,7 @@ export default function StartingPointPage() {
               <p style={{
                 fontSize: "1.1rem",
                 lineHeight: 1.65,
-                color: "#111827",
+                color: "var(--fg)",
                 marginTop: "0.75rem",
               }}>
                 {sp.intro}
@@ -170,7 +170,7 @@ export default function StartingPointPage() {
 
         {sp && subConditionRows.length > 0 && (
           <div style={{ margin: "0 0 2rem" }}>
-            <h2 style={{ fontSize: "0.95rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", color: "#374151", margin: "0 0 1rem" }}>
+            <h2 style={{ fontSize: "0.95rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", color: "var(--fg-secondary)", margin: "0 0 1rem" }}>
               Investigate which underlying conditions fit you
             </h2>
             <SubConditionTable
@@ -184,7 +184,7 @@ export default function StartingPointPage() {
         )}
 
         {sp && subConditionRows.length === 0 && !error && (
-          <p style={{ color: "#6b7280", fontSize: "0.9rem" }}>
+          <p style={{ color: "var(--fg-muted)", fontSize: "0.9rem" }}>
             This starting point has no sub-conditions yet.
           </p>
         )}

@@ -10,18 +10,18 @@ interface Props {
 export default function AccordionSection({ title, children, isEmpty, defaultOpen }: Props) {
   if (isEmpty) return null;
   return (
-    <details open={defaultOpen} style={{ marginBottom: "0.75rem", borderBottom: "1px solid #f3f4f6", paddingBottom: "0.5rem" }}>
+    <details open={defaultOpen} style={{ marginBottom: "0.75rem", borderBottom: "1px solid var(--border-soft)", paddingBottom: "0.5rem" }}>
       <summary style={{
         cursor: "pointer",
         fontWeight: 600,
         fontSize: "1.05rem",
-        color: "#374151",
+        color: "var(--fg-secondary)",
         padding: "0.75rem 0",
         userSelect: "none",
       }}>
         {title}
       </summary>
-      <div style={{ padding: "0.5rem 0 0.5rem 0", color: "#374151" }}>
+      <div style={{ padding: "0.5rem 0 0.5rem 0", color: "var(--fg-secondary)" }}>
         {children}
       </div>
     </details>
@@ -35,8 +35,8 @@ export function AccordionSubsection({ title, children, isEmpty, defaultOpen }: P
       open={defaultOpen}
       style={{
         margin: "0.75rem 0",
-        background: "#f9fafb",
-        border: "1px solid #e5e7eb",
+        background: "var(--surface)",
+        border: "1px solid var(--border)",
         borderRadius: "0.375rem",
       }}
     >
@@ -47,14 +47,14 @@ export function AccordionSubsection({ title, children, isEmpty, defaultOpen }: P
           fontSize: "0.85rem",
           textTransform: "uppercase",
           letterSpacing: "0.04em",
-          color: "#374151",
+          color: "var(--fg-secondary)",
           padding: "0.5rem 0.75rem",
           userSelect: "none",
         }}
       >
         {title}
       </summary>
-      <div style={{ padding: "0.5rem 0.75rem 0.75rem" }}>
+      <div style={{ padding: "0.5rem 0.75rem 0.75rem", color: "var(--fg-secondary)" }}>
         {children}
       </div>
     </details>

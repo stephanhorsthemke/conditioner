@@ -34,7 +34,7 @@ function HeaderTooltip({ label, children }: { label: string; children: React.Rea
       style={{ position: "relative", display: "inline-flex", alignItems: "center", gap: 4, cursor: "help", outline: "none" }}
     >
       {label}
-      <span aria-hidden style={{ fontSize: "0.75rem", color: "#d1d5db", textTransform: "none", letterSpacing: 0 }}>ⓘ</span>
+      <span aria-hidden style={{ fontSize: "0.75rem", color: "var(--fg-ghost)", textTransform: "none", letterSpacing: 0 }}>ⓘ</span>
       {open && (
         <div
           role="tooltip"
@@ -45,21 +45,21 @@ function HeaderTooltip({ label, children }: { label: string; children: React.Rea
             zIndex: 20,
             width: 300,
             maxWidth: "min(300px, 90vw)",
-            background: "#fffbeb",
-            border: "1px solid #fde68a",
+            background: "var(--warn-bg)",
+            border: "1px solid var(--warn-border)",
             borderRadius: "0.5rem",
             padding: "0.75rem 0.9rem",
-            color: "#374151",
+            color: "var(--fg-secondary)",
             fontSize: "0.8rem",
             fontWeight: 400,
             textTransform: "none",
             letterSpacing: 0,
             lineHeight: 1.5,
-            boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.12)",
             whiteSpace: "normal",
           }}
         >
-          <div style={{ fontSize: "0.65rem", textTransform: "uppercase", letterSpacing: "0.06em", color: "#92400e", fontWeight: 700, marginBottom: "0.4rem" }}>
+          <div style={{ fontSize: "0.65rem", textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--warn-fg)", fontWeight: 700, marginBottom: "0.4rem" }}>
             Best effort — just a first overview
           </div>
           {children}
@@ -75,8 +75,8 @@ const headerCellStyle: React.CSSProperties = {
   fontWeight: 600,
   textTransform: "uppercase",
   letterSpacing: "0.05em",
-  color: "#9ca3af",
-  borderBottom: "1px solid #e5e7eb",
+  color: "var(--fg-faint)",
+  borderBottom: "1px solid var(--border)",
   verticalAlign: "middle",
 };
 
@@ -85,12 +85,8 @@ const cellStyle: React.CSSProperties = {
   verticalAlign: "top",
 };
 
-const ROW_BG_EVEN = "#ffffff";
-const ROW_BG_ODD = "#fafafa";
-const ROW_BG_HOVER = "#f3f4f6";
-
 function stripedBg(i: number): string {
-  return i % 2 === 0 ? ROW_BG_EVEN : ROW_BG_ODD;
+  return i % 2 === 0 ? "var(--bg)" : "var(--surface-2)";
 }
 
 export default function SubConditionTable({ rows, probabilityById, symptomPatterns, subConditionAffinities, signalsByConditionId }: Props) {
@@ -147,14 +143,14 @@ export default function SubConditionTable({ rows, probabilityById, symptomPatter
             flexShrink: 0,
             padding: "0.22rem 0.55rem",
             fontSize: "0.8rem",
-            border: "1px solid #e5e7eb",
+            border: "1px solid var(--border)",
             borderRadius: "999px",
             outline: "none",
-            color: "#111827",
-            background: "#fff",
+            color: "var(--fg)",
+            background: "var(--bg)",
           }}
-          onFocus={(e) => (e.currentTarget.style.borderColor = "#9ca3af")}
-          onBlur={(e) => (e.currentTarget.style.borderColor = "#e5e7eb")}
+          onFocus={(e) => (e.currentTarget.style.borderColor = "var(--fg-faint)")}
+          onBlur={(e) => (e.currentTarget.style.borderColor = "var(--border)")}
         />
         {hasPatternFilters && symptomPatterns!.map((p) => {
           const active = patternFilter === p.id;
@@ -167,9 +163,9 @@ export default function SubConditionTable({ rows, probabilityById, symptomPatter
                 fontSize: "0.75rem",
                 padding: "0.18rem 0.55rem",
                 borderRadius: "999px",
-                border: active ? "1.5px solid #374151" : "1.5px solid #e5e7eb",
-                background: active ? "#374151" : "#fff",
-                color: active ? "#fff" : "#6b7280",
+                border: active ? "1.5px solid var(--fg-secondary)" : "1.5px solid var(--border)",
+                background: active ? "var(--fg-secondary)" : "var(--bg)",
+                color: active ? "var(--bg)" : "var(--fg-muted)",
                 cursor: "pointer",
                 fontWeight: active ? 600 : 400,
                 transition: "all 0.12s",
@@ -196,7 +192,7 @@ export default function SubConditionTable({ rows, probabilityById, symptomPatter
                   <p style={{ margin: 0 }}>
                     A short pointer at the <strong>distinguishing pattern</strong> that separates this condition from the others — not generic symptoms.
                   </p>
-                  <p style={{ margin: "0.4rem 0 0", color: "#6b7280", fontSize: "0.75rem" }}>
+                  <p style={{ margin: "0.4rem 0 0", color: "var(--fg-muted)", fontSize: "0.75rem" }}>
                     AI-assisted summary. Use it to decide whether to read more, not as a diagnostic check.
                   </p>
                 </HeaderTooltip>
@@ -214,7 +210,7 @@ export default function SubConditionTable({ rows, probabilityById, symptomPatter
               <tr
                 key={c.id}
                 onClick={() => clickable && navigate(`/condition/${c.id}`)}
-                onMouseEnter={(e) => { if (clickable) e.currentTarget.style.background = ROW_BG_HOVER; }}
+                onMouseEnter={(e) => { if (clickable) e.currentTarget.style.background = "var(--row-hover)"; }}
                 onMouseLeave={(e) => (e.currentTarget.style.background = baseBg)}
                 style={{
                   background: baseBg,
@@ -228,21 +224,21 @@ export default function SubConditionTable({ rows, probabilityById, symptomPatter
                     <Link
                       to={`/condition/${c.id}`}
                       onClick={(e) => e.stopPropagation()}
-                      style={{ textDecoration: "none", color: "#111827", fontSize: "0.95rem", fontWeight: 600, display: "block" }}
+                      style={{ textDecoration: "none", color: "var(--fg)", fontSize: "0.95rem", fontWeight: 600, display: "block" }}
                     >
                       {c.name}
                     </Link>
                   ) : (
-                    <span style={{ color: "#9ca3af", fontSize: "0.95rem", fontWeight: 600, display: "block" }}>{c.name}</span>
+                    <span style={{ color: "var(--fg-faint)", fontSize: "0.95rem", fontWeight: 600, display: "block" }}>{c.name}</span>
                   )}
                   {c.group_label && (
-                    <span style={{ display: "block", fontSize: "0.72rem", color: "#9ca3af", marginTop: "0.15rem" }}>
+                    <span style={{ display: "block", fontSize: "0.72rem", color: "var(--fg-faint)", marginTop: "0.15rem" }}>
                       {c.group_label}
                     </span>
                   )}
                 </td>
                 {hasSignals && (
-                  <td style={{ ...cellStyle, fontSize: "0.9rem", color: signal ? "#4b5563" : "#d1d5db", lineHeight: 1.55 }}>
+                  <td style={{ ...cellStyle, fontSize: "0.9rem", color: signal ? "var(--fg-body)" : "var(--fg-ghost)", lineHeight: 1.55 }}>
                     {signal ? renderSignal(signal) : "—"}
                   </td>
                 )}

@@ -21,10 +21,10 @@ export default function SpaceSwitcher({ spaces, currentId }: Props) {
       style={{
         padding: "0.3rem 0.5rem",
         fontSize: "0.85rem",
-        border: "1px solid #d1d5db",
+        border: "1px solid var(--border)",
         borderRadius: "0.375rem",
-        background: "white",
-        color: "#374151",
+        background: "var(--bg)",
+        color: "var(--fg-secondary)",
         cursor: "pointer",
       }}
     >

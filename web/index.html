@@ -4,6 +4,131 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Condition Navigator</title>
+    <style>
+      :root {
+        /* Light theme — the default */
+        --bg: #ffffff;
+        --surface: #f9fafb;
+        --surface-2: #fafafa;
+        --border: #e5e7eb;
+        --border-soft: #f3f4f6;
+
+        --fg: #111827;
+        --fg-secondary: #374151;
+        --fg-body: #4b5563;
+        --fg-muted: #6b7280;
+        --fg-faint: #9ca3af;
+        --fg-ghost: #d1d5db;
+
+        --link: #2563eb;
+        --link-strong: #1d4ed8;
+        --link-bg: #eff6ff;
+        --link-border: #dbeafe;
+
+        --row-hover: #f3f4f6;
+
+        --tooltip-bg: #ffffff;
+        --tooltip-border: #e5e7eb;
+
+        --warn-bg: #fffbeb;
+        --warn-border: #fde68a;
+        --warn-fg: #92400e;
+
+        --ok-bg: #ecfdf5;
+        --ok-border: #10b981;
+        --ok-fg: #065f46;
+
+        --chip-yellow-bg: #fef3c7;
+        --chip-yellow-border: transparent;
+        --chip-blue-bg: #e0e7ff;
+        --chip-blue-border: transparent;
+        --chip-green-bg: #d1fae5;
+        --chip-green-border: transparent;
+        --chip-gray-bg: #f3f4f6;
+        --chip-gray-border: #d1d5db;
+        --chip-red-bg: #fee2e2;
+        --chip-red-border: transparent;
+        --chip-fg: #374151;
+
+        --danger: #dc2626;
+
+        color-scheme: light;
+      }
+
+      :root[data-theme="dark"] {
+        --bg: #0f172a;
+        --surface: #1e293b;
+        --surface-2: #172033;
+        --border: #334155;
+        --border-soft: #1e293b;
+
+        --fg: #f1f5f9;
+        --fg-secondary: #e2e8f0;
+        --fg-body: #cbd5e1;
+        --fg-muted: #94a3b8;
+        --fg-faint: #64748b;
+        --fg-ghost: #475569;
+
+        --link: #60a5fa;
+        --link-strong: #93c5fd;
+        --link-bg: #1e293b;
+        --link-border: #1e40af;
+
+        --row-hover: #263449;
+
+        --tooltip-bg: #1e293b;
+        --tooltip-border: #334155;
+
+        --warn-bg: #422006;
+        --warn-border: #92400e;
+        --warn-fg: #fcd34d;
+
+        --ok-bg: #052e1a;
+        --ok-border: #10b981;
+        --ok-fg: #6ee7b7;
+
+        --chip-yellow-bg: #422006;
+        --chip-yellow-border: #78350f;
+        --chip-blue-bg: #1e293b;
+        --chip-blue-border: #1e3a8a;
+        --chip-green-bg: #052e1a;
+        --chip-green-border: #065f46;
+        --chip-gray-bg: #1e293b;
+        --chip-gray-border: #334155;
+        --chip-red-bg: #4c0519;
+        --chip-red-border: #7f1d1d;
+        --chip-fg: #e2e8f0;
+
+        --danger: #f87171;
+
+        color-scheme: dark;
+      }
+
+      html, body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: system-ui, -apple-system, sans-serif;
+        transition: background 0.15s ease, color 0.15s ease;
+      }
+
+      * { box-sizing: border-box; }
+    </style>
+    <script>
+      // Apply theme before React mounts to avoid a flash of light content on dark systems.
+      (function () {
+        try {
+          var stored = localStorage.getItem("cn_theme");
+          var resolved =
+            stored === "light" || stored === "dark"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+          document.documentElement.setAttribute("data-theme", resolved);
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

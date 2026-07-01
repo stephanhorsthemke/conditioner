@@ -8,42 +8,48 @@ import { loadSpaces } from "../spaces";
 
 const DIAGNOSIS_TYPE_META: Record<DiagnosisType, {
   label: string;
-  color: string;
+  bg: string;
+  border: string;
   title: string;
   body: string;
   tip: string;
 }> = {
   syndromic: {
     label: "Syndrome",
-    color: "#fef3c7",
+    bg: "var(--chip-yellow-bg)",
+    border: "var(--chip-yellow-border)",
     title: "Syndrome",
     body: "A syndrome is a recognised pattern of symptoms grouped under one label. It describes what tends to happen, not why — people with the same syndrome label often have different underlying causes.",
     tip: "Syndromes are starting points, not final answers. The more useful question is usually: what is driving this pattern in a specific person?",
   },
   pathophysiological: {
     label: "Dysfunction",
-    color: "#e0e7ff",
+    bg: "var(--chip-blue-bg)",
+    border: "var(--chip-blue-border)",
     title: "Dysfunction",
     body: "A dysfunction diagnosis identifies something measurably broken in a biological process — an enzyme deficiency, a microbial imbalance, an immune overreaction. The mechanism is named even if the root cause behind it is not yet clear.",
     tip: "Dysfunctions are more specific than syndromes and often have direct treatment options. They may also be downstream of something else worth investigating.",
   },
   aetiological: {
     label: "Root cause",
-    color: "#d1fae5",
+    bg: "var(--chip-green-bg)",
+    border: "var(--chip-green-border)",
     title: "Root cause",
     body: "An aetiological diagnosis identifies the actual cause — not just what is broken, but why. These tend to be more actionable because addressing the cause can resolve the downstream effects it was producing.",
     tip: "Root causes are the most specific level of diagnosis. Treating them tends to produce more durable results than managing symptoms or downstream dysfunctions alone.",
   },
   constitutional: {
     label: "Predisposition",
-    color: "#f3f4f6",
+    bg: "var(--chip-gray-bg)",
+    border: "var(--chip-gray-border)",
     title: "Predisposition",
     body: "A constitutional condition is part of someone's biological makeup — it shapes the terrain on which other conditions are more likely to develop. It is not a direct cause of symptoms but helps explain susceptibility.",
     tip: "Constitutional conditions are rarely modifiable themselves, but knowing about one helps predict which related conditions are more likely and why.",
   },
   masquerader: {
     label: "Masquerader",
-    color: "#fee2e2",
+    bg: "var(--chip-red-bg)",
+    border: "var(--chip-red-border)",
     title: "Masquerader",
     body: "A masquerader produces symptoms that closely resemble gut syndromes like IBS but is a distinct condition with different biology and treatment. It does not cause IBS — it mimics it.",
     tip: "Masqueraders are worth ruling out early, before investigating syndrome-specific drivers — the two require different approaches.",
@@ -66,9 +72,9 @@ function DiagnosisTypeLabel({ diagnosisType }: { diagnosisType: DiagnosisType })
           fontWeight: 600,
           padding: "0.15rem 0.5rem",
           borderRadius: "0.25rem",
-          background: meta.color,
-          border: `1px solid ${meta.color === "#f3f4f6" ? "#d1d5db" : "transparent"}`,
-          color: "#374151",
+          background: meta.bg,
+          border: `1px solid ${meta.border}`,
+          color: "var(--chip-fg)",
           cursor: "help",
           letterSpacing: "0.02em",
           outline: "none",
@@ -87,21 +93,21 @@ function DiagnosisTypeLabel({ diagnosisType }: { diagnosisType: DiagnosisType })
             zIndex: 20,
             width: 340,
             maxWidth: "min(340px, 90vw)",
-            background: "#fff",
-            border: "1px solid #e5e7eb",
+            background: "var(--tooltip-bg)",
+            border: "1px solid var(--tooltip-border)",
             borderRadius: "0.5rem",
             padding: "0.85rem 1rem",
-            color: "#374151",
+            color: "var(--fg-secondary)",
             fontSize: "0.82rem",
             lineHeight: 1.55,
-            boxShadow: "0 4px 16px rgba(0,0,0,0.1)",
+            boxShadow: "0 4px 16px rgba(0,0,0,0.15)",
             whiteSpace: "normal",
             fontWeight: 400,
           }}
         >
-          <div style={{ fontWeight: 700, marginBottom: "0.35rem", fontSize: "0.8rem" }}>{meta.title}</div>
-          <p style={{ margin: "0 0 0.5rem", color: "#4b5563" }}>{meta.body}</p>
-          <p style={{ margin: 0, background: "#f9fafb", borderLeft: "3px solid #6b7280", padding: "0.35rem 0.5rem", borderRadius: "0 0.25rem 0.25rem 0", color: "#374151", fontSize: "0.78rem" }}>
+          <div style={{ fontWeight: 700, marginBottom: "0.35rem", fontSize: "0.8rem", color: "var(--fg)" }}>{meta.title}</div>
+          <p style={{ margin: "0 0 0.5rem", color: "var(--fg-body)" }}>{meta.body}</p>
+          <p style={{ margin: 0, background: "var(--surface)", borderLeft: "3px solid var(--fg-muted)", padding: "0.35rem 0.5rem", borderRadius: "0 0.25rem 0.25rem 0", color: "var(--fg-secondary)", fontSize: "0.78rem" }}>
             {meta.tip}
           </p>
         </div>
@@ -125,9 +131,9 @@ function AiLabel() {
           fontWeight: 600,
           padding: "0.15rem 0.5rem",
           borderRadius: "0.25rem",
-          background: "#f3f4f6",
-          border: "1px solid #d1d5db",
-          color: "#6b7280",
+          background: "var(--chip-gray-bg)",
+          border: "1px solid var(--chip-gray-border)",
+          color: "var(--fg-muted)",
           cursor: "help",
           letterSpacing: "0.02em",
           outline: "none",
@@ -146,15 +152,15 @@ function AiLabel() {
             zIndex: 20,
             width: 280,
             maxWidth: "min(280px, 90vw)",
-            background: "#fffbeb",
-            border: "1px solid #fde68a",
+            background: "var(--warn-bg)",
+            border: "1px solid var(--warn-border)",
             borderRadius: "0.5rem",
             padding: "0.75rem 0.9rem",
-            color: "#374151",
+            color: "var(--fg-secondary)",
             fontSize: "0.8rem",
             fontWeight: 400,
             lineHeight: 1.5,
-            boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.12)",
             whiteSpace: "normal",
           }}
         >
@@ -173,9 +179,18 @@ function isEmpty(val: unknown): boolean {
   return false;
 }
 
-function Badge({ label, color }: { label: string; color: string }) {
+function Badge({ label, bg, border }: { label: string; bg: string; border?: string }) {
   return (
-    <span style={{ fontSize: "0.7rem", padding: "0.1rem 0.4rem", borderRadius: "0.25rem", background: color, marginLeft: "0.4rem", verticalAlign: "middle" }}>
+    <span style={{
+      fontSize: "0.7rem",
+      padding: "0.1rem 0.4rem",
+      borderRadius: "0.25rem",
+      background: bg,
+      border: border ? `1px solid ${border}` : "none",
+      color: "var(--chip-fg)",
+      marginLeft: "0.4rem",
+      verticalAlign: "middle",
+    }}>
       {label}
     </span>
   );
@@ -224,19 +239,19 @@ export default function ConditionPage() {
 
   return (
     <Layout>
-    <div style={{ maxWidth: 680, margin: "1rem auto", padding: "0 1rem", fontFamily: "system-ui, sans-serif" }}>
+    <div style={{ maxWidth: 680, margin: "1rem auto", padding: "0 1rem" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         {location.key !== "default" ? (
           <button
             onClick={() => { window.scrollTo(0, 0); navigate(-1); }}
-            style={{ fontSize: "0.875rem", color: "#6b7280", background: "none", border: "none", padding: 0, cursor: "pointer" }}
+            style={{ fontSize: "0.875rem", color: "var(--fg-muted)", background: "none", border: "none", padding: 0, cursor: "pointer" }}
           >
             ← Back
           </button>
         ) : (
           <Link
             to={backSpace && backSpace.id !== "main" ? `/space/${backSpace.id}` : "/"}
-            style={{ fontSize: "0.875rem", color: "#6b7280", textDecoration: "none" }}
+            style={{ fontSize: "0.875rem", color: "var(--fg-muted)", textDecoration: "none" }}
           >
             ← {backSpace?.label ?? "All conditions"}
           </Link>
@@ -244,32 +259,32 @@ export default function ConditionPage() {
         <AiLabel />
       </div>
 
-      {error && <p style={{ color: "#dc2626", marginTop: "1rem" }}>{error}</p>}
+      {error && <p style={{ color: "var(--danger)", marginTop: "1rem" }}>{error}</p>}
 
       {meta && (
         <div style={{ margin: "1rem 0 1.5rem" }}>
-          <h1 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "0.25rem" }}>
+          <h1 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "0.25rem", color: "var(--fg)" }}>
             {meta.full_name || meta.name}
             {!meta.full_name && meta.aliases.length > 0 && (
-              <span style={{ fontSize: "0.9rem", color: "#6b7280", fontWeight: 400, marginLeft: "0.5rem" }}>
+              <span style={{ fontSize: "0.9rem", color: "var(--fg-muted)", fontWeight: 400, marginLeft: "0.5rem" }}>
                 ({meta.aliases.join(", ")})
               </span>
             )}
           </h1>
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "1rem" }}>
-            <p style={{ fontSize: "0.8rem", color: "#9ca3af", margin: 0 }}>{meta.group_label}</p>
+            <p style={{ fontSize: "0.8rem", color: "var(--fg-faint)", margin: 0 }}>{meta.group_label}</p>
             {meta.diagnosis_type && <DiagnosisTypeLabel diagnosisType={meta.diagnosis_type} />}
           </div>
 
           {!meta.has_data && (
-            <p style={{ color: "#6b7280" }}>Data for this condition has not been generated yet. Run <code>cn generate --id {meta.id}</code>.</p>
+            <p style={{ color: "var(--fg-muted)" }}>Data for this condition has not been generated yet. Run <code>cn generate --id {meta.id}</code>.</p>
           )}
 
           {s && (
             <p style={{
               fontSize: "1.1rem",
               lineHeight: 1.65,
-              color: "#111827",
+              color: "var(--fg)",
               margin: "0.75rem 0 0",
             }}>
               {s.plain_summary}
@@ -287,9 +302,9 @@ export default function ConditionPage() {
               padding: "0.5rem 0.85rem",
               fontSize: "0.875rem",
               fontWeight: 600,
-              color: "#2563eb",
-              background: "#eff6ff",
-              border: "1px solid #dbeafe",
+              color: "var(--link)",
+              background: "var(--link-bg)",
+              border: "1px solid var(--link-border)",
               borderRadius: "0.375rem",
               textDecoration: "none",
             }}
@@ -307,7 +322,7 @@ export default function ConditionPage() {
 
           <AccordionSection title="How common is it?" isEmpty={isEmpty(s.prevalence)}>
             <p><strong>{s.prevalence?.estimate}</strong> — {s.prevalence?.summary}</p>
-            {s.prevalence?.notes && <p style={{ color: "#6b7280", fontSize: "0.875rem", marginTop: "0.5rem" }}>{s.prevalence.notes}</p>}
+            {s.prevalence?.notes && <p style={{ color: "var(--fg-muted)", fontSize: "0.875rem", marginTop: "0.5rem" }}>{s.prevalence.notes}</p>}
           </AccordionSection>
 
           <AccordionSection title="Known subtypes" isEmpty={isEmpty(s.subgroups)}>
@@ -318,7 +333,7 @@ export default function ConditionPage() {
                 {hasPage ? (
                   <Link
                     to={`/condition/${sg.id}`}
-                    style={{ fontWeight: 600, color: "#2563eb", textDecoration: "none" }}
+                    style={{ fontWeight: 600, color: "var(--link)", textDecoration: "none" }}
                     onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
                     onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
                   >
@@ -327,8 +342,8 @@ export default function ConditionPage() {
                 ) : (
                   <strong>{sg.name}</strong>
                 )}
-                <p style={{ margin: "0.25rem 0", color: "#4b5563" }}>{sg.description}</p>
-                <ul style={{ margin: "0.25rem 0 0 1rem", color: "#6b7280", fontSize: "0.875rem" }}>
+                <p style={{ margin: "0.25rem 0", color: "var(--fg-body)" }}>{sg.description}</p>
+                <ul style={{ margin: "0.25rem 0 0 1rem", color: "var(--fg-muted)", fontSize: "0.875rem" }}>
                   {(sg.distinguishing_features ?? []).map((f, i) => <li key={i}>{f}</li>)}
                 </ul>
               </div>
@@ -344,10 +359,10 @@ export default function ConditionPage() {
               }, {})
             ).map(([cat, syms]) => (
               <div key={cat} style={{ marginBottom: "0.75rem" }}>
-                <p style={{ fontWeight: 600, fontSize: "0.8rem", textTransform: "uppercase", color: "#9ca3af", margin: "0 0 0.25rem" }}>{cat}</p>
+                <p style={{ fontWeight: 600, fontSize: "0.8rem", textTransform: "uppercase", color: "var(--fg-faint)", margin: "0 0 0.25rem" }}>{cat}</p>
                 <ul style={{ margin: 0, paddingLeft: "1.25rem" }}>
                   {syms.map((sym, i) => (
-                    <li key={i}>{sym.symptom}{sym.notes && <span style={{ color: "#9ca3af", fontSize: "0.85em" }}> — {sym.notes}</span>}</li>
+                    <li key={i}>{sym.symptom}{sym.notes && <span style={{ color: "var(--fg-faint)", fontSize: "0.85em" }}> — {sym.notes}</span>}</li>
                   ))}
                 </ul>
               </div>
@@ -365,8 +380,8 @@ export default function ConditionPage() {
               {(s.testing?.at_home ?? []).map((t, i) => (
                 <div key={i} style={{ marginBottom: "0.75rem" }}>
                   <strong>{t.name}</strong>
-                  <p style={{ margin: "0.1rem 0", color: "#4b5563" }}>{t.description}</p>
-                  {t.safety_notes && <p style={{ color: "#92400e", fontSize: "0.8rem", background: "#fef3c7", padding: "0.25rem 0.5rem", borderRadius: "0.25rem" }}>⚠ {t.safety_notes}</p>}
+                  <p style={{ margin: "0.1rem 0", color: "var(--fg-body)" }}>{t.description}</p>
+                  {t.safety_notes && <p style={{ color: "var(--warn-fg)", fontSize: "0.8rem", background: "var(--warn-bg)", border: "1px solid var(--warn-border)", padding: "0.25rem 0.5rem", borderRadius: "0.25rem" }}>⚠ {t.safety_notes}</p>}
                 </div>
               ))}
             </AccordionSubsection>
@@ -375,10 +390,10 @@ export default function ConditionPage() {
               {(s.testing?.clinical ?? []).map((t, i) => (
                 <div key={i} style={{ marginBottom: "0.75rem" }}>
                   <strong>{t.name}</strong>
-                  {t.type === "gold_standard" && <Badge label="gold standard" color="#d1fae5" />}
-                  {t.type === "emerging" && <Badge label="emerging" color="#e0e7ff" />}
-                  <p style={{ margin: "0.1rem 0", color: "#4b5563" }}>{t.description}</p>
-                  <p style={{ color: "#6b7280", fontSize: "0.85rem" }}>{t.availability}</p>
+                  {t.type === "gold_standard" && <Badge label="gold standard" bg="var(--chip-green-bg)" border="var(--chip-green-border)" />}
+                  {t.type === "emerging" && <Badge label="emerging" bg="var(--chip-blue-bg)" border="var(--chip-blue-border)" />}
+                  <p style={{ margin: "0.1rem 0", color: "var(--fg-body)" }}>{t.description}</p>
+                  <p style={{ color: "var(--fg-muted)", fontSize: "0.85rem" }}>{t.availability}</p>
                 </div>
               ))}
             </AccordionSubsection>
@@ -396,12 +411,12 @@ export default function ConditionPage() {
               return (
                 <div key={i} style={{ marginBottom: "0.5rem" }}>
                   {linked ? (
-                    <Link to={`/condition/${linked.id}`} style={{ fontWeight: 600, color: "#2563eb" }}>{rc.name}</Link>
+                    <Link to={`/condition/${linked.id}`} style={{ fontWeight: 600, color: "var(--link)" }}>{rc.name}</Link>
                   ) : (
                     <strong>{rc.name}</strong>
                   )}
-                  <span style={{ fontSize: "0.75rem", color: "#9ca3af", marginLeft: "0.4rem" }}>{rc.relationship.replace("_", " ")}</span>
-                  <p style={{ margin: "0.1rem 0", color: "#4b5563", fontSize: "0.9rem" }}>{rc.explanation}</p>
+                  <span style={{ fontSize: "0.75rem", color: "var(--fg-faint)", marginLeft: "0.4rem" }}>{rc.relationship.replace("_", " ")}</span>
+                  <p style={{ margin: "0.1rem 0", color: "var(--fg-body)", fontSize: "0.9rem" }}>{rc.explanation}</p>
                 </div>
               );
             })}
@@ -413,11 +428,11 @@ export default function ConditionPage() {
                 {(s.symptom_management?.strategies ?? []).map((st, i) => (
                   <div key={i} style={{ marginBottom: "0.75rem" }}>
                     <strong>{st.name}</strong>
-                    <span style={{ fontSize: "0.7rem", color: "#6b7280", marginLeft: "0.4rem" }}>{st.category}</span>
-                    {st.evidence_level === "strong" && <Badge label="strong evidence" color="#d1fae5" />}
-                    {st.evidence_level === "anecdotal" && <Badge label="anecdotal" color="#f3f4f6" />}
-                    <p style={{ margin: "0.1rem 0", color: "#4b5563" }}>{st.description}</p>
-                    {st.notes && <p style={{ color: "#9ca3af", fontSize: "0.8rem" }}>{st.notes}</p>}
+                    <span style={{ fontSize: "0.7rem", color: "var(--fg-muted)", marginLeft: "0.4rem" }}>{st.category}</span>
+                    {st.evidence_level === "strong" && <Badge label="strong evidence" bg="var(--chip-green-bg)" border="var(--chip-green-border)" />}
+                    {st.evidence_level === "anecdotal" && <Badge label="anecdotal" bg="var(--chip-gray-bg)" border="var(--chip-gray-border)" />}
+                    <p style={{ margin: "0.1rem 0", color: "var(--fg-body)" }}>{st.description}</p>
+                    {st.notes && <p style={{ color: "var(--fg-faint)", fontSize: "0.8rem" }}>{st.notes}</p>}
                   </div>
                 ))}
               </>
@@ -437,17 +452,17 @@ export default function ConditionPage() {
               <div key={i} style={{ marginBottom: "1.25rem" }}>
                 <p style={{ margin: 0, fontWeight: 600 }}>{ut.truth}</p>
                 {ut.why_resisted && (
-                  <p style={{ margin: "0.25rem 0 0", color: "#6b7280", fontSize: "0.875rem" }}>{ut.why_resisted}</p>
+                  <p style={{ margin: "0.25rem 0 0", color: "var(--fg-muted)", fontSize: "0.875rem" }}>{ut.why_resisted}</p>
                 )}
                 {ut.path_forward && (
                   <p
                     style={{
                       margin: "0.5rem 0 0",
                       padding: "0.5rem 0.75rem",
-                      background: "#ecfdf5",
-                      borderLeft: "3px solid #10b981",
+                      background: "var(--ok-bg)",
+                      borderLeft: "3px solid var(--ok-border)",
                       borderRadius: "0.25rem",
-                      color: "#065f46",
+                      color: "var(--ok-fg)",
                       fontSize: "0.9rem",
                     }}
                   >
@@ -462,10 +477,10 @@ export default function ConditionPage() {
             {!isEmpty(s.sustainable_improvement?.key_levers) && (s.sustainable_improvement?.key_levers ?? []).map((lv, i) => (
               <div key={i} style={{ marginBottom: "1rem" }}>
                 <strong>{lv.lever}</strong>
-                {lv.requires_professional && <Badge label="needs professional" color="#fee2e2" />}
-                <p style={{ margin: "0.1rem 0", color: "#4b5563" }}>{lv.why_it_matters}</p>
-                <p style={{ color: "#6b7280", fontSize: "0.875rem" }}>Start: {lv.how_to_start}</p>
-                {lv.timeline && <p style={{ color: "#9ca3af", fontSize: "0.8rem" }}>Timeline: {lv.timeline}</p>}
+                {lv.requires_professional && <Badge label="needs professional" bg="var(--chip-red-bg)" border="var(--chip-red-border)" />}
+                <p style={{ margin: "0.1rem 0", color: "var(--fg-body)" }}>{lv.why_it_matters}</p>
+                <p style={{ color: "var(--fg-muted)", fontSize: "0.875rem" }}>Start: {lv.how_to_start}</p>
+                {lv.timeline && <p style={{ color: "var(--fg-faint)", fontSize: "0.8rem" }}>Timeline: {lv.timeline}</p>}
               </div>
             ))}
             {!isEmpty(s.sustainable_improvement?.common_mistakes) && (
@@ -487,12 +502,12 @@ export default function ConditionPage() {
               {(s.finding_help?.patient_communities ?? []).map((c, i) => (
                 <div key={i} style={{ marginBottom: "0.5rem" }}>
                   {c.url ? (
-                    <a href={c.url} target="_blank" rel="noreferrer" style={{ fontWeight: 600, color: "#2563eb" }}>{c.name}</a>
+                    <a href={c.url} target="_blank" rel="noreferrer" style={{ fontWeight: 600, color: "var(--link)" }}>{c.name}</a>
                   ) : (
                     <strong>{c.name}</strong>
                   )}
-                  <span style={{ fontSize: "0.75rem", color: "#9ca3af", marginLeft: "0.4rem" }}>{c.platform}</span>
-                  <p style={{ margin: "0.1rem 0", color: "#6b7280", fontSize: "0.875rem" }}>{c.notes}</p>
+                  <span style={{ fontSize: "0.75rem", color: "var(--fg-faint)", marginLeft: "0.4rem" }}>{c.platform}</span>
+                  <p style={{ margin: "0.1rem 0", color: "var(--fg-muted)", fontSize: "0.875rem" }}>{c.notes}</p>
                 </div>
               ))}
             </AccordionSubsection>
@@ -501,8 +516,8 @@ export default function ConditionPage() {
               {(s.finding_help?.specialists ?? []).map((sp, i) => (
                 <div key={i} style={{ marginBottom: "0.5rem" }}>
                   <strong>{sp.type}</strong>
-                  <p style={{ margin: "0.1rem 0", color: "#4b5563", fontSize: "0.9rem" }}>{sp.role}</p>
-                  {sp.notes && <p style={{ color: "#9ca3af", fontSize: "0.8rem" }}>{sp.notes}</p>}
+                  <p style={{ margin: "0.1rem 0", color: "var(--fg-body)", fontSize: "0.9rem" }}>{sp.role}</p>
+                  {sp.notes && <p style={{ color: "var(--fg-faint)", fontSize: "0.8rem" }}>{sp.notes}</p>}
                 </div>
               ))}
             </AccordionSubsection>
@@ -512,17 +527,18 @@ export default function ConditionPage() {
             {(s.learning_resources ?? []).map((r, i) => (
               <div key={i} style={{ marginBottom: "0.75rem" }}>
                 {r.url ? (
-                  <a href={r.url} target="_blank" rel="noreferrer" style={{ fontWeight: 600, color: "#2563eb" }}>{r.title}</a>
+                  <a href={r.url} target="_blank" rel="noreferrer" style={{ fontWeight: 600, color: "var(--link)" }}>{r.title}</a>
                 ) : (
                   <strong>{r.title}</strong>
                 )}
-                <span style={{ fontSize: "0.75rem", color: "#9ca3af", marginLeft: "0.4rem" }}>{r.type}</span>
-                {r.author_or_source && <span style={{ fontSize: "0.75rem", color: "#9ca3af", marginLeft: "0.4rem" }}>— {r.author_or_source}</span>}
+                <span style={{ fontSize: "0.75rem", color: "var(--fg-faint)", marginLeft: "0.4rem" }}>{r.type}</span>
+                {r.author_or_source && <span style={{ fontSize: "0.75rem", color: "var(--fg-faint)", marginLeft: "0.4rem" }}>— {r.author_or_source}</span>}
                 <Badge
                   label={r.audience}
-                  color={r.audience === "beginner" ? "#d1fae5" : r.audience === "advanced" ? "#fee2e2" : "#e0e7ff"}
+                  bg={r.audience === "beginner" ? "var(--chip-green-bg)" : r.audience === "advanced" ? "var(--chip-red-bg)" : "var(--chip-blue-bg)"}
+                  border={r.audience === "beginner" ? "var(--chip-green-border)" : r.audience === "advanced" ? "var(--chip-red-border)" : "var(--chip-blue-border)"}
                 />
-                <p style={{ margin: "0.25rem 0", color: "#4b5563", fontSize: "0.875rem" }}>{r.description}</p>
+                <p style={{ margin: "0.25rem 0", color: "var(--fg-body)", fontSize: "0.875rem" }}>{r.description}</p>
               </div>
             ))}
           </AccordionSection>
