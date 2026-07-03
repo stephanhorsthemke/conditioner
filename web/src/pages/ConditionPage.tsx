@@ -3,8 +3,7 @@ import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import AccordionSection, { AccordionSubsection } from "../components/AccordionSection";
 import Layout from "../components/Layout";
-import { ConditionData, ConditionIndex, DiagnosisType, Space } from "../types";
-import { loadSpaces } from "../spaces";
+import { ConditionData, ConditionIndex, DiagnosisType } from "../types";
 
 const DIAGNOSIS_TYPE_META: Record<DiagnosisType, {
   label: string;
@@ -204,16 +203,6 @@ export default function ConditionPage() {
   const [meta, setMeta] = useState<ConditionIndex | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [indexMap, setIndexMap] = useState<Map<string, ConditionIndex>>(new Map());
-  const [backSpace, setBackSpace] = useState<Space | null>(null);
-
-  useEffect(() => {
-    const lastId = (() => {
-      try { return localStorage.getItem("cn_last_space") ?? "main"; } catch { return "main"; }
-    })();
-    loadSpaces().then((spaces) => {
-      setBackSpace(spaces.find((s) => s.id === lastId) ?? spaces.find((s) => s.id === "main") ?? null);
-    });
-  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -250,10 +239,10 @@ export default function ConditionPage() {
           </button>
         ) : (
           <Link
-            to={backSpace && backSpace.id !== "main" ? `/space/${backSpace.id}` : "/"}
+            to="/search"
             style={{ fontSize: "0.875rem", color: "var(--fg-muted)", textDecoration: "none" }}
           >
-            ← {backSpace?.label ?? "All conditions"}
+            ← All conditions
           </Link>
         )}
         <AiLabel />

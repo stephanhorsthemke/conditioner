@@ -14,20 +14,6 @@ export interface ConditionIndex {
   diagnosis_type?: DiagnosisType;
 }
 
-export type SpaceInclude = "all" | string[] | { groups: string[] };
-
-export interface Space {
-  id: string;
-  label: string;
-  description?: string;
-  include: SpaceInclude;
-  exclude?: string[];
-}
-
-export interface SpacesConfig {
-  spaces: Space[];
-}
-
 export interface Prevalence {
   summary: string;
   estimate: string;

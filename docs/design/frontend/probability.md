@@ -2,49 +2,51 @@
 
 ## Scope
 
-Probability is **per-space**. A [space](spaces.md) optionally references its own probability JSON file via the `probability` field in `data/spaces.yaml`. Spaces without that field show no probability column.
-
-The current probability data is scoped to the **IBS space** — its rankings reflect the relative likelihood of an IBS patient having each condition. The main space does not currently define probability, so its list is unsorted by relevance.
+Probability is **per [starting point](starting-points.md)**. Each starting point ranks
+its own candidate sub-conditions by how likely they are within that context — e.g. the
+IBS starting point ranks conditions by relative likelihood among IBS patients. There is
+no global or per-page probability; only starting-point tables are ranked.
 
 ## Goal
 
-Help the user scan the most likely conditions first by sorting the list by static prevalence among IBS patients, with a quick visual indicator on each row.
+Help the user scan the most likely conditions first by sorting a starting point's
+sub-condition table by static prevalence within that context, with a quick visual
+indicator on each row.
 
 ## Expected Behavior
 
-- The condition list is sorted by probability descending (most likely first)
-- Each condition row in the active space shows a 1–5 dot indicator (`●●●○○`)
-- The "Probability" column header appears only when the active space defines probability data
-- Conditions missing from the data default to probability 1 (one filled dot, sorted to the bottom)
+- A starting point's sub-condition table is sorted by probability descending (most
+  likely first).
+- Each row shows a 1–5 dot indicator (`●●●○○`).
+- Conditions missing a probability value default to 1 (one filled dot, sorted to the bottom).
 
 ## Visual Probability Indicator
 
-Each condition row shows 5 dots derived from its base probability value:
+Each row shows 5 dots derived from its probability value:
 
-`level = clamp(round(base[id]), 1, 5)`
+`level = clamp(round(probability), 1, 5)`
 
 e.g. `●●●○○` = level 3. Static — no interactivity.
 
 ## Data Source
 
-The active space's `probability` field points at a static JSON file (e.g. `data/probability.json` for the IBS space). The file is served by Vite (publicDir: `../data`). Shape:
-
-```json
-{
-  "base": { "condition_id": 1 }
-}
-```
-
-Values are integers 1–5 representing relative prevalence among that space's target population (IBS patients, for the IBS space). Owner-edited.
+Probability lives inline in `data/starting_points.yaml`: each entry's `sub_conditions`
+list carries a `probability` integer (1–5) per condition, representing relative
+prevalence within that starting point's context (e.g. IBS patients for the IBS starting
+point). Owner-edited. It flows into `data/generated/starting_points/index.json` and is
+read by the sub-condition table.
 
 ## Constraints / Edge Cases
 
-- If the active space does not define a `probability` reference, or the referenced file fails to load, the column is silently hidden and the list keeps its natural order
-- Conditions in the active space that are missing from `base` default to probability 1 (sink to the bottom)
-- Subtypes (sibo_h2, sibo_ch4, sibo_h2s) are scored individually rather than inheriting their parent's value
+- Sub-conditions missing a `probability` default to 1 (sink to the bottom).
+- Subtypes (e.g. sibo_h2, sibo_ch4, sibo_h2s) are scored individually rather than
+  inheriting their parent's value.
+- The dot indicator is purely visual — it is a static prevalence hint, not a
+  personalised risk estimate (see [legal.md](legal.md)).
 
 ## Implementation
 
-- `data/probability.json` — static data file (just `base`)
-- `web/src/types.ts` — `ProbabilityData` type
-- `web/src/pages/ConditionList.tsx` — fetches the space's probability file, sorts rows descending, renders the dot indicator
+- `data/starting_points.yaml` — `sub_conditions[].probability` (owner-edited).
+- `web/src/types.ts` — `SubConditionRef.probability`.
+- `web/src/components/SubConditionTable.tsx` — sorts rows descending and renders the
+  dot indicator.

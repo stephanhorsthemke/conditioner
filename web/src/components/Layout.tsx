@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import SettingsMenu from "./SettingsMenu";
+import SearchBox from "./SearchBox";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -12,18 +14,44 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     }}>
       <header style={{
         borderBottom: "1px solid var(--border-soft)",
-        padding: "0.6rem 1rem",
+        padding: "0.5rem 1rem",
         display: "flex",
-        justifyContent: "space-between",
         alignItems: "center",
+        gap: "0.75rem",
         maxWidth: 680,
         margin: "0 auto",
         width: "100%",
       }}>
-        <span style={{ fontSize: "0.85rem", fontWeight: 700, color: "var(--fg-secondary)", letterSpacing: "0.01em" }}>
-          Condition Navigator
-        </span>
-        <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "0.35rem", flexShrink: 0 }}>
+          <Link
+            to="/"
+            style={{ fontSize: "0.85rem", fontWeight: 700, color: "var(--fg-secondary)", letterSpacing: "0.01em", textDecoration: "none", whiteSpace: "nowrap" }}
+          >
+            Condition Navigator
+          </Link>
+          <span
+            title="Alpha — prototype, expect rough edges and rapid changes"
+            style={{
+              fontSize: "0.5rem",
+              fontWeight: 700,
+              textTransform: "uppercase",
+              letterSpacing: "0.05em",
+              color: "var(--warn-fg)",
+              background: "var(--warn-bg)",
+              border: "1px solid var(--warn-border)",
+              padding: "0.02rem 0.22rem",
+              borderRadius: "0.2rem",
+              whiteSpace: "nowrap",
+              lineHeight: 1.4,
+            }}
+          >
+            alpha
+          </span>
+        </div>
+        <div style={{ flex: 1, display: "flex", justifyContent: "center", minWidth: 0 }}>
+          <SearchBox size="compact" />
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexShrink: 0 }}>
           <a
             href="https://flourishinglab.app"
             target="_blank"

@@ -134,7 +134,7 @@ export default function StartingPointPage() {
               ← Back
             </button>
           ) : (
-            <Link to="/" style={{ fontSize: "0.875rem", color: "var(--fg-muted)", textDecoration: "none" }}>
+            <Link to="/search" style={{ fontSize: "0.875rem", color: "var(--fg-muted)", textDecoration: "none" }}>
               ← All conditions
             </Link>
           )}

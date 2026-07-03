@@ -6,7 +6,7 @@ Display all generated data for a single condition in a readable, navigable way â
 
 ## Expected Behavior
 
-- Each condition has its own page, navigated to from the entrypoint list
+- Each condition has its own page, navigated to from [search](search.md) or a [starting point](starting-points.md)'s sub-condition table
 - The page header shows: condition name, aliases and the group label
 - Sections and subsections are shown as **accordions** â€” collapsed by default, user expands what they need
 - A "back to list" link is always visible at the top
