@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import SettingsMenu from "./SettingsMenu";
 import SearchBox from "./SearchBox";
+import Feedback from "./Feedback";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -56,12 +57,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             href="https://flourishinglab.app"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ fontSize: "0.78rem", color: "var(--fg-faint)", textDecoration: "none" }}
+            style={{ fontSize: "0.78rem", lineHeight: 1, color: "var(--fg-faint)", textDecoration: "none", display: "inline-flex", alignItems: "center" }}
             onMouseEnter={(e) => (e.currentTarget.style.color = "var(--fg-muted)")}
             onMouseLeave={(e) => (e.currentTarget.style.color = "var(--fg-faint)")}
           >
             About
           </a>
+          <Feedback />
           <SettingsMenu />
         </div>
       </header>

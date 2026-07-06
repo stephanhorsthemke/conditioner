@@ -282,27 +282,6 @@ export default function ConditionPage() {
         </div>
       )}
 
-      {meta?.diagnosis_type === "syndromic" && (
-        <div style={{ margin: "0 0 1.5rem" }}>
-          <Link
-            to={`/start/${meta.id}`}
-            style={{
-              display: "inline-block",
-              padding: "0.5rem 0.85rem",
-              fontSize: "0.875rem",
-              fontWeight: 600,
-              color: "var(--link)",
-              background: "var(--link-bg)",
-              border: "1px solid var(--link-border)",
-              borderRadius: "0.375rem",
-              textDecoration: "none",
-            }}
-          >
-            Investigate underlying conditions →
-          </Link>
-        </div>
-      )}
-
       {s && (
         <div>
           <AccordionSection title="What is it? (detailed)" isEmpty={isEmpty(s.detailed_summary)}>

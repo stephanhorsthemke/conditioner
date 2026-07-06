@@ -5,7 +5,7 @@
     "full_label": "Irritable bowel syndrome (IBS)",
     "kind": "syndrome",
     "condition_id": "ibs",
-    "intro": "IBS is a syndrome label \u2014 these are the conditions worth ruling in or out,\nbest-effort sorted by how often each shows up in IBS patients. Filters\ncan help prioritise but might be imprecise.\n",
+    "intro": "IBS is an unhelpful diagnosis. There is lots of possible root causes.\nFinding the root causes is key to managing the condition!\n",
     "symptom_patterns": [
       {
         "id": "ibs-d",
@@ -411,7 +411,7 @@
     "full_label": "",
     "kind": "symptom",
     "condition_id": null,
-    "intro": "Brain fog is a symptom, not a diagnosis. Many different underlying\nconditions can drive it, and the pattern of triggers usually points at\none more than the others. These are the conditions worth ruling in or\nout \u2014 starting with the ones that most commonly show up as drivers.\n",
+    "intro": "The symptoms Brain Fog can have many different underlying conditions which\ndrive it. These are the conditions worth ruling in or\nout \u2014 starting with the ones that most commonly show up as drivers.\n",
     "symptom_patterns": [
       {
         "id": "morning-worst",
@@ -815,6 +815,14 @@
       },
       {
         "id": "hpylori",
+        "probability": 1,
+        "patterns": [
+          "food-triggered",
+          "systemic"
+        ]
+      },
+      {
+        "id": "hyperammonemia",
         "probability": 1,
         "patterns": [
           "food-triggered",
