@@ -1,0 +1,658 @@
+{
+  "condition_id": "hyperammonemia",
+  "condition_name": "Hyperammonemia",
+  "generated_at": "2026-07-06T10:59:30.116587Z",
+  "model": "claude-sonnet-4-6",
+  "sections": {
+    "plain_summary": "Hyperammonemia is a condition in which ammonia \u2014 a toxic byproduct of protein metabolism \u2014 builds up in the blood because the body cannot clear it fast enough. The liver normally converts ammonia into urea through the urea cycle, which is then excreted in urine. When this process breaks down, ammonia accumulates and can cause symptoms ranging from persistent brain fog, fatigue, and mood changes to, in severe cases, neurological crisis. It can stem from liver disease, inherited enzyme deficiencies, gut bacteria overproduction, or kidney and metabolic dysfunction.",
+    "detailed_summary": "Ammonia is generated constantly as a byproduct of amino acid breakdown, primarily in the gut and liver. Under normal conditions, the liver captures virtually all portal-blood ammonia and converts it to urea via the urea cycle \u2014 a sequence of five enzymatic reactions. When this system is overwhelmed or impaired, ammonia spills into systemic circulation and crosses the blood-brain barrier, where it disrupts neurotransmitter balance, impairs astrocyte function, generates oxidative stress, and triggers neuroinflammation.\n\nChronic or recurrent hyperammonemia does not always present as dramatic encephalopathy. Many individuals experience a subtler, persistent pattern: cognitive slowing, word-finding difficulty, poor sleep, fatigue, nausea after protein intake, and mood instability \u2014 symptoms that are easily attributed to anxiety, depression, or functional disorders. This leads to substantial diagnostic delay.\n\nThe underlying drivers are diverse. In adults, cirrhosis and portal hypertension are the most common causes, because blood bypasses the liver via portosystemic shunts. Inherited urea cycle disorders (UCDs) typically present in infancy but can manifest mildly in adulthood, especially partial enzyme deficiencies such as late-onset ornithine transcarbamylase (OTC) deficiency. Gut-derived hyperammonemia \u2014 where ammonia-producing bacteria in the intestine generate excess ammonia that the compromised liver cannot buffer \u2014 is another important mechanism relevant to SIBO, dysbiosis, and increased intestinal permeability. Kidney failure impairs urea excretion and can also raise ammonia. Certain medications (valproate, chemotherapy agents) and high-protein dietary patterns can expose underlying clearance deficiencies.\n\nManagement depends heavily on identifying the root cause. Strategies that can reduce ammonia load include protein source modification, lactulose (trapping ammonia in the colon), rifaximin (reducing ammonia-producing gut bacteria), branched-chain amino acid supplementation, and \u2014 in urea cycle disorders \u2014 specific ammonia scavenger medications. Identifying and treating the underlying driver is central to long-term improvement.",
+    "prevalence": {
+      "summary": "Relatively common as a complication of liver disease; rare as an isolated inherited condition.",
+      "estimate": "Hepatic encephalopathy (the most common clinical expression) affects approximately 30\u201345% of people with cirrhosis at some point. Inherited urea cycle disorders collectively affect roughly 1 in 35,000 live births.",
+      "notes": "Subclinical or mild hyperammonemia \u2014 insufficient to cause overt encephalopathy but enough to cause cognitive symptoms \u2014 is likely underdiagnosed, particularly in people with early liver disease, gut dysbiosis, or partial enzyme deficiencies. Women with heterozygous OTC deficiency are especially prone to being missed because symptoms are intermittent and often triggered by stress or high protein intake. True population prevalence of chronic low-grade hyperammonemia is unknown."
+    },
+    "subgroups": [
+      {
+        "id": null,
+        "name": "Hepatic hyperammonemia (cirrhosis / portal hypertension)",
+        "description": "The most common form, occurring when the liver's metabolic capacity is compromised by cirrhosis, hepatitis, fatty liver disease, or portosystemic shunting. Ammonia bypasses or overwhelms the damaged liver.",
+        "distinguishing_features": [
+          "History of liver disease, alcohol use disorder, or metabolic-associated steatotic liver disease (MASLD)",
+          "Elevated liver enzymes, reduced albumin, elevated bilirubin",
+          "Portal hypertension signs: varices, splenomegaly, ascites",
+          "Symptoms often worsen after high-protein meals or gastrointestinal bleeding",
+          "May present as hepatic encephalopathy (HE) ranging from minimal HE to overt confusion and asterixis"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Urea cycle disorder (UCD) \u2014 adult-onset or late-diagnosed",
+        "description": "Inherited enzyme deficiencies in the urea cycle. Severe forms present neonatally but partial deficiencies, particularly heterozygous OTC deficiency in women, may not be recognized until adulthood.",
+        "distinguishing_features": [
+          "Intermittent episodes triggered by high protein intake, illness, fasting, surgery, or childbirth",
+          "Plasma amino acid panel: elevated glutamine, low citrulline or arginine depending on enzyme affected",
+          "Orotic acid elevated in urine in OTC deficiency",
+          "Family history of unexplained neurological illness or infant death",
+          "Genetic testing can confirm enzymatic variant"
+        ]
+      },
+      {
+        "id": "sibo",
+        "name": "Gut-derived hyperammonemia (dysbiosis / SIBO-related)",
+        "description": "Ammonia-producing bacteria in the small or large intestine generate excess ammonia that overwhelms the liver's buffering capacity, especially in individuals with compromised gut barrier or early liver dysfunction.",
+        "distinguishing_features": [
+          "Symptoms correlate with high-protein meals and gut fermentation",
+          "May coexist with SIBO, dysbiosis, or increased intestinal permeability",
+          "Ammonia may be elevated or high-normal even without frank liver disease",
+          "Often improves with rifaximin or lactulose treatment",
+          "Breath ammonia testing (research tool) may reveal gut production patterns"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Drug-induced hyperammonemia",
+        "description": "Certain medications impair urea cycle function or increase ammonia production. Valproate is the most well-documented cause, but other agents including systemic chemotherapy, 5-fluorouracil, and glycine-containing irrigating solutions can also be responsible.",
+        "distinguishing_features": [
+          "Temporal link between medication initiation and symptom onset",
+          "Valproate: inhibits carbamoyl phosphate synthetase and depletes carnitine",
+          "Symptoms may resolve on drug discontinuation",
+          "Normal liver function tests despite elevated ammonia",
+          "No underlying liver disease necessary"
+        ]
+      },
+      {
+        "id": null,
+        "name": "Renal / metabolic hyperammonemia",
+        "description": "Kidney failure reduces urea excretion and can directly elevate blood ammonia. Rare organic acidemias and fatty acid oxidation defects also cause secondary urea cycle dysfunction.",
+        "distinguishing_features": [
+          "Elevated creatinine and BUN alongside elevated ammonia",
+          "Organic aciduria on urine organic acid testing",
+          "Associated with advanced chronic kidney disease or acute kidney injury",
+          "May also present in the context of total parenteral nutrition (TPN) with arginine-deficient formulas"
+        ]
+      }
+    ],
+    "symptoms": [
+      {
+        "symptom": "Cognitive slowing \u2014 difficulty concentrating, word-finding problems, mental fog",
+        "category": "neurological",
+        "notes": "Often described as a 'cotton-wool' sensation in the head. May be the only symptom in minimal hepatic encephalopathy. Commonly dismissed as anxiety or depression."
+      },
+      {
+        "symptom": "Fatigue disproportionate to activity or sleep",
+        "category": "neurological",
+        "notes": "Ammonia disrupts mitochondrial function in astrocytes and impairs the glutamate-glutamine cycle, contributing to profound energy depletion."
+      },
+      {
+        "symptom": "Sleep disturbance \u2014 insomnia, fragmented sleep, hypersomnia, or circadian inversion",
+        "category": "neurological",
+        "notes": "Sleep-wake reversal is a classic early sign of hepatic encephalopathy. Even subclinical hyperammonemia can alter melatonin and serotonin metabolism."
+      },
+      {
+        "symptom": "Mood changes \u2014 irritability, apathy, low mood, anxiety",
+        "category": "neurological / psychiatric",
+        "notes": "Ammonia alters GABAergic tone and neurosteroid levels, producing mood destabilization that is often misattributed to primary psychiatric illness."
+      },
+      {
+        "symptom": "Nausea, especially after high-protein meals",
+        "category": "digestive",
+        "notes": "Protein ingestion increases ammonia load. Selective nausea after meat, eggs, or protein supplements is a meaningful pattern to track."
+      },
+      {
+        "symptom": "Headache",
+        "category": "neurological",
+        "notes": "Ammonia-induced cerebral edema and increased intracranial pressure can cause persistent or recurrent headaches."
+      },
+      {
+        "symptom": "Tremor or asterixis ('liver flap')",
+        "category": "neurological",
+        "notes": "Asterixis \u2014 a flapping tremor when the wrists are extended \u2014 is a classic sign of moderate-to-severe hyperammonemia. Less prominent in subclinical or mild cases."
+      },
+      {
+        "symptom": "Confusion or disorientation",
+        "category": "neurological",
+        "notes": "Represents overt hepatic encephalopathy. Time and place disorientation, personality changes, and behavioral shifts. Requires urgent evaluation."
+      },
+      {
+        "symptom": "Reduced reaction time and impaired driving or complex task performance",
+        "category": "neurological",
+        "notes": "Psychomotor slowing detectable by formal neuropsychological testing even when patients report feeling 'normal'. Associated with minimal hepatic encephalopathy."
+      },
+      {
+        "symptom": "Loss of appetite / early satiety",
+        "category": "digestive",
+        "notes": "Particularly common when ammonia elevation is liver-related. May also reflect the gut-brain disruption caused by elevated toxin levels."
+      },
+      {
+        "symptom": "Vomiting in acute episodes",
+        "category": "digestive",
+        "notes": "More prominent in acute hyperammonemia (e.g., UCD crisis) than in chronic low-grade elevation."
+      },
+      {
+        "symptom": "Muscle weakness and muscle wasting",
+        "category": "musculoskeletal",
+        "notes": "Skeletal muscle acts as a backup site for ammonia detoxification via the glutamine synthetase pathway. Sustained demand leads to muscle catabolism. Sarcopenia worsens ammonia burden in a feedback loop."
+      },
+      {
+        "symptom": "Seizures (in acute or severe cases)",
+        "category": "neurological",
+        "notes": "More typical of neonatal UCD crisis or acute decompensation in adults. A medical emergency requiring immediate intervention."
+      },
+      {
+        "symptom": "Excessive sweating or temperature dysregulation",
+        "category": "autonomic",
+        "notes": "Less commonly recognized. May relate to hypothalamic disruption in significant hyperammonemia."
+      }
+    ],
+    "testing": {
+      "key_patterns": [
+        "Fasting or resting blood ammonia elevated above laboratory reference range (typically >35\u201350 \u00b5mol/L in adults, though symptoms can occur in the upper-normal range in sensitive individuals)",
+        "Post-protein ammonia rise: ammonia drawn 60\u201390 minutes after a protein-containing meal may reveal impaired clearance not apparent at rest",
+        "Elevated plasma glutamine (>800 \u00b5mol/L) alongside elevated ammonia \u2014 reflects the body's buffering mechanism using glutamine synthetase",
+        "Low plasma citrulline or arginine with elevated glutamine \u2014 suggests a urea cycle enzyme deficiency upstream",
+        "Elevated urinary orotic acid \u2014 specific marker for OTC deficiency, the most common adult-presenting UCD",
+        "Liver function tests showing reduced synthetic capacity: low albumin, elevated prothrombin time/INR, elevated bilirubin \u2014 consistent with hepatic hyperammonemia",
+        "Normal liver enzymes despite elevated ammonia in valproate-induced or UCD-related hyperammonemia \u2014 a pattern often missed",
+        "Cognitive testing discordance: significantly impaired performance on psychomotor or attention tasks (Number Connection Test, EncephalApp Stroop) despite subjective feeling of normalcy"
+      ],
+      "at_home": [
+        {
+          "name": "Symptom-protein tracking log",
+          "description": "Keeping a detailed daily diary logging protein intake (amount and source), timing of symptoms, and severity on a 0\u201310 scale. Identifying a consistent pattern of worsening within 1\u20133 hours of high-protein meals is a meaningful clinical signal worth bringing to a clinician.",
+          "safety_notes": "This is an observational tool only. Do not restrict protein severely without clinical supervision, as protein restriction itself can worsen muscle ammonia buffering and long-term outcomes."
+        },
+        {
+          "name": "Sleep and cognition tracking",
+          "description": "Logging sleep quality, time of waking, and cognitive clarity on rising. Sleep-wake reversal (sleepy in daytime, alert at night) or consistently worse cognition in the morning can be an early indicator of minimal hepatic encephalopathy, which is worth raising with a clinician.",
+          "safety_notes": "These patterns are non-specific and can have many causes. Use as supporting evidence, not diagnosis."
+        }
+      ],
+      "clinical": [
+        {
+          "name": "Fasting blood ammonia",
+          "type": "gold_standard",
+          "description": "Blood drawn into an EDTA tube, kept on ice, and processed within 15\u201330 minutes. Falsely elevated results are common if the sample is not handled correctly or if the patient was clenching their fist during venipuncture. Must always be interpreted alongside clinical context.",
+          "availability": "Orderable through most standard laboratories. Often requires a knowledgeable clinician to interpret in context rather than just against the binary normal/abnormal reference."
+        },
+        {
+          "name": "Post-prandial ammonia challenge",
+          "type": "emerging",
+          "description": "Ammonia measured fasting and then 60\u201390 minutes after a standardized protein load (e.g., 0.5\u20131g/kg body weight protein). An exaggerated rise may expose impaired clearance in individuals with normal fasting levels. Used in research and specialist centres.",
+          "availability": "Not yet standardized for routine clinical use. Can be requested in specialist hepatology or metabolic medicine settings."
+        },
+        {
+          "name": "Plasma amino acid profile",
+          "type": "standard",
+          "description": "Quantitative measurement of amino acids including glutamine, citrulline, arginine, and ornithine. Elevated glutamine with low citrulline or arginine points toward a urea cycle enzyme deficiency. Elevated glutamine alone confirms ammonia burden.",
+          "availability": "Orderable through metabolic medicine, genetics, or specialist laboratories. Not routinely checked in general practice but can be requested."
+        },
+        {
+          "name": "Urine orotic acid",
+          "type": "standard",
+          "description": "Elevated orotic acid in urine is a key marker for OTC (ornithine transcarbamylase) deficiency. Orotic acid accumulates because carbamoyl phosphate that cannot enter the urea cycle is shunted into pyrimidine synthesis.",
+          "availability": "Specialist metabolic or genetic testing laboratory. Should be collected during or shortly after a symptomatic episode for best sensitivity."
+        },
+        {
+          "name": "Genetic / enzyme panel for urea cycle disorders",
+          "type": "standard",
+          "description": "Next-generation sequencing or targeted panels covering OTC, ASS1, ASL, CPS1, ARG1, and NAGS genes. Enzyme activity assays in liver biopsy tissue are the most definitive but invasive. Genetic testing is the practical first step.",
+          "availability": "Metabolic genetics specialist or genetics laboratory. Some direct-to-consumer panels include urea cycle genes but clinical-grade sequencing requires a specialist referral."
+        },
+        {
+          "name": "EncephalApp Stroop test / Number Connection Test (NCT)",
+          "type": "standard",
+          "description": "Validated psychomotor tools for detecting minimal hepatic encephalopathy that the patient is unaware of. The EncephalApp is a free smartphone app. NCT is a paper-based test. Both detect psychomotor slowing and attentional deficits that standard MMSE misses.",
+          "availability": "EncephalApp freely available on iOS and Android. NCT downloadable online. Used in hepatology clinics and can be self-administered as a screening tool, though clinical interpretation improves sensitivity."
+        },
+        {
+          "name": "Liver imaging and fibroscan / liver biopsy",
+          "type": "gold_standard",
+          "description": "For hepatic causes, fibroscan (transient elastography) or MRI elastography quantifies liver stiffness and fibrosis stage. Biopsy is the gold standard for histological diagnosis. Both help establish whether compromised hepatic clearance capacity is the underlying driver.",
+          "availability": "Fibroscan widely available in gastroenterology and hepatology clinics. Liver biopsy requires specialist referral and is reserved for cases where non-invasive assessment is insufficient."
+        },
+        {
+          "name": "Breath ammonia testing",
+          "type": "emerging",
+          "description": "Non-invasive measurement of exhaled ammonia using ion mobility spectrometry or electrochemical sensors. Correlates with blood ammonia in hepatic encephalopathy and may offer a real-time gut fermentation proxy. Currently primarily a research tool.",
+          "availability": "Not yet in routine clinical practice. Devices exist in research settings. Worth monitoring as this technology matures."
+        }
+      ]
+    },
+    "related_conditions": [
+      {
+        "id": "sibo",
+        "name": "Small intestinal bacterial overgrowth (SIBO)",
+        "relationship": "mechanistic_link",
+        "explanation": "Bacteria in the small intestine produce ammonia through urease activity and amino acid deamination. In individuals with compromised liver function or increased intestinal permeability, this bacterial ammonia can meaningfully contribute to systemic ammonia load. SIBO treatment with rifaximin is one of the primary ammonia-lowering strategies."
+      },
+      {
+        "id": "dysbiosis",
+        "name": "Gut dysbiosis",
+        "relationship": "upstream",
+        "explanation": "An altered gut microbiome \u2014 particularly overgrowth of urease-producing species such as Proteus, Klebsiella, and Helicobacter \u2014 can substantially increase intestinal ammonia generation. Modulating the microbiome is a key therapeutic target in gut-derived hyperammonemia."
+      },
+      {
+        "id": "leaky_gut",
+        "name": "Leaky gut (intestinal permeability)",
+        "relationship": "mechanistic_link",
+        "explanation": "Increased intestinal permeability allows ammonia generated in the gut lumen to enter portal circulation more readily. It also promotes bacterial translocation, which can trigger liver inflammation and further impair ammonia clearance."
+      },
+      {
+        "id": "hpylori",
+        "name": "H. pylori infection",
+        "relationship": "upstream",
+        "explanation": "H. pylori is a highly urease-active organism that generates substantial ammonia in the stomach and upper GI tract. In individuals with borderline ammonia clearance, H. pylori infection may tip the balance toward symptomatic hyperammonemia."
+      },
+      {
+        "id": "ibd_remission",
+        "name": "IBD (Crohn's disease / ulcerative colitis)",
+        "relationship": "comorbid",
+        "explanation": "Inflammatory bowel disease can impair intestinal barrier function, alter the gut microbiome toward ammonia-producing species, and occasionally cause hepatic complications (primary sclerosing cholangitis), all of which may elevate ammonia levels."
+      },
+      {
+        "id": "mitochondrial",
+        "name": "Mitochondrial dysfunction",
+        "relationship": "mechanistic_link",
+        "explanation": "The urea cycle enzymes CPS1 and OTC reside in the mitochondria. Mitochondrial dysfunction can secondarily impair these enzymes and reduce ammonia clearance. Conversely, excess ammonia itself damages mitochondrial function, creating a bidirectional relationship."
+      },
+      {
+        "id": "mthfr",
+        "name": "MTHFR / methylation variants",
+        "relationship": "mechanistic_link",
+        "explanation": "Impaired methylation capacity can reduce the availability of folate and other cofactors needed for amino acid metabolism and the urea cycle. Some practitioners investigating chronic hyperammonemia also assess methylation pathway variants."
+      },
+      {
+        "id": "me_cfs",
+        "name": "ME / CFS",
+        "relationship": "often_confused",
+        "explanation": "The symptom overlap \u2014 profound fatigue, cognitive dysfunction, post-exertional worsening, and sleep disruption \u2014 means hyperammonemia is sometimes found in individuals investigated for ME/CFS, and vice versa. Elevated ammonia should be ruled out in unexplained fatiguing illness."
+      },
+      {
+        "id": "anxiety",
+        "name": "Anxiety disorder",
+        "relationship": "often_confused",
+        "explanation": "Ammonia-induced alteration of GABA and glutamate neurotransmission can produce anxiety, agitation, and panic-like states that are clinically indistinguishable from primary anxiety disorder without metabolic testing."
+      },
+      {
+        "id": "depression",
+        "name": "Depression",
+        "relationship": "often_confused",
+        "explanation": "Apathy, cognitive slowing, anhedonia, and mood lowering caused by hyperammonemia are frequently misdiagnosed as major depressive disorder, especially in the absence of overt liver disease."
+      },
+      {
+        "id": "poor_sleep",
+        "name": "Insomnia / non-restorative sleep",
+        "relationship": "downstream",
+        "explanation": "Ammonia disrupts the glutamate-glutamine cycle and melatonin synthesis in the brain, directly impairing sleep architecture. Sleep disturbance is both a symptom and an aggravating factor, as poor sleep worsens cognitive and metabolic resilience."
+      },
+      {
+        "id": "migraine",
+        "name": "Migraine",
+        "relationship": "comorbid",
+        "explanation": "Hyperammonemia-related cerebral edema, glutamate excess, and neuroinflammation are mechanistically linked to migraine pathophysiology. Some individuals with recurrent migraine, particularly triggered by high-protein meals, may benefit from ammonia evaluation."
+      },
+      {
+        "id": "medication",
+        "name": "Medication side effect",
+        "relationship": "upstream",
+        "explanation": "Valproate (valproic acid) is the most important drug cause of hyperammonemia, impairing urea cycle function and carnitine metabolism. Other medications including some chemotherapy agents, asparaginase, and glycine-irrigating fluids during urological surgery are also recognized causes."
+      },
+      {
+        "id": "insulin_resistance",
+        "name": "Insulin resistance / metabolic syndrome",
+        "relationship": "comorbid",
+        "explanation": "Metabolic-associated steatotic liver disease (MASLD/NAFLD), which is tightly linked to insulin resistance, is an increasingly common cause of hepatic ammonia clearance impairment. Insulin signalling also influences protein metabolism and urea cycle enzyme expression."
+      },
+      {
+        "id": "fibromyalgia",
+        "name": "Fibromyalgia",
+        "relationship": "often_confused",
+        "explanation": "Widespread muscle pain, fatigue, and cognitive symptoms in fibromyalgia overlap substantially with hyperammonemia. The muscle catabolism driven by ammonia burden can also produce musculoskeletal pain and tenderness."
+      }
+    ],
+    "symptom_management": {
+      "strategies": [
+        {
+          "name": "Lactulose",
+          "category": "medication",
+          "description": "A non-absorbable disaccharide that acidifies the colon, trapping ammonia as ammonium ion (NH4+), reducing its absorption. Also acts as a laxative to accelerate transit and ammonia excretion. First-line treatment for hepatic encephalopathy.",
+          "evidence_level": "strong",
+          "notes": "Dose titration is important \u2014 the goal is 2\u20133 soft stools per day, not diarrhea. Excessive lactulose can cause dehydration and electrolyte disturbance. Requires working with a clinician for appropriate dosing."
+        },
+        {
+          "name": "Rifaximin",
+          "category": "medication",
+          "description": "A minimally absorbed antibiotic that reduces ammonia-producing bacteria in the gut. Shown in randomized trials to reduce episodes of overt hepatic encephalopathy and improve quality of life in people with cirrhosis. Also used off-label for gut-derived hyperammonemia without frank liver disease.",
+          "evidence_level": "strong",
+          "notes": "Generally well tolerated. Should be used under medical supervision. Cost can be a barrier; some practitioners use other gut-targeted antibiotics in similar protocols."
+        },
+        {
+          "name": "Protein source modification",
+          "category": "diet",
+          "description": "Branched-chain amino acids (leucine, isoleucine, valine) generate less ammonia per gram of nitrogen than aromatic amino acids. Shifting protein sources toward plant-based proteins and branched-chain amino acid-enriched foods or supplements can reduce ammonia generation while preserving nitrogen balance.",
+          "evidence_level": "moderate",
+          "notes": "Total protein restriction was historically recommended but is now considered counterproductive \u2014 it accelerates muscle wasting, which worsens the ammonia burden. Adequate protein intake with attention to source quality is the current evidence-based approach."
+        },
+        {
+          "name": "Branched-chain amino acid (BCAA) supplementation",
+          "category": "supplement",
+          "description": "BCAAs (leucine, isoleucine, valine) are metabolized predominantly in muscle rather than liver, reducing hepatic ammonia processing demand. They also promote muscle protein synthesis, combating the sarcopenia that worsens ammonia burden. Evidence strongest in cirrhosis-related hyperammonemia.",
+          "evidence_level": "moderate",
+          "notes": "Particularly relevant for individuals with muscle wasting. Available in powder or capsule form. The effective dose range and optimal formulation are still being investigated. Discuss with a hepatologist or dietitian before initiating."
+        },
+        {
+          "name": "L-ornithine L-aspartate (LOLA)",
+          "category": "supplement / medication",
+          "description": "Provides substrates that stimulate the urea cycle (ornithine) and support glutamine synthesis as an alternative ammonia disposal route (aspartate). IV formulations are used in acute settings; oral formulations may help in chronic management. Evidence is growing for both hepatic and non-hepatic hyperammonemia.",
+          "evidence_level": "moderate",
+          "notes": "Oral LOLA has shown benefit in reducing minimal hepatic encephalopathy and ammonia levels in several trials. Available as a supplement in some countries and as a prescription medication in others."
+        },
+        {
+          "name": "Zinc supplementation",
+          "category": "supplement",
+          "description": "Zinc is an essential cofactor for several urea cycle enzymes. Zinc deficiency is common in cirrhosis and can impair ammonia clearance. Correcting zinc deficiency has been shown to improve urea cycle function and reduce ammonia levels.",
+          "evidence_level": "moderate",
+          "notes": "Zinc status should be tested before supplementing. The therapeutic dose range for zinc in liver disease is typically 30\u201350mg elemental zinc daily. Excess zinc can impair copper absorption. Supervision recommended."
+        },
+        {
+          "name": "Reduction or elimination of trigger medications",
+          "category": "medication",
+          "description": "For drug-induced hyperammonemia (particularly valproate-related), dose reduction or switching to an alternative medication under physician guidance can lead to rapid normalization of ammonia levels and symptom resolution.",
+          "evidence_level": "strong",
+          "notes": "Never discontinue valproate or other prescription medications without physician guidance, as abrupt discontinuation carries significant risks. This must be managed collaboratively with the prescribing clinician."
+        },
+        {
+          "name": "Sodium benzoate and sodium phenylbutyrate / glycerol phenylbutyrate",
+          "category": "medication",
+          "description": "Ammonia scavenger drugs that provide alternative nitrogen excretion pathways, bypassing the urea cycle. Standard of care for urea cycle disorders. Glycerol phenylbutyrate (Ravicti) is better tolerated with fewer GI side effects than sodium phenylbutyrate.",
+          "evidence_level": "strong",
+          "notes": "Primarily used in confirmed urea cycle disorders. Use in hepatic hyperammonemia is less well-established. Requires specialist metabolic medicine or hepatology oversight."
+        },
+        {
+          "name": "Adequate hydration and avoidance of constipation",
+          "category": "lifestyle",
+          "description": "Constipation significantly increases ammonia absorption from the colon by prolonging bacterial fermentation and mucosal contact time. Regular bowel movements \u2014 ideally 1\u20132 per day \u2014 are a practical, accessible way to reduce ammonia load.",
+          "evidence_level": "moderate",
+          "notes": "Often an underappreciated lever. Adequate fluid intake, dietary fiber from tolerated sources, and regular physical activity all support bowel regularity."
+        },
+        {
+          "name": "Regular low-to-moderate intensity exercise",
+          "category": "lifestyle",
+          "description": "Skeletal muscle is a major site of ammonia disposal via glutamine synthetase. Maintaining and building muscle mass through resistance and aerobic exercise improves the body's overall capacity to buffer ammonia, reduces sarcopenia-driven worsening, and improves cognitive outcomes in hepatic encephalopathy.",
+          "evidence_level": "moderate",
+          "notes": "Even modest exercise programs have shown benefit in cirrhosis. High-intensity exercise acutely raises ammonia \u2014 those with significant hyperammonemia should build intensity gradually and monitor response."
+        },
+        {
+          "name": "Probiotic and synbiotic therapy",
+          "category": "supplement",
+          "description": "Certain probiotic strains and synbiotics (probiotics combined with prebiotics) can modulate the gut microbiome away from ammonia-producing species and reduce intestinal pH. Some trials show modest reductions in blood ammonia and improvements in minimal hepatic encephalopathy.",
+          "evidence_level": "moderate",
+          "notes": "Effect size is smaller than rifaximin in most comparisons. Strain and formulation matter. Evidence strongest for VSL#3 and similar multi-strain formulations in liver disease populations."
+        }
+      ],
+      "things_to_avoid": [
+        "High-protein loading without monitoring ammonia response \u2014 especially from red meat and casein-heavy sources which generate more ammoniagenic amino acids per gram",
+        "Valproate (valproic acid) in individuals with known or suspected urea cycle disorders or significant liver disease \u2014 can precipitate life-threatening hyperammonemic crisis",
+        "Severe protein restriction \u2014 counterintuitively worsens outcomes by accelerating sarcopenia and reducing the muscle ammonia buffering capacity",
+        "Constipation \u2014 prolonged stool transit dramatically increases colonic ammonia production and absorption",
+        "Gastrointestinal bleeding left untreated in liver disease \u2014 blood protein in the GI tract is a major ammonia substrate and a common precipitant of hepatic encephalopathy",
+        "Excessive alcohol consumption \u2014 directly hepatotoxic and impairs urea cycle enzyme expression",
+        "Dehydration \u2014 concentrates ammonia and impairs renal urea excretion",
+        "High-dose glutamine supplementation \u2014 glutamine is an immediate ammonia precursor and can worsen hyperammonemia in susceptible individuals, particularly those with liver disease or UCDs",
+        "Ignoring or untreated infection / sepsis \u2014 infection dramatically increases protein catabolism and ammonia production and is the most common precipitant of acute hepatic encephalopathy"
+      ]
+    },
+    "uncomfortable_truths": [
+      {
+        "truth": "Many people with chronic hyperammonemia have significant underlying liver disease that has not yet been formally diagnosed \u2014 and that diagnosis changes the entire management picture.",
+        "why_resisted": "Liver disease carries stigma (often associated with alcohol), and people who drink moderately or not at all may not consider it a possibility. Early cirrhosis is also largely asymptomatic, so there is no obvious signal to prompt investigation.",
+        "path_forward": "People who pursue fibroscan or liver biopsy and receive an accurate fibrosis stage can then access evidence-based hepatic encephalopathy management (rifaximin, lactulose, beta-blockers for portal hypertension) rather than managing symptoms blindly. Knowing the stage makes treatment far more targeted."
+      },
+      {
+        "truth": "Cognitive and psychiatric symptoms caused by ammonia are often treated with psychiatric medications for years while the metabolic root cause goes undetected.",
+        "why_resisted": "Clinicians understandably treat the presenting symptoms. Ammonia testing is not part of standard psychiatric workups. Patients who receive a psychiatric diagnosis often stop looking for metabolic explanations.",
+        "path_forward": "Individuals whose psychiatric symptoms are preceded by protein-heavy meals, worsen after illness or fasting, or cluster with fatigue, nausea, and sleep reversal can request a simple fasting ammonia test. A single abnormal result, in the right clinical context, can redirect years of unsuccessful psychiatric treatment."
+      },
+      {
+        "truth": "Restricting protein to manage ammonia symptoms \u2014 without professional supervision \u2014 typically backfires by accelerating muscle loss, which makes ammonia elevation worse over time.",
+        "why_resisted": "Protein clearly increases ammonia in susceptible individuals, so avoiding protein feels logical and provides short-term relief. The long-term worsening due to sarcopenia takes months or years to become apparent.",
+        "path_forward": "Working with a dietitian experienced in liver disease or metabolic medicine to optimize protein quantity (targeting 1.2\u20131.5g/kg/day in most liver disease patients) and source (plant-based, BCAA-enriched) produces better long-term ammonia control than restriction."
+      },
+      {
+        "truth": "For inherited urea cycle disorders, there is a significant genetic risk to family members, and many relatives carry the same partial deficiency without knowing it.",
+        "why_resisted": "Raising the possibility of a genetic condition within a family is emotionally difficult and can feel alarmist, especially when symptoms in relatives are subtle or absent.",
+        "path_forward": "Genetic counseling after a UCD diagnosis in one family member allows cascade testing to identify relatives who carry partial deficiencies \u2014 who can then implement dietary and medical precautions to avoid crisis during surgery, illness, or pregnancy."
+      }
+    ],
+    "sustainable_improvement": {
+      "key_levers": [
+        {
+          "lever": "Identify and address the root cause \u2014 liver disease, UCD, gut-derived, or drug-induced",
+          "why_it_matters": "Each mechanism requires a different treatment pathway. Managing symptoms without identifying the driver leads to progressive worsening, especially in hepatic and genetic causes.",
+          "how_to_start": "Request fasting blood ammonia, liver function tests, plasma amino acids, and urine orotic acid through a physician. Bring a symptom-protein log to the appointment as supporting evidence.",
+          "timeline": "Diagnosis can often be reached within 4\u20138 weeks of targeted investigation. Treatment response may be apparent within days to weeks.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Optimize gut microbiome to reduce ammonia-producing bacterial load",
+          "why_it_matters": "The gut is the primary source of ammonia in the body. Reducing urease-producing bacterial populations directly reduces the ammonia burden the liver must handle. Rifaximin has the strongest evidence, but dietary and probiotic approaches also contribute.",
+          "how_to_start": "Discuss rifaximin or targeted antibiotic options with a gastroenterologist or hepatologist. Alongside this, increase dietary fiber from tolerated sources to promote a more diverse microbiome and reduce putrefactive fermentation.",
+          "timeline": "Rifaximin can reduce ammonia meaningfully within 1\u20132 weeks. Microbiome remodeling via diet takes 4\u201312 weeks.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Preserve and build muscle mass through adequate protein and exercise",
+          "why_it_matters": "Skeletal muscle is the body's most important backup ammonia detoxification organ. Sarcopenic individuals have impaired ammonia buffering capacity, creating a vicious cycle. Reversing muscle loss improves ammonia clearance substantially.",
+          "how_to_start": "Work with a FODMAP-trained or liver-specialist dietitian to establish adequate protein intake (1.2\u20131.5g/kg/day), favor plant-based and BCAA-rich protein sources, and incorporate a resistance training program appropriate to current physical capacity.",
+          "timeline": "Meaningful muscle gain requires 3\u20136 months of consistent effort. Ammonia-related cognitive improvements may be visible within 4\u20138 weeks of improved protein balance.",
+          "requires_professional": true
+        },
+        {
+          "lever": "Maintain daily bowel movements and avoid constipation",
+          "why_it_matters": "Every additional hour stool remains in the colon means additional ammonia absorption. This is one of the most immediately actionable levers and requires no prescription.",
+          "how_to_start": "Increase fluid intake to 2\u20132.5L per day, add soluble fiber from tolerated foods (oats, psyllium), and establish a regular morning bowel routine. Lactulose can be added under physician guidance if constipation is recurrent.",
+          "timeline": "Bowel normalization can occur within days to 1\u20132 weeks.",
+          "requires_professional": false
+        },
+        {
+          "lever": "Correct nutritional deficiencies supporting the urea cycle \u2014 especially zinc",
+          "why_it_matters": "Zinc deficiency is common in liver disease and directly impairs urea cycle enzyme function. Correcting it is a low-risk, low-cost intervention with meaningful impact on ammonia clearance.",
+          "how_to_start": "Request serum zinc, copper, and selenium testing. If zinc is low or low-normal, discuss supplementation with a clinician. Standard doses range from 30\u201350mg elemental zinc daily.",
+          "timeline": "Zinc repletion takes 4\u20138 weeks to achieve optimal tissue levels.",
+          "requires_professional": true
+        }
+      ],
+      "common_mistakes": [
+        "Treating the cognitive and mood symptoms with psychiatric medication without ruling out metabolic causes \u2014 delays recognition of hyperammonemia by years in some cases",
+        "Aggressively restricting dietary protein without dietitian supervision \u2014 worsens sarcopenia and paradoxically increases ammonia load over time",
+        "Attributing all symptoms to anxiety or depression and not pursuing metabolic workup \u2014 common when ammonia levels are in the 'high normal' range and overtly elevated liver enzymes are absent",
+        "Supplementing glutamine to improve gut health or athletic performance in individuals with liver disease or urea cycle disorders \u2014 glutamine is an immediate ammonia precursor and can precipitate encephalopathy",
+        "Stopping rifaximin or lactulose once symptoms improve and assuming the condition has resolved \u2014 recurrence is highly likely without continued management of the underlying driver",
+        "Failing to investigate family members after a UCD diagnosis is confirmed \u2014 partial enzyme deficiencies in relatives carry real risk during surgical, obstetric, or infectious stress events",
+        "Relying on single fasting ammonia values to rule out hyperammonemia \u2014 in borderline cases, post-prandial testing or measurement during a symptomatic episode is more sensitive"
+      ]
+    },
+    "finding_help": {
+      "specialists": [
+        {
+          "type": "Hepatologist",
+          "role": "Primary specialist for hyperammonemia caused by liver disease, cirrhosis, or portal hypertension. Can diagnose hepatic encephalopathy, stage fibrosis, and manage rifaximin, lactulose, and beta-blocker protocols.",
+          "notes": "Most appropriate first specialist for adults with suspected hepatic causes. Often the most experienced clinician in ammonia management overall."
+        },
+        {
+          "type": "Metabolic medicine specialist / biochemical geneticist",
+          "role": "Essential for investigating inherited urea cycle disorders. Interprets plasma amino acid profiles, urine orotic acid, enzyme assays, and genetic panels. Prescribes ammonia scavenger medications when indicated.",
+          "notes": "Particularly important when liver disease has been excluded but hyperammonemia persists, or when there is a family history of unexplained neurological illness or infant death. May require referral to a specialist centre."
+        },
+        {
+          "type": "Gastroenterologist",
+          "role": "Useful for investigating gut-derived hyperammonemia, particularly in the context of SIBO, dysbiosis, or intestinal permeability. Can investigate and treat H. pylori and other microbiome contributors.",
+          "notes": "Not all gastroenterologists will think about ammonia in non-liver contexts. A functional or integrative gastroenterologist may be more receptive to investigating gut-driven mechanisms."
+        },
+        {
+          "type": "Registered dietitian (specializing in liver disease or metabolic disorders)",
+          "role": "Critical for optimizing protein intake, source selection, BCAA supplementation, and overall nutritional strategy. Prevents the common mistake of protein restriction. Can work alongside medical management to reduce ammonia load while preserving muscle mass.",
+          "notes": "Finding a dietitian with specific liver disease or metabolic medicine experience is important. General dietitians may default to simple protein restriction advice, which is outdated in this context."
+        },
+        {
+          "type": "Neurologist or neuropsychologist",
+          "role": "Useful when cognitive symptoms are prominent and need formal characterization. Can administer validated psychomotor tests to detect minimal hepatic encephalopathy and differentiate from primary neurological or psychiatric conditions.",
+          "notes": "Neuropsychological testing can provide objective evidence of ammonia-related cognitive impairment that is otherwise invisible on standard tests."
+        },
+        {
+          "type": "Functional medicine or integrative medicine physician",
+          "role": "May be more systematic in investigating gut-derived ammonia, microbiome imbalance, nutritional deficiencies (zinc, BCAAs), and partial UCD in adults who have been dismissed by conventional workups.",
+          "notes": "Mainstream clinicians sometimes manage overt hepatic encephalopathy well but may not investigate subclinical hyperammonemia or gut-derived drivers. A functional medicine practitioner may offer broader investigation, though quality varies significantly by practitioner."
+        }
+      ],
+      "patient_communities": [
+        {
+          "name": "r/hepatology",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/hepatology/",
+          "notes": "Active community of people living with liver disease including cirrhosis and hepatic encephalopathy. Practical insights into managing HE, medication experiences, and navigating specialist care."
+        },
+        {
+          "name": "r/SIBO",
+          "platform": "Reddit",
+          "url": "https://www.reddit.com/r/SIBO/",
+          "notes": "Useful for individuals investigating gut-derived ammonia contributions. Many members have explored rifaximin, dysbiosis protocols, and the ammonia-SIBO connection."
+        },
+        {
+          "name": "National Urea Cycle Disorders Foundation (NUCDF)",
+          "platform": "Website / patient organization",
+          "url": "https://www.nucdf.org",
+          "notes": "The primary patient advocacy and information organization for urea cycle disorders in the USA. Offers family support, specialist referral guidance, and emergency medical protocols for UCD patients. Essential resource for anyone with a diagnosed or suspected UCD."
+        },
+        {
+          "name": "Urea Cycle Disorders Consortium (UCDC) \u2014 patient portal",
+          "platform": "Website",
+          "url": "https://rarediseasesnetwork.org/cms/ucdc",
+          "notes": "Part of the NIH Rare Diseases Clinical Research Network. Provides research updates, clinical trial opportunities, and specialist centre information for UCD patients."
+        },
+        {
+          "name": "British Liver Trust",
+          "platform": "Website / patient organization",
+          "url": "https://britishlivertrust.org.uk",
+          "notes": "UK-based charity with practical resources on hepatic encephalopathy, liver disease management, and finding specialist care. Helpline available for people newly navigating liver disease diagnosis."
+        }
+      ]
+    },
+    "learning_resources": [
+      {
+        "title": "Hepatic Encephalopathy: Overview and Current Management",
+        "type": "research paper",
+        "author_or_source": "Vilstrup H et al., Hepatology (2014) \u2014 AASLD/EASL Practice Guideline",
+        "url": "https://aasldpubs.onlinelibrary.wiley.com/doi/10.1002/hep.27210",
+        "description": "The definitive clinical practice guideline from the major liver disease societies covering diagnosis, grading, and management of hepatic encephalopathy including ammonia's role. Detailed and authoritative.",
+        "audience": "advanced"
+      },
+      {
+        "title": "Understanding Hepatic Encephalopathy \u2014 British Liver Trust",
+        "type": "website",
+        "author_or_source": "British Liver Trust",
+        "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/hepatic-encephalopathy/",
+        "description": "Clear, patient-facing explanation of what hepatic encephalopathy is, why ammonia accumulates, and what to expect from management. A good starting point for those newly diagnosed.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Urea Cycle Disorders \u2014 National Organization for Rare Disorders (NORD)",
+        "type": "website",
+        "author_or_source": "NORD",
+        "url": "https://rarediseases.org/rare-diseases/urea-cycle-disorders/",
+        "description": "Comprehensive overview of inherited urea cycle disorders \u2014 their mechanisms, symptoms, diagnosis, and management options. Well-referenced and accessible to lay readers.",
+        "audience": "intermediate"
+      },
+      {
+        "title": "Ammonia and the urea cycle \u2014 Khan Academy Organic Chemistry / MCAT series",
+        "type": "video",
+        "author_or_source": "Khan Academy",
+        "url": "https://www.khanacademy.org/science/ap-biology/cellular-energetics/cellular-respiration-ap/v/urea-cycle",
+        "description": "Accessible animated explanation of the urea cycle mechanism \u2014 useful for understanding what goes wrong in hyperammonemia without needing a biochemistry background.",
+        "audience": "beginner"
+      },
+      {
+        "title": "EncephalApp Stroop Test",
+        "type": "website",
+        "author_or_source": "Bajaj JS et al. \u2014 Virginia Commonwealth University / McGuire VA Medical Center",
+        "url": "https://www.encephalapp.com",
+        "description": "Free smartphone application for self-administration of the Stroop test used to detect minimal hepatic encephalopathy. Provides a quantitative psychomotor performance score that can be tracked over time and brought to clinical appointments.",
+        "audience": "beginner"
+      },
+      {
+        "title": "Sarcopenia in Liver Cirrhosis: The Role of Ammonia and Muscle Metabolism",
+        "type": "research paper",
+        "author_or_source": "Dasarathy S, Merli M \u2014 Journal of Hepatology (2016)",
+        "url": "https://www.journal-of-hepatology.eu/article/S0168-8278(16)30197-X/fulltext",
+        "description": "Explains the bidirectional relationship between sarcopenia and hyperammonemia \u2014 why muscle loss worsens ammonia clearance and how addressing sarcopenia is a therapeutic target. Essential reading for those managing liver-related hyperammonemia long-term.",
+        "audience": "advanced"
+      },
+      {
+        "title": "The Gut-Liver Axis in Hyperammonemia",
+        "type": "research paper",
+        "author_or_source": "Albillos A et al. \u2014 Nature Reviews Gastroenterology & Hepatology (2020)",
+        "url": "https://www.nature.com/articles/s41575-019-0210-7",
+        "description": "Detailed review of how gut dysbiosis, intestinal barrier dysfunction, and microbiome composition drive ammonia generation and liver inflammation. Relevant for those investigating gut-derived hyperammonemia.",
+        "audience": "advanced"
+      },
+      {
+        "title": "NUCDF Patient and Family Handbook",
+        "type": "website",
+        "author_or_source": "National Urea Cycle Disorders Foundation",
+        "url": "https://www.nucdf.org/resources.htm",
+        "description": "Practical guides for patients and families living with urea cycle disorders, including emergency protocols, dietary guidance, and guidance on disclosing the condition to schools and medical providers.",
+        "audience": "intermediate"
+      }
+    ]
+  },
+  "section_meta": {
+    "plain_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "13aea78a77485773"
+    },
+    "detailed_summary": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "682ba40cd4071e6a"
+    },
+    "prevalence": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "1a6c1f6ad22bb3ad"
+    },
+    "subgroups": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "6589aa7a43ffbecc"
+    },
+    "symptoms": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a9fb5832e4b8f083"
+    },
+    "testing": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "5789dd7a51b07fed"
+    },
+    "related_conditions": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "a59d5bb01b46e5a1"
+    },
+    "symptom_management": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "b5b7106084d98a5c"
+    },
+    "uncomfortable_truths": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "7d64b438ab450319"
+    },
+    "sustainable_improvement": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "9f09c40e77b08d02"
+    },
+    "finding_help": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "c74d20a23323f1e5"
+    },
+    "learning_resources": {
+      "model": "claude-sonnet-4-6",
+      "prompt_hash": "4d2c3365ff7b9f73"
+    }
+  }
+}
